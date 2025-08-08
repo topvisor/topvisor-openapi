@@ -78,13 +78,6 @@
                         "default": "export_tableToProject",
                         "type": "string"
                     },
-                    "output": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
-                            }
-                        ]
-                    },
                     "by_type": {
                         "allOf": [
                             {
@@ -130,7 +123,7 @@
                         "type": "string"
                     },
                     "strict_query": {
-                        "title": "Делать ли проверку на наоичие пути в URL (используется при (by_type = url))",
+                        "title": "Делать ли проверку на наличие пути в URL (используется при (by_type = url))",
                         "type": "boolean"
                     },
                     "intersection": {
@@ -166,7 +159,6 @@
                 },
                 "required": [
                     "project_id",
-                    "output",
                     "by_type",
                     "region_index",
                     "query",

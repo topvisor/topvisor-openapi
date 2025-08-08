@@ -41,7 +41,10 @@
                 "title": "Получение закладок авторов"
             },
             "Content_2.Methods.Journal.BookmarksAuthors.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Pages.json#/components/schemas/Models.Pages"
+                }
             }
         }
     }

@@ -19,7 +19,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Broker_2.Methods.Ads.Get.Exec": unknown[] | null;
+        "Broker_2.Methods.Ads.Get.Exec": import('../../../Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'][] | null;
     };
     responses: never;
     parameters: never;

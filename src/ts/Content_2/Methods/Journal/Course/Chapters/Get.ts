@@ -20,7 +20,7 @@ export interface components {
             offset: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Content_2.Methods.Journal.Course.Chapters.Get.Exec": unknown[];
+        "Content_2.Methods.Journal.Course.Chapters.Get.Exec": import('../../../../../Models/Pages.ts').components['schemas']['Models.Pages'][];
     };
     responses: never;
     parameters: never;

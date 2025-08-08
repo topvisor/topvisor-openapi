@@ -22,7 +22,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Tickets_2.Methods.Tickets.Get.Exec": unknown[] | null;
+        "Tickets_2.Methods.Tickets.Get.Exec": import('../../../Models/Tickets.ts').components['schemas']['Models.Tickets'][] | null;
     };
     responses: never;
     parameters: never;

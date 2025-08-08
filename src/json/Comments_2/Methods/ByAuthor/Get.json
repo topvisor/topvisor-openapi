@@ -47,7 +47,10 @@
             },
             "Comments_2.Methods.ByAuthor.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Comments.json#/components/schemas/Models.Comments"
+                }
             }
         }
     }

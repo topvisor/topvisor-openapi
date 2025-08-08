@@ -18,7 +18,7 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** Список задач cron */
-        "Cron_2.Methods.Commands.Get.Exec": unknown[] | null;
+        "Cron_2.Methods.Commands.Get.Exec": import('../../../Models/CronCommands.ts').components['schemas']['Models.CronCommands'][] | null;
     };
     responses: never;
     parameters: never;

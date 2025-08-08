@@ -17,7 +17,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Users_2.Methods.Referrals.Get.Exec": unknown[] | null;
+        "Users_2.Methods.Referrals.Get.Exec": import('../../../Models/Users/Referrals.ts').components['schemas']['Models.Users.Referrals'][] | null;
     };
     responses: never;
     parameters: never;

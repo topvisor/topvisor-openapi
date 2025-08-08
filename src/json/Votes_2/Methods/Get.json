@@ -42,7 +42,10 @@
             },
             "Votes_2.Methods.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../Models/Votes.json#/components/schemas/Models.Votes"
+                }
             }
         }
     }

@@ -51,7 +51,10 @@
             "Audit_2.Methods.Audit.Links.Get.Exec": {
                 "title": "Список проверенных ссылок",
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Audit/Links.json#/components/schemas/Models.Audit.Links"
+                }
             }
         }
     }

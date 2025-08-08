@@ -46,7 +46,10 @@
                 "title": "Получение информации о выданных доступах к проекту"
             },
             "Projects_2.Methods.Rights.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Projects/Rights.json#/components/schemas/Models.Projects.Rights"
+                }
             }
         }
     }

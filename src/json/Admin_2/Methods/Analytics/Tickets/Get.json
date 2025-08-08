@@ -41,7 +41,10 @@
                 "title": "Получение тикетов"
             },
             "Admin_2.Methods.Analytics.Tickets.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Tickets.json#/components/schemas/Models.Tickets"
+                }
             }
         }
     }

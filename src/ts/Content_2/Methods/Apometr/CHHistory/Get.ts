@@ -32,7 +32,7 @@ export interface components {
             offset: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Content_2.Methods.Apometr.CHHistory.Get.Exec": unknown[];
+        "Content_2.Methods.Apometr.CHHistory.Get.Exec": import('../../../../Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'][];
     };
     responses: never;
     parameters: never;

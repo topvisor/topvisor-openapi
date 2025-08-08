@@ -41,7 +41,10 @@
                 "title": "Получение списка ссылок пользователя"
             },
             "Tpvsr_2.Methods.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../Models/ShortLink.json#/components/schemas/Models.ShortLink"
+                }
             }
         }
     }

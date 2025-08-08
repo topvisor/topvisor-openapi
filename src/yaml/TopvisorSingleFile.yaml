@@ -142,9 +142,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/annotations_2/:
     post:
       operationId: AddAnnotations2
@@ -173,9 +170,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/annotations_2/:
     post:
       operationId: DelAnnotations2
@@ -204,9 +198,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/annotations_2/:
     post:
       operationId: EditAnnotations2
@@ -235,9 +226,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/annotations_2/:
     post:
       operationId: GetAnnotations2
@@ -318,9 +306,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/comments_2/:
     post:
       operationId: DelComments2
@@ -354,9 +339,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/comments_2/:
     post:
       operationId: EditComments2
@@ -388,9 +370,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/comments_2/:
     post:
       operationId: GetComments2
@@ -454,9 +433,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/mentions_2/:
     post:
       operationId: GetMentions2
@@ -526,9 +502,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/payments_2/:
     post:
       operationId: GetPayments2
@@ -592,9 +565,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/quiz_2/:
     post:
       operationId: AddQuiz2
@@ -623,9 +593,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/quiz_2/:
     post:
       operationId: EditQuiz2
@@ -654,9 +621,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/quiz_2/:
     post:
       operationId: GetQuiz2
@@ -717,9 +681,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractregular/schedule_2/:
     post:
       operationId: AbstractregularSchedule2
@@ -747,9 +708,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/schedule_2/:
     post:
       operationId: DelSchedule2
@@ -777,9 +735,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/schedule_2/:
     post:
       operationId: EditSchedule2
@@ -808,9 +763,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/schedule_2/:
     post:
       operationId: GetSchedule2
@@ -839,9 +791,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tags_2/:
     post:
       operationId: EditTags2
@@ -870,9 +819,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tags_2/:
     post:
       operationId: GetTags2
@@ -901,9 +847,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/templates_2/:
     post:
       operationId: AddTemplates2
@@ -932,9 +875,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/templates_2/:
     post:
       operationId: DelTemplates2
@@ -963,9 +903,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/templates_2/:
     post:
       operationId: EditTemplates2
@@ -994,9 +931,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/templates_2/:
     post:
       operationId: GetTemplates2
@@ -1025,9 +959,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/tpvsr_2/:
     post:
       operationId: AddTpvsr2
@@ -1056,9 +987,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tpvsr_2/:
     post:
       operationId: EditTpvsr2
@@ -1244,9 +1172,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/votes_2/:
     post:
       operationId: AddVotes2
@@ -1357,9 +1282,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/ghost/:
     post:
       operationId: GetAdmin2Ghost
@@ -1380,6 +1302,9 @@ paths:
               schema:
                 type: string
                 format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Requisites'
   /get/admin_2/i18n/:
     post:
       operationId: GetAdmin2I18n
@@ -1408,9 +1333,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/informer/:
     post:
       operationId: AddAdmin2Informer
@@ -1438,9 +1360,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/logs/:
     post:
       operationId: EditAdmin2Logs
@@ -1469,9 +1388,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/logs/:
     post:
       operationId: GetAdmin2Logs
@@ -1500,9 +1416,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/ranks/:
     post:
       operationId: GetAdmin2Ranks
@@ -1562,9 +1475,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/staff/:
     post:
       operationId: EditAdmin2Staff
@@ -1592,9 +1502,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/staff/:
     post:
       operationId: GetAdmin2Staff
@@ -1655,9 +1562,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/tpl/:
     post:
       operationId: GetAdmin2Tpl
@@ -1686,9 +1590,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/users/:
     post:
       operationId: EditAdmin2Users
@@ -1849,9 +1750,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/app_2/privacy/:
     post:
       operationId: GetApp2Privacy
@@ -1880,9 +1778,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/countUrls/:
     post:
       operationId: GetAudit2CountUrls
@@ -1911,9 +1806,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/indexing/:
     post:
       operationId: GetAudit2Indexing
@@ -1977,9 +1869,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/settings/:
     post:
       operationId: GetAudit2Settings
@@ -2008,9 +1897,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/watcher/:
     post:
       operationId: GetAudit2Watcher
@@ -2045,9 +1931,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/bank/:
     post:
       operationId: GetBank2Bank
@@ -2076,9 +1959,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/history/:
     post:
       operationId: GetBank2History
@@ -2139,9 +2019,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/bank_2/requisites/:
     post:
       operationId: AddBank2Requisites
@@ -2170,9 +2047,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/bank_2/requisites/:
     post:
       operationId: DelBank2Requisites
@@ -2201,9 +2075,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/bank_2/requisites/:
     post:
       operationId: EditBank2Requisites
@@ -2232,9 +2103,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/requisites/:
     post:
       operationId: GetBank2Requisites
@@ -2295,9 +2163,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/broker_2/ads/:
     post:
       operationId: EditBroker2Ads
@@ -2326,9 +2191,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/broker_2/ads/:
     post:
       operationId: GetBroker2Ads
@@ -2516,9 +2378,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/broker_2/groups/:
     post:
       operationId: GetBroker2Groups
@@ -2579,9 +2438,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/broker_2/keywords/:
     post:
       operationId: EditBroker2Keywords
@@ -2740,9 +2596,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/charts/:
     post:
       operationId: GetCompetitors2Charts
@@ -2772,9 +2625,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/dates/:
     post:
       operationId: GetCompetitors2Dates
@@ -2803,9 +2653,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/competitors_2/orders/:
     post:
       operationId: DelCompetitors2Orders
@@ -2834,9 +2681,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/orders/:
     post:
       operationId: GetCompetitors2Orders
@@ -2865,9 +2709,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/queries/:
     post:
       operationId: GetCompetitors2Queries
@@ -2896,9 +2737,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/table/:
     post:
       operationId: GetCompetitors2Table
@@ -2928,9 +2766,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/tableSummary/:
     post:
       operationId: GetCompetitors2TableSummary
@@ -2959,9 +2794,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/content_2/authors/:
     post:
       operationId: EditContent2Authors
@@ -2990,9 +2822,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/authors/:
     post:
       operationId: GetContent2Authors
@@ -3053,9 +2882,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/content_2/bookmark/:
     post:
       operationId: EditContent2Bookmark
@@ -3084,9 +2910,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/content_2/like/:
     post:
       operationId: EditContent2Like
@@ -3115,9 +2938,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstracteditpage/content_2/pages/:
     post:
       operationId: AbstracteditpageContent2Pages
@@ -3300,9 +3120,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/content_2/redirects/:
     post:
       operationId: AddContent2Redirects
@@ -3331,9 +3148,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/content_2/redirects/:
     post:
       operationId: DelContent2Redirects
@@ -3362,9 +3176,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/content_2/redirects/:
     post:
       operationId: EditContent2Redirects
@@ -3393,9 +3204,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/redirects/:
     post:
       operationId: GetContent2Redirects
@@ -3492,9 +3300,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/sitemap/:
     post:
       operationId: GetContent2Sitemap
@@ -3555,9 +3360,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/cron_2/commands/:
     post:
       operationId: AddCron2Commands
@@ -3743,9 +3545,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/example_2/custom/:
     post:
       operationId: GetExample2Custom
@@ -3774,9 +3573,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/example_2/enum/:
     post:
       operationId: GetExample2Enum
@@ -3805,9 +3601,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/example_2/object/:
     post:
       operationId: GetExample2Object
@@ -3836,9 +3629,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/example_2/projects/:
     post:
       operationId: GetExample2Projects
@@ -3899,9 +3689,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/informer_2/config/:
     post:
       operationId: EditInformer2Config
@@ -3930,9 +3717,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/informer_2/config/:
     post:
       operationId: GetInformer2Config
@@ -3961,9 +3745,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/informer_2/info/:
     post:
       operationId: GetInformer2Info
@@ -3992,9 +3773,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/informer_2/informer/:
     post:
       operationId: DelInformer2Informer
@@ -4023,9 +3801,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/informer_2/informer/:
     post:
       operationId: GetInformer2Informer
@@ -4055,9 +3830,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/keywords_2/keywords/:
     post:
       operationId: GetKeywords2Keywords
@@ -4181,9 +3953,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/mentions_2/rules/:
     post:
       operationId: DelMentions2Rules
@@ -4278,9 +4047,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/mentions_2/searchers/:
     post:
       operationId: DelMentions2Searchers
@@ -4427,9 +4193,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/contractSign/:
     post:
       operationId: EditPayments2ContractSign
@@ -4458,9 +4221,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/nextRequisitesId/:
     post:
       operationId: EditPayments2NextRequisitesId
@@ -4489,9 +4249,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/subscriptions/:
     post:
       operationId: EditPayments2Subscriptions
@@ -4531,9 +4288,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/payments_2/urTinkoffCreateApplication/:
     post:
       operationId: AddPayments2UrTinkoffCreateApplication
@@ -4562,9 +4316,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/payments_2/validateMerchantCardAP/:
     post:
       operationId: GetPayments2ValidateMerchantCardAP
@@ -4593,9 +4344,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/positions_2/searchers/:
     post:
       operationId: AddPositions2Searchers
@@ -4624,9 +4372,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/positions_2/searchers/:
     post:
       operationId: DelPositions2Searchers
@@ -4655,9 +4400,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/positions_2/settings/:
     post:
       operationId: EditPositions2Settings
@@ -4686,9 +4428,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/projects_2/analytics/:
     post:
       operationId: AddProjects2Analytics
@@ -4717,9 +4456,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/projects_2/analytics/:
     post:
       operationId: DelProjects2Analytics
@@ -4748,9 +4484,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/analytics/:
     post:
       operationId: EditProjects2Analytics
@@ -4779,9 +4512,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/analytics/:
     post:
       operationId: GetProjects2Analytics
@@ -4810,9 +4540,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/projects_2/competitors/:
     post:
       operationId: AddProjects2Competitors
@@ -4844,9 +4571,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/projects_2/competitors/:
     post:
       operationId: DelProjects2Competitors
@@ -4878,9 +4602,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/competitors/:
     post:
       operationId: GetProjects2Competitors
@@ -4909,9 +4630,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/projects_2/folders/:
     post:
       operationId: AddProjects2Folders
@@ -4940,9 +4658,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/projects_2/folders/:
     post:
       operationId: DelProjects2Folders
@@ -5034,9 +4749,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/projects_2/projects/:
     post:
       operationId: DelProjects2Projects
@@ -5128,9 +4840,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/rights/:
     post:
       operationId: EditProjects2Rights
@@ -5160,9 +4869,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/rights/:
     post:
       operationId: GetProjects2Rights
@@ -5227,9 +4933,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/tasks/:
     post:
       operationId: GetProjects2Tasks
@@ -5289,9 +4992,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/quiz_2/questions/:
     post:
       operationId: AddQuiz2Questions
@@ -5320,9 +5020,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/quiz_2/questions/:
     post:
       operationId: DelQuiz2Questions
@@ -5351,9 +5048,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/quiz_2/questions/:
     post:
       operationId: EditQuiz2Questions
@@ -5382,9 +5076,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/quiz_2/questions/:
     post:
       operationId: GetQuiz2Questions
@@ -5445,9 +5136,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/quiz_2/results/:
     post:
       operationId: DelQuiz2Results
@@ -5476,9 +5164,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/quiz_2/results/:
     post:
       operationId: GetQuiz2Results
@@ -5507,9 +5192,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/quiz_2/resultsUsers/:
     post:
       operationId: GetQuiz2ResultsUsers
@@ -5538,9 +5220,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/quiz_2/withQuestions/:
     post:
       operationId: GetQuiz2WithQuestions
@@ -5601,9 +5280,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/recurring_2/recurringCard/:
     post:
       operationId: GetRecurring2RecurringCard
@@ -5632,9 +5308,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/schedule_2/settings/:
     post:
       operationId: EditSchedule2Settings
@@ -5663,9 +5336,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/schedule_2/settings/:
     post:
       operationId: GetSchedule2Settings
@@ -5698,9 +5368,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/sms_2/checkPIN/:
     post:
       operationId: GetSms2CheckPIN
@@ -5729,9 +5396,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/sms_2/sendPIN/:
     post:
       operationId: GetSms2SendPIN
@@ -5760,9 +5424,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractregular/snapshots_2/competitors/:
     post:
       operationId: AbstractregularSnapshots2Competitors
@@ -5791,9 +5452,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/competitors/:
     post:
       operationId: GetSnapshots2Competitors
@@ -5826,9 +5484,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/snapshots_2/hiddenDomains/:
     post:
       operationId: EditSnapshots2HiddenDomains
@@ -5857,9 +5512,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/hiddenDomains/:
     post:
       operationId: GetSnapshots2HiddenDomains
@@ -5888,9 +5540,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractregular/snapshots_2/history/:
     post:
       operationId: AbstractregularSnapshots2History
@@ -5919,9 +5568,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/history/:
     post:
       operationId: GetSnapshots2History
@@ -5954,9 +5600,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/calls/:
     post:
       operationId: GetSystem2Calls
@@ -5986,9 +5629,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/system_2/cloud/:
     post:
       operationId: AddSystem2Cloud
@@ -6020,9 +5660,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/system_2/cloud/:
     post:
       operationId: DelSystem2Cloud
@@ -6051,9 +5688,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/cloud/:
     post:
       operationId: GetSystem2Cloud
@@ -6082,9 +5716,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/tpl/:
     post:
       operationId: GetSystem2Tpl
@@ -6113,9 +5744,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/templates_2/availableFieldsData/:
     post:
       operationId: GetTemplates2AvailableFieldsData
@@ -6144,9 +5772,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/templates_2/fields/:
     post:
       operationId: DelTemplates2Fields
@@ -6175,9 +5800,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/templates_2/fields/:
     post:
       operationId: EditTemplates2Fields
@@ -6206,9 +5828,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/templates_2/fields/:
     post:
       operationId: GetTemplates2Fields
@@ -6237,9 +5856,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/templates_2/fieldsProperties/:
     post:
       operationId: GetTemplates2FieldsProperties
@@ -6268,9 +5884,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/tickets_2/files/:
     post:
       operationId: AddTickets2Files
@@ -6302,9 +5915,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/tickets_2/files/:
     post:
       operationId: DelTickets2Files
@@ -6336,9 +5946,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tickets_2/files/:
     post:
       operationId: GetTickets2Files
@@ -6370,9 +5977,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/tickets_2/messages/:
     post:
       operationId: AddTickets2Messages
@@ -6401,9 +6005,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/rate/:
     post:
       operationId: EditTickets2Rate
@@ -6432,9 +6033,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/tickets_2/tickets/:
     post:
       operationId: AddTickets2Tickets
@@ -6463,9 +6061,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/tickets/:
     post:
       operationId: EditTickets2Tickets
@@ -6494,9 +6089,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tickets_2/tickets/:
     post:
       operationId: GetTickets2Tickets
@@ -6557,9 +6149,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tpvsr_2/tags/:
     post:
       operationId: EditTpvsr2Tags
@@ -6588,9 +6177,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tpvsr_2/title/:
     post:
       operationId: GetTpvsr2Title
@@ -6619,9 +6205,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/urls_2/export/:
     post:
       operationId: GetUrls2Export
@@ -6642,6 +6225,9 @@ paths:
               schema:
                 type: string
                 format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
   /add/urls_2/import/:
     post:
       operationId: AddUrls2Import
@@ -6679,9 +6265,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/urls_2/tags/:
     post:
       operationId: EditUrls2Tags
@@ -6741,9 +6324,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/logout/:
     post:
       operationId: GetUsers2Logout
@@ -6772,9 +6352,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractregular/users_2/profile/:
     post:
       operationId: AbstractregularUsers2Profile
@@ -6802,9 +6379,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/:
     post:
       operationId: EditUsers2Profile
@@ -6833,9 +6407,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/users_2/ranks/:
     post:
       operationId: AddUsers2Ranks
@@ -6864,9 +6435,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/ranks/:
     post:
       operationId: GetUsers2Ranks
@@ -6959,9 +6527,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/telegramAccounts/:
     post:
       operationId: GetUsers2TelegramAccounts
@@ -6993,9 +6558,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/xml/:
     post:
       operationId: GetUsers2Xml
@@ -7026,9 +6588,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/votes_2/comment/:
     post:
       operationId: EditVotes2Comment
@@ -7060,9 +6619,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/accounting/counteragents/:
     post:
       operationId: EditAdmin2AccountingCounteragents
@@ -7091,9 +6647,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/accounting/counteragents/:
     post:
       operationId: GetAdmin2AccountingCounteragents
@@ -7153,9 +6706,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/accounting/group/:
     post:
       operationId: GetAdmin2AccountingGroup
@@ -7216,9 +6766,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/admin_2/accounting/invoices/:
     post:
       operationId: DelAdmin2AccountingInvoices
@@ -7342,9 +6889,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/admin_2/actions/payments/:
     post:
       operationId: DelAdmin2ActionsPayments
@@ -7373,9 +6917,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/payments/:
     post:
       operationId: EditAdmin2ActionsPayments
@@ -7404,9 +6945,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/positions/:
     post:
       operationId: EditAdmin2ActionsPositions
@@ -7435,9 +6973,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/projects/:
     post:
       operationId: EditAdmin2ActionsProjects
@@ -7466,9 +7001,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/actions/projects/:
     post:
       operationId: GetAdmin2ActionsProjects
@@ -7497,9 +7029,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/actions/telegram/:
     post:
       operationId: AddAdmin2ActionsTelegram
@@ -7528,9 +7057,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/affiliate/referralProgramStats/:
     post:
       operationId: GetAdmin2AffiliateReferralProgramStats
@@ -7559,9 +7085,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/affiliate/referralsByLevel/:
     post:
       operationId: GetAdmin2AffiliateReferralsByLevel
@@ -7590,9 +7113,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/affiliate/referrals/:
     post:
       operationId: GetAdmin2AffiliateReferrals
@@ -7621,9 +7141,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/affiliate/referrersByReferrals/:
     post:
       operationId: GetAdmin2AffiliateReferrersByReferrals
@@ -7652,9 +7169,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/affiliate/referrers/:
     post:
       operationId: GetAdmin2AffiliateReferrers
@@ -7683,9 +7197,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/affiliate/referrersWithReferrals/:
     post:
       operationId: GetAdmin2AffiliateReferrersWithReferrals
@@ -7755,9 +7266,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/countOnlineUsers/:
     post:
       operationId: GetAdmin2AnalyticsCountOnlineUsers
@@ -7786,9 +7294,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/events/:
     post:
       operationId: GetAdmin2AnalyticsEvents
@@ -7850,9 +7355,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/services/:
     post:
       operationId: GetAdmin2AnalyticsServices
@@ -7881,9 +7383,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/statistics/:
     post:
       operationId: GetAdmin2AnalyticsStatistics
@@ -7912,9 +7411,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractticketsstats/admin_2/analytics/tickets/:
     post:
       operationId: AbstractticketsstatsAdmin2AnalyticsTickets
@@ -7943,9 +7439,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/:
     post:
       operationId: GetAdmin2AnalyticsTickets
@@ -8006,9 +7499,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/logs/system/:
     post:
       operationId: GetAdmin2LogsSystem
@@ -8038,9 +7528,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/ranks/activations/:
     post:
       operationId: GetAdmin2RanksActivations
@@ -8100,9 +7587,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/staff/access/:
     post:
       operationId: EditAdmin2StaffAccess
@@ -8162,9 +7646,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/staff/contractPrint/:
     post:
       operationId: GetAdmin2StaffContractPrint
@@ -8213,9 +7694,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/staff/vacation/:
     post:
       operationId: AddAdmin2StaffVacation
@@ -8244,9 +7722,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/admin_2/staff/vacation/:
     post:
       operationId: DelAdmin2StaffVacation
@@ -8275,9 +7750,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/staff/vacationPrint/:
     post:
       operationId: GetAdmin2StaffVacationPrint
@@ -8326,9 +7798,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/users/promocodes/:
     post:
       operationId: AddAdmin2UsersPromocodes
@@ -8521,9 +7990,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/audit/checks/:
     post:
       operationId: GetAudit2AuditChecks
@@ -8738,9 +8204,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/audit/pages/:
     post:
       operationId: GetAudit2AuditPages
@@ -8868,9 +8331,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/indexing/links/:
     post:
       operationId: GetAudit2IndexingLinks
@@ -8902,9 +8362,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/indexing/summary/:
     post:
       operationId: GetAudit2IndexingSummary
@@ -8933,9 +8390,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/watcher/byURL/:
     post:
       operationId: GetAudit2WatcherByURL
@@ -9002,9 +8456,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/watcher/summary/:
     post:
       operationId: GetAudit2WatcherSummary
@@ -9033,9 +8484,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/diadoc/sendContract/:
     post:
       operationId: GetBank2DiadocSendContract
@@ -9064,9 +8512,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/diadoc/sendTotalReceipt/:
     post:
       operationId: GetBank2DiadocSendTotalReceipt
@@ -9098,9 +8543,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/history/export/:
     post:
       operationId: GetBank2HistoryExport
@@ -9181,9 +8623,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/requisites/contractTariffId/:
     post:
       operationId: GetBank2RequisitesContractTariffId
@@ -9212,9 +8651,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/requisites/print/:
     post:
       operationId: GetBank2RequisitesPrint
@@ -9263,9 +8699,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/bank_2/requisites/printZip/:
     post:
       operationId: GetBank2RequisitesPrintZip
@@ -9314,9 +8747,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/broker_2/ads/status/:
     post:
       operationId: EditBroker2AdsStatus
@@ -9345,9 +8775,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/broker_2/ads/toModerate/:
     post:
       operationId: EditBroker2AdsToModerate
@@ -9376,9 +8803,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/broker_2/campaigns/updateTargeting/:
     post:
       operationId: EditBroker2CampaignsUpdateTargeting
@@ -9439,9 +8863,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/broker_2/keywords/status/:
     post:
       operationId: EditBroker2KeywordsStatus
@@ -9470,9 +8891,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/broker_2/log/export/:
     post:
       operationId: GetBroker2LogExport
@@ -9493,6 +8911,9 @@ paths:
               schema:
                 type: string
                 format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Log'
   /add/broker_2/tasks/rateTask/:
     post:
       operationId: AddBroker2TasksRateTask
@@ -9521,9 +8942,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractregular/competitors_2/export/table/:
     post:
       operationId: AbstractregularCompetitors2ExportTable
@@ -9552,9 +8970,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/export/table/:
     post:
       operationId: GetCompetitors2ExportTable
@@ -9584,9 +8999,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /abstractregular/competitors_2/export/tableToProject/:
     post:
       operationId: AbstractregularCompetitors2ExportTableToProject
@@ -9615,9 +9027,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/competitors_2/export/tableToProject/:
     post:
       operationId: AddCompetitors2ExportTableToProject
@@ -9647,9 +9056,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/competitors_2/orders/pay/:
     post:
       operationId: EditCompetitors2OrdersPay
@@ -9678,9 +9084,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/calendar/:
     post:
       operationId: GetContent2ApometrCalendar
@@ -9709,9 +9112,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/cHHistory/:
     post:
       operationId: GetContent2ApometrCHHistory
@@ -9774,9 +9174,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/keywords/:
     post:
       operationId: GetContent2ApometrKeywords
@@ -9837,9 +9234,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/journal/articles/:
     post:
       operationId: GetContent2JournalArticles
@@ -10031,9 +9425,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/content_2/pages/order/:
     post:
       operationId: EditContent2PagesOrder
@@ -10062,9 +9453,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/support/menu/:
     post:
       operationId: GetContent2SupportMenu
@@ -10093,9 +9481,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/informer_2/push/token/:
     post:
       operationId: AddInformer2PushToken
@@ -10124,9 +9509,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/informer_2/push/token/:
     post:
       operationId: DelInformer2PushToken
@@ -10155,9 +9537,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/keywords_2/collect/go/:
     post:
       operationId: EditKeywords2CollectGo
@@ -10186,9 +9565,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/keywords_2/collect/price/:
     post:
       operationId: GetKeywords2CollectPrice
@@ -10217,9 +9593,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/keywords_2/keywords/import/:
     post:
       operationId: AddKeywords2KeywordsImport
@@ -10252,9 +9625,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/keywords_2/volumes/go/:
     post:
       operationId: EditKeywords2VolumesGo
@@ -10345,9 +9715,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/mentions_2/checker/go/:
     post:
       operationId: EditMentions2CheckerGo
@@ -10376,9 +9743,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/mentions_2/checker/price/:
     post:
       operationId: GetMentions2CheckerPrice
@@ -10407,9 +9771,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/mentions_2/rules/keywords/:
     post:
       operationId: EditMentions2RulesKeywords
@@ -10562,9 +9923,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/subscriptions/next/:
     post:
       operationId: EditPayments2SubscriptionsNext
@@ -10598,9 +9956,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/tariff/delCard/:
     post:
       operationId: EditPayments2TariffDelCard
@@ -10629,9 +9984,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/tariff/nextToDiadoc/:
     post:
       operationId: EditPayments2TariffNextToDiadoc
@@ -10660,9 +10012,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/payments_2/tariff/setNext/:
     post:
       operationId: EditPayments2TariffSetNext
@@ -10691,9 +10040,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/positions_2/checker/go/:
     post:
       operationId: EditPositions2CheckerGo
@@ -10784,9 +10130,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/positions_2/searchers/regions/:
     post:
       operationId: AddPositions2SearchersRegions
@@ -10815,9 +10158,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/positions_2/searchers/regions/:
     post:
       operationId: DelPositions2SearchersRegions
@@ -10846,9 +10186,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/positions_2/searchers/regions/:
     post:
       operationId: EditPositions2SearchersRegions
@@ -10877,9 +10214,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/positions_2/searchers/sort/:
     post:
       operationId: EditPositions2SearchersSort
@@ -10908,9 +10242,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/analytics/graph/:
     post:
       operationId: GetProjects2AnalyticsGraph
@@ -10939,9 +10270,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/competitors/move/:
     post:
       operationId: EditProjects2CompetitorsMove
@@ -10970,9 +10298,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/competitors/name/:
     post:
       operationId: EditProjects2CompetitorsName
@@ -11001,9 +10326,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/competitors/on/:
     post:
       operationId: EditProjects2CompetitorsOn
@@ -11032,9 +10354,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/folders/move/:
     post:
       operationId: EditProjects2FoldersMove
@@ -11063,9 +10382,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/folders/moveFolder/:
     post:
       operationId: EditProjects2FoldersMoveFolder
@@ -11097,9 +10413,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/folders/name/:
     post:
       operationId: EditProjects2FoldersName
@@ -11128,9 +10441,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/master/hintsCompetitors/:
     post:
       operationId: GetProjects2MasterHintsCompetitors
@@ -11162,9 +10472,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/master/hintsKeywords/:
     post:
       operationId: GetProjects2MasterHintsKeywords
@@ -11196,9 +10503,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/projects_2/projects/copy/:
     post:
       operationId: AddProjects2ProjectsCopy
@@ -11227,9 +10531,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/projects/favorite/:
     post:
       operationId: EditProjects2ProjectsFavorite
@@ -11289,9 +10590,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/projects/name/:
     post:
       operationId: EditProjects2ProjectsName
@@ -11320,9 +10618,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/projects/on/:
     post:
       operationId: EditProjects2ProjectsOn
@@ -11413,9 +10708,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/projects/url/:
     post:
       operationId: EditProjects2ProjectsUrl
@@ -11444,9 +10736,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/projects_2/rights/changeOwner/:
     post:
       operationId: DelProjects2RightsChangeOwner
@@ -11475,9 +10764,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/projects_2/rights/changeOwner/:
     post:
       operationId: EditProjects2RightsChangeOwner
@@ -11506,9 +10792,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/rights/changeOwner/:
     post:
       operationId: GetProjects2RightsChangeOwner
@@ -11537,9 +10820,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/status/registrar/:
     post:
       operationId: GetProjects2StatusRegistrar
@@ -11574,9 +10854,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/status/ssl/:
     post:
       operationId: GetProjects2StatusSsl
@@ -11608,9 +10885,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/projects_2/tasks/volumes/:
     post:
       operationId: AddProjects2TasksVolumes
@@ -11639,9 +10913,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/quiz_2/questionsResponses/multi/:
     post:
       operationId: AddQuiz2QuestionsResponsesMulti
@@ -11670,9 +10941,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/redmine_2/users/groups/:
     post:
       operationId: GetRedmine2UsersGroups
@@ -11701,9 +10969,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/reports_2/positions/sendTest/:
     post:
       operationId: EditReports2PositionsSendTest
@@ -11732,9 +10997,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/schedule_2/settings/emailsHints/:
     post:
       operationId: GetSchedule2SettingsEmailsHints
@@ -11763,9 +11025,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/competitors/chart/:
     post:
       operationId: GetSnapshots2CompetitorsChart
@@ -11795,9 +11054,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/competitors/export/:
     post:
       operationId: GetSnapshots2CompetitorsExport
@@ -11827,9 +11083,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/history/export/:
     post:
       operationId: GetSnapshots2HistoryExport
@@ -11859,9 +11112,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/snapshots_2/history/links/:
     post:
       operationId: GetSnapshots2HistoryLinks
@@ -11890,9 +11140,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/system_2/api/genKey/:
     post:
       operationId: EditSystem2ApiGenKey
@@ -11921,9 +11168,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/api/test/:
     post:
       operationId: GetSystem2ApiTest
@@ -11952,9 +11196,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/cloud/download/:
     post:
       operationId: GetSystem2CloudDownload
@@ -12003,9 +11244,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/system_2/common/analytics/:
     post:
       operationId: AddSystem2CommonAnalytics
@@ -12057,9 +11295,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/common/openAPI/:
     post:
       operationId: GetSystem2CommonOpenAPI
@@ -12134,9 +11369,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/common/webScreensFree/:
     post:
       operationId: GetSystem2CommonWebScreensFree
@@ -12188,9 +11420,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/games/record/:
     post:
       operationId: GetSystem2GamesRecord
@@ -12219,9 +11448,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/system_2/log/error/:
     post:
       operationId: AddSystem2LogError
@@ -12250,9 +11476,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/system_2/properties/property/:
     post:
       operationId: EditSystem2PropertiesProperty
@@ -12284,9 +11507,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/tickets_2/admin/message/:
     post:
       operationId: DelTickets2AdminMessage
@@ -12315,9 +11535,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/admin/message/:
     post:
       operationId: EditTickets2AdminMessage
@@ -12346,9 +11563,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/tickets_2/admin/templates/:
     post:
       operationId: AddTickets2AdminTemplates
@@ -12377,9 +11591,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/tickets_2/admin/templates/:
     post:
       operationId: DelTickets2AdminTemplates
@@ -12408,9 +11619,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/admin/templates/:
     post:
       operationId: EditTickets2AdminTemplates
@@ -12439,9 +11647,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tickets_2/admin/templates/:
     post:
       operationId: GetTickets2AdminTemplates
@@ -12470,9 +11675,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/admin/ticket/:
     post:
       operationId: EditTickets2AdminTicket
@@ -12501,9 +11703,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/admin/ticketSplit/:
     post:
       operationId: EditTickets2AdminTicketSplit
@@ -12532,9 +11731,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tickets_2/admin/user/:
     post:
       operationId: GetTickets2AdminUser
@@ -12563,9 +11759,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/admin/userId/:
     post:
       operationId: EditTickets2AdminUserId
@@ -12594,9 +11787,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/tickets/adminComment/:
     post:
       operationId: EditTickets2TicketsAdminComment
@@ -12625,9 +11815,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tickets_2/tickets/info/:
     post:
       operationId: GetTickets2TicketsInfo
@@ -12659,9 +11846,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/tickets/setReaded/:
     post:
       operationId: EditTickets2TicketsSetReaded
@@ -12690,9 +11874,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/tickets/writing/:
     post:
       operationId: EditTickets2TicketsWriting
@@ -12721,9 +11902,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tpvsr_2/stat/referers/:
     post:
       operationId: GetTpvsr2StatReferers
@@ -12752,9 +11930,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/urls_2/import/recognizeLinkSitemapXml/:
     post:
       operationId: GetUrls2ImportRecognizeLinkSitemapXml
@@ -12783,9 +11958,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/users_2/join/email/:
     post:
       operationId: AddUsers2JoinEmail
@@ -12814,9 +11986,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/users_2/profile/avatar/:
     post:
       operationId: DelUsers2ProfileAvatar
@@ -12845,9 +12014,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/avatar/:
     post:
       operationId: EditUsers2ProfileAvatar
@@ -12876,9 +12042,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/profile/avatar/:
     post:
       operationId: GetUsers2ProfileAvatar
@@ -12907,9 +12070,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/currency/:
     post:
       operationId: EditUsers2ProfileCurrency
@@ -12938,9 +12098,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/email/:
     post:
       operationId: EditUsers2ProfileEmail
@@ -12969,9 +12126,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/lang/:
     post:
       operationId: EditUsers2ProfileLang
@@ -13000,9 +12154,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/pass/:
     post:
       operationId: EditUsers2ProfilePass
@@ -13031,9 +12182,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/retrievePass/:
     post:
       operationId: EditUsers2ProfileRetrievePass
@@ -13062,9 +12210,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/theme/:
     post:
       operationId: EditUsers2ProfileTheme
@@ -13093,9 +12238,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/timezone/:
     post:
       operationId: EditUsers2ProfileTimezone
@@ -13124,9 +12266,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/users_2/ranks/promocode/:
     post:
       operationId: AddUsers2RanksPromocode
@@ -13155,9 +12294,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/referrals/chartCountsByDate/:
     post:
       operationId: GetUsers2ReferralsChartCountsByDate
@@ -13186,9 +12322,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/users_2/referrals/invite/:
     post:
       operationId: AddUsers2ReferralsInvite
@@ -13217,9 +12350,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/stats/account/:
     post:
       operationId: GetUsers2StatsAccount
@@ -13248,9 +12378,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/accounting/group/filter/:
     post:
       operationId: AddAdmin2AccountingGroupFilter
@@ -13279,9 +12406,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/admin_2/accounting/group/filter/:
     post:
       operationId: DelAdmin2AccountingGroupFilter
@@ -13310,9 +12434,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/accounting/group/filter/:
     post:
       operationId: EditAdmin2AccountingGroupFilter
@@ -13341,9 +12462,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/accounting/invoices/file/:
     post:
       operationId: GetAdmin2AccountingInvoicesFile
@@ -13364,6 +12482,9 @@ paths:
               schema:
                 type: string
                 format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Invoices'
   /get/admin_2/accounting/operations/export/:
     post:
       operationId: GetAdmin2AccountingOperationsExport
@@ -13395,9 +12516,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/backup/keywords/:
     post:
       operationId: EditAdmin2ActionsBackupKeywords
@@ -13426,9 +12544,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/backup/loader/:
     post:
       operationId: EditAdmin2ActionsBackupLoader
@@ -13457,9 +12572,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/backup/project/:
     post:
       operationId: EditAdmin2ActionsBackupProject
@@ -13488,9 +12600,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/bank/referral/:
     post:
       operationId: EditAdmin2ActionsBankReferral
@@ -13519,9 +12628,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/actions/payments/diadoc/:
     post:
       operationId: AddAdmin2ActionsPaymentsDiadoc
@@ -13550,9 +12656,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/actions/positions/history/:
     post:
       operationId: AddAdmin2ActionsPositionsHistory
@@ -13581,9 +12684,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/positions/status/:
     post:
       operationId: EditAdmin2ActionsPositionsStatus
@@ -13612,9 +12712,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/projects/domain/:
     post:
       operationId: EditAdmin2ActionsProjectsDomain
@@ -13643,9 +12740,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/regions/commitGoogle/:
     post:
       operationId: EditAdmin2ActionsRegionsCommitGoogle
@@ -13674,9 +12768,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/regions/updateGoogle/:
     post:
       operationId: EditAdmin2ActionsRegionsUpdateGoogle
@@ -13706,9 +12797,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/robot/checks/:
     post:
       operationId: EditAdmin2ActionsRobotChecks
@@ -13737,9 +12825,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/robot/priority/:
     post:
       operationId: EditAdmin2ActionsRobotPriority
@@ -13768,9 +12853,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/robot/task/:
     post:
       operationId: EditAdmin2ActionsRobotTask
@@ -13799,9 +12881,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/admin_2/actions/slack/files/:
     post:
       operationId: DelAdmin2ActionsSlackFiles
@@ -13830,9 +12909,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/admin_2/actions/slack/messages/:
     post:
       operationId: DelAdmin2ActionsSlackMessages
@@ -13861,9 +12937,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/user/currency/:
     post:
       operationId: EditAdmin2ActionsUserCurrency
@@ -13892,9 +12965,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/user/email/:
     post:
       operationId: EditAdmin2ActionsUserEmail
@@ -13923,9 +12993,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/accounting/summaryForChart/:
     post:
       operationId: GetAdmin2AnalyticsAccountingSummaryForChart
@@ -13955,9 +13022,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/activity/chartByPeriod/:
     post:
       operationId: GetAdmin2AnalyticsActivityChartByPeriod
@@ -13987,9 +13051,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/competitors/summaryForOrdersChart/:
     post:
       operationId: GetAdmin2AnalyticsCompetitorsSummaryForOrdersChart
@@ -14019,9 +13080,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/payments/systems/:
     post:
       operationId: GetAdmin2AnalyticsPaymentsSystems
@@ -14051,9 +13109,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/payments/tariff/:
     post:
       operationId: GetAdmin2AnalyticsPaymentsTariff
@@ -14083,9 +13138,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/positions/chartByDayByHourAuto/:
     post:
       operationId: GetAdmin2AnalyticsPositionsChartByDayByHourAuto
@@ -14114,9 +13166,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/positions/chartByHourAuto/:
     post:
       operationId: GetAdmin2AnalyticsPositionsChartByHourAuto
@@ -14145,9 +13194,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/positions/chartByHour/:
     post:
       operationId: GetAdmin2AnalyticsPositionsChartByHour
@@ -14176,9 +13222,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/positions/chartCountUsersByHour/:
     post:
       operationId: GetAdmin2AnalyticsPositionsChartCountUsersByHour
@@ -14207,9 +13250,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/chartByMigrations/:
     post:
       operationId: GetAdmin2AnalyticsTicketsChartByMigrations
@@ -14239,9 +13279,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/chartByNew/:
     post:
       operationId: GetAdmin2AnalyticsTicketsChartByNew
@@ -14271,9 +13308,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/chartByRates/:
     post:
       operationId: GetAdmin2AnalyticsTicketsChartByRates
@@ -14303,9 +13337,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/chartByTags/:
     post:
       operationId: GetAdmin2AnalyticsTicketsChartByTags
@@ -14335,9 +13366,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/chartByWaitTime/:
     post:
       operationId: GetAdmin2AnalyticsTicketsChartByWaitTime
@@ -14367,9 +13395,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/analytics/tickets/messages/:
     post:
       operationId: GetAdmin2AnalyticsTicketsMessages
@@ -14399,9 +13424,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/logs/system/checked/:
     post:
       operationId: EditAdmin2LogsSystemChecked
@@ -14430,9 +13452,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/admin_2/users/informer/subscriptions/:
     post:
       operationId: GetAdmin2UsersInformerSubscriptions
@@ -14464,9 +13483,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/audit_2/audit/checker/go/:
     post:
       operationId: EditAudit2AuditCheckerGo
@@ -14557,9 +13573,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/audit/export/summary/:
     post:
       operationId: GetAudit2AuditExportSummary
@@ -14608,9 +13621,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/audit/log/chart/:
     post:
       operationId: GetAudit2AuditLogChart
@@ -14642,9 +13652,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/audit/results/export/:
     post:
       operationId: GetAudit2AuditResultsExport
@@ -14675,9 +13682,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/audit/results/page/:
     post:
       operationId: GetAudit2AuditResultsPage
@@ -14708,9 +13712,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/audit_2/indexing/checker/go/:
     post:
       operationId: EditAudit2IndexingCheckerGo
@@ -14804,9 +13805,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/indexing/export/toRepository/:
     post:
       operationId: GetAudit2IndexingExportToRepository
@@ -14855,9 +13853,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/audit_2/sitemap/checker/go/:
     post:
       operationId: EditAudit2SitemapCheckerGo
@@ -15010,9 +14005,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/audit_2/watcher/summary/chart/:
     post:
       operationId: GetAudit2WatcherSummaryChart
@@ -15041,9 +14033,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/export/byDomains/table/:
     post:
       operationId: GetCompetitors2ExportByDomainsTable
@@ -15099,9 +14088,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/export/byLeaders/table/:
     post:
       operationId: GetCompetitors2ExportByLeadersTable
@@ -15157,9 +14143,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/orders/byKeyword/info/:
     post:
       operationId: GetCompetitors2OrdersByKeywordInfo
@@ -15188,9 +14171,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/competitors_2/orders/byUrl/info/:
     post:
       operationId: GetCompetitors2OrdersByUrlInfo
@@ -15219,9 +14199,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/snapshots/top/:
     post:
       operationId: GetContent2ApometrSnapshotsTop
@@ -15250,9 +14227,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/text/calendar/:
     post:
       operationId: GetContent2ApometrTextCalendar
@@ -15281,9 +14255,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/text/updates/:
     post:
       operationId: GetContent2ApometrTextUpdates
@@ -15313,9 +14284,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/apometr/updates/dates/:
     post:
       operationId: GetContent2ApometrUpdatesDates
@@ -15345,9 +14313,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/content_2/journal/course/certificates/:
     post:
       operationId: AddContent2JournalCourseCertificates
@@ -15413,9 +14378,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/journal/course/certificates/:
     post:
       operationId: GetContent2JournalCourseCertificates
@@ -15444,9 +14406,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/journal/course/chapters/:
     post:
       operationId: GetContent2JournalCourseChapters
@@ -15577,9 +14536,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/keywords_2/collect/ext/price/:
     post:
       operationId: GetKeywords2CollectExtPrice
@@ -15608,9 +14564,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/positions_2/searchers/regions/export/:
     post:
       operationId: GetPositions2SearchersRegionsExport
@@ -15662,9 +14615,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/positions_2/searchers/regions/sort/:
     post:
       operationId: EditPositions2SearchersRegionsSort
@@ -15693,9 +14643,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/tasks/volumes/price/:
     post:
       operationId: GetProjects2TasksVolumesPrice
@@ -15724,9 +14671,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/projects_2/tasks/volumes/status/:
     post:
       operationId: GetProjects2TasksVolumesStatus
@@ -15856,9 +14800,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/tickets_2/admin/ticket/resourceAdmin/:
     post:
       operationId: EditTickets2AdminTicketResourceAdmin
@@ -15887,9 +14828,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tpvsr_2/stat/export/guestLinks/:
     post:
       operationId: GetTpvsr2StatExportGuestLinks
@@ -15918,9 +14856,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/tpvsr_2/stat/export/referrers/:
     post:
       operationId: GetTpvsr2StatExportReferrers
@@ -15949,9 +14884,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /del/users_2/profile/brand/logo/:
     post:
       operationId: DelUsers2ProfileBrandLogo
@@ -15980,9 +14912,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/users_2/profile/brand/logo/:
     post:
       operationId: EditUsers2ProfileBrandLogo
@@ -16011,9 +14940,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/users_2/ranks/promocode/twitter/:
     post:
       operationId: AddUsers2RanksPromocodeTwitter
@@ -16042,9 +14968,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/stats/account/listMonth/:
     post:
       operationId: GetUsers2StatsAccountListMonth
@@ -16073,9 +14996,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/stats/account/listProjects/:
     post:
       operationId: GetUsers2StatsAccountListProjects
@@ -16104,9 +15024,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/stats/account/listPs/:
     post:
       operationId: GetUsers2StatsAccountListPs
@@ -16135,9 +15052,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/stats/account/ps/:
     post:
       operationId: GetUsers2StatsAccountPs
@@ -16166,9 +15080,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/tpa/apple/auth/:
     post:
       operationId: GetUsers2TpaAppleAuth
@@ -16198,9 +15109,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/tpa/facebook/auth/:
     post:
       operationId: GetUsers2TpaFacebookAuth
@@ -16229,9 +15137,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/tpa/google/auth/:
     post:
       operationId: GetUsers2TpaGoogleAuth
@@ -16263,9 +15168,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/tpa/vk/auth/:
     post:
       operationId: GetUsers2TpaVkAuth
@@ -16295,9 +15197,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/users_2/tpa/yandex/auth/:
     post:
       operationId: GetUsers2TpaYandexAuth
@@ -16327,9 +15226,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/actions/positions/history/copy/:
     post:
       operationId: AddAdmin2ActionsPositionsHistoryCopy
@@ -16358,9 +15254,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/journal/course/certificates/byID/:
     post:
       operationId: GetContent2JournalCourseCertificatesByID
@@ -16389,9 +15282,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/content_2/journal/course/certificates/image/:
     post:
       operationId: GetContent2JournalCourseCertificatesImage
@@ -16420,9 +15310,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/informer_2/push/safari/webService/authToken/:
     post:
       operationId: GetInformer2PushSafariWebServiceAuthToken
@@ -16454,9 +15341,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/system_2/common/tests/speed/file/:
     post:
       operationId: GetSystem2CommonTestsSpeedFile
@@ -16778,9 +15662,26 @@ components:
         - filters
         - offset
       title: Получение примечаний
+    Models.Annotations:
+      properties:
+        id: {}
+        user_id:
+          nullable: true
+        project_id:
+          nullable: true
+        service:
+          nullable: true
+        target_id:
+          nullable: true
+        text:
+          nullable: true
+        create_time:
+          nullable: true
     Annotations_2.Methods.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Annotations'
     Pagination:
       type: object
       properties:
@@ -16797,21 +15698,6 @@ components:
           type: integer
       required: []
       title: Результаты пагинации
-    Models.Annotations:
-      properties:
-        id: {}
-        user_id:
-          nullable: true
-        project_id:
-          nullable: true
-        service:
-          nullable: true
-        target_id:
-          nullable: true
-        text:
-          nullable: true
-        create_time:
-          nullable: true
     App_2.Methods.Get:
       type: object
       properties: {}
@@ -16919,8 +15805,6 @@ components:
         Получение комментариев
 
         Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
-    Comments_2.Methods.Get.Exec:
-      type: array
     Models.Comments:
       properties:
         id: {}
@@ -16954,6 +15838,10 @@ components:
           nullable: true
         page_title:
           nullable: true
+    Comments_2.Methods.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Comments'
     Content_2.Types.Subdomain:
       type: string
       enum:
@@ -17042,8 +15930,6 @@ components:
         - filters
         - offset
       title: Получение списка упоминаний
-    Mentions_2.Methods.Get.Exec:
-      type: array
     Models.Mentions.Mentions:
       properties:
         id: {}
@@ -17073,6 +15959,10 @@ components:
           nullable: true
         need_send_report:
           nullable: true
+    Mentions_2.Methods.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Mentions.Mentions'
     Payments_2.Types.System:
       type: string
       enum:
@@ -17885,6 +16775,8 @@ components:
       title: Получение списка ссылок пользователя
     Tpvsr_2.Methods.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.ShortLink'
     Urls_2.Types.Flag:
       type: integer
       enum:
@@ -18238,6 +17130,8 @@ components:
     Votes_2.Methods.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Votes'
     Webscreens_2.Methods.Get:
       type: object
       properties:
@@ -18350,6 +17244,33 @@ components:
         - filters
         - offset
       title: Получение доступа к акаунту пользователя в режиме "призрак"
+    Models.Requisites:
+      properties:
+        LABEL():
+          nullable: true
+        id: {}
+        user_id:
+          nullable: true
+        country:
+          nullable: true
+        contract_date:
+          nullable: true
+        contract_type:
+          nullable: true
+        contract_balance:
+          nullable: true
+        contract_tariff_id:
+          nullable: true
+        data:
+          nullable: true
+        signed:
+          nullable: true
+        deleted:
+          nullable: true
+        edc_connected:
+          nullable: true
+        fromBase64Data:
+          nullable: true
     Admin_2.Methods.I18n.Get:
       type: object
       properties:
@@ -18517,9 +17438,6 @@ components:
         - orders
         - filters
         - offset
-    Admin_2.Methods.Ranks.Get.Exec:
-      nullable: true
-      type: array
     Models.Analytics.Ranks:
       properties:
         ACTIVATIONS():
@@ -18559,6 +17477,11 @@ components:
           nullable: true
         quitted_user:
           nullable: true
+    Admin_2.Methods.Ranks.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Analytics.Ranks'
     Admin_2.Types.Staff.Post:
       type: string
       enum:
@@ -18939,6 +17862,8 @@ components:
     Admin_2.Methods.Votes.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Votes'
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -18965,6 +17890,8 @@ components:
     Annotations_2.Methods.My.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Annotations'
     App_2.Methods.Actions.Get:
       type: object
       properties:
@@ -19482,6 +18409,8 @@ components:
     Audit_2.Methods.Indexing.Get.Exec:
       title: Список ссылок с данными по ним
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Urls'
     Audit_2.Types.Settings.WatcherType:
       type: string
       enum:
@@ -20176,33 +19105,6 @@ components:
       title: Получение списка договоров
     Bank_2.Methods.Requisites.Get.Exec:
       nullable: true
-    Models.Requisites:
-      properties:
-        LABEL():
-          nullable: true
-        id: {}
-        user_id:
-          nullable: true
-        country:
-          nullable: true
-        contract_date:
-          nullable: true
-        contract_type:
-          nullable: true
-        contract_balance:
-          nullable: true
-        contract_tariff_id:
-          nullable: true
-        data:
-          nullable: true
-        signed:
-          nullable: true
-        deleted:
-          nullable: true
-        edc_connected:
-          nullable: true
-        fromBase64Data:
-          nullable: true
     Bank_2.Methods.Ur.Get:
       type: object
       properties:
@@ -20300,9 +19202,6 @@ components:
         - filters
         - offset
       title: Получение объявления рекламной кампании
-    Broker_2.Methods.Ads.Get.Exec:
-      nullable: true
-      type: array
     Models.Broker.Ads:
       properties:
         id: {}
@@ -20338,6 +19237,11 @@ components:
           nullable: true
         timestamp:
           nullable: true
+    Broker_2.Methods.Ads.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Broker.Ads'
     Broker_2.Methods.Campaigns.Add:
       type: object
       properties:
@@ -20524,6 +19428,8 @@ components:
       title: Получение списка рекламных кампаний
     Broker_2.Methods.Campaigns.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Broker.Campaigns'
     Broker_2.Methods.Groups.Add:
       type: object
       properties:
@@ -20575,8 +19481,6 @@ components:
         - filters
         - offset
       title: Получение групп рекламной кампании
-    Broker_2.Methods.Groups.Get.Exec:
-      type: array
     Models.Broker.Groups:
       properties:
         GEN_SEARCH_STRING():
@@ -20618,6 +19522,10 @@ components:
           nullable: true
         P2L:
           nullable: true
+    Broker_2.Methods.Groups.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Broker.Groups'
     Broker_2.Methods.Keywords.Del:
       type: object
       properties:
@@ -20796,6 +19704,8 @@ components:
       title: Получение запросов рекламной кампании
     Broker_2.Methods.Keywords.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Broker.Keywords'
     Broker_2.Methods.Log.Get:
       type: object
       properties:
@@ -20823,9 +19733,6 @@ components:
         - filters
         - offset
       title: Получение логов
-    Broker_2.Methods.Log.Get.Exec:
-      nullable: true
-      type: array
     Models.Broker.Log:
       properties:
         COUNT(*):
@@ -20838,6 +19745,11 @@ components:
           nullable: true
         error:
           nullable: true
+    Broker_2.Methods.Log.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Broker.Log'
     Comments_2.Methods.ByAuthor.Get:
       type: object
       properties:
@@ -20868,6 +19780,8 @@ components:
     Comments_2.Methods.ByAuthor.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Comments'
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -21895,6 +20809,8 @@ components:
     Content_2.Methods.Pages.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Redirects.AbstractRegular:
       type: object
       properties:
@@ -22062,9 +20978,6 @@ components:
         - filters
         - offset
       title: Получение списка правил (для админов)
-    Content_2.Methods.Redirects.Get.Exec:
-      nullable: true
-      type: array
     Models.ContentsRedirects:
       properties:
         PATH_MASK():
@@ -22081,6 +20994,11 @@ components:
           nullable: true
         comments:
           nullable: true
+    Content_2.Methods.Redirects.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.ContentsRedirects'
     Content_2.Methods.Rss.Get:
       type: object
       properties:
@@ -22377,6 +21295,8 @@ components:
       title: Список задач cron
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.CronCommands'
     Cron_2.Methods.Get:
       type: object
       properties:
@@ -22404,6 +21324,8 @@ components:
       title: Список имен сервисов
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.CronCommands'
     TV.API.Types.BoolArray:
       type: array
       items:
@@ -23144,6 +22066,8 @@ components:
       title: Получение списка правил
     Mentions_2.Methods.Rules.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Mentions.Rules'
     Mentions_2.Types.SearcherKey:
       type: integer
       enum:
@@ -23251,6 +22175,8 @@ components:
       title: Получение списка поисковиков
     Mentions_2.Methods.Searchers.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Mentions.Searchers'
     Mentions_2.Types.Sentiment:
       type: string
       enum:
@@ -23895,6 +22821,8 @@ components:
     Projects_2.Methods.Projects.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Projects'
     Projects_2.Methods.Rights.Del:
       type: object
       properties:
@@ -23990,8 +22918,6 @@ components:
         - filters
         - offset
       title: Получение информации о выданных доступах к проекту
-    Projects_2.Methods.Rights.Get.Exec:
-      type: array
     Models.Projects.Rights:
       properties:
         COUNT_USER_ID():
@@ -24020,6 +22946,10 @@ components:
           nullable: true
         user_avatar:
           nullable: true
+    Projects_2.Methods.Rights.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Projects.Rights'
     Projects_2.Methods.Status.Get:
       type: object
       properties:
@@ -24201,10 +23131,6 @@ components:
         - filters
         - offset
       title: Получение вопроса
-    Quiz_2.Methods.Questions.Get.Exec:
-      title: Получение вопроса
-      nullable: true
-      type: array
     Models.Quizes.Questions:
       properties:
         ANSWERS():
@@ -24228,6 +23154,12 @@ components:
           nullable: true
         ord:
           nullable: true
+    Quiz_2.Methods.Questions.Get.Exec:
+      title: Получение вопроса
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Quizes.Questions'
     Quiz_2.Methods.QuestionsResponses.Add:
       type: object
       properties:
@@ -24314,6 +23246,8 @@ components:
     Quiz_2.Methods.WithQuestions.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Quizes'
     Recurring_2.Methods.RecurringCard.Del:
       type: object
       properties:
@@ -25761,9 +24695,6 @@ components:
         - filters
         - offset
       title: Получение списка тикетов с сообщениями
-    Tickets_2.Methods.Tickets.Get.Exec:
-      nullable: true
-      type: array
     Models.Tickets:
       properties:
         REQUISITES():
@@ -25857,6 +24788,11 @@ components:
           nullable: true
         message_noticed:
           nullable: true
+    Tickets_2.Methods.Tickets.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Tickets'
     Tpvsr_2.Types.Stat.Dimension.Type:
       type: string
       enum:
@@ -26325,9 +25261,6 @@ components:
         - filters
         - offset
       title: Получение достижений пользователя
-    Users_2.Methods.Ranks.Get.Exec:
-      nullable: true
-      type: array
     Models.Users.Ranks:
       properties:
         IS_VISIBLE():
@@ -26385,6 +25318,11 @@ components:
           nullable: true
         quitted_user:
           nullable: true
+    Users_2.Methods.Ranks.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Users.Ranks'
     Users_2.Methods.Referrals.Get:
       type: object
       properties:
@@ -26408,9 +25346,6 @@ components:
         - filters
         - offset
       title: Получение списка рефералов
-    Users_2.Methods.Referrals.Get.Exec:
-      nullable: true
-      type: array
     Models.Users.Referrals:
       properties:
         STATS():
@@ -26429,6 +25364,11 @@ components:
           nullable: true
         status:
           nullable: true
+    Users_2.Methods.Referrals.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Users.Referrals'
     Users_2.Methods.Reg.Add:
       type: object
       properties:
@@ -26633,11 +25573,13 @@ components:
         - filters
         - offset
       title: Получение групп
+    Models.EmptyModel:
+      properties: {}
     Admin_2.Methods.Accounting.Group.Get.Exec:
       nullable: true
       type: array
-    Models.EmptyModel:
-      properties: {}
+      items:
+        $ref: '#/components/schemas/Models.EmptyModel'
     Admin_2.Methods.Accounting.Invoices.Add:
       type: object
       properties:
@@ -27059,6 +26001,8 @@ components:
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.EmptyModel'
     Admin_2.Methods.Analytics.Activity.Get:
       type: object
       properties:
@@ -27269,6 +26213,8 @@ components:
       title: Получение тикетов
     Admin_2.Methods.Analytics.Tickets.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Tickets'
     Admin_2.Methods.I18n.Categories.Get:
       type: object
       properties: {}
@@ -27562,6 +26508,8 @@ components:
     Admin_2.Methods.Users.Promocodes.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Users.Verif'
     Admin_2.Types.Users.Ranks.Category:
       type: string
       enum:
@@ -27797,6 +26745,8 @@ components:
     Admin_2.Methods.Users.Ranks.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Admin.Users.Ranks'
     check_id:
       title: ID проверки аудита
       type: integer
@@ -28110,10 +27060,6 @@ components:
         - project_id
         - check_id
       title: Получение проверенных css
-    Audit_2.Methods.Audit.Css.Get.Exec:
-      title: Список проверенных css
-      nullable: true
-      type: array
     Models.Audit.Css:
       properties:
         COUNT(*):
@@ -28193,6 +27139,12 @@ components:
           nullable: true
         count_warnings:
           nullable: true
+    Audit_2.Methods.Audit.Css.Get.Exec:
+      title: Список проверенных css
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Css'
     Audit_2.Types.Audit.TargetType:
       type: string
       enum:
@@ -28276,10 +27228,6 @@ components:
         - project_id
         - check_id
       title: Получение проверенных изображений
-    Audit_2.Methods.Audit.Images.Get.Exec:
-      title: Список проверенных изображений
-      nullable: true
-      type: array
     Models.Audit.Images:
       properties:
         COUNT(*):
@@ -28369,6 +27317,12 @@ components:
           nullable: true
         count_warnings:
           nullable: true
+    Audit_2.Methods.Audit.Images.Get.Exec:
+      title: Список проверенных изображений
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Images'
     Audit_2.Methods.Audit.Js.Get:
       type: object
       properties:
@@ -28398,10 +27352,6 @@ components:
         - project_id
         - check_id
       title: Получение проверенных js
-    Audit_2.Methods.Audit.Js.Get.Exec:
-      title: Список проверенных js
-      nullable: true
-      type: array
     Models.Audit.Js:
       properties:
         COUNT(*):
@@ -28479,6 +27429,12 @@ components:
           nullable: true
         count_warnings:
           nullable: true
+    Audit_2.Methods.Audit.Js.Get.Exec:
+      title: Список проверенных js
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Js'
     Audit_2.Methods.Audit.Links.Get:
       type: object
       properties:
@@ -28508,10 +27464,6 @@ components:
         - project_id
         - check_id
       title: Получение проверенных ссылок
-    Audit_2.Methods.Audit.Links.Get.Exec:
-      title: Список проверенных ссылок
-      nullable: true
-      type: array
     Models.Audit.Links:
       properties:
         COUNT(*):
@@ -28598,6 +27550,12 @@ components:
           nullable: true
         count_warnings:
           nullable: true
+    Audit_2.Methods.Audit.Links.Get.Exec:
+      title: Список проверенных ссылок
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Links'
     Audit_2.Methods.Audit.Log.Get:
       type: object
       properties:
@@ -28674,10 +27632,6 @@ components:
         - project_id
         - check_id
       title: Получение страниц, по которым был выполнен аудит
-    Audit_2.Methods.Audit.Pages.Get.Exec:
-      title: Список страниц
-      nullable: true
-      type: array
     Models.Audit.Pages:
       properties:
         dummy_opener_summary_page:
@@ -28901,6 +27855,12 @@ components:
           nullable: true
         check_tbt_max:
           nullable: true
+    Audit_2.Methods.Audit.Pages.Get.Exec:
+      title: Список страниц
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Pages'
     Audit_2.Types.Audit.Summary.FilterCheckState:
       type: string
       enum:
@@ -28953,6 +27913,8 @@ components:
          - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Checks'
     Audit_2.Methods.Audit.SummaryPage.Get:
       type: object
       properties:
@@ -28990,6 +27952,8 @@ components:
       title: Сводка о выполненном аудите по одной странице
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Pages'
     Audit_2.Methods.Indexing.Export.Get:
       type: object
       properties:
@@ -29206,10 +28170,6 @@ components:
         - отчет генерируется на основе объекта watcher_results, а не urls
         - параметры выбора периода отчета игнорируются
         - выбор прверок регулируется параметрами запроса filters, limit и offset
-    Audit_2.Methods.Watcher.ByURL.Get.Exec:
-      title: Отчет по одному URL
-      nullable: true
-      type: array
     Models.Watcher.Results:
       properties:
         project_id:
@@ -29256,6 +28216,12 @@ components:
           nullable: true
         content_md5:
           nullable: true
+    Audit_2.Methods.Watcher.ByURL.Get.Exec:
+      title: Отчет по одному URL
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Watcher.Results'
     Audit_2.Methods.Watcher.Checks.Get:
       type: object
       properties:
@@ -29397,6 +28363,8 @@ components:
       title: Получение сводки проведенных операций
     Bank_2.Methods.History.Summary.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.BalanceHistory'
     Bank_2.Methods.Referrals.ToBonus.Edit:
       type: object
       properties:
@@ -29779,7 +28747,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -29878,9 +28846,6 @@ components:
           title: Название функции
           default: export_tableToProject
           type: string
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -29909,7 +28874,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -29941,7 +28906,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
-        - output
         - by_type
         - region_index
         - query
@@ -30012,9 +28976,6 @@ components:
           title: Название функции
           default: export_tableToProject
           type: string
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -30043,7 +29004,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -30075,7 +29036,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
-        - output
         - by_type
         - region_index
         - query
@@ -30219,8 +29179,6 @@ components:
       title: Получение истории urls, найденных в выдаче, за конкретную проверку
       description: '@deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get'
       deprecated: true
-    Content_2.Methods.Apometr.CHHistory.Get.Exec:
-      type: array
     Models.Apometr.History:
       properties:
         time:
@@ -30239,6 +29197,10 @@ components:
           nullable: true
         d_day:
           nullable: true
+    Content_2.Methods.Apometr.CHHistory.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Apometr.History'
     Content_2.Methods.Apometr.History.Get:
       type: object
       properties:
@@ -30389,6 +29351,8 @@ components:
       title: Получение статьи
     Content_2.Methods.Journal.Articles.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.BookmarksAuthors.Get:
       type: object
       properties:
@@ -30414,6 +29378,8 @@ components:
       title: Получение закладок авторов
     Content_2.Methods.Journal.BookmarksAuthors.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.Bookmarks.Get:
       type: object
       properties:
@@ -30439,6 +29405,8 @@ components:
       title: Получение закладок
     Content_2.Methods.Journal.Bookmarks.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.Course.Get:
       type: object
       properties:
@@ -30472,6 +29440,8 @@ components:
     Content_2.Methods.Journal.Course.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.Rubrics.Get:
       type: object
       properties:
@@ -30498,6 +29468,8 @@ components:
     Content_2.Methods.Journal.Rubrics.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.Subscribe.Edit:
       type: object
       properties:
@@ -34943,7 +33915,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -35069,7 +34041,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -35153,7 +34125,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -35279,7 +34251,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -35570,6 +34542,8 @@ components:
          - lessons - см. includeLessons()
     Content_2.Methods.Journal.Course.Chapters.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get:
       type: object
       properties:
@@ -35635,6 +34609,8 @@ components:
     Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Keywords_2.Types.Collect.Ext.Type:
       type: string
       enum:

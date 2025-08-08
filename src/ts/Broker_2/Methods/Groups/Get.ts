@@ -21,7 +21,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Broker_2.Methods.Groups.Get.Exec": unknown[];
+        "Broker_2.Methods.Groups.Get.Exec": import('../../../Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'][];
     };
     responses: never;
     parameters: never;

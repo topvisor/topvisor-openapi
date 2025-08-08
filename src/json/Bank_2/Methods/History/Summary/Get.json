@@ -41,7 +41,10 @@
                 "title": "Получение сводки проведенных операций"
             },
             "Bank_2.Methods.History.Summary.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory"
+                }
             }
         }
     }

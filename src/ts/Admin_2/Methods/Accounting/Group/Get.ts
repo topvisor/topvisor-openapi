@@ -17,7 +17,7 @@ export interface components {
             offset: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Admin_2.Methods.Accounting.Group.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Accounting.Group.Get.Exec": import('../../../../Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
     };
     responses: never;
     parameters: never;

@@ -19,7 +19,7 @@ export interface components {
             offset: import('../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Mentions_2.Methods.Get.Exec": unknown[];
+        "Mentions_2.Methods.Get.Exec": import('../../Models/Mentions/Mentions.ts').components['schemas']['Models.Mentions.Mentions'][];
     };
     responses: never;
     parameters: never;

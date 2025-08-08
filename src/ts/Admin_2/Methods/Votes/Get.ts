@@ -16,7 +16,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Admin_2.Methods.Votes.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Votes.Get.Exec": import('../../../Models/Votes.ts').components['schemas']['Models.Votes'][] | null;
     };
     responses: never;
     parameters: never;

@@ -62,7 +62,7 @@ export interface components {
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Список ссылок с данными по ним */
-        "Audit_2.Methods.Indexing.Get.Exec": unknown[];
+        "Audit_2.Methods.Indexing.Get.Exec": import('../../../Models/Urls.ts').components['schemas']['Models.Urls'][];
     };
     responses: never;
     parameters: never;

@@ -43,7 +43,10 @@
             "Cron_2.Methods.Commands.Get.Exec": {
                 "title": "Список задач cron",
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/CronCommands.json#/components/schemas/Models.CronCommands"
+                }
             }
         }
     }

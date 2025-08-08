@@ -19,7 +19,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Comments_2.Methods.ByAuthor.Get.Exec": unknown[] | null;
+        "Comments_2.Methods.ByAuthor.Get.Exec": import('../../../Models/Comments.ts').components['schemas']['Models.Comments'][] | null;
     };
     responses: never;
     parameters: never;

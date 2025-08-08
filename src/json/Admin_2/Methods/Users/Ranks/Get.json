@@ -42,7 +42,10 @@
             },
             "Admin_2.Methods.Users.Ranks.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
+                }
             }
         }
     }

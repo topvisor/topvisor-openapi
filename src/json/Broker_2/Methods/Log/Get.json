@@ -47,7 +47,10 @@
             },
             "Broker_2.Methods.Log.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Broker/Log.json#/components/schemas/Models.Broker.Log"
+                }
             }
         }
     }

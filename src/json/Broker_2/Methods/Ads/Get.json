@@ -47,7 +47,10 @@
             },
             "Broker_2.Methods.Ads.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Broker/Ads.json#/components/schemas/Models.Broker.Ads"
+                }
             }
         }
     }

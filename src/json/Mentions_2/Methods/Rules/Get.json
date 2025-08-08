@@ -46,7 +46,10 @@
                 "title": "Получение списка правил"
             },
             "Mentions_2.Methods.Rules.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Mentions/Rules.json#/components/schemas/Models.Mentions.Rules"
+                }
             }
         }
     }

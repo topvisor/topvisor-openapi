@@ -50,7 +50,10 @@
                 "title": "Получение списка рекламных кампаний"
             },
             "Broker_2.Methods.Campaigns.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
+                }
             }
         }
     }

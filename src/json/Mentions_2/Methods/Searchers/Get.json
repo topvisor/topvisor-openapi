@@ -51,7 +51,10 @@
                 "title": "Получение списка поисковиков"
             },
             "Mentions_2.Methods.Searchers.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
+                }
             }
         }
     }

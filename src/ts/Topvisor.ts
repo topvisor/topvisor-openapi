@@ -9188,7 +9188,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Analytics_2/Methods/Add.ts').components['schemas']['Analytics_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9214,7 +9213,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Annotations_2/Methods/Add.ts').components['schemas']['Annotations_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9240,7 +9238,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Annotations_2/Methods/Del.ts').components['schemas']['Annotations_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9266,7 +9263,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Annotations_2/Methods/Edit.ts').components['schemas']['Annotations_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9341,7 +9337,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Comments_2/Methods/Add.ts').components['schemas']['Comments_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9367,7 +9362,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Comments_2/Methods/Del.ts').components['schemas']['Comments_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9393,7 +9387,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Comments_2/Methods/Edit.ts').components['schemas']['Comments_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9445,7 +9438,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Get.ts').components['schemas']['Content_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9497,7 +9489,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Add.ts').components['schemas']['Payments_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9549,7 +9540,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Qr_2/Methods/Get.ts').components['schemas']['Qr_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9575,7 +9565,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Add.ts').components['schemas']['Quiz_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9601,7 +9590,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Edit.ts').components['schemas']['Quiz_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9653,7 +9641,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Recurring_2/Methods/Edit.ts').components['schemas']['Recurring_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9679,7 +9666,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/AbstractRegular.ts').components['schemas']['Schedule_2.Methods.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9705,7 +9691,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/Del.ts').components['schemas']['Schedule_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9731,7 +9716,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/Edit.ts').components['schemas']['Schedule_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9757,7 +9741,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/Get.ts').components['schemas']['Schedule_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9783,7 +9766,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tags_2/Methods/Edit.ts').components['schemas']['Tags_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9809,7 +9791,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tags_2/Methods/Get.ts').components['schemas']['Tags_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9835,7 +9816,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Add.ts').components['schemas']['Templates_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9861,7 +9841,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Del.ts').components['schemas']['Templates_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9887,7 +9866,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Edit.ts').components['schemas']['Templates_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9913,7 +9891,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Get.ts').components['schemas']['Templates_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -9939,7 +9916,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Add.ts').components['schemas']['Tpvsr_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10095,7 +10071,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Get.ts').components['schemas']['Users_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10196,7 +10171,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/AbstractRegular.ts').components['schemas']['Admin_2.Methods.Actions.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10220,6 +10194,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Requisites.ts').components['schemas']['Models.Requisites'];
                 };
             };
         };
@@ -10245,7 +10220,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/I18n/Get.ts').components['schemas']['Admin_2.Methods.I18n.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10271,7 +10245,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Informer/Add.ts').components['schemas']['Admin_2.Methods.Informer.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10297,7 +10270,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Logs/Edit.ts').components['schemas']['Admin_2.Methods.Logs.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10323,7 +10295,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Logs/Get.ts').components['schemas']['Admin_2.Methods.Logs.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10375,7 +10346,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Staff/Add.ts').components['schemas']['Admin_2.Methods.Staff.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10401,7 +10371,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Staff/Edit.ts').components['schemas']['Admin_2.Methods.Staff.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10453,7 +10422,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/TariffChangeExpire/Edit.ts').components['schemas']['Admin_2.Methods.TariffChangeExpire.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10479,7 +10447,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Tpl/Get.ts').components['schemas']['Admin_2.Methods.Tpl.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10609,7 +10576,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./App_2/Methods/Actions/Get.ts').components['schemas']['App_2.Methods.Actions.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10635,7 +10601,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./App_2/Methods/Privacy/Get.ts').components['schemas']['App_2.Methods.Privacy.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10661,7 +10626,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/CountUrls/Get.ts').components['schemas']['Audit_2.Methods.CountUrls.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10713,7 +10677,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Settings/Edit.ts').components['schemas']['Audit_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10739,7 +10702,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Settings/Get.ts').components['schemas']['Audit_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10765,7 +10727,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10791,7 +10752,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Bank/Get.ts').components['schemas']['Bank_2.Methods.Bank.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10843,7 +10803,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Info/Get.ts').components['schemas']['Bank_2.Methods.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10869,7 +10828,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Requisites/Add.ts').components['schemas']['Bank_2.Methods.Requisites.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10895,7 +10853,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Requisites/Del.ts').components['schemas']['Bank_2.Methods.Requisites.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10921,7 +10878,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Requisites/Edit.ts').components['schemas']['Bank_2.Methods.Requisites.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10973,7 +10929,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Ur/Get.ts').components['schemas']['Bank_2.Methods.Ur.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -10999,7 +10954,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Ads/Edit.ts').components['schemas']['Broker_2.Methods.Ads.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11155,7 +11109,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Groups/Add.ts').components['schemas']['Broker_2.Methods.Groups.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11207,7 +11160,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Keywords/Del.ts').components['schemas']['Broker_2.Methods.Keywords.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11337,7 +11289,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Comments_2/Methods/Like/Edit.ts').components['schemas']['Comments_2.Methods.Like.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11363,7 +11314,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Charts/Get.ts').components['schemas']['Competitors_2.Methods.Charts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11389,7 +11339,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Dates/Get.ts').components['schemas']['Competitors_2.Methods.Dates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11415,7 +11364,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/Del.ts').components['schemas']['Competitors_2.Methods.Orders.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11441,7 +11389,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/Get.ts').components['schemas']['Competitors_2.Methods.Orders.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11467,7 +11414,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Queries/Get.ts').components['schemas']['Competitors_2.Methods.Queries.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11493,7 +11439,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Table/Get.ts').components['schemas']['Competitors_2.Methods.Table.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11519,7 +11464,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/TableSummary/Get.ts').components['schemas']['Competitors_2.Methods.TableSummary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11545,7 +11489,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Authors/Edit.ts').components['schemas']['Content_2.Methods.Authors.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11597,7 +11540,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/BookmarkAuthor/Edit.ts').components['schemas']['Content_2.Methods.BookmarkAuthor.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11623,7 +11565,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Bookmark/Edit.ts').components['schemas']['Content_2.Methods.Bookmark.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11649,7 +11590,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Like/Edit.ts').components['schemas']['Content_2.Methods.Like.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11805,7 +11745,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Redirects/AbstractRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11831,7 +11770,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Redirects/Add.ts').components['schemas']['Content_2.Methods.Redirects.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11857,7 +11795,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Redirects/Del.ts').components['schemas']['Content_2.Methods.Redirects.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11883,7 +11820,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Redirects/Edit.ts').components['schemas']['Content_2.Methods.Redirects.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -11961,7 +11897,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Search/Get.ts').components['schemas']['Content_2.Methods.Search.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12013,7 +11948,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Tags/Get.ts').components['schemas']['Content_2.Methods.Tags.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12169,7 +12103,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Example_2/Methods/Array/Get.ts').components['schemas']['Example_2.Methods.Array.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12195,7 +12128,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Example_2/Methods/Custom/Get.ts').components['schemas']['Example_2.Methods.Custom.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12221,7 +12153,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Example_2/Methods/Enum/Get.ts').components['schemas']['Example_2.Methods.Enum.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12247,7 +12178,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Example_2/Methods/Object/Get.ts').components['schemas']['Example_2.Methods.Object.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12299,7 +12229,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Example_2/Methods/Test/Get.ts').components['schemas']['Example_2.Methods.Test.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12325,7 +12254,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Config/Edit.ts').components['schemas']['Informer_2.Methods.Config.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12351,7 +12279,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Config/Get.ts').components['schemas']['Informer_2.Methods.Config.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12377,7 +12304,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Info/Get.ts').components['schemas']['Informer_2.Methods.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12403,7 +12329,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Informer/Del.ts').components['schemas']['Informer_2.Methods.Informer.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12429,7 +12354,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Informer/Get.ts').components['schemas']['Informer_2.Methods.Informer.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12533,7 +12457,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Mentions_2/Methods/Rules/Add.ts').components['schemas']['Mentions_2.Methods.Rules.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12611,7 +12534,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Mentions_2/Methods/Searchers/Add.ts').components['schemas']['Mentions_2.Methods.Searchers.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12738,7 +12660,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Companies/Get.ts').components['schemas']['Payments_2.Methods.Companies.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12764,7 +12685,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/ContractSign/Edit.ts').components['schemas']['Payments_2.Methods.ContractSign.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12790,7 +12710,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/NextRequisitesId/Edit.ts').components['schemas']['Payments_2.Methods.NextRequisitesId.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12816,7 +12735,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Subscriptions/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12842,7 +12760,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/UrTinkoffCreateApplication/Add.ts').components['schemas']['Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12868,7 +12785,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/ValidateMerchantCardAP/Get.ts').components['schemas']['Payments_2.Methods.ValidateMerchantCardAP.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12894,7 +12810,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Add.ts').components['schemas']['Positions_2.Methods.Searchers.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12920,7 +12835,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Del.ts').components['schemas']['Positions_2.Methods.Searchers.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12946,7 +12860,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Settings/Edit.ts').components['schemas']['Positions_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12972,7 +12885,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Analytics/Add.ts').components['schemas']['Projects_2.Methods.Analytics.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -12998,7 +12910,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Analytics/Del.ts').components['schemas']['Projects_2.Methods.Analytics.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13024,7 +12935,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Analytics/Edit.ts').components['schemas']['Projects_2.Methods.Analytics.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13050,7 +12960,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Analytics/Get.ts').components['schemas']['Projects_2.Methods.Analytics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13076,7 +12985,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/Add.ts').components['schemas']['Projects_2.Methods.Competitors.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13102,7 +13010,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/Del.ts').components['schemas']['Projects_2.Methods.Competitors.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13128,7 +13035,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/Get.ts').components['schemas']['Projects_2.Methods.Competitors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13154,7 +13060,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Folders/Add.ts').components['schemas']['Projects_2.Methods.Folders.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13232,7 +13137,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Projects/Add.ts').components['schemas']['Projects_2.Methods.Projects.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13310,7 +13214,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/Del.ts').components['schemas']['Projects_2.Methods.Rights.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13336,7 +13239,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/Edit.ts').components['schemas']['Projects_2.Methods.Rights.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13388,7 +13290,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Status/Get.ts').components['schemas']['Projects_2.Methods.Status.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13440,7 +13341,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Questions/AbstractRegular.ts').components['schemas']['Quiz_2.Methods.Questions.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13466,7 +13366,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Questions/Add.ts').components['schemas']['Quiz_2.Methods.Questions.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13492,7 +13391,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Questions/Del.ts').components['schemas']['Quiz_2.Methods.Questions.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13518,7 +13416,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Questions/Edit.ts').components['schemas']['Quiz_2.Methods.Questions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13570,7 +13467,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/QuestionsResponses/Add.ts').components['schemas']['Quiz_2.Methods.QuestionsResponses.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13596,7 +13492,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Results/Del.ts').components['schemas']['Quiz_2.Methods.Results.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13622,7 +13517,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/Results/Get.ts').components['schemas']['Quiz_2.Methods.Results.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13648,7 +13542,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/ResultsUsers/Get.ts').components['schemas']['Quiz_2.Methods.ResultsUsers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13700,7 +13593,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Recurring_2/Methods/RecurringCard/Del.ts').components['schemas']['Recurring_2.Methods.RecurringCard.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13726,7 +13618,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Recurring_2/Methods/RecurringCard/Get.ts').components['schemas']['Recurring_2.Methods.RecurringCard.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13752,7 +13643,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/Settings/Edit.ts').components['schemas']['Schedule_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13778,7 +13668,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/Settings/Get.ts').components['schemas']['Schedule_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13804,7 +13693,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Sms_2/Methods/CheckPIN/Get.ts').components['schemas']['Sms_2.Methods.CheckPIN.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13830,7 +13718,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Sms_2/Methods/SendPIN/Get.ts').components['schemas']['Sms_2.Methods.SendPIN.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13856,7 +13743,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.Competitors.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13882,7 +13768,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13908,7 +13793,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/HiddenDomains/Edit.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13934,7 +13818,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/HiddenDomains/Get.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13960,7 +13843,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/History/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.History.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -13986,7 +13868,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/History/Get.ts').components['schemas']['Snapshots_2.Methods.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14012,7 +13893,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Calls/Get.ts').components['schemas']['System_2.Methods.Calls.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14038,7 +13918,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Cloud/Add.ts').components['schemas']['System_2.Methods.Cloud.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14064,7 +13943,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Cloud/Del.ts').components['schemas']['System_2.Methods.Cloud.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14090,7 +13968,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Cloud/Get.ts').components['schemas']['System_2.Methods.Cloud.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14116,7 +13993,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Tpl/Get.ts').components['schemas']['System_2.Methods.Tpl.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14142,7 +14018,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/AvailableFieldsData/Get.ts').components['schemas']['Templates_2.Methods.AvailableFieldsData.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14168,7 +14043,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Fields/Del.ts').components['schemas']['Templates_2.Methods.Fields.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14194,7 +14068,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Fields/Edit.ts').components['schemas']['Templates_2.Methods.Fields.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14220,7 +14093,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Fields/Get.ts').components['schemas']['Templates_2.Methods.Fields.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14246,7 +14118,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Templates_2/Methods/FieldsProperties/Get.ts').components['schemas']['Templates_2.Methods.FieldsProperties.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14272,7 +14143,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Files/Add.ts').components['schemas']['Tickets_2.Methods.Files.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14298,7 +14168,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Files/Del.ts').components['schemas']['Tickets_2.Methods.Files.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14324,7 +14193,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Files/Get.ts').components['schemas']['Tickets_2.Methods.Files.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14350,7 +14218,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Messages/Add.ts').components['schemas']['Tickets_2.Methods.Messages.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14376,7 +14243,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Rate/Edit.ts').components['schemas']['Tickets_2.Methods.Rate.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14402,7 +14268,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/Add.ts').components['schemas']['Tickets_2.Methods.Tickets.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14428,7 +14293,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14480,7 +14344,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Stat/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14506,7 +14369,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Tags/Edit.ts').components['schemas']['Tpvsr_2.Methods.Tags.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14532,7 +14394,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Title/Get.ts').components['schemas']['Tpvsr_2.Methods.Title.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14556,6 +14417,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -14581,7 +14443,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Urls_2/Methods/Import/Add.ts').components['schemas']['Urls_2.Methods.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14633,7 +14494,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Auth/Get.ts').components['schemas']['Users_2.Methods.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14659,7 +14519,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Logout/Get.ts').components['schemas']['Users_2.Methods.Logout.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14685,7 +14544,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/AbstractRegular.ts').components['schemas']['Users_2.Methods.Profile.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14711,7 +14569,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Edit.ts').components['schemas']['Users_2.Methods.Profile.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14737,7 +14594,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Ranks/Add.ts').components['schemas']['Users_2.Methods.Ranks.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14815,7 +14671,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Reg/Add.ts').components['schemas']['Users_2.Methods.Reg.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14841,7 +14696,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/TelegramAccounts/Get.ts').components['schemas']['Users_2.Methods.TelegramAccounts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14867,7 +14721,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Xml/Get.ts').components['schemas']['Users_2.Methods.Xml.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14893,7 +14746,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Votes_2/Methods/Comment/Edit.ts').components['schemas']['Votes_2.Methods.Comment.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14919,7 +14771,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Counteragents/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Counteragents.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -14971,7 +14822,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Group/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15023,7 +14873,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Invoices/Add.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15127,7 +14976,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Bank/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Bank.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15153,7 +15001,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Payments/Del.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15179,7 +15026,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Payments/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15205,7 +15051,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Positions/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15231,7 +15076,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Projects/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15257,7 +15101,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Projects/Get.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15283,7 +15126,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Telegram/Add.ts').components['schemas']['Admin_2.Methods.Actions.Telegram.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15309,7 +15151,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Affiliate/ReferralProgramStats/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15335,7 +15176,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15361,7 +15201,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Affiliate/Referrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrals.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15387,7 +15226,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15413,7 +15251,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Affiliate/Referrers/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15465,7 +15302,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Activity/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Activity.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15491,7 +15327,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/CountOnlineUsers/Get.ts').components['schemas']['Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15543,7 +15378,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Payments/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15569,7 +15403,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15595,7 +15428,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Statistics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Statistics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15621,7 +15453,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15673,7 +15504,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/I18n/Categories/Get.ts').components['schemas']['Admin_2.Methods.I18n.Categories.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15699,7 +15529,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Logs/System/Get.ts').components['schemas']['Admin_2.Methods.Logs.System.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15751,7 +15580,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Slack/Rate/Get.ts').components['schemas']['Admin_2.Methods.Slack.Rate.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15803,7 +15631,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Staff/ByPost/Get.ts').components['schemas']['Admin_2.Methods.Staff.ByPost.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15852,7 +15679,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Staff/Posts/Get.ts').components['schemas']['Admin_2.Methods.Staff.Posts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15878,7 +15704,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Staff/Vacation/Add.ts').components['schemas']['Admin_2.Methods.Staff.Vacation.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15904,7 +15729,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Staff/Vacation/Del.ts').components['schemas']['Admin_2.Methods.Staff.Vacation.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -15953,7 +15777,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Tpl/Schema/Get.ts').components['schemas']['Admin_2.Methods.Tpl.Schema.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16109,7 +15932,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Browse/Get.ts').components['schemas']['Audit_2.Methods.Audit.Browse.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16289,7 +16111,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Log/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16393,7 +16214,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Export/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16419,7 +16239,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16445,7 +16264,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Summary/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16497,7 +16315,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Checks/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16523,7 +16340,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Summary/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16549,7 +16365,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Diadoc/SendContract/Get.ts').components['schemas']['Bank_2.Methods.Diadoc.SendContract.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16575,7 +16390,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Diadoc/SendTotalReceipt/Get.ts').components['schemas']['Bank_2.Methods.Diadoc.SendTotalReceipt.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16650,7 +16464,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Referrals/ToBonus/Edit.ts').components['schemas']['Bank_2.Methods.Referrals.ToBonus.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16676,7 +16489,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Requisites/ContractTariffId/Get.ts').components['schemas']['Bank_2.Methods.Requisites.ContractTariffId.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16725,7 +16537,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Requisites/PrintTotalReceipt/Get.ts').components['schemas']['Bank_2.Methods.Requisites.PrintTotalReceipt.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16774,7 +16585,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Bank_2/Methods/Subscriptions/Plans/Get.ts').components['schemas']['Bank_2.Methods.Subscriptions.Plans.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16800,7 +16610,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Ads/Status/Edit.ts').components['schemas']['Broker_2.Methods.Ads.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16826,7 +16635,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Ads/ToModerate/Edit.ts').components['schemas']['Broker_2.Methods.Ads.ToModerate.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16878,7 +16686,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Groups/Editor/Get.ts').components['schemas']['Broker_2.Methods.Groups.Editor.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16904,7 +16711,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Keywords/Status/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16928,6 +16734,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'];
                 };
             };
         };
@@ -16953,7 +16760,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Broker_2/Methods/Tasks/RateTask/Add.ts').components['schemas']['Broker_2.Methods.Tasks.RateTask.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -16979,7 +16785,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/Table/AbstractRegular.ts').components['schemas']['Competitors_2.Methods.Export.Table.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17005,7 +16810,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/Table/Get.ts').components['schemas']['Competitors_2.Methods.Export.Table.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17031,7 +16835,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/TableToProject/AbstractRegular.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17057,7 +16860,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17083,7 +16885,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/Pay/Edit.ts').components['schemas']['Competitors_2.Methods.Orders.Pay.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17109,7 +16910,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Calendar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17161,7 +16961,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/History/Get.ts').components['schemas']['Content_2.Methods.Apometr.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17213,7 +17012,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Updates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Updates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17369,7 +17167,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Subscribe/Edit.ts').components['schemas']['Content_2.Methods.Journal.Subscribe.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17395,7 +17192,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Pages/Order/Edit.ts').components['schemas']['Content_2.Methods.Pages.Order.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17421,7 +17217,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Support/Menu/Get.ts').components['schemas']['Content_2.Methods.Support.Menu.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17447,7 +17242,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Push/Token/Add.ts').components['schemas']['Informer_2.Methods.Push.Token.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17473,7 +17267,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Push/Token/Del.ts').components['schemas']['Informer_2.Methods.Push.Token.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17499,7 +17292,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Collect/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Collect.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17525,7 +17317,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Collect/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17551,7 +17342,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Keywords/Import/Add.ts').components['schemas']['Keywords_2.Methods.Keywords.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17629,7 +17419,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Landings_2/Methods/Hr/Feedback/Add.ts').components['schemas']['Landings_2.Methods.Hr.Feedback.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17655,7 +17444,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Mentions_2/Methods/Checker/Go/Edit.ts').components['schemas']['Mentions_2.Methods.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17681,7 +17469,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Mentions_2/Methods/Checker/Price/Get.ts').components['schemas']['Mentions_2.Methods.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17811,7 +17598,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Recurrent/Suspend/Edit.ts').components['schemas']['Payments_2.Methods.Recurrent.Suspend.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17837,7 +17623,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Subscriptions/Next/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Next.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17863,7 +17648,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Tariff/DelCard/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.DelCard.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17889,7 +17673,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Tariff/NextToDiadoc/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.NextToDiadoc.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17915,7 +17698,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Tariff/SetNext/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.SetNext.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -17993,7 +17775,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Enabled/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Enabled.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18019,7 +17800,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Regions/Add.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18045,7 +17825,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Regions/Del.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18071,7 +17850,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Regions/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18097,7 +17875,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Sort/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18123,7 +17900,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Analytics/Graph/Get.ts').components['schemas']['Projects_2.Methods.Analytics.Graph.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18149,7 +17925,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/Move/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18175,7 +17950,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/Name/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Name.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18201,7 +17975,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/On/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.On.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18227,7 +18000,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Folders/Move/Edit.ts').components['schemas']['Projects_2.Methods.Folders.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18253,7 +18025,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Folders/MoveFolder/Edit.ts').components['schemas']['Projects_2.Methods.Folders.MoveFolder.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18279,7 +18050,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Folders/Name/Edit.ts').components['schemas']['Projects_2.Methods.Folders.Name.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18305,7 +18075,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Master/HintsCompetitors/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsCompetitors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18331,7 +18100,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Master/HintsKeywords/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsKeywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18357,7 +18125,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Projects/Copy/Add.ts').components['schemas']['Projects_2.Methods.Projects.Copy.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18409,7 +18176,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Projects/Move/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18435,7 +18201,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Projects/Name/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Name.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18513,7 +18278,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Projects/Tags/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Tags.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18539,7 +18303,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Projects/Url/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Url.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18565,7 +18328,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/ChangeOwner/Del.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18591,7 +18353,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/ChangeOwner/Edit.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18617,7 +18378,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/ChangeOwner/Get.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18643,7 +18403,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Status/Registrar/Get.ts').components['schemas']['Projects_2.Methods.Status.Registrar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18669,7 +18428,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Status/Ssl/Get.ts').components['schemas']['Projects_2.Methods.Status.Ssl.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18695,7 +18453,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Volumes/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18721,7 +18478,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/QuestionsResponses/Multi/Add.ts').components['schemas']['Quiz_2.Methods.QuestionsResponses.Multi.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18747,7 +18503,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Redmine_2/Methods/Users/Groups/Get.ts').components['schemas']['Redmine_2.Methods.Users.Groups.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18773,7 +18528,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Reports_2/Methods/Positions/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.Positions.SendTest.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18799,7 +18553,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Schedule_2/Methods/Settings/EmailsHints/Get.ts').components['schemas']['Schedule_2.Methods.Settings.EmailsHints.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18825,7 +18578,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/Chart/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18851,7 +18603,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/Export/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18877,7 +18628,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/History/Export/Get.ts').components['schemas']['Snapshots_2.Methods.History.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18903,7 +18653,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/History/Links/Get.ts').components['schemas']['Snapshots_2.Methods.History.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18929,7 +18678,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Api/GenKey/Edit.ts').components['schemas']['System_2.Methods.Api.GenKey.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -18955,7 +18703,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Api/Test/Get.ts').components['schemas']['System_2.Methods.Api.Test.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19004,7 +18751,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Cloud/Rename/Edit.ts').components['schemas']['System_2.Methods.Cloud.Rename.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19053,7 +18799,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Common/CompetitorsQueries/Get.ts').components['schemas']['System_2.Methods.Common.CompetitorsQueries.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19125,7 +18870,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Common/Regions/Get.ts').components['schemas']['System_2.Methods.Common.Regions.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19174,7 +18918,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Games/Record/Edit.ts').components['schemas']['System_2.Methods.Games.Record.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19200,7 +18943,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Games/Record/Get.ts').components['schemas']['System_2.Methods.Games.Record.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19226,7 +18968,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Log/Error/Add.ts').components['schemas']['System_2.Methods.Log.Error.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19252,7 +18993,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./System_2/Methods/Properties/Property/Edit.ts').components['schemas']['System_2.Methods.Properties.Property.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19278,7 +19018,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Message/Del.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19304,7 +19043,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Message/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19330,7 +19068,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Add.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19356,7 +19093,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Del.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19382,7 +19118,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19408,7 +19143,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Get.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19434,7 +19168,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Ticket/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19460,7 +19193,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/TicketSplit/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.TicketSplit.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19486,7 +19218,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/User/Get.ts').components['schemas']['Tickets_2.Methods.Admin.User.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19512,7 +19243,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/UserId/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.UserId.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19538,7 +19268,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/AdminComment/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.AdminComment.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19564,7 +19293,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/Info/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19590,7 +19318,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/SetReaded/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.SetReaded.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19616,7 +19343,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/Writing/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Writing.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19642,7 +19368,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Stat/Referers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Referers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19668,7 +19393,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.ts').components['schemas']['Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19694,7 +19418,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Join/Email/Add.ts').components['schemas']['Users_2.Methods.Join.Email.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19720,7 +19443,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Avatar/Del.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19746,7 +19468,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Avatar/Edit.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19772,7 +19493,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Avatar/Get.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19798,7 +19518,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Currency/Edit.ts').components['schemas']['Users_2.Methods.Profile.Currency.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19824,7 +19543,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Email/Edit.ts').components['schemas']['Users_2.Methods.Profile.Email.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19850,7 +19568,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Lang/Edit.ts').components['schemas']['Users_2.Methods.Profile.Lang.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19876,7 +19593,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Pass/Edit.ts').components['schemas']['Users_2.Methods.Profile.Pass.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19902,7 +19618,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/RetrievePass/Edit.ts').components['schemas']['Users_2.Methods.Profile.RetrievePass.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19928,7 +19643,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Theme/Edit.ts').components['schemas']['Users_2.Methods.Profile.Theme.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19954,7 +19668,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Timezone/Edit.ts').components['schemas']['Users_2.Methods.Profile.Timezone.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -19980,7 +19693,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Ranks/Promocode/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20006,7 +19718,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Referrals/ChartCountsByDate/Get.ts').components['schemas']['Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20032,7 +19743,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Referrals/Invite/Add.ts').components['schemas']['Users_2.Methods.Referrals.Invite.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20058,7 +19768,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Stats/Account/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20084,7 +19793,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Group/Filter/Add.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20110,7 +19818,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Group/Filter/Del.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20136,7 +19843,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Group/Filter/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20160,6 +19866,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
                 };
             };
         };
@@ -20185,7 +19892,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Accounting/Operations/Export/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Operations.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20211,7 +19917,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Backup/Keywords/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Keywords.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20237,7 +19942,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Backup/Loader/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Loader.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20263,7 +19967,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Backup/Project/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Project.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20289,7 +19992,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Bank/Referral/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Bank.Referral.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20315,7 +20017,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Payments/Diadoc/Add.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Diadoc.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20341,7 +20042,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Positions/History/Add.ts').components['schemas']['Admin_2.Methods.Actions.Positions.History.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20367,7 +20067,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Positions/Status/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20393,7 +20092,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Projects/Domain/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Domain.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20419,7 +20117,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Regions/CommitGoogle/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Regions.CommitGoogle.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20445,7 +20142,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20471,7 +20167,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Robot/Checks/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Checks.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20497,7 +20192,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Robot/Priority/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Priority.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20523,7 +20217,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Robot/Task/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Task.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20549,7 +20242,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Slack/Files/Del.ts').components['schemas']['Admin_2.Methods.Actions.Slack.Files.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20575,7 +20267,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Slack/Messages/Del.ts').components['schemas']['Admin_2.Methods.Actions.Slack.Messages.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20601,7 +20292,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/User/Currency/Edit.ts').components['schemas']['Admin_2.Methods.Actions.User.Currency.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20627,7 +20317,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/User/Email/Edit.ts').components['schemas']['Admin_2.Methods.Actions.User.Email.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20653,7 +20342,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Accounting/SummaryForChart/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20679,7 +20367,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Activity/ChartByPeriod/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20705,7 +20392,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Competitors/SummaryForOrdersChart/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20731,7 +20417,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Payments/Systems/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Systems.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20757,7 +20442,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Payments/Tariff/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Tariff.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20783,7 +20467,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Positions/ChartByDayByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20809,7 +20492,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20835,7 +20517,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Positions/ChartByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20861,7 +20542,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Positions/ChartCountUsersByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20887,7 +20567,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/ChartByMigrations/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20913,7 +20592,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/ChartByNew/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20939,7 +20617,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/ChartByRates/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByRates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20965,7 +20642,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/ChartByTags/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -20991,7 +20667,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/ChartByWaitTime/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21017,7 +20692,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Tickets/Messages/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21043,7 +20717,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Logs/System/Checked/Edit.ts').components['schemas']['Admin_2.Methods.Logs.System.Checked.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21069,7 +20742,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Users/Informer/Subscriptions/Get.ts').components['schemas']['Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21147,7 +20819,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21197,7 +20868,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Log/ActualError/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.ActualError.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21223,7 +20893,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Log/Chart/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21249,7 +20918,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Results/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21275,7 +20943,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Results/Page/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Page.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21353,7 +21020,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21403,7 +21069,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21533,7 +21198,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21559,7 +21223,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21608,7 +21271,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/ByDomains/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.ByDomains.TableToProject.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21657,7 +21319,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/ByLeaders/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.ByLeaders.TableToProject.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21683,7 +21344,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/ByKeyword/Info/Get.ts').components['schemas']['Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21709,7 +21369,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/ByUrl/Info/Get.ts').components['schemas']['Competitors_2.Methods.Orders.ByUrl.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21735,7 +21394,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Snapshots/Top/Get.ts').components['schemas']['Content_2.Methods.Apometr.Snapshots.Top.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21761,7 +21419,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Text/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Text.Calendar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21787,7 +21444,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Text/Updates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Text.Updates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21813,7 +21469,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Updates/Dates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Updates.Dates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21865,7 +21520,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Course/Certificates/Edit.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21891,7 +21545,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Course/Certificates/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -21995,7 +21648,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Collect/Ext/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Collect.Ext.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22021,7 +21673,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Collect/Ext/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Ext.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22070,7 +21721,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Regions/Import/Add.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22096,7 +21746,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Regions/Sort/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22122,7 +21771,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Volumes/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22243,7 +21891,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Sort/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22269,7 +21916,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22295,7 +21941,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Stat/Export/GuestLinks/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22321,7 +21966,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Stat/Export/Referrers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22347,7 +21991,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Brand/Logo/Del.ts').components['schemas']['Users_2.Methods.Profile.Brand.Logo.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22373,7 +22016,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Brand/Logo/Edit.ts').components['schemas']['Users_2.Methods.Profile.Brand.Logo.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22399,7 +22041,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Ranks/Promocode/Twitter/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22425,7 +22066,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Stats/Account/ListMonth/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListMonth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22451,7 +22091,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Stats/Account/ListProjects/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListProjects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22477,7 +22116,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Stats/Account/ListPs/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListPs.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22503,7 +22141,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Stats/Account/Ps/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Ps.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22529,7 +22166,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Tpa/Apple/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Apple.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22555,7 +22191,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Tpa/Facebook/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Facebook.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22581,7 +22216,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Tpa/Google/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Google.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22607,7 +22241,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Tpa/Vk/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Vk.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22633,7 +22266,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Tpa/Yandex/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Yandex.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22659,7 +22291,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Positions/History/Copy/Add.ts').components['schemas']['Admin_2.Methods.Actions.Positions.History.Copy.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22685,7 +22316,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Course/Certificates/ByID/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.ByID.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22711,7 +22341,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Course/Certificates/Image/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };
@@ -22737,7 +22366,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.ts').components['schemas']['Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };

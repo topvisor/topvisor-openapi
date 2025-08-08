@@ -46,7 +46,10 @@
                 "title": "Получение списка упоминаний"
             },
             "Mentions_2.Methods.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../Models/Mentions/Mentions.json#/components/schemas/Models.Mentions.Mentions"
+                }
             }
         }
     }

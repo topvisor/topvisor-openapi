@@ -42,7 +42,10 @@
             },
             "Users_2.Methods.Referrals.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Users/Referrals.json#/components/schemas/Models.Users.Referrals"
+                }
             }
         }
     }

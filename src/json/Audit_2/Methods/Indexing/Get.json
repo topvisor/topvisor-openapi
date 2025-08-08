@@ -119,7 +119,10 @@
             },
             "Audit_2.Methods.Indexing.Get.Exec": {
                 "title": "Список ссылок с данными по ним",
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Urls.json#/components/schemas/Models.Urls"
+                }
             }
         }
     }

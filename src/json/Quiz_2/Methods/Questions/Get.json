@@ -48,7 +48,10 @@
             "Quiz_2.Methods.Questions.Get.Exec": {
                 "title": "Получение вопроса",
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Quizes/Questions.json#/components/schemas/Models.Quizes.Questions"
+                }
             }
         }
     }

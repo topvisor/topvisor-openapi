@@ -41,7 +41,10 @@
             },
             "Admin_2.Methods.Votes.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Votes.json#/components/schemas/Models.Votes"
+                }
             }
         }
     }

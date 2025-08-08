@@ -17,7 +17,7 @@ export interface components {
             offset: import('../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Tpvsr_2.Methods.Get.Exec": unknown[];
+        "Tpvsr_2.Methods.Get.Exec": import('../../Models/ShortLink.ts').components['schemas']['Models.ShortLink'][];
     };
     responses: never;
     parameters: never;

@@ -47,7 +47,10 @@
             },
             "Users_2.Methods.Ranks.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Users/Ranks.json#/components/schemas/Models.Users.Ranks"
+                }
             }
         }
     }

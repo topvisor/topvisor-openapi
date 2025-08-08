@@ -42,7 +42,6 @@ export interface components {
              * @default export_tableToProject
              */
             func: string;
-            output: import('../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             by_type: import('../../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
@@ -57,7 +56,7 @@ export interface components {
             query_vs?: string | null;
             /** Тип связи запросов между конкурентами */
             rel_vs?: string | null;
-            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
+            /** Делать ли проверку на наличие пути в URL (используется при (by_type = url)) */
             strict_query?: boolean;
             /** Минимальная схожесть */
             intersection?: number | null;

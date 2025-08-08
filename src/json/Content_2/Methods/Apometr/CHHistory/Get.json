@@ -72,7 +72,10 @@
                 "deprecated": true
             },
             "Content_2.Methods.Apometr.CHHistory.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Apometr/History.json#/components/schemas/Models.Apometr.History"
+                }
             }
         }
     }

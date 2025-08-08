@@ -20,7 +20,7 @@ export interface components {
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
         /** Список проверенных js */
-        "Audit_2.Methods.Audit.Js.Get.Exec": unknown[] | null;
+        "Audit_2.Methods.Audit.Js.Get.Exec": import('../../../../Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'][] | null;
     };
     responses: never;
     parameters: never;

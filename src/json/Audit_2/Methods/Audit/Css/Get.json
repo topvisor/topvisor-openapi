@@ -51,7 +51,10 @@
             "Audit_2.Methods.Audit.Css.Get.Exec": {
                 "title": "Список проверенных css",
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Audit/Css.json#/components/schemas/Models.Audit.Css"
+                }
             }
         }
     }

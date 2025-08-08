@@ -21,7 +21,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Quiz_2.Methods.WithQuestions.Get.Exec": unknown[] | null;
+        "Quiz_2.Methods.WithQuestions.Get.Exec": import('../../../Models/Quizes.ts').components['schemas']['Models.Quizes'][] | null;
     };
     responses: never;
     parameters: never;

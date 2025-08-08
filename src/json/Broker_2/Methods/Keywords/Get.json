@@ -51,7 +51,10 @@
                 "title": "Получение запросов рекламной кампании"
             },
             "Broker_2.Methods.Keywords.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Broker/Keywords.json#/components/schemas/Models.Broker.Keywords"
+                }
             }
         }
     }

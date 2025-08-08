@@ -38,7 +38,7 @@ export interface components {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Отчет по одному URL */
-        "Audit_2.Methods.Watcher.ByURL.Get.Exec": unknown[] | null;
+        "Audit_2.Methods.Watcher.ByURL.Get.Exec": import('../../../../Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'][] | null;
     };
     responses: never;
     parameters: never;

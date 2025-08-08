@@ -52,7 +52,10 @@
             },
             "Quiz_2.Methods.WithQuestions.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Quizes.json#/components/schemas/Models.Quizes"
+                }
             }
         }
     }

@@ -64,7 +64,10 @@
             "Audit_2.Methods.Audit.Pages.Get.Exec": {
                 "title": "Список страниц",
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages"
+                }
             }
         }
     }

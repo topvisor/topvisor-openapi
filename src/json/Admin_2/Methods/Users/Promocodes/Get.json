@@ -42,7 +42,10 @@
             },
             "Admin_2.Methods.Users.Promocodes.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Users/Verif.json#/components/schemas/Models.Users.Verif"
+                }
             }
         }
     }

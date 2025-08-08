@@ -28,7 +28,7 @@ export interface components {
          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
-        "Audit_2.Methods.Audit.Summary.Get.Exec": unknown[] | null;
+        "Audit_2.Methods.Audit.Summary.Get.Exec": import('../../../../Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'][] | null;
     };
     responses: never;
     parameters: never;

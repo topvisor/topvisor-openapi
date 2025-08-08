@@ -24,7 +24,7 @@ export interface components {
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
         /** Список страниц */
-        "Audit_2.Methods.Audit.Pages.Get.Exec": unknown[] | null;
+        "Audit_2.Methods.Audit.Pages.Get.Exec": import('../../../../Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][] | null;
     };
     responses: never;
     parameters: never;

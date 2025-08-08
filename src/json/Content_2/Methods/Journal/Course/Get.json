@@ -47,7 +47,10 @@
             },
             "Content_2.Methods.Journal.Course.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Pages.json#/components/schemas/Models.Pages"
+                }
             }
         }
     }
