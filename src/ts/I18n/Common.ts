@@ -285,8 +285,6 @@ export interface components {
             /** @constant */
             readonly Valid_characters: "Valid characters";
             /** @constant */
-            readonly Invalid_characters: "Invalid characters";
-            /** @constant */
             readonly Bonus: "Bonus";
             /** @constant */
             readonly or: "or";
