@@ -12,6 +12,12 @@
                 "enum": [
                     "csv"
                 ],
+                "x-enum-varnames": [
+                    "Csv"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
                 "title": "Тип экспортируемого файла"
             }
         }

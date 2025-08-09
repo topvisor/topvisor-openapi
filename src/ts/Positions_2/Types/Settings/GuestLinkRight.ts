@@ -11,7 +11,7 @@ export interface components {
          * Право для гостевых ссылок
          * @enum {string}
          */
-        "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "graphics" | "competitors";
+        "Positions_2.Types.Settings.GuestLinkRight": Positions_2TypesSettingsGuestLinkRight;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,20 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Positions_2TypesSettingsGuestLinkRight {
+    // Частота запросов
+    Volume = "volume",
+    // Частота запросов
+    Frequency = "frequency",
+    // Трафик
+    Visitors = "visitors",
+    // Выбор дат
+    Dates = "dates",
+    // Сводка
+    Summary = "summary",
+    // Расширенная сводка
+    Graphics = "graphics",
+    // Конкуренты
+    Competitors = "competitors"
+}
 export type operations = Record<string, never>;

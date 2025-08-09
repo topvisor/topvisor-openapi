@@ -19,6 +19,26 @@
                     "journal",
                     "academy"
                 ],
+                "x-enum-varnames": [
+                    "News",
+                    "Balance",
+                    "Tickets",
+                    "YandexUpdate",
+                    "Comments",
+                    "Api",
+                    "Journal",
+                    "Academy"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Рубрика рассылки\n\nНа каждый тип рассылки оформляется отдельная подписка"
             }
         }

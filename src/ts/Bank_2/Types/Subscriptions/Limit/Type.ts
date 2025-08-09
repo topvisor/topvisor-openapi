@@ -14,7 +14,7 @@ export interface components {
          * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Limit.Type": "object" | "object_by_project" | "action_monthly" | "action_daily" | "access";
+        "Bank_2.Types.Subscriptions.Limit.Type": Bank_2TypesSubscriptionsLimitType;
     };
     responses: never;
     parameters: never;
@@ -23,4 +23,16 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Bank_2TypesSubscriptionsLimitType {
+    // Ограничение на добавление объектов на уровне аккаунта; Пример: Добавление проекта
+    Object = "object",
+    // Ограничение на добавление объектов на уровне проекта; Пример: Добавление конкурента в проект
+    ObjectByProject = "object_by_project",
+    // Месячное ограничение на запуск услуг; Пример: Сбор частоты
+    ActionMonthly = "action_monthly",
+    // Суточное ограничение на запуск услуг; Пример: Проверка позиций
+    ActionDaily = "action_daily",
+    // Доступы к функционалу; Пример: API
+    Access = "access"
+}
 export type operations = Record<string, never>;

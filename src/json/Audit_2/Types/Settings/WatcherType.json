@@ -15,6 +15,18 @@
                     "h1",
                     "content"
                 ],
+                "x-enum-varnames": [
+                    "Title",
+                    "Description",
+                    "H1",
+                    "Content"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Тип отчета радара"
             }
         }

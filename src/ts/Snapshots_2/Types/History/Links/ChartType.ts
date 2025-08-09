@@ -11,7 +11,7 @@ export interface components {
          * Тип диаграммы
          * @enum {string}
          */
-        "Snapshots_2.Types.History.Links.ChartType": "tops" | "tops_count" | "avg" | "visibility" | "median";
+        "Snapshots_2.Types.History.Links.ChartType": Snapshots_2TypesHistoryLinksChartType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,11 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Snapshots_2TypesHistoryLinksChartType {
+    Tops = "tops",
+    TopsCount = "tops_count",
+    Avg = "avg",
+    Visibility = "visibility",
+    Median = "median"
+}
 export type operations = Record<string, never>;

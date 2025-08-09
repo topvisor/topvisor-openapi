@@ -19,6 +19,26 @@
                     "domainsPersonContract",
                     "domainsPersonOffer"
                 ],
+                "x-enum-varnames": [
+                    "Contract",
+                    "Offer",
+                    "PartnerOffer",
+                    "Fl223",
+                    "DomainsContract",
+                    "DomainsOffer",
+                    "DomainsPersonContract",
+                    "DomainsPersonOffer"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Тип реквизитов"
             }
         }

@@ -11,7 +11,7 @@ export interface components {
          * Операции выполняемые ботом
          * @enum {integer}
          */
-        "Telegram_2.Types.Bot.Api.Operation": 1 | 2;
+        "Telegram_2.Types.Bot.Api.Operation": Telegram_2TypesBotApiOperation;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Telegram_2TypesBotApiOperation {
+    Send = 1,
+    Change = 2
+}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Статус подписки
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "stopped" | "terminated";
+        "Bank_2.Types.Subscriptions.Status": Bank_2TypesSubscriptionsStatus;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,14 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Bank_2TypesSubscriptionsStatus {
+    // Подписка работает и будет продлеваться автоматически или вручную в зависимости от настроек
+    Active = "active",
+    // Подписка приостановлена (можно возобновить)
+    Suspended = "suspended",
+    // Подписка завершена, после окончания оплаченного периода будет прекращена
+    Stopped = "stopped",
+    // Прекращена немедленно (нельзя возобновить)
+    Terminated = "terminated"
+}
 export type operations = Record<string, never>;

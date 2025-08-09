@@ -11,7 +11,7 @@ export interface components {
          * Оценка отзыва
          * @enum {string}
          */
-        "Votes_2.Types.Rate": "1" | "2" | "3" | "4" | "5";
+        "Votes_2.Types.Rate": Votes_2TypesRate;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,11 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Votes_2TypesRate {
+    One = "1",
+    Two = "2",
+    Three = "3",
+    Four = "4",
+    Five = "5"
+}
 export type operations = Record<string, never>;

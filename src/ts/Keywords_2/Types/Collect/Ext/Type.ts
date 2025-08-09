@@ -11,7 +11,7 @@ export interface components {
          * По каким параметрам расширять группу
          * @enum {string}
          */
-        "Keywords_2.Types.Collect.Ext.Type": "groupName" | "groupNameWithKeywords" | "keywords";
+        "Keywords_2.Types.Collect.Ext.Type": Keywords_2TypesCollectExtType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,12 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Keywords_2TypesCollectExtType {
+    // По названию группы
+    GroupName = "groupName",
+    // По названию группы и ключевым словам
+    GroupnameWithKeywords = "groupNameWithKeywords",
+    // По ключевым словам
+    Keywords = "keywords"
+}
 export type operations = Record<string, never>;

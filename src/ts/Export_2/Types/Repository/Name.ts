@@ -11,7 +11,7 @@ export interface components {
          * Хранилище для экспорта
          * @enum {string}
          */
-        "Export_2.Types.Repository.Name": "gdrive";
+        "Export_2.Types.Repository.Name": Export_2TypesRepositoryName;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,7 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Export_2TypesRepositoryName {
+    GoogleDrive = "gdrive"
+}
 export type operations = Record<string, never>;

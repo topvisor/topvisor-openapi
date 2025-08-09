@@ -13,6 +13,14 @@
                     "domain",
                     "url"
                 ],
+                "x-enum-varnames": [
+                    "Domain",
+                    "Url"
+                ],
+                "x-enum-descriptions": [
+                    "По домену",
+                    "По url"
+                ],
                 "title": "Формат вывода конкурентов"
             }
         }

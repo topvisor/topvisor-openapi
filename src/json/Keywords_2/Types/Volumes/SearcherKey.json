@@ -13,6 +13,14 @@
                     0,
                     1
                 ],
+                "x-enum-varnames": [
+                    "Yandex",
+                    "Google"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Ключ поисковой системы для проверки частоты"
             }
         }

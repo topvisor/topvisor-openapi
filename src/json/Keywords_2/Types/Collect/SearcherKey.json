@@ -18,6 +18,24 @@
                     104,
                     105
                 ],
+                "x-enum-varnames": [
+                    "Yandex",
+                    "Google",
+                    "Bing",
+                    "Yandex_hint",
+                    "Google_hint",
+                    "YouTube_hint",
+                    "Bing_hint"
+                ],
+                "x-enum-descriptions": [
+                    "Подбор ключевых слов",
+                    null,
+                    null,
+                    "Подбор подсказок, суррогатный ключ поисковика",
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Ключ поисковой системы для сбора запросов"
             }
         }

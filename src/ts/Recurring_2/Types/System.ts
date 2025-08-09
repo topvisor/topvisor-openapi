@@ -11,7 +11,7 @@ export interface components {
          * Платежная система рекуррентного платежа
          * @enum {string}
          */
-        "Recurring_2.Types.System": "card" | "invoice";
+        "Recurring_2.Types.System": Recurring_2TypesSystem;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Recurring_2TypesSystem {
+    Card = "card",
+    Invoice = "invoice"
+}
 export type operations = Record<string, never>;

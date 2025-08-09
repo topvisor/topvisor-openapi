@@ -11,7 +11,7 @@ export interface components {
          * Метод вызова функции
          * @enum {string}
          */
-        "System_2.Types.Operation": "get" | "add" | "edit" | "del";
+        "System_2.Types.Operation": System_2TypesOperation;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum System_2TypesOperation {
+    Get = "get",
+    Add = "add",
+    Edit = "edit",
+    Del = "del"
+}
 export type operations = Record<string, never>;

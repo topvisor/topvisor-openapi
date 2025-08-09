@@ -15,6 +15,18 @@
                     "sum_month_cost_rub_ads",
                     "sum_month_cost_usd_ads"
                 ],
+                "x-enum-varnames": [
+                    "Small",
+                    "CountKeywords",
+                    "SumMonthCostRubAds",
+                    "SumMonthCostUsdAds"
+                ],
+                "x-enum-descriptions": [
+                    "Маленький график",
+                    "Количество поисковых запросов",
+                    "Стоимость рекламы домена в рублях",
+                    "Стоимость рекламы домена в долларах"
+                ],
                 "title": "Тип графика"
             }
         }

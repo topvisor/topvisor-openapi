@@ -11,7 +11,7 @@ export interface components {
          * Действие, выполняемое при авторизации
          * @enum {string}
          */
-        "Users_2.Types.Tpa.Action": "auth" | "join";
+        "Users_2.Types.Tpa.Action": Users_2TypesTpaAction;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Users_2TypesTpaAction {
+    // Авторизация
+    Auth = "auth",
+    // Привязка аккаунта
+    Join = "join"
+}
 export type operations = Record<string, never>;

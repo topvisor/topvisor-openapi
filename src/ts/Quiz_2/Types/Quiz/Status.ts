@@ -11,7 +11,7 @@ export interface components {
          * Статус квиза
          * @enum {string}
          */
-        "Quiz_2.Types.Quiz.Status": "DEV" | "ACTIVE" | "DELETED";
+        "Quiz_2.Types.Quiz.Status": Quiz_2TypesQuizStatus;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Quiz_2TypesQuizStatus {
+    // В разработке, виден только для админов
+    Dev = "DEV",
+    Active = "ACTIVE",
+    Deleted = "DELETED"
+}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Способ установки тегов
          * @enum {string}
          */
-        "Urls_2.Types.Tags.Action": "set" | "add" | "remove";
+        "Urls_2.Types.Tags.Action": Urls_2TypesTagsAction;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,12 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Urls_2TypesTagsAction {
+    // Установить указанные тэги, ранее установленные тэги будут сняты
+    Set = "set",
+    // Установить указанные тэги, ранее установленные тэги будут сохранены
+    Add = "add",
+    // Снять указанные тэги
+    Remove = "remove"
+}
 export type operations = Record<string, never>;

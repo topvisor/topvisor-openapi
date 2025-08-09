@@ -11,7 +11,7 @@ export interface components {
          * Ключ поисковой системы для проверки частоты
          * @enum {integer}
          */
-        "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;
+        "Keywords_2.Types.Volumes.SearcherKey": Keywords_2TypesVolumesSearcherKey;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Keywords_2TypesVolumesSearcherKey {
+    Yandex = 0,
+    Google = 1
+}
 export type operations = Record<string, never>;

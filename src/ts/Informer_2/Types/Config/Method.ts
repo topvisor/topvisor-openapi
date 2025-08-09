@@ -11,7 +11,7 @@ export interface components {
          * Тема сообщения
          * @enum {string}
          */
-        "Informer_2.Types.Config.Method": "news" | "balance" | "yandex-update" | "comments" | "api" | "journal" | "academy" | "tickets";
+        "Informer_2.Types.Config.Method": Informer_2TypesConfigMethod;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,22 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Informer_2TypesConfigMethod {
+    // Новости
+    News = "news",
+    // Баланс
+    Balance = "balance",
+    // Обновление Яндекса
+    YandexUpdate = "yandex-update",
+    // Комментарии
+    Comments = "comments",
+    // API
+    Api = "api",
+    // Журнал
+    Journal = "journal",
+    // Академия
+    Academy = "academy",
+    // Тикеты
+    Tickets = "tickets"
+}
 export type operations = Record<string, never>;

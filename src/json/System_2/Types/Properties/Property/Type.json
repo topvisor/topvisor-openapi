@@ -13,6 +13,14 @@
                     "varchar",
                     "text"
                 ],
+                "x-enum-varnames": [
+                    "Varchar",
+                    "Text"
+                ],
+                "x-enum-descriptions": [
+                    "Хранить как Varchar",
+                    "Хранить как текст"
+                ],
                 "title": "Поле хранения параметра"
             }
         }

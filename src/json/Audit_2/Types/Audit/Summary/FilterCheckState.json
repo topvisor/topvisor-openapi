@@ -13,6 +13,14 @@
                     "all",
                     "changed"
                 ],
+                "x-enum-varnames": [
+                    "All",
+                    "Changed"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Фильтр по состоянию изменения в сводке"
             }
         }

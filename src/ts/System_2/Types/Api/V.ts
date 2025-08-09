@@ -11,7 +11,7 @@ export interface components {
          * Версия API
          * @enum {string}
          */
-        "System_2.Types.Api.V": "v2";
+        "System_2.Types.Api.V": System_2TypesApiV;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum System_2TypesApiV {
+    // Вторая
+    V2 = "v2"
+}
 export type operations = Record<string, never>;

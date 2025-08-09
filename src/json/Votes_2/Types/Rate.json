@@ -16,6 +16,20 @@
                     "4",
                     "5"
                 ],
+                "x-enum-varnames": [
+                    "One",
+                    "Two",
+                    "Three",
+                    "Four",
+                    "Five"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Оценка отзыва"
             }
         }

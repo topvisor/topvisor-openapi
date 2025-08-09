@@ -11,7 +11,7 @@ export interface components {
          * Категория данных
          * @enum {string}
          */
-        "System_2.Types.Properties.Property.TargetName": "mod_projects";
+        "System_2.Types.Properties.Property.TargetName": System_2TypesPropertiesPropertyTargetName;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum System_2TypesPropertiesPropertyTargetName {
+    // Проекты
+    ModProjects = "mod_projects"
+}
 export type operations = Record<string, never>;

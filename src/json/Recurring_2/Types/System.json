@@ -13,6 +13,14 @@
                     "card",
                     "invoice"
                 ],
+                "x-enum-varnames": [
+                    "Card",
+                    "Invoice"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Платежная система рекуррентного платежа"
             }
         }

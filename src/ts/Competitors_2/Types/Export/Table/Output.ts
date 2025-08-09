@@ -11,7 +11,7 @@ export interface components {
          * Тип экспортируемого файла
          * @enum {string}
          */
-        "Competitors_2.Types.Export.Table.Output": "csv" | "csv_utf" | "xlsx";
+        "Competitors_2.Types.Export.Table.Output": Competitors_2TypesExportTableOutput;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Competitors_2TypesExportTableOutput {
+    Csv = "csv",
+    CsvUtf = "csv_utf",
+    Xlsx = "xlsx"
+}
 export type operations = Record<string, never>;

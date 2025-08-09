@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {string} */
-        "TV.API.Types.Lang": "ru" | "en";
+        "TV.API.Types.Lang": TVAPITypesLang;
     };
     responses: never;
     parameters: never;
@@ -17,4 +17,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum TVAPITypesLang {
+    Ru = "ru",
+    En = "en"
+}
 export type operations = Record<string, never>;

@@ -13,6 +13,16 @@
                     "a",
                     "b",
                     "c"
+                ],
+                "x-enum-varnames": [
+                    "A",
+                    "B",
+                    "C"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
                 ]
             }
         }

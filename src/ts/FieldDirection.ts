@@ -21,9 +21,7 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export enum FieldDirection {
-    // 
     Asc = "ASC",
-    // 
     Desc = "DESC"
 }
 export type operations = Record<string, never>;

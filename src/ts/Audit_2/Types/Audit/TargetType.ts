@@ -11,7 +11,7 @@ export interface components {
          * Тип очтета аудита
          * @enum {string}
          */
-        "Audit_2.Types.Audit.TargetType": "pages" | "links" | "images" | "js" | "css";
+        "Audit_2.Types.Audit.TargetType": Audit_2TypesAuditTargetType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,11 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Audit_2TypesAuditTargetType {
+    Pages = "pages",
+    Links = "links",
+    Images = "images",
+    JS = "js",
+    CSS = "css"
+}
 export type operations = Record<string, never>;

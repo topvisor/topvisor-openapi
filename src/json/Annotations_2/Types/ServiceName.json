@@ -14,6 +14,18 @@
                     "audit",
                     "watcher",
                     "indexing"
+                ],
+                "x-enum-varnames": [
+                    "Positions",
+                    "Audit",
+                    "Watcher",
+                    "Indexing"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
                 ]
             }
         }

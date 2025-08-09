@@ -14,6 +14,16 @@
                     "csvUTF8s",
                     "xml"
                 ],
+                "x-enum-varnames": [
+                    "Csv",
+                    "CsvUTF8s",
+                    "Xml"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    "Csv в кодировке сервера",
+                    null
+                ],
                 "title": "Формат экспорта urls"
             }
         }

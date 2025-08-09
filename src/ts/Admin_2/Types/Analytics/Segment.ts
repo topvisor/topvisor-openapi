@@ -15,7 +15,7 @@ export interface components {
          *     Пример: вывод количества регистраций за каждый **месяц** в отчете
          * @enum {string}
          */
-        "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";
+        "Admin_2.Types.Analytics.Segment": Admin_2TypesAnalyticsSegment;
     };
     responses: never;
     parameters: never;
@@ -24,4 +24,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Admin_2TypesAnalyticsSegment {
+    Day = "day",
+    Month = "month",
+    Year = "year"
+}
 export type operations = Record<string, never>;

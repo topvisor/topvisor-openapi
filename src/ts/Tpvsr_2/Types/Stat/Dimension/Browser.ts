@@ -11,7 +11,7 @@ export interface components {
          * Бразуер для получение информации
          * @enum {string}
          */
-        "Tpvsr_2.Types.Stat.Dimension.Browser": "IE" | "Chrome" | "Firefox" | "Opera" | "Safari" | "Ya" | "Other";
+        "Tpvsr_2.Types.Stat.Dimension.Browser": Tpvsr_2TypesStatDimensionBrowser;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,13 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Tpvsr_2TypesStatDimensionBrowser {
+    InternetExplorer = "IE",
+    Chrome = "Chrome",
+    Firefox = "Firefox",
+    Opera = "Opera",
+    Safari = "Safari",
+    Yahoo = "Ya",
+    Other = "Other"
+}
 export type operations = Record<string, never>;

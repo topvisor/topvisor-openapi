@@ -11,7 +11,7 @@ export interface components {
          * Ключ поисковой системы для индексации
          * @enum {string}
          */
-        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5";
+        "Audit_2.Types.Indexing.SearcherKey": Audit_2TypesIndexingSearcherKey;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Audit_2TypesIndexingSearcherKey {
+    Yandex = "0",
+    Google = "1",
+    Bing = "5"
+}
 export type operations = Record<string, never>;

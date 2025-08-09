@@ -13,7 +13,7 @@ export interface components {
          *     Определяет способ списания средств и порядок продления подписки
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Type": "auto" | "manual";
+        "Bank_2.Types.Subscriptions.Type": Bank_2TypesSubscriptionsType;
     };
     responses: never;
     parameters: never;
@@ -22,4 +22,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Bank_2TypesSubscriptionsType {
+    // Автоматическое продление с авто списанием; Например: рекуррентные платежи по карте
+    Auto = "auto",
+    // Ручное продление с участием покупателя; Например:; - платежи по карте без авто продления; - оплата по счету
+    Manual = "manual"
+}
 export type operations = Record<string, never>;

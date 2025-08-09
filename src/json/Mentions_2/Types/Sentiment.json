@@ -14,6 +14,16 @@
                     "neutral",
                     "good"
                 ],
+                "x-enum-varnames": [
+                    "Bad",
+                    "Neutral",
+                    "Good"
+                ],
+                "x-enum-descriptions": [
+                    "Плохое",
+                    "Нейтральное",
+                    "Хорошее"
+                ],
                 "title": "Тональность"
             }
         }

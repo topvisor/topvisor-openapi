@@ -11,7 +11,7 @@ export interface components {
          * Период отправки отчета
          * @enum {string}
          */
-        "Schedule_2.Types.Settings.Period": "none" | "month" | "week" | "weekly";
+        "Schedule_2.Types.Settings.Period": Schedule_2TypesSettingsPeriod;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,14 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Schedule_2TypesSettingsPeriod {
+    // Без периода
+    None = "none",
+    // Месяц
+    Month = "month",
+    // Неделя
+    Week = "week",
+    // Каждую неделю
+    Weekly = "weekly"
+}
 export type operations = Record<string, never>;

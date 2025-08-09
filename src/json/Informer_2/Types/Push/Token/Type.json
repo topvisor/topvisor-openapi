@@ -15,6 +15,18 @@
                     "safari",
                     "safariAuth"
                 ],
+                "x-enum-varnames": [
+                    "Firebase",
+                    "Web",
+                    "Safari",
+                    "SafariAuth"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Типы токенов"
             }
         }

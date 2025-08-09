@@ -16,6 +16,20 @@
                     "sum_month_cost_rub_ads",
                     "sum_month_cost_usd_ads"
                 ],
+                "x-enum-varnames": [
+                    "Small",
+                    "Summary",
+                    "Count_keywords",
+                    "SumMonthCosRubAds",
+                    "SumMonthCostUsdAds"
+                ],
+                "x-enum-descriptions": [
+                    "Маленький",
+                    "График структуры сайта",
+                    "Количество запросов",
+                    "Общая месячная стоимость рекламы в рублях",
+                    "Общая месячная стоимость рекламы в рублях"
+                ],
                 "title": "Тип графика"
             }
         }

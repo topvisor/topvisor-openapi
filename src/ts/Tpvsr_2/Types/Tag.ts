@@ -11,7 +11,7 @@ export interface components {
          * Тэг для установки
          * @enum {integer}
          */
-        "Tpvsr_2.Types.Tag": 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+        "Tpvsr_2.Types.Tag": Tpvsr_2TypesTag;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,16 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Tpvsr_2TypesTag {
+    Tag1 = 1,
+    Tag2 = 2,
+    Tag3 = 3,
+    Tag4 = 4,
+    Tag5 = 5,
+    Tag6 = 6,
+    Tag7 = 7,
+    Tag8 = 8,
+    Tag9 = 9,
+    Tag10 = 10
+}
 export type operations = Record<string, never>;

@@ -12,6 +12,12 @@
                 "enum": [
                     "gdrive"
                 ],
+                "x-enum-varnames": [
+                    "GoogleDrive"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
                 "title": "Название директории для эспорта"
             }
         }

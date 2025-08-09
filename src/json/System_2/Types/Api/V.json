@@ -12,6 +12,12 @@
                 "enum": [
                     "v2"
                 ],
+                "x-enum-varnames": [
+                    "V2"
+                ],
+                "x-enum-descriptions": [
+                    "Вторая"
+                ],
                 "title": "Версия API"
             }
         }

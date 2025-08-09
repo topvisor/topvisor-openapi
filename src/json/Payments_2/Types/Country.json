@@ -15,6 +15,20 @@
                     "BY",
                     "KZ",
                     "other"
+                ],
+                "x-enum-varnames": [
+                    "Ru",
+                    "Ua",
+                    "By",
+                    "Kz",
+                    "Other"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
                 ]
             }
         }

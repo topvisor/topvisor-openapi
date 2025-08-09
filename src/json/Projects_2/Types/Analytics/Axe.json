@@ -18,6 +18,24 @@
                     12,
                     13
                 ],
+                "x-enum-varnames": [
+                    "Visibility",
+                    "AveragePosition",
+                    "Positions",
+                    "Top",
+                    "Traffic",
+                    "Links",
+                    "Indexing"
+                ],
+                "x-enum-descriptions": [
+                    "Видимость",
+                    "Средняя позиция",
+                    "Позиции",
+                    "Топ",
+                    "Трафик",
+                    "Ссылки",
+                    "Индексация"
+                ],
                 "title": "Номер метрики"
             }
         }

@@ -28,7 +28,8 @@
                 "title": "Информация о стоимости запуска аудита по проектам"
             },
             "Audit_2.Methods.Audit.Checker.Price.Get.Exec": {
-                "type": "object"
+                "type": "object",
+                "additionalProperties": {}
             }
         }
     }

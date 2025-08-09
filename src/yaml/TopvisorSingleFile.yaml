@@ -15490,6 +15490,16 @@ components:
         - audit
         - watcher
         - indexing
+      x-enum-varnames:
+        - Positions
+        - Audit
+        - Watcher
+        - Indexing
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
     Annotations_2.Methods.Add:
       type: object
       properties:
@@ -15704,6 +15714,12 @@ components:
       enum:
         - ''
         - journal
+      x-enum-varnames:
+        - Default
+        - Journal
+      x-enum-descriptions:
+        - null
+        - null
     Comments_2.Methods.Add:
       type: object
       properties:
@@ -15843,11 +15859,23 @@ components:
       enum:
         - ''
         - journal
+      x-enum-varnames:
+        - None
+        - Journal
+      x-enum-descriptions:
+        - null
+        - null
     TV.API.Types.Lang:
       type: string
       enum:
         - ru
         - en
+      x-enum-varnames:
+        - Ru
+        - En
+      x-enum-descriptions:
+        - null
+        - null
     Content_2.Methods.Get:
       type: object
       properties:
@@ -15983,6 +16011,50 @@ components:
         - lp
         - ppg
         - pr
+      x-enum-varnames:
+        - Balance
+        - Card
+        - CardIso
+        - CardAndroid
+        - CardAp
+        - CardGp
+        - Invoice
+        - TinkoffBusiness
+        - Ap
+        - Ym
+        - Qw
+        - Sb
+        - Wm2
+        - Pp
+        - Pd
+        - PdInvoice
+        - Rk
+        - Pt
+        - Lp
+        - Ppg
+        - Pr
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
     Payments_2.Types.Country:
       type: string
       enum:
@@ -15991,11 +16063,29 @@ components:
         - BY
         - KZ
         - other
+      x-enum-varnames:
+        - Ru
+        - Ua
+        - By
+        - Kz
+        - Other
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
     Bank_2.Types.Subscriptions.Cycle:
       type: integer
       enum:
         - 1
         - 12
+      x-enum-varnames:
+        - Monthly
+        - Annual
+      x-enum-descriptions:
+        - Ежемесячная подписка
+        - Годовая подписка; При подписке на год обычно стоит дешевле, чем подписка на месяц
       title: |-
         Цикл подписки в месяцах
 
@@ -16174,6 +16264,14 @@ components:
         - 0
         - 1
         - 2
+      x-enum-varnames:
+        - BlackAndWhite
+        - Pixels
+        - Labyrinth
+      x-enum-descriptions:
+        - null
+        - null
+        - null
     Qr_2.Methods.Get:
       type: object
       properties:
@@ -16218,6 +16316,14 @@ components:
         - DEV
         - ACTIVE
         - DELETED
+      x-enum-varnames:
+        - Dev
+        - Active
+        - Deleted
+      x-enum-descriptions:
+        - В разработке, виден только для админов
+        - null
+        - null
       title: Статус квиза
     Quiz_2.Methods.Add:
       type: object
@@ -16336,11 +16442,21 @@ components:
       enum:
         - card
         - invoice
+      x-enum-varnames:
+        - Card
+        - Invoice
+      x-enum-descriptions:
+        - null
+        - null
       title: Платежная система рекуррентного платежа
     Recurring_2.Types.Type:
       type: string
       enum:
         - refill
+      x-enum-varnames:
+        - Refill
+      x-enum-descriptions:
+        - Обычное пополнение счета
       title: Тип рекуррентного платежа
     TV.API.Types.Url:
       type: string
@@ -16497,6 +16613,20 @@ components:
         - snippets
         - shortLinks
         - urls
+      x-enum-varnames:
+        - Tickets
+        - Projects
+        - Keywords
+        - Snippets
+        - ShortLinks
+        - Urls
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Тип тега, к каким объектам применяется
     Tags_2.Methods.Edit:
       type: object
@@ -16547,6 +16677,18 @@ components:
         - keywords
         - competitors_keywords
         - competitors_wordstat
+      x-enum-varnames:
+        - Templates
+        - Groups
+        - Keywords
+        - CompetitorsKeywords
+        - CompetitorsWordstat
+      x-enum-descriptions:
+        - Шаблоны
+        - Группы
+        - Запросы
+        - Запросы конкурентов
+        - Статистика поисковых запросов конкурентов
       title: Тип данных (место использования)
     Templates_2.Methods.Add:
       type: object
@@ -16653,6 +16795,28 @@ components:
         - 8
         - 9
         - 10
+      x-enum-varnames:
+        - Tag1
+        - Tag2
+        - Tag3
+        - Tag4
+        - Tag5
+        - Tag6
+        - Tag7
+        - Tag8
+        - Tag9
+        - Tag10
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Тэг для установки
     Tpvsr_2.Types.Tags:
       type: array
@@ -16780,6 +16944,16 @@ components:
         - 0
         - 1
         - 2
+      x-enum-varnames:
+        - RecentlyDeleted
+        - SecondRecentlyDeleted
+        - SecondRecentlyAdded
+        - RecentlyAdded
+      x-enum-descriptions:
+        - Недавно удален
+        - Недавно удален при вторичном импорте
+        - Недавно добавлен при вторичном импорте; У карты сайта присутствовал в прошлых версиях
+        - Недавно добавлен
       title: Флаг активности
     Tags_2.Types.TagId:
       type: string
@@ -16804,6 +16978,48 @@ components:
         - '18'
         - '19'
         - '20'
+      x-enum-varnames:
+        - Tag1
+        - Tag2
+        - Tag3
+        - Tag4
+        - Tag5
+        - Tag6
+        - Tag7
+        - Tag8
+        - Tag9
+        - Tag10
+        - Tag11
+        - Tag12
+        - Tag13
+        - Tag14
+        - Tag15
+        - Tag16
+        - Tag17
+        - Tag18
+        - Tag19
+        - Tag20
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Id тега
     Tags_2.Types.TagsIds:
       type: array
@@ -17045,13 +17261,9 @@ components:
       properties: {}
       required: []
       title: Получение данных пользователя
-    stdClass:
-      type: object
-      properties: {}
-      required: []
     Users_2.Methods.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Votes_2.Types.Rate:
       type: string
       enum:
@@ -17060,6 +17272,18 @@ components:
         - '3'
         - '4'
         - '5'
+      x-enum-varnames:
+        - One
+        - Two
+        - Three
+        - Four
+        - Five
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Оценка отзыва
     Votes_2.Methods.Add:
       type: object
@@ -17492,6 +17716,22 @@ components:
         - DOCUMENTATION
         - GHOST
         - CONTENT
+      x-enum-varnames:
+        - Developer
+        - Support
+        - Accounting
+        - Hr
+        - Documentation
+        - Ghost
+        - Content
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Позиция или права сотрудника
     Admin_2.Types.Staff.Posts:
       type: array
@@ -18281,6 +18521,16 @@ components:
         - indexing
         - sitemap
         - watcher
+      x-enum-varnames:
+        - Audit
+        - Indexing
+        - Sitemap
+        - Watcher
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
       title: Модуль аудита
     Audit_2.Methods.CountUrls.Get:
       type: object
@@ -18304,6 +18554,14 @@ components:
         - '0'
         - '1'
         - '5'
+      x-enum-varnames:
+        - Yandex
+        - Google
+        - Bing
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: Ключ поисковой системы для индексации
     Audit_2.Types.Indexing.SearcherKeys:
       type: array
@@ -18322,6 +18580,24 @@ components:
         - 5
         - 7
         - 100
+      x-enum-varnames:
+        - FullRange
+        - YandexUpdates
+        - Range
+        - TwoChecks
+        - OneCheck
+        - LastCheckOfMonth
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений (недокументируемй парметр)
+        - Период с выполненными проверками (Только апдейты Яндекс)
+        - Период с выполненными проверками
+        - Две проверки
+        - Одна проверка
+        - Последняя проверка месяца
+        - Две последние даты проверок
+        - Произвольный список дат
       title: Тип диапазона индексации
     Audit_2.Methods.Indexing.Get:
       type: object
@@ -18418,6 +18694,16 @@ components:
         - description
         - h1
         - content
+      x-enum-varnames:
+        - Title
+        - Description
+        - H1
+        - Content
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
       title: Тип отчета радара
     Audit_2.Types.Settings.WatcherTypes:
       type: array
@@ -18439,6 +18725,12 @@ components:
       enum:
         - EASTERN_EUROPE
         - WESTERN_EUROPE
+      x-enum-varnames:
+        - EasternEurope
+        - WesternEurope
+      x-enum-descriptions:
+        - null
+        - null
       title: Местоположение сервера для выполнения задач инструментов аудита
     Audit_2.Methods.Settings.Edit:
       type: object
@@ -18580,6 +18872,52 @@ components:
         - watcher_ignore_js
         - watcher_strip_tags_from_result
         - server_location
+      x-enum-varnames:
+        - AuditUserAgent
+        - AuditUseCookie
+        - AuditCookies
+        - AuditScanLinks
+        - AuditScanImages
+        - AuditScanJs
+        - AuditScanCss
+        - AuditApiKey
+        - AuditPageDelay
+        - AuditResourceDelay
+        - AuditAutoCollectPages
+        - AuditAutoCollectPagesLimit
+        - AuditAutoCollectPagesStartUrl
+        - IndexingSearchersKeys
+        - WatcheUserAgent
+        - WatcherCookies
+        - WatcherMaxRedirects
+        - WatcherTypes
+        - WatcherRegexp
+        - WatcherIgnoreJs
+        - WatcherStripTagsFromResult
+        - ServerLocation
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Имя настройки для интсрумента аудита
     Audit_2.Types.Settings.FieldNames:
       type: array
@@ -18612,6 +18950,20 @@ components:
         - 4
         - 7
         - 100
+      x-enum-varnames:
+        - FullRange
+        - Range
+        - TwoChecks
+        - OneCheck
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений (недокументируемй парметр)
+        - Период
+        - Две проверки
+        - Одна проверка
+        - Две последние проверки
+        - Произвольный список дат
       title: Тип диапазона радара
     Audit_2.Types.Watcher.Type:
       type: string
@@ -18622,6 +18974,20 @@ components:
         - title
         - description
         - content
+      x-enum-varnames:
+        - HttpCodes
+        - Redirects
+        - H1
+        - Title
+        - Description
+        - Content
+      x-enum-descriptions:
+        - Статусы ответа
+        - Список редиректов
+        - Заголовок H1 страницы
+        - Title страницы
+        - Description страницы
+        - Контент страницы
       title: Тип проверки радара
     Audit_2.Types.Watcher.ShowDiff:
       type: integer
@@ -18630,6 +18996,16 @@ components:
         - 1
         - 2
         - 3
+      x-enum-varnames:
+        - NotInclude
+        - ShortText
+        - FullText
+        - AlwaysFullText
+      x-enum-descriptions:
+        - Не добавлять
+        - Сокращенный текст
+        - Полный текст
+        - Всегда полный текст, даже если нет изменений
       title: Добавить в результат различия данных
     Audit_2.Methods.Watcher.Get:
       type: object
@@ -18853,12 +19229,28 @@ components:
         - suspended
         - stopped
         - terminated
+      x-enum-varnames:
+        - Active
+        - Suspended
+        - Stopped
+        - Terminated
+      x-enum-descriptions:
+        - Подписка работает и будет продлеваться автоматически или вручную в зависимости от настроек
+        - Подписка приостановлена (можно возобновить)
+        - Подписка завершена, после окончания оплаченного периода будет прекращена
+        - Прекращена немедленно (нельзя возобновить)
       title: Статус подписки
     Bank_2.Types.Subscriptions.Type:
       type: string
       enum:
         - auto
         - manual
+      x-enum-varnames:
+        - Auto
+        - Manual
+      x-enum-descriptions:
+        - 'Автоматическое продление с авто списанием; Например: рекуррентные платежи по карте'
+        - Ручное продление с участием покупателя; Например:; - платежи по карте без авто продления; - оплата по счету
       title: |-
         Тип подписки
 
@@ -18868,6 +19260,12 @@ components:
       enum:
         - system
         - api
+      x-enum-varnames:
+        - System
+        - Api
+      x-enum-descriptions:
+        - Платёжный сервис
+        - Продавец через API платежного сервиса
       title: |-
         Кто управляет подпиской, а именно:
 
@@ -19028,6 +19426,24 @@ components:
         - domainsOffer
         - domainsPersonContract
         - domainsPersonOffer
+      x-enum-varnames:
+        - Contract
+        - Offer
+        - PartnerOffer
+        - Fl223
+        - DomainsContract
+        - DomainsOffer
+        - DomainsPersonContract
+        - DomainsPersonOffer
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Тип реквизитов
     Bank_2.Methods.Requisites.Add:
       type: object
@@ -19129,6 +19545,28 @@ components:
         - CPM_VIDEO_AD
         - SHOPPING_AD
         - LISTING_AD
+      x-enum-varnames:
+        - Text
+        - Smart
+        - MobileApp
+        - DynamicText
+        - Image
+        - CpcVideo
+        - CpmBanner
+        - CpmVideo
+        - Shopping
+        - Listing
+      x-enum-descriptions:
+        - Текстово-графическое (обычное) объявление
+        - Смарт-баннер
+        - Объявление для рекламы мобильных приложений
+        - Динамическое объявление
+        - Графическое объявление.
+        - Видеообъявление в кампаниях с типом «Текстово-графические объявления» или «Реклама мобильных приложений».
+        - Медийный баннер
+        - Медийное видеообъявление (в кампании с типом «Медийная кампания»).
+        - Товарное объявление (в кампании с типом «Единая перфоманс кампания»).
+        - Текстово-графическое (обычное) объявление
       title: Тип объявления
       description: '@see https://yandex.ru/dev/direct/doc/ru/objects/ad#types'
     Broker_2.Methods.Ads.Edit:
@@ -19553,6 +19991,16 @@ components:
         - minBid
         - lowerPos
         - suspend
+      x-enum-varnames:
+        - MaxBid
+        - MinBid
+        - LowerPos
+        - Suspend
+      x-enum-descriptions:
+        - Установить максимальную ставку
+        - Установить минимальную ставку
+        - Понижать позицию
+        - Отключить показы
       title: Тактика при превышении максимальной цены
     Broker_2.Methods.Keywords.Edit:
       type: object
@@ -19809,12 +20257,24 @@ components:
       enum:
         - url
         - keyword
+      x-enum-varnames:
+        - Url
+        - Keyword
+      x-enum-descriptions:
+        - Домену
+        - Ключевой фразе
       title: Тип запроса в отчета
     Competitors_2.Types.Report.Type:
       type: string
       enum:
         - serp
         - ads
+      x-enum-varnames:
+        - Serp
+        - Ads
+      x-enum-descriptions:
+        - Поисковая выдача
+        - Реклама
       title: Тип отчета
     TV.API.Types.UrlShortUTF:
       type: string
@@ -20104,6 +20564,14 @@ components:
         - keywords
         - domains
         - structure
+      x-enum-varnames:
+        - Keywords
+        - Domains
+        - Structure
+      x-enum-descriptions:
+        - Список поисковых запросов
+        - Конкуренты сайта, встречающиеся конкурентные домены в выдаче
+        - Структура сайта, список URL
       title: Представление отчета
     Competitors_2.Methods.TableSummary.Get:
       type: object
@@ -21132,6 +21600,22 @@ components:
         - '5'
         - '6'
         - '7'
+      x-enum-varnames:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: День недели, в который должен производиться запуск cron
     Cron_2.Types.Days:
       type: array
@@ -21344,6 +21828,14 @@ components:
         - 1
         - 2
         - 3
+      x-enum-varnames:
+        - One
+        - Two
+        - Three
+      x-enum-descriptions:
+        - null
+        - null
+        - null
     Example_2.Types.EnumNumberArray:
       type: array
       items:
@@ -21403,6 +21895,14 @@ components:
         - a
         - b
         - c
+      x-enum-varnames:
+        - A
+        - B
+        - C
+      x-enum-descriptions:
+        - null
+        - null
+        - null
     Example_2.Methods.Enum.Get:
       type: object
       properties:
@@ -22074,6 +22574,14 @@ components:
         - 101
         - 102
         - 103
+      x-enum-varnames:
+        - Vk
+        - Fb
+        - Tw
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: Доступные ключи поисковика
     Mentions_2.Methods.Searchers.Add:
       type: object
@@ -22183,6 +22691,14 @@ components:
         - bad
         - neutral
         - good
+      x-enum-varnames:
+        - Bad
+        - Neutral
+        - Good
+      x-enum-descriptions:
+        - Плохое
+        - Нейтральное
+        - Хорошее
       title: Тональность
     Mentions_2.Methods.Sentiment.Edit:
       type: object
@@ -22324,6 +22840,26 @@ components:
         - 7
         - 8
         - 9
+      x-enum-varnames:
+        - Yandex
+        - YandexCom
+        - YandexTr
+        - Google
+        - YouTube
+        - Bing
+        - Seznam
+        - AppStore
+        - GooglePlay
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Ключ поисковой системы для проверки позиций
     Positions_2.Methods.Searchers.Add:
       type: object
@@ -22372,6 +22908,22 @@ components:
         - summary
         - graphics
         - competitors
+      x-enum-varnames:
+        - Volume
+        - Frequency
+        - Visitors
+        - Dates
+        - Summary
+        - Graphics
+        - Competitors
+      x-enum-descriptions:
+        - Частота запросов
+        - Частота запросов
+        - Трафик
+        - Выбор дат
+        - Сводка
+        - Расширенная сводка
+        - Конкуренты
       title: Право для гостевых ссылок
     Positions_2.Types.Settings.GuestLinkRights:
       type: array
@@ -22456,6 +23008,22 @@ components:
         - 11
         - 12
         - 13
+      x-enum-varnames:
+        - Visibility
+        - AveragePosition
+        - Positions
+        - Top
+        - Traffic
+        - Links
+        - Indexing
+      x-enum-descriptions:
+        - Видимость
+        - Средняя позиция
+        - Позиции
+        - Топ
+        - Трафик
+        - Ссылки
+        - Индексация
       title: Номер метрики
     Projects_2.Types.Analytics.Base:
       type: integer
@@ -22469,6 +23037,26 @@ components:
         - 4
         - 5
         - 12
+      x-enum-varnames:
+        - SearchEngineAndRegions
+        - SearchEngine
+        - TrafficSources
+        - Requests
+        - Groups
+        - Folders
+        - Competitors
+        - Tags
+        - Tops
+      x-enum-descriptions:
+        - ПС и регионы
+        - ПС
+        - Источники трафика
+        - Запросы
+        - Группы
+        - Папки
+        - Конкуренты
+        - Теги
+        - Топы
       title: Тип группировки
     Projects_2.Methods.Analytics.Add:
       type: object
@@ -22964,8 +23552,8 @@ components:
         - domain_expire
         - ssl_expire
     Projects_2.Methods.Status.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Projects_2.Methods.Tasks.Get:
       type: object
       properties:
@@ -23031,6 +23619,14 @@ components:
         - ONE
         - SEVERAL
         - TEXT
+      x-enum-varnames:
+        - One
+        - Several
+        - Text
+      x-enum-descriptions:
+        - Можно выбрать только один ответ из представленных
+        - Можно выбрать несколько ответов из представленных
+        - Варианты ответа не представ алены, нужно написать ответ самостоятельно
       title: Тип вопроса
     Quiz_2.Methods.Questions.Add:
       type: object
@@ -23284,6 +23880,18 @@ components:
         - 3
         - 5
         - 6
+      x-enum-varnames:
+        - Base
+        - Phrase
+        - Exact
+        - Ordered
+        - ExactOrdered
+      x-enum-descriptions:
+        - 'Базовая частота; Учитывает все запросы, содержащие фразу, с любыми словоформами и дополнительными словами; Пример: `пластиковые окна`'
+        - 'Фразовая частота; Учитывает точную фразу с возможными словоформами, но без дополнительных слов; Пример: `"пластиковые окна"`'
+        - 'Точная частота; Фиксирует словоформу введённого слова без изменений падежей, числа или времени; Пример: `"!пластиковые !окна"`'
+        - 'Частота с фиксированным порядком слов; Учитывает фразу с возможными словоформами, но в заданном порядке; Пример: `[пластиковые окна]`'
+        - 'Точная частота с фиксированным порядком слов; Учитывает фразу в точной словоформе и заданном порядке; Пример: `[!пластиковые !окна]`'
       title: Тип частоты
     Keywords_2.Types.Volumes.Types:
       type: array
@@ -23297,6 +23905,16 @@ components:
         - month
         - week
         - weekly
+      x-enum-varnames:
+        - None
+        - Month
+        - Week
+        - Weekly
+      x-enum-descriptions:
+        - Без периода
+        - Месяц
+        - Неделя
+        - Каждую неделю
       title: Период отправки отчета
     Schedule_2.Types.Settings.Format:
       type: string
@@ -23305,6 +23923,16 @@ components:
         - xlsx
         - pdf
         - html
+      x-enum-varnames:
+        - Csv
+        - Xlsx
+        - Pdf
+        - Html
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
       title: Формат отчета
     Schedule_2.Types.Settings.Formats:
       type: array
@@ -23319,6 +23947,16 @@ components:
         - traffic
         - url
         - frequency
+      x-enum-varnames:
+        - Summary
+        - Traffic
+        - Url
+        - Frequency
+      x-enum-descriptions:
+        - Сводка
+        - Трафик
+        - Ссылка
+        - Частота
       title: Дополнительное поле отчета проверки позиций
     Schedule_2.Types.Settings.AdditionalFields:
       type: array
@@ -23474,12 +24112,26 @@ components:
         - 0
         - 1
         - 2
+      x-enum-varnames:
+        - PC
+        - Tablet
+        - Smartphone
+      x-enum-descriptions:
+        - ПК
+        - Планшет
+        - Смартфон
       title: Устройство региона
     Snapshots_2.Types.Competitors.OutputFormat:
       type: string
       enum:
         - domain
         - url
+      x-enum-varnames:
+        - Domain
+        - Url
+      x-enum-descriptions:
+        - По домену
+        - По url
       title: Формат вывода конкурентов
     TV.API.Types.DateArray:
       type: array
@@ -23869,6 +24521,18 @@ components:
         - snippet_title
         - snippet_body
         - snippet_ext
+      x-enum-varnames:
+        - Url
+        - Domain
+        - SnippetTitle
+        - SnippetBody
+        - SnippetExt
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Поле, возвращаемое в snapshotsData
     Snapshots_2.Types.History.PositionsFields:
       type: array
@@ -24195,6 +24859,16 @@ components:
         - add
         - edit
         - del
+      x-enum-varnames:
+        - Get
+        - Add
+        - Edit
+        - Del
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
       title: Метод вызова функции
     System_2.Types.Calls.Call:
       type: object
@@ -24234,6 +24908,10 @@ components:
       type: string
       enum:
         - apiV2
+      x-enum-varnames:
+        - ApiV2
+      x-enum-descriptions:
+        - null
       title: Формат вызова
     System_2.Methods.Calls.Get:
       type: object
@@ -24307,6 +24985,16 @@ components:
         - cdir
         - dir
         - file
+      x-enum-varnames:
+        - Pdir
+        - Cdir
+        - Dir
+        - File
+      x-enum-descriptions:
+        - Родительская директория
+        - Текущая директория
+        - Директория
+        - Файл
       title: Тип файла, получаемого из облака Selectel
     System_2.Types.Cloud.File:
       type: object
@@ -24346,6 +25034,14 @@ components:
         - ru
         - en
         - ''
+      x-enum-varnames:
+        - Ru
+        - En
+        - Uni
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: Язык шаблона
     System_2.Types.Tpl.Currency:
       type: string
@@ -24353,6 +25049,14 @@ components:
         - RUB
         - USD
         - ''
+      x-enum-varnames:
+        - Rub
+        - Usd
+        - Uni
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: Валюта шаблонов
     System_2.Methods.Tpl.Get:
       type: object
@@ -24570,12 +25274,42 @@ components:
         - telegram
         - android
         - guest
+      x-enum-varnames:
+        - System
+        - Other
+        - Email
+        - Ios
+        - Vk
+        - Chrome
+        - Twitter
+        - Facebook
+        - Telegram
+        - Android
+        - Guest
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Откуда поступил тикет
     TV.Core.Sites.Sites:
       type: string
       enum:
         - topvisor
         - thundo
+      x-enum-varnames:
+        - TOPVISOR
+        - THUNDO
+      x-enum-descriptions:
+        - null
+        - null
     Tickets_2.Methods.Tickets.Add:
       type: object
       properties:
@@ -24802,6 +25536,20 @@ components:
         - browsers
         - oses
         - countries
+      x-enum-varnames:
+        - ChartData
+        - CountsUnique
+        - Referrers
+        - Browsers
+        - Oses
+        - Countries
+      x-enum-descriptions:
+        - Клик, за несколько дат, для графика
+        - Количество уникальных переходов
+        - Клики, разделение по источникам
+        - Клики, разделение по браузерам
+        - Клики, разделение по операционным системам
+        - Клики, разделение по странам
       title: Тип статистики кликов по ссылке
     Tpvsr_2.Types.Stat.Dimension.Types:
       type: array
@@ -24818,6 +25566,22 @@ components:
         - Safari
         - Ya
         - Other
+      x-enum-varnames:
+        - InternetExplorer
+        - Chrome
+        - Firefox
+        - Opera
+        - Safari
+        - Yahoo
+        - Other
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Бразуер для получение информации
     Tpvsr_2.Types.Stat.Dimension.Browsers:
       type: array
@@ -24834,6 +25598,22 @@ components:
         - Macintosh
         - Linux
         - Other
+      x-enum-varnames:
+        - Android
+        - Ios
+        - Wordpress
+        - Windows
+        - Macintosh
+        - Linux
+        - Other
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Операционная система
     Tpvsr_2.Types.Stat.Dimension.Oses:
       type: array
@@ -24847,6 +25627,16 @@ components:
         - sites
         - undefined
         - overall
+      x-enum-varnames:
+        - Social
+        - Sites
+        - Undefined
+        - Overall
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
       title: Место откуда перешел пользователь
     Tpvsr_2.Types.Stat.Dimension.Referrers:
       type: array
@@ -24955,6 +25745,14 @@ components:
         - csv
         - csvUTF8s
         - xml
+      x-enum-varnames:
+        - Csv
+        - CsvUTF8s
+        - Xml
+      x-enum-descriptions:
+        - null
+        - Csv в кодировке сервера
+        - null
       title: Формат экспорта urls
     Urls_2.Methods.Export.Get:
       type: object
@@ -25090,6 +25888,14 @@ components:
         - set
         - add
         - remove
+      x-enum-varnames:
+        - Set
+        - Add
+        - Remove
+      x-enum-descriptions:
+        - Установить указанные тэги, ранее установленные тэги будут сняты
+        - Установить указанные тэги, ранее установленные тэги будут сохранены
+        - Снять указанные тэги
       title: Способ установки тегов
     Urls_2.Methods.Tags.Edit:
       type: object
@@ -25176,6 +25982,28 @@ components:
         - 7
         - 8
         - 9
+      x-enum-varnames:
+        - Disabled
+        - Top1
+        - Top2
+        - Top3
+        - Top4
+        - Top5
+        - Top6
+        - Top7
+        - Top8
+        - Top9
+      x-enum-descriptions:
+        - Отключен
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Дополнительный сегмент топа
     Users_2.Methods.Profile.Edit:
       type: object
@@ -25220,6 +26048,18 @@ components:
         - 28
         - 44
         - 56
+      x-enum-varnames:
+        - Twitter
+        - TelegramSeoChat
+        - TelegramPPCChat
+        - Silver
+        - TelegramTopvisor
+      x-enum-descriptions:
+        - Twitter
+        - Telegram SEO Chat
+        - Telegram PPC Chat
+        - Белые ночи (Silver)
+        - Канал Топвизора
       title: Id достижения
     Users_2.Methods.Ranks.Add:
       type: object
@@ -25901,6 +26741,12 @@ components:
       enum:
         - RUB
         - USD
+      x-enum-varnames:
+        - RUB
+        - USD
+      x-enum-descriptions:
+        - null
+        - null
       title: |-
         Валюта
 
@@ -26099,6 +26945,14 @@ components:
         - day
         - month
         - year
+      x-enum-varnames:
+        - Day
+        - Month
+        - Year
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: |-
         Имя сегмента, на которые делится период отчета
 
@@ -26515,6 +27369,12 @@ components:
       enum:
         - ''
         - journal
+      x-enum-varnames:
+        - None
+        - Journal
+      x-enum-descriptions:
+        - null
+        - null
     Admin_2.Methods.Users.Ranks.Add:
       type: object
       properties:
@@ -27153,12 +28013,30 @@ components:
         - images
         - js
         - css
+      x-enum-varnames:
+        - Pages
+        - Links
+        - Images
+        - JS
+        - CSS
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Тип очтета аудита
     TV.API.Types.ExportFormat:
       type: string
       enum:
         - csv
         - xlsx
+      x-enum-varnames:
+        - Csv
+        - Xlsx
+      x-enum-descriptions:
+        - null
+        - null
     Audit_2.Methods.Audit.Export.Get:
       type: object
       properties:
@@ -27866,6 +28744,12 @@ components:
       enum:
         - all
         - changed
+      x-enum-varnames:
+        - All
+        - Changed
+      x-enum-descriptions:
+        - null
+        - null
       title: Фильтр по состоянию изменения в сводке
     Audit_2.Methods.Audit.Summary.Get:
       type: object
@@ -28712,6 +29596,14 @@ components:
         - csv
         - csv_utf
         - xlsx
+      x-enum-varnames:
+        - Csv
+        - CsvUtf
+        - Xlsx
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: Тип экспортируемого файла
     Competitors_2.Methods.Export.Table.Get:
       type: object
@@ -29095,6 +29987,12 @@ components:
       enum:
         - '0'
         - xml
+      x-enum-varnames:
+        - Normal
+        - Xml
+      x-enum-descriptions:
+        - Обычная выдача
+        - XML выдача
       title: Тип выдачи
     Content_2.Methods.Apometr.Calendar.Get:
       type: object
@@ -29519,6 +30417,16 @@ components:
         - web
         - safari
         - safariAuth
+      x-enum-varnames:
+        - Firebase
+        - Web
+        - Safari
+        - SafariAuth
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
       title: Типы токенов
     Informer_2.Methods.Push.Token.Add:
       type: object
@@ -29560,6 +30468,22 @@ components:
         - 101
         - 104
         - 105
+      x-enum-varnames:
+        - Yandex
+        - Google
+        - Bing
+        - Yandex_hint
+        - Google_hint
+        - YouTube_hint
+        - Bing_hint
+      x-enum-descriptions:
+        - Подбор ключевых слов
+        - null
+        - null
+        - Подбор подсказок, суррогатный ключ поисковика
+        - null
+        - null
+        - null
       title: Ключ поисковой системы для сбора запросов
     Keywords_2.Types.Collect.HintGenerator:
       type: string
@@ -29568,6 +30492,16 @@ components:
         - letter_ru
         - number
         - space
+      x-enum-varnames:
+        - Letters
+        - Letters_ru
+        - Numbers
+        - Space
+      x-enum-descriptions:
+        - Подставлять буквы из английского алфавита
+        - Подставлять буквы из русского алфавита
+        - Подставлять числа
+        - Подставить пробел
       title: Тип метода подбора подсказок
     Keywords_2.Types.Collect.HintGenerators:
       type: array
@@ -29622,6 +30556,12 @@ components:
       enum:
         - in_folder
         - in_folder_last
+      x-enum-varnames:
+        - Folder
+        - FolderLast
+      x-enum-descriptions:
+        - В папку, перед существующими группами
+        - В папку, после существующих групп
       title: Куда добавлять добавляемые группы
     Keywords_2.Methods.Collect.Go.Edit:
       type: object
@@ -29895,12 +30835,26 @@ components:
         - 0
         - 1
         - 2
+      x-enum-varnames:
+        - None
+        - Actual
+        - Exists
+      x-enum-descriptions:
+        - Ничего не пропускать
+        - Пропутсить запросы с укутальной частотой
+        - Пропутсить запросы с частотой любой давности
       title: Какие запросы следует пропусить при перепроверке частоты
     Keywords_2.Types.Volumes.SearcherKey:
       type: integer
       enum:
         - 0
         - 1
+      x-enum-varnames:
+        - Yandex
+        - Google
+      x-enum-descriptions:
+        - null
+        - null
       title: Ключ поисковой системы для проверки частоты
     Keywords_2.Types.Volumes.Qualifier:
       type: object
@@ -30033,6 +30987,7 @@ components:
       title: Информация о стоимости запуска проверки позиций по проектам
     Keywords_2.Methods.Volumes.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Landings_2.Methods.Hr.Feedback.Add:
       type: object
       properties:
@@ -30101,6 +31056,14 @@ components:
         - any
         - plus
         - minus
+      x-enum-varnames:
+        - Any
+        - Plus
+        - Minus
+      x-enum-descriptions:
+        - Ключевые слова, любое из
+        - Ключевые слова, все из
+        - Ключевые слова, ни одно из
       title: Типы доступных фраз
     Mentions_2.Methods.Rules.Keywords.Edit:
       type: object
@@ -30407,6 +31370,7 @@ components:
       title: Информация о стоимости запуска проверки позиций по проектам
     Positions_2.Methods.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:
@@ -30725,6 +31689,18 @@ components:
         - common
         - competitor
         - exclusive_competitor
+      x-enum-varnames:
+        - Me
+        - ExclusiveMe
+        - Common
+        - Competitor
+        - ExclusiveCompetitor
+      x-enum-descriptions:
+        - Все запросы
+        - Уникальные запросы
+        - Общие запросы
+        - Все запросыы  конкурента
+        - Уникальные запросы конкурента
       title: Тип связи запросов между конкурентами
     Projects_2.Methods.Master.HintsCompetitors.Get:
       type: object
@@ -30993,8 +31969,8 @@ components:
         - created, если данные готовы
         - paidtill, если данные готовы
     Projects_2.Methods.Status.Registrar.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Projects_2.Methods.Status.Ssl.Get:
       type: object
       properties:
@@ -31009,8 +31985,8 @@ components:
         Возваращает объект с параметрами:
         - expire
     Projects_2.Methods.Status.Ssl.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Projects_2.Methods.Tasks.Volumes.Add:
       type: object
       properties:
@@ -31240,6 +32216,10 @@ components:
       type: string
       enum:
         - csv
+      x-enum-varnames:
+        - Csv
+      x-enum-descriptions:
+        - null
       title: Тип экспортируемого файла
     Snapshots_2.Methods.Competitors.Export.Get:
       type: object
@@ -31375,6 +32355,10 @@ components:
       type: string
       enum:
         - print
+      x-enum-varnames:
+        - Print
+      x-enum-descriptions:
+        - null
       title: Шаблон документа (только для pdf)
     Snapshots_2.Types.History.Export.Output:
       type: string
@@ -31382,6 +32366,14 @@ components:
         - csv
         - csvOld
         - xlsx
+      x-enum-varnames:
+        - Csv
+        - CsvOld
+        - Xlsx
+      x-enum-descriptions:
+        - null
+        - null
+        - null
       title: Тип экспортируемого файла
     Snapshots_2.Methods.History.Export.Get:
       type: object
@@ -31512,6 +32504,18 @@ components:
         - avg
         - visibility
         - median
+      x-enum-varnames:
+        - Tops
+        - TopsCount
+        - Avg
+        - Visibility
+        - Median
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
       title: Тип диаграммы
     Snapshots_2.Methods.History.Links.Get:
       type: object
@@ -31611,6 +32615,10 @@ components:
       type: string
       enum:
         - v2
+      x-enum-varnames:
+        - V2
+      x-enum-descriptions:
+        - Вторая
       title: Версия API
     System_2.Methods.Api.Test.Get:
       type: object
@@ -31746,6 +32754,12 @@ components:
       enum:
         - ''
         - vk
+      x-enum-varnames:
+        - Normal
+        - Vk
+      x-enum-descriptions:
+        - null
+        - null
       title: Формат превью
     System_2.Methods.Common.PagePreview.Get:
       type: object
@@ -31877,11 +32891,21 @@ components:
       enum:
         - varchar
         - text
+      x-enum-varnames:
+        - Varchar
+        - Text
+      x-enum-descriptions:
+        - Хранить как Varchar
+        - Хранить как текст
       title: Поле хранения параметра
     System_2.Types.Properties.Property.TargetName:
       type: string
       enum:
         - mod_projects
+      x-enum-varnames:
+        - ModProjects
+      x-enum-descriptions:
+        - Проекты
       title: Категория данных
     System_2.Methods.Properties.Property.Edit:
       type: object
@@ -32344,8 +33368,8 @@ components:
       title: Получение количество переходов и регистраций по реферальной ссылке (для графика)
     Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec:
       nullable: true
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Users_2.Methods.Referrals.Invite.Add:
       type: object
       properties:
@@ -33075,32 +34099,32 @@ components:
       required: []
       title: Получение числа автоматических проверока по дням по часам
     Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get:
       type: object
       properties: {}
       required: []
       title: Получение числа автоматических проверок по часам
     Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Positions.ChartByHour.Get:
       type: object
       properties: {}
       required: []
       title: Получение числа проверок за месяц по часам
     Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get:
       type: object
       properties: {}
       required: []
       title: Получение числа проверок по часам по пользователям
     Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get:
       type: object
       properties:
@@ -33341,6 +34365,7 @@ components:
       title: Информация о стоимости запуска аудита по проектам
     Audit_2.Methods.Audit.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
       properties:
@@ -33406,8 +34431,8 @@ components:
 
         Вернет null, если ошибки на роботе нет
       nullable: true
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Audit_2.Methods.Audit.Log.Chart.Get:
       type: object
       properties:
@@ -33450,6 +34475,24 @@ components:
         - 5
         - 6
         - 7
+      x-enum-varnames:
+        - Review
+        - Indexing
+        - Snippet
+        - Links
+        - Images
+        - Content
+        - Pages
+        - Page
+      x-enum-descriptions:
+        - Обзор
+        - Индексация
+        - Сниппет
+        - Ссылки
+        - Изображения
+        - Контент
+        - Страницы
+        - Одна страница
       title: Тип отчета аудита для экспорта
     Audit_2.Methods.Audit.Results.Export.Get:
       type: object
@@ -33580,6 +34623,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Indexing.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
       properties:
@@ -33644,6 +34688,10 @@ components:
       type: string
       enum:
         - gdrive
+      x-enum-varnames:
+        - GoogleDrive
+      x-enum-descriptions:
+        - null
       title: Хранилище для экспорта
     Audit_2.Methods.Indexing.Export.ToRepository.Get:
       type: object
@@ -33706,6 +34754,20 @@ components:
         - 100000
         - 150000
         - 300000
+      x-enum-varnames:
+        - COUNT_100
+        - COUNT_1000
+        - COUNT_10000
+        - COUNT_100000
+        - COUNT_150000
+        - COUNT_300000
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       title: |-
         Предполагаемое число страниц на вашем сайте
 
@@ -33766,6 +34828,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Sitemap.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
       properties:
@@ -33812,6 +34875,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Watcher.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     properties-check_id:
       title: ID проверки радара
       type: integer
@@ -34617,6 +35681,14 @@ components:
         - groupName
         - groupNameWithKeywords
         - keywords
+      x-enum-varnames:
+        - GroupName
+        - GroupnameWithKeywords
+        - Keywords
+      x-enum-descriptions:
+        - По названию группы
+        - По названию группы и ключевым словам
+        - По ключевым словам
       title: По каким параметрам расширять группу
     Keywords_2.Methods.Collect.Ext.Go.Edit:
       type: object
@@ -35033,6 +36105,10 @@ components:
       type: string
       enum:
         - gdrive
+      x-enum-varnames:
+        - GoogleDrive
+      x-enum-descriptions:
+        - null
       title: Название директории для эспорта
     Snapshots_2.Methods.Competitors.Export.ToRepository.Get:
       type: object
@@ -35282,6 +36358,10 @@ components:
       type: string
       enum:
         - csv
+      x-enum-varnames:
+        - Csv
+      x-enum-descriptions:
+        - null
       title: Формат экспорта
     Tpvsr_2.Methods.Stat.Export.Referrers.Get:
       type: object
@@ -35387,6 +36467,12 @@ components:
       enum:
         - auth
         - join
+      x-enum-varnames:
+        - Auth
+        - Join
+      x-enum-descriptions:
+        - Авторизация
+        - Привязка аккаунта
       title: Действие, выполняемое при авторизации
     Users_2.Methods.Tpa.Apple.Auth.Get:
       type: object

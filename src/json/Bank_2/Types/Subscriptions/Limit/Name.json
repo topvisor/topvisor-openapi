@@ -21,6 +21,30 @@
                     "projects_archive",
                     "api"
                 ],
+                "x-enum-varnames": [
+                    "PositionsCheck",
+                    "PositionsCheckManual",
+                    "KeywordsVolumes",
+                    "KeywordsCollect",
+                    "PositionsTasks",
+                    "Projects",
+                    "ProjectsRights",
+                    "ProjectsCompetitors",
+                    "ProjectsArchive",
+                    "Api"
+                ],
+                "x-enum-descriptions": [
+                    "Проверка позиций (автоматическая)",
+                    "Проверка позиций (ручная)",
+                    "Проверка частоты",
+                    "Сбор семантического ядра",
+                    "Максимальное количество задач проверки позиций; countTasks = Σ projects (keywords × regions)",
+                    "Количество проектов",
+                    "Количество гостевых аккаунтов; Считаются уникальные гостевые аккаунты по всем проектам",
+                    "Количество конкурентов",
+                    "Доступ к архивным проектам",
+                    "Доступ к API"
+                ],
                 "title": "Имя лимита\n\nГайдлайн: Имя лимита начинается с имени сервиса и характеризуется именем обеъкта или именем метода",
                 "description": "@see \\Services\\Bank_2\\Objects\\Subscriptions\\Limit"
             }

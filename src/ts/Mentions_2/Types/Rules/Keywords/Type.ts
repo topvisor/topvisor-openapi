@@ -11,7 +11,7 @@ export interface components {
          * Типы доступных фраз
          * @enum {string}
          */
-        "Mentions_2.Types.Rules.Keywords.Type": "any" | "plus" | "minus";
+        "Mentions_2.Types.Rules.Keywords.Type": Mentions_2TypesRulesKeywordsType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,12 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Mentions_2TypesRulesKeywordsType {
+    // Ключевые слова, любое из
+    Any = "any",
+    // Ключевые слова, все из
+    Plus = "plus",
+    // Ключевые слова, ни одно из
+    Minus = "minus"
+}
 export type operations = Record<string, never>;

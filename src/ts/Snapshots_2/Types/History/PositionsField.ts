@@ -11,7 +11,7 @@ export interface components {
          * Поле, возвращаемое в snapshotsData
          * @enum {string}
          */
-        "Snapshots_2.Types.History.PositionsField": "url" | "domain" | "snippet_title" | "snippet_body" | "snippet_ext";
+        "Snapshots_2.Types.History.PositionsField": Snapshots_2TypesHistoryPositionsField;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,11 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Snapshots_2TypesHistoryPositionsField {
+    Url = "url",
+    Domain = "domain",
+    SnippetTitle = "snippet_title",
+    SnippetBody = "snippet_body",
+    SnippetExt = "snippet_ext"
+}
 export type operations = Record<string, never>;

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {integer} */
-        "Example_2.Types.Number": 1 | 2 | 3;
+        "Example_2.Types.Number": Example_2TypesNumber;
     };
     responses: never;
     parameters: never;
@@ -17,4 +17,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Example_2TypesNumber {
+    One = 1,
+    Two = 2,
+    Three = 3
+}
 export type operations = Record<string, never>;

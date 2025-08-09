@@ -11,7 +11,7 @@ export interface components {
          * Номер метрики
          * @enum {integer}
          */
-        "Projects_2.Types.Analytics.Axe": 1 | 2 | 3 | 4 | 11 | 12 | 13;
+        "Projects_2.Types.Analytics.Axe": Projects_2TypesAnalyticsAxe;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,20 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Projects_2TypesAnalyticsAxe {
+    // Видимость
+    Visibility = 1,
+    // Средняя позиция
+    AveragePosition = 2,
+    // Позиции
+    Positions = 3,
+    // Топ
+    Top = 4,
+    // Трафик
+    Traffic = 11,
+    // Ссылки
+    Links = 12,
+    // Индексация
+    Indexing = 13
+}
 export type operations = Record<string, never>;

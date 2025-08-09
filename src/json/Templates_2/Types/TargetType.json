@@ -16,6 +16,20 @@
                     "competitors_keywords",
                     "competitors_wordstat"
                 ],
+                "x-enum-varnames": [
+                    "Templates",
+                    "Groups",
+                    "Keywords",
+                    "CompetitorsKeywords",
+                    "CompetitorsWordstat"
+                ],
+                "x-enum-descriptions": [
+                    "Шаблоны",
+                    "Группы",
+                    "Запросы",
+                    "Запросы конкурентов",
+                    "Статистика поисковых запросов конкурентов"
+                ],
                 "title": "Тип данных (место использования)"
             }
         }

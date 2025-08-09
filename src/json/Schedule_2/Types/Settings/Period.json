@@ -15,6 +15,18 @@
                     "week",
                     "weekly"
                 ],
+                "x-enum-varnames": [
+                    "None",
+                    "Month",
+                    "Week",
+                    "Weekly"
+                ],
+                "x-enum-descriptions": [
+                    "Без периода",
+                    "Месяц",
+                    "Неделя",
+                    "Каждую неделю"
+                ],
                 "title": "Период отправки отчета"
             }
         }

@@ -15,7 +15,9 @@ export interface components {
             /** ID проекта */
             project_id: number;
         };
-        "Projects_2.Methods.Status.Get.Exec": import('../../../stdClass.ts').components['schemas']['stdClass'];
+        "Projects_2.Methods.Status.Get.Exec": {
+            [key: string]: unknown;
+        };
     };
     responses: never;
     parameters: never;

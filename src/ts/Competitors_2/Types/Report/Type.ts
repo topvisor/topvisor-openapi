@@ -11,7 +11,7 @@ export interface components {
          * Тип отчета
          * @enum {string}
          */
-        "Competitors_2.Types.Report.Type": "serp" | "ads";
+        "Competitors_2.Types.Report.Type": Competitors_2TypesReportType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Competitors_2TypesReportType {
+    // Поисковая выдача
+    Serp = "serp",
+    // Реклама
+    Ads = "ads"
+}
 export type operations = Record<string, never>;

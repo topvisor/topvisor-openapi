@@ -11,7 +11,7 @@ export interface components {
          * Тип реквизитов
          * @enum {string}
          */
-        "Bank_2.Types.Requisites.Type": "contract" | "offer" | "partnerOffer" | "fl223" | "domainsContract" | "domainsOffer" | "domainsPersonContract" | "domainsPersonOffer";
+        "Bank_2.Types.Requisites.Type": Bank_2TypesRequisitesType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,14 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Bank_2TypesRequisitesType {
+    Contract = "contract",
+    Offer = "offer",
+    PartnerOffer = "partnerOffer",
+    Fl223 = "fl223",
+    DomainsContract = "domainsContract",
+    DomainsOffer = "domainsOffer",
+    DomainsPersonContract = "domainsPersonContract",
+    DomainsPersonOffer = "domainsPersonOffer"
+}
 export type operations = Record<string, never>;

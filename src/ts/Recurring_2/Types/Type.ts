@@ -11,7 +11,7 @@ export interface components {
          * Тип рекуррентного платежа
          * @enum {string}
          */
-        "Recurring_2.Types.Type": "refill";
+        "Recurring_2.Types.Type": Recurring_2TypesType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,8 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Recurring_2TypesType {
+    // Обычное пополнение счета
+    Refill = "refill"
+}
 export type operations = Record<string, never>;

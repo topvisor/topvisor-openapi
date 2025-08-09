@@ -11,7 +11,7 @@ export interface components {
          * Тип отчета радара
          * @enum {string}
          */
-        "Audit_2.Types.Settings.WatcherType": "title" | "description" | "h1" | "content";
+        "Audit_2.Types.Settings.WatcherType": Audit_2TypesSettingsWatcherType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Audit_2TypesSettingsWatcherType {
+    Title = "title",
+    Description = "description",
+    H1 = "h1",
+    Content = "content"
+}
 export type operations = Record<string, never>;

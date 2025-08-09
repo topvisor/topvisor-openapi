@@ -12,6 +12,14 @@
                 "enum": [
                     "csv",
                     "xlsx"
+                ],
+                "x-enum-varnames": [
+                    "Csv",
+                    "Xlsx"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
                 ]
             }
         }

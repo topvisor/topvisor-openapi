@@ -21,37 +21,21 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export enum FieldOperator {
-    // 
     Equals = "EQUALS",
-    // 
     NotEquals = "NOT_EQUALS",
-    // 
     In = "IN",
-    // 
     NotIn = "NOT_IN",
-    // 
     Greater = "GREATER_THAN",
-    // 
     GreaterEquals = "GREATER_THAN_EQUALS",
-    // 
     Less = "LESS_THAN",
-    // 
     LessEquals = "LESS_THAN_EQUALS",
-    // 
     Between = "BETWEEN",
-    // 
     StartsWith = "STARTS_WITH",
-    // 
     Like = "CONTAINS",
-    // 
     NotLike = "DOES_NOT_CONTAIN",
-    // 
     Regexp = "REGEXP",
-    // 
     NotRegexp = "NOT_REGEXP",
-    // 
     IsNull = "IS_NULL",
-    // 
     IsNotNull = "IS_NOT_NULL"
 }
 export type operations = Record<string, never>;

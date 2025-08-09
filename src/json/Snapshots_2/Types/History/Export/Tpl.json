@@ -12,6 +12,12 @@
                 "enum": [
                     "print"
                 ],
+                "x-enum-varnames": [
+                    "Print"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
                 "title": "Шаблон документа (только для pdf)"
             }
         }

@@ -15,6 +15,18 @@
                     "sitemap",
                     "watcher"
                 ],
+                "x-enum-varnames": [
+                    "Audit",
+                    "Indexing",
+                    "Sitemap",
+                    "Watcher"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Модуль аудита"
             }
         }

@@ -18,6 +18,24 @@
                     "GHOST",
                     "CONTENT"
                 ],
+                "x-enum-varnames": [
+                    "Developer",
+                    "Support",
+                    "Accounting",
+                    "Hr",
+                    "Documentation",
+                    "Ghost",
+                    "Content"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Позиция или права сотрудника"
             }
         }

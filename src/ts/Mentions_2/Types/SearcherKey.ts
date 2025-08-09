@@ -11,7 +11,7 @@ export interface components {
          * Доступные ключи поисковика
          * @enum {integer}
          */
-        "Mentions_2.Types.SearcherKey": 101 | 102 | 103;
+        "Mentions_2.Types.SearcherKey": Mentions_2TypesSearcherKey;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Mentions_2TypesSearcherKey {
+    Vk = 101,
+    Fb = 102,
+    Tw = 103
+}
 export type operations = Record<string, never>;

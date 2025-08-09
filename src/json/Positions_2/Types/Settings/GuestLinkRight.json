@@ -18,6 +18,24 @@
                     "graphics",
                     "competitors"
                 ],
+                "x-enum-varnames": [
+                    "Volume",
+                    "Frequency",
+                    "Visitors",
+                    "Dates",
+                    "Summary",
+                    "Graphics",
+                    "Competitors"
+                ],
+                "x-enum-descriptions": [
+                    "Частота запросов",
+                    "Частота запросов",
+                    "Трафик",
+                    "Выбор дат",
+                    "Сводка",
+                    "Расширенная сводка",
+                    "Конкуренты"
+                ],
                 "title": "Право для гостевых ссылок"
             }
         }

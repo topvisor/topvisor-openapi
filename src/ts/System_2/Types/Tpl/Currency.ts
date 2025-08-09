@@ -11,7 +11,7 @@ export interface components {
          * Валюта шаблонов
          * @enum {string}
          */
-        "System_2.Types.Tpl.Currency": "RUB" | "USD" | "";
+        "System_2.Types.Tpl.Currency": System_2TypesTplCurrency;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum System_2TypesTplCurrency {
+    Rub = "RUB",
+    Usd = "USD",
+    Uni = ""
+}
 export type operations = Record<string, never>;

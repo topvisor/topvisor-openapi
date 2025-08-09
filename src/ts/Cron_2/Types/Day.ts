@@ -11,7 +11,7 @@ export interface components {
          * День недели, в который должен производиться запуск cron
          * @enum {string}
          */
-        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
+        "Cron_2.Types.Day": Cron_2TypesDay;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,13 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Cron_2TypesDay {
+    Monday = "1",
+    Tuesday = "2",
+    Wednesday = "3",
+    Thursday = "4",
+    Friday = "5",
+    Saturday = "6",
+    Sunday = "7"
+}
 export type operations = Record<string, never>;

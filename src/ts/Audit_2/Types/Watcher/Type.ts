@@ -11,7 +11,7 @@ export interface components {
          * Тип проверки радара
          * @enum {string}
          */
-        "Audit_2.Types.Watcher.Type": "http_codes" | "redirects" | "h1" | "title" | "description" | "content";
+        "Audit_2.Types.Watcher.Type": Audit_2TypesWatcherType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,18 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Audit_2TypesWatcherType {
+    // Статусы ответа
+    HttpCodes = "http_codes",
+    // Список редиректов
+    Redirects = "redirects",
+    // Заголовок H1 страницы
+    H1 = "h1",
+    // Title страницы
+    Title = "title",
+    // Description страницы
+    Description = "description",
+    // Контент страницы
+    Content = "content"
+}
 export type operations = Record<string, never>;

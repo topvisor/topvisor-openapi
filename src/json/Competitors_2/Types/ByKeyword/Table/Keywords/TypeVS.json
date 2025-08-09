@@ -14,6 +14,16 @@
                     "competitor",
                     "exclusive_competitor"
                 ],
+                "x-enum-varnames": [
+                    "Common",
+                    "Competitor",
+                    "Exclusive_competitor"
+                ],
+                "x-enum-descriptions": [
+                    "Общие",
+                    "Все",
+                    "Уникальные"
+                ],
                 "title": "Тип связи запросов с лидером"
             }
         }

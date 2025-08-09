@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {integer} */
-        "Qr_2.Types.TplN": 0 | 1 | 2;
+        "Qr_2.Types.TplN": Qr_2TypesTplN;
     };
     responses: never;
     parameters: never;
@@ -17,4 +17,9 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Qr_2TypesTplN {
+    BlackAndWhite = 0,
+    Pixels = 1,
+    Labyrinth = 2
+}
 export type operations = Record<string, never>;

@@ -18,6 +18,24 @@
                     "Linux",
                     "Other"
                 ],
+                "x-enum-varnames": [
+                    "Android",
+                    "Ios",
+                    "Wordpress",
+                    "Windows",
+                    "Macintosh",
+                    "Linux",
+                    "Other"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Операционная система"
             }
         }

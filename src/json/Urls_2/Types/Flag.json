@@ -15,6 +15,18 @@
                     1,
                     2
                 ],
+                "x-enum-varnames": [
+                    "RecentlyDeleted",
+                    "SecondRecentlyDeleted",
+                    "SecondRecentlyAdded",
+                    "RecentlyAdded"
+                ],
+                "x-enum-descriptions": [
+                    "Недавно удален",
+                    "Недавно удален при вторичном импорте",
+                    "Недавно добавлен при вторичном импорте; У карты сайта присутствовал в прошлых версиях",
+                    "Недавно добавлен"
+                ],
                 "title": "Флаг активности"
             }
         }

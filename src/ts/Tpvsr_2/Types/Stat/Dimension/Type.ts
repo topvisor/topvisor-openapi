@@ -11,7 +11,7 @@ export interface components {
          * Тип статистики кликов по ссылке
          * @enum {string}
          */
-        "Tpvsr_2.Types.Stat.Dimension.Type": "chart_data" | "counts_unique" | "referrers" | "browsers" | "oses" | "countries";
+        "Tpvsr_2.Types.Stat.Dimension.Type": Tpvsr_2TypesStatDimensionType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,18 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Tpvsr_2TypesStatDimensionType {
+    // Клик, за несколько дат, для графика
+    ChartData = "chart_data",
+    // Количество уникальных переходов
+    CountsUnique = "counts_unique",
+    // Клики, разделение по источникам
+    Referrers = "referrers",
+    // Клики, разделение по браузерам
+    Browsers = "browsers",
+    // Клики, разделение по операционным системам
+    Oses = "oses",
+    // Клики, разделение по странам
+    Countries = "countries"
+}
 export type operations = Record<string, never>;

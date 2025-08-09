@@ -11,7 +11,7 @@ export interface components {
          * Формат вызова
          * @enum {string}
          */
-        "System_2.Types.Calls.Format": "apiV2";
+        "System_2.Types.Calls.Format": System_2TypesCallsFormat;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,7 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum System_2TypesCallsFormat {
+    ApiV2 = "apiV2"
+}
 export type operations = Record<string, never>;

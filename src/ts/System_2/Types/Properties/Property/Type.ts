@@ -11,7 +11,7 @@ export interface components {
          * Поле хранения параметра
          * @enum {string}
          */
-        "System_2.Types.Properties.Property.Type": "varchar" | "text";
+        "System_2.Types.Properties.Property.Type": System_2TypesPropertiesPropertyType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum System_2TypesPropertiesPropertyType {
+    // Хранить как Varchar
+    Varchar = "varchar",
+    // Хранить как текст
+    Text = "text"
+}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Id достижения
          * @enum {integer}
          */
-        "Users_2.Types.Ranks.Id": 3 | 27 | 28 | 44 | 56;
+        "Users_2.Types.Ranks.Id": Users_2TypesRanksId;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,16 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Users_2TypesRanksId {
+    // Twitter
+    Twitter = 3,
+    // Telegram SEO Chat
+    TelegramSeoChat = 27,
+    // Telegram PPC Chat
+    TelegramPPCChat = 28,
+    // Белые ночи (Silver)
+    Silver = 44,
+    // Канал Топвизора
+    TelegramTopvisor = 56
+}
 export type operations = Record<string, never>;

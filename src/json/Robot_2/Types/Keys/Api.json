@@ -24,6 +24,36 @@
                     "XML_STOCK_YANDEX_ASYNC",
                     "XML_RIVER_YANDEX_ASYNC"
                 ],
+                "x-enum-varnames": [
+                    "None",
+                    "Yandex",
+                    "YandexCom",
+                    "YandexTr",
+                    "Brightdata",
+                    "XmlRiver",
+                    "XmlStock",
+                    "Netnut",
+                    "Proxymadata",
+                    "YandexAsync",
+                    "XmlStockIe",
+                    "XmlStockYandexAsync",
+                    "XmlRiverYandexAsync"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    "@deprecated API Яндекса v1 отключается, если оно более не нужно для работы с yandex.com, удалить",
+                    "@deprecated API Яндекса v1 отключается, если оно более не нужно для работы с yandex.com.tr, удалить",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Движок, который прикрепляется к ключу\n\nТолько ключи с прикрепленным движком могут выполнять задачи такого движка"
             }
         }

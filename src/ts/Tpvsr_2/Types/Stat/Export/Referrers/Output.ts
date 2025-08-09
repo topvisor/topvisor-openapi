@@ -11,7 +11,7 @@ export interface components {
          * Формат экспорта
          * @enum {string}
          */
-        "Tpvsr_2.Types.Stat.Export.Referrers.Output": "csv";
+        "Tpvsr_2.Types.Stat.Export.Referrers.Output": Tpvsr_2TypesStatExportReferrersOutput;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,7 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Tpvsr_2TypesStatExportReferrersOutput {
+    Csv = "csv"
+}
 export type operations = Record<string, never>;

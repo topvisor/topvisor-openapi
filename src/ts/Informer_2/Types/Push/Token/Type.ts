@@ -11,7 +11,7 @@ export interface components {
          * Типы токенов
          * @enum {string}
          */
-        "Informer_2.Types.Push.Token.Type": "firebase" | "web" | "safari" | "safariAuth";
+        "Informer_2.Types.Push.Token.Type": Informer_2TypesPushTokenType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Informer_2TypesPushTokenType {
+    Firebase = "firebase",
+    Web = "web",
+    Safari = "safari",
+    SafariAuth = "safariAuth"
+}
 export type operations = Record<string, never>;

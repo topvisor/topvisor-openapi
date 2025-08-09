@@ -15,6 +15,18 @@
                     "undefined",
                     "overall"
                 ],
+                "x-enum-varnames": [
+                    "Social",
+                    "Sites",
+                    "Undefined",
+                    "Overall"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Место откуда перешел пользователь"
             }
         }

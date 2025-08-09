@@ -18,8 +18,8 @@
                     "Desc"
                 ],
                 "x-enum-descriptions": [
-                    "",
-                    ""
+                    null,
+                    null
                 ],
                 "title": "Направление сортировки"
             }

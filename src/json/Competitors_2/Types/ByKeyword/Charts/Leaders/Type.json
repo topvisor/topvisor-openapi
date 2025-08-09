@@ -18,6 +18,24 @@
                     "sum_month_cost_rub",
                     "sum_month_cost_usd"
                 ],
+                "x-enum-varnames": [
+                    "Small",
+                    "CountKeywords",
+                    "AvgPosition",
+                    "Visibility",
+                    "SumTraffic",
+                    "sum_month_cost_rub",
+                    "sum_month_cost_usd"
+                ],
+                "x-enum-descriptions": [
+                    "Маленький",
+                    "Количество запросов",
+                    "Средняя позицияя",
+                    "Видисмость",
+                    "Трафик",
+                    "Стоимость домена в рублях",
+                    "Стоимость домена в долларах"
+                ],
                 "title": "Тип графика"
             }
         }

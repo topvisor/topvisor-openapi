@@ -13,6 +13,14 @@
                     "EASTERN_EUROPE",
                     "WESTERN_EUROPE"
                 ],
+                "x-enum-varnames": [
+                    "EasternEurope",
+                    "WesternEurope"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Местоположение сервера для выполнения задач инструментов аудита"
             }
         }

@@ -13,7 +13,7 @@ export interface components {
          *     На каждый тип рассылки оформляется отдельная подписка
          * @enum {string}
          */
-        "Informer_2.Types.Rubric": "news" | "balance" | "tickets" | "yandex-update" | "comments" | "api" | "journal" | "academy";
+        "Informer_2.Types.Rubric": Informer_2TypesRubric;
     };
     responses: never;
     parameters: never;
@@ -22,4 +22,14 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Informer_2TypesRubric {
+    News = "news",
+    Balance = "balance",
+    Tickets = "tickets",
+    YandexUpdate = "yandex-update",
+    Comments = "comments",
+    Api = "api",
+    Journal = "journal",
+    Academy = "academy"
+}
 export type operations = Record<string, never>;

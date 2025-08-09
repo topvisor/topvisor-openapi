@@ -11,7 +11,7 @@ export interface components {
          * Тип транзакции
          * @enum {string}
          */
-        "Bank_2.Types.Transaction.Type": "minus" | "plus" | "plusBonus" | "minusAdmin" | "minusGhost";
+        "Bank_2.Types.Transaction.Type": Bank_2TypesTransactionType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,16 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Bank_2TypesTransactionType {
+    // Списание
+    Minus = "minus",
+    // Пополнение
+    Plus = "plus",
+    // Пополнение (бонус)
+    PlusBonus = "plusBonus",
+    // Списание из админки
+    MinusAdmin = "minusAdmin",
+    // Бесплатный запуск услуги, подарок, тесты
+    MinusGhost = "minusGhost"
+}
 export type operations = Record<string, never>;

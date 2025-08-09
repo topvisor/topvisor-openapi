@@ -9,7 +9,9 @@ export interface components {
     schemas: {
         /** Получение данных пользователя */
         "Users_2.Methods.Get": Record<string, never>;
-        "Users_2.Methods.Get.Exec": import('../../stdClass.ts').components['schemas']['stdClass'];
+        "Users_2.Methods.Get.Exec": {
+            [key: string]: unknown;
+        };
     };
     responses: never;
     parameters: never;

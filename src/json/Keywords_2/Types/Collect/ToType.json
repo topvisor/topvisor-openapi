@@ -13,6 +13,14 @@
                     "in_folder",
                     "in_folder_last"
                 ],
+                "x-enum-varnames": [
+                    "Folder",
+                    "FolderLast"
+                ],
+                "x-enum-descriptions": [
+                    "В папку, перед существующими группами",
+                    "В папку, после существующих групп"
+                ],
                 "title": "Куда добавлять добавляемые группы"
             }
         }

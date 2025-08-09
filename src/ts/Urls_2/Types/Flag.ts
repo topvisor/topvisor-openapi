@@ -11,7 +11,7 @@ export interface components {
          * Флаг активности
          * @enum {integer}
          */
-        "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
+        "Urls_2.Types.Flag": Urls_2TypesFlag;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,14 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Urls_2TypesFlag {
+    // Недавно удален
+    RecentlyDeleted = -1,
+    // Недавно удален при вторичном импорте
+    SecondRecentlyDeleted = 0,
+    // Недавно добавлен при вторичном импорте; У карты сайта присутствовал в прошлых версиях
+    SecondRecentlyAdded = 1,
+    // Недавно добавлен
+    RecentlyAdded = 2
+}
 export type operations = Record<string, never>;

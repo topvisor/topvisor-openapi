@@ -13,6 +13,14 @@
                     "0",
                     "xml"
                 ],
+                "x-enum-varnames": [
+                    "Normal",
+                    "Xml"
+                ],
+                "x-enum-descriptions": [
+                    "Обычная выдача",
+                    "XML выдача"
+                ],
                 "title": "Тип выдачи"
             }
         }

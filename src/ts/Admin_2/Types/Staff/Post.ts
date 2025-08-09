@@ -11,7 +11,7 @@ export interface components {
          * Позиция или права сотрудника
          * @enum {string}
          */
-        "Admin_2.Types.Staff.Post": "DEVELOPER" | "SUPPORT" | "ACCOUNTING" | "HR" | "DOCUMENTATION" | "GHOST" | "CONTENT";
+        "Admin_2.Types.Staff.Post": Admin_2TypesStaffPost;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,13 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Admin_2TypesStaffPost {
+    Developer = "DEVELOPER",
+    Support = "SUPPORT",
+    Accounting = "ACCOUNTING",
+    Hr = "HR",
+    Documentation = "DOCUMENTATION",
+    Ghost = "GHOST",
+    Content = "CONTENT"
+}
 export type operations = Record<string, never>;

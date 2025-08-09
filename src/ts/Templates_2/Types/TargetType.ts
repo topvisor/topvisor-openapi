@@ -11,7 +11,7 @@ export interface components {
          * Тип данных (место использования)
          * @enum {string}
          */
-        "Templates_2.Types.TargetType": "templates" | "groups" | "keywords" | "competitors_keywords" | "competitors_wordstat";
+        "Templates_2.Types.TargetType": Templates_2TypesTargetType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,16 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Templates_2TypesTargetType {
+    // Шаблоны
+    Templates = "templates",
+    // Группы
+    Groups = "groups",
+    // Запросы
+    Keywords = "keywords",
+    // Запросы конкурентов
+    CompetitorsKeywords = "competitors_keywords",
+    // Статистика поисковых запросов конкурентов
+    CompetitorsWordstat = "competitors_wordstat"
+}
 export type operations = Record<string, never>;

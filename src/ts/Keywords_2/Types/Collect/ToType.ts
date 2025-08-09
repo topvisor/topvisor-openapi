@@ -11,7 +11,7 @@ export interface components {
          * Куда добавлять добавляемые группы
          * @enum {string}
          */
-        "Keywords_2.Types.Collect.ToType": "in_folder" | "in_folder_last";
+        "Keywords_2.Types.Collect.ToType": Keywords_2TypesCollectToType;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Keywords_2TypesCollectToType {
+    // В папку, перед существующими группами
+    Folder = "in_folder",
+    // В папку, после существующих групп
+    FolderLast = "in_folder_last"
+}
 export type operations = Record<string, never>;

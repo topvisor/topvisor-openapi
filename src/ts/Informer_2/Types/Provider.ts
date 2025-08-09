@@ -11,7 +11,7 @@ export interface components {
          * Способ рассылки
          * @enum {string}
          */
-        "Informer_2.Types.Provider": "info" | "email" | "sms" | "push" | "min";
+        "Informer_2.Types.Provider": Informer_2TypesProvider;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,12 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Informer_2TypesProvider {
+    Info = "info",
+    Email = "email",
+    Sms = "sms",
+    Push = "push",
+    // Дополнительный конфиг к каждому типу рассылки; Используется только для типа: Уведомление о низком балансе
+    Min = "min"
+}
 export type operations = Record<string, never>;

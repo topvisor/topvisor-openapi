@@ -11,7 +11,7 @@ export interface components {
          * Имя telegram бота
          * @enum {string}
          */
-        "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot" | "LibraryBot";
+        "Telegram_2.Types.Bot.Name": Telegram_2TypesBotName;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,10 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Telegram_2TypesBotName {
+    Topvisor = "TopvisorBot",
+    Thundo = "ThundoBot",
+    Apometr = "ApometrBot",
+    Library = "LibraryBot"
+}
 export type operations = Record<string, never>;

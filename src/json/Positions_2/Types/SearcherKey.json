@@ -20,6 +20,28 @@
                     8,
                     9
                 ],
+                "x-enum-varnames": [
+                    "Yandex",
+                    "YandexCom",
+                    "YandexTr",
+                    "Google",
+                    "YouTube",
+                    "Bing",
+                    "Seznam",
+                    "AppStore",
+                    "GooglePlay"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Ключ поисковой системы для проверки позиций"
             }
         }

@@ -15,7 +15,7 @@ export interface components {
          *     Это значение влияет на стоимость генерации карты сайта
          * @enum {integer}
          */
-        "Audit_2.Types.Sitemap.MaxPages": 100 | 1000 | 10000 | 100000 | 150000 | 300000;
+        "Audit_2.Types.Sitemap.MaxPages": Audit_2TypesSitemapMaxPages;
     };
     responses: never;
     parameters: never;
@@ -24,4 +24,12 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Audit_2TypesSitemapMaxPages {
+    COUNT_100 = 100,
+    COUNT_1000 = 1000,
+    COUNT_10000 = 10000,
+    COUNT_100000 = 100000,
+    COUNT_150000 = 150000,
+    COUNT_300000 = 300000
+}
 export type operations = Record<string, never>;

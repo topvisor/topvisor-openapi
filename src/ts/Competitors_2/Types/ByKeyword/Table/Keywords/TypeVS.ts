@@ -11,7 +11,7 @@ export interface components {
          * Тип связи запросов с лидером
          * @enum {string}
          */
-        "Competitors_2.Types.ByKeyword.Table.Keywords.TypeVS": "common" | "competitor" | "exclusive_competitor";
+        "Competitors_2.Types.ByKeyword.Table.Keywords.TypeVS": Competitors_2TypesByKeywordTableKeywordsTypeVS;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,12 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum Competitors_2TypesByKeywordTableKeywordsTypeVS {
+    // Общие
+    Common = "common",
+    // Все
+    Competitor = "competitor",
+    // Уникальные
+    Exclusive_competitor = "exclusive_competitor"
+}
 export type operations = Record<string, never>;
