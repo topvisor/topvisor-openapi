@@ -16,7 +16,7 @@ export interface components {
             /** Описание ошибки */
             string: string;
             /** Объект с дополнительной информацией */
-            detail: import('./stdClass.ts').components['schemas']['stdClass'];
+            detail?: Record<string, never> | null;
         };
     };
     responses: never;

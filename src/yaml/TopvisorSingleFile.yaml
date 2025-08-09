@@ -15437,10 +15437,6 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
       required: []
       title: Результат успешного API запроса
-    stdClass:
-      type: object
-      properties: {}
-      required: []
     Error:
       type: object
       properties:
@@ -15455,12 +15451,11 @@ components:
           type: string
         detail:
           title: Объект с дополнительной информацией
-          allOf:
-            - $ref: '#/components/schemas/stdClass'
+          nullable: true
+          type: object
       required:
         - code
         - string
-        - detail
       title: Информация об ошибке
     Errors:
       type: array
@@ -17049,6 +17044,10 @@ components:
       properties: {}
       required: []
       title: Получение данных пользователя
+    stdClass:
+      type: object
+      properties: {}
+      required: []
     Users_2.Methods.Get.Exec:
       allOf:
         - $ref: '#/components/schemas/stdClass'

@@ -20,17 +20,13 @@
                     },
                     "detail": {
                         "title": "Объект с дополнительной информацией",
-                        "allOf": [
-                            {
-                                "$ref": "stdClass.json#/components/schemas/stdClass"
-                            }
-                        ]
+                        "nullable": true,
+                        "type": "object"
                     }
                 },
                 "required": [
                     "code",
-                    "string",
-                    "detail"
+                    "string"
                 ],
                 "title": "Информация об ошибке"
             }
