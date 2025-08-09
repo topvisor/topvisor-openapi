@@ -11,7 +11,7 @@ export interface components {
          * Операторы сравнения с полем
          * @enum {string}
          */
-        FieldOperator: "EQUALS" | "NOT_EQUALS" | "IN" | "NOT_IN" | "GREATER_THAN" | "GREATER_THAN_EQUALS" | "LESS_THAN" | "LESS_THAN_EQUALS" | "BETWEEN" | "STARTS_WITH" | "CONTAINS" | "DOES_NOT_CONTAIN" | "REGEXP" | "NOT_REGEXP" | "IS_NULL" | "IS_NOT_NULL";
+        FieldOperator: FieldOperator;
     };
     responses: never;
     parameters: never;
@@ -20,4 +20,38 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum FieldOperator {
+    // 
+    Equals = "EQUALS",
+    // 
+    NotEquals = "NOT_EQUALS",
+    // 
+    In = "IN",
+    // 
+    NotIn = "NOT_IN",
+    // 
+    Greater = "GREATER_THAN",
+    // 
+    GreaterEquals = "GREATER_THAN_EQUALS",
+    // 
+    Less = "LESS_THAN",
+    // 
+    LessEquals = "LESS_THAN_EQUALS",
+    // 
+    Between = "BETWEEN",
+    // 
+    StartsWith = "STARTS_WITH",
+    // 
+    Like = "CONTAINS",
+    // 
+    NotLike = "DOES_NOT_CONTAIN",
+    // 
+    Regexp = "REGEXP",
+    // 
+    NotRegexp = "NOT_REGEXP",
+    // 
+    IsNull = "IS_NULL",
+    // 
+    IsNotNull = "IS_NOT_NULL"
+}
 export type operations = Record<string, never>;
