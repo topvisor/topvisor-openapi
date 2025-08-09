@@ -18,6 +18,24 @@
                     "Ya",
                     "Other"
                 ],
+                "x-enum-varnames": [
+                    "InternetExplorer",
+                    "Chrome",
+                    "Firefox",
+                    "Opera",
+                    "Safari",
+                    "Yahoo",
+                    "Other"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Бразуер для получение информации"
             }
         }

@@ -14,6 +14,16 @@
                     "ACTIVE",
                     "DELETED"
                 ],
+                "x-enum-varnames": [
+                    "Dev",
+                    "Active",
+                    "Deleted"
+                ],
+                "x-enum-descriptions": [
+                    "В разработке, виден только для админов",
+                    null,
+                    null
+                ],
                 "title": "Статус квиза"
             }
         }

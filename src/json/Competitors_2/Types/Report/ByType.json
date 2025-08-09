@@ -13,6 +13,14 @@
                     "url",
                     "keyword"
                 ],
+                "x-enum-varnames": [
+                    "Url",
+                    "Keyword"
+                ],
+                "x-enum-descriptions": [
+                    "Домену",
+                    "Ключевой фразе"
+                ],
                 "title": "Тип запроса в отчета"
             }
         }

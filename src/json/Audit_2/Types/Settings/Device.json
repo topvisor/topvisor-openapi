@@ -20,6 +20,28 @@
                     "200",
                     "202"
                 ],
+                "x-enum-varnames": [
+                    "PC",
+                    "Tablet",
+                    "Phone",
+                    "YandexBot",
+                    "YandexBotMobile",
+                    "Googlebot",
+                    "GooglebotMobile",
+                    "TopvisorBot",
+                    "TopvisorBotMobile"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Устройство для выполнения аудита и радара"
             }
         }

@@ -12,6 +12,12 @@
                 "enum": [
                     "refill"
                 ],
+                "x-enum-varnames": [
+                    "Refill"
+                ],
+                "x-enum-descriptions": [
+                    "Обычное пополнение счета"
+                ],
                 "title": "Тип рекуррентного платежа"
             }
         }

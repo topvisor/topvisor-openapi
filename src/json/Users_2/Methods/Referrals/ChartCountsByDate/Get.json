@@ -35,11 +35,8 @@
             },
             "Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec": {
                 "nullable": true,
-                "allOf": [
-                    {
-                        "$ref": "../../../../stdClass.json#/components/schemas/stdClass"
-                    }
-                ]
+                "type": "object",
+                "additionalProperties": {}
             }
         }
     }

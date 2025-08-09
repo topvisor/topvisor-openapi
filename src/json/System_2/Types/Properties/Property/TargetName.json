@@ -12,6 +12,12 @@
                 "enum": [
                     "mod_projects"
                 ],
+                "x-enum-varnames": [
+                    "ModProjects"
+                ],
+                "x-enum-descriptions": [
+                    "Проекты"
+                ],
                 "title": "Категория данных"
             }
         }

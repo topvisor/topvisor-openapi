@@ -22,6 +22,32 @@
                     "android",
                     "guest"
                 ],
+                "x-enum-varnames": [
+                    "System",
+                    "Other",
+                    "Email",
+                    "Ios",
+                    "Vk",
+                    "Chrome",
+                    "Twitter",
+                    "Facebook",
+                    "Telegram",
+                    "Android",
+                    "Guest"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Откуда поступил тикет"
             }
         }

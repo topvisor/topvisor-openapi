@@ -25,11 +25,8 @@
                 "title": "Получение информации об SSL сертификате\nВозваращает объект с параметрами:\n- expire"
             },
             "Projects_2.Methods.Status.Ssl.Get.Exec": {
-                "allOf": [
-                    {
-                        "$ref": "../../../../stdClass.json#/components/schemas/stdClass"
-                    }
-                ]
+                "type": "object",
+                "additionalProperties": {}
             }
         }
     }

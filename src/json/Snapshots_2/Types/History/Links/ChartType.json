@@ -16,6 +16,20 @@
                     "visibility",
                     "median"
                 ],
+                "x-enum-varnames": [
+                    "Tops",
+                    "TopsCount",
+                    "Avg",
+                    "Visibility",
+                    "Median"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Тип диаграммы"
             }
         }

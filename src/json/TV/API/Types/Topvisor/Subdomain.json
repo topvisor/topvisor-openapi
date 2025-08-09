@@ -12,6 +12,14 @@
                 "enum": [
                     "",
                     "journal"
+                ],
+                "x-enum-varnames": [
+                    "Default",
+                    "Journal"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
                 ]
             }
         }

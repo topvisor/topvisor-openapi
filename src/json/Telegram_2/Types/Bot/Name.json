@@ -15,6 +15,18 @@
                     "ApometrBot",
                     "LibraryBot"
                 ],
+                "x-enum-varnames": [
+                    "Topvisor",
+                    "Thundo",
+                    "Apometr",
+                    "Library"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Имя telegram бота"
             }
         }

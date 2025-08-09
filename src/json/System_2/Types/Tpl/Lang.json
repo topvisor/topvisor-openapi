@@ -14,6 +14,16 @@
                     "en",
                     ""
                 ],
+                "x-enum-varnames": [
+                    "Ru",
+                    "En",
+                    "Uni"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Язык шаблона"
             }
         }

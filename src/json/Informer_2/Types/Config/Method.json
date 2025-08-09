@@ -19,6 +19,26 @@
                     "academy",
                     "tickets"
                 ],
+                "x-enum-varnames": [
+                    "News",
+                    "Balance",
+                    "YandexUpdate",
+                    "Comments",
+                    "Api",
+                    "Journal",
+                    "Academy",
+                    "Tickets"
+                ],
+                "x-enum-descriptions": [
+                    "Новости",
+                    "Баланс",
+                    "Обновление Яндекса",
+                    "Комментарии",
+                    "API",
+                    "Журнал",
+                    "Академия",
+                    "Тикеты"
+                ],
                 "title": "Тема сообщения"
             }
         }

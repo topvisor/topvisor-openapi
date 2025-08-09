@@ -21,6 +21,30 @@
                     8,
                     9
                 ],
+                "x-enum-varnames": [
+                    "Disabled",
+                    "Top1",
+                    "Top2",
+                    "Top3",
+                    "Top4",
+                    "Top5",
+                    "Top6",
+                    "Top7",
+                    "Top8",
+                    "Top9"
+                ],
+                "x-enum-descriptions": [
+                    "Отключен",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Дополнительный сегмент топа"
             }
         }

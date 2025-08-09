@@ -15,6 +15,18 @@
                     "edit",
                     "del"
                 ],
+                "x-enum-varnames": [
+                    "Get",
+                    "Add",
+                    "Edit",
+                    "Del"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Метод вызова функции"
             }
         }

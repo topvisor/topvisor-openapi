@@ -12,6 +12,14 @@
                 "enum": [
                     "topvisor",
                     "thundo"
+                ],
+                "x-enum-varnames": [
+                    "TOPVISOR",
+                    "THUNDO"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
                 ]
             }
         }

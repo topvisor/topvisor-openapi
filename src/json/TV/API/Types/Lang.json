@@ -12,6 +12,14 @@
                 "enum": [
                     "ru",
                     "en"
+                ],
+                "x-enum-varnames": [
+                    "Ru",
+                    "En"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
                 ]
             }
         }

@@ -13,6 +13,14 @@
                     1,
                     2
                 ],
+                "x-enum-varnames": [
+                    "Send",
+                    "Change"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Операции выполняемые ботом"
             }
         }

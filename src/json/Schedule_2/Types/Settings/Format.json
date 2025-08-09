@@ -15,6 +15,18 @@
                     "pdf",
                     "html"
                 ],
+                "x-enum-varnames": [
+                    "Csv",
+                    "Xlsx",
+                    "Pdf",
+                    "Html"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Формат отчета"
             }
         }

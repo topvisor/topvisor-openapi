@@ -14,11 +14,8 @@
                 "title": "Получение числа проверок за месяц по часам"
             },
             "Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec": {
-                "allOf": [
-                    {
-                        "$ref": "../../../../../stdClass.json#/components/schemas/stdClass"
-                    }
-                ]
+                "type": "object",
+                "additionalProperties": {}
             }
         }
     }

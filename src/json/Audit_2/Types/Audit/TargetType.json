@@ -16,6 +16,20 @@
                     "js",
                     "css"
                 ],
+                "x-enum-varnames": [
+                    "Pages",
+                    "Links",
+                    "Images",
+                    "JS",
+                    "CSS"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Тип очтета аудита"
             }
         }

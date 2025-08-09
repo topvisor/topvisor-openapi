@@ -13,6 +13,14 @@
                     "",
                     "vk"
                 ],
+                "x-enum-varnames": [
+                    "Normal",
+                    "Vk"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Формат превью"
             }
         }

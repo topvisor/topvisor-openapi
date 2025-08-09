@@ -13,6 +13,14 @@
                     "RUB",
                     "USD"
                 ],
+                "x-enum-varnames": [
+                    "RUB",
+                    "USD"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Валюта\n\nЭтот общий тип, не зависящий от контекста\n\nДополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()"
             }
         }

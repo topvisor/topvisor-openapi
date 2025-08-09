@@ -16,6 +16,20 @@
                     "minusAdmin",
                     "minusGhost"
                 ],
+                "x-enum-varnames": [
+                    "Minus",
+                    "Plus",
+                    "PlusBonus",
+                    "MinusAdmin",
+                    "MinusGhost"
+                ],
+                "x-enum-descriptions": [
+                    "Списание",
+                    "Пополнение",
+                    "Пополнение (бонус)",
+                    "Списание из админки",
+                    "Бесплатный запуск услуги, подарок, тесты"
+                ],
                 "title": "Тип транзакции"
             }
         }

@@ -14,6 +14,16 @@
                     "csv_utf",
                     "xlsx"
                 ],
+                "x-enum-varnames": [
+                    "Csv",
+                    "CsvUtf",
+                    "Xlsx"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Тип экспортируемого файла"
             }
         }

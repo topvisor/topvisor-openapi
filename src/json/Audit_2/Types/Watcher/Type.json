@@ -17,6 +17,22 @@
                     "description",
                     "content"
                 ],
+                "x-enum-varnames": [
+                    "HttpCodes",
+                    "Redirects",
+                    "H1",
+                    "Title",
+                    "Description",
+                    "Content"
+                ],
+                "x-enum-descriptions": [
+                    "Статусы ответа",
+                    "Список редиректов",
+                    "Заголовок H1 страницы",
+                    "Title страницы",
+                    "Description страницы",
+                    "Контент страницы"
+                ],
                 "title": "Тип проверки радара"
             }
         }

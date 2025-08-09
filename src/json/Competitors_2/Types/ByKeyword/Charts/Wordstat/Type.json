@@ -18,6 +18,24 @@
                     "cost_usd",
                     "count_results"
                 ],
+                "x-enum-varnames": [
+                    "Keywords",
+                    "Summary",
+                    "Small",
+                    "Volume",
+                    "CostRub",
+                    "CostUsd",
+                    "CountResults"
+                ],
+                "x-enum-descriptions": [
+                    "Облако ключевых слов",
+                    "Сводка по ключевым словам",
+                    "Маленький",
+                    "Частота",
+                    "Стоимость клика в рублях",
+                    "Стоимость клика в долларах",
+                    "Количество результатов"
+                ],
                 "title": "Тип графика"
             }
         }

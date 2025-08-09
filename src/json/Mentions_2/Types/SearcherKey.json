@@ -14,6 +14,16 @@
                     102,
                     103
                 ],
+                "x-enum-varnames": [
+                    "Vk",
+                    "Fb",
+                    "Tw"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Доступные ключи поисковика"
             }
         }

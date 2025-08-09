@@ -16,6 +16,20 @@
                     "snippet_body",
                     "snippet_ext"
                 ],
+                "x-enum-varnames": [
+                    "Url",
+                    "Domain",
+                    "SnippetTitle",
+                    "SnippetBody",
+                    "SnippetExt"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Поле, возвращаемое в snapshotsData"
             }
         }

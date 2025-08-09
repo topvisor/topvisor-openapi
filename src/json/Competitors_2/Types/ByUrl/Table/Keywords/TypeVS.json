@@ -16,6 +16,20 @@
                     "competitor",
                     "exclusive_competitor"
                 ],
+                "x-enum-varnames": [
+                    "Me",
+                    "ExclusiveMe",
+                    "Common",
+                    "Competitor",
+                    "ExclusiveCompetitor"
+                ],
+                "x-enum-descriptions": [
+                    "Все запросы",
+                    "Уникальные запросы",
+                    "Общие запросы",
+                    "Все запросыы  конкурента",
+                    "Уникальные запросы конкурента"
+                ],
                 "title": "Тип связи запросов между конкурентами"
             }
         }

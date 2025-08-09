@@ -17,6 +17,22 @@
                     "shortLinks",
                     "urls"
                 ],
+                "x-enum-varnames": [
+                    "Tickets",
+                    "Projects",
+                    "Keywords",
+                    "Snippets",
+                    "ShortLinks",
+                    "Urls"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Тип тега, к каким объектам применяется"
             }
         }

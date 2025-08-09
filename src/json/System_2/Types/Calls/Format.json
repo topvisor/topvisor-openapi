@@ -12,6 +12,12 @@
                 "enum": [
                     "apiV2"
                 ],
+                "x-enum-varnames": [
+                    "ApiV2"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
                 "title": "Формат вызова"
             }
         }

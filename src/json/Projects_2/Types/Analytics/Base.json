@@ -20,6 +20,28 @@
                     5,
                     12
                 ],
+                "x-enum-varnames": [
+                    "SearchEngineAndRegions",
+                    "SearchEngine",
+                    "TrafficSources",
+                    "Requests",
+                    "Groups",
+                    "Folders",
+                    "Competitors",
+                    "Tags",
+                    "Tops"
+                ],
+                "x-enum-descriptions": [
+                    "ПС и регионы",
+                    "ПС",
+                    "Источники трафика",
+                    "Запросы",
+                    "Группы",
+                    "Папки",
+                    "Конкуренты",
+                    "Теги",
+                    "Топы"
+                ],
                 "title": "Тип группировки"
             }
         }

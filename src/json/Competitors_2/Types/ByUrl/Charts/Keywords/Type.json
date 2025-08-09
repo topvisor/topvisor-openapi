@@ -21,6 +21,30 @@
                     "sum_month_cost_rub",
                     "sum_month_cost_usd"
                 ],
+                "x-enum-varnames": [
+                    "Small",
+                    "Keywords",
+                    "Top",
+                    "CountKeywords",
+                    "AvgPosition",
+                    "SumVolume",
+                    "SumTraffic",
+                    "SumTrafficForecast",
+                    "SumMonthCostRub",
+                    "SumMonthCostUsd"
+                ],
+                "x-enum-descriptions": [
+                    "Маленький",
+                    "График облака запросов",
+                    "Топ",
+                    "Количество запросов",
+                    "Средняя позиция",
+                    "Сумма показов",
+                    "Сумма трафика",
+                    "Сумма прогнозируемого трафика",
+                    "Общая месячная стоимость в рублях",
+                    "Общая месячная стоимость в долларах"
+                ],
                 "title": "Тип графика"
             }
         }

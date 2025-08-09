@@ -15,6 +15,18 @@
                     "url",
                     "frequency"
                 ],
+                "x-enum-varnames": [
+                    "Summary",
+                    "Traffic",
+                    "Url",
+                    "Frequency"
+                ],
+                "x-enum-descriptions": [
+                    "Сводка",
+                    "Трафик",
+                    "Ссылка",
+                    "Частота"
+                ],
                 "title": "Дополнительное поле отчета проверки позиций"
             }
         }

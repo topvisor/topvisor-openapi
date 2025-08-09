@@ -18,6 +18,24 @@
                     "6",
                     "7"
                 ],
+                "x-enum-varnames": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "День недели, в который должен производиться запуск cron"
             }
         }

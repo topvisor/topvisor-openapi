@@ -13,6 +13,14 @@
                     "ASC",
                     "DESC"
                 ],
+                "x-enum-varnames": [
+                    "Asc",
+                    "Desc"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
                 "title": "Направление сортировки"
             }
         }

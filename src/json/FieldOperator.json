@@ -27,6 +27,42 @@
                     "IS_NULL",
                     "IS_NOT_NULL"
                 ],
+                "x-enum-varnames": [
+                    "Equals",
+                    "NotEquals",
+                    "In",
+                    "NotIn",
+                    "Greater",
+                    "GreaterEquals",
+                    "Less",
+                    "LessEquals",
+                    "Between",
+                    "StartsWith",
+                    "Like",
+                    "NotLike",
+                    "Regexp",
+                    "NotRegexp",
+                    "IsNull",
+                    "IsNotNull"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
                 "title": "Операторы сравнения с полем"
             }
         }
