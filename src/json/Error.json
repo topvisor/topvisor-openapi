@@ -21,7 +21,8 @@
                     "detail": {
                         "title": "Объект с дополнительной информацией",
                         "nullable": true,
-                        "type": "object"
+                        "type": "object",
+                        "additionalProperties": {}
                     }
                 },
                 "required": [

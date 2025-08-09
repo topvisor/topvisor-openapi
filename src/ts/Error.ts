@@ -16,7 +16,9 @@ export interface components {
             /** Описание ошибки */
             string: string;
             /** Объект с дополнительной информацией */
-            detail?: Record<string, never> | null;
+            detail?: {
+                [key: string]: unknown;
+            } | null;
         };
     };
     responses: never;

@@ -15453,6 +15453,7 @@ components:
           title: Объект с дополнительной информацией
           nullable: true
           type: object
+          additionalProperties: {}
       required:
         - code
         - string
