@@ -11,7 +11,7 @@ export interface components {
          * Тип диапазона радара
          * @enum {integer}
          */
-        "Audit_2.Types.Watcher.TypeRange": Audit_2TypesWatcherTypeRange;
+        "Audit_2.Types.Watcher.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;
     };
     responses: never;
     parameters: never;
@@ -20,18 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesWatcherTypeRange {
-    // Весь период без ограничений (недокументируемй парметр)
-    FullRange = 0,
-    // Период
-    Range = 2,
-    // Две проверки
-    TwoChecks = 3,
-    // Одна проверка
-    OneCheck = 4,
-    // Две последние проверки
-    TwoLastChecks = 7,
-    // Произвольный список дат
-    ListDates = 100
-}
 export type operations = Record<string, never>;

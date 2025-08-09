@@ -17,7 +17,7 @@ export interface components {
          *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
          * @enum {integer}
          */
-        "Bank_2.Types.Subscriptions.Cycle": Bank_2TypesSubscriptionsCycle;
+        "Bank_2.Types.Subscriptions.Cycle": 1 | 12;
     };
     responses: never;
     parameters: never;
@@ -26,10 +26,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Bank_2TypesSubscriptionsCycle {
-    // Ежемесячная подписка
-    Monthly = 1,
-    // Годовая подписка; При подписке на год обычно стоит дешевле, чем подписка на месяц
-    Annual = 12
-}
 export type operations = Record<string, never>;

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {string} */
-        "Admin_2.Types.Users.Ranks.Category": Admin_2TypesUsersRanksCategory;
+        "Admin_2.Types.Users.Ranks.Category": "" | "journal";
     };
     responses: never;
     parameters: never;
@@ -17,8 +17,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Admin_2TypesUsersRanksCategory {
-    None = "",
-    Journal = "journal"
-}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Ключ поисковой системы для сбора запросов
          * @enum {integer}
          */
-        "Keywords_2.Types.Collect.SearcherKey": Keywords_2TypesCollectSearcherKey;
+        "Keywords_2.Types.Collect.SearcherKey": 0 | 1 | 5 | 100 | 101 | 104 | 105;
     };
     responses: never;
     parameters: never;
@@ -20,15 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Keywords_2TypesCollectSearcherKey {
-    // Подбор ключевых слов
-    Yandex = 0,
-    Google = 1,
-    Bing = 5,
-    // Подбор подсказок, суррогатный ключ поисковика
-    Yandex_hint = 100,
-    Google_hint = 101,
-    YouTube_hint = 104,
-    Bing_hint = 105
-}
 export type operations = Record<string, never>;

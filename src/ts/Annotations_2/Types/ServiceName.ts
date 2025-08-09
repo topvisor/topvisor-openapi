@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {string} */
-        "Annotations_2.Types.ServiceName": Annotations_2TypesServiceName;
+        "Annotations_2.Types.ServiceName": "positions" | "audit" | "watcher" | "indexing";
     };
     responses: never;
     parameters: never;
@@ -17,10 +17,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Annotations_2TypesServiceName {
-    Positions = "positions",
-    Audit = "audit",
-    Watcher = "watcher",
-    Indexing = "indexing"
-}
 export type operations = Record<string, never>;

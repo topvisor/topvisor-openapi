@@ -11,7 +11,7 @@ export interface components {
          * Представление отчета
          * @enum {string}
          */
-        "Competitors_2.Types.ByKeyword.Table.View": Competitors_2TypesByKeywordTableView;
+        "Competitors_2.Types.ByKeyword.Table.View": "wordstat" | "leaders" | "similar" | "keywords" | "serp";
     };
     responses: never;
     parameters: never;
@@ -20,16 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Competitors_2TypesByKeywordTableView {
-    // Словоформы
-    Wordstat = "wordstat",
-    // Анализ лидеров по попоисковым запросам
-    Leaders = "leaders",
-    // Похожие запросы
-    Similar = "similar",
-    // Сравнение поисковых запросов с доменом
-    Keywords = "keywords",
-    // Органика
-    Serp = "serp"
-}
 export type operations = Record<string, never>;

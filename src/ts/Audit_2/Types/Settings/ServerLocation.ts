@@ -11,7 +11,7 @@ export interface components {
          * Местоположение сервера для выполнения задач инструментов аудита
          * @enum {string}
          */
-        "Audit_2.Types.Settings.ServerLocation": Audit_2TypesSettingsServerLocation;
+        "Audit_2.Types.Settings.ServerLocation": "EASTERN_EUROPE" | "WESTERN_EUROPE";
     };
     responses: never;
     parameters: never;
@@ -20,8 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesSettingsServerLocation {
-    EasternEurope = "EASTERN_EUROPE",
-    WesternEurope = "WESTERN_EUROPE"
-}
 export type operations = Record<string, never>;

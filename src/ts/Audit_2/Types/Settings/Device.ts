@@ -11,7 +11,7 @@ export interface components {
          * Устройство для выполнения аудита и радара
          * @enum {string}
          */
-        "Audit_2.Types.Settings.Device": Audit_2TypesSettingsDevice;
+        "Audit_2.Types.Settings.Device": "0" | "1" | "2" | "100" | "102" | "110" | "112" | "200" | "202";
     };
     responses: never;
     parameters: never;
@@ -20,15 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesSettingsDevice {
-    PC = "0",
-    Tablet = "1",
-    Phone = "2",
-    YandexBot = "100",
-    YandexBotMobile = "102",
-    Googlebot = "110",
-    GooglebotMobile = "112",
-    TopvisorBot = "200",
-    TopvisorBotMobile = "202"
-}
 export type operations = Record<string, never>;

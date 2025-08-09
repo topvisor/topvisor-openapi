@@ -11,7 +11,7 @@ export interface components {
          * Формат экспорта urls
          * @enum {string}
          */
-        "Urls_2.Types.Export.Output": Urls_2TypesExportOutput;
+        "Urls_2.Types.Export.Output": "csv" | "csvUTF8s" | "xml";
     };
     responses: never;
     parameters: never;
@@ -20,10 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Urls_2TypesExportOutput {
-    Csv = "csv",
-    // Csv в кодировке сервера
-    CsvUTF8s = "csvUTF8s",
-    Xml = "xml"
-}
 export type operations = Record<string, never>;

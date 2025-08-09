@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {string} */
-        "TV.API.Types.Topvisor.Subdomain": TVAPITypesTopvisorSubdomain;
+        "TV.API.Types.Topvisor.Subdomain": "" | "journal";
     };
     responses: never;
     parameters: never;
@@ -17,8 +17,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum TVAPITypesTopvisorSubdomain {
-    Default = "",
-    Journal = "journal"
-}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Формат превью
          * @enum {string}
          */
-        "System_2.Types.Common.PagePreview.Format": System_2TypesCommonPagePreviewFormat;
+        "System_2.Types.Common.PagePreview.Format": "" | "vk";
     };
     responses: never;
     parameters: never;
@@ -20,8 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum System_2TypesCommonPagePreviewFormat {
-    Normal = "",
-    Vk = "vk"
-}
 export type operations = Record<string, never>;

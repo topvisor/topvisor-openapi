@@ -11,7 +11,7 @@ export interface components {
          * Представление отчета
          * @enum {string}
          */
-        "Competitors_2.Types.ByUrl.Charts.View": Competitors_2TypesByUrlChartsView;
+        "Competitors_2.Types.ByUrl.Charts.View": "keywords" | "domains" | "structure";
     };
     responses: never;
     parameters: never;
@@ -20,12 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Competitors_2TypesByUrlChartsView {
-    // Список поисковых запросов
-    Keywords = "keywords",
-    // Конкуренты сайта, встречающиеся конкурентные домены в выдаче
-    Domains = "domains",
-    // Структура сайта, список URL
-    Structure = "structure"
-}
 export type operations = Record<string, never>;

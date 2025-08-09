@@ -11,7 +11,7 @@ export interface components {
          * Тип отчета аудита для экспорта
          * @enum {integer}
          */
-        "Audit_2.Types.Audit.Results.Export.TypeReport": Audit_2TypesAuditResultsExportTypeReport;
+        "Audit_2.Types.Audit.Results.Export.TypeReport": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
     };
     responses: never;
     parameters: never;
@@ -20,22 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesAuditResultsExportTypeReport {
-    // Обзор
-    Review = 0,
-    // Индексация
-    Indexing = 1,
-    // Сниппет
-    Snippet = 2,
-    // Ссылки
-    Links = 3,
-    // Изображения
-    Images = 4,
-    // Контент
-    Content = 5,
-    // Страницы
-    Pages = 6,
-    // Одна страница
-    Page = 7
-}
 export type operations = Record<string, never>;

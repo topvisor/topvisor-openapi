@@ -11,7 +11,7 @@ export interface components {
          * Тип экспортируемого файла
          * @enum {string}
          */
-        "Snapshots_2.Types.History.Export.Output": Snapshots_2TypesHistoryExportOutput;
+        "Snapshots_2.Types.History.Export.Output": "csv" | "csvOld" | "xlsx";
     };
     responses: never;
     parameters: never;
@@ -20,9 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Snapshots_2TypesHistoryExportOutput {
-    Csv = "csv",
-    CsvOld = "csvOld",
-    Xlsx = "xlsx"
-}
 export type operations = Record<string, never>;

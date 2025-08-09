@@ -11,7 +11,7 @@ export interface components {
          * Имя настройки для интсрумента аудита
          * @enum {string}
          */
-        "Audit_2.Types.Settings.FieldName": Audit_2TypesSettingsFieldName;
+        "Audit_2.Types.Settings.FieldName": "audit_user_agent" | "audit_use_cookie" | "audit_cookies" | "audit_scan_links" | "audit_scan_images" | "audit_scan_js" | "audit_scan_css" | "audit_api_key" | "audit_page_delay" | "audit_resource_delay" | "audit_auto_collect_pages" | "audit_auto_collect_pages_limit" | "audit_auto_collect_pages_start_url" | "indexing_searchers_keys" | "watcher_user_agent" | "watcher_cookies" | "watcher_max_redirects" | "watcher_types" | "watcher_regexp" | "watcher_ignore_js" | "watcher_strip_tags_from_result" | "server_location";
     };
     responses: never;
     parameters: never;
@@ -20,28 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesSettingsFieldName {
-    AuditUserAgent = "audit_user_agent",
-    AuditUseCookie = "audit_use_cookie",
-    AuditCookies = "audit_cookies",
-    AuditScanLinks = "audit_scan_links",
-    AuditScanImages = "audit_scan_images",
-    AuditScanJs = "audit_scan_js",
-    AuditScanCss = "audit_scan_css",
-    AuditApiKey = "audit_api_key",
-    AuditPageDelay = "audit_page_delay",
-    AuditResourceDelay = "audit_resource_delay",
-    AuditAutoCollectPages = "audit_auto_collect_pages",
-    AuditAutoCollectPagesLimit = "audit_auto_collect_pages_limit",
-    AuditAutoCollectPagesStartUrl = "audit_auto_collect_pages_start_url",
-    IndexingSearchersKeys = "indexing_searchers_keys",
-    WatcheUserAgent = "watcher_user_agent",
-    WatcherCookies = "watcher_cookies",
-    WatcherMaxRedirects = "watcher_max_redirects",
-    WatcherTypes = "watcher_types",
-    WatcherRegexp = "watcher_regexp",
-    WatcherIgnoreJs = "watcher_ignore_js",
-    WatcherStripTagsFromResult = "watcher_strip_tags_from_result",
-    ServerLocation = "server_location"
-}
 export type operations = Record<string, never>;

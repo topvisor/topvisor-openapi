@@ -12,7 +12,7 @@ export interface components {
          * @description @see https://yandex.ru/dev/direct/doc/ru/objects/ad#types
          * @enum {string}
          */
-        "Broker_2.Types.Ads.Type": Broker_2TypesAdsType;
+        "Broker_2.Types.Ads.Type": "TEXT_AD" | "SMART_AD" | "MOBILE_APP_AD" | "DYNAMIC_TEXT_AD" | "IMAGE_AD" | "CPC_VIDEO_AD" | "CPM_BANNER_AD" | "CPM_VIDEO_AD" | "SHOPPING_AD" | "LISTING_AD";
     };
     responses: never;
     parameters: never;
@@ -21,26 +21,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Broker_2TypesAdsType {
-    // Текстово-графическое (обычное) объявление
-    Text = "TEXT_AD",
-    // Смарт-баннер
-    Smart = "SMART_AD",
-    // Объявление для рекламы мобильных приложений
-    MobileApp = "MOBILE_APP_AD",
-    // Динамическое объявление
-    DynamicText = "DYNAMIC_TEXT_AD",
-    // Графическое объявление.
-    Image = "IMAGE_AD",
-    // Видеообъявление в кампаниях с типом «Текстово-графические объявления» или «Реклама мобильных приложений».
-    CpcVideo = "CPC_VIDEO_AD",
-    // Медийный баннер
-    CpmBanner = "CPM_BANNER_AD",
-    // Медийное видеообъявление (в кампании с типом «Медийная кампания»).
-    CpmVideo = "CPM_VIDEO_AD",
-    // Товарное объявление (в кампании с типом «Единая перфоманс кампания»).
-    Shopping = "SHOPPING_AD",
-    // Текстово-графическое (обычное) объявление
-    Listing = "LISTING_AD"
-}
 export type operations = Record<string, never>;

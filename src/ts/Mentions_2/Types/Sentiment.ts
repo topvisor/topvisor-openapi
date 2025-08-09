@@ -11,7 +11,7 @@ export interface components {
          * Тональность
          * @enum {string}
          */
-        "Mentions_2.Types.Sentiment": Mentions_2TypesSentiment;
+        "Mentions_2.Types.Sentiment": "bad" | "neutral" | "good";
     };
     responses: never;
     parameters: never;
@@ -20,12 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Mentions_2TypesSentiment {
-    // Плохое
-    Bad = "bad",
-    // Нейтральное
-    Neutral = "neutral",
-    // Хорошее
-    Good = "good"
-}
 export type operations = Record<string, never>;

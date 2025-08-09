@@ -11,7 +11,7 @@ export interface components {
          * Устройство региона
          * @enum {integer}
          */
-        "Positions_2.Types.RegionDevice": Positions_2TypesRegionDevice;
+        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
     };
     responses: never;
     parameters: never;
@@ -20,12 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Positions_2TypesRegionDevice {
-    // ПК
-    PC = 0,
-    // Планшет
-    Tablet = 1,
-    // Смартфон
-    Smartphone = 2
-}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Тип вопроса
          * @enum {string}
          */
-        "Quiz_2.Types.Questions.Type": Quiz_2TypesQuestionsType;
+        "Quiz_2.Types.Questions.Type": "ONE" | "SEVERAL" | "TEXT";
     };
     responses: never;
     parameters: never;
@@ -20,12 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Quiz_2TypesQuestionsType {
-    // Можно выбрать только один ответ из представленных
-    One = "ONE",
-    // Можно выбрать несколько ответов из представленных
-    Several = "SEVERAL",
-    // Варианты ответа не представ алены, нужно написать ответ самостоятельно
-    Text = "TEXT"
-}
 export type operations = Record<string, never>;

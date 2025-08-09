@@ -11,7 +11,7 @@ export interface components {
          * Добавить в результат различия данных
          * @enum {integer}
          */
-        "Audit_2.Types.Watcher.ShowDiff": Audit_2TypesWatcherShowDiff;
+        "Audit_2.Types.Watcher.ShowDiff": 0 | 1 | 2 | 3;
     };
     responses: never;
     parameters: never;
@@ -20,14 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesWatcherShowDiff {
-    // Не добавлять
-    NotInclude = 0,
-    // Сокращенный текст
-    ShortText = 1,
-    // Полный текст
-    FullText = 2,
-    // Всегда полный текст, даже если нет изменений
-    AlwaysFullText = 3
-}
 export type operations = Record<string, never>;

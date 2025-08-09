@@ -11,7 +11,7 @@ export interface components {
          * Операционная система
          * @enum {string}
          */
-        "Tpvsr_2.Types.Stat.Dimension.Os": Tpvsr_2TypesStatDimensionOs;
+        "Tpvsr_2.Types.Stat.Dimension.Os": "Android" | "iOS" | "WP" | "Windows" | "Macintosh" | "Linux" | "Other";
     };
     responses: never;
     parameters: never;
@@ -20,13 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Tpvsr_2TypesStatDimensionOs {
-    Android = "Android",
-    Ios = "iOS",
-    Wordpress = "WP",
-    Windows = "Windows",
-    Macintosh = "Macintosh",
-    Linux = "Linux",
-    Other = "Other"
-}
 export type operations = Record<string, never>;

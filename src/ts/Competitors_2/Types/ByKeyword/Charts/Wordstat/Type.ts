@@ -11,7 +11,7 @@ export interface components {
          * Тип графика
          * @enum {string}
          */
-        "Competitors_2.Types.ByKeyword.Charts.Wordstat.Type": Competitors_2TypesByKeywordChartsWordstatType;
+        "Competitors_2.Types.ByKeyword.Charts.Wordstat.Type": "keywords" | "summary" | "small" | "volume" | "cost_rub" | "cost_usd" | "count_results";
     };
     responses: never;
     parameters: never;
@@ -20,20 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Competitors_2TypesByKeywordChartsWordstatType {
-    // Облако ключевых слов
-    Keywords = "keywords",
-    // Сводка по ключевым словам
-    Summary = "summary",
-    // Маленький
-    Small = "small",
-    // Частота
-    Volume = "volume",
-    // Стоимость клика в рублях
-    CostRub = "cost_rub",
-    // Стоимость клика в долларах
-    CostUsd = "cost_usd",
-    // Количество результатов
-    CountResults = "count_results"
-}
 export type operations = Record<string, never>;

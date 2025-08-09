@@ -15,7 +15,7 @@ export interface components {
          *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
          * @enum {string}
          */
-        "TV.API.Types.Currency": TVAPITypesCurrency;
+        "TV.API.Types.Currency": "RUB" | "USD";
     };
     responses: never;
     parameters: never;
@@ -24,8 +24,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum TVAPITypesCurrency {
-    RUB = "RUB",
-    USD = "USD"
-}
 export type operations = Record<string, never>;

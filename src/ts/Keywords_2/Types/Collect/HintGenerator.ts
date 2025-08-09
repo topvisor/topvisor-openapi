@@ -11,7 +11,7 @@ export interface components {
          * Тип метода подбора подсказок
          * @enum {string}
          */
-        "Keywords_2.Types.Collect.HintGenerator": Keywords_2TypesCollectHintGenerator;
+        "Keywords_2.Types.Collect.HintGenerator": "letter" | "letter_ru" | "number" | "space";
     };
     responses: never;
     parameters: never;
@@ -20,14 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Keywords_2TypesCollectHintGenerator {
-    // Подставлять буквы из английского алфавита
-    Letters = "letter",
-    // Подставлять буквы из русского алфавита
-    Letters_ru = "letter_ru",
-    // Подставлять числа
-    Numbers = "number",
-    // Подставить пробел
-    Space = "space"
-}
 export type operations = Record<string, never>;

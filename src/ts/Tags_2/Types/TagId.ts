@@ -11,7 +11,7 @@ export interface components {
          * Id тега
          * @enum {string}
          */
-        "Tags_2.Types.TagId": Tags_2TypesTagId;
+        "Tags_2.Types.TagId": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
     };
     responses: never;
     parameters: never;
@@ -20,26 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Tags_2TypesTagId {
-    Tag1 = "1",
-    Tag2 = "2",
-    Tag3 = "3",
-    Tag4 = "4",
-    Tag5 = "5",
-    Tag6 = "6",
-    Tag7 = "7",
-    Tag8 = "8",
-    Tag9 = "9",
-    Tag10 = "10",
-    Tag11 = "11",
-    Tag12 = "12",
-    Tag13 = "13",
-    Tag14 = "14",
-    Tag15 = "15",
-    Tag16 = "16",
-    Tag17 = "17",
-    Tag18 = "18",
-    Tag19 = "19",
-    Tag20 = "20"
-}
 export type operations = Record<string, never>;

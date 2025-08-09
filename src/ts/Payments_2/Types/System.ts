@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @enum {string} */
-        "Payments_2.Types.System": Payments_2TypesSystem;
+        "Payments_2.Types.System": "balance" | "card" | "card_ios" | "card_android" | "card_ap" | "card_gp" | "invoice" | "tinkoff_business" | "ap" | "ym" | "qw" | "sb" | "wm2" | "pp" | "pd" | "pd_invoice" | "rk" | "pt" | "lp" | "ppg" | "pr";
     };
     responses: never;
     parameters: never;
@@ -17,27 +17,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Payments_2TypesSystem {
-    Balance = "balance",
-    Card = "card",
-    CardIso = "card_ios",
-    CardAndroid = "card_android",
-    CardAp = "card_ap",
-    CardGp = "card_gp",
-    Invoice = "invoice",
-    TinkoffBusiness = "tinkoff_business",
-    Ap = "ap",
-    Ym = "ym",
-    Qw = "qw",
-    Sb = "sb",
-    Wm2 = "wm2",
-    Pp = "pp",
-    Pd = "pd",
-    PdInvoice = "pd_invoice",
-    Rk = "rk",
-    Pt = "pt",
-    Lp = "lp",
-    Ppg = "ppg",
-    Pr = "pr"
-}
 export type operations = Record<string, never>;

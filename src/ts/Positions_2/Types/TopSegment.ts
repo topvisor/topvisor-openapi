@@ -11,7 +11,7 @@ export interface components {
          * Дополнительный сегмент топа
          * @enum {integer}
          */
-        "Positions_2.Types.TopSegment": Positions_2TypesTopSegment;
+        "Positions_2.Types.TopSegment": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
     };
     responses: never;
     parameters: never;
@@ -20,17 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Positions_2TypesTopSegment {
-    // Отключен
-    Disabled = 0,
-    Top1 = 1,
-    Top2 = 2,
-    Top3 = 3,
-    Top4 = 4,
-    Top5 = 5,
-    Top6 = 6,
-    Top7 = 7,
-    Top8 = 8,
-    Top9 = 9
-}
 export type operations = Record<string, never>;

@@ -14,7 +14,7 @@ export interface components {
          * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Limit.Name": Bank_2TypesSubscriptionsLimitName;
+        "Bank_2.Types.Subscriptions.Limit.Name": "positions_check" | "positions_check_manual" | "keywords_volumes" | "keywords_collect" | "positions_tasks" | "projects" | "projects_rights" | "projects_competitors" | "projects_archive" | "api";
     };
     responses: never;
     parameters: never;
@@ -23,26 +23,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Bank_2TypesSubscriptionsLimitName {
-    // Проверка позиций (автоматическая)
-    PositionsCheck = "positions_check",
-    // Проверка позиций (ручная)
-    PositionsCheckManual = "positions_check_manual",
-    // Проверка частоты
-    KeywordsVolumes = "keywords_volumes",
-    // Сбор семантического ядра
-    KeywordsCollect = "keywords_collect",
-    // Максимальное количество задач проверки позиций; countTasks = Σ projects (keywords × regions)
-    PositionsTasks = "positions_tasks",
-    // Количество проектов
-    Projects = "projects",
-    // Количество гостевых аккаунтов; Считаются уникальные гостевые аккаунты по всем проектам
-    ProjectsRights = "projects_rights",
-    // Количество конкурентов
-    ProjectsCompetitors = "projects_competitors",
-    // Доступ к архивным проектам
-    ProjectsArchive = "projects_archive",
-    // Доступ к API
-    Api = "api"
-}
 export type operations = Record<string, never>;

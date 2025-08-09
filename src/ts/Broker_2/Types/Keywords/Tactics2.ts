@@ -11,7 +11,7 @@ export interface components {
          * Тактика при превышении максимальной цены
          * @enum {string}
          */
-        "Broker_2.Types.Keywords.Tactics2": Broker_2TypesKeywordsTactics2;
+        "Broker_2.Types.Keywords.Tactics2": "maxBid" | "minBid" | "lowerPos" | "suspend";
     };
     responses: never;
     parameters: never;
@@ -20,14 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Broker_2TypesKeywordsTactics2 {
-    // Установить максимальную ставку
-    MaxBid = "maxBid",
-    // Установить минимальную ставку
-    MinBid = "minBid",
-    // Понижать позицию
-    LowerPos = "lowerPos",
-    // Отключить показы
-    Suspend = "suspend"
-}
 export type operations = Record<string, never>;

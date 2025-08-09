@@ -11,7 +11,7 @@ export interface components {
          * Формат отчета
          * @enum {string}
          */
-        "Schedule_2.Types.Settings.Format": Schedule_2TypesSettingsFormat;
+        "Schedule_2.Types.Settings.Format": "csv" | "xlsx" | "pdf" | "html";
     };
     responses: never;
     parameters: never;
@@ -20,10 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Schedule_2TypesSettingsFormat {
-    Csv = "csv",
-    Xlsx = "xlsx",
-    Pdf = "pdf",
-    Html = "html"
-}
 export type operations = Record<string, never>;

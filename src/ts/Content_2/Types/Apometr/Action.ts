@@ -11,7 +11,7 @@ export interface components {
          * Тип выдачи
          * @enum {string}
          */
-        "Content_2.Types.Apometr.Action": Content_2TypesApometrAction;
+        "Content_2.Types.Apometr.Action": "0" | "xml";
     };
     responses: never;
     parameters: never;
@@ -20,10 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Content_2TypesApometrAction {
-    // Обычная выдача
-    Normal = "0",
-    // XML выдача
-    Xml = "xml"
-}
 export type operations = Record<string, never>;

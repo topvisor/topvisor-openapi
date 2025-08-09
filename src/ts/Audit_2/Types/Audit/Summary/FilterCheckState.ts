@@ -11,7 +11,7 @@ export interface components {
          * Фильтр по состоянию изменения в сводке
          * @enum {string}
          */
-        "Audit_2.Types.Audit.Summary.FilterCheckState": Audit_2TypesAuditSummaryFilterCheckState;
+        "Audit_2.Types.Audit.Summary.FilterCheckState": "all" | "changed";
     };
     responses: never;
     parameters: never;
@@ -20,8 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesAuditSummaryFilterCheckState {
-    All = "all",
-    Changed = "changed"
-}
 export type operations = Record<string, never>;

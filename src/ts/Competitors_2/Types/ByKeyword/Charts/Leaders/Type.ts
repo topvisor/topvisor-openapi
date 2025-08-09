@@ -11,7 +11,7 @@ export interface components {
          * Тип графика
          * @enum {string}
          */
-        "Competitors_2.Types.ByKeyword.Charts.Leaders.Type": Competitors_2TypesByKeywordChartsLeadersType;
+        "Competitors_2.Types.ByKeyword.Charts.Leaders.Type": "small" | "count_keywords" | "avg_position" | "visibility" | "sum_traffic" | "sum_month_cost_rub" | "sum_month_cost_usd";
     };
     responses: never;
     parameters: never;
@@ -20,20 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Competitors_2TypesByKeywordChartsLeadersType {
-    // Маленький
-    Small = "small",
-    // Количество запросов
-    CountKeywords = "count_keywords",
-    // Средняя позицияя
-    AvgPosition = "avg_position",
-    // Видисмость
-    Visibility = "visibility",
-    // Трафик
-    SumTraffic = "sum_traffic",
-    // Стоимость домена в рублях
-    sum_month_cost_rub = "sum_month_cost_rub",
-    // Стоимость домена в долларах
-    sum_month_cost_usd = "sum_month_cost_usd"
-}
 export type operations = Record<string, never>;

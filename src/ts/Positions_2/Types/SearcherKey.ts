@@ -11,7 +11,7 @@ export interface components {
          * Ключ поисковой системы для проверки позиций
          * @enum {integer}
          */
-        "Positions_2.Types.SearcherKey": Positions_2TypesSearcherKey;
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
     };
     responses: never;
     parameters: never;
@@ -20,15 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Positions_2TypesSearcherKey {
-    Yandex = 0,
-    YandexCom = 20,
-    YandexTr = 21,
-    Google = 1,
-    YouTube = 4,
-    Bing = 5,
-    Seznam = 7,
-    AppStore = 8,
-    GooglePlay = 9
-}
 export type operations = Record<string, never>;

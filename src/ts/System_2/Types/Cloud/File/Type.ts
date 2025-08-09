@@ -11,7 +11,7 @@ export interface components {
          * Тип файла, получаемого из облака Selectel
          * @enum {string}
          */
-        "System_2.Types.Cloud.File.Type": System_2TypesCloudFileType;
+        "System_2.Types.Cloud.File.Type": "pdir" | "cdir" | "dir" | "file";
     };
     responses: never;
     parameters: never;
@@ -20,14 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum System_2TypesCloudFileType {
-    // Родительская директория
-    Pdir = "pdir",
-    // Текущая директория
-    Cdir = "cdir",
-    // Директория
-    Dir = "dir",
-    // Файл
-    File = "file"
-}
 export type operations = Record<string, never>;

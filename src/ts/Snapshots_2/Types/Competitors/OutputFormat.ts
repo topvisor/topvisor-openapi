@@ -11,7 +11,7 @@ export interface components {
          * Формат вывода конкурентов
          * @enum {string}
          */
-        "Snapshots_2.Types.Competitors.OutputFormat": Snapshots_2TypesCompetitorsOutputFormat;
+        "Snapshots_2.Types.Competitors.OutputFormat": "domain" | "url";
     };
     responses: never;
     parameters: never;
@@ -20,10 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Snapshots_2TypesCompetitorsOutputFormat {
-    // По домену
-    Domain = "domain",
-    // По url
-    Url = "url"
-}
 export type operations = Record<string, never>;

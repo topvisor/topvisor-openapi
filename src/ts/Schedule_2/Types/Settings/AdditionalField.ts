@@ -11,7 +11,7 @@ export interface components {
          * Дополнительное поле отчета проверки позиций
          * @enum {string}
          */
-        "Schedule_2.Types.Settings.AdditionalField": Schedule_2TypesSettingsAdditionalField;
+        "Schedule_2.Types.Settings.AdditionalField": "summary" | "traffic" | "url" | "frequency";
     };
     responses: never;
     parameters: never;
@@ -20,14 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Schedule_2TypesSettingsAdditionalField {
-    // Сводка
-    Summary = "summary",
-    // Трафик
-    Traffic = "traffic",
-    // Ссылка
-    Url = "url",
-    // Частота
-    Frequency = "frequency"
-}
 export type operations = Record<string, never>;

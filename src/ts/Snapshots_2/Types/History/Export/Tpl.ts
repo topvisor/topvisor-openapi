@@ -11,7 +11,7 @@ export interface components {
          * Шаблон документа (только для pdf)
          * @enum {string}
          */
-        "Snapshots_2.Types.History.Export.Tpl": Snapshots_2TypesHistoryExportTpl;
+        "Snapshots_2.Types.History.Export.Tpl": "print";
     };
     responses: never;
     parameters: never;
@@ -20,7 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Snapshots_2TypesHistoryExportTpl {
-    Print = "print"
-}
 export type operations = Record<string, never>;

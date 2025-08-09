@@ -11,7 +11,7 @@ export interface components {
          * Подтип графического объявления
          * @enum {string}
          */
-        "Broker_2.Types.Ads.Image.Subtype": Broker_2TypesAdsImageSubtype;
+        "Broker_2.Types.Ads.Image.Subtype": "TEXT_IMAGE_AD" | "MOBILE_APP_IMAGE_AD" | "TEXT_AD_BUILDER_AD" | "MOBILE_APP_AD_BUILDER_AD";
     };
     responses: never;
     parameters: never;
@@ -20,14 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Broker_2TypesAdsImageSubtype {
-    // Объявление содержит изображение, а также ссылку на рекламируемый сайт и/или Турбо-страницу
-    TextImage = "TEXT_IMAGE_AD",
-    // Объявление содержит изображение. В объявление также можно добавить трекинговую ссылку для отслеживания установок
-    MobileAppImage = "MOBILE_APP_IMAGE_AD",
-    // Объявление содержит креатив, созданный в конструкторе креативов, а также ссылку на рекламируемый сайт и/или Турбо-страницу
-    TextAdBuilder = "TEXT_AD_BUILDER_AD",
-    // Объявление содержит креатив, созданный в конструкторе креативов. В объявление также можно добавить трекинговую ссылку для отслеживания; установок
-    MobileAppAdBuilder = "MOBILE_APP_AD_BUILDER_AD"
-}
 export type operations = Record<string, never>;

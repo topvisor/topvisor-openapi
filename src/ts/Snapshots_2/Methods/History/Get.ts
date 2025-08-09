@@ -86,7 +86,7 @@ export interface components {
                             absent: number;
                         };
                         visibility?: number;
-                        volumes_no_collected?: Snapshots_2MethodsHistoryGetExecCompetitorsSummariesDataVolumes_no_collected | Snapshots_2MethodsHistoryGetExecCompetitorsSummariesDataVolumes_no_collected | Snapshots_2MethodsHistoryGetExecCompetitorsSummariesDataVolumes_no_collected;
+                        volumes_no_collected?: "0" | "1" | "2";
                         urls?: string[];
                     };
                 };
@@ -95,7 +95,7 @@ export interface components {
             dates: string[];
             depthPositions: number;
             countKeywords: number;
-            volumes_no_collected?: Snapshots_2MethodsHistoryGetExecVolumes_no_collected | Snapshots_2MethodsHistoryGetExecVolumes_no_collected | Snapshots_2MethodsHistoryGetExecVolumes_no_collected;
+            volumes_no_collected?: "0" | "1" | "2";
             existsDates?: string[];
         }) | null;
     };
@@ -106,22 +106,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Snapshots_2MethodsHistoryGetExecCompetitorsSummariesDataVolumes_no_collected {
-    Value0 = "0"
-}
-export enum Snapshots_2MethodsHistoryGetExecCompetitorsSummariesDataVolumes_no_collected {
-    Value1 = "1"
-}
-export enum Snapshots_2MethodsHistoryGetExecCompetitorsSummariesDataVolumes_no_collected {
-    Value2 = "2"
-}
-export enum Snapshots_2MethodsHistoryGetExecVolumes_no_collected {
-    Value0 = "0"
-}
-export enum Snapshots_2MethodsHistoryGetExecVolumes_no_collected {
-    Value1 = "1"
-}
-export enum Snapshots_2MethodsHistoryGetExecVolumes_no_collected {
-    Value2 = "2"
-}
 export type operations = Record<string, never>;

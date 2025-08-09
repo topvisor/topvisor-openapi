@@ -11,7 +11,7 @@ export interface components {
          * Тип связи запросов между конкурентами
          * @enum {string}
          */
-        "Competitors_2.Types.ByUrl.Table.Keywords.TypeVS": Competitors_2TypesByUrlTableKeywordsTypeVS;
+        "Competitors_2.Types.ByUrl.Table.Keywords.TypeVS": "me" | "exclusive_me" | "common" | "competitor" | "exclusive_competitor";
     };
     responses: never;
     parameters: never;
@@ -20,16 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Competitors_2TypesByUrlTableKeywordsTypeVS {
-    // Все запросы
-    Me = "me",
-    // Уникальные запросы
-    ExclusiveMe = "exclusive_me",
-    // Общие запросы
-    Common = "common",
-    // Все запросыы  конкурента
-    Competitor = "competitor",
-    // Уникальные запросы конкурента
-    ExclusiveCompetitor = "exclusive_competitor"
-}
 export type operations = Record<string, never>;

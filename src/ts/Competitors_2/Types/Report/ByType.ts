@@ -11,7 +11,7 @@ export interface components {
          * Тип запроса в отчета
          * @enum {string}
          */
-        "Competitors_2.Types.Report.ByType": Competitors_2TypesReportByType;
+        "Competitors_2.Types.Report.ByType": "url" | "keyword";
     };
     responses: never;
     parameters: never;
@@ -20,10 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Competitors_2TypesReportByType {
-    // Домену
-    Url = "url",
-    // Ключевой фразе
-    Keyword = "keyword"
-}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Направление сортировки
          * @enum {string}
          */
-        FieldDirection: FieldDirection;
+        FieldDirection: "ASC" | "DESC";
     };
     responses: never;
     parameters: never;
@@ -20,8 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum FieldDirection {
-    Asc = "ASC",
-    Desc = "DESC"
-}
 export type operations = Record<string, never>;

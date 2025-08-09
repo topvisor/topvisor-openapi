@@ -11,7 +11,7 @@ export interface components {
          * Тип группировки
          * @enum {integer}
          */
-        "Projects_2.Types.Analytics.Base": Projects_2TypesAnalyticsBase;
+        "Projects_2.Types.Analytics.Base": 1 | 11 | 13 | 2 | 3 | 6 | 4 | 5 | 12;
     };
     responses: never;
     parameters: never;
@@ -20,24 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Projects_2TypesAnalyticsBase {
-    // ПС и регионы
-    SearchEngineAndRegions = 1,
-    // ПС
-    SearchEngine = 11,
-    // Источники трафика
-    TrafficSources = 13,
-    // Запросы
-    Requests = 2,
-    // Группы
-    Groups = 3,
-    // Папки
-    Folders = 6,
-    // Конкуренты
-    Competitors = 4,
-    // Теги
-    Tags = 5,
-    // Топы
-    Tops = 12
-}
 export type operations = Record<string, never>;

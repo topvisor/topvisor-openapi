@@ -43,12 +43,12 @@ export interface components {
                     priceOriginal: number;
                     qualifiers: {
                         region_key: number;
-                        searcher_key: Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key;
+                        searcher_key: "0" | "1" | "5" | "100" | "101" | "102" | "104" | "105" | "106";
                         region_lang?: string | null;
                         also_searched?: number | null;
                         depth?: number | null;
-                        hint_depth: Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_depth | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_depth | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_depth;
-                        hint_generators: (Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators | Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators)[];
+                        hint_depth: "1" | "2" | "3";
+                        hint_generators: ("letter" | "letter_ru" | "number" | "space")[];
                     };
                     comment: string;
                 };
@@ -62,52 +62,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value0 = "0"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value1 = "1"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value5 = "5"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value100 = "100"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value101 = "101"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value102 = "102"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value104 = "104"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value105 = "105"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersSearcher_key {
-    Value106 = "106"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_depth {
-    Value1 = "1"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_depth {
-    Value2 = "2"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_depth {
-    Value3 = "3"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators {
-    letter = "letter"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators {
-    letter_ru = "letter_ru"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators {
-    number = "number"
-}
-export enum Keywords_2MethodsCollectPriceGetExecPricesByUsersQualifiersHint_generators {
-    space = "space"
-}
 export type operations = Record<string, never>;

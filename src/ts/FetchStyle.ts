@@ -19,7 +19,7 @@ export interface components {
          *     Напоминает логику работу PDO Fetch: https://www.php.net/manual/ru/pdostatement.fetch.php
          * @enum {string}
          */
-        FetchStyle: FetchStyle;
+        FetchStyle: "fetchAll" | "fetchAllNum" | "fetchAllColumn" | "fetch" | "fetchColumn" | "fetchGroup" | "fetchGroupColumn" | "fetchUnique" | "fetchUniqueNum" | "fetchUniqueColumn" | "selector";
     };
     responses: never;
     parameters: never;
@@ -28,28 +28,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum FetchStyle {
-    // Список объектов; Является значением по умолчанию
-    FetchAll = "fetchAll",
-    // Список объектов в виде массивов, где элементы массива - это свойства объекта, перечисленные с сохранением своего порядка; Полезно для экономии трафика и ускорения передачи данных в формате json
-    FetchAllNum = "fetchAllNum",
-    // Список значений одного свойства по каждому объекту
-    FetchAllColumn = "fetchAllColumn",
-    // Один объект
-    Fetch = "fetch",
-    // Одно свойство одного объека
-    FetchColumn = "fetchColumn",
-    // Объекты с группировкой
-    FetchGroup = "fetchGroup",
-    // Значения свойства объектов с группировкой
-    FetchGroupColumn = "fetchGroupColumn",
-    // Объекты с группировкой с объединением дублей
-    FetchUnique = "fetchUnique",
-    // Значения свойства объектов с группировкой с объединением дублей
-    FetchUniqueNum = "fetchUniqueNum",
-    // Список значений одного свойства по каждому объекту с объединением дублей
-    FetchUniqueColumn = "fetchUniqueColumn",
-    // Внутренний объект метода Selector
-    Selector = "selector"
-}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Название директории для эспорта
          * @enum {string}
          */
-        "Snapshots_2.Types.History.Export.Repository": Snapshots_2TypesHistoryExportRepository;
+        "Snapshots_2.Types.History.Export.Repository": "gdrive";
     };
     responses: never;
     parameters: never;
@@ -20,7 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Snapshots_2TypesHistoryExportRepository {
-    GoogleDrive = "gdrive"
-}
 export type operations = Record<string, never>;

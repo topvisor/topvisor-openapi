@@ -11,7 +11,7 @@ export interface components {
          * Тип частоты
          * @enum {integer}
          */
-        "Keywords_2.Types.Volumes.Type": Keywords_2TypesVolumesType;
+        "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;
     };
     responses: never;
     parameters: never;
@@ -20,16 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Keywords_2TypesVolumesType {
-    // Базовая частота; Учитывает все запросы, содержащие фразу, с любыми словоформами и дополнительными словами; Пример: `пластиковые окна`
-    Base = 1,
-    // Фразовая частота; Учитывает точную фразу с возможными словоформами, но без дополнительных слов; Пример: `"пластиковые окна"`
-    Phrase = 2,
-    // Точная частота; Фиксирует словоформу введённого слова без изменений падежей, числа или времени; Пример: `"!пластиковые !окна"`
-    Exact = 3,
-    // Частота с фиксированным порядком слов; Учитывает фразу с возможными словоформами, но в заданном порядке; Пример: `[пластиковые окна]`
-    Ordered = 5,
-    // Точная частота с фиксированным порядком слов; Учитывает фразу в точной словоформе и заданном порядке; Пример: `[!пластиковые !окна]`
-    ExactOrdered = 6
-}
 export type operations = Record<string, never>;

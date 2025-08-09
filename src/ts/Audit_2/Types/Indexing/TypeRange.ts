@@ -11,7 +11,7 @@ export interface components {
          * Тип диапазона индексации
          * @enum {integer}
          */
-        "Audit_2.Types.Indexing.TypeRange": Audit_2TypesIndexingTypeRange;
+        "Audit_2.Types.Indexing.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 7 | 100;
     };
     responses: never;
     parameters: never;
@@ -20,22 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Audit_2TypesIndexingTypeRange {
-    // Весь период без ограничений (недокументируемй парметр)
-    FullRange = 0,
-    // Период с выполненными проверками (Только апдейты Яндекс)
-    YandexUpdates = 1,
-    // Период с выполненными проверками
-    Range = 2,
-    // Две проверки
-    TwoChecks = 3,
-    // Одна проверка
-    OneCheck = 4,
-    // Последняя проверка месяца
-    LastCheckOfMonth = 5,
-    // Две последние даты проверок
-    TwoLastChecks = 7,
-    // Произвольный список дат
-    ListDates = 100
-}
 export type operations = Record<string, never>;

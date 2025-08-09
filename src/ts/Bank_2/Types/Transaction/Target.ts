@@ -11,7 +11,7 @@ export interface components {
          * Назначение транзакции списания/пополнения в банке
          * @enum {string}
          */
-        "Bank_2.Types.Transaction.Target": Bank_2TypesTransactionTarget;
+        "Bank_2.Types.Transaction.Target": "audit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "checkVolumes" | "checkPositions" | "checkSnapshots" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat";
     };
     responses: never;
     parameters: never;
@@ -20,38 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Bank_2TypesTransactionTarget {
-    // Анализ сайта
-    Audit = "audit",
-    // Индексация
-    AuditIndexing = "auditIndexing",
-    // Карта сайта
-    AuditSitemap = "auditSitemap",
-    // Радар
-    AuditWatcher = "auditWatcher",
-    // Управления ставками в рекламе
-    Broker = "broker",
-    // Проверка частоты
-    CheckVolumes = "checkVolumes",
-    // Проверка позиций
-    CheckPositions = "checkPositions",
-    // Снимки выдачи
-    CheckSnapshots = "checkSnapshots",
-    // Кластеризация
-    Claster = "claster",
-    // Анализ конкурентов
-    Competitors = "competitors",
-    // Экспорт; Например: массовый экспорт проверки позиций по проектам
-    Export = "export",
-    // Заморозка средств на счете (Анализ сайта)
-    HoldAudit = "holdAudit",
-    // Упоминания
-    Mentions = "mentions",
-    // Кассовые операции; Например: реальное платежное пополнение, бонусное пополнение по достижениям, изменения счета из админки
-    System = "system",
-    // Скриншоты веб-страниц
-    WebScreens = "webScreens",
-    // Подбор слов
-    Wordstat = "wordstat"
-}
 export type operations = Record<string, never>;

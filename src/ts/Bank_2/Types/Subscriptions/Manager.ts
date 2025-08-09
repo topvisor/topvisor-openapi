@@ -15,7 +15,7 @@ export interface components {
          *     - Отправка предложения об оплате
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Manager": Bank_2TypesSubscriptionsManager;
+        "Bank_2.Types.Subscriptions.Manager": "system" | "api";
     };
     responses: never;
     parameters: never;
@@ -24,10 +24,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Bank_2TypesSubscriptionsManager {
-    // Платёжный сервис
-    System = "system",
-    // Продавец через API платежного сервиса
-    Api = "api"
-}
 export type operations = Record<string, never>;

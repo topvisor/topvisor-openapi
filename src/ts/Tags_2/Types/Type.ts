@@ -11,7 +11,7 @@ export interface components {
          * Тип тега, к каким объектам применяется
          * @enum {string}
          */
-        "Tags_2.Types.Type": Tags_2TypesType;
+        "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls";
     };
     responses: never;
     parameters: never;
@@ -20,12 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Tags_2TypesType {
-    Tickets = "tickets",
-    Projects = "projects",
-    Keywords = "keywords",
-    Snippets = "snippets",
-    ShortLinks = "shortLinks",
-    Urls = "urls"
-}
 export type operations = Record<string, never>;

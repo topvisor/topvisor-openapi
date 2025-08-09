@@ -11,7 +11,7 @@ export interface components {
          * Место откуда перешел пользователь
          * @enum {string}
          */
-        "Tpvsr_2.Types.Stat.Dimension.Referrer": Tpvsr_2TypesStatDimensionReferrer;
+        "Tpvsr_2.Types.Stat.Dimension.Referrer": "social" | "sites" | "undefined" | "overall";
     };
     responses: never;
     parameters: never;
@@ -20,10 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Tpvsr_2TypesStatDimensionReferrer {
-    Social = "social",
-    Sites = "sites",
-    Undefined = "undefined",
-    Overall = "overall"
-}
 export type operations = Record<string, never>;

@@ -11,7 +11,7 @@ export interface components {
          * Какие запросы следует пропусить при перепроверке частоты
          * @enum {integer}
          */
-        "Keywords_2.Types.Volumes.NoRecheck": Keywords_2TypesVolumesNoRecheck;
+        "Keywords_2.Types.Volumes.NoRecheck": 0 | 1 | 2;
     };
     responses: never;
     parameters: never;
@@ -20,12 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Keywords_2TypesVolumesNoRecheck {
-    // Ничего не пропускать
-    None = 0,
-    // Пропутсить запросы с укутальной частотой
-    Actual = 1,
-    // Пропутсить запросы с частотой любой давности
-    Exists = 2
-}
 export type operations = Record<string, never>;

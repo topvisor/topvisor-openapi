@@ -11,7 +11,7 @@ export interface components {
          * Язык шаблона
          * @enum {string}
          */
-        "System_2.Types.Tpl.Lang": System_2TypesTplLang;
+        "System_2.Types.Tpl.Lang": "ru" | "en" | "";
     };
     responses: never;
     parameters: never;
@@ -20,9 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum System_2TypesTplLang {
-    Ru = "ru",
-    En = "en",
-    Uni = ""
-}
 export type operations = Record<string, never>;

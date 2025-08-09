@@ -11,7 +11,7 @@ export interface components {
          * Откуда поступил тикет
          * @enum {string}
          */
-        "Tickets_2.Types.Tickets.Type": Tickets_2TypesTicketsType;
+        "Tickets_2.Types.Tickets.Type": "system" | "other" | "email" | "ios" | "vk" | "chrome" | "twitter" | "facebook" | "telegram" | "android" | "guest";
     };
     responses: never;
     parameters: never;
@@ -20,17 +20,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Tickets_2TypesTicketsType {
-    System = "system",
-    Other = "other",
-    Email = "email",
-    Ios = "ios",
-    Vk = "vk",
-    Chrome = "chrome",
-    Twitter = "twitter",
-    Facebook = "facebook",
-    Telegram = "telegram",
-    Android = "android",
-    Guest = "guest"
-}
 export type operations = Record<string, never>;

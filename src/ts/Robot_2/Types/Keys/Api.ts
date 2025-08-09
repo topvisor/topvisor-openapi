@@ -13,7 +13,7 @@ export interface components {
          *     Только ключи с прикрепленным движком могут выполнять задачи такого движка
          * @enum {string}
          */
-        "Robot_2.Types.Keys.Api": Robot_2TypesKeysApi;
+        "Robot_2.Types.Keys.Api": "NONE" | "YANDEX" | "YANDEX_COM" | "YANDEX_TR" | "BRIGHTDATA" | "XML_RIVER" | "XML_STOCK" | "NETNUT" | "PROXYMADATA" | "YANDEX_ASYNC" | "XML_STOCK_IE" | "XML_STOCK_YANDEX_ASYNC" | "XML_RIVER_YANDEX_ASYNC";
     };
     responses: never;
     parameters: never;
@@ -22,21 +22,4 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum Robot_2TypesKeysApi {
-    None = "NONE",
-    Yandex = "YANDEX",
-    // @deprecated API Яндекса v1 отключается, если оно более не нужно для работы с yandex.com, удалить
-    YandexCom = "YANDEX_COM",
-    // @deprecated API Яндекса v1 отключается, если оно более не нужно для работы с yandex.com.tr, удалить
-    YandexTr = "YANDEX_TR",
-    Brightdata = "BRIGHTDATA",
-    XmlRiver = "XML_RIVER",
-    XmlStock = "XML_STOCK",
-    Netnut = "NETNUT",
-    Proxymadata = "PROXYMADATA",
-    YandexAsync = "YANDEX_ASYNC",
-    XmlStockIe = "XML_STOCK_IE",
-    XmlStockYandexAsync = "XML_STOCK_YANDEX_ASYNC",
-    XmlRiverYandexAsync = "XML_RIVER_YANDEX_ASYNC"
-}
 export type operations = Record<string, never>;
