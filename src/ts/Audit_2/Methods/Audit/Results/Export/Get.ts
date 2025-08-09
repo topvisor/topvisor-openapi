@@ -18,7 +18,7 @@ export interface components {
              * Формат экспорта
              * @default pdf
              */
-            format: string;
+            format: string | null;
             /** Данные поиска во всех табличных разделах (только для PDF) */
             search?: string | null;
             /** Данные фильтрации во всех табличных разделах (только для PDF) */
