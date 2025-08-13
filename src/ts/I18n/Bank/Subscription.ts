@@ -159,6 +159,8 @@ export interface components {
             readonly Yearly: "Yearly";
             /** @constant */
             readonly Exceeding_by_owner: "The project owner has";
+            /** @constant */
+            readonly Select_this_plan: "Select this plan";
         };
     };
     responses: never;

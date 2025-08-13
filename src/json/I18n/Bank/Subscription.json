@@ -244,6 +244,10 @@
                     "Exceeding_by_owner": {
                         "const": "The project owner has",
                         "readOnly": true
+                    },
+                    "Select_this_plan": {
+                        "const": "Select this plan",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -288,7 +292,8 @@
                     "Start_Free_Trial",
                     "Monthly",
                     "Yearly",
-                    "Exceeding_by_owner"
+                    "Exceeding_by_owner",
+                    "Select_this_plan"
                 ]
             }
         }
