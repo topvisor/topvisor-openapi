@@ -21,7 +21,7 @@ export interface components {
             sum: number;
             /** Причина */
             purpose: string;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Bank.Edit.Exec": import('../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

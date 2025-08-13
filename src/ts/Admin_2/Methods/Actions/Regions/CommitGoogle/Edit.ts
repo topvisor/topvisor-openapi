@@ -20,7 +20,7 @@ export interface components {
              * @description @type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>
              */
             regions: unknown[];
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

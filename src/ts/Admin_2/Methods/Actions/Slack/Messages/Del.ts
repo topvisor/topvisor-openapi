@@ -17,7 +17,7 @@ export interface components {
             secunds: string;
             /** @default 1 */
             onlyMy: number;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Slack.Messages.Del.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

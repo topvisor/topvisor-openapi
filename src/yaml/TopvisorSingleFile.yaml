@@ -681,33 +681,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /abstractregular/schedule_2/:
-    post:
-      operationId: AbstractregularSchedule2
-      tags:
-        - Schedule_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Schedule_2.Methods.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Schedule_2.Methods.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /del/schedule_2/:
     post:
       operationId: DelSchedule2
@@ -1255,33 +1228,6 @@ paths:
               schema:
                 type: string
                 format: binary
-  /abstractregular/admin_2/actions/:
-    post:
-      operationId: AbstractregularAdmin2Actions
-      tags:
-        - Admin_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Actions.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /get/admin_2/ghost/:
     post:
       operationId: GetAdmin2Ghost
@@ -2938,36 +2884,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /abstracteditpage/content_2/pages/:
-    post:
-      operationId: AbstracteditpageContent2Pages
-      tags:
-        - Content_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Content_2.Methods.Pages.AbstractEditPage'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Content_2.Methods.Pages.AbstractEditPage.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Pages'
   /add/content_2/pages/:
     post:
       operationId: AddContent2Pages
@@ -3093,33 +3009,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-  /abstractregular/content_2/redirects/:
-    post:
-      operationId: AbstractregularContent2Redirects
-      tags:
-        - Content_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Content_2.Methods.Redirects.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Content_2.Methods.Redirects.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /add/content_2/redirects/:
     post:
       operationId: AddContent2Redirects
@@ -4965,33 +4854,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-  /abstractregular/quiz_2/questions/:
-    post:
-      operationId: AbstractregularQuiz2Questions
-      tags:
-        - Quiz_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Quiz_2.Methods.Questions.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Quiz_2.Methods.Questions.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /add/quiz_2/questions/:
     post:
       operationId: AddQuiz2Questions
@@ -5424,34 +5286,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /abstractregular/snapshots_2/competitors/:
-    post:
-      operationId: AbstractregularSnapshots2Competitors
-      tags:
-        - Snapshots_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Snapshots_2.Methods.Competitors.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Snapshots_2.Methods.Competitors.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
   /get/snapshots_2/competitors/:
     post:
       operationId: GetSnapshots2Competitors
@@ -5539,34 +5373,6 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /abstractregular/snapshots_2/history/:
-    post:
-      operationId: AbstractregularSnapshots2History
-      tags:
-        - Snapshots_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Snapshots_2.Methods.History.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Snapshots_2.Methods.History.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
   /get/snapshots_2/history/:
     post:
@@ -6348,33 +6154,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Users_2.Methods.Logout.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /abstractregular/users_2/profile/:
-    post:
-      operationId: AbstractregularUsers2Profile
-      tags:
-        - Users_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Users_2.Methods.Profile.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Users_2.Methods.Profile.AbstractRegular.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7410,34 +7189,6 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /abstractticketsstats/admin_2/analytics/tickets/:
-    post:
-      operationId: AbstractticketsstatsAdmin2AnalyticsTickets
-      tags:
-        - Admin_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
   /get/admin_2/analytics/tickets/:
     post:
@@ -8942,34 +8693,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /abstractregular/competitors_2/export/table/:
-    post:
-      operationId: AbstractregularCompetitors2ExportTable
-      tags:
-        - Competitors_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Competitors_2.Methods.Export.Table.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Competitors_2.Methods.Export.Table.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
   /get/competitors_2/export/table/:
     post:
       operationId: GetCompetitors2ExportTable
@@ -8994,34 +8717,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Competitors_2.Methods.Export.Table.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-  /abstractregular/competitors_2/export/tableToProject/:
-    post:
-      operationId: AbstractregularCompetitors2ExportTableToProject
-      tags:
-        - Competitors_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Competitors_2.Methods.Export.TableToProject.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Competitors_2.Methods.Export.TableToProject.AbstractRegular.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -16502,33 +16197,6 @@ components:
       title: Настройка рекуррентного платежа
     Recurring_2.Methods.Edit.Exec:
       type: integer
-    Schedule_2.Methods.AbstractRegular:
-      type: object
-      properties:
-        type:
-          title: Тип расписания
-          description: '@see Schedule_2\Mods\Schedule::$availableTypes'
-          type: string
-        target_id:
-          title: Id объекта, к которому будет привязано расписание
-          type: integer
-        target_id_2:
-          title: Id второго объекта, к которому будет привязано расписание (для mentions)
-          nullable: true
-          type: integer
-      required:
-        - type
-        - target_id
-    Schedule_2.Methods.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Schedule_2.Methods.Del:
       type: object
       properties:
@@ -17415,24 +17083,6 @@ components:
         - w
         - h
       title: Получение скриншота (платная функция)
-    Admin_2.Methods.Actions.AbstractRegular:
-      type: object
-      properties:
-        test:
-          title: Являеется ли запуск - тестом
-          type: boolean
-      required:
-        - test
-    Admin_2.Methods.Actions.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Admin_2.Methods.Ghost.Get:
       type: object
       properties:
@@ -20794,7 +20444,7 @@ components:
       type: string
       title: Дата с временем
       example: '2000-01-01 00:00:00'
-    Content_2.Methods.Pages.AbstractEditPage:
+    Content_2.Methods.Pages.Add:
       type: object
       properties:
         url:
@@ -20896,16 +20546,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/Admin_2.Types.Staff.Posts'
       required: []
-    Content_2.Methods.Pages.AbstractEditPage.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
+      title: Создание документа
+    Content_2.Methods.Pages.Add.Exec:
+      type: integer
     Models.Pages:
       properties:
         COUNT(*):
@@ -21014,111 +20657,6 @@ components:
           nullable: true
         publish_timestamp:
           nullable: true
-    Content_2.Methods.Pages.Add:
-      type: object
-      properties:
-        url:
-          title: Адрес документа
-          type: string
-        subdomain:
-          title: Поддомен документа
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Content_2.Types.Subdomain'
-        lang:
-          title: Язык документа
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Lang'
-        user_id:
-          title: Id автора
-          nullable: true
-          type: integer
-        user_id_2:
-          title: Id второго автора
-          nullable: true
-          type: integer
-        user_id_3:
-          title: Id третьего автора
-          nullable: true
-          type: integer
-        create:
-          title: Дата публикации
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        publish_time:
-          title: Время публикации
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        h1:
-          title: Заголовок страницы
-          nullable: true
-          type: string
-        title:
-          title: Заголовок страницы для браузера
-          nullable: true
-          type: string
-        description:
-          title: Описание страницы (meta - description)
-          nullable: true
-          type: string
-        intro:
-          title: Вступительный текст
-          nullable: true
-          type: string
-        html:
-          title: Контент страницы
-          nullable: true
-          type: string
-        menu_name:
-          title: Заголовок для меню
-          nullable: true
-          type: string
-        order:
-          title: Позиция сортировки документа
-          nullable: true
-          type: integer
-        image:
-          title: Ссылка на основное изображение (обычно относительный путь до изображения от корня сайта)
-          nullable: true
-          type: string
-        og:
-          title: '@var ?array{string: string} Объект с данными Open Graph'
-          nullable: true
-          type: array
-        tags:
-          title: '@var ?string[] Список тегов'
-          nullable: true
-          type: array
-        noindex:
-          title: Не индексировать страницу
-          type: boolean
-        theme:
-          title: Тема оформления страницы
-          nullable: true
-          type: string
-        quiz_id:
-          title: Id теста
-          nullable: true
-          type: string
-        state:
-          title: Статус документа
-          nullable: true
-          type: string
-        required_posts_any:
-          title: |-
-            Ограничение доступа
-
-            Доступно всем, если не заполнено
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Admin_2.Types.Staff.Posts'
-      required: []
-      title: Создание документа
-    Content_2.Methods.Pages.Add.Exec:
-      type: integer
     Content_2.Methods.Pages.Del:
       type: object
       properties:
@@ -21279,41 +20817,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Pages'
-    Content_2.Methods.Redirects.AbstractRegular:
-      type: object
-      properties:
-        site:
-          title: |-
-            Сайт
-
-            - topvisor
-            - thundo
-          type: string
-        subdomain:
-          title: |-
-            С поддомена
-
-            - 'journal'
-            - ''
-          allOf:
-            - $ref: '#/components/schemas/Content_2.Types.Subdomain'
-        path_mask:
-          title: С пути (маска, * - любой символ)
-          type: string
-      required:
-        - site
-        - subdomain
-        - path_mask
-    Content_2.Methods.Redirects.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Content_2.Methods.Redirects.Add:
       type: object
       properties:
@@ -23599,20 +23102,6 @@ components:
       title: Получение списка задач
     Projects_2.Methods.Tasks.Get.Exec:
       nullable: true
-    Quiz_2.Methods.Questions.AbstractRegular:
-      type: object
-      properties: {}
-      required: []
-    Quiz_2.Methods.Questions.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Quiz_2.Types.Questions.Type:
       type: string
       enum:
@@ -24143,128 +23632,6 @@ components:
         @method Date[] getValues()
         @method Date current()
         @see \TV\API\Types\Date
-    Snapshots_2.Methods.Competitors.AbstractRegular:
-      type: object
-      properties:
-        project_id:
-          title: Id проекта
-          type: integer
-        region_index:
-          title: |-
-            Индекс региона
-
-            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-          nullable: true
-          type: integer
-        searcher_key:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          nullable: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          nullable: true
-          type: string
-        region_device:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        show_tops:
-          title: Добавить в результат данные по топам
-          type: boolean
-        show_avg:
-          title: Добавить в результат среднюю позицию
-          type: boolean
-        show_median:
-          title: Добавить в результат медианную позицию
-          type: boolean
-        show_visibility:
-          title: Добавить в результат
-          type: boolean
-        show_urls:
-          title: Добавить в результат
-          type: boolean
-        competitor_by:
-          title: '@deprecated Используется в старой версии дизайна'
-          deprecated: true
-          default: domain
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.Competitors.OutputFormat'
-        domains:
-          title: Фильтр по доменам
-          nullable: true
-          type: array
-        show_exists_dates:
-          title: Добавить в результат даты, в которых были проверки (existsDates)
-          type: boolean
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 2
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
-        only_exists_first_date:
-          title: |-
-            Только запросы, присутствующие в первой проверке указанного периода
-
-            - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-          nullable: true
-          type: integer
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
-        show_trash:
-          title: Искать в корзине
-          type: boolean
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-      required:
-        - project_id
-    Snapshots_2.Methods.Competitors.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Snapshots_2.Methods.Competitors.Get:
       type: object
       properties:
@@ -24539,110 +23906,6 @@ components:
       items:
         $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsField'
       title: Поля, возвращаемые в snapshotsData
-    Snapshots_2.Methods.History.AbstractRegular:
-      type: object
-      properties:
-        project_id:
-          title: Id проекта
-          type: integer
-        region_index:
-          title: |-
-            Индекс региона
-
-            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-          nullable: true
-          type: integer
-        region_key:
-          title: Ключ региона
-          nullable: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          nullable: true
-          type: string
-        region_device:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        show_exists_dates:
-          title: Добавить ли в результат даты, в которых были проверки (existsDates)
-          type: boolean
-        show_ams:
-          title: Добавить ли в результат показатель шторма между выбранными проверками
-          type: boolean
-        positions_fields:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
-        searcher_key:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 3
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
-        only_exists_first_date:
-          title: |-
-            Только запросы, присутствующие в первой проверке указанного периода
-
-            - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-          nullable: true
-          type: integer
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
-        show_trash:
-          title: Искать в корзине
-          type: boolean
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-      required:
-        - project_id
-    Snapshots_2.Methods.History.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
@@ -25955,20 +25218,6 @@ components:
       title: Выход из аккаунта
     Users_2.Methods.Logout.Get.Exec:
       type: integer
-    Users_2.Methods.Profile.AbstractRegular:
-      type: object
-      properties: {}
-      required: []
-    Users_2.Methods.Profile.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Positions_2.Types.TopSegment:
       type: integer
       enum:
@@ -26568,7 +25817,7 @@ components:
           title: Причина
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - action
@@ -26611,7 +25860,7 @@ components:
           title: ID платежа
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - userId
@@ -26635,7 +25884,7 @@ components:
           nullable: true
           type: number
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - userId
@@ -26656,7 +25905,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - projectId
@@ -26673,7 +25922,7 @@ components:
           title: ID проекта
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - projectId
@@ -26699,7 +25948,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - projectId
@@ -26718,7 +25967,7 @@ components:
           title: ID чата для добавления
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - botName
@@ -27015,33 +26264,6 @@ components:
     Admin_2.Methods.Analytics.Statistics.Get.Exec:
       nullable: true
       type: array
-    Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats:
-      type: object
-      properties:
-        period:
-          allOf:
-            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
-        limit:
-          title: Длина периода
-          type: integer
-        date:
-          title: Максимальная дата отчета
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-      required:
-        - period
-        - limit
-    Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Admin_2.Methods.Analytics.Tickets.Get:
       type: object
       properties:
@@ -29508,88 +28730,6 @@ components:
     Broker_2.Methods.Tasks.RateTask.Add.Exec:
       nullable: true
       type: integer
-    Competitors_2.Methods.Export.Table.AbstractRegular:
-      type: object
-      properties:
-        by_type:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
-        region_index:
-          title: Индекс региона (не путать с ключом региона)
-          type: integer
-        query:
-          title: Ключевая фраза (или ее часть) / url
-          type: string
-        type:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Report.Type'
-        view:
-          title: Представление отчета
-          type: string
-        date:
-          title: Дата проверки
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        query_vs:
-          title: Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)
-          nullable: true
-          type: string
-        rel_vs:
-          title: Тип связи запросов между конкурентами
-          nullable: true
-          type: string
-        strict_query:
-          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
-          type: boolean
-        intersection:
-          title: Минимальная схожесть
-          nullable: true
-          type: number
-        func:
-          title: Название функции
-          default: export_table
-          type: string
-        handler:
-          title: |-
-            Обработчик
-
-            Для внутреннего использования
-
-            Возможные значения:
-            - handle
-            - name
-          nullable: true
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-      required:
-        - by_type
-        - region_index
-        - query
-        - type
-        - view
-        - date
-    Competitors_2.Methods.Export.Table.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Competitors_2.Types.Export.Table.Output:
       type: string
       enum:
@@ -29683,136 +28823,6 @@ components:
         - date
       title: Экспорт данных отчета
     Competitors_2.Methods.Export.Table.Get.Exec:
-      nullable: true
-    Competitors_2.Methods.Export.TableToProject.AbstractRegular:
-      type: object
-      properties:
-        project_id:
-          title: Id проекта
-          type: integer
-        auto_grouping:
-          title: Добавить разделение на группы
-          nullable: true
-          type: integer
-        filters_keywords:
-          title: Фильтры для поисковых запросов
-          type: array
-        set_targets:
-          title: Добавить ли в результат url
-          type: boolean
-        group_id:
-          title: Id группы, если не указан будет создана новая группа в указанной папке
-          nullable: true
-          type: integer
-        group_name:
-          title: Имя группы, если не указан group_id, если группа с таким именем уже существует, то будет исползоваться она
-          nullable: true
-          type: string
-        group_on:
-          title: 'Активность создаваемых групп (по умолчанию: 1 - активные)'
-          default: true
-          type: boolean
-        move_duplicate:
-          title: 'Переносить ли дубли (по умолчанию: 0 - не переносить)'
-          type: boolean
-        move_duplicate_group_id:
-          title: Id группы для переноса дублей, если не указана будет использован параметр move_duplicate_group_name
-          nullable: true
-          type: integer
-        move_duplicate_group_name:
-          title: Имя группы для переноса дублей, если группы с таким именем в папке move_duplicate_folder_id нет, она будет создана
-          nullable: true
-          type: string
-        move_duplicate_folder_id:
-          title: Id папки для переноса дублей, если не указана, то будет использоваться корневая папка проекта
-          nullable: true
-          type: integer
-        remove_special_chars:
-          title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)'
-          type: boolean
-        tags:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
-        func:
-          title: Название функции
-          default: export_tableToProject
-          type: string
-        by_type:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
-        region_index:
-          title: Индекс региона (не путать с ключом региона)
-          type: integer
-        query:
-          title: Ключевая фраза (или ее часть) / url
-          type: string
-        type:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Report.Type'
-        view:
-          title: Представление отчета
-          type: string
-        date:
-          title: Дата проверки
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        query_vs:
-          title: Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)
-          nullable: true
-          type: string
-        rel_vs:
-          title: Тип связи запросов между конкурентами
-          nullable: true
-          type: string
-        strict_query:
-          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
-          type: boolean
-        intersection:
-          title: Минимальная схожесть
-          nullable: true
-          type: number
-        handler:
-          title: |-
-            Обработчик
-
-            Для внутреннего использования
-
-            Возможные значения:
-            - handle
-            - name
-          nullable: true
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-      required:
-        - project_id
-        - by_type
-        - region_index
-        - query
-        - type
-        - view
-        - date
-    Competitors_2.Methods.Export.TableToProject.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
       nullable: true
     Competitors_2.Methods.Export.TableToProject.Add:
       type: object
@@ -33536,7 +32546,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - pass_admin_actions
@@ -33584,7 +32594,7 @@ components:
           nullable: true
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - pass_admin_actions
@@ -33622,7 +32632,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - pass_admin_actions
@@ -33656,7 +32666,7 @@ components:
           title: Пароль в диадоке
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - userId
@@ -33678,7 +32688,7 @@ components:
           nullable: true
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - userId
@@ -33710,7 +32720,7 @@ components:
           nullable: true
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - test
@@ -33725,7 +32735,7 @@ components:
           title: ID проекта
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - projectId
@@ -33754,7 +32764,7 @@ components:
           title: Изменить ли имена проектов
           type: boolean
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - userId
@@ -33780,7 +32790,7 @@ components:
           description: '@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>'
           type: array
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - regions
@@ -33793,7 +32803,7 @@ components:
       type: object
       properties:
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - test
@@ -33809,7 +32819,7 @@ components:
           title: Поисковик
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - modEngine
@@ -33838,7 +32848,7 @@ components:
           default: positions
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - priority
@@ -33861,7 +32871,7 @@ components:
           title: Откуда снять задачу
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - projectId
@@ -33879,7 +32889,7 @@ components:
           title: Токен
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - token
@@ -33904,7 +32914,7 @@ components:
           default: 1
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - token
@@ -33925,7 +32935,7 @@ components:
           title: Валюта
           type: string
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - userId
@@ -33955,7 +32965,7 @@ components:
           title: Владелец нового email подтвердил владение аккаунтом со старым email
           type: boolean
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - user_id
@@ -36597,7 +35607,7 @@ components:
           title: Пропустить пустые истории
           type: integer
         test:
-          title: Являеется ли запуск - тестом
+          title: Является ли запуск - тестом
           type: boolean
       required:
         - projectId

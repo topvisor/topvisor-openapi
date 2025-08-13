@@ -20,7 +20,7 @@ export interface components {
              * @default positions
              */
             for: string;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Robot.Priority.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

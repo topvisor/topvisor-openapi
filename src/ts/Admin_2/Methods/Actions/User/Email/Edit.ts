@@ -18,7 +18,7 @@ export interface components {
             pass_admin_actions: string;
             /** Владелец нового email подтвердил владение аккаунтом со старым email */
             is_verif: boolean;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.User.Email.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

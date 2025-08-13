@@ -1031,58 +1031,6 @@
                 }
             }
         },
-        "/abstractregular/schedule_2/": {
-            "post": {
-                "operationId": "AbstractregularSchedule2",
-                "tags": [
-                    "Schedule_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Schedule_2/Methods/AbstractRegular.json#/components/schemas/Schedule_2.Methods.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Schedule_2/Methods/AbstractRegular.json#/components/schemas/Schedule_2.Methods.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/del/schedule_2/": {
             "post": {
                 "operationId": "DelSchedule2",
@@ -2105,58 +2053,6 @@
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/abstractregular/admin_2/actions/": {
-            "post": {
-                "operationId": "AbstractregularAdmin2Actions",
-                "tags": [
-                    "Admin_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/AbstractRegular.json#/components/schemas/Admin_2.Methods.Actions.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/AbstractRegular.json#/components/schemas/Admin_2.Methods.Actions.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
                                 }
                             }
                         }
@@ -5272,63 +5168,6 @@
                 }
             }
         },
-        "/abstracteditpage/content_2/pages/": {
-            "post": {
-                "operationId": "AbstracteditpageContent2Pages",
-                "tags": [
-                    "Content_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Content_2/Methods/Pages/AbstractEditPage.json#/components/schemas/Content_2.Methods.Pages.AbstractEditPage"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Content_2/Methods/Pages/AbstractEditPage.json#/components/schemas/Content_2.Methods.Pages.AbstractEditPage.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/content_2/pages/": {
             "post": {
                 "operationId": "AddContent2Pages",
@@ -5557,58 +5396,6 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/abstractregular/content_2/redirects/": {
-            "post": {
-                "operationId": "AbstractregularContent2Redirects",
-                "tags": [
-                    "Content_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Content_2/Methods/Redirects/AbstractRegular.json#/components/schemas/Content_2.Methods.Redirects.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Content_2/Methods/Redirects/AbstractRegular.json#/components/schemas/Content_2.Methods.Redirects.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
                                 }
                             }
                         }
@@ -9049,58 +8836,6 @@
                 }
             }
         },
-        "/abstractregular/quiz_2/questions/": {
-            "post": {
-                "operationId": "AbstractregularQuiz2Questions",
-                "tags": [
-                    "Quiz_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Quiz_2/Methods/Questions/AbstractRegular.json#/components/schemas/Quiz_2.Methods.Questions.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Quiz_2/Methods/Questions/AbstractRegular.json#/components/schemas/Quiz_2.Methods.Questions.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/quiz_2/questions/": {
             "post": {
                 "operationId": "AddQuiz2Questions",
@@ -9913,61 +9648,6 @@
                 }
             }
         },
-        "/abstractregular/snapshots_2/competitors/": {
-            "post": {
-                "operationId": "AbstractregularSnapshots2Competitors",
-                "tags": [
-                    "Snapshots_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Snapshots_2/Methods/Competitors/AbstractRegular.json#/components/schemas/Snapshots_2.Methods.Competitors.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Snapshots_2/Methods/Competitors/AbstractRegular.json#/components/schemas/Snapshots_2.Methods.Competitors.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/get/snapshots_2/competitors/": {
             "post": {
                 "operationId": "GetSnapshots2Competitors",
@@ -10116,61 +9796,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/abstractregular/snapshots_2/history/": {
-            "post": {
-                "operationId": "AbstractregularSnapshots2History",
-                "tags": [
-                    "Snapshots_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Snapshots_2/Methods/History/AbstractRegular.json#/components/schemas/Snapshots_2.Methods.History.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Snapshots_2/Methods/History/AbstractRegular.json#/components/schemas/Snapshots_2.Methods.History.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -11597,58 +11222,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Users_2/Methods/Logout/Get.json#/components/schemas/Users_2.Methods.Logout.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/abstractregular/users_2/profile/": {
-            "post": {
-                "operationId": "AbstractregularUsers2Profile",
-                "tags": [
-                    "Users_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Users_2/Methods/Profile/AbstractRegular.json#/components/schemas/Users_2.Methods.Profile.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Users_2/Methods/Profile/AbstractRegular.json#/components/schemas/Users_2.Methods.Profile.AbstractRegular.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13590,61 +13163,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/abstractticketsstats/admin_2/analytics/tickets/": {
-            "post": {
-                "operationId": "AbstractticketsstatsAdmin2AnalyticsTickets",
-                "tags": [
-                    "Admin_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.json#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.json#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -16420,61 +15938,6 @@
                 }
             }
         },
-        "/abstractregular/competitors_2/export/table/": {
-            "post": {
-                "operationId": "AbstractregularCompetitors2ExportTable",
-                "tags": [
-                    "Competitors_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Competitors_2/Methods/Export/Table/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.Table.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Competitors_2/Methods/Export/Table/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.Table.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/get/competitors_2/export/table/": {
             "post": {
                 "operationId": "GetCompetitors2ExportTable",
@@ -16506,61 +15969,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Competitors_2/Methods/Export/Table/Get.json#/components/schemas/Competitors_2.Methods.Export.Table.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/abstractregular/competitors_2/export/tableToProject/": {
-            "post": {
-                "operationId": "AbstractregularCompetitors2ExportTableToProject",
-                "tags": [
-                    "Competitors_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Competitors_2/Methods/Export/TableToProject/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Competitors_2/Methods/Export/TableToProject/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.AbstractRegular.Exec"
                                                         }
                                                     },
                                                     "required": [

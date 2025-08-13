@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "test": {
-                        "title": "Являеется ли запуск - тестом",
+                        "title": "Является ли запуск - тестом",
                         "type": "boolean"
                     }
                 },

@@ -13,7 +13,7 @@ export interface components {
             botName: string;
             /** ID чата для добавления */
             chatId: string;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Telegram.Add.Exec": import('../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

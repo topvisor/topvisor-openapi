@@ -15,7 +15,7 @@ export interface components {
             taskId?: number | null;
             /** Откуда снять задачу */
             type: string;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Robot.Task.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'] | null;

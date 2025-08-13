@@ -345,22 +345,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/abstractregular/schedule_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularSchedule2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/del/schedule_2/": {
         parameters: {
             query?: never;
@@ -677,22 +661,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetWebscreens2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/abstractregular/admin_2/actions/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularAdmin2Actions"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1659,22 +1627,6 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
-    "/abstracteditpage/content_2/pages/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstracteditpageContent2Pages"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
     };  
     /** Создание документа */
     "/add/content_2/pages/": {
@@ -1738,22 +1690,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2Pages"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/abstractregular/content_2/redirects/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularContent2Redirects"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2841,22 +2777,6 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
-    "/abstractregular/quiz_2/questions/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularQuiz2Questions"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
     };  
     /** Добавление вопроса */
     "/add/quiz_2/questions/": {
@@ -3117,22 +3037,6 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
-    "/abstractregular/snapshots_2/competitors/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularSnapshots2Competitors"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
     };  
     /** Получение списка конкурентов
      *
@@ -3181,22 +3085,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetSnapshots2HiddenDomains"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/abstractregular/snapshots_2/history/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularSnapshots2History"];
         delete?: never;
         options?: never;
         head?: never;
@@ -3674,22 +3562,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetUsers2Logout"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/abstractregular/users_2/profile/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularUsers2Profile"];
         delete?: never;
         options?: never;
         head?: never;
@@ -4298,22 +4170,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAdmin2AnalyticsStatistics"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/abstractticketsstats/admin_2/analytics/tickets/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractticketsstatsAdmin2AnalyticsTickets"];
         delete?: never;
         options?: never;
         head?: never;
@@ -5225,22 +5081,6 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
-    "/abstractregular/competitors_2/export/table/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularCompetitors2ExportTable"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
     };  
     /** Экспорт данных отчета */
     "/get/competitors_2/export/table/": {
@@ -5253,22 +5093,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetCompetitors2ExportTable"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/abstractregular/competitors_2/export/tableToProject/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularCompetitors2ExportTableToProject"];
         delete?: never;
         options?: never;
         head?: never;
@@ -9645,31 +9469,6 @@ export interface operations {
             };
         };
     };
-    AbstractregularSchedule2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Schedule_2/Methods/AbstractRegular.ts').components['schemas']['Schedule_2.Methods.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Schedule_2/Methods/AbstractRegular.ts').components['schemas']['Schedule_2.Methods.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     DelSchedule2: {
         parameters: {
             query?: never;
@@ -10146,31 +9945,6 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
-                };
-            };
-        };
-    };
-    AbstractregularAdmin2Actions: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Actions/AbstractRegular.ts').components['schemas']['Admin_2.Methods.Actions.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Actions/AbstractRegular.ts').components['schemas']['Admin_2.Methods.Actions.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -11594,32 +11368,6 @@ export interface operations {
             };
         };
     };
-    AbstracteditpageContent2Pages: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/Pages/AbstractEditPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractEditPage'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/Pages/AbstractEditPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractEditPage.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
-                };
-            };
-        };
-    };
     AddContent2Pages: {
         parameters: {
             query?: never;
@@ -11720,31 +11468,6 @@ export interface operations {
                         result: import('./Content_2/Methods/Pages/Get.ts').components['schemas']['Content_2.Methods.Pages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
-                };
-            };
-        };
-    };
-    AbstractregularContent2Redirects: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/Redirects/AbstractRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/Redirects/AbstractRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -13320,31 +13043,6 @@ export interface operations {
             };
         };
     };
-    AbstractregularQuiz2Questions: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Quiz_2/Methods/Questions/AbstractRegular.ts').components['schemas']['Quiz_2.Methods.Questions.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Quiz_2/Methods/Questions/AbstractRegular.ts').components['schemas']['Quiz_2.Methods.Questions.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     AddQuiz2Questions: {
         parameters: {
             query?: never;
@@ -13722,31 +13420,6 @@ export interface operations {
             };
         };
     };
-    AbstractregularSnapshots2Competitors: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Snapshots_2/Methods/Competitors/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.Competitors.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Snapshots_2/Methods/Competitors/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.Competitors.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetSnapshots2Competitors: {
         parameters: {
             query?: never;
@@ -13818,31 +13491,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/HiddenDomains/Get.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AbstractregularSnapshots2History: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Snapshots_2/Methods/History/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.History.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Snapshots_2/Methods/History/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.History.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -14518,31 +14166,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Users_2/Methods/Logout/Get.ts').components['schemas']['Users_2.Methods.Logout.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AbstractregularUsers2Profile: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Users_2/Methods/Profile/AbstractRegular.ts').components['schemas']['Users_2.Methods.Profile.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Users_2/Methods/Profile/AbstractRegular.ts').components['schemas']['Users_2.Methods.Profile.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -15428,31 +15051,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Statistics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Statistics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AbstractticketsstatsAdmin2AnalyticsTickets: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -16764,31 +16362,6 @@ export interface operations {
             };
         };
     };
-    AbstractregularCompetitors2ExportTable: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Competitors_2/Methods/Export/Table/AbstractRegular.ts').components['schemas']['Competitors_2.Methods.Export.Table.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Competitors_2/Methods/Export/Table/AbstractRegular.ts').components['schemas']['Competitors_2.Methods.Export.Table.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetCompetitors2ExportTable: {
         parameters: {
             query?: never;
@@ -16809,31 +16382,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Export/Table/Get.ts').components['schemas']['Competitors_2.Methods.Export.Table.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AbstractregularCompetitors2ExportTableToProject: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Competitors_2/Methods/Export/TableToProject/AbstractRegular.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Competitors_2/Methods/Export/TableToProject/AbstractRegular.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

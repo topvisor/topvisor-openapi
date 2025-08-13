@@ -13,7 +13,7 @@ export interface components {
             projectId: number;
             /** Дата */
             date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Positions.Edit.Exec": import('../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

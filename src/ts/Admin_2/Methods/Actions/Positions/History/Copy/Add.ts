@@ -15,7 +15,7 @@ export interface components {
             projectId2: number;
             /** Пропустить пустые истории */
             skipEmpty: number;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Positions.History.Copy.Add.Exec": import('../../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

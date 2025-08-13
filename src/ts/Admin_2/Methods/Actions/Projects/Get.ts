@@ -15,7 +15,7 @@ export interface components {
             date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** По какую дату */
             date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Projects.Get.Exec": import('../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

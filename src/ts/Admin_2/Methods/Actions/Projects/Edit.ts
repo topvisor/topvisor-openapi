@@ -11,7 +11,7 @@ export interface components {
         "Admin_2.Methods.Actions.Projects.Edit": {
             /** ID проекта */
             projectId: number;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Projects.Edit.Exec": import('../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

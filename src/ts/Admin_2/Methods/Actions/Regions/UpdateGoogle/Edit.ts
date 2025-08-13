@@ -12,7 +12,7 @@ export interface components {
          * @description @see https://developers.google.com/google-ads/api/data/geotargets
          */
         "Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit": {
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

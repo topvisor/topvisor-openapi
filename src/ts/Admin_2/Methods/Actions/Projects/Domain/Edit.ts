@@ -21,7 +21,7 @@ export interface components {
             projects: string;
             /** Изменить ли имена проектов */
             needRenameProject: boolean;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Projects.Domain.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

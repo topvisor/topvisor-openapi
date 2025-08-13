@@ -21,7 +21,7 @@ export interface components {
             projectId?: number | null;
             /** Индекс региона */
             regionIndex?: number | null;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Positions.History.Add.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];

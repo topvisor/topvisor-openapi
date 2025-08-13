@@ -13,7 +13,7 @@ export interface components {
             userId: number;
             /** ID платежа */
             paymentId?: number | null;
-            /** Являеется ли запуск - тестом */
+            /** Является ли запуск - тестом */
             test: boolean;
         };
         "Admin_2.Methods.Actions.Payments.Diadoc.Add.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
