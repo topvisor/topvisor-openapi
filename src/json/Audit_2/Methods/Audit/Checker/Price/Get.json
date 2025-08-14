@@ -22,9 +22,7 @@
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Информация о стоимости запуска аудита по проектам"
             },
             "Audit_2.Methods.Audit.Checker.Price.Get.Exec": {

@@ -44,10 +44,6 @@
                 },
                 "required": [
                     "url_id",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset",
                     "project_id",
                     "check_id"
                 ],

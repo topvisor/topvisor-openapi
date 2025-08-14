@@ -42,7 +42,7 @@ export interface components {
             common_traffic?: boolean | null;
             /** Права для гостевых ссылок */
             guest_link_right?: import('../../Types/Settings/GuestLinkRights.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRights'] | null;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Positions_2.Methods.Settings.Edit.Exec": unknown;

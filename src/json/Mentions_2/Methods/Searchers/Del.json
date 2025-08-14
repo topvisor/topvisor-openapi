@@ -27,8 +27,7 @@
                 },
                 "required": [
                     "project_id",
-                    "rule_id",
-                    "filters"
+                    "rule_id"
                 ],
                 "title": "Удаление поисковика"
             },

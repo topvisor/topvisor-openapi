@@ -17,9 +17,7 @@
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Отмена отправки счета. Разрешено только для счетов со статусом pending или sending"
             },
             "Admin_2.Methods.Accounting.Invoices.Del.Exec": {

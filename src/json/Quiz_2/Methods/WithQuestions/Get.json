@@ -42,11 +42,7 @@
                     }
                 },
                 "required": [
-                    "quiz_id",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "quiz_id"
                 ],
                 "title": "Получение теста с вопросами"
             },

@@ -40,8 +40,7 @@
                 "required": [
                     "project_id",
                     "searcher_key",
-                    "regions_indexes",
-                    "filters"
+                    "regions_indexes"
                 ],
                 "title": "Настройка сортировки регионов"
             },

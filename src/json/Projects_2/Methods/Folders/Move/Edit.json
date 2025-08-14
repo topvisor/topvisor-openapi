@@ -22,8 +22,7 @@
                     }
                 },
                 "required": [
-                    "folder_id",
-                    "filters"
+                    "folder_id"
                 ],
                 "title": "Перемещение проектов в папку"
             },

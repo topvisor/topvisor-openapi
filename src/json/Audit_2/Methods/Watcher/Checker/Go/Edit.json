@@ -22,9 +22,7 @@
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Отправка проектов на проверку радара"
             },
             "Audit_2.Methods.Watcher.Checker.Go.Edit.Exec": {

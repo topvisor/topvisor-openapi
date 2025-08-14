@@ -21,7 +21,6 @@
                     }
                 },
                 "required": [
-                    "filters",
                     "command"
                 ],
                 "title": "Удаление задачи cron"

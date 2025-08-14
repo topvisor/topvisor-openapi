@@ -42,11 +42,7 @@
                 },
                 "required": [
                     "project_id",
-                    "rule_id",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "rule_id"
                 ],
                 "title": "Получение списка поисковиков"
             },

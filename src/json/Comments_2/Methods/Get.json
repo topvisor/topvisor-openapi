@@ -49,12 +49,7 @@
                         "$ref": "../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
-                ],
+                "required": [],
                 "title": "Получение комментариев\n\nВозвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев"
             },
             "Comments_2.Methods.Get.Exec": {

@@ -13,7 +13,7 @@ export interface components {
             project_id: number;
             /** Флаг "прочитано" */
             readed?: boolean;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Mentions_2.Methods.Readed.Edit.Exec": number;

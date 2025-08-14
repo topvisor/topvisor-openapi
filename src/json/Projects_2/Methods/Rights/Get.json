@@ -37,12 +37,7 @@
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
-                ],
+                "required": [],
                 "title": "Получение информации о выданных доступах к проекту"
             },
             "Projects_2.Methods.Rights.Get.Exec": {

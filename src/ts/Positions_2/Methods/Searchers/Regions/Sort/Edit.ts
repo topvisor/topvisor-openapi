@@ -15,7 +15,7 @@ export interface components {
             searcher_key: import('../../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             /** Ключи регионов */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec": unknown;

@@ -52,12 +52,7 @@
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
-                ],
+                "required": [],
                 "title": "Получение списка задач"
             },
             "Projects_2.Methods.Tasks.Get.Exec": {

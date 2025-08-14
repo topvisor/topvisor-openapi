@@ -36,12 +36,7 @@
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
-                ],
+                "required": [],
                 "title": "Получение списка договоров"
             },
             "Bank_2.Methods.Requisites.Get.Exec": {

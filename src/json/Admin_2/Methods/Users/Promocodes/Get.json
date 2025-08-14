@@ -32,12 +32,7 @@
                         "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
-                ],
+                "required": [],
                 "title": "Получение промокодов\n\nВ params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода"
             },
             "Admin_2.Methods.Users.Promocodes.Get.Exec": {

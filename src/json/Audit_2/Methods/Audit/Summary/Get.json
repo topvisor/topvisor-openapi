@@ -51,10 +51,6 @@
                     }
                 },
                 "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset",
                     "project_id",
                     "check_id"
                 ],

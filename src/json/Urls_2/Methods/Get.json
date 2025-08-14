@@ -36,10 +36,6 @@
                     }
                 },
                 "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset",
                     "project_id"
                 ],
                 "title": "Получение списка urls проекта"

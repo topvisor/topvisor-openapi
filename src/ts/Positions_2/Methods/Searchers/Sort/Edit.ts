@@ -13,7 +13,7 @@ export interface components {
             project_id: number;
             /** Ключи ПС */
             searchers_keys?: import('../../../Types/SearchersKeys.ts').components['schemas']['Positions_2.Types.SearchersKeys'] | null;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Positions_2.Methods.Searchers.Sort.Edit.Exec": unknown;

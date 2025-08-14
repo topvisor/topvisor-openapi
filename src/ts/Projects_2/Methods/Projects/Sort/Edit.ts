@@ -10,7 +10,7 @@ export interface components {
         /** Изменение сортировки проектов */
         "Projects_2.Methods.Projects.Sort.Edit": {
             orders: unknown[];
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Projects_2.Methods.Projects.Sort.Edit.Exec": number | null;

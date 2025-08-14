@@ -38,12 +38,7 @@
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
-                ],
+                "required": [],
                 "title": "Получение RSS раздела сайта\n\nДля выборки страниц используется модель: Pages"
             },
             "Content_2.Methods.Rss.Get.Exec": {

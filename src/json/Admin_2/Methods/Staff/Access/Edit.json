@@ -52,8 +52,7 @@
                     "user_id",
                     "name",
                     "category",
-                    "value",
-                    "filters"
+                    "value"
                 ],
                 "title": "Настройка доступа"
             },

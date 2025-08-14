@@ -46,11 +46,7 @@
                     }
                 },
                 "required": [
-                    "campaigns_tv_ids",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "campaigns_tv_ids"
                 ],
                 "title": "Экспортирование архива логов"
             },

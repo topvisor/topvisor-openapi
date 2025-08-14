@@ -109,10 +109,6 @@
                 },
                 "required": [
                     "searchers_keys",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset",
                     "project_id"
                 ],
                 "title": "Получение отчета по проверке индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"

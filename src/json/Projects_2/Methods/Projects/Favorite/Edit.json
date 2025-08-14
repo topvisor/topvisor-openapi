@@ -22,9 +22,7 @@
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Настройка избранных проектов"
             },
             "Projects_2.Methods.Projects.Favorite.Edit.Exec": {

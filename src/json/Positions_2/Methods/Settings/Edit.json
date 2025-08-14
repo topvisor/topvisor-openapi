@@ -66,8 +66,7 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "filters"
+                    "project_id"
                 ],
                 "title": "Установка общих настроек проверки позиций проекта"
             },

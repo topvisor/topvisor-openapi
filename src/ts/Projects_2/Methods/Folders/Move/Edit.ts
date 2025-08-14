@@ -11,7 +11,7 @@ export interface components {
         "Projects_2.Methods.Folders.Move.Edit": {
             /** Id папки */
             folder_id: number;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Projects_2.Methods.Folders.Move.Edit.Exec": unknown;

@@ -56,10 +56,6 @@
                 },
                 "required": [
                     "output",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset",
                     "project_id"
                 ],
                 "title": "Экспорт urls в определенном формате"

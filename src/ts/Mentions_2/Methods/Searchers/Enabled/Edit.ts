@@ -15,7 +15,7 @@ export interface components {
             rule_id: number;
             /** Включен ли поисковик */
             enabled?: number;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Mentions_2.Methods.Searchers.Enabled.Edit.Exec": number;

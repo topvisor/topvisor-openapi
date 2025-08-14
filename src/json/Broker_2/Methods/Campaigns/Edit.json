@@ -60,8 +60,7 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "filters"
+                    "project_id"
                 ],
                 "title": "Редактирование рекламной кампании"
             },

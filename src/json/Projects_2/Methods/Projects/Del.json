@@ -21,9 +21,7 @@
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Удаление проектов"
             },
             "Projects_2.Methods.Projects.Del.Exec": {

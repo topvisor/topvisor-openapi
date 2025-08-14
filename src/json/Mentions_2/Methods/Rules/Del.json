@@ -22,8 +22,7 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "filters"
+                    "project_id"
                 ],
                 "title": "Удаление правила"
             },

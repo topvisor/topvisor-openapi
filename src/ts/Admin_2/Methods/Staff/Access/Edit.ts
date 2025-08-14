@@ -28,7 +28,7 @@ export interface components {
             login?: string | null;
             /** Пароль администратора */
             password?: string | null;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Admin_2.Methods.Staff.Access.Edit.Exec": number | null;

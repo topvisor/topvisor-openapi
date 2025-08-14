@@ -30,8 +30,7 @@
                     }
                 },
                 "required": [
-                    "max_pages",
-                    "filters"
+                    "max_pages"
                 ],
                 "title": "Отправка проектов на проверку карты сайта"
             },

@@ -37,9 +37,7 @@
                         "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Редактирование ссылки"
             },
             "Tpvsr_2.Methods.Edit.Exec": {

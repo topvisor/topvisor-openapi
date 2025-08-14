@@ -57,11 +57,7 @@
                     "project_id",
                     "searcher_key",
                     "region_key",
-                    "type",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "type"
                 ],
                 "title": "Получение частоты проекта или одной группы"
             },

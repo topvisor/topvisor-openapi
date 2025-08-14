@@ -31,8 +31,7 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "filters"
+                    "project_id"
                 ],
                 "title": "Изменение тональности"
             },

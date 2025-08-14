@@ -17,7 +17,7 @@ export interface components {
             title?: string | null;
             /** Хэш ссылки */
             hash?: string | null;
-            filters: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Tpvsr_2.Methods.Edit.Exec": number | null;

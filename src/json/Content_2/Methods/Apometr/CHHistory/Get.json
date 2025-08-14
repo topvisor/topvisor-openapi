@@ -61,11 +61,7 @@
                 },
                 "required": [
                     "region_index",
-                    "action",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "action"
                 ],
                 "title": "Получение истории urls, найденных в выдаче, за конкретную проверку",
                 "description": "@deprecated Используйте Services\\Content_2\\Methods\\Apometr\\Snapshots\\Top\\Get",

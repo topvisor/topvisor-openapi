@@ -55,8 +55,7 @@
                 },
                 "required": [
                     "project_id",
-                    "provider_n",
-                    "filters"
+                    "provider_n"
                 ],
                 "title": "Редактирование объявлений (запросов) рекламной кампании"
             },

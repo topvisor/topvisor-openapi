@@ -16,7 +16,7 @@ export interface components {
             /** - 1 - включить
              *     - 0 - выключить */
             enabled: number;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Positions_2.Methods.Searchers.Enabled.Edit.Exec": unknown;

@@ -13,7 +13,7 @@ export interface components {
             project_id: number;
             /** Регион, который требуется удалить */
             region_index: number;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Positions_2.Methods.Searchers.Regions.Del.Exec": unknown;

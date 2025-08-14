@@ -13,7 +13,7 @@ export interface components {
             project_id: number;
             /** Id проекта */
             searcher_key: import('../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Positions_2.Methods.Searchers.Del.Exec": unknown;

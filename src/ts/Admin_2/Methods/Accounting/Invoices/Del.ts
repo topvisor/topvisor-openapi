@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отмена отправки счета. Разрешено только для счетов со статусом pending или sending */
         "Admin_2.Methods.Accounting.Invoices.Del": {
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Admin_2.Methods.Accounting.Invoices.Del.Exec": number | null;

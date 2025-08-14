@@ -60,11 +60,7 @@
                 "required": [
                     "subdomain",
                     "lang",
-                    "search",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "search"
                 ],
                 "title": "Поиск страниц"
             },

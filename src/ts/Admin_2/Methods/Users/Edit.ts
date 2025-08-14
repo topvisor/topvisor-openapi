@@ -11,7 +11,7 @@ export interface components {
         "Admin_2.Methods.Users.Edit": {
             /** Удалить пользователя */
             deleted?: boolean | null;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Admin_2.Methods.Users.Edit.Exec": unknown;

@@ -17,9 +17,7 @@
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Удаление папок"
             },
             "Projects_2.Methods.Folders.Del.Exec": {

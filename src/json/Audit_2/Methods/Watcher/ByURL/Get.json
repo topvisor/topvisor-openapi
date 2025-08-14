@@ -68,10 +68,6 @@
                 "required": [
                     "url_id",
                     "watcher_type",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset",
                     "project_id"
                 ],
                 "title": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор прверок регулируется параметрами запроса filters, limit и offset"

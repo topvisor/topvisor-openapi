@@ -37,11 +37,7 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "project_id"
                 ],
                 "title": "Получение списка правил"
             },

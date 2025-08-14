@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Перенести документ в папку /archive/ */
         "Content_2.Methods.Pages.Del": {
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Content_2.Methods.Pages.Del.Exec": number | null;

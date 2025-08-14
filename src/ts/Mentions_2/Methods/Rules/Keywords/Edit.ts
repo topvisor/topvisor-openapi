@@ -15,7 +15,7 @@ export interface components {
             keywords: unknown[];
             /** Тип ключевых слов */
             type: import('../../../Types/Rules/Keywords/Type.ts').components['schemas']['Mentions_2.Types.Rules.Keywords.Type'];
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Mentions_2.Methods.Rules.Keywords.Edit.Exec": number;

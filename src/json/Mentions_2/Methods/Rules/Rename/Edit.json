@@ -27,8 +27,7 @@
                 },
                 "required": [
                     "project_id",
-                    "name",
-                    "filters"
+                    "name"
                 ],
                 "title": "Изменить имя правила"
             },

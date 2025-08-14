@@ -29,7 +29,7 @@ export interface components {
             price_max?: number | null;
             /** Ставка риска */
             price_risk?: number | null;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Broker_2.Methods.Keywords.Edit.Exec": number;

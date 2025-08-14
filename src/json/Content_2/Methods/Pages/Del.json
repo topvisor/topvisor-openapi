@@ -17,9 +17,7 @@
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Перенести документ в папку /archive/"
             },
             "Content_2.Methods.Pages.Del.Exec": {

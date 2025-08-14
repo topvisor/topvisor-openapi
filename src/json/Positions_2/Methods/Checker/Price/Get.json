@@ -68,9 +68,7 @@
                         "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
                     }
                 },
-                "required": [
-                    "filters"
-                ],
+                "required": [],
                 "title": "Информация о стоимости запуска проверки позиций по проектам"
             },
             "Positions_2.Methods.Checker.Price.Get.Exec": {

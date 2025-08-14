@@ -37,11 +37,7 @@
                     }
                 },
                 "required": [
-                    "user_id",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "user_id"
                 ],
                 "title": "Получение комментариев автора. Без вложенности"
             },

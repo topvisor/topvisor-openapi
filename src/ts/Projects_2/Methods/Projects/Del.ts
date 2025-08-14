@@ -11,7 +11,7 @@ export interface components {
         "Projects_2.Methods.Projects.Del": {
             /** Является ли проект - задачей */
             is_tasks?: boolean;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Projects_2.Methods.Projects.Del.Exec": number;

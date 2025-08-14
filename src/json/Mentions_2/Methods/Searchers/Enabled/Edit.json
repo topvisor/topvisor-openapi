@@ -31,8 +31,7 @@
                 },
                 "required": [
                     "project_id",
-                    "rule_id",
-                    "filters"
+                    "rule_id"
                 ],
                 "title": "Изменить активность поисковика"
             },

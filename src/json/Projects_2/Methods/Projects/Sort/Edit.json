@@ -21,8 +21,7 @@
                     }
                 },
                 "required": [
-                    "orders",
-                    "filters"
+                    "orders"
                 ],
                 "title": "Изменение сортировки проектов"
             },

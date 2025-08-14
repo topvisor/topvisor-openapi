@@ -42,11 +42,7 @@
                     }
                 },
                 "required": [
-                    "campaign_tv_id",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "campaign_tv_id"
                 ],
                 "title": "Получение групп рекламной кампании"
             },
