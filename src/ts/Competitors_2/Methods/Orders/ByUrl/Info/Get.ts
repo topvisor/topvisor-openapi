@@ -23,7 +23,7 @@ export interface components {
              * Отображать сумму с учетом скидки (по умолчанию 1)
              * @default 1
              */
-            apply_discount: number;
+            apply_discount?: number;
             /** Использовать удаленные отчеты */
             deleted?: boolean;
             /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */

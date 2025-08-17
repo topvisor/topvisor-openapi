@@ -16,7 +16,7 @@ export interface components {
              * Включать ли поля
              * @default true
              */
-            include_fields: boolean;
+            include_fields?: boolean;
         };
         "Templates_2.Methods.Get.Exec": unknown[];
     };

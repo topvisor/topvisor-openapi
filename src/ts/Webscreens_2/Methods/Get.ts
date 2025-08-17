@@ -18,7 +18,7 @@ export interface components {
              * Таймаут, от 1 до 30000
              * @default 1500
              */
-            timeout_ms: number;
+            timeout_ms?: number;
             /** Сделать ли полноразмерный скриншот страницы
              *
              *     Параметры clip и full_page нельзя использовать одновременно */

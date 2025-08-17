@@ -13,7 +13,7 @@ export interface components {
              * Год
              * @default 2013
              */
-            year: number;
+            year?: number;
             /** Валюта партнеров */
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };

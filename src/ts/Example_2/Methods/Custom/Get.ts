@@ -17,7 +17,7 @@ export interface components {
              *     Можно не указывать, но в exec() он не может быть пустым
              * @default Y-m-d H:i:s
              */
-            format: string;
+            format?: string;
         };
         "Example_2.Methods.Custom.Get.Exec": string;
     };

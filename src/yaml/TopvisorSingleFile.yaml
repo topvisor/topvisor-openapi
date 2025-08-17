@@ -8152,7 +8152,7 @@ paths:
         Отличия от get/audit_2/watcher:
         - отчет генерируется на основе объекта watcher_results, а не urls
         - параметры выбора периода отчета игнорируются
-        - выбор прверок регулируется параметрами запроса filters, limit и offset
+        - выбор проверок регулируется параметрами запроса filters, limit и offset
       requestBody:
         content:
           application/json:
@@ -23930,7 +23930,7 @@ components:
             - depthPositions
             - countKeywords
       type: array
-    System_2.Types.Operation:
+    TV.API.Oper:
       type: string
       enum:
         - get
@@ -23947,7 +23947,7 @@ components:
         - null
         - null
         - null
-      title: Метод вызова функции
+      title: Тип операции метода API
     System_2.Types.Calls.Call:
       type: object
       properties:
@@ -23963,7 +23963,7 @@ components:
           type: array
         oper:
           allOf:
-            - $ref: '#/components/schemas/System_2.Types.Operation'
+            - $ref: '#/components/schemas/TV.API.Oper'
       required:
         - module
         - func
@@ -27995,7 +27995,7 @@ components:
         Отличия от get/audit_2/watcher:
         - отчет генерируется на основе объекта watcher_results, а не urls
         - параметры выбора периода отчета игнорируются
-        - выбор прверок регулируется параметрами запроса filters, limit и offset
+        - выбор проверок регулируется параметрами запроса filters, limit и offset
     Models.Watcher.Results:
       properties:
         project_id:
@@ -31307,7 +31307,7 @@ components:
             - $ref: '#/components/schemas/System_2.Types.Api.V'
         oper:
           allOf:
-            - $ref: '#/components/schemas/System_2.Types.Operation'
+            - $ref: '#/components/schemas/TV.API.Oper'
         format:
           title: Формат ответа
           type: string

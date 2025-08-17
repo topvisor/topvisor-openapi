@@ -164,6 +164,10 @@
                         "const": "a month",
                         "readOnly": true
                     },
+                    "Connection_error": {
+                        "const": "Connection error",
+                        "readOnly": true
+                    },
                     "discount": {
                         "const": "discount",
                         "readOnly": true
@@ -1986,6 +1990,7 @@
                     "time_a_2",
                     "a_week",
                     "a_month",
+                    "Connection_error",
                     "discount",
                     "month_short",
                     "Balance",

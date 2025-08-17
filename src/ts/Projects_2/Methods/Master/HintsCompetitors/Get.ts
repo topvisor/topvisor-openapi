@@ -19,7 +19,7 @@ export interface components {
              * Тип связи запросов между конкурентами
              * @default me
              */
-            rel_vs: import('../../../../Competitors_2/Types/ByUrl/Table/Keywords/TypeVS.ts').components['schemas']['Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'];
+            rel_vs?: import('../../../../Competitors_2/Types/ByUrl/Table/Keywords/TypeVS.ts').components['schemas']['Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'];
             /** Минимальная схожесть */
             intersection?: number;
             /** Делать ли проверку на наличие пути в URL */

@@ -33,7 +33,7 @@ export interface components {
              * Активность создаваемых групп (по умолчанию: 1 - активные)
              * @default true
              */
-            group_on: boolean;
+            group_on?: boolean;
             /** Переносить ли дубли (по умолчанию: 0 - не переносить) */
             move_duplicate?: boolean | null;
             /** Id группы для переноса дублей, если не указана будет использован параметр move_duplicate_group_name */

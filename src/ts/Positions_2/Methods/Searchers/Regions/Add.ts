@@ -31,7 +31,7 @@ export interface components {
              *     - 1-3 для GooglePlay
              * @default 1
              */
-            region_depth: number;
+            region_depth?: number;
         };
         "Positions_2.Methods.Searchers.Regions.Add.Exec": unknown;
     };

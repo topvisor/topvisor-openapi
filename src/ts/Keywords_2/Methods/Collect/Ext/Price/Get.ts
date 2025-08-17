@@ -17,7 +17,7 @@ export interface components {
              * Отображать сумму с учетом скидки (по умолчанию: 1)
              * @default true
              */
-            apply_discount: boolean;
+            apply_discount?: boolean;
             /** Каким типом расширять группу */
             type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
             /** Объекты определителей настроек ПС и регионов */

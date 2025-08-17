@@ -32,7 +32,7 @@ export interface components {
              * Название функции
              * @default export_table
              */
-            func: string;
+            func?: string;
             /** Обработчик
              *
              *     Для внутреннего использования

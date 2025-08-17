@@ -27,7 +27,7 @@ export interface components {
              * Название функции
              * @default tableSummary
              */
-            func: string;
+            func?: string;
         };
         "Competitors_2.Methods.TableSummary.Get.Exec": unknown[] | null;
     };

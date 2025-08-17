@@ -29,7 +29,7 @@ export interface components {
              * Размер точек QR кода в пикселях
              * @default 4
              */
-            point_size: number;
+            point_size?: number;
         };
         "Qr_2.Methods.Get.Exec": string | null;
     };

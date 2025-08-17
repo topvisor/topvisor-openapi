@@ -12,7 +12,7 @@ export interface components {
          *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
         "Competitors_2.Methods.Export.ByLeaders.TableToProject.Add": {
             /** @default export_byLeaders_tableToProject */
-            func: string;
+            func?: string;
             deleted?: boolean | null;
             /** Id проекта */
             project_id: number;
@@ -30,7 +30,7 @@ export interface components {
              * Активность создаваемых групп (по умолчанию: 1 - активные)
              * @default true
              */
-            group_on: boolean;
+            group_on?: boolean;
             /** Переносить ли дубли (по умолчанию: 0 - не переносить) */
             move_duplicate?: boolean;
             /** Id группы для переноса дублей, если не указана будет использован параметр move_duplicate_group_name */

@@ -19,7 +19,7 @@ export interface components {
              *     - after
              * @default after
              */
-            to_type: string | null;
+            to_type?: string | null;
         };
         "Projects_2.Methods.Projects.Move.Edit.Exec": number | null;
     };

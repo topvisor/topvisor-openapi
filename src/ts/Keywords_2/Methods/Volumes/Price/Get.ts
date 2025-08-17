@@ -23,7 +23,7 @@ export interface components {
              * Тип объекта фильтрации
              * @default keywords
              */
-            target_type: string;
+            target_type?: string;
             /** Список регионов с настройками для проверки частоты
              *
              *     - Обязателен, если `set_qualifiers_for_visibility` != `true`

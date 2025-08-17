@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/System_2.Types.Operation",
+        "title": "Topvisor/TV.API.Oper",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "System_2.Types.Operation": {
+            "TV.API.Oper": {
                 "type": "string",
                 "enum": [
                     "get",
@@ -27,7 +27,7 @@
                     null,
                     null
                 ],
-                "title": "Метод вызова функции"
+                "title": "Тип операции метода API"
             }
         }
     }

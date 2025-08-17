@@ -4740,7 +4740,7 @@ export interface paths {
      *     Отличия от get/audit_2/watcher:
      *     - отчет генерируется на основе объекта watcher_results, а не urls
      *     - параметры выбора периода отчета игнорируются
-     *     - выбор прверок регулируется параметрами запроса filters, limit и offset */
+     *     - выбор проверок регулируется параметрами запроса filters, limit и offset */
     "/get/audit_2/watcher/byURL/": {
         parameters: {
             query?: never;

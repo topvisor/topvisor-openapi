@@ -25,7 +25,7 @@ export interface components {
              * Отображать сумму с учетом скидки (по умолчанию 1)
              * @default 1
              */
-            apply_discount: number;
+            apply_discount?: number;
             /** Использовать удаленные отчеты */
             deleted?: boolean;
             /** Получить краткую статистику, только количество конкурентов */

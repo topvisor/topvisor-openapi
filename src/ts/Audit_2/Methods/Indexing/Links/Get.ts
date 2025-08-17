@@ -23,7 +23,7 @@ export interface components {
              * Тип диапазона дат
              * @default 7
              */
-            type_range: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'] | null;
+            type_range?: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'] | null;
             /** Количество дней в диапазоне */
             count_dates?: number | null;
             /** Ппоисковые ключи */

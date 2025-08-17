@@ -15,7 +15,7 @@ export interface components {
              * Тональность
              * @default neutral
              */
-            sentiment: import('../../Types/Sentiment.ts').components['schemas']['Mentions_2.Types.Sentiment'];
+            sentiment?: import('../../Types/Sentiment.ts').components['schemas']['Mentions_2.Types.Sentiment'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

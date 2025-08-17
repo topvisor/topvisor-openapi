@@ -18,7 +18,7 @@ export interface components {
              * Формат схемы Open API, json или yaml
              * @default json
              */
-            format: string;
+            format?: string;
             /** Использовать инкрементальный вывод схемы
              *
              *     В этом режиме в схему будут добавляться только изменения за один час */

@@ -14,7 +14,7 @@ export interface components {
             /** Выводить полные тексты (для вкладки контент) */
             fulltext: boolean;
             /** @default all */
-            changed: import('../../../../Types/Audit/Summary/FilterCheckState.ts').components['schemas']['Audit_2.Types.Audit.Summary.FilterCheckState'];
+            changed?: import('../../../../Types/Audit/Summary/FilterCheckState.ts').components['schemas']['Audit_2.Types.Audit.Summary.FilterCheckState'];
             /** Фильтр по тегам */
             tags_ids?: unknown[] | null;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

@@ -10,7 +10,7 @@ export interface components {
         /** Вызов тестового API запроса */
         "System_2.Methods.Api.Test.Get": {
             v: import('../../../Types/Api/V.ts').components['schemas']['System_2.Types.Api.V'];
-            oper: import('../../../Types/Operation.ts').components['schemas']['System_2.Types.Operation'];
+            oper: import('../../../../TV/API/Oper.ts').components['schemas']['TV.API.Oper'];
             /** Формат ответа */
             format: string;
             /** Вызываемый сервис */

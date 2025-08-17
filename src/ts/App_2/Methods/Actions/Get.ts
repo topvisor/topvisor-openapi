@@ -22,7 +22,7 @@ export interface components {
              * Тип подтверждения
              * @default acceptAction
              */
-            type_action: string | null;
+            type_action?: string | null;
             redirect?: string;
         };
         "App_2.Methods.Actions.Get.Exec": unknown;

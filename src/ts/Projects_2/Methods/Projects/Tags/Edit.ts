@@ -15,7 +15,7 @@ export interface components {
              *       1
              *     ]
              */
-            tags: unknown[] | null;
+            tags?: unknown[] | null;
             /** ID проекта */
             id: number;
         };

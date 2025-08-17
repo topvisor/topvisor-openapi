@@ -13,7 +13,7 @@ export interface components {
              * Выполнить ли исполнение шаблона
              * @default true
              */
-            render_tpl: boolean;
+            render_tpl?: boolean;
             /** Только для редакторов, добавить в результаты данные для модуля редактора страницы */
             url_for_edit?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

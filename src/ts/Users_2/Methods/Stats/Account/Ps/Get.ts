@@ -21,7 +21,7 @@ export interface components {
              *       "20": "#FFD633",
              *       "21": "#FFD633"
              *     } */
-            colorsPsBySearcherKey: unknown[];
+            colorsPsBySearcherKey?: unknown[];
         };
         "Users_2.Methods.Stats.Account.Ps.Get.Exec": unknown[] | null;
     };

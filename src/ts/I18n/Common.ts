@@ -91,6 +91,8 @@ export interface components {
             /** @constant */
             readonly a_month: "a month";
             /** @constant */
+            readonly Connection_error: "Connection error";
+            /** @constant */
             readonly discount: "discount";
             /** @constant */
             readonly month_short: "mo";

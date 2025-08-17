@@ -12,7 +12,7 @@ export interface components {
          *     Отличия от get/audit_2/watcher:
          *     - отчет генерируется на основе объекта watcher_results, а не urls
          *     - параметры выбора периода отчета игнорируются
-         *     - выбор прверок регулируется параметрами запроса filters, limit и offset */
+         *     - выбор проверок регулируется параметрами запроса filters, limit и offset */
         "Audit_2.Methods.Watcher.ByURL.Get": {
             /** ID URL */
             url_id: number;
@@ -25,7 +25,7 @@ export interface components {
              *       "redirects"
              *     ]
              */
-            watcher_fields: unknown[];
+            watcher_fields?: unknown[];
             show_diff?: import('../../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
             watcher_type: import('../../../Types/Watcher/Type.ts').components['schemas']['Audit_2.Types.Watcher.Type'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

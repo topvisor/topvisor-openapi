@@ -31,7 +31,7 @@ export interface components {
              * Название функции
              * @default charts
              */
-            func: string;
+            func?: string;
             /** Домены */
             domains?: import('../../../TV/API/Types/UrlShortUTFArray.ts').components['schemas']['TV.API.Types.UrlShortUTFArray'] | null;
             /** Urls адреса */

@@ -19,7 +19,7 @@ export interface components {
              * Выполнить исполнение шаблона
              * @default true
              */
-            render_tpl: boolean;
+            render_tpl?: boolean;
         };
         /** Возможные парамеры $config:
          *

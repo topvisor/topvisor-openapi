@@ -17,7 +17,7 @@ export interface components {
             func: string;
             /** Параметры вызова */
             data?: unknown[] | null;
-            oper: import('../Operation.ts').components['schemas']['System_2.Types.Operation'];
+            oper: import('../../../TV/API/Oper.ts').components['schemas']['TV.API.Oper'];
         };
     };
     responses: never;

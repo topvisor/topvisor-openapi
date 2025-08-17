@@ -13,7 +13,7 @@ export interface components {
              * Формат
              * @default json
              */
-            format: string;
+            format?: string;
             /** Использовать инкрементальный вывод схемы */
             incremental?: boolean;
         };

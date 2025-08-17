@@ -19,7 +19,7 @@ export interface components {
              *       1
              *     ]
              */
-            tags: unknown[] | null;
+            tags?: unknown[] | null;
             /** Id папки, к которой будет привязан проект */
             folder_id?: number | null;
             /** Активность проекта */

@@ -12,7 +12,7 @@ export interface components {
             /** Текст тикета */
             text: string;
             /** @default system */
-            type: import('../../Types/Tickets/Type.ts').components['schemas']['Tickets_2.Types.Tickets.Type'];
+            type?: import('../../Types/Tickets/Type.ts').components['schemas']['Tickets_2.Types.Tickets.Type'];
             /** Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
             /** Данные среды пользователя */

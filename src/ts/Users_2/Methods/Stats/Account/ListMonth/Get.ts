@@ -13,7 +13,7 @@ export interface components {
              * Какую часть от периода показать
              * @default 1
              */
-            period: number;
+            period?: number;
         };
         "Users_2.Methods.Stats.Account.ListMonth.Get.Exec": unknown[] | null;
     };

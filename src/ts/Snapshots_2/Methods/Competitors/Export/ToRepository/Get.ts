@@ -41,12 +41,12 @@ export interface components {
              * Тип диапазона дат
              * @default 3
              */
-            type_range: number;
+            type_range?: number;
             /**
              * Количество дней в диапазоне
              * @default 31
              */
-            count_dates: number;
+            count_dates?: number;
             /** Только запросы, присутствующие в первой проверке указанного периода
              *
              *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH */

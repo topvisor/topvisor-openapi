@@ -20,7 +20,7 @@ export interface components {
              *       "data"
              *     ]
              */
-            indexing_fields: unknown[];
+            indexing_fields?: unknown[];
             /** Вернуть ли заголовки отчета */
             show_headers?: boolean;
             /** Вернуть ли суммарное количество страниц в индексе по URL */
@@ -41,17 +41,17 @@ export interface components {
              * Период в днях
              * @default 7
              */
-            period_days: number;
+            period_days?: number;
             /**
              * Тип диапазона дат
              * @default 7
              */
-            type_range: import('../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
+            type_range?: import('../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
             /**
              * Количество дней в диапазоне
              * @default 60
              */
-            count_dates: number;
+            count_dates?: number;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

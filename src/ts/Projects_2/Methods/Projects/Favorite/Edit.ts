@@ -13,7 +13,7 @@ export interface components {
              * Флаг того, что проект ибранный
              * @default true
              */
-            favorite: boolean;
+            favorite?: boolean;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

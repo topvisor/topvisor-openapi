@@ -13,7 +13,7 @@ export interface components {
         "Competitors_2.Methods.Export.ByLeaders.Table.Get": {
             output: import('../../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             /** @default export_byLeaders_table */
-            func: string;
+            func?: string;
             deleted?: boolean | null;
             by_type: import('../../../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */

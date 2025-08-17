@@ -19,7 +19,7 @@ export interface components {
              * Для чего изменяется приоритет
              * @default positions
              */
-            for: string;
+            for?: string;
             /** Является ли запуск - тестом */
             test: boolean;
         };

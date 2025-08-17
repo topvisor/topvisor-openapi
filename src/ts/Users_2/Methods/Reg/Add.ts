@@ -11,7 +11,7 @@ export interface components {
         "Users_2.Methods.Reg.Add": {
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** @default ru */
-            lang: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
+            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
             /** URL страницы, которую нужно открыть после подтверждения регистрации */
             redirect?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** Текущий аккаунт должен быть объединен с новым (для текущих аккаунтов без email) */

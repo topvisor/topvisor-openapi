@@ -15,7 +15,7 @@ export interface components {
              * Отображать сумму с учетом скидки (по умолчанию 1)
              * @default true
              */
-            apply_discount: boolean;
+            apply_discount?: boolean;
         };
         "Mentions_2.Methods.Checker.Price.Get.Exec": unknown[];
     };

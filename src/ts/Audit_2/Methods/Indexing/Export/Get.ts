@@ -34,14 +34,14 @@ export interface components {
              * Период в днях
              * @default 7
              */
-            period_days: number;
+            period_days?: number;
             /** @default 7 */
-            type_range: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
+            type_range?: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
             /**
              * Количество дней в диапазоне
              * @default 60
              */
-            count_dates: number;
+            count_dates?: number;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };

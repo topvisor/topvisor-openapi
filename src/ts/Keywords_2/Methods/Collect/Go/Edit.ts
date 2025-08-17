@@ -26,7 +26,7 @@ export interface components {
             /** Id папки для новых групп */
             to_id?: number;
             /** @default in_folder_last */
-            to_type: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'] | null;
+            to_type?: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'] | null;
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: string | null;
         };

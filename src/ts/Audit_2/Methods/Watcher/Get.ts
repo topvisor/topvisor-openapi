@@ -20,12 +20,12 @@ export interface components {
             /** ID проверки конца диапазона */
             check_id2?: number | null;
             /** @default 7 */
-            type_range: import('../../Types/Watcher/TypeRange.ts').components['schemas']['Audit_2.Types.Watcher.TypeRange'];
+            type_range?: import('../../Types/Watcher/TypeRange.ts').components['schemas']['Audit_2.Types.Watcher.TypeRange'];
             /**
              * Максимальное число возвращаемых проверок (не более 60)
              * @default 60
              */
-            count_ids: number;
+            count_ids?: number;
             watcher_type: import('../../Types/Watcher/Type.ts').components['schemas']['Audit_2.Types.Watcher.Type'];
             /**
              * Выбор столбцов данных с результатами проверки
@@ -34,7 +34,7 @@ export interface components {
              *       "redirects"
              *     ]
              */
-            watcher_fields: unknown[];
+            watcher_fields?: unknown[];
             /** Добавить в результат заголовки отчета */
             show_headers?: boolean;
             show_diff?: import('../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];

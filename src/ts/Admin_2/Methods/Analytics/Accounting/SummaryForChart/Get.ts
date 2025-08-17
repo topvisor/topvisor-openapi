@@ -22,7 +22,7 @@ export interface components {
              * Длина периода
              * @default 12
              */
-            limit: number;
+            limit?: number;
             /** Фильтр по объектам групп, см. Admin_2\Accounting\Group */
             filters?: unknown[] | null;
         };

@@ -16,7 +16,7 @@ export interface components {
             /** Количество секунд */
             secunds: string;
             /** @default 1 */
-            onlyMy: number;
+            onlyMy?: number;
             /** Является ли запуск - тестом */
             test: boolean;
         };

@@ -14939,7 +14939,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор прверок регулируется параметрами запроса filters, limit и offset",
+                "summary": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор проверок регулируется параметрами запроса filters, limit и offset",
                 "requestBody": {
                     "content": {
                         "application/json": {

@@ -18,7 +18,7 @@ export interface components {
              * Язык региона
              * @default ru
              */
-            region_lang: string;
+            region_lang?: string;
             region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
             /**
              * Дата

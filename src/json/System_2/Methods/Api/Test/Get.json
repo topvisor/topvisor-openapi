@@ -20,7 +20,7 @@
                     "oper": {
                         "allOf": [
                             {
-                                "$ref": "../../../../System_2/Types/Operation.json#/components/schemas/System_2.Types.Operation"
+                                "$ref": "../../../../TV/API/Oper.json#/components/schemas/TV.API.Oper"
                             }
                         ]
                     },

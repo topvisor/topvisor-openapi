@@ -12,7 +12,7 @@ export interface components {
             /** Методы */
             calls: import('../../Types/Calls/Calls.ts').components['schemas']['System_2.Types.Calls.Calls'];
             /** @default apiV2 */
-            getFormat: import('../../Types/Calls/Format.ts').components['schemas']['System_2.Types.Calls.Format'];
+            getFormat?: import('../../Types/Calls/Format.ts').components['schemas']['System_2.Types.Calls.Format'];
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };

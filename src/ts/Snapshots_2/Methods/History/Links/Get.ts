@@ -17,7 +17,7 @@ export interface components {
              *     - 2 - competitors
              * @default 1
              */
-            snapshots_view: number;
+            snapshots_view?: number;
             /** Список ids ключевых слов */
             keywords_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Отображать снимки выдачи */
@@ -41,7 +41,7 @@ export interface components {
             /** Id группы */
             group_id?: number | null;
             /** @default tops */
-            chart_type: import('../../../Types/History/Links/ChartType.ts').components['schemas']['Snapshots_2.Types.History.Links.ChartType'];
+            chart_type?: import('../../../Types/History/Links/ChartType.ts').components['schemas']['Snapshots_2.Types.History.Links.ChartType'];
             /** Список ids регионов */
             regions_indexes?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Список ids тегов */

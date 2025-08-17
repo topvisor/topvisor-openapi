@@ -45,7 +45,7 @@ export interface components {
              * @deprecated
              * @default domain
              */
-            competitor_by: import('../../../Types/Competitors/OutputFormat.ts').components['schemas']['Snapshots_2.Types.Competitors.OutputFormat'];
+            competitor_by?: import('../../../Types/Competitors/OutputFormat.ts').components['schemas']['Snapshots_2.Types.Competitors.OutputFormat'];
             /** Фильтр по доменам */
             domains?: unknown[] | null;
             /** Добавить в результат даты, в которых были проверки (existsDates) */
@@ -62,12 +62,12 @@ export interface components {
              * Тип диапазона дат
              * @default 2
              */
-            type_range: number;
+            type_range?: number;
             /**
              * Количество дней в диапазоне
              * @default 31
              */
-            count_dates: number;
+            count_dates?: number;
             /** Только запросы, присутствующие в первой проверке указанного периода
              *
              *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH */

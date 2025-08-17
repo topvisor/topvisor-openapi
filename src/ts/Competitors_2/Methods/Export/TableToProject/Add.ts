@@ -25,7 +25,7 @@ export interface components {
              * Активность создаваемых групп (по умолчанию: 1 - активные)
              * @default true
              */
-            group_on: boolean;
+            group_on?: boolean;
             /** Переносить ли дубли (по умолчанию: 0 - не переносить) */
             move_duplicate?: boolean;
             /** Id группы для переноса дублей, если не указана будет использован параметр move_duplicate_group_name */
@@ -41,7 +41,7 @@ export interface components {
              * Название функции
              * @default export_tableToProject
              */
-            func: string;
+            func?: string;
             by_type: import('../../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;

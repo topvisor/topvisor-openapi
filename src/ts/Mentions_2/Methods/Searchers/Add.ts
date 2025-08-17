@@ -20,7 +20,7 @@ export interface components {
              * Включен ли поисковик
              * @default true
              */
-            enabled: boolean;
+            enabled?: boolean;
             /** Глубина сбора упоминаний (x100)
              *
              *     От 1 до 10 */
