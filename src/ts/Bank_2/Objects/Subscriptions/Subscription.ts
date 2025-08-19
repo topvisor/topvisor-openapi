@@ -37,15 +37,23 @@ export interface components {
             price: number;
             /** Стоимость продления подписки */
             renewPrice: number;
-            /**
-             * Использованные лимиты
+            /** Использованные лимиты
              *
              *     Доступные лимиты см. в `plan`
              *
-             *     Для нетарифицируемых лимитов значение всегда `null`
-             * @description @type Array<Bank_2\Types\Subscriptions\Limit\Name, int>
-             */
-            limitUsedByName: unknown[];
+             *     Для нетарифицируемых лимитов значение всегда `null` */
+            limitUsedByName: {
+                positions_check?: number;
+                positions_check_manual?: number;
+                keywords_volumes?: number;
+                keywords_collect?: number;
+                positions_tasks?: number;
+                projects?: number;
+                projects_rights?: number;
+                projects_competitors?: number;
+                projects_archive?: number;
+                api?: number;
+            };
             /** Типы лимитов */
             limitTypeByName: unknown[];
         };

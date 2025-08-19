@@ -17939,45 +17939,110 @@ components:
           title: Базовый домен сайта
           type: string
         config:
-          title: '@type class-string<TV\Types\Config\Site> config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
+          title: 'config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
           type: string
         configTPA:
           title: Настройки интеграций
-          description: |-
-            @type array{
-                yandex_client_id:string,
-                yandex_client_id_auth:string,
-                yandex_client_secret:string,
-                google_client_id:string,
-                google_client_secret:string,
-                google_internal_client_id:string|null, // только для использования внутри компании с корпоративной почтой, имеет доступ ко всем scope
-                google_internal_client_secret:string|null,
-                sms_client:string,
-                selectel_api_key:string,
-                vk_pixel_id:string,
-                vk_group_id:string,
-                vk_service_token:string,
-                vk_group_token:string,
-                vk_client_id:string,
-                vk_client_secret:string,
-                telegram_token:string,
-                telegram_token_apometr:string,
-                telegram_token_thundo:string,
-                telegram_token_library:string,
-                tinkoff_business_token:string,
-                tinkoff_openapi_token:string,
-                tinkoff_security_key:string,
-                tinkoff_ap_cert_pass:string,
-                tinkoff_partner_key:string,
-                tinkoff_partner_secret:string,
-                botan_token_TopvisorBot:string,
-                botan_token_ApometrBot:string,
-                diadoc:string,
-                fbAppId:string,
-                fbTokens:array,
-                twTokens:array
-            }
-          type: array
+          type: object
+          properties:
+            yandex_client_id:
+              type: string
+            yandex_client_id_auth:
+              type: string
+            yandex_client_secret:
+              type: string
+            google_client_id:
+              type: string
+            google_client_secret:
+              type: string
+            google_internal_client_id:
+              anyOf:
+                - type: string
+                - type: 'null'
+            google_internal_client_secret:
+              anyOf:
+                - type: string
+                - type: 'null'
+            sms_client:
+              type: string
+            selectel_api_key:
+              type: string
+            vk_pixel_id:
+              type: string
+            vk_group_id:
+              type: string
+            vk_service_token:
+              type: string
+            vk_group_token:
+              type: string
+            vk_client_id:
+              type: string
+            vk_client_secret:
+              type: string
+            telegram_token:
+              type: string
+            telegram_token_apometr:
+              type: string
+            telegram_token_thundo:
+              type: string
+            telegram_token_library:
+              type: string
+            tinkoff_business_token:
+              type: string
+            tinkoff_openapi_token:
+              type: string
+            tinkoff_security_key:
+              type: string
+            tinkoff_ap_cert_pass:
+              type: string
+            tinkoff_partner_key:
+              type: string
+            tinkoff_partner_secret:
+              type: string
+            botan_token_TopvisorBot:
+              type: string
+            botan_token_ApometrBot:
+              type: string
+            diadoc:
+              type: string
+            fbAppId:
+              type: string
+            fbTokens:
+              type: array
+            twTokens:
+              type: array
+          required:
+            - yandex_client_id
+            - yandex_client_id_auth
+            - yandex_client_secret
+            - google_client_id
+            - google_client_secret
+            - google_internal_client_id
+            - google_internal_client_secret
+            - sms_client
+            - selectel_api_key
+            - vk_pixel_id
+            - vk_group_id
+            - vk_service_token
+            - vk_group_token
+            - vk_client_id
+            - vk_client_secret
+            - telegram_token
+            - telegram_token_apometr
+            - telegram_token_thundo
+            - telegram_token_library
+            - tinkoff_business_token
+            - tinkoff_openapi_token
+            - tinkoff_security_key
+            - tinkoff_ap_cert_pass
+            - tinkoff_partner_key
+            - tinkoff_partner_secret
+            - botan_token_TopvisorBot
+            - botan_token_ApometrBot
+            - diadoc
+            - fbAppId
+            - fbTokens
+            - twTokens
       required:
         - host
         - config
@@ -18997,8 +19062,28 @@ components:
             Доступные лимиты см. в `plan`
 
             Для нетарифицируемых лимитов значение всегда `null`
-          description: '@type Array<Bank_2\Types\Subscriptions\Limit\Name, int>'
-          type: array
+          type: object
+          properties:
+            positions_check:
+              type: integer
+            positions_check_manual:
+              type: integer
+            keywords_volumes:
+              type: integer
+            keywords_collect:
+              type: integer
+            positions_tasks:
+              type: integer
+            projects:
+              type: integer
+            projects_rights:
+              type: integer
+            projects_competitors:
+              type: integer
+            projects_archive:
+              type: integer
+            api:
+              type: integer
         limitTypeByName:
           title: Типы лимитов
           type: array
@@ -23448,9 +23533,11 @@ components:
           title: Код подтверждения
           type: string
         phones:
-          title: Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения
-          description: '@type string | array'
+          title: Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения
           nullable: true
+          anyOf:
+            - type: string
+            - type: array
       required:
         - pin
       title: Проверить код для подтверждения действия
@@ -23460,9 +23547,11 @@ components:
       type: object
       properties:
         phones:
-          title: Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения
-          description: '@type string | array'
+          title: Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения
           nullable: true
+          anyOf:
+            - type: string
+            - type: array
       required: []
       title: Отправить код для подтверждения действия
     Sms_2.Methods.SendPIN.Get.Exec:
@@ -24484,8 +24573,10 @@ components:
             Id пользователя внутри социальной сети, из которой был отправлен тикет
 
             Может быть в любом виде
-          description: '@type string | int'
           nullable: true
+          anyOf:
+            - type: string
+            - type: integer
         secret:
           title: |-
             Данные для авторизации в сервисе-конкуренте для переноса проектов
@@ -30001,7 +30092,6 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         folders_ids_depth:
           title: При фильтрации по ID папок также проверять в подпапках
-          description: '@type bool'
           type: boolean
         groups_ids:
           title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
@@ -30069,7 +30159,6 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         folders_ids_depth:
           title: При фильтрации по ID папок также проверять в подпапках
-          description: '@type bool'
           type: boolean
         groups_ids:
           title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
@@ -32509,8 +32598,26 @@ components:
             - coords: координаты
             - name_ru: имя региона
             - areaName_ru: имя родительского региона, обычно это область
-          description: '@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>'
           type: array
+          items:
+            type: object
+            properties:
+              lr:
+                type: integer
+              criteriaId:
+                type: integer
+              coords:
+                type: string
+              name_ru:
+                type: string
+              areaName_ru:
+                type: string
+            required:
+              - lr
+              - criteriaId
+              - coords
+              - name_ru
+              - areaName_ru
         test:
           title: Является ли запуск - тестом
           type: boolean

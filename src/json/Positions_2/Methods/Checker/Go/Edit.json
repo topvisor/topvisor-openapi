@@ -30,7 +30,6 @@
                     },
                     "folders_ids_depth": {
                         "title": "При фильтрации по ID папок также проверять в подпапках",
-                        "description": "@type bool",
                         "type": "boolean"
                     },
                     "groups_ids": {

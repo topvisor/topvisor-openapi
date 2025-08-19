@@ -11,9 +11,16 @@
                 "type": "object",
                 "properties": {
                     "phones": {
-                        "title": "Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения",
-                        "description": "@type string | array",
-                        "nullable": true
+                        "title": "Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "array"
+                            }
+                        ]
                     }
                 },
                 "required": [],

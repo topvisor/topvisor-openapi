@@ -13,10 +13,7 @@ export interface components {
             regions_indexes?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Проверка с учетом фильтра по папкам */
             folders_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /**
-             * При фильтрации по ID папок также проверять в подпапках
-             * @description @type bool
-             */
+            /** При фильтрации по ID папок также проверять в подпапках */
             folders_ids_depth?: boolean;
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
             groups_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;

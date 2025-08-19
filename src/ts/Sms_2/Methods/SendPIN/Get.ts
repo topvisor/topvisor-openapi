@@ -9,11 +9,8 @@ export interface components {
     schemas: {
         /** Отправить код для подтверждения действия */
         "Sms_2.Methods.SendPIN.Get": {
-            /**
-             * Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения
-             * @description @type string | array
-             */
-            phones?: unknown;
+            /** Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения */
+            phones?: (string | unknown[]) | null;
         };
         "Sms_2.Methods.SendPIN.Get.Exec": boolean;
     };

@@ -10,45 +10,42 @@ export interface components {
         "TV.Core.Sites.Site": {
             /** Базовый домен сайта */
             host: string;
-            /** @type class-string<TV\Types\Config\Site> config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class` */
+            /** config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class` */
             config: string;
-            /**
-             * Настройки интеграций
-             * @description @type array{
-             *         yandex_client_id:string,
-             *         yandex_client_id_auth:string,
-             *         yandex_client_secret:string,
-             *         google_client_id:string,
-             *         google_client_secret:string,
-             *         google_internal_client_id:string|null, // только для использования внутри компании с корпоративной почтой, имеет доступ ко всем scope
-             *         google_internal_client_secret:string|null,
-             *         sms_client:string,
-             *         selectel_api_key:string,
-             *         vk_pixel_id:string,
-             *         vk_group_id:string,
-             *         vk_service_token:string,
-             *         vk_group_token:string,
-             *         vk_client_id:string,
-             *         vk_client_secret:string,
-             *         telegram_token:string,
-             *         telegram_token_apometr:string,
-             *         telegram_token_thundo:string,
-             *         telegram_token_library:string,
-             *         tinkoff_business_token:string,
-             *         tinkoff_openapi_token:string,
-             *         tinkoff_security_key:string,
-             *         tinkoff_ap_cert_pass:string,
-             *         tinkoff_partner_key:string,
-             *         tinkoff_partner_secret:string,
-             *         botan_token_TopvisorBot:string,
-             *         botan_token_ApometrBot:string,
-             *         diadoc:string,
-             *         fbAppId:string,
-             *         fbTokens:array,
-             *         twTokens:array
-             *     }
-             */
-            configTPA: unknown[];
+            /** Настройки интеграций */
+            configTPA: {
+                yandex_client_id: string;
+                yandex_client_id_auth: string;
+                yandex_client_secret: string;
+                google_client_id: string;
+                google_client_secret: string;
+                google_internal_client_id: string | null;
+                google_internal_client_secret: string | null;
+                sms_client: string;
+                selectel_api_key: string;
+                vk_pixel_id: string;
+                vk_group_id: string;
+                vk_service_token: string;
+                vk_group_token: string;
+                vk_client_id: string;
+                vk_client_secret: string;
+                telegram_token: string;
+                telegram_token_apometr: string;
+                telegram_token_thundo: string;
+                telegram_token_library: string;
+                tinkoff_business_token: string;
+                tinkoff_openapi_token: string;
+                tinkoff_security_key: string;
+                tinkoff_ap_cert_pass: string;
+                tinkoff_partner_key: string;
+                tinkoff_partner_secret: string;
+                botan_token_TopvisorBot: string;
+                botan_token_ApometrBot: string;
+                diadoc: string;
+                fbAppId: string;
+                fbTokens: unknown[];
+                twTokens: unknown[];
+            };
         };
     };
     responses: never;

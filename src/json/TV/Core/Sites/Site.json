@@ -15,13 +15,154 @@
                         "type": "string"
                     },
                     "config": {
-                        "title": "@type class-string<TV\\Types\\Config\\Site> config - Интерфейс конфигурации сайта, пример: `Config\\Sites\\{{ SiteName }}\\ConfigSite::class`",
+                        "title": "config - Интерфейс конфигурации сайта, пример: `Config\\Sites\\{{ SiteName }}\\ConfigSite::class`",
                         "type": "string"
                     },
                     "configTPA": {
                         "title": "Настройки интеграций",
-                        "description": "@type array{\n    yandex_client_id:string,\n    yandex_client_id_auth:string,\n    yandex_client_secret:string,\n    google_client_id:string,\n    google_client_secret:string,\n    google_internal_client_id:string|null, // только для использования внутри компании с корпоративной почтой, имеет доступ ко всем scope\n    google_internal_client_secret:string|null,\n    sms_client:string,\n    selectel_api_key:string,\n    vk_pixel_id:string,\n    vk_group_id:string,\n    vk_service_token:string,\n    vk_group_token:string,\n    vk_client_id:string,\n    vk_client_secret:string,\n    telegram_token:string,\n    telegram_token_apometr:string,\n    telegram_token_thundo:string,\n    telegram_token_library:string,\n    tinkoff_business_token:string,\n    tinkoff_openapi_token:string,\n    tinkoff_security_key:string,\n    tinkoff_ap_cert_pass:string,\n    tinkoff_partner_key:string,\n    tinkoff_partner_secret:string,\n    botan_token_TopvisorBot:string,\n    botan_token_ApometrBot:string,\n    diadoc:string,\n    fbAppId:string,\n    fbTokens:array,\n    twTokens:array\n}",
-                        "type": "array"
+                        "type": "object",
+                        "properties": {
+                            "yandex_client_id": {
+                                "type": "string"
+                            },
+                            "yandex_client_id_auth": {
+                                "type": "string"
+                            },
+                            "yandex_client_secret": {
+                                "type": "string"
+                            },
+                            "google_client_id": {
+                                "type": "string"
+                            },
+                            "google_client_secret": {
+                                "type": "string"
+                            },
+                            "google_internal_client_id": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "google_internal_client_secret": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "sms_client": {
+                                "type": "string"
+                            },
+                            "selectel_api_key": {
+                                "type": "string"
+                            },
+                            "vk_pixel_id": {
+                                "type": "string"
+                            },
+                            "vk_group_id": {
+                                "type": "string"
+                            },
+                            "vk_service_token": {
+                                "type": "string"
+                            },
+                            "vk_group_token": {
+                                "type": "string"
+                            },
+                            "vk_client_id": {
+                                "type": "string"
+                            },
+                            "vk_client_secret": {
+                                "type": "string"
+                            },
+                            "telegram_token": {
+                                "type": "string"
+                            },
+                            "telegram_token_apometr": {
+                                "type": "string"
+                            },
+                            "telegram_token_thundo": {
+                                "type": "string"
+                            },
+                            "telegram_token_library": {
+                                "type": "string"
+                            },
+                            "tinkoff_business_token": {
+                                "type": "string"
+                            },
+                            "tinkoff_openapi_token": {
+                                "type": "string"
+                            },
+                            "tinkoff_security_key": {
+                                "type": "string"
+                            },
+                            "tinkoff_ap_cert_pass": {
+                                "type": "string"
+                            },
+                            "tinkoff_partner_key": {
+                                "type": "string"
+                            },
+                            "tinkoff_partner_secret": {
+                                "type": "string"
+                            },
+                            "botan_token_TopvisorBot": {
+                                "type": "string"
+                            },
+                            "botan_token_ApometrBot": {
+                                "type": "string"
+                            },
+                            "diadoc": {
+                                "type": "string"
+                            },
+                            "fbAppId": {
+                                "type": "string"
+                            },
+                            "fbTokens": {
+                                "type": "array"
+                            },
+                            "twTokens": {
+                                "type": "array"
+                            }
+                        },
+                        "required": [
+                            "yandex_client_id",
+                            "yandex_client_id_auth",
+                            "yandex_client_secret",
+                            "google_client_id",
+                            "google_client_secret",
+                            "google_internal_client_id",
+                            "google_internal_client_secret",
+                            "sms_client",
+                            "selectel_api_key",
+                            "vk_pixel_id",
+                            "vk_group_id",
+                            "vk_service_token",
+                            "vk_group_token",
+                            "vk_client_id",
+                            "vk_client_secret",
+                            "telegram_token",
+                            "telegram_token_apometr",
+                            "telegram_token_thundo",
+                            "telegram_token_library",
+                            "tinkoff_business_token",
+                            "tinkoff_openapi_token",
+                            "tinkoff_security_key",
+                            "tinkoff_ap_cert_pass",
+                            "tinkoff_partner_key",
+                            "tinkoff_partner_secret",
+                            "botan_token_TopvisorBot",
+                            "botan_token_ApometrBot",
+                            "diadoc",
+                            "fbAppId",
+                            "fbTokens",
+                            "twTokens"
+                        ]
                     }
                 },
                 "required": [

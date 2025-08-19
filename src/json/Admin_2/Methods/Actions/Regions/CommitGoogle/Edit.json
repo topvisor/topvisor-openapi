@@ -12,8 +12,34 @@
                 "properties": {
                     "regions": {
                         "title": "Список регионов в формате:\n\n- Яндекс lr, укажите 0, если региона в Яндексе нет\n- Criteria ID: id региона в google\n- coords: координаты\n- name_ru: имя региона\n- areaName_ru: имя родительского региона, обычно это область",
-                        "description": "@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>",
-                        "type": "array"
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "lr": {
+                                    "type": "integer"
+                                },
+                                "criteriaId": {
+                                    "type": "integer"
+                                },
+                                "coords": {
+                                    "type": "string"
+                                },
+                                "name_ru": {
+                                    "type": "string"
+                                },
+                                "areaName_ru": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "lr",
+                                "criteriaId",
+                                "coords",
+                                "name_ru",
+                                "areaName_ru"
+                            ]
+                        }
                     },
                     "test": {
                         "title": "Является ли запуск - тестом",

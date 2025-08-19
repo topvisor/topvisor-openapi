@@ -11,11 +11,8 @@ export interface components {
         "Sms_2.Methods.CheckPIN.Get": {
             /** Код подтверждения */
             pin: string;
-            /**
-             * Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения
-             * @description @type string | array
-             */
-            phones?: unknown;
+            /** Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения */
+            phones?: (string | unknown[]) | null;
         };
         "Sms_2.Methods.CheckPIN.Get.Exec": string;
     };

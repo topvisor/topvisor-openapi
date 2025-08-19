@@ -25,13 +25,10 @@ export interface components {
             is_silent?: boolean;
             /** Необходим только для незарегистрированных пользователей */
             email?: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'] | null;
-            /**
-             * Id пользователя внутри социальной сети, из которой был отправлен тикет
+            /** Id пользователя внутри социальной сети, из которой был отправлен тикет
              *
-             *     Может быть в любом виде
-             * @description @type string | int
-             */
-            social_user_id?: unknown;
+             *     Может быть в любом виде */
+            social_user_id?: (string | number) | null;
             /** Данные для авторизации в сервисе-конкуренте для переноса проектов
              *
              *     Недокументированный параметр */
