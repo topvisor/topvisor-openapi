@@ -21,6 +21,30 @@
                 "title": "Поиск HTML шаблонов"
             },
             "Admin_2.Methods.Tpl.Get.Exec": {
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tpl": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "tpl",
+                                "name"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "properties": {}
+                    }
+                ],
                 "type": "array"
             }
         }

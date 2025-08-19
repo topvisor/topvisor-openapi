@@ -7162,6 +7162,7 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+      summary: Получение отчета платежей по сервисам
   /get/admin_2/analytics/statistics/:
     post:
       operationId: GetAdmin2AnalyticsStatistics
@@ -17600,6 +17601,20 @@ components:
         - tpl
       title: Поиск HTML шаблонов
     Admin_2.Methods.Tpl.Get.Exec:
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              tpl:
+                type: string
+              name:
+                type: string
+            required:
+              - tpl
+              - name
+        - type: object
+          properties: {}
       type: array
     Admin_2.Methods.Users.Edit:
       type: object
@@ -25989,7 +26004,49 @@ components:
         - currency
       title: Получение сводки по новым рефералам
     Admin_2.Methods.Affiliate.Referrals.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  anyOf:
+                    - type: integer
+                    - type: number
+              name:
+                type: string
+              color:
+                type: string
+              yAxis:
+                type: integer
+              zIndex:
+                type: integer
+              dashStyle:
+                type: string
+              type:
+                type: string
+              opacity:
+                type: number
+              pointPadding:
+                type: number
+              pointPlacement:
+                type: number
+            required:
+              - data
+              - name
+              - color
+              - yAxis
+      required:
+        - categories
+        - series
     Admin_2.Methods.Affiliate.ReferrersByReferrals.Get:
       type: object
       properties:
@@ -26025,7 +26082,49 @@ components:
         - currency
       title: Получение сводки по новым партнерам
     Admin_2.Methods.Affiliate.Referrers.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  anyOf:
+                    - type: integer
+                    - type: number
+              name:
+                type: string
+              color:
+                type: string
+              yAxis:
+                type: integer
+              zIndex:
+                type: integer
+              dashStyle:
+                type: string
+              type:
+                type: string
+              opacity:
+                type: number
+              pointPadding:
+                type: number
+              pointPlacement:
+                type: number
+            required:
+              - data
+              - name
+              - color
+              - yAxis
+      required:
+        - categories
+        - series
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get:
       type: object
       properties:
@@ -26207,8 +26306,31 @@ components:
         - period
         - currency
         - field_name
+      title: Получение отчета платежей по сервисам
     Admin_2.Methods.Analytics.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: integer
+            required:
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Statistics.Get:
       type: object
       properties: {}

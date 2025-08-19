@@ -47,10 +47,44 @@
                     "period",
                     "currency",
                     "field_name"
-                ]
+                ],
+                "title": "Получение отчета платежей по сервисам"
             },
             "Admin_2.Methods.Analytics.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "categories": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "series": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "categories",
+                    "series"
+                ]
             }
         }
     }

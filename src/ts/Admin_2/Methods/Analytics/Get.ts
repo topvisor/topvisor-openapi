@@ -7,6 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Получение отчета платежей по сервисам */
         "Admin_2.Methods.Analytics.Get": {
             /** Дата */
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
@@ -21,7 +22,13 @@ export interface components {
             /** Длина периода */
             limit?: number | null;
         };
-        "Admin_2.Methods.Analytics.Get.Exec": unknown[];
+        "Admin_2.Methods.Analytics.Get.Exec": {
+            categories: string[];
+            series: {
+                name: string;
+                data: number[];
+            }[];
+        };
     };
     responses: never;
     parameters: never;

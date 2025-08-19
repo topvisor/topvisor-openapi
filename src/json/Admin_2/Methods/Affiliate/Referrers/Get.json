@@ -30,7 +30,73 @@
                 "title": "Получение сводки по новым партнерам"
             },
             "Admin_2.Methods.Affiliate.Referrers.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "categories": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "series": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "anyOf": [
+                                            {
+                                                "type": "integer"
+                                            },
+                                            {
+                                                "type": "number"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "color": {
+                                    "type": "string"
+                                },
+                                "yAxis": {
+                                    "type": "integer"
+                                },
+                                "zIndex": {
+                                    "type": "integer"
+                                },
+                                "dashStyle": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "opacity": {
+                                    "type": "number"
+                                },
+                                "pointPadding": {
+                                    "type": "number"
+                                },
+                                "pointPlacement": {
+                                    "type": "number"
+                                }
+                            },
+                            "required": [
+                                "data",
+                                "name",
+                                "color",
+                                "yAxis"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "categories",
+                    "series"
+                ]
             }
         }
     }
