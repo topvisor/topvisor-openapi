@@ -30,6 +30,50 @@
                 "title": "Получение сводки числа рефералов по своему уровню"
             },
             "Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "series": {
+                                "type": "object",
+                                "properties": {
+                                    "data": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "y": {
+                                                    "type": "integer"
+                                                },
+                                                "name": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "y",
+                                                "name"
+                                            ]
+                                        }
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "data",
+                                    "name"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "series"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {}
+                    }
+                ],
                 "type": "array"
             }
         }

@@ -25946,6 +25946,33 @@ components:
         - currency
       title: Получение сводки числа рефералов по своему уровню
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec:
+      anyOf:
+        - type: object
+          properties:
+            series:
+              type: object
+              properties:
+                data:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      'y':
+                        type: integer
+                      name:
+                        type: string
+                    required:
+                      - 'y'
+                      - name
+                name:
+                  type: string
+              required:
+                - data
+                - name
+          required:
+            - series
+        - type: object
+          properties: {}
       type: array
     Admin_2.Methods.Affiliate.Referrals.Get:
       type: object
@@ -26058,7 +26085,12 @@ components:
       required: []
       title: Получение числа активных пользователей
     Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec:
-      type: array
+      type: object
+      properties:
+        tv:
+          type: integer
+      required:
+        - tv
     Admin_2.Methods.Analytics.Events.Get:
       type: object
       properties:
