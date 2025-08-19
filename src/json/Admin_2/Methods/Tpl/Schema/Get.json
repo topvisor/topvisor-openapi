@@ -30,7 +30,19 @@
                 "title": "Получение схему HTML шаблона"
             },
             "Admin_2.Methods.Tpl.Schema.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "properties": {
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "title",
+                    "properties"
+                ]
             }
         }
     }
