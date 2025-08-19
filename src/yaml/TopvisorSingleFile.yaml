@@ -4044,7 +4044,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenAPI_2.Methods.Download.Get'
+              $ref: '#/components/schemas/Openapi_2.Methods.Download.Get'
         required: true
       responses:
         '200':
@@ -16208,11 +16208,33 @@ components:
             - - minute: Минута из перечисления доступных минут (см. $availableMinutes)
             - days: Массив дней из перечисления доступных дней (см. $availableDays)
           description: |-
-            @var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.
+            Массив расписания, содержащий элементы с данными о времени и днях.
             @see Schedule_2\Mods\Schedule::$availableHours
             @see Schedule_2\Mods\Schedule::$availableMinutes
             @see Schedule_2\Mods\Schedule::$availableDays
           type: array
+          items:
+            type: object
+            properties:
+              times:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    hour:
+                      type: string
+                    minute:
+                      type: string
+                  required:
+                    - hour
+                    - minute
+              days:
+                type: array
+                items:
+                  type: string
+            required:
+              - times
+              - days
         type:
           title: Тип расписания
           description: '@see Schedule_2\Mods\Schedule::$availableTypes'
@@ -18761,7 +18783,28 @@ components:
           type: number
         maxByName:
           title: Выдаваемые лимиты
-          type: array
+          type: object
+          properties:
+            positions_check:
+              type: integer
+            positions_check_manual:
+              type: integer
+            keywords_volumes:
+              type: integer
+            keywords_collect:
+              type: integer
+            positions_tasks:
+              type: integer
+            projects:
+              type: integer
+            projects_rights:
+              type: integer
+            projects_competitors:
+              type: integer
+            projects_archive:
+              type: integer
+            api:
+              type: integer
         suffixName:
           title: Суффикс, характеризующий настройки тарифа
           type: string
@@ -20413,13 +20456,20 @@ components:
           nullable: true
           type: string
         og:
-          title: '@var ?array{string: string} Объект с данными Open Graph'
+          title: Объект с данными Open Graph
           nullable: true
-          type: array
+          type: object
+          properties:
+            string:
+              type: string
+          required:
+            - string
         tags:
-          title: '@var ?string[] Список тегов'
+          title: Список тегов
           nullable: true
           type: array
+          items:
+            type: string
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -20638,13 +20688,20 @@ components:
           nullable: true
           type: string
         og:
-          title: '@var ?array{string: string} Объект с данными Open Graph'
+          title: Объект с данными Open Graph
           nullable: true
-          type: array
+          type: object
+          properties:
+            string:
+              type: string
+          required:
+            - string
         tags:
-          title: '@var ?string[] Список тегов'
+          title: Список тегов
           nullable: true
           type: array
+          items:
+            type: string
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -22067,7 +22124,7 @@ components:
       title: Изменение тональности
     Mentions_2.Methods.Sentiment.Edit.Exec:
       type: integer
-    OpenAPI_2.Methods.Download.Get:
+    Openapi_2.Methods.Download.Get:
       type: object
       properties:
         format:

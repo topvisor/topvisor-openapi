@@ -7338,7 +7338,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "OpenAPI_2/Methods/Download/Get.json#/components/schemas/OpenAPI_2.Methods.Download.Get"
+                                "$ref": "Openapi_2/Methods/Download/Get.json#/components/schemas/Openapi_2.Methods.Download.Get"
                             }
                         }
                     },

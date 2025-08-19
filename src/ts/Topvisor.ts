@@ -12348,7 +12348,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./OpenAPI_2/Methods/Download/Get.ts').components['schemas']['OpenAPI_2.Methods.Download.Get'];
+                "application/json": import('./Openapi_2/Methods/Download/Get.ts').components['schemas']['Openapi_2.Methods.Download.Get'];
             };
         };
         responses: {

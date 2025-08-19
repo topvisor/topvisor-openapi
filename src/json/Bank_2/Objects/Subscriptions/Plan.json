@@ -25,7 +25,39 @@
                     },
                     "maxByName": {
                         "title": "Выдаваемые лимиты",
-                        "type": "array"
+                        "type": "object",
+                        "properties": {
+                            "positions_check": {
+                                "type": "integer"
+                            },
+                            "positions_check_manual": {
+                                "type": "integer"
+                            },
+                            "keywords_volumes": {
+                                "type": "integer"
+                            },
+                            "keywords_collect": {
+                                "type": "integer"
+                            },
+                            "positions_tasks": {
+                                "type": "integer"
+                            },
+                            "projects": {
+                                "type": "integer"
+                            },
+                            "projects_rights": {
+                                "type": "integer"
+                            },
+                            "projects_competitors": {
+                                "type": "integer"
+                            },
+                            "projects_archive": {
+                                "type": "integer"
+                            },
+                            "api": {
+                                "type": "integer"
+                            }
+                        }
                     },
                     "suffixName": {
                         "title": "Суффикс, характеризующий настройки тарифа",

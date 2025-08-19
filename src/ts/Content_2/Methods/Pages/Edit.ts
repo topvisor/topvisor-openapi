@@ -41,10 +41,12 @@ export interface components {
             order?: number | null;
             /** Ссылка на основное изображение (обычно относительный путь до изображения от корня сайта) */
             image?: string | null;
-            /** @var ?array{string: string} Объект с данными Open Graph */
-            og?: unknown[] | null;
-            /** @var ?string[] Список тегов */
-            tags?: unknown[] | null;
+            /** Объект с данными Open Graph */
+            og?: {
+                string: string;
+            } | null;
+            /** Список тегов */
+            tags?: string[] | null;
             /** Не индексировать страницу */
             noindex?: boolean;
             /** Тема оформления страницы */

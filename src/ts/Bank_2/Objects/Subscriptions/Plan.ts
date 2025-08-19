@@ -44,7 +44,18 @@ export interface components {
              *     При расчете финальной стоимости может использоваться округление */
             annualDiscount: number;
             /** Выдаваемые лимиты */
-            maxByName: unknown[];
+            maxByName: {
+                positions_check?: number;
+                positions_check_manual?: number;
+                keywords_volumes?: number;
+                keywords_collect?: number;
+                positions_tasks?: number;
+                projects?: number;
+                projects_rights?: number;
+                projects_competitors?: number;
+                projects_archive?: number;
+                api?: number;
+            };
             /** Суффикс, характеризующий настройки тарифа */
             suffixName: string;
         };

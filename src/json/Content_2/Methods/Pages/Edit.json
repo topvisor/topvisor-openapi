@@ -106,14 +106,25 @@
                         "type": "string"
                     },
                     "og": {
-                        "title": "@var ?array{string: string} Объект с данными Open Graph",
+                        "title": "Объект с данными Open Graph",
                         "nullable": true,
-                        "type": "array"
+                        "type": "object",
+                        "properties": {
+                            "string": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "string"
+                        ]
                     },
                     "tags": {
-                        "title": "@var ?string[] Список тегов",
+                        "title": "Список тегов",
                         "nullable": true,
-                        "type": "array"
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
                     },
                     "noindex": {
                         "title": "Не индексировать страницу",

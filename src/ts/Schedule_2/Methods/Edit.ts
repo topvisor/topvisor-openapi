@@ -15,12 +15,18 @@ export interface components {
              *     - - hour: Час из перечисления доступных часов (см. $availableHours)
              *     - - minute: Минута из перечисления доступных минут (см. $availableMinutes)
              *     - days: Массив дней из перечисления доступных дней (см. $availableDays)
-             * @description @var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.
+             * @description Массив расписания, содержащий элементы с данными о времени и днях.
              *     @see Schedule_2\Mods\Schedule::$availableHours
              *     @see Schedule_2\Mods\Schedule::$availableMinutes
              *     @see Schedule_2\Mods\Schedule::$availableDays
              */
-            schedule: unknown[];
+            schedule: {
+                times: {
+                    hour: string;
+                    minute: string;
+                }[];
+                days: string[];
+            }[];
             /**
              * Тип расписания
              * @description @see Schedule_2\Mods\Schedule::$availableTypes

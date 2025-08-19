@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/OpenAPI_2.Methods.Download.Get",
+        "title": "Topvisor/Openapi_2.Methods.Download.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "OpenAPI_2.Methods.Download.Get": {
+            "Openapi_2.Methods.Download.Get": {
                 "type": "object",
                 "properties": {
                     "format": {
@@ -24,7 +24,7 @@
                 "title": "Создать Open API схемы и скачать в zip\n\nВ результате вернет zip файл в потоке вывода",
                 "description": "@see https://editor.swagger.io/ Редактор Open API"
             },
-            "OpenAPI_2.Methods.Download.Get.Exec": {
+            "Openapi_2.Methods.Download.Get.Exec": {
                 "type": "never"
             }
         }

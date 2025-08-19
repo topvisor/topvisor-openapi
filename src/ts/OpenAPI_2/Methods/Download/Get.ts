@@ -13,7 +13,7 @@ export interface components {
          *     В результате вернет zip файл в потоке вывода
          * @description @see https://editor.swagger.io/ Редактор Open API
          */
-        "OpenAPI_2.Methods.Download.Get": {
+        "Openapi_2.Methods.Download.Get": {
             /**
              * Формат схемы Open API, json или yaml
              * @default json
@@ -24,7 +24,7 @@ export interface components {
              *     В этом режиме в схему будут добавляться только изменения за один час */
             incremental?: boolean;
         };
-        "OpenAPI_2.Methods.Download.Get.Exec": Record<string, never>;
+        "Openapi_2.Methods.Download.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;
