@@ -248,6 +248,10 @@
                     "Select_this_plan": {
                         "const": "Select this plan",
                         "readOnly": true
+                    },
+                    "Compare_plans": {
+                        "const": "Compare plans",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -293,7 +297,8 @@
                     "Monthly",
                     "Yearly",
                     "Exceeding_by_owner",
-                    "Select_this_plan"
+                    "Select_this_plan",
+                    "Compare_plans"
                 ]
             }
         }

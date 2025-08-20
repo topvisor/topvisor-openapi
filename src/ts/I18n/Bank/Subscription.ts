@@ -161,6 +161,8 @@ export interface components {
             readonly Exceeding_by_owner: "The project owner has";
             /** @constant */
             readonly Select_this_plan: "Select this plan";
+            /** @constant */
+            readonly Compare_plans: "Compare plans";
         };
     };
     responses: never;
