@@ -56,7 +56,40 @@
                 "title": "Получение сводки по группам"
             },
             "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "categories": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "series": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "number"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "categories",
+                    "series"
+                ]
             }
         }
     }

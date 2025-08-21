@@ -15,7 +15,13 @@ export interface components {
             /** Максимальная дата отчета */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        "Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec": unknown[];
+        "Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec": {
+            categories: string[];
+            series: {
+                name: string;
+                data: number[];
+            }[];
+        };
     };
     responses: never;
     parameters: never;

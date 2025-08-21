@@ -7015,13 +7015,14 @@ paths:
         - Admin_2
       summary: |-
         Получение активности пользователей по статусам активности
-        статусы активности:
-               1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
-               2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
-               3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
-               4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
-               5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
-        себе этот статус.
+
+        Статусы активности:
+        1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не менее 100 рублей (или $5).
+        2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+        3. Активный (постоянный) - в эту категорию попадут клиенты, которые не меняли свой статус активности за последний месяц
+        4. Активный (вернувшийся) - в эту категорию попадут клиенты, которые вернули себе статус "Активный клиент".
+        5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
+        этот статус.
       requestBody:
         content:
           application/json:
@@ -7623,7 +7624,7 @@ paths:
       operationId: AddAdmin2UsersRanks
       tags:
         - Admin_2
-      summary: Добавление достижение
+      summary: Добавление достижения
       requestBody:
         content:
           application/json:
@@ -16339,6 +16340,22 @@ components:
       title: Получение списка тегов
     Tags_2.Methods.Get.Exec:
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              name:
+                type: string
+              color_id:
+                type: string
+            required:
+              - id
+              - name
+              - color_id
+        - type: 'null'
       type: array
     Templates_2.Types.TargetType:
       type: string
@@ -17247,7 +17264,9 @@ components:
         - lang
         - subject
     Admin_2.Methods.Informer.Add.Exec:
-      type: array
+      type: object
+      additionalProperties:
+        type: integer
     Admin_2.Methods.Logs.Edit:
       type: object
       properties:
@@ -25928,6 +25947,17 @@ components:
       title: Получение общей статистики по реферальной программе
     Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec:
       nullable: true
+      anyOf:
+        - type: object
+          properties:
+            totalEarned:
+              type: number
+            totalOut:
+              type: number
+          required:
+            - totalEarned
+            - totalOut
+        - type: 'null'
       type: array
     TV.API.Types.Currency:
       type: string
@@ -26062,7 +26092,35 @@ components:
         - currency
       title: Получение сводки числа партнеров по числу рефералов
     Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec:
-      type: array
+      type: object
+      properties:
+        series:
+          type: object
+          properties:
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  'y':
+                    type: integer
+                  range:
+                    type: array
+                    items:
+                      type: integer
+                required:
+                  - name
+                  - 'y'
+                  - range
+            name:
+              type: string
+          required:
+            - data
+            - name
+      required:
+        - series
     Admin_2.Methods.Affiliate.Referrers.Get:
       type: object
       properties:
@@ -26159,7 +26217,7 @@ components:
           title: Валюта
           type: integer
         date:
-          title: Дата
+          title: Дата за которую нужно получить активность пользователей
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
       required:
@@ -26168,15 +26226,46 @@ components:
         - date
       title: |-
         Получение активности пользователей по статусам активности
-        статусы активности:
-               1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
-               2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
-               3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
-               4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
-               5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
-        себе этот статус.
+
+        Статусы активности:
+        1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не менее 100 рублей (или $5).
+        2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+        3. Активный (постоянный) - в эту категорию попадут клиенты, которые не меняли свой статус активности за последний месяц
+        4. Активный (вернувшийся) - в эту категорию попадут клиенты, которые вернули себе статус "Активный клиент".
+        5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
+        этот статус.
     Admin_2.Methods.Analytics.Activity.Get.Exec:
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              period:
+                type: string
+              active_clients:
+                type: integer
+              active_clients_new:
+                type: integer
+              active_clients_stay:
+                type: integer
+              active_clients_return:
+                type: integer
+              active_clients_leave:
+                type: integer
+              registrations:
+                anyOf:
+                  - type: integer
+                  - type: 'null'
+            required:
+              - period
+              - active_clients
+              - active_clients_new
+              - active_clients_stay
+              - active_clients_return
+              - active_clients_leave
+              - registrations
+        - type: 'null'
       type: array
     Admin_2.Methods.Analytics.CountOnlineUsers.Get:
       type: object
@@ -26369,6 +26458,8 @@ components:
       title: Получение категорий словаря
     Admin_2.Methods.I18n.Categories.Get.Exec:
       type: array
+      items:
+        type: string
     Admin_2.Methods.Logs.System.Get:
       type: object
       properties:
@@ -26503,6 +26594,9 @@ components:
       title: Получение из бд данные сотрудников указанного поста
     Admin_2.Methods.Staff.ByPost.Get.Exec:
       type: array
+      items:
+        type: object
+        additionalProperties: {}
     Admin_2.Methods.Staff.ContractPrint.Get:
       type: object
       properties:
@@ -26667,6 +26761,7 @@ components:
       x-enum-descriptions:
         - null
         - null
+      title: Категория пользовательского достижения
     Admin_2.Methods.Users.Ranks.Add:
       type: object
       properties:
@@ -26735,7 +26830,7 @@ components:
           nullable: true
           type: boolean
       required: []
-      title: Добавление достижение
+      title: Добавление достижения
     Admin_2.Methods.Users.Ranks.Add.Exec:
       nullable: true
       type: integer
@@ -32432,6 +32527,18 @@ components:
     Users_2.Methods.Stats.Account.Get.Exec:
       nullable: true
       type: array
+    Admin_2.Types.Accounting.Group.Filter.Type:
+      type: string
+      enum:
+        - minus
+        - plus
+      x-enum-varnames:
+        - Minus
+        - Plus
+      x-enum-descriptions:
+        - null
+        - null
+      title: Тип фильтра по группам транзакций
     Admin_2.Methods.Accounting.Group.Filter.Add:
       type: object
       properties:
@@ -32439,12 +32546,8 @@ components:
           title: Id группы
           type: integer
         type:
-          title: |-
-            Тип
-
-            - plus
-            - minus
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Accounting.Group.Filter.Type'
         counteragent_name:
           title: Имя контрагента
           type: string
@@ -32463,6 +32566,7 @@ components:
       title: Добавление фильтра группы
     Admin_2.Methods.Accounting.Group.Filter.Add.Exec:
       nullable: true
+      type: integer
     Admin_2.Methods.Accounting.Group.Filter.Del:
       type: object
       properties:
@@ -33055,7 +33159,29 @@ components:
         - date
       title: Получение сводки по группам
     Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: number
+            required:
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get:
       type: object
       properties:
@@ -33075,8 +33201,36 @@ components:
         - date
       title: Получение активности пользователей в формате для графика
     Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec:
-      nullable: true
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              yAxis:
+                type: integer
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: integer
+              zIndex:
+                type: integer
+              type:
+                type: string
+            required:
+              - yAxis
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get:
       type: object
       properties:
@@ -33095,7 +33249,7 @@ components:
           nullable: true
           type: integer
         region_index:
-          title: Инлекс региона
+          title: Индекс региона
           nullable: true
           type: integer
       required:
@@ -33196,7 +33350,29 @@ components:
         - limit
       title: Получение статистики тикетов по миграциям
     Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: integer
+            required:
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Tickets.ChartByNew.Get:
       type: object
       properties:
@@ -33216,7 +33392,29 @@ components:
         - limit
       title: Получение статистики по кол-ву пользователей, открывших первый тикет
     Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: number
+            required:
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Tickets.ChartByRates.Get:
       type: object
       properties:
@@ -33256,7 +33454,29 @@ components:
         - limit
       title: Получение статистику тикетов по тегам
     Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: integer
+            required:
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get:
       type: object
       properties:
@@ -33276,7 +33496,29 @@ components:
         - limit
       title: Получение статистики по среднему времени ожидания ответа на вопросы в тикетах
     Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec:
-      type: array
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: string
+        series:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              data:
+                type: array
+                items:
+                  type: integer
+            required:
+              - name
+              - data
+      required:
+        - categories
+        - series
     Admin_2.Methods.Analytics.Tickets.Messages.Get:
       type: object
       properties:

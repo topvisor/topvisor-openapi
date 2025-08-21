@@ -15,6 +15,26 @@
             },
             "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": {
                 "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "totalEarned": {
+                                "type": "number"
+                            },
+                            "totalOut": {
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "totalEarned",
+                            "totalOut"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
                 "type": "array"
             }
         }

@@ -15,8 +15,11 @@
                         "type": "integer"
                     },
                     "type": {
-                        "title": "Тип\n\n- plus\n- minus",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Admin_2/Types/Accounting/Group/Filter/Type.json#/components/schemas/Admin_2.Types.Accounting.Group.Filter.Type"
+                            }
+                        ]
                     },
                     "counteragent_name": {
                         "title": "Имя контрагента",
@@ -41,7 +44,8 @@
                 "title": "Добавление фильтра группы"
             },
             "Admin_2.Methods.Accounting.Group.Filter.Add.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

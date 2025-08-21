@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Категория пользовательского достижения
+         * Тип фильтра по группам транзакций
          * @enum {string}
          */
-        "Admin_2.Types.Users.Ranks.Category": "" | "journal";
+        "Admin_2.Types.Accounting.Group.Filter.Type": "minus" | "plus";
     };
     responses: never;
     parameters: never;

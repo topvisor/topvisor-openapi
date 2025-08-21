@@ -9,7 +9,10 @@ export interface components {
     schemas: {
         /** Получение общей статистики по реферальной программе */
         "Admin_2.Methods.Affiliate.ReferralProgramStats.Get": Record<string, never>;
-        "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": (unknown[] | {
+            totalEarned: number;
+            totalOut: number;
+        } | null) | null;
     };
     responses: never;
     parameters: never;

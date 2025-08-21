@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение категорий словаря */
         "Admin_2.Methods.I18n.Categories.Get": Record<string, never>;
-        "Admin_2.Methods.I18n.Categories.Get.Exec": unknown[];
+        "Admin_2.Methods.I18n.Categories.Get.Exec": string[];
     };
     responses: never;
     parameters: never;

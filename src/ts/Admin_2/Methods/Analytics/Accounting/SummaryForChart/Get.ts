@@ -26,7 +26,13 @@ export interface components {
             /** Фильтр по объектам групп, см. Admin_2\Accounting\Group */
             filters?: unknown[] | null;
         };
-        "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": unknown[];
+        "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": {
+            categories: string[];
+            series: {
+                name: string;
+                data: number[];
+            }[];
+        };
     };
     responses: never;
     parameters: never;

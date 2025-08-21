@@ -30,7 +30,49 @@
                 "title": "Получение сводки числа партнеров по числу рефералов"
             },
             "Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "series": {
+                        "type": "object",
+                        "properties": {
+                            "data": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "y": {
+                                            "type": "integer"
+                                        },
+                                        "range": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "y",
+                                        "range"
+                                    ]
+                                }
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "data",
+                            "name"
+                        ]
+                    }
+                },
+                "required": [
+                    "series"
+                ]
             }
         }
     }

@@ -35,7 +35,7 @@
                         "type": "integer"
                     },
                     "region_index": {
-                        "title": "Инлекс региона",
+                        "title": "Индекс региона",
                         "nullable": true,
                         "type": "integer"
                     }

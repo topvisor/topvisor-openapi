@@ -15,7 +15,7 @@ export interface components {
             currency?: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             /** Сортировать ли по типу */
             order_by_type?: number | null;
-            /** Инлекс региона */
+            /** Индекс региона */
             region_index?: number | null;
         };
         "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": unknown[] | null;

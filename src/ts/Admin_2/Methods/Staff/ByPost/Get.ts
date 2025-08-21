@@ -12,7 +12,9 @@ export interface components {
             /** Пост сотрудников */
             post: string;
         };
-        "Admin_2.Methods.Staff.ByPost.Get.Exec": unknown[];
+        "Admin_2.Methods.Staff.ByPost.Get.Exec": {
+            [key: string]: unknown;
+        }[];
     };
     responses: never;
     parameters: never;

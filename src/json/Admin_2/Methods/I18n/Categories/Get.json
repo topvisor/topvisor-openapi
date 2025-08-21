@@ -14,7 +14,10 @@
                 "title": "Получение категорий словаря"
             },
             "Admin_2.Methods.I18n.Categories.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
             }
         }
     }

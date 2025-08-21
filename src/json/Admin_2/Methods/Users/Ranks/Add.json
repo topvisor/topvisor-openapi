@@ -100,7 +100,7 @@
                     }
                 },
                 "required": [],
-                "title": "Добавление достижение"
+                "title": "Добавление достижения"
             },
             "Admin_2.Methods.Users.Ranks.Add.Exec": {
                 "nullable": true,

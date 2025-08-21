@@ -11,11 +11,7 @@ export interface components {
         "Admin_2.Methods.Accounting.Group.Filter.Add": {
             /** Id группы */
             group_id: number;
-            /** Тип
-             *
-             *     - plus
-             *     - minus */
-            type: string;
+            type: import('../../../../Types/Accounting/Group/Filter/Type.ts').components['schemas']['Admin_2.Types.Accounting.Group.Filter.Type'];
             /** Имя контрагента */
             counteragent_name: string;
             /** ИНН контрагента */
@@ -23,7 +19,7 @@ export interface components {
             /** Назначение операции */
             purpose?: string | null;
         };
-        "Admin_2.Methods.Accounting.Group.Filter.Add.Exec": unknown;
+        "Admin_2.Methods.Accounting.Group.Filter.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

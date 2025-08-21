@@ -15,7 +15,16 @@ export interface components {
             /** Дата */
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
-        "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec": {
+            categories: string[];
+            series: {
+                yAxis: number;
+                name: string;
+                data: number[];
+                zIndex?: number;
+                type?: string;
+            }[];
+        };
     };
     responses: never;
     parameters: never;
