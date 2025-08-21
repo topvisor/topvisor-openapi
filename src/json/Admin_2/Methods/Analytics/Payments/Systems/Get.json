@@ -38,6 +38,47 @@
             },
             "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": {
                 "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "categories": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "series": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "data"
+                                    ]
+                                }
+                            }
+                        },
+                        "required": [
+                            "categories",
+                            "series"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
                 "type": "array"
             }
         }

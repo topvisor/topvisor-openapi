@@ -17,7 +17,18 @@ export interface components {
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Admin_2.Methods.Logs.System.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Logs.System.Get.Exec": (unknown[] | {
+            id?: number;
+            user_id?: number;
+            type?: "php" | "js";
+            error?: string;
+            from?: string;
+            log?: string;
+            date?: string;
+            ip?: string;
+            user_agent?: string;
+            checked?: number | null;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;

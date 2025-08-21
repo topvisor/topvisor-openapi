@@ -14,7 +14,13 @@ export interface components {
             /** Длина периода */
             limit: number;
         };
-        "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": (unknown[] | {
+            categories: string[];
+            series: {
+                name: string;
+                data: number[];
+            }[];
+        } | null) | null;
     };
     responses: never;
     parameters: never;

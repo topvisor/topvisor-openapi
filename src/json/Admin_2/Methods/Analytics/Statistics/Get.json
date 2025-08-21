@@ -15,6 +15,26 @@
             },
             "Admin_2.Methods.Analytics.Statistics.Get.Exec": {
                 "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "count_new_dynamics_off": {
+                                "type": "integer"
+                            },
+                            "count_new_dynamics_off_active": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "count_new_dynamics_off",
+                            "count_new_dynamics_off_active"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
                 "type": "array"
             }
         }

@@ -37,6 +37,69 @@
             },
             "Admin_2.Methods.Logs.System.Get.Exec": {
                 "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "user_id": {
+                                    "type": "integer"
+                                },
+                                "type": {
+                                    "anyOf": [
+                                        {
+                                            "type": "string",
+                                            "enum": [
+                                                "php"
+                                            ]
+                                        },
+                                        {
+                                            "type": "string",
+                                            "enum": [
+                                                "js"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "error": {
+                                    "type": "string"
+                                },
+                                "from": {
+                                    "type": "string"
+                                },
+                                "log": {
+                                    "type": "string"
+                                },
+                                "date": {
+                                    "type": "string"
+                                },
+                                "ip": {
+                                    "type": "string"
+                                },
+                                "user_agent": {
+                                    "type": "string"
+                                },
+                                "checked": {
+                                    "anyOf": [
+                                        {
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
                 "type": "array"
             }
         }

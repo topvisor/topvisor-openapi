@@ -26364,6 +26364,33 @@ components:
       title: Получение суммы оплат за период
     Admin_2.Methods.Analytics.Payments.Get.Exec:
       nullable: true
+      anyOf:
+        - type: object
+          additionalProperties:
+            type: array
+            items:
+              type: object
+              properties:
+                currency:
+                  type: string
+                date:
+                  type: string
+                count:
+                  type: integer
+                count_ur:
+                  type: integer
+                sum:
+                  type: number
+                sum_ur:
+                  type: number
+              required:
+                - currency
+                - date
+                - count
+                - count_ur
+                - sum
+                - sum_ur
+        - type: 'null'
       type: array
     Admin_2.Methods.Analytics.Get:
       type: object
@@ -26427,6 +26454,17 @@ components:
       title: Получение статистики
     Admin_2.Methods.Analytics.Statistics.Get.Exec:
       nullable: true
+      anyOf:
+        - type: object
+          properties:
+            count_new_dynamics_off:
+              type: integer
+            count_new_dynamics_off_active:
+              type: integer
+          required:
+            - count_new_dynamics_off
+            - count_new_dynamics_off_active
+        - type: 'null'
       type: array
     Admin_2.Methods.Analytics.Tickets.Get:
       type: object
@@ -26481,6 +26519,40 @@ components:
       title: Получение данных из системного лога
     Admin_2.Methods.Logs.System.Get.Exec:
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              user_id:
+                type: integer
+              type:
+                anyOf:
+                  - type: string
+                    enum:
+                      - php
+                  - type: string
+                    enum:
+                      - js
+              error:
+                type: string
+              from:
+                type: string
+              log:
+                type: string
+              date:
+                type: string
+              ip:
+                type: string
+              user_agent:
+                type: string
+              checked:
+                anyOf:
+                  - type: integer
+                  - type: 'null'
+        - type: 'null'
       type: array
     Admin_2.Methods.Ranks.Activations.Get:
       type: object
@@ -33278,6 +33350,31 @@ components:
       title: Получение суммы оплат по системам платежей за период
     Admin_2.Methods.Analytics.Payments.Systems.Get.Exec:
       nullable: true
+      anyOf:
+        - type: object
+          properties:
+            categories:
+              type: array
+              items:
+                type: string
+            series:
+              type: array
+              items:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  data:
+                    type: array
+                    items:
+                      type: integer
+                required:
+                  - name
+                  - data
+          required:
+            - categories
+            - series
+        - type: 'null'
       type: array
     Admin_2.Methods.Analytics.Payments.Tariff.Get:
       type: object
