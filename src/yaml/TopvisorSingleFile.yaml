@@ -29412,7 +29412,32 @@ components:
       required: []
       title: Получение меню справки
     Content_2.Methods.Support.Menu.Get.Exec:
-      type: array
+      type: object
+      additionalProperties:
+        type: array
+        items:
+          type: object
+          properties:
+            url:
+              type: string
+            parent_url:
+              type: string
+            state:
+              type: string
+            tags:
+              type: array
+            text:
+              type: string
+            icon:
+              type: string
+            subitems:
+              type: array
+          required:
+            - url
+            - parent_url
+            - state
+            - tags
+            - text
     Informer_2.Types.Push.Token.Type:
       type: string
       enum:

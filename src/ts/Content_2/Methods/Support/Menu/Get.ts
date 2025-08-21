@@ -9,7 +9,17 @@ export interface components {
     schemas: {
         /** Получение меню справки */
         "Content_2.Methods.Support.Menu.Get": Record<string, never>;
-        "Content_2.Methods.Support.Menu.Get.Exec": unknown[];
+        "Content_2.Methods.Support.Menu.Get.Exec": {
+            [key: string]: {
+                url: string;
+                parent_url: string;
+                state: string;
+                tags: unknown[];
+                text: string;
+                icon?: string;
+                subitems?: unknown[];
+            }[];
+        };
     };
     responses: never;
     parameters: never;
