@@ -29411,33 +29411,59 @@ components:
       properties: {}
       required: []
       title: Получение меню справки
+    Content_2.Objects.Menu.MenuItem:
+      type: object
+      properties:
+        url:
+          title: URL пункта меню
+          type: string
+        parent_url:
+          title: URL родительской страницы пункта меню
+          type: string
+        state:
+          title: Состояние
+          anyOf:
+            - type: string
+              enum:
+                - ACTIVE
+            - type: string
+              enum:
+                - DEV
+          type: string
+        tags:
+          title: Теги
+          type: array
+          items:
+            type: string
+        text:
+          title: Название пункта меню
+          type: string
+        icon:
+          title: Иконка
+          nullable: true
+          type: string
+        subitems:
+          title: Подпункты меню
+          nullable: true
+          anyOf:
+            - type: array
+              items:
+                $ref: '#/components/schemas/Content_2.Objects.Menu.MenuItem'
+            - type: 'null'
+          type: array
+      required:
+        - url
+        - parent_url
+        - state
+        - tags
+        - text
+      title: Элемент меню
     Content_2.Methods.Support.Menu.Get.Exec:
       type: object
       additionalProperties:
         type: array
         items:
-          type: object
-          properties:
-            url:
-              type: string
-            parent_url:
-              type: string
-            state:
-              type: string
-            tags:
-              type: array
-            text:
-              type: string
-            icon:
-              type: string
-            subitems:
-              type: array
-          required:
-            - url
-            - parent_url
-            - state
-            - tags
-            - text
+          $ref: '#/components/schemas/Content_2.Objects.Menu.MenuItem'
     Informer_2.Types.Push.Token.Type:
       type: string
       enum:
