@@ -27736,7 +27736,7 @@
     },
     "servers": [
         {
-            "url": "https://api.topvisor.com/v2/json",
+            "url": "https://api.topvisor.com/v2",
             "description": "Интерфейс для работы с API. Запрещено междоменное общение."
         }
     ],

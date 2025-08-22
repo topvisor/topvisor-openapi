@@ -3,7 +3,7 @@ info:
   title: Topvisor
   version: 2.0.0
 servers:
-  - url: https://api.topvisor.com/v2/json
+  - url: https://api.topvisor.com/v2
     description: Интерфейс для работы с API. Запрещено междоменное общение.
 security:
   - authToken: []
