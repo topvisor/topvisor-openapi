@@ -21726,6 +21726,16 @@ components:
       title: Получение настроек уведомлений
     Informer_2.Methods.Config.Get.Exec:
       type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+          value:
+            type: integer
+        required:
+          - name
+          - value
     Informer_2.Methods.Info.Get:
       type: object
       properties: {}

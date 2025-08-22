@@ -14,7 +14,22 @@
                 "title": "Получение настроек уведомлений"
             },
             "Informer_2.Methods.Config.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "value"
+                    ]
+                }
             }
         }
     }

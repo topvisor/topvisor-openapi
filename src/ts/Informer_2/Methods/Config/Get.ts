@@ -9,7 +9,10 @@ export interface components {
     schemas: {
         /** Получение настроек уведомлений */
         "Informer_2.Methods.Config.Get": Record<string, never>;
-        "Informer_2.Methods.Config.Get.Exec": unknown[];
+        "Informer_2.Methods.Config.Get.Exec": {
+            name: string;
+            value: number;
+        }[];
     };
     responses: never;
     parameters: never;
