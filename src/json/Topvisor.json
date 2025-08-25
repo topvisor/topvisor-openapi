@@ -27722,13 +27722,14 @@
         "securitySchemes": {
             "authToken": {
                 "type": "apiKey",
-                "description": "Авторизаци по API ключу в формате: `Bearer userId:AccessToken`",
+                "description": "Авторизация по API ключу в формате: `Bearer userId:AccessToken`",
                 "name": "Authorization",
-                "in": "header"
+                "in": "header",
+                "bearerFormat": "bearer"
             },
             "authLogin": {
                 "type": "apiKey",
-                "description": "Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис",
+                "description": "Авторизация доступна исключительно в браузере и только на официальном сайте с API",
                 "name": "auth",
                 "in": "cookie"
             }
