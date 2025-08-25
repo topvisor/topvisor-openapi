@@ -12,7 +12,7 @@ export interface components {
             type: import('../Types/Type.ts').components['schemas']['Tags_2.Types.Type'];
             project_id?: number | null;
         };
-        "Tags_2.Methods.Get.Exec": (unknown[] | {
+        "Tags_2.Methods.Get.Exec": ({
             id: string;
             name: string;
             color_id: string;

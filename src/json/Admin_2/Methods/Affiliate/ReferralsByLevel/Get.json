@@ -73,8 +73,7 @@
                         "type": "object",
                         "properties": {}
                     }
-                ],
-                "type": "array"
+                ]
             }
         }
     }

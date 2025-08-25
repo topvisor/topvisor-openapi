@@ -14,7 +14,7 @@ export interface components {
             /** URL родительской страницы пункта меню */
             parent_url: string;
             /** Состояние */
-            state: string | "ACTIVE" | "DEV";
+            state: "ACTIVE" | "DEV";
             /** Теги */
             tags: string[];
             /** Название пункта меню */
@@ -22,7 +22,7 @@ export interface components {
             /** Иконка */
             icon?: string | null;
             /** Подпункты меню */
-            subitems?: (unknown[] | components["schemas"]["Content_2.Objects.Menu.MenuItem"][] | null) | null;
+            subitems?: (components["schemas"]["Content_2.Objects.Menu.MenuItem"][] | null) | null;
         };
     };
     responses: never;

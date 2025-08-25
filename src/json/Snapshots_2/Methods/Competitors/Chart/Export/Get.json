@@ -137,9 +137,6 @@
                     "fields": {
                         "$ref": "../../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
-                    "orders": {
-                        "$ref": "../../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
-                    },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },

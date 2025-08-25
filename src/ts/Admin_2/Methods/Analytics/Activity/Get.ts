@@ -23,7 +23,7 @@ export interface components {
             /** Дата за которую нужно получить активность пользователей */
             date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
-        "Admin_2.Methods.Analytics.Activity.Get.Exec": (unknown[] | {
+        "Admin_2.Methods.Analytics.Activity.Get.Exec": ({
             period: string;
             active_clients: number;
             active_clients_new: number;

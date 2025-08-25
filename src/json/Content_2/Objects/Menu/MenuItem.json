@@ -33,8 +33,7 @@
                                     "DEV"
                                 ]
                             }
-                        ],
-                        "type": "string"
+                        ]
                     },
                     "tags": {
                         "title": "Теги",
@@ -65,8 +64,7 @@
                             {
                                 "type": "null"
                             }
-                        ],
-                        "type": "array"
+                        ]
                     }
                 },
                 "required": [
