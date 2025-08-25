@@ -9,8 +9,6 @@
 Для работы с API Топвизор в окружении JavaScript используется библиотеку `@topvisor/ui/api`.
 Подробнее на сайте: https://ui.topvisor.com/?path=/docs/api--docs
 
-![robot.png](assets/robot.png)
-
 ## JSON
 
 Схемы представлены в JSON формате: [./src/json/](./src/json).
