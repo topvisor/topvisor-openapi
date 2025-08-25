@@ -6,7 +6,8 @@
 
 ## API клиент
 
-Для работы с API Топвизор в окружении JavaScript используется библиотеку `@topvisor/ui/api`.
+Для работы с API Топвизор в окружении JavaScript используйте библиотеку `@topvisor/ui/api`: https://www.npmjs.com/package/@topvisor/ui.
+
 Подробнее на сайте: https://ui.topvisor.com/?path=/docs/api--docs
 
 <table>
