@@ -37,8 +37,8 @@ export interface components {
             action: string;
             region_index: number;
             Am: number;
-            is_update: boolean;
-            is_storm: boolean;
+            is_update: number;
+            is_storm: number;
             time: number;
         }[] | null) | null;
     };

@@ -29417,9 +29417,9 @@ components:
               Am:
                 type: number
               is_update:
-                type: boolean
+                type: integer
               is_storm:
-                type: boolean
+                type: integer
               time:
                 type: integer
             required:
