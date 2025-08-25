@@ -29404,6 +29404,7 @@ components:
     Content_2.Methods.Apometr.History.Get.Exec:
       nullable: true
       anyOf:
+        - type: 'null'
         - type: array
           items:
             type: object
@@ -29430,7 +29431,6 @@ components:
               - is_update
               - is_storm
               - time
-        - type: 'null'
       type: array
     Content_2.Methods.Apometr.Keywords.Get:
       type: object

@@ -66,6 +66,9 @@
                 "nullable": true,
                 "anyOf": [
                     {
+                        "type": "null"
+                    },
+                    {
                         "type": "array",
                         "items": {
                             "type": "object",
@@ -102,9 +105,6 @@
                                 "time"
                             ]
                         }
-                    },
-                    {
-                        "type": "null"
                     }
                 ],
                 "type": "array"
