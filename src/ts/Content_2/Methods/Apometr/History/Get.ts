@@ -32,7 +32,15 @@ export interface components {
             /** Вернуть только средние значения по всем тематикам */
             avg?: boolean;
         };
-        "Content_2.Methods.Apometr.History.Get.Exec": unknown[] | null;
+        "Content_2.Methods.Apometr.History.Get.Exec": (unknown[] | {
+            pool_id: number;
+            action: string;
+            region_index: number;
+            Am: number;
+            is_update: boolean;
+            is_storm: boolean;
+            time: number;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;

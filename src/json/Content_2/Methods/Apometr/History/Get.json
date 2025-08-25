@@ -64,6 +64,49 @@
             },
             "Content_2.Methods.Apometr.History.Get.Exec": {
                 "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "pool_id": {
+                                    "type": "integer"
+                                },
+                                "action": {
+                                    "type": "string"
+                                },
+                                "region_index": {
+                                    "type": "integer"
+                                },
+                                "Am": {
+                                    "type": "number"
+                                },
+                                "is_update": {
+                                    "type": "boolean"
+                                },
+                                "is_storm": {
+                                    "type": "boolean"
+                                },
+                                "time": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "pool_id",
+                                "action",
+                                "region_index",
+                                "Am",
+                                "is_update",
+                                "is_storm",
+                                "time"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
                 "type": "array"
             }
         }
