@@ -1,8 +1,13 @@
 # Open API схемы для Topvisor API
 
-Спецификация Open API упрощает взаимодейсвтие между ПО и упрощает работу разработчиков этих ПО.
+Спецификация Open API упрощает взаимодействие между ПО и упрощает работу разработчиков этих ПО.
 
 В проекте представлены схемы с описанием API "всех" (на данный момент не все сервисы описаны в схемах) сервисов Топвизор.
+
+## API клиент
+
+Для работы с API Топвизор в окружении JavaScript используется библиотеку `@topvisor/ui/api`.
+Подробнее на сайте: https://ui.topvisor.com/?path=/docs/api--docs
 
 ## JSON
 
@@ -12,8 +17,8 @@
 Схемы всех моделей данных: [./src/json/Models.json](./src/json/Models.json).
 
 Для быстрого теста можно использовать публичный демо: https://petstore.swagger.io/  
-Введите URL для прсомотра методов: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Topvisor.json  
-Введите URL для прсомотра моделей данных: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Models.json
+Введите URL для просмотра методов: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Topvisor.json  
+Введите URL для просмотра моделей данных: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Models.json
 
 ## YAML
 
@@ -35,7 +40,7 @@
 
 ### Typescript
 
-После установки при написании кода typescript вы сможете использовать автоподсказки, описывающие API методы, их параметры и результаты.
+После установки при написании кода TypeScript вы сможете использовать автоподсказки, описывающие API методы, их параметры и результаты.
 
 ```typescript
 import type { paths } from 'topvisor-openapi/src/ts/Topvisor.ts';
@@ -66,6 +71,6 @@ Online-поддержка пользователей Топвизор: https://t
 
 ### Open API
 
-Ввведение в Open API: https://habr.com/ru/articles/776538/  
+Введение в Open API: https://habr.com/ru/articles/776538/  
 Примеры описания простого проекта на Open API: https://editor.swagger.io/  
 Официальная документация Open API: https://learn.openapis.org/
