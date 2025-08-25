@@ -13414,7 +13414,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Рейтинг по сообщениям в слеке за предыдущий месяц",
+                "summary": "Рейтинг по сообщениям в Slack за предыдущий месяц",
                 "requestBody": {
                     "content": {
                         "application/json": {

@@ -25,7 +25,19 @@ export interface components {
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
         /** Данные проверенных ресурсов */
-        "Audit_2.Methods.Audit.Log.Get.Exec": unknown[];
+        "Audit_2.Methods.Audit.Log.Get.Exec": {
+            http_codes: number[];
+            time_parse: string;
+            loading_time: number;
+            type: string;
+            size?: number;
+            url?: string;
+            redirects?: string | unknown[];
+            locations?: {
+                http_code: number;
+                url: string | null;
+            }[];
+        }[];
     };
     responses: never;
     parameters: never;

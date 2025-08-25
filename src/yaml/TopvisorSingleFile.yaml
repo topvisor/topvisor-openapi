@@ -7317,7 +7317,7 @@ paths:
       operationId: GetAdmin2SlackRate
       tags:
         - Admin_2
-      summary: Рейтинг по сообщениям в слеке за предыдущий месяц
+      summary: Рейтинг по сообщениям в Slack за предыдущий месяц
       requestBody:
         content:
           application/json:
@@ -26615,7 +26615,7 @@ components:
       type: object
       properties: {}
       required: []
-      title: Рейтинг по сообщениям в слеке за предыдущий месяц
+      title: Рейтинг по сообщениям в Slack за предыдущий месяц
     Admin_2.Methods.Slack.Rate.Get.Exec:
       title: Список пользователей
       nullable: true
@@ -27919,6 +27919,46 @@ components:
     Audit_2.Methods.Audit.Log.Get.Exec:
       title: Данные проверенных ресурсов
       type: array
+      items:
+        type: object
+        properties:
+          http_codes:
+            type: array
+            items:
+              type: integer
+          time_parse:
+            type: string
+          loading_time:
+            type: integer
+          type:
+            type: string
+          size:
+            type: integer
+          url:
+            type: string
+          redirects:
+            anyOf:
+              - type: string
+              - type: array
+          locations:
+            type: array
+            items:
+              type: object
+              properties:
+                http_code:
+                  type: integer
+                url:
+                  anyOf:
+                    - type: string
+                    - type: 'null'
+              required:
+                - http_code
+                - url
+        required:
+          - http_codes
+          - time_parse
+          - loading_time
+          - type
     Audit_2.Methods.Audit.Pages.Get:
       type: object
       properties:

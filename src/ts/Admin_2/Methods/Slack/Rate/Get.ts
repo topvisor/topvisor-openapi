@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Рейтинг по сообщениям в слеке за предыдущий месяц */
+        /** Рейтинг по сообщениям в Slack за предыдущий месяц */
         "Admin_2.Methods.Slack.Rate.Get": Record<string, never>;
         /** Список пользователей */
         "Admin_2.Methods.Slack.Rate.Get.Exec": unknown[] | null;

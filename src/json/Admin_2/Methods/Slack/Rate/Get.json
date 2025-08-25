@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Рейтинг по сообщениям в слеке за предыдущий месяц"
+                "title": "Рейтинг по сообщениям в Slack за предыдущий месяц"
             },
             "Admin_2.Methods.Slack.Rate.Get.Exec": {
                 "title": "Список пользователей",

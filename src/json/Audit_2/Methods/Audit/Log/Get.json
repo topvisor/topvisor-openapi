@@ -66,7 +66,74 @@
             },
             "Audit_2.Methods.Audit.Log.Get.Exec": {
                 "title": "Данные проверенных ресурсов",
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "http_codes": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        },
+                        "time_parse": {
+                            "type": "string"
+                        },
+                        "loading_time": {
+                            "type": "integer"
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "redirects": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "array"
+                                }
+                            ]
+                        },
+                        "locations": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "http_code": {
+                                        "type": "integer"
+                                    },
+                                    "url": {
+                                        "anyOf": [
+                                            {
+                                                "type": "string"
+                                            },
+                                            {
+                                                "type": "null"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "http_code",
+                                    "url"
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+                        "http_codes",
+                        "time_parse",
+                        "loading_time",
+                        "type"
+                    ]
+                }
             }
         }
     }
