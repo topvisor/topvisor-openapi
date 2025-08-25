@@ -29430,7 +29430,7 @@ components:
               - is_update
               - is_storm
               - time
-        - type: string
+        - type: 'null'
       type: array
     Content_2.Methods.Apometr.Keywords.Get:
       type: object

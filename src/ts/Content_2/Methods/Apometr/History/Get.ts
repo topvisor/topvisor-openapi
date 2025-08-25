@@ -40,7 +40,7 @@ export interface components {
             is_update: number;
             is_storm: number;
             time: number;
-        }[] | string) | null;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;
