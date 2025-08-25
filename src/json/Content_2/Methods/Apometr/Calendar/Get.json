@@ -63,6 +63,37 @@
             },
             "Content_2.Methods.Apometr.Calendar.Get.Exec": {
                 "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "date": {
+                                    "type": "string"
+                                },
+                                "Am": {
+                                    "type": "number"
+                                },
+                                "is_update": {
+                                    "type": "boolean"
+                                },
+                                "level_update_text": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "date",
+                                "Am",
+                                "is_update",
+                                "level_update_text"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
                 "type": "array"
             }
         }
