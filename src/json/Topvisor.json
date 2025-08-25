@@ -13075,6 +13075,7 @@
                 "tags": [
                     "Admin_2"
                 ],
+                "summary": "Получение отчета платежей по сервисам",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -13121,8 +13122,7 @@
                             }
                         }
                     }
-                },
-                "summary": "Получение отчета платежей по сервисам"
+                }
             }
         },
         "/get/admin_2/analytics/statistics/": {

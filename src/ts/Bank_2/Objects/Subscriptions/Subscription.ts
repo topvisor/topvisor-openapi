@@ -55,7 +55,18 @@ export interface components {
                 api?: number;
             };
             /** Типы лимитов */
-            limitTypeByName: unknown[];
+            limitTypeByName: {
+                positions_check?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                positions_check_manual?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                keywords_volumes?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                keywords_collect?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                positions_tasks?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                projects?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                projects_rights?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                projects_competitors?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                projects_archive?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+                api?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
+            };
         };
     };
     responses: never;

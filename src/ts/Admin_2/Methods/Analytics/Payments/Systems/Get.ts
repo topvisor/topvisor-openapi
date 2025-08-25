@@ -14,7 +14,7 @@ export interface components {
             /** Длина периода */
             limit: number;
         };
-        "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": (unknown[] | {
+        "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": ({
             categories: string[];
             series: {
                 name: string;

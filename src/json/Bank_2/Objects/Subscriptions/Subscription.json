@@ -117,7 +117,39 @@
                     },
                     "limitTypeByName": {
                         "title": "Типы лимитов",
-                        "type": "array"
+                        "type": "object",
+                        "properties": {
+                            "positions_check": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "positions_check_manual": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "keywords_volumes": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "keywords_collect": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "positions_tasks": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "projects": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "projects_rights": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "projects_competitors": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "projects_archive": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "api": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            }
+                        }
                     }
                 },
                 "required": [

@@ -7140,6 +7140,7 @@ paths:
       operationId: GetAdmin2AnalyticsServices
       tags:
         - Admin_2
+      summary: Получение отчета платежей по сервисам
       requestBody:
         content:
           application/json:
@@ -7163,7 +7164,6 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-      summary: Получение отчета платежей по сервисам
   /get/admin_2/analytics/statistics/:
     post:
       operationId: GetAdmin2AnalyticsStatistics
@@ -16357,7 +16357,6 @@ components:
               - name
               - color_id
         - type: 'null'
-      type: array
     Templates_2.Types.TargetType:
       type: string
       enum:
@@ -17635,7 +17634,6 @@ components:
               - name
         - type: object
           properties: {}
-      type: array
     Admin_2.Methods.Users.Edit:
       type: object
       properties:
@@ -19040,6 +19038,31 @@ components:
         - используется при выводе состояния подписки
 
         Определяет логику работы с рекуррентными платежами
+    Bank_2.Types.Subscriptions.Limit.Type:
+      type: string
+      enum:
+        - object
+        - object_by_project
+        - action_monthly
+        - action_daily
+        - access
+      x-enum-varnames:
+        - Object
+        - ObjectByProject
+        - ActionMonthly
+        - ActionDaily
+        - Access
+      x-enum-descriptions:
+        - 'Ограничение на добавление объектов на уровне аккаунта; Пример: Добавление проекта'
+        - 'Ограничение на добавление объектов на уровне проекта; Пример: Добавление конкурента в проект'
+        - 'Месячное ограничение на запуск услуг; Пример: Сбор частоты'
+        - 'Суточное ограничение на запуск услуг; Пример: Проверка позиций'
+        - 'Доступы к функционалу; Пример: API'
+      title: |-
+        Тип лимита
+
+        Характеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться
+      description: '@see \Services\Bank_2\Objects\Subscriptions\Limit'
     Bank_2.Objects.Subscriptions.Subscription:
       type: object
       properties:
@@ -19121,7 +19144,28 @@ components:
               type: integer
         limitTypeByName:
           title: Типы лимитов
-          type: array
+          type: object
+          properties:
+            positions_check:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            positions_check_manual:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            keywords_volumes:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            keywords_collect:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            positions_tasks:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            projects:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            projects_rights:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            projects_competitors:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            projects_archive:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
+            api:
+              $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type'
       required:
         - paymentId
         - paymentSystem
@@ -23736,8 +23780,6 @@ components:
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -24120,7 +24162,6 @@ components:
             - dates
             - depthPositions
             - countKeywords
-      type: array
     TV.API.Oper:
       type: string
       enum:
@@ -25969,7 +26010,6 @@ components:
             - totalEarned
             - totalOut
         - type: 'null'
-      type: array
     TV.API.Types.Currency:
       type: string
       enum:
@@ -26029,7 +26069,6 @@ components:
             - series
         - type: object
           properties: {}
-      type: array
     Admin_2.Methods.Affiliate.Referrals.Get:
       type: object
       properties:
@@ -26277,7 +26316,6 @@ components:
               - active_clients_leave
               - registrations
         - type: 'null'
-      type: array
     Admin_2.Methods.Analytics.CountOnlineUsers.Get:
       type: object
       properties: {}
@@ -26402,7 +26440,6 @@ components:
                 - sum
                 - sum_ur
         - type: 'null'
-      type: array
     Admin_2.Methods.Analytics.Get:
       type: object
       properties:
@@ -26476,7 +26513,6 @@ components:
             - count_new_dynamics_off
             - count_new_dynamics_off_active
         - type: 'null'
-      type: array
     Admin_2.Methods.Analytics.Tickets.Get:
       type: object
       properties:
@@ -26564,7 +26600,6 @@ components:
                   - type: integer
                   - type: 'null'
         - type: 'null'
-      type: array
     Admin_2.Methods.Ranks.Activations.Get:
       type: object
       properties:
@@ -29300,7 +29335,6 @@ components:
               - is_update
               - level_update_text
         - type: 'null'
-      type: array
     Content_2.Methods.Apometr.CHHistory.Get:
       type: object
       properties:
@@ -29431,7 +29465,6 @@ components:
               - is_storm
               - time
         - type: 'null'
-      type: array
     Content_2.Methods.Apometr.Keywords.Get:
       type: object
       properties:
@@ -29694,7 +29727,6 @@ components:
             - type: string
               enum:
                 - DEV
-          type: string
         tags:
           title: Теги
           type: array
@@ -29715,7 +29747,6 @@ components:
               items:
                 $ref: '#/components/schemas/Content_2.Objects.Menu.MenuItem'
             - type: 'null'
-          type: array
       required:
         - url
         - parent_url
@@ -31465,8 +31496,6 @@ components:
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -31635,8 +31664,6 @@ components:
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -33473,7 +33500,6 @@ components:
             - categories
             - series
         - type: 'null'
-      type: array
     Admin_2.Methods.Analytics.Payments.Tariff.Get:
       type: object
       properties:
@@ -35543,8 +35569,6 @@ components:
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:

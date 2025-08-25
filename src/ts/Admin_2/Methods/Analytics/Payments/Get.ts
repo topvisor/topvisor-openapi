@@ -13,7 +13,7 @@ export interface components {
             /** Длина периода */
             limit: number;
         };
-        "Admin_2.Methods.Analytics.Payments.Get.Exec": (unknown[] | {
+        "Admin_2.Methods.Analytics.Payments.Get.Exec": ({
             [key: string]: {
                 currency: string;
                 date: string;

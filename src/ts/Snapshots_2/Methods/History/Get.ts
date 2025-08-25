@@ -66,7 +66,7 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Snapshots_2.Methods.History.Get.Exec": (unknown[] | null | {
+        "Snapshots_2.Methods.History.Get.Exec": (null | {
             competitors: {
                 domain: string;
                 protocol: string;

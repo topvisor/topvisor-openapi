@@ -12,7 +12,7 @@ export interface components {
             /** Путь к шаблону */
             tpl: string;
         };
-        "Admin_2.Methods.Tpl.Get.Exec": unknown[] | {
+        "Admin_2.Methods.Tpl.Get.Exec": {
             tpl: string;
             name: string;
         }[] | Record<string, never>;
