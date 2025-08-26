@@ -13,13 +13,13 @@
                     "Texts_by_limit_name": {
                         "const": {
                             "positions_tasks": {
-                                "name": "Keywords for Rank Checks",
+                                "name": "Rank Checks",
                                 "extendedName": "daily rank checks",
-                                "description": "Total number of tasks, that are performed every day.\nA check (task) is a rank checking for 1 keywords in 1 search engine, 1 location and 1 device type.\nFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.",
+                                "description": "Total number of tasks, that are performed every day.\nA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.\nFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.",
                                 "exceeding": "Overall limit of rank checking tasks reached"
                             },
                             "positions_check": {
-                                "name": "Rank checks",
+                                "name": "Rank Checks",
                                 "extendedName": "rank checks",
                                 "description": "",
                                 "exceeding": "Daily limit of rank checks reached"
@@ -31,33 +31,33 @@
                                 "exceeding": "Daily limit of position rechecks reached"
                             },
                             "keywords_volumes": {
-                                "name": "Search volume",
+                                "name": "Search Volume",
                                 "extendedName": "search volume",
-                                "description": "",
+                                "description": "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.",
                                 "exceeding": "Monthly limit of search volume checks reached"
                             },
                             "keywords_collect": {
-                                "name": "Keyword research",
+                                "name": "Semantic Core Research",
                                 "extendedName": "keyword research by your site",
-                                "description": "",
+                                "description": "Total number of semantic core extension tasks you can launch within a month.\n\t\t\tSemantic core extension tools include <a href=\"https://thundo.com/keyword-research/\" target=\"_blank\">Keyword Research Tool</a> and <a href=\"https://thundo.com/search-suggestions/\" target=\"_blank\">Search Suggestions Tool</a>.\n\t\t\tA task is a semantics extension for 1 keyword in 1 search engine and 1 location.\n\t\t\tFor example, 100 tasks is using Keyword Research and Search Suggestions tools for 50 keywords в Google New York each. Or using Search Suggestions Tool for 20 keywords in Google London 5 times a month.",
                                 "exceeding": "Monthly limit of keyword collection reached"
                             },
                             "projects": {
                                 "name": "Projects",
                                 "extendedName": "projects",
-                                "description": "",
+                                "description": "The number of active projects you can have on your account. A project is a container with URL which is required to launch checks and store keywords.",
                                 "exceeding": "Project count limit reached"
                             },
                             "projects_rights": {
                                 "name": "Guest Users",
                                 "extendedName": "guest users",
-                                "description": "",
+                                "description": "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.",
                                 "exceeding": "Guest accounts limit reached"
                             },
                             "projects_competitors": {
                                 "name": "Competitors",
                                 "extendedName": "competitors per project",
-                                "description": "",
+                                "description": "The number of URLs you can add in one project to compare data.",
                                 "exceeding": "Competitors limit in one project reached"
                             },
                             "projects_archive": {
@@ -69,7 +69,7 @@
                             "api": {
                                 "name": "API",
                                 "extendedName": "API",
-                                "description": "",
+                                "description": "API allows to contol you data via programming interface within your CRM, generate custom reports or pull data directly where you need to.",
                                 "exceeding": "API access disabled"
                             }
                         },
@@ -255,7 +255,6 @@
                     }
                 },
                 "required": [
-                    "Texts_by_limit_name",
                     "Type_limit_by_name",
                     "Error_avilable_downgrade",
                     "Error_set_status_stopped",
