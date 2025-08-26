@@ -39,7 +39,30 @@
             },
             "Users_2.Methods.Tpa.Google.Auth.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "auth": {
+                                "type": "string"
+                            },
+                            "redirect": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "auth",
+                            "redirect"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

@@ -36013,7 +36013,20 @@ components:
         @see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
     Users_2.Methods.Tpa.Google.Auth.Get.Exec:
       nullable: true
-      type: array
+      anyOf:
+        - type: object
+          properties:
+            id:
+              type: integer
+            auth:
+              type: string
+            redirect:
+              type: string
+          required:
+            - id
+            - auth
+            - redirect
+        - type: 'null'
     Users_2.Methods.Tpa.Vk.Auth.Get:
       type: object
       properties:

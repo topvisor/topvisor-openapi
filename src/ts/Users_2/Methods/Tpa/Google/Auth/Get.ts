@@ -18,7 +18,11 @@ export interface components {
             action: import('../../../../Types/Tpa/Action.ts').components['schemas']['Users_2.Types.Tpa.Action'];
             lang?: import('../../../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
         };
-        "Users_2.Methods.Tpa.Google.Auth.Get.Exec": unknown[] | null;
+        "Users_2.Methods.Tpa.Google.Auth.Get.Exec": ({
+            id: number;
+            auth: string;
+            redirect: string;
+        } | null) | null;
     };
     responses: never;
     parameters: never;
