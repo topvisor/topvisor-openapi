@@ -61,7 +61,7 @@ export interface components {
                 projects_archive: {
                     name: "Archived projects";
                     extendedName: "archived projects";
-                    description: "";
+                    description: "The number of archived (inactive) projects you can have in your account. You can restore an archived project at any time if your pricing plan allows to increase the number of active projects.";
                     exceeding: "Archived projects access disabled";
                 };
                 api: {
