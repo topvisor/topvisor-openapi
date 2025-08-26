@@ -14,7 +14,7 @@
                         "const": {
                             "positions_tasks": {
                                 "name": "Rank Checks",
-                                "extendedName": "daily rank checks",
+                                "extendedName": "rank check tasks daily",
                                 "description": "Total number of tasks, that are performed every day.\n\t\t\tA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>",
                                 "exceeding": "Overall limit of rank checking tasks reached"
                             },
