@@ -13,7 +13,7 @@ export interface components {
                 positions_tasks: {
                     name: "Rank Checks";
                     extendedName: "daily rank checks";
-                    description: "Total number of tasks, that are performed every day.\nA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.\nFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.";
+                    description: "Total number of tasks, that are performed every day.\nA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\nFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.";
                     exceeding: "Overall limit of rank checking tasks reached";
                 };
                 positions_check: {
@@ -23,21 +23,21 @@ export interface components {
                     exceeding: "Daily limit of rank checks reached";
                 };
                 positions_check_manual: {
-                    name: "Manual rechecks";
+                    name: "Manual Rechecks";
                     extendedName: "daily manual rechecks";
-                    description: "";
+                    description: "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse reckecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.";
                     exceeding: "Daily limit of position rechecks reached";
                 };
                 keywords_volumes: {
                     name: "Search Volume";
                     extendedName: "search volume";
-                    description: "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.";
+                    description: "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.";
                     exceeding: "Monthly limit of search volume checks reached";
                 };
                 keywords_collect: {
                     name: "Semantic Core Research";
                     extendedName: "keyword research by your site";
-                    description: "Total number of semantic core extension tasks you can launch within a month.\n\t\t\tSemantic core extension tools include <a href=\"https://thundo.com/keyword-research/\" target=\"_blank\">Keyword Research Tool</a> and <a href=\"https://thundo.com/search-suggestions/\" target=\"_blank\">Search Suggestions Tool</a>.\n\t\t\tA task is a semantics extension for 1 keyword in 1 search engine and 1 location.\n\t\t\tFor example, 100 tasks is using Keyword Research and Search Suggestions tools for 50 keywords в Google New York each. Or using Search Suggestions Tool for 20 keywords in Google London 5 times a month.";
+                    description: "Total number of semantic core extension tasks you can launch within a month.\n\t\t\tSemantic core extension tools include <a href=\"https://thundo.com/keyword-research/\" target=\"_blank\">Keyword Research Tool</a> and <a href=\"https://thundo.com/search-suggestions/\" target=\"_blank\">Search Suggestions Tool</a>.\n\t\t\tA task is a semantics extension for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 100 tasks is using Keyword Research and Search Suggestions tools for 50 keywords в Google New York each. Or using Search Suggestions Tool for 20 keywords in Google London 5 times a month.";
                     exceeding: "Monthly limit of keyword collection reached";
                 };
                 projects: {
@@ -49,7 +49,7 @@ export interface components {
                 projects_rights: {
                     name: "Guest Users";
                     extendedName: "guest users";
-                    description: "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.";
+                    description: "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.<br><br>\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.";
                     exceeding: "Guest accounts limit reached";
                 };
                 projects_competitors: {
