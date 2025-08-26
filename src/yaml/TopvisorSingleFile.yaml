@@ -25238,6 +25238,10 @@ components:
           title: Пароль авторизации
           nullable: true
           type: string
+        lang:
+          title: Язык пользователя
+          nullable: true
+          type: string
       required: []
       title: Информация о сессии авторизации пользователя
     Users_2.Methods.Auth.Get.Exec:
