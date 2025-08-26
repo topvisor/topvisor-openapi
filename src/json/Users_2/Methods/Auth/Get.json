@@ -19,11 +19,6 @@
                         "title": "Пароль авторизации",
                         "nullable": true,
                         "type": "string"
-                    },
-                    "lang": {
-                        "title": "Язык пользователя",
-                        "nullable": true,
-                        "type": "string"
                     }
                 },
                 "required": [],

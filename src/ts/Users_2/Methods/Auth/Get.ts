@@ -15,8 +15,6 @@ export interface components {
             authorisation_login?: string | null;
             /** Пароль авторизации */
             authorisation_pass?: string | null;
-            /** Язык пользователя */
-            lang?: string | null;
         };
         "Users_2.Methods.Auth.Get.Exec": {
             id: number;
