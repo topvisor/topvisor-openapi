@@ -15,7 +15,7 @@
                             "positions_tasks": {
                                 "name": "Rank Checks",
                                 "extendedName": "daily rank checks",
-                                "description": "Total number of tasks, that are performed every day.\nA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\nFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.",
+                                "description": "Total number of tasks, that are performed every day.\n\t\t\tA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>",
                                 "exceeding": "Overall limit of rank checking tasks reached"
                             },
                             "positions_check": {
@@ -27,13 +27,13 @@
                             "positions_check_manual": {
                                 "name": "Manual Rechecks",
                                 "extendedName": "daily manual rechecks",
-                                "description": "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse reckecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.",
+                                "description": "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse reckecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>",
                                 "exceeding": "Daily limit of position rechecks reached"
                             },
                             "keywords_volumes": {
                                 "name": "Search Volume",
                                 "extendedName": "search volume",
-                                "description": "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.",
+                                "description": "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.<br><br>\n\t\t\t<a href=\"https://thundo.com/support/volume/\" target=\"_blank\">More on Search Volume Checker →</a>",
                                 "exceeding": "Monthly limit of search volume checks reached"
                             },
                             "keywords_collect": {
