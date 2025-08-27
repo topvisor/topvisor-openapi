@@ -11800,7 +11800,10 @@ paths:
       operationId: EditUsers2ProfileEmail
       tags:
         - Users_2
-      summary: Отправка сообщения на смену Email
+      summary: |-
+        Запрос на смену email
+
+        Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
       requestBody:
         content:
           application/json:
@@ -32582,7 +32585,10 @@ components:
       required:
         - email
         - pass
-      title: Отправка сообщения на смену Email
+      title: |-
+        Запрос на смену email
+
+        Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
     Users_2.Methods.Profile.Email.Edit.Exec:
       type: integer
     Users_2.Methods.Profile.Lang.Edit:
@@ -32622,7 +32628,7 @@ components:
       type: object
       properties:
         email:
-          title: Email пользователя, пароль которого нужно сброс
+          title: Email пользователя
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
       required:

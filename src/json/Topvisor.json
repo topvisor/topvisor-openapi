@@ -21696,7 +21696,7 @@
                 "tags": [
                     "Users_2"
                 ],
-                "summary": "Отправка сообщения на смену Email",
+                "summary": "Запрос на смену email\n\nБудет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email",
                 "requestBody": {
                     "content": {
                         "application/json": {

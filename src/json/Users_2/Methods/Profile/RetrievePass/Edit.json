@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "email": {
-                        "title": "Email пользователя, пароль которого нужно сброс",
+                        "title": "Email пользователя",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"

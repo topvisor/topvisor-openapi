@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail()) */
         "Users_2.Methods.Profile.RetrievePass.Edit": {
-            /** Email пользователя, пароль которого нужно сброс */
+            /** Email пользователя */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
         };
         "Users_2.Methods.Profile.RetrievePass.Edit.Exec": number;
