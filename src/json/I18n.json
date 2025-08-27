@@ -121,6 +121,9 @@
             "Landings.Championship": {
                 "$ref": "I18n/Landings/Championship.json#/components/schemas/I18n.Landings.Championship"
             },
+            "Landings.Consent": {
+                "$ref": "I18n/Landings/Consent.json#/components/schemas/I18n.Landings.Consent"
+            },
             "Landings.Jobs": {
                 "$ref": "I18n/Landings/Jobs.json#/components/schemas/I18n.Landings.Jobs"
             },

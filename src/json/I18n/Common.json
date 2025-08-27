@@ -1947,10 +1947,6 @@
                     "Knowledge_base": {
                         "const": "Resources",
                         "readOnly": true
-                    },
-                    "AllowCookies": {
-                        "const": "Allow all",
-                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2433,8 +2429,7 @@
                     "Report_an_error",
                     "Report_an_error_ticket_message",
                     "Report_an_error_response",
-                    "Knowledge_base",
-                    "AllowCookies"
+                    "Knowledge_base"
                 ]
             }
         }
