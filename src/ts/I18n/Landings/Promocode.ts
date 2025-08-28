@@ -20,6 +20,10 @@ export interface components {
             readonly Enter_promocode: "Enter promocode";
             /** @constant */
             readonly Promocode: "Promocode";
+            /** @constant */
+            readonly Info_title: "Hey — you've got a luck potion";
+            /** @constant */
+            readonly Info_description?: "If you sign up at this page, your starting bonus in Topvisor will be 100 rubles.";
         };
     };
     responses: never;

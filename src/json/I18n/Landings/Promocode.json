@@ -33,13 +33,22 @@
                     "Promocode": {
                         "const": "Promocode",
                         "readOnly": true
+                    },
+                    "Info_title": {
+                        "const": "Hey — you've got a luck potion",
+                        "readOnly": true
+                    },
+                    "Info_description": {
+                        "const": "If you sign up at this page, your starting bonus in Topvisor will be 100 rubles.",
+                        "readOnly": true
                     }
                 },
                 "required": [
                     "Description",
                     "OpenGraph_title",
                     "Enter_promocode",
-                    "Promocode"
+                    "Promocode",
+                    "Info_title"
                 ]
             }
         }
