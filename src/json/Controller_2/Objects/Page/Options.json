@@ -36,7 +36,8 @@
                     "noindex",
                     "canonical",
                     "alternates"
-                ]
+                ],
+                "title": "Основные опции страницы для <head>, такие, как title и description"
             }
         }
     }

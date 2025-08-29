@@ -7,15 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Основные опции страницы для <head>, такие, как title и description */
-        "Controller_2.Objects.Page.Options": {
-            title: string;
-            description: string;
-            keywords: string;
-            noindex: boolean;
-            canonical: string;
-            alternates: unknown[];
-        };
+        /**
+         * Источник данных для интеграции
+         * @enum {string}
+         */
+        "Tpa_2.Types.Provider": "metrika" | "webmaster" | "direct" | "yandexMarket" | "analytics" | "ganalytics" | "gdrive" | "adwords" | "gsc";
     };
     responses: never;
     parameters: never;

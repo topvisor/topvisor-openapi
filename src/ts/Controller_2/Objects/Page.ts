@@ -7,23 +7,64 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Общий объект страницы
+         *
+         *     Объект знает все о странице кроме одного - имени сайта, он не знает ничего о сайте, сайт определяется в Core и доступен только через Core
+         *
+         *     Шаблоны рендерятся на 3 уровнях:
+         *     - при получении страницы через get/content_2/pages, см. load() и $pages->article->html
+         *     - при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()
+         *     - при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.
+         *     renderSiteTpl() */
         "Controller_2.Objects.Page": {
+            /** Аналог js location
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
+            /** GET параметры страницы
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             _GET: unknown[];
+            /** Объект openGraph
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
+            /** Основные опции страницы для <head>, такие, как title и description
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
+            /** Основные данные статьи, такие как h1, html, автор и дата публикации
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
+            /** Объект второго меню (устанавливается только в tpl)
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
+            /** Объект левого меню
+             *
+             *     Сложный параметр, должен устанавливаться в конструкторе */
             leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
+            /** Хлебная крошка url в массиве, не включает домен и язык, всегда имеет не менее 5 элементов */
             params: unknown[];
+            /** Сайт */
             site: import('../../TV/Core/Sites/Site.ts').components['schemas']['TV.Core.Sites.Site'];
+            /** Поддомен */
             subdomain: string;
+            /** Код языка страницы, равен языку пользователя или языку страницы для модуля контента */
             langContext: string;
+            /** Url префикс для языковой версии страницы, только для страниц модуля контента */
             langUrl: string;
+            /** Ссылка на главную страницу модуля, для страниц модуля контента с языкового префикса */
             modUrl: string;
+            /** Имя модуля */
             mod: string;
+            /** Имя подмодуля */
             subMod: string;
-            /** @default regular */
+            /**
+             * Тема оформления, см. Site::THEMES
+             * @default regular
+             */
             theme: string;
             /**
              * Стиль шапки
@@ -37,22 +78,42 @@ export interface components {
             topPanelSeparation: string;
             jsonLDs: unknown[];
             htmlAttributes: unknown[];
+            /** Основное лого */
             logo: string;
+            /** Url перенаправления на другую страницу */
             redirect: string;
-            /** @default 302 */
+            /**
+             * Именно этот код должен быть при ошибках, так как редирект должен быть временным
+             * @default 302
+             */
             redirectCode: number;
             tplEngine: import('./TplEngine.ts').components['schemas']['Controller_2.Objects.TplEngine'];
+            /** Путь к html шаблону страницы, для шаблонов без php, поддерживает вставку <page-tpl-rendered> */
             tplStaticPath: string;
+            /** Html шаблон страницы */
             tplStatic: string;
+            /** Html шаблон страницы с внедренным tplRendered */
             tplStaticRendered: string;
-            /** @default mods/content.php */
+            /**
+             * Путь к php шаблону страницы
+             * @default mods/content.php
+             */
             tplPath: string;
+            /** Исполненный php шаблон страницы */
             tplRendered: string;
+            /** Исполненный php шаблон страницы в шаблоне сайта */
             tplSiteRendered: string;
+            /** Дополнительные данные страницы, зависят от $mod, передаются в шаблон сайта или в ответе API через jsonSerialize
+             *
+             *     Данные, которые не нужно передавать в json необходимо объявлять приватными по соглашению js: $data['#variableName'] = $variableData; */
             data: unknown[];
+            /** Имеющиеся доступы, ключ => значение, определяются контроллером */
             rightsLabels: unknown[];
+            /** Является ли страница полноразмерной */
             isFullSize: boolean;
+            /** Отрендерить ли подвал */
             showFooter: boolean;
+            /** Адаптивна ли страница */
             isAdaptive: boolean;
             additionalHeadCode: string;
             v: string;

@@ -11,6 +11,7 @@
                 "type": "object",
                 "properties": {
                     "location": {
+                        "title": "Аналог js location\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Controller_2/Objects/Location.json#/components/schemas/Controller_2.Objects.Location"
@@ -18,9 +19,11 @@
                         ]
                     },
                     "_GET": {
+                        "title": "GET параметры страницы\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "type": "array"
                     },
                     "openGraph": {
+                        "title": "Объект openGraph\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Controller_2/Objects/OpenGraph.json#/components/schemas/Controller_2.Objects.OpenGraph"
@@ -28,6 +31,7 @@
                         ]
                     },
                     "options": {
+                        "title": "Основные опции страницы для <head>, такие, как title и description\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Controller_2/Objects/Page/Options.json#/components/schemas/Controller_2.Objects.Page.Options"
@@ -35,6 +39,7 @@
                         ]
                     },
                     "article": {
+                        "title": "Основные данные статьи, такие как h1, html, автор и дата публикации\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Controller_2/Objects/Page/Article.json#/components/schemas/Controller_2.Objects.Page.Article"
@@ -42,6 +47,7 @@
                         ]
                     },
                     "secondMenu": {
+                        "title": "Объект второго меню (устанавливается только в tpl)\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Tpl/Core/SecondMenu.json#/components/schemas/Tpl.Core.SecondMenu"
@@ -49,6 +55,7 @@
                         ]
                     },
                     "leftMenu": {
+                        "title": "Объект левого меню\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Tpl/Core/LeftMenu.json#/components/schemas/Tpl.Core.LeftMenu"
@@ -56,9 +63,11 @@
                         ]
                     },
                     "params": {
+                        "title": "Хлебная крошка url в массиве, не включает домен и язык, всегда имеет не менее 5 элементов",
                         "type": "array"
                     },
                     "site": {
+                        "title": "Сайт",
                         "allOf": [
                             {
                                 "$ref": "../../TV/Core/Sites/Site.json#/components/schemas/TV.Core.Sites.Site"
@@ -66,24 +75,31 @@
                         ]
                     },
                     "subdomain": {
+                        "title": "Поддомен",
                         "type": "string"
                     },
                     "langContext": {
+                        "title": "Код языка страницы, равен языку пользователя или языку страницы для модуля контента",
                         "type": "string"
                     },
                     "langUrl": {
+                        "title": "Url префикс для языковой версии страницы, только для страниц модуля контента",
                         "type": "string"
                     },
                     "modUrl": {
+                        "title": "Ссылка на главную страницу модуля, для страниц модуля контента с языкового префикса",
                         "type": "string"
                     },
                     "mod": {
+                        "title": "Имя модуля",
                         "type": "string"
                     },
                     "subMod": {
+                        "title": "Имя подмодуля",
                         "type": "string"
                     },
                     "theme": {
+                        "title": "Тема оформления, см. Site::THEMES",
                         "default": "regular",
                         "type": "string"
                     },
@@ -104,12 +120,15 @@
                         "type": "array"
                     },
                     "logo": {
+                        "title": "Основное лого",
                         "type": "string"
                     },
                     "redirect": {
+                        "title": "Url перенаправления на другую страницу",
                         "type": "string"
                     },
                     "redirectCode": {
+                        "title": "Именно этот код должен быть при ошибках, так как редирект должен быть временным",
                         "default": 302,
                         "type": "integer"
                     },
@@ -121,37 +140,48 @@
                         ]
                     },
                     "tplStaticPath": {
+                        "title": "Путь к html шаблону страницы, для шаблонов без php, поддерживает вставку <page-tpl-rendered>",
                         "type": "string"
                     },
                     "tplStatic": {
+                        "title": "Html шаблон страницы",
                         "type": "string"
                     },
                     "tplStaticRendered": {
+                        "title": "Html шаблон страницы с внедренным tplRendered",
                         "type": "string"
                     },
                     "tplPath": {
+                        "title": "Путь к php шаблону страницы",
                         "default": "mods/content.php",
                         "type": "string"
                     },
                     "tplRendered": {
+                        "title": "Исполненный php шаблон страницы",
                         "type": "string"
                     },
                     "tplSiteRendered": {
+                        "title": "Исполненный php шаблон страницы в шаблоне сайта",
                         "type": "string"
                     },
                     "data": {
+                        "title": "Дополнительные данные страницы, зависят от $mod, передаются в шаблон сайта или в ответе API через jsonSerialize\n\nДанные, которые не нужно передавать в json необходимо объявлять приватными по соглашению js: $data['#variableName'] = $variableData;",
                         "type": "array"
                     },
                     "rightsLabels": {
+                        "title": "Имеющиеся доступы, ключ => значение, определяются контроллером",
                         "type": "array"
                     },
                     "isFullSize": {
+                        "title": "Является ли страница полноразмерной",
                         "type": "boolean"
                     },
                     "showFooter": {
+                        "title": "Отрендерить ли подвал",
                         "type": "boolean"
                     },
                     "isAdaptive": {
+                        "title": "Адаптивна ли страница",
                         "type": "boolean"
                     },
                     "additionalHeadCode": {
@@ -203,7 +233,8 @@
                     "additionalHeadCode",
                     "v",
                     "vJS"
-                ]
+                ],
+                "title": "Общий объект страницы\n\nОбъект знает все о странице кроме одного - имени сайта, он не знает ничего о сайте, сайт определяется в Core и доступен только через Core\n\nШаблоны рендерятся на 3 уровнях:\n- при получении страницы через get/content_2/pages, см. load() и $pages->article->html\n- при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()\n- при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.\nrenderSiteTpl()"
             }
         }
     }

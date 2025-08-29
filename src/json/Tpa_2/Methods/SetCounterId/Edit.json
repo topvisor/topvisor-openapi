@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Methods.SetCounterId.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Methods.SetCounterId.Edit": {
+                "type": "object",
+                "properties": {
+                    "provider": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpa_2/Types/Provider.json#/components/schemas/Tpa_2.Types.Provider"
+                            }
+                        ]
+                    },
+                    "cid": {
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "provider",
+                    "cid",
+                    "project_id"
+                ],
+                "title": "Произвести выбор счетчика"
+            },
+            "Tpa_2.Methods.SetCounterId.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

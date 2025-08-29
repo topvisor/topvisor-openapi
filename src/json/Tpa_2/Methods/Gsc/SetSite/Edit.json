@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Methods.Gsc.SetSite.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Methods.Gsc.SetSite.Edit": {
+                "type": "object",
+                "properties": {
+                    "site": {
+                        "title": "Сайт",
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "site",
+                    "project_id"
+                ],
+                "title": "Выбрать сайт для проекта"
+            },
+            "Tpa_2.Methods.Gsc.SetSite.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

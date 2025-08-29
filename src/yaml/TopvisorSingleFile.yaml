@@ -433,6 +433,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/controller_2/:
+    post:
+      operationId: GetController2
+      tags:
+        - Controller_2
+      summary: Получить объект страницы с отрендериным контентом
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Controller_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Controller_2.Methods.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/mentions_2/:
     post:
       operationId: GetMentions2
@@ -928,6 +956,34 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /del/tpa_2/:
+    post:
+      operationId: DelTpa2
+      tags:
+        - Tpa_2
+      summary: Удаление интеграции
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpa_2.Methods.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpa_2.Methods.Del.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1701,7 +1757,7 @@ paths:
       operationId: GetApp2Privacy
       tags:
         - App_2
-      summary: Получение текста политики конфиденциальности
+      summary: Получение объекта страницы политики конфиденциальности
       requestBody:
         content:
           application/json:
@@ -5927,6 +5983,118 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Tickets'
+  /del/tpa_2/any/:
+    post:
+      operationId: DelTpa2Any
+      tags:
+        - Tpa_2
+      summary: Удаление интеграции для нескольких проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpa_2.Methods.Any.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpa_2.Methods.Any.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/tpa_2/data/:
+    post:
+      operationId: GetTpa2Data
+      tags:
+        - Tpa_2
+      summary: Получение данных о подключенных сервисах
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpa_2.Methods.Data.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpa_2.Methods.Data.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/tpa_2/setCounterId/:
+    post:
+      operationId: EditTpa2SetCounterId
+      tags:
+        - Tpa_2
+      summary: Произвести выбор счетчика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpa_2.Methods.SetCounterId.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpa_2.Methods.SetCounterId.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/tpa_2/testTpa/:
+    post:
+      operationId: GetTpa2TestTpa
+      tags:
+        - Tpa_2
+      summary: Произвести попытку обновления интеграции
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpa_2.Methods.TestTpa.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpa_2.Methods.TestTpa.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/tpvsr_2/stat/:
     post:
       operationId: GetTpvsr2Stat
@@ -11599,6 +11767,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/tpa_2/gsc/setSite/:
+    post:
+      operationId: EditTpa2GscSetSite
+      tags:
+        - Tpa_2
+      summary: Выбрать сайт для проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/tpvsr_2/stat/referers/:
     post:
       operationId: GetTpvsr2StatReferers
@@ -15620,6 +15816,492 @@ components:
            - count_unique_views
            - count_likes
       type: array
+    Controller_2.Methods.Get:
+      type: object
+      properties:
+        url:
+          title: Адрес страницы
+          type: string
+        debug:
+          title: Вернуть страницу с состоянием дебага
+          type: integer
+      required:
+        - url
+      title: Получить объект страницы с отрендериным контентом
+    Controller_2.Objects.Location:
+      type: object
+      properties: {}
+      required: []
+    Controller_2.Objects.OpenGraph:
+      type: object
+      properties: {}
+      required: []
+    Controller_2.Objects.Page.Options:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        keywords:
+          type: string
+        noindex:
+          type: boolean
+        canonical:
+          type: string
+        alternates:
+          type: array
+      required:
+        - title
+        - description
+        - keywords
+        - noindex
+        - canonical
+        - alternates
+      title: Основные опции страницы для <head>, такие, как title и description
+    Controller_2.Objects.Page.Article:
+      type: object
+      properties:
+        type:
+          default: module
+          type: string
+        duration:
+          nullable: true
+          type: string
+        word_count:
+          nullable: true
+          type: string
+        htmlRaw:
+          type: string
+        url:
+          type: string
+        parent_url:
+          type: string
+        publish_time:
+          nullable: true
+          type: string
+        h1:
+          type: string
+        description:
+          nullable: true
+          type: string
+        menu_name:
+          nullable: true
+          type: string
+        intro:
+          nullable: true
+          type: string
+        html:
+          type: string
+        image:
+          type: string
+        tags:
+          type: array
+        count_views:
+          type: integer
+        count_unique_views:
+          nullable: true
+          type: integer
+        count_likes:
+          type: integer
+        count_comments:
+          nullable: true
+          type: integer
+        theme:
+          type: string
+        noindex:
+          type: boolean
+        quiz_id:
+          type: string
+        state:
+          default: ACTIVE
+          type: string
+        rubric_name:
+          type: string
+        user_id:
+          type: integer
+        user_name:
+          nullable: true
+          type: string
+        user_description:
+          type: string
+        user_avatar:
+          type: string
+        view:
+          type: integer
+        like:
+          type: integer
+        bookmark:
+          type: string
+        bookmark_author:
+          type: string
+        author_alias:
+          type: string
+        user_id_2:
+          nullable: true
+          type: integer
+        user_id_3:
+          nullable: true
+          type: integer
+      required:
+        - type
+        - htmlRaw
+        - url
+        - parent_url
+        - h1
+        - html
+        - image
+        - tags
+        - count_views
+        - count_likes
+        - theme
+        - noindex
+        - quiz_id
+        - state
+        - rubric_name
+        - user_id
+        - user_description
+        - user_avatar
+        - view
+        - like
+        - bookmark
+        - bookmark_author
+        - author_alias
+      title: Основные данные статьи, такие как h1, html, автор, дата публикации
+    Tpl.Core.SecondMenu:
+      type: object
+      properties: {}
+      required: []
+    Tpl.Core.LeftMenu:
+      type: object
+      properties:
+        items:
+          type: array
+      required:
+        - items
+    TV.Core.Sites.Site:
+      type: object
+      properties:
+        host:
+          title: Базовый домен сайта
+          type: string
+        config:
+          title: 'config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
+          type: string
+        configTPA:
+          title: Настройки интеграций
+          type: object
+          properties:
+            yandex_client_id:
+              type: string
+            yandex_client_id_auth:
+              type: string
+            yandex_client_secret:
+              type: string
+            google_client_id:
+              type: string
+            google_client_secret:
+              type: string
+            google_internal_client_id:
+              anyOf:
+                - type: string
+                - type: 'null'
+            google_internal_client_secret:
+              anyOf:
+                - type: string
+                - type: 'null'
+            sms_client:
+              type: string
+            selectel_api_key:
+              type: string
+            vk_pixel_id:
+              type: string
+            vk_group_id:
+              type: string
+            vk_service_token:
+              type: string
+            vk_group_token:
+              type: string
+            vk_client_id:
+              type: string
+            vk_client_secret:
+              type: string
+            telegram_token:
+              type: string
+            telegram_token_apometr:
+              type: string
+            telegram_token_thundo:
+              type: string
+            telegram_token_library:
+              type: string
+            tinkoff_business_token:
+              type: string
+            tinkoff_openapi_token:
+              type: string
+            tinkoff_security_key:
+              type: string
+            tinkoff_ap_cert_pass:
+              type: string
+            tinkoff_partner_key:
+              type: string
+            tinkoff_partner_secret:
+              type: string
+            botan_token_TopvisorBot:
+              type: string
+            botan_token_ApometrBot:
+              type: string
+            diadoc:
+              type: string
+            fbAppId:
+              type: string
+            fbTokens:
+              type: array
+            twTokens:
+              type: array
+          required:
+            - yandex_client_id
+            - yandex_client_id_auth
+            - yandex_client_secret
+            - google_client_id
+            - google_client_secret
+            - google_internal_client_id
+            - google_internal_client_secret
+            - sms_client
+            - selectel_api_key
+            - vk_pixel_id
+            - vk_group_id
+            - vk_service_token
+            - vk_group_token
+            - vk_client_id
+            - vk_client_secret
+            - telegram_token
+            - telegram_token_apometr
+            - telegram_token_thundo
+            - telegram_token_library
+            - tinkoff_business_token
+            - tinkoff_openapi_token
+            - tinkoff_security_key
+            - tinkoff_ap_cert_pass
+            - tinkoff_partner_key
+            - tinkoff_partner_secret
+            - botan_token_TopvisorBot
+            - botan_token_ApometrBot
+            - diadoc
+            - fbAppId
+            - fbTokens
+            - twTokens
+      required:
+        - host
+        - config
+        - configTPA
+    Controller_2.Objects.TplEngine:
+      type: object
+      properties: {}
+      required: []
+      title: |-
+        Движок работы с шаблонизатором
+
+        Является неотъемлемой частью Page
+    Controller_2.Objects.Page:
+      type: object
+      properties:
+        location:
+          title: |-
+            Аналог js location
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Location'
+        _GET:
+          title: |-
+            GET параметры страницы
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          type: array
+        openGraph:
+          title: |-
+            Объект openGraph
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
+        options:
+          title: |-
+            Основные опции страницы для <head>, такие, как title и description
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Page.Options'
+        article:
+          title: |-
+            Основные данные статьи, такие как h1, html, автор и дата публикации
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Page.Article'
+        secondMenu:
+          title: |-
+            Объект второго меню (устанавливается только в tpl)
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          allOf:
+            - $ref: '#/components/schemas/Tpl.Core.SecondMenu'
+        leftMenu:
+          title: |-
+            Объект левого меню
+
+            Сложный параметр, должен устанавливаться в конструкторе
+          allOf:
+            - $ref: '#/components/schemas/Tpl.Core.LeftMenu'
+        params:
+          title: Хлебная крошка url в массиве, не включает домен и язык, всегда имеет не менее 5 элементов
+          type: array
+        site:
+          title: Сайт
+          allOf:
+            - $ref: '#/components/schemas/TV.Core.Sites.Site'
+        subdomain:
+          title: Поддомен
+          type: string
+        langContext:
+          title: Код языка страницы, равен языку пользователя или языку страницы для модуля контента
+          type: string
+        langUrl:
+          title: Url префикс для языковой версии страницы, только для страниц модуля контента
+          type: string
+        modUrl:
+          title: Ссылка на главную страницу модуля, для страниц модуля контента с языкового префикса
+          type: string
+        mod:
+          title: Имя модуля
+          type: string
+        subMod:
+          title: Имя подмодуля
+          type: string
+        theme:
+          title: Тема оформления, см. Site::THEMES
+          default: regular
+          type: string
+        topPanelStyling:
+          title: Стиль шапки
+          default: default
+          type: string
+        topPanelSeparation:
+          title: Разделитель шапки
+          default: default
+          type: string
+        jsonLDs:
+          type: array
+        htmlAttributes:
+          type: array
+        logo:
+          title: Основное лого
+          type: string
+        redirect:
+          title: Url перенаправления на другую страницу
+          type: string
+        redirectCode:
+          title: Именно этот код должен быть при ошибках, так как редирект должен быть временным
+          default: 302
+          type: integer
+        tplEngine:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.TplEngine'
+        tplStaticPath:
+          title: Путь к html шаблону страницы, для шаблонов без php, поддерживает вставку <page-tpl-rendered>
+          type: string
+        tplStatic:
+          title: Html шаблон страницы
+          type: string
+        tplStaticRendered:
+          title: Html шаблон страницы с внедренным tplRendered
+          type: string
+        tplPath:
+          title: Путь к php шаблону страницы
+          default: mods/content.php
+          type: string
+        tplRendered:
+          title: Исполненный php шаблон страницы
+          type: string
+        tplSiteRendered:
+          title: Исполненный php шаблон страницы в шаблоне сайта
+          type: string
+        data:
+          title: |-
+            Дополнительные данные страницы, зависят от $mod, передаются в шаблон сайта или в ответе API через jsonSerialize
+
+            Данные, которые не нужно передавать в json необходимо объявлять приватными по соглашению js: $data['#variableName'] = $variableData;
+          type: array
+        rightsLabels:
+          title: Имеющиеся доступы, ключ => значение, определяются контроллером
+          type: array
+        isFullSize:
+          title: Является ли страница полноразмерной
+          type: boolean
+        showFooter:
+          title: Отрендерить ли подвал
+          type: boolean
+        isAdaptive:
+          title: Адаптивна ли страница
+          type: boolean
+        additionalHeadCode:
+          type: string
+        v:
+          type: string
+        vJS:
+          type: string
+      required:
+        - location
+        - _GET
+        - openGraph
+        - options
+        - article
+        - secondMenu
+        - leftMenu
+        - params
+        - site
+        - subdomain
+        - langContext
+        - langUrl
+        - modUrl
+        - mod
+        - subMod
+        - theme
+        - topPanelStyling
+        - topPanelSeparation
+        - jsonLDs
+        - htmlAttributes
+        - logo
+        - redirect
+        - redirectCode
+        - tplEngine
+        - tplStaticPath
+        - tplStatic
+        - tplStaticRendered
+        - tplPath
+        - tplRendered
+        - tplSiteRendered
+        - data
+        - rightsLabels
+        - isFullSize
+        - showFooter
+        - isAdaptive
+        - additionalHeadCode
+        - v
+        - vJS
+      title: |-
+        Общий объект страницы
+
+        Объект знает все о странице кроме одного - имени сайта, он не знает ничего о сайте, сайт определяется в Core и доступен только через Core
+
+        Шаблоны рендерятся на 3 уровнях:
+        - при получении страницы через get/content_2/pages, см. load() и $pages->article->html
+        - при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()
+        - при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.
+        renderSiteTpl()
+    Controller_2.Methods.Get.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Controller_2.Objects.Page'
     Mentions_2.Methods.Get:
       type: object
       properties:
@@ -16473,6 +17155,56 @@ components:
       title: Получение сохраненного списка шаблонов
     Templates_2.Methods.Get.Exec:
       type: array
+    Tpa_2.Types.Provider:
+      type: string
+      enum:
+        - metrika
+        - webmaster
+        - direct
+        - yandexMarket
+        - analytics
+        - ganalytics
+        - gdrive
+        - adwords
+        - gsc
+      x-enum-varnames:
+        - YandexMetrika
+        - YandexWebmaster
+        - YandexDirect
+        - YandexMarket
+        - Analytics
+        - GoogleAnalytics
+        - GoogleDrive
+        - GoogleAdwords
+        - GoogleSearchConsole
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Источник данных для интеграции
+    project_id:
+      title: ID проекта
+      type: integer
+    Tpa_2.Methods.Del:
+      type: object
+      properties:
+        provider:
+          allOf:
+            - $ref: '#/components/schemas/Tpa_2.Types.Provider'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - provider
+        - project_id
+      title: Удаление интеграции
+    Tpa_2.Methods.Del.Exec:
+      nullable: true
     Tpvsr_2.Types.Tag:
       type: integer
       enum:
@@ -16716,9 +17448,6 @@ components:
 
         Тип массива: TagId[]
       description: '@see TagId'
-    project_id:
-      title: ID проекта
-      type: integer
     Urls_2.Methods.Add:
       type: object
       properties:
@@ -17818,412 +18547,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Lang'
       required: []
-      title: Получение текста политики конфиденциальности
-    Controller_2.Objects.Location:
-      type: object
-      properties: {}
-      required: []
-    Controller_2.Objects.OpenGraph:
-      type: object
-      properties: {}
-      required: []
-    Controller_2.Objects.Page.Options:
-      type: object
-      properties:
-        title:
-          type: string
-        description:
-          type: string
-        keywords:
-          type: string
-        noindex:
-          type: boolean
-        canonical:
-          type: string
-        alternates:
-          type: array
-      required:
-        - title
-        - description
-        - keywords
-        - noindex
-        - canonical
-        - alternates
-    Controller_2.Objects.Page.Article:
-      type: object
-      properties:
-        type:
-          default: module
-          type: string
-        duration:
-          nullable: true
-          type: string
-        word_count:
-          nullable: true
-          type: string
-        htmlRaw:
-          type: string
-        url:
-          type: string
-        parent_url:
-          type: string
-        publish_time:
-          nullable: true
-          type: string
-        h1:
-          type: string
-        description:
-          nullable: true
-          type: string
-        menu_name:
-          nullable: true
-          type: string
-        intro:
-          nullable: true
-          type: string
-        html:
-          type: string
-        image:
-          type: string
-        tags:
-          type: array
-        count_views:
-          type: integer
-        count_unique_views:
-          nullable: true
-          type: integer
-        count_likes:
-          type: integer
-        count_comments:
-          nullable: true
-          type: integer
-        theme:
-          type: string
-        noindex:
-          type: boolean
-        quiz_id:
-          type: string
-        state:
-          default: ACTIVE
-          type: string
-        rubric_name:
-          type: string
-        user_id:
-          type: integer
-        user_name:
-          nullable: true
-          type: string
-        user_description:
-          type: string
-        user_avatar:
-          type: string
-        view:
-          type: integer
-        like:
-          type: integer
-        bookmark:
-          type: string
-        bookmark_author:
-          type: string
-        author_alias:
-          type: string
-        user_id_2:
-          nullable: true
-          type: integer
-        user_id_3:
-          nullable: true
-          type: integer
-      required:
-        - type
-        - htmlRaw
-        - url
-        - parent_url
-        - h1
-        - html
-        - image
-        - tags
-        - count_views
-        - count_likes
-        - theme
-        - noindex
-        - quiz_id
-        - state
-        - rubric_name
-        - user_id
-        - user_description
-        - user_avatar
-        - view
-        - like
-        - bookmark
-        - bookmark_author
-        - author_alias
-    Tpl.Core.SecondMenu:
-      type: object
-      properties: {}
-      required: []
-    Tpl.Core.LeftMenu:
-      type: object
-      properties:
-        items:
-          type: array
-      required:
-        - items
-    TV.Core.Sites.Site:
-      type: object
-      properties:
-        host:
-          title: Базовый домен сайта
-          type: string
-        config:
-          title: 'config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
-          type: string
-        configTPA:
-          title: Настройки интеграций
-          type: object
-          properties:
-            yandex_client_id:
-              type: string
-            yandex_client_id_auth:
-              type: string
-            yandex_client_secret:
-              type: string
-            google_client_id:
-              type: string
-            google_client_secret:
-              type: string
-            google_internal_client_id:
-              anyOf:
-                - type: string
-                - type: 'null'
-            google_internal_client_secret:
-              anyOf:
-                - type: string
-                - type: 'null'
-            sms_client:
-              type: string
-            selectel_api_key:
-              type: string
-            vk_pixel_id:
-              type: string
-            vk_group_id:
-              type: string
-            vk_service_token:
-              type: string
-            vk_group_token:
-              type: string
-            vk_client_id:
-              type: string
-            vk_client_secret:
-              type: string
-            telegram_token:
-              type: string
-            telegram_token_apometr:
-              type: string
-            telegram_token_thundo:
-              type: string
-            telegram_token_library:
-              type: string
-            tinkoff_business_token:
-              type: string
-            tinkoff_openapi_token:
-              type: string
-            tinkoff_security_key:
-              type: string
-            tinkoff_ap_cert_pass:
-              type: string
-            tinkoff_partner_key:
-              type: string
-            tinkoff_partner_secret:
-              type: string
-            botan_token_TopvisorBot:
-              type: string
-            botan_token_ApometrBot:
-              type: string
-            diadoc:
-              type: string
-            fbAppId:
-              type: string
-            fbTokens:
-              type: array
-            twTokens:
-              type: array
-          required:
-            - yandex_client_id
-            - yandex_client_id_auth
-            - yandex_client_secret
-            - google_client_id
-            - google_client_secret
-            - google_internal_client_id
-            - google_internal_client_secret
-            - sms_client
-            - selectel_api_key
-            - vk_pixel_id
-            - vk_group_id
-            - vk_service_token
-            - vk_group_token
-            - vk_client_id
-            - vk_client_secret
-            - telegram_token
-            - telegram_token_apometr
-            - telegram_token_thundo
-            - telegram_token_library
-            - tinkoff_business_token
-            - tinkoff_openapi_token
-            - tinkoff_security_key
-            - tinkoff_ap_cert_pass
-            - tinkoff_partner_key
-            - tinkoff_partner_secret
-            - botan_token_TopvisorBot
-            - botan_token_ApometrBot
-            - diadoc
-            - fbAppId
-            - fbTokens
-            - twTokens
-      required:
-        - host
-        - config
-        - configTPA
-    Controller_2.Objects.TplEngine:
-      type: object
-      properties: {}
-      required: []
-      title: |-
-        Движок работы с шаблонизатором
-
-        Является неотъемлемой частью Page
-    Controller_2.Objects.Page:
-      type: object
-      properties:
-        location:
-          allOf:
-            - $ref: '#/components/schemas/Controller_2.Objects.Location'
-        _GET:
-          type: array
-        openGraph:
-          allOf:
-            - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
-        options:
-          allOf:
-            - $ref: '#/components/schemas/Controller_2.Objects.Page.Options'
-        article:
-          allOf:
-            - $ref: '#/components/schemas/Controller_2.Objects.Page.Article'
-        secondMenu:
-          allOf:
-            - $ref: '#/components/schemas/Tpl.Core.SecondMenu'
-        leftMenu:
-          allOf:
-            - $ref: '#/components/schemas/Tpl.Core.LeftMenu'
-        params:
-          type: array
-        site:
-          allOf:
-            - $ref: '#/components/schemas/TV.Core.Sites.Site'
-        subdomain:
-          type: string
-        langContext:
-          type: string
-        langUrl:
-          type: string
-        modUrl:
-          type: string
-        mod:
-          type: string
-        subMod:
-          type: string
-        theme:
-          default: regular
-          type: string
-        topPanelStyling:
-          title: Стиль шапки
-          default: default
-          type: string
-        topPanelSeparation:
-          title: Разделитель шапки
-          default: default
-          type: string
-        jsonLDs:
-          type: array
-        htmlAttributes:
-          type: array
-        logo:
-          type: string
-        redirect:
-          type: string
-        redirectCode:
-          default: 302
-          type: integer
-        tplEngine:
-          allOf:
-            - $ref: '#/components/schemas/Controller_2.Objects.TplEngine'
-        tplStaticPath:
-          type: string
-        tplStatic:
-          type: string
-        tplStaticRendered:
-          type: string
-        tplPath:
-          default: mods/content.php
-          type: string
-        tplRendered:
-          type: string
-        tplSiteRendered:
-          type: string
-        data:
-          type: array
-        rightsLabels:
-          type: array
-        isFullSize:
-          type: boolean
-        showFooter:
-          type: boolean
-        isAdaptive:
-          type: boolean
-        additionalHeadCode:
-          type: string
-        v:
-          type: string
-        vJS:
-          type: string
-      required:
-        - location
-        - _GET
-        - openGraph
-        - options
-        - article
-        - secondMenu
-        - leftMenu
-        - params
-        - site
-        - subdomain
-        - langContext
-        - langUrl
-        - modUrl
-        - mod
-        - subMod
-        - theme
-        - topPanelStyling
-        - topPanelSeparation
-        - jsonLDs
-        - htmlAttributes
-        - logo
-        - redirect
-        - redirectCode
-        - tplEngine
-        - tplStaticPath
-        - tplStatic
-        - tplStaticRendered
-        - tplPath
-        - tplRendered
-        - tplSiteRendered
-        - data
-        - rightsLabels
-        - isFullSize
-        - showFooter
-        - isAdaptive
-        - additionalHeadCode
-        - v
-        - vJS
+      title: Получение объекта страницы политики конфиденциальности
     App_2.Methods.Privacy.Get.Exec:
       nullable: true
       allOf:
@@ -24838,6 +25162,68 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Tickets'
+    Tpa_2.Methods.Any.Del:
+      type: object
+      properties:
+        projects_ids:
+          title: ID проектов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        provider:
+          allOf:
+            - $ref: '#/components/schemas/Tpa_2.Types.Provider'
+      required:
+        - projects_ids
+        - provider
+      title: Удаление интеграции для нескольких проектов
+    Tpa_2.Methods.Any.Del.Exec:
+      nullable: true
+      type: integer
+    Tpa_2.Methods.Data.Get:
+      type: object
+      properties:
+        include_broker_campaigns:
+          title: Получить ли подключенные рекламные кампании (Директ и Adwords)
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: Получение данных о подключенных сервисах
+    Tpa_2.Methods.Data.Get.Exec:
+      nullable: true
+    Tpa_2.Methods.SetCounterId.Edit:
+      type: object
+      properties:
+        provider:
+          allOf:
+            - $ref: '#/components/schemas/Tpa_2.Types.Provider'
+        cid:
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - provider
+        - cid
+        - project_id
+      title: Произвести выбор счетчика
+    Tpa_2.Methods.SetCounterId.Edit.Exec:
+      nullable: true
+      type: integer
+    Tpa_2.Methods.TestTpa.Get:
+      type: object
+      properties:
+        provider:
+          allOf:
+            - $ref: '#/components/schemas/Tpa_2.Types.Provider'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - provider
+        - project_id
+      title: Произвести попытку обновления интеграции
+    Tpa_2.Methods.TestTpa.Get.Exec:
+      type: integer
     Tpvsr_2.Types.Stat.Dimension.Type:
       type: string
       enum:
@@ -32485,6 +32871,21 @@ components:
       title: Написание текста
     Tickets_2.Methods.Tickets.Writing.Edit.Exec:
       nullable: true
+    Tpa_2.Methods.Gsc.SetSite.Edit:
+      type: object
+      properties:
+        site:
+          title: Сайт
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - site
+        - project_id
+      title: Выбрать сайт для проекта
+    Tpa_2.Methods.Gsc.SetSite.Edit.Exec:
+      nullable: true
+      type: integer
     Tpvsr_2.Methods.Stat.Referers.Get:
       type: object
       properties:

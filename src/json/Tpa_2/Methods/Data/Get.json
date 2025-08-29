@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Methods.Data.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Methods.Data.Get": {
+                "type": "object",
+                "properties": {
+                    "include_broker_campaigns": {
+                        "title": "Получить ли подключенные рекламные кампании (Директ и Adwords)",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение данных о подключенных сервисах"
+            },
+            "Tpa_2.Methods.Data.Get.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

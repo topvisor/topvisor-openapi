@@ -583,6 +583,59 @@
                 }
             }
         },
+        "/get/controller_2/": {
+            "post": {
+                "operationId": "GetController2",
+                "tags": [
+                    "Controller_2"
+                ],
+                "summary": "Получить объект страницы с отрендериным контентом",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Controller_2/Methods/Get.json#/components/schemas/Controller_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Controller_2/Methods/Get.json#/components/schemas/Controller_2.Methods.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/mentions_2/": {
             "post": {
                 "operationId": "GetMentions2",
@@ -1485,6 +1538,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Templates_2/Methods/Get.json#/components/schemas/Templates_2.Methods.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/tpa_2/": {
+            "post": {
+                "operationId": "DelTpa2",
+                "tags": [
+                    "Tpa_2"
+                ],
+                "summary": "Удаление интеграции",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpa_2/Methods/Del.json#/components/schemas/Tpa_2.Methods.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpa_2/Methods/Del.json#/components/schemas/Tpa_2.Methods.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -2939,7 +3045,7 @@
                 "tags": [
                     "App_2"
                 ],
-                "summary": "Получение текста политики конфиденциальности",
+                "summary": "Получение объекта страницы политики конфиденциальности",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -10824,6 +10930,218 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/tpa_2/any/": {
+            "post": {
+                "operationId": "DelTpa2Any",
+                "tags": [
+                    "Tpa_2"
+                ],
+                "summary": "Удаление интеграции для нескольких проектов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpa_2/Methods/Any/Del.json#/components/schemas/Tpa_2.Methods.Any.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpa_2/Methods/Any/Del.json#/components/schemas/Tpa_2.Methods.Any.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpa_2/data/": {
+            "post": {
+                "operationId": "GetTpa2Data",
+                "tags": [
+                    "Tpa_2"
+                ],
+                "summary": "Получение данных о подключенных сервисах",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpa_2/Methods/Data/Get.json#/components/schemas/Tpa_2.Methods.Data.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpa_2/Methods/Data/Get.json#/components/schemas/Tpa_2.Methods.Data.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/tpa_2/setCounterId/": {
+            "post": {
+                "operationId": "EditTpa2SetCounterId",
+                "tags": [
+                    "Tpa_2"
+                ],
+                "summary": "Произвести выбор счетчика",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpa_2/Methods/SetCounterId/Edit.json#/components/schemas/Tpa_2.Methods.SetCounterId.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpa_2/Methods/SetCounterId/Edit.json#/components/schemas/Tpa_2.Methods.SetCounterId.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpa_2/testTpa/": {
+            "post": {
+                "operationId": "GetTpa2TestTpa",
+                "tags": [
+                    "Tpa_2"
+                ],
+                "summary": "Произвести попытку обновления интеграции",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpa_2/Methods/TestTpa/Get.json#/components/schemas/Tpa_2.Methods.TestTpa.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpa_2/Methods/TestTpa/Get.json#/components/schemas/Tpa_2.Methods.TestTpa.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
                                 }
                             }
                         }
@@ -21297,6 +21615,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Tickets_2/Methods/Tickets/Writing/Edit.json#/components/schemas/Tickets_2.Methods.Tickets.Writing.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/tpa_2/gsc/setSite/": {
+            "post": {
+                "operationId": "EditTpa2GscSetSite",
+                "tags": [
+                    "Tpa_2"
+                ],
+                "summary": "Выбрать сайт для проекта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpa_2/Methods/Gsc/SetSite/Edit.json#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpa_2/Methods/Gsc/SetSite/Edit.json#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [

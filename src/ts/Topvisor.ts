@@ -199,6 +199,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получить объект страницы с отрендериным контентом */
+    "/get/controller_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetController2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение списка упоминаний */
     "/get/mentions_2/": {
         parameters: {
@@ -491,6 +508,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetTemplates2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление интеграции */
+    "/del/tpa_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelTpa2"];
         delete?: never;
         options?: never;
         head?: never;
@@ -940,7 +974,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение текста политики конфиденциальности */
+    /** Получение объекта страницы политики конфиденциальности */
     "/get/app_2/privacy/": {
         parameters: {
             query?: never;
@@ -3418,6 +3452,74 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetTickets2Tickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление интеграции для нескольких проектов */
+    "/del/tpa_2/any/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelTpa2Any"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение данных о подключенных сервисах */
+    "/get/tpa_2/data/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpa2Data"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Произвести выбор счетчика */
+    "/edit/tpa_2/setCounterId/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTpa2SetCounterId"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Произвести попытку обновления интеграции */
+    "/get/tpa_2/testTpa/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpa2TestTpa"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6841,6 +6943,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Выбрать сайт для проекта */
+    "/edit/tpa_2/gsc/setSite/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTpa2GscSetSite"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение всех источников по индексу источника */
     "/get/tpvsr_2/stat/referers/": {
         parameters: {
@@ -6960,7 +7079,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка сообщения на смену Email */
+    /** Запрос на смену email
+     *
+     *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email */
     "/edit/users_2/profile/email/": {
         parameters: {
             query?: never;
@@ -9286,6 +9407,31 @@ export interface operations {
             };
         };
     };
+    GetController2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Controller_2/Methods/Get.ts').components['schemas']['Controller_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Controller_2/Methods/Get.ts').components['schemas']['Controller_2.Methods.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetMentions2: {
         parameters: {
             query?: never;
@@ -9709,6 +9855,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Templates_2/Methods/Get.ts').components['schemas']['Templates_2.Methods.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    DelTpa2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpa_2/Methods/Del.ts').components['schemas']['Tpa_2.Methods.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpa_2/Methods/Del.ts').components['schemas']['Tpa_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -13987,6 +14158,106 @@ export interface operations {
                         result: import('./Tickets_2/Methods/Tickets/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
+                };
+            };
+        };
+    };
+    DelTpa2Any: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpa_2/Methods/Any/Del.ts').components['schemas']['Tpa_2.Methods.Any.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpa_2/Methods/Any/Del.ts').components['schemas']['Tpa_2.Methods.Any.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetTpa2Data: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpa_2/Methods/Data/Get.ts').components['schemas']['Tpa_2.Methods.Data.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpa_2/Methods/Data/Get.ts').components['schemas']['Tpa_2.Methods.Data.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditTpa2SetCounterId: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpa_2/Methods/SetCounterId/Edit.ts').components['schemas']['Tpa_2.Methods.SetCounterId.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpa_2/Methods/SetCounterId/Edit.ts').components['schemas']['Tpa_2.Methods.SetCounterId.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetTpa2TestTpa: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpa_2/Methods/TestTpa/Get.ts').components['schemas']['Tpa_2.Methods.TestTpa.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpa_2/Methods/TestTpa/Get.ts').components['schemas']['Tpa_2.Methods.TestTpa.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -18910,6 +19181,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/Writing/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Writing.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditTpa2GscSetSite: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpa_2/Methods/Gsc/SetSite/Edit.ts').components['schemas']['Tpa_2.Methods.Gsc.SetSite.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpa_2/Methods/Gsc/SetSite/Edit.ts').components['schemas']['Tpa_2.Methods.Gsc.SetSite.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

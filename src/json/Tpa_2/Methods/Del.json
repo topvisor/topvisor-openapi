@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Methods.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Methods.Del": {
+                "type": "object",
+                "properties": {
+                    "provider": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Tpa_2/Types/Provider.json#/components/schemas/Tpa_2.Types.Provider"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "provider",
+                    "project_id"
+                ],
+                "title": "Удаление интеграции"
+            },
+            "Tpa_2.Methods.Del.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

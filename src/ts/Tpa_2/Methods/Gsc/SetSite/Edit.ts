@@ -7,12 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение объекта страницы политики конфиденциальности */
-        "App_2.Methods.Privacy.Get": {
-            /** Язык страницы */
-            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
+        /** Выбрать сайт для проекта */
+        "Tpa_2.Methods.Gsc.SetSite.Edit": {
+            /** Сайт */
+            site: string;
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "App_2.Methods.Privacy.Get.Exec": import('../../../Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'] | null;
+        "Tpa_2.Methods.Gsc.SetSite.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -150,7 +150,8 @@
                     "bookmark",
                     "bookmark_author",
                     "author_alias"
-                ]
+                ],
+                "title": "Основные данные статьи, такие как h1, html, автор, дата публикации"
             }
         }
     }

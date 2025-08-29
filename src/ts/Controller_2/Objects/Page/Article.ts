@@ -7,6 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Основные данные статьи, такие как h1, html, автор, дата публикации */
         "Controller_2.Objects.Page.Article": {
             /** @default module */
             type: string;
