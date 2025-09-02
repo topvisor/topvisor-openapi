@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Список имен полей
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FieldsNames */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\FieldsNames */
         FieldsNames: string[];
     };
     responses: never;

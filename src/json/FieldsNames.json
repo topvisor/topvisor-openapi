@@ -12,7 +12,7 @@
                 "items": {
                     "type": "string"
                 },
-                "title": "Список имен полей\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsNames"
+                "title": "Список имен полей\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsNames"
             }
         }
     }

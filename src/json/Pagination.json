@@ -22,7 +22,7 @@
                     }
                 },
                 "required": [],
-                "title": "Результаты пагинации\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\Pagination"
+                "title": "Результаты пагинации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Openapi_2\\Objects\\Core\\Pagination"
             }
         }
     }

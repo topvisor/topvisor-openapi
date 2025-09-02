@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Поле сортировки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FieldOrder */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\FieldOrder */
         FieldOrder: {
             /** Имя поля */
             name: string;

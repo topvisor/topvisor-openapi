@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "FieldOrder.json#/components/schemas/FieldOrder"
                 },
-                "title": "Список полей сортировки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsOrders"
+                "title": "Список полей сортировки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsOrders"
             }
         }
     }

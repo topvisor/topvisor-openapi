@@ -18,7 +18,7 @@ export interface components {
          *
          *     Напоминает логику работу PDO Fetch: https://www.php.net/manual/ru/pdostatement.fetch.php
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FetchStyle
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\FetchStyle
          * @enum {string}
          */
         FetchStyle: "fetchAll" | "fetchAllNum" | "fetchAllColumn" | "fetch" | "fetchColumn" | "fetchGroup" | "fetchGroupColumn" | "fetchUnique" | "fetchUniqueNum" | "fetchUniqueColumn" | "selector";

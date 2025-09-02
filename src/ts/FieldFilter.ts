@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Поле фильтра
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FieldFilter */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\FieldFilter */
         FieldFilter: {
             /** Имя поля */
             name: string;

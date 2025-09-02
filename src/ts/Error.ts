@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Информация об ошибке
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\Error */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Error */
         Error: {
             /** Код ошибки
              *

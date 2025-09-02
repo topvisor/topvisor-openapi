@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Список полей сортировки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FieldsOrders */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\FieldsOrders */
         FieldsOrders: import('./FieldOrder.ts').components['schemas']['FieldOrder'][];
     };
     responses: never;

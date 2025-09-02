@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Результат API запроса с ошибкой
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\ResponseError */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\ResponseError */
         ResponseError: {
             /** При ошибке результат отсутствует */
             result?: null | null;
