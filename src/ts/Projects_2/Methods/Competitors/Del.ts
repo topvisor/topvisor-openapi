@@ -11,7 +11,7 @@ export interface components {
          *
          *     Обязательный параметр или ids или urls
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Del */
         "Projects_2.Methods.Competitors.Del": {
             /** ID проекта */
             project_id: number;

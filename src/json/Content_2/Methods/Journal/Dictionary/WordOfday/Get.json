@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение стаьи для \"Слово дня\" в модуле SEO словарь\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Dictionary\\WordOfday\\Get"
+                "title": "Получение стаьи для \"Слово дня\" в модуле SEO словарь\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Dictionary\\WordOfday\\Get"
             },
             "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": {
                 "nullable": true,

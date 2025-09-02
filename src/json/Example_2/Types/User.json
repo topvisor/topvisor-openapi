@@ -37,7 +37,7 @@
                     "age",
                     "address"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Types\\User"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Example_2\\Types\\User"
             }
         }
     }

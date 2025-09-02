@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип частоты
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Volumes\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Volumes\Type
          * @enum {integer}
          */
         "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;

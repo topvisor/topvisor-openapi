@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип графика
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\ByKeyword\Charts\Leaders\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\ByKeyword\Charts\Leaders\Type
          * @enum {string}
          */
         "Competitors_2.Types.ByKeyword.Charts.Leaders.Type": "small" | "count_keywords" | "avg_position" | "visibility" | "sum_traffic" | "sum_month_cost_rub" | "sum_month_cost_usd";

@@ -42,7 +42,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение проверенных js\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Js\\Get"
+                "title": "Получение проверенных js\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Audit\\Js\\Get"
             },
             "Audit_2.Methods.Audit.Js.Get.Exec": {
                 "title": "Список проверенных js",

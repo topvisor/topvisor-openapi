@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Создание задачи
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add */
         "Projects_2.Methods.Tasks.Volumes.Add": {
             /** Url проекта (домен или url страницы) */
             url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];

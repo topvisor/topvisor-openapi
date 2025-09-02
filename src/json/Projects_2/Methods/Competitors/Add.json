@@ -32,7 +32,7 @@
                     "project_id",
                     "urls"
                 ],
-                "title": "Добавление конкурента\n\nОграничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Add"
+                "title": "Добавление конкурента\n\nОграничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Competitors\\Add"
             },
             "Projects_2.Methods.Competitors.Add.Exec": {
                 "type": "array"

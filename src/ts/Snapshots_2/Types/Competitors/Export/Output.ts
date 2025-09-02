@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип экспортируемого файла
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\Competitors\Export\Output
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Types\Competitors\Export\Output
          * @enum {string}
          */
         "Snapshots_2.Types.Competitors.Export.Output": "csv";

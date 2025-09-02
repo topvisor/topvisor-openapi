@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Типы частоты
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Volumes\Types */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Volumes\Types */
         "Keywords_2.Types.Volumes.Types": import('./Type.ts').components['schemas']['Keywords_2.Types.Volumes.Type'][];
     };
     responses: never;

@@ -23,7 +23,7 @@
                     "id",
                     "checked"
                 ],
-                "title": "Помечание лога как обработанного\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Logs\\System\\Checked\\Edit"
+                "title": "Помечание лога как обработанного\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Logs\\System\\Checked\\Edit"
             },
             "Admin_2.Methods.Logs.System.Checked.Edit.Exec": {
                 "nullable": true,

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение глубины сбора упоминаний
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Searchers\Depth\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Depth\Edit */
         "Mentions_2.Methods.Searchers.Depth.Edit": {
             /** ID проекта */
             project_id: number;

@@ -57,7 +57,7 @@
                 "required": [
                     "command"
                 ],
-                "title": "Изменение задачи cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Methods\\Commands\\Edit"
+                "title": "Изменение задачи cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Cron_2\\Methods\\Commands\\Edit"
             },
             "Cron_2.Methods.Commands.Edit.Exec": {
                 "nullable": true,

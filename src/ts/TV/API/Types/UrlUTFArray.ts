@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип массива: UrlUTF[]
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlUTFArray
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\UrlUTFArray
          * @description @extends AbstractStringArray<UrlUTF>
          *     @method UrlUTF[] getValues()
          *     @method UrlUTF current()

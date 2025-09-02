@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Установка общих настроек проверки позиций проекта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Settings\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Settings\Edit */
         "Positions_2.Methods.Settings.Edit": {
             /** Id проекта */
             project_id: number;

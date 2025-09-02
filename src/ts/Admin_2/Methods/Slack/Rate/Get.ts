@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Рейтинг по сообщениям в Slack за предыдущий месяц
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Slack\Rate\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Slack\Rate\Get */
         "Admin_2.Methods.Slack.Rate.Get": Record<string, never>;
         /** Список пользователей */
         "Admin_2.Methods.Slack.Rate.Get.Exec": unknown[] | null;

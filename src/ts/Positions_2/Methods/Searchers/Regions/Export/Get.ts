@@ -11,7 +11,7 @@ export interface components {
          *
          *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Export\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Export\Get */
         "Positions_2.Methods.Searchers.Regions.Export.Get": {
             /** Id проекта */
             project_id: number;

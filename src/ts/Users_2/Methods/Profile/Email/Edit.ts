@@ -11,7 +11,7 @@ export interface components {
          *
          *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Email\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Email\Edit */
         "Users_2.Methods.Profile.Email.Edit": {
             /** Новый email */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

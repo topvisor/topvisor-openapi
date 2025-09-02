@@ -60,7 +60,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Информация о стоимости запуска проверки позиций по проектам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Methods\\Volumes\\Price\\Get"
+                "title": "Информация о стоимости запуска проверки позиций по проектам\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Volumes\\Price\\Get"
             },
             "Keywords_2.Methods.Volumes.Price.Get.Exec": {
                 "type": "object",

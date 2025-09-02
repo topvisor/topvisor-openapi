@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Привязать расписание к объекту
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Edit */
         "Schedule_2.Methods.Edit": {
             /**
              * Каждый элемент содержит:

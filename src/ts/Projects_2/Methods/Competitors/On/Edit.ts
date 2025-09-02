@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Включение/выключение конкурентов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\On\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\On\Edit */
         "Projects_2.Methods.Competitors.On.Edit": {
             /** ID проекта */
             project_id: number;

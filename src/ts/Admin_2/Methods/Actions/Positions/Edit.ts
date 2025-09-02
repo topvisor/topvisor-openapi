@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Востановление удаленной проверки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\Edit */
         "Admin_2.Methods.Actions.Positions.Edit": {
             /** ID проекта */
             projectId: number;

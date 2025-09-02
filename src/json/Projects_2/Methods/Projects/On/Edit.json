@@ -24,7 +24,7 @@
                 "required": [
                     "on"
                 ],
-                "title": "Редактирование \"on\" проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\On\\Edit"
+                "title": "Редактирование \"on\" проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Projects\\On\\Edit"
             },
             "Projects_2.Methods.Projects.On.Edit.Exec": {
                 "type": "integer"

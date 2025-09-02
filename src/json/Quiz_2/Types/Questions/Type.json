@@ -24,7 +24,7 @@
                     "Можно выбрать несколько ответов из представленных",
                     "Варианты ответа не представ алены, нужно написать ответ самостоятельно"
                 ],
-                "title": "Тип вопроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Types\\Questions\\Type"
+                "title": "Тип вопроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Types\\Questions\\Type"
             }
         }
     }

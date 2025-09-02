@@ -9,14 +9,14 @@ export interface components {
     schemas: {
         /** Получение меню справки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Support\Menu\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Menu\Get */
         "Content_2.Methods.Support.Menu.Get": Record<string, never>;
         "Content_2.Methods.Support.Menu.Get.Exec": {
             [key: string]: import('../../../Objects/Menu/MenuItem.ts').components['schemas']['Content_2.Objects.Menu.MenuItem'][];
         };
         /** Элемент меню
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Objects\Menu\MenuItem */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Objects\Menu\MenuItem */
         "Content_2.Objects.Menu.MenuItem": {
             /** URL пункта меню */
             url: string;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Оплата реферального счета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Bank\Referral\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Bank\Referral\Edit */
         "Admin_2.Methods.Actions.Bank.Referral.Edit": {
             /** ID пользователя */
             userId: number;

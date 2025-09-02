@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение комментариев автора. Без вложенности
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\ByAuthor\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\ByAuthor\Get */
         "Comments_2.Methods.ByAuthor.Get": {
             /** ID автора */
             user_id: number;

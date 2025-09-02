@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправить тестовый отчет
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Reports_2\Methods\Positions\SendTest\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Reports_2\Methods\Positions\SendTest\Edit */
         "Reports_2.Methods.Positions.SendTest.Edit": {
             /** Id проекта, по которому необходимо отправить тестовый отчет */
             project_id: number;

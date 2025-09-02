@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Интерфейс настроек сайта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\Types\Config\Site */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Types\Config\Site */
         "TV.Types.Config.Site": {
             /**
              * Ключ домена

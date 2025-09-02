@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение рассписания
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Get */
         "Schedule_2.Methods.Get": {
             /**
              * Тип расписания

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Импорт регионов (CSV)
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Import\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Import\Add */
         "Positions_2.Methods.Searchers.Regions.Import.Add": {
             /** Id проекта */
             project_id: number;

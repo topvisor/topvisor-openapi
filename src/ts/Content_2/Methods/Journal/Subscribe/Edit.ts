@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение состояния подписки на рассылку журнала
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Subscribe\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Subscribe\Edit */
         "Content_2.Methods.Journal.Subscribe.Edit": {
             /** Подписаться/отписаться
              *     * 1: подписаться

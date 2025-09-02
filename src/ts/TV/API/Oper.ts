@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип операции метода API
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Oper
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Oper
          * @enum {string}
          */
         "TV.API.Oper": "get" | "add" | "edit" | "del";

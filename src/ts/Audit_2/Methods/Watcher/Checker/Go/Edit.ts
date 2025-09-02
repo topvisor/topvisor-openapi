@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправка проектов на проверку радара
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Checker\Go\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Checker\Go\Edit */
         "Audit_2.Methods.Watcher.Checker.Go.Edit": {
             /**
              * Запуск в режиме отладки

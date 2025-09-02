@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение стаьи для "Слово дня" в модуле SEO словарь
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
         "Content_2.Methods.Journal.Dictionary.WordOfday.Get": {
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

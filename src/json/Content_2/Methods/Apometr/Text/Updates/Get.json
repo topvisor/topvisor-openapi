@@ -33,7 +33,7 @@
                 "required": [
                     "searcher_key"
                 ],
-                "title": "Получение текстовых апдейтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Text\\Updates\\Get"
+                "title": "Получение текстовых апдейтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Apometr\\Text\\Updates\\Get"
             },
             "Content_2.Methods.Apometr.Text.Updates.Get.Exec": {
                 "type": "array"

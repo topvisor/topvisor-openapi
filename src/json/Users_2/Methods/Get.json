@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение данных пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Get"
+                "title": "Получение данных пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Get"
             },
             "Users_2.Methods.Get.Exec": {
                 "type": "object",

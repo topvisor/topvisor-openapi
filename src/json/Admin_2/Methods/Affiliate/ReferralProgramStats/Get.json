@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение общей статистики по реферальной программе\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\ReferralProgramStats\\Get"
+                "title": "Получение общей статистики по реферальной программе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Affiliate\\ReferralProgramStats\\Get"
             },
             "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": {
                 "nullable": true,

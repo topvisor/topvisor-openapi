@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение рекорда тетриса\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Games\\Record\\Get"
+                "title": "Получение рекорда тетриса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Games\\Record\\Get"
             },
             "System_2.Methods.Games.Record.Get.Exec": {
                 "type": "integer"

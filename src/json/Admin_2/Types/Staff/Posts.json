@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Admin_2/Types/Staff/Post.json#/components/schemas/Admin_2.Types.Staff.Post"
                 },
-                "title": "Позиции сотрудников\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Types\\Staff\\Posts",
+                "title": "Позиции сотрудников\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Types\\Staff\\Posts",
                 "description": "@extends API\\Types\\AbstractObjectArray<Post>\n@method Post[] getValues()\n@method Post current()\n@see Post"
             }
         }

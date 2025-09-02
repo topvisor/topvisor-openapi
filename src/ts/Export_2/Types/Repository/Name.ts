@@ -10,7 +10,7 @@ export interface components {
         /**
          * Хранилище для экспорта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Export_2\Types\Repository\Name
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Export_2\Types\Repository\Name
          * @enum {string}
          */
         "Export_2.Types.Repository.Name": "gdrive";

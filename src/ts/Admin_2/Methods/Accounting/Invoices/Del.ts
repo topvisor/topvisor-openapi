@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отмена отправки счета. Разрешено только для счетов со статусом pending или sending
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Del */
         "Admin_2.Methods.Accounting.Invoices.Del": {
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Бразуеры для получение информации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Browsers */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Browsers */
         "Tpvsr_2.Types.Stat.Dimension.Browsers": import('./Browser.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Browser'][];
     };
     responses: never;

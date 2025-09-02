@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Информация о стоимости запуска проверки позиций по проектам
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Price\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Price\Get */
         "Keywords_2.Methods.Volumes.Price.Get": {
             /**
              * Запуск в режиме отладки

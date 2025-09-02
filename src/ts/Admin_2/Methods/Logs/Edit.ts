@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Сохранение текстового файла лога
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\Edit */
         "Admin_2.Methods.Logs.Edit": {
             /** Файл лога */
             log_file: string;

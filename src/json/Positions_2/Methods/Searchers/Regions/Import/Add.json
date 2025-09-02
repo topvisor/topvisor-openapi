@@ -22,7 +22,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Импорт регионов (CSV)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Import\\Add"
+                "title": "Импорт регионов (CSV)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Import\\Add"
             },
             "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": {
                 "nullable": true,

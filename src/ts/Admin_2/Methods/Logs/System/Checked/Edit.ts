@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Помечание лога как обработанного
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\System\Checked\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\System\Checked\Edit */
         "Admin_2.Methods.Logs.System.Checked.Edit": {
             /** ID лога */
             id: number;

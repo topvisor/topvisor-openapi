@@ -28,7 +28,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Дать оценку тикету\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Rate\\Edit"
+                "title": "Дать оценку тикету\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Rate\\Edit"
             },
             "Tickets_2.Methods.Rate.Edit.Exec": {
                 "nullable": true,

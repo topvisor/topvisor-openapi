@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Перевод проверок позиций яндекс
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit */
         "Admin_2.Methods.Actions.Robot.Checks.Edit": {
             /** Поисковик */
             modEngine: string;

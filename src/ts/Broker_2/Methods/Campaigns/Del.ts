@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление рекламной компании из управления ставками
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\Del */
         "Broker_2.Methods.Campaigns.Del": {
             /** Id проекта */
             project_id: number;

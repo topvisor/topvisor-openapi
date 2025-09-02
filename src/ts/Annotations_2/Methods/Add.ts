@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление примечания
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Add */
         "Annotations_2.Methods.Add": {
             /** ID проекта */
             project_id: number;

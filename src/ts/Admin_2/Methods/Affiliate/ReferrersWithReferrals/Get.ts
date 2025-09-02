@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение партнеров c кол-вом рефералов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersWithReferrals\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersWithReferrals\Get */
         "Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get": {
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

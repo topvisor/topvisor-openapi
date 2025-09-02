@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка имен сервисов, в которых есть команды cron
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Services\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Services\Get */
         "Cron_2.Methods.Get": {
             fields?: import('../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

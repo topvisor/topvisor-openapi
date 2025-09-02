@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Права для гостевых ссылок
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\Settings\GuestLinkRights */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Settings\GuestLinkRights */
         "Positions_2.Types.Settings.GuestLinkRights": import('./GuestLinkRight.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRight'][];
     };
     responses: never;

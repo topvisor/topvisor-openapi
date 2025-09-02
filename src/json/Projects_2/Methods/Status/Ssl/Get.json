@@ -22,7 +22,7 @@
                 "required": [
                     "domain"
                 ],
-                "title": "Получение информации об SSL сертификате\nВозваращает объект с параметрами:\n- expire\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Status\\Ssl\\Get"
+                "title": "Получение информации об SSL сертификате\nВозваращает объект с параметрами:\n- expire\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Status\\Ssl\\Get"
             },
             "Projects_2.Methods.Status.Ssl.Get.Exec": {
                 "type": "object",

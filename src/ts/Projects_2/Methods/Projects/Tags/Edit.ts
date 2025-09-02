@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование тегов проектов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Tags\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Tags\Edit */
         "Projects_2.Methods.Projects.Tags.Edit": {
             /**
              * enum(1..10) tags - теги проекта (по умолчанию - [1])

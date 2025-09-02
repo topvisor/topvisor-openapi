@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тэг для установки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Tag
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Tag
          * @enum {integer}
          */
         "Tpvsr_2.Types.Tag": 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;

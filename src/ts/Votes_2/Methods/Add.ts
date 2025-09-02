@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Оставление отзыва
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Methods\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Methods\Add */
         "Votes_2.Methods.Add": {
             /** Поддомен с которого оставлен отзыв */
             subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];

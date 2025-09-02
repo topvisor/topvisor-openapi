@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Управление приостановкой/возобновлением рекуррентных платежей
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Recurrent\Suspend\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Recurrent\Suspend\Edit */
         "Payments_2.Methods.Recurrent.Suspend.Edit": {
             /** id платежа, связанного с подпиской или тарифом */
             payment_id: number;

@@ -14,7 +14,7 @@ export interface components {
          *
          *     Управляющие символы "/" в начале и в конце строки будут удалены
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\RegExp
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\RegExp
          * @example /^year_(\d\d\d\d)$/
          */
         "TV.API.Types.RegExp": string;

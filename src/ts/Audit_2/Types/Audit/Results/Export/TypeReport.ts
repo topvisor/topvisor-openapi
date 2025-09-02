@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип отчета аудита для экспорта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Audit\Results\Export\TypeReport
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Audit\Results\Export\TypeReport
          * @enum {integer}
          */
         "Audit_2.Types.Audit.Results.Export.TypeReport": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;

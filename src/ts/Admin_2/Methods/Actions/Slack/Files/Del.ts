@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление файлов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Slack\Files\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Slack\Files\Del */
         "Admin_2.Methods.Actions.Slack.Files.Del": {
             /** Токен */
             token: string;

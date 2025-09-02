@@ -32,7 +32,7 @@
                     "email",
                     "code"
                 ],
-                "title": "Получение данных подтверждения\n\nВозвращает результат подтверждения в виде\nмассива с сообщением (acceptAction),\nлогической переменной (acceptEmail),\nnull при неправильно введенном типе\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\App_2\\Methods\\Actions\\Get"
+                "title": "Получение данных подтверждения\n\nВозвращает результат подтверждения в виде\nмассива с сообщением (acceptAction),\nлогической переменной (acceptEmail),\nnull при неправильно введенном типе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\App_2\\Methods\\Actions\\Get"
             },
             "App_2.Methods.Actions.Get.Exec": {
                 "nullable": true

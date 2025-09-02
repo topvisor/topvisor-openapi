@@ -10,7 +10,7 @@ export interface components {
         /**
          * Оценка отзыва
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Types\Rate
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Types\Rate
          * @enum {string}
          */
         "Votes_2.Types.Rate": "1" | "2" | "3" | "4" | "5";

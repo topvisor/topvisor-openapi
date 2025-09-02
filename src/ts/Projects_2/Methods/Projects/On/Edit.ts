@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование "on" проектов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\On\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\On\Edit */
         "Projects_2.Methods.Projects.On.Edit": {
             /** Активность проекта
              *     - -1 - архив

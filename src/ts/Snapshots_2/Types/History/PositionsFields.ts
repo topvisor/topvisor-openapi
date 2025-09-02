@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Поля, возвращаемые в snapshotsData
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\PositionsFields */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Types\History\PositionsFields */
         "Snapshots_2.Types.History.PositionsFields": import('./PositionsField.ts').components['schemas']['Snapshots_2.Types.History.PositionsField'][];
     };
     responses: never;

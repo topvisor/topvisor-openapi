@@ -10,7 +10,7 @@ export interface components {
         /**
          * Бразуер для получение информации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Browser
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Browser
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Browser": "IE" | "Chrome" | "Firefox" | "Opera" | "Safari" | "Ya" | "Other";

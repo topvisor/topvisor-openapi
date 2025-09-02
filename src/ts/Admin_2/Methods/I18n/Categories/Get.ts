@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение категорий словаря
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\I18n\Categories\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\I18n\Categories\Get */
         "Admin_2.Methods.I18n.Categories.Get": Record<string, never>;
         "Admin_2.Methods.I18n.Categories.Get.Exec": string[];
     };

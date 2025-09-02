@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Поучение гостевой ссылки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Export\GuestLinks\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Stat\Export\GuestLinks\Get */
         "Tpvsr_2.Methods.Stat.Export.GuestLinks.Get": {
             /** Хэш ссылки */
             hash: string;

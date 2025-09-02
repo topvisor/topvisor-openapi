@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных о подключенных сервисах
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Data\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Data\Get */
         "Tpa_2.Methods.Data.Get": {
             /** Получить ли подключенные рекламные кампании (Директ и Adwords) */
             include_broker_campaigns?: boolean;

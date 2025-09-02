@@ -33,7 +33,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение тональности\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Sentiment\\Edit"
+                "title": "Изменение тональности\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Methods\\Sentiment\\Edit"
             },
             "Mentions_2.Methods.Sentiment.Edit.Exec": {
                 "type": "integer"

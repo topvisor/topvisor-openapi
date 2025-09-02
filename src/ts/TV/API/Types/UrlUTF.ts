@@ -14,7 +14,7 @@ export interface components {
          *
          *     Разрешен ввод пустой строки, для удаления значения url
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlUTF */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\UrlUTF */
         "TV.API.Types.UrlUTF": string;
     };
     responses: never;

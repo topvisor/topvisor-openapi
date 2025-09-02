@@ -30,7 +30,7 @@
                     "Все запросыы  конкурента",
                     "Уникальные запросы конкурента"
                 ],
-                "title": "Тип связи запросов между конкурентами\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Table\\Keywords\\TypeVS"
+                "title": "Тип связи запросов между конкурентами\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Table\\Keywords\\TypeVS"
             }
         }
     }

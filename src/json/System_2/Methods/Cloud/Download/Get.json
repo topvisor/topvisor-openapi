@@ -23,7 +23,7 @@
                     "directory",
                     "basename"
                 ],
-                "title": "Скачивание файла из директории\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Cloud\\Download\\Get"
+                "title": "Скачивание файла из директории\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Cloud\\Download\\Get"
             },
             "System_2.Methods.Cloud.Download.Get.Exec": {
                 "type": "never"

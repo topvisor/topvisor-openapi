@@ -10,7 +10,7 @@ export interface components {
         /**
          * Формат экспорта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Export\Referrers\Output
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Export\Referrers\Output
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Export.Referrers.Output": "csv";

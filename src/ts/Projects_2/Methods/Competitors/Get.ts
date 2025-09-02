@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка конкурентов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Get */
         "Projects_2.Methods.Competitors.Get": {
             /** @default [
              *       "id",

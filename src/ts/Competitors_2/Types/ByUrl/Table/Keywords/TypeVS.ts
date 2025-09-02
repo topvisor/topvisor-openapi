@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип связи запросов между конкурентами
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\ByUrl\Table\Keywords\TypeVS
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\ByUrl\Table\Keywords\TypeVS
          * @enum {string}
          */
         "Competitors_2.Types.ByUrl.Table.Keywords.TypeVS": "me" | "exclusive_me" | "common" | "competitor" | "exclusive_competitor";

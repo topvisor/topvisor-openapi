@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт истории снимков выдачи
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Export\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Export\Get */
         "Snapshots_2.Methods.History.Export.Get": {
             /**
              * Вернуть ли URI-идентификатор или имя файла, из директории.

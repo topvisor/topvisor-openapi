@@ -36,7 +36,7 @@
                     "Ссылки",
                     "Индексация"
                 ],
-                "title": "Номер метрики\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Types\\Analytics\\Axe"
+                "title": "Номер метрики\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Types\\Analytics\\Axe"
             }
         }
     }

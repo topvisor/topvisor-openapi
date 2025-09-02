@@ -10,7 +10,7 @@ export interface components {
         /**
          * Ключ поисковой системы для индексации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Indexing\SearcherKey
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Indexing\SearcherKey
          * @enum {string}
          */
         "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5";

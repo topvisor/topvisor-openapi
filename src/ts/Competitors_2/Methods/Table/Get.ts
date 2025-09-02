@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных для отчета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Table\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Table\Get */
         "Competitors_2.Methods.Table.Get": {
             by_type: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */

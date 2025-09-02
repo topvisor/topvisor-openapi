@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка договоров
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Get */
         "Bank_2.Methods.Requisites.Get": {
             /** Добавить информацию о доступных контрагентах организации для ЭДО */
             include_edc_data?: boolean;

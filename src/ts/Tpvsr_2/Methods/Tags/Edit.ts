@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение тегов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Tags\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Tags\Edit */
         "Tpvsr_2.Methods.Tags.Edit": {
             /** Хеш ссылки */
             hash: string;

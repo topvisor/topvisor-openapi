@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Ranks\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Ranks\\Get"
             },
             "Admin_2.Methods.Ranks.Get.Exec": {
                 "nullable": true,

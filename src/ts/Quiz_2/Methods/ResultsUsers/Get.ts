@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение участников теста
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\ResultsUsers\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\ResultsUsers\Get */
         "Quiz_2.Methods.ResultsUsers.Get": {
             /** ID теста */
             quiz_id: string;

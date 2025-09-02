@@ -17,7 +17,7 @@ export interface components {
          *
          *     При ошибке производит редирект на страницу с информацией об ошибке
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Add */
         "Payments_2.Methods.Add": {
             /** Платежная система */
             system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];

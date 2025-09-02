@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение заархивированного приложения
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Get */
         "App_2.Methods.Get": Record<string, never>;
         "App_2.Methods.Get.Exec": Record<string, never>;
     };

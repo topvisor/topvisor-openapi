@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление нескольких ответов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Multi\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Multi\Add */
         "Quiz_2.Methods.QuestionsResponses.Multi.Add": {
             /** Ответы */
             questions_responses: unknown[];

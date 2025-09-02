@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение привязанных карт пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Methods\RecurringCard\Get */
         "Recurring_2.Methods.RecurringCard.Get": Record<string, never>;
         "Recurring_2.Methods.RecurringCard.Get.Exec": unknown;
     };

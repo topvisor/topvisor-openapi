@@ -50,7 +50,7 @@
                     "responseBodyBuffer",
                     "responseBodyBufferStop"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Topvisor\\Curl\\Curl"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Topvisor\\Curl\\Curl"
             }
         }
     }

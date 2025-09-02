@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение логотипа бренда
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Edit */
         "Users_2.Methods.Profile.Brand.Logo.Edit": {
             /** Ссылка на новый логотип */
             file?: string | null;

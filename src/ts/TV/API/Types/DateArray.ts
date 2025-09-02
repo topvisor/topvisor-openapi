@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип массива: Date[]
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\DateArray
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\DateArray
          * @description @extends AbstractStringArray<Date>
          *     @method Date[] getValues()
          *     @method Date current()

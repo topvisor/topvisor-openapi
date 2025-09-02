@@ -21,7 +21,7 @@
                 "required": [
                     "target_type"
                 ],
-                "title": "Получение данных доступных столбцов для выборки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\AvailableFieldsData\\Get"
+                "title": "Получение данных доступных столбцов для выборки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Templates_2\\Methods\\AvailableFieldsData\\Get"
             },
             "Templates_2.Methods.AvailableFieldsData.Get.Exec": {
                 "type": "array"

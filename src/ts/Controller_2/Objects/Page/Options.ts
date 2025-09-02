@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Основные опции страницы для <head>, такие, как title и description
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Page\Options */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Objects\Page\Options */
         "Controller_2.Objects.Page.Options": {
             title: string;
             description: string;

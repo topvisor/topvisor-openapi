@@ -10,7 +10,7 @@ export interface components {
         /**
          * Авторизация через VK ID
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
          * @description @see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description
          */
         "Users_2.Methods.Tpa.Vk.Auth.Get": {

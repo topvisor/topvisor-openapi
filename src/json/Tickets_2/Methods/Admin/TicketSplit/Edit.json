@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Перенос последниего сообщения (до 1 сообщения автора) в новый тикет\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\TicketSplit\\Edit"
+                "title": "Перенос последниего сообщения (до 1 сообщения автора) в новый тикет\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\TicketSplit\\Edit"
             },
             "Tickets_2.Methods.Admin.TicketSplit.Edit.Exec": {
                 "nullable": true,

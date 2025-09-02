@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Копирование истории позиций
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Copy\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Copy\Add */
         "Admin_2.Methods.Actions.Positions.History.Copy.Add": {
             /** Откуда скопировать */
             projectId: number;

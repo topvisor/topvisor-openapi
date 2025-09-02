@@ -10,7 +10,7 @@ export interface components {
         /**
          * Id поисковых систем для индексации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Indexing\SearcherKeys
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Indexing\SearcherKeys
          * @description @see SearcherKey
          */
         "Audit_2.Types.Indexing.SearcherKeys": import('./SearcherKey.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKey'][];

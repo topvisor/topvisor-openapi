@@ -10,7 +10,7 @@ export interface components {
         /**
          * Формат превью
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Common\PagePreview\Format
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Common\PagePreview\Format
          * @enum {string}
          */
         "System_2.Types.Common.PagePreview.Format": "" | "vk";

@@ -21,7 +21,7 @@
                     null,
                     null
                 ],
-                "title": "Тип фильтра по группам транзакций\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Types\\Accounting\\Group\\Filter\\Type"
+                "title": "Тип фильтра по группам транзакций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Types\\Accounting\\Group\\Filter\\Type"
             }
         }
     }

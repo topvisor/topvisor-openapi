@@ -36,7 +36,7 @@
                     "Общая месячная стоимость в рублях",
                     "Общая месячная стоимость в долларах"
                 ],
-                "title": "Тип графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Charts\\Structure\\Type"
+                "title": "Тип графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Charts\\Structure\\Type"
             }
         }
     }

@@ -10,7 +10,7 @@ export interface components {
         /**
          * Операции выполняемые ботом
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Telegram_2\Types\Bot\Api\Operation
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\Api\Operation
          * @enum {integer}
          */
         "Telegram_2.Types.Bot.Api.Operation": 1 | 2;

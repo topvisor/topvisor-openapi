@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправка объявления на модерацию
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Ads\ToModerate\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Ads\ToModerate\Edit */
         "Broker_2.Methods.Ads.ToModerate.Edit": {
             /** Id кампании */
             campaign_tv_id: number;

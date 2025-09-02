@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\EmailsHints\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\EmailsHints\Get */
         "Schedule_2.Methods.Settings.EmailsHints.Get": {
             search?: string;
         };

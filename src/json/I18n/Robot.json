@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Robot\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Robot\\En"
             }
         }
     }

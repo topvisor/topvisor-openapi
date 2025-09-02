@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Сортировка документов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Order\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Order\Edit */
         "Content_2.Methods.Pages.Order.Edit": {
             /** Поддомен папки */
             subdomain: import('../../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];

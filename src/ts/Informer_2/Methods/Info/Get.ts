@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение информации о сообщениях в информере
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Info\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Info\Get */
         "Informer_2.Methods.Info.Get": Record<string, never>;
         "Informer_2.Methods.Info.Get.Exec": unknown[];
     };

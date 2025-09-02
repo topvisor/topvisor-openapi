@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение гостевой ссылки на просмотр аудита позиций
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Links\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Export\Links\Get */
         "Audit_2.Methods.Audit.Export.Links.Get": {
             /** Название просмотра (используется на странице с просмотром проверки) */
             view_name?: string;

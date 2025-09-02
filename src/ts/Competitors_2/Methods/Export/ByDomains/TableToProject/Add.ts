@@ -11,7 +11,7 @@ export interface components {
          *
          *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByDomains\TableToProject\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByDomains\TableToProject\Add */
         "Competitors_2.Methods.Export.ByDomains.TableToProject.Add": {
             /** @default export_byDomains_tableToProject */
             func?: string;

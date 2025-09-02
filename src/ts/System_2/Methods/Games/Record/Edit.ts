@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение рекорда в тетрисе
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Games\Record\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Games\Record\Edit */
         "System_2.Methods.Games.Record.Edit": {
             /** Новый рекорд */
             record: number;

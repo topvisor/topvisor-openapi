@@ -10,7 +10,7 @@ export interface components {
         /**
          * Представление отчета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\ByKeyword\Charts\View
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\ByKeyword\Charts\View
          * @enum {string}
          */
         "Competitors_2.Types.ByKeyword.Charts.View": "wordstat" | "leaders" | "similar";

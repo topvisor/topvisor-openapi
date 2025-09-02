@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение пароля
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Pass\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Pass\Edit */
         "Users_2.Methods.Profile.Pass.Edit": {
             /** Текущий пароль */
             pass: string;

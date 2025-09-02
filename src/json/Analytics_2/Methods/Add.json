@@ -42,7 +42,7 @@
                     }
                 },
                 "required": [],
-                "title": "Фиксация события\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Analytics_2\\Methods\\Add"
+                "title": "Фиксация события\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Analytics_2\\Methods\\Add"
             },
             "Analytics_2.Methods.Add.Exec": {
                 "nullable": true,

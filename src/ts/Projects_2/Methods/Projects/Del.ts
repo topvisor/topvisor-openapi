@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление проектов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Del */
         "Projects_2.Methods.Projects.Del": {
             /** Является ли проект - задачей */
             is_tasks?: boolean;

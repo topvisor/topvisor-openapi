@@ -50,7 +50,7 @@
                     "i",
                     "command"
                 ],
-                "title": "Добавление задачи cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Methods\\Commands\\Add"
+                "title": "Добавление задачи cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Cron_2\\Methods\\Commands\\Add"
             },
             "Cron_2.Methods.Commands.Add.Exec": {
                 "nullable": true,

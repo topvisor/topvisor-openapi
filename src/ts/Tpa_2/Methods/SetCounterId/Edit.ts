@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Выбрать счетчик
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit */
         "Tpa_2.Methods.SetCounterId.Edit": {
             provider: import('../../Types/Provider.ts').components['schemas']['Tpa_2.Types.Provider'];
             cid: string;

@@ -27,7 +27,7 @@
                     "Неделя",
                     "Каждую неделю"
                 ],
-                "title": "Период отправки отчета\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\Period"
+                "title": "Период отправки отчета\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Schedule_2\\Types\\Settings\\Period"
             }
         }
     }

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение страниц, по которым был выполнен аудит
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Pages\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Pages\Get */
         "Audit_2.Methods.Audit.Pages.Get": {
             /** Тип отчета для фильтра по ресурсам страницы */
             filters_resources_target_type?: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'] | null;

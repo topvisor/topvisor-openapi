@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Переименовывание файла
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Rename\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Rename\Edit */
         "System_2.Methods.Cloud.Rename.Edit": {
             /** Директория */
             directory: string;

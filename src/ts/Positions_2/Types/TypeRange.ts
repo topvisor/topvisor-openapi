@@ -10,7 +10,7 @@ export interface components {
         /**
          * id тега
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\TypeRange
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\TypeRange
          * @enum {integer}
          */
         "Positions_2.Types.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 100;

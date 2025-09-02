@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление результатов предыдущих попытки пройти тест
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Results\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Results\Del */
         "Quiz_2.Methods.Results.Del": {
             /** ID теста */
             quiz_id: string;

@@ -48,7 +48,7 @@
                     "target_type",
                     "name"
                 ],
-                "title": "Сохранение шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Add"
+                "title": "Сохранение шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Templates_2\\Methods\\Add"
             },
             "Templates_2.Methods.Add.Exec": {
                 "nullable": true,

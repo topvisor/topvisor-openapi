@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение правила редиректа (для админов)
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Redirects\Edit */
         "Content_2.Methods.Redirects.Edit": {
             /** На путь */
             redirect_path: string;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Оплатить отчет
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\Pay\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\Pay\Edit */
         "Competitors_2.Methods.Orders.Pay.Edit": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;

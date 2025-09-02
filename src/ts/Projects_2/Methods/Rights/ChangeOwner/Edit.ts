@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Инициализация передачи проекта другому пользователю
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Edit */
         "Projects_2.Methods.Rights.ChangeOwner.Edit": {
             /** ID проекта */
             project_id: number;

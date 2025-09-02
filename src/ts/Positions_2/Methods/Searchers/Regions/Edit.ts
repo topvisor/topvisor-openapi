@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение региона
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Edit */
         "Positions_2.Methods.Searchers.Regions.Edit": {
             /** Id проекта */
             project_id: number;

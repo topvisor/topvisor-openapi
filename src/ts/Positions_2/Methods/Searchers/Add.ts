@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление ПС
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Add */
         "Positions_2.Methods.Searchers.Add": {
             /** Id проекта */
             project_id: number;

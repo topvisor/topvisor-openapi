@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка доступа
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Access\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Access\Edit */
         "Admin_2.Methods.Staff.Access.Edit": {
             /** ID пользователя */
             user_id: number;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление отчета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\Del */
         "Competitors_2.Methods.Orders.Del": {
             /** Id отчета */
             id: number;

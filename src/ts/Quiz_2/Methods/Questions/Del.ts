@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление вопроса
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Del */
         "Quiz_2.Methods.Questions.Del": {
             /** ID вопроса */
             id: number;

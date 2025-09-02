@@ -10,7 +10,7 @@ export interface components {
         /**
          * Типы токенов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Push\Token\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Types\Push\Token\Type
          * @enum {string}
          */
         "Informer_2.Types.Push.Token.Type": "firebase" | "web" | "safari" | "safariAuth";

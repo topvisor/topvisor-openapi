@@ -18,7 +18,7 @@
                     }
                 },
                 "required": [],
-                "title": "Удаление папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\Del"
+                "title": "Удаление папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Folders\\Del"
             },
             "Projects_2.Methods.Folders.Del.Exec": {
                 "nullable": true,

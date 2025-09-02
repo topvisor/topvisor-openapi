@@ -10,7 +10,7 @@ export interface components {
         /**
          * Устройство для выполнения аудита и радара
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Settings\Device
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Settings\Device
          * @enum {string}
          */
         "Audit_2.Types.Settings.Device": "0" | "1" | "2" | "100" | "102" | "110" | "112" | "200" | "202";

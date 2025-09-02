@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение шаблона
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Edit */
         "Tickets_2.Methods.Admin.Templates.Edit": {
             /** ID шаблона */
             id: number;

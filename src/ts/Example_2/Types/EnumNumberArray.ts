@@ -13,7 +13,7 @@ export interface components {
          *
          *     Хранит: false|true
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Types\EnumNumberArray */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Types\EnumNumberArray */
         "Example_2.Types.EnumNumberArray": import('./Number.ts').components['schemas']['Example_2.Types.Number'][];
     };
     responses: never;

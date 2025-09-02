@@ -29,7 +29,7 @@
                     "project_id",
                     "region_index"
                 ],
-                "title": "Удаление региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Del"
+                "title": "Удаление региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Del"
             },
             "Positions_2.Methods.Searchers.Regions.Del.Exec": {
                 "nullable": true

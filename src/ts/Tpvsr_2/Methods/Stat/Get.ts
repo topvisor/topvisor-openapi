@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение статистики по ссылке
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Stat\Get */
         "Tpvsr_2.Methods.Stat.Get": {
             /** Хэш ссылки */
             hash: string;

@@ -53,7 +53,7 @@
                     "project_id",
                     "region_index"
                 ],
-                "title": "Изменение региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Edit"
+                "title": "Изменение региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Edit"
             },
             "Positions_2.Methods.Searchers.Regions.Edit.Exec": {
                 "type": "integer"

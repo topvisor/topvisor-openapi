@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Логирование ошибки js и отправка в канал slack
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Log\Error\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Log\Error\Add */
         "System_2.Methods.Log.Error.Add": {
             /** Строка лога с данными ошибки */
             log: string;

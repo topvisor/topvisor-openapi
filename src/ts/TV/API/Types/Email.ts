@@ -10,7 +10,7 @@ export interface components {
         /**
          * E-mail
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Email
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\Email
          * @example name@example.com
          */
         "TV.API.Types.Email": string;

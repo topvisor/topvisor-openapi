@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение статистики
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Statistics\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Statistics\Get */
         "Admin_2.Methods.Analytics.Statistics.Get": Record<string, never>;
         "Admin_2.Methods.Analytics.Statistics.Get.Exec": ({
             count_new_dynamics_off: number;

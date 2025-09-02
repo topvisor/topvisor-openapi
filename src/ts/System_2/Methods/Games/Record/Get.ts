@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение рекорда тетриса
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Games\Record\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Games\Record\Get */
         "System_2.Methods.Games.Record.Get": Record<string, never>;
         "System_2.Methods.Games.Record.Get.Exec": number;
     };

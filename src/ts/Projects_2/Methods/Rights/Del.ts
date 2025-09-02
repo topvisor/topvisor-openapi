@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление прав у пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\Del */
         "Projects_2.Methods.Rights.Del": {
             /** Email пользователя */
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

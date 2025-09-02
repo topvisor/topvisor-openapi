@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Экспортирование архива логов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Log\Export\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Log\Export\Get */
         "Broker_2.Methods.Log.Export.Get": {
             /** Id компаний */
             campaigns_tv_ids: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

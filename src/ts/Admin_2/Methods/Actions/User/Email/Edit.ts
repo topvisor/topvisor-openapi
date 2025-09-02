@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Замена email пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\User\Email\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\User\Email\Edit */
         "Admin_2.Methods.Actions.User.Email.Edit": {
             /** ID пользователя */
             user_id: number;

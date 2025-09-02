@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменить дополнительные параметры расписания
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\Edit */
         "Schedule_2.Methods.Settings.Edit": {
             /**
              * Тип расписания

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление бота в телеграм канал
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Telegram\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Add */
         "Admin_2.Methods.Actions.Telegram.Add": {
             /** Название бота */
             botName: string;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправка акты в диадок
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Payments\Diadoc\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Payments\Diadoc\Add */
         "Admin_2.Methods.Actions.Payments.Diadoc.Add": {
             /** ID пользователя */
             userId: number;

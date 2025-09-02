@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Возвращаемый формат файла из директории
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\File */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Cloud\File */
         "System_2.Types.Cloud.File": {
             modify: string;
             size: number;

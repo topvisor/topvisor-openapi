@@ -11,7 +11,7 @@ export interface components {
          *
          *     Возвращает изображение в формате data:image/png;base64
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Qr_2\Methods\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Qr_2\Methods\Get */
         "Qr_2.Methods.Get": {
             /** Кодируемый текст */
             text: string;

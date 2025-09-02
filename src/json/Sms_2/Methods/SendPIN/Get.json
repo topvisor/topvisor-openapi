@@ -24,7 +24,7 @@
                     }
                 },
                 "required": [],
-                "title": "Отправить код для подтверждения действия\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Sms_2\\Methods\\SendPIN\\Get"
+                "title": "Отправить код для подтверждения действия\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Sms_2\\Methods\\SendPIN\\Get"
             },
             "Sms_2.Methods.SendPIN.Get.Exec": {
                 "type": "boolean"

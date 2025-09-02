@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение временной зоны
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Timezone\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Timezone\Edit */
         "Users_2.Methods.Profile.Timezone.Edit": {
             /** Новая временная зона
              *

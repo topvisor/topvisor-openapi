@@ -42,7 +42,7 @@
                     "Две последние даты проверок",
                     "Произвольный список дат"
                 ],
-                "title": "id тега\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Types\\TypeRange"
+                "title": "id тега\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Types\\TypeRange"
             }
         }
     }

@@ -140,7 +140,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение истории снимков выдачи\n\nМетод базируется на объекте keywords (доступны только фильтры)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\History\\Get"
+                "title": "Получение истории снимков выдачи\n\nМетод базируется на объекте keywords (доступны только фильтры)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\History\\Get"
             },
             "Snapshots_2.Methods.History.Get.Exec": {
                 "nullable": true,

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\TicketSplit\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\TicketSplit\Edit */
         "Tickets_2.Methods.Admin.TicketSplit.Edit": {
             /** Id тикета */
             id: number;

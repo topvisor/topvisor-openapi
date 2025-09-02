@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Основные данные статьи, такие как h1, html, автор, дата публикации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Page\Article */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Objects\Page\Article */
         "Controller_2.Objects.Page.Article": {
             /** @default module */
             type: string;

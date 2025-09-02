@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение календаря текстовых апдейтов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Text\Calendar\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Text\Calendar\Get */
         "Content_2.Methods.Apometr.Text.Calendar.Get": {
             /** Дата календаря */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;

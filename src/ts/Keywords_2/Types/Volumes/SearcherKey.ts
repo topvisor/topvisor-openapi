@@ -10,7 +10,7 @@ export interface components {
         /**
          * Ключ поисковой системы для проверки частоты
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Volumes\SearcherKey
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Volumes\SearcherKey
          * @enum {integer}
          */
         "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;

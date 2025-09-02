@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменить настройки автора
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Authors\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Authors\Edit */
         "Content_2.Methods.Authors.Edit": {
             /** Имя для url страницы автора
              *

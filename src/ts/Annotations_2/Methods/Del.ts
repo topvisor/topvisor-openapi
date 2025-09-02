@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление примечания
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Del */
         "Annotations_2.Methods.Del": {
             /** ID примечания */
             id: number;

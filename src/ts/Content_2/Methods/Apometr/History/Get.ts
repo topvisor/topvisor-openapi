@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение истории шторма за период в 2 суток
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\History\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\History\Get */
         "Content_2.Methods.Apometr.History.Get": {
             /** Индекс региона */
             region_index?: number | null;

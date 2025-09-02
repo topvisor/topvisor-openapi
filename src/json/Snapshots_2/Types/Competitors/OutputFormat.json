@@ -21,7 +21,7 @@
                     "По домену",
                     "По url"
                 ],
-                "title": "Формат вывода конкурентов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\Competitors\\OutputFormat"
+                "title": "Формат вывода конкурентов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Types\\Competitors\\OutputFormat"
             }
         }
     }

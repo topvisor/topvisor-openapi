@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получить title ссылки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Title\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Title\Get */
         "Tpvsr_2.Methods.Title.Get": {
             /** Ссылка */
             link: string;

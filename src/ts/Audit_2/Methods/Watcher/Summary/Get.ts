@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сводки радара
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Summary\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Summary\Get */
         "Audit_2.Methods.Watcher.Summary.Get": {
             /** Тип проверки */
             watcher_types?: unknown[] | null;

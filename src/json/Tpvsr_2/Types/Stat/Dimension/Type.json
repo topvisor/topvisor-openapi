@@ -33,7 +33,7 @@
                     "Клики, разделение по операционным системам",
                     "Клики, разделение по странам"
                 ],
-                "title": "Тип статистики кликов по ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Type"
+                "title": "Тип статистики кликов по ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Type"
             }
         }
     }

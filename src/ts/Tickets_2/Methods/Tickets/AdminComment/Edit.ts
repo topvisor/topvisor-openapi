@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирваоние комменатрий админа
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\AdminComment\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\AdminComment\Edit */
         "Tickets_2.Methods.Tickets.AdminComment.Edit": {
             /** ID тикета */
             id: number;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Поиск страниц
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Search\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Search\Get */
         "Content_2.Methods.Search.Get": {
             /** Фильтр по поддомену */
             subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];

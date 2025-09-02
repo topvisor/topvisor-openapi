@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление данных об отпуске
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Vacation\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Vacation\Del */
         "Admin_2.Methods.Staff.Vacation.Del": {
             /** ID события */
             id: number;

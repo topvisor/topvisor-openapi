@@ -6,7 +6,7 @@
 export interface paths {  
     /** Фиксация события
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Analytics_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Analytics_2\Methods\Add */
     "/add/analytics_2/": {
         parameters: {
             query?: never;
@@ -25,7 +25,7 @@ export interface paths {
     };  
     /** Добавление примечания
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Add */
     "/add/annotations_2/": {
         parameters: {
             query?: never;
@@ -44,7 +44,7 @@ export interface paths {
     };  
     /** Удаление примечания
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Del */
     "/del/annotations_2/": {
         parameters: {
             query?: never;
@@ -63,7 +63,7 @@ export interface paths {
     };  
     /** Редактирование примечания
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Edit */
     "/edit/annotations_2/": {
         parameters: {
             query?: never;
@@ -82,7 +82,7 @@ export interface paths {
     };  
     /** Получение примечаний
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Get */
     "/get/annotations_2/": {
         parameters: {
             query?: never;
@@ -101,7 +101,7 @@ export interface paths {
     };  
     /** Получение заархивированного приложения
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Get */
     "/get/app_2/": {
         parameters: {
             query?: never;
@@ -120,7 +120,7 @@ export interface paths {
     };  
     /** Добавление комментария
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Add */
     "/add/comments_2/": {
         parameters: {
             query?: never;
@@ -143,7 +143,7 @@ export interface paths {
      *
      *     Админы могут удалять комментарии в любое время
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Del */
     "/del/comments_2/": {
         parameters: {
             query?: never;
@@ -164,7 +164,7 @@ export interface paths {
      *
      *     Изменять комментарий можно только в течение ограниченного времени
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Edit */
     "/edit/comments_2/": {
         parameters: {
             query?: never;
@@ -185,7 +185,7 @@ export interface paths {
      *
      *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Get */
     "/get/comments_2/": {
         parameters: {
             query?: never;
@@ -204,7 +204,7 @@ export interface paths {
     };  
     /** Получить полные данные об одной странице
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Get */
     "/get/content_2/": {
         parameters: {
             query?: never;
@@ -223,7 +223,7 @@ export interface paths {
     };  
     /** Получить объект страницы с отрендериным контентом
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Methods\Get */
     "/get/controller_2/": {
         parameters: {
             query?: never;
@@ -242,7 +242,7 @@ export interface paths {
     };  
     /** Получение списка упоминаний
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Get */
     "/get/mentions_2/": {
         parameters: {
             query?: never;
@@ -269,7 +269,7 @@ export interface paths {
      *
      *     При ошибке производит редирект на страницу с информацией об ошибке
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Add */
     "/add/payments_2/": {
         parameters: {
             query?: never;
@@ -288,7 +288,7 @@ export interface paths {
     };  
     /** Получение списка платежей
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Get */
     "/get/payments_2/": {
         parameters: {
             query?: never;
@@ -309,7 +309,7 @@ export interface paths {
      *
      *     Возвращает изображение в формате data:image/png;base64
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Qr_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Qr_2\Methods\Get */
     "/get/qr_2/": {
         parameters: {
             query?: never;
@@ -328,7 +328,7 @@ export interface paths {
     };  
     /** Добавление теста
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Add */
     "/add/quiz_2/": {
         parameters: {
             query?: never;
@@ -347,7 +347,7 @@ export interface paths {
     };  
     /** Редактирование теста
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Edit */
     "/edit/quiz_2/": {
         parameters: {
             query?: never;
@@ -366,7 +366,7 @@ export interface paths {
     };  
     /** Получение тестов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Get */
     "/get/quiz_2/": {
         parameters: {
             query?: never;
@@ -385,7 +385,7 @@ export interface paths {
     };  
     /** Настройка рекуррентного платежа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Methods\Edit */
     "/edit/recurring_2/": {
         parameters: {
             query?: never;
@@ -402,7 +402,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Del */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Del */
     "/del/schedule_2/": {
         parameters: {
             query?: never;
@@ -421,7 +421,7 @@ export interface paths {
     };  
     /** Привязать расписание к объекту
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Edit */
     "/edit/schedule_2/": {
         parameters: {
             query?: never;
@@ -440,7 +440,7 @@ export interface paths {
     };  
     /** Получение рассписания
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Get */
     "/get/schedule_2/": {
         parameters: {
             query?: never;
@@ -459,7 +459,7 @@ export interface paths {
     };  
     /** Сохранение списка тегов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tags_2\Methods\Edit */
     "/edit/tags_2/": {
         parameters: {
             query?: never;
@@ -478,7 +478,7 @@ export interface paths {
     };  
     /** Получение списка тегов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tags_2\Methods\Get */
     "/get/tags_2/": {
         parameters: {
             query?: never;
@@ -497,7 +497,7 @@ export interface paths {
     };  
     /** Сохранение шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Add */
     "/add/templates_2/": {
         parameters: {
             query?: never;
@@ -516,7 +516,7 @@ export interface paths {
     };  
     /** Удаление шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Del */
     "/del/templates_2/": {
         parameters: {
             query?: never;
@@ -535,7 +535,7 @@ export interface paths {
     };  
     /** Изменение шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Edit */
     "/edit/templates_2/": {
         parameters: {
             query?: never;
@@ -554,7 +554,7 @@ export interface paths {
     };  
     /** Получение сохраненного списка шаблонов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Get */
     "/get/templates_2/": {
         parameters: {
             query?: never;
@@ -573,7 +573,7 @@ export interface paths {
     };  
     /** Удаление интеграции
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Del */
     "/del/tpa_2/": {
         parameters: {
             query?: never;
@@ -592,7 +592,7 @@ export interface paths {
     };  
     /** Добавление ссылки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Add */
     "/add/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -611,7 +611,7 @@ export interface paths {
     };  
     /** Редактирование ссылки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Edit */
     "/edit/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -630,7 +630,7 @@ export interface paths {
     };  
     /** Получение списка ссылок пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Get */
     "/get/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -649,7 +649,7 @@ export interface paths {
     };  
     /** Добавление url
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Add */
     "/add/urls_2/": {
         parameters: {
             query?: never;
@@ -668,7 +668,7 @@ export interface paths {
     };  
     /** Изменение urls
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Edit */
     "/edit/urls_2/": {
         parameters: {
             query?: never;
@@ -687,7 +687,7 @@ export interface paths {
     };  
     /** Получение списка urls проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Get */
     "/get/urls_2/": {
         parameters: {
             query?: never;
@@ -706,7 +706,7 @@ export interface paths {
     };  
     /** Получение данных пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Get */
     "/get/users_2/": {
         parameters: {
             query?: never;
@@ -725,7 +725,7 @@ export interface paths {
     };  
     /** Оставление отзыва
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Methods\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Methods\Add */
     "/add/votes_2/": {
         parameters: {
             query?: never;
@@ -744,7 +744,7 @@ export interface paths {
     };  
     /** Получение своих отзывов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Methods\Get */
     "/get/votes_2/": {
         parameters: {
             query?: never;
@@ -763,7 +763,7 @@ export interface paths {
     };  
     /** Получение скриншота (платная функция)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Webscreens_2\Methods\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Webscreens_2\Methods\Get */
     "/get/webscreens_2/": {
         parameters: {
             query?: never;
@@ -782,7 +782,7 @@ export interface paths {
     };  
     /** Получение доступа к акаунту пользователя в режиме "призрак"
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Ghost\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ghost\Get */
     "/get/admin_2/ghost/": {
         parameters: {
             query?: never;
@@ -801,7 +801,7 @@ export interface paths {
     };  
     /** Получение записей словаря
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\I18n\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\I18n\Get */
     "/get/admin_2/i18n/": {
         parameters: {
             query?: never;
@@ -818,7 +818,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Informer\Add */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Informer\Add */
     "/add/admin_2/informer/": {
         parameters: {
             query?: never;
@@ -837,7 +837,7 @@ export interface paths {
     };  
     /** Сохранение текстового файла лога
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\Edit */
     "/edit/admin_2/logs/": {
         parameters: {
             query?: never;
@@ -856,7 +856,7 @@ export interface paths {
     };  
     /** Загрузка текстового файла лога
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\Get */
     "/get/admin_2/logs/": {
         parameters: {
             query?: never;
@@ -873,7 +873,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Ranks\Get */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ranks\Get */
     "/get/admin_2/ranks/": {
         parameters: {
             query?: never;
@@ -892,7 +892,7 @@ export interface paths {
     };  
     /** Добавление сотрудника
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Add */
     "/add/admin_2/staff/": {
         parameters: {
             query?: never;
@@ -909,7 +909,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Edit */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Edit */
     "/edit/admin_2/staff/": {
         parameters: {
             query?: never;
@@ -928,7 +928,7 @@ export interface paths {
     };  
     /** Получение персонала, объект admin_staff
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Get */
     "/get/admin_2/staff/": {
         parameters: {
             query?: never;
@@ -947,7 +947,7 @@ export interface paths {
     };  
     /** Изменение даты следующего списания по тарифу
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\TariffChangeExpire\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\TariffChangeExpire\Edit */
     "/edit/admin_2/tariffChangeExpire/": {
         parameters: {
             query?: never;
@@ -966,7 +966,7 @@ export interface paths {
     };  
     /** Поиск HTML шаблонов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Tpl\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Tpl\Get */
     "/get/admin_2/tpl/": {
         parameters: {
             query?: never;
@@ -985,7 +985,7 @@ export interface paths {
     };  
     /** Редактирование пользователей, объект admin_users
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Edit */
     "/edit/admin_2/users/": {
         parameters: {
             query?: never;
@@ -1004,7 +1004,7 @@ export interface paths {
     };  
     /** Получение пользователей
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Get */
     "/get/admin_2/users/": {
         parameters: {
             query?: never;
@@ -1021,7 +1021,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Votes\Get */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Votes\Get */
     "/get/admin_2/votes/": {
         parameters: {
             query?: never;
@@ -1040,7 +1040,7 @@ export interface paths {
     };  
     /** Получение всех своих примечаний по всем проектам и сервисам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Annotations_2\Methods\My\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\My\Get */
     "/get/annotations_2/my/": {
         parameters: {
             query?: never;
@@ -1064,7 +1064,7 @@ export interface paths {
      *     логической переменной (acceptEmail),
      *     null при неправильно введенном типе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Actions\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Actions\Get */
     "/get/app_2/actions/": {
         parameters: {
             query?: never;
@@ -1083,7 +1083,7 @@ export interface paths {
     };  
     /** Получение объекта страницы политики конфиденциальности
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Privacy\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Privacy\Get */
     "/get/app_2/privacy/": {
         parameters: {
             query?: never;
@@ -1102,7 +1102,7 @@ export interface paths {
     };  
     /** Получение количества настроенных URL
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\CountUrls\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\CountUrls\Get */
     "/get/audit_2/countUrls/": {
         parameters: {
             query?: never;
@@ -1123,7 +1123,7 @@ export interface paths {
      *
      *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Get */
     "/get/audit_2/indexing/": {
         parameters: {
             query?: never;
@@ -1142,7 +1142,7 @@ export interface paths {
     };  
     /** Применение настроек Анализа сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Settings\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Settings\Edit */
     "/edit/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -1161,7 +1161,7 @@ export interface paths {
     };  
     /** Получение настроек аудита
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Settings\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Settings\Get */
     "/get/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -1184,7 +1184,7 @@ export interface paths {
      *
      *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Get */
     "/get/audit_2/watcher/": {
         parameters: {
             query?: never;
@@ -1203,7 +1203,7 @@ export interface paths {
     };  
     /** Получение данных банка по БИК или Swift
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Bank\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Bank\Get */
     "/get/bank_2/bank/": {
         parameters: {
             query?: never;
@@ -1222,7 +1222,7 @@ export interface paths {
     };  
     /** Получение истории транзакций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\History\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\History\Get */
     "/get/bank_2/history/": {
         parameters: {
             query?: never;
@@ -1241,7 +1241,7 @@ export interface paths {
     };  
     /** Получение информации о балансе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Info\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Info\Get */
     "/get/bank_2/info/": {
         parameters: {
             query?: never;
@@ -1260,7 +1260,7 @@ export interface paths {
     };  
     /** Добавиление реквизитов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Add */
     "/add/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1279,7 +1279,7 @@ export interface paths {
     };  
     /** Закрытие договора (оферту закрыть невозможно)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Del */
     "/del/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1298,7 +1298,7 @@ export interface paths {
     };  
     /** Изменение реквизитов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Edit */
     "/edit/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1317,7 +1317,7 @@ export interface paths {
     };  
     /** Получение списка договоров
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Get */
     "/get/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1336,7 +1336,7 @@ export interface paths {
     };  
     /** Получение данных юридического лица по ИНН
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Ur\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Ur\Get */
     "/get/bank_2/ur/": {
         parameters: {
             query?: never;
@@ -1355,7 +1355,7 @@ export interface paths {
     };  
     /** Редактирование объявления
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Ads\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Ads\Edit */
     "/edit/broker_2/ads/": {
         parameters: {
             query?: never;
@@ -1374,7 +1374,7 @@ export interface paths {
     };  
     /** Получение объявления рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Ads\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Ads\Get */
     "/get/broker_2/ads/": {
         parameters: {
             query?: never;
@@ -1393,7 +1393,7 @@ export interface paths {
     };  
     /** Добавление рекламной кампании в управление ставками
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\Add */
     "/add/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1412,7 +1412,7 @@ export interface paths {
     };  
     /** Удаление рекламной компании из управления ставками
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\Del */
     "/del/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1431,7 +1431,7 @@ export interface paths {
     };  
     /** Редактирование рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\Edit */
     "/edit/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1450,7 +1450,7 @@ export interface paths {
     };  
     /** Получение списка рекламных кампаний
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\Get */
     "/get/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1469,7 +1469,7 @@ export interface paths {
     };  
     /** Добавление групп рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Groups\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Groups\Add */
     "/add/broker_2/groups/": {
         parameters: {
             query?: never;
@@ -1488,7 +1488,7 @@ export interface paths {
     };  
     /** Получение групп рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Groups\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Groups\Get */
     "/get/broker_2/groups/": {
         parameters: {
             query?: never;
@@ -1507,7 +1507,7 @@ export interface paths {
     };  
     /** Удаление запросов рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Keywords\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Keywords\Del */
     "/del/broker_2/keywords/": {
         parameters: {
             query?: never;
@@ -1526,7 +1526,7 @@ export interface paths {
     };  
     /** Редактирование объявлений (запросов) рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Keywords\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Keywords\Edit */
     "/edit/broker_2/keywords/": {
         parameters: {
             query?: never;
@@ -1545,7 +1545,7 @@ export interface paths {
     };  
     /** Получение запросов рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Keywords\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Keywords\Get */
     "/get/broker_2/keywords/": {
         parameters: {
             query?: never;
@@ -1564,7 +1564,7 @@ export interface paths {
     };  
     /** Получение логов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Log\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Log\Get */
     "/get/broker_2/log/": {
         parameters: {
             query?: never;
@@ -1583,7 +1583,7 @@ export interface paths {
     };  
     /** Получение комментариев автора. Без вложенности
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\ByAuthor\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\ByAuthor\Get */
     "/get/comments_2/byAuthor/": {
         parameters: {
             query?: never;
@@ -1604,7 +1604,7 @@ export interface paths {
      *
      *     Возвращает результат редактирования статуса лайка
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Like\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Like\Edit */
     "/edit/comments_2/like/": {
         parameters: {
             query?: never;
@@ -1623,7 +1623,7 @@ export interface paths {
     };  
     /** Получение данных для графика отчета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Charts\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Charts\Get */
     "/get/competitors_2/charts/": {
         parameters: {
             query?: never;
@@ -1642,7 +1642,7 @@ export interface paths {
     };  
     /** Получение даты проверок по заданному критерию (последние 12)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Dates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Dates\Get */
     "/get/competitors_2/dates/": {
         parameters: {
             query?: never;
@@ -1661,7 +1661,7 @@ export interface paths {
     };  
     /** Удаление отчета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\Del */
     "/del/competitors_2/orders/": {
         parameters: {
             query?: never;
@@ -1680,7 +1680,7 @@ export interface paths {
     };  
     /** Получить список оплаченных отчетов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\Get */
     "/get/competitors_2/orders/": {
         parameters: {
             query?: never;
@@ -1699,7 +1699,7 @@ export interface paths {
     };  
     /** Получение доступных запросов для построения отчета (не более 10)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Queries\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Queries\Get */
     "/get/competitors_2/queries/": {
         parameters: {
             query?: never;
@@ -1718,7 +1718,7 @@ export interface paths {
     };  
     /** Получение данных для отчета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Table\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Table\Get */
     "/get/competitors_2/table/": {
         parameters: {
             query?: never;
@@ -1737,7 +1737,7 @@ export interface paths {
     };  
     /** Получение данных для сводки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\TableSummary\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\TableSummary\Get */
     "/get/competitors_2/tableSummary/": {
         parameters: {
             query?: never;
@@ -1756,7 +1756,7 @@ export interface paths {
     };  
     /** Изменить настройки автора
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Authors\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Authors\Edit */
     "/edit/content_2/authors/": {
         parameters: {
             query?: never;
@@ -1775,7 +1775,7 @@ export interface paths {
     };  
     /** Получение данных об авторе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Authors\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Authors\Get */
     "/get/content_2/authors/": {
         parameters: {
             query?: never;
@@ -1794,7 +1794,7 @@ export interface paths {
     };  
     /** Редактирование статуса закладки для автора
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\BookmarkAuthor\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\BookmarkAuthor\Edit */
     "/edit/content_2/bookmarkAuthor/": {
         parameters: {
             query?: never;
@@ -1813,7 +1813,7 @@ export interface paths {
     };  
     /** Редактирование статуса закладки для страницы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Bookmark\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Bookmark\Edit */
     "/edit/content_2/bookmark/": {
         parameters: {
             query?: never;
@@ -1832,7 +1832,7 @@ export interface paths {
     };  
     /** Редактирование статуса лайка для страницы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Like\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Like\Edit */
     "/edit/content_2/like/": {
         parameters: {
             query?: never;
@@ -1851,7 +1851,7 @@ export interface paths {
     };  
     /** Создание документа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Add */
     "/add/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1870,7 +1870,7 @@ export interface paths {
     };  
     /** Перенести документ в папку /archive/
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Del */
     "/del/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1889,7 +1889,7 @@ export interface paths {
     };  
     /** Изменение документа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Edit */
     "/edit/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1908,7 +1908,7 @@ export interface paths {
     };  
     /** Получение документов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Get */
     "/get/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1927,7 +1927,7 @@ export interface paths {
     };  
     /** Добавление правила редиректа (для админов)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Redirects\Add */
     "/add/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1946,7 +1946,7 @@ export interface paths {
     };  
     /** Удаление редиректа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Redirects\Del */
     "/del/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1965,7 +1965,7 @@ export interface paths {
     };  
     /** Изменение правила редиректа (для админов)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Redirects\Edit */
     "/edit/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1984,7 +1984,7 @@ export interface paths {
     };  
     /** Получение списка правил (для админов)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Redirects\Get */
     "/get/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -2005,7 +2005,7 @@ export interface paths {
      *
      *     Для выборки страниц используется модель: Pages
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Rss\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Rss\Get */
     "/get/content_2/rss/": {
         parameters: {
             query?: never;
@@ -2024,7 +2024,7 @@ export interface paths {
     };  
     /** Поиск страниц
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Search\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Search\Get */
     "/get/content_2/search/": {
         parameters: {
             query?: never;
@@ -2043,7 +2043,7 @@ export interface paths {
     };  
     /** Получение xml карты сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Sitemap\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Sitemap\Get */
     "/get/content_2/sitemap/": {
         parameters: {
             query?: never;
@@ -2062,7 +2062,7 @@ export interface paths {
     };  
     /** Поиск тегов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Tags\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Tags\Get */
     "/get/content_2/tags/": {
         parameters: {
             query?: never;
@@ -2081,7 +2081,7 @@ export interface paths {
     };  
     /** Добавление задачи cron
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Commands\Add */
     "/add/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -2100,7 +2100,7 @@ export interface paths {
     };  
     /** Удаление задачи cron
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Commands\Del */
     "/del/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -2119,7 +2119,7 @@ export interface paths {
     };  
     /** Изменение задачи cron
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Commands\Edit */
     "/edit/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -2138,7 +2138,7 @@ export interface paths {
     };  
     /** Получение задач cron
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Commands\Get */
     "/get/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -2157,7 +2157,7 @@ export interface paths {
     };  
     /** Получение списка имен сервисов, в которых есть команды cron
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Services\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Services\Get */
     "/get/cron_2/services/": {
         parameters: {
             query?: never;
@@ -2176,7 +2176,7 @@ export interface paths {
     };  
     /** Метод с примерами параметров типа Enum
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Array\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Array\Get */
     "/get/example_2/array/": {
         parameters: {
             query?: never;
@@ -2195,7 +2195,7 @@ export interface paths {
     };  
     /** Получение текущего времени
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Custom\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Custom\Get */
     "/get/example_2/custom/": {
         parameters: {
             query?: never;
@@ -2214,7 +2214,7 @@ export interface paths {
     };  
     /** Метод с примерами параметров типа Enum
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Enum\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Enum\Get */
     "/get/example_2/enum/": {
         parameters: {
             query?: never;
@@ -2233,7 +2233,7 @@ export interface paths {
     };  
     /** Метод с примерами параметров типа Object
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Object\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Object\Get */
     "/get/example_2/object/": {
         parameters: {
             query?: never;
@@ -2252,7 +2252,7 @@ export interface paths {
     };  
     /** Получение списка проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Projects\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Projects\Get */
     "/get/example_2/projects/": {
         parameters: {
             query?: never;
@@ -2271,7 +2271,7 @@ export interface paths {
     };  
     /** Тест долго ответа сервера
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Test\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Test\Get */
     "/get/example_2/test/": {
         parameters: {
             query?: never;
@@ -2290,7 +2290,7 @@ export interface paths {
     };  
     /** Настройка уведомлений
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Config\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Config\Edit */
     "/edit/informer_2/config/": {
         parameters: {
             query?: never;
@@ -2309,7 +2309,7 @@ export interface paths {
     };  
     /** Получение настроек уведомлений
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Config\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Config\Get */
     "/get/informer_2/config/": {
         parameters: {
             query?: never;
@@ -2328,7 +2328,7 @@ export interface paths {
     };  
     /** Получение информации о сообщениях в информере
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Info\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Info\Get */
     "/get/informer_2/info/": {
         parameters: {
             query?: never;
@@ -2347,7 +2347,7 @@ export interface paths {
     };  
     /** Удаление сообщений из инфомера
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Informer\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Informer\Del */
     "/del/informer_2/informer/": {
         parameters: {
             query?: never;
@@ -2366,7 +2366,7 @@ export interface paths {
     };  
     /** Получение списка сообщений в информере
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Informer\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Informer\Get */
     "/get/informer_2/informer/": {
         parameters: {
             query?: never;
@@ -2385,7 +2385,7 @@ export interface paths {
     };  
     /** Получение списка запросов проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Keywords\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Get */
     "/get/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -2404,7 +2404,7 @@ export interface paths {
     };  
     /** Получение частоты проекта или одной группы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Get */
     "/get/keywords_2/volumes/": {
         parameters: {
             query?: never;
@@ -2423,7 +2423,7 @@ export interface paths {
     };  
     /** Изменение флага "прочитано"
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Readed\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Readed\Edit */
     "/edit/mentions_2/readed/": {
         parameters: {
             query?: never;
@@ -2442,7 +2442,7 @@ export interface paths {
     };  
     /** Добавление правила
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Rules\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Add */
     "/add/mentions_2/rules/": {
         parameters: {
             query?: never;
@@ -2461,7 +2461,7 @@ export interface paths {
     };  
     /** Удаление правила
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Rules\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Del */
     "/del/mentions_2/rules/": {
         parameters: {
             query?: never;
@@ -2480,7 +2480,7 @@ export interface paths {
     };  
     /** Получение списка правил
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Rules\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Get */
     "/get/mentions_2/rules/": {
         parameters: {
             query?: never;
@@ -2501,7 +2501,7 @@ export interface paths {
      *
      *     Изменит, если уже существует
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Searchers\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Add */
     "/add/mentions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2520,7 +2520,7 @@ export interface paths {
     };  
     /** Удаление поисковика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Searchers\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Del */
     "/del/mentions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2539,7 +2539,7 @@ export interface paths {
     };  
     /** Получение списка поисковиков
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Searchers\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Get */
     "/get/mentions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2558,7 +2558,7 @@ export interface paths {
     };  
     /** Изменение тональности
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Sentiment\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Sentiment\Edit */
     "/edit/mentions_2/sentiment/": {
         parameters: {
             query?: never;
@@ -2580,7 +2580,7 @@ export interface paths {
      *
      *     В результате вернет zip файл в потоке вывода
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Methods\Download\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Methods\Download\Get
      * @description @see https://editor.swagger.io/ Редактор Open API
      */
     "/get/openapi_2/download/": {
@@ -2601,7 +2601,7 @@ export interface paths {
     };  
     /** Получение компании пользователя, через которых, были совершены платежи
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Companies\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Companies\Get */
     "/get/payments_2/companies/": {
         parameters: {
             query?: never;
@@ -2620,7 +2620,7 @@ export interface paths {
     };  
     /** Подписание контракта (только для админов)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\ContractSign\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\ContractSign\Edit */
     "/edit/payments_2/contractSign/": {
         parameters: {
             query?: never;
@@ -2639,7 +2639,7 @@ export interface paths {
     };  
     /** Изменение платежных реквизитов тарифа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\NextRequisitesId\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\NextRequisitesId\Edit */
     "/edit/payments_2/nextRequisitesId/": {
         parameters: {
             query?: never;
@@ -2668,7 +2668,7 @@ export interface paths {
      *
      *     Выбор стратегии зависит от типа управления подпиской
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Edit
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Subscriptions\Edit
      * @description @see Bank_2\Types\Subscriptions\Manager
      */
     "/edit/payments_2/subscriptions/": {
@@ -2689,7 +2689,7 @@ export interface paths {
     };  
     /** Отправка заявки на подключение Тинькофф Бизнес
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\UrTinkoffCreateApplication\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\UrTinkoffCreateApplication\Add */
     "/add/payments_2/urTinkoffCreateApplication/": {
         parameters: {
             query?: never;
@@ -2708,7 +2708,7 @@ export interface paths {
     };  
     /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\ValidateMerchantCardAP\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\ValidateMerchantCardAP\Get */
     "/get/payments_2/validateMerchantCardAP/": {
         parameters: {
             query?: never;
@@ -2727,7 +2727,7 @@ export interface paths {
     };  
     /** Добавление ПС
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Add */
     "/add/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2746,7 +2746,7 @@ export interface paths {
     };  
     /** Удаление ПС
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Del */
     "/del/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2765,7 +2765,7 @@ export interface paths {
     };  
     /** Установка общих настроек проверки позиций проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Settings\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Settings\Edit */
     "/edit/positions_2/settings/": {
         parameters: {
             query?: never;
@@ -2784,7 +2784,7 @@ export interface paths {
     };  
     /** Добавление графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Add */
     "/add/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2803,7 +2803,7 @@ export interface paths {
     };  
     /** Удаление графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Del */
     "/del/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2822,7 +2822,7 @@ export interface paths {
     };  
     /** Настройка графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Edit */
     "/edit/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2841,7 +2841,7 @@ export interface paths {
     };  
     /** Получение списка графиков
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Get */
     "/get/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2862,7 +2862,7 @@ export interface paths {
      *
      *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Add */
     "/add/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -2883,7 +2883,7 @@ export interface paths {
      *
      *     Обязательный параметр или ids или urls
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Del */
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -2902,7 +2902,7 @@ export interface paths {
     };  
     /** Получение списка конкурентов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Get */
     "/get/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -2921,7 +2921,7 @@ export interface paths {
     };  
     /** Добавление папки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Add */
     "/add/projects_2/folders/": {
         parameters: {
             query?: never;
@@ -2940,7 +2940,7 @@ export interface paths {
     };  
     /** Удаление папок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Del */
     "/del/projects_2/folders/": {
         parameters: {
             query?: never;
@@ -2959,7 +2959,7 @@ export interface paths {
     };  
     /** Получение списка папок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Get */
     "/get/projects_2/folders/": {
         parameters: {
             query?: never;
@@ -2978,7 +2978,7 @@ export interface paths {
     };  
     /** Добавление проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Add */
     "/add/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -2997,7 +2997,7 @@ export interface paths {
     };  
     /** Удаление проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Del */
     "/del/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -3016,7 +3016,7 @@ export interface paths {
     };  
     /** Получение списка проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Get */
     "/get/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -3035,7 +3035,7 @@ export interface paths {
     };  
     /** Удаление прав у пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\Del */
     "/del/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -3054,7 +3054,7 @@ export interface paths {
     };  
     /** Изменение прав на проект
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\Edit */
     "/edit/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -3073,7 +3073,7 @@ export interface paths {
     };  
     /** Получение информации о выданных доступах к проекту
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\Get */
     "/get/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -3095,7 +3095,7 @@ export interface paths {
      *     - domain_expire
      *     - ssl_expire
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Get */
     "/get/projects_2/status/": {
         parameters: {
             query?: never;
@@ -3114,7 +3114,7 @@ export interface paths {
     };  
     /** Получение списка задач
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Get */
     "/get/projects_2/tasks/": {
         parameters: {
             query?: never;
@@ -3133,7 +3133,7 @@ export interface paths {
     };  
     /** Добавление вопроса
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Add */
     "/add/quiz_2/questions/": {
         parameters: {
             query?: never;
@@ -3152,7 +3152,7 @@ export interface paths {
     };  
     /** Удаление вопроса
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Del */
     "/del/quiz_2/questions/": {
         parameters: {
             query?: never;
@@ -3171,7 +3171,7 @@ export interface paths {
     };  
     /** Редактировать вопрос
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Edit */
     "/edit/quiz_2/questions/": {
         parameters: {
             query?: never;
@@ -3190,7 +3190,7 @@ export interface paths {
     };  
     /** Получение вопроса
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Get */
     "/get/quiz_2/questions/": {
         parameters: {
             query?: never;
@@ -3209,7 +3209,7 @@ export interface paths {
     };  
     /** Добавление ответа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Add */
     "/add/quiz_2/questionsResponses/": {
         parameters: {
             query?: never;
@@ -3228,7 +3228,7 @@ export interface paths {
     };  
     /** Удаление результатов предыдущих попытки пройти тест
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Results\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Results\Del */
     "/del/quiz_2/results/": {
         parameters: {
             query?: never;
@@ -3247,7 +3247,7 @@ export interface paths {
     };  
     /** Получение своих результатов прохождения теста
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Results\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Results\Get */
     "/get/quiz_2/results/": {
         parameters: {
             query?: never;
@@ -3266,7 +3266,7 @@ export interface paths {
     };  
     /** Получение участников теста
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\ResultsUsers\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\ResultsUsers\Get */
     "/get/quiz_2/resultsUsers/": {
         parameters: {
             query?: never;
@@ -3285,7 +3285,7 @@ export interface paths {
     };  
     /** Получение теста с вопросами
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\WithQuestions\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\WithQuestions\Get */
     "/get/quiz_2/withQuestions/": {
         parameters: {
             query?: never;
@@ -3304,7 +3304,7 @@ export interface paths {
     };  
     /** Удалить привязанную карту (system = card)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
     "/del/recurring_2/recurringCard/": {
         parameters: {
             query?: never;
@@ -3323,7 +3323,7 @@ export interface paths {
     };  
     /** Получение привязанных карт пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Methods\RecurringCard\Get */
     "/get/recurring_2/recurringCard/": {
         parameters: {
             query?: never;
@@ -3342,7 +3342,7 @@ export interface paths {
     };  
     /** Изменить дополнительные параметры расписания
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\Edit */
     "/edit/schedule_2/settings/": {
         parameters: {
             query?: never;
@@ -3364,7 +3364,7 @@ export interface paths {
      *
      *     Для каждого типа могут быть свои параметры
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\Get
      * @description @see Schedule_2\Mods\Settings
      */
     "/get/schedule_2/settings/": {
@@ -3385,7 +3385,7 @@ export interface paths {
     };  
     /** Проверить код для подтверждения действия
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Sms_2\Methods\CheckPIN\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Sms_2\Methods\CheckPIN\Get */
     "/get/sms_2/checkPIN/": {
         parameters: {
             query?: never;
@@ -3404,7 +3404,7 @@ export interface paths {
     };  
     /** Отправить код для подтверждения действия
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Sms_2\Methods\SendPIN\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Sms_2\Methods\SendPIN\Get */
     "/get/sms_2/sendPIN/": {
         parameters: {
             query?: never;
@@ -3425,7 +3425,7 @@ export interface paths {
      *
      *     Метод базируется на объекте keywords (доступны только фильтры)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Get */
     "/get/snapshots_2/competitors/": {
         parameters: {
             query?: never;
@@ -3444,7 +3444,7 @@ export interface paths {
     };  
     /** Выделение сайтов (доменов) как неважные
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Edit */
     "/edit/snapshots_2/hiddenDomains/": {
         parameters: {
             query?: never;
@@ -3463,7 +3463,7 @@ export interface paths {
     };  
     /** Получение списка сайтов (доменов), которые выделены как неважные
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Get */
     "/get/snapshots_2/hiddenDomains/": {
         parameters: {
             query?: never;
@@ -3484,7 +3484,7 @@ export interface paths {
      *
      *     Метод базируется на объекте keywords (доступны только фильтры)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Get */
     "/get/snapshots_2/history/": {
         parameters: {
             query?: never;
@@ -3503,7 +3503,7 @@ export interface paths {
     };  
     /** Вызов нескольких методов в одном вызове
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Calls\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Calls\Get */
     "/get/system_2/calls/": {
         parameters: {
             query?: never;
@@ -3524,7 +3524,7 @@ export interface paths {
      *
      *     Вернет имя директории в случае создания директории или bool при загрузке файла
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Add */
     "/add/system_2/cloud/": {
         parameters: {
             query?: never;
@@ -3543,7 +3543,7 @@ export interface paths {
     };  
     /** Удаление файлов (файл будет перенесен в директорию /cloud/recycled)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Del */
     "/del/system_2/cloud/": {
         parameters: {
             query?: never;
@@ -3562,7 +3562,7 @@ export interface paths {
     };  
     /** Получение директорий и файлов из облака
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Get */
     "/get/system_2/cloud/": {
         parameters: {
             query?: never;
@@ -3581,7 +3581,7 @@ export interface paths {
     };  
     /** Получение кешируемого HTML-шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Tpl\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Tpl\Get */
     "/get/system_2/tpl/": {
         parameters: {
             query?: never;
@@ -3600,7 +3600,7 @@ export interface paths {
     };  
     /** Получение данных доступных столбцов для выборки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\AvailableFieldsData\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\AvailableFieldsData\Get */
     "/get/templates_2/availableFieldsData/": {
         parameters: {
             query?: never;
@@ -3619,7 +3619,7 @@ export interface paths {
     };  
     /** Удаление сохраненного списка столбцов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Fields\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Fields\Del */
     "/del/templates_2/fields/": {
         parameters: {
             query?: never;
@@ -3638,7 +3638,7 @@ export interface paths {
     };  
     /** Сохранение списка столбцов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Fields\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Fields\Edit */
     "/edit/templates_2/fields/": {
         parameters: {
             query?: never;
@@ -3657,7 +3657,7 @@ export interface paths {
     };  
     /** Получение сохраненного списока столбцов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Fields\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Fields\Get */
     "/get/templates_2/fields/": {
         parameters: {
             query?: never;
@@ -3676,7 +3676,7 @@ export interface paths {
     };  
     /** Получение дополнительных параметров к списку столбцов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\FieldsProperties\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\FieldsProperties\Get */
     "/get/templates_2/fieldsProperties/": {
         parameters: {
             query?: never;
@@ -3697,7 +3697,7 @@ export interface paths {
      *
      *     Процесс создания сообщения в тикет не завершен
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Add */
     "/add/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -3718,7 +3718,7 @@ export interface paths {
      *
      *     Процесс создания поста не завершен
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Del */
     "/del/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -3739,7 +3739,7 @@ export interface paths {
      *
      *     Процесс создания поста не завершен
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Get */
     "/get/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -3758,7 +3758,7 @@ export interface paths {
     };  
     /** Добавление сообщения к тикиту
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Messages\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Messages\Add */
     "/add/tickets_2/messages/": {
         parameters: {
             query?: never;
@@ -3777,7 +3777,7 @@ export interface paths {
     };  
     /** Дать оценку тикету
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Rate\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Rate\Edit */
     "/edit/tickets_2/rate/": {
         parameters: {
             query?: never;
@@ -3796,7 +3796,7 @@ export interface paths {
     };  
     /** Создание тикета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Add */
     "/add/tickets_2/tickets/": {
         parameters: {
             query?: never;
@@ -3815,7 +3815,7 @@ export interface paths {
     };  
     /** Редактирование тикета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Edit */
     "/edit/tickets_2/tickets/": {
         parameters: {
             query?: never;
@@ -3834,7 +3834,7 @@ export interface paths {
     };  
     /** Получение списка тикетов с сообщениями
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Get */
     "/get/tickets_2/tickets/": {
         parameters: {
             query?: never;
@@ -3853,7 +3853,7 @@ export interface paths {
     };  
     /** Удаление интеграции для нескольких проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Any\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Any\Del */
     "/del/tpa_2/any/": {
         parameters: {
             query?: never;
@@ -3872,7 +3872,7 @@ export interface paths {
     };  
     /** Получение данных о подключенных сервисах
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Data\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Data\Get */
     "/get/tpa_2/data/": {
         parameters: {
             query?: never;
@@ -3889,9 +3889,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Произвести выбор счетчика
+    /** Выбрать счетчик
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit */
     "/edit/tpa_2/setCounterId/": {
         parameters: {
             query?: never;
@@ -3908,9 +3908,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Произвести попытку обновления интеграции
+    /** Обновить информацию по выполненной интеграции
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\TestTpa\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\TestTpa\Get */
     "/get/tpa_2/testTpa/": {
         parameters: {
             query?: never;
@@ -3929,7 +3929,7 @@ export interface paths {
     };  
     /** Получение статистики по ссылке
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Stat\Get */
     "/get/tpvsr_2/stat/": {
         parameters: {
             query?: never;
@@ -3948,7 +3948,7 @@ export interface paths {
     };  
     /** Изменение тегов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Tags\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Tags\Edit */
     "/edit/tpvsr_2/tags/": {
         parameters: {
             query?: never;
@@ -3967,7 +3967,7 @@ export interface paths {
     };  
     /** Получить title ссылки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Title\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Title\Get */
     "/get/tpvsr_2/title/": {
         parameters: {
             query?: never;
@@ -3986,7 +3986,7 @@ export interface paths {
     };  
     /** Экспорт urls в определенном формате
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Export\Get */
     "/get/urls_2/export/": {
         parameters: {
             query?: never;
@@ -4013,7 +4013,7 @@ export interface paths {
      *     - watcher
      *     - tags
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Import\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Import\Add */
     "/add/urls_2/import/": {
         parameters: {
             query?: never;
@@ -4032,7 +4032,7 @@ export interface paths {
     };  
     /** Изменение тегов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Tags\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Tags\Edit */
     "/edit/urls_2/tags/": {
         parameters: {
             query?: never;
@@ -4051,7 +4051,7 @@ export interface paths {
     };  
     /** Информация о сессии авторизации пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Auth\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Auth\Get */
     "/get/users_2/auth/": {
         parameters: {
             query?: never;
@@ -4070,7 +4070,7 @@ export interface paths {
     };  
     /** Выход из аккаунта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Logout\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Logout\Get */
     "/get/users_2/logout/": {
         parameters: {
             query?: never;
@@ -4089,7 +4089,7 @@ export interface paths {
     };  
     /** Изменение параметров активного пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Edit */
     "/edit/users_2/profile/": {
         parameters: {
             query?: never;
@@ -4108,7 +4108,7 @@ export interface paths {
     };  
     /** Активация достижения
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Ranks\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Ranks\Add */
     "/add/users_2/ranks/": {
         parameters: {
             query?: never;
@@ -4127,7 +4127,7 @@ export interface paths {
     };  
     /** Получение достижений пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Ranks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Ranks\Get */
     "/get/users_2/ranks/": {
         parameters: {
             query?: never;
@@ -4146,7 +4146,7 @@ export interface paths {
     };  
     /** Получение списка рефералов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Referrals\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Referrals\Get */
     "/get/users_2/referrals/": {
         parameters: {
             query?: never;
@@ -4165,7 +4165,7 @@ export interface paths {
     };  
     /** Создание заявки на регистрацию пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Reg\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Reg\Add */
     "/add/users_2/reg/": {
         parameters: {
             query?: never;
@@ -4186,7 +4186,7 @@ export interface paths {
      *
      *     При указании project_id получает список телеграм аккаунтов по владельцу проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\TelegramAccounts\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\TelegramAccounts\Get */
     "/get/users_2/telegramAccounts/": {
         parameters: {
             query?: never;
@@ -4206,7 +4206,7 @@ export interface paths {
     /**
      * Нужно для обратной совместимости с приложениями
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Xml\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Xml\Get
      * @deprecated
      * @description @deprecated
      */
@@ -4230,7 +4230,7 @@ export interface paths {
      *
      *     Оставить комментарий можно в течение часа поосле выставления оценки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Methods\Comment\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Methods\Comment\Edit */
     "/edit/votes_2/comment/": {
         parameters: {
             query?: never;
@@ -4249,7 +4249,7 @@ export interface paths {
     };  
     /** Изменение параметров контрагента
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Edit */
     "/edit/admin_2/accounting/counteragents/": {
         parameters: {
             query?: never;
@@ -4268,7 +4268,7 @@ export interface paths {
     };  
     /** Получение контрагента
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Get */
     "/get/admin_2/accounting/counteragents/": {
         parameters: {
             query?: never;
@@ -4285,7 +4285,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Edit */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Edit */
     "/edit/admin_2/accounting/group/": {
         parameters: {
             query?: never;
@@ -4304,7 +4304,7 @@ export interface paths {
     };  
     /** Получение групп
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Get */
     "/get/admin_2/accounting/group/": {
         parameters: {
             query?: never;
@@ -4323,7 +4323,7 @@ export interface paths {
     };  
     /** Добавление счета на оплату
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Add */
     "/add/admin_2/accounting/invoices/": {
         parameters: {
             query?: never;
@@ -4342,7 +4342,7 @@ export interface paths {
     };  
     /** Отмена отправки счета. Разрешено только для счетов со статусом pending или sending
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Del */
     "/del/admin_2/accounting/invoices/": {
         parameters: {
             query?: never;
@@ -4361,7 +4361,7 @@ export interface paths {
     };  
     /** Получение счетов на оплату
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Get */
     "/get/admin_2/accounting/invoices/": {
         parameters: {
             query?: never;
@@ -4380,7 +4380,7 @@ export interface paths {
     };  
     /** Получение внутренних операций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Operations\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Operations\Get */
     "/get/admin_2/accounting/operations/": {
         parameters: {
             query?: never;
@@ -4399,7 +4399,7 @@ export interface paths {
     };  
     /** Создание и проведение транзакции
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Bank\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Bank\Edit */
     "/edit/admin_2/actions/bank/": {
         parameters: {
             query?: never;
@@ -4418,7 +4418,7 @@ export interface paths {
     };  
     /** Отмена проведения счета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Payments\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Payments\Del */
     "/del/admin_2/actions/payments/": {
         parameters: {
             query?: never;
@@ -4437,7 +4437,7 @@ export interface paths {
     };  
     /** Проведение счета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Payments\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Payments\Edit */
     "/edit/admin_2/actions/payments/": {
         parameters: {
             query?: never;
@@ -4456,7 +4456,7 @@ export interface paths {
     };  
     /** Востановление удаленной проверки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\Edit */
     "/edit/admin_2/actions/positions/": {
         parameters: {
             query?: never;
@@ -4475,7 +4475,7 @@ export interface paths {
     };  
     /** Востановление удаленного проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Projects\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Edit */
     "/edit/admin_2/actions/projects/": {
         parameters: {
             query?: never;
@@ -4494,7 +4494,7 @@ export interface paths {
     };  
     /** Сбор статистики и трафика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Projects\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Get */
     "/get/admin_2/actions/projects/": {
         parameters: {
             query?: never;
@@ -4513,7 +4513,7 @@ export interface paths {
     };  
     /** Добавление бота в телеграм канал
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Telegram\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Add */
     "/add/admin_2/actions/telegram/": {
         parameters: {
             query?: never;
@@ -4532,7 +4532,7 @@ export interface paths {
     };  
     /** Получение общей статистики по реферальной программе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferralProgramStats\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralProgramStats\Get */
     "/get/admin_2/affiliate/referralProgramStats/": {
         parameters: {
             query?: never;
@@ -4551,7 +4551,7 @@ export interface paths {
     };  
     /** Получение сводки числа рефералов по своему уровню
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferralsByLevel\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralsByLevel\Get */
     "/get/admin_2/affiliate/referralsByLevel/": {
         parameters: {
             query?: never;
@@ -4570,7 +4570,7 @@ export interface paths {
     };  
     /** Получение сводки по новым рефералам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\Referrals\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\Referrals\Get */
     "/get/admin_2/affiliate/referrals/": {
         parameters: {
             query?: never;
@@ -4589,7 +4589,7 @@ export interface paths {
     };  
     /** Получение сводки числа партнеров по числу рефералов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get */
     "/get/admin_2/affiliate/referrersByReferrals/": {
         parameters: {
             query?: never;
@@ -4608,7 +4608,7 @@ export interface paths {
     };  
     /** Получение сводки по новым партнерам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\Referrers\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\Referrers\Get */
     "/get/admin_2/affiliate/referrers/": {
         parameters: {
             query?: never;
@@ -4627,7 +4627,7 @@ export interface paths {
     };  
     /** Получение партнеров c кол-вом рефералов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersWithReferrals\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersWithReferrals\Get */
     "/get/admin_2/affiliate/referrersWithReferrals/": {
         parameters: {
             query?: never;
@@ -4654,7 +4654,7 @@ export interface paths {
      *     5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
      *     этот статус.
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
     "/get/admin_2/analytics/activity/": {
         parameters: {
             query?: never;
@@ -4673,7 +4673,7 @@ export interface paths {
     };  
     /** Получение числа активных пользователей
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\CountOnlineUsers\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\CountOnlineUsers\Get */
     "/get/admin_2/analytics/countOnlineUsers/": {
         parameters: {
             query?: never;
@@ -4692,7 +4692,7 @@ export interface paths {
     };  
     /** Получение метрик из сервиса Аналитика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Events\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Events\Get */
     "/get/admin_2/analytics/events/": {
         parameters: {
             query?: never;
@@ -4711,7 +4711,7 @@ export interface paths {
     };  
     /** Получение суммы оплат за период
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
     "/get/admin_2/analytics/payments/": {
         parameters: {
             query?: never;
@@ -4730,7 +4730,7 @@ export interface paths {
     };  
     /** Получение отчета платежей по сервисам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Services\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Services\Get */
     "/get/admin_2/analytics/services/": {
         parameters: {
             query?: never;
@@ -4749,7 +4749,7 @@ export interface paths {
     };  
     /** Получение статистики
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Statistics\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Statistics\Get */
     "/get/admin_2/analytics/statistics/": {
         parameters: {
             query?: never;
@@ -4768,7 +4768,7 @@ export interface paths {
     };  
     /** Получение тикетов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\Get */
     "/get/admin_2/analytics/tickets/": {
         parameters: {
             query?: never;
@@ -4787,7 +4787,7 @@ export interface paths {
     };  
     /** Получение категорий словаря
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\I18n\Categories\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\I18n\Categories\Get */
     "/get/admin_2/i18n/categories/": {
         parameters: {
             query?: never;
@@ -4806,7 +4806,7 @@ export interface paths {
     };  
     /** Получение данных из системного лога
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\System\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\System\Get */
     "/get/admin_2/logs/system/": {
         parameters: {
             query?: never;
@@ -4823,7 +4823,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Ranks\Activations\Get */
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ranks\Activations\Get */
     "/get/admin_2/ranks/activations/": {
         parameters: {
             query?: never;
@@ -4842,7 +4842,7 @@ export interface paths {
     };  
     /** Рейтинг по сообщениям в Slack за предыдущий месяц
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Slack\Rate\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Slack\Rate\Get */
     "/get/admin_2/slack/rate/": {
         parameters: {
             query?: never;
@@ -4861,7 +4861,7 @@ export interface paths {
     };  
     /** Настройка доступа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Access\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Access\Edit */
     "/edit/admin_2/staff/access/": {
         parameters: {
             query?: never;
@@ -4880,7 +4880,7 @@ export interface paths {
     };  
     /** Получение из бд данные сотрудников указанного поста
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\ByPost\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\ByPost\Get */
     "/get/admin_2/staff/byPost/": {
         parameters: {
             query?: never;
@@ -4899,7 +4899,7 @@ export interface paths {
     };  
     /** Печать договора
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\ContractPrint\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\ContractPrint\Get */
     "/get/admin_2/staff/contractPrint/": {
         parameters: {
             query?: never;
@@ -4918,7 +4918,7 @@ export interface paths {
     };  
     /** Получение возможных позиций сотрудников
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Posts\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Posts\Get */
     "/get/admin_2/staff/posts/": {
         parameters: {
             query?: never;
@@ -4937,7 +4937,7 @@ export interface paths {
     };  
     /** Добавление отпуска для сотрудника
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Vacation\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Vacation\Add */
     "/add/admin_2/staff/vacation/": {
         parameters: {
             query?: never;
@@ -4956,7 +4956,7 @@ export interface paths {
     };  
     /** Удаление данных об отпуске
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Vacation\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Vacation\Del */
     "/del/admin_2/staff/vacation/": {
         parameters: {
             query?: never;
@@ -4975,7 +4975,7 @@ export interface paths {
     };  
     /** Печать заявления на отпуск
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\VacationPrint\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\VacationPrint\Get */
     "/get/admin_2/staff/vacationPrint/": {
         parameters: {
             query?: never;
@@ -4994,7 +4994,7 @@ export interface paths {
     };  
     /** Получение схему HTML шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Tpl\Schema\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Tpl\Schema\Get */
     "/get/admin_2/tpl/schema/": {
         parameters: {
             query?: never;
@@ -5013,7 +5013,7 @@ export interface paths {
     };  
     /** Добавление промокоды к достижению
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Promocodes\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Promocodes\Add */
     "/add/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -5036,7 +5036,7 @@ export interface paths {
      *     - {{ rank_id }}
      *     - {{ rank_id }},single_code - для многоразового кода
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Promocodes\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Promocodes\Get */
     "/get/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -5055,7 +5055,7 @@ export interface paths {
     };  
     /** Добавление достижения
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Ranks\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Ranks\Add */
     "/add/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -5074,7 +5074,7 @@ export interface paths {
     };  
     /** Измение достижение
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Ranks\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Ranks\Edit */
     "/edit/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -5093,7 +5093,7 @@ export interface paths {
     };  
     /** Получение достижения
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Ranks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Ranks\Get */
     "/get/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -5113,7 +5113,7 @@ export interface paths {
     /**
      * Получение сводки анализа сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Browse\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Browse\Get
      * @deprecated
      * @description @deprecated
      */
@@ -5139,7 +5139,7 @@ export interface paths {
      *     - в ответе будет заменено значение count_pages и count_all на текущие
      *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Checks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Checks\Get */
     "/get/audit_2/audit/checks/": {
         parameters: {
             query?: never;
@@ -5158,7 +5158,7 @@ export interface paths {
     };  
     /** Получение проверенных css
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Css\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Css\Get */
     "/get/audit_2/audit/css/": {
         parameters: {
             query?: never;
@@ -5177,7 +5177,7 @@ export interface paths {
     };  
     /** Экспорт результатов проверки файла
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Export\Get */
     "/get/audit_2/audit/export/": {
         parameters: {
             query?: never;
@@ -5196,7 +5196,7 @@ export interface paths {
     };  
     /** Получение проверенных изображений
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Images\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Images\Get */
     "/get/audit_2/audit/images/": {
         parameters: {
             query?: never;
@@ -5215,7 +5215,7 @@ export interface paths {
     };  
     /** Получение проверенных js
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Js\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Js\Get */
     "/get/audit_2/audit/js/": {
         parameters: {
             query?: never;
@@ -5234,7 +5234,7 @@ export interface paths {
     };  
     /** Получение проверенных ссылок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Links\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Links\Get */
     "/get/audit_2/audit/links/": {
         parameters: {
             query?: never;
@@ -5253,7 +5253,7 @@ export interface paths {
     };  
     /** Получение данных проверенных ресурсов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Log\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Log\Get */
     "/get/audit_2/audit/log/": {
         parameters: {
             query?: never;
@@ -5272,7 +5272,7 @@ export interface paths {
     };  
     /** Получение страниц, по которым был выполнен аудит
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Pages\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Pages\Get */
     "/get/audit_2/audit/pages/": {
         parameters: {
             query?: never;
@@ -5291,7 +5291,7 @@ export interface paths {
     };  
     /** Получение сводки о выполненном аудите
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Summary\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Summary\Get */
     "/get/audit_2/audit/summary/": {
         parameters: {
             query?: never;
@@ -5310,7 +5310,7 @@ export interface paths {
     };  
     /** Получение сводки страницы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\SummaryPage\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\SummaryPage\Get */
     "/get/audit_2/audit/summaryPage/": {
         parameters: {
             query?: never;
@@ -5331,7 +5331,7 @@ export interface paths {
      *
      *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Export\Get */
     "/get/audit_2/indexing/export/": {
         parameters: {
             query?: never;
@@ -5352,7 +5352,7 @@ export interface paths {
      *
      *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Links\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Links\Get */
     "/get/audit_2/indexing/links/": {
         parameters: {
             query?: never;
@@ -5371,7 +5371,7 @@ export interface paths {
     };  
     /** Получение сводки индексации
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Summary\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Summary\Get */
     "/get/audit_2/indexing/summary/": {
         parameters: {
             query?: never;
@@ -5395,7 +5395,7 @@ export interface paths {
      *     - параметры выбора периода отчета игнорируются
      *     - выбор проверок регулируется параметрами запроса filters, limit и offset
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\ByURL\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\ByURL\Get */
     "/get/audit_2/watcher/byURL/": {
         parameters: {
             query?: never;
@@ -5414,7 +5414,7 @@ export interface paths {
     };  
     /** Получение проверок радара
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Checks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Checks\Get */
     "/get/audit_2/watcher/checks/": {
         parameters: {
             query?: never;
@@ -5433,7 +5433,7 @@ export interface paths {
     };  
     /** Получение сводки радара
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Summary\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Summary\Get */
     "/get/audit_2/watcher/summary/": {
         parameters: {
             query?: never;
@@ -5452,7 +5452,7 @@ export interface paths {
     };  
     /** Отправка договора в диадок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Diadoc\SendContract\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Diadoc\SendContract\Get */
     "/get/bank_2/diadoc/sendContract/": {
         parameters: {
             query?: never;
@@ -5473,7 +5473,7 @@ export interface paths {
      *
      *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Diadoc\SendTotalReceipt\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Diadoc\SendTotalReceipt\Get */
     "/get/bank_2/diadoc/sendTotalReceipt/": {
         parameters: {
             query?: never;
@@ -5492,7 +5492,7 @@ export interface paths {
     };  
     /** Экспорт лога банка
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\History\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\History\Export\Get */
     "/get/bank_2/history/export/": {
         parameters: {
             query?: never;
@@ -5511,7 +5511,7 @@ export interface paths {
     };  
     /** Получение сводки проведенных операций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\History\Summary\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\History\Summary\Get */
     "/get/bank_2/history/summary/": {
         parameters: {
             query?: never;
@@ -5530,7 +5530,7 @@ export interface paths {
     };  
     /** Перевод средств с реферального счета на бонусный
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Referrals\ToBonus\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Referrals\ToBonus\Edit */
     "/edit/bank_2/referrals/toBonus/": {
         parameters: {
             query?: never;
@@ -5549,7 +5549,7 @@ export interface paths {
     };  
     /** Получение id тарифа пользователя по типу контракта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\ContractTariffId\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\ContractTariffId\Get */
     "/get/bank_2/requisites/contractTariffId/": {
         parameters: {
             query?: never;
@@ -5568,7 +5568,7 @@ export interface paths {
     };  
     /** Скачивание документа в формате PDF
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Print\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Print\Get */
     "/get/bank_2/requisites/print/": {
         parameters: {
             query?: never;
@@ -5587,7 +5587,7 @@ export interface paths {
     };  
     /** Получение акта сверки (акты по предоплате выводятся в одном платеже)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\PrintTotalReceipt\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\PrintTotalReceipt\Get */
     "/get/bank_2/requisites/printTotalReceipt/": {
         parameters: {
             query?: never;
@@ -5606,7 +5606,7 @@ export interface paths {
     };  
     /** Скачивание архива документов в формате PDF
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\PrintZip\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\PrintZip\Get */
     "/get/bank_2/requisites/printZip/": {
         parameters: {
             query?: never;
@@ -5625,7 +5625,7 @@ export interface paths {
     };  
     /** Получение интерфейсов настройки всех планов подписки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Subscriptions\Plans\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Subscriptions\Plans\Get */
     "/get/bank_2/subscriptions/plans/": {
         parameters: {
             query?: never;
@@ -5644,7 +5644,7 @@ export interface paths {
     };  
     /** Изменение статуса объявлений
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Ads\Status\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Ads\Status\Edit */
     "/edit/broker_2/ads/status/": {
         parameters: {
             query?: never;
@@ -5663,7 +5663,7 @@ export interface paths {
     };  
     /** Отправка объявления на модерацию
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Ads\ToModerate\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Ads\ToModerate\Edit */
     "/edit/broker_2/ads/toModerate/": {
         parameters: {
             query?: never;
@@ -5682,7 +5682,7 @@ export interface paths {
     };  
     /** Обновление данных таргетинга
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\UpdateTargeting\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\UpdateTargeting\Edit */
     "/edit/broker_2/campaigns/updateTargeting/": {
         parameters: {
             query?: never;
@@ -5701,7 +5701,7 @@ export interface paths {
     };  
     /** Получение групп рекламной кампании для редактора
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Groups\Editor\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Groups\Editor\Get */
     "/get/broker_2/groups/editor/": {
         parameters: {
             query?: never;
@@ -5720,7 +5720,7 @@ export interface paths {
     };  
     /** Изменение статуса запросов рекламной кампании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Keywords\Status\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Keywords\Status\Edit */
     "/edit/broker_2/keywords/status/": {
         parameters: {
             query?: never;
@@ -5739,7 +5739,7 @@ export interface paths {
     };  
     /** Экспортирование архива логов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Log\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Log\Export\Get */
     "/get/broker_2/log/export/": {
         parameters: {
             query?: never;
@@ -5758,7 +5758,7 @@ export interface paths {
     };  
     /** Ручной запуск корректировки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Tasks\RateTask\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Tasks\RateTask\Add */
     "/add/broker_2/tasks/rateTask/": {
         parameters: {
             query?: never;
@@ -5777,7 +5777,7 @@ export interface paths {
     };  
     /** Экспорт данных отчета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\Table\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\Table\Get */
     "/get/competitors_2/export/table/": {
         parameters: {
             query?: never;
@@ -5796,7 +5796,7 @@ export interface paths {
     };  
     /** Экспорт запросов в проект
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\TableToProject\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\TableToProject\Add */
     "/add/competitors_2/export/tableToProject/": {
         parameters: {
             query?: never;
@@ -5815,7 +5815,7 @@ export interface paths {
     };  
     /** Оплатить отчет
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\Pay\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\Pay\Edit */
     "/edit/competitors_2/orders/pay/": {
         parameters: {
             query?: never;
@@ -5834,7 +5834,7 @@ export interface paths {
     };  
     /** Получение календаря апдейтов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Calendar\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Calendar\Get */
     "/get/content_2/apometr/calendar/": {
         parameters: {
             query?: never;
@@ -5854,7 +5854,7 @@ export interface paths {
     /**
      * Получение истории urls, найденных в выдаче, за конкретную проверку
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\CHHistory\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\CHHistory\Get
      * @deprecated
      * @description @deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get
      */
@@ -5876,7 +5876,7 @@ export interface paths {
     };  
     /** Получение истории шторма за период в 2 суток
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\History\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\History\Get */
     "/get/content_2/apometr/history/": {
         parameters: {
             query?: never;
@@ -5895,7 +5895,7 @@ export interface paths {
     };  
     /** Получение поисковых запросов апометра
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Keywords\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Keywords\Get */
     "/get/content_2/apometr/keywords/": {
         parameters: {
             query?: never;
@@ -5914,7 +5914,7 @@ export interface paths {
     };  
     /** Получение апдейтов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Updates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Updates\Get */
     "/get/content_2/apometr/updates/": {
         parameters: {
             query?: never;
@@ -5933,7 +5933,7 @@ export interface paths {
     };  
     /** Получение статьи
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Articles\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Articles\Get */
     "/get/content_2/journal/articles/": {
         parameters: {
             query?: never;
@@ -5952,7 +5952,7 @@ export interface paths {
     };  
     /** Получение закладок авторов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\BookmarksAuthors\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\BookmarksAuthors\Get */
     "/get/content_2/journal/bookmarksAuthors/": {
         parameters: {
             query?: never;
@@ -5971,7 +5971,7 @@ export interface paths {
     };  
     /** Получение закладок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Bookmarks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Bookmarks\Get */
     "/get/content_2/journal/bookmarks/": {
         parameters: {
             query?: never;
@@ -5992,7 +5992,7 @@ export interface paths {
      *
      *     Параметры выборки основаны на модели Models\Pages
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Get */
     "/get/content_2/journal/course/": {
         parameters: {
             query?: never;
@@ -6011,7 +6011,7 @@ export interface paths {
     };  
     /** Получение рубрики
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Rubrics\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Rubrics\Get */
     "/get/content_2/journal/rubrics/": {
         parameters: {
             query?: never;
@@ -6030,7 +6030,7 @@ export interface paths {
     };  
     /** Изменение состояния подписки на рассылку журнала
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Subscribe\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Subscribe\Edit */
     "/edit/content_2/journal/subscribe/": {
         parameters: {
             query?: never;
@@ -6049,7 +6049,7 @@ export interface paths {
     };  
     /** Сортировка документов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Order\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Order\Edit */
     "/edit/content_2/pages/order/": {
         parameters: {
             query?: never;
@@ -6068,7 +6068,7 @@ export interface paths {
     };  
     /** Получение меню справки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Support\Menu\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Menu\Get */
     "/get/content_2/support/menu/": {
         parameters: {
             query?: never;
@@ -6087,7 +6087,7 @@ export interface paths {
     };  
     /** Регистрация токена
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Token\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Push\Token\Add */
     "/add/informer_2/push/token/": {
         parameters: {
             query?: never;
@@ -6106,7 +6106,7 @@ export interface paths {
     };  
     /** Удаление токена
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Token\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Push\Token\Del */
     "/del/informer_2/push/token/": {
         parameters: {
             query?: never;
@@ -6125,7 +6125,7 @@ export interface paths {
     };  
     /** Постановка задачи на подбор запросов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Collect\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Go\Edit */
     "/edit/keywords_2/collect/go/": {
         parameters: {
             query?: never;
@@ -6144,7 +6144,7 @@ export interface paths {
     };  
     /** Получение стоимости подбора запросов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Collect\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Price\Get */
     "/get/keywords_2/collect/price/": {
         parameters: {
             query?: never;
@@ -6166,7 +6166,7 @@ export interface paths {
      *
      *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
      * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
      */
     "/add/keywords_2/keywords/import/": {
@@ -6187,7 +6187,7 @@ export interface paths {
     };  
     /** Постановка задачи на проверку частоты запросов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Go\Edit */
     "/edit/keywords_2/volumes/go/": {
         parameters: {
             query?: never;
@@ -6206,7 +6206,7 @@ export interface paths {
     };  
     /** Информация о стоимости запуска проверки позиций по проектам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Price\Get */
     "/get/keywords_2/volumes/price/": {
         parameters: {
             query?: never;
@@ -6225,7 +6225,7 @@ export interface paths {
     };  
     /** Отправление письма с лэндинга вакансий на hr@topvisor.com
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Landings_2\Methods\Hr\Feedback\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Landings_2\Methods\Hr\Feedback\Add */
     "/add/landings_2/hr/feedback/": {
         parameters: {
             query?: never;
@@ -6244,7 +6244,7 @@ export interface paths {
     };  
     /** Отправка правил на проверку
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Checker\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Checker\Go\Edit */
     "/edit/mentions_2/checker/go/": {
         parameters: {
             query?: never;
@@ -6263,7 +6263,7 @@ export interface paths {
     };  
     /** Получение стоимости проверки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Checker\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Checker\Price\Get */
     "/get/mentions_2/checker/price/": {
         parameters: {
             query?: never;
@@ -6282,7 +6282,7 @@ export interface paths {
     };  
     /** Изменение ключевых слов правила
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Rules\Keywords\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Keywords\Edit */
     "/edit/mentions_2/rules/keywords/": {
         parameters: {
             query?: never;
@@ -6301,7 +6301,7 @@ export interface paths {
     };  
     /** Изменить имя правила
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Rules\Rename\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Rename\Edit */
     "/edit/mentions_2/rules/rename/": {
         parameters: {
             query?: never;
@@ -6320,7 +6320,7 @@ export interface paths {
     };  
     /** Изменение глубины сбора упоминаний
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Searchers\Depth\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Depth\Edit */
     "/edit/mentions_2/searchers/depth/": {
         parameters: {
             query?: never;
@@ -6339,7 +6339,7 @@ export interface paths {
     };  
     /** Изменить активность поисковика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Searchers\Enabled\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Enabled\Edit */
     "/edit/mentions_2/searchers/enabled/": {
         parameters: {
             query?: never;
@@ -6358,7 +6358,7 @@ export interface paths {
     };  
     /** Управление приостановкой/возобновлением рекуррентных платежей
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Recurrent\Suspend\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Recurrent\Suspend\Edit */
     "/edit/payments_2/recurrent/suspend/": {
         parameters: {
             query?: never;
@@ -6381,7 +6381,7 @@ export interface paths {
      *
      *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Next\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Subscriptions\Next\Edit */
     "/edit/payments_2/subscriptions/next/": {
         parameters: {
             query?: never;
@@ -6400,7 +6400,7 @@ export interface paths {
     };  
     /** Отписка от тарифа, оплаченного картой
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\DelCard\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\DelCard\Edit */
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
             query?: never;
@@ -6419,7 +6419,7 @@ export interface paths {
     };  
     /** Настройка оплаты тарифов: выставлять ли счета через диадок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\NextToDiadoc\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\NextToDiadoc\Edit */
     "/edit/payments_2/tariff/nextToDiadoc/": {
         parameters: {
             query?: never;
@@ -6438,7 +6438,7 @@ export interface paths {
     };  
     /** Смена тарифа со следующего месяца
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit */
     "/edit/payments_2/tariff/setNext/": {
         parameters: {
             query?: never;
@@ -6457,7 +6457,7 @@ export interface paths {
     };  
     /** Отправка проектов на проверку позиций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Checker\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Go\Edit */
     "/edit/positions_2/checker/go/": {
         parameters: {
             query?: never;
@@ -6476,7 +6476,7 @@ export interface paths {
     };  
     /** Информация о стоимости запуска проверки позиций по проектам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Checker\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Price\Get */
     "/get/positions_2/checker/price/": {
         parameters: {
             query?: never;
@@ -6495,7 +6495,7 @@ export interface paths {
     };  
     /** Включение/выключение ПС
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Enabled\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Enabled\Edit */
     "/edit/positions_2/searchers/enabled/": {
         parameters: {
             query?: never;
@@ -6514,7 +6514,7 @@ export interface paths {
     };  
     /** Добавление региона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Add */
     "/add/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -6533,7 +6533,7 @@ export interface paths {
     };  
     /** Удаление региона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Del */
     "/del/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -6552,7 +6552,7 @@ export interface paths {
     };  
     /** Изменение региона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Edit */
     "/edit/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -6571,7 +6571,7 @@ export interface paths {
     };  
     /** Настройка сортировки ПС
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Sort\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Sort\Edit */
     "/edit/positions_2/searchers/sort/": {
         parameters: {
             query?: never;
@@ -6590,7 +6590,7 @@ export interface paths {
     };  
     /** Получение данных графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Graph\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Graph\Get */
     "/get/projects_2/analytics/graph/": {
         parameters: {
             query?: never;
@@ -6609,7 +6609,7 @@ export interface paths {
     };  
     /** Перемещение конкурента (сортировка)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Move\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Move\Edit */
     "/edit/projects_2/competitors/move/": {
         parameters: {
             query?: never;
@@ -6628,7 +6628,7 @@ export interface paths {
     };  
     /** Установка имени конкурента
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Name\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Name\Edit */
     "/edit/projects_2/competitors/name/": {
         parameters: {
             query?: never;
@@ -6647,7 +6647,7 @@ export interface paths {
     };  
     /** Включение/выключение конкурентов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\On\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\On\Edit */
     "/edit/projects_2/competitors/on/": {
         parameters: {
             query?: never;
@@ -6666,7 +6666,7 @@ export interface paths {
     };  
     /** Перемещение проектов в папку
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Move\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Move\Edit */
     "/edit/projects_2/folders/move/": {
         parameters: {
             query?: never;
@@ -6687,7 +6687,7 @@ export interface paths {
      *
      *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\MoveFolder\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\MoveFolder\Edit */
     "/edit/projects_2/folders/moveFolder/": {
         parameters: {
             query?: never;
@@ -6706,7 +6706,7 @@ export interface paths {
     };  
     /** Изменение имени папки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Name\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Name\Edit */
     "/edit/projects_2/folders/name/": {
         parameters: {
             query?: never;
@@ -6727,7 +6727,7 @@ export interface paths {
      *
      *     Доступ по API закрыт
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Master\HintsCompetitors\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Master\HintsCompetitors\Get */
     "/get/projects_2/master/hintsCompetitors/": {
         parameters: {
             query?: never;
@@ -6748,7 +6748,7 @@ export interface paths {
      *
      *     Доступ по API закрыт
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Master\HintsKeywords\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Master\HintsKeywords\Get */
     "/get/projects_2/master/hintsKeywords/": {
         parameters: {
             query?: never;
@@ -6767,7 +6767,7 @@ export interface paths {
     };  
     /** Копирование проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Copy\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Copy\Add */
     "/add/projects_2/projects/copy/": {
         parameters: {
             query?: never;
@@ -6786,7 +6786,7 @@ export interface paths {
     };  
     /** Настройка избранных проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Favorite\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Favorite\Edit */
     "/edit/projects_2/projects/favorite/": {
         parameters: {
             query?: never;
@@ -6805,7 +6805,7 @@ export interface paths {
     };  
     /** Перемещение проекта (сортировка)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Move\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Move\Edit */
     "/edit/projects_2/projects/move/": {
         parameters: {
             query?: never;
@@ -6824,7 +6824,7 @@ export interface paths {
     };  
     /** Установка имени проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Name\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Name\Edit */
     "/edit/projects_2/projects/name/": {
         parameters: {
             query?: never;
@@ -6843,7 +6843,7 @@ export interface paths {
     };  
     /** Редактирование "on" проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\On\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\On\Edit */
     "/edit/projects_2/projects/on/": {
         parameters: {
             query?: never;
@@ -6862,7 +6862,7 @@ export interface paths {
     };  
     /** Изменение сортировки проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Sort\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Sort\Edit */
     "/edit/projects_2/projects/sort/": {
         parameters: {
             query?: never;
@@ -6881,7 +6881,7 @@ export interface paths {
     };  
     /** Редактирование тегов проектов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Tags\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Tags\Edit */
     "/edit/projects_2/projects/tags/": {
         parameters: {
             query?: never;
@@ -6900,7 +6900,7 @@ export interface paths {
     };  
     /** Редактирование ссылки проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Url\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Url\Edit */
     "/edit/projects_2/projects/url/": {
         parameters: {
             query?: never;
@@ -6919,7 +6919,7 @@ export interface paths {
     };  
     /** Отмена передачи проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Del */
     "/del/projects_2/rights/changeOwner/": {
         parameters: {
             query?: never;
@@ -6938,7 +6938,7 @@ export interface paths {
     };  
     /** Инициализация передачи проекта другому пользователю
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Edit */
     "/edit/projects_2/rights/changeOwner/": {
         parameters: {
             query?: never;
@@ -6957,7 +6957,7 @@ export interface paths {
     };  
     /** Получение информации о смене владельца
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Get */
     "/get/projects_2/rights/changeOwner/": {
         parameters: {
             query?: never;
@@ -6981,7 +6981,7 @@ export interface paths {
      *     - created, если данные готовы
      *     - paidtill, если данные готовы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Registrar\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Registrar\Get */
     "/get/projects_2/status/registrar/": {
         parameters: {
             query?: never;
@@ -7002,7 +7002,7 @@ export interface paths {
      *     Возваращает объект с параметрами:
      *     - expire
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Ssl\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Ssl\Get */
     "/get/projects_2/status/ssl/": {
         parameters: {
             query?: never;
@@ -7021,7 +7021,7 @@ export interface paths {
     };  
     /** Создание задачи
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add */
     "/add/projects_2/tasks/volumes/": {
         parameters: {
             query?: never;
@@ -7040,7 +7040,7 @@ export interface paths {
     };  
     /** Добавление нескольких ответов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Multi\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Multi\Add */
     "/add/quiz_2/questionsResponses/multi/": {
         parameters: {
             query?: never;
@@ -7059,7 +7059,7 @@ export interface paths {
     };  
     /** Получить список групп с пользователями
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Redmine_2\Methods\Users\Groups\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Redmine_2\Methods\Users\Groups\Get */
     "/get/redmine_2/users/groups/": {
         parameters: {
             query?: never;
@@ -7078,7 +7078,7 @@ export interface paths {
     };  
     /** Отправить тестовый отчет
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Reports_2\Methods\Positions\SendTest\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Reports_2\Methods\Positions\SendTest\Edit */
     "/edit/reports_2/positions/sendTest/": {
         parameters: {
             query?: never;
@@ -7097,7 +7097,7 @@ export interface paths {
     };  
     /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\EmailsHints\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\EmailsHints\Get */
     "/get/schedule_2/settings/emailsHints/": {
         parameters: {
             query?: never;
@@ -7116,7 +7116,7 @@ export interface paths {
     };  
     /** Получение данных сводки конкурентов для графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Get */
     "/get/snapshots_2/competitors/chart/": {
         parameters: {
             query?: never;
@@ -7135,7 +7135,7 @@ export interface paths {
     };  
     /** Экспорт списка конкурентов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Export\Get */
     "/get/snapshots_2/competitors/export/": {
         parameters: {
             query?: never;
@@ -7154,7 +7154,7 @@ export interface paths {
     };  
     /** Экспорт истории снимков выдачи
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Export\Get */
     "/get/snapshots_2/history/export/": {
         parameters: {
             query?: never;
@@ -7173,7 +7173,7 @@ export interface paths {
     };  
     /** Создание гостевой ссылки на просмотр снимков выдачи
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Links\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Links\Get */
     "/get/snapshots_2/history/links/": {
         parameters: {
             query?: never;
@@ -7192,7 +7192,7 @@ export interface paths {
     };  
     /** Генерация нового API ключа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Api\GenKey\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Api\GenKey\Edit */
     "/edit/system_2/api/genKey/": {
         parameters: {
             query?: never;
@@ -7211,7 +7211,7 @@ export interface paths {
     };  
     /** Вызов тестового API запроса
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Api\Test\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Api\Test\Get */
     "/get/system_2/api/test/": {
         parameters: {
             query?: never;
@@ -7230,7 +7230,7 @@ export interface paths {
     };  
     /** Скачивание файла из директории
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Download\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Download\Get */
     "/get/system_2/cloud/download/": {
         parameters: {
             query?: never;
@@ -7249,7 +7249,7 @@ export interface paths {
     };  
     /** Переименовывание файла
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Rename\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Rename\Edit */
     "/edit/system_2/cloud/rename/": {
         parameters: {
             query?: never;
@@ -7270,7 +7270,7 @@ export interface paths {
      *
      *     см. Analytics_2\Mods\Analytics::genEventImgLink()
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Analytics\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Analytics\Add */
     "/add/system_2/common/analytics/": {
         parameters: {
             query?: never;
@@ -7289,7 +7289,7 @@ export interface paths {
     };  
     /** Получение доступных запросы для построения отчета с кэшированием на 30 дней
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\CompetitorsQueries\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\CompetitorsQueries\Get */
     "/get/system_2/common/competitorsQueries/": {
         parameters: {
             query?: never;
@@ -7308,7 +7308,7 @@ export interface paths {
     };  
     /** Загрузка настроек OpenAPI
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\OpenAPI\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\OpenAPI\Get */
     "/get/system_2/common/openAPI/": {
         parameters: {
             query?: never;
@@ -7331,7 +7331,7 @@ export interface paths {
      *
      *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\PagePreview\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\PagePreview\Get */
     "/get/system_2/common/pagePreview/": {
         parameters: {
             query?: never;
@@ -7350,7 +7350,7 @@ export interface paths {
     };  
     /** Получение регионов для поисковиков с последующим кэшированием для Get запросов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Regions\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Regions\Get */
     "/get/system_2/common/regions/": {
         parameters: {
             query?: never;
@@ -7371,7 +7371,7 @@ export interface paths {
      *
      *     Вернет изображение в формате image/png
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\WebScreensFree\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\WebScreensFree\Get */
     "/get/system_2/common/webScreensFree/": {
         parameters: {
             query?: never;
@@ -7390,7 +7390,7 @@ export interface paths {
     };  
     /** Изменение рекорда в тетрисе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Games\Record\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Games\Record\Edit */
     "/edit/system_2/games/record/": {
         parameters: {
             query?: never;
@@ -7409,7 +7409,7 @@ export interface paths {
     };  
     /** Получение рекорда тетриса
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Games\Record\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Games\Record\Get */
     "/get/system_2/games/record/": {
         parameters: {
             query?: never;
@@ -7428,7 +7428,7 @@ export interface paths {
     };  
     /** Логирование ошибки js и отправка в канал slack
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Log\Error\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Log\Error\Add */
     "/add/system_2/log/error/": {
         parameters: {
             query?: never;
@@ -7449,7 +7449,7 @@ export interface paths {
      *
      *     Не хранить в параметрах конфиденциальную информацию
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Properties\Property\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Properties\Property\Edit */
     "/edit/system_2/properties/property/": {
         parameters: {
             query?: never;
@@ -7468,7 +7468,7 @@ export interface paths {
     };  
     /** Удаление ответа в тикете, только для админов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Message\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Message\Del */
     "/del/tickets_2/admin/message/": {
         parameters: {
             query?: never;
@@ -7487,7 +7487,7 @@ export interface paths {
     };  
     /** Редактирование текста ответа в тикете, только для админов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit */
     "/edit/tickets_2/admin/message/": {
         parameters: {
             query?: never;
@@ -7506,7 +7506,7 @@ export interface paths {
     };  
     /** Добавление шаблона тикета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Add */
     "/add/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -7525,7 +7525,7 @@ export interface paths {
     };  
     /** Удаление шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Del */
     "/del/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -7544,7 +7544,7 @@ export interface paths {
     };  
     /** Изменение шаблона
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Edit */
     "/edit/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -7563,7 +7563,7 @@ export interface paths {
     };  
     /** Получение шаблона тикета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Get */
     "/get/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -7582,7 +7582,7 @@ export interface paths {
     };  
     /** Редактирование тикета (для админов)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Ticket\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Ticket\Edit */
     "/edit/tickets_2/admin/ticket/": {
         parameters: {
             query?: never;
@@ -7601,7 +7601,7 @@ export interface paths {
     };  
     /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\TicketSplit\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\TicketSplit\Edit */
     "/edit/tickets_2/admin/ticketSplit/": {
         parameters: {
             query?: never;
@@ -7620,7 +7620,7 @@ export interface paths {
     };  
     /** Получение инфомрации о пользователе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\User\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\User\Get */
     "/get/tickets_2/admin/user/": {
         parameters: {
             query?: never;
@@ -7639,7 +7639,7 @@ export interface paths {
     };  
     /** Установка userId для тикетов без userId
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\UserId\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\UserId\Edit */
     "/edit/tickets_2/admin/userId/": {
         parameters: {
             query?: never;
@@ -7658,7 +7658,7 @@ export interface paths {
     };  
     /** Редактирваоние комменатрий админа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\AdminComment\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\AdminComment\Edit */
     "/edit/tickets_2/tickets/adminComment/": {
         parameters: {
             query?: never;
@@ -7679,7 +7679,7 @@ export interface paths {
      *
      *     id последнего непрочитанного тикета, число непрочитанных тикетов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Info\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Info\Get */
     "/get/tickets_2/tickets/info/": {
         parameters: {
             query?: never;
@@ -7698,7 +7698,7 @@ export interface paths {
     };  
     /** Пометка тикета как "прочитанный" для автора тикета или админов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\SetReaded\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\SetReaded\Edit */
     "/edit/tickets_2/tickets/setReaded/": {
         parameters: {
             query?: never;
@@ -7717,7 +7717,7 @@ export interface paths {
     };  
     /** Написание текста
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Writing\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Writing\Edit */
     "/edit/tickets_2/tickets/writing/": {
         parameters: {
             query?: never;
@@ -7734,9 +7734,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Выбрать сайт для проекта
+    /** Выбрать сайт для интеграции
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
     "/edit/tpa_2/gsc/setSite/": {
         parameters: {
             query?: never;
@@ -7755,7 +7755,7 @@ export interface paths {
     };  
     /** Получение всех источников по индексу источника
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Referers\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Stat\Referers\Get */
     "/get/tpvsr_2/stat/referers/": {
         parameters: {
             query?: never;
@@ -7774,7 +7774,7 @@ export interface paths {
     };  
     /** Получение URL к карте сайта по файлу robots.txt для указанного домена
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Import\RecognizeLinkSitemapXml\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Import\RecognizeLinkSitemapXml\Get */
     "/get/urls_2/import/recognizeLinkSitemapXml/": {
         parameters: {
             query?: never;
@@ -7793,7 +7793,7 @@ export interface paths {
     };  
     /** Привязка email к аккаунту
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Join\Email\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Join\Email\Add */
     "/add/users_2/join/email/": {
         parameters: {
             query?: never;
@@ -7812,7 +7812,7 @@ export interface paths {
     };  
     /** Удаление аватарки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Avatar\Del */
     "/del/users_2/profile/avatar/": {
         parameters: {
             query?: never;
@@ -7831,7 +7831,7 @@ export interface paths {
     };  
     /** Изменение автара
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Avatar\Edit */
     "/edit/users_2/profile/avatar/": {
         parameters: {
             query?: never;
@@ -7850,7 +7850,7 @@ export interface paths {
     };  
     /** Получение пути на аватар пользователя от корня сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Avatar\Get */
     "/get/users_2/profile/avatar/": {
         parameters: {
             query?: never;
@@ -7869,7 +7869,7 @@ export interface paths {
     };  
     /** Изменение валюты пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Currency\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Currency\Edit */
     "/edit/users_2/profile/currency/": {
         parameters: {
             query?: never;
@@ -7890,7 +7890,7 @@ export interface paths {
      *
      *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Email\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Email\Edit */
     "/edit/users_2/profile/email/": {
         parameters: {
             query?: never;
@@ -7909,7 +7909,7 @@ export interface paths {
     };  
     /** Изменение языка
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Lang\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Lang\Edit */
     "/edit/users_2/profile/lang/": {
         parameters: {
             query?: never;
@@ -7928,7 +7928,7 @@ export interface paths {
     };  
     /** Изменение пароля
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Pass\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Pass\Edit */
     "/edit/users_2/profile/pass/": {
         parameters: {
             query?: never;
@@ -7947,7 +7947,7 @@ export interface paths {
     };  
     /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail())
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\RetrievePass\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\RetrievePass\Edit */
     "/edit/users_2/profile/retrievePass/": {
         parameters: {
             query?: never;
@@ -7966,7 +7966,7 @@ export interface paths {
     };  
     /** Изменение темы сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Theme\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Theme\Edit */
     "/edit/users_2/profile/theme/": {
         parameters: {
             query?: never;
@@ -7985,7 +7985,7 @@ export interface paths {
     };  
     /** Изменение временной зоны
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Timezone\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Timezone\Edit */
     "/edit/users_2/profile/timezone/": {
         parameters: {
             query?: never;
@@ -8004,7 +8004,7 @@ export interface paths {
     };  
     /** Установка достижения по промокоду
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Ranks\Promocode\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Ranks\Promocode\Add */
     "/add/users_2/ranks/promocode/": {
         parameters: {
             query?: never;
@@ -8023,7 +8023,7 @@ export interface paths {
     };  
     /** Получение количество переходов и регистраций по реферальной ссылке (для графика)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Referrals\ChartCountsByDate\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Referrals\ChartCountsByDate\Get */
     "/get/users_2/referrals/chartCountsByDate/": {
         parameters: {
             query?: never;
@@ -8042,7 +8042,7 @@ export interface paths {
     };  
     /** Регистрация по приглашению (по реферальной программе)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Referrals\Invite\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Referrals\Invite\Add */
     "/add/users_2/referrals/invite/": {
         parameters: {
             query?: never;
@@ -8061,7 +8061,7 @@ export interface paths {
     };  
     /** Получение общего числа проектов / запросов (автоматических / ручных)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\Get */
     "/get/users_2/stats/account/": {
         parameters: {
             query?: never;
@@ -8080,7 +8080,7 @@ export interface paths {
     };  
     /** Добавление фильтра группы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Add */
     "/add/admin_2/accounting/group/filter/": {
         parameters: {
             query?: never;
@@ -8099,7 +8099,7 @@ export interface paths {
     };  
     /** Удаление фильтра группы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Del */
     "/del/admin_2/accounting/group/filter/": {
         parameters: {
             query?: never;
@@ -8118,7 +8118,7 @@ export interface paths {
     };  
     /** Изменение фильтра группы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Edit */
     "/edit/admin_2/accounting/group/filter/": {
         parameters: {
             query?: never;
@@ -8137,7 +8137,7 @@ export interface paths {
     };  
     /** Скачивание документа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\File\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Invoices\File\Get */
     "/get/admin_2/accounting/invoices/file/": {
         parameters: {
             query?: never;
@@ -8157,7 +8157,7 @@ export interface paths {
     /**
      * Скачивание реестра исходящих операций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Operations\Export\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Operations\Export\Get
      * @description @POST string month - месяц в формате: YYYY-mm
      *     столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
      */
@@ -8179,7 +8179,7 @@ export interface paths {
     };  
     /** Востановление поисковых запросов из бэкапа
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit */
     "/edit/admin_2/actions/backup/keywords/": {
         parameters: {
             query?: never;
@@ -8198,7 +8198,7 @@ export interface paths {
     };  
     /** Загрузить и разместить бекап в БД бекапов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Backup\Loader\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Loader\Edit */
     "/edit/admin_2/actions/backup/loader/": {
         parameters: {
             query?: never;
@@ -8217,7 +8217,7 @@ export interface paths {
     };  
     /** Востановление удаленного проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Backup\Project\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Project\Edit */
     "/edit/admin_2/actions/backup/project/": {
         parameters: {
             query?: never;
@@ -8236,7 +8236,7 @@ export interface paths {
     };  
     /** Оплата реферального счета
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Bank\Referral\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Bank\Referral\Edit */
     "/edit/admin_2/actions/bank/referral/": {
         parameters: {
             query?: never;
@@ -8255,7 +8255,7 @@ export interface paths {
     };  
     /** Отправка акты в диадок
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Payments\Diadoc\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Payments\Diadoc\Add */
     "/add/admin_2/actions/payments/diadoc/": {
         parameters: {
             query?: never;
@@ -8274,7 +8274,7 @@ export interface paths {
     };  
     /** Импортирование историй позиций из CSV
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Add */
     "/add/admin_2/actions/positions/history/": {
         parameters: {
             query?: never;
@@ -8293,7 +8293,7 @@ export interface paths {
     };  
     /** Сброс статуса проверки позиций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\Status\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\Status\Edit */
     "/edit/admin_2/actions/positions/status/": {
         parameters: {
             query?: never;
@@ -8312,7 +8312,7 @@ export interface paths {
     };  
     /** Изменение домена проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Projects\Domain\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Domain\Edit */
     "/edit/admin_2/actions/projects/domain/": {
         parameters: {
             query?: never;
@@ -8331,7 +8331,7 @@ export interface paths {
     };  
     /** Добавить регионы Google в сервис
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Regions\CommitGoogle\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Regions\CommitGoogle\Edit */
     "/edit/admin_2/actions/regions/commitGoogle/": {
         parameters: {
             query?: never;
@@ -8351,7 +8351,7 @@ export interface paths {
     /**
      * Обновление регионов Google
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Regions\UpdateGoogle\Edit
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Regions\UpdateGoogle\Edit
      * @description @see https://developers.google.com/google-ads/api/data/geotargets
      */
     "/edit/admin_2/actions/regions/updateGoogle/": {
@@ -8372,7 +8372,7 @@ export interface paths {
     };  
     /** Перевод проверок позиций яндекс
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit */
     "/edit/admin_2/actions/robot/checks/": {
         parameters: {
             query?: never;
@@ -8391,7 +8391,7 @@ export interface paths {
     };  
     /** Изменение приоритета задач
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Robot\Priority\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Priority\Edit */
     "/edit/admin_2/actions/robot/priority/": {
         parameters: {
             query?: never;
@@ -8410,7 +8410,7 @@ export interface paths {
     };  
     /** Снятие задачи с дэбага
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit */
     "/edit/admin_2/actions/robot/task/": {
         parameters: {
             query?: never;
@@ -8429,7 +8429,7 @@ export interface paths {
     };  
     /** Удаление файлов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Slack\Files\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Slack\Files\Del */
     "/del/admin_2/actions/slack/files/": {
         parameters: {
             query?: never;
@@ -8448,7 +8448,7 @@ export interface paths {
     };  
     /** Удаление сообщений
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del */
     "/del/admin_2/actions/slack/messages/": {
         parameters: {
             query?: never;
@@ -8467,7 +8467,7 @@ export interface paths {
     };  
     /** Изменение валюты пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\User\Currency\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\User\Currency\Edit */
     "/edit/admin_2/actions/user/currency/": {
         parameters: {
             query?: never;
@@ -8486,7 +8486,7 @@ export interface paths {
     };  
     /** Замена email пользователя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\User\Email\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\User\Email\Edit */
     "/edit/admin_2/actions/user/email/": {
         parameters: {
             query?: never;
@@ -8505,7 +8505,7 @@ export interface paths {
     };  
     /** Получение сводки по группам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Accounting\SummaryForChart\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Accounting\SummaryForChart\Get */
     "/get/admin_2/analytics/accounting/summaryForChart/": {
         parameters: {
             query?: never;
@@ -8524,7 +8524,7 @@ export interface paths {
     };  
     /** Получение активности пользователей в формате для графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\ChartByPeriod\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Activity\ChartByPeriod\Get */
     "/get/admin_2/analytics/activity/chartByPeriod/": {
         parameters: {
             query?: never;
@@ -8543,7 +8543,7 @@ export interface paths {
     };  
     /** Получение конкурентов для графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Competitors\SummaryForOrdersChart\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Competitors\SummaryForOrdersChart\Get */
     "/get/admin_2/analytics/competitors/summaryForOrdersChart/": {
         parameters: {
             query?: never;
@@ -8562,7 +8562,7 @@ export interface paths {
     };  
     /** Получение суммы оплат по системам платежей за период
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Payments\Systems\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Systems\Get */
     "/get/admin_2/analytics/payments/systems/": {
         parameters: {
             query?: never;
@@ -8581,7 +8581,7 @@ export interface paths {
     };  
     /** Получение суммы оплат по тарифам за период
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Payments\Tariff\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Tariff\Get */
     "/get/admin_2/analytics/payments/tariff/": {
         parameters: {
             query?: never;
@@ -8600,7 +8600,7 @@ export interface paths {
     };  
     /** Получение числа автоматических проверока по дням по часам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByDayByHourAuto\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByDayByHourAuto\Get */
     "/get/admin_2/analytics/positions/chartByDayByHourAuto/": {
         parameters: {
             query?: never;
@@ -8619,7 +8619,7 @@ export interface paths {
     };  
     /** Получение числа автоматических проверок по часам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHourAuto\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHourAuto\Get */
     "/get/admin_2/analytics/positions/chartByHourAuto/": {
         parameters: {
             query?: never;
@@ -8638,7 +8638,7 @@ export interface paths {
     };  
     /** Получение числа проверок за месяц по часам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHour\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHour\Get */
     "/get/admin_2/analytics/positions/chartByHour/": {
         parameters: {
             query?: never;
@@ -8657,7 +8657,7 @@ export interface paths {
     };  
     /** Получение числа проверок по часам по пользователям
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartCountUsersByHour\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartCountUsersByHour\Get */
     "/get/admin_2/analytics/positions/chartCountUsersByHour/": {
         parameters: {
             query?: never;
@@ -8676,7 +8676,7 @@ export interface paths {
     };  
     /** Получение статистики тикетов по миграциям
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByMigrations\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByMigrations\Get */
     "/get/admin_2/analytics/tickets/chartByMigrations/": {
         parameters: {
             query?: never;
@@ -8695,7 +8695,7 @@ export interface paths {
     };  
     /** Получение статистики по кол-ву пользователей, открывших первый тикет
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByNew\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByNew\Get */
     "/get/admin_2/analytics/tickets/chartByNew/": {
         parameters: {
             query?: never;
@@ -8714,7 +8714,7 @@ export interface paths {
     };  
     /** Получение статистики тикетов по оценкам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByRates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByRates\Get */
     "/get/admin_2/analytics/tickets/chartByRates/": {
         parameters: {
             query?: never;
@@ -8733,7 +8733,7 @@ export interface paths {
     };  
     /** Получение статистику тикетов по тегам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByTags\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByTags\Get */
     "/get/admin_2/analytics/tickets/chartByTags/": {
         parameters: {
             query?: never;
@@ -8752,7 +8752,7 @@ export interface paths {
     };  
     /** Получение статистики по среднему времени ожидания ответа на вопросы в тикетах
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByWaitTime\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByWaitTime\Get */
     "/get/admin_2/analytics/tickets/chartByWaitTime/": {
         parameters: {
             query?: never;
@@ -8771,7 +8771,7 @@ export interface paths {
     };  
     /** Получение статистики ответов на тикеты
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Tickets\Messages\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\Messages\Get */
     "/get/admin_2/analytics/tickets/messages/": {
         parameters: {
             query?: never;
@@ -8790,7 +8790,7 @@ export interface paths {
     };  
     /** Помечание лога как обработанного
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\System\Checked\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\System\Checked\Edit */
     "/edit/admin_2/logs/system/checked/": {
         parameters: {
             query?: never;
@@ -8811,7 +8811,7 @@ export interface paths {
      *
      *     График кешируется, первый запрос может выполняться дольше
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Informer\Subscriptions\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Informer\Subscriptions\Get */
     "/get/admin_2/users/informer/subscriptions/": {
         parameters: {
             query?: never;
@@ -8830,7 +8830,7 @@ export interface paths {
     };  
     /** Запуск проверки аудита
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Checker\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Checker\Go\Edit */
     "/edit/audit_2/audit/checker/go/": {
         parameters: {
             query?: never;
@@ -8849,7 +8849,7 @@ export interface paths {
     };  
     /** Информация о стоимости запуска аудита по проектам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Checker\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Checker\Price\Get */
     "/get/audit_2/audit/checker/price/": {
         parameters: {
             query?: never;
@@ -8868,7 +8868,7 @@ export interface paths {
     };  
     /** Получение гостевой ссылки на просмотр аудита позиций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Links\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Export\Links\Get */
     "/get/audit_2/audit/export/links/": {
         parameters: {
             query?: never;
@@ -8887,7 +8887,7 @@ export interface paths {
     };  
     /** Экспорт отчета Анализа сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Summary\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Export\Summary\Get */
     "/get/audit_2/audit/export/summary/": {
         parameters: {
             query?: never;
@@ -8906,7 +8906,7 @@ export interface paths {
     };  
     /** Получение информации о текущей ошибке на роботе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Log\ActualError\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Log\ActualError\Get */
     "/get/audit_2/audit/log/actualError/": {
         parameters: {
             query?: never;
@@ -8926,7 +8926,7 @@ export interface paths {
     /**
      * Получение данных для графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Log\Chart\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Log\Chart\Get
      * @deprecated
      * @description @deprecated
      */
@@ -8949,7 +8949,7 @@ export interface paths {
     /**
      * Экспорт результатов аудита
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Results\Export\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Results\Export\Get
      * @deprecated
      * @description @deprecated
      */
@@ -8972,7 +8972,7 @@ export interface paths {
     /**
      * Получение результатов анализа страницы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Results\Page\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Results\Page\Get
      * @deprecated
      * @description @deprecated
      */
@@ -8994,7 +8994,7 @@ export interface paths {
     };  
     /** Отправка проектов на проверку индексации
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Checker\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Checker\Go\Edit */
     "/edit/audit_2/indexing/checker/go/": {
         parameters: {
             query?: never;
@@ -9013,7 +9013,7 @@ export interface paths {
     };  
     /** Информация о стоимости запуска индексации по проектам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Checker\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Checker\Price\Get */
     "/get/audit_2/indexing/checker/price/": {
         parameters: {
             query?: never;
@@ -9034,7 +9034,7 @@ export interface paths {
      *
      *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Export\Links\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Export\Links\Get */
     "/get/audit_2/indexing/export/links/": {
         parameters: {
             query?: never;
@@ -9053,7 +9053,7 @@ export interface paths {
     };  
     /** Экспорт файла в хранилище
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Export\ToRepository\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Export\ToRepository\Get */
     "/get/audit_2/indexing/export/toRepository/": {
         parameters: {
             query?: never;
@@ -9072,7 +9072,7 @@ export interface paths {
     };  
     /** Получение сводок индексации для графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Summary\Chart\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Summary\Chart\Get */
     "/get/audit_2/indexing/summary/chart/": {
         parameters: {
             query?: never;
@@ -9091,7 +9091,7 @@ export interface paths {
     };  
     /** Отправка проектов на проверку карты сайта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Sitemap\Checker\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Sitemap\Checker\Go\Edit */
     "/edit/audit_2/sitemap/checker/go/": {
         parameters: {
             query?: never;
@@ -9110,7 +9110,7 @@ export interface paths {
     };  
     /** Информация о стоимости запуска индексации по проектам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Sitemap\Checker\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Sitemap\Checker\Price\Get */
     "/get/audit_2/sitemap/checker/price/": {
         parameters: {
             query?: never;
@@ -9129,7 +9129,7 @@ export interface paths {
     };  
     /** Отправка проектов на проверку радара
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Checker\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Checker\Go\Edit */
     "/edit/audit_2/watcher/checker/go/": {
         parameters: {
             query?: never;
@@ -9148,7 +9148,7 @@ export interface paths {
     };  
     /** Информация о стоимости запуска индексации по проектам
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Checker\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Checker\Price\Get */
     "/get/audit_2/watcher/checker/price/": {
         parameters: {
             query?: never;
@@ -9167,7 +9167,7 @@ export interface paths {
     };  
     /** Создание гостевой ссылки на просмотр радара
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Export\Links\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Export\Links\Get */
     "/get/audit_2/watcher/export/links/": {
         parameters: {
             query?: never;
@@ -9186,7 +9186,7 @@ export interface paths {
     };  
     /** Получение сводок радара для графика
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Summary\Chart\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\Summary\Chart\Get */
     "/get/audit_2/watcher/summary/chart/": {
         parameters: {
             query?: never;
@@ -9207,7 +9207,7 @@ export interface paths {
      *
      *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByDomains\Table\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByDomains\Table\Get */
     "/get/competitors_2/export/byDomains/table/": {
         parameters: {
             query?: never;
@@ -9228,7 +9228,7 @@ export interface paths {
      *
      *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByDomains\TableToProject\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByDomains\TableToProject\Add */
     "/add/competitors_2/export/byDomains/tableToProject/": {
         parameters: {
             query?: never;
@@ -9249,7 +9249,7 @@ export interface paths {
      *
      *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\Table\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\Table\Get */
     "/get/competitors_2/export/byLeaders/table/": {
         parameters: {
             query?: never;
@@ -9270,7 +9270,7 @@ export interface paths {
      *
      *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\TableToProject\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\TableToProject\Add */
     "/add/competitors_2/export/byLeaders/tableToProject/": {
         parameters: {
             query?: never;
@@ -9289,7 +9289,7 @@ export interface paths {
     };  
     /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\ByKeyword\Info\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\ByKeyword\Info\Get */
     "/get/competitors_2/orders/byKeyword/info/": {
         parameters: {
             query?: never;
@@ -9308,7 +9308,7 @@ export interface paths {
     };  
     /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Orders\ByUrl\Info\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Orders\ByUrl\Info\Get */
     "/get/competitors_2/orders/byUrl/info/": {
         parameters: {
             query?: never;
@@ -9327,7 +9327,7 @@ export interface paths {
     };  
     /** Получение топа выдачи сайтов за определенную проверку
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Snapshots\Top\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Snapshots\Top\Get */
     "/get/content_2/apometr/snapshots/top/": {
         parameters: {
             query?: never;
@@ -9346,7 +9346,7 @@ export interface paths {
     };  
     /** Получение календаря текстовых апдейтов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Text\Calendar\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Text\Calendar\Get */
     "/get/content_2/apometr/text/calendar/": {
         parameters: {
             query?: never;
@@ -9365,7 +9365,7 @@ export interface paths {
     };  
     /** Получение текстовых апдейтов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Text\Updates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Text\Updates\Get */
     "/get/content_2/apometr/text/updates/": {
         parameters: {
             query?: never;
@@ -9384,7 +9384,7 @@ export interface paths {
     };  
     /** Получение дат апдейтов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Updates\Dates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Updates\Dates\Get */
     "/get/content_2/apometr/updates/dates/": {
         parameters: {
             query?: never;
@@ -9405,7 +9405,7 @@ export interface paths {
      *
      *     Можно создавать только для пройденных курсов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Add */
     "/add/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -9426,7 +9426,7 @@ export interface paths {
      *
      *     Можно менять только имя, если оно не указано
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Edit */
     "/edit/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -9445,7 +9445,7 @@ export interface paths {
     };  
     /** Получение своего сертификата
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Get */
     "/get/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -9467,7 +9467,7 @@ export interface paths {
      *     Дополнительные поля:
      *      - lessons - см. includeLessons()
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Chapters\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Chapters\Get */
     "/get/content_2/journal/course/chapters/": {
         parameters: {
             query?: never;
@@ -9487,7 +9487,7 @@ export interface paths {
     /** Получение списка страниц по буквам для модуля SEO словарь
      *     Результат функции кешируется
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Dictionary\ArticlesByLetter\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\ArticlesByLetter\Get */
     "/get/content_2/journal/dictionary/articlesByLetter/": {
         parameters: {
             query?: never;
@@ -9506,7 +9506,7 @@ export interface paths {
     };  
     /** Получение стаьи для "Слово дня" в модуле SEO словарь
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
     "/get/content_2/journal/dictionary/wordOfday/": {
         parameters: {
             query?: never;
@@ -9525,7 +9525,7 @@ export interface paths {
     };  
     /** Постановка задачи на расширение группы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Collect\Ext\Go\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Ext\Go\Edit */
     "/edit/keywords_2/collect/ext/go/": {
         parameters: {
             query?: never;
@@ -9544,7 +9544,7 @@ export interface paths {
     };  
     /** Получение цены на расширение группы
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Collect\Ext\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Ext\Price\Get */
     "/get/keywords_2/collect/ext/price/": {
         parameters: {
             query?: never;
@@ -9565,7 +9565,7 @@ export interface paths {
      *
      *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Export\Get */
     "/get/positions_2/searchers/regions/export/": {
         parameters: {
             query?: never;
@@ -9584,7 +9584,7 @@ export interface paths {
     };  
     /** Импорт регионов (CSV)
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Import\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Import\Add */
     "/add/positions_2/searchers/regions/import/": {
         parameters: {
             query?: never;
@@ -9603,7 +9603,7 @@ export interface paths {
     };  
     /** Настройка сортировки регионов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Sort\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Sort\Edit */
     "/edit/positions_2/searchers/regions/sort/": {
         parameters: {
             query?: never;
@@ -9622,7 +9622,7 @@ export interface paths {
     };  
     /** Получение проверки частоты задачи без проекта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
     "/get/projects_2/tasks/volumes/price/": {
         parameters: {
             query?: never;
@@ -9641,7 +9641,7 @@ export interface paths {
     };  
     /** Получение статуса проверки частоты задачи
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get */
     "/get/projects_2/tasks/volumes/status/": {
         parameters: {
             query?: never;
@@ -9662,7 +9662,7 @@ export interface paths {
      *
      *     Описание параметров смотреть в get/snapshots_2/competitors
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Export\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Export\Get */
     "/get/snapshots_2/competitors/chart/export/": {
         parameters: {
             query?: never;
@@ -9683,7 +9683,7 @@ export interface paths {
      *
      *     Производит редирект на файл в кранилище
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Export\ToRepository\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Export\ToRepository\Get */
     "/get/snapshots_2/competitors/export/toRepository/": {
         parameters: {
             query?: never;
@@ -9704,7 +9704,7 @@ export interface paths {
      *
      *     Производит редирект на файл в кранилище
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Export\ToRepository\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Export\ToRepository\Get */
     "/get/snapshots_2/history/export/toRepository/": {
         parameters: {
             query?: never;
@@ -9723,7 +9723,7 @@ export interface paths {
     };  
     /** Изменение сортировки шаблонов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Sort\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Sort\Edit */
     "/edit/tickets_2/admin/templates/sort/": {
         parameters: {
             query?: never;
@@ -9742,7 +9742,7 @@ export interface paths {
     };  
     /** Изменение админской ссылки к тикетам. Только для админов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Ticket\ResourceAdmin\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Ticket\ResourceAdmin\Edit */
     "/edit/tickets_2/admin/ticket/resourceAdmin/": {
         parameters: {
             query?: never;
@@ -9761,7 +9761,7 @@ export interface paths {
     };  
     /** Поучение гостевой ссылки
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Export\GuestLinks\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Stat\Export\GuestLinks\Get */
     "/get/tpvsr_2/stat/export/guestLinks/": {
         parameters: {
             query?: never;
@@ -9780,7 +9780,7 @@ export interface paths {
     };  
     /** Получение списка источников
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Export\Referrers\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Methods\Stat\Export\Referrers\Get */
     "/get/tpvsr_2/stat/export/referrers/": {
         parameters: {
             query?: never;
@@ -9799,7 +9799,7 @@ export interface paths {
     };  
     /** Удаление логотипа компании
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Del */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Del */
     "/del/users_2/profile/brand/logo/": {
         parameters: {
             query?: never;
@@ -9818,7 +9818,7 @@ export interface paths {
     };  
     /** Изменение логотипа бренда
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Edit */
     "/edit/users_2/profile/brand/logo/": {
         parameters: {
             query?: never;
@@ -9837,7 +9837,7 @@ export interface paths {
     };  
     /** Установка ранга Twitter
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Ranks\Promocode\Twitter\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Ranks\Promocode\Twitter\Add */
     "/add/users_2/ranks/promocode/twitter/": {
         parameters: {
             query?: never;
@@ -9856,7 +9856,7 @@ export interface paths {
     };  
     /** Получение списка месяцев
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\ListMonth\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListMonth\Get */
     "/get/users_2/stats/account/listMonth/": {
         parameters: {
             query?: never;
@@ -9875,7 +9875,7 @@ export interface paths {
     };  
     /** Получение списка проектов для статистики аккаунта
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\ListProjects\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListProjects\Get */
     "/get/users_2/stats/account/listProjects/": {
         parameters: {
             query?: never;
@@ -9894,7 +9894,7 @@ export interface paths {
     };  
     /** Получение списка используемых ПС в проекте
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\ListPs\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListPs\Get */
     "/get/users_2/stats/account/listPs/": {
         parameters: {
             query?: never;
@@ -9913,7 +9913,7 @@ export interface paths {
     };  
     /** Получение статистики по ПС
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\Ps\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\Ps\Get */
     "/get/users_2/stats/account/ps/": {
         parameters: {
             query?: never;
@@ -9933,7 +9933,7 @@ export interface paths {
     /**
      * Авторизация через Apple ID
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Apple\Auth\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Apple\Auth\Get
      * @description @see https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/configuring_your_webpage_for_sign_in_with_apple
      */
     "/get/users_2/tpa/apple/auth/": {
@@ -9954,7 +9954,7 @@ export interface paths {
     };  
     /** Авторизация через Facebook
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Facebook\Auth\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Facebook\Auth\Get */
     "/get/users_2/tpa/facebook/auth/": {
         parameters: {
             query?: never;
@@ -9974,7 +9974,7 @@ export interface paths {
     /**
      * Авторизация через Google
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Google\Auth\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Google\Auth\Get
      * @description @see https://developers.google.com/identity/gsi/web/reference/js-reference
      *     @see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
      */
@@ -9997,7 +9997,7 @@ export interface paths {
     /**
      * Авторизация через VK ID
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
      * @description @see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description
      */
     "/get/users_2/tpa/vk/auth/": {
@@ -10019,7 +10019,7 @@ export interface paths {
     /**
      * Авторизация через Яндекс ID
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Yandex\Auth\Get
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Yandex\Auth\Get
      * @description @see https://yandex.ru/dev/id/doc/ru/user-information
      */
     "/get/users_2/tpa/yandex/auth/": {
@@ -10040,7 +10040,7 @@ export interface paths {
     };  
     /** Копирование истории позиций
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Copy\Add */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Copy\Add */
     "/add/admin_2/actions/positions/history/copy/": {
         parameters: {
             query?: never;
@@ -10059,7 +10059,7 @@ export interface paths {
     };  
     /** Получение сертификата по id
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\ByID\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\ByID\Get */
     "/get/content_2/journal/course/certificates/byID/": {
         parameters: {
             query?: never;
@@ -10078,7 +10078,7 @@ export interface paths {
     };  
     /** Получение сертификата в виде изображения
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Image\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Image\Get */
     "/get/content_2/journal/course/certificates/image/": {
         parameters: {
             query?: never;
@@ -10099,7 +10099,7 @@ export interface paths {
      *
      *     Создаст токен, если его не существует
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get */
     "/get/informer_2/push/safari/webService/authToken/": {
         parameters: {
             query?: never;
@@ -10122,7 +10122,7 @@ export interface paths {
      *
      *     URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get */
     "/get/system_2/common/tests/speed/file/": {
         parameters: {
             query?: never;
@@ -10145,7 +10145,7 @@ export interface components {
     schemas: {
         /** Элемент меню
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Objects\Menu\MenuItem */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Objects\Menu\MenuItem */
         "Content_2.Objects.Menu.MenuItem": {
             /** URL пункта меню */
             url: string;

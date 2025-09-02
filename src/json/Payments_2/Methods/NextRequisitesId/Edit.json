@@ -18,7 +18,7 @@
                 "required": [
                     "next_requisites_id"
                 ],
-                "title": "Изменение платежных реквизитов тарифа\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\NextRequisitesId\\Edit"
+                "title": "Изменение платежных реквизитов тарифа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Payments_2\\Methods\\NextRequisitesId\\Edit"
             },
             "Payments_2.Methods.NextRequisitesId.Edit.Exec": {
                 "nullable": true,

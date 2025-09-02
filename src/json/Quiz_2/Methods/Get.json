@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение тестов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Get"
+                "title": "Получение тестов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\Get"
             },
             "Quiz_2.Methods.Get.Exec": {
                 "nullable": true

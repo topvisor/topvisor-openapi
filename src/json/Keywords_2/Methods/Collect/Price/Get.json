@@ -75,7 +75,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение стоимости подбора запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Methods\\Collect\\Price\\Get"
+                "title": "Получение стоимости подбора запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Collect\\Price\\Get"
             },
             "Keywords_2.Methods.Collect.Price.Get.Exec": {
                 "title": "Информация о стоимости запуска подбора запросов",

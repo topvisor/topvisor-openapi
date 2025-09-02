@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Вызов нескольких методов в одном вызове
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Calls\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Calls\Get */
         "System_2.Methods.Calls.Get": {
             /** Методы */
             calls: import('../../Types/Calls/Calls.ts').components['schemas']['System_2.Types.Calls.Calls'];

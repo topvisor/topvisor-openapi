@@ -18,7 +18,7 @@
                 "required": [
                     "inn"
                 ],
-                "title": "Получение данных юридического лица по ИНН\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Ur\\Get"
+                "title": "Получение данных юридического лица по ИНН\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Methods\\Ur\\Get"
             },
             "Bank_2.Methods.Ur.Get.Exec": {
                 "nullable": true

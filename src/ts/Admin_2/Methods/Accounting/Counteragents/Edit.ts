@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение параметров контрагента
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Edit */
         "Admin_2.Methods.Accounting.Counteragents.Edit": {
             name: string;
             document_number?: string | null;

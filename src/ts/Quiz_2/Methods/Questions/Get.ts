@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение вопроса
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Get */
         "Quiz_2.Methods.Questions.Get": {
             /** ID пользователя, ответы которого нужно вернуть (только для админов) */
             user_id?: number | null;

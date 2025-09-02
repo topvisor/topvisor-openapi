@@ -27,7 +27,7 @@
                     "domain",
                     "lang"
                 ],
-                "title": "Получение снимка сайта\n\nВернет изображение в формате image/png\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\WebScreensFree\\Get"
+                "title": "Получение снимка сайта\n\nВернет изображение в формате image/png\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Common\\WebScreensFree\\Get"
             },
             "System_2.Methods.Common.WebScreensFree.Get.Exec": {
                 "type": "never"

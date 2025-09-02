@@ -17,7 +17,7 @@ export interface components {
          *     5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
          *     этот статус.
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
         "Admin_2.Methods.Analytics.Activity.Get": {
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Валюта */

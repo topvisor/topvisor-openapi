@@ -30,7 +30,7 @@
                     "Общая месячная стоимость рекламы в рублях",
                     "Общая месячная стоимость рекламы в долларах"
                 ],
-                "title": "Тип графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Charts\\Domains\\Ads\\Type"
+                "title": "Тип графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Charts\\Domains\\Ads\\Type"
             }
         }
     }

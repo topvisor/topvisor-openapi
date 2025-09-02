@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Постановка задачи на расширение группы
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Collect\Ext\Go\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Ext\Go\Edit */
         "Keywords_2.Methods.Collect.Ext.Go.Edit": {
             /** ID проекта */
             project_id: number;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Места откуда перешел пользователь
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Referrers */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Referrers */
         "Tpvsr_2.Types.Stat.Dimension.Referrers": import('./Referrer.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Referrer'][];
     };
     responses: never;

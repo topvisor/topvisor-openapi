@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление сообщения к тикиту
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Messages\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Messages\Add */
         "Tickets_2.Methods.Messages.Add": {
             /** Id тикета */
             ticket_id: number;

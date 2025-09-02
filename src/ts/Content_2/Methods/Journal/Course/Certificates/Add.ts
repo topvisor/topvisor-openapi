@@ -11,7 +11,7 @@ export interface components {
          *
          *     Можно создавать только для пройденных курсов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Add */
         "Content_2.Methods.Journal.Course.Certificates.Add": {
             /** Url курса относительно домена */
             course_url: string;

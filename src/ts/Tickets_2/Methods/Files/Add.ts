@@ -11,7 +11,7 @@ export interface components {
          *
          *     Процесс создания сообщения в тикет не завершен
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Add */
         "Tickets_2.Methods.Files.Add": {
             /** Имя файла */
             filename: string;

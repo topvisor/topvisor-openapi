@@ -1461,7 +1461,7 @@
                     "Act",
                     "Dialog_subscription_title"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Bank\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Bank\\En"
             }
         }
     }

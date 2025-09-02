@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение информации о смене владельца
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Get */
         "Projects_2.Methods.Rights.ChangeOwner.Get": {
             /** ID проекта */
             project_id: number;

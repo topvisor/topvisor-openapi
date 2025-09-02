@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка рефералов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Referrals\\Get"
+                "title": "Получение списка рефералов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Referrals\\Get"
             },
             "Users_2.Methods.Referrals.Get.Exec": {
                 "nullable": true,

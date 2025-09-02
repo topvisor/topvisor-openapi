@@ -50,7 +50,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение комментариев\n\nВозвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Comments_2\\Methods\\Get"
+                "title": "Получение комментариев\n\nВозвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Comments_2\\Methods\\Get"
             },
             "Comments_2.Methods.Get.Exec": {
                 "type": "array",

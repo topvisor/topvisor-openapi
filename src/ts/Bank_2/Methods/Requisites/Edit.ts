@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение реквизитов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Edit */
         "Bank_2.Methods.Requisites.Edit": {
             /** Id реквезитов */
             id: string;

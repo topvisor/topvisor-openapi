@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Копирование проекта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Copy\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Copy\Add */
         "Projects_2.Methods.Projects.Copy.Add": {
             /** ID проекта */
             project_id: number;

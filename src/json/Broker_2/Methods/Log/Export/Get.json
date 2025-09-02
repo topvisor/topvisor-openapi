@@ -48,7 +48,7 @@
                 "required": [
                     "campaigns_tv_ids"
                 ],
-                "title": "Экспортирование архива логов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Log\\Export\\Get"
+                "title": "Экспортирование архива логов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Broker_2\\Methods\\Log\\Export\\Get"
             },
             "Broker_2.Methods.Log.Export.Get.Exec": {
                 "type": "never"

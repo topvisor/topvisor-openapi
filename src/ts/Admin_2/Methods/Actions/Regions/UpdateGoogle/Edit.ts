@@ -10,7 +10,7 @@ export interface components {
         /**
          * Обновление регионов Google
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Regions\UpdateGoogle\Edit
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Regions\UpdateGoogle\Edit
          * @description @see https://developers.google.com/google-ads/api/data/geotargets
          */
         "Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit": {

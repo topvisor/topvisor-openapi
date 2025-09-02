@@ -11,7 +11,7 @@ export interface components {
          *
          *     Используется для подготовки данных запроса к внутреннему API
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Calls\Call */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Calls\Call */
         "System_2.Types.Calls.Call": {
             /** Название модуля */
             module: string;

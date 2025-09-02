@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Сброс статуса проверки позиций
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\Status\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\Status\Edit */
         "Admin_2.Methods.Actions.Positions.Status.Edit": {
             /** ID проекта */
             projectId: number;

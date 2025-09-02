@@ -22,7 +22,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Активация достижения\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Ranks\\Add"
+                "title": "Активация достижения\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Ranks\\Add"
             },
             "Users_2.Methods.Ranks.Add.Exec": {
                 "nullable": true,

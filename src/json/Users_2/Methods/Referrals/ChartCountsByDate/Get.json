@@ -31,7 +31,7 @@
                     "date1",
                     "date2"
                 ],
-                "title": "Получение количество переходов и регистраций по реферальной ссылке (для графика)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Referrals\\ChartCountsByDate\\Get"
+                "title": "Получение количество переходов и регистраций по реферальной ссылке (для графика)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Referrals\\ChartCountsByDate\\Get"
             },
             "Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec": {
                 "nullable": true,

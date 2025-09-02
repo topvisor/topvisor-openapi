@@ -11,7 +11,7 @@ export interface components {
          *
          *     см. Analytics_2\Mods\Analytics::genEventImgLink()
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Analytics\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Analytics\Add */
         "System_2.Methods.Common.Analytics.Add": {
             /** Категория */
             ec?: string | null;

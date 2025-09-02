@@ -46,7 +46,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Редактировать вопрос\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Questions\\Edit"
+                "title": "Редактировать вопрос\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\Questions\\Edit"
             },
             "Quiz_2.Methods.Questions.Edit.Exec": {
                 "nullable": true,

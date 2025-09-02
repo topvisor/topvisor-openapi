@@ -18,7 +18,7 @@
                 "required": [
                     "directory"
                 ],
-                "title": "Получение директорий и файлов из облака\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Cloud\\Get"
+                "title": "Получение директорий и файлов из облака\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Cloud\\Get"
             },
             "System_2.Methods.Cloud.Get.Exec": {
                 "allOf": [

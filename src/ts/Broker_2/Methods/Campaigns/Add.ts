@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление рекламной кампании в управление ставками
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Campaigns\Add */
         "Broker_2.Methods.Campaigns.Add": {
             /** Id проекта */
             project_id: number;

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование статуса закладки для автора
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\BookmarkAuthor\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\BookmarkAuthor\Edit */
         "Content_2.Methods.BookmarkAuthor.Edit": {
             /** Id автора */
             user_id: number;

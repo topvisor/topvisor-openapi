@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт лога банка
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\History\Export\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\History\Export\Get */
         "Bank_2.Methods.History.Export.Get": {
             output: string;
             /** Вывести итого по группам */

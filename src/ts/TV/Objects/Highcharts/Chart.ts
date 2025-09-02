@@ -11,7 +11,7 @@ export interface components {
          *
          *     https://www.highcharts.com/
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\Objects\Highcharts\Chart */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Objects\Highcharts\Chart */
         "TV.Objects.Highcharts.Chart": {
             /** Категории
              *

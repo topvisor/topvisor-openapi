@@ -129,7 +129,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Создание гостевой ссылки на просмотр снимков выдачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\History\\Links\\Get"
+                "title": "Создание гостевой ссылки на просмотр снимков выдачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\History\\Links\\Get"
             },
             "Snapshots_2.Methods.History.Links.Get.Exec": {
                 "type": "string"

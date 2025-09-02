@@ -10,7 +10,7 @@ export interface components {
         /**
          * Откуда поступил тикет
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Types\Tickets\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Types\Tickets\Type
          * @enum {string}
          */
         "Tickets_2.Types.Tickets.Type": "system" | "other" | "email" | "ios" | "vk" | "chrome" | "twitter" | "facebook" | "telegram" | "android" | "guest";

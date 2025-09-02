@@ -13,7 +13,7 @@ export interface components {
          *
          *     URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get */
         "System_2.Methods.Common.Tests.Speed.File.Get": {
             /** Размер файла в байтах */
             size: number;

@@ -11,7 +11,7 @@ export interface components {
          *
          *     Вернет изображение в формате image/png
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\WebScreensFree\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\WebScreensFree\Get */
         "System_2.Methods.Common.WebScreensFree.Get": {
             /** Домен */
             domain: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];

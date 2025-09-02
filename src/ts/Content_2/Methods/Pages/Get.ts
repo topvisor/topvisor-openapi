@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение документов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Get */
         "Content_2.Methods.Pages.Get": {
             /**
              * Выполнить ли исполнение шаблона

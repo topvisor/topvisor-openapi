@@ -25,7 +25,7 @@
                     "repository",
                     "project_id"
                 ],
-                "title": "Экспорт файла в хранилище\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Export\\ToRepository\\Get"
+                "title": "Экспорт файла в хранилище\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Indexing\\Export\\ToRepository\\Get"
             },
             "Audit_2.Methods.Indexing.Export.ToRepository.Get.Exec": {
                 "title": "Будет произведен редиркт на файл в хранилище",

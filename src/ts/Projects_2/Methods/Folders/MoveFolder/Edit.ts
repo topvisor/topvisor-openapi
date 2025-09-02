@@ -11,7 +11,7 @@ export interface components {
          *
          *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\MoveFolder\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\MoveFolder\Edit */
         "Projects_2.Methods.Folders.MoveFolder.Edit": {
             /** Id папки, которую надо перенести */
             id: number;

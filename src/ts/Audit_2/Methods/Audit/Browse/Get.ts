@@ -10,7 +10,7 @@ export interface components {
         /**
          * Получение сводки анализа сайта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Browse\Get
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Browse\Get
          * @deprecated
          * @description @deprecated
          */

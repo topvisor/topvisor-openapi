@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка сортировки регионов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Sort\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Sort\Edit */
         "Positions_2.Methods.Searchers.Regions.Sort.Edit": {
             /** Id проекта */
             project_id: number;

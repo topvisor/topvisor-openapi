@@ -11,7 +11,7 @@ export interface components {
          *
          *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Get */
         "Audit_2.Methods.Indexing.Get": {
             searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /**

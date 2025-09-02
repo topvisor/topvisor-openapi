@@ -10,7 +10,7 @@ export interface components {
         /**
          * По каким параметрам расширять группу
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\Ext\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Collect\Ext\Type
          * @enum {string}
          */
         "Keywords_2.Types.Collect.Ext.Type": "groupName" | "groupNameWithKeywords" | "keywords";

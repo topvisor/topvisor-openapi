@@ -35,7 +35,7 @@
                 "required": [
                     "text"
                 ],
-                "title": "Добавление комментария\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Comments_2\\Methods\\Add"
+                "title": "Добавление комментария\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Comments_2\\Methods\\Add"
             },
             "Comments_2.Methods.Add.Exec": {
                 "title": "Id вставленного комментария",

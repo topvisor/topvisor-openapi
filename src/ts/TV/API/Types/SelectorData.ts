@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Объект параметров Selector
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\SelectorData */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\SelectorData */
         "TV.API.Types.SelectorData": {
             fields: unknown[];
             filters: unknown[];

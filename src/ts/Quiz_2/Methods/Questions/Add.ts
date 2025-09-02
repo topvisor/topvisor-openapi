@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление вопроса
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Methods\Questions\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\Questions\Add */
         "Quiz_2.Methods.Questions.Add": {
             /** ID теста */
             quiz_id: string;

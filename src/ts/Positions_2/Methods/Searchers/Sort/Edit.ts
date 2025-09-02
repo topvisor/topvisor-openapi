@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка сортировки ПС
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Sort\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Sort\Edit */
         "Positions_2.Methods.Searchers.Sort.Edit": {
             /** Id проекта */
             project_id: number;

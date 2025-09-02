@@ -21,7 +21,7 @@
                     null,
                     null
                 ],
-                "title": "Операции выполняемые ботом\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Telegram_2\\Types\\Bot\\Api\\Operation"
+                "title": "Операции выполняемые ботом\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Telegram_2\\Types\\Bot\\Api\\Operation"
             }
         }
     }

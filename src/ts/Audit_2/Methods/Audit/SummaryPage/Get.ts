@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сводки страницы
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\SummaryPage\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\SummaryPage\Get */
         "Audit_2.Methods.Audit.SummaryPage.Get": {
             /** Id ссылки на страницу */
             url_id: number;

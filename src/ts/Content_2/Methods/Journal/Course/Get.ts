@@ -11,7 +11,7 @@ export interface components {
          *
          *     Параметры выборки основаны на модели Models\Pages
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Get */
         "Content_2.Methods.Journal.Course.Get": {
             /** Ссылка на урок для поулчения pageChapter и pageLesson */
             lessons_url?: string | null;

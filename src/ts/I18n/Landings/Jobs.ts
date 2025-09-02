@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Landings\Jobs\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Landings\Jobs\En */
         "I18n.Landings.Jobs": {
             /** @constant */
             readonly Link_to_resume_or_comment: "Link to your resume or a comment";

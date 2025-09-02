@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление задачи cron
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Methods\Commands\Add */
         "Cron_2.Methods.Commands.Add": {
             /** Описание задачи */
             description: string;

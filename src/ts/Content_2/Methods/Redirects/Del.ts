@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление редиректа
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Redirects\Del */
         "Content_2.Methods.Redirects.Del": {
             /** Сайт
              *

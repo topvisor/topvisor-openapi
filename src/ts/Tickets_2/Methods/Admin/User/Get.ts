@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение инфомрации о пользователе
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\User\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\User\Get */
         "Tickets_2.Methods.Admin.User.Get": {
             /** ID пользователя */
             id: number;

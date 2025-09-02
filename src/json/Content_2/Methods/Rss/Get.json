@@ -39,7 +39,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение RSS раздела сайта\n\nДля выборки страниц используется модель: Pages\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Rss\\Get"
+                "title": "Получение RSS раздела сайта\n\nДля выборки страниц используется модель: Pages\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Rss\\Get"
             },
             "Content_2.Methods.Rss.Get.Exec": {
                 "nullable": true,

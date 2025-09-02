@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Востановление поисковых запросов из бэкапа
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit */
         "Admin_2.Methods.Actions.Backup.Keywords.Edit": {
             pass_admin_actions: string;
             /** Этап:

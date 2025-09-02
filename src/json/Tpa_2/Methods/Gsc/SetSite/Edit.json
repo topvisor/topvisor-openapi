@@ -21,7 +21,7 @@
                     "site",
                     "project_id"
                 ],
-                "title": "Выбрать сайт для интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Gsc\\SetSite\\Edit"
+                "title": "Выбрать сайт для интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\Gsc\\SetSite\\Edit"
             },
             "Tpa_2.Methods.Gsc.SetSite.Edit.Exec": {
                 "nullable": true,

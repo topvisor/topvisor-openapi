@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Дать оценку тикету
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Rate\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Rate\Edit */
         "Tickets_2.Methods.Rate.Edit": {
             /** ID тикета */
             id: number;

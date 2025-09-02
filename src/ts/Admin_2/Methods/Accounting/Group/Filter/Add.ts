@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление фильтра группы
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Add */
         "Admin_2.Methods.Accounting.Group.Filter.Add": {
             /** Id группы */
             group_id: number;

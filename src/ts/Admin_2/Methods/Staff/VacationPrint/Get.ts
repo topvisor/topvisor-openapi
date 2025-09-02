@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Печать заявления на отпуск
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\VacationPrint\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\VacationPrint\Get */
         "Admin_2.Methods.Staff.VacationPrint.Get": {
             id: number;
         };

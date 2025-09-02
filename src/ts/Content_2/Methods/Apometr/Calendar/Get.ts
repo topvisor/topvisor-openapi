@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение календаря апдейтов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Calendar\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Calendar\Get */
         "Content_2.Methods.Apometr.Calendar.Get": {
             /** Индекс региона
              *

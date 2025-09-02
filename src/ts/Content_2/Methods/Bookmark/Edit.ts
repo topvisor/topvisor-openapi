@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование статуса закладки для страницы
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Bookmark\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Bookmark\Edit */
         "Content_2.Methods.Bookmark.Edit": {
             /** Поддомен страницы */
             subdomain: string;

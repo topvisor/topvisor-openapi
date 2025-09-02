@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение рубрики\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Rubrics\\Get"
+                "title": "Получение рубрики\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Rubrics\\Get"
             },
             "Content_2.Methods.Journal.Rubrics.Get.Exec": {
                 "nullable": true,

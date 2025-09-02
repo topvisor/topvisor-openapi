@@ -27,7 +27,7 @@
                     "subscription_plan_id",
                     "subscription_cycle"
                 ],
-                "title": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Subscriptions\\Next\\Edit"
+                "title": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Payments_2\\Methods\\Subscriptions\\Next\\Edit"
             },
             "Payments_2.Methods.Subscriptions.Next.Edit.Exec": {
                 "type": "boolean"

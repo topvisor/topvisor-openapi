@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение проверки частоты задачи без проекта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
         "Projects_2.Methods.Tasks.Volumes.Price.Get": {
             /** Ключевые фразы */
             keywords: unknown[];

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование пользователей, объект admin_users
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Edit */
         "Admin_2.Methods.Users.Edit": {
             /** Удалить пользователя */
             deleted?: boolean | null;

@@ -50,7 +50,7 @@
                 "required": [
                     "hash"
                 ],
-                "title": "Получение статистики по ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Get"
+                "title": "Получение статистики по ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Get"
             },
             "Tpvsr_2.Methods.Stat.Get.Exec": {
                 "nullable": true,

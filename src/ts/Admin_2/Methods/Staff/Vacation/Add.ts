@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление отпуска для сотрудника
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Vacation\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Vacation\Add */
         "Admin_2.Methods.Staff.Vacation.Add": {
             /** ID юзера */
             user_id: number;

@@ -11,7 +11,7 @@ export interface components {
          *
          *     Возвращает результат редактирования статуса лайка
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Like\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Like\Edit */
         "Comments_2.Methods.Like.Edit": {
             /** Id комментария */
             id: number;

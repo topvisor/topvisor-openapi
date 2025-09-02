@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных сводки конкурентов для графика
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Get */
         "Snapshots_2.Methods.Competitors.Chart.Get": {
             /** Id проекта */
             project_id: number;

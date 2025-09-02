@@ -38,7 +38,7 @@
                     "searcher_key",
                     "enabled"
                 ],
-                "title": "Включение/выключение ПС\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Enabled\\Edit"
+                "title": "Включение/выключение ПС\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Searchers\\Enabled\\Edit"
             },
             "Positions_2.Methods.Searchers.Enabled.Edit.Exec": {
                 "nullable": true

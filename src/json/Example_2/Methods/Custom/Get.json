@@ -17,7 +17,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение текущего времени\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Custom\\Get"
+                "title": "Получение текущего времени\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Example_2\\Methods\\Custom\\Get"
             },
             "Example_2.Methods.Custom.Get.Exec": {
                 "type": "string"

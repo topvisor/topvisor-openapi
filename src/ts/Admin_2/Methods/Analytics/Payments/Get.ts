@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение суммы оплат за период
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
         "Admin_2.Methods.Analytics.Payments.Get": {
             period: import('../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */

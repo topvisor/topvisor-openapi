@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип: float[]
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\FloatArray
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\FloatArray
          * @deprecated
          * @description @deprecated Использовать не рекомендуется, для передачи float рекомендуется использовать строки или целые числа, умноженные на 10^n
          *     @extends AbstractTypedArray<float>

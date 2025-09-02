@@ -10,7 +10,7 @@ export interface components {
         /**
          * Авторизация через Яндекс ID
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Yandex\Auth\Get
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Yandex\Auth\Get
          * @description @see https://yandex.ru/dev/id/doc/ru/user-information
          */
         "Users_2.Methods.Tpa.Yandex.Auth.Get": {

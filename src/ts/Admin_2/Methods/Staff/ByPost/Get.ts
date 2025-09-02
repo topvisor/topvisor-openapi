@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение из бд данные сотрудников указанного поста
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\ByPost\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\ByPost\Get */
         "Admin_2.Methods.Staff.ByPost.Get": {
             /** Пост сотрудников */
             post: string;

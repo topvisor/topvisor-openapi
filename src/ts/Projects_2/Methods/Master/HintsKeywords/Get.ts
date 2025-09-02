@@ -11,7 +11,7 @@ export interface components {
          *
          *     Доступ по API закрыт
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Master\HintsKeywords\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Master\HintsKeywords\Get */
         "Projects_2.Methods.Master.HintsKeywords.Get": {
             /** ID проекта */
             project_id: number;

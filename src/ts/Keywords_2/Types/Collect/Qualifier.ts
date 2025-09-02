@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Определитель с настройками для подбора
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\Qualifier */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Collect\Qualifier */
         "Keywords_2.Types.Collect.Qualifier": {
             region_key: number;
             searcher_key: import('./SearcherKey.ts').components['schemas']['Keywords_2.Types.Collect.SearcherKey'];

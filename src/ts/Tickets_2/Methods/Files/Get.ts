@@ -11,7 +11,7 @@ export interface components {
          *
          *     Процесс создания поста не завершен
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Get */
         "Tickets_2.Methods.Files.Get": Record<string, never>;
         "Tickets_2.Methods.Files.Get.Exec": unknown[];
     };

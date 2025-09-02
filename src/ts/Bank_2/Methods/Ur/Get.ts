@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных юридического лица по ИНН
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Ur\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Ur\Get */
         "Bank_2.Methods.Ur.Get": {
             /** ИНН юридического лица */
             inn: string;

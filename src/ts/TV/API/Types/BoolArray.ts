@@ -12,7 +12,7 @@ export interface components {
          *
          *     Принимает: 0|1|false|true
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\BoolArray
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\BoolArray
          * @description @extends AbstractTypedArray<boolean>
          *     @method bool[] getValues()
          *     @method bool current()

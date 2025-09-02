@@ -57,7 +57,7 @@
                     "project_id",
                     "provider_n"
                 ],
-                "title": "Редактирование объявлений (запросов) рекламной кампании\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Keywords\\Edit"
+                "title": "Редактирование объявлений (запросов) рекламной кампании\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Broker_2\\Methods\\Keywords\\Edit"
             },
             "Broker_2.Methods.Keywords.Edit.Exec": {
                 "type": "integer"

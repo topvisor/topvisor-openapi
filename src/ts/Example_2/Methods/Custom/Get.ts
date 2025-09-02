@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение текущего времени
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Custom\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Custom\Get */
         "Example_2.Methods.Custom.Get": {
             /**
              * Формат даты

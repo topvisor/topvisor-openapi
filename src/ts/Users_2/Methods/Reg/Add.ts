@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Создание заявки на регистрацию пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Reg\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Reg\Add */
         "Users_2.Methods.Reg.Add": {
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** @default ru */

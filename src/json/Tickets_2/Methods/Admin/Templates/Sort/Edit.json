@@ -22,7 +22,7 @@
                 "required": [
                     "ids"
                 ],
-                "title": "Изменение сортировки шаблонов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Templates\\Sort\\Edit"
+                "title": "Изменение сортировки шаблонов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\Templates\\Sort\\Edit"
             },
             "Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec": {
                 "nullable": true,

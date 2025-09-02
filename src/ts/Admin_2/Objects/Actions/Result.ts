@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Результат выполнения действия
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Objects\Actions\Result */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Objects\Actions\Result */
         "Admin_2.Objects.Actions.Result": {
             /** Запущено ли дейсвтие в тестовом режиме */
             isTest: boolean;

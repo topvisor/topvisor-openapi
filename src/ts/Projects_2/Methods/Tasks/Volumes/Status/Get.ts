@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение статуса проверки частоты задачи
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get */
         "Projects_2.Methods.Tasks.Volumes.Status.Get": {
             /** Id проекта */
             project_id: number;

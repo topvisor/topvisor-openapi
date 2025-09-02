@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление ответа в тикете, только для админов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Message\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Message\Del */
         "Tickets_2.Methods.Admin.Message.Del": {
             /** ID ответа */
             id: number;

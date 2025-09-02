@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных графика
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Graph\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Graph\Get */
         "Projects_2.Methods.Analytics.Graph.Get": {
             /** ID проекта */
             project_id: number;

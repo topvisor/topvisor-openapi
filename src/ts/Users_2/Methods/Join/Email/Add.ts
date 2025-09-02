@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Привязка email к аккаунту
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Join\Email\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Join\Email\Add */
         "Users_2.Methods.Join.Email.Add": {
             email: string;
             pass?: string | null;

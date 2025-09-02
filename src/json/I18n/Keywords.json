@@ -1532,7 +1532,7 @@
                     "All_keywords",
                     "Select_source"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Keywords\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Keywords\\En"
             }
         }
     }

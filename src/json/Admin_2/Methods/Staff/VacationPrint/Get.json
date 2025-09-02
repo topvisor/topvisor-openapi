@@ -17,7 +17,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Печать заявления на отпуск\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\VacationPrint\\Get"
+                "title": "Печать заявления на отпуск\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Staff\\VacationPrint\\Get"
             },
             "Admin_2.Methods.Staff.VacationPrint.Get.Exec": {
                 "type": "never"

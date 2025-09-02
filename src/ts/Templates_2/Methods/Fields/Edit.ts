@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Сохранение списка столбцов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Fields\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Fields\Edit */
         "Templates_2.Methods.Fields.Edit": {
             target_type: import('../../Types/TargetType.ts').components['schemas']['Templates_2.Types.TargetType'];
             /** Подтип данных (место использования) */

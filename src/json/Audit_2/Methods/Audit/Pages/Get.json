@@ -55,7 +55,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение страниц, по которым был выполнен аудит\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Pages\\Get"
+                "title": "Получение страниц, по которым был выполнен аудит\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Audit\\Pages\\Get"
             },
             "Audit_2.Methods.Audit.Pages.Get.Exec": {
                 "title": "Список страниц",

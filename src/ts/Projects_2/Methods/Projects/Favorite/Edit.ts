@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка избранных проектов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Favorite\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Favorite\Edit */
         "Projects_2.Methods.Projects.Favorite.Edit": {
             /**
              * Флаг того, что проект ибранный

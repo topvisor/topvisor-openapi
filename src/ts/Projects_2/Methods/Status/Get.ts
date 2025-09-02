@@ -12,7 +12,7 @@ export interface components {
          *     - domain_expire
          *     - ssl_expire
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Get */
         "Projects_2.Methods.Status.Get": {
             /** ID проекта */
             project_id: number;

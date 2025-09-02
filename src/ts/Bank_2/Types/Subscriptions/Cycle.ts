@@ -16,7 +16,7 @@ export interface components {
          *
          *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Cycle
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Subscriptions\Cycle
          * @enum {integer}
          */
         "Bank_2.Types.Subscriptions.Cycle": 1 | 12;

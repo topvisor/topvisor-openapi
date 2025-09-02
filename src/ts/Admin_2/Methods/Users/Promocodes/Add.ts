@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление промокоды к достижению
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Promocodes\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Promocodes\Add */
         "Admin_2.Methods.Users.Promocodes.Add": {
             rank_id: number;
             /** single_code - многоразовый промокод */

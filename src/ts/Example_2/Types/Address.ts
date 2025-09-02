@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Types\Address */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Types\Address */
         "Example_2.Types.Address": {
             city: string;
             street?: string | null;

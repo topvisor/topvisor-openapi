@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение сортировки проектов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Projects\Sort\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Sort\Edit */
         "Projects_2.Methods.Projects.Sort.Edit": {
             orders: unknown[];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

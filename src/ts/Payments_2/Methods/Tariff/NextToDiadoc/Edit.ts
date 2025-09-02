@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка оплаты тарифов: выставлять ли счета через диадок
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\NextToDiadoc\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\NextToDiadoc\Edit */
         "Payments_2.Methods.Tariff.NextToDiadoc.Edit": {
             /** Флаг - применение настройки тарифов */
             next_to_diadoc: boolean;

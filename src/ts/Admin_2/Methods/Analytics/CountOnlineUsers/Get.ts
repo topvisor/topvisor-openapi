@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение числа активных пользователей
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\CountOnlineUsers\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\CountOnlineUsers\Get */
         "Admin_2.Methods.Analytics.CountOnlineUsers.Get": Record<string, never>;
         "Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec": {
             tv: number;

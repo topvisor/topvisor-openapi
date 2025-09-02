@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип транзакции
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Transaction\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Transaction\Type
          * @enum {string}
          */
         "Bank_2.Types.Transaction.Type": "minus" | "plus" | "plusBonus" | "minusAdmin" | "minusGhost";

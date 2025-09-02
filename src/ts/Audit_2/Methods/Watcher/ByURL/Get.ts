@@ -14,7 +14,7 @@ export interface components {
          *     - параметры выбора периода отчета игнорируются
          *     - выбор проверок регулируется параметрами запроса filters, limit и offset
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\ByURL\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Watcher\ByURL\Get */
         "Audit_2.Methods.Watcher.ByURL.Get": {
             /** ID URL */
             url_id: number;

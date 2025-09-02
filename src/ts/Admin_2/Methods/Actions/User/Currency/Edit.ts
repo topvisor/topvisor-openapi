@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение валюты пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\User\Currency\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\User\Currency\Edit */
         "Admin_2.Methods.Actions.User.Currency.Edit": {
             /** ID пользователя */
             userId: number;

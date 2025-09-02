@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение краткой информации о тикетах\n\nid последнего непрочитанного тикета, число непрочитанных тикетов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Info\\Get"
+                "title": "Получение краткой информации о тикетах\n\nid последнего непрочитанного тикета, число непрочитанных тикетов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Info\\Get"
             },
             "Tickets_2.Methods.Tickets.Info.Get.Exec": {
                 "type": "array"

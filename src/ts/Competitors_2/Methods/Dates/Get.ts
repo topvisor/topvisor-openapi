@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение даты проверок по заданному критерию (последние 12)
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Dates\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Dates\Get */
         "Competitors_2.Methods.Dates.Get": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;

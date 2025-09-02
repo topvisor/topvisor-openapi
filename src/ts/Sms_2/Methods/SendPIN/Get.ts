@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправить код для подтверждения действия
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Sms_2\Methods\SendPIN\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Sms_2\Methods\SendPIN\Get */
         "Sms_2.Methods.SendPIN.Get": {
             /** Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения */
             phones?: (string | unknown[]) | null;

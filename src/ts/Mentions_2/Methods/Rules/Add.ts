@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление правила
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Rules\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Add */
         "Mentions_2.Methods.Rules.Add": {
             /** ID проекта */
             project_id: number;

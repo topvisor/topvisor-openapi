@@ -25,7 +25,7 @@
                     "audit_type",
                     "project_id"
                 ],
-                "title": "Получение количества настроенных URL\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\CountUrls\\Get"
+                "title": "Получение количества настроенных URL\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\CountUrls\\Get"
             },
             "Audit_2.Methods.CountUrls.Get.Exec": {
                 "title": "Количество настроенных URL",

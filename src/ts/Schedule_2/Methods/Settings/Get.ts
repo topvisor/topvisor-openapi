@@ -12,7 +12,7 @@ export interface components {
          *
          *     Для каждого типа могут быть свои параметры
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Get
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\Get
          * @description @see Schedule_2\Mods\Settings
          */
         "Schedule_2.Methods.Settings.Get": {

@@ -29,7 +29,7 @@
                     "id",
                     "to_id"
                 ],
-                "title": "Перемещение проекта (сортировка)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Move\\Edit"
+                "title": "Перемещение проекта (сортировка)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Projects\\Move\\Edit"
             },
             "Projects_2.Methods.Projects.Move.Edit.Exec": {
                 "nullable": true,

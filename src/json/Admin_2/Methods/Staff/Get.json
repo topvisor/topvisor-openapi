@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение персонала, объект admin_staff\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Get"
+                "title": "Получение персонала, объект admin_staff\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Staff\\Get"
             },
             "Admin_2.Methods.Staff.Get.Exec": {
                 "nullable": true

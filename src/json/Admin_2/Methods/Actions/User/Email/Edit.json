@@ -50,7 +50,7 @@
                     "is_verif",
                     "test"
                 ],
-                "title": "Замена email пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\User\\Email\\Edit"
+                "title": "Замена email пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\User\\Email\\Edit"
             },
             "Admin_2.Methods.Actions.User.Email.Edit.Exec": {
                 "allOf": [

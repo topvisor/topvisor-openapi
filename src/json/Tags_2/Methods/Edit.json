@@ -30,7 +30,7 @@
                     "type",
                     "tags"
                 ],
-                "title": "Сохранение списка тегов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tags_2\\Methods\\Edit"
+                "title": "Сохранение списка тегов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tags_2\\Methods\\Edit"
             },
             "Tags_2.Methods.Edit.Exec": {
                 "nullable": true

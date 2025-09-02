@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение параметров активного пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Edit */
         "Users_2.Methods.Profile.Edit": {
             /** Телефон */
             phone?: string | null;

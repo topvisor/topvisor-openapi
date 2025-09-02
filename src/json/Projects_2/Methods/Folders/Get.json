@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\Get"
+                "title": "Получение списка папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Folders\\Get"
             },
             "Projects_2.Methods.Folders.Get.Exec": {
                 "nullable": true

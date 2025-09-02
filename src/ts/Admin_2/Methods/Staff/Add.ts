@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление сотрудника
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Add */
         "Admin_2.Methods.Staff.Add": {
             /** Номер договора */
             id: number;

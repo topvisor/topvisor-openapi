@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Перевод средств с реферального счета на бонусный
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Referrals\ToBonus\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Referrals\ToBonus\Edit */
         "Bank_2.Methods.Referrals.ToBonus.Edit": {
             /** Сумма для перевода */
             sum: string;

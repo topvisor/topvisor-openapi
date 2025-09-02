@@ -30,7 +30,7 @@
                     "Сравнение поисковых запросов с доменом",
                     "Органика"
                 ],
-                "title": "Представление отчета\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Table\\View"
+                "title": "Представление отчета\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Table\\View"
             }
         }
     }

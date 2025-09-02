@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование текста ответа в тикете, только для админов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit */
         "Tickets_2.Methods.Admin.Message.Edit": {
             /** ID редактируемого поста тикета */
             id: number;

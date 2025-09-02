@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Volumes/Qualifier.json#/components/schemas/Keywords_2.Types.Volumes.Qualifier"
                 },
-                "title": "Определители проверки частоты\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\Qualifiers",
+                "title": "Определители проверки частоты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Volumes\\Qualifiers",
                 "description": "@extends AbstractStringArray<Qualifier>\n@method Qualifier[] getValues()\n@method Qualifier current()\n@method Qualifier offsetGet()\n@see \\TV\\API\\Types\\Qualifier"
             }
         }

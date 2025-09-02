@@ -11,7 +11,7 @@ export interface components {
          *
          *     Производит редирект на файл в кранилище
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Export\ToRepository\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Export\ToRepository\Get */
         "Snapshots_2.Methods.Competitors.Export.ToRepository.Get": {
             /** Id проекта */
             project_id: number;

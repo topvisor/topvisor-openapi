@@ -37,7 +37,7 @@
                 "required": [
                     "target_type"
                 ],
-                "title": "Сохранение списка столбцов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Fields\\Edit"
+                "title": "Сохранение списка столбцов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Templates_2\\Methods\\Fields\\Edit"
             },
             "Templates_2.Methods.Fields.Edit.Exec": {
                 "nullable": true,

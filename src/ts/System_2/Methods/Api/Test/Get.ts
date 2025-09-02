@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Вызов тестового API запроса
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Api\Test\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Api\Test\Get */
         "System_2.Methods.Api.Test.Get": {
             v: import('../../../Types/Api/V.ts').components['schemas']['System_2.Types.Api.V'];
             oper: import('../../../../TV/API/Oper.ts').components['schemas']['TV.API.Oper'];

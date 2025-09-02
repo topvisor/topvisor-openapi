@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение платежных реквизитов тарифа
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\NextRequisitesId\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\NextRequisitesId\Edit */
         "Payments_2.Methods.NextRequisitesId.Edit": {
             /** ID реквизитов для продления тарифа */
             next_requisites_id: string;

@@ -17,7 +17,7 @@ export interface components {
          *     - при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.
          *     renderSiteTpl()
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Page */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Objects\Page */
         "Controller_2.Objects.Page": {
             /** Аналог js location
              *

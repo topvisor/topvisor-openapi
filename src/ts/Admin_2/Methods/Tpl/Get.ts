@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Поиск HTML шаблонов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Tpl\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Tpl\Get */
         "Admin_2.Methods.Tpl.Get": {
             /** Путь к шаблону */
             tpl: string;

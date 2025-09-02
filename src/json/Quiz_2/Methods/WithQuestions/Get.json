@@ -44,7 +44,7 @@
                 "required": [
                     "quiz_id"
                 ],
-                "title": "Получение теста с вопросами\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\WithQuestions\\Get"
+                "title": "Получение теста с вопросами\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\WithQuestions\\Get"
             },
             "Quiz_2.Methods.WithQuestions.Get.Exec": {
                 "nullable": true,

@@ -10,7 +10,7 @@ export interface components {
         /**
          * Нужно для обратной совместимости с приложениями
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Xml\Get
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Xml\Get
          * @deprecated
          * @description @deprecated
          */

@@ -70,7 +70,7 @@
                     "watcher_type",
                     "project_id"
                 ],
-                "title": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор проверок регулируется параметрами запроса filters, limit и offset\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Watcher\\ByURL\\Get"
+                "title": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор проверок регулируется параметрами запроса filters, limit и offset\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Watcher\\ByURL\\Get"
             },
             "Audit_2.Methods.Watcher.ByURL.Get.Exec": {
                 "title": "Отчет по одному URL",

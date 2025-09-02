@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение даты следующего списания по тарифу
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\TariffChangeExpire\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\TariffChangeExpire\Edit */
         "Admin_2.Methods.TariffChangeExpire.Edit": {
             /** Дата следующего списания по тарифу */
             state_time_end: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];

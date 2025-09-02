@@ -44,7 +44,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение гостевой ссылки на просмотр аудита позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Export\\Links\\Get"
+                "title": "Получение гостевой ссылки на просмотр аудита позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Audit\\Export\\Links\\Get"
             },
             "Audit_2.Methods.Audit.Export.Links.Get.Exec": {
                 "title": "Короткая гостевая ссылка на просмотр аудита позиций",

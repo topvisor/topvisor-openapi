@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение домена проекта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Projects\Domain\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Domain\Edit */
         "Admin_2.Methods.Actions.Projects.Domain.Edit": {
             /** ID пользователя */
             userId: number;

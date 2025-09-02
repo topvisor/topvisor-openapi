@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение автара
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Avatar\Edit */
         "Users_2.Methods.Profile.Avatar.Edit": {
             /** Ссылка на обновленный аватар */
             file?: string;

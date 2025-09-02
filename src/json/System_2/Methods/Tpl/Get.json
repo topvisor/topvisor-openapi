@@ -49,7 +49,7 @@
                 "required": [
                     "tpl"
                 ],
-                "title": "Получение кешируемого HTML-шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Tpl\\Get"
+                "title": "Получение кешируемого HTML-шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Tpl\\Get"
             },
             "System_2.Methods.Tpl.Get.Exec": {
                 "type": "string"

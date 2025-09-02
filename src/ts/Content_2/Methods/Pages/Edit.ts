@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение документа
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Pages\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Edit */
         "Content_2.Methods.Pages.Edit": {
             /** Адрес документа */
             url?: string;

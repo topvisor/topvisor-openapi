@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение интерфейсов настройки всех планов подписки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Subscriptions\Plans\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Subscriptions\Plans\Get */
         "Bank_2.Methods.Subscriptions.Plans.Get": Record<string, never>;
         "Bank_2.Methods.Subscriptions.Plans.Get.Exec": import('../../../Objects/Subscriptions/Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'][];
     };

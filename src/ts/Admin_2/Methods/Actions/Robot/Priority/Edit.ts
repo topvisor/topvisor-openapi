@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение приоритета задач
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Robot\Priority\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Priority\Edit */
         "Admin_2.Methods.Actions.Robot.Priority.Edit": {
             /** ID сайта или проекта */
             siteOrProjectId?: string | null;

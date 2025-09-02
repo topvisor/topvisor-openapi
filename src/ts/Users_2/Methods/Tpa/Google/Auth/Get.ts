@@ -10,7 +10,7 @@ export interface components {
         /**
          * Авторизация через Google
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Google\Auth\Get
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Google\Auth\Get
          * @description @see https://developers.google.com/identity/gsi/web/reference/js-reference
          *     @see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
          */

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сертификата в виде изображения
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Image\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Image\Get */
         "Content_2.Methods.Journal.Course.Certificates.Image.Get": {
             /** Формат файла
              *

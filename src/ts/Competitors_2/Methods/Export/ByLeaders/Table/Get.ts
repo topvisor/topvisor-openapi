@@ -11,7 +11,7 @@ export interface components {
          *
          *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\Table\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\Table\Get */
         "Competitors_2.Methods.Export.ByLeaders.Table.Get": {
             output: import('../../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             /** @default export_byLeaders_table */

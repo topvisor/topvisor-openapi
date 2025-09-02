@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Операционные системы
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Oses */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Oses */
         "Tpvsr_2.Types.Stat.Dimension.Oses": import('./Os.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Os'][];
     };
     responses: never;

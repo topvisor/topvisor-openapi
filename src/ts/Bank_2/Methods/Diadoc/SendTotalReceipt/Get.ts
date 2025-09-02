@@ -11,7 +11,7 @@ export interface components {
          *
          *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Diadoc\SendTotalReceipt\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Diadoc\SendTotalReceipt\Get */
         "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
             /** Id организации */
             org_id: string;

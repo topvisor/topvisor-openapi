@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип очтета аудита
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Audit\TargetType
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Audit\TargetType
          * @enum {string}
          */
         "Audit_2.Types.Audit.TargetType": "pages" | "links" | "images" | "js" | "css";

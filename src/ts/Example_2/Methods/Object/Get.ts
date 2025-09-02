@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Метод с примерами параметров типа Object
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Object\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Object\Get */
         "Example_2.Methods.Object.Get": {
             user: import('../../Types/User.ts').components['schemas']['Example_2.Types.User'];
         };

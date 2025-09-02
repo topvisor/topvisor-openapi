@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получить объект страницы с отрендериным контентом
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Methods\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Methods\Get */
         "Controller_2.Methods.Get": {
             /** Адрес страницы */
             url: string;

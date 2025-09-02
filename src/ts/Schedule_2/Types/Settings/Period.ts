@@ -10,7 +10,7 @@ export interface components {
         /**
          * Период отправки отчета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\Period
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Types\Settings\Period
          * @enum {string}
          */
         "Schedule_2.Types.Settings.Period": "none" | "month" | "week" | "weekly";

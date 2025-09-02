@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление сообщений
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del */
         "Admin_2.Methods.Actions.Slack.Messages.Del": {
             /** Токен */
             token: string;

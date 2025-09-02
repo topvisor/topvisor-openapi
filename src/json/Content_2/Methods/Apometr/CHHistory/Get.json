@@ -63,7 +63,7 @@
                     "region_index",
                     "action"
                 ],
-                "title": "Получение истории urls, найденных в выдаче, за конкретную проверку\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\CHHistory\\Get",
+                "title": "Получение истории urls, найденных в выдаче, за конкретную проверку\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Apometr\\CHHistory\\Get",
                 "description": "@deprecated Используйте Services\\Content_2\\Methods\\Apometr\\Snapshots\\Top\\Get",
                 "deprecated": true
             },

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Загрузка текстового файла лога
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Logs\Get */
         "Admin_2.Methods.Logs.Get": {
             /** Файл лога */
             log_file: string;

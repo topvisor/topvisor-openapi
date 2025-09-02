@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Audit_2/Types/Settings/FieldName.json#/components/schemas/Audit_2.Types.Settings.FieldName"
                 },
-                "title": "Имена настроек для инструментов аудита\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Settings\\FieldNames",
+                "title": "Имена настроек для инструментов аудита\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Types\\Settings\\FieldNames",
                 "description": "@see FieldName"
             }
         }

@@ -21,7 +21,7 @@
                     "Авторизация",
                     "Привязка аккаунта"
                 ],
-                "title": "Действие, выполняемое при авторизации\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Types\\Tpa\\Action"
+                "title": "Действие, выполняемое при авторизации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Types\\Tpa\\Action"
             }
         }
     }

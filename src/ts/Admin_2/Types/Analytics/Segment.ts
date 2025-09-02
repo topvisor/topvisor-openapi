@@ -14,7 +14,7 @@ export interface components {
          *
          *     Пример: вывод количества регистраций за каждый **месяц** в отчете
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Analytics\Segment
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Analytics\Segment
          * @enum {string}
          */
         "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";

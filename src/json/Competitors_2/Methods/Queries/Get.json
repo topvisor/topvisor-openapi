@@ -40,7 +40,7 @@
                     "region_index",
                     "query"
                 ],
-                "title": "Получение доступных запросов для построения отчета (не более 10)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Queries\\Get"
+                "title": "Получение доступных запросов для построения отчета (не более 10)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Methods\\Queries\\Get"
             },
             "Competitors_2.Methods.Queries.Get.Exec": {
                 "type": "array"

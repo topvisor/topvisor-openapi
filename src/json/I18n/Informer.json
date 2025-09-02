@@ -166,7 +166,7 @@
                     "email_unsubscribed_from_reports",
                     "You_unsubscribed_from_emails"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Informer\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Informer\\En"
             }
         }
     }

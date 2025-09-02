@@ -50,7 +50,7 @@
                     "searcher_key",
                     "region_key"
                 ],
-                "title": "Добавление региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Add"
+                "title": "Добавление региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Add"
             },
             "Positions_2.Methods.Searchers.Regions.Add.Exec": {
                 "nullable": true

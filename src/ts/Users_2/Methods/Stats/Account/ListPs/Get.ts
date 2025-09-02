@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка используемых ПС в проекте
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\ListPs\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListPs\Get */
         "Users_2.Methods.Stats.Account.ListPs.Get": {
             /** ID проекта */
             project_id?: number;

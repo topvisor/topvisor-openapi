@@ -11,7 +11,7 @@ export interface components {
          *
          *     Можно менять только имя, если оно не указано
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Edit */
         "Content_2.Methods.Journal.Course.Certificates.Edit": {
             /** Url курса относительно домена */
             course_url: string;

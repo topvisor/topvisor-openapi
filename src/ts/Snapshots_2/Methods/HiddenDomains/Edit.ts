@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Выделение сайтов (доменов) как неважные
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Edit */
         "Snapshots_2.Methods.HiddenDomains.Edit": {
             /** Id проекта */
             project_id: number;

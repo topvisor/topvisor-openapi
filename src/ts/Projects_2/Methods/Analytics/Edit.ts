@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка графика
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Edit */
         "Projects_2.Methods.Analytics.Edit": {
             /** ID графика */
             id: number;

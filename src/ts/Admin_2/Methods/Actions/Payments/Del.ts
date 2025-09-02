@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отмена проведения счета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Payments\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Payments\Del */
         "Admin_2.Methods.Actions.Payments.Del": {
             /** ID пользователя */
             userId: number;

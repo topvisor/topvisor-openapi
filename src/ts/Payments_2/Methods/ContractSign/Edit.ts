@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Подписание контракта (только для админов)
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\ContractSign\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\ContractSign\Edit */
         "Payments_2.Methods.ContractSign.Edit": {
             /** Номер договора/оферты для платежа */
             requisites_id: string;

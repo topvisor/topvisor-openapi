@@ -13,7 +13,7 @@ export interface components {
          *
          *     Если значение является интервалом, в начало ставится символ '*'
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Types\Minute */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Types\Minute */
         "Cron_2.Types.Minute": string;
     };
     responses: never;

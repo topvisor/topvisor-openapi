@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование объявлений (запросов) рекламной кампании
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Keywords\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Keywords\Edit */
         "Broker_2.Methods.Keywords.Edit": {
             /** Id проекта */
             project_id: number;

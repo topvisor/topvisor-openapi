@@ -23,7 +23,7 @@
                     "id",
                     "comment"
                 ],
-                "title": "Добавление комментария к отзыву\n\nОставить комментарий можно в течение часа поосле выставления оценки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Votes_2\\Methods\\Comment\\Edit"
+                "title": "Добавление комментария к отзыву\n\nОставить комментарий можно в течение часа поосле выставления оценки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Votes_2\\Methods\\Comment\\Edit"
             },
             "Votes_2.Methods.Comment.Edit.Exec": {
                 "nullable": true,

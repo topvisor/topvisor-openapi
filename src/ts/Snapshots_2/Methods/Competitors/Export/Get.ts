@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт списка конкурентов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Export\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Export\Get */
         "Snapshots_2.Methods.Competitors.Export.Get": {
             output: import('../../../Types/Competitors/Export/Output.ts').components['schemas']['Snapshots_2.Types.Competitors.Export.Output'];
             /**

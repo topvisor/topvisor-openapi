@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Импортирование историй позиций из CSV
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Add */
         "Admin_2.Methods.Actions.Positions.History.Add": {
             /** Строка в формате csv
              *

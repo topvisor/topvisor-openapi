@@ -18,7 +18,7 @@
                 "required": [
                     "theme"
                 ],
-                "title": "Изменение темы сайта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Theme\\Edit"
+                "title": "Изменение темы сайта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Profile\\Theme\\Edit"
             },
             "Users_2.Methods.Profile.Theme.Edit.Exec": {
                 "nullable": true,

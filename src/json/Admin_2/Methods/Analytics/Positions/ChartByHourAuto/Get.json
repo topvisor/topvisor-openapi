@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение числа автоматических проверок по часам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Positions\\ChartByHourAuto\\Get"
+                "title": "Получение числа автоматических проверок по часам\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Analytics\\Positions\\ChartByHourAuto\\Get"
             },
             "Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec": {
                 "type": "object",

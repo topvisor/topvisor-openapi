@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Params\FieldsTrait */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Params\FieldsTrait */
         "TV.API.Params.FieldsTrait": {
             /**
              * Список полей объекта, которые надо вернуть в результате

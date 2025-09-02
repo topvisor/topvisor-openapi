@@ -52,7 +52,7 @@
                     "type",
                     "qualifiers"
                 ],
-                "title": "Получение цены на расширение группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Methods\\Collect\\Ext\\Price\\Get"
+                "title": "Получение цены на расширение группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Collect\\Ext\\Price\\Get"
             },
             "Keywords_2.Methods.Collect.Ext.Price.Get.Exec": {
                 "title": "Информация о стоимости запуска подбора запросов",

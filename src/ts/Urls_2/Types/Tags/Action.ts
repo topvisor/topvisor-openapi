@@ -10,7 +10,7 @@ export interface components {
         /**
          * Способ установки тегов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Types\Tags\Action
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Types\Tags\Action
          * @enum {string}
          */
         "Urls_2.Types.Tags.Action": "set" | "add" | "remove";

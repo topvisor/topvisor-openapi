@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Информация о текущей подписки пользователя и ее лимитах
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Objects\Subscriptions\Subscription */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Objects\Subscriptions\Subscription */
         "Bank_2.Objects.Subscriptions.Subscription": {
             /** id платежа, подписки */
             paymentId: number;

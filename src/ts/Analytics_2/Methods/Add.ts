@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Фиксация события
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Analytics_2\Methods\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Analytics_2\Methods\Add */
         "Analytics_2.Methods.Add": {
             /** Категория */
             ec?: string | null;

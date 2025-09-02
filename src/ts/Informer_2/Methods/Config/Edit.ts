@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Настройка уведомлений
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Config\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Config\Edit */
         "Informer_2.Methods.Config.Edit": {
             /** Название типа. Содержит название провайдера и метода */
             name: import('../../Types/Config/Name.ts').components['schemas']['Informer_2.Types.Config.Name'];

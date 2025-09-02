@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение числа автоматических проверок по часам
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHourAuto\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHourAuto\Get */
         "Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get": Record<string, never>;
         "Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec": {
             [key: string]: unknown;

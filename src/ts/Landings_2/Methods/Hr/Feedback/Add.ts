@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправление письма с лэндинга вакансий на hr@topvisor.com
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Landings_2\Methods\Hr\Feedback\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Landings_2\Methods\Hr\Feedback\Add */
         "Landings_2.Methods.Hr.Feedback.Add": {
             /** Имя и фамилия */
             name: string;

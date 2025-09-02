@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение общей статистики по реферальной программе
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferralProgramStats\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralProgramStats\Get */
         "Admin_2.Methods.Affiliate.ReferralProgramStats.Get": Record<string, never>;
         "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": ({
             totalEarned: number;

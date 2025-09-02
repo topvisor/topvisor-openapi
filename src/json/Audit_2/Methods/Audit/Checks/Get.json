@@ -42,7 +42,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение общей информации о проверках\n- только для проверки, которая не завершена\n- в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx\n- в ответе будет заменено значение count_pages и count_all на текущие\n- в ответ будет добавлены значения robot_step и robot_count_tasks_allм\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Checks\\Get"
+                "title": "Получение общей информации о проверках\n- только для проверки, которая не завершена\n- в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx\n- в ответе будет заменено значение count_pages и count_all на текущие\n- в ответ будет добавлены значения robot_step и robot_count_tasks_allм\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Audit\\Checks\\Get"
             },
             "Audit_2.Methods.Audit.Checks.Get.Exec": {
                 "title": "Список выполненных (выполняемых) проверок аудита",

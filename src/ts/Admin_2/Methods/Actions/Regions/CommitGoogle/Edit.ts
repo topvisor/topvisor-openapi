@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавить регионы Google в сервис
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Regions\CommitGoogle\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Regions\CommitGoogle\Edit */
         "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit": {
             /** Список регионов в формате:
              *

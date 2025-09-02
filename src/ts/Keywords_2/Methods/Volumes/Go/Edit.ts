@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Постановка задачи на проверку частоты запросов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Go\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Go\Edit */
         "Keywords_2.Methods.Volumes.Go.Edit": {
             /**
              * Запуск в режиме отладки

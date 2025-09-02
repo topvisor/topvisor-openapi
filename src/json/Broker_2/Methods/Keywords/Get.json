@@ -44,7 +44,7 @@
                 "required": [
                     "campaign_tv_id"
                 ],
-                "title": "Получение запросов рекламной кампании\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Keywords\\Get"
+                "title": "Получение запросов рекламной кампании\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Broker_2\\Methods\\Keywords\\Get"
             },
             "Broker_2.Methods.Keywords.Get.Exec": {
                 "type": "array",

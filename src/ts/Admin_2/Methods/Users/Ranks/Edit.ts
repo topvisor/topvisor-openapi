@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Измение достижение
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Ranks\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Ranks\Edit */
         "Admin_2.Methods.Users.Ranks.Edit": {
             id: number;
             name_id?: string | null;

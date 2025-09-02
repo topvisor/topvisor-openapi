@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
                 },
-                "title": "Тип: enum\n\nПринимает: 0|1|false|true\n\nХранит: false|true\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Types\\EnumNumberArray"
+                "title": "Тип: enum\n\nПринимает: 0|1|false|true\n\nХранит: false|true\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Example_2\\Types\\EnumNumberArray"
             }
         }
     }

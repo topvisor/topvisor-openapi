@@ -11,7 +11,7 @@ export interface components {
          *
          *     Оставить комментарий можно в течение часа поосле выставления оценки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Methods\Comment\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Methods\Comment\Edit */
         "Votes_2.Methods.Comment.Edit": {
             /** Id отзыва */
             id: number;

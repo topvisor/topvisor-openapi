@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Применение настроек Анализа сайта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Settings\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Settings\Edit */
         "Audit_2.Methods.Settings.Edit": {
             /**
              * User-Agent (аудит)

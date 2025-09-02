@@ -2431,7 +2431,7 @@
                     "Report_an_error_response",
                     "Knowledge_base"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Common\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Common\\En"
             }
         }
     }

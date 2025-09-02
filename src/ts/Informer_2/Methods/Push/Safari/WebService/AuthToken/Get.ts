@@ -11,7 +11,7 @@ export interface components {
          *
          *     Создаст токен, если его не существует
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get */
         "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get": Record<string, never>;
         "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec": string;
     };

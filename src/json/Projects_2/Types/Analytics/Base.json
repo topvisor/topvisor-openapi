@@ -42,7 +42,7 @@
                     "Теги",
                     "Топы"
                 ],
-                "title": "Тип группировки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Types\\Analytics\\Base"
+                "title": "Тип группировки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Types\\Analytics\\Base"
             }
         }
     }

@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Шаблон документа (только для pdf)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\History\\Export\\Tpl"
+                "title": "Шаблон документа (только для pdf)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Types\\History\\Export\\Tpl"
             }
         }
     }

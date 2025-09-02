@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Информация о сессии авторизации пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Auth\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Auth\Get */
         "Users_2.Methods.Auth.Get": {
             /** Логин авторизации
              *

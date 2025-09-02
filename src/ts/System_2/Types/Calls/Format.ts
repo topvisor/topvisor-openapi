@@ -10,7 +10,7 @@ export interface components {
         /**
          * Формат вызова
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Calls\Format
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Calls\Format
          * @enum {string}
          */
         "System_2.Types.Calls.Format": "apiV2";

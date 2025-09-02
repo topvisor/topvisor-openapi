@@ -13,7 +13,7 @@ export interface components {
          *
          *     Значение должно находиться в диапазоне от 0 до 23 включительно
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Types\Hour */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Types\Hour */
         "Cron_2.Types.Hour": string;
     };
     responses: never;

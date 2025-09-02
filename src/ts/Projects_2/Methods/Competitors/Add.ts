@@ -11,7 +11,7 @@ export interface components {
          *
          *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Competitors\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Competitors\Add */
         "Projects_2.Methods.Competitors.Add": {
             /** ID проекта */
             project_id: number;

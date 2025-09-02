@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Id поисковых системы для проверки позиций
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\SearchersKeys */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\SearchersKeys */
         "Positions_2.Types.SearchersKeys": import('./SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'][];
     };
     responses: never;

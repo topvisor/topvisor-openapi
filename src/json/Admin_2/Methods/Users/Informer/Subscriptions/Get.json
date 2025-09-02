@@ -16,7 +16,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки\n\nГрафик кешируется, первый запрос может выполняться дольше\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Informer\\Subscriptions\\Get"
+                "title": "Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки\n\nГрафик кешируется, первый запрос может выполняться дольше\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Users\\Informer\\Subscriptions\\Get"
             },
             "Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec": {
                 "title": "Данные для построения графика",

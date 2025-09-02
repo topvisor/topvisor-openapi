@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Класс конфигурации команды Telegram.
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Telegram_2\Types\Bot\CommandConfig */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\CommandConfig */
         "Telegram_2.Types.Bot.CommandConfig": {
             handler: import('../../../Closure.ts').components['schemas']['Closure'];
             title: string;

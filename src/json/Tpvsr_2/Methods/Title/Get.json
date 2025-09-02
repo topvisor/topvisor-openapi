@@ -27,7 +27,7 @@
                 "required": [
                     "link"
                 ],
-                "title": "Получить title ссылки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Title\\Get"
+                "title": "Получить title ссылки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpvsr_2\\Methods\\Title\\Get"
             },
             "Tpvsr_2.Methods.Title.Get.Exec": {
                 "type": "string"

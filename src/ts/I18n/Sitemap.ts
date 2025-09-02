@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Sitemap\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Sitemap\En */
         "I18n.Sitemap": {
             /** @constant */
             readonly Settings: "Tool settings";

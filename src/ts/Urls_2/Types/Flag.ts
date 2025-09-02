@@ -10,7 +10,7 @@ export interface components {
         /**
          * Флаг активности
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Types\Flag
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Types\Flag
          * @enum {integer}
          */
         "Urls_2.Types.Flag": -1 | 0 | 1 | 2;

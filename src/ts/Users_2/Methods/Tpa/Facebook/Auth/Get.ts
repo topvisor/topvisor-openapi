@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Авторизация через Facebook
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Facebook\Auth\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Facebook\Auth\Get */
         "Users_2.Methods.Tpa.Facebook.Auth.Get": {
             /** Токен доступа */
             access_token: string;

@@ -37,7 +37,7 @@
                     "secunds",
                     "test"
                 ],
-                "title": "Удаление сообщений\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Slack\\Messages\\Del"
+                "title": "Удаление сообщений\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Slack\\Messages\\Del"
             },
             "Admin_2.Methods.Actions.Slack.Messages.Del.Exec": {
                 "allOf": [

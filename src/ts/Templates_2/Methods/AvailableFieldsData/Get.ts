@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных доступных столбцов для выборки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\AvailableFieldsData\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\AvailableFieldsData\Get */
         "Templates_2.Methods.AvailableFieldsData.Get": {
             target_type: import('../../Types/TargetType.ts').components['schemas']['Templates_2.Types.TargetType'];
         };

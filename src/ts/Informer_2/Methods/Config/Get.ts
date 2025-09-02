@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение настроек уведомлений
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Config\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Config\Get */
         "Informer_2.Methods.Config.Get": Record<string, never>;
         "Informer_2.Methods.Config.Get.Exec": {
             name: string;

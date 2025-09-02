@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление папки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Add */
         "Projects_2.Methods.Folders.Add": {
             /** Имя папки */
             name: string;

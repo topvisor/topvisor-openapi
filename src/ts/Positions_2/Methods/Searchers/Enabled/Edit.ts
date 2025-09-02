@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Включение/выключение ПС
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Enabled\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Enabled\Edit */
         "Positions_2.Methods.Searchers.Enabled.Edit": {
             /** Id проекта */
             project_id: number;

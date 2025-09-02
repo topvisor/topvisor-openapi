@@ -39,7 +39,7 @@
                     "action",
                     "project_id"
                 ],
-                "title": "Изменение тегов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Tags\\Edit"
+                "title": "Изменение тегов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Urls_2\\Methods\\Tags\\Edit"
             },
             "Urls_2.Methods.Tags.Edit.Exec": {
                 "nullable": true,

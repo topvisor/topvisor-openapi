@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Скачивание архива документов в формате PDF
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\PrintZip\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\PrintZip\Get */
         "Bank_2.Methods.Requisites.PrintZip.Get": {
             /** Список id документов
              *

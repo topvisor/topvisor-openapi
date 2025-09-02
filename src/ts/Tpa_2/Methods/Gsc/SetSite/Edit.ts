@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Выбрать сайт для интеграции
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
         "Tpa_2.Methods.Gsc.SetSite.Edit": {
             site: string;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

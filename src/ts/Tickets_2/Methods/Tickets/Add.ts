@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Создание тикета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Add */
         "Tickets_2.Methods.Tickets.Add": {
             /** Текст тикета */
             text: string;

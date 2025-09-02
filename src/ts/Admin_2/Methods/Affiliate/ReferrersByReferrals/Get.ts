@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сводки числа партнеров по числу рефералов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get */
         "Admin_2.Methods.Affiliate.ReferrersByReferrals.Get": {
             /** Год для сводки */
             year: number;

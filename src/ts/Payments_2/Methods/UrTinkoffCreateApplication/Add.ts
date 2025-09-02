@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Отправка заявки на подключение Тинькофф Бизнес
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\UrTinkoffCreateApplication\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\UrTinkoffCreateApplication\Add */
         "Payments_2.Methods.UrTinkoffCreateApplication.Add": Record<string, never>;
         "Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec": number | null;
     };

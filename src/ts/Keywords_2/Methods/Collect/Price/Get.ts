@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение стоимости подбора запросов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Collect\Price\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Price\Get */
         "Keywords_2.Methods.Collect.Price.Get": {
             /**
              * Отображать сумму с учетом скидки (по умолчанию: 1)

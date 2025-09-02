@@ -30,7 +30,7 @@
                 "required": [
                     "pin"
                 ],
-                "title": "Проверить код для подтверждения действия\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Sms_2\\Methods\\CheckPIN\\Get"
+                "title": "Проверить код для подтверждения действия\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Sms_2\\Methods\\CheckPIN\\Get"
             },
             "Sms_2.Methods.CheckPIN.Get.Exec": {
                 "type": "string"

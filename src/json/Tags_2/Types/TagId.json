@@ -75,7 +75,7 @@
                     null,
                     null
                 ],
-                "title": "Id тега\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tags_2\\Types\\TagId"
+                "title": "Id тега\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tags_2\\Types\\TagId"
             }
         }
     }

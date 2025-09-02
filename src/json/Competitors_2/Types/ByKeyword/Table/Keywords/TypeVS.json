@@ -24,7 +24,7 @@
                     "Все",
                     "Уникальные"
                 ],
-                "title": "Тип связи запросов с лидером\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Table\\Keywords\\TypeVS"
+                "title": "Тип связи запросов с лидером\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Table\\Keywords\\TypeVS"
             }
         }
     }

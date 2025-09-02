@@ -174,7 +174,7 @@
                     "output",
                     "project_id"
                 ],
-                "title": "Экспорт списка конкурентов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\Competitors\\Export\\Get"
+                "title": "Экспорт списка конкурентов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\Competitors\\Export\\Get"
             },
             "Snapshots_2.Methods.Competitors.Export.Get.Exec": {
                 "nullable": true,

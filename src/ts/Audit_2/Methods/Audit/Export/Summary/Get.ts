@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт отчета Анализа сайта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Summary\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Export\Summary\Get */
         "Audit_2.Methods.Audit.Export.Summary.Get": {
             /** Формат экспортируемого файла */
             output: string;

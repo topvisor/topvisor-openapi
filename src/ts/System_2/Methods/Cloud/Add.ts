@@ -11,7 +11,7 @@ export interface components {
          *
          *     Вернет имя директории в случае создания директории или bool при загрузке файла
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Add */
         "System_2.Methods.Cloud.Add": {
             /** Директория */
             directory: string;

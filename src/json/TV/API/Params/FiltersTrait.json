@@ -24,7 +24,7 @@
                 "required": [
                     "filters"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Params\\FiltersTrait"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\FiltersTrait"
             }
         }
     }

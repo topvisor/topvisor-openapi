@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Тест долго ответа сервера
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Test\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Methods\Test\Get */
         "Example_2.Methods.Test.Get": Record<string, never>;
         "Example_2.Methods.Test.Get.Exec": number;
     };

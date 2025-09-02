@@ -11,7 +11,7 @@ export interface components {
          *
          *     Процесс создания поста не завершен
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Del */
         "Tickets_2.Methods.Files.Del": {
             /** Название дирректории */
             name: string;

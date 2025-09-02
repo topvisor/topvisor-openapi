@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тэги для установки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Tags
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Tags
          * @description @see Tag
          */
         "Tpvsr_2.Types.Tags": import('./Tag.ts').components['schemas']['Tpvsr_2.Types.Tag'][];

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение прав на проект
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Rights\Edit */
         "Projects_2.Methods.Rights.Edit": {
             /** Вместо project_ids можно указывать project_id */
             projects_ids?: unknown[] | null;

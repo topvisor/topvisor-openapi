@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление шаблона тикета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Templates\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Add */
         "Tickets_2.Methods.Admin.Templates.Add": {
             /** Название */
             name: string;

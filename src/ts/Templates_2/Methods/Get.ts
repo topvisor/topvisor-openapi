@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сохраненного списка шаблонов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Get */
         "Templates_2.Methods.Get": {
             target_type: import('../Types/TargetType.ts').components['schemas']['Templates_2.Types.TargetType'];
             /** Подтип данных (место использования) */

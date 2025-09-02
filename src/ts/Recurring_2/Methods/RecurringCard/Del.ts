@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удалить привязанную карту (system = card)
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
         "Recurring_2.Methods.RecurringCard.Del": {
             /** Id карты в системе Тинькофф */
             card_id: number;

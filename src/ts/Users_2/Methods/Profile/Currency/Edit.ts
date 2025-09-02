@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение валюты пользователя
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Currency\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Currency\Edit */
         "Users_2.Methods.Profile.Currency.Edit": {
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };

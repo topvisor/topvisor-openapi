@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка месяцев
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\ListMonth\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListMonth\Get */
         "Users_2.Methods.Stats.Account.ListMonth.Get": {
             /**
              * Какую часть от периода показать

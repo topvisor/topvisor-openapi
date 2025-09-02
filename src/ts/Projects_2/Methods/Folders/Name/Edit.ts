@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение имени папки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Name\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Name\Edit */
         "Projects_2.Methods.Folders.Name.Edit": {
             /** Id папки */
             id: number;

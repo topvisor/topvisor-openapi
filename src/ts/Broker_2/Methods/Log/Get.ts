@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение логов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Log\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Methods\Log\Get */
         "Broker_2.Methods.Log.Get": {
             /** Id кампании */
             campaign_tv_id: number;

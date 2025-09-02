@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Загрузка настроек OpenAPI
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\OpenAPI\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\OpenAPI\Get */
         "System_2.Methods.Common.OpenAPI.Get": {
             /**
              * Формат

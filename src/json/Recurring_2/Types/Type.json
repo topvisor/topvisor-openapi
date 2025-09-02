@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     "Обычное пополнение счета"
                 ],
-                "title": "Тип рекуррентного платежа\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Recurring_2\\Types\\Type"
+                "title": "Тип рекуррентного платежа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Recurring_2\\Types\\Type"
             }
         }
     }

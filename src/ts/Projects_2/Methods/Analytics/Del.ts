@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Удаление графика
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Analytics\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Del */
         "Projects_2.Methods.Analytics.Del": {
             /** ID графика */
             id: number;

@@ -11,7 +11,7 @@ export interface components {
          *
          *     Для выборки страниц используется модель: Pages
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Rss\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Rss\Get */
         "Content_2.Methods.Rss.Get": {
             /**
              * Страницы раздела сайта в формате XML RSS

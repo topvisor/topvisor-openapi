@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение метрик из сервиса Аналитика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Events\\Get"
+                "title": "Получение метрик из сервиса Аналитика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Analytics\\Events\\Get"
             },
             "Admin_2.Methods.Analytics.Events.Get.Exec": {
                 "nullable": true

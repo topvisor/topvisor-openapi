@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сводки индексации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Summary\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Summary\Get */
         "Audit_2.Methods.Indexing.Summary.Get": {
             /** Произвольные даты без диапазона */
             dates: unknown[];

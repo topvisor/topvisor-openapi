@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение тональности
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Sentiment\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Sentiment\Edit */
         "Mentions_2.Methods.Sentiment.Edit": {
             /** ID проекта */
             project_id: number;

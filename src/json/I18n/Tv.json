@@ -30,7 +30,7 @@
                 "required": [
                     "TV"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Tv\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Tv\\En"
             }
         }
     }

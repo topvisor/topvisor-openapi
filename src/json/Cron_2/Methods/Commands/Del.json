@@ -23,7 +23,7 @@
                 "required": [
                     "command"
                 ],
-                "title": "Удаление задачи cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Methods\\Commands\\Del"
+                "title": "Удаление задачи cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Cron_2\\Methods\\Commands\\Del"
             },
             "Cron_2.Methods.Commands.Del.Exec": {
                 "nullable": true,

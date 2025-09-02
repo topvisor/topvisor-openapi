@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип группировки
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Types\Analytics\Base
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Types\Analytics\Base
          * @enum {integer}
          */
         "Projects_2.Types.Analytics.Base": 1 | 11 | 13 | 2 | 3 | 6 | 4 | 5 | 12;

@@ -10,7 +10,7 @@ export interface components {
         /**
          * Возвращаемые форматы файлов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\Files
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Cloud\Files
          * @description @extends API\Types\AbstractObjectArray<File>
          *     @method File[] getValues()
          *     @method File current()

@@ -27,7 +27,7 @@
                     "ticket_id",
                     "text"
                 ],
-                "title": "Добавление сообщения к тикиту\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Messages\\Add"
+                "title": "Добавление сообщения к тикиту\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Messages\\Add"
             },
             "Tickets_2.Methods.Messages.Add.Exec": {
                 "title": "Id добавленного сообщения",

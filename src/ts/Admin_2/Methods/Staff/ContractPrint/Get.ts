@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Печать договора
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\ContractPrint\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\ContractPrint\Get */
         "Admin_2.Methods.Staff.ContractPrint.Get": {
             /** Параметры, передаваемые в шаблон */
             props: unknown[];

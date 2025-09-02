@@ -28,7 +28,7 @@
                     "name",
                     "text"
                 ],
-                "title": "Изменение шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Templates\\Edit"
+                "title": "Изменение шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\Templates\\Edit"
             },
             "Tickets_2.Methods.Admin.Templates.Edit.Exec": {
                 "nullable": true,

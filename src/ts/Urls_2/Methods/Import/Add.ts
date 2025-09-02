@@ -17,7 +17,7 @@ export interface components {
          *     - watcher
          *     - tags
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Import\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Import\Add */
         "Urls_2.Methods.Import.Add": {
             /** Список URL соответствующих домену проекта, допускается формат CSV
              *

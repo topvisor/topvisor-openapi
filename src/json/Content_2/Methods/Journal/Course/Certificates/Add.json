@@ -23,7 +23,7 @@
                     "course_url",
                     "user_name"
                 ],
-                "title": "Создание сертификата\n\nМожно создавать только для пройденных курсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Add"
+                "title": "Создание сертификата\n\nМожно создавать только для пройденных курсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Add"
             },
             "Content_2.Methods.Journal.Course.Certificates.Add.Exec": {
                 "nullable": true,

@@ -14,7 +14,7 @@ export interface components {
          *     - created, если данные готовы
          *     - paidtill, если данные готовы
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Registrar\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Registrar\Get */
         "Projects_2.Methods.Status.Registrar.Get": {
             /** Домен */
             domain: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];

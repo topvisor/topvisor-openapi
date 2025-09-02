@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение задач cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Methods\\Commands\\Get"
+                "title": "Получение задач cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Cron_2\\Methods\\Commands\\Get"
             },
             "Cron_2.Methods.Commands.Get.Exec": {
                 "title": "Список задач cron",

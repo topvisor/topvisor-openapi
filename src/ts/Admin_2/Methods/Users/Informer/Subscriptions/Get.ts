@@ -11,7 +11,7 @@ export interface components {
          *
          *     График кешируется, первый запрос может выполняться дольше
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Informer\Subscriptions\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Informer\Subscriptions\Get */
         "Admin_2.Methods.Users.Informer.Subscriptions.Get": {
             tariff_id?: number | null;
         };

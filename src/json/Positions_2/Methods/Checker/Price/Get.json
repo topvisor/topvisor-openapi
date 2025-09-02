@@ -68,7 +68,7 @@
                     }
                 },
                 "required": [],
-                "title": "Информация о стоимости запуска проверки позиций по проектам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Checker\\Price\\Get"
+                "title": "Информация о стоимости запуска проверки позиций по проектам\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Checker\\Price\\Get"
             },
             "Positions_2.Methods.Checker.Price.Get.Exec": {
                 "type": "object",

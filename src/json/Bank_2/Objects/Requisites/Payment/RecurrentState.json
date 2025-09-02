@@ -60,7 +60,7 @@
                     "type",
                     "manager"
                 ],
-                "title": "Состояние рекуррентного платежа\n\n- создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить\n- используется при выводе состояния подписки\n\nОпределяет логику работы с рекуррентными платежами\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Objects\\Requisites\\Payment\\RecurrentState"
+                "title": "Состояние рекуррентного платежа\n\n- создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить\n- используется при выводе состояния подписки\n\nОпределяет логику работы с рекуррентными платежами\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Objects\\Requisites\\Payment\\RecurrentState"
             }
         }
     }

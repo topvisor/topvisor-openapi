@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип реквизитов
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Requisites\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Requisites\Type
          * @enum {string}
          */
         "Bank_2.Types.Requisites.Type": "contract" | "offer" | "partnerOffer" | "fl223" | "domainsContract" | "domainsOffer" | "domainsPersonContract" | "domainsPersonOffer";

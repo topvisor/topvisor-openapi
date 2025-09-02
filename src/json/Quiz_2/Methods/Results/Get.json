@@ -18,7 +18,7 @@
                 "required": [
                     "ids"
                 ],
-                "title": "Получение своих результатов прохождения теста\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Results\\Get"
+                "title": "Получение своих результатов прохождения теста\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\Results\\Get"
             },
             "Quiz_2.Methods.Results.Get.Exec": {
                 "nullable": true,

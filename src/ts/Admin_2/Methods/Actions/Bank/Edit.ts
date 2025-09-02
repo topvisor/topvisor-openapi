@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Создание и проведение транзакции
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Bank\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Bank\Edit */
         "Admin_2.Methods.Actions.Bank.Edit": {
             /** Операция
              *

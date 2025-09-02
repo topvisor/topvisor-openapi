@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тактика при превышении максимальной цены
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Types\Keywords\Tactics2
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Types\Keywords\Tactics2
          * @enum {string}
          */
         "Broker_2.Types.Keywords.Tactics2": "maxBid" | "minBid" | "lowerPos" | "suspend";

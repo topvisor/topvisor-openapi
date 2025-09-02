@@ -41,7 +41,7 @@
                     "projectId",
                     "test"
                 ],
-                "title": "Сбор статистики и трафика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Projects\\Get"
+                "title": "Сбор статистики и трафика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Projects\\Get"
             },
             "Admin_2.Methods.Actions.Projects.Get.Exec": {
                 "allOf": [

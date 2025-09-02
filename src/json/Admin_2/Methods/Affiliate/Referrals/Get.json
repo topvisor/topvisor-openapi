@@ -27,7 +27,7 @@
                 "required": [
                     "currency"
                 ],
-                "title": "Получение сводки по новым рефералам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\Referrals\\Get"
+                "title": "Получение сводки по новым рефералам\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Affiliate\\Referrals\\Get"
             },
             "Admin_2.Methods.Affiliate.Referrals.Get.Exec": {
                 "type": "object",

@@ -27,7 +27,7 @@
                     null,
                     null
                 ],
-                "title": "Место откуда перешел пользователь\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Referrer"
+                "title": "Место откуда перешел пользователь\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Referrer"
             }
         }
     }

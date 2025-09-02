@@ -27,7 +27,7 @@
                 "required": [
                     "tpl"
                 ],
-                "title": "Получение схему HTML шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Tpl\\Schema\\Get"
+                "title": "Получение схему HTML шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Tpl\\Schema\\Get"
             },
             "Admin_2.Methods.Tpl.Schema.Get.Exec": {
                 "type": "object",

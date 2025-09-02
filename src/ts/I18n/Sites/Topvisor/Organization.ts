@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Sites\Topvisor\Organization\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Sites\Topvisor\Organization\En */
         "I18n.Sites.Topvisor.Organization": {
             /** @constant */
             readonly Description: "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.";

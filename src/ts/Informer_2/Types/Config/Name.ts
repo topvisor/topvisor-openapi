@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Название типа. Содержит название провайдера и метода
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Name */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Types\Config\Name */
         "Informer_2.Types.Config.Name": {
             method: import('./Method.ts').components['schemas']['Informer_2.Types.Config.Method'];
             provider: import('../Provider.ts').components['schemas']['Informer_2.Types.Provider'];

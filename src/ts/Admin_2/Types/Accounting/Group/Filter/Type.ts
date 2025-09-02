@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип фильтра по группам транзакций
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Accounting\Group\Filter\Type
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Accounting\Group\Filter\Type
          * @enum {string}
          */
         "Admin_2.Types.Accounting.Group.Filter.Type": "minus" | "plus";

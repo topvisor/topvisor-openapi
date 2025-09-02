@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Установка ранга Twitter
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Ranks\Promocode\Twitter\Add */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Ranks\Promocode\Twitter\Add */
         "Users_2.Methods.Ranks.Promocode.Twitter.Add": Record<string, never>;
         "Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec": number | null;
     };

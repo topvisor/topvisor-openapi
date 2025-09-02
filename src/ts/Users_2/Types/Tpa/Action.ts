@@ -10,7 +10,7 @@ export interface components {
         /**
          * Действие, выполняемое при авторизации
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Types\Tpa\Action
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\Tpa\Action
          * @enum {string}
          */
         "Users_2.Types.Tpa.Action": "auth" | "join";

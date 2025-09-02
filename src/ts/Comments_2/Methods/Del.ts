@@ -13,7 +13,7 @@ export interface components {
          *
          *     Админы могут удалять комментарии в любое время
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Del */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Del */
         "Comments_2.Methods.Del": {
             /** ID комментария */
             id: number;

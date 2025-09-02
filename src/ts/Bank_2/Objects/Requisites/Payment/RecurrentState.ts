@@ -14,7 +14,7 @@ export interface components {
          *
          *     Определяет логику работы с рекуррентными платежами
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Objects\Requisites\Payment\RecurrentState */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Objects\Requisites\Payment\RecurrentState */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             /** Начало расчетного периода, обычно время оплаты */
             timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;

@@ -10,7 +10,7 @@ export interface components {
         /**
          * Формат отчета
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\Format
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Types\Settings\Format
          * @enum {string}
          */
         "Schedule_2.Types.Settings.Format": "csv" | "xlsx" | "pdf" | "html";

@@ -46,7 +46,7 @@
                     "subdomain",
                     "path_mask"
                 ],
-                "title": "Добавление правила редиректа (для админов)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Redirects\\Add"
+                "title": "Добавление правила редиректа (для админов)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Redirects\\Add"
             },
             "Content_2.Methods.Redirects.Add.Exec": {
                 "nullable": true,

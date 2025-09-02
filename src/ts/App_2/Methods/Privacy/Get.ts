@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение объекта страницы политики конфиденциальности
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Privacy\Get */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Privacy\Get */
         "App_2.Methods.Privacy.Get": {
             /** Язык страницы */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;

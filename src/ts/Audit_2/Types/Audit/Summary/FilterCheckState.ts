@@ -10,7 +10,7 @@ export interface components {
         /**
          * Фильтр по состоянию изменения в сводке
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Audit\Summary\FilterCheckState
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Audit\Summary\FilterCheckState
          * @enum {string}
          */
         "Audit_2.Types.Audit.Summary.FilterCheckState": "all" | "changed";
