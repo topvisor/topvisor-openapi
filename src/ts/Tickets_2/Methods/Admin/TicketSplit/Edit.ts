@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
+        /**
+         * Перенос последниего сообщения (до 1 сообщения автора) в новый тикет
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\TicketSplit\Edit
+         */
         "Tickets_2.Methods.Admin.TicketSplit.Edit": {
             /** Id тикета */
             id: number;

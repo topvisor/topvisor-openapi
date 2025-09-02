@@ -53,7 +53,8 @@
                     "dates",
                     "project_id"
                 ],
-                "title": "Получение сводок индексации для графика"
+                "title": "Получение сводок индексации для графика",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Summary\\Chart\\Get"
             },
             "Audit_2.Methods.Indexing.Summary.Chart.Get.Exec": {
                 "title": "Сводки индексации",

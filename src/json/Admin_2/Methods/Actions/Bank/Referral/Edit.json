@@ -38,7 +38,8 @@
                     "pass",
                     "test"
                 ],
-                "title": "Оплата реферального счета"
+                "title": "Оплата реферального счета",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Bank\\Referral\\Edit"
             },
             "Admin_2.Methods.Actions.Bank.Referral.Edit.Exec": {
                 "allOf": [

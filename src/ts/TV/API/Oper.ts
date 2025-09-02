@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип операции метода API
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Oper
          * @enum {string}
          */
         "TV.API.Oper": "get" | "add" | "edit" | "del";

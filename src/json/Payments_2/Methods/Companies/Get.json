@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение компании пользователя, через которых, были совершены платежи"
+                "title": "Получение компании пользователя, через которых, были совершены платежи",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Companies\\Get"
             },
             "Payments_2.Methods.Companies.Get.Exec": {
                 "nullable": true,

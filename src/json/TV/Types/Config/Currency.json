@@ -322,7 +322,8 @@
                     "TARIFF_VALUES",
                     "TARIFF_DISCOUNT"
                 ],
-                "title": "Интерфейс настроек валюты"
+                "title": "Интерфейс настроек валюты",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\Types\\Config\\Currency"
             }
         }
     }

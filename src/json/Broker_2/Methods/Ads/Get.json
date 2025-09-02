@@ -39,7 +39,8 @@
                 "required": [
                     "campaign_tv_id"
                 ],
-                "title": "Получение объявления рекламной кампании"
+                "title": "Получение объявления рекламной кампании",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Ads\\Get"
             },
             "Broker_2.Methods.Ads.Get.Exec": {
                 "nullable": true,

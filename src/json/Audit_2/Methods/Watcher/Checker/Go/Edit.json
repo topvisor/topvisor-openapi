@@ -23,7 +23,8 @@
                     }
                 },
                 "required": [],
-                "title": "Отправка проектов на проверку радара"
+                "title": "Отправка проектов на проверку радара",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Watcher\\Checker\\Go\\Edit"
             },
             "Audit_2.Methods.Watcher.Checker.Go.Edit.Exec": {
                 "title": "Список id проектов, отрпавленных на проверку",

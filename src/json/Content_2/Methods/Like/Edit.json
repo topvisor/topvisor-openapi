@@ -32,7 +32,8 @@
                     "url",
                     "like"
                 ],
-                "title": "Редактирование статуса лайка для страницы"
+                "title": "Редактирование статуса лайка для страницы",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Like\\Edit"
             },
             "Content_2.Methods.Like.Edit.Exec": {
                 "nullable": true,

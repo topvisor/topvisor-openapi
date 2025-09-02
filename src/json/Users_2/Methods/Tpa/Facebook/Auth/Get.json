@@ -26,7 +26,8 @@
                     "access_token",
                     "action"
                 ],
-                "title": "Авторизация через Facebook"
+                "title": "Авторизация через Facebook",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Tpa\\Facebook\\Auth\\Get"
             },
             "Users_2.Methods.Tpa.Facebook.Auth.Get.Exec": {
                 "nullable": true,

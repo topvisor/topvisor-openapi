@@ -7,11 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Метод с примерами параметров типа Object */
+        /**
+         * Метод с примерами параметров типа Object
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Object\Get
+         */
         "Example_2.Methods.Object.Get": {
             user: import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
         };
-        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
+        /** Ассоциативный массив с результирующими переданными параметрами и результатом genSet() */
         "Example_2.Methods.Object.Get.Exec": unknown[];
     };
     responses: never;

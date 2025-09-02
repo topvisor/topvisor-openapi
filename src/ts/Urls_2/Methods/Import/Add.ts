@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Импортирование urls
+        /**
+         * Импортирование urls
          *
          *     Доступные поля для импорта:
          *     - url
@@ -15,7 +16,9 @@ export interface components {
          *     - audit
          *     - indexing
          *     - watcher
-         *     - tags */
+         *     - tags
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Import\Add
+         */
         "Urls_2.Methods.Import.Add": {
             /** Список URL соответствующих домену проекта, допускается формат CSV
              *

@@ -36,7 +36,8 @@
                     null,
                     null
                 ],
-                "title": "Ключ поисковой системы для сбора запросов"
+                "title": "Ключ поисковой системы для сбора запросов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\SearcherKey"
             }
         }
     }

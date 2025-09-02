@@ -2430,7 +2430,8 @@
                     "Report_an_error_ticket_message",
                     "Report_an_error_response",
                     "Knowledge_base"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Common\\En"
             }
         }
     }

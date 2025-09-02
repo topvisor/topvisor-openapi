@@ -13,6 +13,7 @@ export interface components {
          *     Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
          *
          *     Пример: вывод количества регистраций за каждый **месяц** в отчете
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Analytics\Segment
          * @enum {string}
          */
         "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";

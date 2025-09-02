@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории снимков выдачи
+        /**
+         * Получение истории снимков выдачи
          *
-         *     Метод базируется на объекте keywords (доступны только фильтры) */
+         *     Метод базируется на объекте keywords (доступны только фильтры)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Get
+         */
         "Snapshots_2.Methods.History.Get": {
             /** Получение данных по всем запросам
              *

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Поле хранения параметра
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Properties\Property\Type
          * @enum {string}
          */
         "System_2.Types.Properties.Property.Type": "varchar" | "text";

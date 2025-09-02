@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение топа выдачи сайтов за определенную проверку */
+        /**
+         * Получение топа выдачи сайтов за определенную проверку
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Snapshots\Top\Get
+         */
         "Content_2.Methods.Apometr.Snapshots.Top.Get": {
             /** Дата и время проверки */
             datetime: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'];

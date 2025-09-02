@@ -50,7 +50,8 @@
                     "date1",
                     "date2"
                 ],
-                "title": "Отправка акта сверки в диадок\n\nПараметры см. в bank_2_requisites::protected_get_printTotalReceipt();"
+                "title": "Отправка акта сверки в диадок\n\nПараметры см. в bank_2_requisites::protected_get_printTotalReceipt();",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Diadoc\\SendTotalReceipt\\Get"
             },
             "Bank_2.Methods.Diadoc.SendTotalReceipt.Get.Exec": {
                 "type": "boolean"

@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Класс настройки плана подписки
+        /**
+         * Класс настройки плана подписки
          *
          *     Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
          *
@@ -34,7 +35,9 @@ export interface components {
          *
          *     Пример имени класса, оно же id плана: `A_StarterPack1`
          *
-         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости */
+         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Objects\Subscriptions\Plan
+         */
         "Bank_2.Objects.Subscriptions.Plan": {
             id: string;
             name: string;

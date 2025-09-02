@@ -20,7 +20,8 @@
                 "x-enum-descriptions": [
                     null,
                     null
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\ExportFormat"
             }
         }
     }

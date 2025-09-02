@@ -28,7 +28,8 @@
                     "userId",
                     "test"
                 ],
-                "title": "Отправка акты в диадок"
+                "title": "Отправка акты в диадок",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Payments\\Diadoc\\Add"
             },
             "Admin_2.Methods.Actions.Payments.Diadoc.Add.Exec": {
                 "allOf": [

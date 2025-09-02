@@ -28,7 +28,8 @@
                     "chatId",
                     "test"
                 ],
-                "title": "Добавление бота в телеграм канал"
+                "title": "Добавление бота в телеграм канал",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Telegram\\Add"
             },
             "Admin_2.Methods.Actions.Telegram.Add.Exec": {
                 "allOf": [

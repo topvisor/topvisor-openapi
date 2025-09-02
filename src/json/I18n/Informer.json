@@ -165,7 +165,8 @@
                     "Email_delivery_failure",
                     "email_unsubscribed_from_reports",
                     "You_unsubscribed_from_emails"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Informer\\En"
             }
         }
     }

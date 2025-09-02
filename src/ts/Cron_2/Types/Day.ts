@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * День недели, в который должен производиться запуск cron
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Types\Day
          * @enum {string}
          */
         "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";

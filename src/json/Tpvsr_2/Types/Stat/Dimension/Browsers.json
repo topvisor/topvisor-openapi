@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../../Tpvsr_2/Types/Stat/Dimension/Browser.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Browser"
                 },
-                "title": "Бразуеры для получение информации"
+                "title": "Бразуеры для получение информации",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Browsers"
             }
         }
     }

@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Url[]
-         * @description @extends AbstractStringArray<Url>
-         *     @method Url[] getValues()
-         *     @method Url current()
-         *     @see \TV\API\Types\Url
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlArray
          */
         "TV.API.Types.UrlArray": import('./Url.ts').components['schemas']['TV.API.Types.Url'][];
     };

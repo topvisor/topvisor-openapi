@@ -57,7 +57,8 @@
                     "Message_after_comment_bad_vote",
                     "Submit",
                     "SendTicket"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Votes\\En"
             }
         }
     }

@@ -27,7 +27,8 @@
                     "year",
                     "currency"
                 ],
-                "title": "Получение сводки числа партнеров по числу рефералов"
+                "title": "Получение сводки числа партнеров по числу рефералов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\ReferrersByReferrals\\Get"
             },
             "Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec": {
                 "type": "object",

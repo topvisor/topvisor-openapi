@@ -18,7 +18,8 @@
                 },
                 "required": [
                     "fields"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Params\\FieldsTrait"
             }
         }
     }

@@ -13,7 +13,7 @@
                     "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                 },
                 "title": "Тип массива: Date[]",
-                "description": "@extends AbstractStringArray<Date>\n@method Date[] getValues()\n@method Date current()\n@see \\TV\\API\\Types\\Date"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\DateArray"
             }
         }
     }

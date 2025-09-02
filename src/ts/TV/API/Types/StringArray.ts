@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: string[]
-         * @description @extends AbstractTypedArray<string>
-         *     @method string[] getValues()
-         *     @method string current()
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\StringArray
          */
         "TV.API.Types.StringArray": string[];
     };

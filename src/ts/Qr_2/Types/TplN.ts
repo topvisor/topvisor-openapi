@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @enum {integer} */
+        /**
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Qr_2\Types\TplN
+         * @enum {integer}
+         */
         "Qr_2.Types.TplN": 0 | 1 | 2;
     };
     responses: never;

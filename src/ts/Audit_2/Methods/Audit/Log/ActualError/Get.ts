@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации о текущей ошибке на роботе */
+        /**
+         * Получение информации о текущей ошибке на роботе
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Log\ActualError\Get
+         */
         "Audit_2.Methods.Audit.Log.ActualError.Get": {
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];

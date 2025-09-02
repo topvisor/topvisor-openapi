@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Направление сортировки
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FieldDirection
          * @enum {string}
          */
         FieldDirection: "ASC" | "DESC";

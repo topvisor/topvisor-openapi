@@ -49,7 +49,8 @@
                     "userAgentDevice",
                     "responseBodyBuffer",
                     "responseBodyBufferStop"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Topvisor\\Curl\\Curl"
             }
         }
     }

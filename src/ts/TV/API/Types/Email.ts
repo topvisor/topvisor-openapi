@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * E-mail
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Email
          * @example name@example.com
          */
         "TV.API.Types.Email": string;

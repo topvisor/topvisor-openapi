@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Бразуер для получение информации
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Browser
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Browser": "IE" | "Chrome" | "Firefox" | "Opera" | "Safari" | "Ya" | "Other";

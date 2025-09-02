@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип вопроса
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Types\Questions\Type
          * @enum {string}
          */
         "Quiz_2.Types.Questions.Type": "ONE" | "SEVERAL" | "TEXT";

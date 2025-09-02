@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Привязать расписание к объекту */
+        /**
+         * Привязать расписание к объекту
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Edit
+         */
         "Schedule_2.Methods.Edit": {
             /**
              * Каждый элемент содержит:

@@ -41,7 +41,8 @@
                     "quiz_id",
                     "type"
                 ],
-                "title": "Добавление вопроса"
+                "title": "Добавление вопроса",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Questions\\Add"
             },
             "Quiz_2.Methods.Questions.Add.Exec": {
                 "nullable": true,

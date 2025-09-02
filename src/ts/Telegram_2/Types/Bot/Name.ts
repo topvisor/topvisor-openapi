@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Имя telegram бота
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Telegram_2\Types\Bot\Name
          * @enum {string}
          */
         "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot" | "LibraryBot";

@@ -37,7 +37,8 @@
                     "secunds",
                     "test"
                 ],
-                "title": "Удаление сообщений"
+                "title": "Удаление сообщений",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Slack\\Messages\\Del"
             },
             "Admin_2.Methods.Actions.Slack.Messages.Del.Exec": {
                 "allOf": [

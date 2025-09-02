@@ -572,7 +572,8 @@
                     "No_result_target_status",
                     "Bad_target_status",
                     "Good_target_status"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Dynamics\\En"
             }
         }
     }

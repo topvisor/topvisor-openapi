@@ -54,7 +54,8 @@
                     null,
                     null
                 ],
-                "title": "Движок, который прикрепляется к ключу\n\nТолько ключи с прикрепленным движком могут выполнять задачи такого движка"
+                "title": "Движок, который прикрепляется к ключу\n\nТолько ключи с прикрепленным движком могут выполнять задачи такого движка",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Robot_2\\Types\\Keys\\Api"
             }
         }
     }

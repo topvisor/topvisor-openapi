@@ -32,7 +32,8 @@
                     "parent_url",
                     "urls"
                 ],
-                "title": "Сортировка документов"
+                "title": "Сортировка документов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Pages\\Order\\Edit"
             },
             "Content_2.Methods.Pages.Order.Edit.Exec": {
                 "nullable": true,

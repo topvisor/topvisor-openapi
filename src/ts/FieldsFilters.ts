@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Список полей фильтрации */
+        /**
+         * Список полей фильтрации
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FieldsFilters
+         */
         FieldsFilters: import('./FieldFilter.ts').components['schemas']['FieldFilter'][];
     };
     responses: never;

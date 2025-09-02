@@ -7,6 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Location */
         "Controller_2.Objects.Location": Record<string, never>;
     };
     responses: never;

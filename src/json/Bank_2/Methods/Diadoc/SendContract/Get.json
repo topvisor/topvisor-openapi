@@ -18,7 +18,8 @@
                 "required": [
                     "requisites_id"
                 ],
-                "title": "Отправка договора в диадок"
+                "title": "Отправка договора в диадок",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Diadoc\\SendContract\\Get"
             },
             "Bank_2.Methods.Diadoc.SendContract.Get.Exec": {
                 "type": "boolean"

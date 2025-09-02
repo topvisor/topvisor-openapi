@@ -7,10 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации о домене и SSL сертификате
+        /**
+         * Получение информации о домене и SSL сертификате
          *     Возвращает объект с параметрами:
          *     - domain_expire
-         *     - ssl_expire */
+         *     - ssl_expire
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Get
+         */
         "Projects_2.Methods.Status.Get": {
             /** ID проекта */
             project_id: number;

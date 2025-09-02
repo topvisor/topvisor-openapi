@@ -27,7 +27,8 @@
                 "required": [
                     "rank_id"
                 ],
-                "title": "Добавление промокоды к достижению"
+                "title": "Добавление промокоды к достижению",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Promocodes\\Add"
             },
             "Admin_2.Methods.Users.Promocodes.Add.Exec": {
                 "nullable": true,

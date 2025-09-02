@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение групп"
+                "title": "Получение групп",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Group\\Get"
             },
             "Admin_2.Methods.Accounting.Group.Get.Exec": {
                 "nullable": true,

@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Генерация QR кода по тексту
+        /**
+         * Генерация QR кода по тексту
          *
-         *     Возвращает изображение в формате data:image/png;base64 */
+         *     Возвращает изображение в формате data:image/png;base64
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Qr_2\Methods\Get
+         */
         "Qr_2.Methods.Get": {
             /** Кодируемый текст */
             text: string;

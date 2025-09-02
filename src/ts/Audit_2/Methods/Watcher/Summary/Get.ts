@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сводки радара */
+        /**
+         * Получение сводки радара
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Summary\Get
+         */
         "Audit_2.Methods.Watcher.Summary.Get": {
             /** Тип проверки */
             watcher_types?: unknown[] | null;

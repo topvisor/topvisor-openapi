@@ -23,7 +23,8 @@
                     "id",
                     "name"
                 ],
-                "title": "Изменение имени папки"
+                "title": "Изменение имени папки",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\Name\\Edit"
             },
             "Projects_2.Methods.Folders.Name.Edit.Exec": {
                 "nullable": true

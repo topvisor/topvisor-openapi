@@ -10,7 +10,8 @@
             "TV.API.Types.Date": {
                 "type": "string",
                 "title": "Дата",
-                "example": "2000-01-01"
+                "example": "2000-01-01",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Date"
             }
         }
     }

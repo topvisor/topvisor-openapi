@@ -26,7 +26,8 @@
                     "hash",
                     "output"
                 ],
-                "title": "Получение списка источников"
+                "title": "Получение списка источников",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Export\\Referrers\\Get"
             },
             "Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec": {
                 "type": "string"

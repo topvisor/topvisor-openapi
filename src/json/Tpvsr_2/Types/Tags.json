@@ -13,7 +13,7 @@
                     "$ref": "../../Tpvsr_2/Types/Tag.json#/components/schemas/Tpvsr_2.Types.Tag"
                 },
                 "title": "Тэги для установки",
-                "description": "@see Tag"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Tags"
             }
         }
     }

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Авторизация через Яндекс ID
-         * @description @see https://yandex.ru/dev/id/doc/ru/user-information
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Tpa\Yandex\Auth\Get
          */
         "Users_2.Methods.Tpa.Yandex.Auth.Get": {
             /** Код подтверждения для получения OAuth-токена */

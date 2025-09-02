@@ -18,7 +18,8 @@
                 "required": [
                     "campaign_tv_id"
                 ],
-                "title": "Отправка объявления на модерацию"
+                "title": "Отправка объявления на модерацию",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Ads\\ToModerate\\Edit"
             },
             "Broker_2.Methods.Ads.ToModerate.Edit.Exec": {
                 "title": "выводит int, если функция провайдера не определена",

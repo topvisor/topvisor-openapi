@@ -39,7 +39,8 @@
                 "required": [
                     "user_id"
                 ],
-                "title": "Получение комментариев автора. Без вложенности"
+                "title": "Получение комментариев автора. Без вложенности",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Comments_2\\Methods\\ByAuthor\\Get"
             },
             "Comments_2.Methods.ByAuthor.Get.Exec": {
                 "nullable": true,

@@ -10,7 +10,7 @@ export interface components {
         /**
          * Получение результатов анализа страницы
          * @deprecated
-         * @description @deprecated
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Results\Page\Get
          */
         "Audit_2.Methods.Audit.Results.Page.Get": {
             /** Ссылка на анализируемую страницу */

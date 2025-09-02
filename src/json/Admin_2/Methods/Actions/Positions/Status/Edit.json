@@ -23,7 +23,8 @@
                     "projectId",
                     "test"
                 ],
-                "title": "Сброс статуса проверки позиций"
+                "title": "Сброс статуса проверки позиций",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Positions\\Status\\Edit"
             },
             "Admin_2.Methods.Actions.Positions.Status.Edit.Exec": {
                 "allOf": [

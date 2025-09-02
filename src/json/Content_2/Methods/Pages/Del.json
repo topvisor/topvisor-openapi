@@ -18,7 +18,8 @@
                     }
                 },
                 "required": [],
-                "title": "Перенести документ в папку /archive/"
+                "title": "Перенести документ в папку /archive/",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Pages\\Del"
             },
             "Content_2.Methods.Pages.Del.Exec": {
                 "nullable": true,

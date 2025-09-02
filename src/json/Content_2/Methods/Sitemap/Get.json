@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение xml карты сайта"
+                "title": "Получение xml карты сайта",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Sitemap\\Get"
             },
             "Content_2.Methods.Sitemap.Get.Exec": {
                 "nullable": true,

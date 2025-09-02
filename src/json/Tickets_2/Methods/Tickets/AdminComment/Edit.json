@@ -23,7 +23,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Редактирваоние комменатрий админа"
+                "title": "Редактирваоние комменатрий админа",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\AdminComment\\Edit"
             },
             "Tickets_2.Methods.Tickets.AdminComment.Edit.Exec": {
                 "nullable": true,

@@ -21,10 +21,11 @@
                 "required": [
                     "user"
                 ],
-                "title": "Метод с примерами параметров типа Object"
+                "title": "Метод с примерами параметров типа Object",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Object\\Get"
             },
             "Example_2.Methods.Object.Get.Exec": {
-                "title": "Ассоциативный массив с результирующими переданными параетрами и результатом genSet()",
+                "title": "Ассоциативный массив с результирующими переданными параметрами и результатом genSet()",
                 "type": "array"
             }
         }

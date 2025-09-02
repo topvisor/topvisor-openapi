@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление фильтра группы */
+        /**
+         * Добавление фильтра группы
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Group\Filter\Add
+         */
         "Admin_2.Methods.Accounting.Group.Filter.Add": {
             /** Id группы */
             group_id: number;

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип проверки радара
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Watcher\Type
          * @enum {string}
          */
         "Audit_2.Types.Watcher.Type": "http_codes" | "redirects" | "h1" | "title" | "description" | "content";

@@ -67,7 +67,8 @@
                     "Field_task_status",
                     "Disabled",
                     "Enabled"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Cron\\En"
             }
         }
     }

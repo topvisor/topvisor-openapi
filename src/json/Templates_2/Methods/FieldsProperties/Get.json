@@ -30,7 +30,8 @@
                 "required": [
                     "target_type"
                 ],
-                "title": "Получение дополнительных параметров к списку столбцов"
+                "title": "Получение дополнительных параметров к списку столбцов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\FieldsProperties\\Get"
             },
             "Templates_2.Methods.FieldsProperties.Get.Exec": {
                 "nullable": true

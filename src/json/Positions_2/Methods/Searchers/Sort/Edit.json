@@ -33,7 +33,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Настройка сортировки ПС"
+                "title": "Настройка сортировки ПС",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Sort\\Edit"
             },
             "Positions_2.Methods.Searchers.Sort.Edit.Exec": {
                 "nullable": true

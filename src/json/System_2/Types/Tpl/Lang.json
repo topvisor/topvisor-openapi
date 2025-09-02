@@ -24,7 +24,8 @@
                     null,
                     null
                 ],
-                "title": "Язык шаблона"
+                "title": "Язык шаблона",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Tpl\\Lang"
             }
         }
     }

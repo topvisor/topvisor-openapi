@@ -10,7 +10,8 @@
             "TV.API.Types.RegExp": {
                 "type": "string",
                 "title": "Регулярное выражение\n\nПустое значение разрешено\n\nУправляющие символы \"/\" в начале и в конце строки будут удалены",
-                "example": "/^year_(\\d\\d\\d\\d)$/"
+                "example": "/^year_(\\d\\d\\d\\d)$/",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\RegExp"
             }
         }
     }

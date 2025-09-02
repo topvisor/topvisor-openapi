@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Категория пользовательского достижения
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Users\Ranks\Category
          * @enum {string}
          */
         "Admin_2.Types.Users.Ranks.Category": "" | "journal";

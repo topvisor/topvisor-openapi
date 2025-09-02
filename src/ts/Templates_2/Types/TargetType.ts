@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип данных (место использования)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Types\TargetType
          * @enum {string}
          */
         "Templates_2.Types.TargetType": "templates" | "groups" | "keywords" | "competitors_keywords" | "competitors_wordstat";

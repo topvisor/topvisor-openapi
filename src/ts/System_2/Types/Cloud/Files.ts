@@ -9,11 +9,7 @@ export interface components {
     schemas: {
         /**
          * Возвращаемые форматы файлов
-         * @description @extends API\Types\AbstractObjectArray<File>
-         *     @method File[] getValues()
-         *     @method File current()
-         *     @method File offsetGet()
-         *     @see \TV\API\Types\Qualifier
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\Files
          */
         "System_2.Types.Cloud.Files": import('./File.ts').components['schemas']['System_2.Types.Cloud.File'][];
     };

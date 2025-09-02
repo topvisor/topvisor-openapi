@@ -39,7 +39,8 @@
                     "Академия",
                     "Тикеты"
                 ],
-                "title": "Тема сообщения"
+                "title": "Тема сообщения",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Config\\Method"
             }
         }
     }

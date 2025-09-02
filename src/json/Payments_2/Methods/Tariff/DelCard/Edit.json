@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Отписка от тарифа, оплаченного картой"
+                "title": "Отписка от тарифа, оплаченного картой",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Tariff\\DelCard\\Edit"
             },
             "Payments_2.Methods.Tariff.DelCard.Edit.Exec": {
                 "nullable": true,

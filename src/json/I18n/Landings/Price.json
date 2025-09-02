@@ -85,7 +85,8 @@
                     "Technical_Seo",
                     "Yandex_direct",
                     "Account"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Landings\\Price\\En"
             }
         }
     }

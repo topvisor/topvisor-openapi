@@ -58,7 +58,8 @@
                     "output",
                     "project_id"
                 ],
-                "title": "Экспорт urls в определенном формате"
+                "title": "Экспорт urls в определенном формате",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Export\\Get"
             },
             "Urls_2.Methods.Export.Get.Exec": {
                 "type": "never"

@@ -17,7 +17,8 @@
                     }
                 },
                 "required": [],
-                "title": "Изменение логотипа бренда"
+                "title": "Изменение логотипа бренда",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Brand\\Logo\\Edit"
             },
             "Users_2.Methods.Profile.Brand.Logo.Edit.Exec": {
                 "type": "boolean"

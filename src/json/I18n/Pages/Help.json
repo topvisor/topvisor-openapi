@@ -31,7 +31,8 @@
                     "Contact_title",
                     "Contact_text",
                     "Contact"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Pages\\Help\\En"
             }
         }
     }

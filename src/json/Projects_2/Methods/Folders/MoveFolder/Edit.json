@@ -23,7 +23,8 @@
                     "id",
                     "insert_after_id"
                 ],
-                "title": "Переместить папку\n\nВложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка"
+                "title": "Переместить папку\n\nВложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\MoveFolder\\Edit"
             },
             "Projects_2.Methods.Folders.MoveFolder.Edit.Exec": {
                 "nullable": true

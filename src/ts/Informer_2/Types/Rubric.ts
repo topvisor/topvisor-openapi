@@ -11,6 +11,7 @@ export interface components {
          * Рубрика рассылки
          *
          *     На каждый тип рассылки оформляется отдельная подписка
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Rubric
          * @enum {string}
          */
         "Informer_2.Types.Rubric": "news" | "balance" | "tickets" | "yandex-update" | "comments" | "api" | "journal" | "academy";

@@ -46,7 +46,7 @@
                     "Доступ к API"
                 ],
                 "title": "Имя лимита\n\nГайдлайн: Имя лимита начинается с имени сервиса и характеризуется именем обеъкта или именем метода",
-                "description": "@see \\Services\\Bank_2\\Objects\\Subscriptions\\Limit"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Subscriptions\\Limit\\Name"
             }
         }
     }

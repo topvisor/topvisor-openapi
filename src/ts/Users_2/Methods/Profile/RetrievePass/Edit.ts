@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail()) */
+        /**
+         * Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail())
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\RetrievePass\Edit
+         */
         "Users_2.Methods.Profile.RetrievePass.Edit": {
             /** Email пользователя */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

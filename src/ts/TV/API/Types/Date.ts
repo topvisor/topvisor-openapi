@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Дата
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Date
          * @example 2000-01-01
          */
         "TV.API.Types.Date": string;

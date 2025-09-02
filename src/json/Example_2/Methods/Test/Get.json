@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Тест долго ответа сервера"
+                "title": "Тест долго ответа сервера",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Test\\Get"
             },
             "Example_2.Methods.Test.Get.Exec": {
                 "type": "integer"

@@ -12,7 +12,7 @@
                 "properties": {},
                 "required": [],
                 "title": "Нужно для обратной совместимости с приложениями",
-                "description": "@deprecated",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Xml\\Get",
                 "deprecated": true
             },
             "Users_2.Methods.Xml.Get.Exec": {

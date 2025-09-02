@@ -11,7 +11,7 @@ export interface components {
          * Получить дополнительные параметры расписания
          *
          *     Для каждого типа могут быть свои параметры
-         * @description @see Schedule_2\Mods\Settings
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Get
          */
         "Schedule_2.Methods.Settings.Get": {
             /**

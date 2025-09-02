@@ -48,7 +48,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение доступа к акаунту пользователя в режиме \"призрак\""
+                "title": "Получение доступа к акаунту пользователя в режиме \"призрак\"",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Ghost\\Get"
             },
             "Admin_2.Methods.Ghost.Get.Exec": {
                 "type": "never"

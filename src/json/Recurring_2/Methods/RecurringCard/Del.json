@@ -18,7 +18,8 @@
                 "required": [
                     "card_id"
                 ],
-                "title": "Удалить привязанную карту (system = card)"
+                "title": "Удалить привязанную карту (system = card)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Recurring_2\\Methods\\RecurringCard\\Del"
             },
             "Recurring_2.Methods.RecurringCard.Del.Exec": {
                 "nullable": true

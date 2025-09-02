@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Скачивание реестра исходящих операций
-         * @description @POST string month - месяц в формате: YYYY-mm
-         *     столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Operations\Export\Get
          */
         "Admin_2.Methods.Accounting.Operations.Export.Get": {
             /** Месяц */

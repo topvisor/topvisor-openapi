@@ -399,7 +399,8 @@
                     "Hint_not_PageSpeed_Insights_API_key_1",
                     "Hint_not_PageSpeed_Insights_API_key_2",
                     "Hint_not_PageSpeed_Insights_API_key_3"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Audit\\Scan\\En"
             }
         }
     }

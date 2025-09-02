@@ -27,7 +27,8 @@
                     "project_id",
                     "searcher_key"
                 ],
-                "title": "Добавление ПС"
+                "title": "Добавление ПС",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Add"
             },
             "Positions_2.Methods.Searchers.Add.Exec": {
                 "nullable": true

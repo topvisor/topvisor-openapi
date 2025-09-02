@@ -51,7 +51,8 @@
                     "subdomain",
                     "path_mask"
                 ],
-                "title": "Изменение правила редиректа (для админов)"
+                "title": "Изменение правила редиректа (для админов)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Redirects\\Edit"
             },
             "Content_2.Methods.Redirects.Edit.Exec": {
                 "nullable": true,

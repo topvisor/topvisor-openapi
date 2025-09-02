@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Поле, возвращаемое в snapshotsData
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\PositionsField
          * @enum {string}
          */
         "Snapshots_2.Types.History.PositionsField": "url" | "domain" | "snippet_title" | "snippet_body" | "snippet_ext";

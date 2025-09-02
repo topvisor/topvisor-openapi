@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение даты следующего списания по тарифу */
+        /**
+         * Изменение даты следующего списания по тарифу
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\TariffChangeExpire\Edit
+         */
         "Admin_2.Methods.TariffChangeExpire.Edit": {
             /** Дата следующего списания по тарифу */
             state_time_end: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];

@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление региона */
+        /**
+         * Удаление региона
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Del
+         */
         "Positions_2.Methods.Searchers.Regions.Del": {
             /** Id проекта */
             project_id: number;

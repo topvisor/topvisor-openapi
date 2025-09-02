@@ -23,7 +23,8 @@
                     }
                 },
                 "required": [],
-                "title": "Редактирование пользователей, объект admin_users"
+                "title": "Редактирование пользователей, объект admin_users",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Edit"
             },
             "Admin_2.Methods.Users.Edit.Exec": {
                 "nullable": true

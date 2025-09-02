@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип графика
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\ByUrl\Charts\Domains\Type
          * @enum {string}
          */
         "Competitors_2.Types.ByUrl.Charts.Domains.Type": "small" | "summary" | "count_keywords" | "avg_position" | "visibility" | "sum_traffic" | "sum_traffic_forecast" | "sum_month_cost_rub" | "sum_month_cost_usd";

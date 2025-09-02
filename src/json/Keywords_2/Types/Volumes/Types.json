@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Volumes/Type.json#/components/schemas/Keywords_2.Types.Volumes.Type"
                 },
-                "title": "Типы частоты"
+                "title": "Типы частоты",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\Types"
             }
         }
     }

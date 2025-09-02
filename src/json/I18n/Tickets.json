@@ -292,7 +292,8 @@
                     "Button_change_review",
                     "Online",
                     "Visited"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Tickets\\En"
             }
         }
     }

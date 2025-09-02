@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../../Tpvsr_2/Types/Stat/Dimension/Type.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Type"
                 },
-                "title": "Типы статистики кликов по ссылке"
+                "title": "Типы статистики кликов по ссылке",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Types"
             }
         }
     }

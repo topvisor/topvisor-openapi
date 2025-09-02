@@ -12,7 +12,8 @@
                 "items": {
                     "type": "string"
                 },
-                "title": "Список имен полей"
+                "title": "Список имен полей",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsNames"
             }
         }
     }

@@ -18,7 +18,8 @@
                 "required": [
                     "quiz_id"
                 ],
-                "title": "Получение участников теста"
+                "title": "Получение участников теста",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\ResultsUsers\\Get"
             },
             "Quiz_2.Methods.ResultsUsers.Get.Exec": {
                 "nullable": true,

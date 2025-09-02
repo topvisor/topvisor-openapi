@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт регионов (CSV)
+        /**
+         * Экспорт регионов (CSV)
          *
-         *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth] */
+         *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Export\Get
+         */
         "Positions_2.Methods.Searchers.Regions.Export.Get": {
             /** Id проекта */
             project_id: number;

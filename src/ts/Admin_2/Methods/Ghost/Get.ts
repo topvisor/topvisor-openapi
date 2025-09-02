@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение доступа к акаунту пользователя в режиме "призрак" */
+        /**
+         * Получение доступа к акаунту пользователя в режиме "призрак"
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Ghost\Get
+         */
         "Admin_2.Methods.Ghost.Get": {
             /** UserId, email или ИНН пользователя (параметр взаимоисключающий с project_id) */
             user_search?: string | null;

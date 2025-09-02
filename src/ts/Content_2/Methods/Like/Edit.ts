@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование статуса лайка для страницы */
+        /**
+         * Редактирование статуса лайка для страницы
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Like\Edit
+         */
         "Content_2.Methods.Like.Edit": {
             /** Поддомен страницы */
             subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];

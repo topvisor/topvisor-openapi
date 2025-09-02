@@ -27,7 +27,8 @@
                     null,
                     null
                 ],
-                "title": "Тип отчета радара"
+                "title": "Тип отчета радара",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Settings\\WatcherType"
             }
         }
     }

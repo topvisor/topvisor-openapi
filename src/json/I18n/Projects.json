@@ -1225,7 +1225,8 @@
                     "Sort_by_lphabetically",
                     "Project_url",
                     "Enter_location"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Projects\\En"
             }
         }
     }

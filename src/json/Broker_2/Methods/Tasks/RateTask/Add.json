@@ -18,7 +18,8 @@
                 "required": [
                     "campaign_tv_id"
                 ],
-                "title": "Ручной запуск корректировки"
+                "title": "Ручной запуск корректировки",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Tasks\\RateTask\\Add"
             },
             "Broker_2.Methods.Tasks.RateTask.Add.Exec": {
                 "nullable": true,

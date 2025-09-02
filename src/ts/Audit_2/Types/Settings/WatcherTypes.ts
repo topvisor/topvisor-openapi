@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Типы отчетов радара
-         * @description @see WatcherType
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Settings\WatcherTypes
          */
         "Audit_2.Types.Settings.WatcherTypes": import('./WatcherType.ts').components['schemas']['Audit_2.Types.Settings.WatcherType'][];
     };

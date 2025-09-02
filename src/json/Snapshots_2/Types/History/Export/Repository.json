@@ -18,7 +18,8 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Название директории для эспорта"
+                "title": "Название директории для эспорта",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\History\\Export\\Repository"
             }
         }
     }

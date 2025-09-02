@@ -27,7 +27,8 @@
                     "project_id",
                     "email"
                 ],
-                "title": "Отмена передачи проекта"
+                "title": "Отмена передачи проекта",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\ChangeOwner\\Del"
             },
             "Projects_2.Methods.Rights.ChangeOwner.Del.Exec": {
                 "nullable": true,

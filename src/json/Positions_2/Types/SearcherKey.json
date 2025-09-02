@@ -42,7 +42,8 @@
                     null,
                     null
                 ],
-                "title": "Ключ поисковой системы для проверки позиций"
+                "title": "Ключ поисковой системы для проверки позиций",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Types\\SearcherKey"
             }
         }
     }

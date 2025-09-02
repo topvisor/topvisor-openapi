@@ -41,7 +41,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Изменение шаблона"
+                "title": "Изменение шаблона",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Edit"
             },
             "Templates_2.Methods.Edit.Exec": {
                 "type": "integer"

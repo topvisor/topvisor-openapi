@@ -7,12 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** URL не в punycode, может содержать UTF-символы:
+        /**
+         * URL не в punycode, может содержать UTF-символы:
          *     - без "<" и ">"
          *
          *     Будет проивзедено автоматическое приведение к формату
          *
-         *     Разрешен ввод пустой строки, для удаления значения url */
+         *     Разрешен ввод пустой строки, для удаления значения url
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlUTF
+         */
         "TV.API.Types.UrlUTF": string;
     };
     responses: never;

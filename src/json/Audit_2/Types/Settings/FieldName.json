@@ -81,7 +81,8 @@
                     null,
                     null
                 ],
-                "title": "Имя настройки для интсрумента аудита"
+                "title": "Имя настройки для интсрумента аудита",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Settings\\FieldName"
             }
         }
     }

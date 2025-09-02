@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
+        /**
+         * Получение URL к карте сайта по файлу robots.txt для указанного домена
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Import\RecognizeLinkSitemapXml\Get
+         */
         "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get": {
             /** Домен */
             domain: string;

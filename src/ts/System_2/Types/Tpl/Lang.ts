@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Язык шаблона
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Tpl\Lang
          * @enum {string}
          */
         "System_2.Types.Tpl.Lang": "ru" | "en" | "";

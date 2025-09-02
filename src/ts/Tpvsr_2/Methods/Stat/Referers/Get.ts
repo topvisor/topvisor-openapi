@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение всех источников по индексу источника */
+        /**
+         * Получение всех источников по индексу источника
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Stat\Referers\Get
+         */
         "Tpvsr_2.Methods.Stat.Referers.Get": {
             /** Хэш ссылки */
             hash: string;

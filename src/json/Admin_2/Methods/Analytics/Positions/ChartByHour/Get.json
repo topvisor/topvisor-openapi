@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение числа проверок за месяц по часам"
+                "title": "Получение числа проверок за месяц по часам",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Positions\\ChartByHour\\Get"
             },
             "Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec": {
                 "type": "object",

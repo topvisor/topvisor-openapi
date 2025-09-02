@@ -18,7 +18,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Закрытие договора (оферту закрыть невозможно)"
+                "title": "Закрытие договора (оферту закрыть невозможно)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\Del"
             },
             "Bank_2.Methods.Requisites.Del.Exec": {
                 "nullable": true

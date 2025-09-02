@@ -55,7 +55,8 @@
                     "searcher_key",
                     "search"
                 ],
-                "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов"
+                "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\Regions\\Get"
             },
             "System_2.Methods.Common.Regions.Get.Exec": {
                 "nullable": true,

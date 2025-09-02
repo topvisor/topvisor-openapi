@@ -7,12 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации о регистрации домена
+        /**
+         * Получение информации о регистрации домена
          *
          *     Возвращает объект с параметрами:
          *     - wait_time, если данные не готовы
          *     - created, если данные готовы
-         *     - paidtill, если данные готовы */
+         *     - paidtill, если данные готовы
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Registrar\Get
+         */
         "Projects_2.Methods.Status.Registrar.Get": {
             /** Домен */
             domain: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];

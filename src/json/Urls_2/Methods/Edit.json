@@ -59,7 +59,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение urls"
+                "title": "Изменение urls",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Edit"
             },
             "Urls_2.Methods.Edit.Exec": {
                 "nullable": true,

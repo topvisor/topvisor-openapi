@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение языка */
+        /**
+         * Изменение языка
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Lang\Edit
+         */
         "Users_2.Methods.Profile.Lang.Edit": {
             /** Новый язык */
             lang: import('../../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];

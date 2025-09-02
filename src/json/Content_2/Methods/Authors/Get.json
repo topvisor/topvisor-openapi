@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение данных об авторе"
+                "title": "Получение данных об авторе",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Authors\\Get"
             },
             "Content_2.Methods.Authors.Get.Exec": {
                 "nullable": true

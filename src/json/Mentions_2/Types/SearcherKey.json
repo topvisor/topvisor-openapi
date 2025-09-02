@@ -24,7 +24,8 @@
                     null,
                     null
                 ],
-                "title": "Доступные ключи поисковика"
+                "title": "Доступные ключи поисковика",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Types\\SearcherKey"
             }
         }
     }

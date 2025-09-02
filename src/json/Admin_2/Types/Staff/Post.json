@@ -36,7 +36,8 @@
                     null,
                     null
                 ],
-                "title": "Позиция или права сотрудника"
+                "title": "Позиция или права сотрудника",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Types\\Staff\\Post"
             }
         }
     }

@@ -38,7 +38,8 @@
                     "searcher_key",
                     "type"
                 ],
-                "title": "Определитель с настройками региона для проверки частоты запросов"
+                "title": "Определитель с настройками региона для проверки частоты запросов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\Qualifier"
             }
         }
     }

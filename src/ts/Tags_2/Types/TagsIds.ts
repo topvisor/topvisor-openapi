@@ -11,7 +11,7 @@ export interface components {
          * Список id тегов
          *
          *     Тип массива: TagId[]
-         * @description @see TagId
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Types\TagsIds
          */
         "Tags_2.Types.TagsIds": import('./TagId.ts').components['schemas']['Tags_2.Types.TagId'][];
     };

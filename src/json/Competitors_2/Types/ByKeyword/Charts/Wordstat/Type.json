@@ -36,7 +36,8 @@
                     "Стоимость клика в долларах",
                     "Количество результатов"
                 ],
-                "title": "Тип графика"
+                "title": "Тип графика",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\Wordstat\\Type"
             }
         }
     }

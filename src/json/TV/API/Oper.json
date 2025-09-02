@@ -27,7 +27,8 @@
                     null,
                     null
                 ],
-                "title": "Тип операции метода API"
+                "title": "Тип операции метода API",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Oper"
             }
         }
     }

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тэги для установки
-         * @description @see Tag
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Tags
          */
         "Tpvsr_2.Types.Tags": import('./Tag.ts').components['schemas']['Tpvsr_2.Types.Tag'][];
     };

@@ -7,12 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Состояние рекуррентного платежа
+        /**
+         * Состояние рекуррентного платежа
          *
          *     - создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить
          *     - используется при выводе состояния подписки
          *
-         *     Определяет логику работы с рекуррентными платежами */
+         *     Определяет логику работы с рекуррентными платежами
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Objects\Requisites\Payment\RecurrentState
+         */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             /** Начало расчетного периода, обычно время оплаты */
             timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;

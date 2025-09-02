@@ -36,7 +36,8 @@
                     null,
                     null
                 ],
-                "title": "День недели, в который должен производиться запуск cron"
+                "title": "День недели, в который должен производиться запуск cron",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Types\\Day"
             }
         }
     }

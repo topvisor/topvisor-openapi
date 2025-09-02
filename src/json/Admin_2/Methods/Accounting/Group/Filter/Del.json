@@ -23,7 +23,8 @@
                     "group_id",
                     "filter_id"
                 ],
-                "title": "Удаление фильтра группы"
+                "title": "Удаление фильтра группы",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Group\\Filter\\Del"
             },
             "Admin_2.Methods.Accounting.Group.Filter.Del.Exec": {
                 "nullable": true

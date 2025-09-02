@@ -36,7 +36,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Удаление конкурентов\n\nОбязательный параметр или ids или urls"
+                "title": "Удаление конкурентов\n\nОбязательный параметр или ids или urls",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Del"
             },
             "Projects_2.Methods.Competitors.Del.Exec": {
                 "type": "integer"

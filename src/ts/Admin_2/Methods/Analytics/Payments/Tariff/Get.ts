@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение суммы оплат по тарифам за период */
+        /**
+         * Получение суммы оплат по тарифам за период
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Payments\Tariff\Get
+         */
         "Admin_2.Methods.Analytics.Payments.Tariff.Get": {
             period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             currency: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];

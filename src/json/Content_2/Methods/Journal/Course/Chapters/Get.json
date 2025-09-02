@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение модулей курса\n\nДополнительные поля:\n - lessons - см. includeLessons()"
+                "title": "Получение модулей курса\n\nДополнительные поля:\n - lessons - см. includeLessons()",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Chapters\\Get"
             },
             "Content_2.Methods.Journal.Course.Chapters.Get.Exec": {
                 "type": "array",

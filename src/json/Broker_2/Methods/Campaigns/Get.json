@@ -43,7 +43,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка рекламных кампаний"
+                "title": "Получение списка рекламных кампаний",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Campaigns\\Get"
             },
             "Broker_2.Methods.Campaigns.Get.Exec": {
                 "type": "array",

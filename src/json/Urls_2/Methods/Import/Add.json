@@ -86,7 +86,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Импортирование urls\n\nДоступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags"
+                "title": "Импортирование urls\n\nДоступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Import\\Add"
             },
             "Urls_2.Methods.Import.Add.Exec": {
                 "title": "Информация об импортированных urls",

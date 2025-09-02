@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Статус квиза
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Types\Quiz\Status
          * @enum {string}
          */
         "Quiz_2.Types.Quiz.Status": "DEV" | "ACTIVE" | "DELETED";

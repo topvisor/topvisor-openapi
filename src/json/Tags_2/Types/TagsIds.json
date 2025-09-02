@@ -13,7 +13,7 @@
                     "$ref": "../../Tags_2/Types/TagId.json#/components/schemas/Tags_2.Types.TagId"
                 },
                 "title": "Список id тегов\n\nТип массива: TagId[]",
-                "description": "@see TagId"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tags_2\\Types\\TagsIds"
             }
         }
     }

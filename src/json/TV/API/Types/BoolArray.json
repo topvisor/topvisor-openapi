@@ -13,7 +13,7 @@
                     "type": "boolean"
                 },
                 "title": "Тип массива: boolean\n\nПринимает: 0|1|false|true",
-                "description": "@extends AbstractTypedArray<boolean>\n@method bool[] getValues()\n@method bool current()"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\BoolArray"
             }
         }
     }

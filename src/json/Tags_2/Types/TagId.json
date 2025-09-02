@@ -75,7 +75,8 @@
                     null,
                     null
                 ],
-                "title": "Id тега"
+                "title": "Id тега",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tags_2\\Types\\TagId"
             }
         }
     }

@@ -11,7 +11,7 @@ export interface components {
          * Имя лимита
          *
          *     Гайдлайн: Имя лимита начинается с имени сервиса и характеризуется именем обеъкта или именем метода
-         * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Limit\Name
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Limit.Name": "positions_check" | "positions_check_manual" | "keywords_volumes" | "keywords_collect" | "positions_tasks" | "projects" | "projects_rights" | "projects_competitors" | "projects_archive" | "api";

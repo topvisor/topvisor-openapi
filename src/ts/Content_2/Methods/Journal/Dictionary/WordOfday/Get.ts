@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение стаьи для "Слово дня" в модуле SEO словарь */
+        /**
+         * Получение стаьи для "Слово дня" в модуле SEO словарь
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get
+         */
         "Content_2.Methods.Journal.Dictionary.WordOfday.Get": {
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

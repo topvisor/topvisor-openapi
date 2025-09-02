@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сводки числа партнеров по числу рефералов */
+        /**
+         * Получение сводки числа партнеров по числу рефералов
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get
+         */
         "Admin_2.Methods.Affiliate.ReferrersByReferrals.Get": {
             /** Год для сводки */
             year: number;

@@ -25,7 +25,8 @@
                     "provider",
                     "project_id"
                 ],
-                "title": "Удаление интеграции"
+                "title": "Удаление интеграции",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Del"
             },
             "Tpa_2.Methods.Del.Exec": {
                 "nullable": true

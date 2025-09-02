@@ -169,7 +169,8 @@
                     "view",
                     "date"
                 ],
-                "title": "Экспорт запросов по доменам в проект\n\nРаботает только с отчетами по URL по списку доменов с оплаченной схожестью"
+                "title": "Экспорт запросов по доменам в проект\n\nРаботает только с отчетами по URL по списку доменов с оплаченной схожестью",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Export\\ByDomains\\TableToProject\\Add"
             },
             "Competitors_2.Methods.Export.ByDomains.TableToProject.Add.Exec": {
                 "type": "array"

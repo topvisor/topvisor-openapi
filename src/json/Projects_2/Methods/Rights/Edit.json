@@ -51,7 +51,8 @@
                 "required": [
                     "email"
                 ],
-                "title": "Изменение прав на проект"
+                "title": "Изменение прав на проект",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\Edit"
             },
             "Projects_2.Methods.Rights.Edit.Exec": {
                 "nullable": true,

@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Определители с настройками для подбора
-         * @description @extends API\Types\AbstractObjectArray<Qualifier>
-         *     @method Qualifier[] getValues()
-         *     @method Qualifier current()
-         *     @see Qualifier
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\Qualifiers
          */
         "Keywords_2.Types.Collect.Qualifiers": import('./Qualifier.ts').components['schemas']['Keywords_2.Types.Collect.Qualifier'][];
     };

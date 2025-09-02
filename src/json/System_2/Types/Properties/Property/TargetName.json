@@ -18,7 +18,8 @@
                 "x-enum-descriptions": [
                     "Проекты"
                 ],
-                "title": "Категория данных"
+                "title": "Категория данных",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Properties\\Property\\TargetName"
             }
         }
     }

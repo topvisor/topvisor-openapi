@@ -44,7 +44,8 @@
                     "query",
                     "by_type"
                 ],
-                "title": "Получение даты проверок по заданному критерию (последние 12)"
+                "title": "Получение даты проверок по заданному критерию (последние 12)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Dates\\Get"
             },
             "Competitors_2.Methods.Dates.Get.Exec": {
                 "type": "array"

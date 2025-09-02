@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта */
+        /**
+         * Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\EmailsHints\Get
+         */
         "Schedule_2.Methods.Settings.EmailsHints.Get": {
             search?: string;
         };

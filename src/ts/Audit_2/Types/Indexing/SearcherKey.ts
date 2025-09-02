@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Ключ поисковой системы для индексации
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Indexing\SearcherKey
          * @enum {string}
          */
         "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5";

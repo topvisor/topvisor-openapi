@@ -27,7 +27,8 @@
                     "id",
                     "url"
                 ],
-                "title": "Редактирование ссылки проекта"
+                "title": "Редактирование ссылки проекта",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Url\\Edit"
             },
             "Projects_2.Methods.Projects.Url.Edit.Exec": {
                 "type": "integer"

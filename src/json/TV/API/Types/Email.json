@@ -10,7 +10,8 @@
             "TV.API.Types.Email": {
                 "type": "string",
                 "title": "E-mail",
-                "example": "name@example.com"
+                "example": "name@example.com",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Email"
             }
         }
     }

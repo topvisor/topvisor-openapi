@@ -27,7 +27,8 @@
                     "s",
                     "ms",
                     "KB"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Units\\En"
             }
         }
     }

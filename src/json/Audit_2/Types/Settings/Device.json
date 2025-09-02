@@ -42,7 +42,8 @@
                     null,
                     null
                 ],
-                "title": "Устройство для выполнения аудита и радара"
+                "title": "Устройство для выполнения аудита и радара",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Settings\\Device"
             }
         }
     }

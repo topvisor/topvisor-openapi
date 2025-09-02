@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание сертификата
+        /**
+         * Создание сертификата
          *
-         *     Можно создавать только для пройденных курсов */
+         *     Можно создавать только для пройденных курсов
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Add
+         */
         "Content_2.Methods.Journal.Course.Certificates.Add": {
             /** Url курса относительно домена */
             course_url: string;

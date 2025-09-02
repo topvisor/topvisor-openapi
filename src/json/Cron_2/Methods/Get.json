@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка имен сервисов, в которых есть команды cron"
+                "title": "Получение списка имен сервисов, в которых есть команды cron",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Methods\\Services\\Get"
             },
             "Cron_2.Methods.Get.Exec": {
                 "title": "Список имен сервисов",

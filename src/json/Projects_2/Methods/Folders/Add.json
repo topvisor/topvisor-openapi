@@ -18,7 +18,8 @@
                 "required": [
                     "name"
                 ],
-                "title": "Добавление папки"
+                "title": "Добавление папки",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\Add"
             },
             "Projects_2.Methods.Folders.Add.Exec": {
                 "title": "@returns ?int id добавленной папки",

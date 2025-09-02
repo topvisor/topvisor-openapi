@@ -7,6 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Params\DebugTrait */
         "Admin_2.Params.DebugTrait": {
             /**
              * Включить режим отладки

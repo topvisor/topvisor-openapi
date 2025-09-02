@@ -24,7 +24,8 @@
                     "Нейтральное",
                     "Хорошее"
                 ],
-                "title": "Тональность"
+                "title": "Тональность",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Types\\Sentiment"
             }
         }
     }

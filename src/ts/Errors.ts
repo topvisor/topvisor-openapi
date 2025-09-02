@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Список ошибок */
+        /**
+         * Список ошибок
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\Errors
+         */
         Errors: import('./Error.ts').components['schemas']['Error'][];
     };
     responses: never;

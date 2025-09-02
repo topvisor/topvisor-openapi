@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "Error.json#/components/schemas/Error"
                 },
-                "title": "Список ошибок"
+                "title": "Список ошибок",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\Errors"
             }
         }
     }

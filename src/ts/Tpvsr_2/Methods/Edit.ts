@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование ссылки */
+        /**
+         * Редактирование ссылки
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Methods\Edit
+         */
         "Tpvsr_2.Methods.Edit": {
             /** Избранная ссылка */
             favorite?: boolean | null;

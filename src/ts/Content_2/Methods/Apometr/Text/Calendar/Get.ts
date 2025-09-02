@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение календаря текстовых апдейтов */
+        /**
+         * Получение календаря текстовых апдейтов
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Apometr\Text\Calendar\Get
+         */
         "Content_2.Methods.Apometr.Text.Calendar.Get": {
             /** Дата календаря */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;

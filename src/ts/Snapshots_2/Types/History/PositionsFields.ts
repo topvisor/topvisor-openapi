@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Поля, возвращаемые в snapshotsData */
+        /**
+         * Поля, возвращаемые в snapshotsData
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\PositionsFields
+         */
         "Snapshots_2.Types.History.PositionsFields": import('./PositionsField.ts').components['schemas']['Snapshots_2.Types.History.PositionsField'][];
     };
     responses: never;

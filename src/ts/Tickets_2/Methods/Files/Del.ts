@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление временных файлов для тикета
+        /**
+         * Удаление временных файлов для тикета
          *
-         *     Процесс создания поста не завершен */
+         *     Процесс создания поста не завершен
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Del
+         */
         "Tickets_2.Methods.Files.Del": {
             /** Название дирректории */
             name: string;

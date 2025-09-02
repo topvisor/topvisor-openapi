@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Email[]
-         * @description @extends AbstractStringArray<Email>
-         *     @method Email[] getValues()
-         *     @method Email current()
-         *     @see \TV\API\Types\Email
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\EmailArray
          */
         "TV.API.Types.EmailArray": import('./Email.ts').components['schemas']['TV.API.Types.Email'][];
     };

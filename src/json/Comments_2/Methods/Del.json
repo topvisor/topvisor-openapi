@@ -18,7 +18,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Удаление комментария\n\nУдалять комментарии можно только в течение ограниченного времени\n\nАдмины могут удалять комментарии в любое время"
+                "title": "Удаление комментария\n\nУдалять комментарии можно только в течение ограниченного времени\n\nАдмины могут удалять комментарии в любое время",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Comments_2\\Methods\\Del"
             },
             "Comments_2.Methods.Del.Exec": {
                 "nullable": true,

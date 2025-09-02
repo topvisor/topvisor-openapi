@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка правил на проверку */
+        /**
+         * Отправка правил на проверку
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Methods\Checker\Go\Edit
+         */
         "Mentions_2.Methods.Checker.Go.Edit": {
             /** Ключи источников (фильтр) */
             searchers_keys?: import('../../../Types/SearchersKeys.ts').components['schemas']['Mentions_2.Types.SearchersKeys'] | null;

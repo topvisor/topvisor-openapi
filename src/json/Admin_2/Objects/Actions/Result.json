@@ -33,7 +33,8 @@
                     "executionTime",
                     "memory"
                 ],
-                "title": "Результат выполнения действия"
+                "title": "Результат выполнения действия",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Objects\\Actions\\Result"
             }
         }
     }

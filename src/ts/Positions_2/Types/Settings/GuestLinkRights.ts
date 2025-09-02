@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Права для гостевых ссылок */
+        /**
+         * Права для гостевых ссылок
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\Settings\GuestLinkRights
+         */
         "Positions_2.Types.Settings.GuestLinkRights": import('./GuestLinkRight.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRight'][];
     };
     responses: never;

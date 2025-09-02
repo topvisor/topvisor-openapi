@@ -36,7 +36,8 @@
                     "service",
                     "target_id"
                 ],
-                "title": "Добавление примечания"
+                "title": "Добавление примечания",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Annotations_2\\Methods\\Add"
             },
             "Annotations_2.Methods.Add.Exec": {
                 "nullable": true,

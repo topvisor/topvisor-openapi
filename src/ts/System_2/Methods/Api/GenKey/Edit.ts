@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Генерация нового API ключа */
+        /**
+         * Генерация нового API ключа
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Api\GenKey\Edit
+         */
         "System_2.Methods.Api.GenKey.Edit": Record<string, never>;
         "System_2.Methods.Api.GenKey.Edit.Exec": string;
     };

@@ -696,7 +696,8 @@
                     "Resend",
                     "Domain_renewal_not_needed_refresh_page",
                     "Transfer_is_available_for_2nd_lvl_domains"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Domains\\En"
             }
         }
     }

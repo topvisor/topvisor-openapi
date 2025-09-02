@@ -100,7 +100,8 @@
                     }
                 },
                 "required": [],
-                "title": "Добавление достижения"
+                "title": "Добавление достижения",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Ranks\\Add"
             },
             "Admin_2.Methods.Users.Ranks.Add.Exec": {
                 "nullable": true,

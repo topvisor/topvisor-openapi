@@ -25,7 +25,8 @@
                 "required": [
                     "type"
                 ],
-                "title": "Получение списка тегов"
+                "title": "Получение списка тегов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tags_2\\Methods\\Get"
             },
             "Tags_2.Methods.Get.Exec": {
                 "nullable": true,

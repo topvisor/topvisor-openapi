@@ -34,7 +34,8 @@
                     "currency",
                     "limit"
                 ],
-                "title": "Получение суммы оплат по тарифам за период"
+                "title": "Получение суммы оплат по тарифам за период",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Payments\\Tariff\\Get"
             },
             "Admin_2.Methods.Analytics.Payments.Tariff.Get.Exec": {
                 "nullable": true,

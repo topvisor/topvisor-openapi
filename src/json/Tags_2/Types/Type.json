@@ -33,7 +33,8 @@
                     null,
                     null
                 ],
-                "title": "Тип тега, к каким объектам применяется"
+                "title": "Тип тега, к каким объектам применяется",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tags_2\\Types\\Type"
             }
         }
     }

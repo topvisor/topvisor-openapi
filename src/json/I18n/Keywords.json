@@ -1531,7 +1531,8 @@
                     "Fitler_by_keywords_for_check",
                     "All_keywords",
                     "Select_source"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Keywords\\En"
             }
         }
     }

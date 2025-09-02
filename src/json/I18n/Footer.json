@@ -403,7 +403,8 @@
                     "Add_numbers_search_results",
                     "Install_for",
                     "Email_us_contact"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Footer\\En"
             }
         }
     }

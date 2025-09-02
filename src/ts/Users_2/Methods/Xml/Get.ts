@@ -10,7 +10,7 @@ export interface components {
         /**
          * Нужно для обратной совместимости с приложениями
          * @deprecated
-         * @description @deprecated
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Xml\Get
          */
         "Users_2.Methods.Xml.Get": Record<string, never>;
         "Users_2.Methods.Xml.Get.Exec": unknown[] | null;

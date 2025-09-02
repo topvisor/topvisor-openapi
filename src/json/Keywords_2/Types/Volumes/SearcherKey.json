@@ -21,7 +21,8 @@
                     null,
                     null
                 ],
-                "title": "Ключ поисковой системы для проверки частоты"
+                "title": "Ключ поисковой системы для проверки частоты",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\SearcherKey"
             }
         }
     }

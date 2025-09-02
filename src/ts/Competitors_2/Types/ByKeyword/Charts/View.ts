@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Представление отчета
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\ByKeyword\Charts\View
          * @enum {string}
          */
         "Competitors_2.Types.ByKeyword.Charts.View": "wordstat" | "leaders" | "similar";

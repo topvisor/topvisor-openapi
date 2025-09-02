@@ -68,7 +68,8 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Привязать расписание к объекту"
+                "title": "Привязать расписание к объекту",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Methods\\Edit"
             },
             "Schedule_2.Methods.Edit.Exec": {
                 "nullable": true,

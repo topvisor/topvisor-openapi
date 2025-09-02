@@ -35,7 +35,8 @@
                     "project_id",
                     "name"
                 ],
-                "title": "Добавление правила"
+                "title": "Добавление правила",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Add"
             },
             "Mentions_2.Methods.Rules.Add.Exec": {
                 "type": "integer"

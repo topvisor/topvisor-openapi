@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Произвести выбор счетчика */
+        /**
+         * Произвести выбор счетчика
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit
+         */
         "Tpa_2.Methods.SetCounterId.Edit": {
             provider: import('../../Types/Provider.ts').components['schemas']['Tpa_2.Types.Provider'];
             cid: string;

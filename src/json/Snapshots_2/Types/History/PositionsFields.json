@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Snapshots_2/Types/History/PositionsField.json#/components/schemas/Snapshots_2.Types.History.PositionsField"
                 },
-                "title": "Поля, возвращаемые в snapshotsData"
+                "title": "Поля, возвращаемые в snapshotsData",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\History\\PositionsFields"
             }
         }
     }

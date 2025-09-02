@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение темы сайта */
+        /**
+         * Изменение темы сайта
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Theme\Edit
+         */
         "Users_2.Methods.Profile.Theme.Edit": {
             /** Тема сайта */
             theme: string;

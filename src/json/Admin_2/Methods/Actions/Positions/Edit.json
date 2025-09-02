@@ -32,7 +32,8 @@
                     "date",
                     "test"
                 ],
-                "title": "Востановление удаленной проверки"
+                "title": "Востановление удаленной проверки",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Positions\\Edit"
             },
             "Admin_2.Methods.Actions.Positions.Edit.Exec": {
                 "allOf": [

@@ -23,7 +23,8 @@
                 "required": [
                     "campaign_tv_id"
                 ],
-                "title": "Получение групп рекламной кампании для редактора"
+                "title": "Получение групп рекламной кампании для редактора",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Groups\\Editor\\Get"
             },
             "Broker_2.Methods.Groups.Editor.Get.Exec": {
                 "type": "array"

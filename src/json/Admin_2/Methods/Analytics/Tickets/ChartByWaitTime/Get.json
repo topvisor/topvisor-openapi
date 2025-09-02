@@ -35,7 +35,8 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистики по среднему времени ожидания ответа на вопросы в тикетах"
+                "title": "Получение статистики по среднему времени ожидания ответа на вопросы в тикетах",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByWaitTime\\Get"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec": {
                 "type": "object",

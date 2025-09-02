@@ -13,7 +13,7 @@
                     "type": "integer"
                 },
                 "title": "Тип массива: int\n\nПринимает: Любые целые числа и числа в строках",
-                "description": "@extends AbstractTypedArray<int>\n@method int[] getValues()\n@method int current()"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\IntArray"
             }
         }
     }

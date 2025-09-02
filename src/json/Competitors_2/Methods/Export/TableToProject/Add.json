@@ -166,7 +166,8 @@
                     "view",
                     "date"
                 ],
-                "title": "Экспорт запросов в проект"
+                "title": "Экспорт запросов в проект",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Export\\TableToProject\\Add"
             },
             "Competitors_2.Methods.Export.TableToProject.Add.Exec": {
                 "nullable": true

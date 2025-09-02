@@ -18,7 +18,8 @@
                 "required": [
                     "post"
                 ],
-                "title": "Получение из бд данные сотрудников указанного поста"
+                "title": "Получение из бд данные сотрудников указанного поста",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\ByPost\\Get"
             },
             "Admin_2.Methods.Staff.ByPost.Get.Exec": {
                 "type": "array",

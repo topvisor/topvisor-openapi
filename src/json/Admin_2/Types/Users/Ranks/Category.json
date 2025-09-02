@@ -21,7 +21,8 @@
                     null,
                     null
                 ],
-                "title": "Категория пользовательского достижения"
+                "title": "Категория пользовательского достижения",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Types\\Users\\Ranks\\Category"
             }
         }
     }

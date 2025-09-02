@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение даты проверок по заданному критерию (последние 12) */
+        /**
+         * Получение даты проверок по заданному критерию (последние 12)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Dates\Get
+         */
         "Competitors_2.Methods.Dates.Get": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;

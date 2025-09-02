@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Positions_2/Types/Settings/GuestLinkRight.json#/components/schemas/Positions_2.Types.Settings.GuestLinkRight"
                 },
-                "title": "Права для гостевых ссылок"
+                "title": "Права для гостевых ссылок",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Types\\Settings\\GuestLinkRights"
             }
         }
     }

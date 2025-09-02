@@ -38,7 +38,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение вопроса"
+                "title": "Получение вопроса",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Questions\\Get"
             },
             "Quiz_2.Methods.Questions.Get.Exec": {
                 "title": "Получение вопроса",

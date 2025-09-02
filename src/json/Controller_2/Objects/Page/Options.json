@@ -37,7 +37,8 @@
                     "canonical",
                     "alternates"
                 ],
-                "title": "Основные опции страницы для <head>, такие, как title и description"
+                "title": "Основные опции страницы для <head>, такие, как title и description",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Controller_2\\Objects\\Page\\Options"
             }
         }
     }

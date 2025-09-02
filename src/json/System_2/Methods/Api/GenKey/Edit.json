@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Генерация нового API ключа"
+                "title": "Генерация нового API ключа",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Api\\GenKey\\Edit"
             },
             "System_2.Methods.Api.GenKey.Edit.Exec": {
                 "type": "string"

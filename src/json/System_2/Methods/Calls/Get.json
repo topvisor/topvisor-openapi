@@ -36,7 +36,8 @@
                 "required": [
                     "calls"
                 ],
-                "title": "Вызов нескольких методов в одном вызове"
+                "title": "Вызов нескольких методов в одном вызове",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Calls\\Get"
             },
             "System_2.Methods.Calls.Get.Exec": {
                 "type": "array"

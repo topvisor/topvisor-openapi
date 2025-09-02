@@ -28,7 +28,8 @@
                     "id",
                     "name"
                 ],
-                "title": "Установка имени конкурента"
+                "title": "Установка имени конкурента",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Name\\Edit"
             },
             "Projects_2.Methods.Competitors.Name.Edit.Exec": {
                 "type": "integer"

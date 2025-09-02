@@ -27,7 +27,8 @@
                     null,
                     null
                 ],
-                "title": "Типы токенов"
+                "title": "Типы токенов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Push\\Token\\Type"
             }
         }
     }

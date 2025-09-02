@@ -17,7 +17,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка телеграм аккаунтов\n\nПри указании project_id получает список телеграм аккаунтов по владельцу проекта"
+                "title": "Получение списка телеграм аккаунтов\n\nПри указании project_id получает список телеграм аккаунтов по владельцу проекта",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\TelegramAccounts\\Get"
             },
             "Users_2.Methods.TelegramAccounts.Get.Exec": {
                 "nullable": true,

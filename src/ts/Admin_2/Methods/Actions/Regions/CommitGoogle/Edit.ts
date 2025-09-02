@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавить регионы Google в сервис */
+        /**
+         * Добавить регионы Google в сервис
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Regions\CommitGoogle\Edit
+         */
         "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit": {
             /** Список регионов в формате:
              *

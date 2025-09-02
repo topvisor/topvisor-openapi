@@ -18,7 +18,8 @@
                 },
                 "required": [
                     "debug"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Params\\DebugTrait"
             }
         }
     }

@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Основные опции страницы для <head>, такие, как title и description */
+        /**
+         * Основные опции страницы для <head>, такие, как title и description
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Page\Options
+         */
         "Controller_2.Objects.Page.Options": {
             title: string;
             description: string;

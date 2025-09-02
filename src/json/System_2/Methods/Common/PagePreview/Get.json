@@ -47,7 +47,8 @@
                 "required": [
                     "url"
                 ],
-                "title": "Получение превью страницы\n\nВернет изображение в формате image/png\n\nСсылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}"
+                "title": "Получение превью страницы\n\nВернет изображение в формате image/png\n\nСсылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\PagePreview\\Get"
             },
             "System_2.Methods.Common.PagePreview.Get.Exec": {
                 "type": "never"

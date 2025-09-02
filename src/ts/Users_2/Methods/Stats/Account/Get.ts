@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение общего числа проектов / запросов (автоматических / ручных) */
+        /**
+         * Получение общего числа проектов / запросов (автоматических / ручных)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Stats\Account\Get
+         */
         "Users_2.Methods.Stats.Account.Get": {
             /** Какую часть от периода показать */
             period: number;

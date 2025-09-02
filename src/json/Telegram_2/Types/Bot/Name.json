@@ -27,7 +27,8 @@
                     null,
                     null
                 ],
-                "title": "Имя telegram бота"
+                "title": "Имя telegram бота",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Telegram_2\\Types\\Bot\\Name"
             }
         }
     }

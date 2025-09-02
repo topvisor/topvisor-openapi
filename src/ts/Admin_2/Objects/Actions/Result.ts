@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат выполнения действия */
+        /**
+         * Результат выполнения действия
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Objects\Actions\Result
+         */
         "Admin_2.Objects.Actions.Result": {
             /** Запущено ли дейсвтие в тестовом режиме */
             isTest: boolean;

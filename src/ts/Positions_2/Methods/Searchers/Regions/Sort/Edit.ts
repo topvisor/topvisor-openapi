@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Настройка сортировки регионов */
+        /**
+         * Настройка сортировки регионов
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Sort\Edit
+         */
         "Positions_2.Methods.Searchers.Regions.Sort.Edit": {
             /** Id проекта */
             project_id: number;

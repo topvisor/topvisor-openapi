@@ -36,7 +36,8 @@
                     null,
                     null
                 ],
-                "title": "Бразуер для получение информации"
+                "title": "Бразуер для получение информации",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Browser"
             }
         }
     }

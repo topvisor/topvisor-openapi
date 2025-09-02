@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение пути на аватар пользователя от корня сайта */
+        /**
+         * Получение пути на аватар пользователя от корня сайта
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Get
+         */
         "Users_2.Methods.Profile.Avatar.Get": Record<string, never>;
         "Users_2.Methods.Profile.Avatar.Get.Exec": string;
     };

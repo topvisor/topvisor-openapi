@@ -18,7 +18,8 @@
                 "required": [
                     "period"
                 ],
-                "title": "Получение общего числа проектов / запросов (автоматических / ручных)"
+                "title": "Получение общего числа проектов / запросов (автоматических / ручных)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Stats\\Account\\Get"
             },
             "Users_2.Methods.Stats.Account.Get.Exec": {
                 "nullable": true,

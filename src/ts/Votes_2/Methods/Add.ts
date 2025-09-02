@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Оставление отзыва */
+        /**
+         * Оставление отзыва
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Votes_2\Methods\Add
+         */
         "Votes_2.Methods.Add": {
             /** Поддомен с которого оставлен отзыв */
             subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];

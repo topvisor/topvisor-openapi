@@ -39,7 +39,8 @@
                     "url",
                     "rate"
                 ],
-                "title": "Оставление отзыва"
+                "title": "Оставление отзыва",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Votes_2\\Methods\\Add"
             },
             "Votes_2.Methods.Add.Exec": {
                 "nullable": true,

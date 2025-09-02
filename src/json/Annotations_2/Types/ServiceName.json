@@ -26,7 +26,8 @@
                     null,
                     null,
                     null
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Annotations_2\\Types\\ServiceName"
             }
         }
     }

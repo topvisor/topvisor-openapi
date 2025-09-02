@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Место откуда перешел пользователь
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Referrer
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Referrer": "social" | "sites" | "undefined" | "overall";

@@ -18,7 +18,8 @@
                 "required": [
                     "domain"
                 ],
-                "title": "Получение URL к карте сайта по файлу robots.txt для указанного домена"
+                "title": "Получение URL к карте сайта по файлу robots.txt для указанного домена",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Import\\RecognizeLinkSitemapXml\\Get"
             },
             "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec": {
                 "title": "URL к карте сайта",

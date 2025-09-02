@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Datetime[]
-         * @description @extends AbstractStringArray<Datetime>
-         *     @method Datetime[] getValues()
-         *     @method Datetime current()
-         *     @see \TV\API\Types\Datetime
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\DatetimeArray
          */
         "TV.API.Types.DatetimeArray": import('./Datetime.ts').components['schemas']['TV.API.Types.Datetime'][];
     };

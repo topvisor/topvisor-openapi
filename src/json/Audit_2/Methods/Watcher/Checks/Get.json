@@ -17,7 +17,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение проверок радара"
+                "title": "Получение проверок радара",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Watcher\\Checks\\Get"
             },
             "Audit_2.Methods.Watcher.Checks.Get.Exec": {
                 "title": "Список проверок радара",

@@ -44,7 +44,8 @@
                     "date2",
                     "org_id"
                 ],
-                "title": "Получение акта сверки (акты по предоплате выводятся в одном платеже)"
+                "title": "Получение акта сверки (акты по предоплате выводятся в одном платеже)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\PrintTotalReceipt\\Get"
             },
             "Bank_2.Methods.Requisites.PrintTotalReceipt.Get.Exec": {
                 "nullable": true

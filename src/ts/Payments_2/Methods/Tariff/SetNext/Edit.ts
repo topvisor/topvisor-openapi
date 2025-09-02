@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Смена тарифа со следующего месяца */
+        /**
+         * Смена тарифа со следующего месяца
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit
+         */
         "Payments_2.Methods.Tariff.SetNext.Edit": {
             /** Id тарифа */
             id: number;

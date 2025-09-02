@@ -1250,7 +1250,8 @@
                     "Promo_button_link",
                     "View_the_author_page",
                     "Plans_and_limits"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\User\\En"
             }
         }
     }

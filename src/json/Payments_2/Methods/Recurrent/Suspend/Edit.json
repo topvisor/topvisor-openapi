@@ -23,7 +23,8 @@
                     "payment_id",
                     "suspend"
                 ],
-                "title": "Управление приостановкой/возобновлением рекуррентных платежей"
+                "title": "Управление приостановкой/возобновлением рекуррентных платежей",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Recurrent\\Suspend\\Edit"
             },
             "Payments_2.Methods.Recurrent.Suspend.Edit.Exec": {
                 "nullable": true,

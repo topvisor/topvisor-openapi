@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка временных файлов, загруженных для тикета
+        /**
+         * Получение списка временных файлов, загруженных для тикета
          *
-         *     Процесс создания поста не завершен */
+         *     Процесс создания поста не завершен
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Get
+         */
         "Tickets_2.Methods.Files.Get": Record<string, never>;
         "Tickets_2.Methods.Files.Get.Exec": unknown[];
     };

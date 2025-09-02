@@ -41,7 +41,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Редактирование тикета (для админов)"
+                "title": "Редактирование тикета (для админов)",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Ticket\\Edit"
             },
             "Tickets_2.Methods.Admin.Ticket.Edit.Exec": {
                 "nullable": true,

@@ -7,9 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
+        /**
+         * Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
          *
-         *     График кешируется, первый запрос может выполняться дольше */
+         *     График кешируется, первый запрос может выполняться дольше
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Informer\Subscriptions\Get
+         */
         "Admin_2.Methods.Users.Informer.Subscriptions.Get": {
             tariff_id?: number | null;
         };

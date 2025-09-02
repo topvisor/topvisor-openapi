@@ -27,7 +27,8 @@
                     "Подписка завершена, после окончания оплаченного периода будет прекращена",
                     "Прекращена немедленно (нельзя возобновить)"
                 ],
-                "title": "Статус подписки"
+                "title": "Статус подписки",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Subscriptions\\Status"
             }
         }
     }

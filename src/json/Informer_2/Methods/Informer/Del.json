@@ -22,7 +22,8 @@
                 "required": [
                     "ids"
                 ],
-                "title": "Удаление сообщений из инфомера"
+                "title": "Удаление сообщений из инфомера",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Informer\\Del"
             },
             "Informer_2.Methods.Informer.Del.Exec": {
                 "type": "integer"

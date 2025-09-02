@@ -182,7 +182,8 @@
                     "Snapshots_checks_in_progress_1",
                     "Snapshots_checks_in_progress_2",
                     "Open_keyword_snapshot"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Snapshots\\En"
             }
         }
     }

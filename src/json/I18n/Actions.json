@@ -75,7 +75,8 @@
                     "Informer_unsubscribe_update",
                     "Informer_unsubscribe_comments",
                     "Informer_unsubscribe_api"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Actions\\En"
             }
         }
     }

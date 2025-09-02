@@ -45,7 +45,8 @@
                     }
                 },
                 "required": [],
-                "title": "Изменение параметров активного пользователя"
+                "title": "Изменение параметров активного пользователя",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Edit"
             },
             "Users_2.Methods.Profile.Edit.Exec": {
                 "nullable": true,

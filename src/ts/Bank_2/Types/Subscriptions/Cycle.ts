@@ -15,6 +15,7 @@ export interface components {
          *     Если подписка не отменена в течение идущего цикла, то после его завершения она будет автоматически продляться путем повторения платежа
          *
          *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Cycle
          * @enum {integer}
          */
         "Bank_2.Types.Subscriptions.Cycle": 1 | 12;

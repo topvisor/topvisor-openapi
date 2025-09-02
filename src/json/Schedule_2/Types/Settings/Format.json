@@ -27,7 +27,8 @@
                     null,
                     null
                 ],
-                "title": "Формат отчета"
+                "title": "Формат отчета",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\Format"
             }
         }
     }

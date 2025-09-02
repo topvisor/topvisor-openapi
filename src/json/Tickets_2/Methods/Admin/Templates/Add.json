@@ -23,7 +23,8 @@
                     "name",
                     "text"
                 ],
-                "title": "Добавление шаблона тикета"
+                "title": "Добавление шаблона тикета",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Templates\\Add"
             },
             "Tickets_2.Methods.Admin.Templates.Add.Exec": {
                 "nullable": true,

@@ -72,7 +72,8 @@
                     "Updates_scanner",
                     "Shortener_url",
                     "Clustering_top"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Pages\\Services\\En"
             }
         }
     }

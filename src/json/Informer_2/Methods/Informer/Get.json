@@ -15,7 +15,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка сообщений в информере"
+                "title": "Получение списка сообщений в информере",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Informer\\Get"
             },
             "Informer_2.Methods.Informer.Get.Exec": {
                 "type": "array"

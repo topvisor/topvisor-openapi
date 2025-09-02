@@ -18,7 +18,8 @@
                 "required": [
                     "course_url"
                 ],
-                "title": "Получение своего сертификата"
+                "title": "Получение своего сертификата",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Get"
             },
             "Content_2.Methods.Journal.Course.Certificates.Get.Exec": {
                 "nullable": true

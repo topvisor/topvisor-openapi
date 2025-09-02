@@ -27,7 +27,8 @@
                     "Понижать позицию",
                     "Отключить показы"
                 ],
-                "title": "Тактика при превышении максимальной цены"
+                "title": "Тактика при превышении максимальной цены",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Types\\Keywords\\Tactics2"
             }
         }
     }

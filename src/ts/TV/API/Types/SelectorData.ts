@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Объект параметров Selector */
+        /**
+         * Объект параметров Selector
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\SelectorData
+         */
         "TV.API.Types.SelectorData": {
             fields: unknown[];
             filters: unknown[];

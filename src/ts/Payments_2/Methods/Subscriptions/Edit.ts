@@ -18,7 +18,7 @@ export interface components {
          *        - После оплаты новой подписки действующая подписка будет досрочно завершена
          *
          *     Выбор стратегии зависит от типа управления подпиской
-         * @description @see Bank_2\Types\Subscriptions\Manager
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Edit
          */
         "Payments_2.Methods.Subscriptions.Edit": {
             /** Id нового плана подписки */

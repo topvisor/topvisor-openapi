@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение закладок"
+                "title": "Получение закладок",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Bookmarks\\Get"
             },
             "Content_2.Methods.Journal.Bookmarks.Get.Exec": {
                 "type": "array",

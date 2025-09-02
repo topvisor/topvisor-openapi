@@ -24,7 +24,8 @@
                     "Пропутсить запросы с укутальной частотой",
                     "Пропутсить запросы с частотой любой давности"
                 ],
-                "title": "Какие запросы следует пропусить при перепроверке частоты"
+                "title": "Какие запросы следует пропусить при перепроверке частоты",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\NoRecheck"
             }
         }
     }

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Форматыы отчета
-         * @description @see Format
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\Formats
          */
         "Schedule_2.Types.Settings.Formats": import('./Format.ts').components['schemas']['Schedule_2.Types.Settings.Format'][];
     };

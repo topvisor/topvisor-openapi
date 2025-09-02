@@ -250,7 +250,8 @@
                     "Message_join_done2",
                     "Profile_successfully_linked",
                     "Impossible_link_profile"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Telegram\\En"
             }
         }
     }

@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Места откуда перешел пользователь */
+        /**
+         * Места откуда перешел пользователь
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Referrers
+         */
         "Tpvsr_2.Types.Stat.Dimension.Referrers": import('./Referrer.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Referrer'][];
     };
     responses: never;

@@ -23,7 +23,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Написание текста"
+                "title": "Написание текста",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Writing\\Edit"
             },
             "Tickets_2.Methods.Tickets.Writing.Edit.Exec": {
                 "nullable": true

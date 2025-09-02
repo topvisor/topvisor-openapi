@@ -47,7 +47,8 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение сводки страницы"
+                "title": "Получение сводки страницы",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\SummaryPage\\Get"
             },
             "Audit_2.Methods.Audit.SummaryPage.Get.Exec": {
                 "title": "Сводка о выполненном аудите по одной странице",

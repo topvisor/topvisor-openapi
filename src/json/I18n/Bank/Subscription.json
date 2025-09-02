@@ -298,7 +298,8 @@
                     "Exceeding_by_owner",
                     "Select_this_plan",
                     "Compare_plans"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Bank\\Subscription\\En"
             }
         }
     }

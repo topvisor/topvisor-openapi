@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение статистики"
+                "title": "Получение статистики",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Statistics\\Get"
             },
             "Admin_2.Methods.Analytics.Statistics.Get.Exec": {
                 "nullable": true,

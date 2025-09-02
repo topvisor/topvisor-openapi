@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сводок индексации для графика */
+        /**
+         * Получение сводок индексации для графика
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Indexing\Summary\Chart\Get
+         */
         "Audit_2.Methods.Indexing.Summary.Chart.Get": {
             /** Произвольные даты без диапазона */
             dates: unknown[];

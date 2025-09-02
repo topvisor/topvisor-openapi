@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение валюты пользователя */
+        /**
+         * Изменение валюты пользователя
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Currency\Edit
+         */
         "Users_2.Methods.Profile.Currency.Edit": {
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };

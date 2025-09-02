@@ -32,7 +32,8 @@
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": []
+                "required": [],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Ranks\\Get"
             },
             "Admin_2.Methods.Ranks.Get.Exec": {
                 "nullable": true,

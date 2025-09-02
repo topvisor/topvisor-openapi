@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации о сообщениях в информере */
+        /**
+         * Получение информации о сообщениях в информере
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Info\Get
+         */
         "Informer_2.Methods.Info.Get": Record<string, never>;
         "Informer_2.Methods.Info.Get.Exec": unknown[];
     };

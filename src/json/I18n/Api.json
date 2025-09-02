@@ -62,7 +62,8 @@
                     "Set_offset",
                     "Ask_questions_get_answers",
                     "PHP_SDK_example_githab"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Api\\En"
             }
         }
     }

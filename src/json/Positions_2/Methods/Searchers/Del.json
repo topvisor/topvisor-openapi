@@ -33,7 +33,8 @@
                     "project_id",
                     "searcher_key"
                 ],
-                "title": "Удаление ПС"
+                "title": "Удаление ПС",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Del"
             },
             "Positions_2.Methods.Searchers.Del.Exec": {
                 "nullable": true

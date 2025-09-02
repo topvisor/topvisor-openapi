@@ -18,7 +18,8 @@
                 "required": [
                     "id"
                 ],
-                "title": "Удаление ответа в тикете, только для админов"
+                "title": "Удаление ответа в тикете, только для админов",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Message\\Del"
             },
             "Tickets_2.Methods.Admin.Message.Del.Exec": {
                 "nullable": true,

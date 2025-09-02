@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип объявления
-         * @description @see https://yandex.ru/dev/direct/doc/ru/objects/ad#types
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Types\Ads\Type
          * @enum {string}
          */
         "Broker_2.Types.Ads.Type": "TEXT_AD" | "SMART_AD" | "MOBILE_APP_AD" | "DYNAMIC_TEXT_AD" | "IMAGE_AD" | "CPC_VIDEO_AD" | "CPM_BANNER_AD" | "CPM_VIDEO_AD" | "SHOPPING_AD" | "LISTING_AD";

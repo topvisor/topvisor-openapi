@@ -21,7 +21,8 @@
                     "Обычная выдача",
                     "XML выдача"
                 ],
-                "title": "Тип выдачи"
+                "title": "Тип выдачи",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Types\\Apometr\\Action"
             }
         }
     }

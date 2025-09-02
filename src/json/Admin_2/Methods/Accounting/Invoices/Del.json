@@ -18,7 +18,8 @@
                     }
                 },
                 "required": [],
-                "title": "Отмена отправки счета. Разрешено только для счетов со статусом pending или sending"
+                "title": "Отмена отправки счета. Разрешено только для счетов со статусом pending или sending",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Invoices\\Del"
             },
             "Admin_2.Methods.Accounting.Invoices.Del.Exec": {
                 "nullable": true,

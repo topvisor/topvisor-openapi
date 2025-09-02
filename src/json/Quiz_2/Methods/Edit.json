@@ -47,7 +47,8 @@
                 "required": [
                     "quiz_id"
                 ],
-                "title": "Редактирование теста"
+                "title": "Редактирование теста",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Edit"
             },
             "Quiz_2.Methods.Edit.Exec": {
                 "nullable": true,

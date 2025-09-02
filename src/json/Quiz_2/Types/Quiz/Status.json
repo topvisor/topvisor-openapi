@@ -24,7 +24,8 @@
                     null,
                     null
                 ],
-                "title": "Статус квиза"
+                "title": "Статус квиза",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Types\\Quiz\\Status"
             }
         }
     }

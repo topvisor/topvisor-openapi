@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение промокодов\n\nВ params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода"
+                "title": "Получение промокодов\n\nВ params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Promocodes\\Get"
             },
             "Admin_2.Methods.Users.Promocodes.Get.Exec": {
                 "nullable": true,

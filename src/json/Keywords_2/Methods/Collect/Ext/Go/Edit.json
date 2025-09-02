@@ -47,7 +47,8 @@
                     "type",
                     "qualifiers"
                 ],
-                "title": "Постановка задачи на расширение группы"
+                "title": "Постановка задачи на расширение группы",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Methods\\Collect\\Ext\\Go\\Edit"
             },
             "Keywords_2.Methods.Collect.Ext.Go.Edit.Exec": {
                 "nullable": true

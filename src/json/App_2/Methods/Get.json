@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение заархивированного приложения"
+                "title": "Получение заархивированного приложения",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\App_2\\Methods\\Get"
             },
             "App_2.Methods.Get.Exec": {
                 "type": "never"

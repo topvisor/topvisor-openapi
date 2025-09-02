@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Привязка email к аккаунту */
+        /**
+         * Привязка email к аккаунту
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Join\Email\Add
+         */
         "Users_2.Methods.Join.Email.Add": {
             email: string;
             pass?: string | null;

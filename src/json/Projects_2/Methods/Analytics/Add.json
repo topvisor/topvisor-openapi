@@ -51,7 +51,8 @@
                     "axe",
                     "base_filter"
                 ],
-                "title": "Добавление графика"
+                "title": "Добавление графика",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Analytics\\Add"
             },
             "Projects_2.Methods.Analytics.Add.Exec": {
                 "nullable": true,

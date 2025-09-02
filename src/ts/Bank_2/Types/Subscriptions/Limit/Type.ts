@@ -11,7 +11,7 @@ export interface components {
          * Тип лимита
          *
          *     Характеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться
-         * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Limit\Type
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Limit.Type": "object" | "object_by_project" | "action_monthly" | "action_daily" | "access";

@@ -51,7 +51,8 @@
                     "pool_id",
                     "region_index",
                     "time"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Types\\Update"
             }
         }
     }

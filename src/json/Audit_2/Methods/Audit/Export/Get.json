@@ -60,7 +60,8 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Экспорт результатов проверки файла"
+                "title": "Экспорт результатов проверки файла",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Export\\Get"
             },
             "Audit_2.Methods.Audit.Export.Get.Exec": {
                 "title": "Файл результатов проверки сайта",

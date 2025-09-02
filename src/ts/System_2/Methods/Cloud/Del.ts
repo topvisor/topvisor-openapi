@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление файлов (файл будет перенесен в директорию /cloud/recycled) */
+        /**
+         * Удаление файлов (файл будет перенесен в директорию /cloud/recycled)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Del
+         */
         "System_2.Methods.Cloud.Del": {
             /** Название директории */
             directory: string;

@@ -33,7 +33,8 @@
                     }
                 },
                 "required": [],
-                "title": "Получение контрагента"
+                "title": "Получение контрагента",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Counteragents\\Get"
             },
             "Admin_2.Methods.Accounting.Counteragents.Get.Exec": {
                 "nullable": true

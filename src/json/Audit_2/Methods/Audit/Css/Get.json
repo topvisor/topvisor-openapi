@@ -42,7 +42,8 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение проверенных css"
+                "title": "Получение проверенных css",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Css\\Get"
             },
             "Audit_2.Methods.Audit.Css.Get.Exec": {
                 "title": "Список проверенных css",

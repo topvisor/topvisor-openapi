@@ -47,7 +47,8 @@
                     "In_process",
                     "Repeat_task",
                     "No_tasks"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Toolbox\\En"
             }
         }
     }

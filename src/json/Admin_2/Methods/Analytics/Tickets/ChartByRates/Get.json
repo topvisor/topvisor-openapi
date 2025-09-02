@@ -35,7 +35,8 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистики тикетов по оценкам"
+                "title": "Получение статистики тикетов по оценкам",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByRates\\Get"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByRates.Get.Exec": {
                 "type": "array"

@@ -21,7 +21,8 @@
                     "В папку, перед существующими группами",
                     "В папку, после существующих групп"
                 ],
-                "title": "Куда добавлять добавляемые группы"
+                "title": "Куда добавлять добавляемые группы",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\ToType"
             }
         }
     }

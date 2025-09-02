@@ -34,7 +34,8 @@
                     "currency",
                     "limit"
                 ],
-                "title": "Получение суммы оплат по системам платежей за период"
+                "title": "Получение суммы оплат по системам платежей за период",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Payments\\Systems\\Get"
             },
             "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": {
                 "nullable": true,

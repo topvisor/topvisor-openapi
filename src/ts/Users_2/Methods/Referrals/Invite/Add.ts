@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Регистрация по приглашению (по реферальной программе) */
+        /**
+         * Регистрация по приглашению (по реферальной программе)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Referrals\Invite\Add
+         */
         "Users_2.Methods.Referrals.Invite.Add": {
             /** Email, который был зарегистрирован */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

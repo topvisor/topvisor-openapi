@@ -36,7 +36,8 @@
                 "required": [
                     "promocode"
                 ],
-                "title": "Установка достижения по промокоду"
+                "title": "Установка достижения по промокоду",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Ranks\\Promocode\\Add"
             },
             "Users_2.Methods.Ranks.Promocode.Add.Exec": {
                 "nullable": true,

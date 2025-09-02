@@ -169,7 +169,8 @@
                     "host",
                     "config",
                     "configTPA"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\Core\\Sites\\Site"
             }
         }
     }

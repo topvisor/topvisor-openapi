@@ -32,7 +32,8 @@
                     "subdomain",
                     "path_mask"
                 ],
-                "title": "Удаление редиректа"
+                "title": "Удаление редиректа",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Redirects\\Del"
             },
             "Content_2.Methods.Redirects.Del.Exec": {
                 "nullable": true,

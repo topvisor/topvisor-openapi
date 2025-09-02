@@ -13,7 +13,7 @@
                     "$ref": "../../../Schedule_2/Types/Settings/AdditionalField.json#/components/schemas/Schedule_2.Types.Settings.AdditionalField"
                 },
                 "title": "Дополнительные поля отчета проверки позиций",
-                "description": "@see AdditionalField"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\AdditionalFields"
             }
         }
     }

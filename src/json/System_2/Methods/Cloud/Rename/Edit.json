@@ -28,7 +28,8 @@
                     "basename",
                     "new_basename"
                 ],
-                "title": "Переименовывание файла"
+                "title": "Переименовывание файла",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Cloud\\Rename\\Edit"
             },
             "System_2.Methods.Cloud.Rename.Edit.Exec": {
                 "type": "string"

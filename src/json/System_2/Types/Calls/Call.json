@@ -36,7 +36,8 @@
                     "func",
                     "oper"
                 ],
-                "title": "Объект вызова модуля системы\n\nИспользуется для подготовки данных запроса к внутреннему API"
+                "title": "Объект вызова модуля системы\n\nИспользуется для подготовки данных запроса к внутреннему API",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Calls\\Call"
             }
         }
     }

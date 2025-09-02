@@ -26,7 +26,8 @@
                     }
                 },
                 "required": [],
-                "title": "Результат успешного API запроса"
+                "title": "Результат успешного API запроса",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\ResponseSuccess"
             }
         }
     }

@@ -32,7 +32,8 @@
                 "required": [
                     "email"
                 ],
-                "title": "Удаление прав у пользователя"
+                "title": "Удаление прав у пользователя",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\Del"
             },
             "Projects_2.Methods.Rights.Del.Exec": {
                 "nullable": true,

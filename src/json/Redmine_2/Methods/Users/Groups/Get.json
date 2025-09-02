@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получить список групп с пользователями"
+                "title": "Получить список групп с пользователями",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Redmine_2\\Methods\\Users\\Groups\\Get"
             },
             "Redmine_2.Methods.Users.Groups.Get.Exec": {
                 "type": "array"

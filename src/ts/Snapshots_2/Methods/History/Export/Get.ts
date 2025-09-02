@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт истории снимков выдачи */
+        /**
+         * Экспорт истории снимков выдачи
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Export\Get
+         */
         "Snapshots_2.Methods.History.Export.Get": {
             /**
              * Вернуть ли URI-идентификатор или имя файла, из директории.

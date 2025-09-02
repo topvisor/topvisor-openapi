@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление достижения */
+        /**
+         * Добавление достижения
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Ranks\Add
+         */
         "Admin_2.Methods.Users.Ranks.Add": {
             name_id?: string | null;
             category?: import('../../../Types/Users/Ranks/Category.ts').components['schemas']['Admin_2.Types.Users.Ranks.Category'] | null;

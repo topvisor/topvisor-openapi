@@ -11,9 +11,7 @@ export interface components {
          * Тип массива: boolean
          *
          *     Принимает: 0|1|false|true
-         * @description @extends AbstractTypedArray<boolean>
-         *     @method bool[] getValues()
-         *     @method bool current()
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\BoolArray
          */
         "TV.API.Types.BoolArray": boolean[];
     };

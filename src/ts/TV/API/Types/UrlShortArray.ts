@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: UrlShort[]
-         * @description @extends AbstractStringArray<UrlShort>
-         *     @method UrlShort[] getValues()
-         *     @method UrlShort current()
-         *     @see \TV\API\Types\UrlShort
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlShortArray
          */
         "TV.API.Types.UrlShortArray": import('./UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'][];
     };

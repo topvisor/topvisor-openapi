@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
                 },
-                "title": "Id поисковых системы для проверки позиций"
+                "title": "Id поисковых системы для проверки позиций",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Types\\SearchersKeys"
             }
         }
     }

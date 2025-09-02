@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Класс конфигурации команды Telegram. */
+        /**
+         * Класс конфигурации команды Telegram.
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Telegram_2\Types\Bot\CommandConfig
+         */
         "Telegram_2.Types.Bot.CommandConfig": {
             handler: import('../../../Closure.ts').components['schemas']['Closure'];
             title: string;

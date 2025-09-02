@@ -63,7 +63,8 @@
                     "Скриншоты веб-страниц",
                     "Подбор слов"
                 ],
-                "title": "Назначение транзакции списания/пополнения в банке"
+                "title": "Назначение транзакции списания/пополнения в банке",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Transaction\\Target"
             }
         }
     }

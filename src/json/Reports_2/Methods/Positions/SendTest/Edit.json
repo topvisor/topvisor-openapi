@@ -18,7 +18,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Отправить тестовый отчет"
+                "title": "Отправить тестовый отчет",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Reports_2\\Methods\\Positions\\SendTest\\Edit"
             },
             "Reports_2.Methods.Positions.SendTest.Edit.Exec": {
                 "type": "integer"

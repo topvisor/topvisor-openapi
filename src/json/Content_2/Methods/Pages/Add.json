@@ -156,7 +156,8 @@
                     }
                 },
                 "required": [],
-                "title": "Создание документа"
+                "title": "Создание документа",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Pages\\Add"
             },
             "Content_2.Methods.Pages.Add.Exec": {
                 "type": "integer"

@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: UrlUTF[]
-         * @description @extends AbstractStringArray<UrlUTF>
-         *     @method UrlUTF[] getValues()
-         *     @method UrlUTF current()
-         *     @see \TV\API\Types\UrlUTF
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlUTFArray
          */
         "TV.API.Types.UrlUTFArray": import('./UrlUTF.ts').components['schemas']['TV.API.Types.UrlUTF'][];
     };

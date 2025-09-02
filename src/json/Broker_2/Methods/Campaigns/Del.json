@@ -39,7 +39,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Удаление рекламной компании из управления ставками"
+                "title": "Удаление рекламной компании из управления ставками",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Campaigns\\Del"
             },
             "Broker_2.Methods.Campaigns.Del.Exec": {
                 "nullable": true,

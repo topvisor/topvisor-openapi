@@ -1460,7 +1460,8 @@
                     "Confirm_document_removal",
                     "Act",
                     "Dialog_subscription_title"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Bank\\En"
             }
         }
     }

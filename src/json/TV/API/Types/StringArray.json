@@ -13,7 +13,7 @@
                     "type": "string"
                 },
                 "title": "Тип массива: string[]",
-                "description": "@extends AbstractTypedArray<string>\n@method string[] getValues()\n@method string current()"
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\StringArray"
             }
         }
     }

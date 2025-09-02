@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Удаление аватарки"
+                "title": "Удаление аватарки",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Avatar\\Del"
             },
             "Users_2.Methods.Profile.Avatar.Del.Exec": {
                 "nullable": true,

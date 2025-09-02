@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /**
          * Дополнительный сегмент топа
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\TopSegment
          * @enum {integer}
          */
         "Positions_2.Types.TopSegment": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;

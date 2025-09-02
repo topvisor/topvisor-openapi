@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение акта сверки (акты по предоплате выводятся в одном платеже) */
+        /**
+         * Получение акта сверки (акты по предоплате выводятся в одном платеже)
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\PrintTotalReceipt\Get
+         */
         "Bank_2.Methods.Requisites.PrintTotalReceipt.Get": {
             /** Дата начала диапазона */
             date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];

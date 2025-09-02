@@ -36,7 +36,8 @@
                     "Расширенная сводка",
                     "Конкуренты"
                 ],
-                "title": "Право для гостевых ссылок"
+                "title": "Право для гостевых ссылок",
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Types\\Settings\\GuestLinkRight"
             }
         }
     }

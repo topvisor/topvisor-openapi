@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка сайтов (доменов), которые выделены как неважные */
+        /**
+         * Получение списка сайтов (доменов), которые выделены как неважные
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Get
+         */
         "Snapshots_2.Methods.HiddenDomains.Get": {
             /** Id проекта */
             project_id: number;

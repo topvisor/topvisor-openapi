@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Обновление регионов Google
-         * @description @see https://developers.google.com/google-ads/api/data/geotargets
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Regions\UpdateGoogle\Edit
          */
         "Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit": {
             /** Является ли запуск - тестом */

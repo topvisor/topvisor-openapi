@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение id тарифа пользователя по типу контракта */
+        /**
+         * Получение id тарифа пользователя по типу контракта
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\ContractTariffId\Get
+         */
         "Bank_2.Methods.Requisites.ContractTariffId.Get": {
             /** Тип контракта */
             contract_type: string;

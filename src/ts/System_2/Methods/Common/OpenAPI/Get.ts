@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Загрузка настроек OpenAPI */
+        /**
+         * Загрузка настроек OpenAPI
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\OpenAPI\Get
+         */
         "System_2.Methods.Common.OpenAPI.Get": {
             /**
              * Формат

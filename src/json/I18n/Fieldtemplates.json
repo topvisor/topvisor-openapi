@@ -62,7 +62,8 @@
                     "Delete_columns",
                     "No_columns_added",
                     "Advanced_options"
-                ]
+                ],
+                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Fieldtemplates\\En"
             }
         }
     }

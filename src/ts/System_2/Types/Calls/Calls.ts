@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Массив объектов вызова модуля системы
-         * @description @extends AbstractObjectArray<Call>
-         *     @method Call[] getValues()
-         *     @method Call current()
-         *     @method Call offsetGet()
+         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Calls\Calls
          */
         "System_2.Types.Calls.Calls": import('./Call.ts').components['schemas']['System_2.Types.Calls.Call'][];
     };
