@@ -25,7 +25,7 @@
                     "provider",
                     "project_id"
                 ],
-                "title": "Произвести попытку обновления интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\TestTpa\\Get"
+                "title": "Обновить информацию по выполненной интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\TestTpa\\Get"
             },
             "Tpa_2.Methods.TestTpa.Get.Exec": {
                 "type": "integer"

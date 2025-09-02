@@ -11054,7 +11054,7 @@
                 "tags": [
                     "Tpa_2"
                 ],
-                "summary": "Произвести выбор счетчика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\SetCounterId\\Edit",
+                "summary": "Выбрать счетчик\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\SetCounterId\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -11107,7 +11107,7 @@
                 "tags": [
                     "Tpa_2"
                 ],
-                "summary": "Произвести попытку обновления интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\TestTpa\\Get",
+                "summary": "Обновить информацию по выполненной интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\TestTpa\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -21650,7 +21650,7 @@
                 "tags": [
                     "Tpa_2"
                 ],
-                "summary": "Выбрать сайт для проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Gsc\\SetSite\\Edit",
+                "summary": "Выбрать сайт для интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Gsc\\SetSite\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {

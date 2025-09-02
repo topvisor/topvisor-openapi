@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Произвести попытку обновления интеграции
+        /** Обновить информацию по выполненной интеграции
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\TestTpa\Get */
         "Tpa_2.Methods.TestTpa.Get": {

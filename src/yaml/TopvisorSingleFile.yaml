@@ -6615,7 +6615,7 @@ paths:
       tags:
         - Tpa_2
       summary: |-
-        Произвести выбор счетчика
+        Выбрать счетчик
 
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit
       requestBody:
@@ -6646,7 +6646,7 @@ paths:
       tags:
         - Tpa_2
       summary: |-
-        Произвести попытку обновления интеграции
+        Обновить информацию по выполненной интеграции
 
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\TestTpa\Get
       requestBody:
@@ -12910,7 +12910,7 @@ paths:
       tags:
         - Tpa_2
       summary: |-
-        Выбрать сайт для проекта
+        Выбрать сайт для интеграции
 
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit
       requestBody:
@@ -27561,7 +27561,7 @@ components:
         - cid
         - project_id
       title: |-
-        Произвести выбор счетчика
+        Выбрать счетчик
 
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit
     Tpa_2.Methods.SetCounterId.Edit.Exec:
@@ -27579,7 +27579,7 @@ components:
         - provider
         - project_id
       title: |-
-        Произвести попытку обновления интеграции
+        Обновить информацию по выполненной интеграции
 
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\TestTpa\Get
     Tpa_2.Methods.TestTpa.Get.Exec:
@@ -35929,7 +35929,6 @@ components:
       type: object
       properties:
         site:
-          title: Сайт
           type: string
         project_id:
           $ref: '#/components/schemas/project_id'
@@ -35937,7 +35936,7 @@ components:
         - site
         - project_id
       title: |-
-        Выбрать сайт для проекта
+        Выбрать сайт для интеграции
 
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit
     Tpa_2.Methods.Gsc.SetSite.Edit.Exec:
