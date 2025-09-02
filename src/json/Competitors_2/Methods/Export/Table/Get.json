@@ -110,8 +110,7 @@
                     "view",
                     "date"
                 ],
-                "title": "Экспорт данных отчета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Export\\Table\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Export\\Table\\Get"
             },
             "Competitors_2.Methods.Export.Table.Get.Exec": {
                 "nullable": true

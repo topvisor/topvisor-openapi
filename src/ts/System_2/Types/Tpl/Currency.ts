@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Валюта шаблонов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Tpl\Currency
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Tpl\Currency
          * @enum {string}
          */
         "System_2.Types.Tpl.Currency": "RUB" | "USD" | "";

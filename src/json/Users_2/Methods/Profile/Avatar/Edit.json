@@ -22,8 +22,7 @@
                 "required": [
                     "config"
                 ],
-                "title": "Изменение автара",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Avatar\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Avatar\\Edit"
             },
             "Users_2.Methods.Profile.Avatar.Edit.Exec": {
                 "type": "integer"

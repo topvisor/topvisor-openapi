@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление сохраненного списка столбцов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Fields\Del
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Templates_2\Methods\Fields\Del */
         "Templates_2.Methods.Fields.Del": {
             target_type: import('../../Types/TargetType.ts').components['schemas']['Templates_2.Types.TargetType'];
             /** Подтип данных (место использования) */

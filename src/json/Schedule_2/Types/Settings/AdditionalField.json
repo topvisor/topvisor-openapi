@@ -27,8 +27,7 @@
                     "Ссылка",
                     "Частота"
                 ],
-                "title": "Дополнительное поле отчета проверки позиций",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\AdditionalField"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\AdditionalField"
             }
         }
     }

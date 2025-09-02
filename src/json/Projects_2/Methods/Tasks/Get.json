@@ -53,8 +53,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка задач",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Tasks\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Tasks\\Get"
             },
             "Projects_2.Methods.Tasks.Get.Exec": {
                 "nullable": true

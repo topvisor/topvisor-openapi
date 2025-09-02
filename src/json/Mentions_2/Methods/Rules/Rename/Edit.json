@@ -29,8 +29,7 @@
                     "project_id",
                     "name"
                 ],
-                "title": "Изменить имя правила",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Rename\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Rename\\Edit"
             },
             "Mentions_2.Methods.Rules.Rename.Edit.Exec": {
                 "type": "integer"

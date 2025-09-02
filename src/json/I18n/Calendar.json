@@ -158,7 +158,7 @@
                     "November",
                     "December"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Calendar\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Calendar\\En"
             }
         }
     }

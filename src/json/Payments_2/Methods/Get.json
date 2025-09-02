@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка платежей",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Get"
             },
             "Payments_2.Methods.Get.Exec": {
                 "nullable": true

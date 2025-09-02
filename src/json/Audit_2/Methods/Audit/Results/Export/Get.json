@@ -50,8 +50,8 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Экспорт результатов аудита",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Results\\Export\\Get",
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Results\\Export\\Get",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Audit_2.Methods.Audit.Results.Export.Get.Exec": {

@@ -34,8 +34,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение записей словаря",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\I18n\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\I18n\\Get"
             },
             "Admin_2.Methods.I18n.Get.Exec": {
                 "type": "object",

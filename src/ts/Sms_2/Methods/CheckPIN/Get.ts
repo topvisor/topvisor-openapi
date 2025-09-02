@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Проверить код для подтверждения действия
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Sms_2\Methods\CheckPIN\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Sms_2\Methods\CheckPIN\Get */
         "Sms_2.Methods.CheckPIN.Get": {
             /** Код подтверждения */
             pin: string;

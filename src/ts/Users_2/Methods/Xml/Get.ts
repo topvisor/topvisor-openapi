@@ -8,9 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Нужно для обратной совместимости с приложениями
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Xml\Get
          * @deprecated
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Xml\Get
+         * @description @deprecated
          */
         "Users_2.Methods.Xml.Get": Record<string, never>;
         "Users_2.Methods.Xml.Get.Exec": unknown[] | null;

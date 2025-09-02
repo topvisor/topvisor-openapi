@@ -30,8 +30,7 @@
                     "Белые ночи (Silver)",
                     "Канал Топвизора"
                 ],
-                "title": "Id достижения",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Types\\Ranks\\Id"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Types\\Ranks\\Id"
             }
         }
     }

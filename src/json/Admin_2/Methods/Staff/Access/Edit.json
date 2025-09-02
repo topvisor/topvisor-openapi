@@ -54,8 +54,7 @@
                     "category",
                     "value"
                 ],
-                "title": "Настройка доступа",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Access\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Access\\Edit"
             },
             "Admin_2.Methods.Staff.Access.Edit.Exec": {
                 "nullable": true,

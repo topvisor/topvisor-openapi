@@ -24,8 +24,7 @@
                     "Анализ лидеров по попоисковым запросам",
                     "Похожие запросы"
                 ],
-                "title": "Представление отчета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\View"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\View"
             }
         }
     }

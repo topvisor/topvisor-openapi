@@ -71,8 +71,7 @@
                     "type",
                     "date"
                 ],
-                "title": "Получение данных для сводки",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\TableSummary\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\TableSummary\\Get"
             },
             "Competitors_2.Methods.TableSummary.Get.Exec": {
                 "nullable": true,

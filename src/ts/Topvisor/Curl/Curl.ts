@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Topvisor\Curl\Curl */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Topvisor\Curl\Curl */
         "Topvisor.Curl.Curl": {
             /** @default Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 */
             userAgentDef: string;

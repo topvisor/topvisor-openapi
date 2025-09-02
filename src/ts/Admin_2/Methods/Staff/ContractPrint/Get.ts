@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Печать договора
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\ContractPrint\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Staff\ContractPrint\Get */
         "Admin_2.Methods.Staff.ContractPrint.Get": {
             /** Параметры, передаваемые в шаблон */
             props: unknown[];

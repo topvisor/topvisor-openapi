@@ -89,8 +89,7 @@
                     "department",
                     "posts"
                 ],
-                "title": "Добавление сотрудника",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Add"
             },
             "Admin_2.Methods.Staff.Add.Exec": {
                 "nullable": true,

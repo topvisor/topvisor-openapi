@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Отправка заявки на подключение Тинькофф Бизнес",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\UrTinkoffCreateApplication\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\UrTinkoffCreateApplication\\Add"
             },
             "Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec": {
                 "nullable": true,

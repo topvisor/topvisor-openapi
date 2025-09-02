@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Шаблон документа (только для pdf)
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\Export\Tpl
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\Export\Tpl
          * @enum {string}
          */
         "Snapshots_2.Types.History.Export.Tpl": "print";

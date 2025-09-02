@@ -911,7 +911,7 @@
                     "Audit_bank_autocrawl_unhold_info",
                     "Delete_url"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Audit\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Audit\\En"
             }
         }
     }

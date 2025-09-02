@@ -27,8 +27,7 @@
                     "project_id",
                     "email"
                 ],
-                "title": "Инициализация передачи проекта другому пользователю",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\ChangeOwner\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\ChangeOwner\\Edit"
             },
             "Projects_2.Methods.Rights.ChangeOwner.Edit.Exec": {
                 "nullable": true,

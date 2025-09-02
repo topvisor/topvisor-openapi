@@ -78,7 +78,7 @@
                     null,
                     null
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Types\\System"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Types\\System"
             }
         }
     }

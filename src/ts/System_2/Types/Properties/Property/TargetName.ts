@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Категория данных
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Properties\Property\TargetName
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Properties\Property\TargetName
          * @enum {string}
          */
         "System_2.Types.Properties.Property.TargetName": "mod_projects";

@@ -18,8 +18,7 @@
                 "required": [
                     "theme"
                 ],
-                "title": "Изменение темы сайта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Theme\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Theme\\Edit"
             },
             "Users_2.Methods.Profile.Theme.Edit.Exec": {
                 "nullable": true,

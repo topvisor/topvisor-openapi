@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип отчета
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\Report\Type
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Types\Report\Type
          * @enum {string}
          */
         "Competitors_2.Types.Report.Type": "serp" | "ads";

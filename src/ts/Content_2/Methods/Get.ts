@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получить полные данные об одной странице
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Get */
         "Content_2.Methods.Get": {
             /** Поддомен страницы */
             subdomain: import('../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];

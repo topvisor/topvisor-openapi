@@ -23,8 +23,7 @@
                 "required": [
                     "orders"
                 ],
-                "title": "Изменение сортировки проектов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Sort\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Sort\\Edit"
             },
             "Projects_2.Methods.Projects.Sort.Edit.Exec": {
                 "nullable": true,

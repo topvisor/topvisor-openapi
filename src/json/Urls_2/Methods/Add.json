@@ -70,8 +70,7 @@
                     "url",
                     "project_id"
                 ],
-                "title": "Добавление url",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Add"
             },
             "Urls_2.Methods.Add.Exec": {
                 "nullable": true,

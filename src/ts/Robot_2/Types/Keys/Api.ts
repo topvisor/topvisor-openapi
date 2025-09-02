@@ -8,10 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Движок, который прикрепляется к ключу
-         *
-         *     Только ключи с прикрепленным движком могут выполнять задачи такого движка
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Robot_2\Types\Keys\Api
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Robot_2\Types\Keys\Api
          * @enum {string}
          */
         "Robot_2.Types.Keys.Api": "NONE" | "YANDEX" | "YANDEX_COM" | "YANDEX_TR" | "BRIGHTDATA" | "XML_RIVER" | "XML_STOCK" | "NETNUT" | "PROXYMADATA" | "YANDEX_ASYNC" | "XML_STOCK_IE" | "XML_STOCK_YANDEX_ASYNC" | "XML_RIVER_YANDEX_ASYNC";

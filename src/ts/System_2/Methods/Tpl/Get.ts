@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение кешируемого HTML-шаблона
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Tpl\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Tpl\Get */
         "System_2.Methods.Tpl.Get": {
             /** Путь к шаблону */
             tpl: string;

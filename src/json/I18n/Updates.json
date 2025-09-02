@@ -233,7 +233,7 @@
                     "More_info",
                     "Change_in_google"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Updates\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Updates\\En"
             }
         }
     }

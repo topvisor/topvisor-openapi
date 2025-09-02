@@ -47,8 +47,7 @@
                     "format",
                     "service"
                 ],
-                "title": "Вызов тестового API запроса",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Api\\Test\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Api\\Test\\Get"
             },
             "System_2.Methods.Api.Test.Get.Exec": {
                 "nullable": true

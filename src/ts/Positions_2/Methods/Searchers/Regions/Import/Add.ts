@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Импорт регионов (CSV)
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Import\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Methods\Searchers\Regions\Import\Add */
         "Positions_2.Methods.Searchers.Regions.Import.Add": {
             /** Id проекта */
             project_id: number;

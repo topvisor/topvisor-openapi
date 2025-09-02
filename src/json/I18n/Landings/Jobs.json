@@ -33,7 +33,7 @@
                     "Accept_user_agreement_text_befor_link",
                     "Accept_user_agreement_link_text"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Landings\\Jobs\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Landings\\Jobs\\En"
             }
         }
     }

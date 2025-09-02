@@ -27,8 +27,7 @@
                     "hash",
                     "tags"
                 ],
-                "title": "Изменение тегов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Tags\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Tags\\Edit"
             },
             "Tpvsr_2.Methods.Tags.Edit.Exec": {
                 "nullable": true,

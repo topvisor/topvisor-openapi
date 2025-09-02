@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Сохранение текстового файла лога
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\Edit
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Logs\Edit */
         "Admin_2.Methods.Logs.Edit": {
             /** Файл лога */
             log_file: string;

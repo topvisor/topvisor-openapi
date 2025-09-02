@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Импортирование историй позиций из CSV
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Positions\History\Add */
         "Admin_2.Methods.Actions.Positions.History.Add": {
             /** Строка в формате csv
              *

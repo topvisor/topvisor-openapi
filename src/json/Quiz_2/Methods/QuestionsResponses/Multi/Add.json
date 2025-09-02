@@ -18,8 +18,7 @@
                 "required": [
                     "questions_responses"
                 ],
-                "title": "Добавление нескольких ответов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\QuestionsResponses\\Multi\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\QuestionsResponses\\Multi\\Add"
             },
             "Quiz_2.Methods.QuestionsResponses.Multi.Add.Exec": {
                 "nullable": true,

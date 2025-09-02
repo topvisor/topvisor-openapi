@@ -18,8 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Удаление отчета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Orders\\Del"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Orders\\Del"
             },
             "Competitors_2.Methods.Orders.Del.Exec": {
                 "nullable": true,

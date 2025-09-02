@@ -8,10 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Импорт запросов (по необходимости зависимых с ними групп и папок)
-         *
-         *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
+         * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
          */
         "Keywords_2.Methods.Keywords.Import.Add": {
             /** Id проекта */

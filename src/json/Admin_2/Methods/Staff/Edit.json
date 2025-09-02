@@ -91,7 +91,7 @@
                     "department",
                     "posts"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Edit"
             },
             "Admin_2.Methods.Staff.Edit.Exec": {
                 "nullable": true,

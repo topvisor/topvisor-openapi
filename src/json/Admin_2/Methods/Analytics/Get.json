@@ -48,8 +48,7 @@
                     "currency",
                     "field_name"
                 ],
-                "title": "Получение отчета платежей по сервисам",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Services\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Services\\Get"
             },
             "Admin_2.Methods.Analytics.Get.Exec": {
                 "type": "object",

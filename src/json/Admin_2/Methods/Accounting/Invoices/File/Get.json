@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Скачивание документа",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Invoices\\File\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Invoices\\File\\Get"
             },
             "Admin_2.Methods.Accounting.Invoices.File.Get.Exec": {
                 "type": "never"

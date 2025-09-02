@@ -8,9 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип: float[]
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\FloatArray
          * @deprecated
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\FloatArray
+         * @description @deprecated Использовать не рекомендуется, для передачи float рекомендуется использовать строки или целые числа, умноженные на 10^n
+         *     @extends AbstractTypedArray<float>
+         *     @method float[] getValues()
+         *     @method float current()
          */
         "TV.API.Types.FloatArray": number[];
     };

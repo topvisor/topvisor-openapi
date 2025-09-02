@@ -23,8 +23,7 @@
                     "course_url",
                     "user_name"
                 ],
-                "title": "Изменение сертификата\n\nМожно менять только имя, если оно не указано",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Edit"
             },
             "Content_2.Methods.Journal.Course.Certificates.Edit.Exec": {
                 "nullable": true,

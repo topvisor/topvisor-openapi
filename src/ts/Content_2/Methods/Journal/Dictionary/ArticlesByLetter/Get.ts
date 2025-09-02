@@ -7,11 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение списка страниц по буквам для модуля SEO словарь
-         *     Результат функции кешируется
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Dictionary\ArticlesByLetter\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Dictionary\ArticlesByLetter\Get */
         "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get": {
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

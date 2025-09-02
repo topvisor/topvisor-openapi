@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение сводки проведенных операций",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\History\\Summary\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\History\\Summary\\Get"
             },
             "Bank_2.Methods.History.Summary.Get.Exec": {
                 "type": "array",

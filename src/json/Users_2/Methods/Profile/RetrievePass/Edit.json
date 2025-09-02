@@ -22,8 +22,7 @@
                 "required": [
                     "email"
                 ],
-                "title": "Отправка заявки на сброс пароля (подтверждается методом Users_2\\Mods::acceptEmail())",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\RetrievePass\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\RetrievePass\\Edit"
             },
             "Users_2.Methods.Profile.RetrievePass.Edit.Exec": {
                 "type": "integer"

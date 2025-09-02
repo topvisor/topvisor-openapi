@@ -23,8 +23,7 @@
                     "user_id",
                     "bookmark"
                 ],
-                "title": "Редактирование статуса закладки для автора",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\BookmarkAuthor\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\BookmarkAuthor\\Edit"
             },
             "Content_2.Methods.BookmarkAuthor.Edit.Exec": {
                 "nullable": true,

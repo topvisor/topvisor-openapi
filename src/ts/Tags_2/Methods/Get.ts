@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение списка тегов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Methods\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Methods\Get */
         "Tags_2.Methods.Get": {
             type: import('../Types/Type.ts').components['schemas']['Tags_2.Types.Type'];
             project_id?: number | null;

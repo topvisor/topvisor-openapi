@@ -8,12 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Регулярное выражение
-         *
-         *     Пустое значение разрешено
-         *
-         *     Управляющие символы "/" в начале и в конце строки будут удалены
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\RegExp
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\RegExp
          * @example /^year_(\d\d\d\d)$/
          */
         "TV.API.Types.RegExp": string;

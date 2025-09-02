@@ -23,8 +23,7 @@
                     "requisites_id",
                     "signed"
                 ],
-                "title": "Подписание контракта (только для админов)",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\ContractSign\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\ContractSign\\Edit"
             },
             "Payments_2.Methods.ContractSign.Edit.Exec": {
                 "nullable": true,

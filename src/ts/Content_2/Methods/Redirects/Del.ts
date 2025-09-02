@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление редиректа
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Del
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Redirects\Del */
         "Content_2.Methods.Redirects.Del": {
             /** Сайт
              *

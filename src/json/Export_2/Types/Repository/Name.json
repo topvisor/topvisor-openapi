@@ -18,8 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Хранилище для экспорта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Export_2\\Types\\Repository\\Name"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Export_2\\Types\\Repository\\Name"
             }
         }
     }

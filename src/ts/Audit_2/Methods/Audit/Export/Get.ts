@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт результатов проверки файла
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Export\Get */
         "Audit_2.Methods.Audit.Export.Get": {
             target_type: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'];
             /** Тип отчета для фильтра по ресурсам страницы

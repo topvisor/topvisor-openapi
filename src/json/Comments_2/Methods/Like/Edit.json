@@ -23,8 +23,7 @@
                     "id",
                     "like"
                 ],
-                "title": "Редактирование статуса лайка для комментария\n\nВозвращает результат редактирования статуса лайка",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Comments_2\\Methods\\Like\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Comments_2\\Methods\\Like\\Edit"
             },
             "Comments_2.Methods.Like.Edit.Exec": {
                 "nullable": true,

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт urls в определенном формате
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Export\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Export\Get */
         "Urls_2.Methods.Export.Get": {
             output: import('../../Types/Export/Output.ts').components['schemas']['Urls_2.Types.Export.Output'];
             /** Вывести fieldName в заголовках столбцов (для CSV) */

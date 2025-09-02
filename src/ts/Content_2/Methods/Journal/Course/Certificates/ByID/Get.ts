@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение сертификата по id
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\ByID\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\ByID\Get */
         "Content_2.Methods.Journal.Course.Certificates.ByID.Get": {
             /** Id сертификата */
             id: number;

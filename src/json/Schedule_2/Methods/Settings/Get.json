@@ -29,8 +29,8 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Получить дополнительные параметры расписания\n\nДля каждого типа могут быть свои параметры",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Methods\\Settings\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Methods\\Settings\\Get",
+                "description": "@see Schedule_2\\Mods\\Settings"
             },
             "Schedule_2.Methods.Settings.Get.Exec": {
                 "type": "array"

@@ -18,8 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Тип экспортируемого файла",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\Competitors\\Export\\Output"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\Competitors\\Export\\Output"
             }
         }
     }

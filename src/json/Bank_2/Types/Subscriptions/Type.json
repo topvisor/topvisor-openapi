@@ -21,8 +21,7 @@
                     "Автоматическое продление с авто списанием; Например: рекуррентные платежи по карте",
                     "Ручное продление с участием покупателя; Например:; - платежи по карте без авто продления; - оплата по счету"
                 ],
-                "title": "Тип подписки\n\nОпределяет способ списания средств и порядок продления подписки",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Subscriptions\\Type"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Subscriptions\\Type"
             }
         }
     }

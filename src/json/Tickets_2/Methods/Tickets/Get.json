@@ -45,8 +45,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка тикетов с сообщениями",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Get"
             },
             "Tickets_2.Methods.Tickets.Get.Exec": {
                 "nullable": true,

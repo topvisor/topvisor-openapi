@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение поисковых запросов апометра",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Keywords\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Keywords\\Get"
             },
             "Content_2.Methods.Apometr.Keywords.Get.Exec": {
                 "nullable": true

@@ -39,8 +39,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка правил",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Get"
             },
             "Mentions_2.Methods.Rules.Get.Exec": {
                 "type": "array",

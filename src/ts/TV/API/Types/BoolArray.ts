@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: boolean
-         *
-         *     Принимает: 0|1|false|true
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\BoolArray
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\BoolArray
+         * @description @extends AbstractTypedArray<boolean>
+         *     @method bool[] getValues()
+         *     @method bool current()
          */
         "TV.API.Types.BoolArray": boolean[];
     };

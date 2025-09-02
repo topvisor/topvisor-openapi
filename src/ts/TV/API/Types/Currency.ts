@@ -8,12 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Валюта
-         *
-         *     Этот общий тип, не зависящий от контекста
-         *
-         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Currency
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Currency
          * @enum {string}
          */
         "TV.API.Types.Currency": "RUB" | "USD";

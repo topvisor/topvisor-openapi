@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Закрытие договора (оферту закрыть невозможно)
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Del
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Del */
         "Bank_2.Methods.Requisites.Del": {
             /** Id реквезитов */
             id: string;

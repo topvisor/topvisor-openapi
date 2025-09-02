@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип метода подбора подсказок
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\HintGenerator
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\HintGenerator
          * @enum {string}
          */
         "Keywords_2.Types.Collect.HintGenerator": "letter" | "letter_ru" | "number" | "space";

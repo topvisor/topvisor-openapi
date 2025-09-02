@@ -44,8 +44,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение конкурентов для графика",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Competitors\\SummaryForOrdersChart\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Competitors\\SummaryForOrdersChart\\Get"
             },
             "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": {
                 "nullable": true,

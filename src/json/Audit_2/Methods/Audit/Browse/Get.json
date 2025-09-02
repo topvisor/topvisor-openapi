@@ -21,8 +21,8 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение сводки анализа сайта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Browse\\Get",
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Browse\\Get",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Audit_2.Methods.Audit.Browse.Get.Exec": {

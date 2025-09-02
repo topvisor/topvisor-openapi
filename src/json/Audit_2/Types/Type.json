@@ -27,8 +27,7 @@
                     null,
                     null
                 ],
-                "title": "Модуль аудита",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Type"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Type"
             }
         }
     }

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение комментариев автора. Без вложенности
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\ByAuthor\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\ByAuthor\Get */
         "Comments_2.Methods.ByAuthor.Get": {
             /** ID автора */
             user_id: number;

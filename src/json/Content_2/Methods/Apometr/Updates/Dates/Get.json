@@ -16,8 +16,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение дат апдейтов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Updates\\Dates\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Updates\\Dates\\Get"
             },
             "Content_2.Methods.Apometr.Updates.Dates.Get.Exec": {
                 "type": "array"

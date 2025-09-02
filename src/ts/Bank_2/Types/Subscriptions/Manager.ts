@@ -8,12 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Кто управляет подпиской, а именно:
-         *
-         *     - Запуск списания с карты / электронного кошелька
-         *     - Создание счета
-         *     - Отправка предложения об оплате
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Manager
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Manager
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Manager": "system" | "api";

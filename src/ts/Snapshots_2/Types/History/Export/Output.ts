@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип экспортируемого файла
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\Export\Output
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\Export\Output
          * @enum {string}
          */
         "Snapshots_2.Types.History.Export.Output": "csv" | "csvOld" | "xlsx";

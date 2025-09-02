@@ -23,8 +23,7 @@
                     "resource_admin",
                     "ticket_id"
                 ],
-                "title": "Изменение админской ссылки к тикетам. Только для админов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Ticket\\ResourceAdmin\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Ticket\\ResourceAdmin\\Edit"
             },
             "Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec": {
                 "nullable": true,

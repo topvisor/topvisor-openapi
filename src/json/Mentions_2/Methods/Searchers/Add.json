@@ -41,8 +41,7 @@
                     "rule_id",
                     "key"
                 ],
-                "title": "Добавление поисковика\n\nИзменит, если уже существует",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Add"
             },
             "Mentions_2.Methods.Searchers.Add.Exec": {
                 "type": "integer"

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Произвести попытку обновления интеграции
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\TestTpa\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\TestTpa\Get */
         "Tpa_2.Methods.TestTpa.Get": {
             provider: import('../../Types/Provider.ts').components['schemas']['Tpa_2.Types.Provider'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

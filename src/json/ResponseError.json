@@ -37,8 +37,7 @@
                 "required": [
                     "errors"
                 ],
-                "title": "Результат API запроса с ошибкой",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\ResponseError"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\ResponseError"
             }
         }
     }

@@ -29,8 +29,7 @@
                     "title",
                     "visible"
                 ],
-                "title": "Класс конфигурации команды Telegram.",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Telegram_2\\Types\\Bot\\CommandConfig"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Telegram_2\\Types\\Bot\\CommandConfig"
             }
         }
     }

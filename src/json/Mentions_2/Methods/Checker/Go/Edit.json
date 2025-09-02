@@ -21,8 +21,7 @@
                     }
                 },
                 "required": [],
-                "title": "Отправка правил на проверку",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Checker\\Go\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Checker\\Go\\Edit"
             },
             "Mentions_2.Methods.Checker.Go.Edit.Exec": {
                 "type": "array"

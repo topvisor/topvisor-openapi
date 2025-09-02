@@ -23,8 +23,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Редактирование тикета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Edit"
             },
             "Tickets_2.Methods.Tickets.Edit.Exec": {
                 "nullable": true,

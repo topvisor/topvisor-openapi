@@ -8,8 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Типы метода перебора
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\HintGenerators
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\HintGenerators
+         * @description @extends API\Types\AbstractObjectArray<HintGenerator>
+         *     @method HintGenerator[] getValues()
+         *     @method HintGenerator current()
+         *     @see HintGenerator
          */
         "Keywords_2.Types.Collect.HintGenerators": import('./HintGenerator.ts').components['schemas']['Keywords_2.Types.Collect.HintGenerator'][];
     };

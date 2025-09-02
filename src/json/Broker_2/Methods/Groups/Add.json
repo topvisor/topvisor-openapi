@@ -23,8 +23,7 @@
                     "campaign_tv_id",
                     "groups_names"
                 ],
-                "title": "Добавление групп рекламной кампании",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Groups\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Groups\\Add"
             },
             "Broker_2.Methods.Groups.Add.Exec": {
                 "title": "выводит int, если функция провайдера не определена",

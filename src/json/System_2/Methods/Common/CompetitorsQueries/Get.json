@@ -40,8 +40,7 @@
                     "region_index",
                     "query"
                 ],
-                "title": "Получение доступных запросы для построения отчета с кэшированием на 30 дней",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\CompetitorsQueries\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\CompetitorsQueries\\Get"
             },
             "System_2.Methods.Common.CompetitorsQueries.Get.Exec": {
                 "type": "array"

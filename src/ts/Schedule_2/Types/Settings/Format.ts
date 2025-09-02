@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат отчета
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\Format
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\Format
          * @enum {string}
          */
         "Schedule_2.Types.Settings.Format": "csv" | "xlsx" | "pdf" | "html";

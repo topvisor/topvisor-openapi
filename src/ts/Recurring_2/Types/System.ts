@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Платежная система рекуррентного платежа
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Types\System
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Types\System
          * @enum {string}
          */
         "Recurring_2.Types.System": "card" | "invoice";

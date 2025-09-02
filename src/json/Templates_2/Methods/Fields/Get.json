@@ -30,8 +30,7 @@
                 "required": [
                     "target_type"
                 ],
-                "title": "Получение сохраненного списока столбцов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Fields\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Fields\\Get"
             },
             "Templates_2.Methods.Fields.Get.Exec": {
                 "type": "array"

@@ -21,8 +21,7 @@
                 "required": [
                     "currency"
                 ],
-                "title": "Изменение валюты пользователя",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Currency\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Currency\\Edit"
             },
             "Users_2.Methods.Profile.Currency.Edit.Exec": {
                 "nullable": true,

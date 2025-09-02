@@ -23,7 +23,7 @@
                     "Change_project_owner_description",
                     "Transfer_control_over_project"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Projects\\Settings\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Projects\\Settings\\En"
             }
         }
     }

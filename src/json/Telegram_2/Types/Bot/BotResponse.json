@@ -33,8 +33,7 @@
                     "text",
                     "params"
                 ],
-                "title": "Объект с ответом бота, который будет возвращен на запрос от Телеграма",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Telegram_2\\Types\\Bot\\BotResponse"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Telegram_2\\Types\\Bot\\BotResponse"
             }
         }
     }

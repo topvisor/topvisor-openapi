@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../../Schedule_2/Types/Settings/Format.json#/components/schemas/Schedule_2.Types.Settings.Format"
                 },
-                "title": "Форматыы отчета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\Formats"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\Formats",
+                "description": "@see Format"
             }
         }
     }

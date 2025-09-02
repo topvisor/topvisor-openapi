@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Выбрать сайт для проекта
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
         "Tpa_2.Methods.Gsc.SetSite.Edit": {
             /** Сайт */
             site: string;

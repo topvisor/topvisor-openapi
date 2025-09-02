@@ -45,8 +45,7 @@
                     null,
                     null
                 ],
-                "title": "Тэг для установки",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Tag"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Tag"
             }
         }
     }

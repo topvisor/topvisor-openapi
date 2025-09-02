@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Написание текста
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Writing\Edit
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Writing\Edit */
         "Tickets_2.Methods.Tickets.Writing.Edit": {
             /** ID тикета */
             id: number;

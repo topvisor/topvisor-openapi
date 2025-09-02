@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение активности пользователей в формате для графика
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\ChartByPeriod\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\ChartByPeriod\Get */
         "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get": {
             currency: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Валюта */

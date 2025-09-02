@@ -23,8 +23,7 @@
                     "name",
                     "value"
                 ],
-                "title": "Настройка уведомлений",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Config\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Config\\Edit"
             },
             "Informer_2.Methods.Config.Edit.Exec": {
                 "nullable": true,

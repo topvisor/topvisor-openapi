@@ -35,8 +35,7 @@
                     "limit",
                     "date"
                 ],
-                "title": "Получение активности пользователей в формате для графика",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Activity\\ChartByPeriod\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Activity\\ChartByPeriod\\Get"
             },
             "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec": {
                 "type": "object",

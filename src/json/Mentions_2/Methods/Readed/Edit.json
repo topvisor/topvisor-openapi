@@ -28,8 +28,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение флага \"прочитано\"",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Readed\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Readed\\Edit"
             },
             "Mentions_2.Methods.Readed.Edit.Exec": {
                 "type": "integer"

@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../Mentions_2/Types/SearcherKey.json#/components/schemas/Mentions_2.Types.SearcherKey"
                 },
-                "title": "Id поисковых системы",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Types\\SearchersKeys"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Types\\SearchersKeys",
+                "description": "@see SearcherKey"
             }
         }
     }

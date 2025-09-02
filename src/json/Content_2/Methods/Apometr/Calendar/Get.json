@@ -59,8 +59,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение календаря апдейтов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Calendar\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Calendar\\Get"
             },
             "Content_2.Methods.Apometr.Calendar.Get.Exec": {
                 "nullable": true,

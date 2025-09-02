@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Pages\Help\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Pages\Help\En */
         "I18n.Pages.Help": {
             /** @constant */
             readonly Intro?: "Detailed guides on setting up all Topvisor tools. Tips and advice that will make your workflow efficient to the max.";

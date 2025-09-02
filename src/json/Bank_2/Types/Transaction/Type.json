@@ -30,8 +30,7 @@
                     "Списание из админки",
                     "Бесплатный запуск услуги, подарок, тесты"
                 ],
-                "title": "Тип транзакции",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Transaction\\Type"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Transaction\\Type"
             }
         }
     }

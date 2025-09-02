@@ -52,8 +52,7 @@
                     "inn",
                     "sum"
                 ],
-                "title": "Добавление счета на оплату",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Invoices\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Invoices\\Add"
             },
             "Admin_2.Methods.Accounting.Invoices.Add.Exec": {
                 "nullable": true,

@@ -29,8 +29,7 @@
                     "method",
                     "provider"
                 ],
-                "title": "Название типа. Содержит название провайдера и метода",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Config\\Name"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Config\\Name"
             }
         }
     }

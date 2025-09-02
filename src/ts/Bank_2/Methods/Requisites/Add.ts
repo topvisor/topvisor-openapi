@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавиление реквизитов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Requisites\Add */
         "Bank_2.Methods.Requisites.Add": {
             /** см. объект Bank_2\Objects\Requisites */
             data: string;

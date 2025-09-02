@@ -50,7 +50,7 @@
                     "Promocode",
                     "Info_title"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Landings\\Promocode\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Landings\\Promocode\\En"
             }
         }
     }

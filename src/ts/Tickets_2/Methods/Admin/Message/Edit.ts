@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Редактирование текста ответа в тикете, только для админов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit */
         "Tickets_2.Methods.Admin.Message.Edit": {
             /** ID редактируемого поста тикета */
             id: number;

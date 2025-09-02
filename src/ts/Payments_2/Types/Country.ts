@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Types\Country
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Types\Country
          * @enum {string}
          */
         "Payments_2.Types.Country": "RU" | "UA" | "BY" | "KZ" | "other";

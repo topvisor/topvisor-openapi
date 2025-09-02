@@ -38,8 +38,7 @@
                     "counteragent_name",
                     "counteragent_inn"
                 ],
-                "title": "Изменение фильтра группы",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Group\\Filter\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Group\\Filter\\Edit"
             },
             "Admin_2.Methods.Accounting.Group.Filter.Edit.Exec": {
                 "nullable": true

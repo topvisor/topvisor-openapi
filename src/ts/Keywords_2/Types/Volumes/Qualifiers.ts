@@ -8,8 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Определители проверки частоты
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Volumes\Qualifiers
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Volumes\Qualifiers
+         * @description @extends AbstractStringArray<Qualifier>
+         *     @method Qualifier[] getValues()
+         *     @method Qualifier current()
+         *     @method Qualifier offsetGet()
+         *     @see \TV\API\Types\Qualifier
          */
         "Keywords_2.Types.Volumes.Qualifiers": import('./Qualifier.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifier'][];
     };

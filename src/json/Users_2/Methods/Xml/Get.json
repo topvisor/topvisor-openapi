@@ -11,8 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Нужно для обратной совместимости с приложениями",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Xml\\Get",
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Xml\\Get",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Users_2.Methods.Xml.Get.Exec": {

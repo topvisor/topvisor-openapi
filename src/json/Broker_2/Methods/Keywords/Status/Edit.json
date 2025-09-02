@@ -23,8 +23,7 @@
                     "campaign_tv_id",
                     "keywords_data"
                 ],
-                "title": "Изменение статуса запросов рекламной кампании",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Keywords\\Status\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Keywords\\Status\\Edit"
             },
             "Broker_2.Methods.Keywords.Status.Edit.Exec": {
                 "title": "выводит int, если функция провайдера не определена",

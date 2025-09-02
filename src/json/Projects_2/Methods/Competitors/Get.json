@@ -38,8 +38,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка конкурентов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Get"
             },
             "Projects_2.Methods.Competitors.Get.Exec": {
                 "type": "array"

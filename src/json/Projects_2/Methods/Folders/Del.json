@@ -18,8 +18,7 @@
                     }
                 },
                 "required": [],
-                "title": "Удаление папок",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\Del"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Folders\\Del"
             },
             "Projects_2.Methods.Folders.Del.Exec": {
                 "nullable": true,

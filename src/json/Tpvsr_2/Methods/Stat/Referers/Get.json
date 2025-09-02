@@ -23,8 +23,7 @@
                     "hash",
                     "referer_index"
                 ],
-                "title": "Получение всех источников по индексу источника",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Referers\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Referers\\Get"
             },
             "Tpvsr_2.Methods.Stat.Referers.Get.Exec": {
                 "type": "array"

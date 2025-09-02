@@ -18,8 +18,7 @@
                 "required": [
                     "contract_type"
                 ],
-                "title": "Получение id тарифа пользователя по типу контракта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\ContractTariffId\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\ContractTariffId\\Get"
             },
             "Bank_2.Methods.Requisites.ContractTariffId.Get.Exec": {
                 "nullable": true

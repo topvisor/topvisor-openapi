@@ -28,8 +28,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Копирование проекта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Copy\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Copy\\Add"
             },
             "Projects_2.Methods.Projects.Copy.Add.Exec": {
                 "nullable": true,

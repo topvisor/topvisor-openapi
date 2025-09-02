@@ -26,8 +26,7 @@
                     "type",
                     "token"
                 ],
-                "title": "Удаление токена",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Push\\Token\\Del"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Push\\Token\\Del"
             },
             "Informer_2.Methods.Push.Token.Del.Exec": {
                 "type": "integer"

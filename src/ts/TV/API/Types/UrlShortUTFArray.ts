@@ -8,8 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: UrlShortUTF[]
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlShortUTFArray
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlShortUTFArray
+         * @description @extends AbstractStringArray<UrlShortUTF>
+         *     @method UrlShortUTF[] getValues()
+         *     @method UrlShortUTF current()
+         *     @see \TV\API\Types\UrlShortUTF
          */
         "TV.API.Types.UrlShortUTFArray": import('./UrlShortUTF.ts').components['schemas']['TV.API.Types.UrlShortUTF'][];
     };

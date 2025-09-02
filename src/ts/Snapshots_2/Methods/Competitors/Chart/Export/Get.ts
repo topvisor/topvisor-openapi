@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт сводки с графика
-         *
-         *     Описание параметров смотреть в get/snapshots_2/competitors
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Export\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Export\Get */
         "Snapshots_2.Methods.Competitors.Chart.Export.Get": {
             /** Id проекта */
             project_id: number;

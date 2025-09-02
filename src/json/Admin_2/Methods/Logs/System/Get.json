@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение данных из системного лога",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Logs\\System\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Logs\\System\\Get"
             },
             "Admin_2.Methods.Logs.System.Get.Exec": {
                 "nullable": true,

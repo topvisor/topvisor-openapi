@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип выдачи
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Types\Apometr\Action
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Types\Apometr\Action
          * @enum {string}
          */
         "Content_2.Types.Apometr.Action": "0" | "xml";

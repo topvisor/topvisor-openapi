@@ -35,8 +35,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистику тикетов по тегам",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByTags\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByTags\\Get"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec": {
                 "type": "object",

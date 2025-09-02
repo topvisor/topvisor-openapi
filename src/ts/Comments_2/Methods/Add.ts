@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавление комментария
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Add */
         "Comments_2.Methods.Add": {
             subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];
             /** Текст комментария */

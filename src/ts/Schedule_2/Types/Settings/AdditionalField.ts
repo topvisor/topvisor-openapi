@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Дополнительное поле отчета проверки позиций
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\AdditionalField
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Types\Settings\AdditionalField
          * @enum {string}
          */
         "Schedule_2.Types.Settings.AdditionalField": "summary" | "traffic" | "url" | "frequency";

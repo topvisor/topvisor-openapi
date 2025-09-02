@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Projects\Settings\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Projects\Settings\En */
         "I18n.Projects.Settings": {
             /** @constant */
             readonly Change_project_owner_description: "Change of project owner is a procedure that results in the change of the Project Owner in the service. Write-offs of funds for services provided by the service as a result of one actions or another will be made on behalf of the new owner. All operations with the project, including restoration of access to it if necessary, will be possible only on behalf of the new person.";

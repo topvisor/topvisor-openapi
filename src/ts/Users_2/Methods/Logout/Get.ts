@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Выход из аккаунта
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Logout\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Logout\Get */
         "Users_2.Methods.Logout.Get": Record<string, never>;
         "Users_2.Methods.Logout.Get.Exec": number;
     };

@@ -42,8 +42,7 @@
                 "required": [
                     "output"
                 ],
-                "title": "Экспорт лога банка",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\History\\Export\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\History\\Export\\Get"
             },
             "Bank_2.Methods.History.Export.Get.Exec": {
                 "type": "never"

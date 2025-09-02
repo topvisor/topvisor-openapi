@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Метод с примерами параметров типа Enum
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Enum\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Enum\Get */
         "Example_2.Methods.Enum.Get": {
             number?: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'] | null;
             number2: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'];

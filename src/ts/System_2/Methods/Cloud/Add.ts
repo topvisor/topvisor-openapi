@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Создание директории или загрузка файла
-         *
-         *     Вернет имя директории в случае создания директории или bool при загрузке файла
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Cloud\Add */
         "System_2.Methods.Cloud.Add": {
             /** Директория */
             directory: string;

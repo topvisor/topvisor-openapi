@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тема сообщения
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Method
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Method
          * @enum {string}
          */
         "Informer_2.Types.Config.Method": "news" | "balance" | "yandex-update" | "comments" | "api" | "journal" | "academy" | "tickets";

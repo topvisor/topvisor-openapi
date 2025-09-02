@@ -23,8 +23,7 @@
                     "id",
                     "user_id"
                 ],
-                "title": "Установка userId для тикетов без userId",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\UserId\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\UserId\\Edit"
             },
             "Tickets_2.Methods.Admin.UserId.Edit.Exec": {
                 "nullable": true,

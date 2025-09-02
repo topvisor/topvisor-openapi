@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Сокращенный тип с данными для вывода hightcharts
-         *
-         *     https://www.highcharts.com/
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\Objects\Highcharts\Chart
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\Objects\Highcharts\Chart */
         "TV.Objects.Highcharts.Chart": {
             /** Категории
              *

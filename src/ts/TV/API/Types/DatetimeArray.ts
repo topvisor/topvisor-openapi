@@ -8,8 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: Datetime[]
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\DatetimeArray
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\DatetimeArray
+         * @description @extends AbstractStringArray<Datetime>
+         *     @method Datetime[] getValues()
+         *     @method Datetime current()
+         *     @see \TV\API\Types\Datetime
          */
         "TV.API.Types.DatetimeArray": import('./Datetime.ts').components['schemas']['TV.API.Types.Datetime'][];
     };

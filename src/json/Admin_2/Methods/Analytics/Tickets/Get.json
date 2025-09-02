@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение тикетов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\Get"
             },
             "Admin_2.Methods.Analytics.Tickets.Get.Exec": {
                 "type": "array",

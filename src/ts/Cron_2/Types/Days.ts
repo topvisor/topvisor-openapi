@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Дни недели, в которые должен производиться запуск cron
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Types\Days
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Types\Days */
         "Cron_2.Types.Days": import('./Day.ts').components['schemas']['Cron_2.Types.Day'][];
     };
     responses: never;

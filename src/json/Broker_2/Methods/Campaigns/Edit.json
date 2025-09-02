@@ -62,8 +62,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Редактирование рекламной кампании",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Campaigns\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Campaigns\\Edit"
             },
             "Broker_2.Methods.Campaigns.Edit.Exec": {
                 "type": "integer"

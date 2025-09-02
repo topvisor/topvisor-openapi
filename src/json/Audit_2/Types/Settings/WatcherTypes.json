@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../../Audit_2/Types/Settings/WatcherType.json#/components/schemas/Audit_2.Types.Settings.WatcherType"
                 },
-                "title": "Типы отчетов радара",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Settings\\WatcherTypes"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Settings\\WatcherTypes",
+                "description": "@see WatcherType"
             }
         }
     }

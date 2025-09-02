@@ -7,18 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Создание платежки и переход к оплате
-         *
-         *     Возвращает id платежа, если указан параметр $return_id = true
-         *
-         *     Производит редирект, если настроена форма оплаты на стороне платежной системы
-         *
-         *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
-         *
-         *     При ошибке производит редирект на страницу с информацией об ошибке
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Add */
         "Payments_2.Methods.Add": {
             /** Платежная система */
             system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];

@@ -23,8 +23,7 @@
                     "name",
                     "id"
                 ],
-                "title": "Установка имени проекта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Name\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Name\\Edit"
             },
             "Projects_2.Methods.Projects.Name.Edit.Exec": {
                 "type": "integer"

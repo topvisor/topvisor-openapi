@@ -68,8 +68,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Установка общих настроек проверки позиций проекта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Settings\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Settings\\Edit"
             },
             "Positions_2.Methods.Settings.Edit.Exec": {
                 "nullable": true

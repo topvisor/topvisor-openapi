@@ -53,8 +53,7 @@
                     "system",
                     "type"
                 ],
-                "title": "Настройка рекуррентного платежа",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Recurring_2\\Methods\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Recurring_2\\Methods\\Edit"
             },
             "Recurring_2.Methods.Edit.Exec": {
                 "type": "integer"

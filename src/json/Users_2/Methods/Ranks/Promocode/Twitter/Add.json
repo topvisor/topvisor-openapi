@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Установка ранга Twitter",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Ranks\\Promocode\\Twitter\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Ranks\\Promocode\\Twitter\\Add"
             },
             "Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec": {
                 "nullable": true,

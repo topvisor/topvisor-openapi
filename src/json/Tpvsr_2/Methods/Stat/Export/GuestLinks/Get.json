@@ -18,8 +18,7 @@
                 "required": [
                     "hash"
                 ],
-                "title": "Поучение гостевой ссылки",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Export\\GuestLinks\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Stat\\Export\\GuestLinks\\Get"
             },
             "Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec": {
                 "type": "string"

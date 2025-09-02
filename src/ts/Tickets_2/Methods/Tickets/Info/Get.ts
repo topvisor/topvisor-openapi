@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение краткой информации о тикетах
-         *
-         *     id последнего непрочитанного тикета, число непрочитанных тикетов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Info\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Info\Get */
         "Tickets_2.Methods.Tickets.Info.Get": Record<string, never>;
         "Tickets_2.Methods.Tickets.Info.Get.Exec": unknown[];
     };

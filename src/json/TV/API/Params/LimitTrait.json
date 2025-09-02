@@ -17,7 +17,7 @@
                     }
                 },
                 "required": [],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Params\\LimitTrait"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Params\\LimitTrait"
             }
         }
     }

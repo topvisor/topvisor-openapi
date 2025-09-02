@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка ссылок пользователя",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Get"
             },
             "Tpvsr_2.Methods.Get.Exec": {
                 "type": "array",

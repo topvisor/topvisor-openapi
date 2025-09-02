@@ -18,8 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Получение сертификата по id",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\ByID\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\ByID\\Get"
             },
             "Content_2.Methods.Journal.Course.Certificates.ByID.Get.Exec": {
                 "nullable": true

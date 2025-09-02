@@ -58,8 +58,7 @@
                     "date",
                     "intersection"
                 ],
-                "title": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Orders\\ByKeyword\\Info\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Orders\\ByKeyword\\Info\\Get"
             },
             "Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec": {
                 "type": "array"

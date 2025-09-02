@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение комментариев
-         *
-         *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Get */
         "Comments_2.Methods.Get": {
             subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];
             /** Адрес страницы (нельзя указывать совместно с reply_id) */

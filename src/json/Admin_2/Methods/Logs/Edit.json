@@ -23,8 +23,7 @@
                     "log_file",
                     "log_text"
                 ],
-                "title": "Сохранение текстового файла лога",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Logs\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Logs\\Edit"
             },
             "Admin_2.Methods.Logs.Edit.Exec": {
                 "nullable": true,

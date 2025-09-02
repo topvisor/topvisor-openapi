@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение информации о сообщениях в информере",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Info\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Info\\Get"
             },
             "Informer_2.Methods.Info.Get.Exec": {
                 "type": "array"

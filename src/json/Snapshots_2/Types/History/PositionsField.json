@@ -30,8 +30,7 @@
                     null,
                     null
                 ],
-                "title": "Поле, возвращаемое в snapshotsData",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\History\\PositionsField"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Types\\History\\PositionsField"
             }
         }
     }

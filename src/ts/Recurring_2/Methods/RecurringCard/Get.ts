@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение привязанных карт пользователя
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Get */
         "Recurring_2.Methods.RecurringCard.Get": Record<string, never>;
         "Recurring_2.Methods.RecurringCard.Get.Exec": unknown;
     };

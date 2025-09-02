@@ -28,8 +28,7 @@
                     "currency",
                     "test"
                 ],
-                "title": "Изменение валюты пользователя",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\User\\Currency\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\User\\Currency\\Edit"
             },
             "Admin_2.Methods.Actions.User.Currency.Edit.Exec": {
                 "allOf": [

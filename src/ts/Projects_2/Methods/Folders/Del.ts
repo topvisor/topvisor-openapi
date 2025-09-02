@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление папок
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Del
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\Del */
         "Projects_2.Methods.Folders.Del": {
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

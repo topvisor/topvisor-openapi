@@ -29,7 +29,7 @@
                     "type",
                     "target_id"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Methods\\Del"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Methods\\Del"
             },
             "Schedule_2.Methods.Del.Exec": {
                 "nullable": true,

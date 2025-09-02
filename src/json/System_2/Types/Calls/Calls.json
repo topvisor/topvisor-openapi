@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../../System_2/Types/Calls/Call.json#/components/schemas/System_2.Types.Calls.Call"
                 },
-                "title": "Массив объектов вызова модуля системы",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Calls\\Calls"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Calls\\Calls",
+                "description": "@extends AbstractObjectArray<Call>\n@method Call[] getValues()\n@method Call current()\n@method Call offsetGet()"
             }
         }
     }

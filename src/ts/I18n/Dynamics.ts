@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Dynamics\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Dynamics\En */
         "I18n.Dynamics": {
             /** @constant */
             readonly Number_keywords_better_ranks: "Keywords that advanced in ranks";

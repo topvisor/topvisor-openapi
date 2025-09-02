@@ -30,8 +30,7 @@
                     null,
                     null
                 ],
-                "title": "Оценка отзыва",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Votes_2\\Types\\Rate"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Votes_2\\Types\\Rate"
             }
         }
     }

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Элемент меню
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Objects\Menu\MenuItem
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Objects\Menu\MenuItem */
         "Content_2.Objects.Menu.MenuItem": {
             /** URL пункта меню */
             url: string;

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение настроек аудита
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Settings\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Settings\Get */
         "Audit_2.Methods.Settings.Get": {
             fields: import('../../Types/Settings/FieldNames.ts').components['schemas']['Audit_2.Types.Settings.FieldNames'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

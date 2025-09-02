@@ -22,8 +22,7 @@
                     }
                 },
                 "required": [],
-                "title": "Удаление проектов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Del"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Del"
             },
             "Projects_2.Methods.Projects.Del.Exec": {
                 "type": "integer"

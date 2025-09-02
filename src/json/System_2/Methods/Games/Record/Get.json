@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение рекорда тетриса",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Games\\Record\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Games\\Record\\Get"
             },
             "System_2.Methods.Games.Record.Get.Exec": {
                 "type": "integer"

@@ -144,8 +144,7 @@
                     "project_id",
                     "repository"
                 ],
-                "title": "Экспорт в хранилище\n\nПроизводит редирект на файл в кранилище",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\History\\Export\\ToRepository\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\History\\Export\\ToRepository\\Get"
             },
             "Snapshots_2.Methods.History.Export.ToRepository.Get.Exec": {
                 "type": "never"

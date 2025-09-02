@@ -21,8 +21,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение информации о текущей ошибке на роботе",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Log\\ActualError\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Log\\ActualError\\Get"
             },
             "Audit_2.Methods.Audit.Log.ActualError.Get.Exec": {
                 "title": "Информацией о текущей ошибке на роботе\n\nВернет null, если ошибки на роботе нет",

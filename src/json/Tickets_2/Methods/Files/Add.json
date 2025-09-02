@@ -18,8 +18,7 @@
                 "required": [
                     "filename"
                 ],
-                "title": "Загрузка файла на сервер\n\nПроцесс создания сообщения в тикет не завершен",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Files\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Files\\Add"
             },
             "Tickets_2.Methods.Files.Add.Exec": {
                 "type": "integer"

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление логотипа компании
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Del
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Brand\Logo\Del */
         "Users_2.Methods.Profile.Brand.Logo.Del": Record<string, never>;
         "Users_2.Methods.Profile.Brand.Logo.Del.Exec": number;
     };

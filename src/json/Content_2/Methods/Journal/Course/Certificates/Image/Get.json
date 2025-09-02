@@ -33,8 +33,7 @@
                     "format",
                     "id"
                 ],
-                "title": "Получение сертификата в виде изображения",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Image\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Certificates\\Image\\Get"
             },
             "Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec": {
                 "nullable": true

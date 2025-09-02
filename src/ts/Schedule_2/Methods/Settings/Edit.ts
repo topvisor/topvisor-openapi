@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменить дополнительные параметры расписания
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Edit
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Edit */
         "Schedule_2.Methods.Settings.Edit": {
             /**
              * Тип расписания

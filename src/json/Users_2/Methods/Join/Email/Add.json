@@ -21,8 +21,7 @@
                 "required": [
                     "email"
                 ],
-                "title": "Привязка email к аккаунту",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Join\\Email\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Join\\Email\\Add"
             },
             "Users_2.Methods.Join.Email.Add.Exec": {
                 "title": "\n- 0: произошла ошибка\n- 1: email успешно привязан\n- 2: требуется ввести пароль\n- 3: отправлен запрос на подтверждение",

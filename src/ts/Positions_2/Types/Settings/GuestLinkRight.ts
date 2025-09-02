@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Право для гостевых ссылок
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\Settings\GuestLinkRight
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\Settings\GuestLinkRight
          * @enum {string}
          */
         "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "graphics" | "competitors";

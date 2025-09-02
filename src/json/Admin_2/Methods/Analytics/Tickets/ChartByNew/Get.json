@@ -35,8 +35,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистики по кол-ву пользователей, открывших первый тикет",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByNew\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByNew\\Get"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec": {
                 "type": "object",

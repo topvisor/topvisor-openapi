@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт запросов по доменам
-         *
-         *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByDomains\Table\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByDomains\Table\Get */
         "Competitors_2.Methods.Export.ByDomains.Table.Get": {
             output: import('../../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             /** @default export_byDomains_table */

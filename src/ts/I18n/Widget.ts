@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Widget\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Widget\En */
         "I18n.Widget": Record<string, never>;
     };
     responses: never;

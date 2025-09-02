@@ -42,8 +42,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение проверенных изображений",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Images\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Images\\Get"
             },
             "Audit_2.Methods.Audit.Images.Get.Exec": {
                 "title": "Список проверенных изображений",

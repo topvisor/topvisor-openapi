@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт запросов в проект
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\TableToProject\Add
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\TableToProject\Add */
         "Competitors_2.Methods.Export.TableToProject.Add": {
             /** Id проекта */
             project_id: number;

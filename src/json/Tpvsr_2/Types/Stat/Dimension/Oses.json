@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../../Tpvsr_2/Types/Stat/Dimension/Os.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Os"
                 },
-                "title": "Операционные системы",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Oses"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Oses"
             }
         }
     }

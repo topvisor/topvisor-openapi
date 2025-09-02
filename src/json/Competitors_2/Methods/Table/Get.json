@@ -98,8 +98,7 @@
                     "view",
                     "date"
                 ],
-                "title": "Получение данных для отчета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Table\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Methods\\Table\\Get"
             },
             "Competitors_2.Methods.Table.Get.Exec": {
                 "type": "array"

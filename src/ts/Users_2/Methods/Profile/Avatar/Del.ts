@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление аватарки
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Del
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Avatar\Del */
         "Users_2.Methods.Profile.Avatar.Del": Record<string, never>;
         "Users_2.Methods.Profile.Avatar.Del.Exec": number | null;
     };

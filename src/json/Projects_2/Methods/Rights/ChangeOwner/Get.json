@@ -18,8 +18,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение информации о смене владельца",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\ChangeOwner\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Rights\\ChangeOwner\\Get"
             },
             "Projects_2.Methods.Rights.ChangeOwner.Get.Exec": {
                 "title": "email пользователя, которому уже передается проект",

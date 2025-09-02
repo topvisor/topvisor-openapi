@@ -48,8 +48,7 @@
                     null,
                     null
                 ],
-                "title": "Откуда поступил тикет",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Types\\Tickets\\Type"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Types\\Tickets\\Type"
             }
         }
     }

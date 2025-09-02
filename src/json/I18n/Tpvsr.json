@@ -111,7 +111,7 @@
                     "Short_url_faster_with_bot",
                     "Free_url_limit_reached"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Tpvsr\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Tpvsr\\En"
             }
         }
     }

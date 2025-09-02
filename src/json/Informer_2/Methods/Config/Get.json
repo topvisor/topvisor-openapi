@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение настроек уведомлений",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Config\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Config\\Get"
             },
             "Informer_2.Methods.Config.Get.Exec": {
                 "type": "array",

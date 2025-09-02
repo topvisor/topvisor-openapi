@@ -33,8 +33,7 @@
                     "paymentId",
                     "test"
                 ],
-                "title": "Проведение счета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Payments\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Payments\\Edit"
             },
             "Admin_2.Methods.Actions.Payments.Edit.Exec": {
                 "allOf": [

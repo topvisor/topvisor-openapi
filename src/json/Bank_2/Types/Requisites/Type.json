@@ -39,8 +39,7 @@
                     null,
                     null
                 ],
-                "title": "Тип реквизитов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Requisites\\Type"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Types\\Requisites\\Type"
             }
         }
     }

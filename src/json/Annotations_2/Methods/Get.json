@@ -48,8 +48,7 @@
                     "project_id",
                     "service"
                 ],
-                "title": "Получение примечаний",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Annotations_2\\Methods\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Annotations_2\\Methods\\Get"
             },
             "Annotations_2.Methods.Get.Exec": {
                 "nullable": true,

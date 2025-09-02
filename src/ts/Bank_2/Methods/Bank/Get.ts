@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение данных банка по БИК или Swift
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Bank\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Methods\Bank\Get */
         "Bank_2.Methods.Bank.Get": {
             /** БИК или Swift банка */
             bik?: string;

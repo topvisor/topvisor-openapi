@@ -22,8 +22,7 @@
                 "required": [
                     "url"
                 ],
-                "title": "Получить объект страницы с отрендериным контентом",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Controller_2\\Methods\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Controller_2\\Methods\\Get"
             },
             "Controller_2.Methods.Get.Exec": {
                 "allOf": [

@@ -9,9 +9,8 @@
         "schemas": {
             "TV.API.Types.Date": {
                 "type": "string",
-                "title": "Дата",
-                "example": "2000-01-01",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Date"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Date",
+                "example": "2000-01-01"
             }
         }
     }

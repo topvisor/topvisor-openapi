@@ -7,18 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Общий объект страницы
-         *
-         *     Объект знает все о странице кроме одного - имени сайта, он не знает ничего о сайте, сайт определяется в Core и доступен только через Core
-         *
-         *     Шаблоны рендерятся на 3 уровнях:
-         *     - при получении страницы через get/content_2/pages, см. load() и $pages->article->html
-         *     - при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()
-         *     - при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.
-         *     renderSiteTpl()
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Page
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Controller_2\Objects\Page */
         "Controller_2.Objects.Page": {
             /** Аналог js location
              *

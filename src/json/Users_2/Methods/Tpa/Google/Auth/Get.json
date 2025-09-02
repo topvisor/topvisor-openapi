@@ -34,8 +34,8 @@
                     "jwt",
                     "action"
                 ],
-                "title": "Авторизация через Google",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Tpa\\Google\\Auth\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Tpa\\Google\\Auth\\Get",
+                "description": "@see https://developers.google.com/identity/gsi/web/reference/js-reference\n@see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token"
             },
             "Users_2.Methods.Tpa.Google.Auth.Get.Exec": {
                 "nullable": true,

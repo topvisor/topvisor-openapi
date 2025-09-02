@@ -33,8 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение истории транзакций",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\History\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\History\\Get"
             },
             "Bank_2.Methods.History.Get.Exec": {
                 "nullable": true

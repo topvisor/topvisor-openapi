@@ -23,8 +23,7 @@
                     "directory",
                     "basename"
                 ],
-                "title": "Удаление файлов (файл будет перенесен в директорию /cloud/recycled)",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Cloud\\Del"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Cloud\\Del"
             },
             "System_2.Methods.Cloud.Del.Exec": {
                 "type": "boolean"

@@ -16,8 +16,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка проектов для статистики аккаунта",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Stats\\Account\\ListProjects\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Stats\\Account\\ListProjects\\Get"
             },
             "Users_2.Methods.Stats.Account.ListProjects.Get.Exec": {
                 "nullable": true,

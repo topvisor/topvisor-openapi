@@ -21,8 +21,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение данных о подключенных сервисах",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Data\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Data\\Get"
             },
             "Tpa_2.Methods.Data.Get.Exec": {
                 "nullable": true

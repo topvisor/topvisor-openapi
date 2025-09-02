@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Lang
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\Lang
          * @enum {string}
          */
         "TV.API.Types.Lang": "ru" | "en";

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Widget\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Widget\\En"
             }
         }
     }

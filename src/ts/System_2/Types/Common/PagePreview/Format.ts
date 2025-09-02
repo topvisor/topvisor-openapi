@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат превью
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Common\PagePreview\Format
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Common\PagePreview\Format
          * @enum {string}
          */
         "System_2.Types.Common.PagePreview.Format": "" | "vk";

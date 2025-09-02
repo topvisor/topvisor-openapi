@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение данных проверенных ресурсов
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Log\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Audit\Log\Get */
         "Audit_2.Methods.Audit.Log.Get": {
             /** Фильтр по периоду */
             time1?: import('../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;

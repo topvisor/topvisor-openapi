@@ -8,17 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Изменения подписки сейчас
-         *
-         *     Реализует две взаимоисключающие стратегии:
-         *
-         *     - Проведение доплаты по текущей подписке
-         *     - Остановка текущей подписки и создание новой
-         *        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
-         *        - После оплаты новой подписки действующая подписка будет досрочно завершена
-         *
-         *     Выбор стратегии зависит от типа управления подпиской
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Edit
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Edit
+         * @description @see Bank_2\Types\Subscriptions\Manager
          */
         "Payments_2.Methods.Subscriptions.Edit": {
             /** Id нового плана подписки */

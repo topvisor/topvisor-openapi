@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\ValidateMerchantCardAP\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\ValidateMerchantCardAP\Get */
         "Payments_2.Methods.ValidateMerchantCardAP.Get": {
             /** URL для запроса к Apple Pay */
             validation_url: string;

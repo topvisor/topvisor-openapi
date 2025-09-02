@@ -60,8 +60,7 @@
                     "date",
                     "test"
                 ],
-                "title": "Загрузить и разместить бекап в БД бекапов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Loader\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Loader\\Edit"
             },
             "Admin_2.Methods.Actions.Backup.Loader.Edit.Exec": {
                 "allOf": [

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Объект с ответом бота, который будет возвращен на запрос от Телеграма
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Telegram_2\Types\Bot\BotResponse
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Telegram_2\Types\Bot\BotResponse */
         "Telegram_2.Types.Bot.BotResponse": {
             operation: import('./Api/Operation.ts').components['schemas']['Telegram_2.Types.Bot.Api.Operation'];
             text: string;

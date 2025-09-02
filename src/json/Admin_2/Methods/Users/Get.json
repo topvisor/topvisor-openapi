@@ -38,8 +38,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение пользователей",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Get"
             },
             "Admin_2.Methods.Users.Get.Exec": {
                 "nullable": true

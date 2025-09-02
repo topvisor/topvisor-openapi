@@ -24,8 +24,7 @@
                     null,
                     null
                 ],
-                "title": "Валюта шаблонов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Tpl\\Currency"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Tpl\\Currency"
             }
         }
     }

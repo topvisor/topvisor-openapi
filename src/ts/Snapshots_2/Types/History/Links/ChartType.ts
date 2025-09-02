@@ -8,8 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип диаграммы
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\Links\ChartType
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Types\History\Links\ChartType
          * @enum {string}
          */
         "Snapshots_2.Types.History.Links.ChartType": "tops" | "tops_count" | "avg" | "visibility" | "median";

@@ -798,7 +798,7 @@
                     "Download_keywords_snippets_after_purchase",
                     "Results_not_found"
                 ],
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Competitors\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\\Competitors\\En"
             }
         }
     }

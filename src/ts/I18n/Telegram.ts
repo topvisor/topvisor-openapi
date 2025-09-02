@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Telegram\En */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=I18n\Telegram\En */
         "I18n.Telegram": {
             /** @constant */
             readonly Panel_get_command_list: "Get list of commands";

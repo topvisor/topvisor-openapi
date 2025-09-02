@@ -40,8 +40,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Обновление данных таргетинга",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Campaigns\\UpdateTargeting\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Broker_2\\Methods\\Campaigns\\UpdateTargeting\\Edit"
             },
             "Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec": {
                 "type": "integer"

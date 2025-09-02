@@ -32,8 +32,7 @@
                     "operator",
                     "values"
                 ],
-                "title": "Поле фильтра",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldFilter"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldFilter"
             }
         }
     }

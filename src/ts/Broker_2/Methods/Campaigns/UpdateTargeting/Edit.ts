@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Обновление данных таргетинга
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\UpdateTargeting\Edit
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Broker_2\Methods\Campaigns\UpdateTargeting\Edit */
         "Broker_2.Methods.Campaigns.UpdateTargeting.Edit": {
             /** Id проекта */
             project_id: number;

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение списка тикетов с сообщениями
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Get
-         */
+        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Tickets\Get */
         "Tickets_2.Methods.Tickets.Get": {
             fields_messages?: unknown[] | null;
             /** Добавить в результат данные пользователей, написавших сообщения в тикеты */

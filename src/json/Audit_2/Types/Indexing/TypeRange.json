@@ -39,8 +39,7 @@
                     "Две последние даты проверок",
                     "Произвольный список дат"
                 ],
-                "title": "Тип диапазона индексации",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Indexing\\TypeRange"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Indexing\\TypeRange"
             }
         }
     }

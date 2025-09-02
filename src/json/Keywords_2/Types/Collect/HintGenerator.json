@@ -27,8 +27,7 @@
                     "Подставлять числа",
                     "Подставить пробел"
                 ],
-                "title": "Тип метода подбора подсказок",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\HintGenerator"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\HintGenerator"
             }
         }
     }

@@ -38,8 +38,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка проектов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Projects\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Projects\\Get"
             },
             "Example_2.Methods.Projects.Get.Exec": {
                 "nullable": true,

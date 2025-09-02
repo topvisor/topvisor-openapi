@@ -23,8 +23,7 @@
                     "id",
                     "data"
                 ],
-                "title": "Изменение реквизитов",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\Edit"
             },
             "Bank_2.Methods.Requisites.Edit.Exec": {
                 "nullable": true

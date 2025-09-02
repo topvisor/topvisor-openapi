@@ -8,8 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: Url[]
-         * @description @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlArray
+         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\UrlArray
+         * @description @extends AbstractStringArray<Url>
+         *     @method Url[] getValues()
+         *     @method Url current()
+         *     @see \TV\API\Types\Url
          */
         "TV.API.Types.UrlArray": import('./Url.ts').components['schemas']['TV.API.Types.Url'][];
     };

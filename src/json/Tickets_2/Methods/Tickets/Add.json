@@ -97,8 +97,7 @@
                 "required": [
                     "text"
                 ],
-                "title": "Создание тикета",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Add"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Add"
             },
             "Tickets_2.Methods.Tickets.Add.Exec": {
                 "title": "Id тикета",

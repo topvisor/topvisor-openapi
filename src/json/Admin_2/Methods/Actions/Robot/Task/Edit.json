@@ -33,8 +33,7 @@
                     "type",
                     "test"
                 ],
-                "title": "Снятие задачи с дэбага",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Task\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Task\\Edit"
             },
             "Admin_2.Methods.Actions.Robot.Task.Edit.Exec": {
                 "nullable": true,

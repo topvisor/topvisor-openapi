@@ -44,8 +44,7 @@
                     "project_id",
                     "rule_id"
                 ],
-                "title": "Получение списка поисковиков",
-                "description": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Get"
             },
             "Mentions_2.Methods.Searchers.Get.Exec": {
                 "type": "array",
