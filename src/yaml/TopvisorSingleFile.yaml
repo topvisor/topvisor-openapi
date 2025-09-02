@@ -23853,7 +23853,7 @@ components:
     Example_2.Methods.Enum.Get.Exec:
       title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
       type: array
-    Example_2.Objects.Address:
+    Example_2.Types.Address:
       type: object
       properties:
         city:
@@ -23863,8 +23863,8 @@ components:
           type: string
       required:
         - city
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Objects\Address'
-    Example_2.Objects.User:
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Types\Address'
+    Example_2.Types.User:
       type: object
       properties:
         name:
@@ -23876,19 +23876,19 @@ components:
           type: integer
         address:
           allOf:
-            - $ref: '#/components/schemas/Example_2.Objects.Address'
+            - $ref: '#/components/schemas/Example_2.Types.Address'
       required:
         - name
         - email
         - age
         - address
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Objects\User'
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Types\User'
     Example_2.Methods.Object.Get:
       type: object
       properties:
         user:
           allOf:
-            - $ref: '#/components/schemas/Example_2.Objects.User'
+            - $ref: '#/components/schemas/Example_2.Types.User'
       required:
         - user
       title: |-
@@ -24098,12 +24098,86 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Test\Get
     Example_2.Methods.Test.Get.Exec:
       type: integer
+    Informer_2.Types.Config.Method:
+      type: string
+      enum:
+        - news
+        - balance
+        - yandex-update
+        - comments
+        - api
+        - journal
+        - academy
+        - tickets
+      x-enum-varnames:
+        - News
+        - Balance
+        - YandexUpdate
+        - Comments
+        - Api
+        - Journal
+        - Academy
+        - Tickets
+      x-enum-descriptions:
+        - Новости
+        - Баланс
+        - Обновление Яндекса
+        - Комментарии
+        - API
+        - Журнал
+        - Академия
+        - Тикеты
+      title: |-
+        Тема сообщения
+
+        @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Method
+    Informer_2.Types.Provider:
+      type: string
+      enum:
+        - info
+        - email
+        - sms
+        - push
+        - min
+      x-enum-varnames:
+        - Info
+        - Email
+        - Sms
+        - Push
+        - Min
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - 'Дополнительный конфиг к каждому типу рассылки; Используется только для типа: Уведомление о низком балансе'
+      title: |-
+        Способ рассылки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Provider
+    Informer_2.Types.Config.Name:
+      type: object
+      properties:
+        method:
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Config.Method'
+        provider:
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Provider'
+      required:
+        - method
+        - provider
+      title: |-
+        Название типа. Содержит название провайдера и метода
+
+        @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Name
     Informer_2.Methods.Config.Edit:
       type: object
       properties:
         name:
           title: Название типа. Содержит название провайдера и метода
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Config.Name'
         value:
           title: Значение
           type: integer

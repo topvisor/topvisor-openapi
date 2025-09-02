@@ -12,7 +12,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Config\Edit */
         "Informer_2.Methods.Config.Edit": {
             /** Название типа. Содержит название провайдера и метода */
-            name: string;
+            name: import('../../Types/Config/Name.ts').components['schemas']['Informer_2.Types.Config.Name'];
             /** Значение */
             value: number;
         };

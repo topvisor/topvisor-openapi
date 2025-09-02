@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Types.User",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Types.User": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
+                    "age": {
+                        "type": "integer"
+                    },
+                    "address": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Example_2/Types/Address.json#/components/schemas/Example_2.Types.Address"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "name",
+                    "email",
+                    "age",
+                    "address"
+                ],
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Types\\User"
+            }
+        }
+    }
+}

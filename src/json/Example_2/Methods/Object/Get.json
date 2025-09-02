@@ -13,7 +13,7 @@
                     "user": {
                         "allOf": [
                             {
-                                "$ref": "../../../Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User"
+                                "$ref": "../../../Example_2/Types/User.json#/components/schemas/Example_2.Types.User"
                             }
                         ]
                     }

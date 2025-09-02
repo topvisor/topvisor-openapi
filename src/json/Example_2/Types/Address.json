@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Types.Address",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Types.Address": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "string"
+                    },
+                    "street": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "city"
+                ],
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Types\\Address"
+            }
+        }
+    }
+}

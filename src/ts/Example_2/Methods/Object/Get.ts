@@ -11,7 +11,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Object\Get */
         "Example_2.Methods.Object.Get": {
-            user: import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
+            user: import('../../Types/User.ts').components['schemas']['Example_2.Types.User'];
         };
         /** Ассоциативный массив с результирующими переданными параметрами и результатом genSet() */
         "Example_2.Methods.Object.Get.Exec": unknown[];
