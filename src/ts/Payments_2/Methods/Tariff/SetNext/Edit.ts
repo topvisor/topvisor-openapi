@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Смена тарифа со следующего месяца
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit */
         "Payments_2.Methods.Tariff.SetNext.Edit": {
             /** Id тарифа */
             id: number;

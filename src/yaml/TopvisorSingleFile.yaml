@@ -10831,7 +10831,7 @@ paths:
       summary: |-
         Смена тарифа со следующего месяца
 
-        @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit
       requestBody:
         content:
           application/json:
@@ -33874,7 +33874,7 @@ components:
       title: |-
         Смена тарифа со следующего месяца
 
-        @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\SetNext\Edit
     Payments_2.Methods.Tariff.SetNext.Edit.Exec:
       nullable: true
       type: integer

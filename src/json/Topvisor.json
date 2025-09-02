@@ -18167,7 +18167,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Смена тарифа со следующего месяца\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Payments_2\\Methods\\Tariff\\SetNext\\Edit",
+                "summary": "Смена тарифа со следующего месяца\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Payments_2\\Methods\\Tariff\\SetNext\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
