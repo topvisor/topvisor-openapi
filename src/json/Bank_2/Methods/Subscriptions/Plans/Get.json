@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Subscriptions\\Plans\\Get"
+                "title": "Получение интерфейсов настройки всех планов подписки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Subscriptions\\Plans\\Get"
             },
             "Bank_2.Methods.Subscriptions.Plans.Get.Exec": {
                 "type": "array",

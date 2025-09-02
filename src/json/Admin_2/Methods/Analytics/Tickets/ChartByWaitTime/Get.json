@@ -35,7 +35,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByWaitTime\\Get"
+                "title": "Получение статистики по среднему времени ожидания ответа на вопросы в тикетах\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByWaitTime\\Get"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec": {
                 "type": "object",

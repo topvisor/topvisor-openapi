@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Edit */
+        /** Изменение комментария
+         *
+         *     Изменять комментарий можно только в течение ограниченного времени
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Edit */
         "Comments_2.Methods.Edit": {
             /** ID комментария */
             id: number;

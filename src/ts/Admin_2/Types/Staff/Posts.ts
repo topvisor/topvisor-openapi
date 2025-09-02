@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Staff\Posts
+         * Позиции сотрудников
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Staff\Posts
          * @description @extends API\Types\AbstractObjectArray<Post>
          *     @method Post[] getValues()
          *     @method Post current()

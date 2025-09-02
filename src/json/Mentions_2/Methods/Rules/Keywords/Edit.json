@@ -38,7 +38,7 @@
                     "keywords",
                     "type"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Keywords\\Edit"
+                "title": "Изменение ключевых слов правила\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Keywords\\Edit"
             },
             "Mentions_2.Methods.Rules.Keywords.Edit.Exec": {
                 "type": "integer"

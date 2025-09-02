@@ -23,7 +23,7 @@
                     "id",
                     "text"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Message\\Edit"
+                "title": "Редактирование текста ответа в тикете, только для админов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\Message\\Edit"
             },
             "Tickets_2.Methods.Admin.Message.Edit.Exec": {
                 "nullable": true,

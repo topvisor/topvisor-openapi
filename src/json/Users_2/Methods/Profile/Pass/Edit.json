@@ -28,7 +28,7 @@
                     "pass_new",
                     "pass_new_confirm"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Pass\\Edit"
+                "title": "Изменение пароля\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Pass\\Edit"
             },
             "Users_2.Methods.Profile.Pass.Edit.Exec": {
                 "nullable": true,

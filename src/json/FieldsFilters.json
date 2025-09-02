@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "FieldFilter.json#/components/schemas/FieldFilter"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsFilters"
+                "title": "Список полей фильтрации\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldsFilters"
             }
         }
     }

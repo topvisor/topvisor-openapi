@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Search\Get */
+        /** Поиск страниц
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Search\Get */
         "Content_2.Methods.Search.Get": {
             /** Фильтр по поддомену */
             subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];

@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Go\Edit */
+        /** Постановка задачи на проверку частоты запросов
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Methods\Volumes\Go\Edit */
         "Keywords_2.Methods.Volumes.Go.Edit": {
             /**
              * Запуск в режиме отладки

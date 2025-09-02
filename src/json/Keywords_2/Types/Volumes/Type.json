@@ -30,7 +30,7 @@
                     "Частота с фиксированным порядком слов; Учитывает фразу с возможными словоформами, но в заданном порядке; Пример: `[пластиковые окна]`",
                     "Точная частота с фиксированным порядком слов; Учитывает фразу в точной словоформе и заданном порядке; Пример: `[!пластиковые !окна]`"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\Type"
+                "title": "Тип частоты\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Volumes\\Type"
             }
         }
     }

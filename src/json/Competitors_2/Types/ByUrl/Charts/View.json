@@ -24,7 +24,7 @@
                     "Конкуренты сайта, встречающиеся конкурентные домены в выдаче",
                     "Структура сайта, список URL"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Charts\\View"
+                "title": "Представление отчета\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByUrl\\Charts\\View"
             }
         }
     }

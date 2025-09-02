@@ -22,7 +22,7 @@
                 "required": [
                     "email"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Referrals\\Invite\\Add"
+                "title": "Регистрация по приглашению (по реферальной программе)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Referrals\\Invite\\Add"
             },
             "Users_2.Methods.Referrals.Invite.Add.Exec": {
                 "type": "integer"

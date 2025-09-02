@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\TableToProject\Add */
+        /** Экспорт запросов по доменам в проект
+         *
+         *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Competitors_2\Methods\Export\ByLeaders\TableToProject\Add */
         "Competitors_2.Methods.Export.ByLeaders.TableToProject.Add": {
             /** @default export_byLeaders_tableToProject */
             func?: string;

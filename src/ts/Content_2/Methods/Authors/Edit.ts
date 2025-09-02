@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Authors\Edit */
+        /** Изменить настройки автора
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Content_2\Methods\Authors\Edit */
         "Content_2.Methods.Authors.Edit": {
             /** Имя для url страницы автора
              *

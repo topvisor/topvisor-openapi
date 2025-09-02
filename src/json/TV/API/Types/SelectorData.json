@@ -41,7 +41,7 @@
                     "orders",
                     "offset"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\SelectorData"
+                "title": "Объект параметров Selector\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\SelectorData"
             }
         }
     }

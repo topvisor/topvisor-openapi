@@ -18,7 +18,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Status\\Get"
+                "title": "Получение информации о домене и SSL сертификате\nВозвращает объект с параметрами:\n- domain_expire\n- ssl_expire\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Status\\Get"
             },
             "Projects_2.Methods.Status.Get.Exec": {
                 "type": "object",

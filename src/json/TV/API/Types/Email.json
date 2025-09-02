@@ -9,7 +9,7 @@
         "schemas": {
             "TV.API.Types.Email": {
                 "type": "string",
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Email",
+                "title": "E-mail\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Email",
                 "example": "name@example.com"
             }
         }

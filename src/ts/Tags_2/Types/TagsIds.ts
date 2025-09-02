@@ -8,7 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Types\TagsIds
+         * Список id тегов
+         *
+         *     Тип массива: TagId[]
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tags_2\Types\TagsIds
          * @description @see TagId
          */
         "Tags_2.Types.TagsIds": import('./TagId.ts').components['schemas']['Tags_2.Types.TagId'][];

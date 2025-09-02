@@ -22,7 +22,7 @@
                 "required": [
                     "state_time_end"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\TariffChangeExpire\\Edit"
+                "title": "Изменение даты следующего списания по тарифу\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\TariffChangeExpire\\Edit"
             },
             "Admin_2.Methods.TariffChangeExpire.Edit.Exec": {
                 "nullable": true,

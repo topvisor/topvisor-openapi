@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Requisites\Type
+         * Тип реквизитов
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Requisites\Type
          * @enum {string}
          */
         "Bank_2.Types.Requisites.Type": "contract" | "offer" | "partnerOffer" | "fl223" | "domainsContract" | "domainsOffer" | "domainsPersonContract" | "domainsPersonOffer";

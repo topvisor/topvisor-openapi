@@ -39,7 +39,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Rubric"
+                "title": "Рубрика рассылки\n\nНа каждый тип рассылки оформляется отдельная подписка\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Rubric"
             }
         }
     }

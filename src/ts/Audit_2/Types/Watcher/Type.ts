@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Watcher\Type
+         * Тип проверки радара
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Watcher\Type
          * @enum {string}
          */
         "Audit_2.Types.Watcher.Type": "http_codes" | "redirects" | "h1" | "title" | "description" | "content";

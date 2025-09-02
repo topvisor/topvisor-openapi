@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../Cron_2/Types/Day.json#/components/schemas/Cron_2.Types.Day"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Types\\Days"
+                "title": "Дни недели, в которые должен производиться запуск cron\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Types\\Days"
             }
         }
     }

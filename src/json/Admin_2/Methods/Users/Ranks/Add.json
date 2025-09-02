@@ -100,7 +100,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Ranks\\Add"
+                "title": "Добавление достижения\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Users\\Ranks\\Add"
             },
             "Admin_2.Methods.Users.Ranks.Add.Exec": {
                 "nullable": true,

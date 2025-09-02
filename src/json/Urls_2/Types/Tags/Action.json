@@ -24,7 +24,7 @@
                     "Установить указанные тэги, ранее установленные тэги будут сохранены",
                     "Снять указанные тэги"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Types\\Tags\\Action"
+                "title": "Способ установки тегов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Types\\Tags\\Action"
             }
         }
     }

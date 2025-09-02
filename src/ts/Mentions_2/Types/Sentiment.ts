@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Types\Sentiment
+         * Тональность
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Types\Sentiment
          * @enum {string}
          */
         "Mentions_2.Types.Sentiment": "bad" | "neutral" | "good";

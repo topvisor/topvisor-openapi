@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Posts\\Get"
+                "title": "Получение возможных позиций сотрудников\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\Posts\\Get"
             },
             "Admin_2.Methods.Staff.Posts.Get.Exec": {
                 "allOf": [

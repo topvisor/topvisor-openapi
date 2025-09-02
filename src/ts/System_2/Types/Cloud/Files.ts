@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\Files
+         * Возвращаемые форматы файлов
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\Files
          * @description @extends API\Types\AbstractObjectArray<File>
          *     @method File[] getValues()
          *     @method File current()

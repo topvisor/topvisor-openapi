@@ -12,7 +12,7 @@
                 "items": {
                     "type": "number"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\FloatArray",
+                "title": "Тип: float[]\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\FloatArray",
                 "description": "@deprecated Использовать не рекомендуется, для передачи float рекомендуется использовать строки или целые числа, умноженные на 10^n\n@extends AbstractTypedArray<float>\n@method float[] getValues()\n@method float current()",
                 "deprecated": true
             }

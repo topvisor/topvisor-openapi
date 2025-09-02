@@ -94,7 +94,7 @@
                     "watcher_type",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Watcher\\Get"
+                "title": "Получение результатов проверок радара\n\nОтчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Watcher\\Get"
             },
             "Audit_2.Methods.Watcher.Get.Exec": {
                 "title": "Генерируемый на основе urls, список результатов проверок радара",

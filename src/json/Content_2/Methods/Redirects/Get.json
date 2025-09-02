@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Redirects\\Get"
+                "title": "Получение списка правил (для админов)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Redirects\\Get"
             },
             "Content_2.Methods.Redirects.Get.Exec": {
                 "nullable": true,

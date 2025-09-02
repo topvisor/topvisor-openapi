@@ -21,7 +21,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\App_2\\Methods\\Privacy\\Get"
+                "title": "Получение объекта страницы политики конфиденциальности\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\App_2\\Methods\\Privacy\\Get"
             },
             "App_2.Methods.Privacy.Get.Exec": {
                 "nullable": true,

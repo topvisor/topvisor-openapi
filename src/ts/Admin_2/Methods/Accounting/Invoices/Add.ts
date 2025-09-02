@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Add */
+        /** Добавление счета на оплату
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Accounting\Invoices\Add */
         "Admin_2.Methods.Accounting.Invoices.Add": {
             /** Дата документа */
             document_date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];

@@ -26,7 +26,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Tags\\Edit"
+                "title": "Редактирование тегов проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Tags\\Edit"
             },
             "Projects_2.Methods.Projects.Tags.Edit.Exec": {
                 "nullable": true,

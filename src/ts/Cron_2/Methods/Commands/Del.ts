@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Del */
+        /** Удаление задачи cron
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Del */
         "Cron_2.Methods.Commands.Del": {
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

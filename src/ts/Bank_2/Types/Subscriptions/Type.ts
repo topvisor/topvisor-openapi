@@ -8,7 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Type
+         * Тип подписки
+         *
+         *     Определяет способ списания средств и порядок продления подписки
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Bank_2\Types\Subscriptions\Type
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Type": "auto" | "manual";

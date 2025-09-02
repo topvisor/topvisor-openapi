@@ -156,7 +156,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\Competitors\\Chart\\Get"
+                "title": "Получение данных сводки конкурентов для графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\Competitors\\Chart\\Get"
             },
             "Snapshots_2.Methods.Competitors.Chart.Get.Exec": {
                 "type": "object",

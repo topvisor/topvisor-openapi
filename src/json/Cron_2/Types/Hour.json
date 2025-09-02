@@ -9,7 +9,7 @@
         "schemas": {
             "Cron_2.Types.Hour": {
                 "type": "string",
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Types\\Hour"
+                "title": "Час в который должен производиться запуск cron\n\nПустое значение зарезервированно для запуска cron каждый час\n\nЗначение должно находиться в диапазоне от 0 до 23 включительно\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Cron_2\\Types\\Hour"
             }
         }
     }

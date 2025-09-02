@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Reports_2\Methods\Positions\SendTest\Edit */
+        /** Отправить тестовый отчет
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Reports_2\Methods\Positions\SendTest\Edit */
         "Reports_2.Methods.Positions.SendTest.Edit": {
             /** Id проекта, по которому необходимо отправить тестовый отчет */
             project_id: number;

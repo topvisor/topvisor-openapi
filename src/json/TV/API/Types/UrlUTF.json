@@ -9,7 +9,7 @@
         "schemas": {
             "TV.API.Types.UrlUTF": {
                 "type": "string",
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\UrlUTF"
+                "title": "URL не в punycode, может содержать UTF-символы:\n- без \"<\" и \">\"\n\nБудет проивзедено автоматическое приведение к формату\n\nРазрешен ввод пустой строки, для удаления значения url\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\UrlUTF"
             }
         }
     }

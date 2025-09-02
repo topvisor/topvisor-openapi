@@ -38,7 +38,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Ranks\\Get"
+                "title": "Получение достижений пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Ranks\\Get"
             },
             "Users_2.Methods.Ranks.Get.Exec": {
                 "nullable": true,

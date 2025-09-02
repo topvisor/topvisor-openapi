@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Export\ToRepository\Get */
+        /** Экспорт в хранилище
+         *
+         *     Производит редирект на файл в кранилище
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Snapshots_2\Methods\History\Export\ToRepository\Get */
         "Snapshots_2.Methods.History.Export.ToRepository.Get": {
             /** Id проекта */
             project_id: number;

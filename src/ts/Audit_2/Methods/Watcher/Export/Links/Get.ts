@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Export\Links\Get */
+        /** Создание гостевой ссылки на просмотр радара
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\Export\Links\Get */
         "Audit_2.Methods.Watcher.Export.Links.Get": {
             /** Выбранный элемент в меню */
             view_name?: string;

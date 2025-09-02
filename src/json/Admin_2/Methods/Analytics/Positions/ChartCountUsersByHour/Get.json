@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Positions\\ChartCountUsersByHour\\Get"
+                "title": "Получение числа проверок по часам по пользователям\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Positions\\ChartCountUsersByHour\\Get"
             },
             "Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get.Exec": {
                 "type": "object",

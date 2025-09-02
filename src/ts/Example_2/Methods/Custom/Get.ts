@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Custom\Get */
+        /** Получение текущего времени
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Example_2\Methods\Custom\Get */
         "Example_2.Methods.Custom.Get": {
             /**
              * Формат даты

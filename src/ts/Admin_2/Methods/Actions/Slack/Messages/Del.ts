@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del */
+        /** Удаление сообщений
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del */
         "Admin_2.Methods.Actions.Slack.Messages.Del": {
             /** Токен */
             token: string;

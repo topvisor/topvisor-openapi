@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Add */
+        /** Загрузка файла на сервер
+         *
+         *     Процесс создания сообщения в тикет не завершен
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Files\Add */
         "Tickets_2.Methods.Files.Add": {
             /** Имя файла */
             filename: string;

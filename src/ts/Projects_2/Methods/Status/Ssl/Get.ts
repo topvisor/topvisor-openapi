@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Ssl\Get */
+        /** Получение информации об SSL сертификате
+         *     Возваращает объект с параметрами:
+         *     - expire
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Status\Ssl\Get */
         "Projects_2.Methods.Status.Ssl.Get": {
             /** Домен */
             domain: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];

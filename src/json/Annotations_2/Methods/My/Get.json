@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Annotations_2\\Methods\\My\\Get"
+                "title": "Получение всех своих примечаний по всем проектам и сервисам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Annotations_2\\Methods\\My\\Get"
             },
             "Annotations_2.Methods.My.Get.Exec": {
                 "nullable": true,

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Push\\Safari\\WebService\\AuthToken\\Get"
+                "title": "Получение токена авторизации для работы с safari web push\n\nСоздаст токен, если его не существует\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Methods\\Push\\Safari\\WebService\\AuthToken\\Get"
             },
             "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec": {
                 "type": "string"

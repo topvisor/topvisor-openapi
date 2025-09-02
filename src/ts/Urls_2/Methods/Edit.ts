@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Edit */
+        /** Изменение urls
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Edit */
         "Urls_2.Methods.Edit": {
             /** Флаг активности в карте сайта
              *     - 1 - присутствовал в прошлых версиях карты сайта */

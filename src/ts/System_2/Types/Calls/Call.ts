@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Calls\Call */
+        /** Объект вызова модуля системы
+         *
+         *     Используется для подготовки данных запроса к внутреннему API
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Calls\Call */
         "System_2.Types.Calls.Call": {
             /** Название модуля */
             module: string;

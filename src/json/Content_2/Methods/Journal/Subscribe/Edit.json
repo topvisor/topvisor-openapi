@@ -18,7 +18,7 @@
                 "required": [
                     "subscribe"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Subscribe\\Edit"
+                "title": "Изменение состояния подписки на рассылку журнала\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Journal\\Subscribe\\Edit"
             },
             "Content_2.Methods.Journal.Subscribe.Edit.Exec": {
                 "type": "integer"

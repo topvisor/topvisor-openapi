@@ -54,7 +54,7 @@
                 "required": [
                     "type"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\PrintZip\\Get"
+                "title": "Скачивание архива документов в формате PDF\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\PrintZip\\Get"
             },
             "Bank_2.Methods.Requisites.PrintZip.Get.Exec": {
                 "type": "never"

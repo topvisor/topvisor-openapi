@@ -44,7 +44,7 @@
                 "required": [
                     "text"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Qr_2\\Methods\\Get"
+                "title": "Генерация QR кода по тексту\n\nВозвращает изображение в формате data:image/png;base64\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Qr_2\\Methods\\Get"
             },
             "Qr_2.Methods.Get.Exec": {
                 "nullable": true,

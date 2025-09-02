@@ -74,7 +74,7 @@
                     "tags",
                     "text"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Objects\\Menu\\MenuItem"
+                "title": "Элемент меню\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Objects\\Menu\\MenuItem"
             }
         }
     }

@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Timezone\Edit */
+        /** Изменение временной зоны
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Timezone\Edit */
         "Users_2.Methods.Profile.Timezone.Edit": {
             /** Новая временная зона
              *

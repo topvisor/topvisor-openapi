@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/UrlShortUTF.json#/components/schemas/TV.API.Types.UrlShortUTF"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\UrlShortUTFArray",
+                "title": "Тип массива: UrlShortUTF[]\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\UrlShortUTFArray",
                 "description": "@extends AbstractStringArray<UrlShortUTF>\n@method UrlShortUTF[] getValues()\n@method UrlShortUTF current()\n@see \\TV\\API\\Types\\UrlShortUTF"
             }
         }

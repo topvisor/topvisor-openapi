@@ -40,7 +40,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Master\\HintsCompetitors\\Get"
+                "title": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Master\\HintsCompetitors\\Get"
             },
             "Projects_2.Methods.Master.HintsCompetitors.Get.Exec": {
                 "type": "array"

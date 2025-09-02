@@ -7,7 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Promocodes\Get */
+        /** Получение промокодов
+         *
+         *     В params хранится строка в формате:
+         *     - {{ rank_id }}
+         *     - {{ rank_id }},single_code - для многоразового кода
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Users\Promocodes\Get */
         "Admin_2.Methods.Users.Promocodes.Get": {
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

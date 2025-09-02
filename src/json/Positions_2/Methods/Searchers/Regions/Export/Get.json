@@ -39,7 +39,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Export\\Get"
+                "title": "Экспорт регионов (CSV)\n\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Export\\Get"
             },
             "Positions_2.Methods.Searchers.Regions.Export.Get.Exec": {
                 "type": "never"

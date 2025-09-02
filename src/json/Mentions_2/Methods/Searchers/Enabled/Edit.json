@@ -33,7 +33,7 @@
                     "project_id",
                     "rule_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Enabled\\Edit"
+                "title": "Изменить активность поисковика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Enabled\\Edit"
             },
             "Mentions_2.Methods.Searchers.Enabled.Edit.Exec": {
                 "type": "integer"

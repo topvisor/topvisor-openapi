@@ -7,7 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Next\Edit */
+        /** Изменения подписки на следующий расчетный период
+         *
+         *     Изменение доступно только в рамках одной платежной системы
+         *
+         *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\Subscriptions\Next\Edit */
         "Payments_2.Methods.Subscriptions.Next.Edit": {
             /** Id следующего плана подписки */
             subscription_plan_id: string;

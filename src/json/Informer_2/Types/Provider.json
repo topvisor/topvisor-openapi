@@ -30,7 +30,7 @@
                     null,
                     "Дополнительный конфиг к каждому типу рассылки; Используется только для типа: Уведомление о низком балансе"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Provider"
+                "title": "Способ рассылки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Informer_2\\Types\\Provider"
             }
         }
     }

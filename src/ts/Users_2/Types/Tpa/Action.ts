@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Types\Tpa\Action
+         * Действие, выполняемое при авторизации
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Types\Tpa\Action
          * @enum {string}
          */
         "Users_2.Types.Tpa.Action": "auth" | "join";

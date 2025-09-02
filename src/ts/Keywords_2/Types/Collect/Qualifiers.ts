@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\Qualifiers
+         * Определители с настройками для подбора
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Keywords_2\Types\Collect\Qualifiers
          * @description @extends API\Types\AbstractObjectArray<Qualifier>
          *     @method Qualifier[] getValues()
          *     @method Qualifier current()

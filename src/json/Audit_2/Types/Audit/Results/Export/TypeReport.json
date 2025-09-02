@@ -39,7 +39,7 @@
                     "Страницы",
                     "Одна страница"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Audit\\Results\\Export\\TypeReport"
+                "title": "Тип отчета аудита для экспорта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Audit\\Results\\Export\\TypeReport"
             }
         }
     }

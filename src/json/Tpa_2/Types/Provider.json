@@ -42,7 +42,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Types\\Provider"
+                "title": "Источник данных для интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Types\\Provider"
             }
         }
     }

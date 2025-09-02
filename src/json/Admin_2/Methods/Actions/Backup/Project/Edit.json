@@ -51,7 +51,7 @@
                     "date",
                     "test"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Project\\Edit"
+                "title": "Востановление удаленного проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Project\\Edit"
             },
             "Admin_2.Methods.Actions.Backup.Project.Edit.Exec": {
                 "allOf": [

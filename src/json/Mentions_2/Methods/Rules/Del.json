@@ -24,7 +24,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Del"
+                "title": "Удаление правила\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Rules\\Del"
             },
             "Mentions_2.Methods.Rules.Del.Exec": {
                 "type": "integer"

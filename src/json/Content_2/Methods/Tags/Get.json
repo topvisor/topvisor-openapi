@@ -30,7 +30,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Tags\\Get"
+                "title": "Поиск тегов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Tags\\Get"
             },
             "Content_2.Methods.Tags.Get.Exec": {
                 "nullable": true,

@@ -9,7 +9,7 @@
         "schemas": {
             "TV.API.Types.RegExp": {
                 "type": "string",
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\RegExp",
+                "title": "Регулярное выражение\n\nПустое значение разрешено\n\nУправляющие символы \"/\" в начале и в конце строки будут удалены\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\RegExp",
                 "example": "/^year_(\\d\\d\\d\\d)$/"
             }
         }

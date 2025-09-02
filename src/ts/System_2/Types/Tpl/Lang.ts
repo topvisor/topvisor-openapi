@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Tpl\Lang
+         * Язык шаблона
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Tpl\Lang
          * @enum {string}
          */
         "System_2.Types.Tpl.Lang": "ru" | "en" | "";

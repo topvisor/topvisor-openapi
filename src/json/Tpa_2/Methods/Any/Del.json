@@ -30,7 +30,7 @@
                     "projects_ids",
                     "provider"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Any\\Del"
+                "title": "Удаление интеграции для нескольких проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\Any\\Del"
             },
             "Tpa_2.Methods.Any.Del.Exec": {
                 "nullable": true,

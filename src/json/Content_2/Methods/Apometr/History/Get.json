@@ -60,7 +60,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\History\\Get"
+                "title": "Получение истории шторма за период в 2 суток\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\History\\Get"
             },
             "Content_2.Methods.Apometr.History.Get.Exec": {
                 "nullable": true,

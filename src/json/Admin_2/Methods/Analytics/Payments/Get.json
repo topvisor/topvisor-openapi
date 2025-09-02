@@ -26,7 +26,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Payments\\Get"
+                "title": "Получение суммы оплат за период\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Payments\\Get"
             },
             "Admin_2.Methods.Analytics.Payments.Get.Exec": {
                 "nullable": true,

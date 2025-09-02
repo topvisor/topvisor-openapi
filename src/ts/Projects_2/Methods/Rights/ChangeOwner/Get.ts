@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Get */
+        /** Получение информации о смене владельца
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Rights\ChangeOwner\Get */
         "Projects_2.Methods.Rights.ChangeOwner.Get": {
             /** ID проекта */
             project_id: number;

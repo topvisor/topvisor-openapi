@@ -12,7 +12,7 @@
                 "items": {
                     "type": "string"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\StringArray",
+                "title": "Тип массива: string[]\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\StringArray",
                 "description": "@extends AbstractTypedArray<string>\n@method string[] getValues()\n@method string current()"
             }
         }

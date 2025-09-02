@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\UrlArray",
+                "title": "Тип массива: Url[]\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\UrlArray",
                 "description": "@extends AbstractStringArray<Url>\n@method Url[] getValues()\n@method Url current()\n@see \\TV\\API\\Types\\Url"
             }
         }

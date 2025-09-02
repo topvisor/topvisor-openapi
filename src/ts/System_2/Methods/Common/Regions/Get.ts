@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Regions\Get */
+        /** Получение регионов для поисковиков с последующим кэшированием для Get запросов
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Common\Regions\Get */
         "System_2.Methods.Common.Regions.Get": {
             searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             /** Код страны по ISO 3166-1 alpha-2 */

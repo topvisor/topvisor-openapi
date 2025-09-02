@@ -41,7 +41,7 @@
                 "required": [
                     "link"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Add"
+                "title": "Добавление ссылки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Add"
             },
             "Tpvsr_2.Methods.Add.Exec": {
                 "nullable": true

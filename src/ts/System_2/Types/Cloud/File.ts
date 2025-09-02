@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\File */
+        /** Возвращаемый формат файла из директории
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\File */
         "System_2.Types.Cloud.File": {
             modify: string;
             size: number;

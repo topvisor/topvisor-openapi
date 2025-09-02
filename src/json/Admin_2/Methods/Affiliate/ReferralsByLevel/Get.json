@@ -27,7 +27,7 @@
                     "year",
                     "currency"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\ReferralsByLevel\\Get"
+                "title": "Получение сводки числа рефералов по своему уровню\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\ReferralsByLevel\\Get"
             },
             "Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec": {
                 "anyOf": [

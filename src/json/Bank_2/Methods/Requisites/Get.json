@@ -37,7 +37,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\Get"
+                "title": "Получение списка договоров\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Bank_2\\Methods\\Requisites\\Get"
             },
             "Bank_2.Methods.Requisites.Get.Exec": {
                 "nullable": true

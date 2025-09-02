@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
+        /** Удалить привязанную карту (system = card)
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
         "Recurring_2.Methods.RecurringCard.Del": {
             /** Id карты в системе Тинькофф */
             card_id: number;

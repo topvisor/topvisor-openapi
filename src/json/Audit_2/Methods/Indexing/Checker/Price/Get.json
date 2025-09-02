@@ -23,7 +23,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Checker\\Price\\Get"
+                "title": "Информация о стоимости запуска индексации по проектам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Checker\\Price\\Get"
             },
             "Audit_2.Methods.Indexing.Checker.Price.Get.Exec": {
                 "type": "object",

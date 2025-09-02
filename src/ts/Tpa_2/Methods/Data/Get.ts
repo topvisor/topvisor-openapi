@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Data\Get */
+        /** Получение данных о подключенных сервисах
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpa_2\Methods\Data\Get */
         "Tpa_2.Methods.Data.Get": {
             /** Получить ли подключенные рекламные кампании (Директ и Adwords) */
             include_broker_campaigns?: boolean;

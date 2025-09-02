@@ -68,7 +68,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Checker\\Go\\Edit"
+                "title": "Отправка проектов на проверку позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Positions_2\\Methods\\Checker\\Go\\Edit"
             },
             "Positions_2.Methods.Checker.Go.Edit.Exec": {
                 "title": "Список id проектов, отрпавленных на проверку",

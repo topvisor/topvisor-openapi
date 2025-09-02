@@ -28,7 +28,7 @@
                     "series",
                     "additionalData"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\Objects\\Highcharts\\Chart"
+                "title": "Сокращенный тип с данными для вывода hightcharts\n\nhttps://www.highcharts.com/\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\Objects\\Highcharts\\Chart"
             }
         }
     }

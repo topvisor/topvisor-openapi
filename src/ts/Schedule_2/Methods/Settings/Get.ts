@@ -8,7 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Get
+         * Получить дополнительные параметры расписания
+         *
+         *     Для каждого типа могут быть свои параметры
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Schedule_2\Methods\Settings\Get
          * @description @see Schedule_2\Mods\Settings
          */
         "Schedule_2.Methods.Settings.Get": {

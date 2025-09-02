@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Accounting\Group\Filter\Type
+         * Тип фильтра по группам транзакций
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Types\Accounting\Group\Filter\Type
          * @enum {string}
          */
         "Admin_2.Types.Accounting.Group.Filter.Type": "minus" | "plus";

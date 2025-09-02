@@ -18,7 +18,7 @@
                 "required": [
                     "month"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Operations\\Export\\Get",
+                "title": "Скачивание реестра исходящих операций\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Accounting\\Operations\\Export\\Get",
                 "description": "@POST string month - месяц в формате: YYYY-mm\nстолбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'"
             },
             "Admin_2.Methods.Accounting.Operations.Export.Get.Exec": {

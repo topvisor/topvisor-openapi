@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Name */
+        /** Название типа. Содержит название провайдера и метода
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Types\Config\Name */
         "Informer_2.Types.Config.Name": {
             method: import('./Method.ts').components['schemas']['Informer_2.Types.Config.Method'];
             provider: import('../Provider.ts').components['schemas']['Informer_2.Types.Provider'];

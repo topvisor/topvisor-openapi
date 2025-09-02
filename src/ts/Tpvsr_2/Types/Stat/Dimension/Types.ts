@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Types */
+        /** Типы статистики кликов по ссылке
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Types */
         "Tpvsr_2.Types.Stat.Dimension.Types": import('./Type.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Type'][];
     };
     responses: never;

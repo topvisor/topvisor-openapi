@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Types\Questions\Type
+         * Тип вопроса
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Quiz_2\Types\Questions\Type
          * @enum {string}
          */
         "Quiz_2.Types.Questions.Type": "ONE" | "SEVERAL" | "TEXT";

@@ -33,7 +33,7 @@
                     "type",
                     "name"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Cloud\\File"
+                "title": "Возвращаемый формат файла из директории\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Cloud\\File"
             }
         }
     }

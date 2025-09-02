@@ -36,7 +36,7 @@
                     "Стоимость домена в рублях",
                     "Стоимость домена в долларах"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\Leaders\\Type"
+                "title": "Тип графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\Leaders\\Type"
             }
         }
     }

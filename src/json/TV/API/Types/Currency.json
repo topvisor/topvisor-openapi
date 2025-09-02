@@ -21,7 +21,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Currency"
+                "title": "Валюта\n\nЭтот общий тип, не зависящий от контекста\n\nДополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\\API\\Types\\Currency"
             }
         }
     }

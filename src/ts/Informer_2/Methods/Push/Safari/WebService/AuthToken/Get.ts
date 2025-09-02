@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get */
+        /** Получение токена авторизации для работы с safari web push
+         *
+         *     Создаст токен, если его не существует
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get */
         "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get": Record<string, never>;
         "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec": string;
     };

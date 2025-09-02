@@ -18,7 +18,7 @@
                 "required": [
                     "tpl"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Tpl\\Get"
+                "title": "Поиск HTML шаблонов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Tpl\\Get"
             },
             "Admin_2.Methods.Tpl.Get.Exec": {
                 "anyOf": [

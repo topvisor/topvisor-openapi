@@ -30,7 +30,7 @@
                 "required": [
                     "target_type"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Get"
+                "title": "Получение сохраненного списка шаблонов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Methods\\Get"
             },
             "Templates_2.Methods.Get.Exec": {
                 "type": "array"

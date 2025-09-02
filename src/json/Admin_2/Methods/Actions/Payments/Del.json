@@ -28,7 +28,7 @@
                     "paymentId",
                     "test"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Payments\\Del"
+                "title": "Отмена проведения счета\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Actions\\Payments\\Del"
             },
             "Admin_2.Methods.Actions.Payments.Del.Exec": {
                 "allOf": [

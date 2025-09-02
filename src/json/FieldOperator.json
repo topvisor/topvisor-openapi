@@ -63,7 +63,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldOperator"
+                "title": "Операторы сравнения с полем\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Objects\\Core\\FieldOperator"
             }
         }
     }

@@ -8,7 +8,17 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FetchStyle
+         * Формат результата в основном используется для Get запросов, поддерживается не всеми запросами в полной мере
+         *
+         *     Указанием формата результата позволяет получать данные одного и того же метода в разном формате
+         *
+         *     Данный параметр влияет на тип возвращаемого результата
+         *
+         *     Данные параметр помогает избежать ненужных преобразований результатов на клиенте
+         *
+         *     Напоминает логику работу PDO Fetch: https://www.php.net/manual/ru/pdostatement.fetch.php
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Openapi_2\Objects\Core\FetchStyle
          * @enum {string}
          */
         FetchStyle: "fetchAll" | "fetchAllNum" | "fetchAllColumn" | "fetch" | "fetchColumn" | "fetchGroup" | "fetchGroupColumn" | "fetchUnique" | "fetchUniqueNum" | "fetchUniqueColumn" | "selector";

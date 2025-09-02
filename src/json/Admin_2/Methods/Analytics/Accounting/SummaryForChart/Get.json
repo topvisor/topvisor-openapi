@@ -53,7 +53,7 @@
                     "currency",
                     "date"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Accounting\\SummaryForChart\\Get"
+                "title": "Получение сводки по группам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\Accounting\\SummaryForChart\\Get"
             },
             "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": {
                 "type": "object",

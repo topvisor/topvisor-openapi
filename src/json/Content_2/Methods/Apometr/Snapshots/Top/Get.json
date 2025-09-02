@@ -35,7 +35,7 @@
                     "region_index",
                     "action"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Snapshots\\Top\\Get"
+                "title": "Получение топа выдачи сайтов за определенную проверку\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Apometr\\Snapshots\\Top\\Get"
             },
             "Content_2.Methods.Apometr.Snapshots.Top.Get.Exec": {
                 "title": "Статистика домена по каждой категории\n\nПозиция 0 - значит, домен вышел из топа",

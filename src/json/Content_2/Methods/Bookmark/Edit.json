@@ -28,7 +28,7 @@
                     "url",
                     "bookmark"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Bookmark\\Edit"
+                "title": "Редактирование статуса закладки для страницы\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Bookmark\\Edit"
             },
             "Content_2.Methods.Bookmark.Edit.Exec": {
                 "nullable": true,

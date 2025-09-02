@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\UrTinkoffCreateApplication\Add */
+        /** Отправка заявки на подключение Тинькофф Бизнес
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Payments_2\Methods\UrTinkoffCreateApplication\Add */
         "Payments_2.Methods.UrTinkoffCreateApplication.Add": Record<string, never>;
         "Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec": number | null;
     };

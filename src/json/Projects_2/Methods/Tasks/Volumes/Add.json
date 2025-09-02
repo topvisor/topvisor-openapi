@@ -50,7 +50,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add"
+                "title": "Создание задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add"
             },
             "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
                 "nullable": true

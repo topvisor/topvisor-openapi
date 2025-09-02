@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Token\Add */
+        /** Регистрация токена
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Informer_2\Methods\Push\Token\Add */
         "Informer_2.Methods.Push.Token.Add": {
             type: import('../../../Types/Push/Token/Type.ts').components['schemas']['Informer_2.Types.Push.Token.Type'];
             /** Токен */

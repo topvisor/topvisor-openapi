@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Like\Edit */
+        /** Редактирование статуса лайка для комментария
+         *
+         *     Возвращает результат редактирования статуса лайка
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Comments_2\Methods\Like\Edit */
         "Comments_2.Methods.Like.Edit": {
             /** Id комментария */
             id: number;

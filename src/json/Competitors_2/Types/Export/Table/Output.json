@@ -24,7 +24,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\Export\\Table\\Output"
+                "title": "Тип экспортируемого файла\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\Export\\Table\\Output"
             }
         }
     }

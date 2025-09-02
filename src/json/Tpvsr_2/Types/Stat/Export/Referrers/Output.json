@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Export\\Referrers\\Output"
+                "title": "Формат экспорта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Export\\Referrers\\Output"
             }
         }
     }

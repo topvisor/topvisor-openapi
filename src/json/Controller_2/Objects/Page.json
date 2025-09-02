@@ -234,7 +234,7 @@
                     "v",
                     "vJS"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Controller_2\\Objects\\Page"
+                "title": "Общий объект страницы\n\nОбъект знает все о странице кроме одного - имени сайта, он не знает ничего о сайте, сайт определяется в Core и доступен только через Core\n\nШаблоны рендерятся на 3 уровнях:\n- при получении страницы через get/content_2/pages, см. load() и $pages->article->html\n- при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()\n- при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.\nrenderSiteTpl()\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Controller_2\\Objects\\Page"
             }
         }
     }

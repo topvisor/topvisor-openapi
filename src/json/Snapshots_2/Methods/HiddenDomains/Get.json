@@ -18,7 +18,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\HiddenDomains\\Get"
+                "title": "Получение списка сайтов (доменов), которые выделены как неважные\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Snapshots_2\\Methods\\HiddenDomains\\Get"
             },
             "Snapshots_2.Methods.HiddenDomains.Get.Exec": {
                 "type": "array"

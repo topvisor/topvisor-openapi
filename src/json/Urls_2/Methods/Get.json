@@ -38,7 +38,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Get"
+                "title": "Получение списка urls проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Urls_2\\Methods\\Get"
             },
             "Urls_2.Methods.Get.Exec": {
                 "title": "Список urls проекта",

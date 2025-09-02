@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\File\Type
+         * Тип файла, получаемого из облака Selectel
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Types\Cloud\File\Type
          * @enum {string}
          */
         "System_2.Types.Cloud.File.Type": "pdir" | "cdir" | "dir" | "file";

@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\Edit */
+        /** Настройка рекуррентного платежа
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Recurring_2\Methods\Edit */
         "Recurring_2.Methods.Edit": {
             system: import('../Types/System.ts').components['schemas']['Recurring_2.Types.System'];
             type: import('../Types/Type.ts').components['schemas']['Recurring_2.Types.Type'];

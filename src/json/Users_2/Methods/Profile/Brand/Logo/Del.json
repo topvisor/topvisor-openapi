@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Brand\\Logo\\Del"
+                "title": "Удаление логотипа компании\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Brand\\Logo\\Del"
             },
             "Users_2.Methods.Profile.Brand.Logo.Del.Exec": {
                 "type": "integer"

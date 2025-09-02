@@ -21,7 +21,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\OpenAPI\\Get"
+                "title": "Загрузка настроек OpenAPI\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Methods\\Common\\OpenAPI\\Get"
             },
             "System_2.Methods.Common.OpenAPI.Get.Exec": {
                 "type": "never"

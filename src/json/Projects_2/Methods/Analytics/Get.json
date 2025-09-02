@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Analytics\\Get"
+                "title": "Получение списка графиков\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Analytics\\Get"
             },
             "Projects_2.Methods.Analytics.Get.Exec": {
                 "nullable": true,

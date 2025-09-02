@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     "Вторая"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Api\\V"
+                "title": "Версия API\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\System_2\\Types\\Api\\V"
             }
         }
     }

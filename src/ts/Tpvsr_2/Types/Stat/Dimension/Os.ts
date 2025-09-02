@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Os
+         * Операционная система
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Os
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Os": "Android" | "iOS" | "WP" | "Windows" | "Macintosh" | "Linux" | "Other";

@@ -22,7 +22,7 @@
                 "required": [
                     "lang"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Lang\\Edit"
+                "title": "Изменение языка\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Lang\\Edit"
             },
             "Users_2.Methods.Profile.Lang.Edit.Exec": {
                 "nullable": true,

@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Tags\Edit */
+        /** Изменение тегов
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Urls_2\Methods\Tags\Edit */
         "Urls_2.Methods.Tags.Edit": {
             tags: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'];
             action: import('../../Types/Tags/Action.ts').components['schemas']['Urls_2.Types.Tags.Action'];

@@ -25,7 +25,7 @@
                     "fields",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Settings\\Get"
+                "title": "Получение настроек аудита\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Settings\\Get"
             },
             "Audit_2.Methods.Settings.Get.Exec": {
                 "title": "Настройки аудита",

@@ -30,7 +30,7 @@
                     "Запросы конкурентов",
                     "Статистика поисковых запросов конкурентов"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Types\\TargetType"
+                "title": "Тип данных (место использования)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Templates_2\\Types\\TargetType"
             }
         }
     }

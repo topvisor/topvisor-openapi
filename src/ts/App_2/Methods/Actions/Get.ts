@@ -7,7 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Actions\Get */
+        /** Получение данных подтверждения
+         *
+         *     Возвращает результат подтверждения в виде
+         *     массива с сообщением (acceptAction),
+         *     логической переменной (acceptEmail),
+         *     null при неправильно введенном типе
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\App_2\Methods\Actions\Get */
         "App_2.Methods.Actions.Get": {
             /** Email пользователя */
             email: string;

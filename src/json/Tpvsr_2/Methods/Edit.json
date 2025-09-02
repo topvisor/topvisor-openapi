@@ -38,7 +38,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Edit"
+                "title": "Редактирование ссылки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpvsr_2\\Methods\\Edit"
             },
             "Tpvsr_2.Methods.Edit.Exec": {
                 "nullable": true,

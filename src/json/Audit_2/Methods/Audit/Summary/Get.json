@@ -54,7 +54,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Summary\\Get"
+                "title": "Получение сводки о выполненном аудите\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Audit\\Summary\\Get"
             },
             "Audit_2.Methods.Audit.Summary.Get.Exec": {
                 "title": "Сводка о выполненном аудите\n\nВозвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях",

@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Questions\\Del"
+                "title": "Удаление вопроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\Questions\\Del"
             },
             "Quiz_2.Methods.Questions.Del.Exec": {
                 "nullable": true,

@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Schedule_2/Types/Settings/AdditionalField.json#/components/schemas/Schedule_2.Types.Settings.AdditionalField"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\AdditionalFields",
+                "title": "Дополнительные поля отчета проверки позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Schedule_2\\Types\\Settings\\AdditionalFields",
                 "description": "@see AdditionalField"
             }
         }

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\CountOnlineUsers\\Get"
+                "title": "Получение числа активных пользователей\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Analytics\\CountOnlineUsers\\Get"
             },
             "Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec": {
                 "type": "object",

@@ -29,7 +29,7 @@
                     "cid",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\SetCounterId\\Edit"
+                "title": "Произвести выбор счетчика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tpa_2\\Methods\\SetCounterId\\Edit"
             },
             "Tpa_2.Methods.SetCounterId.Edit.Exec": {
                 "nullable": true,

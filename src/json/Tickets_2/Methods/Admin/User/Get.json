@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\User\\Get"
+                "title": "Получение инфомрации о пользователе\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Tickets_2\\Methods\\Admin\\User\\Get"
             },
             "Tickets_2.Methods.Admin.User.Get.Exec": {
                 "type": "array"

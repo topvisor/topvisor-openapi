@@ -111,7 +111,7 @@
                     "searchers_keys",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Get"
+                "title": "Получение отчета по проверке индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Get"
             },
             "Audit_2.Methods.Indexing.Get.Exec": {
                 "title": "Список ссылок с данными по ним",

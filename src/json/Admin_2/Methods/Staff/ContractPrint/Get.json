@@ -18,7 +18,7 @@
                 "required": [
                     "props"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\ContractPrint\\Get"
+                "title": "Печать договора\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Staff\\ContractPrint\\Get"
             },
             "Admin_2.Methods.Staff.ContractPrint.Get.Exec": {
                 "type": "never"

@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Collect/Qualifier.json#/components/schemas/Keywords_2.Types.Collect.Qualifier"
                 },
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\Qualifiers",
+                "title": "Определители с настройками для подбора\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\Qualifiers",
                 "description": "@extends API\\Types\\AbstractObjectArray<Qualifier>\n@method Qualifier[] getValues()\n@method Qualifier current()\n@see Qualifier"
             }
         }

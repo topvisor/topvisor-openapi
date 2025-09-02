@@ -27,7 +27,7 @@
                     "email",
                     "pass"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Email\\Edit"
+                "title": "Запрос на смену email\n\nБудет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Users_2\\Methods\\Profile\\Email\\Edit"
             },
             "Users_2.Methods.Profile.Email.Edit.Exec": {
                 "type": "integer"

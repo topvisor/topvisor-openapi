@@ -60,7 +60,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Methods\\Volumes\\Go\\Edit"
+                "title": "Постановка задачи на проверку частоты запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Methods\\Volumes\\Go\\Edit"
             },
             "Keywords_2.Methods.Volumes.Go.Edit.Exec": {
                 "title": "Список id проектов, отправленных на проверку",

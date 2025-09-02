@@ -26,7 +26,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Checker\\Price\\Get"
+                "title": "Получение стоимости проверки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Mentions_2\\Methods\\Checker\\Price\\Get"
             },
             "Mentions_2.Methods.Checker.Price.Get.Exec": {
                 "type": "array"

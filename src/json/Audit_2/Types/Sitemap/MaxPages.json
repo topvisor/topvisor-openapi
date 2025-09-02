@@ -33,7 +33,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Sitemap\\MaxPages"
+                "title": "Предполагаемое число страниц на вашем сайте\n\nВыбираейте приблизительное занчение, например 100, 1000 или 10000 в зависимсоти от размеров вашего сйта\n\nЭто значение влияет на стоимость генерации карты сайта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Types\\Sitemap\\MaxPages"
             }
         }
     }

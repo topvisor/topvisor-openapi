@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Properties\Property\Edit */
+        /** Редактирование параметра
+         *
+         *     Не хранить в параметрах конфиденциальную информацию
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\System_2\Methods\Properties\Property\Edit */
         "System_2.Methods.Properties.Property.Edit": {
             /** Имя параметра */
             name: string;

@@ -23,7 +23,7 @@
                     "question_id",
                     "values"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\QuestionsResponses\\Add"
+                "title": "Добавление ответа\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Quiz_2\\Methods\\QuestionsResponses\\Add"
             },
             "Quiz_2.Methods.QuestionsResponses.Add.Exec": {
                 "nullable": true,

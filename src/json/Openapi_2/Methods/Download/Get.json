@@ -21,7 +21,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Methods\\Download\\Get",
+                "title": "Создать Open API схемы и скачать в zip\n\nВ результате вернет zip файл в потоке вывода\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Openapi_2\\Methods\\Download\\Get",
                 "description": "@see https://editor.swagger.io/ Редактор Open API"
             },
             "Openapi_2.Methods.Download.Get.Exec": {

@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\MoveFolder\Edit */
+        /** Переместить папку
+         *
+         *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Projects_2\Methods\Folders\MoveFolder\Edit */
         "Projects_2.Methods.Folders.MoveFolder.Edit": {
             /** Id папки, которую надо перенести */
             id: number;

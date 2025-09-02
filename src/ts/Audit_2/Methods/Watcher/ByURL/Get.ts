@@ -7,7 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\ByURL\Get */
+        /** Построение отчета по одному URL
+         *
+         *     Отличия от get/audit_2/watcher:
+         *     - отчет генерируется на основе объекта watcher_results, а не urls
+         *     - параметры выбора периода отчета игнорируются
+         *     - выбор проверок регулируется параметрами запроса filters, limit и offset
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Methods\Watcher\ByURL\Get */
         "Audit_2.Methods.Watcher.ByURL.Get": {
             /** ID URL */
             url_id: number;

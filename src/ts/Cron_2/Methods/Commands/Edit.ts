@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Edit */
+        /** Изменение задачи cron
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Cron_2\Methods\Commands\Edit */
         "Cron_2.Methods.Commands.Edit": {
             /** Описание задачи */
             description?: string | null;

@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Types\SearcherKey
+         * Доступные ключи поисковика
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Mentions_2\Types\SearcherKey
          * @enum {integer}
          */
         "Mentions_2.Types.SearcherKey": 101 | 102 | 103;

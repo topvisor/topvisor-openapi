@@ -27,7 +27,7 @@
                     "year",
                     "currency"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\Referrers\\Get"
+                "title": "Получение сводки по новым партнерам\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Admin_2\\Methods\\Affiliate\\Referrers\\Get"
             },
             "Admin_2.Methods.Affiliate.Referrers.Get.Exec": {
                 "type": "object",

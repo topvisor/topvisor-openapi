@@ -7,7 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
+        /** Получение активности пользователей по статусам активности
+         *
+         *     Статусы активности:
+         *     1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не менее 100 рублей (или $5).
+         *     2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+         *     3. Активный (постоянный) - в эту категорию попадут клиенты, которые не меняли свой статус активности за последний месяц
+         *     4. Активный (вернувшийся) - в эту категорию попадут клиенты, которые вернули себе статус "Активный клиент".
+         *     5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
+         *     этот статус.
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
         "Admin_2.Methods.Analytics.Activity.Get": {
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Валюта */

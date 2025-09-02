@@ -27,7 +27,7 @@
                     "Стоимость рекламы домена в рублях",
                     "Стоимость рекламы домена в долларах"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\Leaders\\Ads\\Type"
+                "title": "Тип графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Competitors_2\\Types\\ByKeyword\\Charts\\Leaders\\Ads\\Type"
             }
         }
     }

@@ -34,7 +34,7 @@
                     "id",
                     "to_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Move\\Edit"
+                "title": "Перемещение конкурента (сортировка)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Competitors\\Move\\Edit"
             },
             "Projects_2.Methods.Competitors.Move.Edit.Exec": {
                 "nullable": true,

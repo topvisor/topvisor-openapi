@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Ticket\ResourceAdmin\Edit */
+        /** Изменение админской ссылки к тикетам. Только для админов
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Tickets_2\Methods\Admin\Ticket\ResourceAdmin\Edit */
         "Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit": {
             /** Ссылка */
             resource_admin: string;

@@ -7,7 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Email\Edit */
+        /** Запрос на смену email
+         *
+         *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Users_2\Methods\Profile\Email\Edit */
         "Users_2.Methods.Profile.Email.Edit": {
             /** Новый email */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

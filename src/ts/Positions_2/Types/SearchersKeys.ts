@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\SearchersKeys */
+        /** Id поисковых системы для проверки позиций
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Positions_2\Types\SearchersKeys */
         "Positions_2.Types.SearchersKeys": import('./SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'][];
     };
     responses: never;

@@ -36,7 +36,7 @@
                     null,
                     null
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\SearcherKey"
+                "title": "Ключ поисковой системы для сбора запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Keywords_2\\Types\\Collect\\SearcherKey"
             }
         }
     }

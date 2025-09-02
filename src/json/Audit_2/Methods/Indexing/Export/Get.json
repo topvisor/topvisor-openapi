@@ -89,7 +89,7 @@
                     "output",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Export\\Get"
+                "title": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Audit_2\\Methods\\Indexing\\Export\\Get"
             },
             "Audit_2.Methods.Indexing.Export.Get.Exec": {
                 "title": "Результаты индексации",

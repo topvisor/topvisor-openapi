@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Settings\WatcherTypes
+         * Типы отчетов радара
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\Audit_2\Types\Settings\WatcherTypes
          * @description @see WatcherType
          */
         "Audit_2.Types.Settings.WatcherTypes": import('./WatcherType.ts').components['schemas']['Audit_2.Types.Settings.WatcherType'][];

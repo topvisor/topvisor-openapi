@@ -41,7 +41,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Authors\\Edit"
+                "title": "Изменить настройки автора\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Authors\\Edit"
             },
             "Content_2.Methods.Authors.Edit.Exec": {
                 "nullable": true,

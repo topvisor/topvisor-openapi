@@ -8,7 +8,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\EmailArray
+         * Тип массива: Email[]
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=TV\API\Types\EmailArray
          * @description @extends AbstractStringArray<Email>
          *     @method Email[] getValues()
          *     @method Email current()

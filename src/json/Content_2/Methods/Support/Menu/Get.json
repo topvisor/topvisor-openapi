@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Support\\Menu\\Get"
+                "title": "Получение меню справки\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Content_2\\Methods\\Support\\Menu\\Get"
             },
             "Content_2.Methods.Support.Menu.Get.Exec": {
                 "type": "object",

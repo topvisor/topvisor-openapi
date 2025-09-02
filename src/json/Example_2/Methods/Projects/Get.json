@@ -38,7 +38,7 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Projects\\Get"
+                "title": "Получение списка проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Example_2\\Methods\\Projects\\Get"
             },
             "Example_2.Methods.Projects.Get.Exec": {
                 "nullable": true,

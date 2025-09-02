@@ -50,7 +50,7 @@
                 "required": [
                     "url"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Add"
+                "title": "Добавление проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor.com&fqn=Services\\Projects_2\\Methods\\Projects\\Add"
             },
             "Projects_2.Methods.Projects.Add.Exec": {
                 "nullable": true
