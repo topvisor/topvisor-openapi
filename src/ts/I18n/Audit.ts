@@ -292,7 +292,7 @@ export interface components {
             /** @constant */
             readonly Indexing_already_started_error: "Index Checker already running";
             /** @constant */
-            readonly Sitemap_XML_link_not_match_host_error: "Link to XML does not match project host";
+            readonly Sitemap_XML_link_not_match_host: "Link to XML does not match project host";
             /** @constant */
             readonly Sitemap_required_columns_missing: "Required URLs column missing";
             /** @constant */

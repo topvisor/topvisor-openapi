@@ -574,7 +574,7 @@
                         "const": "Index Checker already running",
                         "readOnly": true
                     },
-                    "Sitemap_XML_link_not_match_host_error": {
+                    "Sitemap_XML_link_not_match_host": {
                         "const": "Link to XML does not match project host",
                         "readOnly": true
                     },
@@ -874,7 +874,7 @@
                     "Watcher_max_redirects_count",
                     "Watcher_already_started_error",
                     "Indexing_already_started_error",
-                    "Sitemap_XML_link_not_match_host_error",
+                    "Sitemap_XML_link_not_match_host",
                     "Sitemap_required_columns_missing",
                     "Delete_sitemap",
                     "URL_exists",
