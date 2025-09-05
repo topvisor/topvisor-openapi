@@ -12688,7 +12688,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Востановление удаленного проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Projects\\Edit",
+                "summary": "Восстановление удаленного проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Projects\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {

@@ -7581,7 +7581,7 @@ paths:
       tags:
         - Admin_2
       summary: |-
-        Востановление удаленного проекта
+        Восстановление удаленного проекта
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Edit
       requestBody:
@@ -28885,7 +28885,7 @@ components:
         - projectId
         - test
       title: |-
-        Востановление удаленного проекта
+        Восстановление удаленного проекта
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Edit
     Admin_2.Methods.Actions.Projects.Edit.Exec:
