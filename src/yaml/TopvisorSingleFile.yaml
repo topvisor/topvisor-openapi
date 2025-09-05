@@ -16845,10 +16845,41 @@ components:
           title: Описание ошибки
           type: string
         detail:
-          title: Объект с дополнительной информацией
+          title: |-
+            Объект с дополнительной информацией
+            - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
+             Нужно передать название и, если требуется, дополнительные параметры
           nullable: true
-          type: object
-          additionalProperties: {}
+          anyOf:
+            - type: object
+              properties:
+                text:
+                  type: string
+                actions:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      trigger:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          params:
+                            type: object
+                            additionalProperties: {}
+                        required:
+                          - name
+                      text:
+                        type: string
+                      link:
+                        type: string
+                    required:
+                      - text
+                      - link
+              required:
+                - text
+            - type: 'null'
       required:
         - code
         - string

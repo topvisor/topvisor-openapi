@@ -17,10 +17,22 @@ export interface components {
             code: number;
             /** Описание ошибки */
             string: string;
-            /** Объект с дополнительной информацией */
-            detail?: {
-                [key: string]: unknown;
-            } | null;
+            /** Объект с дополнительной информацией
+             *     - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
+             *      Нужно передать название и, если требуется, дополнительные параметры */
+            detail?: ({
+                text: string;
+                actions?: {
+                    trigger?: {
+                        name: string;
+                        params?: {
+                            [key: string]: unknown;
+                        };
+                    };
+                    text: string;
+                    link: string;
+                }[];
+            } | null) | null;
         };
     };
     responses: never;
