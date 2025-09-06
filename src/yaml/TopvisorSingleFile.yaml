@@ -16543,7 +16543,7 @@ paths:
         Авторизация через VK ID
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
-      description: '@see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description'
+      description: '@see https://id.vk.ru/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description'
       requestBody:
         content:
           application/json:
@@ -39982,7 +39982,7 @@ components:
         Авторизация через VK ID
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
-      description: '@see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description'
+      description: '@see https://id.vk.ru/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description'
     Users_2.Methods.Tpa.Vk.Auth.Get.Exec:
       nullable: true
       type: array
