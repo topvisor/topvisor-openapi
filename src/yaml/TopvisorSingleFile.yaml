@@ -29673,6 +29673,30 @@ components:
       title: Список пользователей
       nullable: true
       type: array
+    Admin_2.Types.Staff.Access.Name:
+      type: string
+      enum:
+        - ftp
+        - mysql
+        - vpn
+        - monitoring
+        - httpAuth
+      x-enum-varnames:
+        - Ftp
+        - Mysql
+        - Vpn
+        - Monitoring
+        - HttpAuth
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Название доступа
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Staff\Access\Name
     Admin_2.Methods.Staff.Access.Edit:
       type: object
       properties:
@@ -29680,14 +29704,8 @@ components:
           title: ID пользователя
           type: integer
         name:
-          title: |-
-            Название доступа
-
-            - ftp
-            - mysql
-            - vpn
-            - httpAuth
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Staff.Access.Name'
         category:
           title: Подкатегория доступа
           type: string

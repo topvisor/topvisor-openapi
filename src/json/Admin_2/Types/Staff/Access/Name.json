@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Types.Staff.Access.Name",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Types.Staff.Access.Name": {
+                "type": "string",
+                "enum": [
+                    "ftp",
+                    "mysql",
+                    "vpn",
+                    "monitoring",
+                    "httpAuth"
+                ],
+                "x-enum-varnames": [
+                    "Ftp",
+                    "Mysql",
+                    "Vpn",
+                    "Monitoring",
+                    "HttpAuth"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Название доступа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Types\\Staff\\Access\\Name"
+            }
+        }
+    }
+}

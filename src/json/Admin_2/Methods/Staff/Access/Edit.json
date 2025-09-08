@@ -15,8 +15,11 @@
                         "type": "integer"
                     },
                     "name": {
-                        "title": "Название доступа\n\n- ftp\n- mysql\n- vpn\n- httpAuth",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Admin_2/Types/Staff/Access/Name.json#/components/schemas/Admin_2.Types.Staff.Access.Name"
+                            }
+                        ]
                     },
                     "category": {
                         "title": "Подкатегория доступа",

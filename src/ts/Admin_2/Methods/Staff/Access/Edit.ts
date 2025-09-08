@@ -13,13 +13,7 @@ export interface components {
         "Admin_2.Methods.Staff.Access.Edit": {
             /** ID пользователя */
             user_id: number;
-            /** Название доступа
-             *
-             *     - ftp
-             *     - mysql
-             *     - vpn
-             *     - httpAuth */
-            name: string;
+            name: import('../../../Types/Staff/Access/Name.ts').components['schemas']['Admin_2.Types.Staff.Access.Name'];
             /** Подкатегория доступа */
             category: string;
             /** Выдать или забрать доступ */
