@@ -2173,7 +2173,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Получение доступа к акаунту пользователя в режиме \"призрак\"\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Ghost\\Get",
+                "summary": "Получение доступа к аккаунту пользователя в режиме \"призрак\"\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Ghost\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5844,6 +5844,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }

@@ -27,16 +27,17 @@
                     },
                     "offset": {
                         "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [],
                 "title": "Получение внутренних операций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Operations\\Get"
             },
             "Admin_2.Methods.Accounting.Operations.Get.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
+                }
             }
         }
     }

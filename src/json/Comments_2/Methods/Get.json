@@ -23,7 +23,7 @@
                         "type": "string"
                     },
                     "reply_id": {
-                        "title": "Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url)",
+                        "title": "Получить ответы на комментарий с id = reply_id (нельзя указывать совместно с page_url)",
                         "nullable": true,
                         "type": "integer"
                     },

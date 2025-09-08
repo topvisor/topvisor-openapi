@@ -16,7 +16,7 @@ export interface components {
             subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];
             /** Адрес страницы (нельзя указывать совместно с reply_id) */
             page_url?: string | null;
-            /** Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url) */
+            /** Получить ответы на комментарий с id = reply_id (нельзя указывать совместно с page_url) */
             reply_id?: number | null;
             fields?: import('../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

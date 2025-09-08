@@ -20,7 +20,7 @@
                         ]
                     },
                     "filters_resources": {
-                        "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type",
+                        "title": "Фильтр по ресурсам страницы, API filters для объекта, тип которого указан в filters_extra_target_type",
                         "type": "array"
                     },
                     "fields": {

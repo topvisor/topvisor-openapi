@@ -15,7 +15,7 @@ export interface components {
         "Audit_2.Methods.Indexing.Get": {
             searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /**
-             * Список полей индексации, которые необъодимо получить
+             * Список полей индексации, которые необходимо получить
              *
              *     См. поля indexing_* в объекте Urls
              * @default [
@@ -60,7 +60,6 @@ export interface components {
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Список ссылок с данными по ним */

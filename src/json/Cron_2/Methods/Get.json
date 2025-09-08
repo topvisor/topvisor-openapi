@@ -27,9 +27,6 @@
                     },
                     "offset": {
                         "$ref": "../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [],

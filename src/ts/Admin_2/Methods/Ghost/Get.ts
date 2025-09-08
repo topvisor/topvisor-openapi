@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение доступа к акаунту пользователя в режиме "призрак"
+        /** Получение доступа к аккаунту пользователя в режиме "призрак"
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ghost\Get */
         "Admin_2.Methods.Ghost.Get": {
@@ -23,7 +23,6 @@ export interface components {
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         "Admin_2.Methods.Ghost.Get.Exec": Record<string, never>;
     };

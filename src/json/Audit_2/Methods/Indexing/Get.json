@@ -18,7 +18,7 @@
                         ]
                     },
                     "indexing_fields": {
-                        "title": "Список полей индексации, которые необъодимо получить\n\nСм. поля indexing_* в объекте Urls",
+                        "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
                         "default": [
                             "data"
                         ],
@@ -99,9 +99,6 @@
                     },
                     "offset": {
                         "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"

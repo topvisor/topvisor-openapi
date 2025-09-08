@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "lessons_url": {
-                        "title": "Ссылка на урок для поулчения pageChapter и pageLesson",
+                        "title": "Ссылка на урок для получения pageChapter и pageLesson",
                         "nullable": true,
                         "type": "string"
                     },

@@ -1403,7 +1403,7 @@ paths:
       tags:
         - Admin_2
       summary: |-
-        Получение доступа к акаунту пользователя в режиме "призрак"
+        Получение доступа к аккаунту пользователя в режиме "призрак"
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ghost\Get
       requestBody:
@@ -3543,6 +3543,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
   /get/content_2/sitemap/:
     post:
       operationId: GetContent2Sitemap
@@ -17249,7 +17252,7 @@ components:
           nullable: true
           type: string
         reply_id:
-          title: Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url)
+          title: Получить ответы на комментарий с id = reply_id (нельзя указывать совместно с page_url)
           nullable: true
           type: integer
         fields:
@@ -19563,11 +19566,9 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
-        Получение доступа к акаунту пользователя в режиме "призрак"
+        Получение доступа к аккаунту пользователя в режиме "призрак"
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ghost\Get
     Models.Requisites:
@@ -20428,7 +20429,7 @@ components:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         indexing_fields:
           title: |-
-            Список полей индексации, которые необъодимо получить
+            Список полей индексации, которые необходимо получить
 
             См. поля indexing_* в объекте Urls
           default:
@@ -20488,8 +20489,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -22168,8 +22167,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - campaign_tv_id
       title: |-
@@ -23461,8 +23458,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - subdomain
         - lang
@@ -23473,6 +23468,8 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Search\Get
     Content_2.Methods.Search.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Sitemap.Get:
       type: object
       properties:
@@ -23743,8 +23740,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение списка имен сервисов, в которых есть команды cron
@@ -24451,8 +24446,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
         - searcher_key
@@ -25554,8 +25547,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение списка проектов
@@ -25724,7 +25715,7 @@ components:
           nullable: true
           type: boolean
         show_site_stat:
-          title: Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС)
+          title: Добавить ли в результат дополнительно собираемую информацию (Яндекс ИКС)
           nullable: true
           type: boolean
         show_searchers_and_regions:
@@ -26000,8 +25991,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - quiz_id
       title: |-
@@ -27510,8 +27499,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение списка тикетов с сообщениями
@@ -27967,7 +27954,7 @@ components:
           type: boolean
         forClipboard:
           title: |-
-            Вернуть данные в формате для копироваиня в буфер обмена
+            Вернуть данные в формате для копирования в буфер обмена
 
             Не более 2000 результатов
           type: boolean
@@ -27983,8 +27970,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -28625,8 +28610,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение групп
@@ -28760,8 +28743,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение внутренних операций
@@ -28769,6 +28750,9 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Operations\Get
     Admin_2.Methods.Accounting.Operations.Get.Exec:
       nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.EmptyModel'
     Admin_2.Methods.Actions.Bank.Edit:
       type: object
       properties:
@@ -31105,7 +31089,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
         filters_resources:
-          title: Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
+          title: Фильтр по ресурсам страницы, API filters для объекта, тип которого указан в filters_extra_target_type
           type: array
         fields:
           $ref: '#/components/schemas/fields'
@@ -31665,8 +31649,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -32837,7 +32819,7 @@ components:
       type: object
       properties:
         lessons_url:
-          title: Ссылка на урок для поулчения pageChapter и pageLesson
+          title: Ссылка на урок для получения pageChapter и pageLesson
           nullable: true
           type: string
         fields:
@@ -36443,20 +36425,10 @@ components:
     Admin_2.Methods.Accounting.Invoices.File.Get:
       type: object
       properties:
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
         id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
+          title: Id счета на оплату
+          nullable: true
+          type: integer
       required: []
       title: |-
         Скачивание документа
@@ -38935,8 +38907,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение модулей курса
@@ -39001,8 +38971,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение стаьи для "Слово дня" в модуле SEO словарь
@@ -39204,20 +39172,6 @@ components:
         project_id:
           title: Id проекта
           type: integer
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: |-
@@ -39327,8 +39281,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: |-
@@ -40106,20 +40058,6 @@ components:
         token:
           title: Проверочный токен
           type: string
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - size
         - token

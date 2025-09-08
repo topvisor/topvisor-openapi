@@ -13,7 +13,7 @@ export interface components {
         "Audit_2.Methods.Audit.Pages.Get": {
             /** Тип отчета для фильтра по ресурсам страницы */
             filters_resources_target_type?: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'] | null;
-            /** Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type */
+            /** Фильтр по ресурсам страницы, API filters для объекта, тип которого указан в filters_extra_target_type */
             filters_resources?: unknown[];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

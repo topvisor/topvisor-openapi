@@ -16,7 +16,7 @@ export interface components {
             show_fields_names?: boolean;
             /** Вывести fieldLabel в заголовках столбцов (для CSV) */
             show_fields_labels?: boolean;
-            /** Вернуть данные в формате для копироваиня в буфер обмена
+            /** Вернуть данные в формате для копирования в буфер обмена
              *
              *     Не более 2000 результатов */
             forClipboard?: boolean;
@@ -26,7 +26,6 @@ export interface components {
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Urls_2.Methods.Export.Get.Exec": Record<string, never>;

@@ -52,9 +52,6 @@
                     },
                     "offset": {
                         "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [
@@ -65,7 +62,10 @@
                 "title": "Поиск страниц\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Search\\Get"
             },
             "Content_2.Methods.Search.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Pages.json#/components/schemas/Models.Pages"
+                }
             }
         }
     }

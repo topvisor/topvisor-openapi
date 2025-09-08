@@ -13,7 +13,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Get */
         "Content_2.Methods.Journal.Course.Get": {
-            /** Ссылка на урок для поулчения pageChapter и pageLesson */
+            /** Ссылка на урок для получения pageChapter и pageLesson */
             lessons_url?: string | null;
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
