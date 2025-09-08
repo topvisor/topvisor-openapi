@@ -7,19 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение проверки частоты задачи без проекта
+        /** Получение цены проверки частоты задачи без создания проекта
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
         "Projects_2.Methods.Tasks.Volumes.Price.Get": {
-            /** Ключевые фразы */
+            /** Массив ключевых запросов в формате CSV */
             keywords: unknown[];
-            /** Проверять ли запросы
-             *
-             *     - 0: проверять
-             *     - 1: не проверять запросы с актуальной частотой
-             *     - 2: не проверять запросы с частотой */
-            no_recheck?: import('../../../../../Keywords_2/Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
-            /** Объекты определителей частоты */
+            /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
             qualifiers: import('../../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
         "Projects_2.Methods.Tasks.Volumes.Price.Get.Exec": number;

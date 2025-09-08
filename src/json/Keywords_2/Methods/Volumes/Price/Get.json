@@ -10,11 +10,6 @@
             "Keywords_2.Methods.Volumes.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "debug": {
-                        "title": "Запуск в режиме отладки\n\nТолько для админов",
-                        "description": "@private",
-                        "type": "boolean"
-                    },
                     "project_id": {
                         "title": "Id проекта",
                         "type": "integer"
@@ -50,11 +45,19 @@
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"
                     },
+                    "for_project_task": {
+                        "title": "Выполняется ли запуск проверки для проекта, который является задачей toolbox",
+                        "description": "@internal",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "debug": {
+                        "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
                     }
                 },
                 "required": [

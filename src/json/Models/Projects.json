@@ -57,6 +57,12 @@
                     "task_method_params_json": {
                         "nullable": true
                     },
+                    "task_status": {
+                        "nullable": true
+                    },
+                    "task_progress": {
+                        "nullable": true
+                    },
                     "site": {
                         "nullable": true
                     },

@@ -11,7 +11,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Volumes\Qualifier */
         "Keywords_2.Types.Volumes.Qualifier": {
-            /** Строковй идентификатор определителя */
+            /** Строков идентификатор определителя */
             id: string;
             region_key: number;
             searcher_key: import('./SearcherKey.ts').components['schemas']['Keywords_2.Types.Volumes.SearcherKey'];

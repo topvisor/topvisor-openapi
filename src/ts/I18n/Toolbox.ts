@@ -20,9 +20,11 @@ export interface components {
             /** @constant */
             readonly In_process: "In process";
             /** @constant */
-            readonly Repeat_task: "Repeat task";
+            readonly Recreate_task: "Create new task from this one";
             /** @constant */
             readonly No_tasks: "No tasks";
+            /** @constant */
+            readonly Wordstat_check: "Search volume tracking with Toolbox";
         };
     };
     responses: never;

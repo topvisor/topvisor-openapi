@@ -11790,7 +11790,7 @@ paths:
       tags:
         - Projects_2
       summary: |-
-        Создание задачи
+        Создание задачи на проверку частоты
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add
       requestBody:
@@ -15964,7 +15964,7 @@ paths:
       tags:
         - Projects_2
       summary: |-
-        Получение проверки частоты задачи без проекта
+        Получение цены проверки частоты задачи без создания проекта
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get
       requestBody:
@@ -15989,41 +15989,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/projects_2/tasks/volumes/status/:
-    post:
-      operationId: GetProjects2TasksVolumesStatus
-      tags:
-        - Projects_2
-      summary: |-
-        Получение статуса проверки частоты задачи
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Volumes.Status.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.Volumes.Status.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Projects'
   /get/snapshots_2/competitors/chart/export/:
     post:
       operationId: GetSnapshots2CompetitorsChartExport
@@ -17913,8 +17878,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: |-
@@ -23990,6 +23953,10 @@ components:
           nullable: true
         task_method_params_json:
           nullable: true
+        task_status:
+          nullable: true
+        task_progress:
+          nullable: true
         site:
           nullable: true
         update:
@@ -24620,8 +24587,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: |-
@@ -24742,8 +24707,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
         - rule_id
@@ -25501,6 +25464,7 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Projects\Del
     Projects_2.Methods.Projects.Del.Exec:
+      nullable: true
       type: integer
     Projects_2.Methods.Projects.Get:
       type: object
@@ -25650,8 +25614,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение информации о выданных доступах к проекту
@@ -29231,8 +29193,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение партнеров c кол-вом рефералов
@@ -32796,8 +32756,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение закладок авторов
@@ -33487,7 +33445,7 @@ components:
       type: object
       properties:
         id:
-          title: Строковй идентификатор определителя
+          title: Строков идентификатор определителя
           type: string
         region_key:
           type: integer
@@ -33520,16 +33478,16 @@ components:
         @method Qualifier current()
         @method Qualifier offsetGet()
         @see \TV\API\Types\Qualifier
+    debug:
+      title: |-
+        Включить режим отладки
+
+        Учитывается только при запуске с правами администратора
+      description: '@internal'
+      type: boolean
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-            Только для админов
-          description: '@private'
-          type: boolean
         project_id:
           title: Id проекта
           type: integer
@@ -33557,10 +33515,16 @@ components:
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
+        for_project_task:
+          title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
+          description: '@internal'
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        debug:
+          $ref: '#/components/schemas/debug'
       required:
         - project_id
       title: |-
@@ -33580,13 +33544,6 @@ components:
     Keywords_2.Methods.Volumes.Price.Get:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-            Только для админов
-          description: '@private'
-          type: boolean
         project_id:
           title: Id проекта
           type: integer
@@ -33614,10 +33571,16 @@ components:
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
+        for_project_task:
+          title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
+          description: '@internal'
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        debug:
+          $ref: '#/components/schemas/debug'
       required:
         - project_id
       title: |-
@@ -33909,13 +33872,6 @@ components:
     Payments_2.Methods.Tariff.SetNext.Edit.Exec:
       nullable: true
       type: integer
-    debug:
-      title: |-
-        Включить режим отладки
-
-        Учитывается только при запуске с правами администратора
-      description: '@internal'
-      type: boolean
     Positions_2.Methods.Checker.Go.Edit:
       type: object
       properties:
@@ -34742,40 +34698,18 @@ components:
     Projects_2.Methods.Tasks.Volumes.Add:
       type: object
       properties:
-        url:
-          title: Url проекта (домен или url страницы)
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
         keywords:
-          title: |-
-            Массив ключевых запросов в формате CSV
-
-            - array keywords - массив ключевых запросов, допускается формат CSV
+          title: Массив ключевых запросов в формате CSV
           type: array
-        remove_special_chars:
-          title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)'
-          nullable: true
-          type: boolean
-        no_recheck:
-          title: |-
-            Проверять ли запросы
-
-            - 0: проверять
-            - 1: не проверять запросы с актуальной частотой
-            - 2: не проверять запросы с частотой
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.NoRecheck'
         qualifiers:
           title: Объекты определителей частоты (параметр не обязателен, если check_all_regions = true)
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
       required:
-        - url
         - keywords
         - qualifiers
       title: |-
-        Создание задачи
+        Создание задачи на проверку частоты
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add
     Projects_2.Methods.Tasks.Volumes.Add.Exec:
@@ -38952,8 +38886,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required: []
       title: |-
         Получение списка страниц по буквам для модуля SEO словарь
@@ -39256,57 +39188,21 @@ components:
       type: object
       properties:
         keywords:
-          title: Ключевые фразы
+          title: Массив ключевых запросов в формате CSV
           type: array
-        no_recheck:
-          title: |-
-            Проверять ли запросы
-
-            - 0: проверять
-            - 1: не проверять запросы с актуальной частотой
-            - 2: не проверять запросы с частотой
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.NoRecheck'
         qualifiers:
-          title: Объекты определителей частоты
+          title: Объекты определителей частоты (параметр не обязателен, если check_all_regions = true)
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
       required:
         - keywords
         - qualifiers
       title: |-
-        Получение проверки частоты задачи без проекта
+        Получение цены проверки частоты задачи без создания проекта
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get
     Projects_2.Methods.Tasks.Volumes.Price.Get.Exec:
       type: number
-    Projects_2.Methods.Tasks.Volumes.Status.Get:
-      type: object
-      properties:
-        project_id:
-          title: Id проекта
-          type: integer
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-      required:
-        - project_id
-      title: |-
-        Получение статуса проверки частоты задачи
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get
-    Projects_2.Methods.Tasks.Volumes.Status.Get.Exec:
-      nullable: true
     Snapshots_2.Methods.Competitors.Chart.Export.Get:
       type: object
       properties:

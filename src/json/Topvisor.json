@@ -19787,7 +19787,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Создание задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add",
+                "summary": "Создание задачи на проверку частоты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -26800,7 +26800,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение проверки частоты задачи без проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Price\\Get",
+                "summary": "Получение цены проверки частоты задачи без создания проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Price\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -26840,67 +26840,6 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/projects_2/tasks/volumes/status/": {
-            "post": {
-                "operationId": "GetProjects2TasksVolumesStatus",
-                "tags": [
-                    "Projects_2"
-                ],
-                "summary": "Получение статуса проверки частоты задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Status\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Projects_2/Methods/Tasks/Volumes/Status/Get.json#/components/schemas/Projects_2.Methods.Tasks.Volumes.Status.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Projects_2/Methods/Tasks/Volumes/Status/Get.json#/components/schemas/Projects_2.Methods.Tasks.Volumes.Status.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }

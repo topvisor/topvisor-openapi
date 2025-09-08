@@ -11,13 +11,6 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Price\Get */
         "Keywords_2.Methods.Volumes.Price.Get": {
-            /**
-             * Запуск в режиме отладки
-             *
-             *     Только для админов
-             * @description @private
-             */
-            debug?: boolean;
             /** Id проекта */
             project_id: number;
             no_recheck?: import('../../../Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
@@ -35,8 +28,14 @@ export interface components {
             set_qualifiers_for_visibility?: boolean | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
+            /**
+             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
+             * @description @internal
+             */
+            for_project_task?: boolean;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
         };
         "Keywords_2.Methods.Volumes.Price.Get.Exec": {
             [key: string]: unknown;

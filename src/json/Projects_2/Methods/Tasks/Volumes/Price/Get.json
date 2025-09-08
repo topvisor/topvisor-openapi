@@ -11,20 +11,11 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Ключевые фразы",
+                        "title": "Массив ключевых запросов в формате CSV",
                         "type": "array"
                     },
-                    "no_recheck": {
-                        "title": "Проверять ли запросы\n\n- 0: проверять\n- 1: не проверять запросы с актуальной частотой\n- 2: не проверять запросы с частотой",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../Keywords_2/Types/Volumes/NoRecheck.json#/components/schemas/Keywords_2.Types.Volumes.NoRecheck"
-                            }
-                        ]
-                    },
                     "qualifiers": {
-                        "title": "Объекты определителей частоты",
+                        "title": "Объекты определителей частоты (параметр не обязателен, если check_all_regions = true)",
                         "allOf": [
                             {
                                 "$ref": "../../../../../Keywords_2/Types/Volumes/Qualifiers.json#/components/schemas/Keywords_2.Types.Volumes.Qualifiers"
@@ -36,7 +27,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение проверки частоты задачи без проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Price\\Get"
+                "title": "Получение цены проверки частоты задачи без создания проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Price\\Get"
             },
             "Projects_2.Methods.Tasks.Volumes.Price.Get.Exec": {
                 "type": "number"

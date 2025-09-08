@@ -780,7 +780,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение доступа к акаунту пользователя в режиме "призрак"
+    /** Получение доступа к аккаунту пользователя в режиме "призрак"
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ghost\Get */
     "/get/admin_2/ghost/": {
@@ -3655,7 +3655,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сохраненного списока столбцов
+    /** Получение сохраненного списка столбцов
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Fields\Get */
     "/get/templates_2/fields/": {
@@ -4473,7 +4473,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Востановление удаленного проекта
+    /** Восстановление удаленного проекта
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Projects\Edit */
     "/edit/admin_2/actions/projects/": {
@@ -7019,7 +7019,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание задачи
+    /** Создание задачи на проверку частоты
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add */
     "/add/projects_2/tasks/volumes/": {
@@ -9620,7 +9620,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение проверки частоты задачи без проекта
+    /** Получение цены проверки частоты задачи без создания проекта
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
     "/get/projects_2/tasks/volumes/price/": {
@@ -9633,25 +9633,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetProjects2TasksVolumesPrice"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение статуса проверки частоты задачи
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Status\Get */
-    "/get/projects_2/tasks/volumes/status/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetProjects2TasksVolumesStatus"];
         delete?: never;
         options?: never;
         head?: never;
@@ -9998,7 +9979,7 @@ export interface paths {
      * Авторизация через VK ID
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Vk\Auth\Get
-     * @description @see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description
+     * @description @see https://id.vk.ru/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description
      */
     "/get/users_2/tpa/vk/auth/": {
         parameters: {
@@ -12850,6 +12831,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Search/Get.ts').components['schemas']['Content_2.Methods.Search.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
             };
         };
@@ -22674,32 +22656,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Volumes/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetProjects2TasksVolumesStatus: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Projects_2/Methods/Tasks/Volumes/Status/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Status.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Projects_2/Methods/Tasks/Volumes/Status/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Status.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };

@@ -10,31 +10,9 @@
             "Projects_2.Methods.Tasks.Volumes.Add": {
                 "type": "object",
                 "properties": {
-                    "url": {
-                        "title": "Url проекта (домен или url страницы)",
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
-                            }
-                        ]
-                    },
                     "keywords": {
-                        "title": "Массив ключевых запросов в формате CSV\n\n- array keywords - массив ключевых запросов, допускается формат CSV",
+                        "title": "Массив ключевых запросов в формате CSV",
                         "type": "array"
-                    },
-                    "remove_special_chars": {
-                        "title": "Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)",
-                        "nullable": true,
-                        "type": "boolean"
-                    },
-                    "no_recheck": {
-                        "title": "Проверять ли запросы\n\n- 0: проверять\n- 1: не проверять запросы с актуальной частотой\n- 2: не проверять запросы с частотой",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Keywords_2/Types/Volumes/NoRecheck.json#/components/schemas/Keywords_2.Types.Volumes.NoRecheck"
-                            }
-                        ]
                     },
                     "qualifiers": {
                         "title": "Объекты определителей частоты (параметр не обязателен, если check_all_regions = true)",
@@ -46,11 +24,10 @@
                     }
                 },
                 "required": [
-                    "url",
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add"
+                "title": "Создание задачи на проверку частоты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add"
             },
             "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
                 "nullable": true

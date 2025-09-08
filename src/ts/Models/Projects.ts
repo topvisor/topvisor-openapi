@@ -24,6 +24,8 @@ export interface components {
             task_time_delete?: any;
             task_method_name?: any;
             task_method_params_json?: any;
+            task_status?: any;
+            task_progress?: any;
             site?: any;
             update?: any;
             status_positions?: string | null;

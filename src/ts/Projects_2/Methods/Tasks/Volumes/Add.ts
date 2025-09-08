@@ -7,24 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание задачи
+        /** Создание задачи на проверку частоты
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Add */
         "Projects_2.Methods.Tasks.Volumes.Add": {
-            /** Url проекта (домен или url страницы) */
-            url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
-            /** Массив ключевых запросов в формате CSV
-             *
-             *     - array keywords - массив ключевых запросов, допускается формат CSV */
+            /** Массив ключевых запросов в формате CSV */
             keywords: unknown[];
-            /** Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать) */
-            remove_special_chars?: boolean | null;
-            /** Проверять ли запросы
-             *
-             *     - 0: проверять
-             *     - 1: не проверять запросы с актуальной частотой
-             *     - 2: не проверять запросы с частотой */
-            no_recheck?: import('../../../../Keywords_2/Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
             /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
             qualifiers: import('../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };

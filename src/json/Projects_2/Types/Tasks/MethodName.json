@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Types.Tasks.MethodName",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Types.Tasks.MethodName": {
+                "type": "string",
+                "enum": [
+                    "keywords_2/volumes/go"
+                ],
+                "x-enum-varnames": [
+                    "VolumeChecker"
+                ],
+                "x-enum-descriptions": [
+                    "Проверка частоты"
+                ],
+                "title": "Название метода задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Types\\Tasks\\MethodName"
+            }
+        }
+    }
+}

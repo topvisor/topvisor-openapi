@@ -30,12 +30,16 @@
                         "const": "In process",
                         "readOnly": true
                     },
-                    "Repeat_task": {
-                        "const": "Repeat task",
+                    "Recreate_task": {
+                        "const": "Create new task from this one",
                         "readOnly": true
                     },
                     "No_tasks": {
                         "const": "No tasks",
+                        "readOnly": true
+                    },
+                    "Wordstat_check": {
+                        "const": "Search volume tracking with Toolbox",
                         "readOnly": true
                     }
                 },
@@ -45,8 +49,9 @@
                     "Tool",
                     "Task_completed",
                     "In_process",
-                    "Repeat_task",
-                    "No_tasks"
+                    "Recreate_task",
+                    "No_tasks",
+                    "Wordstat_check"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Toolbox\\En"
             }
