@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сохраненного списока столбцов
+        /** Получение сохраненного списка столбцов
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Templates_2\Methods\Fields\Get */
         "Templates_2.Methods.Fields.Get": {
