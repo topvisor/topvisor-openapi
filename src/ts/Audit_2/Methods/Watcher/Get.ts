@@ -51,7 +51,68 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
         /** Генерируемый на основе urls, список результатов проверок радара */
-        "Audit_2.Methods.Watcher.Get.Exec": unknown[] | null;
+        "Audit_2.Methods.Watcher.Get.Exec": ({
+            urls: {
+                id: number;
+                url: string;
+                "\"COUNT(*)\""?: number;
+                "\"WATCHER_HTTP_CODES_HUNDREDS()\""?: number[];
+                project_id?: number;
+                sitemap?: boolean;
+                audit?: boolean;
+                watcher?: boolean;
+                indexing?: boolean;
+                tags?: string[] | string;
+                sitemap_lastmod?: string;
+                sitemap_changefreq?: string;
+                sitemap_priority?: number;
+                indexing_data?: number;
+                indexing_alert?: number;
+                watcher_http_codes?: number[];
+                watcher_http_codes_changed?: number;
+                watcher_redirects?: string[];
+                watcher_h1?: string;
+                watcher_h1_changed?: number;
+                watcher_title?: string;
+                watcher_title_changed?: number;
+                watcher_description?: string;
+                watcher_description_changed?: number;
+                watcher_content?: string;
+                watcher_content_changed?: number;
+                watcherData?: {
+                    [key: string]: {
+                        http_codes?: number[];
+                        redirects?: string[];
+                        h1?: string;
+                        title?: string;
+                        description?: string;
+                        content?: string;
+                        diff?: string | null;
+                    };
+                };
+            }[];
+            headers?: {
+                fields: {
+                    name: string;
+                    alias: string;
+                    qualifiers: string[] | string;
+                    label: string | null;
+                    labelData: {
+                        label: string;
+                        tooltip: string;
+                        hint: string;
+                    };
+                }[];
+                timesByChecksIds: {
+                    [key: string]: number;
+                };
+                watcherFields: string[];
+                watcherType: string;
+            };
+            countsWatcher?: {
+                [key: string]: number;
+            };
+        } | null) | null;
     };
     responses: never;
     parameters: never;
