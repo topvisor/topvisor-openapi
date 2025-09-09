@@ -20,7 +20,16 @@ export interface components {
             /** Индекс региона */
             region_index?: number | null;
         };
-        "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": ({
+            categories: string[];
+            series: {
+                name: string;
+                data: (number)[];
+                yAxis: number;
+                zIndex: number;
+                type: string;
+            }[];
+        } | null) | null;
     };
     responses: never;
     parameters: never;

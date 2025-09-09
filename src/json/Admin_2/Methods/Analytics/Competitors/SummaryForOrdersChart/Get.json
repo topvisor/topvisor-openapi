@@ -48,7 +48,66 @@
             },
             "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "categories": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "series": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "integer"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "yAxis": {
+                                            "type": "integer"
+                                        },
+                                        "zIndex": {
+                                            "type": "integer"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "data",
+                                        "yAxis",
+                                        "zIndex",
+                                        "type"
+                                    ]
+                                }
+                            }
+                        },
+                        "required": [
+                            "categories",
+                            "series"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }
