@@ -12,7 +12,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Menu\Get */
         "Content_2.Methods.Support.Menu.Get": Record<string, never>;
         "Content_2.Methods.Support.Menu.Get.Exec": {
-            [key: string]: import('../../../Objects/Menu/MenuItem.ts').components['schemas']['Content_2.Objects.Menu.MenuItem'][];
+            support: import('../../../Objects/Menu/MenuItem.ts').components['schemas']['Content_2.Objects.Menu.MenuItem'][];
         };
         /** Элемент меню
          *

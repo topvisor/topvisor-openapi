@@ -33155,10 +33155,13 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Objects\Menu\MenuItem
     Content_2.Methods.Support.Menu.Get.Exec:
       type: object
-      additionalProperties:
-        type: array
-        items:
-          $ref: '#/components/schemas/Content_2.Objects.Menu.MenuItem'
+      properties:
+        support:
+          type: array
+          items:
+            $ref: '#/components/schemas/Content_2.Objects.Menu.MenuItem'
+      required:
+        - support
     Informer_2.Types.Push.Token.Type:
       type: string
       enum:

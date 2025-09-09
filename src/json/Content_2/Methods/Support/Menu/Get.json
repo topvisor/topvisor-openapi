@@ -15,12 +15,17 @@
             },
             "Content_2.Methods.Support.Menu.Get.Exec": {
                 "type": "object",
-                "additionalProperties": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "../../../../Content_2/Objects/Menu/MenuItem.json#/components/schemas/Content_2.Objects.Menu.MenuItem"
+                "properties": {
+                    "support": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../Content_2/Objects/Menu/MenuItem.json#/components/schemas/Content_2.Objects.Menu.MenuItem"
+                        }
                     }
-                }
+                },
+                "required": [
+                    "support"
+                ]
             }
         }
     }
