@@ -22,7 +22,7 @@ export interface components {
         "Admin_2.Methods.Affiliate.Referrers.Get.Exec": {
             categories: string[];
             series: {
-                data: (number)[];
+                data: number[];
                 name: string;
                 color: string;
                 yAxis: number;

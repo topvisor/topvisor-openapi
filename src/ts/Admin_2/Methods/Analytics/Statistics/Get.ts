@@ -11,10 +11,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Statistics\Get */
         "Admin_2.Methods.Analytics.Statistics.Get": Record<string, never>;
-        "Admin_2.Methods.Analytics.Statistics.Get.Exec": ({
-            count_new_dynamics_off: number;
-            count_new_dynamics_off_active: number;
-        } | null) | null;
+        "Admin_2.Methods.Analytics.Statistics.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

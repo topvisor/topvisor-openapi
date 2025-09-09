@@ -19,7 +19,12 @@ export interface components {
              */
             apply_discount?: boolean;
         };
-        "Mentions_2.Methods.Checker.Price.Get.Exec": unknown[];
+        "Mentions_2.Methods.Checker.Price.Get.Exec": {
+            pricesByUsers: {
+                projectsIds: unknown[];
+                price: number;
+            }[];
+        };
     };
     responses: never;
     parameters: never;

@@ -19,13 +19,13 @@ export interface components {
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        /** - массив с ключом "Буква" и значением массив страниц Pages */
-        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": {
+        /** массив с ключом "Буква" и значением массив страниц Pages */
+        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": ({
             [key: string]: {
                 url: string;
                 h1: string;
             };
-        } | null;
+        } | null) | null;
     };
     responses: never;
     parameters: never;

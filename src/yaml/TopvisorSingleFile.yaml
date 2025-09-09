@@ -19747,6 +19747,58 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required: []
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ranks\Get'
+    Admin_2.Methods.Ranks.Get.Exec:
+      nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              '"ACTIVATIONS()"':
+                type: integer
+              id:
+                type: integer
+              name_ru:
+                type: string
+              name_en:
+                type: string
+              bonus_RUB:
+                type: integer
+              bonus_USD:
+                type: integer
+              to_date:
+                type: string
+              limit:
+                type: integer
+              site:
+                anyOf:
+                  - type: string
+                    enum:
+                      - topvisor
+                  - type: string
+                    enum:
+                      - thundo
+              code:
+                type: string
+              retention_week:
+                type: integer
+              retention_month:
+                type: integer
+              payment_week:
+                type: integer
+              payment_month:
+                type: integer
+              payment_month_6:
+                type: integer
+              payment_year:
+                type: integer
+              new_user:
+                type: integer
+              returned_user:
+                type: integer
+              quitted_user:
+                type: integer
+        - type: 'null'
     Models.Analytics.Ranks:
       properties:
         ACTIVATIONS():
@@ -19786,11 +19838,6 @@ components:
           nullable: true
         quitted_user:
           nullable: true
-    Admin_2.Methods.Ranks.Get.Exec:
-      nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Analytics.Ranks'
     Admin_2.Types.Staff.Post:
       type: string
       enum:
@@ -21484,7 +21531,17 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Objects\Subscriptions\Subscription
     Bank_2.Methods.Info.Get.Exec:
-      title: Информация о балансе и тарифе пользователя.
+      title: |-
+        Информация о балансе и тарифе пользователя.
+
+        - 'balance_all' - общий баланс
+        - 'balance_all' - общий баланс
+        - 'balance_personal'- персональный баланс
+        - 'balance_bonus' - бонусный баланс
+        - 'balance_tariff' - баланс по тарифу
+        - 'tariff' - информация о текущем тарифе
+        - 'subscription' - подписка, если есть
+        - 'subscription_name' - имя плана подписки, если есть
       type: object
       properties:
         balance_all:
@@ -25427,7 +25484,51 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Get
     Projects_2.Methods.Analytics.Get.Exec:
       nullable: true
-      type: array
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              user_id:
+                type: integer
+              rights:
+                type: integer
+              project_id:
+                type: integer
+              axe:
+                type: integer
+              base_filter:
+                type: integer
+              compare_axe:
+                type: integer
+              name:
+                type: string
+              minimize:
+                type: integer
+              narrow:
+                type: integer
+              pos:
+                anyOf:
+                  - type: integer
+                  - type: 'null'
+              data:
+                type: string
+            required:
+              - id
+              - user_id
+              - rights
+              - project_id
+              - axe
+              - base_filter
+              - compare_axe
+              - name
+              - minimize
+              - narrow
+              - pos
+              - data
+        - type: 'null'
     TV.API.Types.UrlShort:
       type: string
       title: |-
@@ -28766,13 +28867,53 @@ components:
         Получение групп
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Get
-    Models.EmptyModel:
-      properties: {}
     Admin_2.Methods.Accounting.Group.Get.Exec:
       nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.EmptyModel'
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              '"COUNT(*)"':
+                type: integer
+              id:
+                type: integer
+              name:
+                type: string
+              priority:
+                type: integer
+              filters:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    type:
+                      type: string
+                    counteragent_name:
+                      type: string
+                    counteragent_inn:
+                      type: string
+                    counteragent_name_count_duplicates:
+                      type: integer
+                    counteragent_inn_count_duplicates:
+                      type: integer
+                    purpose:
+                      anyOf:
+                        - type: string
+                        - type: 'null'
+                  required:
+                    - id
+                    - type
+                    - counteragent_name
+                    - counteragent_inn
+                    - counteragent_name_count_duplicates
+                    - counteragent_inn_count_duplicates
+                    - purpose
+        - type: 'null'
+    Models.EmptyModel:
+      properties: {}
     Admin_2.Methods.Accounting.Invoices.Add:
       type: object
       properties:
@@ -29204,33 +29345,28 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralsByLevel\Get
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec:
-      anyOf:
-        - type: object
+      type: object
+      properties:
+        series:
+          type: object
           properties:
-            series:
-              type: object
-              properties:
-                data:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      'y':
-                        type: integer
-                      name:
-                        type: string
-                    required:
-                      - 'y'
-                      - name
-                name:
-                  type: string
-              required:
-                - data
-                - name
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  'y':
+                    type: integer
+                  name:
+                    type: string
+                required:
+                  - 'y'
+                  - name
+            name:
+              type: string
           required:
-            - series
-        - type: object
-          properties: {}
+            - data
+            - name
     Admin_2.Methods.Affiliate.Referrals.Get:
       type: object
       properties:
@@ -29375,9 +29511,7 @@ components:
               data:
                 type: array
                 items:
-                  anyOf:
-                    - type: integer
-                    - type: number
+                  type: number
               name:
                 type: string
               color:
@@ -29426,9 +29560,41 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersWithReferrals\Get
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec:
       nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.EmptyModel'
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              '"COUNT(*)"':
+                type: integer
+              id:
+                type: integer
+              avatar:
+                type: string
+              email:
+                type: string
+              count_referrals:
+                type: integer
+              count_referrals_level_1:
+                type: integer
+              count_referrals_level_2:
+                type: integer
+              count_referrals_level_3:
+                type: integer
+              count_referrals_level_4:
+                type: integer
+              time_reg:
+                type: string
+              currency:
+                type: string
+              group:
+                type: integer
+            required:
+              - count_referrals_level_1
+              - count_referrals_level_2
+              - count_referrals_level_3
+              - count_referrals_level_4
+        - type: 'null'
     Admin_2.Methods.Analytics.Activity.Get:
       type: object
       properties:
@@ -29693,17 +29859,7 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Statistics\Get
     Admin_2.Methods.Analytics.Statistics.Get.Exec:
       nullable: true
-      anyOf:
-        - type: object
-          properties:
-            count_new_dynamics_off:
-              type: integer
-            count_new_dynamics_off_active:
-              type: integer
-          required:
-            - count_new_dynamics_off
-            - count_new_dynamics_off_active
-        - type: 'null'
+      type: array
     Admin_2.Methods.Analytics.Tickets.Get:
       type: object
       properties:
@@ -33873,7 +34029,12 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Checker\Go\Edit
     Mentions_2.Methods.Checker.Go.Edit.Exec:
-      type: array
+      type: object
+      properties:
+        rulesIds:
+          type: array
+      required:
+        - rulesIds
     Mentions_2.Methods.Checker.Price.Get:
       type: object
       properties:
@@ -33892,7 +34053,22 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Checker\Price\Get
     Mentions_2.Methods.Checker.Price.Get.Exec:
-      type: array
+      type: object
+      properties:
+        pricesByUsers:
+          type: array
+          items:
+            type: object
+            properties:
+              projectsIds:
+                type: array
+              price:
+                type: number
+            required:
+              - projectsIds
+              - price
+      required:
+        - pricesByUsers
     Mentions_2.Types.Rules.Keywords.Type:
       type: string
       enum:
@@ -39157,19 +39333,21 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\ArticlesByLetter\Get
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec:
-      title: '- массив с ключом "Буква" и значением массив страниц Pages'
+      title: массив с ключом "Буква" и значением массив страниц Pages
       nullable: true
-      type: object
-      additionalProperties:
-        type: object
-        properties:
-          url:
-            type: string
-          h1:
-            type: string
-        required:
-          - url
-          - h1
+      anyOf:
+        - type: object
+          additionalProperties:
+            type: object
+            properties:
+              url:
+                type: string
+              h1:
+                type: string
+            required:
+              - url
+              - h1
+        - type: 'null'
     Content_2.Methods.Journal.Dictionary.WordOfday.Get:
       type: object
       properties:

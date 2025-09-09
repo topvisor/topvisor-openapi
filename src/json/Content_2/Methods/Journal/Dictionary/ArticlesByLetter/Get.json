@@ -33,24 +33,31 @@
                 "title": "Получение списка страниц по буквам для модуля SEO словарь\nРезультат функции кешируется\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Dictionary\\ArticlesByLetter\\Get"
             },
             "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": {
-                "title": "- массив с ключом \"Буква\" и значением массив страниц Pages",
+                "title": "массив с ключом \"Буква\" и значением массив страниц Pages",
                 "nullable": true,
-                "type": "object",
-                "additionalProperties": {
-                    "type": "object",
-                    "properties": {
-                        "url": {
-                            "type": "string"
-                        },
-                        "h1": {
-                            "type": "string"
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "url": {
+                                    "type": "string"
+                                },
+                                "h1": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "url",
+                                "h1"
+                            ]
                         }
                     },
-                    "required": [
-                        "url",
-                        "h1"
-                    ]
-                }
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

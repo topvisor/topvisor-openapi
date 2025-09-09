@@ -34,10 +34,61 @@
             },
             "Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "$ref": "../../../../Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
-                }
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "\"COUNT(*)\"": {
+                                    "type": "integer"
+                                },
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "avatar": {
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "count_referrals": {
+                                    "type": "integer"
+                                },
+                                "count_referrals_level_1": {
+                                    "type": "integer"
+                                },
+                                "count_referrals_level_2": {
+                                    "type": "integer"
+                                },
+                                "count_referrals_level_3": {
+                                    "type": "integer"
+                                },
+                                "count_referrals_level_4": {
+                                    "type": "integer"
+                                },
+                                "time_reg": {
+                                    "type": "string"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "group": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "count_referrals_level_1",
+                                "count_referrals_level_2",
+                                "count_referrals_level_3",
+                                "count_referrals_level_4"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

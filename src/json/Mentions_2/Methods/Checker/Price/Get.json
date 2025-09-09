@@ -29,7 +29,30 @@
                 "title": "Получение стоимости проверки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Methods\\Checker\\Price\\Get"
             },
             "Mentions_2.Methods.Checker.Price.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "pricesByUsers": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "projectsIds": {
+                                    "type": "array"
+                                },
+                                "price": {
+                                    "type": "number"
+                                }
+                            },
+                            "required": [
+                                "projectsIds",
+                                "price"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "pricesByUsers"
+                ]
             }
         }
     }

@@ -17,7 +17,27 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Admin_2.Methods.Ranks.Get.Exec": import('../../../Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'][] | null;
+        "Admin_2.Methods.Ranks.Get.Exec": ({
+            "\"ACTIVATIONS()\""?: number;
+            id?: number;
+            name_ru?: string;
+            name_en?: string;
+            bonus_RUB?: number;
+            bonus_USD?: number;
+            to_date?: string;
+            limit?: number;
+            site?: "topvisor" | "thundo";
+            code?: string;
+            retention_week?: number;
+            retention_month?: number;
+            payment_week?: number;
+            payment_month?: number;
+            payment_month_6?: number;
+            payment_year?: number;
+            new_user?: number;
+            returned_user?: number;
+            quitted_user?: number;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;

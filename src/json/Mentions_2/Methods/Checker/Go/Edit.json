@@ -24,7 +24,15 @@
                 "title": "Отправка правил на проверку\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Methods\\Checker\\Go\\Edit"
             },
             "Mentions_2.Methods.Checker.Go.Edit.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "rulesIds": {
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "rulesIds"
+                ]
             }
         }
     }

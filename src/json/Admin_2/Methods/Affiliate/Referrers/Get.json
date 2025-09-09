@@ -46,14 +46,7 @@
                                 "data": {
                                     "type": "array",
                                     "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "integer"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
+                                        "type": "number"
                                     }
                                 },
                                 "name": {

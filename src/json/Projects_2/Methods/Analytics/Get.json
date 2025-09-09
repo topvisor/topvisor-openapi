@@ -27,7 +27,76 @@
             },
             "Projects_2.Methods.Analytics.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "user_id": {
+                                    "type": "integer"
+                                },
+                                "rights": {
+                                    "type": "integer"
+                                },
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "axe": {
+                                    "type": "integer"
+                                },
+                                "base_filter": {
+                                    "type": "integer"
+                                },
+                                "compare_axe": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "minimize": {
+                                    "type": "integer"
+                                },
+                                "narrow": {
+                                    "type": "integer"
+                                },
+                                "pos": {
+                                    "anyOf": [
+                                        {
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                },
+                                "data": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "user_id",
+                                "rights",
+                                "project_id",
+                                "axe",
+                                "base_filter",
+                                "compare_axe",
+                                "name",
+                                "minimize",
+                                "narrow",
+                                "pos",
+                                "data"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

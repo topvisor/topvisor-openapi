@@ -14,7 +14,9 @@ export interface components {
             /** Ключи источников (фильтр) */
             searchers_keys?: import('../../../Types/SearchersKeys.ts').components['schemas']['Mentions_2.Types.SearchersKeys'] | null;
         };
-        "Mentions_2.Methods.Checker.Go.Edit.Exec": unknown[];
+        "Mentions_2.Methods.Checker.Go.Edit.Exec": {
+            rulesIds: unknown[];
+        };
     };
     responses: never;
     parameters: never;

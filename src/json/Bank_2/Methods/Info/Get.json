@@ -18,7 +18,7 @@
                 "title": "Получение информации о балансе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Methods\\Info\\Get"
             },
             "Bank_2.Methods.Info.Get.Exec": {
-                "title": "Информация о балансе и тарифе пользователя.",
+                "title": "Информация о балансе и тарифе пользователя.\n\n- 'balance_all' - общий баланс\n- 'balance_all' - общий баланс\n- 'balance_personal'- персональный баланс\n- 'balance_bonus' - бонусный баланс\n- 'balance_tariff' - баланс по тарифу\n- 'tariff' - информация о текущем тарифе\n- 'subscription' - подписка, если есть\n- 'subscription_name' - имя плана подписки, если есть",
                 "type": "object",
                 "properties": {
                     "balance_all": {

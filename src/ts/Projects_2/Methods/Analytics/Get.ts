@@ -16,7 +16,20 @@ export interface components {
             /** ID */
             id?: number | null;
         };
-        "Projects_2.Methods.Analytics.Get.Exec": unknown[] | null;
+        "Projects_2.Methods.Analytics.Get.Exec": ({
+            id: number;
+            user_id: number;
+            rights: number;
+            project_id: number;
+            axe: number;
+            base_filter: number;
+            compare_axe: number;
+            name: string;
+            minimize: number;
+            narrow: number;
+            pos: number | null;
+            data: string;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;
