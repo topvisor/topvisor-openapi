@@ -37,27 +37,43 @@
                 "title": "Получение записей словаря\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\I18n\\Get"
             },
             "Admin_2.Methods.I18n.Get.Exec": {
-                "type": "object",
-                "properties": {
-                    "lang": {
-                        "type": "string"
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "lang": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "en"
+                                    ]
+                                },
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "ru"
+                                    ]
+                                }
+                            ]
+                        },
+                        "category": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        }
                     },
-                    "category": {
-                        "type": "string"
-                    },
-                    "name": {
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "lang",
-                    "category",
-                    "name",
-                    "value"
-                ]
+                    "required": [
+                        "lang",
+                        "category",
+                        "name",
+                        "value"
+                    ]
+                }
             }
         }
     }

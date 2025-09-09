@@ -20,11 +20,11 @@ export interface components {
             only_duplicates?: boolean;
         };
         "Admin_2.Methods.I18n.Get.Exec": {
-            lang: string;
+            lang: "en" | "ru";
             category: string;
             name: string;
             value: string;
-        };
+        }[];
     };
     responses: never;
     parameters: never;
