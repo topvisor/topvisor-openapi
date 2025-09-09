@@ -24409,6 +24409,27 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Informer\Get
     Informer_2.Methods.Informer.Get.Exec:
       type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: integer
+          user_id:
+            type: integer
+          type:
+            type: integer
+          title:
+            type: string
+          message:
+            type: string
+          link:
+            type: string
+          readed:
+            type: integer
+          date:
+            type: string
+          site:
+            type: string
     Keywords_2.Methods.Keywords.Get:
       type: object
       properties:

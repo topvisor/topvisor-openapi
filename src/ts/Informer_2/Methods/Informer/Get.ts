@@ -13,7 +13,17 @@ export interface components {
         "Informer_2.Methods.Informer.Get": {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
         };
-        "Informer_2.Methods.Informer.Get.Exec": unknown[];
+        "Informer_2.Methods.Informer.Get.Exec": {
+            id?: number;
+            user_id?: number;
+            type?: number;
+            title?: string;
+            message?: string;
+            link?: string;
+            readed?: number;
+            date?: string;
+            site?: string;
+        }[];
     };
     responses: never;
     parameters: never;
