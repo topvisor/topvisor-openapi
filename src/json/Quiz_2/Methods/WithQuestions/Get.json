@@ -45,10 +45,118 @@
             },
             "Quiz_2.Methods.WithQuestions.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "$ref": "../../../Models/Quizes.json#/components/schemas/Models.Quizes"
-                }
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "\"AVAILABLE_RESET()\"": {
+                                "type": "boolean"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "user_id": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "text": {
+                                "type": "string"
+                            },
+                            "count_questions": {
+                                "type": "integer"
+                            },
+                            "total_score": {
+                                "type": "integer"
+                            },
+                            "min_score": {
+                                "type": "integer"
+                            },
+                            "available_reset_second": {
+                                "type": "integer"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "count_questions_is_passed": {
+                                "type": "integer"
+                            },
+                            "score": {
+                                "type": "integer"
+                            },
+                            "is_passed": {
+                                "type": "boolean"
+                            },
+                            "update": {
+                                "type": "boolean"
+                            },
+                            "is_finished": {
+                                "type": "boolean"
+                            },
+                            "is_passed_earlier": {
+                                "type": "boolean"
+                            },
+                            "questions": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "\"ANSWERS()\"": {
+                                            "type": "string"
+                                        },
+                                        "\"RESPONSES()\"": {
+                                            "type": "string"
+                                        },
+                                        "\"IS_PASSED()\"": {
+                                            "type": "boolean"
+                                        },
+                                        "id": {
+                                            "type": "integer"
+                                        },
+                                        "quiz_id": {
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "text": {
+                                            "type": "string"
+                                        },
+                                        "response_text": {
+                                            "type": "string"
+                                        },
+                                        "score": {
+                                            "type": "integer"
+                                        },
+                                        "likes_count": {
+                                            "type": "integer"
+                                        },
+                                        "ord": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "\"ANSWERS()\"",
+                                        "\"RESPONSES()\"",
+                                        "\"IS_PASSED()\"",
+                                        "id",
+                                        "quiz_id",
+                                        "type",
+                                        "text",
+                                        "response_text",
+                                        "score",
+                                        "likes_count",
+                                        "ord"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }
