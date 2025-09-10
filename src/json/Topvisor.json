@@ -9551,6 +9551,112 @@
                 }
             }
         },
+        "/add/robot_2/mailClaster/": {
+            "post": {
+                "operationId": "AddRobot2MailClaster",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Отправка письма на почту об окончании кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\MailClaster\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/MailClaster/Add.json#/components/schemas/Robot_2.Methods.MailClaster.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/MailClaster/Add.json#/components/schemas/Robot_2.Methods.MailClaster.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/posterImages/": {
+            "post": {
+                "operationId": "EditRobot2PosterImages",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Обновление изображения poster для апометра\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\PosterImages\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/PosterImages/Edit.json#/components/schemas/Robot_2.Methods.PosterImages.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/PosterImages/Edit.json#/components/schemas/Robot_2.Methods.PosterImages.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/schedule_2/settings/": {
             "post": {
                 "operationId": "EditSchedule2Settings",
@@ -19993,6 +20099,861 @@
                 }
             }
         },
+        "/add/robot_2/admin/anonses/": {
+            "post": {
+                "operationId": "AddRobot2AdminAnonses",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Добавление анонса\n\nВернет количество добавленных анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Anonses/Add.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Anonses/Add.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/admin/anonses/": {
+            "post": {
+                "operationId": "EditRobot2AdminAnonses",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Редактирование Анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Anonses/Edit.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Anonses/Edit.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/anonses/": {
+            "post": {
+                "operationId": "GetRobot2AdminAnonses",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение списка анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Anonses/Get.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Anonses/Get.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/robot_2/admin/layer/": {
+            "post": {
+                "operationId": "AddRobot2AdminLayer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Добавление нового слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Layer/Add.json#/components/schemas/Robot_2.Methods.Admin.Layer.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Layer/Add.json#/components/schemas/Robot_2.Methods.Admin.Layer.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/admin/layer/": {
+            "post": {
+                "operationId": "EditRobot2AdminLayer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Редактирование слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Layer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layer.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Layer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layer.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Layers.json#/components/schemas/Models.AdminLayers.Layers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/layer/": {
+            "post": {
+                "operationId": "GetRobot2AdminLayer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение списка Слоев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Layer/Get.json#/components/schemas/Robot_2.Methods.Admin.Layer.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Layer/Get.json#/components/schemas/Robot_2.Methods.Admin.Layer.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Layers.json#/components/schemas/Models.AdminLayers.Layers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/robot_2/admin/partner/": {
+            "post": {
+                "operationId": "AddRobot2AdminPartner",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Добавление партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Partner/Add.json#/components/schemas/Robot_2.Methods.Admin.Partner.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Partner/Add.json#/components/schemas/Robot_2.Methods.Admin.Partner.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/admin/partner/": {
+            "post": {
+                "operationId": "EditRobot2AdminPartner",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Редактирование партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Partner/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partner.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Partner/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partner.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Partners.json#/components/schemas/Models.AdminLayers.Partners"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/partner/": {
+            "post": {
+                "operationId": "GetRobot2AdminPartner",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение списка партнеров\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Partner/Get.json#/components/schemas/Robot_2.Methods.Admin.Partner.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Partner/Get.json#/components/schemas/Robot_2.Methods.Admin.Partner.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Partners.json#/components/schemas/Models.AdminLayers.Partners"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/robot_2/admin/server/": {
+            "post": {
+                "operationId": "AddRobot2AdminServer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Добавление сервера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Server/Add.json#/components/schemas/Robot_2.Methods.Admin.Server.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Server/Add.json#/components/schemas/Robot_2.Methods.Admin.Server.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/admin/server/": {
+            "post": {
+                "operationId": "EditRobot2AdminServer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Редактирование серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Server/Edit.json#/components/schemas/Robot_2.Methods.Admin.Server.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Server/Edit.json#/components/schemas/Robot_2.Methods.Admin.Server.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Servers.json#/components/schemas/Models.AdminLayers.Servers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/server/": {
+            "post": {
+                "operationId": "GetRobot2AdminServer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение списка серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Server/Get.json#/components/schemas/Robot_2.Methods.Admin.Server.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Server/Get.json#/components/schemas/Robot_2.Methods.Admin.Server.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Servers.json#/components/schemas/Models.AdminLayers.Servers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/services/": {
+            "post": {
+                "operationId": "GetRobot2AdminServices",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение списка услуг\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Services\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Get.json#/components/schemas/Robot_2.Methods.Admin.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Get.json#/components/schemas/Robot_2.Methods.Admin.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Service.json#/components/schemas/Models.AdminLayers.Service"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/statsRecognizersCountErrors/": {
+            "post": {
+                "operationId": "GetRobot2AdminStatsRecognizersCountErrors",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение статистики по количествам ошибок распознавателей капч\n\nСтатистика возвращается только для Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\StatsRecognizersCountErrors\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/statsRecognizers/": {
+            "post": {
+                "operationId": "GetRobot2AdminStatsRecognizers",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение статистики по работе распознавателей капч.\n\nСтатистика возвращается только для Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\StatsRecognizers\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/StatsRecognizers/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizers.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/StatsRecognizers/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizers.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/schedule_2/settings/emailsHints/": {
             "post": {
                 "operationId": "GetSchedule2SettingsEmailsHints",
@@ -26847,6 +27808,388 @@
                 }
             }
         },
+        "/get/robot_2/admin/key/autoIncrement/": {
+            "post": {
+                "operationId": "GetRobot2AdminKeyAutoIncrement",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получение следующего id ключа для вставки в таблицу ключей\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\AutoIncrement\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Key/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Key/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/robot_2/admin/key/domain/": {
+            "post": {
+                "operationId": "AddRobot2AdminKeyDomain",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Добавление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Key/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Key/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/robot_2/admin/key/domain/": {
+            "post": {
+                "operationId": "DelRobot2AdminKeyDomain",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Удаление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Del",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Key/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Key/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/robot_2/admin/key/ipCSV/": {
+            "post": {
+                "operationId": "AddRobot2AdminKeyIpCSV",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Добавление ip\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/robot_2/admin/key/ipCSV/": {
+            "post": {
+                "operationId": "GetRobot2AdminKeyIpCSV",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Получить информацию о слое\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AdminLayers/Key.json#/components/schemas/Models.AdminLayers.Key"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/admin/key/status/": {
+            "post": {
+                "operationId": "EditRobot2AdminKeyStatus",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Редактирование статуса IP\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Status\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Key/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Key/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/robot_2/admin/proxy/proxyServer/": {
+            "post": {
+                "operationId": "EditRobot2AdminProxyProxyServer",
+                "tags": [
+                    "Robot_2"
+                ],
+                "summary": "Сохранение настройки указанного layer на прокси сервере\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Proxy\\ProxyServer\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Proxy.ProxyServer.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Proxy.ProxyServer.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/snapshots_2/competitors/chart/export/": {
             "post": {
                 "operationId": "GetSnapshots2CompetitorsChartExport",
@@ -28032,1349 +29375,6 @@
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/mailClaster/": {
-            "post": {
-                "operationId": "AddRobot2MailClaster",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Отправка письма на почту об окончании кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\MailClaster\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/MailClaster/Add.json#/components/schemas/Robot_2.Methods.MailClaster.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/MailClaster/Add.json#/components/schemas/Robot_2.Methods.MailClaster.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/posterImages/": {
-            "post": {
-                "operationId": "EditRobot2PosterImages",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Обновление изображения poster для апометра\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\PosterImages\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/PosterImages/Edit.json#/components/schemas/Robot_2.Methods.PosterImages.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/PosterImages/Edit.json#/components/schemas/Robot_2.Methods.PosterImages.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/admin/anonses/": {
-            "post": {
-                "operationId": "AddRobot2AdminAnonses",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Добавление анонса\n\nВернет количество добавленных анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Anonses/Add.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Anonses/Add.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/admin/anonses/": {
-            "post": {
-                "operationId": "EditRobot2AdminAnonses",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Редактирование Анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Anonses/Edit.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Anonses/Edit.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/anonses/": {
-            "post": {
-                "operationId": "GetRobot2AdminAnonses",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение списка анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Anonses/Get.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Anonses/Get.json#/components/schemas/Robot_2.Methods.Admin.Anonses.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/admin/layer/": {
-            "post": {
-                "operationId": "AddRobot2AdminLayer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Добавление нового слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Layer/Add.json#/components/schemas/Robot_2.Methods.Admin.Layer.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Layer/Add.json#/components/schemas/Robot_2.Methods.Admin.Layer.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/admin/layer/": {
-            "post": {
-                "operationId": "EditRobot2AdminLayer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Редактирование слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Layer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layer.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Layer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layer.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Layers.json#/components/schemas/Models.AdminLayers.Layers"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/layer/": {
-            "post": {
-                "operationId": "GetRobot2AdminLayer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение списка Слоев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Layer/Get.json#/components/schemas/Robot_2.Methods.Admin.Layer.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Layer/Get.json#/components/schemas/Robot_2.Methods.Admin.Layer.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Layers.json#/components/schemas/Models.AdminLayers.Layers"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/admin/partner/": {
-            "post": {
-                "operationId": "AddRobot2AdminPartner",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Добавление партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Partner/Add.json#/components/schemas/Robot_2.Methods.Admin.Partner.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Partner/Add.json#/components/schemas/Robot_2.Methods.Admin.Partner.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/admin/partner/": {
-            "post": {
-                "operationId": "EditRobot2AdminPartner",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Редактирование партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Partner/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partner.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Partner/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partner.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Partners.json#/components/schemas/Models.AdminLayers.Partners"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/partner/": {
-            "post": {
-                "operationId": "GetRobot2AdminPartner",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение списка партнеров\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Partner/Get.json#/components/schemas/Robot_2.Methods.Admin.Partner.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Partner/Get.json#/components/schemas/Robot_2.Methods.Admin.Partner.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Partners.json#/components/schemas/Models.AdminLayers.Partners"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/admin/server/": {
-            "post": {
-                "operationId": "AddRobot2AdminServer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Добавление сервера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Server/Add.json#/components/schemas/Robot_2.Methods.Admin.Server.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Server/Add.json#/components/schemas/Robot_2.Methods.Admin.Server.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/admin/server/": {
-            "post": {
-                "operationId": "EditRobot2AdminServer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Редактирование серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Server/Edit.json#/components/schemas/Robot_2.Methods.Admin.Server.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Server/Edit.json#/components/schemas/Robot_2.Methods.Admin.Server.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Servers.json#/components/schemas/Models.AdminLayers.Servers"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/server/": {
-            "post": {
-                "operationId": "GetRobot2AdminServer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение списка серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Server/Get.json#/components/schemas/Robot_2.Methods.Admin.Server.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Server/Get.json#/components/schemas/Robot_2.Methods.Admin.Server.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Servers.json#/components/schemas/Models.AdminLayers.Servers"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/services/": {
-            "post": {
-                "operationId": "GetRobot2AdminServices",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение списка услуг\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Services\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Get.json#/components/schemas/Robot_2.Methods.Admin.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Get.json#/components/schemas/Robot_2.Methods.Admin.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Service.json#/components/schemas/Models.AdminLayers.Service"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/statsRecognizersCountErrors/": {
-            "post": {
-                "operationId": "GetRobot2AdminStatsRecognizersCountErrors",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение статистики по количествам ошибок распознавателей капч\n\nСтатистика возвращается только для Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\StatsRecognizersCountErrors\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/statsRecognizers/": {
-            "post": {
-                "operationId": "GetRobot2AdminStatsRecognizers",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение статистики по работе распознавателей капч.\n\nСтатистика возвращается только для Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\StatsRecognizers\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/StatsRecognizers/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizers.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/StatsRecognizers/Get.json#/components/schemas/Robot_2.Methods.Admin.StatsRecognizers.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/key/autoIncrement/": {
-            "post": {
-                "operationId": "GetRobot2AdminKeyAutoIncrement",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получение следующего id ключа для вставки в таблицу ключей\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\AutoIncrement\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/admin/key/domain/": {
-            "post": {
-                "operationId": "AddRobot2AdminKeyDomain",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Добавление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/del/robot_2/admin/key/domain/": {
-            "post": {
-                "operationId": "DelRobot2AdminKeyDomain",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Удаление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Del",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/robot_2/admin/key/ipCSV/": {
-            "post": {
-                "operationId": "AddRobot2AdminKeyIpCSV",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Добавление ip\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/robot_2/admin/key/ipCSV/": {
-            "post": {
-                "operationId": "GetRobot2AdminKeyIpCSV",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Получить информацию о слое\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AdminLayers/Key.json#/components/schemas/Models.AdminLayers.Key"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/admin/key/status/": {
-            "post": {
-                "operationId": "EditRobot2AdminKeyStatus",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Редактирование статуса IP\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Status\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/robot_2/admin/proxy/proxyServer/": {
-            "post": {
-                "operationId": "EditRobot2AdminProxyProxyServer",
-                "tags": [
-                    "Robot_2"
-                ],
-                "summary": "Сохранение настройки указанного layer на прокси сервере\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Proxy\\ProxyServer\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Proxy.ProxyServer.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Proxy.ProxyServer.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
                                 }
                             }
                         }

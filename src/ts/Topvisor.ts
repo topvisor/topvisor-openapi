@@ -3340,6 +3340,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Отправка письма на почту об окончании кластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\MailClaster\Add */
+    "/add/robot_2/mailClaster/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2MailClaster"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/edit/robot_2/posterImages/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Обновление изображения poster для апометра
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\PosterImages\Edit */
+        post: operations["EditRobot2PosterImages"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменить дополнительные параметры расписания
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\Edit */
@@ -7095,6 +7133,297 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление анонса
+     *
+     *     Вернет количество добавленных анонсов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Anonses\Add */
+    "/add/robot_2/admin/anonses/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2AdminAnonses"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование Анонсов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Anonses\Edit */
+    "/edit/robot_2/admin/anonses/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditRobot2AdminAnonses"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка анонсов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Anonses\Get */
+    "/get/robot_2/admin/anonses/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminAnonses"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление нового слоя
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Add */
+    "/add/robot_2/admin/layer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2AdminLayer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование слоя
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Edit */
+    "/edit/robot_2/admin/layer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditRobot2AdminLayer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка Слоев
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Get */
+    "/get/robot_2/admin/layer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminLayer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление партнера
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Add */
+    "/add/robot_2/admin/partner/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2AdminPartner"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование партнера
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Edit */
+    "/edit/robot_2/admin/partner/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditRobot2AdminPartner"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка партнеров
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Get */
+    "/get/robot_2/admin/partner/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminPartner"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление сервера
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Add */
+    "/add/robot_2/admin/server/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2AdminServer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование серверов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Edit */
+    "/edit/robot_2/admin/server/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditRobot2AdminServer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка серверов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Get */
+    "/get/robot_2/admin/server/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminServer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка услуг
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Services\Get */
+    "/get/robot_2/admin/services/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminServices"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по количествам ошибок распознавателей капч
+     *
+     *     Статистика возвращается только для Google
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\StatsRecognizersCountErrors\Get */
+    "/get/robot_2/admin/statsRecognizersCountErrors/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminStatsRecognizersCountErrors"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по работе распознавателей капч.
+     *
+     *     Статистика возвращается только для Google
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\StatsRecognizers\Get */
+    "/get/robot_2/admin/statsRecognizers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminStatsRecognizers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Schedule_2\Methods\Settings\EmailsHints\Get */
@@ -8731,7 +9060,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение статистику тикетов по тегам
+    /** Получение статистики тикетов по тегам
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\ChartByTags\Get */
     "/get/admin_2/analytics/tickets/chartByTags/": {
@@ -9633,6 +9962,139 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetProjects2TasksVolumesPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение следующего id ключа для вставки в таблицу ключей
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\AutoIncrement\Get */
+    "/get/robot_2/admin/key/autoIncrement/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminKeyAutoIncrement"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление домена для слоя
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Add */
+    "/add/robot_2/admin/key/domain/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2AdminKeyDomain"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление домена для слоя
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Del */
+    "/del/robot_2/admin/key/domain/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelRobot2AdminKeyDomain"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление ip
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Add */
+    "/add/robot_2/admin/key/ipCSV/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddRobot2AdminKeyIpCSV"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получить информацию о слое
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Get */
+    "/get/robot_2/admin/key/ipCSV/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminKeyIpCSV"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование статуса IP
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Status\Edit */
+    "/edit/robot_2/admin/key/status/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditRobot2AdminKeyStatus"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Сохранение настройки указанного layer на прокси сервере
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Proxy\ProxyServer\Edit */
+    "/edit/robot_2/admin/proxy/proxyServer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditRobot2AdminProxyProxyServer"];
         delete?: never;
         options?: never;
         head?: never;
@@ -14532,6 +14994,56 @@ export interface operations {
             };
         };
     };
+    AddRobot2MailClaster: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/MailClaster/Add.ts').components['schemas']['Robot_2.Methods.MailClaster.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/MailClaster/Add.ts').components['schemas']['Robot_2.Methods.MailClaster.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditRobot2PosterImages: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/PosterImages/Edit.ts').components['schemas']['Robot_2.Methods.PosterImages.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/PosterImages/Edit.ts').components['schemas']['Robot_2.Methods.PosterImages.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     EditSchedule2Settings: {
         parameters: {
             query?: never;
@@ -19392,6 +19904,390 @@ export interface operations {
             };
         };
     };
+    AddRobot2AdminAnonses: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Anonses/Add.ts').components['schemas']['Robot_2.Methods.Admin.Anonses.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Anonses/Add.ts').components['schemas']['Robot_2.Methods.Admin.Anonses.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditRobot2AdminAnonses: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Anonses/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Anonses.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Anonses/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Anonses.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminAnonses: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Anonses/Get.ts').components['schemas']['Robot_2.Methods.Admin.Anonses.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Anonses/Get.ts').components['schemas']['Robot_2.Methods.Admin.Anonses.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
+                };
+            };
+        };
+    };
+    AddRobot2AdminLayer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Layer/Add.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Layer/Add.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditRobot2AdminLayer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Layer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Layer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminLayer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Layer/Get.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Layer/Get.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
+                };
+            };
+        };
+    };
+    AddRobot2AdminPartner: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Partner/Add.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Partner/Add.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditRobot2AdminPartner: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Partner/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Partner/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminPartner: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Partner/Get.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Partner/Get.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
+                };
+            };
+        };
+    };
+    AddRobot2AdminServer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Server/Add.ts').components['schemas']['Robot_2.Methods.Admin.Server.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Server/Add.ts').components['schemas']['Robot_2.Methods.Admin.Server.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditRobot2AdminServer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Server/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Server.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Server/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Server.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminServer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Server/Get.ts').components['schemas']['Robot_2.Methods.Admin.Server.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Server/Get.ts').components['schemas']['Robot_2.Methods.Admin.Server.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminServices: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Get.ts').components['schemas']['Robot_2.Methods.Admin.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Get.ts').components['schemas']['Robot_2.Methods.Admin.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Service.ts').components['schemas']['Models.AdminLayers.Service'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminStatsRecognizersCountErrors: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminStatsRecognizers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/StatsRecognizers/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizers.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/StatsRecognizers/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetSchedule2SettingsEmailsHints: {
         parameters: {
             query?: never;
@@ -22655,6 +23551,182 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Volumes/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminKeyAutoIncrement: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Key/AutoIncrement/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.AutoIncrement.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Key/AutoIncrement/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddRobot2AdminKeyDomain: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Key/Domain/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Key/Domain/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    DelRobot2AdminKeyDomain: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Key/Domain/Del.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Key/Domain/Del.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddRobot2AdminKeyIpCSV: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Key/IpCSV/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Key/IpCSV/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminKeyIpCSV: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Key/IpCSV/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Key/IpCSV/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];
+                };
+            };
+        };
+    };
+    EditRobot2AdminKeyStatus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Key/Status/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Key.Status.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Key/Status/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Key.Status.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditRobot2AdminProxyProxyServer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Proxy.ProxyServer.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Proxy.ProxyServer.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

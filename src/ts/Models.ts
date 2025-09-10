@@ -28,6 +28,12 @@ export interface components {
         "Models.Urls": import('./Models/Urls.ts').components['schemas']['Models.Urls'];
         "Models.Votes": import('./Models/Votes.ts').components['schemas']['Models.Votes'];
         "Models.Admin.Invoices": import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
+        "Models.AdminLayers.Anons": import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
+        "Models.AdminLayers.Key": import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];
+        "Models.AdminLayers.Layers": import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
+        "Models.AdminLayers.Partners": import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
+        "Models.AdminLayers.Servers": import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
+        "Models.AdminLayers.Service": import('./Models/AdminLayers/Service.ts').components['schemas']['Models.AdminLayers.Service'];
         "Models.Admin.Staff": import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
         "Models.Admin.Users": import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
         "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
