@@ -42,20 +42,7 @@
                     "type": "object",
                     "properties": {
                         "lang": {
-                            "anyOf": [
-                                {
-                                    "type": "string",
-                                    "enum": [
-                                        "en"
-                                    ]
-                                },
-                                {
-                                    "type": "string",
-                                    "enum": [
-                                        "ru"
-                                    ]
-                                }
-                            ]
+                            "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
                         },
                         "category": {
                             "type": "string"

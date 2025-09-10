@@ -20377,13 +20377,7 @@ components:
         type: object
         properties:
           lang:
-            anyOf:
-              - type: string
-                enum:
-                  - en
-              - type: string
-                enum:
-                  - ru
+            $ref: '#/components/schemas/TV.API.Types.Lang'
           category:
             type: string
           name:

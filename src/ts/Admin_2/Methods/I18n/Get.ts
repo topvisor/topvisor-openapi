@@ -20,7 +20,7 @@ export interface components {
             only_duplicates?: boolean;
         };
         "Admin_2.Methods.I18n.Get.Exec": {
-            lang: "en" | "ru";
+            lang: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
             category: string;
             name: string;
             value: string;
