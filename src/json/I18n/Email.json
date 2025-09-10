@@ -10,10 +10,6 @@
             "I18n.Email": {
                 "type": "object",
                 "properties": {
-                    "User_registration_confirm": {
-                        "const": "Confirm your registration",
-                        "readOnly": true
-                    },
                     "User_accept_email_title": {
                         "const": "Account details",
                         "readOnly": true
@@ -120,7 +116,6 @@
                     }
                 },
                 "required": [
-                    "User_registration_confirm",
                     "User_accept_email_title",
                     "user_accept_email_title_suffix_recommendations",
                     "User_PWD_msg_title2",
