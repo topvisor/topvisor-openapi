@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Layer.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Layer.Add": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID слоя",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Добавление нового слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Add"
+            },
+            "Robot_2.Methods.Admin.Layer.Add.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

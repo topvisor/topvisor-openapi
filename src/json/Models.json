@@ -186,6 +186,24 @@
             },
             "Models.Admin.Users.Ranks": {
                 "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
+            },
+            "Models.AdminLayers.Anons": {
+                "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
+            },
+            "Models.AdminLayers.Key": {
+                "$ref": "Models/AdminLayers/Key.json#/components/schemas/Models.AdminLayers.Key"
+            },
+            "Models.AdminLayers.Layers": {
+                "$ref": "Models/AdminLayers/Layers.json#/components/schemas/Models.AdminLayers.Layers"
+            },
+            "Models.AdminLayers.Partners": {
+                "$ref": "Models/AdminLayers/Partners.json#/components/schemas/Models.AdminLayers.Partners"
+            },
+            "Models.AdminLayers.Servers": {
+                "$ref": "Models/AdminLayers/Servers.json#/components/schemas/Models.AdminLayers.Servers"
+            },
+            "Models.AdminLayers.Service": {
+                "$ref": "Models/AdminLayers/Service.json#/components/schemas/Models.AdminLayers.Service"
             }
         }
     }

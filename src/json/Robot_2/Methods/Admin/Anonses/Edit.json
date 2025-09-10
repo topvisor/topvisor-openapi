@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Anonses.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Anonses.Edit": {
+                "type": "object",
+                "properties": {
+                    "order_number": {
+                        "title": "Порядковый номер анонса",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "create_date": {
+                        "title": "Даты создания",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "paidto_date": {
+                        "title": "Дата, к которой нужна оплата",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "price": {
+                        "title": "Цена",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "price_currency": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Robot_2/Types/Admin/Anonses/PriceCurrency.json#/components/schemas/Robot_2.Types.Admin.Anonses.PriceCurrency"
+                            }
+                        ]
+                    },
+                    "service_comment": {
+                        "title": "Комментарий",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "title": "Удален ли анонс",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [],
+                "title": "Редактирование Анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Edit"
+            },
+            "Robot_2.Methods.Admin.Anonses.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AdminLayers.Service",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AdminLayers.Service": {
+                "properties": {
+                    "type": {
+                        "nullable": true
+                    },
+                    "ref_id": {
+                        "nullable": true
+                    },
+                    "ref_name": {
+                        "nullable": true
+                    },
+                    "partner_site": {
+                        "nullable": true
+                    },
+                    "order_number": {
+                        "nullable": true
+                    },
+                    "create_date": {
+                        "nullable": true
+                    },
+                    "paidto_date": {
+                        "nullable": true
+                    },
+                    "price": {
+                        "nullable": true
+                    },
+                    "price_currency": {
+                        "nullable": true
+                    },
+                    "service_comment": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

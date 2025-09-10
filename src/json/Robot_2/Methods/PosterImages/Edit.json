@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.PosterImages.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.PosterImages.Edit": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Обновление изображения poster для апометра\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\PosterImages\\Edit"
+            },
+            "Robot_2.Methods.PosterImages.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

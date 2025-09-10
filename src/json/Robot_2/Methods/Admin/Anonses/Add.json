@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Anonses.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Anonses.Add": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Robot_2/Types/Admin/Anonses/Type.json#/components/schemas/Robot_2.Types.Admin.Anonses.Type"
+                            }
+                        ]
+                    },
+                    "ref_id": {
+                        "title": "ID ссылки",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "ref_id"
+                ],
+                "title": "Добавление анонса\n\nВернет количество добавленных анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Add"
+            },
+            "Robot_2.Methods.Admin.Anonses.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

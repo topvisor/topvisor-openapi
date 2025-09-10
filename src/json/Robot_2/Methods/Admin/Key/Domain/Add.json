@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Key.Domain.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Key.Domain.Add": {
+                "type": "object",
+                "properties": {
+                    "layer_id": {
+                        "title": "ID слоя",
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "title": "Ключ ПС",
+                        "type": "integer"
+                    },
+                    "domain": {
+                        "title": "Домен",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "layer_id",
+                    "searcher_key",
+                    "domain"
+                ],
+                "title": "Добавление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Add"
+            },
+            "Robot_2.Methods.Admin.Key.Domain.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

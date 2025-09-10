@@ -1,0 +1,71 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AdminLayers.Key",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AdminLayers.Key": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "csv": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "layer_id": {
+                        "nullable": true
+                    },
+                    "api": {
+                        "nullable": true
+                    },
+                    "user": {
+                        "nullable": true
+                    },
+                    "pass": {
+                        "nullable": true
+                    },
+                    "ip": {
+                        "nullable": true
+                    },
+                    "original_ip": {
+                        "nullable": true
+                    },
+                    "countryCode": {
+                        "nullable": true
+                    },
+                    "type": {
+                        "nullable": true
+                    },
+                    "secret_0": {
+                        "nullable": true
+                    },
+                    "secret_101": {
+                        "nullable": true
+                    },
+                    "secret_102": {
+                        "nullable": true
+                    },
+                    "ban_search_0": {
+                        "nullable": true
+                    },
+                    "ban_search_1": {
+                        "nullable": true
+                    },
+                    "ban_search_101": {
+                        "nullable": true
+                    },
+                    "ban_search_102": {
+                        "nullable": true
+                    },
+                    "stop_to": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

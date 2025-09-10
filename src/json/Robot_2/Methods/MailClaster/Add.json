@@ -1,0 +1,68 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.MailClaster.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.MailClaster.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "folder_id": {
+                        "title": "ID папки",
+                        "type": "integer"
+                    },
+                    "searcher": {
+                        "title": "Название поисковика, по которому была запущена кластеризация",
+                        "type": "string"
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "type": "string"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "type": "string"
+                    },
+                    "count_keywords": {
+                        "title": "Количество ключевых слов",
+                        "type": "integer"
+                    },
+                    "counts": {
+                        "title": "Степень кластеризации",
+                        "type": "string"
+                    },
+                    "type": {
+                        "title": "Тип кластеризации",
+                        "type": "integer"
+                    },
+                    "zip_file_data": {
+                        "title": "Base64-кодированное содержимое ZIP-файла, которое будет прикреплено к письму",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "folder_id",
+                    "searcher",
+                    "region_key",
+                    "region_lang",
+                    "count_keywords",
+                    "counts",
+                    "zip_file_data"
+                ],
+                "title": "Отправка письма на почту об окончании кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\MailClaster\\Add"
+            },
+            "Robot_2.Methods.MailClaster.Add.Exec": {
+                "nullable": true,
+                "type": "boolean"
+            }
+        }
+    }
+}

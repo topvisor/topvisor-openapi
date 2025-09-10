@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Key.IpCSV.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Key.IpCSV.Add": {
+                "type": "object",
+                "properties": {
+                    "list_ip": {
+                        "title": "Список ip",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "list_ip"
+                ],
+                "title": "Добавление ip\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Add"
+            },
+            "Robot_2.Methods.Admin.Key.IpCSV.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

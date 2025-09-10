@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.StatsRecognizers.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.StatsRecognizers.Get": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "title": "Дата отчета",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "layer_id": {
+                        "title": "ID слоя",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "recognizer": {
+                        "title": "Имя разгадывателя",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "info": {
+                        "title": "Включать в отчет только указанную ошибку",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Получение статистики по работе распознавателей капч.\n\nСтатистика возвращается только для Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\StatsRecognizers\\Get"
+            },
+            "Robot_2.Methods.Admin.StatsRecognizers.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

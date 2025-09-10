@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Partner.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Partner.Add": {
+                "type": "object",
+                "properties": {
+                    "site": {
+                        "title": "Сайт партнера",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "site"
+                ],
+                "title": "Добавление партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Add"
+            },
+            "Robot_2.Methods.Admin.Partner.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

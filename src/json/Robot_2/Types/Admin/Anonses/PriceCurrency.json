@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Types.Admin.Anonses.PriceCurrency",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Types.Admin.Anonses.PriceCurrency": {
+                "type": "string",
+                "enum": [
+                    "RUB",
+                    "EUR",
+                    "USD",
+                    "GBR"
+                ],
+                "x-enum-varnames": [
+                    "Rub",
+                    "Eur",
+                    "Usd",
+                    "Gbr"
+                ],
+                "x-enum-descriptions": [
+                    "Рубли",
+                    "Евро",
+                    "Доллары",
+                    "Фунты"
+                ],
+                "title": "Валюта оплаты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Types\\Admin\\Anonses\\PriceCurrency"
+            }
+        }
+    }
+}

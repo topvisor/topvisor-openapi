@@ -1,0 +1,68 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Partner.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Partner.Edit": {
+                "type": "object",
+                "properties": {
+                    "site": {
+                        "title": "Сайт партнера",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "Название партнера",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "create_date": {
+                        "title": "Дата создания сотрудничества",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "links": {
+                        "title": "Ссылки",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "contacts": {
+                        "title": "Контакты",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "comment": {
+                        "title": "Комментарий",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "title": "Удален ли",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [],
+                "title": "Редактирование партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Edit"
+            },
+            "Robot_2.Methods.Admin.Partner.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}
