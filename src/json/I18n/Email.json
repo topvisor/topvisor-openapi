@@ -34,10 +34,6 @@
                         "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩",
                         "readOnly": true
                     },
-                    "User_change_confirm": {
-                        "const": "Confirm your email",
-                        "readOnly": true
-                    },
                     "User_projects_rights_title": {
                         "const": "You have received access to the project.",
                         "readOnly": true
@@ -118,7 +114,6 @@
                     "User_restore_access",
                     "User_project_access",
                     "User_registration_invite_mail_title",
-                    "User_change_confirm",
                     "User_projects_rights_title",
                     "User_projects_changeOwner_title",
                     "Integration_expires",
