@@ -18,10 +18,6 @@
                         "const": "When replying to the ticket, please do not change the topic",
                         "readOnly": true
                     },
-                    "Auto_message_title": {
-                        "const": "Thank you, your ticket has been submitted",
-                        "readOnly": true
-                    },
                     "Open_tickets": {
                         "const": "Open",
                         "readOnly": true
@@ -238,7 +234,6 @@
                 "required": [
                     "Reply_Title",
                     "Reply_notice",
-                    "Auto_message_title",
                     "Open_tickets",
                     "Closed_tickets",
                     "Close_ticket",

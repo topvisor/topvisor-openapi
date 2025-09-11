@@ -14,8 +14,6 @@ export interface components {
             /** @constant */
             readonly Reply_notice: "When replying to the ticket, please do not change the topic";
             /** @constant */
-            readonly Auto_message_title: "Thank you, your ticket has been submitted";
-            /** @constant */
             readonly Open_tickets: "Open";
             /** @constant */
             readonly Closed_tickets: "Closed";
