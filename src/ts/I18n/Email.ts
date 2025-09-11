@@ -12,8 +12,6 @@ export interface components {
             /** @constant */
             readonly User_registration_invite_mail_title: "Your friend invites you to sign up and get a double welcome bonus! 🤩";
             /** @constant */
-            readonly User_projects_rights_title: "You have received access to the project.";
-            /** @constant */
             readonly User_projects_changeOwner_title: "Confirm project transfer.";
             /** @constant */
             readonly Integration_expires: "Update integration key";

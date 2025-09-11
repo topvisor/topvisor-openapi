@@ -14,10 +14,6 @@
                         "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩",
                         "readOnly": true
                     },
-                    "User_projects_rights_title": {
-                        "const": "You have received access to the project.",
-                        "readOnly": true
-                    },
                     "User_projects_changeOwner_title": {
                         "const": "Confirm project transfer.",
                         "readOnly": true
@@ -89,7 +85,6 @@
                 },
                 "required": [
                     "User_registration_invite_mail_title",
-                    "User_projects_rights_title",
                     "User_projects_changeOwner_title",
                     "Integration_expires",
                     "Integration_has_expired1",
