@@ -24,8 +24,6 @@ export interface components {
             /** @constant */
             readonly User_change_confirm: "Confirm your email";
             /** @constant */
-            readonly User_email_changed_msg: "Your email has been changed";
-            /** @constant */
             readonly User_projects_rights_title: "You have received access to the project.";
             /** @constant */
             readonly User_projects_changeOwner_title: "Confirm project transfer.";
