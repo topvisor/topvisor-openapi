@@ -10,14 +10,6 @@
             "I18n.Email": {
                 "type": "object",
                 "properties": {
-                    "User_accept_email_title": {
-                        "const": "Account details",
-                        "readOnly": true
-                    },
-                    "user_accept_email_title_suffix_recommendations": {
-                        "const": "",
-                        "readOnly": true
-                    },
                     "User_restore_access": {
                         "const": "Recovering your password",
                         "readOnly": true
@@ -104,8 +96,6 @@
                     }
                 },
                 "required": [
-                    "User_accept_email_title",
-                    "user_accept_email_title_suffix_recommendations",
                     "User_restore_access",
                     "User_project_access",
                     "User_registration_invite_mail_title",

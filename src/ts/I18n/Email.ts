@@ -10,10 +10,6 @@ export interface components {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Email\En */
         "I18n.Email": {
             /** @constant */
-            readonly User_accept_email_title: "Account details";
-            /** @constant */
-            readonly user_accept_email_title_suffix_recommendations: "";
-            /** @constant */
             readonly User_restore_access: "Recovering your password";
             /** @constant */
             readonly User_project_access: "Access granted";
