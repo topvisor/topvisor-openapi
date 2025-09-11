@@ -26,7 +26,20 @@ export interface components {
             /** Максимальная дата отчета */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": unknown[] | null;
+        "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": ({
+            date: string;
+            count_tickets?: number;
+            count_messages?: number;
+            count_messages_user?: {
+                [key: string]: number;
+            };
+            percent_messages_user?: {
+                [key: string]: number;
+            };
+            vacations_by_user_id?: {
+                [key: string]: string[][];
+            };
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;

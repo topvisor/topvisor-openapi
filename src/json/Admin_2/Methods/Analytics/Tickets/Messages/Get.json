@@ -44,7 +44,55 @@
             },
             "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "date": {
+                                    "type": "string"
+                                },
+                                "count_tickets": {
+                                    "type": "integer"
+                                },
+                                "count_messages": {
+                                    "type": "integer"
+                                },
+                                "count_messages_user": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "percent_messages_user": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "number"
+                                    }
+                                },
+                                "vacations_by_user_id": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "required": [
+                                "date"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }
