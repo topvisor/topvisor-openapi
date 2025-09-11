@@ -14,8 +14,6 @@ export interface components {
             /** @constant */
             readonly user_accept_email_title_suffix_recommendations: "";
             /** @constant */
-            readonly User_PWD_msg_title2: "Password successfully changed";
-            /** @constant */
             readonly User_restore_access: "Recovering your password";
             /** @constant */
             readonly User_project_access: "Access granted";

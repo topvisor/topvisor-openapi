@@ -18,10 +18,6 @@
                         "const": "",
                         "readOnly": true
                     },
-                    "User_PWD_msg_title2": {
-                        "const": "Password successfully changed",
-                        "readOnly": true
-                    },
                     "User_restore_access": {
                         "const": "Recovering your password",
                         "readOnly": true
@@ -110,7 +106,6 @@
                 "required": [
                     "User_accept_email_title",
                     "user_accept_email_title_suffix_recommendations",
-                    "User_PWD_msg_title2",
                     "User_restore_access",
                     "User_project_access",
                     "User_registration_invite_mail_title",
