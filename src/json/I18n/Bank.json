@@ -326,10 +326,6 @@
                         "const": "pricing plan subscription fee",
                         "readOnly": true
                     },
-                    "Extending_tariff_failed": {
-                        "const": "Tariff failed to renew",
-                        "readOnly": true
-                    },
                     "Extending_subscription_failed": {
                         "const": "Subscription failed to renew",
                         "readOnly": true
@@ -1256,7 +1252,6 @@
                     "Link_card",
                     "Removed_card_notice",
                     "plan_payment",
-                    "Extending_tariff_failed",
                     "Extending_subscription_failed",
                     "Extending_plan_notice",
                     "Tariff_choose_plan",
