@@ -38,8 +38,6 @@ export interface components {
             /** @constant */
             readonly Got_indexed: "New indexed";
             /** @constant */
-            readonly Tariff_due_to_expire: "Do not forget to renew your subscription";
-            /** @constant */
             readonly Dogovor: "User agreement";
             /** @constant */
             readonly Ur_balance: "Balance is topped up";

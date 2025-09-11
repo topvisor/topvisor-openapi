@@ -66,10 +66,6 @@
                         "const": "New indexed",
                         "readOnly": true
                     },
-                    "Tariff_due_to_expire": {
-                        "const": "Do not forget to renew your subscription",
-                        "readOnly": true
-                    },
                     "Dogovor": {
                         "const": "User agreement",
                         "readOnly": true
@@ -98,7 +94,6 @@
                     "Total_indexed",
                     "Dropped_from_index",
                     "Got_indexed",
-                    "Tariff_due_to_expire",
                     "Dogovor",
                     "Ur_balance",
                     "Payment_received"
