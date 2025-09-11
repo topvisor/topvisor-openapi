@@ -41,8 +41,6 @@ export interface components {
             readonly Dogovor: "User agreement";
             /** @constant */
             readonly Ur_balance: "Balance is topped up";
-            /** @constant */
-            readonly Payment_received: "Pyment has been received";
         };
     };
     responses: never;

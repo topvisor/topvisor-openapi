@@ -73,10 +73,6 @@
                     "Ur_balance": {
                         "const": "Balance is topped up",
                         "readOnly": true
-                    },
-                    "Payment_received": {
-                        "const": "Pyment has been received",
-                        "readOnly": true
                     }
                 },
                 "required": [
@@ -95,8 +91,7 @@
                     "Dropped_from_index",
                     "Got_indexed",
                     "Dogovor",
-                    "Ur_balance",
-                    "Payment_received"
+                    "Ur_balance"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Email\\En"
             }
