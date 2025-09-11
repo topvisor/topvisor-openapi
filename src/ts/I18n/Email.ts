@@ -10,8 +10,6 @@ export interface components {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Email\En */
         "I18n.Email": {
             /** @constant */
-            readonly User_project_access: "Access granted";
-            /** @constant */
             readonly User_registration_invite_mail_title: "Your friend invites you to sign up and get a double welcome bonus! 🤩";
             /** @constant */
             readonly User_projects_rights_title: "You have received access to the project.";

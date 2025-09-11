@@ -10,10 +10,6 @@
             "I18n.Email": {
                 "type": "object",
                 "properties": {
-                    "User_project_access": {
-                        "const": "Access granted",
-                        "readOnly": true
-                    },
                     "User_registration_invite_mail_title": {
                         "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩",
                         "readOnly": true
@@ -92,7 +88,6 @@
                     }
                 },
                 "required": [
-                    "User_project_access",
                     "User_registration_invite_mail_title",
                     "User_projects_rights_title",
                     "User_projects_changeOwner_title",
