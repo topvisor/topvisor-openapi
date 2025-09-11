@@ -958,10 +958,6 @@
                         "const": "Sorting order",
                         "readOnly": true
                     },
-                    "Keyword_clustering_completed": {
-                        "const": "Keyword clustering completed",
-                        "readOnly": true
-                    },
                     "Send_to_email": {
                         "const": "Send to Email",
                         "readOnly": true
@@ -1464,7 +1460,6 @@
                     "Keyword_rank",
                     "Keyword_count",
                     "Sorting_order",
-                    "Keyword_clustering_completed",
                     "Send_to_email",
                     "Cluster_the_core_and_send_results_to_email",
                     "Data_will_be_pulled_for",
