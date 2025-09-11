@@ -23136,6 +23136,8 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
       required:
         - campaign_tv_id
       title: |-
