@@ -216,18 +216,6 @@ export interface components {
             /** @constant */
             readonly XML_monster_activate_msg: "Your \"XML monster\" card is activated as you have transferred more XML limits than everyone else";
             /** @constant */
-            readonly Rank_ppcchat_deactivate_title: "You lost the \"PPC Chat member\" achievement";
-            /** @constant */
-            readonly Rank_seochat_deactivate_title: "You lost the \"SEO Chat member\" achievement";
-            /** @constant */
-            readonly Rank_topvisor_deactivate_title?: "😢 You lost the \"Telegram's subscriber\" achievement";
-            /** @constant */
-            readonly Rank_ppcchat_activate_title: "You received the \"PPC Chat member\" achievement!";
-            /** @constant */
-            readonly Rank_seochat_activate_title: "You received the \"SEO Chat member\" achievement!";
-            /** @constant */
-            readonly Rank_topvisor_activate_title?: "🎉 You received the \"Telegram's subscriber\" achievement!";
-            /** @constant */
             readonly Ranks_link_twitter?: "Link your Twitter account to Topvisor";
             /** @constant */
             readonly Ranks_follow_twitter?: "Follow the official Topvisor account ";
