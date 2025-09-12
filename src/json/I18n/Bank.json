@@ -274,10 +274,6 @@
                         "const": "You already have %count_referrals% referrals. Keep it up! 🎉",
                         "readOnly": true
                     },
-                    "Referrals_total_amount_earned_email_title": {
-                        "const": "As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ?",
-                        "readOnly": true
-                    },
                     "Account_plan": {
                         "const": "Account (Pricing plan)",
                         "readOnly": true
@@ -1231,7 +1227,6 @@
                     "Referrals_invitation_from",
                     "Referrals_transfer_from_referral_to_bonus_balance",
                     "New_referral_email_title",
-                    "Referrals_total_amount_earned_email_title",
                     "Account_plan",
                     "Plan_discount",
                     "discount",

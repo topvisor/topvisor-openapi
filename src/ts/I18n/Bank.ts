@@ -142,8 +142,6 @@ export interface components {
             /** @constant */
             readonly New_referral_email_title: "You already have %count_referrals% referrals. Keep it up! 🎉";
             /** @constant */
-            readonly Referrals_total_amount_earned_email_title: "As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ?";
-            /** @constant */
             readonly Account_plan: "Account (Pricing plan)";
             /** @constant */
             readonly Plan_discount: "You save";
