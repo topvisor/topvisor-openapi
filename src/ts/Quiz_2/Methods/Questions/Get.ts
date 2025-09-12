@@ -22,7 +22,7 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** Получение вопроса */
-        "Quiz_2.Methods.Questions.Get.Exec": import('../../../Models/Quizes/Questions.ts').components['schemas']['Models.Quizes.Questions'][] | null;
+        "Quiz_2.Methods.Questions.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;
