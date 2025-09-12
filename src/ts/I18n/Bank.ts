@@ -140,8 +140,6 @@ export interface components {
             /** @constant */
             readonly Referrals_transfer_from_referral_to_bonus_balance: "Transfer from referral balance to bonus balance";
             /** @constant */
-            readonly First_referral_email_title: "You got your first referral!";
-            /** @constant */
             readonly New_referral_email_title: "You already have %count_referrals% referrals. Keep it up! 🎉";
             /** @constant */
             readonly Referrals_award_email_title: "You received a reward! Your referral reached a new level 🔥";

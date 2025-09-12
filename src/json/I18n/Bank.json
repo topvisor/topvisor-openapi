@@ -270,10 +270,6 @@
                         "const": "Transfer from referral balance to bonus balance",
                         "readOnly": true
                     },
-                    "First_referral_email_title": {
-                        "const": "You got your first referral!",
-                        "readOnly": true
-                    },
                     "New_referral_email_title": {
                         "const": "You already have %count_referrals% referrals. Keep it up! 🎉",
                         "readOnly": true
@@ -1238,7 +1234,6 @@
                     "Referrals_partner_bank_details",
                     "Referrals_invitation_from",
                     "Referrals_transfer_from_referral_to_bonus_balance",
-                    "First_referral_email_title",
                     "New_referral_email_title",
                     "Referrals_award_email_title",
                     "Referrals_total_amount_earned_email_title",
