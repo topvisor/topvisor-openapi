@@ -32,6 +32,7 @@ export interface components {
                     text: string;
                     link: string;
                 }[];
+                location: string;
             } | null) | null;
         };
     };

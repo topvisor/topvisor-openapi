@@ -60,10 +60,14 @@
                                                 "link"
                                             ]
                                         }
+                                    },
+                                    "location": {
+                                        "type": "string"
                                     }
                                 },
                                 "required": [
-                                    "text"
+                                    "text",
+                                    "location"
                                 ]
                             },
                             {

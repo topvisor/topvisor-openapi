@@ -17632,8 +17632,11 @@ components:
                     required:
                       - text
                       - link
+                location:
+                  type: string
               required:
                 - text
+                - location
             - type: 'null'
       required:
         - code
