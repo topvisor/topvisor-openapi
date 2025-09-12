@@ -11,8 +11,8 @@
                 "type": "object",
                 "properties": {
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n\nПоля обязатлеьное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
                         "type": "array"
                     },
                     "id": {

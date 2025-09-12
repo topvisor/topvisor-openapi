@@ -12,13 +12,13 @@ export interface components {
             /**
              * Список фильтров по полям объекта
              *
-             *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+             *     {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
-             *     Поля обязатлеьное, если $id не указан
+             *     Поля обязательное, если $id не указан
              * @description @see AbstractMethod::MODEL
-             *     @see Field::AVAILABLE_OPERATORS
+             *     @see Selector\Types\Operator
              */
             filters: unknown[];
             /** Id объекта, для фильтрации объектов по id
