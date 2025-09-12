@@ -37,8 +37,6 @@ export interface components {
             readonly Got_indexed: "New indexed";
             /** @constant */
             readonly Dogovor: "User agreement";
-            /** @constant */
-            readonly Ur_balance: "Balance is topped up";
         };
     };
     responses: never;

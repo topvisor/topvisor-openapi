@@ -65,10 +65,6 @@
                     "Dogovor": {
                         "const": "User agreement",
                         "readOnly": true
-                    },
-                    "Ur_balance": {
-                        "const": "Balance is topped up",
-                        "readOnly": true
                     }
                 },
                 "required": [
@@ -85,8 +81,7 @@
                     "Total_indexed",
                     "Dropped_from_index",
                     "Got_indexed",
-                    "Dogovor",
-                    "Ur_balance"
+                    "Dogovor"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Email\\En"
             }
