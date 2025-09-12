@@ -66,8 +66,7 @@
                                     }
                                 },
                                 "required": [
-                                    "text",
-                                    "location"
+                                    "text"
                                 ]
                             },
                             {

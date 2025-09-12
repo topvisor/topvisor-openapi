@@ -32,7 +32,7 @@ export interface components {
                     text: string;
                     link: string;
                 }[];
-                location: string;
+                location?: string;
             } | null) | null;
         };
     };
