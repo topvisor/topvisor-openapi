@@ -22,37 +22,7 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Quiz_2.Methods.WithQuestions.Get.Exec": ({
-            "\"AVAILABLE_RESET()\""?: boolean;
-            id?: string;
-            user_id?: number;
-            name?: string;
-            text?: string;
-            count_questions?: number;
-            total_score?: number;
-            min_score?: number;
-            available_reset_second?: number;
-            status?: string;
-            count_questions_is_passed?: number;
-            score?: number;
-            is_passed?: boolean;
-            update?: boolean;
-            is_finished?: boolean;
-            is_passed_earlier?: boolean;
-            questions?: {
-                "\"ANSWERS()\"": string;
-                "\"RESPONSES()\"": string;
-                "\"IS_PASSED()\"": boolean;
-                id: number;
-                quiz_id: string;
-                type: string;
-                text: string;
-                response_text: string;
-                score: number;
-                likes_count: number;
-                ord: number;
-            }[];
-        } | null) | null;
+        "Quiz_2.Methods.WithQuestions.Get.Exec": import('../../../Models/Quizes.ts').components['schemas']['Models.Quizes'][] | null;
     };
     responses: never;
     parameters: never;
