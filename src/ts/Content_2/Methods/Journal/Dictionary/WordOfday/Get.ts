@@ -11,7 +11,14 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
         "Content_2.Methods.Journal.Dictionary.WordOfday.Get": Record<string, never>;
-        "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": unknown[] | null;
+        "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": ({
+            [key: string]: {
+                url: string;
+                menu_name: string;
+                description: string;
+                count_views: number;
+            };
+        } | null) | null;
     };
     responses: never;
     parameters: never;

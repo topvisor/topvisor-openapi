@@ -40779,7 +40779,25 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get
     Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec:
       nullable: true
-      type: array
+      anyOf:
+        - type: object
+          additionalProperties:
+            type: object
+            properties:
+              url:
+                type: string
+              menu_name:
+                type: string
+              description:
+                type: string
+              count_views:
+                type: integer
+            required:
+              - url
+              - menu_name
+              - description
+              - count_views
+        - type: 'null'
     Keywords_2.Types.Collect.Ext.Type:
       type: string
       enum:
