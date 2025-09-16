@@ -34,76 +34,10 @@
             },
             "Admin_2.Methods.Accounting.Group.Get.Exec": {
                 "nullable": true,
-                "anyOf": [
-                    {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "\"COUNT(*)\"": {
-                                    "type": "integer"
-                                },
-                                "id": {
-                                    "type": "integer"
-                                },
-                                "name": {
-                                    "type": "string"
-                                },
-                                "priority": {
-                                    "type": "integer"
-                                },
-                                "filters": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "type": {
-                                                "type": "string"
-                                            },
-                                            "counteragent_name": {
-                                                "type": "string"
-                                            },
-                                            "counteragent_inn": {
-                                                "type": "string"
-                                            },
-                                            "counteragent_name_count_duplicates": {
-                                                "type": "integer"
-                                            },
-                                            "counteragent_inn_count_duplicates": {
-                                                "type": "integer"
-                                            },
-                                            "purpose": {
-                                                "anyOf": [
-                                                    {
-                                                        "type": "string"
-                                                    },
-                                                    {
-                                                        "type": "null"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "type",
-                                            "counteragent_name",
-                                            "counteragent_inn",
-                                            "counteragent_name_count_duplicates",
-                                            "counteragent_inn_count_duplicates",
-                                            "purpose"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "type": "null"
-                    }
-                ]
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
+                }
             }
         }
     }

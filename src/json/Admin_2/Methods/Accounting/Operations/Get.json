@@ -34,78 +34,10 @@
             },
             "Admin_2.Methods.Accounting.Operations.Get.Exec": {
                 "nullable": true,
-                "anyOf": [
-                    {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "\"COUNT(*)\"": {
-                                    "type": "integer"
-                                },
-                                "date": {
-                                    "type": "string"
-                                },
-                                "counteragent_name": {
-                                    "type": "string"
-                                },
-                                "counteragent_inn": {
-                                    "type": "string"
-                                },
-                                "purpose": {
-                                    "type": "string"
-                                },
-                                "amount": {
-                                    "type": "number"
-                                },
-                                "currency": {
-                                    "anyOf": [
-                                        {
-                                            "type": "string",
-                                            "enum": [
-                                                "RUB"
-                                            ]
-                                        },
-                                        {
-                                            "type": "string",
-                                            "enum": [
-                                                "USD"
-                                            ]
-                                        }
-                                    ]
-                                },
-                                "type": {
-                                    "anyOf": [
-                                        {
-                                            "type": "string",
-                                            "enum": [
-                                                "plus"
-                                            ]
-                                        },
-                                        {
-                                            "type": "string",
-                                            "enum": [
-                                                "minus"
-                                            ]
-                                        }
-                                    ]
-                                },
-                                "group_id": {
-                                    "type": "integer"
-                                },
-                                "name": {
-                                    "type": "string"
-                                },
-                                "group_name": {
-                                    "type": "string"
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "type": "null"
-                    }
-                ]
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
+                }
             }
         }
     }

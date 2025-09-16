@@ -11,14 +11,7 @@ export interface components {
          *     Результат функции кешируется
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\ArticlesByLetter\Get */
-        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get": {
-            fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-        };
+        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get": Record<string, never>;
         /** массив с ключом "Буква" и значением массив страниц Pages */
         "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": ({
             [key: string]: {

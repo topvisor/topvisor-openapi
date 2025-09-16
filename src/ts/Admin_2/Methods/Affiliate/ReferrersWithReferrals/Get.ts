@@ -18,20 +18,7 @@ export interface components {
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec": ({
-            "\"COUNT(*)\""?: number;
-            id?: number;
-            avatar?: string;
-            email?: string;
-            count_referrals?: number;
-            count_referrals_level_1: number;
-            count_referrals_level_2: number;
-            count_referrals_level_3: number;
-            count_referrals_level_4: number;
-            time_reg?: string;
-            currency?: string;
-            group?: number;
-        }[] | null) | null;
+        "Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec": import('../../../../Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
     };
     responses: never;
     parameters: never;

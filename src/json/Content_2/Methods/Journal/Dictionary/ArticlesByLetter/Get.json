@@ -9,26 +9,7 @@
         "schemas": {
             "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get": {
                 "type": "object",
-                "properties": {
-                    "fields": {
-                        "$ref": "../../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
-                    },
-                    "orders": {
-                        "$ref": "../../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
-                    },
-                    "filters": {
-                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
-                    },
-                    "limit": {
-                        "$ref": "../../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
-                    },
-                    "offset": {
-                        "$ref": "../../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    }
-                },
+                "properties": {},
                 "required": [],
                 "title": "Получение списка страниц по буквам для модуля SEO словарь\nРезультат функции кешируется\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Dictionary\\ArticlesByLetter\\Get"
             },

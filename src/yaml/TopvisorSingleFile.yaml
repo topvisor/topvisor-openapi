@@ -16345,7 +16345,7 @@ paths:
       tags:
         - Content_2
       summary: |-
-        Получение стаьи для "Слово дня" в модуле SEO словарь
+        Получение статьи для "Слово дня" в модуле SEO словарь
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get
       requestBody:
@@ -20530,58 +20530,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required: []
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Ranks\Get'
-    Admin_2.Methods.Ranks.Get.Exec:
-      nullable: true
-      anyOf:
-        - type: array
-          items:
-            type: object
-            properties:
-              '"ACTIVATIONS()"':
-                type: integer
-              id:
-                type: integer
-              name_ru:
-                type: string
-              name_en:
-                type: string
-              bonus_RUB:
-                type: integer
-              bonus_USD:
-                type: integer
-              to_date:
-                type: string
-              limit:
-                type: integer
-              site:
-                anyOf:
-                  - type: string
-                    enum:
-                      - topvisor
-                  - type: string
-                    enum:
-                      - thundo
-              code:
-                type: string
-              retention_week:
-                type: integer
-              retention_month:
-                type: integer
-              payment_week:
-                type: integer
-              payment_month:
-                type: integer
-              payment_month_6:
-                type: integer
-              payment_year:
-                type: integer
-              new_user:
-                type: integer
-              returned_user:
-                type: integer
-              quitted_user:
-                type: integer
-        - type: 'null'
     Models.Analytics.Ranks:
       properties:
         ACTIVATIONS():
@@ -20621,6 +20569,11 @@ components:
           nullable: true
         quitted_user:
           nullable: true
+    Admin_2.Methods.Ranks.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Analytics.Ranks'
     Admin_2.Types.Staff.Post:
       type: string
       enum:
@@ -29703,53 +29656,13 @@ components:
         Получение групп
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Get
-    Admin_2.Methods.Accounting.Group.Get.Exec:
-      nullable: true
-      anyOf:
-        - type: array
-          items:
-            type: object
-            properties:
-              '"COUNT(*)"':
-                type: integer
-              id:
-                type: integer
-              name:
-                type: string
-              priority:
-                type: integer
-              filters:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: integer
-                    type:
-                      type: string
-                    counteragent_name:
-                      type: string
-                    counteragent_inn:
-                      type: string
-                    counteragent_name_count_duplicates:
-                      type: integer
-                    counteragent_inn_count_duplicates:
-                      type: integer
-                    purpose:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                  required:
-                    - id
-                    - type
-                    - counteragent_name
-                    - counteragent_inn
-                    - counteragent_name_count_duplicates
-                    - counteragent_inn_count_duplicates
-                    - purpose
-        - type: 'null'
     Models.EmptyModel:
       properties: {}
+    Admin_2.Methods.Accounting.Group.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.EmptyModel'
     Admin_2.Methods.Accounting.Invoices.Add:
       type: object
       properties:
@@ -29878,46 +29791,9 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Operations\Get
     Admin_2.Methods.Accounting.Operations.Get.Exec:
       nullable: true
-      anyOf:
-        - type: array
-          items:
-            type: object
-            properties:
-              '"COUNT(*)"':
-                type: integer
-              date:
-                type: string
-              counteragent_name:
-                type: string
-              counteragent_inn:
-                type: string
-              purpose:
-                type: string
-              amount:
-                type: number
-              currency:
-                anyOf:
-                  - type: string
-                    enum:
-                      - RUB
-                  - type: string
-                    enum:
-                      - USD
-              type:
-                anyOf:
-                  - type: string
-                    enum:
-                      - plus
-                  - type: string
-                    enum:
-                      - minus
-              group_id:
-                type: integer
-              name:
-                type: string
-              group_name:
-                type: string
-        - type: 'null'
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.EmptyModel'
     Admin_2.Methods.Actions.Bank.Edit:
       type: object
       properties:
@@ -30170,7 +30046,7 @@ components:
           title: Год для сводки
           type: integer
         currency:
-          title: Валюта реферало
+          title: Валюта рефералов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
       required:
@@ -30396,41 +30272,9 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersWithReferrals\Get
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec:
       nullable: true
-      anyOf:
-        - type: array
-          items:
-            type: object
-            properties:
-              '"COUNT(*)"':
-                type: integer
-              id:
-                type: integer
-              avatar:
-                type: string
-              email:
-                type: string
-              count_referrals:
-                type: integer
-              count_referrals_level_1:
-                type: integer
-              count_referrals_level_2:
-                type: integer
-              count_referrals_level_3:
-                type: integer
-              count_referrals_level_4:
-                type: integer
-              time_reg:
-                type: string
-              currency:
-                type: string
-              group:
-                type: integer
-            required:
-              - count_referrals_level_1
-              - count_referrals_level_2
-              - count_referrals_level_3
-              - count_referrals_level_4
-        - type: 'null'
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.EmptyModel'
     Admin_2.Methods.Analytics.Activity.Get:
       type: object
       properties:
@@ -39546,7 +39390,7 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Checker\Go\Edit
     Audit_2.Methods.Audit.Checker.Go.Edit.Exec:
-      title: Список id проектов, отрпавленных на проверку
+      title: Список id проектов, отправленных на проверку
       type: object
       properties:
         projectIds:
@@ -40902,19 +40746,7 @@ components:
         $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get:
       type: object
-      properties:
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
+      properties: {}
       required: []
       title: |-
         Получение списка страниц по буквам для модуля SEO словарь
@@ -40939,29 +40771,15 @@ components:
         - type: 'null'
     Content_2.Methods.Journal.Dictionary.WordOfday.Get:
       type: object
-      properties:
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
+      properties: {}
       required: []
       title: |-
-        Получение стаьи для "Слово дня" в модуле SEO словарь
+        Получение статьи для "Слово дня" в модуле SEO словарь
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get
     Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec:
       nullable: true
       type: array
-      items:
-        $ref: '#/components/schemas/Models.Pages'
     Keywords_2.Types.Collect.Ext.Type:
       type: string
       enum:

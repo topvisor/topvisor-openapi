@@ -18,19 +18,7 @@ export interface components {
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Admin_2.Methods.Accounting.Operations.Get.Exec": ({
-            "\"COUNT(*)\""?: number;
-            date?: string;
-            counteragent_name?: string;
-            counteragent_inn?: string;
-            purpose?: string;
-            amount?: number;
-            currency?: "RUB" | "USD";
-            type?: "plus" | "minus";
-            group_id?: number;
-            name?: string;
-            group_name?: string;
-        }[] | null) | null;
+        "Admin_2.Methods.Accounting.Operations.Get.Exec": import('../../../../Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
     };
     responses: never;
     parameters: never;

@@ -15,7 +15,7 @@
                         "type": "integer"
                     },
                     "currency": {
-                        "title": "Валюта реферало",
+                        "title": "Валюта рефералов",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"

@@ -13,7 +13,7 @@ export interface components {
         "Admin_2.Methods.Affiliate.ReferralsByLevel.Get": {
             /** Год для сводки */
             year: number;
-            /** Валюта реферало */
+            /** Валюта рефералов */
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };
         "Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec": {

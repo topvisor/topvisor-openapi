@@ -37,89 +37,10 @@
             },
             "Admin_2.Methods.Ranks.Get.Exec": {
                 "nullable": true,
-                "anyOf": [
-                    {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "\"ACTIVATIONS()\"": {
-                                    "type": "integer"
-                                },
-                                "id": {
-                                    "type": "integer"
-                                },
-                                "name_ru": {
-                                    "type": "string"
-                                },
-                                "name_en": {
-                                    "type": "string"
-                                },
-                                "bonus_RUB": {
-                                    "type": "integer"
-                                },
-                                "bonus_USD": {
-                                    "type": "integer"
-                                },
-                                "to_date": {
-                                    "type": "string"
-                                },
-                                "limit": {
-                                    "type": "integer"
-                                },
-                                "site": {
-                                    "anyOf": [
-                                        {
-                                            "type": "string",
-                                            "enum": [
-                                                "topvisor"
-                                            ]
-                                        },
-                                        {
-                                            "type": "string",
-                                            "enum": [
-                                                "thundo"
-                                            ]
-                                        }
-                                    ]
-                                },
-                                "code": {
-                                    "type": "string"
-                                },
-                                "retention_week": {
-                                    "type": "integer"
-                                },
-                                "retention_month": {
-                                    "type": "integer"
-                                },
-                                "payment_week": {
-                                    "type": "integer"
-                                },
-                                "payment_month": {
-                                    "type": "integer"
-                                },
-                                "payment_month_6": {
-                                    "type": "integer"
-                                },
-                                "payment_year": {
-                                    "type": "integer"
-                                },
-                                "new_user": {
-                                    "type": "integer"
-                                },
-                                "returned_user": {
-                                    "type": "integer"
-                                },
-                                "quitted_user": {
-                                    "type": "integer"
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "type": "null"
-                    }
-                ]
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Analytics/Ranks.json#/components/schemas/Models.Analytics.Ranks"
+                }
             }
         }
     }

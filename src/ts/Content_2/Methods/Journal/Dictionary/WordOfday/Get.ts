@@ -7,18 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение стаьи для "Слово дня" в модуле SEO словарь
+        /** Получение статьи для "Слово дня" в модуле SEO словарь
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
-        "Content_2.Methods.Journal.Dictionary.WordOfday.Get": {
-            fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-        };
-        "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": import('../../../../../Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
+        "Content_2.Methods.Journal.Dictionary.WordOfday.Get": Record<string, never>;
+        "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

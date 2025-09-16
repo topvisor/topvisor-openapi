@@ -26,7 +26,7 @@
                 "title": "Запуск проверки аудита\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Audit\\Checker\\Go\\Edit"
             },
             "Audit_2.Methods.Audit.Checker.Go.Edit.Exec": {
-                "title": "Список id проектов, отрпавленных на проверку",
+                "title": "Список id проектов, отправленных на проверку",
                 "type": "object",
                 "properties": {
                     "projectIds": {
