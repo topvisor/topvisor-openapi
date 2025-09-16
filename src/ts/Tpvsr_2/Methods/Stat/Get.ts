@@ -18,7 +18,43 @@ export interface components {
             os_dimensions?: import('../../Types/Stat/Dimension/Oses.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Oses'] | null;
             referrers_dimensions?: import('../../Types/Stat/Dimension/Referrers.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Referrers'] | null;
         };
-        "Tpvsr_2.Methods.Stat.Get.Exec": unknown[] | null;
+        "Tpvsr_2.Methods.Stat.Get.Exec": ({
+            chart_data?: {
+                dates: string[];
+                clicks: {
+                    [key: string]: unknown;
+                };
+            };
+            counts_unique?: number;
+            referrers?: {
+                sites?: {
+                    count: number;
+                    refs: {
+                        [key: string]: unknown;
+                    }[];
+                };
+                overall?: {
+                    count: number;
+                    refs: {
+                        [key: string]: unknown;
+                    }[];
+                };
+                social?: {
+                    [key: string]: unknown;
+                };
+            };
+            countries?: {
+                name: string;
+                country_code: string;
+                count: number;
+            }[];
+            browsers?: {
+                [key: string]: number;
+            };
+            oses?: {
+                [key: string]: number;
+            };
+        } | null) | null;
     };
     responses: never;
     parameters: never;

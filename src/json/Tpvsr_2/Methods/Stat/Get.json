@@ -54,7 +54,119 @@
             },
             "Tpvsr_2.Methods.Stat.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "chart_data": {
+                                "type": "object",
+                                "properties": {
+                                    "dates": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "clicks": {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                },
+                                "required": [
+                                    "dates",
+                                    "clicks"
+                                ]
+                            },
+                            "counts_unique": {
+                                "type": "integer"
+                            },
+                            "referrers": {
+                                "type": "object",
+                                "properties": {
+                                    "sites": {
+                                        "type": "object",
+                                        "properties": {
+                                            "count": {
+                                                "type": "integer"
+                                            },
+                                            "refs": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": {}
+                                                }
+                                            }
+                                        },
+                                        "required": [
+                                            "count",
+                                            "refs"
+                                        ]
+                                    },
+                                    "overall": {
+                                        "type": "object",
+                                        "properties": {
+                                            "count": {
+                                                "type": "integer"
+                                            },
+                                            "refs": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": {}
+                                                }
+                                            }
+                                        },
+                                        "required": [
+                                            "count",
+                                            "refs"
+                                        ]
+                                    },
+                                    "social": {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                }
+                            },
+                            "countries": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "country_code": {
+                                            "type": "string"
+                                        },
+                                        "count": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "country_code",
+                                        "count"
+                                    ]
+                                }
+                            },
+                            "browsers": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            },
+                            "oses": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }
