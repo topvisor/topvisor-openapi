@@ -23,7 +23,7 @@ export interface components {
              *
              *     9 - означет глубину 10
              *
-             *     enum(0, 2, 3, 5, 9)
+             *     enum(0, 1, 2, 3, 5, 9)
              *
              *     TODO: сдлеать enum */
             do_snapshots?: number | null;
