@@ -13,16 +13,10 @@ export interface components {
         "Positions_2.Methods.Settings.Edit": {
             /** Id проекта */
             project_id: number;
-            /** Собирать ли снипиты */
+            /** Собирать ли сниппеты */
             with_snippets?: boolean | null;
-            /** Глубина сбора снимков
-             *
-             *     enum(0..9)
-             *     - 0: не собирать
-             *     - 1: 10
-             *     - 8: 80
-             *     - 9: 100 */
-            do_snapshots?: number | null;
+            /** Глубина сбора снимков */
+            do_snapshots?: boolean | null;
             /** Собирать ли сниппеты в снимках */
             do_snapshots_with_snippets?: boolean | null;
             /** Учитывать ли поддомены при проверке

@@ -25990,20 +25990,13 @@ components:
           title: Id проекта
           type: integer
         with_snippets:
-          title: Собирать ли снипиты
+          title: Собирать ли сниппеты
           nullable: true
           type: boolean
         do_snapshots:
-          title: |-
-            Глубина сбора снимков
-
-            enum(0..9)
-            - 0: не собирать
-            - 1: 10
-            - 8: 80
-            - 9: 100
+          title: Глубина сбора снимков
           nullable: true
-          type: integer
+          type: boolean
         do_snapshots_with_snippets:
           title: Собирать ли сниппеты в снимках
           nullable: true
@@ -35052,16 +35045,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         do_snapshots:
-          title: |-
-            Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
-
-            9 - означет глубину 10
-
-            enum(0, 1, 2, 3, 5, 9)
-
-            TODO: сдлеать enum
+          title: Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
           nullable: true
-          type: integer
+          type: boolean
         keyword_id:
           title: |-
             Проверка одного запроса

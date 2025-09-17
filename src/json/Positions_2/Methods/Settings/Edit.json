@@ -15,14 +15,14 @@
                         "type": "integer"
                     },
                     "with_snippets": {
-                        "title": "Собирать ли снипиты",
+                        "title": "Собирать ли сниппеты",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "do_snapshots": {
-                        "title": "Глубина сбора снимков\n\nenum(0..9)\n- 0: не собирать\n- 1: 10\n- 8: 80\n- 9: 100",
+                        "title": "Глубина сбора снимков",
                         "nullable": true,
-                        "type": "integer"
+                        "type": "boolean"
                     },
                     "do_snapshots_with_snippets": {
                         "title": "Собирать ли сниппеты в снимках",
