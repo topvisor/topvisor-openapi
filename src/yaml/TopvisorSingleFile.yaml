@@ -25560,7 +25560,6 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - to_id
         - name
         - project_id
       title: |-
@@ -34934,7 +34933,6 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - to_id
         - project_id
       title: |-
         Перемещение группы

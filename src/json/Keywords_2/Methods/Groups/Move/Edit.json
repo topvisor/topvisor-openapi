@@ -33,7 +33,6 @@
                     }
                 },
                 "required": [
-                    "to_id",
                     "project_id"
                 ],
                 "title": "Перемещение группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Groups\\Move\\Edit"

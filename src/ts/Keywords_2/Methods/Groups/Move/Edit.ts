@@ -12,7 +12,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Move\Edit */
         "Keywords_2.Methods.Groups.Move.Edit": {
             /** Переместить к указанному объекту */
-            to_id: number;
+            to_id?: number;
             /** @default in_folder */
             to_type?: import('../../../Types/Groups/ToType.ts').components['schemas']['Keywords_2.Types.Groups.ToType'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

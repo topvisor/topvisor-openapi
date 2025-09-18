@@ -40,7 +40,6 @@
                     }
                 },
                 "required": [
-                    "to_id",
                     "name",
                     "project_id"
                 ],
