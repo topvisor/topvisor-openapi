@@ -25648,7 +25648,6 @@ components:
           type: boolean
         show_trash:
           title: Показать удаленные дочерние папки
-          nullable: true
           type: integer
         fields:
           $ref: '#/components/schemas/fields'

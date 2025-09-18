@@ -17,7 +17,6 @@
                     },
                     "show_trash": {
                         "title": "Показать удаленные дочерние папки",
-                        "nullable": true,
                         "type": "integer"
                     },
                     "fields": {

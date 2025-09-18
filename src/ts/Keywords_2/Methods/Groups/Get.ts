@@ -14,7 +14,7 @@ export interface components {
             /** При фильтрации по ID папок также искать в дочерних папках */
             folder_id_depth?: boolean | null;
             /** Показать удаленные дочерние папки */
-            show_trash?: number | null;
+            show_trash?: number;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
