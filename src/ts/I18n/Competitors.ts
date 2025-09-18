@@ -24,8 +24,6 @@ export interface components {
             /** @constant */
             readonly Common: "Common";
             /** @constant */
-            readonly Unique: "Unique";
-            /** @constant */
             readonly Chart: "Chart";
             /** @constant */
             readonly Summary: "Summary";

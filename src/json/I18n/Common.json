@@ -1947,6 +1947,14 @@
                     "Knowledge_base": {
                         "const": "Resources",
                         "readOnly": true
+                    },
+                    "AllowCookies": {
+                        "const": "Allow all",
+                        "readOnly": true
+                    },
+                    "Unique": {
+                        "const": "Unique",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2429,7 +2437,9 @@
                     "Report_an_error",
                     "Report_an_error_ticket_message",
                     "Report_an_error_response",
-                    "Knowledge_base"
+                    "Knowledge_base",
+                    "AllowCookies",
+                    "Unique"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Common\\En"
             }

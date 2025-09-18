@@ -49,6 +49,20 @@ export interface components {
             readonly Free_url_limit_reached: "Free URL Shortener limit reached!";
             /** @constant */
             readonly To_continue_use_need_to_pay?: "To use free URL Shortener, top up your balance with not less than {{ minSum }} within one year. You can use funds on your balance to pay for any of Topvisor tools and features.";
+            /** @constant */
+            readonly Browsers: "Browsers";
+            /** @constant */
+            readonly Platforms: "Platforms";
+            /** @constant */
+            readonly Source_other: "Others";
+            /** @constant */
+            readonly Source_yandex: "Yandex.Browser";
+            /** @constant */
+            readonly Source_social: "Social Networks";
+            /** @constant */
+            readonly Source_sites: "Sites";
+            /** @constant */
+            readonly Geography: "Geography";
         };
     };
     responses: never;

@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Groups.On.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Groups.On.Edit": {
+                "type": "object",
+                "properties": {
+                    "on": {
+                        "title": "Статус активности",
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "on",
+                    "project_id"
+                ],
+                "title": "Изменение статуса активности группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Groups\\On\\Edit"
+            },
+            "Keywords_2.Methods.Groups.On.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

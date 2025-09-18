@@ -89,6 +89,34 @@
                     "To_continue_use_need_to_pay": {
                         "const": "To use free URL Shortener, top up your balance with not less than {{ minSum }} within one year. You can use funds on your balance to pay for any of Topvisor tools and features.",
                         "readOnly": true
+                    },
+                    "Browsers": {
+                        "const": "Browsers",
+                        "readOnly": true
+                    },
+                    "Platforms": {
+                        "const": "Platforms",
+                        "readOnly": true
+                    },
+                    "Source_other": {
+                        "const": "Others",
+                        "readOnly": true
+                    },
+                    "Source_yandex": {
+                        "const": "Yandex.Browser",
+                        "readOnly": true
+                    },
+                    "Source_social": {
+                        "const": "Social Networks",
+                        "readOnly": true
+                    },
+                    "Source_sites": {
+                        "const": "Sites",
+                        "readOnly": true
+                    },
+                    "Geography": {
+                        "const": "Geography",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -109,7 +137,14 @@
                     "Sort_date_asc",
                     "Sort_date_desc",
                     "Short_url_faster_with_bot",
-                    "Free_url_limit_reached"
+                    "Free_url_limit_reached",
+                    "Browsers",
+                    "Platforms",
+                    "Source_other",
+                    "Source_yandex",
+                    "Source_social",
+                    "Source_sites",
+                    "Geography"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Tpvsr\\En"
             }

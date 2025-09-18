@@ -19,14 +19,8 @@ export interface components {
             folders_ids_depth?: boolean;
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
             groups_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
-             *
-             *     9 - означет глубину 10
-             *
-             *     enum(0, 2, 3, 5, 9)
-             *
-             *     TODO: сдлеать enum */
-            do_snapshots?: number | null;
+            /** Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта) */
+            do_snapshots?: boolean | null;
             /** Проверка одного запроса
              *
              *     - не допускается при массовой проверке проектов

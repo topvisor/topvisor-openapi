@@ -38,10 +38,6 @@
                         "const": "Common",
                         "readOnly": true
                     },
-                    "Unique": {
-                        "const": "Unique",
-                        "readOnly": true
-                    },
                     "Chart": {
                         "const": "Chart",
                         "readOnly": true
@@ -647,7 +643,6 @@
                     "Keyword",
                     "Traffic",
                     "Common",
-                    "Unique",
                     "Chart",
                     "Summary",
                     "Summary_data",

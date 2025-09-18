@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Groups.Output",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Groups.Output": {
+                "type": "string",
+                "enum": [
+                    "csv"
+                ],
+                "x-enum-varnames": [
+                    "CSV"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
+                "title": "Тип экспорта группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Groups\\Output"
+            }
+        }
+    }
+}

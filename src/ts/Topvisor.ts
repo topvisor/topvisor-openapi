@@ -2383,6 +2383,63 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление групп
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Add */
+    "/add/keywords_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywords2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление групп
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Del */
+    "/del/keywords_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelKeywords2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка групп проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Get */
+    "/get/keywords_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение списка запросов проекта
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Get */
@@ -6199,6 +6256,122 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт всех запросов в определенном формате (экспорт всех запросов)
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Export\Get */
+    "/get/keywords_2/groups/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2GroupsExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Перемещение группы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Move\Edit */
+    "/edit/keywords_2/groups/move/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2GroupsMove"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение статуса активности группы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\On\Edit */
+    "/edit/keywords_2/groups/on/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2GroupsOn"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Переименовывание группы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Rename\Edit */
+    "/edit/keywords_2/groups/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2GroupsRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение сортировки групп
+     *
+     *     Не оптимизировано для работы с большим числом групп, дат и регионов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Sort\Edit */
+    "/edit/keywords_2/groups/sort/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2GroupsSort"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление группы из корзины
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Undel\Edit */
+    "/edit/keywords_2/groups/undel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2GroupsUndel"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
      * Импорт запросов (по необходимости зависимых с ними групп и папок)
      *
@@ -9833,7 +10006,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение стаьи для "Слово дня" в модуле SEO словарь
+    /** Получение статьи для "Слово дня" в модуле SEO словарь
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
     "/get/content_2/journal/dictionary/wordOfday/": {
@@ -13751,6 +13924,83 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Informer/Get.ts').components['schemas']['Informer_2.Methods.Informer.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddKeywords2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Add.ts').components['schemas']['Keywords_2.Methods.Groups.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Add.ts').components['schemas']['Keywords_2.Methods.Groups.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    DelKeywords2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Del.ts').components['schemas']['Keywords_2.Methods.Groups.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Del.ts').components['schemas']['Keywords_2.Methods.Groups.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    GetKeywords2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Get.ts').components['schemas']['Keywords_2.Methods.Groups.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Get.ts').components['schemas']['Keywords_2.Methods.Groups.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
                 };
             };
         };
@@ -18693,6 +18943,160 @@ export interface operations {
             };
         };
     };
+    GetKeywords2GroupsExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Export/Get.ts').components['schemas']['Keywords_2.Methods.Groups.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywords2GroupsMove: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Move/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Move.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Move/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Move.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywords2GroupsOn: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/On/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.On.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/On/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.On.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywords2GroupsRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Rename/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Rename/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywords2GroupsSort: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Sort/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Sort.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Sort/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Sort.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywords2GroupsUndel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Groups/Undel/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Undel.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Groups/Undel/Edit.ts').components['schemas']['Keywords_2.Methods.Groups.Undel.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
     AddKeywords2KeywordsImport: {
         parameters: {
             query?: never;
@@ -23376,8 +23780,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Dictionary/ArticlesByLetter/Get.ts').components['schemas']['Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -23402,8 +23805,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Dictionary/WordOfday/Get.ts').components['schemas']['Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
