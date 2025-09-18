@@ -12,7 +12,7 @@ export interface components {
             /** @constant */
             readonly Depth: "depth";
             /** @constant */
-            readonly of_results: "results";
+            readonly SERP_page: "SERP page{{ suffix }}";
             /** @constant */
             readonly of_keywords: "keywords";
             /** @constant */

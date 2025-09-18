@@ -14,8 +14,8 @@
                         "const": "depth",
                         "readOnly": true
                     },
-                    "of_results": {
-                        "const": "results",
+                    "SERP_page": {
+                        "const": "SERP page{{ suffix }}",
                         "readOnly": true
                     },
                     "of_keywords": {
@@ -73,7 +73,7 @@
                 },
                 "required": [
                     "Depth",
-                    "of_results",
+                    "SERP_page",
                     "of_keywords",
                     "of_pages",
                     "up_to",
