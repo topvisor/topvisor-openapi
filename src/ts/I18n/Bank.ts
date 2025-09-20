@@ -585,6 +585,8 @@ export interface components {
             readonly Act: "Act";
             /** @constant */
             readonly Dialog_subscription_title: "Subscribe to the {{ siteName }} plan";
+            /** @constant */
+            readonly CashBackAdaptiveDepth: "Unblocking of frozen funds by the Adaptive Depth algorithm in Google, number of skipped checks: {{ countDepths }}, for: {{ date }}";
         };
     };
     responses: never;

@@ -1161,6 +1161,10 @@
                     "Dialog_subscription_title": {
                         "const": "Subscribe to the {{ siteName }} plan",
                         "readOnly": true
+                    },
+                    "CashBackAdaptiveDepth": {
+                        "const": "Unblocking of frozen funds by the Adaptive Depth algorithm in Google, number of skipped checks: {{ countDepths }}, for: {{ date }}",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1439,7 +1443,8 @@
                     "Get_closing_documents_by_mail_info",
                     "Confirm_document_removal",
                     "Act",
-                    "Dialog_subscription_title"
+                    "Dialog_subscription_title",
+                    "CashBackAdaptiveDepth"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Bank\\En"
             }
