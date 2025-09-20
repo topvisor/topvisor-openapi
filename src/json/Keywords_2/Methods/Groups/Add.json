@@ -24,6 +24,9 @@
                     },
                     "name": {
                         "title": "Имена групп",
+                        "default": [
+                            ""
+                        ],
                         "type": "array"
                     },
                     "on": {
@@ -40,7 +43,6 @@
                     }
                 },
                 "required": [
-                    "name",
                     "project_id"
                 ],
                 "title": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Groups\\Add"

@@ -15,8 +15,13 @@ export interface components {
             to_id?: number;
             /** @default in_folder */
             to_type?: import('../../Types/Groups/ToType.ts').components['schemas']['Keywords_2.Types.Groups.ToType'];
-            /** Имена групп */
-            name: unknown[];
+            /**
+             * Имена групп
+             * @default [
+             *       ""
+             *     ]
+             */
+            name?: unknown[];
             /**
              * Активность группы
              * @default true

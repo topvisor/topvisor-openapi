@@ -25597,6 +25597,8 @@ components:
             - $ref: '#/components/schemas/Keywords_2.Types.Groups.ToType'
         name:
           title: Имена групп
+          default:
+            - ''
           type: array
         'on':
           title: Активность группы
@@ -25611,7 +25613,6 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - name
         - project_id
       title: |-
         Добавление групп
