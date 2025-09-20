@@ -32,7 +32,11 @@
                     },
                     "fetch_style": {
                         "nullable": true,
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Selector/Types/FetchStyle.json#/components/schemas/Selector.Types.FetchStyle"
+                            }
+                        ]
                     }
                 },
                 "required": [

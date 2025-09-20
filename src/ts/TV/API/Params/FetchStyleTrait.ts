@@ -28,10 +28,10 @@ export interface components {
              *     - fetchAll - получить коллекцию объектов
              *     - fetch - получить один объект
              *     - fetchColumn - получить свойсвто объекта
-             * @description @see Selector::AVAILABLE_FETCH_STYLES
+             * @description @see FetchStyle
              *     @see Selector::execFetch() - см. реализацию
              */
-            fetch_style?: string | null;
+            fetch_style?: import('../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
         };
     };
     responses: never;

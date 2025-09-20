@@ -17,7 +17,7 @@ export interface components {
             orders: unknown[];
             limit?: number | null;
             offset: number;
-            fetch_style?: string | null;
+            fetch_style?: import('../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
         };
     };
     responses: never;

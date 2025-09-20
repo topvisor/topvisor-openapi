@@ -18115,6 +18115,56 @@ components:
 
         Используется в паре с limit
       type: integer
+    Selector.Types.FetchStyle:
+      type: string
+      enum:
+        - fetchAll
+        - fetchAllNum
+        - fetchAllColumn
+        - fetch
+        - fetchColumn
+        - fetchGroup
+        - fetchGroupColumn
+        - fetchUnique
+        - fetchUniqueNum
+        - fetchUniqueColumn
+        - selector
+      x-enum-varnames:
+        - FetchAll
+        - FetchAllNum
+        - FetchAllColumn
+        - Fetch
+        - FetchColumn
+        - FetchGroup
+        - FetchGroupColumn
+        - FetchUnique
+        - FetchUniqueNum
+        - FetchUniqueColumn
+        - Selector
+      x-enum-descriptions:
+        - Список объектов; Является значением по умолчанию
+        - Список объектов в виде массивов, где элементы массива - это свойства объекта, перечисленные с сохранением своего порядка; Полезно для экономии трафика и ускорения передачи данных в формате json
+        - Список значений одного свойства по каждому объекту
+        - Один объект
+        - Одно свойство одного объека
+        - Объекты с группировкой
+        - Значения свойства объектов с группировкой
+        - Объекты с группировкой с объединением дублей
+        - Значения свойства объектов с группировкой с объединением дублей
+        - Список значений одного свойства по каждому объекту с объединением дублей
+        - Внутренний объект метода Selector
+      title: |-
+        Формат результата в основном используется для Get запросов, поддерживается не всеми запросами в полной мере
+
+        Указанием формата результата позволяет получать данные одного и того же метода в разном формате
+
+        Данный параметр влияет на тип возвращаемого результата
+
+        Данные параметр помогает избежать ненужных преобразований результатов на клиенте
+
+        Напоминает логику работу PDO Fetch: https://www.php.net/manual/ru/pdostatement.fetch.php
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Selector\Types\FetchStyle
     fetch_style:
       title: |-
         Определяет формат результата: коллекция, объект, значение
@@ -18124,10 +18174,11 @@ components:
         - fetch - получить один объект
         - fetchColumn - получить свойсвто объекта
       description: |-
-        @see Selector::AVAILABLE_FETCH_STYLES
+        @see FetchStyle
         @see Selector::execFetch() - см. реализацию
       nullable: true
-      type: string
+      allOf:
+        - $ref: '#/components/schemas/Selector.Types.FetchStyle'
     Annotations_2.Methods.Get:
       type: object
       properties:
