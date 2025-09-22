@@ -14,6 +14,8 @@ export interface components {
             /** @constant */
             readonly Transfer_control_over_project: "To transfer control over a project, enter the user's email in the form below and click";
             /** @constant */
+            readonly Region_depth_adaptive: "Dynamic parse depth";
+            /** @constant */
             readonly Region_depth_adaptive_hint: "<b>Adaptive check</b>\n- If the site is already fixed in the previous top and checking the next top is not required, it will be automatically skipped.\n- The cost of such checks is returned to the balance the next day.\n- Example: if the analyzed sites are found in the top 10 for a query, then when checking the top 30, payment is charged only for the top 10.\n- For detailed information, follow the link.";
         };
     };
