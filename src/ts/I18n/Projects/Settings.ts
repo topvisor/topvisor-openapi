@@ -13,6 +13,8 @@ export interface components {
             readonly Change_project_owner_description: "Change of project owner is a procedure that results in the change of the Project Owner in the service. Write-offs of funds for services provided by the service as a result of one actions or another will be made on behalf of the new owner. All operations with the project, including restoration of access to it if necessary, will be possible only on behalf of the new person.";
             /** @constant */
             readonly Transfer_control_over_project: "To transfer control over a project, enter the user's email in the form below and click";
+            /** @constant */
+            readonly Region_depth_adaptive_hint: "<b>Adaptive check</b>\n- If the site is already fixed in the previous top and checking the next top is not required, it will be automatically skipped.\n- The cost of such checks is returned to the balance the next day.\n- Example: if the analyzed sites are found in the top 10 for a query, then when checking the top 30, payment is charged only for the top 10.\n- For detailed information, follow the link.";
         };
     };
     responses: never;
