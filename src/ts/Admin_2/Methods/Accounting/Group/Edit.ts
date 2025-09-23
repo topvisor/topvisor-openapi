@@ -21,13 +21,8 @@ export interface components {
             counteragent_inn?: string | null;
             /** Назначение операции (для фильтра) */
             purpose?: string | null;
-            /** Тип
-             *
-             *     - plus
-             *     - minus
-             *
-             *     Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose] */
-            type?: string | null;
+            /** Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose] */
+            type?: import('../../../Types/Accounting/Group/FilterType.ts').components['schemas']['Admin_2.Types.Accounting.Group.FilterType'] | null;
         };
         "Admin_2.Methods.Accounting.Group.Edit.Exec": number | null;
     };

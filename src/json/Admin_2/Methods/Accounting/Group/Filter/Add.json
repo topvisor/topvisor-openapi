@@ -17,7 +17,7 @@
                     "type": {
                         "allOf": [
                             {
-                                "$ref": "../../../../../Admin_2/Types/Accounting/Group/Filter/Type.json#/components/schemas/Admin_2.Types.Accounting.Group.Filter.Type"
+                                "$ref": "../../../../../Admin_2/Types/Accounting/Group/FilterType.json#/components/schemas/Admin_2.Types.Accounting.Group.FilterType"
                             }
                         ]
                     },

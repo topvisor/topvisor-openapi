@@ -13,7 +13,7 @@ export interface components {
         "Admin_2.Methods.Accounting.Group.Filter.Add": {
             /** Id группы */
             group_id: number;
-            type: import('../../../../Types/Accounting/Group/Filter/Type.ts').components['schemas']['Admin_2.Types.Accounting.Group.Filter.Type'];
+            type: import('../../../../Types/Accounting/Group/FilterType.ts').components['schemas']['Admin_2.Types.Accounting.Group.FilterType'];
             /** Имя контрагента */
             counteragent_name: string;
             /** ИНН контрагента */

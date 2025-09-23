@@ -41,9 +41,13 @@
                         "type": "string"
                     },
                     "type": {
-                        "title": "Тип\n\n- plus\n- minus\n\nУказывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]",
+                        "title": "Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]",
                         "nullable": true,
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Admin_2/Types/Accounting/Group/FilterType.json#/components/schemas/Admin_2.Types.Accounting.Group.FilterType"
+                            }
+                        ]
                     }
                 },
                 "required": [],

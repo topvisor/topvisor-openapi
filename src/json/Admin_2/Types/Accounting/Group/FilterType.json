@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Types.Accounting.Group.FilterType",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Types.Accounting.Group.FilterType": {
+                "type": "string",
+                "enum": [
+                    "minus",
+                    "plus"
+                ],
+                "x-enum-varnames": [
+                    "Minus",
+                    "Plus"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
+                "title": "Тип фильтра по группам транзакций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Types\\Accounting\\Group\\FilterType"
+            }
+        }
+    }
+}

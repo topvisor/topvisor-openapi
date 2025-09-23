@@ -30110,6 +30110,21 @@ components:
           nullable: true
         group_id:
           nullable: true
+    Admin_2.Types.Accounting.Group.FilterType:
+      type: string
+      enum:
+        - minus
+        - plus
+      x-enum-varnames:
+        - Minus
+        - Plus
+      x-enum-descriptions:
+        - null
+        - null
+      title: |-
+        Тип фильтра по группам транзакций
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Accounting\Group\FilterType
     Admin_2.Methods.Accounting.Group.Edit:
       type: object
       properties:
@@ -30138,15 +30153,10 @@ components:
           nullable: true
           type: string
         type:
-          title: |-
-            Тип
-
-            - plus
-            - minus
-
-            Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]
+          title: Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Accounting.Group.FilterType'
       required: []
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Group\Edit'
     Admin_2.Methods.Accounting.Group.Edit.Exec:
@@ -38745,21 +38755,6 @@ components:
     Users_2.Methods.Stats.Account.Get.Exec:
       nullable: true
       type: array
-    Admin_2.Types.Accounting.Group.Filter.Type:
-      type: string
-      enum:
-        - minus
-        - plus
-      x-enum-varnames:
-        - Minus
-        - Plus
-      x-enum-descriptions:
-        - null
-        - null
-      title: |-
-        Тип фильтра по группам транзакций
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Accounting\Group\Filter\Type
     Admin_2.Methods.Accounting.Group.Filter.Add:
       type: object
       properties:
@@ -38768,7 +38763,7 @@ components:
           type: integer
         type:
           allOf:
-            - $ref: '#/components/schemas/Admin_2.Types.Accounting.Group.Filter.Type'
+            - $ref: '#/components/schemas/Admin_2.Types.Accounting.Group.FilterType'
         counteragent_name:
           title: Имя контрагента
           type: string
