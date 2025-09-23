@@ -39,37 +39,32 @@ export interface components {
              */
             readonly CU_SUFFIX_ICO: string;
             /**
-             * Точность валюты.
+             * Точность округления для валюты.
              * @default 10000
              */
             readonly CU_PRECISION: number;
             /**
-             * Стоимость запроса в валюте.
+             * Стоимость проверки позиций.
              * @default 10000
              */
             readonly QUERY_COST: number;
             /**
-             * Стоимость запроса для конкурентов.
+             * Стоимость дополнительного конкурента.
              * @default 10000
              */
             readonly QUERY_COST_COMPETITORS: number;
             /**
-             * Стоимость запроса для SERP.
-             * @default 10000
-             */
-            readonly QUERY_COST_SERP: number;
-            /**
-             * Стоимость запроса для сниппетов.
+             * Стоимость сбора сниппетов.
              * @default 10000
              */
             readonly QUERY_COST_SNIPPET: number;
             /**
-             * Стоимость запроса для снэпшота.
+             * Стоимость сбора снимка в проверке позиций.
              * @default 10000
              */
             readonly QUERY_COST_SNAPSHOT: number;
             /**
-             * Глубина запроса.
+             * Коэффициент за проверку глубины.
              * @default 10000
              */
             readonly QUERY_COST_DEPTH_K: number;
@@ -79,17 +74,17 @@ export interface components {
              */
             readonly EXPORT_ONE_RESULT_COST: number;
             /**
-             * Частота запросов.
+             * Проверка частоты запросов.
              * @default 10000
              */
             readonly QUERY_COST_FREQUENCY: number;
             /**
-             * Стоимость SY.
+             * Сбор ядра.
              * @default 10000
              */
             readonly SY_COST: number;
             /**
-             * Массив с подсказками стоимости.
+             * Сбор подсказок в поиске, за 1, 2 и 3 глубину
              * @default [
              *       10000,
              *       10000,
@@ -98,7 +93,7 @@ export interface components {
              */
             readonly SY_HINTS_COST: unknown[];
             /**
-             * Стоимость брокера.
+             * Корректировка ставок.
              * @default 10000
              */
             readonly BROKER_COST: number;
@@ -108,82 +103,82 @@ export interface components {
              */
             readonly BROKER_MIN_BALANCE: number;
             /**
-             * Стоимость кластера.
+             * Стоимость кластеризации.
              * @default 10000
              */
             readonly CLASTER_COST: number;
             /**
-             * Стоимость кластера для 10 единиц.
+             * Стоимость кластеризации от 10 000 запросов.
              * @default 10000
              */
             readonly CLASTER_COST_10: number;
             /**
-             * Стоимость кластера для 50 единиц.
+             * Стоимость кластеризации от 50 000 запросов.
              * @default 10000
              */
             readonly CLASTER_COST_50: number;
             /**
-             * Стоимость кластера для 250 единиц.
+             * Стоимость кластеризации от 250 000 запросов.
              * @default 10000
              */
             readonly CLASTER_COST_250: number;
             /**
-             * Стоимость изменения кластера.
+             * Стоимость перекластеризации.
              * @default 10000
              */
             readonly CLASTER_CHANGE_COST: number;
             /**
-             * Стоимость для audit_sitemap_100.
+             * Генерации карты сайта до 100 страниц.
              * @default 10000
              */
             readonly AUDIT_SITEMAP_100: number;
             /**
-             * Стоимость для audit_sitemap_1000.
+             * Генерации карты сайта до 1000 страниц.
              * @default 10000
              */
             readonly AUDIT_SITEMAP_1000: number;
             /**
-             * Стоимость для audit_sitemap_10000.
+             * Генерации карты сайта до 10 000 страниц.
              * @default 10000
              */
             readonly AUDIT_SITEMAP_10000: number;
             /**
-             * Стоимость для audit_sitemap_100000.
+             * Генерации карты сайта до 100 000 страниц.
              * @default 10000
              */
             readonly AUDIT_SITEMAP_100000: number;
             /**
-             * Стоимость для audit_sitemap_150000.
+             * Генерации карты сайта до 150 000 страниц.
              * @default 10000
              */
             readonly AUDIT_SITEMAP_150000: number;
             /**
-             * Стоимость для audit_sitemap_300000.
+             * Генерации карты сайта до 300 000 страниц.
              * @default 10000
              */
             readonly AUDIT_SITEMAP_300000: number;
             /**
-             * Стоимость для аудита.
+             * Стоимость аудита.
              * @default 10000
              */
             readonly AUDIT_COST: number;
             /**
-             * Стоимость для аудита 100.
+             * Стоимость аудита от 100 страниц.
              * @default 10000
              */
             readonly AUDIT_COST_100: number;
             /**
-             * Стоимость для аудита 1000.
+             * Стоимость аудита от 1000 страниц.
              * @default 10000
              */
             readonly AUDIT_COST_1000: number;
             /**
-             * Стоимость для аудита 10000.
+             * Стоимость аудита от 10 000 страниц.
              * @default 10000
              */
             readonly AUDIT_COST_10000: number;
             /**
-             * Стоимость наблюдателя.
+             * Стоимость радара.
              * @default 10000
              */
             readonly WATCHER_COST: number;
@@ -193,12 +188,12 @@ export interface components {
              */
             readonly INDEXING_COST: number;
             /**
-             * Стоимость упоминаний.
+             * Стоимость упоминатора.
              * @default 10000
              */
             readonly MENTIONS_COST: number;
             /**
-             * Стоимость конкурентов.
+             * Стоимость анализа конкурентов.
              * @default 10000
              */
             readonly COMPETITORS_COST: number;
@@ -208,7 +203,7 @@ export interface components {
              */
             readonly WEB_SCREENS_COST: number;
             /**
-             * Массив тарифных планов.
+             * Список тарифных планов.
              * @default [
              *       "No set",
              *       "No set",
@@ -219,7 +214,7 @@ export interface components {
              */
             readonly TARIFF_NAMES: unknown[];
             /**
-             * Массив значений тарифов.
+             * Список стоимости тарифов.
              * @default [
              *       10000,
              *       10000,
@@ -230,7 +225,7 @@ export interface components {
              */
             readonly TARIFF_VALUES: unknown[];
             /**
-             * Массив скидок на тарифы.
+             * Список скидок по тарифам.
              * @default [
              *       0,
              *       10,

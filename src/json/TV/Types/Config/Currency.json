@@ -41,43 +41,37 @@
                         "type": "string"
                     },
                     "CU_PRECISION": {
-                        "title": "Точность валюты.",
+                        "title": "Точность округления для валюты.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "integer"
                     },
                     "QUERY_COST": {
-                        "title": "Стоимость запроса в валюте.",
+                        "title": "Стоимость проверки позиций.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_COMPETITORS": {
-                        "title": "Стоимость запроса для конкурентов.",
-                        "readOnly": true,
-                        "default": 10000,
-                        "type": "number"
-                    },
-                    "QUERY_COST_SERP": {
-                        "title": "Стоимость запроса для SERP.",
+                        "title": "Стоимость дополнительного конкурента.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_SNIPPET": {
-                        "title": "Стоимость запроса для сниппетов.",
+                        "title": "Стоимость сбора сниппетов.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_SNAPSHOT": {
-                        "title": "Стоимость запроса для снэпшота.",
+                        "title": "Стоимость сбора снимка в проверке позиций.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_DEPTH_K": {
-                        "title": "Глубина запроса.",
+                        "title": "Коэффициент за проверку глубины.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "integer"
@@ -89,19 +83,19 @@
                         "type": "number"
                     },
                     "QUERY_COST_FREQUENCY": {
-                        "title": "Частота запросов.",
+                        "title": "Проверка частоты запросов.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "SY_COST": {
-                        "title": "Стоимость SY.",
+                        "title": "Сбор ядра.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "SY_HINTS_COST": {
-                        "title": "Массив с подсказками стоимости.",
+                        "title": "Сбор подсказок в поиске, за 1, 2 и 3 глубину",
                         "readOnly": true,
                         "default": [
                             10000,
@@ -111,7 +105,7 @@
                         "type": "array"
                     },
                     "BROKER_COST": {
-                        "title": "Стоимость брокера.",
+                        "title": "Корректировка ставок.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
@@ -123,97 +117,97 @@
                         "type": "number"
                     },
                     "CLASTER_COST": {
-                        "title": "Стоимость кластера.",
+                        "title": "Стоимость кластеризации.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST_10": {
-                        "title": "Стоимость кластера для 10 единиц.",
+                        "title": "Стоимость кластеризации от 10 000 запросов.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST_50": {
-                        "title": "Стоимость кластера для 50 единиц.",
+                        "title": "Стоимость кластеризации от 50 000 запросов.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST_250": {
-                        "title": "Стоимость кластера для 250 единиц.",
+                        "title": "Стоимость кластеризации от 250 000 запросов.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_CHANGE_COST": {
-                        "title": "Стоимость изменения кластера.",
+                        "title": "Стоимость перекластеризации.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_100": {
-                        "title": "Стоимость для audit_sitemap_100.",
+                        "title": "Генерации карты сайта до 100 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_1000": {
-                        "title": "Стоимость для audit_sitemap_1000.",
+                        "title": "Генерации карты сайта до 1000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_10000": {
-                        "title": "Стоимость для audit_sitemap_10000.",
+                        "title": "Генерации карты сайта до 10 000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_100000": {
-                        "title": "Стоимость для audit_sitemap_100000.",
+                        "title": "Генерации карты сайта до 100 000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_150000": {
-                        "title": "Стоимость для audit_sitemap_150000.",
+                        "title": "Генерации карты сайта до 150 000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_300000": {
-                        "title": "Стоимость для audit_sitemap_300000.",
+                        "title": "Генерации карты сайта до 300 000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST": {
-                        "title": "Стоимость для аудита.",
+                        "title": "Стоимость аудита.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST_100": {
-                        "title": "Стоимость для аудита 100.",
+                        "title": "Стоимость аудита от 100 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST_1000": {
-                        "title": "Стоимость для аудита 1000.",
+                        "title": "Стоимость аудита от 1000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST_10000": {
-                        "title": "Стоимость для аудита 10000.",
+                        "title": "Стоимость аудита от 10 000 страниц.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "WATCHER_COST": {
-                        "title": "Стоимость наблюдателя.",
+                        "title": "Стоимость радара.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
@@ -225,13 +219,13 @@
                         "type": "number"
                     },
                     "MENTIONS_COST": {
-                        "title": "Стоимость упоминаний.",
+                        "title": "Стоимость упоминатора.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
                     },
                     "COMPETITORS_COST": {
-                        "title": "Стоимость конкурентов.",
+                        "title": "Стоимость анализа конкурентов.",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
@@ -243,7 +237,7 @@
                         "type": "number"
                     },
                     "TARIFF_NAMES": {
-                        "title": "Массив тарифных планов.",
+                        "title": "Список тарифных планов.",
                         "readOnly": true,
                         "default": [
                             "No set",
@@ -255,7 +249,7 @@
                         "type": "array"
                     },
                     "TARIFF_VALUES": {
-                        "title": "Массив значений тарифов.",
+                        "title": "Список стоимости тарифов.",
                         "readOnly": true,
                         "default": [
                             10000,
@@ -267,7 +261,7 @@
                         "type": "array"
                     },
                     "TARIFF_DISCOUNT": {
-                        "title": "Массив скидок на тарифы.",
+                        "title": "Список скидок по тарифам.",
                         "readOnly": true,
                         "default": [
                             0,
@@ -288,7 +282,6 @@
                     "CU_PRECISION",
                     "QUERY_COST",
                     "QUERY_COST_COMPETITORS",
-                    "QUERY_COST_SERP",
                     "QUERY_COST_SNIPPET",
                     "QUERY_COST_SNAPSHOT",
                     "QUERY_COST_DEPTH_K",
