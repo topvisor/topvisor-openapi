@@ -117,6 +117,10 @@
                     "Geography": {
                         "const": "Geography",
                         "readOnly": true
+                    },
+                    "Enter_title": {
+                        "const": "Enter title",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -144,7 +148,8 @@
                     "Source_yandex",
                     "Source_social",
                     "Source_sites",
-                    "Geography"
+                    "Geography",
+                    "Enter_title"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Tpvsr\\En"
             }

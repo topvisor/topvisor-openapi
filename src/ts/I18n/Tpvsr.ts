@@ -63,6 +63,8 @@ export interface components {
             readonly Source_sites: "Sites";
             /** @constant */
             readonly Geography: "Geography";
+            /** @constant */
+            readonly Enter_title: "Enter title";
         };
     };
     responses: never;
