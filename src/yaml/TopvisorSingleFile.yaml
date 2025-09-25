@@ -31012,11 +31012,13 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
         field_name:
           title: |-
-            Имя поля
+            Имя метрики
 
             - sum
             - discount
             - count_users
+            - su
+            - su_common: Без учета валюты
           type: string
         limit:
           title: Длина периода
