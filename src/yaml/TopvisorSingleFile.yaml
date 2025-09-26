@@ -19663,6 +19663,11 @@ components:
     Quiz_2.Methods.Get:
       type: object
       properties:
+        user_id:
+          title: ID пользователя, ответы которого нужно вернуть
+          description: '@internal'
+          nullable: true
+          type: integer
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -27653,7 +27658,8 @@ components:
       type: object
       properties:
         user_id:
-          title: ID пользователя, ответы которого нужно вернуть (только для админов)
+          title: ID пользователя, ответы которого нужно вернуть
+          description: '@internal'
           nullable: true
           type: integer
         fields:

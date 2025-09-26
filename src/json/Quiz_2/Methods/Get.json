@@ -10,6 +10,12 @@
             "Quiz_2.Methods.Get": {
                 "type": "object",
                 "properties": {
+                    "user_id": {
+                        "title": "ID пользователя, ответы которого нужно вернуть",
+                        "description": "@internal",
+                        "nullable": true,
+                        "type": "integer"
+                    },
                     "fields": {
                         "$ref": "../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
