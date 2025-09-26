@@ -12,7 +12,7 @@ export interface components {
             /** @constant */
             readonly Type_balance: "Balance";
             /** @constant */
-            readonly Type_news: "Sevice news";
+            readonly Type_news: "Service news";
             /** @constant */
             readonly Type_academy?: "Topvisor-Academy";
             /** @constant */

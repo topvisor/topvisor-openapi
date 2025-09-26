@@ -15,7 +15,7 @@
                         "readOnly": true
                     },
                     "Type_news": {
-                        "const": "Sevice news",
+                        "const": "Service news",
                         "readOnly": true
                     },
                     "Type_academy": {
