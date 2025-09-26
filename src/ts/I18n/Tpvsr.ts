@@ -12,6 +12,8 @@ export interface components {
             /** @constant */
             readonly Link_deleted: "Link deleted";
             /** @constant */
+            readonly Show_links: "Show links";
+            /** @constant */
             readonly Show_deleted_links: "Show deleted links";
             /** @constant */
             readonly Show_favorite_links: "Show favorite links";
