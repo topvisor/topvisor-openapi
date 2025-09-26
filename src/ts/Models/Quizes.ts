@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         "Models.Quizes": {
             "AVAILABLE_RESET()"?: any;
+            "QUESTIONS()"?: any;
             id?: any;
             user_id?: any;
             name?: any;

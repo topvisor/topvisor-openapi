@@ -19693,6 +19693,8 @@ components:
       properties:
         AVAILABLE_RESET():
           nullable: true
+        QUESTIONS():
+          nullable: true
         id: {}
         user_id:
           nullable: true
