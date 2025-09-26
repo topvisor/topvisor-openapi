@@ -2383,6 +2383,65 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление папки
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Add */
+    "/add/keywords_2/folders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywords2Folders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление папок
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Del */
+    "/del/keywords_2/folders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelKeywords2Folders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка папок проекта
+     *
+     *     При view = 'tree' элементы разбиваются на подгруппы с ключами равными parent_id
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Get */
+    "/get/keywords_2/folders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2Folders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление групп
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Add */
@@ -6250,6 +6309,61 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetKeywords2CollectPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Move\Edit */
+    "/edit/keywords_2/folders/move/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2FoldersMove"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Переименовывание папок
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Rename\Edit */
+    "/edit/keywords_2/folders/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2FoldersRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление папок проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Undel\Edit */
+    "/edit/keywords_2/folders/undel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2FoldersUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -13928,6 +14042,83 @@ export interface operations {
             };
         };
     };
+    AddKeywords2Folders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Folders/Add.ts').components['schemas']['Keywords_2.Methods.Folders.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Folders/Add.ts').components['schemas']['Keywords_2.Methods.Folders.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    DelKeywords2Folders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Folders/Del.ts').components['schemas']['Keywords_2.Methods.Folders.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Folders/Del.ts').components['schemas']['Keywords_2.Methods.Folders.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Folders.ts').components['schemas']['Models.Folders'];
+                };
+            };
+        };
+    };
+    GetKeywords2Folders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Folders/Get.ts').components['schemas']['Keywords_2.Methods.Folders.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Folders/Get.ts').components['schemas']['Keywords_2.Methods.Folders.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Folders.ts').components['schemas']['Models.Folders'];
+                };
+            };
+        };
+    };
     AddKeywords2Groups: {
         parameters: {
             query?: never;
@@ -18939,6 +19130,84 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Collect/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2FoldersMove: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Folders/Move/Edit.ts').components['schemas']['Keywords_2.Methods.Folders.Move.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Folders/Move/Edit.ts').components['schemas']['Keywords_2.Methods.Folders.Move.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Folders.ts').components['schemas']['Models.Folders'];
+                };
+            };
+        };
+    };
+    EditKeywords2FoldersRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Folders/Rename/Edit.ts').components['schemas']['Keywords_2.Methods.Folders.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Folders/Rename/Edit.ts').components['schemas']['Keywords_2.Methods.Folders.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Folders.ts').components['schemas']['Models.Folders'];
+                };
+            };
+        };
+    };
+    EditKeywords2FoldersUndel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Folders/Undel/Edit.ts').components['schemas']['Keywords_2.Methods.Folders.Undel.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Folders/Undel/Edit.ts').components['schemas']['Keywords_2.Methods.Folders.Undel.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Folders.ts').components['schemas']['Models.Folders'];
                 };
             };
         };

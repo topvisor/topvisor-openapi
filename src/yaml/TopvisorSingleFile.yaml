@@ -4130,6 +4130,108 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+  /add/keywords_2/folders/:
+    post:
+      operationId: AddKeywords2Folders
+      tags:
+        - Keywords_2
+      summary: |-
+        Добавление папки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Folders.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Folders.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /del/keywords_2/folders/:
+    post:
+      operationId: DelKeywords2Folders
+      tags:
+        - Keywords_2
+      summary: |-
+        Удаление папок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Del
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Folders.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Folders.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Folders'
+  /get/keywords_2/folders/:
+    post:
+      operationId: GetKeywords2Folders
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение списка папок проекта
+
+        При view = 'tree' элементы разбиваются на подгруппы с ключами равными parent_id
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Folders.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Folders.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Folders'
   /add/keywords_2/groups/:
     post:
       operationId: AddKeywords2Groups
@@ -10529,6 +10631,105 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/folders/move/:
+    post:
+      operationId: EditKeywords2FoldersMove
+      tags:
+        - Keywords_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Move\Edit'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Folders.Move.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Folders.Move.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Folders'
+  /edit/keywords_2/folders/rename/:
+    post:
+      operationId: EditKeywords2FoldersRename
+      tags:
+        - Keywords_2
+      summary: |-
+        Переименовывание папок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Rename\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Folders.Rename.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Folders.Rename.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Folders'
+  /edit/keywords_2/folders/undel/:
+    post:
+      operationId: EditKeywords2FoldersUndel
+      tags:
+        - Keywords_2
+      summary: |-
+        Восстановление папок проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Undel\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Folders.Undel.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Folders.Undel.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Folders'
   /get/keywords_2/groups/export/:
     post:
       operationId: GetKeywords2GroupsExport
@@ -25564,6 +25765,173 @@ components:
             type: string
           site:
             type: string
+    Keywords_2.Types.Folders.ToType:
+      type: string
+      enum:
+        - before
+        - after
+        - in
+      x-enum-varnames:
+        - Before
+        - After
+        - In
+      x-enum-descriptions:
+        - Перед папкой
+        - После папки
+        - В папку
+      title: |-
+        Позиция перемещения
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Folders\ToType
+    Keywords_2.Methods.Folders.Add:
+      type: object
+      properties:
+        to_id:
+          title: Добавить рядом с указанной папкой
+          type: integer
+        to_type:
+          default: in
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Folders.ToType'
+        name:
+          title: Название папки
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Добавление папки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Add
+    Keywords_2.Methods.Folders.Add.Exec:
+      nullable: true
+      anyOf:
+        - type: object
+          properties:
+            '"id"':
+              type: integer
+            '"project_id"':
+              type: integer
+            '"parent_id"':
+              type: integer
+            '"name"':
+              type: string
+            '"ord"':
+              type: integer
+            '"count_folders"':
+              type: integer
+            '"count_groups"':
+              type: integer
+            '"count_groups_active"':
+              type: integer
+            '"expire_days"':
+              anyOf:
+                - type: integer
+                - type: 'null'
+          required:
+            - '"id"'
+            - '"project_id"'
+            - '"parent_id"'
+            - '"name"'
+            - '"ord"'
+            - '"count_folders"'
+            - '"count_groups"'
+            - '"count_groups_active"'
+            - '"expire_days"'
+        - type: 'null'
+    Keywords_2.Methods.Folders.Del:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Удаление папок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Del
+    Keywords_2.Methods.Folders.Del.Exec:
+      nullable: true
+      type: integer
+    Models.Folders:
+      properties:
+        COUNT(*):
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        parent_id:
+          nullable: true
+        name:
+          nullable: true
+        count_folders:
+          nullable: true
+        count_groups:
+          nullable: true
+        count_groups_active:
+          nullable: true
+        ord:
+          nullable: true
+        path:
+          nullable: true
+        ord_path:
+          nullable: true
+    Keywords_2.Types.Folders.View:
+      type: string
+      enum:
+        - tree
+        - flat
+      x-enum-varnames:
+        - Tree
+        - Flat
+      x-enum-descriptions:
+        - Древовидная
+        - Плоская
+      title: |-
+        Структура отображения папок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Folders\View
+    Keywords_2.Methods.Folders.Get:
+      type: object
+      properties:
+        view:
+          default: flat
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Folders.View'
+        show_trash:
+          title: Показывать ли удаленные папки
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Получение списка папок проекта
+
+        При view = 'tree' элементы разбиваются на подгруппы с ключами равными parent_id
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Get
+    Keywords_2.Methods.Folders.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Folders'
     Keywords_2.Types.Groups.ToType:
       type: string
       enum:
@@ -34935,6 +35303,68 @@ components:
               - comment
       required:
         - pricesByUsers
+    Keywords_2.Methods.Folders.Move.Edit:
+      type: object
+      properties:
+        to_id:
+          title: Переместить к указанной папке
+          type: integer
+        to_type:
+          default: in
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Folders.ToType'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Move\Edit'
+    Keywords_2.Methods.Folders.Move.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Folders.Rename.Edit:
+      type: object
+      properties:
+        name:
+          title: Название папок
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - name
+        - project_id
+      title: |-
+        Переименовывание папок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Rename\Edit
+    Keywords_2.Methods.Folders.Rename.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Folders.Undel.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Восстановление папок проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Undel\Edit
+    Keywords_2.Methods.Folders.Undel.Edit.Exec:
+      nullable: true
+      type: integer
     Keywords_2.Types.Groups.Output:
       type: string
       enum:

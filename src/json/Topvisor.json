@@ -6860,6 +6860,178 @@
                 }
             }
         },
+        "/add/keywords_2/folders/": {
+            "post": {
+                "operationId": "AddKeywords2Folders",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Добавление папки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Folders/Add.json#/components/schemas/Keywords_2.Methods.Folders.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Folders/Add.json#/components/schemas/Keywords_2.Methods.Folders.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/keywords_2/folders/": {
+            "post": {
+                "operationId": "DelKeywords2Folders",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Удаление папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Del",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Folders/Del.json#/components/schemas/Keywords_2.Methods.Folders.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Folders/Del.json#/components/schemas/Keywords_2.Methods.Folders.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/folders/": {
+            "post": {
+                "operationId": "GetKeywords2Folders",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение списка папок проекта\n\nПри view = 'tree' элементы разбиваются на подгруппы с ключами равными parent_id\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Folders/Get.json#/components/schemas/Keywords_2.Methods.Folders.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Folders/Get.json#/components/schemas/Keywords_2.Methods.Folders.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/keywords_2/groups/": {
             "post": {
                 "operationId": "AddKeywords2Groups",
@@ -17664,6 +17836,180 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/folders/move/": {
+            "post": {
+                "operationId": "EditKeywords2FoldersMove",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Move\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Folders/Move/Edit.json#/components/schemas/Keywords_2.Methods.Folders.Move.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Folders/Move/Edit.json#/components/schemas/Keywords_2.Methods.Folders.Move.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/folders/rename/": {
+            "post": {
+                "operationId": "EditKeywords2FoldersRename",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Переименовывание папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Rename\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Folders/Rename/Edit.json#/components/schemas/Keywords_2.Methods.Folders.Rename.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Folders/Rename/Edit.json#/components/schemas/Keywords_2.Methods.Folders.Rename.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/folders/undel/": {
+            "post": {
+                "operationId": "EditKeywords2FoldersUndel",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Восстановление папок проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Undel\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Folders/Undel/Edit.json#/components/schemas/Keywords_2.Methods.Folders.Undel.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Folders/Undel/Edit.json#/components/schemas/Keywords_2.Methods.Folders.Undel.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
                                 }
                             }
                         }
