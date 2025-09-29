@@ -22,7 +22,7 @@
                         "const": "Tool",
                         "readOnly": true
                     },
-                    "Task_completed": {
+                    "Completed": {
                         "const": "Completed",
                         "readOnly": true
                     },
@@ -47,7 +47,7 @@
                     "Toolbox",
                     "Tasks_list",
                     "Tool",
-                    "Task_completed",
+                    "Completed",
                     "In_process",
                     "Recreate_task",
                     "No_tasks",

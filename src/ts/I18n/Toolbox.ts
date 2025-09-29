@@ -16,7 +16,7 @@ export interface components {
             /** @constant */
             readonly Tool: "Tool";
             /** @constant */
-            readonly Task_completed: "Completed";
+            readonly Completed: "Completed";
             /** @constant */
             readonly In_process: "In process";
             /** @constant */
