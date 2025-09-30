@@ -25970,10 +25970,14 @@ components:
           default: in_folder
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Groups.ToType'
-        name:
+        names:
           title: Имена групп
-          default:
-            - ''
+          nullable: true
+          type: array
+        name:
+          title: '@deprecated'
+          nullable: true
+          deprecated: true
           type: array
         'on':
           title: Активность группы
