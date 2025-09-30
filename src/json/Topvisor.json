@@ -9728,67 +9728,6 @@
                 }
             }
         },
-        "/get/quiz_2/withQuestions/": {
-            "post": {
-                "operationId": "GetQuiz2WithQuestions",
-                "tags": [
-                    "Quiz_2"
-                ],
-                "summary": "Получение теста с вопросами\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\WithQuestions\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Quiz_2/Methods/WithQuestions/Get.json#/components/schemas/Quiz_2.Methods.WithQuestions.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Quiz_2/Methods/WithQuestions/Get.json#/components/schemas/Quiz_2.Methods.WithQuestions.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Quizes.json#/components/schemas/Models.Quizes"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/del/recurring_2/recurringCard/": {
             "post": {
                 "operationId": "DelRecurring2RecurringCard",

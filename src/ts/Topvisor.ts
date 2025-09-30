@@ -3399,25 +3399,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение теста с вопросами
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\WithQuestions\Get */
-    "/get/quiz_2/withQuestions/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetQuiz2WithQuestions"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Удалить привязанную карту (system = card)
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Methods\RecurringCard\Del */
@@ -15355,32 +15336,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/ResultsUsers/Get.ts').components['schemas']['Quiz_2.Methods.ResultsUsers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetQuiz2WithQuestions: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Quiz_2/Methods/WithQuestions/Get.ts').components['schemas']['Quiz_2.Methods.WithQuestions.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Quiz_2/Methods/WithQuestions/Get.ts').components['schemas']['Quiz_2.Methods.WithQuestions.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Quizes.ts').components['schemas']['Models.Quizes'];
                 };
             };
         };

@@ -5827,41 +5827,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/quiz_2/withQuestions/:
-    post:
-      operationId: GetQuiz2WithQuestions
-      tags:
-        - Quiz_2
-      summary: |-
-        Получение теста с вопросами
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\WithQuestions\Get
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Quiz_2.Methods.WithQuestions.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Quiz_2.Methods.WithQuestions.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Quizes'
   /del/recurring_2/recurringCard/:
     post:
       operationId: DelRecurring2RecurringCard
@@ -27777,39 +27742,6 @@ components:
     Quiz_2.Methods.ResultsUsers.Get.Exec:
       nullable: true
       type: array
-    Quiz_2.Methods.WithQuestions.Get:
-      type: object
-      properties:
-        quiz_id:
-          title: ID теста
-          type: string
-        user_id:
-          title: ID пользователя, ответы которого нужно вернуть (только для админов)
-          nullable: true
-          type: integer
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-      required:
-        - quiz_id
-      title: |-
-        Получение теста с вопросами
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\WithQuestions\Get
-    Quiz_2.Methods.WithQuestions.Get.Exec:
-      nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Quizes'
     Recurring_2.Methods.RecurringCard.Del:
       type: object
       properties:
