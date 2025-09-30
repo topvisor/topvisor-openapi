@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "id": {
-                        "title": "ID редактируемого поста тикета",
+                        "title": "ID редактируемого сообщения тикета",
                         "type": "integer"
                     },
                     "text": {

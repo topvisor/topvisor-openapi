@@ -11,7 +11,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Message\Edit */
         "Tickets_2.Methods.Admin.Message.Edit": {
-            /** ID редактируемого поста тикета */
+            /** ID редактируемого сообщения тикета */
             id: number;
             /** Текст сообщения */
             text: string;

@@ -124,6 +124,9 @@
                     "social_reply_to_id": {
                         "nullable": true
                     },
+                    "message_social_id": {
+                        "nullable": true
+                    },
                     "message_id": {
                         "nullable": true
                     },

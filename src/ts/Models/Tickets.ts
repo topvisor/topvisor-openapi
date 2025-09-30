@@ -47,6 +47,7 @@ export interface components {
             social_type?: any;
             social_post_id?: any;
             social_reply_to_id?: any;
+            message_social_id?: any;
             message_id?: any;
             message_user_id?: any;
             message_text?: any;
