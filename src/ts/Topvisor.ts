@@ -9425,6 +9425,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit */
+    "/edit/ai_2/tracker/checker/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAi2TrackerCheckerGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Запуск проверки аудита
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Checker\Go\Edit */
@@ -23150,6 +23167,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Users/Informer/Subscriptions/Get.ts').components['schemas']['Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAi2TrackerCheckerGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Checker/Go/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Checker.Go.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Checker/Go/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

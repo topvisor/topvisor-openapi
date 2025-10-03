@@ -14,6 +14,14 @@
                         "default": "module",
                         "type": "string"
                     },
+                    "schemaType": {
+                        "default": "Article",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Controller_2/Types/Article/SchemaType.json#/components/schemas/Controller_2.Types.Article.SchemaType"
+                            }
+                        ]
+                    },
                     "duration": {
                         "nullable": true,
                         "type": "string"
@@ -128,6 +136,7 @@
                 },
                 "required": [
                     "type",
+                    "schemaType",
                     "htmlRaw",
                     "url",
                     "parent_url",

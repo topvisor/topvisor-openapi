@@ -13,6 +13,8 @@ export interface components {
         "Controller_2.Objects.Page.Article": {
             /** @default module */
             type: string;
+            /** @default Article */
+            schemaType: import('../../Types/Article/SchemaType.ts').components['schemas']['Controller_2.Types.Article.SchemaType'];
             duration?: string | null;
             word_count?: string | null;
             htmlRaw: string;

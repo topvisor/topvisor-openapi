@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Ai_2.Methods.Tracker.Checker.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Ai_2.Methods.Tracker.Checker.Go.Edit": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit"
+            },
+            "Ai_2.Methods.Tracker.Checker.Go.Edit.Exec": {
+                "nullable": true,
+                "type": "null"
+            }
+        }
+    }
+}

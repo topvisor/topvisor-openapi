@@ -26434,6 +26434,59 @@
                 }
             }
         },
+        "/edit/ai_2/tracker/checker/go/": {
+            "post": {
+                "operationId": "EditAi2TrackerCheckerGo",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/Checker/Go/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/Checker/Go/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/audit_2/audit/checker/go/": {
             "post": {
                 "operationId": "EditAudit2AuditCheckerGo",
@@ -30186,6 +30239,10 @@
         {
             "name": "Admin_2",
             "description": "admin_2"
+        },
+        {
+            "name": "Ai_2",
+            "description": "ai_2"
         },
         {
             "name": "Analytics_2",
