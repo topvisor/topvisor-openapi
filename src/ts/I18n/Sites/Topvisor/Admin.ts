@@ -10,7 +10,7 @@ export interface components {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Sites\Topvisor\Admin\En */
         "I18n.Sites.Topvisor.Admin": {
             /** @constant */
-            readonly Warning_message?: "В Google появилось динамическое ценообразование: вы не платите за ТОПы, которые не проверяете 💰<br>Подробнее читайте <a href=\"https://t.me/topvisor/2939\" target=\"blank_\">в нашем Тelegram-канале ➡️</a>";
+            readonly Warning_message: "";
             /** @constant */
             readonly Warning_message_admin: "";
         };
