@@ -8,7 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit */
-        "Ai_2.Methods.Tracker.Checker.Go.Edit": Record<string, never>;
+        "Ai_2.Methods.Tracker.Checker.Go.Edit": {
+            /**
+             * Запуск в режиме отладки
+             *
+             *     Только для админов
+             * @description @internal
+             */
+            debug?: boolean;
+        };
         "Ai_2.Methods.Tracker.Checker.Go.Edit.Exec": null | null;
     };
     responses: never;

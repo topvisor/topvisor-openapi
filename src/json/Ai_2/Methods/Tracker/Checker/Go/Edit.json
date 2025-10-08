@@ -9,7 +9,13 @@
         "schemas": {
             "Ai_2.Methods.Tracker.Checker.Go.Edit": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\nТолько для админов",
+                        "description": "@internal",
+                        "type": "boolean"
+                    }
+                },
                 "required": [],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit"
             },
