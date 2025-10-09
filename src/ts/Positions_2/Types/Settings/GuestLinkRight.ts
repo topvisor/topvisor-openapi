@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Settings\GuestLinkRight
          * @enum {string}
          */
-        "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "graphics" | "competitors";
+        "Positions_2.Types.Settings.GuestLinkRight": "frequency" | "visitors" | "dates" | "summary" | "graphics" | "competitors";
     };
     responses: never;
     parameters: never;

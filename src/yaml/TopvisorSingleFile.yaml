@@ -26792,7 +26792,6 @@ components:
     Positions_2.Types.Settings.GuestLinkRight:
       type: string
       enum:
-        - volume
         - frequency
         - visitors
         - dates
@@ -26800,7 +26799,6 @@ components:
         - graphics
         - competitors
       x-enum-varnames:
-        - Volume
         - Frequency
         - Visitors
         - Dates
@@ -26808,7 +26806,6 @@ components:
         - Graphics
         - Competitors
       x-enum-descriptions:
-        - Частота запросов
         - Частота запросов
         - Трафик
         - Выбор дат
