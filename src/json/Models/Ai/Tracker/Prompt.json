@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Ai.Tracker.Prompt",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Ai.Tracker.Prompt": {
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "prompt": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "prompt_id": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "type": "integer",
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

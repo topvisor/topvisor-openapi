@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Ai_2.Methods.Tracker.Checker.Go.Edit",
+        "title": "Topvisor/Ai_2.Methods.Tracker.Checker.Price.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Ai_2.Methods.Tracker.Checker.Go.Edit": {
+            "Ai_2.Methods.Tracker.Checker.Price.Get": {
                 "type": "object",
                 "properties": {
                     "model": {
@@ -40,9 +40,9 @@
                     "prompts_ids",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Price\\Get"
             },
-            "Ai_2.Methods.Tracker.Checker.Go.Edit.Exec": {
+            "Ai_2.Methods.Tracker.Checker.Price.Get.Exec": {
                 "title": "Список id проектов, отправленных на проверку",
                 "type": "object",
                 "properties": {

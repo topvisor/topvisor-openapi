@@ -14863,6 +14863,67 @@
                 }
             }
         },
+        "/get/ai_2/tracker/prompts/": {
+            "post": {
+                "operationId": "GetAi2TrackerPrompts",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/Prompts/Get.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/Prompts/Get.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Prompt.json#/components/schemas/Models.Ai.Tracker.Prompt"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/audit_2/audit/browse/": {
             "post": {
                 "operationId": "GetAudit2AuditBrowse",
@@ -26480,6 +26541,69 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/ai_2/tracker/checker/price/": {
+            "post": {
+                "operationId": "GetAi2TrackerCheckerPrice",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Price\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/Checker/Price/Get.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/Checker/Price/Get.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
                                 }
                             }
                         }

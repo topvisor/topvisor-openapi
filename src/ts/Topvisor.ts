@@ -5245,6 +5245,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Get */
+    "/get/ai_2/tracker/prompts/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAi2TrackerPrompts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
      * Получение сводки анализа сайта
      *
@@ -9436,6 +9453,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditAi2TrackerCheckerGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Price\Get */
+    "/get/ai_2/tracker/checker/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAi2TrackerCheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -17746,6 +17780,32 @@ export interface operations {
             };
         };
     };
+    GetAi2TrackerPrompts: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Prompts/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Prompts/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Prompt.ts').components['schemas']['Models.Ai.Tracker.Prompt'];
+                };
+            };
+        };
+    };
     GetAudit2AuditBrowse: {
         parameters: {
             query?: never;
@@ -23193,6 +23253,33 @@ export interface operations {
                     "application/json": ({
                         result: import('./Ai_2/Methods/Tracker/Checker/Go/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Tracker.ts').components['schemas']['Models.Ai.Tracker.Tracker'];
+                };
+            };
+        };
+    };
+    GetAi2TrackerCheckerPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Checker/Price/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Checker.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Checker/Price/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Checker.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Tracker.ts').components['schemas']['Models.Ai.Tracker.Tracker'];
                 };
             };
         };
