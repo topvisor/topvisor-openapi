@@ -18058,6 +18058,34 @@ paths:
               schema:
                 type: string
                 format: binary
+  /edit/ai_2/tracker/settings/:
+    post:
+      operationId: EditAi2TrackerSettings
+      tags:
+        - Ai_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -43345,3 +43373,15 @@ components:
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get
+    Ai_2.Methods.Tracker.Settings.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required: []
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit'
+    Ai_2.Methods.Tracker.Settings.Edit.Exec:
+      nullable: true
+      type: 'null'
