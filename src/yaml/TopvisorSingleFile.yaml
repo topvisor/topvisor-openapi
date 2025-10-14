@@ -15781,7 +15781,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
+                $ref: '#/components/schemas/Models.Ai.Tracker.Settings'
   /get/ai_2/tracker/checker/price/:
     post:
       operationId: GetAi2TrackerCheckerPrice
@@ -40561,18 +40561,26 @@ components:
           type: integer
         brandName:
           title: Имя бренда
-          type: integer
-        additionalBrandNames:
+          type: string
+        aliases:
           title: Дополнительные имена бренда
-          type: integer
+          type: string
         models:
           title: Список моделей
           type: array
+        contextLang:
+          title: Язык ответа нейросети
+          type: string
+        contextLocation:
+          title: Локация, которая будет учитываться при генерации ответа нейросети
+          type: string
       required:
         - projectId
         - brandName
-        - additionalBrandNames
+        - aliases
         - models
+        - contextLang
+        - contextLocation
       title: |-
         Объект настроек AI-Трекера
 
@@ -40606,7 +40614,7 @@ components:
             type: integer
       required:
         - projectIds
-    Models.Ai.Tracker.Tracker:
+    Models.Ai.Tracker.Settings:
       properties:
         project_id:
           type: integer
@@ -40618,6 +40626,12 @@ components:
           type: string
           nullable: true
         models:
+          type: string
+          nullable: true
+        context_lang:
+          type: string
+          nullable: true
+        context_location:
           type: string
           nullable: true
     Ai_2.Methods.Tracker.Checker.Price.Get:
@@ -40655,6 +40669,20 @@ components:
             type: integer
       required:
         - projectIds
+    Models.Ai.Tracker.Tracker:
+      properties:
+        project_id:
+          type: integer
+          nullable: true
+        brand_name:
+          type: string
+          nullable: true
+        aliases:
+          type: string
+          nullable: true
+        models:
+          type: string
+          nullable: true
     Audit_2.Methods.Audit.Checker.Go.Edit:
       type: object
       properties:

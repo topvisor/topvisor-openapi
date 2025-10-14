@@ -26545,7 +26545,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
+                                    "$ref": "Models/Ai/Tracker/Settings.json#/components/schemas/Models.Ai.Tracker.Settings"
                                 }
                             }
                         }

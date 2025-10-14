@@ -14,11 +14,15 @@ export interface components {
             /** Id проекта */
             projectId: number;
             /** Имя бренда */
-            brandName: number;
+            brandName: string;
             /** Дополнительные имена бренда */
-            additionalBrandNames: number;
+            aliases: string;
             /** Список моделей */
             models: unknown[];
+            /** Язык ответа нейросети */
+            contextLang: string;
+            /** Локация, которая будет учитываться при генерации ответа нейросети */
+            contextLocation: string;
         };
     };
     responses: never;

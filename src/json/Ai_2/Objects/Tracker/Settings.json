@@ -16,22 +16,32 @@
                     },
                     "brandName": {
                         "title": "Имя бренда",
-                        "type": "integer"
+                        "type": "string"
                     },
-                    "additionalBrandNames": {
+                    "aliases": {
                         "title": "Дополнительные имена бренда",
-                        "type": "integer"
+                        "type": "string"
                     },
                     "models": {
                         "title": "Список моделей",
                         "type": "array"
+                    },
+                    "contextLang": {
+                        "title": "Язык ответа нейросети",
+                        "type": "string"
+                    },
+                    "contextLocation": {
+                        "title": "Локация, которая будет учитываться при генерации ответа нейросети",
+                        "type": "string"
                     }
                 },
                 "required": [
                     "projectId",
                     "brandName",
-                    "additionalBrandNames",
-                    "models"
+                    "aliases",
+                    "models",
+                    "contextLang",
+                    "contextLocation"
                 ],
                 "title": "Объект настроек AI-Трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Objects\\Tracker\\Settings"
             }
