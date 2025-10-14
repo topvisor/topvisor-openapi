@@ -8,10 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Ai.Tracker.Checks": {
-            id?: unknown;
+            date?: unknown;
             project_id?: unknown;
-            time?: unknown;
-            check_id?: unknown;
             settings?: unknown;
         };
     };

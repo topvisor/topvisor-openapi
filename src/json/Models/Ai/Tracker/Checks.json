@@ -9,14 +9,10 @@
         "schemas": {
             "Models.Ai.Tracker.Checks": {
                 "properties": {
-                    "id": {},
+                    "date": {
+                        "nullable": true
+                    },
                     "project_id": {
-                        "nullable": true
-                    },
-                    "time": {
-                        "nullable": true
-                    },
-                    "check_id": {
                         "nullable": true
                     },
                     "settings": {
