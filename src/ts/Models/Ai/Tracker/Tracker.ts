@@ -10,7 +10,7 @@ export interface components {
         "Models.Ai.Tracker.Tracker": {
             project_id?: number | null;
             brand_name?: string | null;
-            additional_brand_names?: string | null;
+            aliases?: string | null;
             models?: string | null;
         };
     };

@@ -40614,7 +40614,7 @@ components:
         brand_name:
           type: string
           nullable: true
-        additional_brand_names:
+        aliases:
           type: string
           nullable: true
         models:
