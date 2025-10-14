@@ -19,12 +19,6 @@
                     "check_id": {
                         "nullable": true
                     },
-                    "model": {
-                        "nullable": true
-                    },
-                    "prompts_ids": {
-                        "nullable": true
-                    },
                     "settings": {
                         "nullable": true
                     }

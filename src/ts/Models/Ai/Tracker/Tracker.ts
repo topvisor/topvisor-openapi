@@ -9,8 +9,9 @@ export interface components {
     schemas: {
         "Models.Ai.Tracker.Tracker": {
             project_id?: number | null;
-            site?: string | null;
-            brand_names?: string | null;
+            brand_name?: string | null;
+            additional_brand_names?: string | null;
+            models?: string | null;
         };
     };
     responses: never;

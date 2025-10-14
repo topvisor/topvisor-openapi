@@ -13,11 +13,15 @@
                         "type": "integer",
                         "nullable": true
                     },
-                    "site": {
+                    "brand_name": {
                         "type": "string",
                         "nullable": true
                     },
-                    "brand_names": {
+                    "additional_brand_names": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "models": {
                         "type": "string",
                         "nullable": true
                     }

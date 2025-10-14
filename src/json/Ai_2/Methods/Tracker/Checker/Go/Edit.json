@@ -10,17 +10,13 @@
             "Ai_2.Methods.Tracker.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
-                    "model": {
-                        "title": "Модель нейросети",
-                        "type": "string"
-                    },
-                    "prompts_ids": {
-                        "title": "Список промтов",
-                        "type": "array"
-                    },
                     "settings": {
-                        "title": "Дополнительные настройки (в формате json)",
-                        "type": "string"
+                        "title": "Настройки проверки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Ai_2/Objects/Tracker/Settings.json#/components/schemas/Ai_2.Objects.Tracker.Settings"
+                            }
+                        ]
                     },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
@@ -36,8 +32,7 @@
                     }
                 },
                 "required": [
-                    "model",
-                    "prompts_ids",
+                    "settings",
                     "project_id"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit"

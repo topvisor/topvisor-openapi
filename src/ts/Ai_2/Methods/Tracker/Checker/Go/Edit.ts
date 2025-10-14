@@ -9,12 +9,8 @@ export interface components {
     schemas: {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit */
         "Ai_2.Methods.Tracker.Checker.Go.Edit": {
-            /** Модель нейросети */
-            model: string;
-            /** Список промтов */
-            prompts_ids: unknown[];
-            /** Дополнительные настройки (в формате json) */
-            settings?: string;
+            /** Настройки проверки */
+            settings: import('../../../../Objects/Tracker/Settings.ts').components['schemas']['Ai_2.Objects.Tracker.Settings'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             debug?: import('../../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];

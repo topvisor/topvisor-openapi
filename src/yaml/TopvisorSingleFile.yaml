@@ -40553,18 +40553,37 @@ components:
       nullable: true
       allOf:
         - $ref: '#/components/schemas/TV.Objects.Highcharts.Chart'
+    Ai_2.Objects.Tracker.Settings:
+      type: object
+      properties:
+        projectId:
+          title: Id проекта
+          type: integer
+        brandName:
+          title: Имя бренда
+          type: integer
+        additionalBrandNames:
+          title: Дополнительные имена бренда
+          type: integer
+        models:
+          title: Список моделей
+          type: array
+      required:
+        - projectId
+        - brandName
+        - additionalBrandNames
+        - models
+      title: |-
+        Объект настроек AI-Трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Objects\Tracker\Settings
     Ai_2.Methods.Tracker.Checker.Go.Edit:
       type: object
       properties:
-        model:
-          title: Модель нейросети
-          type: string
-        prompts_ids:
-          title: Список промтов
-          type: array
         settings:
-          title: Дополнительные настройки (в формате json)
-          type: string
+          title: Настройки проверки
+          allOf:
+            - $ref: '#/components/schemas/Ai_2.Objects.Tracker.Settings'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -40574,8 +40593,7 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - model
-        - prompts_ids
+        - settings
         - project_id
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit'
     Ai_2.Methods.Tracker.Checker.Go.Edit.Exec:
@@ -40593,10 +40611,13 @@ components:
         project_id:
           type: integer
           nullable: true
-        site:
+        brand_name:
           type: string
           nullable: true
-        brand_names:
+        additional_brand_names:
+          type: string
+          nullable: true
+        models:
           type: string
           nullable: true
     Ai_2.Methods.Tracker.Checker.Price.Get:

@@ -12,8 +12,6 @@ export interface components {
             project_id?: unknown;
             time?: unknown;
             check_id?: unknown;
-            model?: unknown;
-            prompts_ids?: unknown;
             settings?: unknown;
         };
     };
