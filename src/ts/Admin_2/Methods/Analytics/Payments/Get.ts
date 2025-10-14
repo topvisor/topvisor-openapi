@@ -9,11 +9,23 @@ export interface components {
     schemas: {
         /** Получение суммы оплат за период
          *
+         *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий
+         *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
         "Admin_2.Methods.Analytics.Payments.Get": {
             period: import('../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */
             limit: number;
+            /**
+             * Тип фильтра по валюте
+             *
+             *     Валюта с котороого происходит оплата не собирается и в статистике не отображается
+             *
+             *     - `business`: Валюта бизнес счета
+             *     - `user`: Валюта аккаунта ползователя
+             * @default user
+             */
+            currencyType?: "business" | "user";
         };
         "Admin_2.Methods.Analytics.Payments.Get.Exec": ({
             [key: string]: {

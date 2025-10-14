@@ -8206,6 +8206,8 @@ paths:
       summary: |-
         Получение суммы оплат за период
 
+        В статистике учитывается только сумма оплаты услуг без налогов и комиссий
+
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get
       requestBody:
         content:
@@ -31419,11 +31421,29 @@ components:
         limit:
           title: Длина периода
           type: integer
+        currencyType:
+          title: |-
+            Тип фильтра по валюте
+
+            Валюта с котороого происходит оплата не собирается и в статистике не отображается
+
+            - `business`: Валюта бизнес счета
+            - `user`: Валюта аккаунта ползователя
+          default: user
+          anyOf:
+            - type: string
+              enum:
+                - business
+            - type: string
+              enum:
+                - user
       required:
         - period
         - limit
       title: |-
         Получение суммы оплат за период
+
+        В статистике учитывается только сумма оплаты услуг без налогов и комиссий
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get
     Admin_2.Methods.Analytics.Payments.Get.Exec:
