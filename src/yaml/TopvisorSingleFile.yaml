@@ -18065,7 +18065,10 @@ paths:
       operationId: EditAi2TrackerSettings
       tags:
         - Ai_2
-      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit'
+      summary: |-
+        Изменение настроек AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
       requestBody:
         content:
           application/json:
@@ -18088,6 +18091,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Ai.Tracker.Settings'
 components:
   securitySchemes:
     authToken:
@@ -40664,9 +40670,8 @@ components:
         - projectIds
     Models.Ai.Tracker.Settings:
       properties:
-        project_id:
+        id:
           type: integer
-          nullable: true
         brand_name:
           type: string
           nullable: true
@@ -40674,7 +40679,7 @@ components:
           type: string
           nullable: true
         models:
-          type: string
+          type: array
           nullable: true
         context_lang:
           type: string
@@ -43393,15 +43398,59 @@ components:
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get
+    Ai_2.Types.Tracker.Model:
+      type: string
+      enum:
+        - deepseek
+      x-enum-varnames:
+        - Deepseek
+      x-enum-descriptions:
+        - null
+      title: |-
+        Модель нейросети для AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Model
+    Ai_2.Types.Tracker.Models:
+      type: array
+      items:
+        $ref: '#/components/schemas/Ai_2.Types.Tracker.Model'
+      title: |-
+        Модель нейросети для AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Models
+      description: '@see Ai_2\Types\Tracker\Model'
     Ai_2.Methods.Tracker.Settings.Edit:
       type: object
       properties:
+        brand_name:
+          title: Имя бренда
+          nullable: true
+          type: string
+        aliases:
+          title: Дополнительные имена бренда
+          nullable: true
+          type: array
+        models:
+          title: Список моделей
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
+        context_lang:
+          title: Язык ответа нейросети
+          nullable: true
+          type: string
+        context_location:
+          title: Локация, которая будет учитываться при генерации ответа нейросети
+          nullable: true
+          type: string
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
       required: []
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit'
+      title: |-
+        Изменение настроек AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
     Ai_2.Methods.Tracker.Settings.Edit.Exec:
-      nullable: true
-      type: 'null'
+      type: integer

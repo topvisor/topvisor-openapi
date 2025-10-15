@@ -7,14 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Models.Ai.Tracker.Settings": {
-            id?: number;
-            brand_name?: string | null;
-            aliases?: string | null;
-            models?: unknown[] | null;
-            context_lang?: string | null;
-            context_location?: string | null;
-        };
+        /**
+         * Модель нейросети для AI-трекера
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Models
+         * @description @see Ai_2\Types\Tracker\Model
+         */
+        "Ai_2.Types.Tracker.Models": import('./Model.ts').components['schemas']['Ai_2.Types.Tracker.Model'][];
     };
     responses: never;
     parameters: never;

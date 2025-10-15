@@ -7,12 +7,24 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit */
+        /** Изменение настроек AI-трекера
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit */
         "Ai_2.Methods.Tracker.Settings.Edit": {
+            /** Имя бренда */
+            brand_name?: string | null;
+            /** Дополнительные имена бренда */
+            aliases?: unknown[] | null;
+            /** Список моделей */
+            models?: import('../../../Types/Tracker/Models.ts').components['schemas']['Ai_2.Types.Tracker.Models'] | null;
+            /** Язык ответа нейросети */
+            context_lang?: string | null;
+            /** Локация, которая будет учитываться при генерации ответа нейросети */
+            context_location?: string | null;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        "Ai_2.Methods.Tracker.Settings.Edit.Exec": null | null;
+        "Ai_2.Methods.Tracker.Settings.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

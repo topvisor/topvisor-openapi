@@ -10,6 +10,35 @@
             "Ai_2.Methods.Tracker.Settings.Edit": {
                 "type": "object",
                 "properties": {
+                    "brand_name": {
+                        "title": "Имя бренда",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "aliases": {
+                        "title": "Дополнительные имена бренда",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "models": {
+                        "title": "Список моделей",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Ai_2/Types/Tracker/Models.json#/components/schemas/Ai_2.Types.Tracker.Models"
+                            }
+                        ]
+                    },
+                    "context_lang": {
+                        "title": "Язык ответа нейросети",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "context_location": {
+                        "title": "Локация, которая будет учитываться при генерации ответа нейросети",
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
@@ -18,11 +47,10 @@
                     }
                 },
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit"
+                "title": "Изменение настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit"
             },
             "Ai_2.Methods.Tracker.Settings.Edit.Exec": {
-                "nullable": true,
-                "type": "null"
+                "type": "integer"
             }
         }
     }

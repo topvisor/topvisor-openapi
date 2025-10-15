@@ -30333,7 +30333,7 @@
                 "tags": [
                     "Ai_2"
                 ],
-                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
+                "summary": "Изменение настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -30373,6 +30373,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Settings.json#/components/schemas/Models.Ai.Tracker.Settings"
                                 }
                             }
                         }

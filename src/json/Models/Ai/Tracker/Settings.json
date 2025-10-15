@@ -9,9 +9,8 @@
         "schemas": {
             "Models.Ai.Tracker.Settings": {
                 "properties": {
-                    "project_id": {
-                        "type": "integer",
-                        "nullable": true
+                    "id": {
+                        "type": "integer"
                     },
                     "brand_name": {
                         "type": "string",
@@ -22,7 +21,7 @@
                         "nullable": true
                     },
                     "models": {
-                        "type": "string",
+                        "type": "array",
                         "nullable": true
                     },
                     "context_lang": {

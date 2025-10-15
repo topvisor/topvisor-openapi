@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Ai_2.Types.Tracker.Models",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Ai_2.Types.Tracker.Models": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Ai_2/Types/Tracker/Model.json#/components/schemas/Ai_2.Types.Tracker.Model"
+                },
+                "title": "Модель нейросети для AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Models",
+                "description": "@see Ai_2\\Types\\Tracker\\Model"
+            }
+        }
+    }
+}
