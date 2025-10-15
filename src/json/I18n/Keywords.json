@@ -258,6 +258,14 @@
                         "const": "Previous keyword clustering results not found",
                         "readOnly": true
                     },
+                    "Claster_reset": {
+                        "const": "Start new clustering",
+                        "readOnly": true
+                    },
+                    "Claster_change": {
+                        "const": "Re-cluster",
+                        "readOnly": true
+                    },
                     "for_keyword": {
                         "const": "to each keyword",
                         "readOnly": true
@@ -1285,6 +1293,8 @@
                     "Claster_task_change_bank",
                     "Claster_already_doing",
                     "Claster_not_exists_last_results",
+                    "Claster_reset",
+                    "Claster_change",
                     "for_keyword",
                     "Get_group_search_volume",
                     "Export_group",

@@ -134,6 +134,10 @@ export interface components {
             /** @constant */
             readonly Claster_not_exists_last_results: "Previous keyword clustering results not found";
             /** @constant */
+            readonly Claster_reset: "Start new clustering";
+            /** @constant */
+            readonly Claster_change: "Re-cluster";
+            /** @constant */
             readonly for_keyword: "to each keyword";
             /** @constant */
             readonly Get_group_search_volume: "Get group search volume";
