@@ -43429,18 +43429,19 @@ components:
         aliases:
           title: Дополнительные имена бренда
           nullable: true
-          type: array
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
         models:
           title: Список моделей
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
         context_lang:
-          title: Язык ответа нейросети
+          title: 'Настройки контекста: Язык'
           nullable: true
           type: string
         context_location:
-          title: Локация, которая будет учитываться при генерации ответа нейросети
+          title: 'Настройки контекста: Регион'
           nullable: true
           type: string
         filters:

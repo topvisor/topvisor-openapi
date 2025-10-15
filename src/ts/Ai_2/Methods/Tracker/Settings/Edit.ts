@@ -14,12 +14,12 @@ export interface components {
             /** Имя бренда */
             brand_name?: string | null;
             /** Дополнительные имена бренда */
-            aliases?: unknown[] | null;
+            aliases?: import('../../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
             /** Список моделей */
             models?: import('../../../Types/Tracker/Models.ts').components['schemas']['Ai_2.Types.Tracker.Models'] | null;
-            /** Язык ответа нейросети */
+            /** Настройки контекста: Язык */
             context_lang?: string | null;
-            /** Локация, которая будет учитываться при генерации ответа нейросети */
+            /** Настройки контекста: Регион */
             context_location?: string | null;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
