@@ -7,9 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение настроек AI-трекера
+        /**
+         * Изменение настроек AI-трекера
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit */
+         *     Параметры метода всегда должны повторять объект настроек AI-трекера
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
+         * @description @see Ai_2\Objects\Tracker\Settings
+         */
         "Ai_2.Methods.Tracker.Settings.Edit": {
             /** Имя бренда */
             brand_name?: string | null;

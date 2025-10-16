@@ -18068,6 +18068,8 @@ paths:
       summary: |-
         Изменение настроек AI-трекера
 
+        Параметры метода всегда должны повторять объект настроек AI-трекера
+
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
       requestBody:
         content:
@@ -18094,6 +18096,7 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Ai.Tracker.Settings'
+      description: '@see Ai_2\Objects\Tracker\Settings'
 components:
   securitySchemes:
     authToken:
@@ -43452,6 +43455,9 @@ components:
       title: |-
         Изменение настроек AI-трекера
 
+        Параметры метода всегда должны повторять объект настроек AI-трекера
+
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
+      description: '@see Ai_2\Objects\Tracker\Settings'
     Ai_2.Methods.Tracker.Settings.Edit.Exec:
       type: integer

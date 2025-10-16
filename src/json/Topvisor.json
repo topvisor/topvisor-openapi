@@ -30333,7 +30333,7 @@
                 "tags": [
                     "Ai_2"
                 ],
-                "summary": "Изменение настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
+                "summary": "Изменение настроек AI-трекера\n\nПараметры метода всегда должны повторять объект настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -30382,7 +30382,8 @@
                             }
                         }
                     }
-                }
+                },
+                "description": "@see Ai_2\\Objects\\Tracker\\Settings"
             }
         }
     },
