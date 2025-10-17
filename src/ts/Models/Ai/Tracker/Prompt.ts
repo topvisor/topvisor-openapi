@@ -8,10 +8,99 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Ai.Tracker.Prompt": {
-            id?: number;
-            prompt?: string | null;
-            prompt_id?: number | null;
-            project_id?: number | null;
+            "COUNT(*)"?: unknown;
+            "LENGTH(name)"?: unknown;
+            "tagsNames()"?: unknown;
+            id?: unknown;
+            phrase_id?: unknown;
+            project_id?: unknown;
+            group_id?: unknown;
+            tags?: unknown;
+            target?: unknown;
+            ord?: unknown;
+            name?: unknown;
+            group_name?: unknown;
+            group_on?: unknown;
+            group_ord?: unknown;
+            group_folder_id?: unknown;
+            group_folder_path?: unknown;
+            group_folder_ord?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     } */
+            target_status?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            position?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            relevant_url?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            snippet_title?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            snippet_body?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            snippet_ext?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            visitors?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     } */
+            positionStatus?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_key",
+             *         "searcher_key",
+             *         "type"
+             *       ]
+             *     } */
+            volume?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "position",
+             *         "region_key",
+             *         "searcher_key"
+             *       ]
+             *     } */
+            cost_forecast?: unknown;
         };
     };
     responses: never;
