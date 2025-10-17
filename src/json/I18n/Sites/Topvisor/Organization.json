@@ -26,10 +26,6 @@
                         "const": "Leningrad region",
                         "readOnly": true
                     },
-                    "Address_country": {
-                        "const": "Russia",
-                        "readOnly": true
-                    },
                     "Contact_type": {
                         "const": "Sales",
                         "readOnly": true
@@ -44,7 +40,6 @@
                     "Street_address",
                     "Address_locality",
                     "Address_region",
-                    "Address_country",
                     "Contact_type",
                     "General_manager"
                 ],

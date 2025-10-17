@@ -18,8 +18,6 @@ export interface components {
             /** @constant */
             readonly Address_region: "Leningrad region";
             /** @constant */
-            readonly Address_country: "Russia";
-            /** @constant */
             readonly Contact_type: "Sales";
             /** @constant */
             readonly General_manager: "Pustovoyt Denis Anatolievich";
