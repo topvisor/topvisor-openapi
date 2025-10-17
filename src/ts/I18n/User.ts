@@ -350,7 +350,7 @@ export interface components {
             /** @constant */
             readonly Shortener_short_links: "Short links";
             /** @constant */
-            readonly Shortener_url_shortener?: "Topvisor URL Shortener: customize, share and track your links!";
+            readonly Shortener_url_shortener: "{{ siteName }} URL Shortener: customize, share and track your links!";
             /** @constant */
             readonly Shortener_add_url_here: "Paste URL http://... and press Enter";
             /** @constant */

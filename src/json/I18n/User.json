@@ -691,7 +691,7 @@
                         "readOnly": true
                     },
                     "Shortener_url_shortener": {
-                        "const": "Topvisor URL Shortener: customize, share and track your links!",
+                        "const": "{{ siteName }} URL Shortener: customize, share and track your links!",
                         "readOnly": true
                     },
                     "Shortener_add_url_here": {
@@ -1152,6 +1152,7 @@
                     "Analytics_show_widget_other_accounts",
                     "Shortener_short_link",
                     "Shortener_short_links",
+                    "Shortener_url_shortener",
                     "Shortener_add_url_here",
                     "Shortener_search_url",
                     "Shortener_turn_long_to_short",
