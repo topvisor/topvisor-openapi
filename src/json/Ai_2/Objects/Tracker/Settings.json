@@ -10,38 +10,41 @@
             "Ai_2.Objects.Tracker.Settings": {
                 "type": "object",
                 "properties": {
-                    "projectId": {
-                        "title": "Id проекта",
-                        "type": "integer"
-                    },
-                    "brandName": {
+                    "brand_name": {
                         "title": "Имя бренда",
                         "type": "string"
                     },
                     "aliases": {
                         "title": "Дополнительные имена бренда",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                            }
+                        ]
                     },
                     "models": {
                         "title": "Список моделей",
-                        "type": "array"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Ai_2/Types/Tracker/Models.json#/components/schemas/Ai_2.Types.Tracker.Models"
+                            }
+                        ]
                     },
-                    "contextLang": {
-                        "title": "Язык ответа нейросети",
+                    "context_lang": {
+                        "title": "Настройки контекста: Язык",
                         "type": "string"
                     },
-                    "contextLocation": {
-                        "title": "Локация, которая будет учитываться при генерации ответа нейросети",
+                    "context_location": {
+                        "title": "Настройки контекста: Регион",
                         "type": "string"
                     }
                 },
                 "required": [
-                    "projectId",
-                    "brandName",
+                    "brand_name",
                     "aliases",
                     "models",
-                    "contextLang",
-                    "contextLocation"
+                    "context_lang",
+                    "context_location"
                 ],
                 "title": "Объект настроек AI-Трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Objects\\Tracker\\Settings"
             }

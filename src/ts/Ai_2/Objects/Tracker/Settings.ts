@@ -11,18 +11,16 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Objects\Tracker\Settings */
         "Ai_2.Objects.Tracker.Settings": {
-            /** Id проекта */
-            projectId: number;
             /** Имя бренда */
-            brandName: string;
+            brand_name: string;
             /** Дополнительные имена бренда */
-            aliases: string;
+            aliases: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
             /** Список моделей */
-            models: unknown[];
-            /** Язык ответа нейросети */
-            contextLang: string;
-            /** Локация, которая будет учитываться при генерации ответа нейросети */
-            contextLocation: string;
+            models: import('../../Types/Tracker/Models.ts').components['schemas']['Ai_2.Types.Tracker.Models'];
+            /** Настройки контекста: Язык */
+            context_lang: string;
+            /** Настройки контекста: Регион */
+            context_location: string;
         };
     };
     responses: never;
