@@ -18095,7 +18095,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Settings'
+                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
       description: '@see Ai_2\Objects\Tracker\Settings'
 components:
   securitySchemes:
@@ -40840,9 +40840,8 @@ components:
         - projectIds
     Models.Ai.Tracker.Tracker:
       properties:
-        project_id:
+        id:
           type: integer
-          nullable: true
         brand_name:
           type: string
           nullable: true
@@ -40850,6 +40849,12 @@ components:
           type: string
           nullable: true
         models:
+          type: array
+          nullable: true
+        context_lang:
+          type: string
+          nullable: true
+        context_location:
           type: string
           nullable: true
     Audit_2.Methods.Audit.Checker.Go.Edit:
