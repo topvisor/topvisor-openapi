@@ -57,12 +57,6 @@
                                 "$ref": "../../../Positions_2/Types/Settings/GuestLinkRights.json#/components/schemas/Positions_2.Types.Settings.GuestLinkRights"
                             }
                         ]
-                    },
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [

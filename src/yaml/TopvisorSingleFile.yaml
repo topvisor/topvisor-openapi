@@ -27392,10 +27392,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.Settings.GuestLinkRights'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
       required:
         - project_id
       title: |-
