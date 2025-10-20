@@ -10,14 +10,14 @@
             "Ai_2.Types.Tracker.Status": {
                 "type": "string",
                 "enum": [
-                    "default",
+                    "none",
                     "inQueue",
                     "checking",
                     "saving",
                     "reporting"
                 ],
                 "x-enum-varnames": [
-                    "Default",
+                    "None",
                     "InQueue",
                     "Checking",
                     "Saving",
@@ -25,7 +25,7 @@
                 ],
                 "x-enum-descriptions": [
                     null,
-                    "В очереди на постановку задач из таблицы r_master_tasks.projects_for_ai_tracker",
+                    "В очереди на постановку задач",
                     "На проверке",
                     "Запись результатов",
                     "Рассылка отчета"
