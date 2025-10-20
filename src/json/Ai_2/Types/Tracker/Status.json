@@ -8,13 +8,13 @@
     "components": {
         "schemas": {
             "Ai_2.Types.Tracker.Status": {
-                "type": "integer",
+                "type": "string",
                 "enum": [
-                    0,
-                    1,
-                    2,
-                    3,
-                    4
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4"
                 ],
                 "x-enum-varnames": [
                     "Default",

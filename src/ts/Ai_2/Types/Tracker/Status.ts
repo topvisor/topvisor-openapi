@@ -11,9 +11,9 @@ export interface components {
          * Статус проверки AI-трекера
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Status
-         * @enum {integer}
+         * @enum {string}
          */
-        "Ai_2.Types.Tracker.Status": 0 | 1 | 2 | 3 | 4;
+        "Ai_2.Types.Tracker.Status": "0" | "1" | "2" | "3" | "4";
     };
     responses: never;
     parameters: never;
