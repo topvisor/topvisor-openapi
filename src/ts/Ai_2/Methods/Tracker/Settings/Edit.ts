@@ -26,8 +26,7 @@ export interface components {
             context_lang?: string | null;
             /** Настройки контекста: Регион */
             context_location?: string | null;
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Ai_2.Methods.Tracker.Settings.Edit.Exec": number;
     };

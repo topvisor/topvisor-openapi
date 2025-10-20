@@ -32913,11 +32913,10 @@ components:
           title: 'Настройки контекста: Регион'
           nullable: true
           type: string
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required: []
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
       title: |-
         Изменение настроек AI-трекера
 
@@ -32929,8 +32928,9 @@ components:
       type: integer
     Models.Ai.Tracker.Tracker:
       properties:
-        id:
+        project_id:
           type: integer
+          nullable: true
         brand_name:
           type: string
           nullable: true

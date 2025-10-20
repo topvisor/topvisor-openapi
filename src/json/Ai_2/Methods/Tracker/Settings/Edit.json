@@ -43,14 +43,13 @@
                         "nullable": true,
                         "type": "string"
                     },
-                    "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
-                "required": [],
+                "required": [
+                    "project_id"
+                ],
                 "title": "Изменение настроек AI-трекера\n\nПараметры метода всегда должны повторять объект настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
                 "description": "@see Ai_2\\Objects\\Tracker\\Settings"
             },
