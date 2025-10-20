@@ -15783,7 +15783,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Settings'
+                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
   /get/ai_2/tracker/checker/price/:
     post:
       operationId: GetAi2TrackerCheckerPrice
@@ -40784,7 +40784,7 @@ components:
             type: integer
       required:
         - projectIds
-    Models.Ai.Tracker.Settings:
+    Models.Ai.Tracker.Tracker:
       properties:
         id:
           type: integer
@@ -40838,25 +40838,6 @@ components:
             type: integer
       required:
         - projectIds
-    Models.Ai.Tracker.Tracker:
-      properties:
-        id:
-          type: integer
-        brand_name:
-          type: string
-          nullable: true
-        aliases:
-          type: string
-          nullable: true
-        models:
-          type: array
-          nullable: true
-        context_lang:
-          type: string
-          nullable: true
-        context_location:
-          type: string
-          nullable: true
     Audit_2.Methods.Audit.Checker.Go.Edit:
       type: object
       properties:
