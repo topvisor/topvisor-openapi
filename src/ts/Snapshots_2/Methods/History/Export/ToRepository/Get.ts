@@ -16,6 +16,7 @@ export interface components {
             /** Id проекта */
             project_id: number;
             repository: import('../../../../Types/History/Export/Repository.ts').components['schemas']['Snapshots_2.Types.History.Export.Repository'];
+            output: import('../../../../Types/History/Export/Output.ts').components['schemas']['Snapshots_2.Types.History.Export.Output'];
             /** Индекс региона
              *
              *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device */

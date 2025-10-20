@@ -21,6 +21,13 @@
                             }
                         ]
                     },
+                    "output": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Snapshots_2/Types/History/Export/Output.json#/components/schemas/Snapshots_2.Types.History.Export.Output"
+                            }
+                        ]
+                    },
                     "region_index": {
                         "title": "Индекс региона\n\nЕсли не задан нужно задать параметры searcher_key, region_key, region_lang, region_device",
                         "nullable": true,
@@ -142,7 +149,8 @@
                 },
                 "required": [
                     "project_id",
-                    "repository"
+                    "repository",
+                    "output"
                 ],
                 "title": "Экспорт в хранилище\n\nПроизводит редирект на файл в кранилище\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\History\\Export\\ToRepository\\Get"
             },

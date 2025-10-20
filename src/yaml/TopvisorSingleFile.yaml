@@ -43883,6 +43883,9 @@ components:
         repository:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Repository'
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         region_index:
           title: |-
             Индекс региона
@@ -43972,6 +43975,7 @@ components:
       required:
         - project_id
         - repository
+        - output
       title: |-
         Экспорт в хранилище
 
