@@ -11,23 +11,23 @@
                 "type": "string",
                 "enum": [
                     "default",
-                    "start",
-                    "check",
-                    "result",
-                    "reports"
+                    "inQueue",
+                    "checking",
+                    "saving",
+                    "reporting"
                 ],
                 "x-enum-varnames": [
                     "Default",
-                    "Start",
-                    "Check",
-                    "Result",
-                    "Reports"
+                    "InQueue",
+                    "Checking",
+                    "Saving",
+                    "Reporting"
                 ],
                 "x-enum-descriptions": [
                     null,
-                    "Постановка задач из таблицы r_master_tasks.projects_for_ai_tracker",
+                    "В очереди на постановку задач из таблицы r_master_tasks.projects_for_ai_tracker",
                     "На проверке",
-                    "Результаты записаны",
+                    "Запись результатов",
                     "Рассылка отчета"
                 ],
                 "title": "Статус проверки AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Status"
