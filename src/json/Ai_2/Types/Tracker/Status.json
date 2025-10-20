@@ -10,11 +10,11 @@
             "Ai_2.Types.Tracker.Status": {
                 "type": "string",
                 "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3",
-                    "4"
+                    "default",
+                    "start",
+                    "check",
+                    "result",
+                    "reports"
                 ],
                 "x-enum-varnames": [
                     "Default",
