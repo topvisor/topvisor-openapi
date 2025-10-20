@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Actions.MoveBySubstrings.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Actions.MoveBySubstrings.Edit": {
+                "type": "object",
+                "properties": {
+                    "substrings": {
+                        "title": "Список подстрок, по которым будет производиться поиск запросов",
+                        "type": "array"
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Actions/MoveBySubstrings/Action.json#/components/schemas/Keywords_2.Types.Actions.MoveBySubstrings.Action"
+                            }
+                        ]
+                    },
+                    "whole_words": {
+                        "title": "Искать по полному вхождению слова",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "folder_id": {
+                        "title": "Id папки для созданной группы",
+                        "type": "integer"
+                    },
+                    "group_id": {
+                        "title": "ID группы для переноса фраз",
+                        "type": "integer"
+                    },
+                    "to_group_name": {
+                        "title": "Имя группы, в которую будут перемещены фразы",
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "substrings",
+                    "action",
+                    "project_id"
+                ],
+                "title": "Перенос запросов в группу по вхождению в них подстрок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\MoveBySubstrings\\Edit"
+            },
+            "Keywords_2.Methods.Actions.MoveBySubstrings.Edit.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

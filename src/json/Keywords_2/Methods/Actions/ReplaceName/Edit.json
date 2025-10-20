@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Actions.ReplaceName.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Actions.ReplaceName.Edit": {
+                "type": "object",
+                "properties": {
+                    "search": {
+                        "title": "Что поменять",
+                        "type": "string"
+                    },
+                    "replace": {
+                        "title": "На что поменять",
+                        "type": "string"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "search",
+                    "replace",
+                    "project_id"
+                ],
+                "title": "Замена текста в запросах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\ReplaceName\\Edit"
+            },
+            "Keywords_2.Methods.Actions.ReplaceName.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

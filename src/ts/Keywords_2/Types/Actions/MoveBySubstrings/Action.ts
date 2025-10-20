@@ -7,14 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Models.Ai.Tracker.Settings": {
-            id?: number;
-            brand_name?: string | null;
-            aliases?: string | null;
-            models?: unknown[] | null;
-            context_lang?: string | null;
-            context_location?: string | null;
-        };
+        /**
+         * Тип выполняемого действия
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Actions\MoveBySubstrings\Action
+         * @enum {string}
+         */
+        "Keywords_2.Types.Actions.MoveBySubstrings.Action": "test" | "exec";
     };
     responses: never;
     parameters: never;

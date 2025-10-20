@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.CountPriceReclaster.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.CountPriceReclaster.Get": {
+                "type": "object",
+                "properties": {
+                    "folder_id": {
+                        "title": "ID папки",
+                        "type": "integer"
+                    },
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение информации и предыдущей кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\CountPriceReclaster\\Get"
+            },
+            "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

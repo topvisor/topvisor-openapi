@@ -14863,6 +14863,59 @@
                 }
             }
         },
+        "/add/ai_2/tracker/prompts/": {
+            "post": {
+                "operationId": "AddAi2TrackerPrompts",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/Prompts/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/Prompts/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/ai_2/tracker/prompts/": {
             "post": {
                 "operationId": "GetAi2TrackerPrompts",
@@ -14917,6 +14970,65 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Ai/Tracker/Prompt.json#/components/schemas/Models.Ai.Tracker.Prompt"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/ai_2/tracker/settings/": {
+            "post": {
+                "operationId": "EditAi2TrackerSettings",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "Изменение настроек AI-трекера\n\nПараметры метода всегда должны повторять объект настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
+                "description": "@see Ai_2\\Objects\\Tracker\\Settings",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
                                 }
                             }
                         }
@@ -17715,6 +17827,652 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Informer_2/Methods/Push/Token/Del.json#/components/schemas/Informer_2.Methods.Push.Token.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/actions/moveBySubstrings/": {
+            "post": {
+                "operationId": "EditKeywords2ActionsMoveBySubstrings",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Перенос запросов в группу по вхождению в них подстрок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\MoveBySubstrings\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Actions/MoveBySubstrings/Edit.json#/components/schemas/Keywords_2.Methods.Actions.MoveBySubstrings.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Actions/MoveBySubstrings/Edit.json#/components/schemas/Keywords_2.Methods.Actions.MoveBySubstrings.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/actions/replaceName/": {
+            "post": {
+                "operationId": "EditKeywords2ActionsReplaceName",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Замена текста в запросах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\ReplaceName\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Actions/ReplaceName/Edit.json#/components/schemas/Keywords_2.Methods.Actions.ReplaceName.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Actions/ReplaceName/Edit.json#/components/schemas/Keywords_2.Methods.Actions.ReplaceName.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/actions/replaceTarget/": {
+            "post": {
+                "operationId": "EditKeywords2ActionsReplaceTarget",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Замена целевых ссылок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\ReplaceTarget\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Actions/ReplaceTarget/Edit.json#/components/schemas/Keywords_2.Methods.Actions.ReplaceTarget.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Actions/ReplaceTarget/Edit.json#/components/schemas/Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/actions/setTargetsFromRelevant/": {
+            "post": {
+                "operationId": "EditKeywords2ActionsSetTargetsFromRelevant",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Установка целевой ссылки равной релевантной за последнюю проверку позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\SetTargetsFromRelevant\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Actions/SetTargetsFromRelevant/Edit.json#/components/schemas/Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Actions/SetTargetsFromRelevant/Edit.json#/components/schemas/Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/claster/byRelevant/": {
+            "post": {
+                "operationId": "EditKeywords2ClasterByRelevant",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Кластеризация по релевантной странице: проверки перед началом кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\ByRelevant\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/ByRelevant/Edit.json#/components/schemas/Keywords_2.Methods.Claster.ByRelevant.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/ByRelevant/Edit.json#/components/schemas/Keywords_2.Methods.Claster.ByRelevant.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/claster/byTarget/": {
+            "post": {
+                "operationId": "EditKeywords2ClasterByTarget",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Кластеризация по целевой ссылке: проверки перед началом кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\ByTarget\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/ByTarget/Edit.json#/components/schemas/Keywords_2.Methods.Claster.ByTarget.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/ByTarget/Edit.json#/components/schemas/Keywords_2.Methods.Claster.ByTarget.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/claster/countPriceReclaster/": {
+            "post": {
+                "operationId": "GetKeywords2ClasterCountPriceReclaster",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение информации и предыдущей кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\CountPriceReclaster\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/CountPriceReclaster/Get.json#/components/schemas/Keywords_2.Methods.Claster.CountPriceReclaster.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/CountPriceReclaster/Get.json#/components/schemas/Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/claster/percent/": {
+            "post": {
+                "operationId": "GetKeywords2ClasterPercent",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение обновленного процента завершения кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Percent\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Percent/Get.json#/components/schemas/Keywords_2.Methods.Claster.Percent.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Percent/Get.json#/components/schemas/Keywords_2.Methods.Claster.Percent.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/claster/priceChange/": {
+            "post": {
+                "operationId": "GetKeywords2ClasterPriceChange",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение цены перекластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\PriceChange\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/PriceChange/Get.json#/components/schemas/Keywords_2.Methods.Claster.PriceChange.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/PriceChange/Get.json#/components/schemas/Keywords_2.Methods.Claster.PriceChange.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/claster/price/": {
+            "post": {
+                "operationId": "GetKeywords2ClasterPrice",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение цены кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Price\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/keywords_2/claster/task/": {
+            "post": {
+                "operationId": "AddKeywords2ClasterTask",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Запуск кластеризации (проверка на права в \"api_get_priceClaster()\")\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Task\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Task/Add.json#/components/schemas/Keywords_2.Methods.Claster.Task.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Task/Add.json#/components/schemas/Keywords_2.Methods.Claster.Task.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/keywords_2/claster/taskChange/": {
+            "post": {
+                "operationId": "AddKeywords2ClasterTaskChange",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Запуск перекластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\TaskChange\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/TaskChange/Add.json#/components/schemas/Keywords_2.Methods.Claster.TaskChange.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/TaskChange/Add.json#/components/schemas/Keywords_2.Methods.Claster.TaskChange.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -30325,65 +31083,6 @@
                         }
                     }
                 }
-            }
-        },
-        "/edit/ai_2/tracker/settings/": {
-            "post": {
-                "operationId": "EditAi2TrackerSettings",
-                "tags": [
-                    "Ai_2"
-                ],
-                "summary": "Изменение настроек AI-трекера\n\nПараметры метода всегда должны повторять объект настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
-                                }
-                            }
-                        }
-                    }
-                },
-                "description": "@see Ai_2\\Objects\\Tracker\\Settings"
             }
         }
     },

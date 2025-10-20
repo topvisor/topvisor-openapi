@@ -4846,6 +4846,8 @@ export interface paths {
     };  
     /** Получение суммы оплат за период
      *
+     *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий
+     *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
     "/get/admin_2/analytics/payments/": {
         parameters: {
@@ -5245,6 +5247,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление промпта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add */
+    "/add/ai_2/tracker/prompts/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAi2TrackerPrompts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Get */
     "/get/ai_2/tracker/prompts/": {
         parameters: {
@@ -5256,6 +5277,30 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAi2TrackerPrompts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Изменение настроек AI-трекера
+     *
+     *     Параметры метода всегда должны повторять объект настроек AI-трекера
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
+     * @description @see Ai_2\Objects\Tracker\Settings
+     */
+    "/edit/ai_2/tracker/settings/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAi2TrackerSettings"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6269,6 +6314,234 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["DelInformer2PushToken"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Перенос запросов в группу по вхождению в них подстрок
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\MoveBySubstrings\Edit */
+    "/edit/keywords_2/actions/moveBySubstrings/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ActionsMoveBySubstrings"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Замена текста в запросах
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceName\Edit */
+    "/edit/keywords_2/actions/replaceName/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ActionsReplaceName"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Замена целевых ссылок
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceTarget\Edit */
+    "/edit/keywords_2/actions/replaceTarget/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ActionsReplaceTarget"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Установка целевой ссылки равной релевантной за последнюю проверку позиций
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\SetTargetsFromRelevant\Edit */
+    "/edit/keywords_2/actions/setTargetsFromRelevant/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ActionsSetTargetsFromRelevant"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Кластеризация по релевантной странице: проверки перед началом кластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\ByRelevant\Edit */
+    "/edit/keywords_2/claster/byRelevant/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ClasterByRelevant"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Кластеризация по целевой ссылке: проверки перед началом кластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\ByTarget\Edit */
+    "/edit/keywords_2/claster/byTarget/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ClasterByTarget"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение информации и предыдущей кластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\CountPriceReclaster\Get */
+    "/get/keywords_2/claster/countPriceReclaster/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterCountPriceReclaster"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение обновленного процента завершения кластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Percent\Get */
+    "/get/keywords_2/claster/percent/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterPercent"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение цены перекластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\PriceChange\Get */
+    "/get/keywords_2/claster/priceChange/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterPriceChange"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение цены кластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Price\Get */
+    "/get/keywords_2/claster/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Запуск кластеризации (проверка на права в "api_get_priceClaster()")
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Task\Add */
+    "/add/keywords_2/claster/task/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywords2ClasterTask"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Запуск перекластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\TaskChange\Add */
+    "/add/keywords_2/claster/taskChange/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywords2ClasterTaskChange"];
         delete?: never;
         options?: never;
         head?: never;
@@ -17780,6 +18053,31 @@ export interface operations {
             };
         };
     };
+    AddAi2TrackerPrompts: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Prompts/Add.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Prompts/Add.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetAi2TrackerPrompts: {
         parameters: {
             query?: never;
@@ -17802,6 +18100,32 @@ export interface operations {
                         result: import('./Ai_2/Methods/Tracker/Prompts/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Ai/Tracker/Prompt.ts').components['schemas']['Models.Ai.Tracker.Prompt'];
+                };
+            };
+        };
+    };
+    EditAi2TrackerSettings: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Settings/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Settings.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Settings/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Settings.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Tracker.ts').components['schemas']['Models.Ai.Tracker.Tracker'];
                 };
             };
         };
@@ -19111,6 +19435,308 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Push/Token/Del.ts').components['schemas']['Informer_2.Methods.Push.Token.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2ActionsMoveBySubstrings: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Actions/MoveBySubstrings/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.MoveBySubstrings.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Actions/MoveBySubstrings/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.MoveBySubstrings.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2ActionsReplaceName: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Actions/ReplaceName/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.ReplaceName.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Actions/ReplaceName/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.ReplaceName.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywords2ActionsReplaceTarget: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Actions/ReplaceTarget/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.ReplaceTarget.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Actions/ReplaceTarget/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywords2ActionsSetTargetsFromRelevant: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Actions/SetTargetsFromRelevant/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Actions/SetTargetsFromRelevant/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2ClasterByRelevant: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/ByRelevant/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.ByRelevant.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/ByRelevant/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.ByRelevant.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2ClasterByTarget: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/ByTarget/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.ByTarget.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/ByTarget/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.ByTarget.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterCountPriceReclaster: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/CountPriceReclaster/Get.ts').components['schemas']['Keywords_2.Methods.Claster.CountPriceReclaster.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/CountPriceReclaster/Get.ts').components['schemas']['Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterPercent: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Percent/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Percent.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Percent/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Percent.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterPriceChange: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddKeywords2ClasterTask: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Task/Add.ts').components['schemas']['Keywords_2.Methods.Claster.Task.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Task/Add.ts').components['schemas']['Keywords_2.Methods.Claster.Task.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddKeywords2ClasterTaskChange: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/TaskChange/Add.ts').components['schemas']['Keywords_2.Methods.Claster.TaskChange.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/TaskChange/Add.ts').components['schemas']['Keywords_2.Methods.Claster.TaskChange.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

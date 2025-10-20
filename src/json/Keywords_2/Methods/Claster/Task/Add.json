@@ -1,0 +1,69 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.Task.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.Task.Add": {
+                "type": "object",
+                "properties": {
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Claster/Task/SearcherKey.json#/components/schemas/Keywords_2.Types.Claster.Task.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "type": "integer"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "type": "string"
+                    },
+                    "count": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Claster/Degrees.json#/components/schemas/Keywords_2.Types.Claster.Degrees"
+                            }
+                        ]
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Claster/Type.json#/components/schemas/Keywords_2.Types.Claster.Type"
+                            }
+                        ]
+                    },
+                    "send_email_csv": {
+                        "title": "Отправить письмо с результатами кластеризацию на почту",
+                        "type": "boolean"
+                    },
+                    "folder_id": {
+                        "title": "ID кластеризуемой папки",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "searcher_key",
+                    "region_key",
+                    "region_lang",
+                    "count",
+                    "project_id"
+                ],
+                "title": "Запуск кластеризации (проверка на права в \"api_get_priceClaster()\")\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Task\\Add"
+            },
+            "Keywords_2.Methods.Claster.Task.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

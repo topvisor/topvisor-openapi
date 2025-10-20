@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.ByTarget.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.ByTarget.Edit": {
+                "type": "object",
+                "properties": {
+                    "folder_id": {
+                        "title": "Кластеризовать по папке",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Кластеризация по целевой ссылке: проверки перед началом кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\ByTarget\\Edit"
+            },
+            "Keywords_2.Methods.Claster.ByTarget.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -8867,6 +8867,37 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
+  /add/ai_2/tracker/prompts/:
+    post:
+      operationId: AddAi2TrackerPrompts
+      tags:
+        - Ai_2
+      summary: |-
+        Добавление промпта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/ai_2/tracker/prompts/:
     post:
       operationId: GetAi2TrackerPrompts
@@ -8899,6 +8930,43 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Ai.Tracker.Prompt'
+  /edit/ai_2/tracker/settings/:
+    post:
+      operationId: EditAi2TrackerSettings
+      tags:
+        - Ai_2
+      summary: |-
+        Изменение настроек AI-трекера
+
+        Параметры метода всегда должны повторять объект настроек AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
+      description: '@see Ai_2\Objects\Tracker\Settings'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
   /get/audit_2/audit/browse/:
     post:
       operationId: GetAudit2AuditBrowse
@@ -10566,6 +10634,384 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Informer_2.Methods.Push.Token.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/actions/moveBySubstrings/:
+    post:
+      operationId: EditKeywords2ActionsMoveBySubstrings
+      tags:
+        - Keywords_2
+      summary: |-
+        Перенос запросов в группу по вхождению в них подстрок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\MoveBySubstrings\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Actions.MoveBySubstrings.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Actions.MoveBySubstrings.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/actions/replaceName/:
+    post:
+      operationId: EditKeywords2ActionsReplaceName
+      tags:
+        - Keywords_2
+      summary: |-
+        Замена текста в запросах
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceName\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Actions.ReplaceName.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Actions.ReplaceName.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/actions/replaceTarget/:
+    post:
+      operationId: EditKeywords2ActionsReplaceTarget
+      tags:
+        - Keywords_2
+      summary: |-
+        Замена целевых ссылок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceTarget\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Actions.ReplaceTarget.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/actions/setTargetsFromRelevant/:
+    post:
+      operationId: EditKeywords2ActionsSetTargetsFromRelevant
+      tags:
+        - Keywords_2
+      summary: |-
+        Установка целевой ссылки равной релевантной за последнюю проверку позиций
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\SetTargetsFromRelevant\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/claster/byRelevant/:
+    post:
+      operationId: EditKeywords2ClasterByRelevant
+      tags:
+        - Keywords_2
+      summary: |-
+        Кластеризация по релевантной странице: проверки перед началом кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\ByRelevant\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.ByRelevant.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.ByRelevant.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/claster/byTarget/:
+    post:
+      operationId: EditKeywords2ClasterByTarget
+      tags:
+        - Keywords_2
+      summary: |-
+        Кластеризация по целевой ссылке: проверки перед началом кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\ByTarget\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.ByTarget.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.ByTarget.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/claster/countPriceReclaster/:
+    post:
+      operationId: GetKeywords2ClasterCountPriceReclaster
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение информации и предыдущей кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\CountPriceReclaster\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.CountPriceReclaster.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/claster/percent/:
+    post:
+      operationId: GetKeywords2ClasterPercent
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение обновленного процента завершения кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Percent\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.Percent.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.Percent.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/claster/priceChange/:
+    post:
+      operationId: GetKeywords2ClasterPriceChange
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение цены перекластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\PriceChange\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.PriceChange.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.PriceChange.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/claster/price/:
+    post:
+      operationId: GetKeywords2ClasterPrice
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение цены кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Price\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /add/keywords_2/claster/task/:
+    post:
+      operationId: AddKeywords2ClasterTask
+      tags:
+        - Keywords_2
+      summary: |-
+        Запуск кластеризации (проверка на права в "api_get_priceClaster()")
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Task\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.Task.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.Task.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /add/keywords_2/claster/taskChange/:
+    post:
+      operationId: AddKeywords2ClasterTaskChange
+      tags:
+        - Keywords_2
+      summary: |-
+        Запуск перекластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\TaskChange\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.TaskChange.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.TaskChange.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -18060,43 +18506,6 @@ paths:
               schema:
                 type: string
                 format: binary
-  /edit/ai_2/tracker/settings/:
-    post:
-      operationId: EditAi2TrackerSettings
-      tags:
-        - Ai_2
-      summary: |-
-        Изменение настроек AI-трекера
-
-        Параметры метода всегда должны повторять объект настроек AI-трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
-      description: '@see Ai_2\Objects\Tracker\Settings'
 components:
   securitySchemes:
     authToken:
@@ -32222,6 +32631,118 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Admin.Users.Ranks'
+    Ai_2.Types.Tracker.Prompts.ToType:
+      type: string
+      enum:
+        - in_group
+        - in_group_last
+        - before_keyword
+        - after_keyword
+      x-enum-varnames:
+        - InGroup
+        - InGroupLast
+        - BeforeKeyword
+        - AfterKeyword
+      x-enum-descriptions:
+        - В начало группы
+        - В конец группы
+        - Перед запросом
+        - После запроса
+      title: |-
+        Позиция вставки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Prompts\ToType
+    Ai_2.Types.Tracker.Prompts.Tag:
+      type: string
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+      x-enum-varnames:
+        - Tag1
+        - Tag2
+        - Tag3
+        - Tag4
+        - Tag5
+        - Tag6
+        - Tag7
+        - Tag8
+        - Tag9
+        - Tag10
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Тэг для промпта
+
+        todo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Prompts\Tag
+    Ai_2.Types.Tracker.Prompts.Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Ai_2.Types.Tracker.Prompts.Tag'
+      title: |-
+        Тэги для промпта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Prompts\Tags
+      description: |-
+        @see Ai_2\Types\Tracker\Prompts\Tag
+
+        todo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип
+    Ai_2.Methods.Tracker.Prompts.Add:
+      type: object
+      properties:
+        prompt:
+          title: Текс промпта
+          type: string
+        to_id:
+          title: Вставить к указанному объекту
+          type: integer
+        toType:
+          default: in_group
+          allOf:
+            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Prompts.ToType'
+        target:
+          title: 'todo: определить что находится в target'
+          nullable: true
+          type: string
+        tags:
+          title: |-
+            Массив тегов
+
+            todo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Prompts.Tags'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - prompt
+        - to_id
+        - project_id
+      title: |-
+        Добавление промпта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add
+    Ai_2.Methods.Tracker.Prompts.Add.Exec:
+      nullable: true
+      type: integer
     Ai_2.Methods.Tracker.Prompts.Get:
       type: object
       properties:
@@ -32350,6 +32871,85 @@ components:
               - position
               - region_key
               - searcher_key
+    Ai_2.Types.Tracker.Model:
+      type: string
+      enum:
+        - deepseek
+      x-enum-varnames:
+        - Deepseek
+      x-enum-descriptions:
+        - null
+      title: |-
+        Модель нейросети для AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Model
+    Ai_2.Types.Tracker.Models:
+      type: array
+      items:
+        $ref: '#/components/schemas/Ai_2.Types.Tracker.Model'
+      title: |-
+        Модель нейросети для AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Models
+      description: '@see Ai_2\Types\Tracker\Model'
+    Ai_2.Methods.Tracker.Settings.Edit:
+      type: object
+      properties:
+        brand_name:
+          title: Имя бренда
+          nullable: true
+          type: string
+        aliases:
+          title: Дополнительные имена бренда
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+        models:
+          title: Список моделей
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
+        context_lang:
+          title: 'Настройки контекста: Язык'
+          nullable: true
+          type: string
+        context_location:
+          title: 'Настройки контекста: Регион'
+          nullable: true
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required: []
+      title: |-
+        Изменение настроек AI-трекера
+
+        Параметры метода всегда должны повторять объект настроек AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
+      description: '@see Ai_2\Objects\Tracker\Settings'
+    Ai_2.Methods.Tracker.Settings.Edit.Exec:
+      type: integer
+    Models.Ai.Tracker.Tracker:
+      properties:
+        id:
+          type: integer
+        brand_name:
+          type: string
+          nullable: true
+        aliases:
+          type: string
+          nullable: true
+        models:
+          type: array
+          nullable: true
+        context_lang:
+          type: string
+          nullable: true
+        context_location:
+          type: string
+          nullable: true
     check_id:
       title: ID проверки аудита
       type: integer
@@ -35218,6 +35818,378 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Push\Token\Del
     Informer_2.Methods.Push.Token.Del.Exec:
+      type: integer
+    Keywords_2.Types.Actions.MoveBySubstrings.Action:
+      type: string
+      enum:
+        - test
+        - exec
+      x-enum-varnames:
+        - Test
+        - Exec
+      x-enum-descriptions:
+        - Рассчитать и вернуть число запросов
+        - Выполнить перенос запросов
+      title: |-
+        Тип выполняемого действия
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Actions\MoveBySubstrings\Action
+    Keywords_2.Methods.Actions.MoveBySubstrings.Edit:
+      type: object
+      properties:
+        substrings:
+          title: Список подстрок, по которым будет производиться поиск запросов
+          type: array
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Actions.MoveBySubstrings.Action'
+        whole_words:
+          title: Искать по полному вхождению слова
+          default: true
+          type: boolean
+        folder_id:
+          title: Id папки для созданной группы
+          type: integer
+        group_id:
+          title: ID группы для переноса фраз
+          type: integer
+        to_group_name:
+          title: Имя группы, в которую будут перемещены фразы
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - substrings
+        - action
+        - project_id
+      title: |-
+        Перенос запросов в группу по вхождению в них подстрок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\MoveBySubstrings\Edit
+    Keywords_2.Methods.Actions.MoveBySubstrings.Edit.Exec:
+      nullable: true
+    Keywords_2.Methods.Actions.ReplaceName.Edit:
+      type: object
+      properties:
+        search:
+          title: Что поменять
+          type: string
+        replace:
+          title: На что поменять
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - search
+        - replace
+        - project_id
+      title: |-
+        Замена текста в запросах
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceName\Edit
+    Keywords_2.Methods.Actions.ReplaceName.Edit.Exec:
+      type: integer
+    Keywords_2.Methods.Actions.ReplaceTarget.Edit:
+      type: object
+      properties:
+        search:
+          title: Что поменять
+          type: string
+        replace:
+          title: На что поменять
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - search
+        - replace
+        - project_id
+      title: |-
+        Замена целевых ссылок
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceTarget\Edit
+    Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit:
+      type: object
+      properties:
+        region_index:
+          title: Индекс региона
+          type: integer
+        only_empty:
+          title: Устанавливать только там, где целевые не установлены
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - region_index
+        - project_id
+      title: |-
+        Установка целевой ссылки равной релевантной за последнюю проверку позиций
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\SetTargetsFromRelevant\Edit
+    Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit.Exec:
+      nullable: true
+      type: integer
+    region_index:
+      title: Индекс региона
+      type: integer
+    searcher_key:
+      nullable: true
+      allOf:
+        - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+    region_key:
+      title: Ключ региона
+      nullable: true
+      type: integer
+    region_lang:
+      title: Язык региона
+      nullable: true
+      type: string
+    region_device:
+      nullable: true
+      allOf:
+        - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+    Keywords_2.Methods.Claster.ByRelevant.Edit:
+      type: object
+      properties:
+        competitor_id:
+          title: Кластеризовать по конкуренту
+          type: integer
+        folder_id:
+          title: Кластеризовать по папке
+          type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
+      required:
+        - project_id
+      title: |-
+        Кластеризация по релевантной странице: проверки перед началом кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\ByRelevant\Edit
+    Keywords_2.Methods.Claster.ByRelevant.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Claster.ByTarget.Edit:
+      type: object
+      properties:
+        folder_id:
+          title: Кластеризовать по папке
+          type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Кластеризация по целевой ссылке: проверки перед началом кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\ByTarget\Edit
+    Keywords_2.Methods.Claster.ByTarget.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Claster.CountPriceReclaster.Get:
+      type: object
+      properties:
+        folder_id:
+          title: ID папки
+          type: integer
+        apply_discount:
+          title: Отображать сумму с учетом скидки
+          nullable: true
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Получение информации и предыдущей кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\CountPriceReclaster\Get
+    Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec:
+      type: array
+    Keywords_2.Methods.Claster.Percent.Get:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Получение обновленного процента завершения кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Percent\Get
+    Keywords_2.Methods.Claster.Percent.Get.Exec:
+      type: number
+    Keywords_2.Types.Claster.Degrees:
+      type: array
+      items:
+        type: integer
+      title: |-
+        Массив степеней кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Claster\Degrees
+    Keywords_2.Methods.Claster.PriceChange.Get:
+      type: object
+      properties:
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        apply_discount:
+          title: Отображать сумму с учетом скидки
+          type: boolean
+        silent:
+          title: Получить цену перекластеризации без учета существования прошлой проверки
+          description: '@internal'
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - count
+        - project_id
+      title: |-
+        Получение цены перекластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\PriceChange\Get
+    Keywords_2.Methods.Claster.PriceChange.Get.Exec:
+      type: number
+    Keywords_2.Methods.Claster.Price.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать сумму с учетом скидки
+          default: true
+          type: boolean
+        folder_id:
+          title: ID папки, фразы из которой нужно кластеризовать
+          type: integer
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - count
+        - project_id
+      title: |-
+        Получение цены кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Price\Get
+    Keywords_2.Methods.Claster.Price.Get.Exec:
+      type: number
+    Keywords_2.Types.Claster.Task.SearcherKey:
+      type: integer
+      enum:
+        - 0
+        - 1
+      x-enum-varnames:
+        - Yandex
+        - Google
+      x-enum-descriptions:
+        - null
+        - null
+      title: |-
+        Ключ поисковика для кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Claster\Task\SearcherKey
+    Keywords_2.Types.Claster.Type:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - Soft
+        - Moderate
+        - Hard
+      x-enum-descriptions:
+        - Группировка через сравнение с самым частотным запросом
+        - Попарная группировка, с разными общими URL в парах
+        - Максимальная связь общими URL
+      title: |-
+        Метод кластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Claster\Type
+    Keywords_2.Methods.Claster.Task.Add:
+      type: object
+      properties:
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Task.SearcherKey'
+        region_key:
+          title: Ключ региона
+          type: integer
+        region_lang:
+          title: Язык региона
+          type: string
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Type'
+        send_email_csv:
+          title: Отправить письмо с результатами кластеризацию на почту
+          type: boolean
+        folder_id:
+          title: ID кластеризуемой папки
+          type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - searcher_key
+        - region_key
+        - region_lang
+        - count
+        - project_id
+      title: |-
+        Запуск кластеризации (проверка на права в "api_get_priceClaster()")
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Task\Add
+    Keywords_2.Methods.Claster.Task.Add.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Claster.TaskChange.Add:
+      type: object
+      properties:
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Type'
+        send_email_csv:
+          title: Отправить письмо с результатами кластеризацию на почту
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - count
+        - project_id
+      title: |-
+        Запуск перекластеризации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\TaskChange\Add
+    Keywords_2.Methods.Claster.TaskChange.Add.Exec:
+      nullable: true
       type: integer
     Keywords_2.Types.Collect.SearcherKey:
       type: integer
@@ -40704,27 +41676,6 @@ components:
       nullable: true
       allOf:
         - $ref: '#/components/schemas/TV.Objects.Highcharts.Chart'
-    Ai_2.Types.Tracker.Model:
-      type: string
-      enum:
-        - deepseek
-      x-enum-varnames:
-        - Deepseek
-      x-enum-descriptions:
-        - null
-      title: |-
-        Модель нейросети для AI-трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Model
-    Ai_2.Types.Tracker.Models:
-      type: array
-      items:
-        $ref: '#/components/schemas/Ai_2.Types.Tracker.Model'
-      title: |-
-        Модель нейросети для AI-трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Models
-      description: '@see Ai_2\Types\Tracker\Model'
     Ai_2.Objects.Tracker.Settings:
       type: object
       properties:
@@ -40784,37 +41735,13 @@ components:
             type: integer
       required:
         - projectIds
-    Models.Ai.Tracker.Tracker:
-      properties:
-        id:
-          type: integer
-        brand_name:
-          type: string
-          nullable: true
-        aliases:
-          type: string
-          nullable: true
-        models:
-          type: array
-          nullable: true
-        context_lang:
-          type: string
-          nullable: true
-        context_location:
-          type: string
-          nullable: true
     Ai_2.Methods.Tracker.Checker.Price.Get:
       type: object
       properties:
-        model:
-          title: Модель нейросети
-          type: string
-        prompts_ids:
-          title: Список промтов
-          type: array
         settings:
-          title: Дополнительные настройки (в формате json)
-          type: string
+          title: Настройки проверки
+          allOf:
+            - $ref: '#/components/schemas/Ai_2.Objects.Tracker.Settings'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -40824,8 +41751,7 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - model
-        - prompts_ids
+        - settings
         - project_id
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Price\Get'
     Ai_2.Methods.Tracker.Checker.Price.Get.Exec:
@@ -43500,42 +44426,3 @@ components:
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get
-    Ai_2.Methods.Tracker.Settings.Edit:
-      type: object
-      properties:
-        brand_name:
-          title: Имя бренда
-          nullable: true
-          type: string
-        aliases:
-          title: Дополнительные имена бренда
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.StringArray'
-        models:
-          title: Список моделей
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
-        context_lang:
-          title: 'Настройки контекста: Язык'
-          nullable: true
-          type: string
-        context_location:
-          title: 'Настройки контекста: Регион'
-          nullable: true
-          type: string
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required: []
-      title: |-
-        Изменение настроек AI-трекера
-
-        Параметры метода всегда должны повторять объект настроек AI-трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
-      description: '@see Ai_2\Objects\Tracker\Settings'
-    Ai_2.Methods.Tracker.Settings.Edit.Exec:
-      type: integer

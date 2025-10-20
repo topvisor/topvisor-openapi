@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Actions.MoveBySubstrings.Action",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Actions.MoveBySubstrings.Action": {
+                "type": "string",
+                "enum": [
+                    "test",
+                    "exec"
+                ],
+                "x-enum-varnames": [
+                    "Test",
+                    "Exec"
+                ],
+                "x-enum-descriptions": [
+                    "Рассчитать и вернуть число запросов",
+                    "Выполнить перенос запросов"
+                ],
+                "title": "Тип выполняемого действия\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Actions\\MoveBySubstrings\\Action"
+            }
+        }
+    }
+}

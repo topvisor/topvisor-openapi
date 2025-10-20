@@ -7,11 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Models.Ai.Tracker.Checks": {
-            date?: unknown;
-            project_id?: unknown;
-            settings?: unknown;
-        };
+        /**
+         * Позиция вставки
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Prompts\ToType
+         * @enum {string}
+         */
+        "Ai_2.Types.Tracker.Prompts.ToType": "in_group" | "in_group_last" | "before_keyword" | "after_keyword";
     };
     responses: never;
     parameters: never;

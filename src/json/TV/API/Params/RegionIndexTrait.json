@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Params.RegionIndexTrait",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Params.RegionIndexTrait": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "region_device": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "region_index"
+                ],
+                "title": "Индекс региона\n\nЕсли не передан индекс региона, то получит его исходя из других параметров trait\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\RegionIndexTrait"
+            }
+        }
+    }
+}

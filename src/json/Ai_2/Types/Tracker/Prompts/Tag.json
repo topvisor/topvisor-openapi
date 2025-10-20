@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Ai_2.Types.Tracker.Prompts.Tag",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Ai_2.Types.Tracker.Prompts.Tag": {
+                "type": "string",
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "x-enum-varnames": [
+                    "Tag1",
+                    "Tag2",
+                    "Tag3",
+                    "Tag4",
+                    "Tag5",
+                    "Tag6",
+                    "Tag7",
+                    "Tag8",
+                    "Tag9",
+                    "Tag10"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Тэг для промпта\n\ntodo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Prompts\\Tag"
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.ByRelevant.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.ByRelevant.Edit": {
+                "type": "object",
+                "properties": {
+                    "competitor_id": {
+                        "title": "Кластеризовать по конкуренту",
+                        "type": "integer"
+                    },
+                    "folder_id": {
+                        "title": "Кластеризовать по папке",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "region_index": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
+                    },
+                    "searcher_key": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/searcher_key"
+                    },
+                    "region_key": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_key"
+                    },
+                    "region_lang": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_lang"
+                    },
+                    "region_device": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Кластеризация по релевантной странице: проверки перед началом кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\ByRelevant\\Edit"
+            },
+            "Keywords_2.Methods.Claster.ByRelevant.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

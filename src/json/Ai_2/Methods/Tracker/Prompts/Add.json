@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Ai_2.Methods.Tracker.Prompts.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Ai_2.Methods.Tracker.Prompts.Add": {
+                "type": "object",
+                "properties": {
+                    "prompt": {
+                        "title": "Текс промпта",
+                        "type": "string"
+                    },
+                    "to_id": {
+                        "title": "Вставить к указанному объекту",
+                        "type": "integer"
+                    },
+                    "toType": {
+                        "default": "in_group",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Ai_2/Types/Tracker/Prompts/ToType.json#/components/schemas/Ai_2.Types.Tracker.Prompts.ToType"
+                            }
+                        ]
+                    },
+                    "target": {
+                        "title": "todo: определить что находится в target",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "tags": {
+                        "title": "Массив тегов\n\ntodo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Ai_2/Types/Tracker/Prompts/Tags.json#/components/schemas/Ai_2.Types.Tracker.Prompts.Tags"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "prompt",
+                    "to_id",
+                    "project_id"
+                ],
+                "title": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Add"
+            },
+            "Ai_2.Methods.Tracker.Prompts.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

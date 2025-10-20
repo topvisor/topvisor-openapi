@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "folder_id": {
+                        "title": "ID папки, фразы из которой нужно кластеризовать",
+                        "type": "integer"
+                    },
+                    "count": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Claster/Degrees.json#/components/schemas/Keywords_2.Types.Claster.Degrees"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "count",
+                    "project_id"
+                ],
+                "title": "Получение цены кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Price\\Get"
+            },
+            "Keywords_2.Methods.Claster.Price.Get.Exec": {
+                "type": "number"
+            }
+        }
+    }
+}

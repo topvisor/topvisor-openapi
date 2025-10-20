@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Claster.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Claster.Type": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2
+                ],
+                "x-enum-varnames": [
+                    "Soft",
+                    "Moderate",
+                    "Hard"
+                ],
+                "x-enum-descriptions": [
+                    "Группировка через сравнение с самым частотным запросом",
+                    "Попарная группировка, с разными общими URL в парах",
+                    "Максимальная связь общими URL"
+                ],
+                "title": "Метод кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Claster\\Type"
+            }
+        }
+    }
+}
