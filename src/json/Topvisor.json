@@ -14969,7 +14969,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Ai/Tracker/Prompt.json#/components/schemas/Models.Ai.Tracker.Prompt"
+                                    "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
                                 }
                             }
                         }

@@ -8929,7 +8929,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Prompt'
+                $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
   /edit/ai_2/tracker/settings/:
     post:
       operationId: EditAi2TrackerSettings
@@ -32760,7 +32760,7 @@ components:
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Get'
     Ai_2.Methods.Tracker.Prompts.Get.Exec:
       nullable: true
-    Models.Ai.Tracker.Prompt:
+    Models.Ai.Tracker.Prompts:
       properties:
         COUNT(*):
           nullable: true
