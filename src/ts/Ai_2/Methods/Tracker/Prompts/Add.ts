@@ -14,9 +14,12 @@ export interface components {
             /** Текс промпта */
             prompt: string;
             /** Вставить к указанному объекту */
-            to_id: number;
-            /** @default in_group */
-            toType?: import('../../../Types/Tracker/Prompts/ToType.ts').components['schemas']['Ai_2.Types.Tracker.Prompts.ToType'];
+            toId?: number | null;
+            /**
+             * Обязательный параметр при указанном $toId
+             * @default in_group
+             */
+            toType?: import('../../../Types/Tracker/Prompts/ToType.ts').components['schemas']['Ai_2.Types.Tracker.Prompts.ToType'] | null;
             /** todo: определить что находится в target */
             target?: string | null;
             /** Массив тегов
@@ -25,7 +28,7 @@ export interface components {
             tags?: import('../../../Types/Tracker/Prompts/Tags.ts').components['schemas']['Ai_2.Types.Tracker.Prompts.Tags'] | null;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Ai_2.Methods.Tracker.Prompts.Add.Exec": number | null;
+        "Ai_2.Methods.Tracker.Prompts.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

@@ -14,11 +14,14 @@
                         "title": "Текс промпта",
                         "type": "string"
                     },
-                    "to_id": {
+                    "toId": {
                         "title": "Вставить к указанному объекту",
+                        "nullable": true,
                         "type": "integer"
                     },
                     "toType": {
+                        "title": "Обязательный параметр при указанном $toId",
+                        "nullable": true,
                         "default": "in_group",
                         "allOf": [
                             {
@@ -46,14 +49,12 @@
                 },
                 "required": [
                     "prompt",
-                    "to_id",
                     "project_id"
                 ],
                 "title": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Add"
             },
             "Ai_2.Methods.Tracker.Prompts.Add.Exec": {
-                "nullable": true,
-                "type": "integer"
+                "nullable": true
             }
         }
     }

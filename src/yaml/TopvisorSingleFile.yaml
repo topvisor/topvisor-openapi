@@ -32735,10 +32735,13 @@ components:
         prompt:
           title: Текс промпта
           type: string
-        to_id:
+        toId:
           title: Вставить к указанному объекту
+          nullable: true
           type: integer
         toType:
+          title: Обязательный параметр при указанном $toId
+          nullable: true
           default: in_group
           allOf:
             - $ref: '#/components/schemas/Ai_2.Types.Tracker.Prompts.ToType'
@@ -32758,7 +32761,6 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - prompt
-        - to_id
         - project_id
       title: |-
         Добавление промпта
@@ -32766,7 +32768,6 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add
     Ai_2.Methods.Tracker.Prompts.Add.Exec:
       nullable: true
-      type: integer
     Ai_2.Methods.Tracker.Prompts.Get:
       type: object
       properties:
