@@ -15025,11 +15025,6 @@
                                         }
                                     ]
                                 }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
-                                }
                             }
                         }
                     }
@@ -27362,6 +27357,59 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/ai_2/tracker/prompts/groups/": {
+            "post": {
+                "operationId": "AddAi2TrackerPromptsGroups",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Groups\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/Prompts/Groups/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Groups.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/Prompts/Groups/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Groups.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
                                 }
                             }
                         }

@@ -205,8 +205,8 @@
             "Models.Admin.Users.Ranks": {
                 "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
             },
-            "Models.Ai.Tracker.Prompt": {
-                "$ref": "Models/Ai/Tracker/Prompt.json#/components/schemas/Models.Ai.Tracker.Prompt"
+            "Models.Ai.Tracker.Prompts": {
+                "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
             },
             "Models.Ai.Tracker.Tracker": {
                 "$ref": "Models/Ai/Tracker/Tracker.json#/components/schemas/Models.Ai.Tracker.Tracker"

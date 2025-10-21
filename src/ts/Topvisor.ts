@@ -9749,6 +9749,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление групп
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Groups\Add */
+    "/add/ai_2/tracker/prompts/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAi2TrackerPromptsGroups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Запуск проверки аудита
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Checker\Go\Edit */
@@ -18099,7 +18118,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Ai_2/Methods/Tracker/Prompts/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Ai/Tracker/Prompt.ts').components['schemas']['Models.Ai.Tracker.Prompt'];
+                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
                 };
             };
         };
@@ -18125,7 +18144,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Ai_2/Methods/Tracker/Settings/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Ai/Tracker/Tracker.ts').components['schemas']['Models.Ai.Tracker.Tracker'];
                 };
             };
         };
@@ -23906,6 +23924,31 @@ export interface operations {
                         result: import('./Ai_2/Methods/Tracker/Checker/Price/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Ai/Tracker/Tracker.ts').components['schemas']['Models.Ai.Tracker.Tracker'];
+                };
+            };
+        };
+    };
+    AddAi2TrackerPromptsGroups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Prompts/Groups/Add.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Groups.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Prompts/Groups/Add.ts').components['schemas']['Ai_2.Methods.Tracker.Prompts.Groups.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };

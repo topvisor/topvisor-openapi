@@ -73,7 +73,7 @@ export interface components {
         "Models.Watcher.Results": import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
         "Models.Admin.Accounting.Counteragents": import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
         "Models.Admin.Users.Ranks": import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
-        "Models.Ai.Tracker.Prompt": import('./Models/Ai/Tracker/Prompt.ts').components['schemas']['Models.Ai.Tracker.Prompt'];
+        "Models.Ai.Tracker.Prompts": import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
         "Models.Ai.Tracker.Tracker": import('./Models/Ai/Tracker/Tracker.ts').components['schemas']['Models.Ai.Tracker.Tracker'];
     };
     responses: never;
