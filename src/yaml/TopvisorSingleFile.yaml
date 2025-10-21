@@ -32665,8 +32665,8 @@ components:
       x-enum-varnames:
         - InGroup
         - InGroupLast
-        - BeforeKeyword
-        - AfterKeyword
+        - BeforePrompt
+        - AfterPrompt
       x-enum-descriptions:
         - В начало группы
         - В конец группы
