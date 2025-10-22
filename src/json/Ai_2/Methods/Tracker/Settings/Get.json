@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Ai_2.Methods.Tracker.Settings.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Ai_2.Methods.Tracker.Settings.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение настроек AI-Трекера проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Get"
+            },
+            "Ai_2.Methods.Tracker.Settings.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

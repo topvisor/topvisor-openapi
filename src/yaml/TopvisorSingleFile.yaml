@@ -8964,6 +8964,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/ai_2/tracker/settings/:
+    post:
+      operationId: GetAi2TrackerSettings
+      tags:
+        - Ai_2
+      summary: |-
+        Получение настроек AI-Трекера проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/audit_2/audit/browse/:
     post:
       operationId: GetAudit2AuditBrowse
@@ -16226,7 +16257,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
+                $ref: '#/components/schemas/Models.Projects'
   /get/ai_2/tracker/checker/price/:
     post:
       operationId: GetAi2TrackerCheckerPrice
@@ -16257,7 +16288,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Tracker'
+                $ref: '#/components/schemas/Models.Projects'
   /add/ai_2/tracker/prompts/groups/:
     post:
       operationId: AddAi2TrackerPromptsGroups
@@ -32955,6 +32986,20 @@ components:
       description: '@see Ai_2\Objects\Tracker\Settings'
     Ai_2.Methods.Tracker.Settings.Edit.Exec:
       type: integer
+    Ai_2.Methods.Tracker.Settings.Get:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Получение настроек AI-Трекера проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Get
+    Ai_2.Methods.Tracker.Settings.Get.Exec:
+      nullable: true
+      type: array
     check_id:
       title: ID проверки аудита
       type: integer
@@ -41740,26 +41785,6 @@ components:
             type: integer
       required:
         - projectIds
-    Models.Ai.Tracker.Tracker:
-      properties:
-        project_id:
-          type: integer
-          nullable: true
-        brand_name:
-          type: string
-          nullable: true
-        aliases:
-          type: string
-          nullable: true
-        models:
-          type: array
-          nullable: true
-        context_lang:
-          type: string
-          nullable: true
-        context_location:
-          type: string
-          nullable: true
     Ai_2.Methods.Tracker.Checker.Price.Get:
       type: object
       properties:
