@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.AI",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.AI": {
+                "type": "object",
+                "properties": {
+                    "Ai_tracker_bank_info": {
+                        "const": "Checking for mentions in neural networks",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Ai_tracker_bank_info"
+                ],
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\AI\\En"
+            }
+        }
+    }
+}

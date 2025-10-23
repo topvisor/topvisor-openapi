@@ -308,6 +308,8 @@ export interface components {
             /** @constant */
             readonly pages_full: "pages";
             /** @constant */
+            readonly prompts: "prompts";
+            /** @constant */
             readonly limit: "display";
             /** @constant */
             readonly by: "by";

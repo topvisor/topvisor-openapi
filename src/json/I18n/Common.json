@@ -596,6 +596,10 @@
                         "const": "pages",
                         "readOnly": true
                     },
+                    "prompts": {
+                        "const": "prompts",
+                        "readOnly": true
+                    },
                     "limit": {
                         "const": "display",
                         "readOnly": true
@@ -2102,6 +2106,7 @@
                     "next_count",
                     "pages",
                     "pages_full",
+                    "prompts",
                     "limit",
                     "by",
                     "Path",

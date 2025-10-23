@@ -156,6 +156,9 @@
             },
             "Sites.Topvisor.Organization": {
                 "$ref": "I18n/Sites/Topvisor/Organization.json#/components/schemas/I18n.Sites.Topvisor.Organization"
+            },
+            "AI": {
+                "$ref": "I18n/AI.json#/components/schemas/I18n.AI"
             }
         }
     }
