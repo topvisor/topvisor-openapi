@@ -10,7 +10,7 @@ export interface components {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Ai\En */
         "I18n.Ai": {
             /** @constant */
-            readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";
+            readonly Tracker_bank_info: "Checking for mentions in neural networks";
         };
     };
     responses: never;
