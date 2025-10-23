@@ -13,6 +13,9 @@
             "Actions": {
                 "$ref": "I18n/Actions.json#/components/schemas/I18n.Actions"
             },
+            "AI": {
+                "$ref": "I18n/AI.json#/components/schemas/I18n.AI"
+            },
             "Analytics": {
                 "$ref": "I18n/Analytics.json#/components/schemas/I18n.Analytics"
             },
@@ -156,9 +159,6 @@
             },
             "Sites.Topvisor.Organization": {
                 "$ref": "I18n/Sites/Topvisor/Organization.json#/components/schemas/I18n.Sites.Topvisor.Organization"
-            },
-            "AI": {
-                "$ref": "I18n/AI.json#/components/schemas/I18n.AI"
             }
         }
     }
