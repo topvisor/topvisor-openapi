@@ -378,6 +378,10 @@
                         "const": "Bid manager<br>/1000 adjustments",
                         "readOnly": true
                     },
+                    "Service_ai_tracker": {
+                        "const": "AI-Tracker",
+                        "readOnly": true
+                    },
                     "Service_bid_manager": {
                         "const": "Bid manager",
                         "readOnly": true
@@ -1257,6 +1261,7 @@
                     "Service_index_checker",
                     "Service_sitemap",
                     "Service_broker",
+                    "Service_ai_tracker",
                     "Service_bid_manager",
                     "Service_domain_registration",
                     "Service_web_screens",

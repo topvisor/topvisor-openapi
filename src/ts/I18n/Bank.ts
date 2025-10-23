@@ -194,6 +194,8 @@ export interface components {
             /** @constant */
             readonly Service_broker: "Bid manager<br>/1000 adjustments";
             /** @constant */
+            readonly Service_ai_tracker: "AI-Tracker";
+            /** @constant */
             readonly Service_bid_manager: "Bid manager";
             /** @constant */
             readonly Service_domain_registration: "Domain registration";
