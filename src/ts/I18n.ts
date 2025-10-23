@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         Common: import('./I18n/Common.ts').components['schemas']['I18n.Common'];
         Actions: import('./I18n/Actions.ts').components['schemas']['I18n.Actions'];
-        AI: import('./I18n/AI.ts').components['schemas']['I18n.AI'];
+        Ai: import('./I18n/Ai.ts').components['schemas']['I18n.Ai'];
         Analytics: import('./I18n/Analytics.ts').components['schemas']['I18n.Analytics'];
         Api: import('./I18n/Api.ts').components['schemas']['I18n.Api'];
         Audit: import('./I18n/Audit.ts').components['schemas']['I18n.Audit'];

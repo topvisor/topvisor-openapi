@@ -13,8 +13,8 @@
             "Actions": {
                 "$ref": "I18n/Actions.json#/components/schemas/I18n.Actions"
             },
-            "AI": {
-                "$ref": "I18n/AI.json#/components/schemas/I18n.AI"
+            "Ai": {
+                "$ref": "I18n/Ai.json#/components/schemas/I18n.Ai"
             },
             "Analytics": {
                 "$ref": "I18n/Analytics.json#/components/schemas/I18n.Analytics"
