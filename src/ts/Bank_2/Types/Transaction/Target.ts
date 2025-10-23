@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Transaction\Target
          * @enum {string}
          */
-        "Bank_2.Types.Transaction.Target": "audit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "checkVolumes" | "checkPositions" | "checkSnapshots" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat";
+        "Bank_2.Types.Transaction.Target": "audit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "aiTracker" | "checkVolumes" | "checkPositions" | "checkSnapshots" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat";
     };
     responses: never;
     parameters: never;

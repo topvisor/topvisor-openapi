@@ -9,12 +9,9 @@ export interface components {
     schemas: {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit */
         "Ai_2.Methods.Tracker.Checker.Go.Edit": {
-            /** Настройки проверки */
-            settings: import('../../../../Objects/Tracker/Settings.ts').components['schemas']['Ai_2.Objects.Tracker.Settings'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             debug?: import('../../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Список id проектов, отправленных на проверку */
         "Ai_2.Methods.Tracker.Checker.Go.Edit.Exec": {

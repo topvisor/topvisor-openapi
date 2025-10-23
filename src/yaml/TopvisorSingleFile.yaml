@@ -41726,54 +41726,16 @@ components:
       nullable: true
       allOf:
         - $ref: '#/components/schemas/TV.Objects.Highcharts.Chart'
-    Ai_2.Objects.Tracker.Settings:
-      type: object
-      properties:
-        brand_name:
-          title: Имя бренда
-          type: string
-        aliases:
-          title: Дополнительные имена бренда
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.StringArray'
-        models:
-          title: Список моделей
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
-        context_lang:
-          title: 'Настройки контекста: Язык'
-          type: string
-        context_location:
-          title: 'Настройки контекста: Регион'
-          type: string
-      required:
-        - brand_name
-        - aliases
-        - models
-        - context_lang
-        - context_location
-      title: |-
-        Объект настроек AI-Трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Objects\Tracker\Settings
     Ai_2.Methods.Tracker.Checker.Go.Edit:
       type: object
       properties:
-        settings:
-          title: Настройки проверки
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Objects.Tracker.Settings'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
         debug:
           $ref: '#/components/schemas/debug'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - settings
-        - project_id
+      required: []
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit'
     Ai_2.Methods.Tracker.Checker.Go.Edit.Exec:
       title: Список id проектов, отправленных на проверку
@@ -41788,32 +41750,17 @@ components:
     Ai_2.Methods.Tracker.Checker.Price.Get:
       type: object
       properties:
-        settings:
-          title: Настройки проверки
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Objects.Tracker.Settings'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
         debug:
           $ref: '#/components/schemas/debug'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - settings
-        - project_id
+      required: []
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Price\Get'
     Ai_2.Methods.Tracker.Checker.Price.Get.Exec:
-      title: Список id проектов, отправленных на проверку
       type: object
-      properties:
-        projectIds:
-          type: array
-          items:
-            type: integer
-      required:
-        - projectIds
+      additionalProperties: {}
     Ai_2.Methods.Tracker.Prompts.Groups.Add:
       type: object
       properties:

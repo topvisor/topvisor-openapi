@@ -10,14 +10,6 @@
             "Ai_2.Methods.Tracker.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
-                    "settings": {
-                        "title": "Настройки проверки",
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../Ai_2/Objects/Tracker/Settings.json#/components/schemas/Ai_2.Objects.Tracker.Settings"
-                            }
-                        ]
-                    },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
@@ -26,15 +18,9 @@
                     },
                     "debug": {
                         "$ref": "../../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
-                    },
-                    "project_id": {
-                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
-                "required": [
-                    "settings",
-                    "project_id"
-                ],
+                "required": [],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit"
             },
             "Ai_2.Methods.Tracker.Checker.Go.Edit.Exec": {
