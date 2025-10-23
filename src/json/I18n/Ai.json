@@ -10,13 +10,13 @@
             "I18n.Ai": {
                 "type": "object",
                 "properties": {
-                    "Tracker_bank_info": {
+                    "Ai_tracker_bank_info": {
                         "const": "Checking for mentions in neural networks",
                         "readOnly": true
                     }
                 },
                 "required": [
-                    "Tracker_bank_info"
+                    "Ai_tracker_bank_info"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Ai\\En"
             }
