@@ -37342,6 +37342,47 @@ components:
     Payments_2.Methods.Tariff.SetNext.Edit.Exec:
       nullable: true
       type: integer
+    Positions_2.Types.Checker.Go.ModEngineDebugKey:
+      type: integer
+      enum:
+        - -1
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+      x-enum-varnames:
+        - NoDebugKey
+        - YandexApiXmlRiver
+        - YandexApiXmlRiverAsync
+        - YandexApiXmlStockAsync
+        - YandexApiYandexAsync
+        - GoogleApiBrightdata
+        - GoogleApiNetnut
+        - GoogleApiXmlRiver
+        - GoogleApiXmlStock
+        - BingApiBrightdata
+      x-enum-descriptions:
+        - Не указан ключ
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Номер ключа поисковика
+
+        Не является истинным обозначением, а служит лишь для удобства использования дебага
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Checker\Go\ModEngineDebugKey
     Positions_2.Methods.Checker.Go.Edit:
       type: object
       properties:
@@ -37376,14 +37417,15 @@ components:
             - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
           nullable: true
           type: integer
-        mod_engine:
+        mod_engine_debug_key:
           title: |-
             Движок проверки позиций
 
             Учитывается только при запуске с правами администратора
           description: '@internal'
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.Checker.Go.ModEngineDebugKey'
         filters:
           $ref: '#/components/schemas/filters'
         id:

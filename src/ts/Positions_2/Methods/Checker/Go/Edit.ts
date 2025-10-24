@@ -33,7 +33,7 @@ export interface components {
              *     Учитывается только при запуске с правами администратора
              * @description @internal
              */
-            mod_engine?: string | null;
+            mod_engine_debug_key?: import('../../../Types/Checker/Go/ModEngineDebugKey.ts').components['schemas']['Positions_2.Types.Checker.Go.ModEngineDebugKey'] | null;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
