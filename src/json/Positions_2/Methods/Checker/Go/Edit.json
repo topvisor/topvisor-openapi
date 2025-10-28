@@ -51,15 +51,11 @@
                         "nullable": true,
                         "type": "integer"
                     },
-                    "mod_engine_debug_key": {
+                    "mod_engine": {
                         "title": "Движок проверки позиций\n\nУчитывается только при запуске с правами администратора",
                         "description": "@internal",
                         "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/Checker/Go/ModEngineDebugKey.json#/components/schemas/Positions_2.Types.Checker.Go.ModEngineDebugKey"
-                            }
-                        ]
+                        "type": "string"
                     },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
