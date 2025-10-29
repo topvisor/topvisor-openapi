@@ -48,6 +48,10 @@ export interface components {
             status_sitemap?: any;
             status_sitemap_percent?: any;
             status_urlsUpdater?: any;
+            status_ai_tracker?: any;
+            status_ai_tracker_time?: any;
+            status_ai_tracker_date?: any;
+            status_ai_tracker_percent?: any;
             on?: any;
             subdomains?: any;
             filter?: any;
@@ -83,6 +87,11 @@ export interface components {
             audit_auto_collect_pages_limit?: number | null;
             indexing_searchers_keys?: unknown[] | null;
             watcher_types?: unknown[] | null;
+            ai_tracker_brand_name?: any;
+            ai_tracker_aliases?: unknown[] | null;
+            ai_tracker_models?: unknown[] | null;
+            ai_tracker_context_lang?: any;
+            ai_tracker_context_location?: any;
         };
     };
     responses: never;

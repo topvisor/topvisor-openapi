@@ -18,6 +18,8 @@ export interface components {
             name?: unknown;
             group_name?: unknown;
             group_ord?: unknown;
+            date?: unknown;
+            model?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "date",

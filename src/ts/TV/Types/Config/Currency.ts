@@ -203,6 +203,11 @@ export interface components {
              */
             readonly WEB_SCREENS_COST: number;
             /**
+             * Стоимость ИИ трекера.
+             * @default 10000
+             */
+            readonly AI_TRACKER_COST: number;
+            /**
              * Список тарифных планов.
              * @default [
              *       "No set",

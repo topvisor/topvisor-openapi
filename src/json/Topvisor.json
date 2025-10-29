@@ -14863,6 +14863,67 @@
                 }
             }
         },
+        "/get/ai_2/tracker/history/": {
+            "post": {
+                "operationId": "GetAi2TrackerHistory",
+                "tags": [
+                    "Ai_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\History\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Ai_2/Methods/Tracker/History/Get.json#/components/schemas/Ai_2.Methods.Tracker.History.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Ai_2/Methods/Tracker/History/Get.json#/components/schemas/Ai_2.Methods.Tracker.History.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/ai_2/tracker/prompts/": {
             "post": {
                 "operationId": "AddAi2TrackerPrompts",
@@ -14983,8 +15044,7 @@
                 "tags": [
                     "Ai_2"
                 ],
-                "summary": "Изменение настроек AI-трекера\n\nПараметры метода всегда должны повторять объект настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
-                "description": "@see Ai_2\\Objects\\Tracker\\Settings",
+                "summary": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -15009,59 +15069,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/ai_2/tracker/settings/": {
-            "post": {
-                "operationId": "GetAi2TrackerSettings",
-                "tags": [
-                    "Ai_2"
-                ],
-                "summary": "Получение настроек AI-Трекера проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Settings/Get.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Settings/Get.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

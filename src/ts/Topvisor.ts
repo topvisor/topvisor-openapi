@@ -5247,6 +5247,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\History\Get */
+    "/get/ai_2/tracker/history/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAi2TrackerHistory"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление промпта
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add */
@@ -5283,14 +5300,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение настроек AI-трекера
+    /** Изменение настроек AI-трекера
      *
-     *     Параметры метода всегда должны повторять объект настроек AI-трекера
+     *     Для получения текущих настроек используйте: /get/projects_2/projects/
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
-     * @description @see Ai_2\Objects\Tracker\Settings
-     */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit */
     "/edit/ai_2/tracker/settings/": {
         parameters: {
             query?: never;
@@ -5301,25 +5315,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditAi2TrackerSettings"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение настроек AI-Трекера проекта
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Get */
-    "/get/ai_2/tracker/settings/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAi2TrackerSettings"];
         delete?: never;
         options?: never;
         head?: never;
@@ -18091,6 +18086,32 @@ export interface operations {
             };
         };
     };
+    GetAi2TrackerHistory: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/History/Get.ts').components['schemas']['Ai_2.Methods.Tracker.History.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/History/Get.ts').components['schemas']['Ai_2.Methods.Tracker.History.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
+                };
+            };
+        };
+    };
     AddAi2TrackerPrompts: {
         parameters: {
             query?: never;
@@ -18162,31 +18183,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Ai_2/Methods/Tracker/Settings/Edit.ts').components['schemas']['Ai_2.Methods.Tracker.Settings.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetAi2TrackerSettings: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Ai_2/Methods/Tracker/Settings/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Settings.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Ai_2/Methods/Tracker/Settings/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

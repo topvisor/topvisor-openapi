@@ -11,12 +11,12 @@
                 "type": "object",
                 "properties": {
                     "brand_name": {
-                        "title": "Имя бренда",
+                        "title": "Имя бренда\n\nУчаствует в поиске в ответе ИИ",
                         "nullable": true,
                         "type": "string"
                     },
                     "aliases": {
-                        "title": "Дополнительные имена бренда",
+                        "title": "Дополнительные имена для поиска в ответе ИИ",
                         "nullable": true,
                         "allOf": [
                             {
@@ -25,7 +25,7 @@
                         ]
                     },
                     "models": {
-                        "title": "Список моделей",
+                        "title": "Список моделей ИИ",
                         "nullable": true,
                         "allOf": [
                             {
@@ -50,8 +50,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек AI-трекера\n\nПараметры метода всегда должны повторять объект настроек AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
-                "description": "@see Ai_2\\Objects\\Tracker\\Settings"
+                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit"
             },
             "Ai_2.Methods.Tracker.Settings.Edit.Exec": {
                 "type": "integer"

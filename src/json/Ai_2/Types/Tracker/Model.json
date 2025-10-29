@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Модель нейросети для AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Model"
+                "title": "Модель для ИИ трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Model"
             }
         }
     }

@@ -10,18 +10,16 @@
             "Ai_2.Methods.Tracker.Prompts.Add": {
                 "type": "object",
                 "properties": {
-                    "prompt": {
-                        "title": "Текс промпта",
+                    "name": {
+                        "title": "Текст промпта",
                         "type": "string"
                     },
                     "toId": {
                         "title": "Вставить к указанному объекту",
-                        "nullable": true,
                         "type": "integer"
                     },
                     "toType": {
                         "title": "Обязательный параметр при указанном $toId",
-                        "nullable": true,
                         "default": "in_group",
                         "allOf": [
                             {
@@ -29,17 +27,11 @@
                             }
                         ]
                     },
-                    "target": {
-                        "title": "todo: определить что находится в target",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "tags": {
-                        "title": "Массив тегов\n\ntodo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип",
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Ai_2/Types/Tracker/Prompts/Tags.json#/components/schemas/Ai_2.Types.Tracker.Prompts.Tags"
+                                "$ref": "../../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
                             }
                         ]
                     },
@@ -48,13 +40,15 @@
                     }
                 },
                 "required": [
-                    "prompt",
+                    "name",
+                    "toId",
                     "project_id"
                 ],
                 "title": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Add"
             },
             "Ai_2.Methods.Tracker.Prompts.Add.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "array"
             }
         }
     }

@@ -7,20 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменение настроек AI-трекера
+        /** Изменение настроек AI-трекера
          *
-         *     Параметры метода всегда должны повторять объект настроек AI-трекера
+         *     Для получения текущих настроек используйте: /get/projects_2/projects/
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
-         * @description @see Ai_2\Objects\Tracker\Settings
-         */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit */
         "Ai_2.Methods.Tracker.Settings.Edit": {
-            /** Имя бренда */
+            /** Имя бренда
+             *
+             *     Участвует в поиске в ответе ИИ */
             brand_name?: string | null;
-            /** Дополнительные имена бренда */
+            /** Дополнительные имена для поиска в ответе ИИ */
             aliases?: import('../../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
-            /** Список моделей */
+            /** Список моделей ИИ */
             models?: import('../../../Types/Tracker/Models.ts').components['schemas']['Ai_2.Types.Tracker.Models'] | null;
             /** Настройки контекста: Язык */
             context_lang?: string | null;

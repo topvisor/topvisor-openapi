@@ -11,24 +11,19 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add */
         "Ai_2.Methods.Tracker.Prompts.Add": {
-            /** Текс промпта */
-            prompt: string;
+            /** Текст промпта */
+            name: string;
             /** Вставить к указанному объекту */
-            toId?: number | null;
+            toId: number;
             /**
              * Обязательный параметр при указанном $toId
              * @default in_group
              */
-            toType?: import('../../../Types/Tracker/Prompts/ToType.ts').components['schemas']['Ai_2.Types.Tracker.Prompts.ToType'] | null;
-            /** todo: определить что находится в target */
-            target?: string | null;
-            /** Массив тегов
-             *
-             *     todo: нужно объединить с тегами использующимися для запросов, сейчас там используется неправильный тип */
-            tags?: import('../../../Types/Tracker/Prompts/Tags.ts').components['schemas']['Ai_2.Types.Tracker.Prompts.Tags'] | null;
+            toType?: import('../../../Types/Tracker/Prompts/ToType.ts').components['schemas']['Ai_2.Types.Tracker.Prompts.ToType'];
+            tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Ai_2.Methods.Tracker.Prompts.Add.Exec": unknown;
+        "Ai_2.Methods.Tracker.Prompts.Add.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

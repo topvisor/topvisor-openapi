@@ -18,8 +18,8 @@
                 "x-enum-varnames": [
                     "InGroup",
                     "InGroupLast",
-                    "BeforePrompt",
-                    "AfterPrompt"
+                    "BeforeKeyword",
+                    "AfterKeyword"
                 ],
                 "x-enum-descriptions": [
                     "В начало группы",
@@ -27,7 +27,9 @@
                     "Перед запросом",
                     "После запроса"
                 ],
-                "title": "Позиция вставки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Prompts\\ToType"
+                "title": "Куда добавить запрос\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Prompts\\ToType",
+                "description": "@deprecated , использовать тип из keywords",
+                "deprecated": true
             }
         }
     }

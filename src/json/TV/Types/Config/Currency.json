@@ -236,6 +236,12 @@
                         "default": 10000,
                         "type": "number"
                     },
+                    "AI_TRACKER_COST": {
+                        "title": "Стоимость ИИ трекера.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
                     "TARIFF_NAMES": {
                         "title": "Список тарифных планов.",
                         "readOnly": true,
@@ -311,6 +317,7 @@
                     "MENTIONS_COST",
                     "COMPETITORS_COST",
                     "WEB_SCREENS_COST",
+                    "AI_TRACKER_COST",
                     "TARIFF_NAMES",
                     "TARIFF_VALUES",
                     "TARIFF_DISCOUNT"

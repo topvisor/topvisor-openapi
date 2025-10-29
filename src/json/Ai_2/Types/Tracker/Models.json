@@ -13,7 +13,7 @@
                     "$ref": "../../../Ai_2/Types/Tracker/Model.json#/components/schemas/Ai_2.Types.Tracker.Model"
                 },
                 "title": "Модель нейросети для AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Types\\Tracker\\Models",
-                "description": "@see Ai_2\\Types\\Tracker\\Model"
+                "description": "@extends API\\Types\\AbstractTypedArray<Ai_2\\Types\\Tracker\\Model>\n@method Ai_2\\Types\\Tracker\\Model[] getValues()\n@method Ai_2\\Types\\Tracker\\Model current()\n@see Ai_2\\Types\\Tracker\\Model"
             }
         }
     }

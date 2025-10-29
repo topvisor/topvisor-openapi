@@ -130,6 +130,18 @@
                     "status_urlsUpdater": {
                         "nullable": true
                     },
+                    "status_ai_tracker": {
+                        "nullable": true
+                    },
+                    "status_ai_tracker_time": {
+                        "nullable": true
+                    },
+                    "status_ai_tracker_date": {
+                        "nullable": true
+                    },
+                    "status_ai_tracker_percent": {
+                        "nullable": true
+                    },
                     "on": {
                         "nullable": true
                     },
@@ -237,6 +249,23 @@
                     },
                     "watcher_types": {
                         "type": "array",
+                        "nullable": true
+                    },
+                    "ai_tracker_brand_name": {
+                        "nullable": true
+                    },
+                    "ai_tracker_aliases": {
+                        "type": "array",
+                        "nullable": true
+                    },
+                    "ai_tracker_models": {
+                        "type": "array",
+                        "nullable": true
+                    },
+                    "ai_tracker_context_lang": {
+                        "nullable": true
+                    },
+                    "ai_tracker_context_location": {
                         "nullable": true
                     }
                 }

@@ -21,7 +21,7 @@ export interface components {
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /** Список id проектов, отрпавленных на проверку */
+        /** Список id проектов, отправленных на проверку */
         "Audit_2.Methods.Watcher.Checker.Go.Edit.Exec": {
             projectIds: number[];
         };

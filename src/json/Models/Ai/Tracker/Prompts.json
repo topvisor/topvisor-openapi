@@ -37,6 +37,12 @@
                     "group_ord": {
                         "nullable": true
                     },
+                    "date": {
+                        "nullable": true
+                    },
+                    "model": {
+                        "nullable": true
+                    },
                     "response": {
                         "nullable": true,
                         "example": {

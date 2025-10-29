@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Модель нейросети для AI-трекера
+         * Модель для ИИ трекера
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Model
          * @enum {string}

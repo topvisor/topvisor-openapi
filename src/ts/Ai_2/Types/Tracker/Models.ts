@@ -11,7 +11,10 @@ export interface components {
          * Модель нейросети для AI-трекера
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Models
-         * @description @see Ai_2\Types\Tracker\Model
+         * @description @extends API\Types\AbstractTypedArray<Ai_2\Types\Tracker\Model>
+         *     @method Ai_2\Types\Tracker\Model[] getValues()
+         *     @method Ai_2\Types\Tracker\Model current()
+         *     @see Ai_2\Types\Tracker\Model
          */
         "Ai_2.Types.Tracker.Models": import('./Model.ts').components['schemas']['Ai_2.Types.Tracker.Model'][];
     };
