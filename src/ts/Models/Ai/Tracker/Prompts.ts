@@ -21,6 +21,7 @@ export interface components {
             /** @example {
              *       "need set qualifiers": [
              *         "date",
+             *         "model",
              *         "project_id"
              *       ]
              *     } */
@@ -28,6 +29,7 @@ export interface components {
             /** @example {
              *       "need set qualifiers": [
              *         "date",
+             *         "model",
              *         "project_id"
              *       ]
              *     } */

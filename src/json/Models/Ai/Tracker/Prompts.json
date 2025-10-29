@@ -42,6 +42,7 @@
                         "example": {
                             "need set qualifiers": [
                                 "date",
+                                "model",
                                 "project_id"
                             ]
                         }
@@ -51,6 +52,7 @@
                         "example": {
                             "need set qualifiers": [
                                 "date",
+                                "model",
                                 "project_id"
                             ]
                         }

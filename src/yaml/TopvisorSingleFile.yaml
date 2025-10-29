@@ -32846,12 +32846,14 @@ components:
           example:
             need set qualifiers:
               - date
+              - model
               - project_id
         mentioned:
           nullable: true
           example:
             need set qualifiers:
               - date
+              - model
               - project_id
     Ai_2.Types.Tracker.Model:
       type: string
