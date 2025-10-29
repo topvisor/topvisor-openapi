@@ -207,6 +207,9 @@
             },
             "Models.Ai.Tracker.Prompts": {
                 "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+            },
+            "Models.Projects.Tpa": {
+                "$ref": "Models/Projects/Tpa.json#/components/schemas/Models.Projects.Tpa"
             }
         }
     }

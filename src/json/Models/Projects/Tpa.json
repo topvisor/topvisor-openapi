@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Projects.Tpa",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Projects.Tpa": {
+                "properties": {
+                    "id": {},
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "login": {
+                        "nullable": true
+                    },
+                    "provider": {
+                        "nullable": true
+                    },
+                    "expire_at": {
+                        "nullable": true
+                    },
+                    "cid": {
+                        "nullable": true
+                    },
+                    "counters": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}
