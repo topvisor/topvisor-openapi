@@ -1038,6 +1038,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Get */
+    "/get/ai_2/tracker/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAi2Tracker"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение всех своих примечаний по всем проектам и сервисам
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\My\Get */
@@ -5241,23 +5258,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAdmin2UsersRanks"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\History\Get */
-    "/get/ai_2/tracker/history/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAi2TrackerHistory"];
         delete?: never;
         options?: never;
         head?: never;
@@ -12620,6 +12620,32 @@ export interface operations {
             };
         };
     };
+    GetAi2Tracker: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/Tracker/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/Tracker/Get.ts').components['schemas']['Ai_2.Methods.Tracker.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
+                };
+            };
+        };
+    };
     GetAnnotations2My: {
         parameters: {
             query?: never;
@@ -18101,32 +18127,6 @@ export interface operations {
                         result: import('./Admin_2/Methods/Users/Ranks/Get.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
-                };
-            };
-        };
-    };
-    GetAi2TrackerHistory: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Ai_2/Methods/Tracker/History/Get.ts').components['schemas']['Ai_2.Methods.Tracker.History.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Ai_2/Methods/Tracker/History/Get.ts').components['schemas']['Ai_2.Methods.Tracker.History.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
                 };
             };
         };

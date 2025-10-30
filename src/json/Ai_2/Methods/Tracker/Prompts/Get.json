@@ -30,9 +30,14 @@
                     },
                     "fetch_style": {
                         "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
-                "required": [],
+                "required": [
+                    "project_id"
+                ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Get"
             },
             "Ai_2.Methods.Tracker.Prompts.Get.Exec": {
