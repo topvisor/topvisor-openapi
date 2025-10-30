@@ -184,6 +184,9 @@
             "Models.Projects.Rights": {
                 "$ref": "Models/Projects/Rights.json#/components/schemas/Models.Projects.Rights"
             },
+            "Models.Projects.Tpa": {
+                "$ref": "Models/Projects/Tpa.json#/components/schemas/Models.Projects.Tpa"
+            },
             "Models.Quizes.Questions": {
                 "$ref": "Models/Quizes/Questions.json#/components/schemas/Models.Quizes.Questions"
             },
@@ -207,9 +210,6 @@
             },
             "Models.Ai.Tracker.Prompts": {
                 "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
-            },
-            "Models.Projects.Tpa": {
-                "$ref": "Models/Projects/Tpa.json#/components/schemas/Models.Projects.Tpa"
             }
         }
     }

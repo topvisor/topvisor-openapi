@@ -17941,6 +17941,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/tickets_2/admin/ticket/commentAdmin/:
+    post:
+      operationId: EditTickets2AdminTicketCommentAdmin
+      tags:
+        - Tickets_2
+      summary: |-
+        Изменение комментария о пользователя в тикете
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Ticket\CommentAdmin\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/tickets_2/admin/ticket/resourceAdmin/:
     post:
       operationId: EditTickets2AdminTicketResourceAdmin
@@ -43930,6 +43961,25 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Sort\Edit
     Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec:
+      nullable: true
+      type: integer
+    Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit:
+      type: object
+      properties:
+        comment:
+          title: Комментарий
+          type: string
+        ticket_id:
+          title: ID тикета
+          type: integer
+      required:
+        - comment
+        - ticket_id
+      title: |-
+        Изменение комментария о пользователя в тикете
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Ticket\CommentAdmin\Edit
+    Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec:
       nullable: true
       type: integer
     Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit:

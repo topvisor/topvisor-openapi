@@ -10808,6 +10808,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменение комментария о пользователя в тикете
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Ticket\CommentAdmin\Edit */
+    "/edit/tickets_2/admin/ticket/commentAdmin/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTickets2AdminTicketCommentAdmin"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменение админской ссылки к тикетам. Только для админов
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Ticket\ResourceAdmin\Edit */
@@ -25285,6 +25304,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Sort/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditTickets2AdminTicketCommentAdmin: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tickets_2/Methods/Admin/Ticket/CommentAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tickets_2/Methods/Admin/Ticket/CommentAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
