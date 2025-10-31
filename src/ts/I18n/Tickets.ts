@@ -94,6 +94,8 @@ export interface components {
             /** @constant */
             readonly Go_to_new_line: "Go to a new line";
             /** @constant */
+            readonly Support_engineer: "Support engineer";
+            /** @constant */
             readonly Bad: "Bad";
             /** @constant */
             readonly Normal: "OK";

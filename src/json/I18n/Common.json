@@ -1448,6 +1448,10 @@
                         "const": "Tools and prices",
                         "readOnly": true
                     },
+                    "You": {
+                        "const": "You",
+                        "readOnly": true
+                    },
                     "Menu_expand": {
                         "const": "Expand menu",
                         "readOnly": true
@@ -2317,6 +2321,7 @@
                     "Hide_legend",
                     "Service_AMS_tracker",
                     "Tools_and_pricing",
+                    "You",
                     "Menu_expand",
                     "Menu_unexpand",
                     "Menu_dynamics_search",

@@ -178,6 +178,10 @@
                         "const": "Go to a new line",
                         "readOnly": true
                     },
+                    "Support_engineer": {
+                        "const": "Support engineer",
+                        "readOnly": true
+                    },
                     "Bad": {
                         "const": "Bad",
                         "readOnly": true
@@ -274,6 +278,7 @@
                     "Resource_admin",
                     "Send",
                     "Go_to_new_line",
+                    "Support_engineer",
                     "Bad",
                     "Normal",
                     "Good",

@@ -734,6 +734,8 @@ export interface components {
             /** @constant */
             readonly Tools_and_pricing: "Tools and prices";
             /** @constant */
+            readonly You: "You";
+            /** @constant */
             readonly Menu_expand: "Expand menu";
             /** @constant */
             readonly Menu_unexpand: "Minimize menu";
