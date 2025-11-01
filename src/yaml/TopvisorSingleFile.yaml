@@ -18635,24 +18635,6 @@ components:
         @method AiTracker_2\Types\Model[] getValues()
         @method AiTracker_2\Types\Model current()
         @see \Services\AiTracker_2\Types\Model
-    AiTracker_2.Types.ShowResponse:
-      type: string
-      enum:
-        - notInclude
-        - shortText
-        - fullText
-      x-enum-varnames:
-        - NotInclude
-        - ShortText
-        - FullText
-      x-enum-descriptions:
-        - Не добавлять
-        - Сокращенный текст
-        - Полный текст
-      title: |-
-        Добавить в результат данные ответа нейросети
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\ShowResponse
     TV.API.Types.Date:
       type: string
       title: |-
@@ -18763,13 +18745,6 @@ components:
           type: boolean
         show_exists_dates:
           title: Вернуть ли даты проверок
-          type: boolean
-        show_response:
-          default: notInclude
-          allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ShowResponse'
-        show_counts_watcher:
-          title: Добавить в результат количество проверок
           type: boolean
         dates:
           title: Произвольные даты без использования диапазона

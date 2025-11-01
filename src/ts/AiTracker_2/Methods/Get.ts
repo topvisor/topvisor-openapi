@@ -23,10 +23,6 @@ export interface components {
             show_headers?: boolean;
             /** Вернуть ли даты проверок */
             show_exists_dates?: boolean;
-            /** @default notInclude */
-            show_response?: import('../Types/ShowResponse.ts').components['schemas']['AiTracker_2.Types.ShowResponse'];
-            /** Добавить в результат количество проверок */
-            show_counts_watcher?: boolean;
             /** Произвольные даты без использования диапазона */
             dates?: unknown[] | null;
             /** Дата начала диапазона */

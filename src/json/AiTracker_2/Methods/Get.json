@@ -32,18 +32,6 @@
                         "title": "Вернуть ли даты проверок",
                         "type": "boolean"
                     },
-                    "show_response": {
-                        "default": "notInclude",
-                        "allOf": [
-                            {
-                                "$ref": "../../AiTracker_2/Types/ShowResponse.json#/components/schemas/AiTracker_2.Types.ShowResponse"
-                            }
-                        ]
-                    },
-                    "show_counts_watcher": {
-                        "title": "Добавить в результат количество проверок",
-                        "type": "boolean"
-                    },
                     "dates": {
                         "title": "Произвольные даты без использования диапазона",
                         "nullable": true,
