@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.Prompts.Groups.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.Prompts.Groups.Add": {
+                "type": "object",
+                "properties": {
+                    "names": {
+                        "title": "Имена групп",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "on": {
+                        "title": "Активность группы",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Groups\\Add"
+            },
+            "AiTracker_2.Methods.Prompts.Groups.Add.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

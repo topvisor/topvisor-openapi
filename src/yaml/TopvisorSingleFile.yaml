@@ -11,8 +11,8 @@ security:
 tags:
   - name: Admin_2
     description: admin_2
-  - name: Ai_2
-    description: ai_2
+  - name: Aitracker_2
+    description: aitracker_2
   - name: Analytics_2
     description: analytics_2
   - name: Annotations_2
@@ -116,6 +116,38 @@ tags:
   - name: Webscreens_2
     description: webscreens_2
 paths:
+  /get/aitracker_2/:
+    post:
+      operationId: GetAitracker2
+      tags:
+        - Aitracker_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Get'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
   /add/analytics_2/:
     post:
       operationId: AddAnalytics2
@@ -1835,17 +1867,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Votes'
-  /get/ai_2/tracker/:
+  /add/aitracker_2/prompts/:
     post:
-      operationId: GetAi2Tracker
+      operationId: AddAitracker2Prompts
       tags:
-        - Ai_2
-      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Get'
+        - Aitracker_2
+      summary: |-
+        Добавление промпта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Add
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Get'
+              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Add'
         required: true
       responses:
         '200':
@@ -1858,7 +1893,35 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Get.Exec'
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/aitracker_2/prompts/:
+    post:
+      operationId: GetAitracker2Prompts
+      tags:
+        - Aitracker_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Get'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1867,6 +1930,39 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
+  /edit/aitracker_2/settings/:
+    post:
+      operationId: EditAitracker2Settings
+      tags:
+        - Aitracker_2
+      summary: |-
+        Изменение настроек AI-трекера
+
+        Для получения текущих настроек используйте: /get/projects_2/projects/
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Settings.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Settings.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -8899,20 +8995,17 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-  /add/ai_2/tracker/prompts/:
+  /edit/aitracker_2/checker/go/:
     post:
-      operationId: AddAi2TrackerPrompts
+      operationId: EditAitracker2CheckerGo
       tags:
-        - Ai_2
-      summary: |-
-        Добавление промпта
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add
+        - Aitracker_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Checker\Go\Edit'
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add'
+              $ref: '#/components/schemas/AiTracker_2.Methods.Checker.Go.Edit'
         required: true
       responses:
         '200':
@@ -8925,59 +9018,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add.Exec'
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Checker.Go.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /get/ai_2/tracker/prompts/:
-    post:
-      operationId: GetAi2TrackerPrompts
-      tags:
-        - Ai_2
-      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Get'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
-  /edit/ai_2/tracker/settings/:
+                $ref: '#/components/schemas/Models.Projects'
+  /get/aitracker_2/checker/price/:
     post:
-      operationId: EditAi2TrackerSettings
+      operationId: GetAitracker2CheckerPrice
       tags:
-        - Ai_2
-      summary: |-
-        Изменение настроек AI-трекера
-
-        Для получения текущих настроек используйте: /get/projects_2/projects/
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
+        - Aitracker_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Checker\Price\Get'
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit'
+              $ref: '#/components/schemas/AiTracker_2.Methods.Checker.Price.Get'
         required: true
       responses:
         '200':
@@ -8990,7 +9049,41 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec'
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Checker.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+  /add/aitracker_2/prompts/groups/:
+    post:
+      operationId: AddAitracker2PromptsGroups
+      tags:
+        - Aitracker_2
+      summary: |-
+        Добавление групп
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Groups\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Groups.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Groups.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -16227,99 +16320,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/ai_2/tracker/checker/go/:
-    post:
-      operationId: EditAi2TrackerCheckerGo
-      tags:
-        - Ai_2
-      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Checker.Go.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Checker.Go.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Projects'
-  /get/ai_2/tracker/checker/price/:
-    post:
-      operationId: GetAi2TrackerCheckerPrice
-      tags:
-        - Ai_2
-      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Price\Get'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Checker.Price.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Checker.Price.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Projects'
-  /add/ai_2/tracker/prompts/groups/:
-    post:
-      operationId: AddAi2TrackerPromptsGroups
-      tags:
-        - Ai_2
-      summary: |-
-        Добавление групп
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Groups\Add
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Groups.Add'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Ai_2.Methods.Tracker.Prompts.Groups.Add.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /edit/audit_2/audit/checker/go/:
     post:
       operationId: EditAudit2AuditCheckerGo
@@ -18610,41 +18610,247 @@ components:
       name: auth
       in: cookie
   schemas:
-    Analytics_2.Methods.Add:
-      type: object
-      properties:
-        ec:
-          title: Категория
-          nullable: true
-          type: string
-        ea:
-          title: Дейсвтие
-          nullable: true
-          type: string
-        el:
-          title: Ярлык в base64
-          nullable: true
-          type: string
-        uid:
-          title: ID пользователя
-          nullable: true
-          type: integer
-        hash_id:
-          title: Хеш для уникализации события
-          nullable: true
-          type: integer
-        hash:
-          title: Хэш для проверки подлинности события
-          nullable: true
-          type: integer
-      required: []
+    AiTracker_2.Types.Model:
+      type: string
+      enum:
+        - deepseek
+      x-enum-varnames:
+        - Deepseek
+      x-enum-descriptions:
+        - null
       title: |-
-        Фиксация события
+        Модель для ИИ трекера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Analytics_2\Methods\Add
-    Analytics_2.Methods.Add.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Model
+    AiTracker_2.Types.Models:
+      type: array
+      items:
+        $ref: '#/components/schemas/AiTracker_2.Types.Model'
+      title: |-
+        Модель нейросети для AI-трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Models
+      description: |-
+        @extends API\Types\AbstractTypedArray<\Services\AiTracker_2\Types\Model>
+        @method AiTracker_2\Types\Model[] getValues()
+        @method AiTracker_2\Types\Model current()
+        @see \Services\AiTracker_2\Types\Model
+    AiTracker_2.Types.ShowResponse:
+      type: string
+      enum:
+        - notInclude
+        - shortText
+        - fullText
+      x-enum-varnames:
+        - NotInclude
+        - ShortText
+        - FullText
+      x-enum-descriptions:
+        - Не добавлять
+        - Сокращенный текст
+        - Полный текст
+      title: |-
+        Добавить в результат данные ответа нейросети
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\ShowResponse
+    TV.API.Types.Date:
+      type: string
+      title: |-
+        Дата
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\Date
+      example: '2000-01-01'
+    AiTracker_2.Types.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 2
+        - 3
+        - 4
+        - 5
+        - 7
+        - 100
+      x-enum-varnames:
+        - FullRange
+        - Range
+        - TwoChecks
+        - OneCheck
+        - LastCheckOfMonth
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений (недокументируемй парметр)
+        - Период с выполненными проверками
+        - Две проверки
+        - Одна проверка
+        - Последняя проверка месяца
+        - Две последние даты проверок
+        - Произвольный список дат
+      title: |-
+        Тип диапазона Ai-Трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\TypeRange
+    fields:
+      title: |-
+        Список полей объекта, которые надо вернуть в результате
+
+        Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+        Использует поля модели
+      description: '@see AbstractMethod::MODEL'
+      type: array
+    orders:
+      title: |-
+        Список полей объекта, по которым необходимо выполнить сортировку
+
+        Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+        Использует поля модели
+      description: '@see AbstractMethod::MODEL'
+      type: array
+    filters:
+      title: |-
+        Список фильтров по полям объекта
+
+        {name: string, operator: Selector\Types\Operator, values: array}
+
+        Использует поля модели
+
+        Поля обязательное, если $id не указан
+      description: |-
+        @see AbstractMethod::MODEL
+        @see Selector\Types\Operator
+      type: array
+    id:
+      title: |-
+        Id объекта, для фильтрации объектов по id
+
+        Только для моделей с полем id
       nullable: true
       type: integer
+    limit:
+      title: |-
+        Количество объектов, которые необходимо получить в результате
+
+        Используется в паре с offset
+      nullable: true
+      type: integer
+    offset:
+      title: |-
+        Число объектов, которое необходимо пропустить при получении результата
+
+        Используется в паре с limit
+      type: integer
+    project_id:
+      title: ID проекта
+      type: integer
+    AiTracker_2.Methods.Get:
+      type: object
+      properties:
+        models:
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
+        check_fields:
+          title: |-
+            Список полей проверок, которые необходимо получить
+
+            См. поля в объекте Ai\Tracker\Prompts
+          default:
+            - response
+          type: array
+        show_headers:
+          title: Вернуть ли заголовки отчета
+          type: boolean
+        show_exists_dates:
+          title: Вернуть ли даты проверок
+          type: boolean
+        show_response:
+          default: notInclude
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.ShowResponse'
+        show_counts_watcher:
+          title: Добавить в результат количество проверок
+          type: boolean
+        dates:
+          title: Произвольные даты без использования диапазона
+          nullable: true
+          type: array
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type_range:
+          title: Тип диапазона дат
+          default: 7
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.TypeRange'
+        count_dates:
+          title: Количество дней в диапазоне
+          default: 30
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - models
+        - project_id
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Get'
+    Models.Ai.Tracker.Prompts:
+      properties:
+        COUNT(*):
+          nullable: true
+        tagsNames():
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        group_id:
+          nullable: true
+        tags:
+          nullable: true
+        ord:
+          nullable: true
+        name:
+          nullable: true
+        group_name:
+          nullable: true
+        group_ord:
+          nullable: true
+        response:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        mentioned:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+    AiTracker_2.Methods.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
     TV.API.Types.StringArray:
       type: array
       items:
@@ -18677,6 +18883,25 @@ components:
         Результат успешного API запроса
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\ResponseSuccess
+    Pagination:
+      type: object
+      properties:
+        nextOffset:
+          title: |-
+            Смещение для получения следующий порции данных
+
+            Вернется только в случае существования следующей порции
+          nullable: true
+          type: integer
+        total:
+          title: Общее число результатов, без учета применения пагинации
+          nullable: true
+          type: integer
+      required: []
+      title: |-
+        Результаты пагинации
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Pagination
     Error:
       type: object
       properties:
@@ -18765,6 +18990,41 @@ components:
         Результат API запроса с ошибкой
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\ResponseError
+    Analytics_2.Methods.Add:
+      type: object
+      properties:
+        ec:
+          title: Категория
+          nullable: true
+          type: string
+        ea:
+          title: Дейсвтие
+          nullable: true
+          type: string
+        el:
+          title: Ярлык в base64
+          nullable: true
+          type: string
+        uid:
+          title: ID пользователя
+          nullable: true
+          type: integer
+        hash_id:
+          title: Хеш для уникализации события
+          nullable: true
+          type: integer
+        hash:
+          title: Хэш для проверки подлинности события
+          nullable: true
+          type: integer
+      required: []
+      title: |-
+        Фиксация события
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Analytics_2\Methods\Add
+    Analytics_2.Methods.Add.Exec:
+      nullable: true
+      type: integer
     Annotations_2.Types.ServiceName:
       type: string
       enum:
@@ -18863,57 +19123,6 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\Edit
     Annotations_2.Methods.Edit.Exec:
       nullable: true
-      type: integer
-    fields:
-      title: |-
-        Список полей объекта, которые надо вернуть в результате
-
-        Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
-
-        Использует поля модели
-      description: '@see AbstractMethod::MODEL'
-      type: array
-    orders:
-      title: |-
-        Список полей объекта, по которым необходимо выполнить сортировку
-
-        Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
-
-        Использует поля модели
-      description: '@see AbstractMethod::MODEL'
-      type: array
-    filters:
-      title: |-
-        Список фильтров по полям объекта
-
-        {name: string, operator: Selector\Types\Operator, values: array}
-
-        Использует поля модели
-
-        Поля обязательное, если $id не указан
-      description: |-
-        @see AbstractMethod::MODEL
-        @see Selector\Types\Operator
-      type: array
-    id:
-      title: |-
-        Id объекта, для фильтрации объектов по id
-
-        Только для моделей с полем id
-      nullable: true
-      type: integer
-    limit:
-      title: |-
-        Количество объектов, которые необходимо получить в результате
-
-        Используется в паре с offset
-      nullable: true
-      type: integer
-    offset:
-      title: |-
-        Число объектов, которое необходимо пропустить при получении результата
-
-        Используется в паре с limit
       type: integer
     Selector.Types.FetchStyle:
       type: string
@@ -19030,25 +19239,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Annotations'
-    Pagination:
-      type: object
-      properties:
-        nextOffset:
-          title: |-
-            Смещение для получения следующий порции данных
-
-            Вернется только в случае существования следующей порции
-          nullable: true
-          type: integer
-        total:
-          title: Общее число результатов, без учета применения пагинации
-          nullable: true
-          type: integer
-      required: []
-      title: |-
-        Результаты пагинации
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Pagination
     App_2.Methods.Get:
       type: object
       properties: {}
@@ -20776,9 +20966,6 @@ components:
         Источник данных для интеграции
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Types\Provider
-    project_id:
-      title: ID проекта
-      type: integer
     Tpa_2.Methods.Del:
       type: object
       properties:
@@ -21992,13 +22179,6 @@ components:
           nullable: true
         staff_access:
           nullable: true
-    TV.API.Types.Date:
-      type: string
-      title: |-
-        Дата
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\Date
-      example: '2000-01-01'
     Admin_2.Methods.TariffChangeExpire.Edit:
       type: object
       properties:
@@ -22169,121 +22349,63 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Votes'
-    Ai_2.Types.Tracker.Model:
+    AiTracker_2.Types.Prompts.ToType:
       type: string
       enum:
-        - deepseek
+        - in_group
+        - in_group_last
+        - before_keyword
+        - after_keyword
       x-enum-varnames:
-        - Deepseek
+        - InGroup
+        - InGroupLast
+        - BeforeKeyword
+        - AfterKeyword
       x-enum-descriptions:
-        - null
+        - В начало группы
+        - В конец группы
+        - Перед запросом
+        - После запроса
       title: |-
-        Модель для ИИ трекера
+        Куда добавить запрос
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Model
-    Ai_2.Types.Tracker.Models:
-      type: array
-      items:
-        $ref: '#/components/schemas/Ai_2.Types.Tracker.Model'
-      title: |-
-        Модель нейросети для AI-трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Models
-      description: |-
-        @extends API\Types\AbstractTypedArray<Ai_2\Types\Tracker\Model>
-        @method Ai_2\Types\Tracker\Model[] getValues()
-        @method Ai_2\Types\Tracker\Model current()
-        @see Ai_2\Types\Tracker\Model
-    Ai_2.Types.Tracker.ShowResponse:
-      type: string
-      enum:
-        - notInclude
-        - shortText
-        - fullText
-      x-enum-varnames:
-        - NotInclude
-        - ShortText
-        - FullText
-      x-enum-descriptions:
-        - Не добавлять
-        - Сокращенный текст
-        - Полный текст
-      title: |-
-        Добавить в результат данные ответа нейросети
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\ShowResponse
-    Ai_2.Types.Tracker.TypeRange:
-      type: integer
-      enum:
-        - 0
-        - 2
-        - 3
-        - 4
-        - 5
-        - 7
-        - 100
-      x-enum-varnames:
-        - FullRange
-        - Range
-        - TwoChecks
-        - OneCheck
-        - LastCheckOfMonth
-        - TwoLastChecks
-        - ListDates
-      x-enum-descriptions:
-        - Весь период без ограничений (недокументируемй парметр)
-        - Период с выполненными проверками
-        - Две проверки
-        - Одна проверка
-        - Последняя проверка месяца
-        - Две последние даты проверок
-        - Произвольный список дат
-      title: |-
-        Тип диапазона Ai-Трекера
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\TypeRange
-    Ai_2.Methods.Tracker.Get:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Prompts\ToType
+      description: '@deprecated , использовать тип из keywords'
+      deprecated: true
+    AiTracker_2.Methods.Prompts.Add:
       type: object
       properties:
-        models:
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
-        show_headers:
-          title: Вернуть ли заголовки отчета
-          type: boolean
-        show_exists_dates:
-          title: Вернуть ли даты проверок
-          type: boolean
-        show_response:
-          default: notInclude
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.ShowResponse'
-        show_counts_watcher:
-          title: Добавить в результат количество проверок
-          type: boolean
-        dates:
-          title: Произвольные даты без использования диапазона
-          nullable: true
-          type: array
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 7
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.TypeRange'
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 30
+        name:
+          title: Текст промпта
+          type: string
+        toId:
+          title: Вставить к указанному объекту
           type: integer
+        toType:
+          title: Обязательный параметр при указанном $toId
+          default: in_group
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.Prompts.ToType'
+        tags:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - name
+        - toId
+        - project_id
+      title: |-
+        Добавление промпта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Add
+    AiTracker_2.Methods.Prompts.Add.Exec:
+      nullable: true
+      type: array
+    AiTracker_2.Methods.Prompts.Get:
+      type: object
+      properties:
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -22296,51 +22418,55 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - models
         - project_id
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Get'
-    Models.Ai.Tracker.Prompts:
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Get'
+    AiTracker_2.Methods.Prompts.Get.Exec:
+      nullable: true
+    AiTracker_2.Methods.Settings.Edit:
+      type: object
       properties:
-        COUNT(*):
+        brand_name:
+          title: |-
+            Имя бренда
+
+            Участвует в поиске в ответе ИИ
           nullable: true
-        tagsNames():
+          type: string
+        aliases:
+          title: Дополнительные имена для поиска в ответе ИИ
           nullable: true
-        id: {}
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+        models:
+          title: Список моделей ИИ
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
+        context_lang:
+          title: 'Настройки контекста: Язык'
+          nullable: true
+          type: string
+        context_location:
+          title: 'Настройки контекста: Регион'
+          nullable: true
+          type: string
         project_id:
-          nullable: true
-        group_id:
-          nullable: true
-        tags:
-          nullable: true
-        ord:
-          nullable: true
-        name:
-          nullable: true
-        group_name:
-          nullable: true
-        group_ord:
-          nullable: true
-        response:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        mentioned:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-    Ai_2.Methods.Tracker.Get.Exec:
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Изменение настроек AI-трекера
+
+        Для получения текущих настроек используйте: /get/projects_2/projects/
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
+    AiTracker_2.Methods.Settings.Edit.Exec:
+      type: integer
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -32909,124 +33035,70 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-    Ai_2.Types.Tracker.Prompts.ToType:
-      type: string
-      enum:
-        - in_group
-        - in_group_last
-        - before_keyword
-        - after_keyword
-      x-enum-varnames:
-        - InGroup
-        - InGroupLast
-        - BeforeKeyword
-        - AfterKeyword
-      x-enum-descriptions:
-        - В начало группы
-        - В конец группы
-        - Перед запросом
-        - После запроса
+    debug:
       title: |-
-        Куда добавить запрос
+        Включить режим отладки
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Types\Tracker\Prompts\ToType
-      description: '@deprecated , использовать тип из keywords'
-      deprecated: true
-    Ai_2.Methods.Tracker.Prompts.Add:
+        Учитывается только при запуске с правами администратора
+      description: '@internal'
+      type: boolean
+    AiTracker_2.Methods.Checker.Go.Edit:
       type: object
       properties:
-        name:
-          title: Текст промпта
-          type: string
-        toId:
-          title: Вставить к указанному объекту
-          type: integer
-        toType:
-          title: Обязательный параметр при указанном $toId
-          default: in_group
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Prompts.ToType'
-        tags:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - name
-        - toId
-        - project_id
-      title: |-
-        Добавление промпта
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Add
-    Ai_2.Methods.Tracker.Prompts.Add.Exec:
-      nullable: true
-      type: array
-    Ai_2.Methods.Tracker.Prompts.Get:
-      type: object
-      properties:
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - project_id
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Get'
-    Ai_2.Methods.Tracker.Prompts.Get.Exec:
-      nullable: true
-    Ai_2.Methods.Tracker.Settings.Edit:
+        debug:
+          $ref: '#/components/schemas/debug'
+      required: []
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Checker\Go\Edit'
+    AiTracker_2.Methods.Checker.Go.Edit.Exec:
+      title: Список id проектов, отправленных на проверку
       type: object
       properties:
-        brand_name:
-          title: |-
-            Имя бренда
-
-            Участвует в поиске в ответе ИИ
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
+    AiTracker_2.Methods.Checker.Price.Get:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        debug:
+          $ref: '#/components/schemas/debug'
+      required: []
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Checker\Price\Get'
+    AiTracker_2.Methods.Checker.Price.Get.Exec:
+      type: object
+      additionalProperties: {}
+    AiTracker_2.Methods.Prompts.Groups.Add:
+      type: object
+      properties:
+        names:
+          title: Имена групп
           nullable: true
-          type: string
-        aliases:
-          title: Дополнительные имена для поиска в ответе ИИ
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.StringArray'
-        models:
-          title: Список моделей ИИ
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Ai_2.Types.Tracker.Models'
-        context_lang:
-          title: 'Настройки контекста: Язык'
-          nullable: true
-          type: string
-        context_location:
-          title: 'Настройки контекста: Регион'
-          nullable: true
-          type: string
+          type: array
+        'on':
+          title: Активность группы
+          default: true
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
         - project_id
       title: |-
-        Изменение настроек AI-трекера
+        Добавление групп
 
-        Для получения текущих настроек используйте: /get/projects_2/projects/
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Settings\Edit
-    Ai_2.Methods.Tracker.Settings.Edit.Exec:
-      type: integer
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Groups\Add
+    AiTracker_2.Methods.Prompts.Groups.Add.Exec:
+      nullable: true
+      type: array
     check_id:
       title: ID проверки аудита
       type: integer
@@ -36955,13 +37027,6 @@ components:
         @method Qualifier current()
         @method Qualifier offsetGet()
         @see \TV\API\Types\Qualifier
-    debug:
-      title: |-
-        Включить режим отладки
-
-        Учитывается только при запуске с правами администратора
-      description: '@internal'
-      type: boolean
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
@@ -41753,63 +41818,6 @@ components:
       nullable: true
       allOf:
         - $ref: '#/components/schemas/TV.Objects.Highcharts.Chart'
-    Ai_2.Methods.Tracker.Checker.Go.Edit:
-      type: object
-      properties:
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        debug:
-          $ref: '#/components/schemas/debug'
-      required: []
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Go\Edit'
-    Ai_2.Methods.Tracker.Checker.Go.Edit.Exec:
-      title: Список id проектов, отправленных на проверку
-      type: object
-      properties:
-        projectIds:
-          type: array
-          items:
-            type: integer
-      required:
-        - projectIds
-    Ai_2.Methods.Tracker.Checker.Price.Get:
-      type: object
-      properties:
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        debug:
-          $ref: '#/components/schemas/debug'
-      required: []
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Checker\Price\Get'
-    Ai_2.Methods.Tracker.Checker.Price.Get.Exec:
-      type: object
-      additionalProperties: {}
-    Ai_2.Methods.Tracker.Prompts.Groups.Add:
-      type: object
-      properties:
-        names:
-          title: Имена групп
-          nullable: true
-          type: array
-        'on':
-          title: Активность группы
-          default: true
-          type: boolean
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - project_id
-      title: |-
-        Добавление групп
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Ai_2\Methods\Tracker\Prompts\Groups\Add
-    Ai_2.Methods.Tracker.Prompts.Groups.Add.Exec:
-      nullable: true
-      type: array
     Audit_2.Methods.Audit.Checker.Go.Edit:
       type: object
       properties:

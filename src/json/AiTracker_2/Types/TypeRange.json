@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.TypeRange",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.TypeRange": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    5,
+                    7,
+                    100
+                ],
+                "x-enum-varnames": [
+                    "FullRange",
+                    "Range",
+                    "TwoChecks",
+                    "OneCheck",
+                    "LastCheckOfMonth",
+                    "TwoLastChecks",
+                    "ListDates"
+                ],
+                "x-enum-descriptions": [
+                    "Весь период без ограничений (недокументируемй парметр)",
+                    "Период с выполненными проверками",
+                    "Две проверки",
+                    "Одна проверка",
+                    "Последняя проверка месяца",
+                    "Две последние даты проверок",
+                    "Произвольный список дат"
+                ],
+                "title": "Тип диапазона Ai-Трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\TypeRange"
+            }
+        }
+    }
+}

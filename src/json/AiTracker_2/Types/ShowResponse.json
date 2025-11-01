@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.ShowResponse",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.ShowResponse": {
+                "type": "string",
+                "enum": [
+                    "notInclude",
+                    "shortText",
+                    "fullText"
+                ],
+                "x-enum-varnames": [
+                    "NotInclude",
+                    "ShortText",
+                    "FullText"
+                ],
+                "x-enum-descriptions": [
+                    "Не добавлять",
+                    "Сокращенный текст",
+                    "Полный текст"
+                ],
+                "title": "Добавить в результат данные ответа нейросети\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\ShowResponse"
+            }
+        }
+    }
+}

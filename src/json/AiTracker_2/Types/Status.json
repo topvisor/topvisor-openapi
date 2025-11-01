@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.Status",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.Status": {
+                "type": "string",
+                "enum": [
+                    "none",
+                    "inQueue",
+                    "checking",
+                    "saving",
+                    "reporting"
+                ],
+                "x-enum-varnames": [
+                    "None",
+                    "InQueue",
+                    "Checking",
+                    "Saving",
+                    "Reporting"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    "В очереди на постановку задач",
+                    "На проверке",
+                    "Запись результатов",
+                    "Рассылка отчета"
+                ],
+                "title": "Статус проверки AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\Status"
+            }
+        }
+    }
+}

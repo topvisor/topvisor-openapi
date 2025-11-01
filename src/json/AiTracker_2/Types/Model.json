@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.Model",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.Model": {
+                "type": "string",
+                "enum": [
+                    "deepseek"
+                ],
+                "x-enum-varnames": [
+                    "Deepseek"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
+                "title": "Модель для ИИ трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\Model"
+            }
+        }
+    }
+}

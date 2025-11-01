@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.Prompts.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.Prompts.Add": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Текст промпта",
+                        "type": "string"
+                    },
+                    "toId": {
+                        "title": "Вставить к указанному объекту",
+                        "type": "integer"
+                    },
+                    "toType": {
+                        "title": "Обязательный параметр при указанном $toId",
+                        "default": "in_group",
+                        "allOf": [
+                            {
+                                "$ref": "../../../AiTracker_2/Types/Prompts/ToType.json#/components/schemas/AiTracker_2.Types.Prompts.ToType"
+                            }
+                        ]
+                    },
+                    "tags": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "name",
+                    "toId",
+                    "project_id"
+                ],
+                "title": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Add"
+            },
+            "AiTracker_2.Methods.Prompts.Add.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

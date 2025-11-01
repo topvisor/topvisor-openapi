@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.Settings.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.Settings.Edit": {
+                "type": "object",
+                "properties": {
+                    "brand_name": {
+                        "title": "Имя бренда\n\nУчаствует в поиске в ответе ИИ",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "aliases": {
+                        "title": "Дополнительные имена для поиска в ответе ИИ",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                            }
+                        ]
+                    },
+                    "models": {
+                        "title": "Список моделей ИИ",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
+                            }
+                        ]
+                    },
+                    "context_lang": {
+                        "title": "Настройки контекста: Язык",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "context_location": {
+                        "title": "Настройки контекста: Регион",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Edit"
+            },
+            "AiTracker_2.Methods.Settings.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

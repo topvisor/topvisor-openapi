@@ -5,6 +5,67 @@
         "version": "2.0.0"
     },
     "paths": {
+        "/get/aitracker_2/": {
+            "post": {
+                "operationId": "GetAitracker2",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Get.json#/components/schemas/AiTracker_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Get.json#/components/schemas/AiTracker_2.Methods.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/analytics_2/": {
             "post": {
                 "operationId": "AddAnalytics2",
@@ -2930,18 +2991,18 @@
                 }
             }
         },
-        "/get/ai_2/tracker/": {
+        "/add/aitracker_2/prompts/": {
             "post": {
-                "operationId": "GetAi2Tracker",
+                "operationId": "AddAitracker2Prompts",
                 "tags": [
-                    "Ai_2"
+                    "Aitracker_2"
                 ],
-                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Get",
+                "summary": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Get.json#/components/schemas/Ai_2.Methods.Tracker.Get"
+                                "$ref": "AiTracker_2/Methods/Prompts/Add.json#/components/schemas/AiTracker_2.Methods.Prompts.Add"
                             }
                         }
                     },
@@ -2960,7 +3021,60 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Get.json#/components/schemas/Ai_2.Methods.Tracker.Get.Exec"
+                                                            "$ref": "AiTracker_2/Methods/Prompts/Add.json#/components/schemas/AiTracker_2.Methods.Prompts.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/aitracker_2/prompts/": {
+            "post": {
+                "operationId": "GetAitracker2Prompts",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Prompts/Get.json#/components/schemas/AiTracker_2.Methods.Prompts.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Prompts/Get.json#/components/schemas/AiTracker_2.Methods.Prompts.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -2984,6 +3098,59 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/aitracker_2/settings/": {
+            "post": {
+                "operationId": "EditAitracker2Settings",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Settings/Edit.json#/components/schemas/AiTracker_2.Methods.Settings.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Settings/Edit.json#/components/schemas/AiTracker_2.Methods.Settings.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
                                 }
                             }
                         }
@@ -14924,18 +15091,18 @@
                 }
             }
         },
-        "/add/ai_2/tracker/prompts/": {
+        "/edit/aitracker_2/checker/go/": {
             "post": {
-                "operationId": "AddAi2TrackerPrompts",
+                "operationId": "EditAitracker2CheckerGo",
                 "tags": [
-                    "Ai_2"
+                    "Aitracker_2"
                 ],
-                "summary": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Add",
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Checker\\Go\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Prompts/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add"
+                                "$ref": "AiTracker_2/Methods/Checker/Go/Edit.json#/components/schemas/AiTracker_2.Methods.Checker.Go.Edit"
                             }
                         }
                     },
@@ -14954,7 +15121,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Prompts/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Add.Exec"
+                                                            "$ref": "AiTracker_2/Methods/Checker/Go/Edit.json#/components/schemas/AiTracker_2.Methods.Checker.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14963,62 +15130,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/ai_2/tracker/prompts/": {
-            "post": {
-                "operationId": "GetAi2TrackerPrompts",
-                "tags": [
-                    "Ai_2"
-                ],
-                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Prompts/Get.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Prompts/Get.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -15030,7 +15141,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -15038,18 +15149,18 @@
                 }
             }
         },
-        "/edit/ai_2/tracker/settings/": {
+        "/get/aitracker_2/checker/price/": {
             "post": {
-                "operationId": "EditAi2TrackerSettings",
+                "operationId": "GetAitracker2CheckerPrice",
                 "tags": [
-                    "Ai_2"
+                    "Aitracker_2"
                 ],
-                "summary": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Settings\\Edit",
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Checker\\Price\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit"
+                                "$ref": "AiTracker_2/Methods/Checker/Price/Get.json#/components/schemas/AiTracker_2.Methods.Checker.Price.Get"
                             }
                         }
                     },
@@ -15068,7 +15179,65 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Settings/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Settings.Edit.Exec"
+                                                            "$ref": "AiTracker_2/Methods/Checker/Price/Get.json#/components/schemas/AiTracker_2.Methods.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/aitracker_2/prompts/groups/": {
+            "post": {
+                "operationId": "AddAitracker2PromptsGroups",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Groups\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Prompts/Groups/Add.json#/components/schemas/AiTracker_2.Methods.Prompts.Groups.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Prompts/Groups/Add.json#/components/schemas/AiTracker_2.Methods.Prompts.Groups.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -27308,175 +27477,6 @@
                 }
             }
         },
-        "/edit/ai_2/tracker/checker/go/": {
-            "post": {
-                "operationId": "EditAi2TrackerCheckerGo",
-                "tags": [
-                    "Ai_2"
-                ],
-                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Go\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Checker/Go/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Go.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Checker/Go/Edit.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Go.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/ai_2/tracker/checker/price/": {
-            "post": {
-                "operationId": "GetAi2TrackerCheckerPrice",
-                "tags": [
-                    "Ai_2"
-                ],
-                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Checker\\Price\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Checker/Price/Get.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Price.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Checker/Price/Get.json#/components/schemas/Ai_2.Methods.Tracker.Checker.Price.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/ai_2/tracker/prompts/groups/": {
-            "post": {
-                "operationId": "AddAi2TrackerPromptsGroups",
-                "tags": [
-                    "Ai_2"
-                ],
-                "summary": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Ai_2\\Methods\\Tracker\\Prompts\\Groups\\Add",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Ai_2/Methods/Tracker/Prompts/Groups/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Groups.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Ai_2/Methods/Tracker/Prompts/Groups/Add.json#/components/schemas/Ai_2.Methods.Tracker.Prompts.Groups.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/audit_2/audit/checker/go/": {
             "post": {
                 "operationId": "EditAudit2AuditCheckerGo",
@@ -31284,8 +31284,8 @@
             "description": "admin_2"
         },
         {
-            "name": "Ai_2",
-            "description": "ai_2"
+            "name": "Aitracker_2",
+            "description": "aitracker_2"
         },
         {
             "name": "Analytics_2",

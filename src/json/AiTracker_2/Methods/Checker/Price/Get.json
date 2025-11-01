@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.Checker.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.Checker.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "debug": {
+                        "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
+                    }
+                },
+                "required": [],
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Checker\\Price\\Get"
+            },
+            "AiTracker_2.Methods.Checker.Price.Get.Exec": {
+                "type": "object",
+                "additionalProperties": {}
+            }
+        }
+    }
+}
