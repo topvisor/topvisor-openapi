@@ -7,11 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение настроек AI-трекера
+        /**
+         * Изменение настроек AI-трекера
          *
          *     Для получения текущих настроек используйте: /get/projects_2/projects/
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
+         * @description @see \Services\AiTracker_2\Objects\Settings
+         */
         "AiTracker_2.Methods.Settings.Edit": {
             /** Имя бренда
              *
@@ -25,6 +28,8 @@ export interface components {
             context_lang?: string | null;
             /** Настройки контекста: Регион */
             context_location?: string | null;
+            /** Пользовательский контекст */
+            context_custom?: string | null;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "AiTracker_2.Methods.Settings.Edit.Exec": number;

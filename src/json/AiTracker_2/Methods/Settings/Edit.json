@@ -43,6 +43,11 @@
                         "nullable": true,
                         "type": "string"
                     },
+                    "context_custom": {
+                        "title": "Пользовательский контекст",
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
@@ -50,7 +55,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Edit"
+                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Edit",
+                "description": "@see \\Services\\AiTracker_2\\Objects\\Settings"
             },
             "AiTracker_2.Methods.Settings.Edit.Exec": {
                 "type": "integer"

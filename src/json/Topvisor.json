@@ -3155,7 +3155,8 @@
                             }
                         }
                     }
-                }
+                },
+                "description": "@see \\Services\\AiTracker_2\\Objects\\Settings"
             }
         },
         "/get/annotations_2/my/": {

@@ -1963,6 +1963,7 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+      description: '@see \Services\AiTracker_2\Objects\Settings'
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -22430,6 +22431,10 @@ components:
           title: 'Настройки контекста: Регион'
           nullable: true
           type: string
+        context_custom:
+          title: Пользовательский контекст
+          nullable: true
+          type: string
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -22440,6 +22445,7 @@ components:
         Для получения текущих настроек используйте: /get/projects_2/projects/
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
+      description: '@see \Services\AiTracker_2\Objects\Settings'
     AiTracker_2.Methods.Settings.Edit.Exec:
       type: integer
     Annotations_2.Methods.My.Get:
