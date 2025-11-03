@@ -1091,11 +1091,14 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение настроек AI-трекера
+    /**
+     * Изменение настроек AI-трекера
      *
      *     Для получения текущих настроек используйте: /get/projects_2/projects/
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
+     * @description @see \Services\AiTracker_2\Objects\Settings
+     */
     "/edit/aitracker_2/settings/": {
         parameters: {
             query?: never;
@@ -7819,8 +7822,8 @@ export interface paths {
     };  
     /** Добавление нового слоя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Add */
-    "/add/robot_2/admin/layer/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Add */
+    "/add/robot_2/admin/layers/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7829,7 +7832,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddRobot2AdminLayer"];
+        post: operations["AddRobot2AdminLayers"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7838,8 +7841,8 @@ export interface paths {
     };  
     /** Редактирование слоя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Edit */
-    "/edit/robot_2/admin/layer/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Edit */
+    "/edit/robot_2/admin/layers/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7848,7 +7851,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditRobot2AdminLayer"];
+        post: operations["EditRobot2AdminLayers"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7857,8 +7860,8 @@ export interface paths {
     };  
     /** Получение списка Слоев
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Get */
-    "/get/robot_2/admin/layer/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Get */
+    "/get/robot_2/admin/layers/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7867,7 +7870,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetRobot2AdminLayer"];
+        post: operations["GetRobot2AdminLayers"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7876,8 +7879,8 @@ export interface paths {
     };  
     /** Добавление партнера
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Add */
-    "/add/robot_2/admin/partner/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Add */
+    "/add/robot_2/admin/partners/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7886,7 +7889,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddRobot2AdminPartner"];
+        post: operations["AddRobot2AdminPartners"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7895,8 +7898,8 @@ export interface paths {
     };  
     /** Редактирование партнера
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Edit */
-    "/edit/robot_2/admin/partner/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Edit */
+    "/edit/robot_2/admin/partners/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7905,7 +7908,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditRobot2AdminPartner"];
+        post: operations["EditRobot2AdminPartners"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7914,8 +7917,8 @@ export interface paths {
     };  
     /** Получение списка партнеров
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Get */
-    "/get/robot_2/admin/partner/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Get */
+    "/get/robot_2/admin/partners/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7924,7 +7927,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetRobot2AdminPartner"];
+        post: operations["GetRobot2AdminPartners"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7933,8 +7936,8 @@ export interface paths {
     };  
     /** Добавление сервера
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Add */
-    "/add/robot_2/admin/server/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Add */
+    "/add/robot_2/admin/servers/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7943,7 +7946,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddRobot2AdminServer"];
+        post: operations["AddRobot2AdminServers"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7952,8 +7955,8 @@ export interface paths {
     };  
     /** Редактирование серверов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Edit */
-    "/edit/robot_2/admin/server/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Edit */
+    "/edit/robot_2/admin/servers/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7962,7 +7965,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditRobot2AdminServer"];
+        post: operations["EditRobot2AdminServers"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7971,8 +7974,8 @@ export interface paths {
     };  
     /** Получение списка серверов
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Get */
-    "/get/robot_2/admin/server/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Get */
+    "/get/robot_2/admin/servers/": {
         parameters: {
             query?: never;
             header?: never;
@@ -7981,7 +7984,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetRobot2AdminServer"];
+        post: operations["GetRobot2AdminServers"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10595,8 +10598,8 @@ export interface paths {
     };  
     /** Получение следующего id ключа для вставки в таблицу ключей
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\AutoIncrement\Get */
-    "/get/robot_2/admin/key/autoIncrement/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\AutoIncrement\Get */
+    "/get/robot_2/admin/keys/autoIncrement/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10605,7 +10608,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetRobot2AdminKeyAutoIncrement"];
+        post: operations["GetRobot2AdminKeysAutoIncrement"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10614,8 +10617,8 @@ export interface paths {
     };  
     /** Добавление домена для слоя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Add */
-    "/add/robot_2/admin/key/domain/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Add */
+    "/add/robot_2/admin/keys/domain/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10624,7 +10627,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddRobot2AdminKeyDomain"];
+        post: operations["AddRobot2AdminKeysDomain"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10633,8 +10636,8 @@ export interface paths {
     };  
     /** Удаление домена для слоя
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Del */
-    "/del/robot_2/admin/key/domain/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Del */
+    "/del/robot_2/admin/keys/domain/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10643,7 +10646,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["DelRobot2AdminKeyDomain"];
+        post: operations["DelRobot2AdminKeysDomain"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10652,8 +10655,8 @@ export interface paths {
     };  
     /** Добавление ip
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Add */
-    "/add/robot_2/admin/key/ipCSV/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Add */
+    "/add/robot_2/admin/keys/ipCSV/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10662,7 +10665,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddRobot2AdminKeyIpCSV"];
+        post: operations["AddRobot2AdminKeysIpCSV"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10671,8 +10674,8 @@ export interface paths {
     };  
     /** Получить информацию о слое
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Get */
-    "/get/robot_2/admin/key/ipCSV/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Get */
+    "/get/robot_2/admin/keys/ipCSV/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10681,7 +10684,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetRobot2AdminKeyIpCSV"];
+        post: operations["GetRobot2AdminKeysIpCSV"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10690,8 +10693,8 @@ export interface paths {
     };  
     /** Редактирование статуса IP
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Status\Edit */
-    "/edit/robot_2/admin/key/status/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Status\Edit */
+    "/edit/robot_2/admin/keys/status/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10700,7 +10703,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditRobot2AdminKeyStatus"];
+        post: operations["EditRobot2AdminKeysStatus"];
         delete?: never;
         options?: never;
         head?: never;
@@ -21466,7 +21469,7 @@ export interface operations {
             };
         };
     };
-    AddRobot2AdminLayer: {
+    AddRobot2AdminLayers: {
         parameters: {
             query?: never;
             header?: never;
@@ -21475,7 +21478,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Layer/Add.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Add'];
+                "application/json": import('./Robot_2/Methods/Admin/Layers/Add.ts').components['schemas']['Robot_2.Methods.Admin.Layers.Add'];
             };
         };
         responses: {
@@ -21485,13 +21488,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Layer/Add.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Add.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Layers/Add.ts').components['schemas']['Robot_2.Methods.Admin.Layers.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    EditRobot2AdminLayer: {
+    EditRobot2AdminLayers: {
         parameters: {
             query?: never;
             header?: never;
@@ -21500,7 +21503,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Layer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Edit'];
+                "application/json": import('./Robot_2/Methods/Admin/Layers/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Layers.Edit'];
             };
         };
         responses: {
@@ -21510,14 +21513,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Layer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Edit.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Layers/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Layers.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
                 };
             };
         };
     };
-    GetRobot2AdminLayer: {
+    GetRobot2AdminLayers: {
         parameters: {
             query?: never;
             header?: never;
@@ -21526,7 +21529,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Layer/Get.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Get'];
+                "application/json": import('./Robot_2/Methods/Admin/Layers/Get.ts').components['schemas']['Robot_2.Methods.Admin.Layers.Get'];
             };
         };
         responses: {
@@ -21536,14 +21539,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Layer/Get.ts').components['schemas']['Robot_2.Methods.Admin.Layer.Get.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Layers/Get.ts').components['schemas']['Robot_2.Methods.Admin.Layers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
                 };
             };
         };
     };
-    AddRobot2AdminPartner: {
+    AddRobot2AdminPartners: {
         parameters: {
             query?: never;
             header?: never;
@@ -21552,7 +21555,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Partner/Add.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Add'];
+                "application/json": import('./Robot_2/Methods/Admin/Partners/Add.ts').components['schemas']['Robot_2.Methods.Admin.Partners.Add'];
             };
         };
         responses: {
@@ -21562,13 +21565,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Partner/Add.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Add.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Partners/Add.ts').components['schemas']['Robot_2.Methods.Admin.Partners.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    EditRobot2AdminPartner: {
+    EditRobot2AdminPartners: {
         parameters: {
             query?: never;
             header?: never;
@@ -21577,7 +21580,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Partner/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Edit'];
+                "application/json": import('./Robot_2/Methods/Admin/Partners/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Partners.Edit'];
             };
         };
         responses: {
@@ -21587,14 +21590,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Partner/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Edit.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Partners/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Partners.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
                 };
             };
         };
     };
-    GetRobot2AdminPartner: {
+    GetRobot2AdminPartners: {
         parameters: {
             query?: never;
             header?: never;
@@ -21603,7 +21606,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Partner/Get.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Get'];
+                "application/json": import('./Robot_2/Methods/Admin/Partners/Get.ts').components['schemas']['Robot_2.Methods.Admin.Partners.Get'];
             };
         };
         responses: {
@@ -21613,14 +21616,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Partner/Get.ts').components['schemas']['Robot_2.Methods.Admin.Partner.Get.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Partners/Get.ts').components['schemas']['Robot_2.Methods.Admin.Partners.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
                 };
             };
         };
     };
-    AddRobot2AdminServer: {
+    AddRobot2AdminServers: {
         parameters: {
             query?: never;
             header?: never;
@@ -21629,7 +21632,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Server/Add.ts').components['schemas']['Robot_2.Methods.Admin.Server.Add'];
+                "application/json": import('./Robot_2/Methods/Admin/Servers/Add.ts').components['schemas']['Robot_2.Methods.Admin.Servers.Add'];
             };
         };
         responses: {
@@ -21639,13 +21642,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Server/Add.ts').components['schemas']['Robot_2.Methods.Admin.Server.Add.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Servers/Add.ts').components['schemas']['Robot_2.Methods.Admin.Servers.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    EditRobot2AdminServer: {
+    EditRobot2AdminServers: {
         parameters: {
             query?: never;
             header?: never;
@@ -21654,7 +21657,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Server/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Server.Edit'];
+                "application/json": import('./Robot_2/Methods/Admin/Servers/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Servers.Edit'];
             };
         };
         responses: {
@@ -21664,14 +21667,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Server/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Server.Edit.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Servers/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Servers.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
                 };
             };
         };
     };
-    GetRobot2AdminServer: {
+    GetRobot2AdminServers: {
         parameters: {
             query?: never;
             header?: never;
@@ -21680,7 +21683,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Server/Get.ts').components['schemas']['Robot_2.Methods.Admin.Server.Get'];
+                "application/json": import('./Robot_2/Methods/Admin/Servers/Get.ts').components['schemas']['Robot_2.Methods.Admin.Servers.Get'];
             };
         };
         responses: {
@@ -21690,7 +21693,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Server/Get.ts').components['schemas']['Robot_2.Methods.Admin.Server.Get.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Servers/Get.ts').components['schemas']['Robot_2.Methods.Admin.Servers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
                 };
@@ -25039,7 +25042,7 @@ export interface operations {
             };
         };
     };
-    GetRobot2AdminKeyAutoIncrement: {
+    GetRobot2AdminKeysAutoIncrement: {
         parameters: {
             query?: never;
             header?: never;
@@ -25048,7 +25051,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Key/AutoIncrement/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.AutoIncrement.Get'];
+                "application/json": import('./Robot_2/Methods/Admin/Keys/AutoIncrement/Get.ts').components['schemas']['Robot_2.Methods.Admin.Keys.AutoIncrement.Get'];
             };
         };
         responses: {
@@ -25058,13 +25061,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Key/AutoIncrement/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Keys/AutoIncrement/Get.ts').components['schemas']['Robot_2.Methods.Admin.Keys.AutoIncrement.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    AddRobot2AdminKeyDomain: {
+    AddRobot2AdminKeysDomain: {
         parameters: {
             query?: never;
             header?: never;
@@ -25073,7 +25076,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Key/Domain/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Add'];
+                "application/json": import('./Robot_2/Methods/Admin/Keys/Domain/Add.ts').components['schemas']['Robot_2.Methods.Admin.Keys.Domain.Add'];
             };
         };
         responses: {
@@ -25083,13 +25086,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Key/Domain/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Add.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Keys/Domain/Add.ts').components['schemas']['Robot_2.Methods.Admin.Keys.Domain.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    DelRobot2AdminKeyDomain: {
+    DelRobot2AdminKeysDomain: {
         parameters: {
             query?: never;
             header?: never;
@@ -25098,7 +25101,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Key/Domain/Del.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Del'];
+                "application/json": import('./Robot_2/Methods/Admin/Keys/Domain/Del.ts').components['schemas']['Robot_2.Methods.Admin.Keys.Domain.Del'];
             };
         };
         responses: {
@@ -25108,13 +25111,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Key/Domain/Del.ts').components['schemas']['Robot_2.Methods.Admin.Key.Domain.Del.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Keys/Domain/Del.ts').components['schemas']['Robot_2.Methods.Admin.Keys.Domain.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    AddRobot2AdminKeyIpCSV: {
+    AddRobot2AdminKeysIpCSV: {
         parameters: {
             query?: never;
             header?: never;
@@ -25123,7 +25126,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Key/IpCSV/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Add'];
+                "application/json": import('./Robot_2/Methods/Admin/Keys/IpCSV/Add.ts').components['schemas']['Robot_2.Methods.Admin.Keys.IpCSV.Add'];
             };
         };
         responses: {
@@ -25133,13 +25136,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Key/IpCSV/Add.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Add.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Keys/IpCSV/Add.ts').components['schemas']['Robot_2.Methods.Admin.Keys.IpCSV.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
     };
-    GetRobot2AdminKeyIpCSV: {
+    GetRobot2AdminKeysIpCSV: {
         parameters: {
             query?: never;
             header?: never;
@@ -25148,7 +25151,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Key/IpCSV/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Get'];
+                "application/json": import('./Robot_2/Methods/Admin/Keys/IpCSV/Get.ts').components['schemas']['Robot_2.Methods.Admin.Keys.IpCSV.Get'];
             };
         };
         responses: {
@@ -25158,14 +25161,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Key/IpCSV/Get.ts').components['schemas']['Robot_2.Methods.Admin.Key.IpCSV.Get.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Keys/IpCSV/Get.ts').components['schemas']['Robot_2.Methods.Admin.Keys.IpCSV.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];
                 };
             };
         };
     };
-    EditRobot2AdminKeyStatus: {
+    EditRobot2AdminKeysStatus: {
         parameters: {
             query?: never;
             header?: never;
@@ -25174,7 +25177,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Robot_2/Methods/Admin/Key/Status/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Key.Status.Edit'];
+                "application/json": import('./Robot_2/Methods/Admin/Keys/Status/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Keys.Status.Edit'];
             };
         };
         responses: {
@@ -25184,7 +25187,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/Key/Status/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Key.Status.Edit.Exec'];
+                        result: import('./Robot_2/Methods/Admin/Keys/Status/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Keys.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

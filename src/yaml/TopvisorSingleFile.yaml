@@ -1941,6 +1941,7 @@ paths:
         Для получения текущих настроек используйте: /get/projects_2/projects/
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
+      description: '@see \Services\AiTracker_2\Objects\Settings'
       requestBody:
         content:
           application/json:
@@ -1963,7 +1964,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-      description: '@see \Services\AiTracker_2\Objects\Settings'
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -13140,20 +13140,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Anons'
-  /add/robot_2/admin/layer/:
+  /add/robot_2/admin/layers/:
     post:
-      operationId: AddRobot2AdminLayer
+      operationId: AddRobot2AdminLayers
       tags:
         - Robot_2
       summary: |-
         Добавление нового слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Add
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Add
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Layer.Add'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Layers.Add'
         required: true
       responses:
         '200':
@@ -13166,25 +13166,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Layer.Add.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Layers.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/robot_2/admin/layer/:
+  /edit/robot_2/admin/layers/:
     post:
-      operationId: EditRobot2AdminLayer
+      operationId: EditRobot2AdminLayers
       tags:
         - Robot_2
       summary: |-
         Редактирование слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Edit
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Layer.Edit'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Layers.Edit'
         required: true
       responses:
         '200':
@@ -13197,7 +13197,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Layer.Edit.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Layers.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13205,20 +13205,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Layers'
-  /get/robot_2/admin/layer/:
+  /get/robot_2/admin/layers/:
     post:
-      operationId: GetRobot2AdminLayer
+      operationId: GetRobot2AdminLayers
       tags:
         - Robot_2
       summary: |-
         Получение списка Слоев
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Get
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Get
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Layer.Get'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Layers.Get'
         required: true
       responses:
         '200':
@@ -13231,7 +13231,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Layer.Get.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Layers.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13240,20 +13240,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Layers'
-  /add/robot_2/admin/partner/:
+  /add/robot_2/admin/partners/:
     post:
-      operationId: AddRobot2AdminPartner
+      operationId: AddRobot2AdminPartners
       tags:
         - Robot_2
       summary: |-
         Добавление партнера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Add
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Add
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Partner.Add'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Partners.Add'
         required: true
       responses:
         '200':
@@ -13266,25 +13266,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Partner.Add.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Partners.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/robot_2/admin/partner/:
+  /edit/robot_2/admin/partners/:
     post:
-      operationId: EditRobot2AdminPartner
+      operationId: EditRobot2AdminPartners
       tags:
         - Robot_2
       summary: |-
         Редактирование партнера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Edit
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Partner.Edit'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Partners.Edit'
         required: true
       responses:
         '200':
@@ -13297,7 +13297,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Partner.Edit.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Partners.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13305,20 +13305,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Partners'
-  /get/robot_2/admin/partner/:
+  /get/robot_2/admin/partners/:
     post:
-      operationId: GetRobot2AdminPartner
+      operationId: GetRobot2AdminPartners
       tags:
         - Robot_2
       summary: |-
         Получение списка партнеров
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Get
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Get
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Partner.Get'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Partners.Get'
         required: true
       responses:
         '200':
@@ -13331,7 +13331,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Partner.Get.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Partners.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13340,20 +13340,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Partners'
-  /add/robot_2/admin/server/:
+  /add/robot_2/admin/servers/:
     post:
-      operationId: AddRobot2AdminServer
+      operationId: AddRobot2AdminServers
       tags:
         - Robot_2
       summary: |-
         Добавление сервера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Add
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Add
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Server.Add'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Servers.Add'
         required: true
       responses:
         '200':
@@ -13366,25 +13366,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Server.Add.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Servers.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/robot_2/admin/server/:
+  /edit/robot_2/admin/servers/:
     post:
-      operationId: EditRobot2AdminServer
+      operationId: EditRobot2AdminServers
       tags:
         - Robot_2
       summary: |-
         Редактирование серверов
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Edit
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Server.Edit'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Servers.Edit'
         required: true
       responses:
         '200':
@@ -13397,7 +13397,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Server.Edit.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Servers.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13405,20 +13405,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Servers'
-  /get/robot_2/admin/server/:
+  /get/robot_2/admin/servers/:
     post:
-      operationId: GetRobot2AdminServer
+      operationId: GetRobot2AdminServers
       tags:
         - Robot_2
       summary: |-
         Получение списка серверов
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Get
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Get
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Server.Get'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Servers.Get'
         required: true
       responses:
         '200':
@@ -13431,7 +13431,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Server.Get.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Servers.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -17614,20 +17614,20 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/robot_2/admin/key/autoIncrement/:
+  /get/robot_2/admin/keys/autoIncrement/:
     post:
-      operationId: GetRobot2AdminKeyAutoIncrement
+      operationId: GetRobot2AdminKeysAutoIncrement
       tags:
         - Robot_2
       summary: |-
         Получение следующего id ключа для вставки в таблицу ключей
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\AutoIncrement\Get
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\AutoIncrement\Get
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.AutoIncrement.Get'
         required: true
       responses:
         '200':
@@ -17640,25 +17640,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.AutoIncrement.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /add/robot_2/admin/key/domain/:
+  /add/robot_2/admin/keys/domain/:
     post:
-      operationId: AddRobot2AdminKeyDomain
+      operationId: AddRobot2AdminKeysDomain
       tags:
         - Robot_2
       summary: |-
         Добавление домена для слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Add
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Add
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Add'
         required: true
       responses:
         '200':
@@ -17671,25 +17671,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /del/robot_2/admin/key/domain/:
+  /del/robot_2/admin/keys/domain/:
     post:
-      operationId: DelRobot2AdminKeyDomain
+      operationId: DelRobot2AdminKeysDomain
       tags:
         - Robot_2
       summary: |-
         Удаление домена для слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Del
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Del
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Del'
         required: true
       responses:
         '200':
@@ -17702,25 +17702,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Del.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /add/robot_2/admin/key/ipCSV/:
+  /add/robot_2/admin/keys/ipCSV/:
     post:
-      operationId: AddRobot2AdminKeyIpCSV
+      operationId: AddRobot2AdminKeysIpCSV
       tags:
         - Robot_2
       summary: |-
         Добавление ip
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Add
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Add
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Add'
         required: true
       responses:
         '200':
@@ -17733,25 +17733,25 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/robot_2/admin/key/ipCSV/:
+  /get/robot_2/admin/keys/ipCSV/:
     post:
-      operationId: GetRobot2AdminKeyIpCSV
+      operationId: GetRobot2AdminKeysIpCSV
       tags:
         - Robot_2
       summary: |-
         Получить информацию о слое
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Get
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Get
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Get'
         required: true
       responses:
         '200':
@@ -17764,7 +17764,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -17773,20 +17773,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.AdminLayers.Key'
-  /edit/robot_2/admin/key/status/:
+  /edit/robot_2/admin/keys/status/:
     post:
-      operationId: EditRobot2AdminKeyStatus
+      operationId: EditRobot2AdminKeysStatus
       tags:
         - Robot_2
       summary: |-
         Редактирование статуса IP
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Status\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Status\Edit
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit'
+              $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.Status.Edit'
         required: true
       responses:
         '200':
@@ -17799,7 +17799,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit.Exec'
+                            $ref: '#/components/schemas/Robot_2.Methods.Admin.Keys.Status.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -38444,7 +38444,7 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.AdminLayers.Anons'
-    Robot_2.Methods.Admin.Layer.Add:
+    Robot_2.Methods.Admin.Layers.Add:
       type: object
       properties:
         id:
@@ -38455,10 +38455,10 @@ components:
       title: |-
         Добавление нового слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Add
-    Robot_2.Methods.Admin.Layer.Add.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Add
+    Robot_2.Methods.Admin.Layers.Add.Exec:
       type: integer
-    Robot_2.Methods.Admin.Layer.Edit:
+    Robot_2.Methods.Admin.Layers.Edit:
       type: object
       properties:
         frequency:
@@ -38543,8 +38543,8 @@ components:
       title: |-
         Редактирование слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Edit
-    Robot_2.Methods.Admin.Layer.Edit.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Edit
+    Robot_2.Methods.Admin.Layers.Edit.Exec:
       type: integer
     Models.AdminLayers.Layers:
       properties:
@@ -38597,7 +38597,7 @@ components:
           nullable: true
         server_ip:
           nullable: true
-    Robot_2.Methods.Admin.Layer.Get:
+    Robot_2.Methods.Admin.Layers.Get:
       type: object
       properties:
         fields:
@@ -38618,13 +38618,13 @@ components:
       title: |-
         Получение списка Слоев
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layer\Get
-    Robot_2.Methods.Admin.Layer.Get.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Get
+    Robot_2.Methods.Admin.Layers.Get.Exec:
       nullable: true
       type: array
       items:
         $ref: '#/components/schemas/Models.AdminLayers.Layers'
-    Robot_2.Methods.Admin.Partner.Add:
+    Robot_2.Methods.Admin.Partners.Add:
       type: object
       properties:
         site:
@@ -38635,11 +38635,11 @@ components:
       title: |-
         Добавление партнера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Add
-    Robot_2.Methods.Admin.Partner.Add.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Add
+    Robot_2.Methods.Admin.Partners.Add.Exec:
       nullable: true
       type: integer
-    Robot_2.Methods.Admin.Partner.Edit:
+    Robot_2.Methods.Admin.Partners.Edit:
       type: object
       properties:
         site:
@@ -38679,8 +38679,8 @@ components:
       title: |-
         Редактирование партнера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Edit
-    Robot_2.Methods.Admin.Partner.Edit.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Edit
+    Robot_2.Methods.Admin.Partners.Edit.Exec:
       nullable: true
       type: integer
     Models.AdminLayers.Partners:
@@ -38699,7 +38699,7 @@ components:
           nullable: true
         deleted:
           nullable: true
-    Robot_2.Methods.Admin.Partner.Get:
+    Robot_2.Methods.Admin.Partners.Get:
       type: object
       properties:
         fields:
@@ -38720,13 +38720,13 @@ components:
       title: |-
         Получение списка партнеров
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partner\Get
-    Robot_2.Methods.Admin.Partner.Get.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Partners\Get
+    Robot_2.Methods.Admin.Partners.Get.Exec:
       nullable: true
       type: array
       items:
         $ref: '#/components/schemas/Models.AdminLayers.Partners'
-    Robot_2.Methods.Admin.Server.Add:
+    Robot_2.Methods.Admin.Servers.Add:
       type: object
       properties:
         name:
@@ -38741,10 +38741,10 @@ components:
       title: |-
         Добавление сервера
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Add
-    Robot_2.Methods.Admin.Server.Add.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Add
+    Robot_2.Methods.Admin.Servers.Add.Exec:
       type: integer
-    Robot_2.Methods.Admin.Server.Edit:
+    Robot_2.Methods.Admin.Servers.Edit:
       type: object
       properties:
         name:
@@ -38825,8 +38825,8 @@ components:
       title: |-
         Редактирование серверов
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Edit
-    Robot_2.Methods.Admin.Server.Edit.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Edit
+    Robot_2.Methods.Admin.Servers.Edit.Exec:
       nullable: true
     Models.AdminLayers.Servers:
       properties:
@@ -38872,7 +38872,7 @@ components:
           nullable: true
         deleted:
           nullable: true
-    Robot_2.Methods.Admin.Server.Get:
+    Robot_2.Methods.Admin.Servers.Get:
       type: object
       properties:
         fields:
@@ -38893,8 +38893,8 @@ components:
       title: |-
         Получение списка серверов
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Server\Get
-    Robot_2.Methods.Admin.Server.Get.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Get
+    Robot_2.Methods.Admin.Servers.Get.Exec:
       nullable: true
       type: array
       items:
@@ -43499,17 +43499,17 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get
     Projects_2.Methods.Tasks.Volumes.Price.Get.Exec:
       type: number
-    Robot_2.Methods.Admin.Key.AutoIncrement.Get:
+    Robot_2.Methods.Admin.Keys.AutoIncrement.Get:
       type: object
       properties: {}
       required: []
       title: |-
         Получение следующего id ключа для вставки в таблицу ключей
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\AutoIncrement\Get
-    Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\AutoIncrement\Get
+    Robot_2.Methods.Admin.Keys.AutoIncrement.Get.Exec:
       type: integer
-    Robot_2.Methods.Admin.Key.Domain.Add:
+    Robot_2.Methods.Admin.Keys.Domain.Add:
       type: object
       properties:
         layer_id:
@@ -43528,11 +43528,11 @@ components:
       title: |-
         Добавление домена для слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Add
-    Robot_2.Methods.Admin.Key.Domain.Add.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Add
+    Robot_2.Methods.Admin.Keys.Domain.Add.Exec:
       nullable: true
       type: integer
-    Robot_2.Methods.Admin.Key.Domain.Del:
+    Robot_2.Methods.Admin.Keys.Domain.Del:
       type: object
       properties:
         layer_id:
@@ -43551,11 +43551,11 @@ components:
       title: |-
         Удаление домена для слоя
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Domain\Del
-    Robot_2.Methods.Admin.Key.Domain.Del.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Del
+    Robot_2.Methods.Admin.Keys.Domain.Del.Exec:
       nullable: true
       type: integer
-    Robot_2.Methods.Admin.Key.IpCSV.Add:
+    Robot_2.Methods.Admin.Keys.IpCSV.Add:
       type: object
       properties:
         list_ip:
@@ -43566,11 +43566,11 @@ components:
       title: |-
         Добавление ip
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Add
-    Robot_2.Methods.Admin.Key.IpCSV.Add.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Add
+    Robot_2.Methods.Admin.Keys.IpCSV.Add.Exec:
       nullable: true
       type: integer
-    Robot_2.Methods.Admin.Key.IpCSV.Get:
+    Robot_2.Methods.Admin.Keys.IpCSV.Get:
       type: object
       properties:
         layer_id:
@@ -43593,8 +43593,8 @@ components:
       title: |-
         Получить информацию о слое
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\IpCSV\Get
-    Robot_2.Methods.Admin.Key.IpCSV.Get.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Get
+    Robot_2.Methods.Admin.Keys.IpCSV.Get.Exec:
       nullable: true
     Models.AdminLayers.Key:
       properties:
@@ -43635,7 +43635,7 @@ components:
           nullable: true
         stop_to:
           nullable: true
-    Robot_2.Methods.Admin.Key.Status.Edit:
+    Robot_2.Methods.Admin.Keys.Status.Edit:
       type: object
       properties:
         layer_id:
@@ -43656,8 +43656,8 @@ components:
       title: |-
         Редактирование статуса IP
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Key\Status\Edit
-    Robot_2.Methods.Admin.Key.Status.Edit.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Status\Edit
+    Robot_2.Methods.Admin.Keys.Status.Edit.Exec:
       nullable: true
       type: integer
     Robot_2.Methods.Admin.Proxy.ProxyServer.Edit:

@@ -3112,6 +3112,7 @@
                     "Aitracker_2"
                 ],
                 "summary": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Edit",
+                "description": "@see \\Services\\AiTracker_2\\Objects\\Settings",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3155,8 +3156,7 @@
                             }
                         }
                     }
-                },
-                "description": "@see \\Services\\AiTracker_2\\Objects\\Settings"
+                }
             }
         },
         "/get/annotations_2/my/": {
@@ -22099,18 +22099,18 @@
                 }
             }
         },
-        "/add/robot_2/admin/layer/": {
+        "/add/robot_2/admin/layers/": {
             "post": {
-                "operationId": "AddRobot2AdminLayer",
+                "operationId": "AddRobot2AdminLayers",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Добавление нового слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Add",
+                "summary": "Добавление нового слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Layer/Add.json#/components/schemas/Robot_2.Methods.Admin.Layer.Add"
+                                "$ref": "Robot_2/Methods/Admin/Layers/Add.json#/components/schemas/Robot_2.Methods.Admin.Layers.Add"
                             }
                         }
                     },
@@ -22129,7 +22129,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Layer/Add.json#/components/schemas/Robot_2.Methods.Admin.Layer.Add.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Layers/Add.json#/components/schemas/Robot_2.Methods.Admin.Layers.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22152,18 +22152,18 @@
                 }
             }
         },
-        "/edit/robot_2/admin/layer/": {
+        "/edit/robot_2/admin/layers/": {
             "post": {
-                "operationId": "EditRobot2AdminLayer",
+                "operationId": "EditRobot2AdminLayers",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Редактирование слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Edit",
+                "summary": "Редактирование слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Layer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layer.Edit"
+                                "$ref": "Robot_2/Methods/Admin/Layers/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layers.Edit"
                             }
                         }
                     },
@@ -22182,7 +22182,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Layer/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layer.Edit.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Layers/Edit.json#/components/schemas/Robot_2.Methods.Admin.Layers.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22210,18 +22210,18 @@
                 }
             }
         },
-        "/get/robot_2/admin/layer/": {
+        "/get/robot_2/admin/layers/": {
             "post": {
-                "operationId": "GetRobot2AdminLayer",
+                "operationId": "GetRobot2AdminLayers",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Получение списка Слоев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layer\\Get",
+                "summary": "Получение списка Слоев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Layer/Get.json#/components/schemas/Robot_2.Methods.Admin.Layer.Get"
+                                "$ref": "Robot_2/Methods/Admin/Layers/Get.json#/components/schemas/Robot_2.Methods.Admin.Layers.Get"
                             }
                         }
                     },
@@ -22240,7 +22240,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Layer/Get.json#/components/schemas/Robot_2.Methods.Admin.Layer.Get.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Layers/Get.json#/components/schemas/Robot_2.Methods.Admin.Layers.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22271,18 +22271,18 @@
                 }
             }
         },
-        "/add/robot_2/admin/partner/": {
+        "/add/robot_2/admin/partners/": {
             "post": {
-                "operationId": "AddRobot2AdminPartner",
+                "operationId": "AddRobot2AdminPartners",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Добавление партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Add",
+                "summary": "Добавление партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partners\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Partner/Add.json#/components/schemas/Robot_2.Methods.Admin.Partner.Add"
+                                "$ref": "Robot_2/Methods/Admin/Partners/Add.json#/components/schemas/Robot_2.Methods.Admin.Partners.Add"
                             }
                         }
                     },
@@ -22301,7 +22301,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Partner/Add.json#/components/schemas/Robot_2.Methods.Admin.Partner.Add.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Partners/Add.json#/components/schemas/Robot_2.Methods.Admin.Partners.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22324,18 +22324,18 @@
                 }
             }
         },
-        "/edit/robot_2/admin/partner/": {
+        "/edit/robot_2/admin/partners/": {
             "post": {
-                "operationId": "EditRobot2AdminPartner",
+                "operationId": "EditRobot2AdminPartners",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Редактирование партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Edit",
+                "summary": "Редактирование партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partners\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Partner/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partner.Edit"
+                                "$ref": "Robot_2/Methods/Admin/Partners/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partners.Edit"
                             }
                         }
                     },
@@ -22354,7 +22354,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Partner/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partner.Edit.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Partners/Edit.json#/components/schemas/Robot_2.Methods.Admin.Partners.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22382,18 +22382,18 @@
                 }
             }
         },
-        "/get/robot_2/admin/partner/": {
+        "/get/robot_2/admin/partners/": {
             "post": {
-                "operationId": "GetRobot2AdminPartner",
+                "operationId": "GetRobot2AdminPartners",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Получение списка партнеров\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partner\\Get",
+                "summary": "Получение списка партнеров\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partners\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Partner/Get.json#/components/schemas/Robot_2.Methods.Admin.Partner.Get"
+                                "$ref": "Robot_2/Methods/Admin/Partners/Get.json#/components/schemas/Robot_2.Methods.Admin.Partners.Get"
                             }
                         }
                     },
@@ -22412,7 +22412,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Partner/Get.json#/components/schemas/Robot_2.Methods.Admin.Partner.Get.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Partners/Get.json#/components/schemas/Robot_2.Methods.Admin.Partners.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22443,18 +22443,18 @@
                 }
             }
         },
-        "/add/robot_2/admin/server/": {
+        "/add/robot_2/admin/servers/": {
             "post": {
-                "operationId": "AddRobot2AdminServer",
+                "operationId": "AddRobot2AdminServers",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Добавление сервера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Add",
+                "summary": "Добавление сервера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Servers\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Server/Add.json#/components/schemas/Robot_2.Methods.Admin.Server.Add"
+                                "$ref": "Robot_2/Methods/Admin/Servers/Add.json#/components/schemas/Robot_2.Methods.Admin.Servers.Add"
                             }
                         }
                     },
@@ -22473,7 +22473,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Server/Add.json#/components/schemas/Robot_2.Methods.Admin.Server.Add.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Servers/Add.json#/components/schemas/Robot_2.Methods.Admin.Servers.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22496,18 +22496,18 @@
                 }
             }
         },
-        "/edit/robot_2/admin/server/": {
+        "/edit/robot_2/admin/servers/": {
             "post": {
-                "operationId": "EditRobot2AdminServer",
+                "operationId": "EditRobot2AdminServers",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Редактирование серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Edit",
+                "summary": "Редактирование серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Servers\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Server/Edit.json#/components/schemas/Robot_2.Methods.Admin.Server.Edit"
+                                "$ref": "Robot_2/Methods/Admin/Servers/Edit.json#/components/schemas/Robot_2.Methods.Admin.Servers.Edit"
                             }
                         }
                     },
@@ -22526,7 +22526,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Server/Edit.json#/components/schemas/Robot_2.Methods.Admin.Server.Edit.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Servers/Edit.json#/components/schemas/Robot_2.Methods.Admin.Servers.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22554,18 +22554,18 @@
                 }
             }
         },
-        "/get/robot_2/admin/server/": {
+        "/get/robot_2/admin/servers/": {
             "post": {
-                "operationId": "GetRobot2AdminServer",
+                "operationId": "GetRobot2AdminServers",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Получение списка серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Server\\Get",
+                "summary": "Получение списка серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Servers\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Server/Get.json#/components/schemas/Robot_2.Methods.Admin.Server.Get"
+                                "$ref": "Robot_2/Methods/Admin/Servers/Get.json#/components/schemas/Robot_2.Methods.Admin.Servers.Get"
                             }
                         }
                     },
@@ -22584,7 +22584,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Server/Get.json#/components/schemas/Robot_2.Methods.Admin.Server.Get.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Servers/Get.json#/components/schemas/Robot_2.Methods.Admin.Servers.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -29620,18 +29620,18 @@
                 }
             }
         },
-        "/get/robot_2/admin/key/autoIncrement/": {
+        "/get/robot_2/admin/keys/autoIncrement/": {
             "post": {
-                "operationId": "GetRobot2AdminKeyAutoIncrement",
+                "operationId": "GetRobot2AdminKeysAutoIncrement",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Получение следующего id ключа для вставки в таблицу ключей\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\AutoIncrement\\Get",
+                "summary": "Получение следующего id ключа для вставки в таблицу ключей\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\AutoIncrement\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get"
+                                "$ref": "Robot_2/Methods/Admin/Keys/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Keys.AutoIncrement.Get"
                             }
                         }
                     },
@@ -29650,7 +29650,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.AutoIncrement.Get.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Keys/AutoIncrement/Get.json#/components/schemas/Robot_2.Methods.Admin.Keys.AutoIncrement.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -29673,18 +29673,18 @@
                 }
             }
         },
-        "/add/robot_2/admin/key/domain/": {
+        "/add/robot_2/admin/keys/domain/": {
             "post": {
-                "operationId": "AddRobot2AdminKeyDomain",
+                "operationId": "AddRobot2AdminKeysDomain",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Добавление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Add",
+                "summary": "Добавление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\Domain\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add"
+                                "$ref": "Robot_2/Methods/Admin/Keys/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Add"
                             }
                         }
                     },
@@ -29703,7 +29703,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Add.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Keys/Domain/Add.json#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -29726,18 +29726,18 @@
                 }
             }
         },
-        "/del/robot_2/admin/key/domain/": {
+        "/del/robot_2/admin/keys/domain/": {
             "post": {
-                "operationId": "DelRobot2AdminKeyDomain",
+                "operationId": "DelRobot2AdminKeysDomain",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Удаление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Domain\\Del",
+                "summary": "Удаление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\Domain\\Del",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del"
+                                "$ref": "Robot_2/Methods/Admin/Keys/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Del"
                             }
                         }
                     },
@@ -29756,7 +29756,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Key.Domain.Del.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Keys/Domain/Del.json#/components/schemas/Robot_2.Methods.Admin.Keys.Domain.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -29779,18 +29779,18 @@
                 }
             }
         },
-        "/add/robot_2/admin/key/ipCSV/": {
+        "/add/robot_2/admin/keys/ipCSV/": {
             "post": {
-                "operationId": "AddRobot2AdminKeyIpCSV",
+                "operationId": "AddRobot2AdminKeysIpCSV",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Добавление ip\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Add",
+                "summary": "Добавление ip\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\IpCSV\\Add",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add"
+                                "$ref": "Robot_2/Methods/Admin/Keys/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Add"
                             }
                         }
                     },
@@ -29809,7 +29809,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Add.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Keys/IpCSV/Add.json#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -29832,18 +29832,18 @@
                 }
             }
         },
-        "/get/robot_2/admin/key/ipCSV/": {
+        "/get/robot_2/admin/keys/ipCSV/": {
             "post": {
-                "operationId": "GetRobot2AdminKeyIpCSV",
+                "operationId": "GetRobot2AdminKeysIpCSV",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Получить информацию о слое\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\IpCSV\\Get",
+                "summary": "Получить информацию о слое\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\IpCSV\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get"
+                                "$ref": "Robot_2/Methods/Admin/Keys/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Get"
                             }
                         }
                     },
@@ -29862,7 +29862,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Key.IpCSV.Get.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Keys/IpCSV/Get.json#/components/schemas/Robot_2.Methods.Admin.Keys.IpCSV.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -29893,18 +29893,18 @@
                 }
             }
         },
-        "/edit/robot_2/admin/key/status/": {
+        "/edit/robot_2/admin/keys/status/": {
             "post": {
-                "operationId": "EditRobot2AdminKeyStatus",
+                "operationId": "EditRobot2AdminKeysStatus",
                 "tags": [
                     "Robot_2"
                 ],
-                "summary": "Редактирование статуса IP\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Key\\Status\\Edit",
+                "summary": "Редактирование статуса IP\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\Status\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Robot_2/Methods/Admin/Key/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit"
+                                "$ref": "Robot_2/Methods/Admin/Keys/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Keys.Status.Edit"
                             }
                         }
                     },
@@ -29923,7 +29923,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Robot_2/Methods/Admin/Key/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Key.Status.Edit.Exec"
+                                                            "$ref": "Robot_2/Methods/Admin/Keys/Status/Edit.json#/components/schemas/Robot_2.Methods.Admin.Keys.Status.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [

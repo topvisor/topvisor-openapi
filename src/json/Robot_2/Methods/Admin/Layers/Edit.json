@@ -1,0 +1,126 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Methods.Admin.Layers.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Methods.Admin.Layers.Edit": {
+                "type": "object",
+                "properties": {
+                    "frequency": {
+                        "title": "Частота",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "robot_id": {
+                        "title": "ID робота",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "count_keys": {
+                        "title": "Количество ключей",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "partner_site": {
+                        "title": "Партнёрский сайт",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "order_number": {
+                        "title": "Номер заказа",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "create_date": {
+                        "title": "Дата создания",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "paidto_date": {
+                        "title": "Оплачено до",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "price": {
+                        "title": "Цена",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "price_currency": {
+                        "title": "Валюта цены",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "service_comment": {
+                        "title": "Комментарий к сервису",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "server_name": {
+                        "title": "Имя сервера",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "as": {
+                        "title": "AS (автономная система)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "as_name": {
+                        "title": "Название AS",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "ip_subnet": {
+                        "title": "IP-подсеть",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "ip_add_method": {
+                        "title": "Метод добавления IP",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "interface": {
+                        "title": "Интерфейс",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "comment": {
+                        "title": "Комментарий",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "title": "Удалено (флаг)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [],
+                "title": "Редактирование слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Edit"
+            },
+            "Robot_2.Methods.Admin.Layers.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}
