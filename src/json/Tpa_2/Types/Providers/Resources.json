@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Types.Providers.Resources",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Types.Providers.Resources": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Tpa_2/Types/Providers/Resource.json#/components/schemas/Tpa_2.Types.Providers.Resource"
+                },
+                "title": "Ресурсы интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Types\\Providers\\Resources",
+                "description": "@extends API\\Types\\AbstractObjectArray<Tpa_2\\Types\\Providers\\Resource>\n@method Tpa_2\\Types\\Providers\\Resource[] getValues()\n@method Tpa_2\\Types\\Providers\\Resource current()\n@method Tpa_2\\Types\\Providers\\Resource offsetGet()\n@see Tpa_2\\Types\\Providers\\Resource"
+            }
+        }
+    }
+}

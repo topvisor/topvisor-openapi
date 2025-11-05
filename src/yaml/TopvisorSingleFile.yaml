@@ -6971,7 +6971,11 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects.Tpa'
   /edit/tpa_2/setCounterId/:
     post:
       operationId: EditTpa2SetCounterId
@@ -30380,6 +30384,18 @@ components:
         include_broker_campaigns:
           title: Получить ли подключенные рекламные кампании (Директ и Adwords)
           type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -30390,6 +30406,21 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Data\Get
     Tpa_2.Methods.Data.Get.Exec:
       nullable: true
+    Models.Projects.Tpa:
+      properties:
+        id: {}
+        project_id:
+          nullable: true
+        login:
+          nullable: true
+        provider:
+          nullable: true
+        expire_at:
+          nullable: true
+        cid:
+          nullable: true
+        resources:
+          nullable: true
     Tpa_2.Methods.SetCounterId.Edit:
       type: object
       properties:
