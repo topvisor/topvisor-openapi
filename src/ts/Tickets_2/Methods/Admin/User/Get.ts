@@ -16,7 +16,7 @@ export interface components {
             /** ID тикета
              *
              *     Нужен для получения комментария о пользователе, если он является привязанным */
-            ticket_id?: number;
+            ticket_id?: number | null;
         };
         "Tickets_2.Methods.Admin.User.Get.Exec": unknown[];
     };

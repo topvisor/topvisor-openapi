@@ -40162,6 +40162,7 @@ components:
             ID тикета
 
             Нужен для получения комментария о пользователе, если он является привязанным
+          nullable: true
           type: integer
       required:
         - id
