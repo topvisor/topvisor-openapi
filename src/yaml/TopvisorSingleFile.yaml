@@ -27143,6 +27143,11 @@ components:
               - date
               - project_id
               - region_index
+        serp_features:
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_index
         positionStatus:
           nullable: true
           example:

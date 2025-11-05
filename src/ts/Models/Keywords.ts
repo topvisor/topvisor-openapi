@@ -84,6 +84,12 @@ export interface components {
              *         "region_index"
              *       ]
              *     } */
+            serp_features?: any;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     } */
             positionStatus?: any;
             /** @example {
              *       "need set qualifiers": [

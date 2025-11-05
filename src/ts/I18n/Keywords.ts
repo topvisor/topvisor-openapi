@@ -619,6 +619,8 @@ export interface components {
             readonly All_keywords: "All keywords";
             /** @constant */
             readonly Select_source: "Select source";
+            /** @constant */
+            readonly Serp_features: "SERP features";
         };
     };
     responses: never;

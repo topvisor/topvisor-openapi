@@ -1229,6 +1229,10 @@
                     "Select_source": {
                         "const": "Select source",
                         "readOnly": true
+                    },
+                    "Serp_features": {
+                        "const": "SERP features",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1535,7 +1539,8 @@
                     "Changed_phrases",
                     "Fitler_by_keywords_for_check",
                     "All_keywords",
-                    "Select_source"
+                    "Select_source",
+                    "Serp_features"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Keywords\\En"
             }
