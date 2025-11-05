@@ -40157,6 +40157,12 @@ components:
         id:
           title: ID пользователя
           type: integer
+        ticket_id:
+          title: |-
+            ID тикета
+
+            Нужен для получения комментария о пользователе, если он является привязанным
+          type: integer
       required:
         - id
       title: |-

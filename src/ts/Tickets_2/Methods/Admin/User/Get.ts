@@ -13,6 +13,10 @@ export interface components {
         "Tickets_2.Methods.Admin.User.Get": {
             /** ID пользователя */
             id: number;
+            /** ID тикета
+             *
+             *     Нужен для получения комментария о пользователе, если он является привязанным */
+            ticket_id?: number;
         };
         "Tickets_2.Methods.Admin.User.Get.Exec": unknown[];
     };
