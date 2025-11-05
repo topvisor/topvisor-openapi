@@ -1169,6 +1169,26 @@
                     "CashBackAdaptiveDepth": {
                         "const": "Unblocking of frozen funds by the Adaptive Depth algorithm in Google, number of skipped checks: {{ countDepths }}, for: {{ date }}",
                         "readOnly": true
+                    },
+                    "INN": {
+                        "const": "INN",
+                        "readOnly": true
+                    },
+                    "EDRPOU": {
+                        "const": "EDRPOU",
+                        "readOnly": true
+                    },
+                    "BIN_IIN": {
+                        "const": "BIN / IIN",
+                        "readOnly": true
+                    },
+                    "UNP": {
+                        "const": "UNP",
+                        "readOnly": true
+                    },
+                    "Of_board": {
+                        "const": "Of board",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1449,7 +1469,12 @@
                     "Confirm_document_removal",
                     "Act",
                     "Dialog_subscription_title",
-                    "CashBackAdaptiveDepth"
+                    "CashBackAdaptiveDepth",
+                    "INN",
+                    "EDRPOU",
+                    "BIN_IIN",
+                    "UNP",
+                    "Of_board"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Bank\\En"
             }

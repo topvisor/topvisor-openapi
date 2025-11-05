@@ -589,6 +589,16 @@ export interface components {
             readonly Dialog_subscription_title: "Subscribe to the {{ siteName }} plan";
             /** @constant */
             readonly CashBackAdaptiveDepth: "Unblocking of frozen funds by the Adaptive Depth algorithm in Google, number of skipped checks: {{ countDepths }}, for: {{ date }}";
+            /** @constant */
+            readonly INN: "INN";
+            /** @constant */
+            readonly EDRPOU: "EDRPOU";
+            /** @constant */
+            readonly BIN_IIN: "BIN / IIN";
+            /** @constant */
+            readonly UNP: "UNP";
+            /** @constant */
+            readonly Of_board: "Of board";
         };
     };
     responses: never;
