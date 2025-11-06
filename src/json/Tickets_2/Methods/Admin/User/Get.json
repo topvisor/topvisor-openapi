@@ -15,7 +15,7 @@
                         "type": "integer"
                     },
                     "ticket_id": {
-                        "title": "ID тикета\n\nНужен для получения комментария о пользователе, если он является привязанным",
+                        "title": "ID тикета\n\nНужен для получения комментария о неавторизованном пользователе, который был привязан к тикету админом вручную",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -23,7 +23,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Получение инфомрации о пользователе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\User\\Get"
+                "title": "Получение информации о пользователе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\User\\Get"
             },
             "Tickets_2.Methods.Admin.User.Get.Exec": {
                 "type": "array"

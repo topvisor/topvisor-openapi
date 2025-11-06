@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение инфомрации о пользователе
+        /** Получение информации о пользователе
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\User\Get */
         "Tickets_2.Methods.Admin.User.Get": {
@@ -15,7 +15,7 @@ export interface components {
             id: number;
             /** ID тикета
              *
-             *     Нужен для получения комментария о пользователе, если он является привязанным */
+             *     Нужен для получения комментария о неавторизованном пользователе, который был привязан к тикету админом вручную */
             ticket_id?: number | null;
         };
         "Tickets_2.Methods.Admin.User.Get.Exec": unknown[];

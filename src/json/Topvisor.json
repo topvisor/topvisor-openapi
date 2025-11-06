@@ -24134,7 +24134,7 @@
                 "tags": [
                     "Tickets_2"
                 ],
-                "summary": "Получение инфомрации о пользователе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\User\\Get",
+                "summary": "Получение информации о пользователе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\User\\Get",
                 "requestBody": {
                     "content": {
                         "application/json": {
