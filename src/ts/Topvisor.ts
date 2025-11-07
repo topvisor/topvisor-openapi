@@ -4,23 +4,6 @@
  */
 
 export interface paths {  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Get */
-    "/get/aitracker_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAitracker2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Фиксация события
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Analytics_2\Methods\Add */
@@ -1049,6 +1032,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAdmin2Votes"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\History\Get */
+    "/get/aitracker_2/history/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAitracker2History"];
         delete?: never;
         options?: never;
         head?: never;
@@ -8575,7 +8575,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение инфомрации о пользователе
+    /** Получение информации о пользователе
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\User\Get */
     "/get/tickets_2/admin/user/": {
@@ -11261,32 +11261,6 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export interface operations {
-    GetAitracker2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Get.ts').components['schemas']['AiTracker_2.Methods.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Get.ts').components['schemas']['AiTracker_2.Methods.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
-                };
-            };
-        };
-    };
     AddAnalytics2: {
         parameters: {
             query?: never;
@@ -12645,6 +12619,32 @@ export interface operations {
                         result: import('./Admin_2/Methods/Votes/Get.ts').components['schemas']['Admin_2.Methods.Votes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
+                };
+            };
+        };
+    };
+    GetAitracker2History: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/History/Get.ts').components['schemas']['AiTracker_2.Methods.History.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/History/Get.ts').components['schemas']['AiTracker_2.Methods.History.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
                 };
             };
         };
@@ -16617,7 +16617,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tpa_2/Methods/Data/Get.ts').components['schemas']['Tpa_2.Methods.Data.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects/Tpa.ts').components['schemas']['Models.Projects.Tpa'];
                 };
             };
         };

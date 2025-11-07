@@ -1,19 +1,19 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/AiTracker_2.Methods.Get",
+        "title": "Topvisor/AiTracker_2.Methods.History.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "AiTracker_2.Methods.Get": {
+            "AiTracker_2.Methods.History.Get": {
                 "type": "object",
                 "properties": {
                     "models": {
                         "allOf": [
                             {
-                                "$ref": "../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
+                                "$ref": "../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
                             }
                         ]
                     },
@@ -42,7 +42,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     },
@@ -51,7 +51,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     },
@@ -60,7 +60,7 @@
                         "default": 7,
                         "allOf": [
                             {
-                                "$ref": "../../AiTracker_2/Types/TypeRange.json#/components/schemas/AiTracker_2.Types.TypeRange"
+                                "$ref": "../../../AiTracker_2/Types/TypeRange.json#/components/schemas/AiTracker_2.Types.TypeRange"
                             }
                         ]
                     },
@@ -70,37 +70,37 @@
                         "type": "integer"
                     },
                     "fields": {
-                        "$ref": "../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
                     "orders": {
-                        "$ref": "../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
                     },
                     "filters": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     },
                     "limit": {
-                        "$ref": "../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
                     },
                     "offset": {
-                        "$ref": "../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
                     },
                     "project_id": {
-                        "$ref": "../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
                 "required": [
                     "models",
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Get"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\History\\Get"
             },
-            "AiTracker_2.Methods.Get.Exec": {
+            "AiTracker_2.Methods.History.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "$ref": "../../Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+                    "$ref": "../../../Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
                 }
             }
         }

@@ -5,67 +5,6 @@
         "version": "2.0.0"
     },
     "paths": {
-        "/get/aitracker_2/": {
-            "post": {
-                "operationId": "GetAitracker2",
-                "tags": [
-                    "Aitracker_2"
-                ],
-                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "AiTracker_2/Methods/Get.json#/components/schemas/AiTracker_2.Methods.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "AiTracker_2/Methods/Get.json#/components/schemas/AiTracker_2.Methods.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/analytics_2/": {
             "post": {
                 "operationId": "AddAnalytics2",
@@ -2984,6 +2923,67 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Votes.json#/components/schemas/Models.Votes"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/aitracker_2/history/": {
+            "post": {
+                "operationId": "GetAitracker2History",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\History\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/History/Get.json#/components/schemas/AiTracker_2.Methods.History.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/History/Get.json#/components/schemas/AiTracker_2.Methods.History.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
                                 }
                             }
                         }
