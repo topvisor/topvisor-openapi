@@ -11,6 +11,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
         "Tpa_2.Methods.Gsc.SetSite.Edit": {
+            /** Выбранный сайт */
             site: string;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };

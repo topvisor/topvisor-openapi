@@ -40264,6 +40264,7 @@ components:
       type: object
       properties:
         site:
+          title: Выбранный сайт
           type: string
         project_id:
           $ref: '#/components/schemas/project_id'
