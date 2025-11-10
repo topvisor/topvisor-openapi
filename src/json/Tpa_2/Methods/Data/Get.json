@@ -42,7 +42,973 @@
                 "title": "Получение данных о подключенных сервисах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\Data\\Get"
             },
             "Tpa_2.Methods.Data.Get.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "object",
+                "properties": {
+                    "metrika": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "webmaster": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "direct": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "yandexMarket": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "analytics": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "ganalytics": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "gdrive": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "adwords": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    },
+                    "gsc": {
+                        "type": "object",
+                        "properties": {
+                            "login": {
+                                "type": "string"
+                            },
+                            "expire_at": {
+                                "type": "string"
+                            },
+                            "cid": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "resources": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "cid": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            },
+                                            "login": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "null"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "cid",
+                                            "login",
+                                            "name",
+                                            "type"
+                                        ]
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "campaigns": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "added": {
+                                        "type": "integer"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "campaign_tv_id": {
+                                        "type": "integer"
+                                    },
+                                    "agency_name": {
+                                        "type": "string"
+                                    },
+                                    "status_name": {
+                                        "type": "string"
+                                    },
+                                    "used_in_other_projects": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "array"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "added",
+                                    "state",
+                                    "campaign_tv_id",
+                                    "agency_name",
+                                    "status_name",
+                                    "used_in_other_projects"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "login",
+                            "expire_at"
+                        ]
+                    }
+                }
             }
         }
     }

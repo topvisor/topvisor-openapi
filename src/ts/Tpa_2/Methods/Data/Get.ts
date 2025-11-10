@@ -21,7 +21,206 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Tpa_2.Methods.Data.Get.Exec": unknown;
+        "Tpa_2.Methods.Data.Get.Exec": {
+            metrika?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            webmaster?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            direct?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            yandexMarket?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            analytics?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            ganalytics?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            gdrive?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            adwords?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+            gsc?: {
+                login: string;
+                expire_at: string;
+                cid?: string | null;
+                resources?: {
+                    cid: string | null;
+                    login: string;
+                    name: string;
+                    type: string | null;
+                } | null;
+                campaigns?: {
+                    id: number;
+                    added: number;
+                    state: string;
+                    campaign_tv_id: number;
+                    agency_name: string;
+                    status_name: string;
+                    used_in_other_projects: {
+                        [key: string]: unknown[];
+                    };
+                };
+            };
+        } | null;
     };
     responses: never;
     parameters: never;
