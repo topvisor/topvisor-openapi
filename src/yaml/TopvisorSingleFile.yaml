@@ -31292,7 +31292,7 @@ components:
     Tpvsr_2.Methods.Tags.Edit.Exec:
       nullable: true
       type: integer
-    Topvisor.Curl.Curl:
+    TV.Libs.Curl.Curl:
       type: object
       properties:
         userAgentDef:
@@ -31327,7 +31327,7 @@ components:
         - userAgentDevice
         - responseBodyBuffer
         - responseBodyBufferStop
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Topvisor\Curl\Curl'
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Libs\Curl\Curl'
     Tpvsr_2.Methods.Title.Get:
       type: object
       properties:
@@ -31338,7 +31338,7 @@ components:
           title: Экземпляр curl для выполнения запроса
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Topvisor.Curl.Curl'
+            - $ref: '#/components/schemas/TV.Libs.Curl.Curl'
       required:
         - link
       title: |-

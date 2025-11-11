@@ -14,7 +14,7 @@ export interface components {
             /** Ссылка */
             link: string;
             /** Экземпляр curl для выполнения запроса */
-            curl?: import('../../../Topvisor/Curl/Curl.ts').components['schemas']['Topvisor.Curl.Curl'] | null;
+            curl?: import('../../../TV/Libs/Curl/Curl.ts').components['schemas']['TV.Libs.Curl.Curl'] | null;
         };
         "Tpvsr_2.Methods.Title.Get.Exec": string;
     };

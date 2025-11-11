@@ -19,7 +19,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../Topvisor/Curl/Curl.json#/components/schemas/Topvisor.Curl.Curl"
+                                "$ref": "../../../TV/Libs/Curl/Curl.json#/components/schemas/TV.Libs.Curl.Curl"
                             }
                         ]
                     }
