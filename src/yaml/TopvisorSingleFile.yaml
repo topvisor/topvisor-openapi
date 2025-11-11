@@ -4261,6 +4261,37 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/counters/:
+    post:
+      operationId: GetKeywords2Counters
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение числа включенных/выключенных групп и запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Counters\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Counters.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Counters.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /add/keywords_2/folders/:
     post:
       operationId: AddKeywords2Folders
@@ -4463,6 +4494,71 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Groups'
+  /add/keywords_2/keywords/:
+    post:
+      operationId: AddKeywords2Keywords
+      tags:
+        - Keywords_2
+      summary: |-
+        Добавление запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /del/keywords_2/keywords/:
+    post:
+      operationId: DelKeywords2Keywords
+      tags:
+        - Keywords_2
+      summary: |-
+        Удаление запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Del
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/keywords_2/keywords/:
     post:
       operationId: GetKeywords2Keywords
@@ -11501,6 +11597,29 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Groups'
+  /get/keywords_2/keywords/export/:
+    post:
+      operationId: GetKeywords2KeywordsExport
+      tags:
+        - Keywords_2
+      summary: |-
+        Экспорт в определенном формате (экспорт всех запросов)
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Export\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
   /add/keywords_2/keywords/import/:
     post:
       operationId: AddKeywords2KeywordsImport
@@ -11535,6 +11654,247 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/keywords/move/:
+    post:
+      operationId: EditKeywords2KeywordsMove
+      tags:
+        - Keywords_2
+      summary: |-
+        Перемещение запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Move\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Move.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Move.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /get/keywords_2/keywords/offset/:
+    post:
+      operationId: GetKeywords2KeywordsOffset
+      tags:
+        - Keywords_2
+      summary: |-
+        Получение id, имение запроса и результатов, зависимые от контекста
+
+        Поддерживает работу до 10 000 запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Offset\Get
+      description: '@see Keywords_2\Methods\Keywords\Get'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Offset.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Offset.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/keywords/rename/:
+    post:
+      operationId: EditKeywords2KeywordsRename
+      tags:
+        - Keywords_2
+      summary: |-
+        Переименование запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Rename\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Rename.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Rename.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/keywords/sort/:
+    post:
+      operationId: EditKeywords2KeywordsSort
+      tags:
+        - Keywords_2
+      summary: |-
+        Изменение сортировки запросов
+
+        Можно сортировать в пределах одной группы или всего проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Sort\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Sort.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Sort.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/keywords/tags/:
+    post:
+      operationId: EditKeywords2KeywordsTags
+      tags:
+        - Keywords_2
+      summary: |-
+        Изменение тегов запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Tags\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Tags.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Tags.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/keywords/target/:
+    post:
+      operationId: EditKeywords2KeywordsTarget
+      tags:
+        - Keywords_2
+      summary: |-
+        Изменение целевой ссылки запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Target\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Target.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Target.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/keywords/undel/:
+    post:
+      operationId: EditKeywords2KeywordsUndel
+      tags:
+        - Keywords_2
+      summary: |-
+        Восстановление запросов из корзины
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Undel\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Undel.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Undel.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /edit/keywords_2/volumes/go/:
     post:
       operationId: EditKeywords2VolumesGo
@@ -17500,6 +17860,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/keywords/export/toProject/:
+    post:
+      operationId: EditKeywords2KeywordsExportToProject
+      tags:
+        - Keywords_2
+      summary: |-
+        Копирование запросов в другой проект
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Export\ToProject\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Export.ToProject.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Export.ToProject.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/positions_2/searchers/regions/export/:
     post:
       operationId: GetPositions2SearchersRegionsExport
@@ -22370,6 +22761,15 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
+        move_duplicate:
+          title: Удалить дубликаты
+          type: boolean
+        move_duplicate_group_name:
+          title: |-
+            Имя группы для перемещения дубликатов
+
+            Работает вместе с move_duplicate
+          type: string
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -26694,6 +27094,36 @@ components:
             type: string
           site:
             type: string
+    Keywords_2.Methods.Counters.Get:
+      type: object
+      properties:
+        show_trash:
+          title: Считать для удаленных проектов
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Получение числа включенных/выключенных групп и запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Counters\Get
+    Keywords_2.Methods.Counters.Get.Exec:
+      type: object
+      properties:
+        count_groups_on:
+          type: integer
+        count_groups_off:
+          type: integer
+        count_keywords_on:
+          type: integer
+        count_keywords_off:
+          type: integer
+      required:
+        - count_groups_on
+        - count_groups_off
+        - count_keywords_on
+        - count_keywords_off
     Keywords_2.Types.Folders.ToType:
       type: string
       enum:
@@ -27025,40 +27455,95 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Get
     Keywords_2.Methods.Groups.Get.Exec:
       nullable: true
-    Keywords_2.Methods.Keywords.Get:
+    Keywords_2.Types.Keywords.ToType:
+      type: string
+      enum:
+        - in_group
+        - in_group_last
+        - before_keyword
+        - after_keyword
+      x-enum-varnames:
+        - InGroup
+        - InGroupLast
+        - BeforeKeyword
+        - AfterKeyword
+      x-enum-descriptions:
+        - В начало группы
+        - В конец группы
+        - Перед запросом
+        - После запроса
+      title: |-
+        Куда добавить фразу
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\ToType
+    Keywords_2.Methods.Keywords.Add:
+      type: object
+      properties:
+        name:
+          title: Ключевая фраза
+          type: string
+        to_id:
+          title: |-
+            Вставить к указанному объекту
+
+            Если в to_type указано "Перед или после запроса", то принимает id запроса
+            Если в to_type указано "В конец или начало группы", то принимает id группы
+          type: integer
+        to_type:
+          default: in_group
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
+        tags:
+          title: Теги запроса
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
+        target:
+          title: Целевая страница для запроса
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        move_duplicate:
+          title: Удалить дубликаты
+          type: boolean
+        move_duplicate_group_name:
+          title: |-
+            Имя группы для перемещения дубликатов
+
+            Работает вместе с move_duplicate
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+      required:
+        - name
+        - to_id
+        - project_id
+      title: |-
+        Добавление запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Add
+    Keywords_2.Methods.Keywords.Add.Exec:
+      type: array
+    Keywords_2.Methods.Keywords.Del:
       type: object
       properties:
         project_id:
-          title: Id проекта
-          type: integer
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
-        show_trash:
-          title: Искать в корзине
-          type: boolean
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
+          $ref: '#/components/schemas/project_id'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: |-
-        Получение списка запросов проекта
+        Удаление запросов
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Get
-    Keywords_2.Methods.Keywords.Get.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Del
+    Keywords_2.Methods.Keywords.Del.Exec:
       nullable: true
+      type: integer
     Models.Keywords:
       properties:
         COUNT(*):
@@ -27171,6 +27656,40 @@ components:
               - position
               - region_key
               - searcher_key
+    Keywords_2.Methods.Keywords.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Искать в корзине
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+      title: |-
+        Получение списка запросов проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Get
+    Keywords_2.Methods.Keywords.Get.Exec:
+      nullable: true
     Keywords_2.Methods.Volumes.Get:
       type: object
       properties:
@@ -37289,6 +37808,9 @@ components:
         name:
           title: Название папок
           type: string
+        show_trash:
+          title: Учитывать ли удаленные папки
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -37399,6 +37921,9 @@ components:
         'on':
           title: Статус активности
           type: boolean
+        show_trash:
+          title: Учитывать ли удаленные группы
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -37421,6 +37946,9 @@ components:
         name:
           title: Имя группы
           type: string
+        show_trash:
+          title: Учитывать ли удаленные группы
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -37479,6 +38007,84 @@ components:
     Keywords_2.Methods.Groups.Undel.Edit.Exec:
       nullable: true
       type: integer
+    Keywords_2.Types.Keywords.Export.Output:
+      type: string
+      enum:
+        - csv
+        - csvUTF8
+      x-enum-varnames:
+        - Csv
+        - CsvUtf8
+      x-enum-descriptions:
+        - Csv
+        - Csv в кодировке сервера
+      title: |-
+        В каком формате экспортировать запросы
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\Export\Output
+    Keywords_2.Types.Keywords.Export.TargetType:
+      type: string
+      enum:
+        - keywords
+        - groups
+      x-enum-varnames:
+        - Keywords
+        - Groups
+      x-enum-descriptions:
+        - По запросам
+        - По группам
+      title: |-
+        Тип объекта по которому производить фильтрацию для выборки запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\Export\TargetType
+    Keywords_2.Methods.Keywords.Export.Get:
+      type: object
+      properties:
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.Export.Output'
+        target_type:
+          default: keywords
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.Export.TargetType'
+        show_fields_names:
+          title: Вывести fieldName в заголовках столбцов
+          type: boolean
+        show_fields_labels:
+          title: Вывести fieldLabel в заголовках столбцов
+          type: boolean
+        forClipboard:
+          title: Для копирования
+          description: '@internal'
+          type: boolean
+        file_name:
+          title: Имя файла
+          default: export
+          type: string
+        show_trash:
+          title: Экспортировать ли удаленные запросы
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - output
+        - project_id
+      title: |-
+        Экспорт в определенном формате (экспорт всех запросов)
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Export\Get
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:
@@ -37547,6 +38153,259 @@ components:
     Keywords_2.Methods.Keywords.Import.Add.Exec:
       nullable: true
       type: array
+    Keywords_2.Methods.Keywords.Move.Edit:
+      type: object
+      properties:
+        to_id:
+          title: |-
+            Вставить к указанному объекту
+
+            Если в to_type указано "Перед или после запроса", то принимает id запроса
+            Если в to_type указано "В конец или начало группы", то принимает id группы
+          type: integer
+        to_type:
+          default: in_group
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - to_id
+        - project_id
+      title: |-
+        Перемещение запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Move\Edit
+    Keywords_2.Methods.Keywords.Move.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Keywords.Offset.Get:
+      type: object
+      properties:
+        keyword_id:
+          title: ID запроса
+          type: integer
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Искать в корзине
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - keyword_id
+        - project_id
+      title: |-
+        Получение id, имение запроса и результатов, зависимые от контекста
+
+        Поддерживает работу до 10 000 запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Offset\Get
+      description: '@see Keywords_2\Methods\Keywords\Get'
+    Keywords_2.Methods.Keywords.Offset.Get.Exec:
+      nullable: true
+      anyOf:
+        - type: object
+          properties:
+            id:
+              type: integer
+            name:
+              type: string
+            offset:
+              type: integer
+            '"count()"':
+              type: integer
+          required:
+            - id
+            - name
+            - offset
+            - '"count()"'
+        - type: 'null'
+    Keywords_2.Methods.Keywords.Rename.Edit:
+      type: object
+      properties:
+        name:
+          title: Название запроса для переименования
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        fields:
+          $ref: '#/components/schemas/fields'
+      required:
+        - name
+        - project_id
+      title: |-
+        Переименование запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Rename\Edit
+    Keywords_2.Methods.Keywords.Rename.Edit.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
+    Keywords_2.Methods.Keywords.Sort.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        orders:
+          $ref: '#/components/schemas/orders'
+      required:
+        - project_id
+      title: |-
+        Изменение сортировки запросов
+
+        Можно сортировать в пределах одной группы или всего проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Sort\Edit
+    Keywords_2.Methods.Keywords.Sort.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Types.Keywords.Tags.Action:
+      type: string
+      enum:
+        - set
+        - add
+        - remove
+      x-enum-varnames:
+        - Set
+        - Add
+        - Remove
+      x-enum-descriptions:
+        - Установить
+        - Добавить
+        - Удалить
+      title: |-
+        Действие с тегами запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\Tags\Action
+    Keywords_2.Types.Keywords.TargetType:
+      type: string
+      enum:
+        - keywords
+        - groups
+      x-enum-varnames:
+        - Keywords
+        - Groups
+      x-enum-descriptions:
+        - По запросам
+        - По группам
+      title: |-
+        Тип объекта над которым проводится операция редактирования
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\TargetType
+    Keywords_2.Methods.Keywords.Tags.Edit:
+      type: object
+      properties:
+        tags:
+          title: Теги запроса
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.Tags.Action'
+        target_type:
+          default: keywords
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.TargetType'
+        show_trash:
+          title: Учитывать ли удаленные запросы
+          type: boolean
+        group_folder_id_depth:
+          title: Искать ли в подпапках
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - tags
+        - action
+        - project_id
+      title: |-
+        Изменение тегов запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Tags\Edit
+    Keywords_2.Methods.Keywords.Tags.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Keywords.Target.Edit:
+      type: object
+      properties:
+        target:
+          title: Целевая ссылка
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        target_type:
+          default: keywords
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.TargetType'
+        show_trash:
+          title: Учитывать ли удаленные запросы
+          type: boolean
+        group_folder_id_depth:
+          title: Искать ли в подпапках
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: |-
+        Изменение целевой ссылки запроса
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Target\Edit
+    Keywords_2.Methods.Keywords.Target.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Keywords.Undel.Edit:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: |-
+        Восстановление запросов из корзины
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Undel\Edit
+    Keywords_2.Methods.Keywords.Undel.Edit.Exec:
+      nullable: true
+      type: integer
     Keywords_2.Types.Volumes.NoRecheck:
       type: integer
       enum:
@@ -44029,6 +44888,57 @@ components:
               - comment
       required:
         - pricesByUsers
+    Keywords_2.Methods.Keywords.Export.ToProject.Edit:
+      type: object
+      properties:
+        to_project_id:
+          title: В какой проект перенести
+          type: integer
+        in_root_folder:
+          title: Перенести в корневую папку?
+          type: boolean
+        target_type:
+          default: keywords
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.Export.TargetType'
+        with_history:
+          title: Перенести вместе с историей позиций
+          type: boolean
+        move_duplicate:
+          title: Удалить дубликаты
+          type: boolean
+        delete_from_original_project:
+          title: Удалить данные и оригинального проекта
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - to_project_id
+        - project_id
+      title: |-
+        Копирование запросов в другой проект
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Export\ToProject\Edit
+    Keywords_2.Methods.Keywords.Export.ToProject.Edit.Exec:
+      nullable: true
+      anyOf:
+        - type: object
+          properties:
+            count_for_add:
+              type: integer
+            count_added:
+              type: integer
+            count_missed:
+              type: integer
+          required:
+            - count_for_add
+            - count_added
+            - count_missed
+        - type: 'null'
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:

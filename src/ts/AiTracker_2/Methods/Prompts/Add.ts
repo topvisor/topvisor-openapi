@@ -21,6 +21,12 @@ export interface components {
              */
             toType?: import('../../Types/Prompts/ToType.ts').components['schemas']['AiTracker_2.Types.Prompts.ToType'];
             tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
+            /** Удалить дубликаты */
+            move_duplicate?: boolean;
+            /** Имя группы для перемещения дубликатов
+             *
+             *     Работает вместе с move_duplicate */
+            move_duplicate_group_name?: string;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "AiTracker_2.Methods.Prompts.Add.Exec": unknown[] | null;

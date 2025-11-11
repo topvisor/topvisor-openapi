@@ -1,0 +1,83 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Keywords.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Keywords.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "output": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/Export/Output.json#/components/schemas/Keywords_2.Types.Keywords.Export.Output"
+                            }
+                        ]
+                    },
+                    "target_type": {
+                        "default": "keywords",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/Export/TargetType.json#/components/schemas/Keywords_2.Types.Keywords.Export.TargetType"
+                            }
+                        ]
+                    },
+                    "show_fields_names": {
+                        "title": "Вывести fieldName в заголовках столбцов",
+                        "type": "boolean"
+                    },
+                    "show_fields_labels": {
+                        "title": "Вывести fieldLabel в заголовках столбцов",
+                        "type": "boolean"
+                    },
+                    "forClipboard": {
+                        "title": "Для копирования",
+                        "description": "@internal",
+                        "type": "boolean"
+                    },
+                    "file_name": {
+                        "title": "Имя файла",
+                        "default": "export",
+                        "type": "string"
+                    },
+                    "show_trash": {
+                        "title": "Экспортировать ли удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "output",
+                    "project_id"
+                ],
+                "title": "Экспорт в определенном формате (экспорт всех запросов)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Export\\Get"
+            },
+            "Keywords_2.Methods.Keywords.Export.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

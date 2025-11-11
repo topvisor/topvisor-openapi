@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Keywords.TargetType",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Keywords.TargetType": {
+                "type": "string",
+                "enum": [
+                    "keywords",
+                    "groups"
+                ],
+                "x-enum-varnames": [
+                    "Keywords",
+                    "Groups"
+                ],
+                "x-enum-descriptions": [
+                    "По запросам",
+                    "По группам"
+                ],
+                "title": "Тип объекта над которым проводится операция редактирования\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Keywords\\TargetType"
+            }
+        }
+    }
+}

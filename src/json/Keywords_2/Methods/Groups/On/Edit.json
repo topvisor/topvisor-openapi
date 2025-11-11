@@ -14,6 +14,10 @@
                         "title": "Статус активности",
                         "type": "boolean"
                     },
+                    "show_trash": {
+                        "title": "Учитывать ли удаленные группы",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },

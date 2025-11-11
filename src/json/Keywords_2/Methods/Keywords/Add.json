@@ -1,37 +1,46 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/AiTracker_2.Methods.Prompts.Add",
+        "title": "Topvisor/Keywords_2.Methods.Keywords.Add",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "AiTracker_2.Methods.Prompts.Add": {
+            "Keywords_2.Methods.Keywords.Add": {
                 "type": "object",
                 "properties": {
                     "name": {
-                        "title": "Текст промпта",
+                        "title": "Ключевая фраза",
                         "type": "string"
                     },
-                    "toId": {
-                        "title": "Вставить к указанному объекту",
+                    "to_id": {
+                        "title": "Вставить к указанному объекту\n\nЕсли в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы",
                         "type": "integer"
                     },
-                    "toType": {
-                        "title": "Обязательный параметр при указанном $toId",
+                    "to_type": {
                         "default": "in_group",
                         "allOf": [
                             {
-                                "$ref": "../../../AiTracker_2/Types/Prompts/ToType.json#/components/schemas/AiTracker_2.Types.Prompts.ToType"
+                                "$ref": "../../../Keywords_2/Types/Keywords/ToType.json#/components/schemas/Keywords_2.Types.Keywords.ToType"
                             }
                         ]
                     },
                     "tags": {
+                        "title": "Теги запроса",
                         "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "target": {
+                        "title": "Целевая страница для запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
                             }
                         ]
                     },
@@ -45,17 +54,19 @@
                     },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     }
                 },
                 "required": [
                     "name",
-                    "toId",
+                    "to_id",
                     "project_id"
                 ],
-                "title": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Add"
+                "title": "Добавление запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Add"
             },
-            "AiTracker_2.Methods.Prompts.Add.Exec": {
-                "nullable": true,
+            "Keywords_2.Methods.Keywords.Add.Exec": {
                 "type": "array"
             }
         }

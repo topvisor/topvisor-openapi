@@ -1,0 +1,86 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Keywords.Export.ToProject.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Keywords.Export.ToProject.Edit": {
+                "type": "object",
+                "properties": {
+                    "to_project_id": {
+                        "title": "В какой проект перенести",
+                        "type": "integer"
+                    },
+                    "in_root_folder": {
+                        "title": "Перенести в корневую папку?",
+                        "type": "boolean"
+                    },
+                    "target_type": {
+                        "default": "keywords",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Keywords_2/Types/Keywords/Export/TargetType.json#/components/schemas/Keywords_2.Types.Keywords.Export.TargetType"
+                            }
+                        ]
+                    },
+                    "with_history": {
+                        "title": "Перенести вместе с историей позиций",
+                        "type": "boolean"
+                    },
+                    "move_duplicate": {
+                        "title": "Удалить дубликаты",
+                        "type": "boolean"
+                    },
+                    "delete_from_original_project": {
+                        "title": "Удалить данные и оригинального проекта",
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "to_project_id",
+                    "project_id"
+                ],
+                "title": "Копирование запросов в другой проект\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Export\\ToProject\\Edit"
+            },
+            "Keywords_2.Methods.Keywords.Export.ToProject.Edit.Exec": {
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "count_for_add": {
+                                "type": "integer"
+                            },
+                            "count_added": {
+                                "type": "integer"
+                            },
+                            "count_missed": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "count_for_add",
+                            "count_added",
+                            "count_missed"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

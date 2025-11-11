@@ -7,19 +7,18 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Переименовывание группы
+        /** Переименование запроса
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Rename\Edit */
-        "Keywords_2.Methods.Groups.Rename.Edit": {
-            /** Имя группы */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Rename\Edit */
+        "Keywords_2.Methods.Keywords.Rename.Edit": {
+            /** Название запроса для переименования */
             name: string;
-            /** Учитывать ли удаленные группы */
-            show_trash?: boolean;
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
-        "Keywords_2.Methods.Groups.Rename.Edit.Exec": number | null;
+        "Keywords_2.Methods.Keywords.Rename.Edit.Exec": import('../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][];
     };
     responses: never;
     parameters: never;

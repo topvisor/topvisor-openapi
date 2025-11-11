@@ -1,23 +1,15 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Keywords_2.Methods.Folders.Rename.Edit",
+        "title": "Topvisor/Keywords_2.Methods.Keywords.Sort.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Keywords_2.Methods.Folders.Rename.Edit": {
+            "Keywords_2.Methods.Keywords.Sort.Edit": {
                 "type": "object",
                 "properties": {
-                    "name": {
-                        "title": "Название папок",
-                        "type": "string"
-                    },
-                    "show_trash": {
-                        "title": "Учитывать ли удаленные папки",
-                        "type": "boolean"
-                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
@@ -26,15 +18,17 @@
                     },
                     "project_id": {
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "orders": {
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
                     }
                 },
                 "required": [
-                    "name",
                     "project_id"
                 ],
-                "title": "Переименовывание папок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Rename\\Edit"
+                "title": "Изменение сортировки запросов\n\nМожно сортировать в пределах одной группы или всего проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Sort\\Edit"
             },
-            "Keywords_2.Methods.Folders.Rename.Edit.Exec": {
+            "Keywords_2.Methods.Keywords.Sort.Edit.Exec": {
                 "nullable": true,
                 "type": "integer"
             }

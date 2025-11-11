@@ -13,6 +13,8 @@ export interface components {
         "Keywords_2.Methods.Groups.On.Edit": {
             /** Статус активности */
             on: boolean;
+            /** Учитывать ли удаленные группы */
+            show_trash?: boolean;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

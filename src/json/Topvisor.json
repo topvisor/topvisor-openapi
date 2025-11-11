@@ -7089,6 +7089,59 @@
                 }
             }
         },
+        "/get/keywords_2/counters/": {
+            "post": {
+                "operationId": "GetKeywords2Counters",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение числа включенных/выключенных групп и запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Counters\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Counters/Get.json#/components/schemas/Keywords_2.Methods.Counters.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Counters/Get.json#/components/schemas/Keywords_2.Methods.Counters.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/keywords_2/folders/": {
             "post": {
                 "operationId": "AddKeywords2Folders",
@@ -7426,6 +7479,117 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/keywords_2/keywords/": {
+            "post": {
+                "operationId": "AddKeywords2Keywords",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Добавление запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Add.json#/components/schemas/Keywords_2.Methods.Keywords.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Add.json#/components/schemas/Keywords_2.Methods.Keywords.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/keywords_2/keywords/": {
+            "post": {
+                "operationId": "DelKeywords2Keywords",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Удаление запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Del",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Del.json#/components/schemas/Keywords_2.Methods.Keywords.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Del.json#/components/schemas/Keywords_2.Methods.Keywords.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -19335,6 +19499,38 @@
                 }
             }
         },
+        "/get/keywords_2/keywords/export/": {
+            "post": {
+                "operationId": "GetKeywords2KeywordsExport",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Экспорт в определенном формате (экспорт всех запросов)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Export\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Export/Get.json#/components/schemas/Keywords_2.Methods.Keywords.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/keywords_2/keywords/import/": {
             "post": {
                 "operationId": "AddKeywords2KeywordsImport",
@@ -19382,6 +19578,411 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/move/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsMove",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Перемещение запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Move\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Move/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Move.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Move/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Move.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/keywords/offset/": {
+            "post": {
+                "operationId": "GetKeywords2KeywordsOffset",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение id, имение запроса и результатов, зависимые от контекста\n\nПоддерживает работу до 10 000 запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Offset\\Get",
+                "description": "@see Keywords_2\\Methods\\Keywords\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Offset/Get.json#/components/schemas/Keywords_2.Methods.Keywords.Offset.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Offset/Get.json#/components/schemas/Keywords_2.Methods.Keywords.Offset.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/rename/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsRename",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Переименование запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Rename\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Rename/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Rename.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Rename/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Rename.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/sort/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsSort",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Изменение сортировки запросов\n\nМожно сортировать в пределах одной группы или всего проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Sort\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Sort/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Sort.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Sort/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Sort.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/tags/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsTags",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Изменение тегов запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Tags\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Tags/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Tags.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Tags/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Tags.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/target/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsTarget",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Изменение целевой ссылки запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Target\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Target/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Target.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Target/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Target.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/undel/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsUndel",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Восстановление запросов из корзины\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Undel\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Undel/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Undel.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Undel/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Undel.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -29415,6 +30016,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Keywords_2/Methods/Collect/Ext/Price/Get.json#/components/schemas/Keywords_2.Methods.Collect.Ext.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/keywords/export/toProject/": {
+            "post": {
+                "operationId": "EditKeywords2KeywordsExportToProject",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Копирование запросов в другой проект\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Export\\ToProject\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Export/ToProject/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Export.ToProject.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Keywords/Export/ToProject/Edit.json#/components/schemas/Keywords_2.Methods.Keywords.Export.ToProject.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [

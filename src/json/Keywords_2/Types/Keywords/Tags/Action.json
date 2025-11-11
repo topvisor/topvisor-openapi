@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Keywords.Tags.Action",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Keywords.Tags.Action": {
+                "type": "string",
+                "enum": [
+                    "set",
+                    "add",
+                    "remove"
+                ],
+                "x-enum-varnames": [
+                    "Set",
+                    "Add",
+                    "Remove"
+                ],
+                "x-enum-descriptions": [
+                    "Установить",
+                    "Добавить",
+                    "Удалить"
+                ],
+                "title": "Действие с тегами запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Keywords\\Tags\\Action"
+            }
+        }
+    }
+}
