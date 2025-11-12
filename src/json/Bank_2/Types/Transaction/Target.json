@@ -17,6 +17,7 @@
                     "broker",
                     "aiTracker",
                     "checkVolumes",
+                    "checkVolumesToolbox",
                     "checkPositions",
                     "checkSnapshots",
                     "claster",
@@ -26,8 +27,7 @@
                     "mentions",
                     "system",
                     "webScreens",
-                    "wordstat",
-                    "checkVolumesToolbox"
+                    "wordstat"
                 ],
                 "x-enum-varnames": [
                     "Audit",
@@ -37,6 +37,7 @@
                     "Broker",
                     "AiTracker",
                     "CheckVolumes",
+                    "CheckVolumesToolbox",
                     "CheckPositions",
                     "CheckSnapshots",
                     "Claster",
@@ -46,8 +47,7 @@
                     "Mentions",
                     "System",
                     "WebScreens",
-                    "Wordstat",
-                    "CheckVolumesToolbox"
+                    "Wordstat"
                 ],
                 "x-enum-descriptions": [
                     "Анализ сайта",
@@ -57,6 +57,7 @@
                     "Управления ставками в рекламе",
                     "Ai-Трекер",
                     "Проверка частоты",
+                    "Проверка частоты в тулбоксе",
                     "Проверка позиций",
                     "Снимки выдачи",
                     "Кластеризация",
@@ -66,8 +67,7 @@
                     "Упоминания",
                     "Кассовые операции; Например: реальное платежное пополнение, бонусное пополнение по достижениям, изменения счета из админки",
                     "Скриншоты веб-страниц",
-                    "Подбор слов",
-                    "Проверка частоты в тулбоксе"
+                    "Подбор слов"
                 ],
                 "title": "Назначение транзакции списания/пополнения в банке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Types\\Transaction\\Target"
             }
