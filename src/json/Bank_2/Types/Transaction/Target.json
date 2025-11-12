@@ -26,7 +26,8 @@
                     "mentions",
                     "system",
                     "webScreens",
-                    "wordstat"
+                    "wordstat",
+                    "checkVolumesToolbox"
                 ],
                 "x-enum-varnames": [
                     "Audit",
@@ -45,7 +46,8 @@
                     "Mentions",
                     "System",
                     "WebScreens",
-                    "Wordstat"
+                    "Wordstat",
+                    "CheckVolumesToolbox"
                 ],
                 "x-enum-descriptions": [
                     "Анализ сайта",
@@ -64,7 +66,8 @@
                     "Упоминания",
                     "Кассовые операции; Например: реальное платежное пополнение, бонусное пополнение по достижениям, изменения счета из админки",
                     "Скриншоты веб-страниц",
-                    "Подбор слов"
+                    "Подбор слов",
+                    "Проверка частоты в тулбоксе"
                 ],
                 "title": "Назначение транзакции списания/пополнения в банке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Types\\Transaction\\Target"
             }
