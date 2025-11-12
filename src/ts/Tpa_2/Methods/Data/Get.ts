@@ -25,13 +25,8 @@ export interface components {
             metrika?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -42,18 +37,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             webmaster?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -64,18 +54,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             direct?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -86,18 +71,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             yandexMarket?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -108,18 +88,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             analytics?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -130,18 +105,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             ganalytics?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -152,18 +122,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             gdrive?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -174,18 +139,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             adwords?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -196,18 +156,13 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
             gsc?: {
                 login: string;
                 expire_at: string;
-                cid?: string | null;
-                resources?: {
-                    cid: string | null;
-                    login: string;
-                    name: string;
-                    type: string | null;
-                } | null;
+                cid: string | null;
+                resources?: import('../../Types/Providers/Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
                 campaigns?: {
                     id: number;
                     added: number;
@@ -218,7 +173,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                };
+                } | null;
             };
         } | null;
     };

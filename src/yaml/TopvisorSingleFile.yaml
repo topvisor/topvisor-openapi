@@ -30923,6 +30923,26 @@ components:
         Получение данных о подключенных сервисах
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Data\Get
+    Tpa_2.Types.Providers.Resource:
+      type: object
+      properties:
+        cid:
+          type: string
+        name:
+          type: string
+        type:
+          nullable: true
+          type: string
+        login:
+          nullable: true
+          type: string
+      required:
+        - cid
+        - name
+      title: |-
+        Ресурс интеграции
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Types\Providers\Resource
     Tpa_2.Methods.Data.Get.Exec:
       nullable: true
       type: object
@@ -30939,57 +30959,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         webmaster:
           type: object
           properties:
@@ -31002,57 +31007,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         direct:
           type: object
           properties:
@@ -31065,57 +31055,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         yandexMarket:
           type: object
           properties:
@@ -31128,57 +31103,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         analytics:
           type: object
           properties:
@@ -31191,57 +31151,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         ganalytics:
           type: object
           properties:
@@ -31254,57 +31199,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         gdrive:
           type: object
           properties:
@@ -31317,57 +31247,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         adwords:
           type: object
           properties:
@@ -31380,57 +31295,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
         gsc:
           type: object
           properties:
@@ -31443,57 +31343,42 @@ components:
                 - type: string
                 - type: 'null'
             resources:
+              type: array
+              items:
+                $ref: '#/components/schemas/Tpa_2.Types.Providers.Resource'
+            campaigns:
               anyOf:
                 - type: object
                   properties:
-                    cid:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
-                    login:
+                    id:
+                      type: integer
+                    added:
+                      type: integer
+                    state:
                       type: string
-                    name:
+                    campaign_tv_id:
+                      type: integer
+                    agency_name:
                       type: string
-                    type:
-                      anyOf:
-                        - type: string
-                        - type: 'null'
+                    status_name:
+                      type: string
+                    used_in_other_projects:
+                      type: object
+                      additionalProperties:
+                        type: array
                   required:
-                    - cid
-                    - login
-                    - name
-                    - type
+                    - id
+                    - added
+                    - state
+                    - campaign_tv_id
+                    - agency_name
+                    - status_name
+                    - used_in_other_projects
                 - type: 'null'
-            campaigns:
-              type: object
-              properties:
-                id:
-                  type: integer
-                added:
-                  type: integer
-                state:
-                  type: string
-                campaign_tv_id:
-                  type: integer
-                agency_name:
-                  type: string
-                status_name:
-                  type: string
-                used_in_other_projects:
-                  type: object
-                  additionalProperties:
-                    type: array
-              required:
-                - id
-                - added
-                - state
-                - campaign_tv_id
-                - agency_name
-                - status_name
-                - used_in_other_projects
           required:
             - login
             - expire_at
+            - cid
     Models.Projects.Tpa:
       properties:
         id: {}
