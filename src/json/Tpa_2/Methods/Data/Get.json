@@ -42,7 +42,6 @@
                 "title": "Получение данных о подключенных сервисах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\Data\\Get"
             },
             "Tpa_2.Methods.Data.Get.Exec": {
-                "nullable": true,
                 "type": "object",
                 "properties": {
                     "metrika": {

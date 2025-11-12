@@ -175,7 +175,7 @@ export interface components {
                     };
                 } | null;
             };
-        } | null;
+        };
     };
     responses: never;
     parameters: never;

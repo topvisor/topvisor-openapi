@@ -30944,7 +30944,6 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Types\Providers\Resource
     Tpa_2.Methods.Data.Get.Exec:
-      nullable: true
       type: object
       properties:
         metrika:
