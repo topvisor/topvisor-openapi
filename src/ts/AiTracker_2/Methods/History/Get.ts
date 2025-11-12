@@ -47,7 +47,7 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "AiTracker_2.Methods.History.Get.Exec": import('../../../Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'][];
+        "AiTracker_2.Methods.History.Get.Exec": import('../../../Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'][];
     };
     responses: never;
     parameters: never;

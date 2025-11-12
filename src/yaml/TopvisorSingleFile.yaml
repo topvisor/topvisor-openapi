@@ -1866,7 +1866,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
+                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /add/aitracker_2/prompts/:
     post:
       operationId: AddAitracker2Prompts
@@ -1929,7 +1929,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
+                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /edit/aitracker_2/settings/:
     post:
       operationId: EditAitracker2Settings
@@ -22681,7 +22681,7 @@ components:
         - models
         - project_id
       title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\History\Get'
-    Models.Ai.Tracker.Prompts:
+    Models.AiTracker.Prompts:
       properties:
         COUNT(*):
           nullable: true
@@ -22719,7 +22719,7 @@ components:
     AiTracker_2.Methods.History.Get.Exec:
       type: array
       items:
-        $ref: '#/components/schemas/Models.Ai.Tracker.Prompts'
+        $ref: '#/components/schemas/Models.AiTracker.Prompts'
     AiTracker_2.Types.Prompts.ToType:
       type: string
       enum:

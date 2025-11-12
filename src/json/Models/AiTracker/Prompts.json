@@ -1,0 +1,64 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AiTracker.Prompts",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AiTracker.Prompts": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "tagsNames()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "group_id": {
+                        "nullable": true
+                    },
+                    "tags": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "group_name": {
+                        "nullable": true
+                    },
+                    "group_ord": {
+                        "nullable": true
+                    },
+                    "response": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    },
+                    "mentioned": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

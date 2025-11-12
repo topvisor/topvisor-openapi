@@ -100,7 +100,7 @@
             "AiTracker_2.Methods.History.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "$ref": "../../../Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
+                    "$ref": "../../../Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
                 }
             }
         }
