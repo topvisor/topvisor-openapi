@@ -46,7 +46,7 @@ export interface components {
             /** Комментарий */
             comment?: string | null;
             /** Удалено (флаг) */
-            deleted?: string | null;
+            deleted?: boolean | null;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

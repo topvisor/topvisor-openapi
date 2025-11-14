@@ -39886,7 +39886,7 @@ components:
         deleted:
           title: Удалено (флаг)
           nullable: true
-          type: string
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -40168,7 +40168,7 @@ components:
         deleted:
           title: Удален ли
           nullable: true
-          type: string
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:

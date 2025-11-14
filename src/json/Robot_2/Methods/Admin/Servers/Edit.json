@@ -101,7 +101,7 @@
                     "deleted": {
                         "title": "Удален ли",
                         "nullable": true,
-                        "type": "string"
+                        "type": "boolean"
                     },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
