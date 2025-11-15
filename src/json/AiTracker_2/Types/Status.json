@@ -13,22 +13,22 @@
                     "none",
                     "inQueue",
                     "checking",
-                    "saving",
+                    "finished",
                     "reporting"
                 ],
                 "x-enum-varnames": [
                     "None",
                     "InQueue",
                     "Checking",
-                    "Saving",
+                    "Finished",
                     "Reporting"
                 ],
                 "x-enum-descriptions": [
                     null,
                     "В очереди на постановку задач",
                     "На проверке",
-                    "Запись результатов",
-                    "Рассылка отчета"
+                    "Проверка завершена, ожидается рассылка отчетов",
+                    "Рассылка отчетов"
                 ],
                 "title": "Статус проверки AI-трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\Status"
             }

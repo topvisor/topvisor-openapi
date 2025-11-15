@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Status
          * @enum {string}
          */
-        "AiTracker_2.Types.Status": "none" | "inQueue" | "checking" | "saving" | "reporting";
+        "AiTracker_2.Types.Status": "none" | "inQueue" | "checking" | "finished" | "reporting";
     };
     responses: never;
     parameters: never;
