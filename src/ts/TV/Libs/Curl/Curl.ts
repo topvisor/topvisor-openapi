@@ -7,16 +7,20 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Libs\Curl\Curl */
+        /** Обертка Curl с полезным функционалом для проекта Топвизор
+         *
+         *     Располагается и разрабатывается в проекте **Robot**
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Libs\Curl\Curl */
         "TV.Libs.Curl.Curl": {
-            /** @default Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 */
+            /** @default Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 */
             userAgentDef: string;
             /** @default Mozilla/5.0 (%OS%) AppleWebKit/%v4% (KHTML, like Gecko) %label%/%v1%.0.%v2%.%v3% %mobile%Safari/%v42% */
             userAgentTpl: string;
             /** @default {
-             *       "0": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+             *       "0": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.126 Safari/537.36",
              *       "1": "Mozilla/5.0 (iPad; CPU OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/83.0.4103.88 Mobile/15E148 Safari/604.1",
-             *       "2": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/83.0.4103.88 Mobile/15E148 Safari/604.1",
+             *       "2": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
              *       "11": "Mozilla/5.0 (Linux; Android 8.1.0; Lenovo TB-X304L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
              *       "12": "Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36",
              *       "100": "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
@@ -31,6 +35,7 @@ export interface components {
             userAgentDevice: unknown[];
             responseBodyBuffer: string;
             responseBodyBufferStop: string;
+            lastUrl?: string | null;
         };
     };
     responses: never;
