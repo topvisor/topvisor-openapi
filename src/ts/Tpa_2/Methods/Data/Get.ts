@@ -37,7 +37,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             webmaster?: {
                 login: string;
@@ -54,7 +54,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             direct?: {
                 login: string;
@@ -71,7 +71,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             yandexMarket?: {
                 login: string;
@@ -88,7 +88,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             analytics?: {
                 login: string;
@@ -105,7 +105,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             ganalytics?: {
                 login: string;
@@ -122,7 +122,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             gdrive?: {
                 login: string;
@@ -139,7 +139,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             adwords?: {
                 login: string;
@@ -156,7 +156,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
             gsc?: {
                 login: string;
@@ -173,7 +173,7 @@ export interface components {
                     used_in_other_projects: {
                         [key: string]: unknown[];
                     };
-                } | null;
+                }[] | null;
             };
         };
     };

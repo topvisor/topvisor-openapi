@@ -72,42 +72,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -149,42 +152,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -226,42 +232,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -303,42 +312,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -380,42 +392,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -457,42 +472,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -534,42 +552,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -611,42 +632,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
@@ -688,42 +712,45 @@
                             "campaigns": {
                                 "anyOf": [
                                     {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "integer"
-                                            },
-                                            "added": {
-                                                "type": "integer"
-                                            },
-                                            "state": {
-                                                "type": "string"
-                                            },
-                                            "campaign_tv_id": {
-                                                "type": "integer"
-                                            },
-                                            "agency_name": {
-                                                "type": "string"
-                                            },
-                                            "status_name": {
-                                                "type": "string"
-                                            },
-                                            "used_in_other_projects": {
-                                                "type": "object",
-                                                "additionalProperties": {
-                                                    "type": "array"
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "added": {
+                                                    "type": "integer"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "campaign_tv_id": {
+                                                    "type": "integer"
+                                                },
+                                                "agency_name": {
+                                                    "type": "string"
+                                                },
+                                                "status_name": {
+                                                    "type": "string"
+                                                },
+                                                "used_in_other_projects": {
+                                                    "type": "object",
+                                                    "additionalProperties": {
+                                                        "type": "array"
+                                                    }
                                                 }
-                                            }
-                                        },
-                                        "required": [
-                                            "id",
-                                            "added",
-                                            "state",
-                                            "campaign_tv_id",
-                                            "agency_name",
-                                            "status_name",
-                                            "used_in_other_projects"
-                                        ]
+                                            },
+                                            "required": [
+                                                "id",
+                                                "added",
+                                                "state",
+                                                "campaign_tv_id",
+                                                "agency_name",
+                                                "status_name",
+                                                "used_in_other_projects"
+                                            ]
+                                        }
                                     },
                                     {
                                         "type": "null"
