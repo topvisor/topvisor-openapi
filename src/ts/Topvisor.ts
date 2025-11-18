@@ -12879,7 +12879,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/History/Get.ts').components['schemas']['AiTracker_2.Methods.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
+                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
                 };
             };
         };
@@ -12930,7 +12930,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/Prompts/Get.ts').components['schemas']['AiTracker_2.Methods.Prompts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
+                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
                 };
             };
         };

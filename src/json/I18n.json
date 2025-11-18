@@ -7,9 +7,6 @@
     "paths": {},
     "components": {
         "schemas": {
-            "Common": {
-                "$ref": "I18n/Common.json#/components/schemas/I18n.Common"
-            },
             "Actions": {
                 "$ref": "I18n/Actions.json#/components/schemas/I18n.Actions"
             },
@@ -33,6 +30,9 @@
             },
             "Calendar": {
                 "$ref": "I18n/Calendar.json#/components/schemas/I18n.Calendar"
+            },
+            "Common": {
+                "$ref": "I18n/Common.json#/components/schemas/I18n.Common"
             },
             "Competitors": {
                 "$ref": "I18n/Competitors.json#/components/schemas/I18n.Competitors"

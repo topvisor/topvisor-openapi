@@ -36,6 +36,7 @@ export interface components {
         "Models.AdminLayers.Service": import('./Models/AdminLayers/Service.ts').components['schemas']['Models.AdminLayers.Service'];
         "Models.Admin.Staff": import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
         "Models.Admin.Users": import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
+        "Models.AiTracker.Prompts": import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
         "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
         "Models.Analytics.Ranks": import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
         "Models.Analytics.RanksUsers": import('./Models/Analytics/RanksUsers.ts').components['schemas']['Models.Analytics.RanksUsers'];
@@ -74,7 +75,6 @@ export interface components {
         "Models.Watcher.Results": import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
         "Models.Admin.Accounting.Counteragents": import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
         "Models.Admin.Users.Ranks": import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
-        "Models.Ai.Tracker.Prompts": import('./Models/Ai/Tracker/Prompts.ts').components['schemas']['Models.Ai.Tracker.Prompts'];
     };
     responses: never;
     parameters: never;

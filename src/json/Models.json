@@ -94,6 +94,9 @@
             "Models.Admin.Users": {
                 "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
             },
+            "Models.AiTracker.Prompts": {
+                "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
+            },
             "Models.Analytics.Events": {
                 "$ref": "Models/Analytics/Events.json#/components/schemas/Models.Analytics.Events"
             },
@@ -207,12 +210,6 @@
             },
             "Models.Admin.Users.Ranks": {
                 "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
-            },
-            "Models.Ai.Tracker.Prompts": {
-                "$ref": "Models/Ai/Tracker/Prompts.json#/components/schemas/Models.Ai.Tracker.Prompts"
-            },
-            "Models.AiTracker.Prompts": {
-                "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
             }
         }
     }

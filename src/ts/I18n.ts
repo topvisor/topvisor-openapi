@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        Common: import('./I18n/Common.ts').components['schemas']['I18n.Common'];
         Actions: import('./I18n/Actions.ts').components['schemas']['I18n.Actions'];
         Ai: import('./I18n/Ai.ts').components['schemas']['I18n.Ai'];
         Analytics: import('./I18n/Analytics.ts').components['schemas']['I18n.Analytics'];
@@ -16,6 +15,7 @@ export interface components {
         Bank: import('./I18n/Bank.ts').components['schemas']['I18n.Bank'];
         Broker: import('./I18n/Broker.ts').components['schemas']['I18n.Broker'];
         Calendar: import('./I18n/Calendar.ts').components['schemas']['I18n.Calendar'];
+        Common: import('./I18n/Common.ts').components['schemas']['I18n.Common'];
         Competitors: import('./I18n/Competitors.ts').components['schemas']['I18n.Competitors'];
         Cron: import('./I18n/Cron.ts').components['schemas']['I18n.Cron'];
         Domains: import('./I18n/Domains.ts').components['schemas']['I18n.Domains'];
