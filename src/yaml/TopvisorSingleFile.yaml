@@ -41139,6 +41139,21 @@ components:
         Формат превью
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Common\PagePreview\Format
+    System_2.Types.Common.PagePreview.Design:
+      type: string
+      enum:
+        - default
+        - news
+      x-enum-varnames:
+        - Default
+        - News
+      x-enum-descriptions:
+        - null
+        - null
+      title: |-
+        Дизайн preview
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Common\PagePreview\Design
     System_2.Methods.Common.PagePreview.Get:
       type: object
       properties:
@@ -41161,6 +41176,10 @@ components:
           title: Кастомная надпись
           nullable: true
           type: string
+        design:
+          default: default
+          allOf:
+            - $ref: '#/components/schemas/System_2.Types.Common.PagePreview.Design'
       required:
         - url
       title: |-

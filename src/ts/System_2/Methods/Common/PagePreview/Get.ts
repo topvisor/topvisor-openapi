@@ -24,6 +24,8 @@ export interface components {
             title?: string;
             /** Кастомная надпись */
             description?: string | null;
+            /** @default default */
+            design?: import('../../../Types/Common/PagePreview/Design.ts').components['schemas']['System_2.Types.Common.PagePreview.Design'];
         };
         "System_2.Methods.Common.PagePreview.Get.Exec": Record<string, never>;
     };

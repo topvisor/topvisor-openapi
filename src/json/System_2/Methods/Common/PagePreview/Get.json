@@ -42,6 +42,14 @@
                         "title": "Кастомная надпись",
                         "nullable": true,
                         "type": "string"
+                    },
+                    "design": {
+                        "default": "default",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../System_2/Types/Common/PagePreview/Design.json#/components/schemas/System_2.Types.Common.PagePreview.Design"
+                            }
+                        ]
                     }
                 },
                 "required": [

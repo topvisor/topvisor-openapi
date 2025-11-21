@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Common.PagePreview.Design",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Common.PagePreview.Design": {
+                "type": "string",
+                "enum": [
+                    "default",
+                    "news"
+                ],
+                "x-enum-varnames": [
+                    "Default",
+                    "News"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
+                "title": "Дизайн preview\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Types\\Common\\PagePreview\\Design"
+            }
+        }
+    }
+}
