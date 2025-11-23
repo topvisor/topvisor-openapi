@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Snippets.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Snippets.Edit": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "crc32 hash от текста сниппета",
+                        "type": "string"
+                    },
+                    "tag": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Snippets/Tag.json#/components/schemas/Keywords_2.Types.Snippets.Tag"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "hash",
+                    "tag",
+                    "project_id"
+                ],
+                "title": "Изменение тегов сниппета\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Snippets\\Edit"
+            },
+            "Keywords_2.Methods.Snippets.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Objects.Magnet",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Objects.Magnet": {
+                "type": "object",
+                "properties": {
+                    "phrase": {
+                        "title": "Запрос",
+                        "type": "string"
+                    },
+                    "path": {
+                        "title": "Путь (часть url после домена)",
+                        "type": "string"
+                    },
+                    "visits": {
+                        "title": "Визиты",
+                        "type": "integer"
+                    },
+                    "bounce": {
+                        "title": "Отказы",
+                        "type": "number"
+                    },
+                    "pageviews": {
+                        "title": "Глубина просмотра",
+                        "type": "number"
+                    },
+                    "duration": {
+                        "title": "Время на сайте",
+                        "type": "number"
+                    },
+                    "clicks": {
+                        "title": "Клики",
+                        "type": "integer"
+                    },
+                    "shows": {
+                        "title": "Показы",
+                        "type": "integer"
+                    },
+                    "ctr": {
+                        "title": "CTR",
+                        "type": "integer"
+                    },
+                    "position": {
+                        "title": "Позиция сайта в поиске",
+                        "type": "integer"
+                    },
+                    "demand": {
+                        "title": "Спрос",
+                        "type": "integer"
+                    },
+                    "domain": {
+                        "title": "schema://host",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "phrase",
+                    "path",
+                    "visits",
+                    "bounce",
+                    "pageviews",
+                    "duration",
+                    "clicks",
+                    "shows",
+                    "ctr",
+                    "position",
+                    "demand",
+                    "domain"
+                ],
+                "title": "Формат строки ответа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Objects\\Magnet"
+            }
+        }
+    }
+}

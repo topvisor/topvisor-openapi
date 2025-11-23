@@ -50,7 +50,7 @@
                         "title": "Объект второго меню (устанавливается только в tpl)\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
-                                "$ref": "../../Tpl/Core/SecondMenu.json#/components/schemas/Tpl.Core.SecondMenu"
+                                "$ref": "../../Tpl/Core/SecondMenu/SecondMenu.json#/components/schemas/Tpl.Core.SecondMenu.SecondMenu"
                             }
                         ]
                     },
@@ -58,7 +58,7 @@
                         "title": "Объект левого меню\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
-                                "$ref": "../../Tpl/Core/LeftMenu.json#/components/schemas/Tpl.Core.LeftMenu"
+                                "$ref": "../../Tpl/Core/LeftMenu/LeftMenu.json#/components/schemas/Tpl.Core.LeftMenu.LeftMenu"
                             }
                         ]
                     },

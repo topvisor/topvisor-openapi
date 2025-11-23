@@ -2652,6 +2652,63 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение данных магнита по интеграции
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Magnet\Get */
+    "/get/keywords_2/magnet/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2Magnet"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение тегов сниппета
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Snippets\Edit */
+    "/edit/keywords_2/snippets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2Snippets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получить сниппеты проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Snippets\Get */
+    "/get/keywords_2/snippets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2Snippets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение частоты проекта или одной группы
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Volumes\Get */
@@ -7061,6 +7118,81 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditKeywords2KeywordsUndel"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Magnet\Export\Get */
+    "/get/keywords_2/magnet/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2MagnetExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Magnet\Import\Get */
+    "/get/keywords_2/magnet/import/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2MagnetImport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Загрузка данных из provider в базу
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Magnet\Prepare\Get
+     * @description @internal
+     */
+    "/get/keywords_2/magnet/prepare/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2MagnetPrepare"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получить данные сниппета в формате hash:tag
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Snippets\ByHash\Get */
+    "/get/keywords_2/snippets/byHash/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2SnippetsByHash"];
         delete?: never;
         options?: never;
         head?: never;
@@ -14995,6 +15127,81 @@ export interface operations {
             };
         };
     };
+    GetKeywords2Magnet: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Magnet/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Magnet/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2Snippets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Snippets/Edit.ts').components['schemas']['Keywords_2.Methods.Snippets.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Snippets/Edit.ts').components['schemas']['Keywords_2.Methods.Snippets.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2Snippets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Snippets/Get.ts').components['schemas']['Keywords_2.Methods.Snippets.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Snippets/Get.ts').components['schemas']['Keywords_2.Methods.Snippets.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetKeywords2Volumes: {
         parameters: {
             query?: never;
@@ -20718,6 +20925,104 @@ export interface operations {
                         result: import('./Keywords_2/Methods/Keywords/Undel/Edit.ts').components['schemas']['Keywords_2.Methods.Keywords.Undel.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    GetKeywords2MagnetExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Magnet/Export/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetKeywords2MagnetImport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Magnet/Import/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Import.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Magnet/Import/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Import.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2MagnetPrepare: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Magnet/Prepare/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Prepare.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Magnet/Prepare/Get.ts').components['schemas']['Keywords_2.Methods.Magnet.Prepare.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2SnippetsByHash: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Snippets/ByHash/Get.ts').components['schemas']['Keywords_2.Methods.Snippets.ByHash.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Snippets/ByHash/Get.ts').components['schemas']['Keywords_2.Methods.Snippets.ByHash.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };

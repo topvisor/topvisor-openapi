@@ -7658,6 +7658,168 @@
                 }
             }
         },
+        "/get/keywords_2/magnet/": {
+            "post": {
+                "operationId": "GetKeywords2Magnet",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение данных магнита по интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Magnet/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Magnet/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/snippets/": {
+            "post": {
+                "operationId": "EditKeywords2Snippets",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Изменение тегов сниппета\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Snippets\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Snippets/Edit.json#/components/schemas/Keywords_2.Methods.Snippets.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Snippets/Edit.json#/components/schemas/Keywords_2.Methods.Snippets.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/snippets/": {
+            "post": {
+                "operationId": "GetKeywords2Snippets",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получить сниппеты проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Snippets\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Snippets/Get.json#/components/schemas/Keywords_2.Methods.Snippets.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Snippets/Get.json#/components/schemas/Keywords_2.Methods.Snippets.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/keywords_2/volumes/": {
             "post": {
                 "operationId": "GetKeywords2Volumes",
@@ -19983,6 +20145,204 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/magnet/export/": {
+            "post": {
+                "operationId": "GetKeywords2MagnetExport",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Export\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Magnet/Export/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/magnet/import/": {
+            "post": {
+                "operationId": "GetKeywords2MagnetImport",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Import\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Magnet/Import/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Import.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Magnet/Import/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Import.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/magnet/prepare/": {
+            "post": {
+                "operationId": "GetKeywords2MagnetPrepare",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Загрузка данных из provider в базу\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Prepare\\Get",
+                "description": "@internal",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Magnet/Prepare/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Prepare.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Magnet/Prepare/Get.json#/components/schemas/Keywords_2.Methods.Magnet.Prepare.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/snippets/byHash/": {
+            "post": {
+                "operationId": "GetKeywords2SnippetsByHash",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получить данные сниппета в формате hash:tag\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Snippets\\ByHash\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Snippets/ByHash/Get.json#/components/schemas/Keywords_2.Methods.Snippets.ByHash.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Snippets/ByHash/Get.json#/components/schemas/Keywords_2.Methods.Snippets.ByHash.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
                                 }
                             }
                         }

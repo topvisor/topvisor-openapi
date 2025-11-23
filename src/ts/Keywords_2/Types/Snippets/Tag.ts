@@ -7,8 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\Core\SecondMenu */
-        "Tpl.Core.SecondMenu": Record<string, never>;
+        /**
+         * Тег для установки к сниппету
+         *
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Snippets\Tag
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Snippets.Tag": 1 | 2 | 7;
     };
     responses: never;
     parameters: never;

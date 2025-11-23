@@ -1,17 +1,17 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Tpl.Core.SecondMenu",
+        "title": "Topvisor/Tpl.Core.SecondMenu.SecondMenu",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Tpl.Core.SecondMenu": {
+            "Tpl.Core.SecondMenu.SecondMenu": {
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\\Core\\SecondMenu"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\\Core\\SecondMenu\\SecondMenu"
             }
         }
     }

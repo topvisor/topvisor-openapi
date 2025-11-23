@@ -1,0 +1,85 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Magnet.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Magnet.Get": {
+                "type": "object",
+                "properties": {
+                    "provider": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Magnet/Provider.json#/components/schemas/Keywords_2.Types.Magnet.Provider"
+                            }
+                        ]
+                    },
+                    "method": {
+                        "title": "Метод источника данных",
+                        "type": "string"
+                    },
+                    "period": {
+                        "title": "Период дат для получения данных",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "webmaster_monitoring_path": {
+                        "title": "Поиск по пути вебмастера",
+                        "type": "string"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "provider",
+                    "period",
+                    "project_id"
+                ],
+                "title": "Получение данных магнита по интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Get"
+            },
+            "Keywords_2.Methods.Magnet.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "rows": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../Keywords_2/Objects/Magnet.json#/components/schemas/Keywords_2.Objects.Magnet"
+                        }
+                    },
+                    "is_all_data_loaded": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "rows",
+                    "is_all_data_loaded"
+                ]
+            }
+        }
+    }
+}

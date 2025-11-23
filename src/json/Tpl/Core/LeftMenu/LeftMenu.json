@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Tpl.Core.LeftMenu",
+        "title": "Topvisor/Tpl.Core.LeftMenu.LeftMenu",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Tpl.Core.LeftMenu": {
+            "Tpl.Core.LeftMenu.LeftMenu": {
                 "type": "object",
                 "properties": {
                     "items": {
@@ -17,7 +17,7 @@
                 "required": [
                     "items"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\\Core\\LeftMenu"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\\Core\\LeftMenu\\LeftMenu"
             }
         }
     }

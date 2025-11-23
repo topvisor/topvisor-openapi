@@ -42,11 +42,11 @@ export interface components {
             /** Объект второго меню (устанавливается только в tpl)
              *
              *     Сложный параметр, должен устанавливаться в конструкторе */
-            secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
+            secondMenu: import('../../Tpl/Core/SecondMenu/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu.SecondMenu'];
             /** Объект левого меню
              *
              *     Сложный параметр, должен устанавливаться в конструкторе */
-            leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
+            leftMenu: import('../../Tpl/Core/LeftMenu/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu.LeftMenu'];
             /** Хлебная крошка url в массиве, не включает домен и язык, всегда имеет не менее 5 элементов */
             params: unknown[];
             /** Сайт */
