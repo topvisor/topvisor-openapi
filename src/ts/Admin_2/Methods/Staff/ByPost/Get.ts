@@ -13,11 +13,6 @@ export interface components {
         "Admin_2.Methods.Staff.ByPost.Get": {
             /** Пост сотрудников */
             post: string;
-            /**
-             * @internal
-             * @description @todo удалить после закрытия #36718
-             */
-            show_deleted_users_without_post?: boolean;
         };
         "Admin_2.Methods.Staff.ByPost.Get.Exec": {
             [key: string]: unknown;

@@ -33611,10 +33611,6 @@ components:
         post:
           title: Пост сотрудников
           type: string
-        show_deleted_users_without_post:
-          title: '@internal'
-          description: '@todo удалить после закрытия #36718'
-          type: boolean
       required:
         - post
       title: |-
