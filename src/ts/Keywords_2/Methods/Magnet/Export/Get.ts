@@ -14,6 +14,8 @@ export interface components {
             type?: import('../../../Types/Magnet/Export/Type.ts').components['schemas']['Keywords_2.Types.Magnet.Export.Type'];
             /** Период для экспорта */
             period: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'];
+            /** Метод источника данных */
+            method?: string;
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

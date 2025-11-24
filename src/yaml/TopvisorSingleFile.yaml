@@ -38726,6 +38726,9 @@ components:
           title: Период для экспорта
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        method:
+          title: Метод источника данных
+          type: string
         fields:
           $ref: '#/components/schemas/fields'
         orders:
