@@ -30,7 +30,7 @@ export interface components {
             /** @default in_folder_last */
             to_type?: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'] | null;
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
-            debug?: string | null;
+            debug?: boolean | null;
         };
         /** Массив созданных групп */
         "Keywords_2.Methods.Collect.Go.Edit.Exec": unknown[] | null;

@@ -62,7 +62,7 @@
                     },
                     "debug": {
                         "nullable": true,
-                        "type": "string"
+                        "type": "boolean"
                     }
                 },
                 "required": [

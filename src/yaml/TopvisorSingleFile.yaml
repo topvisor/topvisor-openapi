@@ -37908,7 +37908,7 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
         debug:
           nullable: true
-          type: string
+          type: boolean
       required:
         - project_id
         - keywords
