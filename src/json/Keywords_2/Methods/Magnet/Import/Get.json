@@ -49,6 +49,10 @@
                             }
                         ]
                     },
+                    "method": {
+                        "title": "Метод источника данных",
+                        "type": "string"
+                    },
                     "fields": {
                         "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },

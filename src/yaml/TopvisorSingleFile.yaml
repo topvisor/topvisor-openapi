@@ -38774,6 +38774,9 @@ components:
           title: Период для импорта
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        method:
+          title: Метод источника данных
+          type: string
         fields:
           $ref: '#/components/schemas/fields'
         orders:
