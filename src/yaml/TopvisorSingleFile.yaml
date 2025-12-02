@@ -16290,6 +16290,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /add/admin_2/actions/telegram/informer/:
+    post:
+      operationId: AddAdmin2ActionsTelegramInformer
+      tags:
+        - Admin_2
+      summary: |-
+        Отправление рассылки бота Telegram
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Informer\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Telegram.Informer.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Telegram.Informer.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/admin_2/actions/user/currency/:
     post:
       operationId: EditAdmin2ActionsUserCurrency
@@ -37987,7 +38018,7 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
         debug:
           nullable: true
-          type: string
+          type: boolean
       required:
         - project_id
         - keywords
@@ -43075,6 +43106,34 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Slack\Messages\Del
     Admin_2.Methods.Actions.Slack.Messages.Del.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Admin_2.Methods.Actions.Telegram.Informer.Add:
+      type: object
+      properties:
+        botName:
+          title: Название бота
+          allOf:
+            - $ref: '#/components/schemas/Telegram_2.Types.Bot.Name'
+        message:
+          title: Сообщение для рассылки
+          type: string
+        username:
+          title: Имя пользователя которому отправить рассылку
+          nullable: true
+          type: string
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - botName
+        - message
+        - test
+      title: |-
+        Отправление рассылки бота Telegram
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Informer\Add
+    Admin_2.Methods.Actions.Telegram.Informer.Add.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.User.Currency.Edit:

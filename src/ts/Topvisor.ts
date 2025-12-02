@@ -9770,6 +9770,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Отправление рассылки бота Telegram
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Informer\Add */
+    "/add/admin_2/actions/telegram/informer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2ActionsTelegramInformer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменение валюты пользователя
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\User\Currency\Edit */
@@ -24356,6 +24375,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Slack/Messages/Del.ts').components['schemas']['Admin_2.Methods.Actions.Slack.Messages.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddAdmin2ActionsTelegramInformer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Telegram/Informer/Add.ts').components['schemas']['Admin_2.Methods.Actions.Telegram.Informer.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Methods/Actions/Telegram/Informer/Add.ts').components['schemas']['Admin_2.Methods.Actions.Telegram.Informer.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
