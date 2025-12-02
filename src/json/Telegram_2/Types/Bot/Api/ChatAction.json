@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Telegram_2.Types.Bot.Api.ChatAction",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Telegram_2.Types.Bot.Api.ChatAction": {
+                "type": "string",
+                "enum": [
+                    "typing",
+                    "upload_photo",
+                    "record_video",
+                    "upload_video",
+                    "record_voice",
+                    "upload_voice",
+                    "upload_document",
+                    "choose_sticker",
+                    "find_location",
+                    "record_video_note",
+                    "upload_video_note"
+                ],
+                "x-enum-varnames": [
+                    "Typing",
+                    "UploadPhoto",
+                    "RecordVideo",
+                    "UploadVideo",
+                    "RecordVoice",
+                    "UploadVoice",
+                    "UploadDocument",
+                    "ChooseSticker",
+                    "FindLocation",
+                    "RecordVideoNote",
+                    "UploadVideNote"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Статусы отправки сообщения\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Telegram_2\\Types\\Bot\\Api\\ChatAction"
+            }
+        }
+    }
+}
