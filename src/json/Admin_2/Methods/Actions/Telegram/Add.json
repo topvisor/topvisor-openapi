@@ -12,7 +12,11 @@
                 "properties": {
                     "botName": {
                         "title": "Название бота",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Telegram_2/Types/Bot/Name.json#/components/schemas/Telegram_2.Types.Bot.Name"
+                            }
+                        ]
                     },
                     "chatId": {
                         "title": "ID чата для добавления",

@@ -33187,12 +33187,34 @@ components:
     Admin_2.Methods.Actions.Projects.Get.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Telegram_2.Types.Bot.Name:
+      type: string
+      enum:
+        - TopvisorBot
+        - ThundoBot
+        - ApometrBot
+        - LibraryBot
+      x-enum-varnames:
+        - Topvisor
+        - Thundo
+        - Apometr
+        - Library
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Имя telegram бота
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\Name
     Admin_2.Methods.Actions.Telegram.Add:
       type: object
       properties:
         botName:
           title: Название бота
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Telegram_2.Types.Bot.Name'
         chatId:
           title: ID чата для добавления
           type: string

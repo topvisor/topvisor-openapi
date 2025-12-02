@@ -12,7 +12,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Add */
         "Admin_2.Methods.Actions.Telegram.Add": {
             /** Название бота */
-            botName: string;
+            botName: import('../../../../Telegram_2/Types/Bot/Name.ts').components['schemas']['Telegram_2.Types.Bot.Name'];
             /** ID чата для добавления */
             chatId: string;
             /** Является ли запуск - тестом */
