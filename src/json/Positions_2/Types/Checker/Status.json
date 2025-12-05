@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.Checker.Status",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.Checker.Status": {
+                "type": "integer",
+                "enum": [
+                    -1,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "x-enum-varnames": [
+                    "Pause",
+                    "New",
+                    "InProcess",
+                    "Closed",
+                    "Debug",
+                    "Error",
+                    "MultiplyError",
+                    "Replace"
+                ],
+                "x-enum-descriptions": [
+                    "Задача на паузе на несколько минут, если была ошибка",
+                    "Новая задача",
+                    "Задача выполняется",
+                    "Задача закрыта (запрещены к выполнению роботом)",
+                    "Задача на дебаге; Задача переводится в этот статус вручную для анализа проблемы разработчиком",
+                    "Произошла ошибка, требуется вмешательство разработчика",
+                    "Задача остановлена (было несколько безуспешных попыток, затем она была переведена в статус 5)",
+                    "Статус для переноса задач между задачниками"
+                ],
+                "title": "Статус задачи проверки позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Types\\Checker\\Status"
+            }
+        }
+    }
+}

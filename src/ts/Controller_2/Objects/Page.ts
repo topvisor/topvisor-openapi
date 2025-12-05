@@ -31,7 +31,7 @@ export interface components {
              *
              *     Сложный параметр, должен устанавливаться в конструкторе */
             openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
-            /** Основные опции страницы для <head>, такие, как title и description
+            /** Основные опции страницы для <head> такие, как title и description
              *
              *     Сложный параметр, должен устанавливаться в конструкторе */
             options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];

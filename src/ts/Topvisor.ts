@@ -3032,6 +3032,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение индекса региона (определяют уникальную настройку ПС и региона)
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\RegionIndex\Get */
+    "/get/positions_2/regionIndex/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2RegionIndex"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление ПС
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Add */
@@ -10904,6 +10923,29 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получить перепроверенные запросы
+     *
+     *     Не предназначен для работы в режиме сравнения
+     *
+     *     Проверка на права к проекту производятся в get/positions_2/history
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Status\RecheckKeywords\Get */
+    "/get/positions_2/checker/status/recheckKeywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2CheckerStatusRecheckKeywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Экспорт регионов (CSV)
      *
      *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
@@ -11109,6 +11151,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditRobot2AdminProxyProxyServer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получить перепроверенные запросы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get */
+    "/get/snapshots_2/checker/status/recheckKeywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2CheckerStatusRecheckKeywords"];
         delete?: never;
         options?: never;
         head?: never;
@@ -15621,6 +15682,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Payments_2/Methods/ValidateMerchantCardAP/Get.ts').components['schemas']['Payments_2.Methods.ValidateMerchantCardAP.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2RegionIndex: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/RegionIndex/Get.ts').components['schemas']['Positions_2.Methods.RegionIndex.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/RegionIndex/Get.ts').components['schemas']['Positions_2.Methods.RegionIndex.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -25834,6 +25920,31 @@ export interface operations {
             };
         };
     };
+    GetPositions2CheckerStatusRecheckKeywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Positions_2.Methods.Checker.Status.RecheckKeywords.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetPositions2SearchersRegionsExport: {
         parameters: {
             query?: never;
@@ -26104,6 +26215,31 @@ export interface operations {
                     "application/json": ({
                         result: import('./Robot_2/Methods/Admin/Proxy/ProxyServer/Edit.ts').components['schemas']['Robot_2.Methods.Admin.Proxy.ProxyServer.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetSnapshots2CheckerStatusRecheckKeywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };

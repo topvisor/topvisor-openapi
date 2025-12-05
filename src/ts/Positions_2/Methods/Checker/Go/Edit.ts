@@ -38,7 +38,7 @@ export interface components {
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
         };
-        /** Список id проектов, отрпавленных на проверку */
+        /** Список id проектов, отправленных на проверку */
         "Positions_2.Methods.Checker.Go.Edit.Exec": {
             projectIds: number[];
         };

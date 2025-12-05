@@ -31,7 +31,7 @@
                         ]
                     },
                     "options": {
-                        "title": "Основные опции страницы для <head>, такие, как title и description\n\nСложный параметр, должен устанавливаться в конструкторе",
+                        "title": "Основные опции страницы для <head> такие, как title и description\n\nСложный параметр, должен устанавливаться в конструкторе",
                         "allOf": [
                             {
                                 "$ref": "../../Controller_2/Objects/Page/Options.json#/components/schemas/Controller_2.Objects.Page.Options"

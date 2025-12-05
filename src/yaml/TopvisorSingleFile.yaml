@@ -5215,6 +5215,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/regionIndex/:
+    post:
+      operationId: GetPositions2RegionIndex
+      tags:
+        - Positions_2
+      summary: |-
+        Получение индекса региона (определяют уникальную настройку ПС и региона)
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\RegionIndex\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.RegionIndex.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.RegionIndex.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /add/positions_2/searchers/:
     post:
       operationId: AddPositions2Searchers
@@ -18129,6 +18160,42 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/checker/status/recheckKeywords/:
+    post:
+      operationId: GetPositions2CheckerStatusRecheckKeywords
+      tags:
+        - Positions_2
+      summary: |-
+        Получить перепроверенные запросы
+
+        Не предназначен для работы в режиме сравнения
+
+        Проверка на права к проекту производятся в get/positions_2/history
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Status\RecheckKeywords\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Checker.Status.RecheckKeywords.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/positions_2/searchers/regions/export/:
     post:
       operationId: GetPositions2SearchersRegionsExport
@@ -18468,6 +18535,38 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/snapshots_2/checker/status/recheckKeywords/:
+    post:
+      operationId: GetSnapshots2CheckerStatusRecheckKeywords
+      tags:
+        - Snapshots_2
+      summary: |-
+        Получить перепроверенные запросы
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
   /get/snapshots_2/competitors/chart/export/:
     post:
@@ -20267,7 +20366,7 @@ components:
             - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
         options:
           title: |-
-            Основные опции страницы для <head>, такие, как title и description
+            Основные опции страницы для <head> такие, как title и description
 
             Сложный параметр, должен устанавливаться в конструкторе
           allOf:
@@ -28574,6 +28673,49 @@ components:
     Payments_2.Methods.ValidateMerchantCardAP.Get.Exec:
       nullable: true
       type: array
+    Positions_2.Types.RegionDevice:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - PC
+        - Tablet
+        - Smartphone
+      x-enum-descriptions:
+        - ПК
+        - Планшет
+        - Смартфон
+      title: |-
+        Устройство региона
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\RegionDevice
+    Positions_2.Methods.RegionIndex.Get:
+      type: object
+      properties:
+        searcher_key:
+          title: Ключ поисковика
+          type: integer
+        region_key:
+          title: Ключ региона
+          type: integer
+        region_lang:
+          title: Язык региона
+          type: string
+        region_device:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+      required:
+        - searcher_key
+        - region_key
+        - region_lang
+      title: |-
+        Получение индекса региона (определяют уникальную настройку ПС и региона)
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\RegionIndex\Get
+    Positions_2.Methods.RegionIndex.Get.Exec:
+      type: integer
     Positions_2.Types.SearcherKey:
       type: integer
       enum:
@@ -30014,24 +30156,6 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Sms_2\Methods\SendPIN\Get
     Sms_2.Methods.SendPIN.Get.Exec:
       type: boolean
-    Positions_2.Types.RegionDevice:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - PC
-        - Tablet
-        - Smartphone
-      x-enum-descriptions:
-        - ПК
-        - Планшет
-        - Смартфон
-      title: |-
-        Устройство региона
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\RegionDevice
     Snapshots_2.Types.Competitors.OutputFormat:
       type: string
       enum:
@@ -39439,7 +39563,7 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Go\Edit
     Positions_2.Methods.Checker.Go.Edit.Exec:
-      title: Список id проектов, отрпавленных на проверку
+      title: Список id проектов, отправленных на проверку
       type: object
       properties:
         projectIds:
@@ -45488,6 +45612,67 @@ components:
             - count_added
             - count_missed
         - type: 'null'
+    Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName:
+      type: string
+      enum:
+        - positions
+        - snapshots
+      x-enum-varnames:
+        - Positions
+        - Snapshots
+      x-enum-descriptions:
+        - null
+        - null
+      title: |-
+        Название модуля для получения статуса запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Checker\Status\RecheckKeywords\ModuleName
+    Positions_2.Methods.Checker.Status.RecheckKeywords.Get:
+      type: object
+      properties:
+        keywords_ids:
+          title: ID запросов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        regions_indexes:
+          title: ID регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        module_name:
+          title: '@deprecated Использовать метод получения данных в нужном сервисе'
+          description: '@see Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get()'
+          deprecated: true
+          default: positions
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - keywords_ids
+        - regions_indexes
+        - project_id
+      title: |-
+        Получить перепроверенные запросы
+
+        Не предназначен для работы в режиме сравнения
+
+        Проверка на права к проекту производятся в get/positions_2/history
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Status\RecheckKeywords\Get
+    Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
+      nullable: true
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:
@@ -45757,6 +45942,123 @@ components:
             type: string
       required:
         - messages
+    Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get:
+      type: object
+      properties:
+        keywords_ids:
+          title: ID запросов данные о которых нужно получить
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        regions_indexes:
+          title: ID регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        output:
+          title: |-
+            Получение данных по всем запросам
+
+            Может быть 1 или Snapshots_2\Types\History\Export\Output
+          nullable: true
+        project_id:
+          title: Id проекта
+          type: integer
+        region_index:
+          title: |-
+            Индекс региона
+
+            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+          nullable: true
+          type: integer
+        region_key:
+          title: Ключ региона
+          nullable: true
+          type: integer
+        region_lang:
+          title: Язык региона
+          nullable: true
+          type: string
+        region_device:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        show_exists_dates:
+          title: Добавить ли в результат даты, в которых были проверки (existsDates)
+          type: boolean
+        show_ams:
+          title: Добавить ли в результат показатель шторма между выбранными проверками
+          type: boolean
+        positions_fields:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
+        searcher_key:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        dates:
+          title: |-
+            Произвольные даты без использования диапазона
+
+            Если не задан нужно задать параметры date1, date2, type_range, count_dates
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type_range:
+          title: Тип диапазона дат
+          default: 3
+          type: integer
+        count_dates:
+          title: Количество дней в диапазоне
+          default: 31
+          type: integer
+        only_exists_first_date:
+          title: |-
+            Только запросы, присутствующие в первой проверке указанного периода
+
+            - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+          nullable: true
+          type: integer
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Искать в корзине
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - keywords_ids
+        - regions_indexes
+        - project_id
+      title: |-
+        Получить перепроверенные запросы
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get
+    Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
+      nullable: true
+      type: array
     Snapshots_2.Methods.Competitors.Chart.Export.Get:
       type: object
       properties:
