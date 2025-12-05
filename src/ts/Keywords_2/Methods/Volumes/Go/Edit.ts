@@ -22,12 +22,17 @@ export interface components {
             /** Список регионов с настройками для проверки частоты
              *
              *     - Обязателен, если `set_qualifiers_for_visibility` != `true`
-             *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true` */
+             *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
+             *     - Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google` */
             qualifiers?: import('../../../Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'] | null;
             /** Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости */
             set_qualifiers_for_visibility?: boolean | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
+            /** Запустить проверку указанных типов частоты по всем регионам яндекса, добавленных в проект */
+            check_all_regions_yandex_types?: import('../../../Types/Volumes/Types.ts').components['schemas']['Keywords_2.Types.Volumes.Types'] | null;
+            /** Запустить проверку частоты по всем регионам гугла, добавленных в проект */
+            check_all_regions_google?: boolean | null;
             /**
              * Выполняется ли запуск проверки для проекта, который является задачей toolbox
              * @description @internal
