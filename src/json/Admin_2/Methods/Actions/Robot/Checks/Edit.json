@@ -23,7 +23,9 @@
                     "modEngine",
                     "test"
                 ],
-                "title": "Перевод проверок позиций яндекс\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Checks\\Edit"
+                "title": "Перевод проверок позиций яндекс\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Checks\\Edit",
+                "description": "@deprecated",
+                "deprecated": true
             },
             "Admin_2.Methods.Actions.Robot.Checks.Edit.Exec": {
                 "allOf": [

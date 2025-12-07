@@ -16175,6 +16175,8 @@ paths:
         Перевод проверок позиций яндекс
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit
+      description: '@deprecated'
+      deprecated: true
       requestBody:
         content:
           application/json:
@@ -39188,6 +39190,7 @@ components:
 
             - Обязателен, если `set_qualifiers_for_visibility` != `true`
             - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
+            - Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
@@ -39197,6 +39200,15 @@ components:
           type: boolean
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        check_all_regions_yandex_types:
+          title: Запустить проверку указанных типов частоты по всем регионам яндекса, добавленных в проект
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Types'
+        check_all_regions_google:
+          title: Запустить проверку частоты по всем регионам гугла, добавленных в проект
+          nullable: true
           type: boolean
         for_project_task:
           title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
@@ -43130,6 +43142,8 @@ components:
         Перевод проверок позиций яндекс
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit
+      description: '@deprecated'
+      deprecated: true
     Admin_2.Methods.Actions.Robot.Checks.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'

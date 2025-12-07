@@ -9694,9 +9694,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Перевод проверок позиций яндекс
+    /**
+     * Перевод проверок позиций яндекс
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Checks\Edit
+     * @deprecated
+     * @description @deprecated
+     */
     "/edit/admin_2/actions/robot/checks/": {
         parameters: {
             query?: never;

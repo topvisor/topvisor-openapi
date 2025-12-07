@@ -27202,6 +27202,8 @@
                     "Admin_2"
                 ],
                 "summary": "Перевод проверок позиций яндекс\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Checks\\Edit",
+                "description": "@deprecated",
+                "deprecated": true,
                 "requestBody": {
                     "content": {
                         "application/json": {
