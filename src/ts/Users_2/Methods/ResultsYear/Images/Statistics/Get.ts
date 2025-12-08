@@ -11,7 +11,7 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Statistics\Get */
         "Users_2.Methods.ResultsYear.Images.Statistics.Get": Record<string, never>;
-        "Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec": unknown;
+        "Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

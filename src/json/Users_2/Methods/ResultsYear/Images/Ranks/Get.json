@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.ResultsYear.Images.Ranks.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.ResultsYear.Images.Ranks.Get": {
+                "type": "object",
+                "properties": {
+                    "rank": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Users_2/Types/ResultsYear/Rank.json#/components/schemas/Users_2.Types.ResultsYear.Rank"
+                            }
+                        ]
+                    },
+                    "param": {
+                        "title": "Дополнительный параметр используемый в тексте титула",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "rank"
+                ],
+                "title": "Получение титула\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\ResultsYear\\Images\\Ranks\\Get"
+            },
+            "Users_2.Methods.ResultsYear.Images.Ranks.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

@@ -31764,6 +31764,38 @@
                 }
             }
         },
+        "/get/users_2/resultsYear/images/ranks/": {
+            "post": {
+                "operationId": "GetUsers2ResultsYearImagesRanks",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Получение титула\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\ResultsYear\\Images\\Ranks\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/ResultsYear/Images/Ranks/Get.json#/components/schemas/Users_2.Methods.ResultsYear.Images.Ranks.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/users_2/resultsYear/images/statistics/": {
             "post": {
                 "operationId": "GetUsers2ResultsYearImagesStatistics",
@@ -31785,31 +31817,10 @@
                     "200": {
                         "description": "",
                         "content": {
-                            "application/json": {
+                            "application/octet-stream": {
                                 "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Users_2/Methods/ResultsYear/Images/Statistics/Get.json#/components/schemas/Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
+                                    "type": "string",
+                                    "format": "binary"
                                 }
                             }
                         }

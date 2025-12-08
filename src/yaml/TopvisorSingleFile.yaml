@@ -18893,6 +18893,29 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/users_2/resultsYear/images/ranks/:
+    post:
+      operationId: GetUsers2ResultsYearImagesRanks
+      tags:
+        - Users_2
+      summary: |-
+        Получение титула
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Ranks\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Users_2.Methods.ResultsYear.Images.Ranks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
   /get/users_2/resultsYear/images/statistics/:
     post:
       operationId: GetUsers2ResultsYearImagesStatistics
@@ -18912,18 +18935,10 @@ paths:
         '200':
           description: ''
           content:
-            application/json:
+            application/octet-stream:
               schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
+                type: string
+                format: binary
   /get/users_2/stats/account/listMonth/:
     post:
       operationId: GetUsers2StatsAccountListMonth
@@ -46592,6 +46607,75 @@ components:
     Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec:
       nullable: true
       type: integer
+    Users_2.Types.ResultsYear.Rank:
+      type: string
+      enum:
+        - yandexoid
+        - googloid
+        - masterBalance
+        - prodvigator
+        - firstInEquals
+        - googleGuru
+        - trueSaintp
+        - nativeMoscow
+        - topAchiever
+        - radarMagician
+        - analizator
+        - ambassadorTelegram
+        - seoCat
+        - knightRegions
+        - semanticAlchemist
+      x-enum-varnames:
+        - Yandexoid
+        - Googloid
+        - MasterBalance
+        - Prodvigator
+        - FirstInEquals
+        - GoogleGuru
+        - TrueSaintp
+        - NativeMoscow
+        - TopAchiever
+        - RadarMagician
+        - Analizator
+        - AmbassadorTelegram
+        - SeoCat
+        - KnightRegions
+        - SemanticAlchemist
+      x-enum-descriptions:
+        - Яндексоид; Считаем число проверок в Яндексе и Google, число проверок в Яндексе >= 60%
+        - Гуглоид; Сколько у него позиций с Featured Snippet во всех проектах
+        - Мастер баланса; Считаем число проверок в Яндексе и Google, за баланс берем 40/60 в любую сторону
+        - Продвигатор; Сколько у него топ-1-3 позиций по любым запросам во всех проектах в любых ПС
+        - Первый среди равных; Сколько у него позиций с Featured Snippet во всех проектах
+        - Гуру Google; Кешбэк считается каждые сутки, посчитать по id аккаунта
+        - Истинный петербуржец; Считаем число проверок в регионах Санкт-Петербург (2) или Ленинградская область (10174), если они есть в проекте. Любые проверки (полный; проект, по фильтру, по 1 запросу)
+        - Коренной москвич; Считаем число проверок с регионом Москва (213) или Московская область (1), если они есть в проекте. Любые проверки (полный проект, по фильтру,; по 1 запросу)
+        - Покоритель ТОПа; Взять все позиции по запросам и выдавать статус, если >=90% позиций запроса составляют ТОП-1-10
+        - Маг радарных бурь; Считаем все не 200 коды во всех проектах
+        - Анализатор; Сколько раз запускался инструмент в аккаунте
+        - Амбассадор Телеграма; Всем, кто активировал ачивку в этом году (см. date в таблице users_ranks, id достижения 56)
+        - SEO-котик; Список id от поддержки тех, кто присылала котиков/или считать просто по положительным оценкам и отдавать достижение тем, кто поставил; максимальную обратную связь:; 461659; 360441; 171249; 81839; 438954; 280205; 157996; 427088; 381077; 364871; 125084; 314978; 302380; 98608; 211856; 455137
+        - Рыцарь регионов; Все, у кого в активных проектах более 5 регионов в любых ПС
+        - Семантический алхимик; За кластеризацию (посчитать суммарное кол-во запросов, которые кластеризовали)
+      title: |-
+        Титул
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rank
+    Users_2.Methods.ResultsYear.Images.Ranks.Get:
+      type: object
+      properties:
+        rank:
+          allOf:
+            - $ref: '#/components/schemas/Users_2.Types.ResultsYear.Rank'
+        param:
+          title: Дополнительный параметр используемый в тексте титула
+          type: string
+      required:
+        - rank
+      title: |-
+        Получение титула
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Ranks\Get
     Users_2.Methods.ResultsYear.Images.Statistics.Get:
       type: object
       properties: {}
@@ -46600,8 +46684,6 @@ components:
         Получение статистики
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Statistics\Get
-    Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec:
-      nullable: true
     Users_2.Methods.Stats.Account.ListMonth.Get:
       type: object
       properties:
