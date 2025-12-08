@@ -13,15 +13,18 @@
                     "TopvisorBot",
                     "ThundoBot",
                     "ApometrBot",
-                    "LibraryBot"
+                    "LibraryBot",
+                    "ResultsYearBot"
                 ],
                 "x-enum-varnames": [
                     "Topvisor",
                     "Thundo",
                     "Apometr",
-                    "Library"
+                    "Library",
+                    "ResultsYear"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,

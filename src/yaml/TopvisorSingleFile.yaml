@@ -31324,6 +31324,8 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Get
     Models.Tickets:
       properties:
+        COUNT(*):
+          nullable: true
         REQUISITES():
           nullable: true
         LAST_MESSAGE_TEXT():
@@ -33351,12 +33353,15 @@ components:
         - ThundoBot
         - ApometrBot
         - LibraryBot
+        - ResultsYearBot
       x-enum-varnames:
         - Topvisor
         - Thundo
         - Apometr
         - Library
+        - ResultsYear
       x-enum-descriptions:
+        - null
         - null
         - null
         - null

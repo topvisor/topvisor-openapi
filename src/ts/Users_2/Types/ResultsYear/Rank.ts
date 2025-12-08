@@ -8,12 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Имя telegram бота
+         * Название титула
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\Name
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rank
          * @enum {string}
          */
-        "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot" | "LibraryBot" | "ResultsYearBot";
+        "Users_2.Types.ResultsYear.Rank": "yandexoid" | "googloid" | "masterBalance" | "promoter" | "leaderFeaturedSnippet" | "googleGuru" | "truePetersburger" | "trueMuscovite" | "conquerorTop" | "magicianRadarStorms" | "analyzer" | "ambassadorTelegram" | "seoCat" | "knightRegions" | "semanticAlchemist";
     };
     responses: never;
     parameters: never;

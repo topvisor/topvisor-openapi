@@ -126,6 +126,10 @@
                         "const": "",
                         "readOnly": true
                     },
+                    "Message_start_results_year_text": {
+                        "const": "",
+                        "readOnly": true
+                    },
                     "Message_stop_text": {
                         "const": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.",
                         "readOnly": true
@@ -138,12 +142,16 @@
                         "const": "To remove account, type /unpair",
                         "readOnly": true
                     },
-                    "Message_pair_authorize1": {
-                        "const": "Sign in to %siteName% and click the <a href=\"https://%siteId%.com/income/telegram/join/",
+                    "Message_pair_authorize": {
+                        "const": "Sign in to %siteName% and click the <a href=\"%url%\">link</a> to link your Telegram to the %siteName% account",
                         "readOnly": true
                     },
-                    "Message_pair_authorize2": {
-                        "const": "\">link</a> to link your Telegram to the %siteName% account",
+                    "Message_pair_authorize_link": {
+                        "const": "https://%siteId%.com/income/telegram/join/%chatId%/%nickname%",
+                        "readOnly": true
+                    },
+                    "Message_pair_authorize_link_text": {
+                        "const": "Connect an account",
                         "readOnly": true
                     },
                     "Message_unpair": {
@@ -205,6 +213,22 @@
                     "Impossible_link_profile": {
                         "const": "It is impossible to link a profile",
                         "readOnly": true
+                    },
+                    "Message_summing_results_year": {
+                        "const": "Подвожу итоги 🎅🥂 Это займет пару минут...",
+                        "readOnly": true
+                    },
+                    "Message_statistics_results_year": {
+                        "const": "Вот как прошел ваш год в @topvisor ⬆️",
+                        "readOnly": true
+                    },
+                    "Message_rank_results_year": {
+                        "const": "Вот какие титулы вы заработали в @topvisor в этом году ⬆️",
+                        "readOnly": true
+                    },
+                    "Message_cant_answer": {
+                        "const": "Извините, я не умею отвечать на вопросы. Если у вас есть вопрос по сервису, напишите в поддержку через @topvisorBot",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -235,11 +259,13 @@
                     "Message_start_text3",
                     "Message_start_apometer_text",
                     "Message_start_library_text",
+                    "Message_start_results_year_text",
                     "Message_stop_text",
                     "Message_pair_done1",
                     "Message_pair_done2",
-                    "Message_pair_authorize1",
-                    "Message_pair_authorize2",
+                    "Message_pair_authorize",
+                    "Message_pair_authorize_link",
+                    "Message_pair_authorize_link_text",
                     "Message_unpair",
                     "Message_tpvsr",
                     "Message_tpvsr_cancel",
@@ -249,7 +275,8 @@
                     "Message_join_done1",
                     "Message_join_done2",
                     "Profile_successfully_linked",
-                    "Impossible_link_profile"
+                    "Impossible_link_profile",
+                    "Message_summing_results_year"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Telegram\\En"
             }

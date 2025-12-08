@@ -9,6 +9,9 @@
         "schemas": {
             "Models.Tickets": {
                 "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
                     "REQUISITES()": {
                         "nullable": true
                     },

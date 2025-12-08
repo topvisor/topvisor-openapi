@@ -68,15 +68,19 @@ export interface components {
             /** @constant */
             readonly Message_start_library_text: "";
             /** @constant */
+            readonly Message_start_results_year_text: "";
+            /** @constant */
             readonly Message_stop_text: "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.";
             /** @constant */
             readonly Message_pair_done1: "Your Telegram already linked to the account";
             /** @constant */
             readonly Message_pair_done2: "To remove account, type /unpair";
             /** @constant */
-            readonly Message_pair_authorize1: "Sign in to %siteName% and click the <a href=\"https://%siteId%.com/income/telegram/join/";
+            readonly Message_pair_authorize: "Sign in to %siteName% and click the <a href=\"%url%\">link</a> to link your Telegram to the %siteName% account";
             /** @constant */
-            readonly Message_pair_authorize2: "\">link</a> to link your Telegram to the %siteName% account";
+            readonly Message_pair_authorize_link: "https://%siteId%.com/income/telegram/join/%chatId%/%nickname%";
+            /** @constant */
+            readonly Message_pair_authorize_link_text: "Connect an account";
             /** @constant */
             readonly Message_unpair: "Account removed.";
             /** @constant */
@@ -107,6 +111,14 @@ export interface components {
             readonly Profile_successfully_linked: "Profile ID %userId% has been successfully linked.";
             /** @constant */
             readonly Impossible_link_profile: "It is impossible to link a profile";
+            /** @constant */
+            readonly Message_summing_results_year: "Подвожу итоги 🎅🥂 Это займет пару минут...";
+            /** @constant */
+            readonly Message_statistics_results_year?: "Вот как прошел ваш год в @topvisor ⬆️";
+            /** @constant */
+            readonly Message_rank_results_year?: "Вот какие титулы вы заработали в @topvisor в этом году ⬆️";
+            /** @constant */
+            readonly Message_cant_answer?: "Извините, я не умею отвечать на вопросы. Если у вас есть вопрос по сервису, напишите в поддержку через @topvisorBot";
         };
     };
     responses: never;

@@ -8,6 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Tickets": {
+            "COUNT(*)"?: any;
             "REQUISITES()"?: any;
             "LAST_MESSAGE_TEXT()"?: any;
             "LAST_MESSAGE_USER_ID()"?: any;
