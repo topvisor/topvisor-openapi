@@ -80,6 +80,8 @@ export interface components {
             /** @constant */
             readonly Message_pair_authorize_link: "https://%siteId%.com/income/telegram/join/%chatId%/%nickname%";
             /** @constant */
+            readonly Message_pair_authorize_link_results_year: "https://%siteId%.com/income/telegram/join/ResultsYearBot/%chatId%/%nickname%";
+            /** @constant */
             readonly Message_pair_authorize_link_text: "Connect an account";
             /** @constant */
             readonly Message_unpair: "Account removed.";

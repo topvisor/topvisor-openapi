@@ -150,6 +150,10 @@
                         "const": "https://%siteId%.com/income/telegram/join/%chatId%/%nickname%",
                         "readOnly": true
                     },
+                    "Message_pair_authorize_link_results_year": {
+                        "const": "https://%siteId%.com/income/telegram/join/ResultsYearBot/%chatId%/%nickname%",
+                        "readOnly": true
+                    },
                     "Message_pair_authorize_link_text": {
                         "const": "Connect an account",
                         "readOnly": true
@@ -265,6 +269,7 @@
                     "Message_pair_done2",
                     "Message_pair_authorize",
                     "Message_pair_authorize_link",
+                    "Message_pair_authorize_link_results_year",
                     "Message_pair_authorize_link_text",
                     "Message_unpair",
                     "Message_tpvsr",
