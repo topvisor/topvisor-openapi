@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rank
          * @enum {string}
          */
-        "Users_2.Types.ResultsYear.Rank": "yandexoid" | "googloid" | "masterBalance" | "promoter" | "leaderFeaturedSnippet" | "googleGuru" | "truePetersburger" | "trueMuscovite" | "conquerorTop" | "magicianRadarStorms" | "analyzer" | "ambassadorTelegram" | "seoCat" | "knightRegions" | "semanticAlchemist";
+        "Users_2.Types.ResultsYear.Rank": "yandexoid" | "googloid" | "masterBalance" | "prodvigator" | "firstInEquals" | "googleGuru" | "trueSaintp" | "nativeMoscow" | "topAchiever" | "radarMagician" | "analizator" | "ambassadorTelegram" | "seoCat" | "knightRegions" | "semanticAlchemist";
     };
     responses: never;
     parameters: never;

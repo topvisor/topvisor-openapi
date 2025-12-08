@@ -18893,6 +18893,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/users_2/resultsYear/images/statistics/:
+    post:
+      operationId: GetUsers2ResultsYearImagesStatistics
+      tags:
+        - Users_2
+      summary: |-
+        Получение статистики
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Statistics\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Users_2.Methods.ResultsYear.Images.Statistics.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/users_2/stats/account/listMonth/:
     post:
       operationId: GetUsers2StatsAccountListMonth
@@ -46561,6 +46592,16 @@ components:
     Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec:
       nullable: true
       type: integer
+    Users_2.Methods.ResultsYear.Images.Statistics.Get:
+      type: object
+      properties: {}
+      required: []
+      title: |-
+        Получение статистики
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Statistics\Get
+    Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec:
+      nullable: true
     Users_2.Methods.Stats.Account.ListMonth.Get:
       type: object
       properties:

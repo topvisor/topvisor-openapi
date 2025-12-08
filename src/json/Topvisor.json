@@ -31764,6 +31764,59 @@
                 }
             }
         },
+        "/get/users_2/resultsYear/images/statistics/": {
+            "post": {
+                "operationId": "GetUsers2ResultsYearImagesStatistics",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Получение статистики\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\ResultsYear\\Images\\Statistics\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/ResultsYear/Images/Statistics/Get.json#/components/schemas/Users_2.Methods.ResultsYear.Images.Statistics.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Users_2/Methods/ResultsYear/Images/Statistics/Get.json#/components/schemas/Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/users_2/stats/account/listMonth/": {
             "post": {
                 "operationId": "GetUsers2StatsAccountListMonth",

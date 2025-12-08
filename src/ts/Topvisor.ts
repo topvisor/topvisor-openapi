@@ -11395,6 +11395,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение статистики
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Statistics\Get */
+    "/get/users_2/resultsYear/images/statistics/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2ResultsYearImagesStatistics"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение списка месяцев
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListMonth\Get */
@@ -26512,6 +26531,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Users_2/Methods/Ranks/Promocode/Twitter/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetUsers2ResultsYearImagesStatistics: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/ResultsYear/Images/Statistics/Get.ts').components['schemas']['Users_2.Methods.ResultsYear.Images.Statistics.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/ResultsYear/Images/Statistics/Get.ts').components['schemas']['Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
