@@ -12,7 +12,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Telegram\Informer\Add */
         "Admin_2.Methods.Actions.Telegram.Informer.Add": {
             /** Название бота */
-            botName: import('../../../../../Telegram_2/Types/Bot/Name.ts').components['schemas']['Telegram_2.Types.Bot.Name'];
+            bot_name: import('../../../../../Telegram_2/Types/Bot/Name.ts').components['schemas']['Telegram_2.Types.Bot.Name'];
             /** Сообщение для рассылки */
             message: string;
             /** Имя пользователя которому отправить рассылку */

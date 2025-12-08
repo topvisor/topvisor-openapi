@@ -33373,19 +33373,19 @@ components:
     Admin_2.Methods.Actions.Telegram.Add:
       type: object
       properties:
-        botName:
+        bot_name:
           title: Название бота
           allOf:
             - $ref: '#/components/schemas/Telegram_2.Types.Bot.Name'
-        chatId:
+        chat_id:
           title: ID чата для добавления
           type: string
         test:
           title: Является ли запуск - тестом
           type: boolean
       required:
-        - botName
-        - chatId
+        - bot_name
+        - chat_id
         - test
       title: |-
         Добавление бота в телеграм канал
@@ -43264,7 +43264,7 @@ components:
     Admin_2.Methods.Actions.Telegram.Informer.Add:
       type: object
       properties:
-        botName:
+        bot_name:
           title: Название бота
           allOf:
             - $ref: '#/components/schemas/Telegram_2.Types.Bot.Name'
@@ -43279,7 +43279,7 @@ components:
           title: Является ли запуск - тестом
           type: boolean
       required:
-        - botName
+        - bot_name
         - message
         - test
       title: |-

@@ -10,7 +10,7 @@
             "Admin_2.Methods.Actions.Telegram.Informer.Add": {
                 "type": "object",
                 "properties": {
-                    "botName": {
+                    "bot_name": {
                         "title": "Название бота",
                         "allOf": [
                             {
@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [
-                    "botName",
+                    "bot_name",
                     "message",
                     "test"
                 ],
