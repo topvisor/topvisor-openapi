@@ -10,7 +10,10 @@ export interface components {
         /** Получение статистики
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Statistics\Get */
-        "Users_2.Methods.ResultsYear.Images.Statistics.Get": Record<string, never>;
+        "Users_2.Methods.ResultsYear.Images.Statistics.Get": {
+            /** Id пользователя */
+            userId: number;
+        };
         "Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec": Record<string, never>;
     };
     responses: never;

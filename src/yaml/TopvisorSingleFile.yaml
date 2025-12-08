@@ -46678,8 +46678,12 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Ranks\Get
     Users_2.Methods.ResultsYear.Images.Statistics.Get:
       type: object
-      properties: {}
-      required: []
+      properties:
+        userId:
+          title: Id пользователя
+          type: integer
+      required:
+        - userId
       title: |-
         Получение статистики
 
