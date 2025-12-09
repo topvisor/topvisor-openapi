@@ -141,6 +141,11 @@
                             }
                         ]
                     },
+                    "audit_scan_subdomains": {
+                        "title": "Учитывать ли поддомены",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }

@@ -23626,6 +23626,10 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Settings.ServerLocation'
+        audit_scan_subdomains:
+          title: Учитывать ли поддомены
+          nullable: true
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
       required:

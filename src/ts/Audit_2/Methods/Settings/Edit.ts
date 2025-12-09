@@ -68,6 +68,8 @@ export interface components {
             /** Дополнитлеьные cookies (радар) */
             watcher_cookies?: string | null;
             server_location?: import('../../Types/Settings/ServerLocation.ts').components['schemas']['Audit_2.Types.Settings.ServerLocation'] | null;
+            /** Учитывать ли поддомены */
+            audit_scan_subdomains?: boolean | null;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Количество применных настроек */

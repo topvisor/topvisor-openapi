@@ -329,6 +329,7 @@ export interface components {
                 audit_scan_js: "";
                 audit_scan_css: "";
                 audit_scan_links: "";
+                audit_scan_subdomains: "";
                 server_location: "Change server location to access blocked websites.";
             };
             /** @constant */
@@ -376,6 +377,8 @@ export interface components {
             readonly Audit_bank_autocrawl_unhold_info: "Reservation refund";
             /** @constant */
             readonly Delete_url: "Delete URL";
+            /** @constant */
+            readonly Scan_subdomains: "Scan subdomains";
         };
     };
     responses: never;
