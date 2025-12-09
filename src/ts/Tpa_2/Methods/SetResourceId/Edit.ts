@@ -9,13 +9,13 @@ export interface components {
     schemas: {
         /** Выбрать счетчик
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit */
-        "Tpa_2.Methods.SetCounterId.Edit": {
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetResourceId\Edit */
+        "Tpa_2.Methods.SetResourceId.Edit": {
             provider: import('../../Types/Provider.ts').components['schemas']['Tpa_2.Types.Provider'];
             cid: string;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Tpa_2.Methods.SetCounterId.Edit.Exec": number | null;
+        "Tpa_2.Methods.SetResourceId.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -25,13 +25,28 @@
                     "Region_depth_adaptive_hint": {
                         "const": "<b>Dynamic parse depth</b>\n\t<ul>\n\t\t<li>If website is ranked in Top and there's no need to parse the next SERP page, it will be skipped automatically.</li>\n\t\t<li>The cost of skipped SERPs is charged back to your account the next day.</li>\n\t</ul>\n\tE.g.: if website is ranked in Top-10, and you've picked Top-30, you'be charged only for Top-10. Tap question mark icon to learn more about the algorythm.",
                         "readOnly": true
+                    },
+                    "Google_drive": {
+                        "const": "Google drive",
+                        "readOnly": true
+                    },
+                    "Token_is_active_until": {
+                        "const": "Token is active until",
+                        "readOnly": true
+                    },
+                    "Reconnect": {
+                        "const": "Reconnect",
+                        "readOnly": true
                     }
                 },
                 "required": [
                     "Change_project_owner_description",
                     "Transfer_control_over_project",
                     "Region_depth_adaptive",
-                    "Region_depth_adaptive_hint"
+                    "Region_depth_adaptive_hint",
+                    "Google_drive",
+                    "Token_is_active_until",
+                    "Reconnect"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Projects\\Settings\\En"
             }

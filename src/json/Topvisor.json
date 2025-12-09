@@ -12058,18 +12058,18 @@
                 }
             }
         },
-        "/edit/tpa_2/setCounterId/": {
+        "/edit/tpa_2/setResourceId/": {
             "post": {
-                "operationId": "EditTpa2SetCounterId",
+                "operationId": "EditTpa2SetResourceId",
                 "tags": [
                     "Tpa_2"
                 ],
-                "summary": "Выбрать счетчик\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\SetCounterId\\Edit",
+                "summary": "Выбрать счетчик\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\SetResourceId\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Tpa_2/Methods/SetCounterId/Edit.json#/components/schemas/Tpa_2.Methods.SetCounterId.Edit"
+                                "$ref": "Tpa_2/Methods/SetResourceId/Edit.json#/components/schemas/Tpa_2.Methods.SetResourceId.Edit"
                             }
                         }
                     },
@@ -12088,7 +12088,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Tpa_2/Methods/SetCounterId/Edit.json#/components/schemas/Tpa_2.Methods.SetCounterId.Edit.Exec"
+                                                            "$ref": "Tpa_2/Methods/SetResourceId/Edit.json#/components/schemas/Tpa_2.Methods.SetResourceId.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -25438,59 +25438,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Tickets_2/Methods/Tickets/Writing/Edit.json#/components/schemas/Tickets_2.Methods.Tickets.Writing.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/tpa_2/gsc/setSite/": {
-            "post": {
-                "operationId": "EditTpa2GscSetSite",
-                "tags": [
-                    "Tpa_2"
-                ],
-                "summary": "Выбрать сайт для интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\Gsc\\SetSite\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Tpa_2/Methods/Gsc/SetSite/Edit.json#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Tpa_2/Methods/Gsc/SetSite/Edit.json#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [

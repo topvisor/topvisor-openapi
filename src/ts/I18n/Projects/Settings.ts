@@ -17,6 +17,12 @@ export interface components {
             readonly Region_depth_adaptive: "Dynamic parse depth";
             /** @constant */
             readonly Region_depth_adaptive_hint: "<b>Dynamic parse depth</b>\n\t<ul>\n\t\t<li>If website is ranked in Top and there's no need to parse the next SERP page, it will be skipped automatically.</li>\n\t\t<li>The cost of skipped SERPs is charged back to your account the next day.</li>\n\t</ul>\n\tE.g.: if website is ranked in Top-10, and you've picked Top-30, you'be charged only for Top-10. Tap question mark icon to learn more about the algorythm.";
+            /** @constant */
+            readonly Google_drive: "Google drive";
+            /** @constant */
+            readonly Token_is_active_until: "Token is active until";
+            /** @constant */
+            readonly Reconnect: "Reconnect";
         };
     };
     responses: never;

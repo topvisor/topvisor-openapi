@@ -7197,20 +7197,20 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects.Tpa'
-  /edit/tpa_2/setCounterId/:
+  /edit/tpa_2/setResourceId/:
     post:
-      operationId: EditTpa2SetCounterId
+      operationId: EditTpa2SetResourceId
       tags:
         - Tpa_2
       summary: |-
         Выбрать счетчик
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetResourceId\Edit
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Tpa_2.Methods.SetCounterId.Edit'
+              $ref: '#/components/schemas/Tpa_2.Methods.SetResourceId.Edit'
         required: true
       responses:
         '200':
@@ -7223,7 +7223,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Tpa_2.Methods.SetCounterId.Edit.Exec'
+                            $ref: '#/components/schemas/Tpa_2.Methods.SetResourceId.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -15138,37 +15138,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Tickets_2.Methods.Tickets.Writing.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/tpa_2/gsc/setSite/:
-    post:
-      operationId: EditTpa2GscSetSite
-      tags:
-        - Tpa_2
-      summary: |-
-        Выбрать сайт для интеграции
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Tpa_2.Methods.Gsc.SetSite.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -32004,7 +31973,7 @@ components:
           nullable: true
         resources:
           nullable: true
-    Tpa_2.Methods.SetCounterId.Edit:
+    Tpa_2.Methods.SetResourceId.Edit:
       type: object
       properties:
         provider:
@@ -32021,8 +31990,8 @@ components:
       title: |-
         Выбрать счетчик
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit
-    Tpa_2.Methods.SetCounterId.Edit.Exec:
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetResourceId\Edit
+    Tpa_2.Methods.SetResourceId.Edit.Exec:
       nullable: true
       type: integer
     Tpa_2.Methods.TestTpa.Get:
@@ -42410,24 +42379,6 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Writing\Edit
     Tickets_2.Methods.Tickets.Writing.Edit.Exec:
       nullable: true
-    Tpa_2.Methods.Gsc.SetSite.Edit:
-      type: object
-      properties:
-        site:
-          title: Выбранный сайт
-          type: string
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - site
-        - project_id
-      title: |-
-        Выбрать сайт для интеграции
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit
-    Tpa_2.Methods.Gsc.SetSite.Edit.Exec:
-      nullable: true
-      type: integer
     Tpvsr_2.Methods.Stat.Referers.Get:
       type: object
       properties:

@@ -4236,8 +4236,8 @@ export interface paths {
     };  
     /** Выбрать счетчик
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetCounterId\Edit */
-    "/edit/tpa_2/setCounterId/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\SetResourceId\Edit */
+    "/edit/tpa_2/setResourceId/": {
         parameters: {
             query?: never;
             header?: never;
@@ -4246,7 +4246,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditTpa2SetCounterId"];
+        post: operations["EditTpa2SetResourceId"];
         delete?: never;
         options?: never;
         head?: never;
@@ -9052,25 +9052,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditTickets2TicketsWriting"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Выбрать сайт для интеграции
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Methods\Gsc\SetSite\Edit */
-    "/edit/tpa_2/gsc/setSite/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditTpa2GscSetSite"];
         delete?: never;
         options?: never;
         head?: never;
@@ -17288,7 +17269,7 @@ export interface operations {
             };
         };
     };
-    EditTpa2SetCounterId: {
+    EditTpa2SetResourceId: {
         parameters: {
             query?: never;
             header?: never;
@@ -17297,7 +17278,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Tpa_2/Methods/SetCounterId/Edit.ts').components['schemas']['Tpa_2.Methods.SetCounterId.Edit'];
+                "application/json": import('./Tpa_2/Methods/SetResourceId/Edit.ts').components['schemas']['Tpa_2.Methods.SetResourceId.Edit'];
             };
         };
         responses: {
@@ -17307,7 +17288,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Tpa_2/Methods/SetCounterId/Edit.ts').components['schemas']['Tpa_2.Methods.SetCounterId.Edit.Exec'];
+                        result: import('./Tpa_2/Methods/SetResourceId/Edit.ts').components['schemas']['Tpa_2.Methods.SetResourceId.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -23554,31 +23535,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Tickets/Writing/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Writing.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditTpa2GscSetSite: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Tpa_2/Methods/Gsc/SetSite/Edit.ts').components['schemas']['Tpa_2.Methods.Gsc.SetSite.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Tpa_2/Methods/Gsc/SetSite/Edit.ts').components['schemas']['Tpa_2.Methods.Gsc.SetSite.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
