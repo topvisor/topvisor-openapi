@@ -103,6 +103,9 @@
                     "vs_user_avatar": {
                         "nullable": true
                     },
+                    "vs_user_has_comment": {
+                        "nullable": true
+                    },
                     "vs_user_lastactive": {
                         "nullable": true
                     },

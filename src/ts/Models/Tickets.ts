@@ -40,6 +40,7 @@ export interface components {
             vs_user_name?: any;
             vs_user_email?: any;
             vs_user_avatar?: any;
+            vs_user_has_comment?: any;
             vs_user_lastactive?: any;
             social_nickname?: any;
             social_network?: any;
