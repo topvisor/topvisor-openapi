@@ -15,7 +15,7 @@
                         "type": "integer"
                     },
                     "text": {
-                        "title": "Текст\n\ntext = '' - отмена написания\n\ntext = null - написания со скрытым содержимым (без текста)",
+                        "title": "Текст\n\n- text = '': отмена написания\n- text = null: написания со скрытым содержимым (без текста)",
                         "nullable": true,
                         "type": "string"
                     }
@@ -26,7 +26,8 @@
                 "title": "Написание текста\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Writing\\Edit"
             },
             "Tickets_2.Methods.Tickets.Writing.Edit.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

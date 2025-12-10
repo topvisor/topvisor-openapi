@@ -15,12 +15,11 @@ export interface components {
             id: number;
             /** Текст
              *
-             *     text = '' - отмена написания
-             *
-             *     text = null - написания со скрытым содержимым (без текста) */
+             *     - text = '': отмена написания
+             *     - text = null: написания со скрытым содержимым (без текста) */
             text?: string | null;
         };
-        "Tickets_2.Methods.Tickets.Writing.Edit.Exec": unknown;
+        "Tickets_2.Methods.Tickets.Writing.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

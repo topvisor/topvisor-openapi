@@ -42372,9 +42372,8 @@ components:
           title: |-
             Текст
 
-            text = '' - отмена написания
-
-            text = null - написания со скрытым содержимым (без текста)
+            - text = '': отмена написания
+            - text = null: написания со скрытым содержимым (без текста)
           nullable: true
           type: string
       required:
@@ -42385,6 +42384,7 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Writing\Edit
     Tickets_2.Methods.Tickets.Writing.Edit.Exec:
       nullable: true
+      type: integer
     Tpvsr_2.Methods.Stat.Referers.Get:
       type: object
       properties:
