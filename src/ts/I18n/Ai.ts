@@ -11,6 +11,8 @@ export interface components {
         "I18n.Ai": {
             /** @constant */
             readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";
+            /** @constant */
+            readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
         };
     };
     responses: never;

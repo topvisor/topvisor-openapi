@@ -13,10 +13,15 @@
                     "Ai_tracker_bank_info": {
                         "const": "Checking for mentions in neural networks",
                         "readOnly": true
+                    },
+                    "Add_brand_info": {
+                        "const": "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>",
+                        "readOnly": true
                     }
                 },
                 "required": [
-                    "Ai_tracker_bank_info"
+                    "Ai_tracker_bank_info",
+                    "Add_brand_info"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Ai\\En"
             }
