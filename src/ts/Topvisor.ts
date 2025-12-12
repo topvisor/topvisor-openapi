@@ -10990,6 +10990,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Создание задачи на сбор запросов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Add */
+    "/add/projects_2/tasks/keywords/collect/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddProjects2TasksKeywordsCollect"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение цены проверки частоты задачи без создания проекта
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Volumes\Price\Get */
@@ -11670,6 +11689,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetInformer2PushSafariWebServiceAuthToken"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение цены сбора запросов без создания проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Price\Get */
+    "/get/projects_2/tasks/keywords/collect/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetProjects2TasksKeywordsCollectPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -26016,6 +26054,31 @@ export interface operations {
             };
         };
     };
+    AddProjects2TasksKeywordsCollect: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Keywords/Collect/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Keywords.Collect.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Tasks/Keywords/Collect/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetProjects2TasksVolumesPrice: {
         parameters: {
             query?: never;
@@ -26877,6 +26940,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.ts').components['schemas']['Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetProjects2TasksKeywordsCollectPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Keywords/Collect/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Keywords.Collect.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Tasks/Keywords/Collect/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

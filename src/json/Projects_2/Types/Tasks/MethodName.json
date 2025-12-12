@@ -10,13 +10,16 @@
             "Projects_2.Types.Tasks.MethodName": {
                 "type": "string",
                 "enum": [
-                    "keywords_2/volumes/go"
+                    "keywords_2/volumes/go",
+                    "keywords_2/collect/go"
                 ],
                 "x-enum-varnames": [
-                    "VolumeChecker"
+                    "VolumeChecker",
+                    "KeywordsCollect"
                 ],
                 "x-enum-descriptions": [
-                    "Проверка частоты"
+                    "Проверка частоты",
+                    "Сбор запросов"
                 ],
                 "title": "Название метода задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Types\\Tasks\\MethodName"
             }

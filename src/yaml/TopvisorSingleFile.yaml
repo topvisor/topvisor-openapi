@@ -18254,6 +18254,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /add/projects_2/tasks/keywords/collect/:
+    post:
+      operationId: AddProjects2TasksKeywordsCollect
+      tags:
+        - Projects_2
+      summary: |-
+        Создание задачи на сбор запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/projects_2/tasks/volumes/price/:
     post:
       operationId: GetProjects2TasksVolumesPrice
@@ -19315,6 +19346,37 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/projects_2/tasks/keywords/collect/price/:
+    post:
+      operationId: GetProjects2TasksKeywordsCollectPrice
+      tags:
+        - Projects_2
+      summary: |-
+        Получение цены сбора запросов без создания проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Price\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -45773,6 +45835,28 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Regions\Sort\Edit
     Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec:
       nullable: true
+    Projects_2.Methods.Tasks.Keywords.Collect.Add:
+      type: object
+      properties:
+        keywords:
+          title: Массив ключевых запросов в формате CSV
+          type: array
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
+        keywords_minus:
+          title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
+          type: array
+      required:
+        - keywords
+        - qualifiers
+      title: |-
+        Создание задачи на сбор запросов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Add
+    Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec:
+      nullable: true
     Projects_2.Methods.Tasks.Volumes.Price.Get:
       type: object
       properties:
@@ -46955,6 +47039,28 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Push\Safari\WebService\AuthToken\Get
     Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec:
       type: string
+    Projects_2.Methods.Tasks.Keywords.Collect.Price.Get:
+      type: object
+      properties:
+        keywords:
+          title: Массив ключевых запросов в формате CSV
+          type: array
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
+        keywords_minus:
+          title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
+          type: array
+      required:
+        - keywords
+        - qualifiers
+      title: |-
+        Получение цены сбора запросов без создания проекта
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Price\Get
+    Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
+      type: number
     System_2.Methods.Common.Tests.Speed.File.Get:
       type: object
       properties:

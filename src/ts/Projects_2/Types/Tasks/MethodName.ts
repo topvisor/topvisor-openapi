@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Types\Tasks\MethodName
          * @enum {string}
          */
-        "Projects_2.Types.Tasks.MethodName": "keywords_2/volumes/go";
+        "Projects_2.Types.Tasks.MethodName": "keywords_2/volumes/go" | "keywords_2/collect/go";
     };
     responses: never;
     parameters: never;

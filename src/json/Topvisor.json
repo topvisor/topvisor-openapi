@@ -30700,6 +30700,59 @@
                 }
             }
         },
+        "/add/projects_2/tasks/keywords/collect/": {
+            "post": {
+                "operationId": "AddProjects2TasksKeywordsCollect",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Создание задачи на сбор запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Keywords\\Collect\\Add",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Tasks/Keywords/Collect/Add.json#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Tasks/Keywords/Collect/Add.json#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/projects_2/tasks/volumes/price/": {
             "post": {
                 "operationId": "GetProjects2TasksVolumesPrice",
@@ -32446,6 +32499,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.json#/components/schemas/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/projects_2/tasks/keywords/collect/price/": {
+            "post": {
+                "operationId": "GetProjects2TasksKeywordsCollectPrice",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Получение цены сбора запросов без создания проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Keywords\\Collect\\Price\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Tasks/Keywords/Collect/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Tasks/Keywords/Collect/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
