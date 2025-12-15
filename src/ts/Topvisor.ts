@@ -1115,6 +1115,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get */
+    "/get/aitracker_2/settings/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAitracker2Settings"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение всех своих примечаний по всем проектам и сервисам
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Annotations_2\Methods\My\Get */
@@ -13228,6 +13245,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/Settings/Edit.ts').components['schemas']['AiTracker_2.Methods.Settings.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetAitracker2Settings: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/Settings/Get.ts').components['schemas']['AiTracker_2.Methods.Settings.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/Settings/Get.ts').components['schemas']['AiTracker_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

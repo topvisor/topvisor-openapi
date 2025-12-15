@@ -1964,6 +1964,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/aitracker_2/settings/:
+    post:
+      operationId: GetAitracker2Settings
+      tags:
+        - Aitracker_2
+      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Settings.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Settings.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -23268,6 +23296,17 @@ components:
       description: '@see \Services\AiTracker_2\Objects\Settings'
     AiTracker_2.Methods.Settings.Edit.Exec:
       type: integer
+    AiTracker_2.Methods.Settings.Get:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get'
+    AiTracker_2.Methods.Settings.Get.Exec:
+      nullable: true
+      type: array
     Annotations_2.Methods.My.Get:
       type: object
       properties:
