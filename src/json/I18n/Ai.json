@@ -17,11 +17,26 @@
                     "Add_brand_info": {
                         "const": "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>",
                         "readOnly": true
+                    },
+                    "Settings": {
+                        "const": "AI-tracker settings",
+                        "readOnly": true
+                    },
+                    "Ai_analysis": {
+                        "const": "AI-анализ",
+                        "readOnly": true
+                    },
+                    "Analysis_go": {
+                        "const": "Запустить анализ",
+                        "readOnly": true
                     }
                 },
                 "required": [
                     "Ai_tracker_bank_info",
-                    "Add_brand_info"
+                    "Add_brand_info",
+                    "Settings",
+                    "Ai_analysis",
+                    "Analysis_go"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Ai\\En"
             }

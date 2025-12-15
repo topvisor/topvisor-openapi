@@ -13,6 +13,12 @@ export interface components {
             readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";
             /** @constant */
             readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
+            /** @constant */
+            readonly Settings: "AI-tracker settings";
+            /** @constant */
+            readonly Ai_analysis: "AI-анализ";
+            /** @constant */
+            readonly Analysis_go: "Запустить анализ";
         };
     };
     responses: never;
