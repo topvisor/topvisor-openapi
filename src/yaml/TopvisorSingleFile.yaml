@@ -23013,9 +23013,12 @@ components:
       type: string
       enum:
         - deepseek
+        - grok
       x-enum-varnames:
         - Deepseek
+        - Grok
       x-enum-descriptions:
+        - null
         - null
       title: |-
         Модель для ИИ трекера

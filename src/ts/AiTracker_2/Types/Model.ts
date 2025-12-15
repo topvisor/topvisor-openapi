@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Model
          * @enum {string}
          */
-        "AiTracker_2.Types.Model": "deepseek";
+        "AiTracker_2.Types.Model": "deepseek" | "grok";
     };
     responses: never;
     parameters: never;

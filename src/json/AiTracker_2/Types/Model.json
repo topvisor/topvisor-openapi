@@ -10,12 +10,15 @@
             "AiTracker_2.Types.Model": {
                 "type": "string",
                 "enum": [
-                    "deepseek"
+                    "deepseek",
+                    "grok"
                 ],
                 "x-enum-varnames": [
-                    "Deepseek"
+                    "Deepseek",
+                    "Grok"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null
                 ],
                 "title": "Модель для ИИ трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\Model"
