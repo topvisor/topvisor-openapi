@@ -23305,6 +23305,9 @@ components:
     AiTracker_2.Methods.Settings.Get:
       type: object
       properties:
+        showAvailableModels:
+          title: Добавить ли в результат список всехдоступных моделей
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -23314,8 +23317,51 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get
     AiTracker_2.Methods.Settings.Get.Exec:
+      title: Настройки aiTracker проекта
       nullable: true
-      type: array
+      type: object
+      properties:
+        project_id:
+          type: integer
+        brand_name:
+          type: string
+        aliases:
+          type: array
+          items:
+            type: string
+        models:
+          type: array
+          items:
+            $ref: '#/components/schemas/AiTracker_2.Types.Model'
+        context_lang:
+          type: string
+        context_location:
+          type: string
+        context_custom:
+          type: string
+        models_available:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              key:
+                type: string
+              enabled:
+                type: integer
+            required:
+              - name
+              - key
+              - enabled
+      required:
+        - project_id
+        - brand_name
+        - aliases
+        - models
+        - context_lang
+        - context_location
+        - context_custom
     Annotations_2.Methods.My.Get:
       type: object
       properties:

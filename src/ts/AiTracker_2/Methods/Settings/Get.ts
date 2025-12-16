@@ -11,9 +11,25 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get */
         "AiTracker_2.Methods.Settings.Get": {
+            /** Добавить ли в результат список всехдоступных моделей */
+            showAvailableModels?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "AiTracker_2.Methods.Settings.Get.Exec": unknown[] | null;
+        /** Настройки aiTracker проекта */
+        "AiTracker_2.Methods.Settings.Get.Exec": {
+            project_id: number;
+            brand_name: string;
+            aliases: string[];
+            models: import('../../Types/Model.ts').components['schemas']['AiTracker_2.Types.Model'][];
+            context_lang: string;
+            context_location: string;
+            context_custom: string;
+            models_available?: {
+                name: string;
+                key: string;
+                enabled: number;
+            }[];
+        } | null;
     };
     responses: never;
     parameters: never;
