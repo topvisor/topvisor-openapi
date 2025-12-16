@@ -1468,6 +1468,10 @@
                         "const": "Rank Tracker",
                         "readOnly": true
                     },
+                    "Menu_aiTracker": {
+                        "const": "AI Tracker",
+                        "readOnly": true
+                    },
                     "Menu_snapshots": {
                         "const": "SERP Snapshots",
                         "readOnly": true
@@ -2326,6 +2330,7 @@
                     "Menu_unexpand",
                     "Menu_dynamics_search",
                     "Menu_dynamics",
+                    "Menu_aiTracker",
                     "Menu_snapshots",
                     "Menu_competitors",
                     "Menu_phrases",

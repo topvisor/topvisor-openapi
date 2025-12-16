@@ -744,6 +744,8 @@ export interface components {
             /** @constant */
             readonly Menu_dynamics: "Rank Tracker";
             /** @constant */
+            readonly Menu_aiTracker: "AI Tracker";
+            /** @constant */
             readonly Menu_snapshots: "SERP Snapshots";
             /** @constant */
             readonly Menu_competitors: "My competitors";
