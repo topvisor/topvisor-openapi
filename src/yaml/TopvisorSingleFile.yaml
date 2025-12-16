@@ -1969,7 +1969,10 @@ paths:
       operationId: GetAitracker2Settings
       tags:
         - Aitracker_2
-      summary: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get'
+      summary: |-
+        Получение настроек ai трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get
       requestBody:
         content:
           application/json:
@@ -23306,7 +23309,10 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - project_id
-      title: '@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get'
+      title: |-
+        Получение настроек ai трекера
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get
     AiTracker_2.Methods.Settings.Get.Exec:
       nullable: true
       type: array

@@ -17,7 +17,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Get"
+                "title": "Получение настроек ai трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Get"
             },
             "AiTracker_2.Methods.Settings.Get.Exec": {
                 "nullable": true,
