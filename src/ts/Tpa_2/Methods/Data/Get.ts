@@ -30,7 +30,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -47,7 +47,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -64,7 +64,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -81,7 +81,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -98,7 +98,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -115,7 +115,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -132,7 +132,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -149,7 +149,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;
@@ -166,7 +166,7 @@ export interface components {
                 campaigns?: {
                     id: number;
                     added: number;
-                    state: string;
+                    state: "on" | "off";
                     campaign_tv_id: number;
                     agency_name: string;
                     status_name: string;

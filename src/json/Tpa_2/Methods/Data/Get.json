@@ -83,7 +83,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -163,7 +176,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -243,7 +269,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -323,7 +362,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -403,7 +455,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -483,7 +548,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -563,7 +641,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -643,7 +734,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"
@@ -723,7 +827,20 @@
                                                     "type": "integer"
                                                 },
                                                 "state": {
-                                                    "type": "string"
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "on"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "off"
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 "campaign_tv_id": {
                                                     "type": "integer"

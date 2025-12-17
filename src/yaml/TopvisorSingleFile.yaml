@@ -31696,7 +31696,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -31746,7 +31752,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -31796,7 +31808,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -31846,7 +31864,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -31896,7 +31920,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -31946,7 +31976,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -31996,7 +32032,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -32046,7 +32088,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
@@ -32096,7 +32144,13 @@ components:
                       added:
                         type: integer
                       state:
-                        type: string
+                        anyOf:
+                          - type: string
+                            enum:
+                              - 'on'
+                          - type: string
+                            enum:
+                              - 'off'
                       campaign_tv_id:
                         type: integer
                       agency_name:
