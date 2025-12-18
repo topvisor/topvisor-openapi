@@ -38,6 +38,8 @@ export interface components {
             /** @constant */
             readonly Panel_subscribe: "Subscribe";
             /** @constant */
+            readonly Panel_log_in: "Log in";
+            /** @constant */
             readonly Panel_open_materials: "Open materials 📚";
             /** @constant */
             readonly Panel_library: "Open library";

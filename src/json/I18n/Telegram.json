@@ -66,6 +66,10 @@
                         "const": "Subscribe",
                         "readOnly": true
                     },
+                    "Panel_log_in": {
+                        "const": "Log in",
+                        "readOnly": true
+                    },
                     "Panel_open_materials": {
                         "const": "Open materials 📚",
                         "readOnly": true
@@ -250,6 +254,7 @@
                     "Panel_rus",
                     "Panel_i_subscribed",
                     "Panel_subscribe",
+                    "Panel_log_in",
                     "Panel_open_materials",
                     "Panel_library",
                     "Message_chat_disabled",
