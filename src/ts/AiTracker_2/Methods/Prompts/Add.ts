@@ -14,12 +14,12 @@ export interface components {
             /** Текст промпта */
             name: string;
             /** Вставить к указанному объекту */
-            toId: number;
+            to_id: number;
             /**
              * Обязательный параметр при указанном $toId
              * @default in_group
              */
-            toType?: import('../../Types/Prompts/ToType.ts').components['schemas']['AiTracker_2.Types.Prompts.ToType'];
+            to_type?: import('../../../Keywords_2/Types/Keywords/ToType.ts').components['schemas']['Keywords_2.Types.Keywords.ToType'];
             tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             /** Удалить дубликаты */
             move_duplicate?: boolean;

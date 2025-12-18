@@ -23170,7 +23170,7 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.AiTracker.Prompts'
-    AiTracker_2.Types.Prompts.ToType:
+    Keywords_2.Types.Keywords.ToType:
       type: string
       enum:
         - in_group
@@ -23188,25 +23188,23 @@ components:
         - Перед запросом
         - После запроса
       title: |-
-        Куда добавить запрос
+        Куда добавить фразу
 
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Prompts\ToType
-      description: '@deprecated , использовать тип из keywords'
-      deprecated: true
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\ToType
     AiTracker_2.Methods.Prompts.Add:
       type: object
       properties:
         name:
           title: Текст промпта
           type: string
-        toId:
+        to_id:
           title: Вставить к указанному объекту
           type: integer
-        toType:
+        to_type:
           title: Обязательный параметр при указанном $toId
           default: in_group
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.Prompts.ToType'
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
         tags:
           nullable: true
           allOf:
@@ -23224,7 +23222,7 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - name
-        - toId
+        - to_id
         - project_id
       title: |-
         Добавление промпта
@@ -27969,27 +27967,6 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\Get
     Keywords_2.Methods.Groups.Get.Exec:
       nullable: true
-    Keywords_2.Types.Keywords.ToType:
-      type: string
-      enum:
-        - in_group
-        - in_group_last
-        - before_keyword
-        - after_keyword
-      x-enum-varnames:
-        - InGroup
-        - InGroupLast
-        - BeforeKeyword
-        - AfterKeyword
-      x-enum-descriptions:
-        - В начало группы
-        - В конец группы
-        - Перед запросом
-        - После запроса
-      title: |-
-        Куда добавить фразу
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\ToType
     Keywords_2.Methods.Keywords.Add:
       type: object
       properties:

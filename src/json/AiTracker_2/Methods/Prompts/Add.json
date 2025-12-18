@@ -14,16 +14,16 @@
                         "title": "Текст промпта",
                         "type": "string"
                     },
-                    "toId": {
+                    "to_id": {
                         "title": "Вставить к указанному объекту",
                         "type": "integer"
                     },
-                    "toType": {
+                    "to_type": {
                         "title": "Обязательный параметр при указанном $toId",
                         "default": "in_group",
                         "allOf": [
                             {
-                                "$ref": "../../../AiTracker_2/Types/Prompts/ToType.json#/components/schemas/AiTracker_2.Types.Prompts.ToType"
+                                "$ref": "../../../Keywords_2/Types/Keywords/ToType.json#/components/schemas/Keywords_2.Types.Keywords.ToType"
                             }
                         ]
                     },
@@ -49,7 +49,7 @@
                 },
                 "required": [
                     "name",
-                    "toId",
+                    "to_id",
                     "project_id"
                 ],
                 "title": "Добавление промпта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Add"
