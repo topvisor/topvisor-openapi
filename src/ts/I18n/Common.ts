@@ -150,7 +150,7 @@ export interface components {
             /** @constant */
             readonly of_project: "of project";
             /** @constant */
-            readonly Tool_digest: "Who's lying in Yandex Rank Checking?";
+            readonly Tool_digest?: "2025 year in Topvisor";
             /** @constant */
             readonly Ticket: "Ticket";
             /** @constant */
