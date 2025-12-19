@@ -1074,6 +1074,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Удаление промтов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Del */
+    "/del/aitracker_2/prompts/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelAitracker2Prompts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Get */
     "/get/aitracker_2/prompts/": {
         parameters: {
@@ -5523,6 +5542,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["AddAitracker2PromptsGroups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление промтов из корзины
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Undel\Edit */
+    "/edit/aitracker_2/prompts/undel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAitracker2PromptsUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -13201,6 +13239,32 @@ export interface operations {
             };
         };
     };
+    DelAitracker2Prompts: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/Prompts/Del.ts').components['schemas']['AiTracker_2.Methods.Prompts.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/Prompts/Del.ts').components['schemas']['AiTracker_2.Methods.Prompts.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
+                };
+            };
+        };
+    };
     GetAitracker2Prompts: {
         parameters: {
             query?: never;
@@ -19012,6 +19076,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/Prompts/Groups/Add.ts').components['schemas']['AiTracker_2.Methods.Prompts.Groups.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAitracker2PromptsUndel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/Prompts/Undel/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Undel.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/Prompts/Undel/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Undel.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
                 };
             };
         };

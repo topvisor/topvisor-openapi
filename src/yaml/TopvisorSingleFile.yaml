@@ -1898,6 +1898,40 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /del/aitracker_2/prompts/:
+    post:
+      operationId: DelAitracker2Prompts
+      tags:
+        - Aitracker_2
+      summary: |-
+        Удаление промтов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Del
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /get/aitracker_2/prompts/:
     post:
       operationId: GetAitracker2Prompts
@@ -9345,6 +9379,40 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/aitracker_2/prompts/undel/:
+    post:
+      operationId: EditAitracker2PromptsUndel
+      tags:
+        - Aitracker_2
+      summary: |-
+        Восстановление промтов из корзины
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Undel\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Undel.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Undel.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /get/audit_2/audit/browse/:
     post:
       operationId: GetAudit2AuditBrowse
@@ -23231,6 +23299,24 @@ components:
     AiTracker_2.Methods.Prompts.Add.Exec:
       nullable: true
       type: array
+    AiTracker_2.Methods.Prompts.Del:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: |-
+        Удаление промтов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Del
+    AiTracker_2.Methods.Prompts.Del.Exec:
+      nullable: true
+      type: integer
     AiTracker_2.Methods.Prompts.Get:
       type: object
       properties:
@@ -34894,6 +34980,24 @@ components:
     AiTracker_2.Methods.Prompts.Groups.Add.Exec:
       nullable: true
       type: array
+    AiTracker_2.Methods.Prompts.Undel.Edit:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: |-
+        Восстановление промтов из корзины
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Undel\Edit
+    AiTracker_2.Methods.Prompts.Undel.Edit.Exec:
+      nullable: true
+      type: integer
     check_id:
       title: ID проверки аудита
       type: integer
