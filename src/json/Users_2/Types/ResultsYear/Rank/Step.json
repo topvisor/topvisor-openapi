@@ -54,7 +54,8 @@
                     null,
                     null
                 ],
-                "title": "Этапы выполнения функции присвоения титулов резульатов года\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Types\\ResultsYear\\Rank\\Step"
+                "title": "Этапы расчета достижений: \"Итоги года\"\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Types\\ResultsYear\\Rank\\Step",
+                "description": "@see Users_2\\Mods\\ResultsYear\\Ranks::setUsersRank()"
             }
         }
     }

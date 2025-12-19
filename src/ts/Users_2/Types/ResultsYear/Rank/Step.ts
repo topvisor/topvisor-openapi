@@ -8,9 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Этапы выполнения функции присвоения титулов резульатов года
+         * Этапы расчета достижений: "Итоги года"
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rank\Step
+         * @description @see Users_2\Mods\ResultsYear\Ranks::setUsersRank()
          * @enum {string}
          */
         "Users_2.Types.ResultsYear.Rank.Step": "seoCat" | "activatedTelegramRank" | "auditCheck" | "errorsStatusCode" | "checksPositions" | "projectRegion" | "saintPetersburgChecks" | "moscowChecks" | "topPositions" | "featuredSnippetPositions" | "keywordsClaster" | "googleCashback" | "leaderTopPositions";
