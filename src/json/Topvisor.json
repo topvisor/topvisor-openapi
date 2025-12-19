@@ -32774,6 +32774,64 @@
                     }
                 }
             }
+        },
+        "/edit/aitracker_2/prompts/move/": {
+            "post": {
+                "operationId": "EditAitracker2PromptsMove",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Перемещение промтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Move\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Prompts/Move/Edit.json#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Prompts/Move/Edit.json#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
