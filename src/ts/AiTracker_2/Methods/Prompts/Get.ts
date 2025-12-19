@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Get */
         "AiTracker_2.Methods.Prompts.Get": {
+            /** Искать промты в корзине */
+            show_trash?: boolean;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

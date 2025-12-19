@@ -23320,6 +23320,9 @@ components:
     AiTracker_2.Methods.Prompts.Get:
       type: object
       properties:
+        show_trash:
+          title: Искать промты в корзине
+          type: boolean
         fields:
           $ref: '#/components/schemas/fields'
         orders:

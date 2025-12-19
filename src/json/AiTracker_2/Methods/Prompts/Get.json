@@ -10,6 +10,10 @@
             "AiTracker_2.Methods.Prompts.Get": {
                 "type": "object",
                 "properties": {
+                    "show_trash": {
+                        "title": "Искать промты в корзине",
+                        "type": "boolean"
+                    },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
