@@ -1115,7 +1115,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get */
+    /** Получение настроек ai трекера
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get */
     "/get/aitracker_2/settings/": {
         parameters: {
             query?: never;

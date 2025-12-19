@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/I18n.Ai",
+        "title": "Topvisor/I18n.AiTracker",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "I18n.Ai": {
+            "I18n.AiTracker": {
                 "type": "object",
                 "properties": {
                     "Ai_tracker_bank_info": {
@@ -38,7 +38,7 @@
                     "Ai_analysis",
                     "Analysis_go"
                 ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Ai\\En"
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\AiTracker\\En"
             }
         }
     }

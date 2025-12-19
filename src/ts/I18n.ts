@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         Actions: import('./I18n/Actions.ts').components['schemas']['I18n.Actions'];
-        Ai: import('./I18n/Ai.ts').components['schemas']['I18n.Ai'];
+        AiTracker: import('./I18n/AiTracker.ts').components['schemas']['I18n.AiTracker'];
         Analytics: import('./I18n/Analytics.ts').components['schemas']['I18n.Analytics'];
         Api: import('./I18n/Api.ts').components['schemas']['I18n.Api'];
         Audit: import('./I18n/Audit.ts').components['schemas']['I18n.Audit'];
