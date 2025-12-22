@@ -5548,6 +5548,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Перемещение промтов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Move\Edit */
+    "/edit/aitracker_2/prompts/move/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAitracker2PromptsMove"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Восстановление промтов из корзины
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Undel\Edit */
@@ -9768,25 +9787,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditAdmin2ActionsRobotPriority"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Снятие задачи с дэбага
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit */
-    "/edit/admin_2/actions/robot/task/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditAdmin2ActionsRobotTask"];
         delete?: never;
         options?: never;
         head?: never;
@@ -19080,6 +19080,32 @@ export interface operations {
             };
         };
     };
+    EditAitracker2PromptsMove: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/Prompts/Move/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Move.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/Prompts/Move/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Move.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
+                };
+            };
+        };
+    };
     EditAitracker2PromptsUndel: {
         parameters: {
             query?: never;
@@ -24556,31 +24582,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Robot/Priority/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Priority.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditAdmin2ActionsRobotTask: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Actions/Robot/Task/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Task.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Actions/Robot/Task/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Task.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

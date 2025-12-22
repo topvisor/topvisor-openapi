@@ -15759,6 +15759,64 @@
                 }
             }
         },
+        "/edit/aitracker_2/prompts/move/": {
+            "post": {
+                "operationId": "EditAitracker2PromptsMove",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Перемещение промтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Move\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Prompts/Move/Edit.json#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Prompts/Move/Edit.json#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/aitracker_2/prompts/undel/": {
             "post": {
                 "operationId": "EditAitracker2PromptsUndel",
@@ -27419,59 +27477,6 @@
                 }
             }
         },
-        "/edit/admin_2/actions/robot/task/": {
-            "post": {
-                "operationId": "EditAdmin2ActionsRobotTask",
-                "tags": [
-                    "Admin_2"
-                ],
-                "summary": "Снятие задачи с дэбага\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Task\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Robot/Task/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/Robot/Task/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/del/admin_2/actions/slack/files/": {
             "post": {
                 "operationId": "DelAdmin2ActionsSlackFiles",
@@ -32768,64 +32773,6 @@
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/aitracker_2/prompts/move/": {
-            "post": {
-                "operationId": "EditAitracker2PromptsMove",
-                "tags": [
-                    "Aitracker_2"
-                ],
-                "summary": "Перемещение промтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Move\\Edit",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "AiTracker_2/Methods/Prompts/Move/Edit.json#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "AiTracker_2/Methods/Prompts/Move/Edit.json#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
                                 }
                             }
                         }

@@ -9379,6 +9379,40 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/aitracker_2/prompts/move/:
+    post:
+      operationId: EditAitracker2PromptsMove
+      tags:
+        - Aitracker_2
+      summary: |-
+        Перемещение промтов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Move\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /edit/aitracker_2/prompts/undel/:
     post:
       operationId: EditAitracker2PromptsUndel
@@ -16298,37 +16332,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/admin_2/actions/robot/task/:
-    post:
-      operationId: EditAdmin2ActionsRobotTask
-      tags:
-        - Admin_2
-      summary: |-
-        Снятие задачи с дэбага
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /del/admin_2/actions/slack/files/:
     post:
       operationId: DelAdmin2ActionsSlackFiles
@@ -19507,40 +19510,6 @@ paths:
               schema:
                 type: string
                 format: binary
-  /edit/aitracker_2/prompts/move/:
-    post:
-      operationId: EditAitracker2PromptsMove
-      tags:
-        - Aitracker_2
-      summary: |-
-        Перемещение промтов
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Move\Edit
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.AiTracker.Prompts'
 components:
   securitySchemes:
     authToken:
@@ -35017,6 +34986,36 @@ components:
     AiTracker_2.Methods.Prompts.Groups.Add.Exec:
       nullable: true
       type: array
+    AiTracker_2.Methods.Prompts.Move.Edit:
+      type: object
+      properties:
+        to_id:
+          title: |-
+            Вставить к указанному объекту
+
+            Если в to_type указано "Перед или после запроса", то принимает id запроса
+            Если в to_type указано "В конец или начало группы", то принимает id группы
+          type: integer
+        to_type:
+          default: in_group
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - to_id
+        - project_id
+      title: |-
+        Перемещение промтов
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Move\Edit
+    AiTracker_2.Methods.Prompts.Move.Edit.Exec:
+      nullable: true
+      type: integer
     AiTracker_2.Methods.Prompts.Undel.Edit:
       type: object
       properties:
@@ -43515,34 +43514,6 @@ components:
     Admin_2.Methods.Actions.Robot.Priority.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-    Admin_2.Methods.Actions.Robot.Task.Edit:
-      type: object
-      properties:
-        projectId:
-          title: ID проекта
-          type: integer
-        taskId:
-          title: ID задачи
-          nullable: true
-          type: integer
-        type:
-          title: Откуда снять задачу
-          type: string
-        test:
-          title: Является ли запуск - тестом
-          type: boolean
-      required:
-        - projectId
-        - type
-        - test
-      title: |-
-        Снятие задачи с дэбага
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit
-    Admin_2.Methods.Actions.Robot.Task.Edit.Exec:
-      nullable: true
-      allOf:
-        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Slack.Files.Del:
       type: object
       properties:
@@ -47344,33 +47315,3 @@ components:
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Tests\Speed\File\Get
-    AiTracker_2.Methods.Prompts.Move.Edit:
-      type: object
-      properties:
-        to_id:
-          title: |-
-            Вставить к указанному объекту
-
-            Если в to_type указано "Перед или после запроса", то принимает id запроса
-            Если в to_type указано "В конец или начало группы", то принимает id группы
-          type: integer
-        to_type:
-          default: in_group
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - to_id
-        - project_id
-      title: |-
-        Перемещение промтов
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Move\Edit
-    AiTracker_2.Methods.Prompts.Move.Edit.Exec:
-      nullable: true
-      type: integer
