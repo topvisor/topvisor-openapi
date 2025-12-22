@@ -8,7 +8,6 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         Actions: import('./I18n/Actions.ts').components['schemas']['I18n.Actions'];
-        AiTracker: import('./I18n/AiTracker.ts').components['schemas']['I18n.AiTracker'];
         Analytics: import('./I18n/Analytics.ts').components['schemas']['I18n.Analytics'];
         Api: import('./I18n/Api.ts').components['schemas']['I18n.Api'];
         Audit: import('./I18n/Audit.ts').components['schemas']['I18n.Audit'];
@@ -43,6 +42,7 @@ export interface components {
         Votes: import('./I18n/Votes.ts').components['schemas']['I18n.Votes'];
         Watcher: import('./I18n/Watcher.ts').components['schemas']['I18n.Watcher'];
         Widget: import('./I18n/Widget.ts').components['schemas']['I18n.Widget'];
+        "Ai.Tracker": import('./I18n/Ai/Tracker.ts').components['schemas']['I18n.Ai.Tracker'];
         "Audit.Scan": import('./I18n/Audit/Scan.ts').components['schemas']['I18n.Audit.Scan'];
         "Bank.Subscription": import('./I18n/Bank/Subscription.ts').components['schemas']['I18n.Bank.Subscription'];
         "Landings.Championship": import('./I18n/Landings/Championship.ts').components['schemas']['I18n.Landings.Championship'];

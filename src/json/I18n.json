@@ -10,9 +10,6 @@
             "Actions": {
                 "$ref": "I18n/Actions.json#/components/schemas/I18n.Actions"
             },
-            "AiTracker": {
-                "$ref": "I18n/AiTracker.json#/components/schemas/I18n.AiTracker"
-            },
             "Analytics": {
                 "$ref": "I18n/Analytics.json#/components/schemas/I18n.Analytics"
             },
@@ -114,6 +111,9 @@
             },
             "Widget": {
                 "$ref": "I18n/Widget.json#/components/schemas/I18n.Widget"
+            },
+            "Ai.Tracker": {
+                "$ref": "I18n/Ai/Tracker.json#/components/schemas/I18n.Ai.Tracker"
             },
             "Audit.Scan": {
                 "$ref": "I18n/Audit/Scan.json#/components/schemas/I18n.Audit.Scan"
