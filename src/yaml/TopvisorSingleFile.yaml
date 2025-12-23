@@ -23237,6 +23237,20 @@ components:
               - date
               - model
               - project_id
+        position:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        position_max:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
     AiTracker_2.Methods.History.Get.Exec:
       type: array
       items:

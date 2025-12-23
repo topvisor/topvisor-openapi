@@ -56,6 +56,26 @@
                                 "project_id"
                             ]
                         }
+                    },
+                    "position": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    },
+                    "position_max": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
                     }
                 }
             }

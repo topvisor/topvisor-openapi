@@ -34,6 +34,22 @@ export interface components {
              *       ]
              *     } */
             mentioned?: any;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model",
+             *         "project_id"
+             *       ]
+             *     } */
+            position?: any;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model",
+             *         "project_id"
+             *       ]
+             *     } */
+            position_max?: any;
         };
     };
     responses: never;
