@@ -11,8 +11,16 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "title": "Текст промпта",
+                        "title": "Текст промптов",
+                        "nullable": true,
                         "type": "string"
+                    },
+                    "names": {
+                        "title": "Текст промптов",
+                        "description": "@deprecated Сделать как в Keywords_2/Methods/Keywords/Add() на string. Добавление нескольких сделать через метод импорта\n@internal",
+                        "nullable": true,
+                        "deprecated": true,
+                        "type": "array"
                     },
                     "to_id": {
                         "title": "Вставить к указанному объекту",
@@ -48,7 +56,6 @@
                     }
                 },
                 "required": [
-                    "name",
                     "to_id",
                     "project_id"
                 ],

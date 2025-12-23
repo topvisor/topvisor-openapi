@@ -11,8 +11,15 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Add */
         "AiTracker_2.Methods.Prompts.Add": {
-            /** Текст промпта */
-            name: string;
+            /** Текст промптов */
+            name?: string | null;
+            /**
+             * Текст промптов
+             * @deprecated
+             * @description @deprecated Сделать как в Keywords_2/Methods/Keywords/Add() на string. Добавление нескольких сделать через метод импорта
+             *     @internal
+             */
+            names?: unknown[] | null;
             /** Вставить к указанному объекту */
             to_id: number;
             /**
