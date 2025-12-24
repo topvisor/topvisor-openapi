@@ -9016,62 +9016,6 @@
                 }
             }
         },
-        "/get/positions_2/summary/": {
-            "post": {
-                "operationId": "GetPositions2Summary",
-                "tags": [
-                    "Positions_2"
-                ],
-                "summary": "Получение сводки по проверкам позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Summary\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Positions_2/Methods/Summary/Get.json#/components/schemas/Positions_2.Methods.Summary.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Positions_2/Methods/Summary/Get.json#/components/schemas/Positions_2.Methods.Summary.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/projects_2/analytics/": {
             "post": {
                 "operationId": "AddProjects2Analytics",
@@ -21839,59 +21783,6 @@
                 }
             }
         },
-        "/get/positions_2/summary/chart/": {
-            "post": {
-                "operationId": "GetPositions2SummaryChart",
-                "tags": [
-                    "Positions_2"
-                ],
-                "summary": "Получение данных сводки для отображения графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Summary\\Chart\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Positions_2/Methods/Summary/Chart/Get.json#/components/schemas/Positions_2.Methods.Summary.Chart.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Positions_2/Methods/Summary/Chart/Get.json#/components/schemas/Positions_2.Methods.Summary.Chart.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/get/projects_2/analytics/graph/": {
             "post": {
                 "operationId": "GetProjects2AnalyticsGraph",
@@ -30976,38 +30867,6 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/positions_2/summary/chart/export/": {
-            "post": {
-                "operationId": "GetPositions2SummaryChartExport",
-                "tags": [
-                    "Positions_2"
-                ],
-                "summary": "Экспорт сводки с графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Summary\\Chart\\Export\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Positions_2/Methods/Summary/Chart/Export/Get.json#/components/schemas/Positions_2.Methods.Summary.Chart.Export.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/octet-stream": {
-                                "schema": {
-                                    "type": "string",
-                                    "format": "binary"
                                 }
                             }
                         }
