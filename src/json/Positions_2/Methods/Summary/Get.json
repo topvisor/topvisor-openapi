@@ -1,0 +1,107 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Summary.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Summary.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "type": "integer"
+                    },
+                    "dates": {
+                        "title": "Даты для получения сводки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "show_dynamics": {
+                        "title": "Отобразить динамику позиций",
+                        "type": "boolean"
+                    },
+                    "show_tops": {
+                        "title": "Отобразить данные по топам",
+                        "type": "boolean"
+                    },
+                    "show_avg": {
+                        "title": "Отобразить среднюю позицию",
+                        "type": "boolean"
+                    },
+                    "show_median": {
+                        "title": "Отобразить медианную позицию",
+                        "type": "boolean"
+                    },
+                    "show_visibility": {
+                        "title": "Отобразить видимость",
+                        "type": "boolean"
+                    },
+                    "competitor_id": {
+                        "title": "ID конкурента",
+                        "type": "integer"
+                    },
+                    "forProjectsList": {
+                        "title": "Для списка проектов",
+                        "description": "@internal",
+                        "type": "boolean"
+                    },
+                    "forProjectsListRegionDepth": {
+                        "title": "Глубина регионов для списка проектов",
+                        "description": "@internal",
+                        "type": "boolean"
+                    },
+                    "only_exists_first_date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/OnlyExistsFirstDate.json#/components/schemas/Positions_2.Types.OnlyExistsFirstDate"
+                            }
+                        ]
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Показывать данные из подпапок",
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "region_index",
+                    "dates",
+                    "project_id"
+                ],
+                "title": "Получение сводки по проверкам позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Summary\\Get"
+            },
+            "Positions_2.Methods.Summary.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

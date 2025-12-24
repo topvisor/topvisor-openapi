@@ -3146,6 +3146,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение сводки по проверкам позиций
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Summary\Get */
+    "/get/positions_2/summary/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2Summary"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление графика
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Add */
@@ -7697,6 +7716,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение данных сводки для отображения графика
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Summary\Chart\Get */
+    "/get/positions_2/summary/chart/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2SummaryChart"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение данных графика
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Analytics\Graph\Get */
@@ -11041,6 +11079,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditPositions2SearchersRegionsSort"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт сводки с графика
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Summary\Chart\Export\Get */
+    "/get/positions_2/summary/chart/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2SummaryChartExport"];
         delete?: never;
         options?: never;
         head?: never;
@@ -15952,6 +16009,31 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Settings/Edit.ts').components['schemas']['Positions_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2Summary: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/Summary/Get.ts').components['schemas']['Positions_2.Methods.Summary.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/Summary/Get.ts').components['schemas']['Positions_2.Methods.Summary.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -21886,6 +21968,31 @@ export interface operations {
             };
         };
     };
+    GetPositions2SummaryChart: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/Summary/Chart/Get.ts').components['schemas']['Positions_2.Methods.Summary.Chart.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/Summary/Chart/Get.ts').components['schemas']['Positions_2.Methods.Summary.Chart.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetProjects2AnalyticsGraph: {
         parameters: {
             query?: never;
@@ -26185,6 +26292,29 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Searchers/Regions/Sort/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2SummaryChartExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/Summary/Chart/Export/Get.ts').components['schemas']['Positions_2.Methods.Summary.Chart.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
                 };
             };
         };
