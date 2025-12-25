@@ -31,6 +31,11 @@ export interface components {
             to_type?: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'] | null;
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: boolean | null;
+            /**
+             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
+             * @description @internal
+             */
+            for_project_task?: boolean;
         };
         /** Массив созданных групп */
         "Keywords_2.Methods.Collect.Go.Edit.Exec": unknown[] | null;

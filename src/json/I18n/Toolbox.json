@@ -41,6 +41,10 @@
                     "Wordstat_check": {
                         "const": "Search volume tracking with Toolbox",
                         "readOnly": true
+                    },
+                    "Keywords_collect": {
+                        "const": "Keyword research with Toolbox",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -51,7 +55,8 @@
                     "In_process",
                     "Recreate_task",
                     "No_tasks",
-                    "Wordstat_check"
+                    "Wordstat_check",
+                    "Keywords_collect"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Toolbox\\En"
             }

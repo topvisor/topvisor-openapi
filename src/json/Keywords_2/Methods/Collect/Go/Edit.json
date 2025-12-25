@@ -63,6 +63,11 @@
                     "debug": {
                         "nullable": true,
                         "type": "boolean"
+                    },
+                    "for_project_task": {
+                        "title": "Выполняется ли запуск проверки для проекта, который является задачей toolbox",
+                        "description": "@internal",
+                        "type": "boolean"
                     }
                 },
                 "required": [

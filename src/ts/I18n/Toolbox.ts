@@ -25,6 +25,8 @@ export interface components {
             readonly No_tasks: "No tasks";
             /** @constant */
             readonly Wordstat_check: "Search volume tracking with Toolbox";
+            /** @constant */
+            readonly Keywords_collect: "Keyword research with Toolbox";
         };
     };
     responses: never;
