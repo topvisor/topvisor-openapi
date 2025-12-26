@@ -20883,6 +20883,8 @@ components:
         - sb
         - wm2
         - pp
+        - pd
+        - pd_invoice
         - rk
         - pt
         - lp
@@ -20903,12 +20905,16 @@ components:
         - Sb
         - Wm2
         - Pp
+        - Pd
+        - PdInvoice
         - Rk
         - Pt
         - Lp
         - Ppg
         - Pr
       x-enum-descriptions:
+        - null
+        - null
         - null
         - null
         - null
