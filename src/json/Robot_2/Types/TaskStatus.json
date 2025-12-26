@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Types.TaskStatus",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Types.TaskStatus": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "x-enum-varnames": [
+                    "None",
+                    "Working",
+                    "Stop",
+                    "Debug",
+                    "LazyDebug",
+                    "Reject",
+                    "Service"
+                ],
+                "x-enum-descriptions": [
+                    "Задача свободна и ожидает выполнения",
+                    "В работе",
+                    "Остановлена вручную",
+                    "На отладке",
+                    "На отложенной отладке",
+                    "Остановлена из-за многократных ошибок; Перезапускается вручную через админский `upop`",
+                    "Находится на обслуживании; Например, находится в процессе переноса в другой задачник"
+                ],
+                "title": "Статус задач в задачнике робота\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Types\\TaskStatus"
+            }
+        }
+    }
+}
