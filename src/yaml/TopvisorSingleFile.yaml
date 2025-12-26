@@ -44428,17 +44428,6 @@ components:
     Admin_2.Methods.Analytics.Tickets.Messages.Get:
       type: object
       properties:
-        fields:
-          title: |-
-            Поля
-
-            - date
-            - count_messages
-            - count_tickets
-            - count_messages_user:%userId%
-            - percent_messages_user:%userId%
-            - vacations_by_user_id
-          type: array
         period:
           allOf:
             - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
@@ -44451,7 +44440,6 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
       required:
-        - fields
         - period
         - limit
       title: |-
@@ -44461,34 +44449,63 @@ components:
     Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec:
       nullable: true
       anyOf:
-        - type: array
-          items:
-            type: object
-            properties:
-              date:
-                type: string
-              count_tickets:
-                type: integer
-              count_messages:
-                type: integer
-              count_messages_user:
+        - type: object
+          properties:
+            users:
+              type: object
+              additionalProperties:
                 type: object
-                additionalProperties:
-                  type: integer
-              percent_messages_user:
+                properties:
+                  staff_name_2:
+                    type: string
+                  staff_surname:
+                    type: string
+                required:
+                  - staff_name_2
+                  - staff_surname
+            dates:
+              type: array
+              items:
                 type: object
-                additionalProperties:
-                  type: number
-              vacations_by_user_id:
-                type: object
-                additionalProperties:
-                  type: array
-                  items:
-                    type: array
-                    items:
-                      type: string
-            required:
-              - date
+                properties:
+                  date:
+                    type: string
+                  totals:
+                    type: object
+                    properties:
+                      tickets:
+                        type: integer
+                      messages:
+                        type: integer
+                    required:
+                      - tickets
+                      - messages
+                  messagesInfoByUserId:
+                    type: object
+                    additionalProperties:
+                      type: object
+                      properties:
+                        messages:
+                          type: integer
+                        percent:
+                          type: number
+                        vacations:
+                          type: array
+                          items:
+                            type: array
+                            items:
+                              type: string
+                      required:
+                        - messages
+                        - percent
+                        - vacations
+                required:
+                  - date
+                  - totals
+                  - messagesInfoByUserId
+          required:
+            - users
+            - dates
         - type: 'null'
     Admin_2.Methods.Logs.System.Checked.Edit:
       type: object

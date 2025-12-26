@@ -11,15 +11,6 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\Messages\Get */
         "Admin_2.Methods.Analytics.Tickets.Messages.Get": {
-            /** Поля
-             *
-             *     - date
-             *     - count_messages
-             *     - count_tickets
-             *     - count_messages_user:%userId%
-             *     - percent_messages_user:%userId%
-             *     - vacations_by_user_id */
-            fields: unknown[];
             period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */
             limit: number;
@@ -27,19 +18,27 @@ export interface components {
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
         "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": ({
-            date: string;
-            count_tickets?: number;
-            count_messages?: number;
-            count_messages_user?: {
-                [key: string]: number;
+            users: {
+                [key: string]: {
+                    staff_name_2: string;
+                    staff_surname: string;
+                };
             };
-            percent_messages_user?: {
-                [key: string]: number;
-            };
-            vacations_by_user_id?: {
-                [key: string]: string[][];
-            };
-        }[] | null) | null;
+            dates: {
+                date: string;
+                totals: {
+                    tickets: number;
+                    messages: number;
+                };
+                messagesInfoByUserId: {
+                    [key: string]: {
+                        messages: number;
+                        percent: number;
+                        vacations: string[][];
+                    };
+                };
+            }[];
+        } | null) | null;
     };
     responses: never;
     parameters: never;
