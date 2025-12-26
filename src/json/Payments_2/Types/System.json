@@ -24,7 +24,6 @@
                     "sb",
                     "wm2",
                     "pp",
-                    "pd_invoice",
                     "rk",
                     "pt",
                     "lp",
@@ -46,7 +45,6 @@
                     "Sb",
                     "Wm2",
                     "Pp",
-                    "PdInvoice",
                     "Rk",
                     "Pt",
                     "Lp",
@@ -54,7 +52,6 @@
                     "Pr"
                 ],
                 "x-enum-descriptions": [
-                    null,
                     null,
                     null,
                     null,
