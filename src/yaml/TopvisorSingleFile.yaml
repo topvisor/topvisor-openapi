@@ -40126,6 +40126,16 @@ components:
           description: '@internal'
           nullable: true
           type: string
+        date_prev:
+          title: |-
+            Дата для фильтра по запросам, позиции с которой ухудшились
+
+            - Не разрешено использовать с keyword_id
+            - Для использования требуется указание region_index
+          description: '@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть разным'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         filters:
           $ref: '#/components/schemas/filters'
         id:

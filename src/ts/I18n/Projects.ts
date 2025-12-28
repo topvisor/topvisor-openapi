@@ -36,6 +36,10 @@ export interface components {
             /** @constant */
             readonly Check_positions_with_filter: "Apply filter and check rankings (search engine / location / folder / group)";
             /** @constant */
+            readonly Check_positions_with_filter_worsed: "Only keywords for which rankings have worsened";
+            /** @constant */
+            readonly Check_positions_with_filter_worsed_info: "Worsening positions for today`s check compared to {{ datePrev }}";
+            /** @constant */
             readonly domain_missed: "Domain not specified, check \"site\" parameter";
             /** @constant */
             readonly Incorrect_domain: "Invalid domain name";

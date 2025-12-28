@@ -62,6 +62,14 @@
                         "const": "Apply filter and check rankings (search engine / location / folder / group)",
                         "readOnly": true
                     },
+                    "Check_positions_with_filter_worsed": {
+                        "const": "Only keywords for which rankings have worsened",
+                        "readOnly": true
+                    },
+                    "Check_positions_with_filter_worsed_info": {
+                        "const": "Worsening positions for today`s check compared to {{ datePrev }}",
+                        "readOnly": true
+                    },
                     "domain_missed": {
                         "const": "Domain not specified, check \"site\" parameter",
                         "readOnly": true
@@ -1005,6 +1013,8 @@
                     "Del_folder_question",
                     "Check_positions",
                     "Check_positions_with_filter",
+                    "Check_positions_with_filter_worsed",
+                    "Check_positions_with_filter_worsed_info",
                     "domain_missed",
                     "Incorrect_domain",
                     "owner_rights_error",
