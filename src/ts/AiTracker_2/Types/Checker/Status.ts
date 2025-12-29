@@ -11,9 +11,9 @@ export interface components {
          * Статус задачи на проверку AiTracker
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Checker\Status
-         * @enum {integer}
+         * @enum {string}
          */
-        "AiTracker_2.Types.Checker.Status": 0;
+        "AiTracker_2.Types.Checker.Status": "0";
     };
     responses: never;
     parameters: never;

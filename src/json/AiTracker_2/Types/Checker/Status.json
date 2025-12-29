@@ -8,9 +8,9 @@
     "components": {
         "schemas": {
             "AiTracker_2.Types.Checker.Status": {
-                "type": "integer",
+                "type": "string",
                 "enum": [
-                    0
+                    "0"
                 ],
                 "x-enum-varnames": [
                     "New"

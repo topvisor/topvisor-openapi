@@ -11,9 +11,9 @@ export interface components {
          * Статус задачи проверки позиций
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Checker\Status
-         * @enum {integer}
+         * @enum {string}
          */
-        "Positions_2.Types.Checker.Status": -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6;
+        "Positions_2.Types.Checker.Status": "0" | "1" | "2" | "3" | "4";
     };
     responses: never;
     parameters: never;
