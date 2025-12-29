@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Types.ProjectStatus",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Types.ProjectStatus": {
+                "type": "string",
+                "enum": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "x-enum-varnames": [
+                    "None",
+                    "InQueue",
+                    "Checking",
+                    "Finished",
+                    "Reporting"
+                ],
+                "x-enum-descriptions": [
+                    "Новая задача",
+                    "Задача выполняется",
+                    "Задача закрыта (запрещены к выполнению роботом)",
+                    "Задача на дебаге; Задача переводится в этот статус вручную для анализа проблемы разработчиком",
+                    "Произошла ошибка, требуется вмешательство разработчика"
+                ],
+                "title": "Общие статусы для всех проверок в проекте, где проверки имеют свой прогресс\n\nПрогресса нет, например, в задачах wordstat, а статус сбора ядра определяется статусом группы.\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Types\\ProjectStatus"
+            }
+        }
+    }
+}
