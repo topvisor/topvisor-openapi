@@ -27583,6 +27583,59 @@
                 }
             }
         },
+        "/edit/admin_2/actions/robot/task/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsRobotTask",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Снятие задачи с дэбага\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Task\\Edit",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Robot/Task/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Robot/Task/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/del/admin_2/actions/slack/files/": {
             "post": {
                 "operationId": "DelAdmin2ActionsSlackFiles",

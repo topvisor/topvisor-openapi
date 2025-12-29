@@ -57,6 +57,16 @@
                         "nullable": true,
                         "type": "string"
                     },
+                    "date_prev": {
+                        "title": "Дата для фильтра по запросам, позиции с которой ухудшились\n\n- Не разрешено использовать с keyword_id\n- Для использования требуется указание region_index",
+                        "description": "@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть разным",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },

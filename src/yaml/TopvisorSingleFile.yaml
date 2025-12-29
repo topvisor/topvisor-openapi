@@ -16394,6 +16394,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/admin_2/actions/robot/task/:
+    post:
+      operationId: EditAdmin2ActionsRobotTask
+      tags:
+        - Admin_2
+      summary: |-
+        Снятие задачи с дэбага
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /del/admin_2/actions/slack/files/:
     post:
       operationId: DelAdmin2ActionsSlackFiles
@@ -40199,6 +40230,16 @@ components:
           description: '@internal'
           nullable: true
           type: string
+        date_prev:
+          title: |-
+            Дата для фильтра по запросам, позиции с которой ухудшились
+
+            - Не разрешено использовать с keyword_id
+            - Для использования требуется указание region_index
+          description: '@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть разным'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -43801,6 +43842,34 @@ components:
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Priority\Edit
     Admin_2.Methods.Actions.Robot.Priority.Edit.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Admin_2.Methods.Actions.Robot.Task.Edit:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        taskId:
+          title: ID задачи
+          nullable: true
+          type: integer
+        type:
+          title: Откуда снять задачу
+          type: string
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - type
+        - test
+      title: |-
+        Снятие задачи с дэбага
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Robot\Task\Edit
+    Admin_2.Methods.Actions.Robot.Task.Edit.Exec:
+      nullable: true
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Slack.Files.Del:
