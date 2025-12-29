@@ -15,6 +15,7 @@ export interface components {
         "Users_2.Methods.TelegramAccounts.Get": {
             /** ID проекта */
             project_id?: number | null;
+            bot_name?: import('../../../Telegram_2/Types/Bot/Name.ts').components['schemas']['Telegram_2.Types.Bot.Name'] | null;
         };
         "Users_2.Methods.TelegramAccounts.Get.Exec": unknown[] | null;
     };

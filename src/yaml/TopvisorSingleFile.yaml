@@ -33354,6 +33354,30 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Reg\Add
     Users_2.Methods.Reg.Add.Exec:
       type: integer
+    Telegram_2.Types.Bot.Name:
+      type: string
+      enum:
+        - TopvisorBot
+        - ThundoBot
+        - ApometrBot
+        - LibraryBot
+        - ResultsYearBot
+      x-enum-varnames:
+        - Topvisor
+        - Thundo
+        - Apometr
+        - Library
+        - ResultsYear
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Имя telegram бота
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\Name
     Users_2.Methods.TelegramAccounts.Get:
       type: object
       properties:
@@ -33361,6 +33385,10 @@ components:
           title: ID проекта
           nullable: true
           type: integer
+        bot_name:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Telegram_2.Types.Bot.Name'
       required: []
       title: |-
         Получение списка телеграм аккаунтов
@@ -33869,30 +33897,6 @@ components:
     Admin_2.Methods.Actions.Projects.Get.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-    Telegram_2.Types.Bot.Name:
-      type: string
-      enum:
-        - TopvisorBot
-        - ThundoBot
-        - ApometrBot
-        - LibraryBot
-        - ResultsYearBot
-      x-enum-varnames:
-        - Topvisor
-        - Thundo
-        - Apometr
-        - Library
-        - ResultsYear
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-        - null
-        - null
-      title: |-
-        Имя telegram бота
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\Name
     Admin_2.Methods.Actions.Telegram.Add:
       type: object
       properties:
