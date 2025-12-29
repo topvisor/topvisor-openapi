@@ -13,9 +13,9 @@ export interface components {
          *     Прогресса нет, например, в задачах wordstat, а статус сбора ядра определяется статусом группы.
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Types\ProjectStatus
-         * @enum {string}
+         * @enum {integer}
          */
-        "Robot_2.Types.ProjectStatus": "0" | "1" | "2" | "3" | "4";
+        "Robot_2.Types.ProjectStatus": 0 | 1 | 2 | 3 | 4;
     };
     responses: never;
     parameters: never;

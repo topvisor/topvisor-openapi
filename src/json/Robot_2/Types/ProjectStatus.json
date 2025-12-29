@@ -8,13 +8,13 @@
     "components": {
         "schemas": {
             "Robot_2.Types.ProjectStatus": {
-                "type": "string",
+                "type": "integer",
                 "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3",
-                    "4"
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
                 ],
                 "x-enum-varnames": [
                     "None",
