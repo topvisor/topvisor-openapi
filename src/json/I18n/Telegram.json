@@ -151,11 +151,7 @@
                         "readOnly": true
                     },
                     "Message_pair_authorize_link": {
-                        "const": "https://%siteId%.com/income/telegram/join/%chatId%/%nickname%",
-                        "readOnly": true
-                    },
-                    "Message_pair_authorize_link_results_year": {
-                        "const": "https://%siteId%.com/income/telegram/join/tv_wrapped_bot/%chatId%/%nickname%",
+                        "const": "https://%siteId%.com/income/telegram/join/%botName%/%chatId%/%nickname%",
                         "readOnly": true
                     },
                     "Message_pair_authorize_link_text": {
@@ -274,7 +270,6 @@
                     "Message_pair_done2",
                     "Message_pair_authorize",
                     "Message_pair_authorize_link",
-                    "Message_pair_authorize_link_results_year",
                     "Message_pair_authorize_link_text",
                     "Message_unpair",
                     "Message_tpvsr",
