@@ -29,6 +29,30 @@
                     "Analysis_go": {
                         "const": "Запустить анализ",
                         "readOnly": true
+                    },
+                    "Prompts": {
+                        "const": "Prompts",
+                        "readOnly": true
+                    },
+                    "Search_prompts": {
+                        "const": "Поиск по промптам",
+                        "readOnly": true
+                    },
+                    "Neural_network": {
+                        "const": "Neural network",
+                        "readOnly": true
+                    },
+                    "Remove_prompt": {
+                        "const": "Вы действительно хотите удалить этот промпт?",
+                        "readOnly": true
+                    },
+                    "Sort_mentioned": {
+                        "const": "Сортировка по упоминанию",
+                        "readOnly": true
+                    },
+                    "Sort_tone": {
+                        "const": "Сортировка по тональности",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -36,7 +60,13 @@
                     "Add_brand_info",
                     "Settings",
                     "Ai_analysis",
-                    "Analysis_go"
+                    "Analysis_go",
+                    "Prompts",
+                    "Search_prompts",
+                    "Neural_network",
+                    "Remove_prompt",
+                    "Sort_mentioned",
+                    "Sort_tone"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Ai\\Tracker\\En"
             }

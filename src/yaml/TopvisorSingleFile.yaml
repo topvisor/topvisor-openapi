@@ -21562,6 +21562,7 @@ components:
         - snippets
         - shortLinks
         - urls
+        - prompts
       x-enum-varnames:
         - Tickets
         - Projects
@@ -21569,7 +21570,9 @@ components:
         - Snippets
         - ShortLinks
         - Urls
+        - Prompts
       x-enum-descriptions:
+        - null
         - null
         - null
         - null

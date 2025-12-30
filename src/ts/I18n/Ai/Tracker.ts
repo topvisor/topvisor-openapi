@@ -19,6 +19,18 @@ export interface components {
             readonly Ai_analysis: "AI-анализ";
             /** @constant */
             readonly Analysis_go: "Запустить анализ";
+            /** @constant */
+            readonly Prompts: "Prompts";
+            /** @constant */
+            readonly Search_prompts: "Поиск по промптам";
+            /** @constant */
+            readonly Neural_network: "Neural network";
+            /** @constant */
+            readonly Remove_prompt: "Вы действительно хотите удалить этот промпт?";
+            /** @constant */
+            readonly Sort_mentioned: "Сортировка по упоминанию";
+            /** @constant */
+            readonly Sort_tone: "Сортировка по тональности";
         };
     };
     responses: never;
