@@ -155,7 +155,7 @@
                         "readOnly": true
                     },
                     "Message_pair_authorize_link_results_year": {
-                        "const": "https://%siteId%.com/income/telegram/join/ResultsYearBot/%chatId%/%nickname%",
+                        "const": "https://%siteId%.com/income/telegram/join/tv_wrapped_bot/%chatId%/%nickname%",
                         "readOnly": true
                     },
                     "Message_pair_authorize_link_text": {

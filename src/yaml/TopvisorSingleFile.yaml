@@ -33358,10 +33358,10 @@ components:
       type: string
       enum:
         - TopvisorBot
-        - ThundoBot
+        - thundo_bot
         - ApometrBot
-        - LibraryBot
-        - ResultsYearBot
+        - tv_library_bot
+        - tv_wrapped_bot
       x-enum-varnames:
         - Topvisor
         - Thundo

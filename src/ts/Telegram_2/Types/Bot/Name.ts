@@ -13,7 +13,7 @@ export interface components {
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Telegram_2\Types\Bot\Name
          * @enum {string}
          */
-        "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot" | "LibraryBot" | "ResultsYearBot";
+        "Telegram_2.Types.Bot.Name": "TopvisorBot" | "thundo_bot" | "ApometrBot" | "tv_library_bot" | "tv_wrapped_bot";
     };
     responses: never;
     parameters: never;

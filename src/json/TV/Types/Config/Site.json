@@ -46,8 +46,8 @@
                         "default": "No set",
                         "type": "string"
                     },
-                    "TPVSR_BOT_NAME": {
-                        "title": "Имя бота сокращателя",
+                    "TELEGRAM_BOT": {
+                        "title": "Имя основного телеграмм бота",
                         "readOnly": true,
                         "default": "No set",
                         "type": "string"
@@ -169,7 +169,7 @@
                     "HOST_DEV",
                     "HOST_TPVSR",
                     "HOST_TPVSR_MODULE",
-                    "TPVSR_BOT_NAME",
+                    "TELEGRAM_BOT",
                     "DEFAULT_BANK_TYPE",
                     "LANGUAGES",
                     "LANGUAGE_MAIN",

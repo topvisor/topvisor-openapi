@@ -46,10 +46,10 @@ export interface components {
              */
             readonly HOST_TPVSR_MODULE: string;
             /**
-             * Имя бота сокращателя
+             * Имя основного телеграмм бота
              * @default No set
              */
-            readonly TPVSR_BOT_NAME: string;
+            readonly TELEGRAM_BOT: string;
             /**
              * Тип биллинга по умолчанию
              *

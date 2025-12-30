@@ -82,7 +82,7 @@ export interface components {
             /** @constant */
             readonly Message_pair_authorize_link: "https://%siteId%.com/income/telegram/join/%chatId%/%nickname%";
             /** @constant */
-            readonly Message_pair_authorize_link_results_year: "https://%siteId%.com/income/telegram/join/ResultsYearBot/%chatId%/%nickname%";
+            readonly Message_pair_authorize_link_results_year: "https://%siteId%.com/income/telegram/join/tv_wrapped_bot/%chatId%/%nickname%";
             /** @constant */
             readonly Message_pair_authorize_link_text: "Connect an account";
             /** @constant */
