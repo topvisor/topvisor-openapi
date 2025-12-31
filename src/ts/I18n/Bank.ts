@@ -122,7 +122,7 @@ export interface components {
             /** @constant */
             readonly Referrals_levels_description_title: "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels.";
             /** @constant */
-            readonly Referrals_download_invoice_act: "Download invoice and act";
+            readonly Referrals_download_invoice_act: "Download invoice and UTD";
             /** @constant */
             readonly Referrals_withdrawal_available_from_amount_notice: "You can withdraw the amount from 5 000 rubles";
             /** @constant */
@@ -599,6 +599,8 @@ export interface components {
             readonly UNP: "UNP";
             /** @constant */
             readonly Of_board: "Of board";
+            /** @constant */
+            readonly Utd: "UTD";
         };
     };
     responses: never;

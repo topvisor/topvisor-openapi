@@ -235,7 +235,7 @@
                         "readOnly": true
                     },
                     "Referrals_download_invoice_act": {
-                        "const": "Download invoice and act",
+                        "const": "Download invoice and UTD",
                         "readOnly": true
                     },
                     "Referrals_withdrawal_available_from_amount_notice": {
@@ -1189,6 +1189,10 @@
                     "Of_board": {
                         "const": "Of board",
                         "readOnly": true
+                    },
+                    "Utd": {
+                        "const": "UTD",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1474,7 +1478,8 @@
                     "EDRPOU",
                     "BIN_IIN",
                     "UNP",
-                    "Of_board"
+                    "Of_board",
+                    "Utd"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Bank\\En"
             }
