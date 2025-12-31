@@ -1233,6 +1233,10 @@
                     "Serp_features": {
                         "const": "SERP features",
                         "readOnly": true
+                    },
+                    "No_keywords_in_project": {
+                        "const": "<a href=\"/support/keywords/import\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1540,7 +1544,8 @@
                     "Fitler_by_keywords_for_check",
                     "All_keywords",
                     "Select_source",
-                    "Serp_features"
+                    "Serp_features",
+                    "No_keywords_in_project"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Keywords\\En"
             }
