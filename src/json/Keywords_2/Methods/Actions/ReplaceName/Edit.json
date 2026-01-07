@@ -18,6 +18,10 @@
                         "title": "На что поменять",
                         "type": "string"
                     },
+                    "skip_duplicates": {
+                        "title": "Пропускать переименовывания, если они могут приводить к дублям запросов",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },

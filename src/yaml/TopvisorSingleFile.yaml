@@ -38191,6 +38191,9 @@ components:
         replace:
           title: На что поменять
           type: string
+        skip_duplicates:
+          title: Пропускать переименовывания, если они могут приводить к дублям запросов
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
