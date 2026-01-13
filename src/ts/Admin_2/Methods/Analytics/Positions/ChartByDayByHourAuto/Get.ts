@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение числа автоматических проверока по дням по часам
+        /** Получение числа автоматических проверок по дням по часам
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByDayByHourAuto\Get */
         "Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get": Record<string, never>;
