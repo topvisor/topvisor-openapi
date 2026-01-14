@@ -10040,7 +10040,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение числа автоматических проверока по дням по часам
+    /** Получение числа автоматических проверок по дням по часам
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByDayByHourAuto\Get */
     "/get/admin_2/analytics/positions/chartByDayByHourAuto/": {
