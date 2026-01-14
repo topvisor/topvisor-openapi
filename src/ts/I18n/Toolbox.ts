@@ -27,8 +27,6 @@ export interface components {
             readonly Wordstat_check: "Search volume tracking with Toolbox";
             /** @constant */
             readonly Keywords_collect: "Keyword research with Toolbox";
-            /** @constant */
-            readonly Completed_tasks: "Completed tasks";
         };
     };
     responses: never;

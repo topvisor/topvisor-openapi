@@ -26,6 +26,8 @@ export interface components {
             /** @constant */
             readonly Type_journal?: "Topvisor–Journal";
             /** @constant */
+            readonly Type_toolbox_completed_tasks: "Completed tasks";
+            /** @constant */
             readonly Unsubscribe: "Unsubscribe";
             /** @constant */
             readonly Enter_title_and_text: "Enter title and message text";
