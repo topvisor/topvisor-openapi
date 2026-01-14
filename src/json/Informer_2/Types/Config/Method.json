@@ -17,7 +17,8 @@
                     "api",
                     "journal",
                     "academy",
-                    "tickets"
+                    "tickets",
+                    "toolbox"
                 ],
                 "x-enum-varnames": [
                     "News",
@@ -27,7 +28,8 @@
                     "Api",
                     "Journal",
                     "Academy",
-                    "Tickets"
+                    "Tickets",
+                    "Toolbox"
                 ],
                 "x-enum-descriptions": [
                     "Новости",
@@ -37,7 +39,8 @@
                     "API",
                     "Журнал",
                     "Академия",
-                    "Тикеты"
+                    "Тикеты",
+                    "Тулбокс"
                 ],
                 "title": "Тема сообщения\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Informer_2\\Types\\Config\\Method"
             }

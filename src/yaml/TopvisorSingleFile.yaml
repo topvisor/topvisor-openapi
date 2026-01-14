@@ -27679,6 +27679,7 @@ components:
         - journal
         - academy
         - tickets
+        - toolbox
       x-enum-varnames:
         - News
         - Balance
@@ -27688,6 +27689,7 @@ components:
         - Journal
         - Academy
         - Tickets
+        - Toolbox
       x-enum-descriptions:
         - Новости
         - Баланс
@@ -27697,6 +27699,7 @@ components:
         - Журнал
         - Академия
         - Тикеты
+        - Тулбокс
       title: |-
         Тема сообщения
 
