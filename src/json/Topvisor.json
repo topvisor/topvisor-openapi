@@ -21571,6 +21571,165 @@
                 }
             }
         },
+        "/get/positions_2/history/exportPack/": {
+            "post": {
+                "operationId": "GetPositions2HistoryExportPack",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Экспорт позиций указанных проектов за указанные даты без количественного ограничения\n\nАрхив с результатом экспорта будет продублирован на email пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\ExportPack\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/ExportPack/Get.json#/components/schemas/Positions_2.Methods.History.ExportPack.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/History/ExportPack/Get.json#/components/schemas/Positions_2.Methods.History.ExportPack.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/history/links/": {
+            "post": {
+                "operationId": "GetPositions2HistoryLinks",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Создание ссылки на просмотр динамики\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\Links\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/Links/Get.json#/components/schemas/Positions_2.Methods.History.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/History/Links/Get.json#/components/schemas/Positions_2.Methods.History.Links.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/history/targets/": {
+            "post": {
+                "operationId": "GetPositions2HistoryTargets",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Получение информации о целевой ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\Targets\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/Targets/Get.json#/components/schemas/Positions_2.Methods.History.Targets.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/History/Targets/Get.json#/components/schemas/Positions_2.Methods.History.Targets.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/positions_2/searchers/enabled/": {
             "post": {
                 "operationId": "EditPositions2SearchersEnabled",
@@ -30881,6 +31040,112 @@
                                                 },
                                                 {
                                                     "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/history/exportPack/prepare/": {
+            "post": {
+                "operationId": "GetPositions2HistoryExportPackPrepare",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Подготовить проекты к экспорту\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\ExportPack\\Prepare\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/ExportPack/Prepare/Get.json#/components/schemas/Positions_2.Methods.History.ExportPack.Prepare.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/History/ExportPack/Prepare/Get.json#/components/schemas/Positions_2.Methods.History.ExportPack.Prepare.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/history/relevantsUrls/changes/": {
+            "post": {
+                "operationId": "GetPositions2HistoryRelevantsUrlsChanges",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Получение истории об изменении релевантной страницы\n\nВозвращает список в формате: [[`url`, `date`]]\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\RelevantsUrls\\Changes\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/RelevantsUrls/Changes/Get.json#/components/schemas/Positions_2.Methods.History.RelevantsUrls.Changes.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/History/RelevantsUrls/Changes/Get.json#/components/schemas/Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                                 }
                                             ]
                                         },

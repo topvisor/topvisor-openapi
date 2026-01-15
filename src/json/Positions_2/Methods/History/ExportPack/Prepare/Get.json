@@ -1,0 +1,92 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.ExportPack.Prepare.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.ExportPack.Prepare.Get": {
+                "type": "object",
+                "properties": {
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки",
+                        "type": "boolean"
+                    },
+                    "date1": {
+                        "title": "С какой даты подготовить экспорт",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "По какую дату подготовить экспорт",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "date1",
+                    "date2"
+                ],
+                "title": "Подготовить проекты к экспорту\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\ExportPack\\Prepare\\Get"
+            },
+            "Positions_2.Methods.History.ExportPack.Prepare.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "'projects'": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "name"
+                            ]
+                        }
+                    },
+                    "'date1'": {
+                        "type": "string"
+                    },
+                    "'date2'": {
+                        "type": "string"
+                    },
+                    "'count_keywords'": {
+                        "type": "integer"
+                    },
+                    "'count_regions'": {
+                        "type": "integer"
+                    },
+                    "'count_cells'": {
+                        "type": "integer"
+                    },
+                    "'price'": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "'projects'",
+                    "'date1'",
+                    "'date2'",
+                    "'count_keywords'",
+                    "'count_regions'",
+                    "'count_cells'",
+                    "'price'"
+                ]
+            }
+        }
+    }
+}

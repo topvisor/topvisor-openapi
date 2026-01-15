@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.RelevantsUrls.Changes.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.RelevantsUrls.Changes.Get": {
+                "type": "object",
+                "properties": {
+                    "competitor_id": {
+                        "title": "ID конкурента",
+                        "type": "integer"
+                    },
+                    "keyword_id": {
+                        "title": "ID запроса",
+                        "type": "integer"
+                    },
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "type": "integer"
+                    },
+                    "date1": {
+                        "title": "С какого числа получить изменения",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "По какое число получить изменения",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "keyword_id",
+                    "region_index",
+                    "date1",
+                    "date2",
+                    "project_id"
+                ],
+                "title": "Получение истории об изменении релевантной страницы\n\nВозвращает список в формате: [[`url`, `date`]]\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\RelevantsUrls\\Changes\\Get"
+            },
+            "Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

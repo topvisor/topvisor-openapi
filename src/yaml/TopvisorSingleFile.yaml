@@ -12821,6 +12821,101 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
+  /get/positions_2/history/exportPack/:
+    post:
+      operationId: GetPositions2HistoryExportPack
+      tags:
+        - Positions_2
+      summary: |-
+        Экспорт позиций указанных проектов за указанные даты без количественного ограничения
+
+        Архив с результатом экспорта будет продублирован на email пользователя
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.ExportPack.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.ExportPack.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/history/links/:
+    post:
+      operationId: GetPositions2HistoryLinks
+      tags:
+        - Positions_2
+      summary: |-
+        Создание ссылки на просмотр динамики
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Links\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.Links.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/history/targets/:
+    post:
+      operationId: GetPositions2HistoryTargets
+      tags:
+        - Positions_2
+      summary: |-
+        Получение информации о целевой ссылке
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Targets\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.Targets.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.Targets.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/positions_2/searchers/enabled/:
     post:
       operationId: EditPositions2SearchersEnabled
@@ -18361,6 +18456,70 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/history/exportPack/prepare/:
+    post:
+      operationId: GetPositions2HistoryExportPackPrepare
+      tags:
+        - Positions_2
+      summary: |-
+        Подготовить проекты к экспорту
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Prepare\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.ExportPack.Prepare.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.ExportPack.Prepare.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/history/relevantsUrls/changes/:
+    post:
+      operationId: GetPositions2HistoryRelevantsUrlsChanges
+      tags:
+        - Positions_2
+      summary: |-
+        Получение истории об изменении релевантной страницы
+
+        Возвращает список в формате: [[`url`, `date`]]
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\RelevantsUrls\Changes\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.RelevantsUrls.Changes.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
   /get/positions_2/searchers/regions/export/:
     post:
@@ -40267,6 +40426,197 @@ components:
     Positions_2.Methods.Checker.Price.Get.Exec:
       type: object
       additionalProperties: {}
+    Positions_2.Methods.History.ExportPack.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать сумму с учетом скидки
+          type: boolean
+        date1:
+          title: С какой даты подготовить экспорт
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: По какую дату подготовить экспорт
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - date1
+        - date2
+      title: |-
+        Экспорт позиций указанных проектов за указанные даты без количественного ограничения
+
+        Архив с результатом экспорта будет продублирован на email пользователя
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Get
+    Positions_2.Methods.History.ExportPack.Get.Exec:
+      nullable: true
+    Positions_2.Types.Summary.Chart.Type:
+      type: string
+      enum:
+        - tops
+        - tops_count
+        - avg
+        - median
+        - visibility
+      x-enum-varnames:
+        - Tops
+        - TopsCount
+        - Avg
+        - Median
+        - Visibility
+      x-enum-descriptions:
+        - Процент запросов в топе
+        - Количество запросов в топе
+        - Средняя позиция
+        - Медианная позиция
+        - Видимость
+      title: |-
+        Тип графика сводки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Summary\Chart\Type
+    Positions_2.Methods.History.Links.Get:
+      type: object
+      properties:
+        history_view:
+          title: Вид сводки
+          nullable: true
+          type: integer
+        template_date_range:
+          title: Шаблон диапазона дат
+          nullable: true
+          type: string
+        dates:
+          title: Массив дат
+          nullable: true
+          type: array
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          type: string
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          type: string
+        type_range:
+          title: Тип диапазона дат
+          nullable: true
+          type: integer
+        count_dates:
+          title: Количество дат
+          nullable: true
+          type: integer
+        regions_indexes:
+          title: Индексы регионов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folder_id:
+          title: ID папки
+          nullable: true
+          type: integer
+        group_id:
+          title: ID группы
+          nullable: true
+          type: integer
+        tags:
+          title: Теги
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        chart_type:
+          default: tops
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.Summary.Chart.Type'
+        dynamic:
+          title: |-
+            Направление динамики
+
+            Массив из элементов:
+            - >
+            - =
+            - <
+          nullable: true
+          type: array
+        min_max:
+          title: Минимальная и максимальная позиции, можно указывать несколько пар значений
+          nullable: true
+          type: array
+          items:
+            type: object
+            properties:
+              - type: integer
+              - type: integer
+            required:
+              - '0'
+              - '1'
+        volume_type:
+          title: Тип частоты
+          nullable: true
+          type: integer
+        show_global_frequency:
+          title: Показывать ли глобальную частоту
+          nullable: true
+          type: integer
+        only_exists_first_date:
+          title: Не показывать динамику для запросов, отсутствующих в первое проверке диапазона дат
+          nullable: true
+          type: integer
+        data_sort:
+          title: Настройка сортировки
+          nullable: true
+          type: array
+        type_range_compare:
+          title: Сравнение диапазонов типов
+          nullable: true
+          type: integer
+        tags_ids:
+          title: Массив тегов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: |-
+        Создание ссылки на просмотр динамики
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Links\Get
+    Positions_2.Methods.History.Links.Get.Exec:
+      nullable: true
+    Positions_2.Methods.History.Targets.Get:
+      type: object
+      properties:
+        phrase_id:
+          title: ID запроса
+          type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
+      required:
+        - phrase_id
+        - project_id
+      title: |-
+        Получение информации о целевой ссылке
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Targets\Get
+    Positions_2.Methods.History.Targets.Get.Exec:
+      type: array
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:
@@ -46392,6 +46742,98 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Status\RecheckKeywords\Get
     Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
       nullable: true
+    Positions_2.Methods.History.ExportPack.Prepare.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать сумму с учетом скидки
+          type: boolean
+        date1:
+          title: С какой даты подготовить экспорт
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: По какую дату подготовить экспорт
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - date1
+        - date2
+      title: |-
+        Подготовить проекты к экспорту
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Prepare\Get
+    Positions_2.Methods.History.ExportPack.Prepare.Get.Exec:
+      type: object
+      properties:
+        '''projects''':
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              name:
+                type: string
+            required:
+              - id
+              - name
+        '''date1''':
+          type: string
+        '''date2''':
+          type: string
+        '''count_keywords''':
+          type: integer
+        '''count_regions''':
+          type: integer
+        '''count_cells''':
+          type: integer
+        '''price''':
+          type: number
+      required:
+        - '''projects'''
+        - '''date1'''
+        - '''date2'''
+        - '''count_keywords'''
+        - '''count_regions'''
+        - '''count_cells'''
+        - '''price'''
+    Positions_2.Methods.History.RelevantsUrls.Changes.Get:
+      type: object
+      properties:
+        competitor_id:
+          title: ID конкурента
+          type: integer
+        keyword_id:
+          title: ID запроса
+          type: integer
+        region_index:
+          title: Индекс региона
+          type: integer
+        date1:
+          title: С какого числа получить изменения
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: По какое число получить изменения
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - keyword_id
+        - region_index
+        - date1
+        - date2
+        - project_id
+      title: |-
+        Получение истории об изменении релевантной страницы
+
+        Возвращает список в формате: [[`url`, `date`]]
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\RelevantsUrls\Changes\Get
+    Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec:
+      type: array
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:

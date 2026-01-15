@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.Targets.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.Targets.Get": {
+                "type": "object",
+                "properties": {
+                    "phrase_id": {
+                        "title": "ID запроса",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "region_index": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
+                    },
+                    "searcher_key": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/searcher_key"
+                    },
+                    "region_key": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_key"
+                    },
+                    "region_lang": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_lang"
+                    },
+                    "region_device": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
+                    }
+                },
+                "required": [
+                    "phrase_id",
+                    "project_id"
+                ],
+                "title": "Получение информации о целевой ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\Targets\\Get"
+            },
+            "Positions_2.Methods.History.Targets.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

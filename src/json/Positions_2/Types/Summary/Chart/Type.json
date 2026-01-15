@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.Summary.Chart.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.Summary.Chart.Type": {
+                "type": "string",
+                "enum": [
+                    "tops",
+                    "tops_count",
+                    "avg",
+                    "median",
+                    "visibility"
+                ],
+                "x-enum-varnames": [
+                    "Tops",
+                    "TopsCount",
+                    "Avg",
+                    "Median",
+                    "Visibility"
+                ],
+                "x-enum-descriptions": [
+                    "Процент запросов в топе",
+                    "Количество запросов в топе",
+                    "Средняя позиция",
+                    "Медианная позиция",
+                    "Видимость"
+                ],
+                "title": "Тип графика сводки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Types\\Summary\\Chart\\Type"
+            }
+        }
+    }
+}

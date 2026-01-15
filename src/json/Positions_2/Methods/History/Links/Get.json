@@ -1,0 +1,166 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.Links.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.Links.Get": {
+                "type": "object",
+                "properties": {
+                    "history_view": {
+                        "title": "Вид сводки",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "template_date_range": {
+                        "title": "Шаблон диапазона дат",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "dates": {
+                        "title": "Массив дат",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "date2": {
+                        "title": "Дата окончания диапазона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "type_range": {
+                        "title": "Тип диапазона дат",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "count_dates": {
+                        "title": "Количество дат",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "regions_indexes": {
+                        "title": "Индексы регионов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folder_id": {
+                        "title": "ID папки",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "group_id": {
+                        "title": "ID группы",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "tags": {
+                        "title": "Теги",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "chart_type": {
+                        "default": "tops",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/Summary/Chart/Type.json#/components/schemas/Positions_2.Types.Summary.Chart.Type"
+                            }
+                        ]
+                    },
+                    "dynamic": {
+                        "title": "Направление динамики\n\nМассив из элементов:\n- >\n- =\n- <",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "min_max": {
+                        "title": "Минимальная и максимальная позиции, можно указывать несколько пар значений",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": [
+                                {
+                                    "type": "integer"
+                                },
+                                {
+                                    "type": "integer"
+                                }
+                            ],
+                            "required": [
+                                "0",
+                                "1"
+                            ]
+                        }
+                    },
+                    "volume_type": {
+                        "title": "Тип частоты",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "show_global_frequency": {
+                        "title": "Показывать ли глобальную частоту",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "only_exists_first_date": {
+                        "title": "Не показывать динамику для запросов, отсутствующих в первое проверке диапазона дат",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "data_sort": {
+                        "title": "Настройка сортировки",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "type_range_compare": {
+                        "title": "Сравнение диапазонов типов",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "tags_ids": {
+                        "title": "Массив тегов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Создание ссылки на просмотр динамики\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\Links\\Get"
+            },
+            "Positions_2.Methods.History.Links.Get.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

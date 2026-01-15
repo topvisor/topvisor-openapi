@@ -7621,6 +7621,65 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт позиций указанных проектов за указанные даты без количественного ограничения
+     *
+     *     Архив с результатом экспорта будет продублирован на email пользователя
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Get */
+    "/get/positions_2/history/exportPack/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryExportPack"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Создание ссылки на просмотр динамики
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Links\Get */
+    "/get/positions_2/history/links/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryLinks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение информации о целевой ссылке
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Targets\Get */
+    "/get/positions_2/history/targets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryTargets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Включение/выключение ПС
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Searchers\Enabled\Edit */
@@ -11039,6 +11098,46 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetPositions2CheckerStatusRecheckKeywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Подготовить проекты к экспорту
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Prepare\Get */
+    "/get/positions_2/history/exportPack/prepare/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryExportPackPrepare"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение истории об изменении релевантной страницы
+     *
+     *     Возвращает список в формате: [[`url`, `date`]]
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\RelevantsUrls\Changes\Get */
+    "/get/positions_2/history/relevantsUrls/changes/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryRelevantsUrlsChanges"];
         delete?: never;
         options?: never;
         head?: never;
@@ -21862,6 +21961,81 @@ export interface operations {
             };
         };
     };
+    GetPositions2HistoryExportPack: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/ExportPack/Get.ts').components['schemas']['Positions_2.Methods.History.ExportPack.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/ExportPack/Get.ts').components['schemas']['Positions_2.Methods.History.ExportPack.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2HistoryLinks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/Links/Get.ts').components['schemas']['Positions_2.Methods.History.Links.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/Links/Get.ts').components['schemas']['Positions_2.Methods.History.Links.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2HistoryTargets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/Targets/Get.ts').components['schemas']['Positions_2.Methods.History.Targets.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/Targets/Get.ts').components['schemas']['Positions_2.Methods.History.Targets.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     EditPositions2SearchersEnabled: {
         parameters: {
             query?: never;
@@ -26263,6 +26437,56 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2HistoryExportPackPrepare: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/ExportPack/Prepare/Get.ts').components['schemas']['Positions_2.Methods.History.ExportPack.Prepare.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/ExportPack/Prepare/Get.ts').components['schemas']['Positions_2.Methods.History.ExportPack.Prepare.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2HistoryRelevantsUrlsChanges: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/RelevantsUrls/Changes/Get.ts').components['schemas']['Positions_2.Methods.History.RelevantsUrls.Changes.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/RelevantsUrls/Changes/Get.ts').components['schemas']['Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
