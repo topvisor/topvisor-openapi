@@ -31,9 +31,6 @@
                     "tags": {
                         "nullable": true
                     },
-                    "target": {
-                        "nullable": true
-                    },
                     "ord": {
                         "nullable": true
                     },
@@ -56,6 +53,9 @@
                         "nullable": true
                     },
                     "group_folder_ord": {
+                        "nullable": true
+                    },
+                    "target": {
                         "nullable": true
                     },
                     "target_status": {

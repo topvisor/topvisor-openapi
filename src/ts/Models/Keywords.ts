@@ -16,7 +16,6 @@ export interface components {
             project_id?: any;
             group_id?: any;
             tags?: any;
-            target?: any;
             ord?: any;
             name?: any;
             group_name?: any;
@@ -25,6 +24,7 @@ export interface components {
             group_folder_id?: any;
             group_folder_path?: any;
             group_folder_ord?: any;
+            target?: any;
             /** @example {
              *       "need set qualifiers": [
              *         "region_index"

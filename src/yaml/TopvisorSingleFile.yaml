@@ -28447,8 +28447,6 @@ components:
           nullable: true
         tags:
           nullable: true
-        target:
-          nullable: true
         ord:
           nullable: true
         name:
@@ -28464,6 +28462,8 @@ components:
         group_folder_path:
           nullable: true
         group_folder_ord:
+          nullable: true
+        target:
           nullable: true
         target_status:
           nullable: true
