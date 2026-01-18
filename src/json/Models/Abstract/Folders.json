@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Abstract.Folders",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Abstract.Folders": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "parent_id": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "count_folders": {
+                        "nullable": true
+                    },
+                    "count_groups": {
+                        "nullable": true
+                    },
+                    "count_groups_active": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "path": {
+                        "nullable": true
+                    },
+                    "ord_path": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}
