@@ -27109,7 +27109,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Востановление поисковых запросов из бэкапа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Keywords\\Edit",
+                "summary": "Восстановление поисковых запросов из бэкапа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Keywords\\Edit",
                 "requestBody": {
                     "content": {
                         "application/json": {

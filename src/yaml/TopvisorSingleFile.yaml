@@ -16120,7 +16120,7 @@ paths:
       tags:
         - Admin_2
       summary: |-
-        Востановление поисковых запросов из бэкапа
+        Восстановление поисковых запросов из бэкапа
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit
       requestBody:
@@ -43851,7 +43851,7 @@ components:
         - date
         - test
       title: |-
-        Востановление поисковых запросов из бэкапа
+        Восстановление поисковых запросов из бэкапа
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit
     Admin_2.Methods.Actions.Backup.Keywords.Edit.Exec:
