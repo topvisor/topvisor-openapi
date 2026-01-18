@@ -39,46 +39,6 @@
                     },
                     "count_keywords": {
                         "nullable": true
-                    },
-                    "volume": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "region_key",
-                                "searcher_key",
-                                "type"
-                            ]
-                        }
-                    },
-                    "POSITIONS_AVG()": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "date",
-                                "project_id",
-                                "region_index"
-                            ]
-                        }
-                    },
-                    "POSITIONS_TOP10()": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "date",
-                                "project_id",
-                                "region_index"
-                            ]
-                        }
-                    },
-                    "POSITIONS_VISIBILITY()": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "date",
-                                "project_id",
-                                "region_index"
-                            ]
-                        }
                     }
                 }
             }
