@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.KeywordsAi.Keywords",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.KeywordsAi.Keywords": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "LENGTH(name)": {
+                        "nullable": true
+                    },
+                    "tagsNames()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "phrase_id": {
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "group_id": {
+                        "nullable": true
+                    },
+                    "tags": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "group_name": {
+                        "nullable": true
+                    },
+                    "group_on": {
+                        "nullable": true
+                    },
+                    "group_ord": {
+                        "nullable": true
+                    },
+                    "group_folder_id": {
+                        "nullable": true
+                    },
+                    "group_folder_path": {
+                        "nullable": true
+                    },
+                    "group_folder_ord": {
+                        "nullable": true
+                    },
+                    "response": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    },
+                    "mentioned": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    },
+                    "position": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    },
+                    "position_max": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model",
+                                "project_id"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

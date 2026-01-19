@@ -169,6 +169,15 @@
             "Models.Content.Authors": {
                 "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors"
             },
+            "Models.KeywordsAi.Folders": {
+                "$ref": "Models/KeywordsAi/Folders.json#/components/schemas/Models.KeywordsAi.Folders"
+            },
+            "Models.KeywordsAi.Groups": {
+                "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
+            },
+            "Models.KeywordsAi.Keywords": {
+                "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
+            },
             "Models.Magnet.Ganalytics": {
                 "$ref": "Models/Magnet/Ganalytics.json#/components/schemas/Models.Magnet.Ganalytics"
             },

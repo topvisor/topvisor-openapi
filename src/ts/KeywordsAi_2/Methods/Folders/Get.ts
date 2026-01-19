@@ -9,10 +9,10 @@ export interface components {
     schemas: {
         /** Получение списка папок проекта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Get */
-        "Keywords_2.Methods.Folders.Get": {
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Get */
+        "KeywordsAi_2.Methods.Folders.Get": {
             /** @default flat */
-            view?: import('../../Types/Folders/View.ts').components['schemas']['Keywords_2.Types.Folders.View'];
+            view?: import('../../../Keywords_2/Types/Folders/View.ts').components['schemas']['Keywords_2.Types.Folders.View'];
             /** Показывать ли удаленные папки */
             show_trash?: number;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
@@ -23,7 +23,7 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Keywords_2.Methods.Folders.Get.Exec": import('../../../Models/Folders.ts').components['schemas']['Models.Folders'][];
+        "KeywordsAi_2.Methods.Folders.Get.Exec": import('../../../Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'][];
     };
     responses: never;
     parameters: never;

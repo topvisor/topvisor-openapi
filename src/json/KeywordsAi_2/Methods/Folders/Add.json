@@ -1,0 +1,98 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Folders.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Folders.Add": {
+                "type": "object",
+                "properties": {
+                    "to_id": {
+                        "title": "Добавить рядом с указанной папкой",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Folders/ToType.json#/components/schemas/Keywords_2.Types.Folders.ToType"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "title": "Название папки",
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Добавление папки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Folders\\Add"
+            },
+            "KeywordsAi_2.Methods.Folders.Add.Exec": {
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "\"id\"": {
+                                "type": "integer"
+                            },
+                            "\"project_id\"": {
+                                "type": "integer"
+                            },
+                            "\"parent_id\"": {
+                                "type": "integer"
+                            },
+                            "\"name\"": {
+                                "type": "string"
+                            },
+                            "\"ord\"": {
+                                "type": "integer"
+                            },
+                            "\"count_folders\"": {
+                                "type": "integer"
+                            },
+                            "\"count_groups\"": {
+                                "type": "integer"
+                            },
+                            "\"count_groups_active\"": {
+                                "type": "integer"
+                            },
+                            "\"expire_days\"": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "\"id\"",
+                            "\"project_id\"",
+                            "\"parent_id\"",
+                            "\"name\"",
+                            "\"ord\"",
+                            "\"count_folders\"",
+                            "\"count_groups\"",
+                            "\"count_groups_active\"",
+                            "\"expire_days\""
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

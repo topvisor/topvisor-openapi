@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Folders.Move.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Folders.Move.Edit": {
+                "type": "object",
+                "properties": {
+                    "to_id": {
+                        "title": "Переместить к указанной папке",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Folders/ToType.json#/components/schemas/Keywords_2.Types.Folders.ToType"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Folders\\Move\\Edit"
+            },
+            "KeywordsAi_2.Methods.Folders.Move.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

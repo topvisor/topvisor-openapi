@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Counters.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Counters.Get": {
+                "type": "object",
+                "properties": {
+                    "show_trash": {
+                        "title": "Считать для удаленных проектов",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение числа включенных/выключенных групп и запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Counters\\Get"
+            },
+            "KeywordsAi_2.Methods.Counters.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "count_groups_on": {
+                        "type": "integer"
+                    },
+                    "count_groups_off": {
+                        "type": "integer"
+                    },
+                    "count_keywords_on": {
+                        "type": "integer"
+                    },
+                    "count_keywords_off": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "count_groups_on",
+                    "count_groups_off",
+                    "count_keywords_on",
+                    "count_keywords_off"
+                ]
+            }
+        }
+    }
+}

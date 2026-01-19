@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Groups.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Groups.Add": {
+                "type": "object",
+                "properties": {
+                    "to_id": {
+                        "title": "Вставить к указанному объекту",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in_folder",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Groups/ToType.json#/components/schemas/Keywords_2.Types.Groups.ToType"
+                            }
+                        ]
+                    },
+                    "names": {
+                        "title": "Имена групп",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "name": {
+                        "title": "@deprecated",
+                        "nullable": true,
+                        "deprecated": true,
+                        "type": "array"
+                    },
+                    "on": {
+                        "title": "Активность группы",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "title": "Статус группы\n\nИспользуется для создания группы при подборе слов",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Groups\\Add"
+            },
+            "KeywordsAi_2.Methods.Groups.Add.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

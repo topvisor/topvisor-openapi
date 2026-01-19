@@ -1,0 +1,87 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Keywords.Offset.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Keywords.Offset.Get": {
+                "type": "object",
+                "properties": {
+                    "keyword_id": {
+                        "title": "ID запроса",
+                        "type": "integer"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
+                    },
+                    "show_trash": {
+                        "title": "Искать в корзине",
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "keyword_id",
+                    "project_id"
+                ],
+                "title": "Получение id, имение запроса и результатов, зависимые от контекста\n\nПоддерживает работу до 10 000 запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Offset\\Get",
+                "description": "@see Keywords_2\\Methods\\Keywords\\Get"
+            },
+            "KeywordsAi_2.Methods.Keywords.Offset.Get.Exec": {
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "offset": {
+                                "type": "integer"
+                            },
+                            "\"count()\"": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "name",
+                            "offset",
+                            "\"count()\""
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

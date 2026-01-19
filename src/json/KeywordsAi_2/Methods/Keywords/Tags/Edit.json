@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Keywords.Tags.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Keywords.Tags.Edit": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "title": "Теги запроса",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/Tags/Action.json#/components/schemas/Keywords_2.Types.Keywords.Tags.Action"
+                            }
+                        ]
+                    },
+                    "target_type": {
+                        "default": "keywords",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/TargetType.json#/components/schemas/Keywords_2.Types.Keywords.TargetType"
+                            }
+                        ]
+                    },
+                    "show_trash": {
+                        "title": "Учитывать ли удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Искать ли в подпапках",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "tags",
+                    "action",
+                    "project_id"
+                ],
+                "title": "Изменение тегов запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Tags\\Edit"
+            },
+            "KeywordsAi_2.Methods.Keywords.Tags.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

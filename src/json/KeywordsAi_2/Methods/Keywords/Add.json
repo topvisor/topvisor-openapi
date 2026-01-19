@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Keywords.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Keywords.Add": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Ключевая фраза",
+                        "type": "string"
+                    },
+                    "to_id": {
+                        "title": "Вставить к указанному объекту\n\nЕсли в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in_group",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Keywords/ToType.json#/components/schemas/Keywords_2.Types.Keywords.ToType"
+                            }
+                        ]
+                    },
+                    "tags": {
+                        "title": "Теги запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "target": {
+                        "title": "Целевая страница для запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "move_duplicate": {
+                        "title": "Удалить дубликаты",
+                        "type": "boolean"
+                    },
+                    "move_duplicate_group_name": {
+                        "title": "Имя группы для перемещения дубликатов\n\nРаботает вместе с move_duplicate",
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    }
+                },
+                "required": [
+                    "name",
+                    "to_id",
+                    "project_id"
+                ],
+                "title": "Добавление запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Add"
+            },
+            "KeywordsAi_2.Methods.Keywords.Add.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

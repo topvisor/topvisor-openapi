@@ -61,6 +61,9 @@ export interface components {
         "Models.Competitors.Urls": import('./Models/Competitors/Urls.ts').components['schemas']['Models.Competitors.Urls'];
         "Models.Competitors.Wordstat": import('./Models/Competitors/Wordstat.ts').components['schemas']['Models.Competitors.Wordstat'];
         "Models.Content.Authors": import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
+        "Models.KeywordsAi.Folders": import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+        "Models.KeywordsAi.Groups": import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
+        "Models.KeywordsAi.Keywords": import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
         "Models.Magnet.Ganalytics": import('./Models/Magnet/Ganalytics.ts').components['schemas']['Models.Magnet.Ganalytics'];
         "Models.Magnet.Gsc": import('./Models/Magnet/Gsc.ts').components['schemas']['Models.Magnet.Gsc'];
         "Models.Magnet.Metrika": import('./Models/Magnet/Metrika.ts').components['schemas']['Models.Magnet.Metrika'];

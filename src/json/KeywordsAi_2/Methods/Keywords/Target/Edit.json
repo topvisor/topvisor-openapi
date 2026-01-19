@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Keywords.Target.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Keywords.Target.Edit": {
+                "type": "object",
+                "properties": {
+                    "target": {
+                        "title": "Целевая ссылка",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "target_type": {
+                        "default": "keywords",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/TargetType.json#/components/schemas/Keywords_2.Types.Keywords.TargetType"
+                            }
+                        ]
+                    },
+                    "show_trash": {
+                        "title": "Учитывать ли удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Искать ли в подпапках",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Изменение целевой ссылки запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Target\\Edit"
+            },
+            "KeywordsAi_2.Methods.Keywords.Target.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

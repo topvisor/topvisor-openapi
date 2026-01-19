@@ -7,23 +7,25 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка папок проекта
+        /** Получение списка запросов проекта
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Folders\Get */
-        "Keywords_2.Methods.Folders.Get": {
-            /** @default flat */
-            view?: import('../../Types/Folders/View.ts').components['schemas']['Keywords_2.Types.Folders.View'];
-            /** Показывать ли удаленные папки */
-            show_trash?: number;
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Get */
+        "KeywordsAi_2.Methods.Keywords.Get": {
+            /** Id проекта */
+            project_id: number;
+            /** При фильтрации по ID папок также искать в подпапках */
+            group_folder_id_depth?: boolean;
+            /** Искать в корзине */
+            show_trash?: boolean;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Keywords_2.Methods.Folders.Get.Exec": import('../../../Models/Folders.ts').components['schemas']['Models.Folders'][];
+        "KeywordsAi_2.Methods.Keywords.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

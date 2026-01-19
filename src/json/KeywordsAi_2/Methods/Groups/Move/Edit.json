@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/KeywordsAi_2.Methods.Groups.Move.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "KeywordsAi_2.Methods.Groups.Move.Edit": {
+                "type": "object",
+                "properties": {
+                    "to_id": {
+                        "title": "Переместить к указанному объекту",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in_folder",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Groups/ToType.json#/components/schemas/Keywords_2.Types.Groups.ToType"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Перемещение группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Groups\\Move\\Edit"
+            },
+            "KeywordsAi_2.Methods.Groups.Move.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}
