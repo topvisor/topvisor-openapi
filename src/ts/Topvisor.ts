@@ -1945,6 +1945,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение хлебных крошек статьи справки
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Breadcrumbs\Get */
+    "/get/content_2/breadcrumbs/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2Breadcrumbs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Редактирование статуса лайка для страницы
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Like\Edit */
@@ -14571,6 +14590,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Bookmark/Edit.ts').components['schemas']['Content_2.Methods.Bookmark.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetContent2Breadcrumbs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Breadcrumbs.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Breadcrumbs.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
             };
         };

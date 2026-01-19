@@ -3374,6 +3374,40 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/content_2/breadcrumbs/:
+    post:
+      operationId: GetContent2Breadcrumbs
+      tags:
+        - Content_2
+      summary: |-
+        Получение хлебных крошек статьи справки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Breadcrumbs\Get
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Breadcrumbs.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.Breadcrumbs.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
   /edit/content_2/like/:
     post:
       operationId: EditContent2Like
@@ -26523,6 +26557,131 @@ components:
     Content_2.Methods.Bookmark.Edit.Exec:
       nullable: true
       type: integer
+    Content_2.Methods.Breadcrumbs.Get:
+      type: object
+      properties:
+        page_params:
+          title: Параметры страницы статьи
+          type: array
+          items:
+            type: string
+      required: []
+      title: |-
+        Получение хлебных крошек статьи справки
+
+        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Breadcrumbs\Get
+    Models.Pages:
+      properties:
+        COUNT(*):
+          nullable: true
+        RAND():
+          nullable: true
+        DURATION():
+          nullable: true
+        WORD_COUNT():
+          nullable: true
+        HTML_RAW():
+          nullable: true
+        AUTHOR_LIKES():
+          nullable: true
+        AUTHOR_VIEWS():
+          nullable: true
+        AUTHOR_UNIQUE_VIEWS():
+          nullable: true
+        USERS_IDS():
+          nullable: true
+        site:
+          nullable: true
+        subdomain:
+          nullable: true
+        url:
+          nullable: true
+        lang:
+          nullable: true
+        parent_url:
+          nullable: true
+        user_id:
+          nullable: true
+        user_id_2:
+          nullable: true
+        user_id_3:
+          nullable: true
+        create:
+          nullable: true
+        publish_time:
+          nullable: true
+        noindex:
+          nullable: true
+        theme:
+          nullable: true
+        quiz_id:
+          nullable: true
+        state:
+          nullable: true
+        required_posts_any:
+          nullable: true
+        h1:
+          nullable: true
+        title:
+          nullable: true
+        description:
+          nullable: true
+        intro:
+          nullable: true
+        html:
+          nullable: true
+        text:
+          nullable: true
+        menu_name:
+          nullable: true
+        order:
+          nullable: true
+        image:
+          nullable: true
+        og_json:
+          nullable: true
+        og:
+          nullable: true
+        tags:
+          nullable: true
+        count_views:
+          nullable: true
+        count_unique_views:
+          nullable: true
+        count_comments:
+          nullable: true
+        count_likes:
+          nullable: true
+        rubric_name:
+          nullable: true
+        user_name:
+          nullable: true
+        user_avatar:
+          nullable: true
+        user_description:
+          nullable: true
+        author_alias:
+          nullable: true
+        author_promo_text:
+          nullable: true
+        author_promo_label:
+          nullable: true
+        author_promo_link:
+          nullable: true
+        view:
+          nullable: true
+        like:
+          nullable: true
+        bookmark:
+          nullable: true
+        bookmark_author:
+          nullable: true
+        publish_timestamp:
+          nullable: true
+    Content_2.Methods.Breadcrumbs.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Like.Edit:
       type: object
       properties:
@@ -26669,114 +26828,6 @@ components:
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Add
     Content_2.Methods.Pages.Add.Exec:
       type: integer
-    Models.Pages:
-      properties:
-        COUNT(*):
-          nullable: true
-        RAND():
-          nullable: true
-        DURATION():
-          nullable: true
-        WORD_COUNT():
-          nullable: true
-        HTML_RAW():
-          nullable: true
-        AUTHOR_LIKES():
-          nullable: true
-        AUTHOR_VIEWS():
-          nullable: true
-        AUTHOR_UNIQUE_VIEWS():
-          nullable: true
-        USERS_IDS():
-          nullable: true
-        site:
-          nullable: true
-        subdomain:
-          nullable: true
-        url:
-          nullable: true
-        lang:
-          nullable: true
-        parent_url:
-          nullable: true
-        user_id:
-          nullable: true
-        user_id_2:
-          nullable: true
-        user_id_3:
-          nullable: true
-        create:
-          nullable: true
-        publish_time:
-          nullable: true
-        noindex:
-          nullable: true
-        theme:
-          nullable: true
-        quiz_id:
-          nullable: true
-        state:
-          nullable: true
-        required_posts_any:
-          nullable: true
-        h1:
-          nullable: true
-        title:
-          nullable: true
-        description:
-          nullable: true
-        intro:
-          nullable: true
-        html:
-          nullable: true
-        text:
-          nullable: true
-        menu_name:
-          nullable: true
-        order:
-          nullable: true
-        image:
-          nullable: true
-        og_json:
-          nullable: true
-        og:
-          nullable: true
-        tags:
-          nullable: true
-        count_views:
-          nullable: true
-        count_unique_views:
-          nullable: true
-        count_comments:
-          nullable: true
-        count_likes:
-          nullable: true
-        rubric_name:
-          nullable: true
-        user_name:
-          nullable: true
-        user_avatar:
-          nullable: true
-        user_description:
-          nullable: true
-        author_alias:
-          nullable: true
-        author_promo_text:
-          nullable: true
-        author_promo_label:
-          nullable: true
-        author_promo_link:
-          nullable: true
-        view:
-          nullable: true
-        like:
-          nullable: true
-        bookmark:
-          nullable: true
-        bookmark_author:
-          nullable: true
-        publish_timestamp:
-          nullable: true
     Content_2.Methods.Pages.Del:
       type: object
       properties:
