@@ -67,6 +67,15 @@
             "Models.Votes": {
                 "$ref": "Models/Votes.json#/components/schemas/Models.Votes"
             },
+            "Models.Abstract.Folders": {
+                "$ref": "Models/Abstract/Folders.json#/components/schemas/Models.Abstract.Folders"
+            },
+            "Models.Abstract.Groups": {
+                "$ref": "Models/Abstract/Groups.json#/components/schemas/Models.Abstract.Groups"
+            },
+            "Models.Abstract.Keywords": {
+                "$ref": "Models/Abstract/Keywords.json#/components/schemas/Models.Abstract.Keywords"
+            },
             "Models.Admin.Invoices": {
                 "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices"
             },
@@ -210,15 +219,6 @@
             },
             "Models.Admin.Users.Ranks": {
                 "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
-            },
-            "Models.Abstract.Folders": {
-                "$ref": "Models/Abstract/Folders.json#/components/schemas/Models.Abstract.Folders"
-            },
-            "Models.Abstract.Groups": {
-                "$ref": "Models/Abstract/Groups.json#/components/schemas/Models.Abstract.Groups"
-            },
-            "Models.Abstract.Keywords": {
-                "$ref": "Models/Abstract/Keywords.json#/components/schemas/Models.Abstract.Keywords"
             }
         }
     }

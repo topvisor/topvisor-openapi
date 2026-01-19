@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Support.Breadcrumbs.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Support.Breadcrumbs.Get": {
+                "type": "object",
+                "properties": {
+                    "page_params": {
+                        "title": "Параметры страницы статьи",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [],
+                "title": "Получение хлебных крошек статьи справки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Support\\Breadcrumbs\\Get"
+            },
+            "Content_2.Methods.Support.Breadcrumbs.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Pages.json#/components/schemas/Models.Pages"
+                }
+            }
+        }
+    }
+}

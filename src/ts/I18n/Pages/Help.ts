@@ -17,6 +17,8 @@ export interface components {
             readonly Contact_text: "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.";
             /** @constant */
             readonly Contact: "Contact us";
+            /** @constant */
+            readonly Last_modified: "Last modified";
         };
     };
     responses: never;

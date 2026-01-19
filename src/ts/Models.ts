@@ -27,6 +27,9 @@ export interface components {
         "Models.Tickets": import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
         "Models.Urls": import('./Models/Urls.ts').components['schemas']['Models.Urls'];
         "Models.Votes": import('./Models/Votes.ts').components['schemas']['Models.Votes'];
+        "Models.Abstract.Folders": import('./Models/Abstract/Folders.ts').components['schemas']['Models.Abstract.Folders'];
+        "Models.Abstract.Groups": import('./Models/Abstract/Groups.ts').components['schemas']['Models.Abstract.Groups'];
+        "Models.Abstract.Keywords": import('./Models/Abstract/Keywords.ts').components['schemas']['Models.Abstract.Keywords'];
         "Models.Admin.Invoices": import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
         "Models.AdminLayers.Anons": import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
         "Models.AdminLayers.Key": import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];

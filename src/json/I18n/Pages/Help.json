@@ -25,12 +25,17 @@
                     "Contact": {
                         "const": "Contact us",
                         "readOnly": true
+                    },
+                    "Last_modified": {
+                        "const": "Last modified",
+                        "readOnly": true
                     }
                 },
                 "required": [
                     "Contact_title",
                     "Contact_text",
-                    "Contact"
+                    "Contact",
+                    "Last_modified"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Pages\\Help\\En"
             }

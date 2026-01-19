@@ -6561,6 +6561,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение хлебных крошек статьи справки
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Breadcrumbs\Get */
+    "/get/content_2/support/breadcrumbs/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2SupportBreadcrumbs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение меню справки
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Menu\Get */
@@ -9655,7 +9674,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Востановление поисковых запросов из бэкапа
+    /** Восстановление поисковых запросов из бэкапа
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit */
     "/edit/admin_2/actions/backup/keywords/": {
@@ -20563,6 +20582,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Pages/Order/Edit.ts').components['schemas']['Content_2.Methods.Pages.Order.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetContent2SupportBreadcrumbs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Support/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Support.Breadcrumbs.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Support/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Support.Breadcrumbs.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
             };
         };
