@@ -12348,6 +12348,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /edit/keywords_2/keywords/move/:
     post:
       operationId: EditKeywords2KeywordsMove
@@ -40797,10 +40800,11 @@ components:
         Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
-      description: '@see Keywords_2\Mods\Keywords\Import::fromHandle()'
     Keywords_2.Methods.Keywords.Import.Add.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
     Keywords_2.Methods.Keywords.Move.Edit:
       type: object
       properties:
@@ -41731,7 +41735,6 @@ components:
         Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Import\Add
-      description: '@see Keywords_2\Mods\Keywords\Import::fromHandle()'
     KeywordsAi_2.Methods.Keywords.Import.Add.Exec:
       nullable: true
       type: array

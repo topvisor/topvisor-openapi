@@ -76,8 +76,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Import\\Add",
-                "description": "@see Keywords_2\\Mods\\Keywords\\Import::fromHandle()"
+                "title": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Import\\Add"
             },
             "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": {
                 "nullable": true,

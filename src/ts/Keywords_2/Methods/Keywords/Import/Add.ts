@@ -7,14 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Импорт запросов (по необходимости зависимых с ними групп и папок)
+        /** Импорт запросов (по необходимости зависимых с ними групп и папок)
          *
          *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
-         * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
-         */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add */
         "Keywords_2.Methods.Keywords.Import.Add": {
             /** Id проекта */
             project_id: number;
@@ -49,7 +46,7 @@ export interface components {
             /** Массив номеров тегов */
             tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
         };
-        "Keywords_2.Methods.Keywords.Import.Add.Exec": unknown[] | null;
+        "Keywords_2.Methods.Keywords.Import.Add.Exec": import('../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][] | null;
     };
     responses: never;
     parameters: never;
