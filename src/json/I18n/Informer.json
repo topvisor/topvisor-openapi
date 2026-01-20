@@ -42,6 +42,10 @@
                         "const": "Topvisor–Journal",
                         "readOnly": true
                     },
+                    "Type_toolbox": {
+                        "const": "Toolbox",
+                        "readOnly": true
+                    },
                     "Type_toolbox_completed_tasks": {
                         "const": "Completed tasks",
                         "readOnly": true
@@ -137,6 +141,18 @@
                     "You_unsubscribed_from_emails": {
                         "const": "You unsubscribed from emails to",
                         "readOnly": true
+                    },
+                    "Toolbox_one_task_completed": {
+                        "const": "Task completed",
+                        "readOnly": true
+                    },
+                    "Toolbox_many_tasks_completed": {
+                        "const": "{{ tasksCount }} tasks completed",
+                        "readOnly": true
+                    },
+                    "Toolbox_many_tasks_message": {
+                        "const": "See checked data in Tasks list",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -146,6 +162,7 @@
                     "Type_yandex_update",
                     "Type_comments",
                     "Type_api",
+                    "Type_toolbox",
                     "Type_toolbox_completed_tasks",
                     "Unsubscribe",
                     "Enter_title_and_text",
@@ -169,7 +186,10 @@
                     "in_comments_on_the_post",
                     "Email_delivery_failure",
                     "email_unsubscribed_from_reports",
-                    "You_unsubscribed_from_emails"
+                    "You_unsubscribed_from_emails",
+                    "Toolbox_one_task_completed",
+                    "Toolbox_many_tasks_completed",
+                    "Toolbox_many_tasks_message"
                 ],
                 "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Informer\\En"
             }

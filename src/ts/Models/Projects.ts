@@ -26,6 +26,7 @@ export interface components {
             task_method_params_json?: any;
             task_status?: any;
             task_progress?: any;
+            task_noticed?: any;
             site?: any;
             update?: any;
             status_positions?: string | null;

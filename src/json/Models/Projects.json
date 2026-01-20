@@ -63,6 +63,9 @@
                     "task_progress": {
                         "nullable": true
                     },
+                    "task_noticed": {
+                        "nullable": true
+                    },
                     "site": {
                         "nullable": true
                     },

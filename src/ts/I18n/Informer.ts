@@ -26,6 +26,8 @@ export interface components {
             /** @constant */
             readonly Type_journal?: "Topvisor–Journal";
             /** @constant */
+            readonly Type_toolbox: "Toolbox";
+            /** @constant */
             readonly Type_toolbox_completed_tasks: "Completed tasks";
             /** @constant */
             readonly Unsubscribe: "Unsubscribe";
@@ -73,6 +75,12 @@ export interface components {
             readonly email_unsubscribed_from_reports: "unsubscribed from reports of projects";
             /** @constant */
             readonly You_unsubscribed_from_emails: "You unsubscribed from emails to";
+            /** @constant */
+            readonly Toolbox_one_task_completed: "Task completed";
+            /** @constant */
+            readonly Toolbox_many_tasks_completed: "{{ tasksCount }} tasks completed";
+            /** @constant */
+            readonly Toolbox_many_tasks_message: "See checked data in Tasks list";
         };
     };
     responses: never;
