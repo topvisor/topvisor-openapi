@@ -34,6 +34,17 @@
                         "title": "Выполнить исполнение шаблона",
                         "default": true,
                         "type": "boolean"
+                    },
+                    "with_breadcrumbs": {
+                        "title": "Нужны ли хлебные крошки на странице",
+                        "type": "boolean"
+                    },
+                    "page_params": {
+                        "title": "Параметры страницы, по которым нужно сформировать хлебные крошки",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
                     }
                 },
                 "required": [

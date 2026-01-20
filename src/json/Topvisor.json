@@ -19219,64 +19219,6 @@
                 }
             }
         },
-        "/get/content_2/support/breadcrumbs/": {
-            "post": {
-                "operationId": "GetContent2SupportBreadcrumbs",
-                "tags": [
-                    "Content_2"
-                ],
-                "summary": "Получение хлебных крошек статьи справки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Support\\Breadcrumbs\\Get",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Content_2/Methods/Support/Breadcrumbs/Get.json#/components/schemas/Content_2.Methods.Support.Breadcrumbs.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Content_2/Methods/Support/Breadcrumbs/Get.json#/components/schemas/Content_2.Methods.Support.Breadcrumbs.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/get/content_2/support/menu/": {
             "post": {
                 "operationId": "GetContent2SupportMenu",
@@ -20728,7 +20670,6 @@
                     "Keywords_2"
                 ],
                 "summary": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Import\\Add",
-                "description": "@see Keywords_2\\Mods\\Keywords\\Import::fromHandle()",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -22039,7 +21980,6 @@
                     "Keywordsai_2"
                 ],
                 "summary": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Import\\Add",
-                "description": "@see Keywords_2\\Mods\\Keywords\\Import::fromHandle()",
                 "requestBody": {
                     "content": {
                         "application/json": {

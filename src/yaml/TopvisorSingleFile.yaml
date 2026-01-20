@@ -11427,40 +11427,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/content_2/support/breadcrumbs/:
-    post:
-      operationId: GetContent2SupportBreadcrumbs
-      tags:
-        - Content_2
-      summary: |-
-        Получение хлебных крошек статьи справки
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Breadcrumbs\Get
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Content_2.Methods.Support.Breadcrumbs.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Content_2.Methods.Support.Breadcrumbs.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Pages'
   /get/content_2/support/menu/:
     post:
       operationId: GetContent2SupportMenu
@@ -12325,7 +12291,6 @@ paths:
         Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
-      description: '@see Keywords_2\Mods\Keywords\Import::fromHandle()'
       requestBody:
         content:
           application/json:
@@ -13104,7 +13069,6 @@ paths:
         Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
 
         @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Import\Add
-      description: '@see Keywords_2\Mods\Keywords\Import::fromHandle()'
       requestBody:
         content:
           application/json:
@@ -21473,6 +21437,14 @@ components:
           title: Выполнить исполнение шаблона
           default: true
           type: boolean
+        with_breadcrumbs:
+          title: Нужны ли хлебные крошки на странице
+          type: boolean
+        page_params:
+          title: Параметры страницы, по которым нужно сформировать хлебные крошки
+          type: array
+          items:
+            type: string
       required:
         - subdomain
         - url
@@ -39578,23 +39550,6 @@ components:
     Content_2.Methods.Pages.Order.Edit.Exec:
       nullable: true
       type: integer
-    Content_2.Methods.Support.Breadcrumbs.Get:
-      type: object
-      properties:
-        page_params:
-          title: Параметры страницы статьи
-          type: array
-          items:
-            type: string
-      required: []
-      title: |-
-        Получение хлебных крошек статьи справки
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Breadcrumbs\Get
-    Content_2.Methods.Support.Breadcrumbs.Get.Exec:
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Pages'
     Content_2.Methods.Support.Menu.Get:
       type: object
       properties: {}

@@ -22,6 +22,10 @@ export interface components {
              * @default true
              */
             render_tpl?: boolean;
+            /** Нужны ли хлебные крошки на странице */
+            with_breadcrumbs?: boolean;
+            /** Параметры страницы, по которым нужно сформировать хлебные крошки */
+            page_params?: string[];
         };
         /** Возможные парамеры $config:
          *

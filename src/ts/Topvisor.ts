@@ -6768,25 +6768,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение хлебных крошек статьи справки
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Breadcrumbs\Get */
-    "/get/content_2/support/breadcrumbs/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetContent2SupportBreadcrumbs"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение меню справки
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Menu\Get */
@@ -7300,14 +7281,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импорт запросов (по необходимости зависимых с ними групп и папок)
+    /** Импорт запросов (по необходимости зависимых с ними групп и папок)
      *
      *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add
-     * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
-     */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Import\Add */
     "/add/keywords_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -7767,14 +7745,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импорт запросов (по необходимости зависимых с ними групп и папок)
+    /** Импорт запросов (по необходимости зависимых с ними групп и папок)
      *
      *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Import\Add
-     * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
-     */
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Import\Add */
     "/add/keywordsai_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -21450,32 +21425,6 @@ export interface operations {
             };
         };
     };
-    GetContent2SupportBreadcrumbs: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/Support/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Support.Breadcrumbs.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/Support/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Support.Breadcrumbs.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
-                };
-            };
-        };
-    };
     GetContent2SupportMenu: {
         parameters: {
             query?: never;
@@ -22179,6 +22128,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Keywords/Import/Add.ts').components['schemas']['Keywords_2.Methods.Keywords.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
