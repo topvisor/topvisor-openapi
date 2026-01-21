@@ -7,14 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Создать Open API схемы и скачать в zip
+        /** Создать Open API схемы и скачать в zip
          *
          *     В результате вернет zip файл в потоке вывода
          *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Methods\Download\Get
-         * @description @see https://editor.swagger.io/ Редактор Open API
-         */
+         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Methods\Download\Get */
         "Openapi_2.Methods.Download.Get": {
             /**
              * Формат схемы Open API, json или yaml
