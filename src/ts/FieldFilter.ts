@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Поле фильтра
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\FieldFilter */
+        /** Поле фильтра */
         FieldFilter: {
             /** Имя поля */
             name: string;

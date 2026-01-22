@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результаты пагинации
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Pagination */
+        /** Результаты пагинации */
         Pagination: {
             /** Смещение для получения следующий порции данных
              *

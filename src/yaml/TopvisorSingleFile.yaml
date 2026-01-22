@@ -20839,10 +20839,7 @@ components:
       type: array
       items:
         type: string
-      title: |-
-        Тип массива: string[]
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\StringArray
+      title: 'Тип массива: string[]'
       description: |-
         @extends AbstractTypedArray<string>
         @method string[] getValues()
@@ -20863,10 +20860,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
       required: []
-      title: |-
-        Результат успешного API запроса
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\ResponseSuccess
+      title: Результат успешного API запроса
     Error:
       type: object
       properties:
@@ -20920,18 +20914,12 @@ components:
       required:
         - code
         - string
-      title: |-
-        Информация об ошибке
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Error
+      title: Информация об ошибке
     Errors:
       type: array
       items:
         $ref: '#/components/schemas/Error'
-      title: |-
-        Список ошибок
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Errors
+      title: Список ошибок
     ResponseError:
       type: object
       properties:
@@ -20951,10 +20939,7 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
       required:
         - errors
-      title: |-
-        Результат API запроса с ошибкой
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\ResponseError
+      title: Результат API запроса с ошибкой
     Annotations_2.Types.ServiceName:
       type: string
       enum:
@@ -21235,10 +21220,7 @@ components:
           nullable: true
           type: integer
       required: []
-      title: |-
-        Результаты пагинации
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Objects\Core\Pagination
+      title: Результаты пагинации
     App_2.Methods.Get:
       type: object
       properties: {}
