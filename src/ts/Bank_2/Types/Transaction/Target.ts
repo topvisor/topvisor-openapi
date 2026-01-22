@@ -11,7 +11,7 @@ export interface components {
          * Назначение транзакции списания/пополнения в банке
          * @enum {string}
          */
-        "Bank_2.Types.Transaction.Target": "audit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "aiTracker" | "checkVolumes" | "checkVolumesToolbox" | "checkPositions" | "checkSnapshots" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat" | "wordstatToolbox";
+        "Bank_2.Types.Transaction.Target": "audit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "aiTracker" | "checkVolumes" | "checkVolumesToolbox" | "checkPositions" | "checkSnapshots" | "checkRelevant" | "checkRelevantToolbox" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat" | "wordstatToolbox";
     };
     responses: never;
     parameters: never;

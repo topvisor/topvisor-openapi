@@ -32772,6 +32772,121 @@
                 }
             }
         },
+        "/edit/positions_2/relevant/checker/go/": {
+            "post": {
+                "operationId": "EditPositions2RelevantCheckerGo",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Отправка проектов на проверку релевантности",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/Relevant/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.Relevant.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/Relevant/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.Relevant.Checker.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/relevant/checker/price/": {
+            "post": {
+                "operationId": "GetPositions2RelevantCheckerPrice",
+                "tags": [
+                    "Positions_2"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/Relevant/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.Relevant.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/Relevant/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.Relevant.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/positions_2/searchers/regions/export/": {
             "post": {
                 "operationId": "GetPositions2SearchersRegionsExport",

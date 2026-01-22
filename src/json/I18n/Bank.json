@@ -342,6 +342,10 @@
                         "const": "Rank tracker tool",
                         "readOnly": true
                     },
+                    "Service_relevant": {
+                        "const": "Relevant check",
+                        "readOnly": true
+                    },
                     "Service_researcher": {
                         "const": "Keyword research tool",
                         "readOnly": true
@@ -1276,6 +1280,7 @@
                     "Tariff_text",
                     "Billing_operations",
                     "Service_tracking",
+                    "Service_relevant",
                     "Service_researcher",
                     "Service_suggestions_tool",
                     "Service_clustering",

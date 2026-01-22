@@ -17775,6 +17775,67 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/positions_2/relevant/checker/go/:
+    post:
+      operationId: EditPositions2RelevantCheckerGo
+      tags:
+        - Positions_2
+      summary: Отправка проектов на проверку релевантности
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Relevant.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.Relevant.Checker.Go.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+  /get/positions_2/relevant/checker/price/:
+    post:
+      operationId: GetPositions2RelevantCheckerPrice
+      tags:
+        - Positions_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Relevant.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.Relevant.Checker.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
   /get/positions_2/searchers/regions/export/:
     post:
       operationId: GetPositions2SearchersRegionsExport
@@ -44679,6 +44740,76 @@ components:
         Возвращает список в формате: [[`url`, `date`]]
     Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec:
       type: array
+    Positions_2.Methods.Relevant.Checker.Go.Edit:
+      type: object
+      properties:
+        regions_indexes:
+          title: Проверка с учетом фильтра по регионам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids:
+          title: Проверка с учетом фильтра по папкам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids_depth:
+          title: При фильтрации по ID папок также проверять в подпапках
+          type: boolean
+        groups_ids:
+          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        debug:
+          $ref: '#/components/schemas/debug'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required: []
+      title: Отправка проектов на проверку релевантности
+    Positions_2.Methods.Relevant.Checker.Go.Edit.Exec:
+      title: Список id проектов, отправленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
+    Positions_2.Methods.Relevant.Checker.Price.Get:
+      type: object
+      properties:
+        regions_indexes:
+          title: Проверка с учетом фильтра по регионам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids:
+          title: Проверка с учетом фильтра по папкам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids_depth:
+          title: При фильтрации по ID папок также проверять в подпапках
+          type: boolean
+        groups_ids:
+          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        debug:
+          $ref: '#/components/schemas/debug'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required: []
+    Positions_2.Methods.Relevant.Checker.Price.Get.Exec:
+      type: object
+      additionalProperties: {}
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:

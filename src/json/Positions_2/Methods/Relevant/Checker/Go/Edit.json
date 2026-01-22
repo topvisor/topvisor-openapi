@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Relevant.Checker.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Relevant.Checker.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "regions_indexes": {
+                        "title": "Проверка с учетом фильтра по регионам",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids": {
+                        "title": "Проверка с учетом фильтра по папкам",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids_depth": {
+                        "title": "При фильтрации по ID папок также проверять в подпапках",
+                        "type": "boolean"
+                    },
+                    "groups_ids": {
+                        "title": "Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "debug": {
+                        "$ref": "../../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
+                    },
+                    "filters": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [],
+                "title": "Отправка проектов на проверку релевантности"
+            },
+            "Positions_2.Methods.Relevant.Checker.Go.Edit.Exec": {
+                "title": "Список id проектов, отправленных на проверку",
+                "type": "object",
+                "properties": {
+                    "projectIds": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "required": [
+                    "projectIds"
+                ]
+            }
+        }
+    }
+}
