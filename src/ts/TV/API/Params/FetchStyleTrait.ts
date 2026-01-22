@@ -17,9 +17,7 @@ export interface components {
          *     protected function exec(): mixed {
          *        return $this->genSelector()->execFetch();
          *     }
-         *     ```
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Params\FetchStyleTrait */
+         *     ``` */
         "TV.API.Params.FetchStyleTrait": {
             /**
              * Определяет формат результата: коллекция, объект, значение

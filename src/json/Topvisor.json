@@ -13884,7 +13884,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Получение контрагента\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Counteragents\\Get",
+                "summary": "Получение контрагента",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -35036,12 +35036,12 @@
             "description": "informer_2"
         },
         {
-            "name": "Keywords_2",
-            "description": "keywords_2"
-        },
-        {
             "name": "Keywordsai_2",
             "description": "keywordsai_2"
+        },
+        {
+            "name": "Keywords_2",
+            "description": "keywords_2"
         },
         {
             "name": "Landings_2",

@@ -22,7 +22,7 @@
                     }
                 },
                 "required": [],
-                "title": "Данный трейт расширяет API метод поддержкой выбора FetchStyle\n\nЕго требуется указывать во всех методах, которые его поддерживают.\nЭто такие методы, которые используют Selector с execFetch() без дополнительной обработки\n\nНапример:\n```\nprotected function exec(): mixed {\n   return $this->genSelector()->execFetch();\n}\n```\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\FetchStyleTrait"
+                "title": "Данный трейт расширяет API метод поддержкой выбора FetchStyle\n\nЕго требуется указывать во всех методах, которые его поддерживают.\nЭто такие методы, которые используют Selector с execFetch() без дополнительной обработки\n\nНапример:\n```\nprotected function exec(): mixed {\n   return $this->genSelector()->execFetch();\n}\n```"
             }
         }
     }

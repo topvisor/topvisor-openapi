@@ -17,8 +17,7 @@
                 },
                 "required": [
                     "offset"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\OffsetTrait"
+                ]
             }
         }
     }

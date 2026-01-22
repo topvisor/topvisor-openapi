@@ -17,8 +17,6 @@ export interface components {
          *     Данные параметр помогает избежать ненужных преобразований результатов на клиенте
          *
          *     Напоминает логику работу PDO Fetch: https://www.php.net/manual/ru/pdostatement.fetch.php
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Selector\Types\FetchStyle
          * @enum {string}
          */
         "Selector.Types.FetchStyle": "fetchAll" | "fetchAllNum" | "fetchAllColumn" | "fetch" | "fetchColumn" | "fetchGroup" | "fetchGroupColumn" | "fetchUnique" | "fetchUniqueNum" | "fetchUniqueColumn" | "selector";

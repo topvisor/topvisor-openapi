@@ -18,8 +18,7 @@
                 },
                 "required": [
                     "orders"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\OrdersTrait"
+                ]
             }
         }
     }

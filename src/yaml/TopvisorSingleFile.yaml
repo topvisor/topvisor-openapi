@@ -47,10 +47,10 @@ tags:
     description: gitlab_2
   - name: Informer_2
     description: informer_2
-  - name: Keywords_2
-    description: keywords_2
   - name: Keywordsai_2
     description: keywordsai_2
+  - name: Keywords_2
+    description: keywords_2
   - name: Landings_2
     description: landings_2
   - name: Mentions_2
@@ -8281,10 +8281,7 @@ paths:
       operationId: GetAdmin2AccountingCounteragents
       tags:
         - Admin_2
-      summary: |-
-        Получение контрагента
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Get
+      summary: Получение контрагента
       requestBody:
         content:
           application/json:
@@ -21087,8 +21084,6 @@ components:
         Данные параметр помогает избежать ненужных преобразований результатов на клиенте
 
         Напоминает логику работу PDO Fetch: https://www.php.net/manual/ru/pdostatement.fetch.php
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Selector\Types\FetchStyle
     fetch_style:
       title: |-
         Определяет формат результата: коллекция, объект, значение
@@ -35077,10 +35072,7 @@ components:
         offset:
           $ref: '#/components/schemas/offset'
       required: []
-      title: |-
-        Получение контрагента
-
-        @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Get
+      title: Получение контрагента
     Admin_2.Methods.Accounting.Counteragents.Get.Exec:
       nullable: true
     Models.Admin.Accounting.Counteragents:
