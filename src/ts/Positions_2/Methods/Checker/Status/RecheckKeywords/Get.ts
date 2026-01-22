@@ -11,9 +11,7 @@ export interface components {
          *
          *     Не предназначен для работы в режиме сравнения
          *
-         *     Проверка на права к проекту производятся в get/positions_2/history
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\Checker\Status\RecheckKeywords\Get */
+         *     Проверка на права к проекту производятся в get/positions_2/history */
         "Positions_2.Methods.Checker.Status.RecheckKeywords.Get": {
             /** ID запросов */
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

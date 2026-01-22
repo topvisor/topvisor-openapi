@@ -55,7 +55,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Settings\\Edit",
+                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
                 "description": "@see \\Services\\AiTracker_2\\Objects\\Settings"
             },
             "AiTracker_2.Methods.Settings.Edit.Exec": {

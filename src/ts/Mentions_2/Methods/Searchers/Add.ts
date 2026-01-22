@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Добавление поисковика
          *
-         *     Изменит, если уже существует
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Searchers\Add */
+         *     Изменит, если уже существует */
         "Mentions_2.Methods.Searchers.Add": {
             /** ID проекта */
             project_id: number;

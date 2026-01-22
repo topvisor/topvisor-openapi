@@ -67,8 +67,7 @@
                     "Remove_prompt",
                     "Sort_mentioned",
                     "Sort_tone"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Ai\\Tracker\\En"
+                ]
             }
         }
     }

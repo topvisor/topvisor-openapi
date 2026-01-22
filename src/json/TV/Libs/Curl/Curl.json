@@ -54,7 +54,7 @@
                     "responseBodyBuffer",
                     "responseBodyBufferStop"
                 ],
-                "title": "Обертка Curl с полезным функционалом для проекта Топвизор\n\nРасполагается и разрабатывается в проекте **Robot**\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\Libs\\Curl\\Curl"
+                "title": "Обертка Curl с полезным функционалом для проекта Топвизор\n\nРасполагается и разрабатывается в проекте **Robot**"
             }
         }
     }

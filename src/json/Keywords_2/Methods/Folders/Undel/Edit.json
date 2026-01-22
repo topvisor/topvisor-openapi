@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Восстановление папок проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Undel\\Edit"
+                "title": "Восстановление папок проекта"
             },
             "Keywords_2.Methods.Folders.Undel.Edit.Exec": {
                 "nullable": true,

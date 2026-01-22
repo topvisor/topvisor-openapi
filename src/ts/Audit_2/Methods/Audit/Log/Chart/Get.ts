@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Получение данных для графика
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Log\Chart\Get
          * @deprecated
          * @description @deprecated
          */

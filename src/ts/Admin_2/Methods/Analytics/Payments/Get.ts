@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение суммы оплат за период
          *
-         *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Payments\Get */
+         *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий */
         "Admin_2.Methods.Analytics.Payments.Get": {
             period: import('../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */

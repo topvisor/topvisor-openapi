@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение привязанных карт пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Recurring_2\\Methods\\RecurringCard\\Get"
+                "title": "Получение привязанных карт пользователя"
             },
             "Recurring_2.Methods.RecurringCard.Get.Exec": {
                 "nullable": true

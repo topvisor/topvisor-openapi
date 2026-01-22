@@ -32,7 +32,7 @@
                     "on",
                     "project_id"
                 ],
-                "title": "Изменение статуса активности группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Groups\\On\\Edit"
+                "title": "Изменение статуса активности группы"
             },
             "KeywordsAi_2.Methods.Groups.On.Edit.Exec": {
                 "nullable": true,

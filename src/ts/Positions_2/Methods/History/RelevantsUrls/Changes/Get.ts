@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение истории об изменении релевантной страницы
          *
-         *     Возвращает список в формате: [[`url`, `date`]]
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\RelevantsUrls\Changes\Get */
+         *     Возвращает список в формате: [[`url`, `date`]] */
         "Positions_2.Methods.History.RelevantsUrls.Changes.Get": {
             /** ID конкурента */
             competitor_id?: number;

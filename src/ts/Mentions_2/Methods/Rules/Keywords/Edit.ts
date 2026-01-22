@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение ключевых слов правила
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Rules\Keywords\Edit */
+        /** Изменение ключевых слов правила */
         "Mentions_2.Methods.Rules.Keywords.Edit": {
             /** ID проекта */
             project_id: number;

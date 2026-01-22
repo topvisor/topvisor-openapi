@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Назначение транзакции списания/пополнения в банке
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Transaction\Target
          * @enum {string}
          */
         "Bank_2.Types.Transaction.Target": "audit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "aiTracker" | "checkVolumes" | "checkVolumesToolbox" | "checkPositions" | "checkSnapshots" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat" | "wordstatToolbox";

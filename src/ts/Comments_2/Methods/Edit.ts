@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Изменение комментария
          *
-         *     Изменять комментарий можно только в течение ограниченного времени
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Edit */
+         *     Изменять комментарий можно только в течение ограниченного времени */
         "Comments_2.Methods.Edit": {
             /** ID комментария */
             id: number;

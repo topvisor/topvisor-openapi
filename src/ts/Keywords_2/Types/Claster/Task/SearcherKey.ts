@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Ключ поисковика для кластеризации
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Claster\Task\SearcherKey
          * @enum {integer}
          */
         "Keywords_2.Types.Claster.Task.SearcherKey": 0 | 1;

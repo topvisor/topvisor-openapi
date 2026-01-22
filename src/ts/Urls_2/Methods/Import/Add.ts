@@ -15,9 +15,7 @@ export interface components {
          *     - audit
          *     - indexing
          *     - watcher
-         *     - tags
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Urls_2\Methods\Import\Add */
+         *     - tags */
         "Urls_2.Methods.Import.Add": {
             /** Список URL соответствующих домену проекта, допускается формат CSV
              *

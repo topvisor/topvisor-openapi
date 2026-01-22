@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение следующего id ключа для вставки в таблицу ключей
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\AutoIncrement\Get */
+        /** Получение следующего id ключа для вставки в таблицу ключей */
         "Robot_2.Methods.Admin.Keys.AutoIncrement.Get": Record<string, never>;
         "Robot_2.Methods.Admin.Keys.AutoIncrement.Get.Exec": number;
     };

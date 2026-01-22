@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт лога банка
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\History\Export\Get */
+        /** Экспорт лога банка */
         "Bank_2.Methods.History.Export.Get": {
             output: string;
             /** Вывести итого по группам */

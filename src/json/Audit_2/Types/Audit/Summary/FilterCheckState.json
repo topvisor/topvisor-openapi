@@ -21,7 +21,7 @@
                     null,
                     null
                 ],
-                "title": "Фильтр по состоянию изменения в сводке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Types\\Audit\\Summary\\FilterCheckState"
+                "title": "Фильтр по состоянию изменения в сводке"
             }
         }
     }

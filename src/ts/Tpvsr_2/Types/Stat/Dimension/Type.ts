@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип статистики кликов по ссылке
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Type
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Type": "chart_data" | "counts_unique" | "referrers" | "browsers" | "oses" | "countries";

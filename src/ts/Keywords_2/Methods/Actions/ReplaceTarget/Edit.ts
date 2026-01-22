@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Замена целевых ссылок
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Actions\ReplaceTarget\Edit */
+        /** Замена целевых ссылок */
         "Keywords_2.Methods.Actions.ReplaceTarget.Edit": {
             /** Что поменять */
             search: string;

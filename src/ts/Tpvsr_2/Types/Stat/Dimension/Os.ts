@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Операционная система
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpvsr_2\Types\Stat\Dimension\Os
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Os": "Android" | "iOS" | "WP" | "Windows" | "Macintosh" | "Linux" | "Other";

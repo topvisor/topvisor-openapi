@@ -15,9 +15,7 @@ export interface components {
          *
          *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
          *
-         *     При ошибке производит редирект на страницу с информацией об ошибке
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Add */
+         *     При ошибке производит редирект на страницу с информацией об ошибке */
         "Payments_2.Methods.Add": {
             /** Платежная система */
             system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];

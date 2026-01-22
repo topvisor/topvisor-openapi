@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Перевод средств с реферального счета на бонусный
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Referrals\ToBonus\Edit */
+        /** Перевод средств с реферального счета на бонусный */
         "Bank_2.Methods.Referrals.ToBonus.Edit": {
             /** Сумма для перевода */
             sum: string;

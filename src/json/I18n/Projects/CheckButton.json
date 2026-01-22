@@ -57,8 +57,7 @@
                     "Last_check",
                     "In_queue",
                     "In_work"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Projects\\CheckButton\\En"
+                ]
             }
         }
     }

@@ -47,7 +47,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение документов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Pages\\Get"
+                "title": "Получение документов"
             },
             "Content_2.Methods.Pages.Get.Exec": {
                 "nullable": true,

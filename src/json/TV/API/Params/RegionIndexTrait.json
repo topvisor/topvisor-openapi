@@ -44,7 +44,7 @@
                 "required": [
                     "region_index"
                 ],
-                "title": "Индекс региона\n\nЕсли не передан индекс региона, то получит его исходя из других параметров trait\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\RegionIndexTrait"
+                "title": "Индекс региона\n\nЕсли не передан индекс региона, то получит его исходя из других параметров trait"
             }
         }
     }

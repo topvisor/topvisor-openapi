@@ -11,9 +11,7 @@ export interface components {
          *
          *     Принимает: 0|1|false|true
          *
-         *     Хранит: false|true
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Types\EnumNumberArray */
+         *     Хранит: false|true */
         "Example_2.Types.EnumNumberArray": import('./Number.ts').components['schemas']['Example_2.Types.Number'][];
     };
     responses: never;

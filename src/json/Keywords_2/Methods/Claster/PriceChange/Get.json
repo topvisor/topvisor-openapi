@@ -34,7 +34,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение цены перекластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\PriceChange\\Get"
+                "title": "Получение цены перекластеризации"
             },
             "Keywords_2.Methods.Claster.PriceChange.Get.Exec": {
                 "type": "number"

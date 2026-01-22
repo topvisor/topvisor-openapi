@@ -18,7 +18,7 @@
                 "required": [
                     "quiz_id"
                 ],
-                "title": "Удаление результатов предыдущих попытки пройти тест\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\Results\\Del"
+                "title": "Удаление результатов предыдущих попытки пройти тест"
             },
             "Quiz_2.Methods.Results.Del.Exec": {
                 "nullable": true,

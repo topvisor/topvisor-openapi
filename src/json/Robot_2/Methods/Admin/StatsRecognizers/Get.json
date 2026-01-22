@@ -36,7 +36,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение статистики по работе распознавателей капч.\n\nСтатистика возвращается только для Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\StatsRecognizers\\Get"
+                "title": "Получение статистики по работе распознавателей капч.\n\nСтатистика возвращается только для Google"
             },
             "Robot_2.Methods.Admin.StatsRecognizers.Get.Exec": {
                 "nullable": true,

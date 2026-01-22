@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка конкурентов
          *
-         *     Метод базируется на объекте keywords (доступны только фильтры)
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Get */
+         *     Метод базируется на объекте keywords (доступны только фильтры) */
         "Snapshots_2.Methods.Competitors.Get": {
             /** Id проекта */
             project_id: number;

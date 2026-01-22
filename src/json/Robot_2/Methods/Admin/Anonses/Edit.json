@@ -64,7 +64,7 @@
                     }
                 },
                 "required": [],
-                "title": "Редактирование Анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Edit"
+                "title": "Редактирование Анонсов"
             },
             "Robot_2.Methods.Admin.Anonses.Edit.Exec": {
                 "type": "integer"

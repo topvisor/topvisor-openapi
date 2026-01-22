@@ -33,7 +33,7 @@
                     "skipEmpty",
                     "test"
                 ],
-                "title": "Копирование истории позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Positions\\History\\Copy\\Add"
+                "title": "Копирование истории позиций"
             },
             "Admin_2.Methods.Actions.Positions.History.Copy.Add.Exec": {
                 "allOf": [

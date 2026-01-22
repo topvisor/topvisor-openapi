@@ -11,8 +11,6 @@ export interface components {
          * Куда добавлять добавляемые группы
          *
          *     Всегда должен содержать значения из Keywords_2\Types\Groups\ToType
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Collect\ToType
          * @enum {string}
          */
         "Keywords_2.Types.Collect.ToType": "in_folder" | "in_folder_last";

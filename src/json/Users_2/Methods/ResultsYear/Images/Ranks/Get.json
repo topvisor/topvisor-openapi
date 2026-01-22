@@ -25,7 +25,7 @@
                 "required": [
                     "rank"
                 ],
-                "title": "Получение титула\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\ResultsYear\\Images\\Ranks\\Get"
+                "title": "Получение титула"
             },
             "Users_2.Methods.ResultsYear.Images.Ranks.Get.Exec": {
                 "type": "never"

@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка услуг\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Services\\Get"
+                "title": "Получение списка услуг"
             },
             "Robot_2.Methods.Admin.Get.Exec": {
                 "nullable": true,

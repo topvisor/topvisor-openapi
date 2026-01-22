@@ -16,7 +16,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка используемых ПС в проекте\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Stats\\Account\\ListPs\\Get"
+                "title": "Получение списка используемых ПС в проекте"
             },
             "Users_2.Methods.Stats.Account.ListPs.Get.Exec": {
                 "nullable": true,

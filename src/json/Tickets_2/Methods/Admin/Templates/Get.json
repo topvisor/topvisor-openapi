@@ -17,7 +17,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение шаблона тикета\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\Templates\\Get"
+                "title": "Получение шаблона тикета"
             },
             "Tickets_2.Methods.Admin.Templates.Get.Exec": {
                 "nullable": true,

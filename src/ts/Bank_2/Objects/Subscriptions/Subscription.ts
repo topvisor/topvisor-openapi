@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о текущей подписки пользователя и ее лимитах
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Objects\Subscriptions\Subscription */
+        /** Информация о текущей подписки пользователя и ее лимитах */
         "Bank_2.Objects.Subscriptions.Subscription": {
             /** id платежа, подписки */
             paymentId: number;

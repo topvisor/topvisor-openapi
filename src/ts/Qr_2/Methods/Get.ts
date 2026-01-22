@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Генерация QR кода по тексту
          *
-         *     Возвращает изображение в формате data:image/png;base64
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Qr_2\Methods\Get */
+         *     Возвращает изображение в формате data:image/png;base64 */
         "Qr_2.Methods.Get": {
             /** Кодируемый текст */
             text: string;

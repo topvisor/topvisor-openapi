@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение настроек ai трекера
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Get */
+        /** Получение настроек ai трекера */
         "AiTracker_2.Methods.Settings.Get": {
             /** Добавить ли в результат список всехдоступных моделей */
             showAvailableModels?: boolean;

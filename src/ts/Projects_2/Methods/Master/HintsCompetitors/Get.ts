@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получить подсазки конкурентов для добавления в проект
          *
-         *     Доступ по API закрыт
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Master\HintsCompetitors\Get */
+         *     Доступ по API закрыт */
         "Projects_2.Methods.Master.HintsCompetitors.Get": {
             /** ID проекта */
             project_id: number;

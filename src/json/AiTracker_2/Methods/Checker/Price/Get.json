@@ -20,8 +20,7 @@
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Checker\\Price\\Get"
+                "required": []
             },
             "AiTracker_2.Methods.Checker.Price.Get.Exec": {
                 "type": "object",

@@ -13,8 +13,6 @@ export interface components {
          *     - Запуск списания с карты / электронного кошелька
          *     - Создание счета
          *     - Отправка предложения об оплате
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Subscriptions\Manager
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Manager": "system" | "api";

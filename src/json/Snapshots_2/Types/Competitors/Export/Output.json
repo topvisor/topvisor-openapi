@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Тип экспортируемого файла\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Types\\Competitors\\Export\\Output"
+                "title": "Тип экспортируемого файла"
             }
         }
     }

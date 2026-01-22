@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить список групп с пользователями
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Redmine_2\Methods\Users\Groups\Get */
+        /** Получить список групп с пользователями */
         "Redmine_2.Methods.Users.Groups.Get": Record<string, never>;
         "Redmine_2.Methods.Users.Groups.Get.Exec": unknown[];
     };

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение сортировки шаблонов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Sort\Edit */
+        /** Изменение сортировки шаблонов */
         "Tickets_2.Methods.Admin.Templates.Sort.Edit": {
             /** ID шаблонов */
             ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

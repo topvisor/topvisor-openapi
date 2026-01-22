@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип диапазона Ai-Трекера
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\TypeRange
          * @enum {integer}
          */
         "AiTracker_2.Types.TypeRange": 0 | 2 | 3 | 4 | 5 | 7 | 100;

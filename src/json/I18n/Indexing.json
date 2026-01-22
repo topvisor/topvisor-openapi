@@ -62,8 +62,7 @@
                     "Hint_not_checks_btn",
                     "Hint_not_data_text",
                     "Hint_not_dates_with_checks_text"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Indexing\\En"
+                ]
             }
         }
     }

@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Создание сертификата
          *
-         *     Можно создавать только для пройденных курсов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Add */
+         *     Можно создавать только для пройденных курсов */
         "Content_2.Methods.Journal.Course.Certificates.Add": {
             /** Url курса относительно домена */
             course_url: string;

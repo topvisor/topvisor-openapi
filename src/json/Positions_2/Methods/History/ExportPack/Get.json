@@ -35,7 +35,7 @@
                     "date1",
                     "date2"
                 ],
-                "title": "Экспорт позиций указанных проектов за указанные даты без количественного ограничения\n\nАрхив с результатом экспорта будет продублирован на email пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\ExportPack\\Get"
+                "title": "Экспорт позиций указанных проектов за указанные даты без количественного ограничения\n\nАрхив с результатом экспорта будет продублирован на email пользователя"
             },
             "Positions_2.Methods.History.ExportPack.Get.Exec": {
                 "nullable": true

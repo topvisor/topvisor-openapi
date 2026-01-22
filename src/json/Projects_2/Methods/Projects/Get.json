@@ -62,7 +62,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Projects\\Get"
+                "title": "Получение списка проектов"
             },
             "Projects_2.Methods.Projects.Get.Exec": {
                 "nullable": true,

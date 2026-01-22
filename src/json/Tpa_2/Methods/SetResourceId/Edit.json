@@ -29,7 +29,7 @@
                     "cid",
                     "project_id"
                 ],
-                "title": "Выбрать счетчик\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\SetResourceId\\Edit"
+                "title": "Выбрать счетчик"
             },
             "Tpa_2.Methods.SetResourceId.Edit.Exec": {
                 "nullable": true,

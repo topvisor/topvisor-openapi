@@ -27,7 +27,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Groups\\Add"
+                "title": "Добавление групп"
             },
             "AiTracker_2.Methods.Prompts.Groups.Add.Exec": {
                 "nullable": true,

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип отчета
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\Report\Type
          * @enum {string}
          */
         "Competitors_2.Types.Report.Type": "serp" | "ads";

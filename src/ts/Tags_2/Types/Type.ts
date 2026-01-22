@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип тега, к каким объектам применяется
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tags_2\Types\Type
          * @enum {string}
          */
         "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls" | "prompts";

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Статус задачи
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Types\Tasks\Status
          * @enum {string}
          */
         "Projects_2.Types.Tasks.Status": "ongoing" | "completed";

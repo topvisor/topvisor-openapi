@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение целевой ссылки запроса
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Target\Edit */
+        /** Изменение целевой ссылки запроса */
         "Keywords_2.Methods.Keywords.Target.Edit": {
             /** Целевая ссылка */
             target?: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;

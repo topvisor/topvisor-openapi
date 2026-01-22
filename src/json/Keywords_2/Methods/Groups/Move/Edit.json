@@ -35,7 +35,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Перемещение группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Groups\\Move\\Edit"
+                "title": "Перемещение группы"
             },
             "Keywords_2.Methods.Groups.Move.Edit.Exec": {
                 "nullable": true,

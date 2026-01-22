@@ -73,7 +73,7 @@
                     "output",
                     "project_id"
                 ],
-                "title": "Экспорт в определенном формате (экспорт всех запросов)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Export\\Get"
+                "title": "Экспорт в определенном формате (экспорт всех запросов)"
             },
             "KeywordsAi_2.Methods.Keywords.Export.Get.Exec": {
                 "type": "never"

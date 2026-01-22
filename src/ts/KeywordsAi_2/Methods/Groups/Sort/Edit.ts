@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Изменение сортировки групп
          *
-         *     Не оптимизировано для работы с большим числом групп, дат и регионов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Sort\Edit */
+         *     Не оптимизировано для работы с большим числом групп, дат и регионов */
         "KeywordsAi_2.Methods.Groups.Sort.Edit": {
             /** Список полей объекта, по которым необходимо выполнить сортировку */
             orders: unknown[];

@@ -57,7 +57,7 @@
                     }
                 },
                 "required": [],
-                "title": "Редактирование партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partners\\Edit"
+                "title": "Редактирование партнера"
             },
             "Robot_2.Methods.Admin.Partners.Edit.Exec": {
                 "nullable": true,

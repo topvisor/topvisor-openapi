@@ -13,8 +13,6 @@ export interface components {
          *     Этот общий тип, не зависящий от контекста
          *
          *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\Currency
          * @enum {string}
          */
         "TV.API.Types.Currency": "RUB" | "USD";

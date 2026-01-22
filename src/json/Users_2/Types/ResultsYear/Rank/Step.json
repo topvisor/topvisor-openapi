@@ -51,7 +51,7 @@
                     "Выдача достижения Гуру Google",
                     "Выдача достижения Покоритель ТОПа"
                 ],
-                "title": "Этапы расчета достижений: \"Итоги года\"\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Types\\ResultsYear\\Rank\\Step",
+                "title": "Этапы расчета достижений: \"Итоги года\"",
                 "description": "@see Users_2\\Mods\\ResultsYear\\Ranks::setUsersRank()"
             }
         }

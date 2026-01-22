@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка договора в диадок
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Diadoc\SendContract\Get */
+        /** Отправка договора в диадок */
         "Bank_2.Methods.Diadoc.SendContract.Get": {
             /** Id договора */
             requisites_id: string;

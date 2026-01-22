@@ -27,7 +27,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Выделение сайтов (доменов) как неважные\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\HiddenDomains\\Edit"
+                "title": "Выделение сайтов (доменов) как неважные"
             },
             "Snapshots_2.Methods.HiddenDomains.Edit.Exec": {
                 "nullable": true,

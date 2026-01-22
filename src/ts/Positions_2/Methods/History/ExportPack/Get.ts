@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт позиций указанных проектов за указанные даты без количественного ограничения
          *
-         *     Архив с результатом экспорта будет продублирован на email пользователя
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Get */
+         *     Архив с результатом экспорта будет продублирован на email пользователя */
         "Positions_2.Methods.History.ExportPack.Get": {
             /** Отображать сумму с учетом скидки */
             apply_discount?: boolean;

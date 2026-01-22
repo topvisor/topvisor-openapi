@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Api\En */
         "I18n.Api": {
             /** @constant */
             readonly View_in_API_explorer: "View in API explorer";

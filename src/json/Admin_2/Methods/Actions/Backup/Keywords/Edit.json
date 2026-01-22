@@ -51,7 +51,7 @@
                     "date",
                     "test"
                 ],
-                "title": "Восстановление поисковых запросов из бэкапа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Backup\\Keywords\\Edit"
+                "title": "Восстановление поисковых запросов из бэкапа"
             },
             "Admin_2.Methods.Actions.Backup.Keywords.Edit.Exec": {
                 "allOf": [

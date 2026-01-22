@@ -22,7 +22,7 @@
                 "required": [
                     "domain"
                 ],
-                "title": "Получение информации о регистрации домена\n\nВозвращает объект с параметрами:\n- wait_time, если данные не готовы\n- created, если данные готовы\n- paidtill, если данные готовы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Status\\Registrar\\Get"
+                "title": "Получение информации о регистрации домена\n\nВозвращает объект с параметрами:\n- wait_time, если данные не готовы\n- created, если данные готовы\n- paidtill, если данные готовы"
             },
             "Projects_2.Methods.Status.Registrar.Get.Exec": {
                 "type": "object",

@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Удаление данных об отпуске\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Staff\\Vacation\\Del"
+                "title": "Удаление данных об отпуске"
             },
             "Admin_2.Methods.Staff.Vacation.Del.Exec": {
                 "nullable": true,

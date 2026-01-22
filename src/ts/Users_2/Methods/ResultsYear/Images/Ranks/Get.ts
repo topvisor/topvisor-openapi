@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение титула
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\ResultsYear\Images\Ranks\Get */
+        /** Получение титула */
         "Users_2.Methods.ResultsYear.Images.Ranks.Get": {
             rank: import('../../../../Types/ResultsYear/Rank.ts').components['schemas']['Users_2.Types.ResultsYear.Rank'];
             /** Дополнительный параметр используемый в тексте титула */

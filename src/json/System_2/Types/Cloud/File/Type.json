@@ -27,7 +27,7 @@
                     "Директория",
                     "Файл"
                 ],
-                "title": "Тип файла, получаемого из облака Selectel\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Types\\Cloud\\File\\Type"
+                "title": "Тип файла, получаемого из облака Selectel"
             }
         }
     }

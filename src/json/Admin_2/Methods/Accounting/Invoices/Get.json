@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение счетов на оплату\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Invoices\\Get"
+                "title": "Получение счетов на оплату"
             },
             "Admin_2.Methods.Accounting.Invoices.Get.Exec": {
                 "nullable": true

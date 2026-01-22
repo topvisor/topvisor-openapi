@@ -59,7 +59,7 @@
                     "lang",
                     "search"
                 ],
-                "title": "Поиск страниц\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Search\\Get"
+                "title": "Поиск страниц"
             },
             "Content_2.Methods.Search.Get.Exec": {
                 "type": "array",

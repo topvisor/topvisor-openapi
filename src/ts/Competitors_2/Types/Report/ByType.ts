@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип запроса в отчета
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\Report\ByType
          * @enum {string}
          */
         "Competitors_2.Types.Report.ByType": "url" | "keyword";

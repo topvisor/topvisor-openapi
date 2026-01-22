@@ -24,7 +24,7 @@
                 "required": [
                     "folder_id"
                 ],
-                "title": "Перемещение проектов в папку\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Folders\\Move\\Edit"
+                "title": "Перемещение проектов в папку"
             },
             "Projects_2.Methods.Folders.Move.Edit.Exec": {
                 "nullable": true

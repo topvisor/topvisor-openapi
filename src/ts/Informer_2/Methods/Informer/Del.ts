@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление сообщений из инфомера
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Informer\Del */
+        /** Удаление сообщений из инфомера */
         "Informer_2.Methods.Informer.Del": {
             /** ID сообщений для удаления */
             ids: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

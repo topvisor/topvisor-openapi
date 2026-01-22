@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение проверенных ссылок
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Audit\Links\Get */
+        /** Получение проверенных ссылок */
         "Audit_2.Methods.Audit.Links.Get": {
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

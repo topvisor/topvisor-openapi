@@ -11,8 +11,6 @@ export interface components {
          * Получение id, имение запроса и результатов, зависимые от контекста
          *
          *     Поддерживает работу до 10 000 запросов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Offset\Get
          * @description @see Keywords_2\Methods\Keywords\Get
          */
         "Keywords_2.Methods.Keywords.Offset.Get": {

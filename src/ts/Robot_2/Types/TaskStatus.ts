@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Статус задач в задачнике робота
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Types\TaskStatus
          * @enum {integer}
          */
         "Robot_2.Types.TaskStatus": 0 | 1 | 2 | 3 | 4 | 5 | 6;

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип анонса
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Types\Admin\Anonses\Type
          * @enum {string}
          */
         "Robot_2.Types.Admin.Anonses.Type": "layer" | "server";

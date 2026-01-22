@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных для отчета
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Table\Get */
+        /** Получение данных для отчета */
         "Competitors_2.Methods.Table.Get": {
             by_type: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */

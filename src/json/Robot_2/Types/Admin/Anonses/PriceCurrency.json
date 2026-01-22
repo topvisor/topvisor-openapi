@@ -27,7 +27,7 @@
                     "Доллары",
                     "Фунты"
                 ],
-                "title": "Валюта оплаты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Types\\Admin\\Anonses\\PriceCurrency"
+                "title": "Валюта оплаты"
             }
         }
     }

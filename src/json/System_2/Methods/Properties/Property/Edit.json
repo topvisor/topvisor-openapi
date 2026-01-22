@@ -46,7 +46,7 @@
                 "required": [
                     "name"
                 ],
-                "title": "Редактирование параметра\n\nНе хранить в параметрах конфиденциальную информацию\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Properties\\Property\\Edit"
+                "title": "Редактирование параметра\n\nНе хранить в параметрах конфиденциальную информацию"
             },
             "System_2.Methods.Properties.Property.Edit.Exec": {
                 "nullable": true,

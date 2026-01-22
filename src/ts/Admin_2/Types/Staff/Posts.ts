@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Позиции сотрудников
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Staff\Posts
          * @description @extends API\Types\AbstractTypedArray<Post>
          *     @method Post[] getValues()
          *     @method Post current()

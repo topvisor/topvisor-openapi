@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение имени папки
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Folders\Name\Edit */
+        /** Изменение имени папки */
         "Projects_2.Methods.Folders.Name.Edit": {
             /** Id папки */
             id: number;

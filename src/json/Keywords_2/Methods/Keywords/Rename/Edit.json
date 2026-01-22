@@ -31,7 +31,7 @@
                     "name",
                     "project_id"
                 ],
-                "title": "Переименование запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Rename\\Edit"
+                "title": "Переименование запроса"
             },
             "Keywords_2.Methods.Keywords.Rename.Edit.Exec": {
                 "type": "array",

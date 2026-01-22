@@ -60,7 +60,7 @@
                     "period",
                     "project_id"
                 ],
-                "title": "Загрузка данных из provider в базу\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Prepare\\Get",
+                "title": "Загрузка данных из provider в базу",
                 "description": "@internal"
             },
             "Keywords_2.Methods.Magnet.Prepare.Get.Exec": {

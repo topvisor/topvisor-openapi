@@ -35,7 +35,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение информации о выданных доступах к проекту\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Rights\\Get"
+                "title": "Получение информации о выданных доступах к проекту"
             },
             "Projects_2.Methods.Rights.Get.Exec": {
                 "type": "array",

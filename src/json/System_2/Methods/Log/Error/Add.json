@@ -23,7 +23,7 @@
                     "log",
                     "from"
                 ],
-                "title": "Логирование ошибки js и отправка в канал slack\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Log\\Error\\Add"
+                "title": "Логирование ошибки js и отправка в канал slack"
             },
             "System_2.Methods.Log.Error.Add.Exec": {
                 "type": "integer"

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Местоположение сервера для выполнения задач инструментов аудита
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Settings\ServerLocation
          * @enum {string}
          */
         "Audit_2.Types.Settings.ServerLocation": "EASTERN_EUROPE" | "WESTERN_EUROPE";

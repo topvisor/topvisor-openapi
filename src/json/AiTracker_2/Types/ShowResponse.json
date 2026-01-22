@@ -24,7 +24,7 @@
                     "Сокращенный текст",
                     "Полный текст"
                 ],
-                "title": "Добавить в результат данные ответа нейросети\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\ShowResponse"
+                "title": "Добавить в результат данные ответа нейросети"
             }
         }
     }

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Валюта оплаты
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Types\Admin\Anonses\PriceCurrency
          * @enum {string}
          */
         "Robot_2.Types.Admin.Anonses.PriceCurrency": "RUB" | "EUR" | "USD" | "GBR";

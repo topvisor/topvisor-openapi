@@ -23,7 +23,7 @@
                     "name",
                     "ip"
                 ],
-                "title": "Добавление сервера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Servers\\Add"
+                "title": "Добавление сервера"
             },
             "Robot_2.Methods.Admin.Servers.Add.Exec": {
                 "type": "integer"

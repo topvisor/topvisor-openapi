@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Название доступа
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Staff\Access\Name
          * @enum {string}
          */
         "Admin_2.Types.Staff.Access.Name": "ftp" | "mysql" | "vpn" | "monitoring" | "httpAuth";

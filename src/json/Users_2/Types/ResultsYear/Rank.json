@@ -57,7 +57,7 @@
                     "Рыцарь регионов; Все, у кого в активных проектах более 5 регионов в любых ПС",
                     "Семантический алхимик; За кластеризацию (посчитать суммарное кол-во запросов, которые кластеризовали)"
                 ],
-                "title": "Титул\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Types\\ResultsYear\\Rank"
+                "title": "Титул"
             }
         }
     }

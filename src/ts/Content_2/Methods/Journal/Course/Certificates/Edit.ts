@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Изменение сертификата
          *
-         *     Можно менять только имя, если оно не указано
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Edit */
+         *     Можно менять только имя, если оно не указано */
         "Content_2.Methods.Journal.Course.Certificates.Edit": {
             /** Url курса относительно домена */
             course_url: string;

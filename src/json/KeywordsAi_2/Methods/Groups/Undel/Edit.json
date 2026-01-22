@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Восстановление группы из корзины\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Groups\\Undel\\Edit"
+                "title": "Восстановление группы из корзины"
             },
             "KeywordsAi_2.Methods.Groups.Undel.Edit.Exec": {
                 "nullable": true,

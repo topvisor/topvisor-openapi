@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@see Keywords_2\\Types\\Traits\\BasePolimorfizm\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Traits\\Polimorfizm"
+                "title": "@see Keywords_2\\Types\\Traits\\BasePolimorfizm"
             }
         }
     }

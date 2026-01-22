@@ -42,7 +42,7 @@
                     }
                 },
                 "required": [],
-                "title": "Фиксация события по ссылке на изображение\n\nсм. Analytics_2\\Mods\\Analytics::genEventImgLink()\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Common\\Analytics\\Add"
+                "title": "Фиксация события по ссылке на изображение\n\nсм. Analytics_2\\Mods\\Analytics::genEventImgLink()"
             },
             "System_2.Methods.Common.Analytics.Add.Exec": {
                 "type": "never"

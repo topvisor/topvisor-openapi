@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Название модуля для получения статуса запросов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Checker\Status\RecheckKeywords\ModuleName
          * @enum {string}
          */
         "Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName": "positions" | "snapshots";

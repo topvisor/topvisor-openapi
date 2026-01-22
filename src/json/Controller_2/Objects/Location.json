@@ -10,8 +10,7 @@
             "Controller_2.Objects.Location": {
                 "type": "object",
                 "properties": {},
-                "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Controller_2\\Objects\\Location"
+                "required": []
             }
         }
     }

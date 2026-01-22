@@ -80,8 +80,7 @@
                     "tags",
                     "period",
                     "project_id"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Import\\Get"
+                ]
             },
             "Keywords_2.Methods.Magnet.Import.Get.Exec": {
                 "nullable": true,

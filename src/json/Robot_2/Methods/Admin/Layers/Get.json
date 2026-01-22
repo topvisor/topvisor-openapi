@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка Слоев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Get"
+                "title": "Получение списка Слоев"
             },
             "Robot_2.Methods.Admin.Layers.Get.Exec": {
                 "nullable": true,

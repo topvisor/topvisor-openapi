@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации о целевой ссылке
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Targets\Get */
+        /** Получение информации о целевой ссылке */
         "Positions_2.Methods.History.Targets.Get": {
             /** ID запроса */
             phrase_id: number;

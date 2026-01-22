@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Обновление изображения poster для апометра
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\PosterImages\Edit */
+        /** Обновление изображения poster для апометра */
         "Robot_2.Methods.PosterImages.Edit": Record<string, never>;
         "Robot_2.Methods.PosterImages.Edit.Exec": number;
     };

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить перепроверенные запросы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get */
+        /** Получить перепроверенные запросы */
         "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get": {
             /** ID запросов данные о которых нужно получить */
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

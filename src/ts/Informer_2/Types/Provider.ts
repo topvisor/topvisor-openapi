@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Способ рассылки
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Types\Provider
          * @enum {string}
          */
         "Informer_2.Types.Provider": "info" | "email" | "sms" | "push" | "min";

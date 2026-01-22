@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип выполняемого действия
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Actions\MoveBySubstrings\Action
          * @enum {string}
          */
         "Keywords_2.Types.Actions.MoveBySubstrings.Action": "test" | "exec";

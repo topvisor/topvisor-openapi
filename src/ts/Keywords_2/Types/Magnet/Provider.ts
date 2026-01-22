@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Источник данных магнита
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Magnet\Provider
          * @enum {string}
          */
         "Keywords_2.Types.Magnet.Provider": "metrika" | "webmaster" | "ganalytics" | "gsc";

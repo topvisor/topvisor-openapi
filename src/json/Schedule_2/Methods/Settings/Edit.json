@@ -134,7 +134,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Изменить дополнительные параметры расписания\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Schedule_2\\Methods\\Settings\\Edit"
+                "title": "Изменить дополнительные параметры расписания"
             },
             "Schedule_2.Methods.Settings.Edit.Exec": {
                 "nullable": true,

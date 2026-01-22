@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Устройство региона
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\RegionDevice
          * @enum {integer}
          */
         "Positions_2.Types.RegionDevice": 0 | 1 | 2;

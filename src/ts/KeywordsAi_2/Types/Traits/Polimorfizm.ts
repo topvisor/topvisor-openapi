@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see Keywords_2\Types\Traits\BasePolimorfizm
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Types\Traits\Polimorfizm */
+        /** @see Keywords_2\Types\Traits\BasePolimorfizm */
         "KeywordsAi_2.Types.Traits.Polimorfizm": Record<string, never>;
     };
     responses: never;

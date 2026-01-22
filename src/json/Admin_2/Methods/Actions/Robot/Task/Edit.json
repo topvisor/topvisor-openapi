@@ -33,7 +33,7 @@
                     "type",
                     "test"
                 ],
-                "title": "Снятие задачи с дэбага\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Task\\Edit"
+                "title": "Снятие задачи с дэбага"
             },
             "Admin_2.Methods.Actions.Robot.Task.Edit.Exec": {
                 "nullable": true,

@@ -64,7 +64,7 @@
                     "to_id",
                     "project_id"
                 ],
-                "title": "Добавление запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Add"
+                "title": "Добавление запроса"
             },
             "Keywords_2.Methods.Keywords.Add.Exec": {
                 "type": "array"

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Модель нейросети для AI-трекера
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Models
          * @description @extends API\Types\AbstractTypedArray<\Services\AiTracker_2\Types\Model>
          *     @method AiTracker_2\Types\Model[] getValues()
          *     @method AiTracker_2\Types\Model current()

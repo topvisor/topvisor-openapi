@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Формат экспорта данных
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Magnet\Export\Type
          * @enum {string}
          */
         "Keywords_2.Types.Magnet.Export.Type": "csv";

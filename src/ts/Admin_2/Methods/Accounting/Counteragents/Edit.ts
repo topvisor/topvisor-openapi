@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение параметров контрагента
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Accounting\Counteragents\Edit */
+        /** Изменение параметров контрагента */
         "Admin_2.Methods.Accounting.Counteragents.Edit": {
             name: string;
             document_number?: string | null;

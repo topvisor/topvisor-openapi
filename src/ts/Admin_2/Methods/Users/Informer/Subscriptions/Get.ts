@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
          *
-         *     График кешируется, первый запрос может выполняться дольше
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Informer\Subscriptions\Get */
+         *     График кешируется, первый запрос может выполняться дольше */
         "Admin_2.Methods.Users.Informer.Subscriptions.Get": {
             tariff_id?: number | null;
         };

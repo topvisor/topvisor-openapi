@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Сокращенный тип с данными для вывода hightcharts
          *
-         *     https://www.highcharts.com/
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Objects\Highcharts\Chart */
+         *     https://www.highcharts.com/ */
         "TV.Objects.Highcharts.Chart": {
             /** Категории
              *

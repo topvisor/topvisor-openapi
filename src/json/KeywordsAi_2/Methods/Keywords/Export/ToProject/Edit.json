@@ -52,7 +52,7 @@
                     "to_project_id",
                     "project_id"
                 ],
-                "title": "Копирование запросов в другой проект\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Export\\ToProject\\Edit"
+                "title": "Копирование запросов в другой проект"
             },
             "KeywordsAi_2.Methods.Keywords.Export.ToProject.Edit.Exec": {
                 "nullable": true,

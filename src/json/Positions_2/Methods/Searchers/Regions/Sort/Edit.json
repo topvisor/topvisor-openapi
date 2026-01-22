@@ -42,7 +42,7 @@
                     "searcher_key",
                     "regions_indexes"
                 ],
-                "title": "Настройка сортировки регионов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Searchers\\Regions\\Sort\\Edit"
+                "title": "Настройка сортировки регионов"
             },
             "Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec": {
                 "nullable": true

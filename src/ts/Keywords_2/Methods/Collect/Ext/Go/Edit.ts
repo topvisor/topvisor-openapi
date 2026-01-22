@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Постановка задачи на расширение группы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Ext\Go\Edit */
+        /** Постановка задачи на расширение группы */
         "Keywords_2.Methods.Collect.Ext.Go.Edit": {
             /** ID проекта */
             project_id: number;

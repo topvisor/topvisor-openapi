@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Выделение сайтов (доменов) как неважные
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\HiddenDomains\Edit */
+        /** Выделение сайтов (доменов) как неважные */
         "Snapshots_2.Methods.HiddenDomains.Edit": {
             /** Id проекта */
             project_id: number;

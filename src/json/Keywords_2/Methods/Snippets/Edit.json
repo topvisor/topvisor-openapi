@@ -30,7 +30,7 @@
                     "tag",
                     "project_id"
                 ],
-                "title": "Изменение тегов сниппета\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Snippets\\Edit"
+                "title": "Изменение тегов сниппета"
             },
             "Keywords_2.Methods.Snippets.Edit.Exec": {
                 "nullable": true,

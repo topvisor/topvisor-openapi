@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Удаление промтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Del"
+                "title": "Удаление промтов"
             },
             "AiTracker_2.Methods.Prompts.Del.Exec": {
                 "nullable": true,

@@ -24,7 +24,7 @@
                     "Планшет",
                     "Смартфон"
                 ],
-                "title": "Устройство региона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Types\\RegionDevice"
+                "title": "Устройство региона"
             }
         }
     }

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение шаблона тикета
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Admin\Templates\Get */
+        /** Получение шаблона тикета */
         "Tickets_2.Methods.Admin.Templates.Get": {
             /** Текст для поиска */
             search?: string | null;

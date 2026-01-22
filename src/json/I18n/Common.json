@@ -2454,8 +2454,7 @@
                     "Knowledge_base",
                     "AllowCookies",
                     "Unique"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Common\\En"
+                ]
             }
         }
     }

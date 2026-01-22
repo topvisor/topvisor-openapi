@@ -42,7 +42,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка тикетов с сообщениями\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Tickets\\Get"
+                "title": "Получение списка тикетов с сообщениями"
             },
             "Tickets_2.Methods.Tickets.Get.Exec": {
                 "nullable": true,

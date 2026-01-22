@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт сводки с графика
          *
-         *     Описание параметров смотреть в get/snapshots_2/competitors
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\Competitors\Chart\Export\Get */
+         *     Описание параметров смотреть в get/snapshots_2/competitors */
         "Snapshots_2.Methods.Competitors.Chart.Export.Get": {
             /** Id проекта */
             project_id: number;

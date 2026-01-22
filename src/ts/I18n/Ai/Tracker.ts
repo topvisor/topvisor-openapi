@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Ai\Tracker\En */
         "I18n.Ai.Tracker": {
             /** @constant */
             readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";

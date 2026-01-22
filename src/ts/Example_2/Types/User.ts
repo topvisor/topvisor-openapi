@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Types\User */
         "Example_2.Types.User": {
             name: string;
             email: import('../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

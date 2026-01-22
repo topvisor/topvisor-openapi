@@ -48,7 +48,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение целевой ссылки запроса\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Target\\Edit"
+                "title": "Изменение целевой ссылки запроса"
             },
             "Keywords_2.Methods.Keywords.Target.Edit.Exec": {
                 "nullable": true,

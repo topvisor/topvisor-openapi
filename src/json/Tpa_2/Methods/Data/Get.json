@@ -39,7 +39,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение данных о подключенных сервисах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Methods\\Data\\Get"
+                "title": "Получение данных о подключенных сервисах"
             },
             "Tpa_2.Methods.Data.Get.Exec": {
                 "type": "object",

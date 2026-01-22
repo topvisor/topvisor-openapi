@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Ресурс интеграции
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Types\Providers\Resource */
+        /** Ресурс интеграции */
         "Tpa_2.Types.Providers.Resource": {
             cid: string;
             name: string;

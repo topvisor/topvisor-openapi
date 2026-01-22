@@ -38,7 +38,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Настройка графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Analytics\\Edit"
+                "title": "Настройка графика"
             },
             "Projects_2.Methods.Analytics.Edit.Exec": {
                 "nullable": true,

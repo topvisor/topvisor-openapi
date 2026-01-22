@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Удаление шаблона\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Templates_2\\Methods\\Del"
+                "title": "Удаление шаблона"
             },
             "Templates_2.Methods.Del.Exec": {
                 "nullable": true,

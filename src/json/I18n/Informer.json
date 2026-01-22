@@ -190,8 +190,7 @@
                     "Toolbox_one_task_completed",
                     "Toolbox_many_tasks_completed",
                     "Toolbox_many_tasks_message"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Informer\\En"
+                ]
             }
         }
     }

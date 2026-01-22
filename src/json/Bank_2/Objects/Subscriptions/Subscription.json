@@ -167,7 +167,7 @@
                     "limitUsedByName",
                     "limitTypeByName"
                 ],
-                "title": "Информация о текущей подписки пользователя и ее лимитах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Objects\\Subscriptions\\Subscription"
+                "title": "Информация о текущей подписки пользователя и ее лимитах"
             }
         }
     }

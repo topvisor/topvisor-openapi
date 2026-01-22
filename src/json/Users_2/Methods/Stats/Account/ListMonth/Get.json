@@ -17,7 +17,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка месяцев\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Stats\\Account\\ListMonth\\Get"
+                "title": "Получение списка месяцев"
             },
             "Users_2.Methods.Stats.Account.ListMonth.Get.Exec": {
                 "nullable": true,

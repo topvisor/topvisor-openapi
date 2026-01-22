@@ -57,7 +57,7 @@
                     "counts",
                     "zip_file_data"
                 ],
-                "title": "Отправка письма на почту об окончании кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\MailClaster\\Add"
+                "title": "Отправка письма на почту об окончании кластеризации"
             },
             "Robot_2.Methods.MailClaster.Add.Exec": {
                 "nullable": true,

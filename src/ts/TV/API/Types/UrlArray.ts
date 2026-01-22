@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Url[]
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\UrlArray
          * @description @extends AbstractStringArray<Url>
          *     @method Url[] getValues()
          *     @method Url current()

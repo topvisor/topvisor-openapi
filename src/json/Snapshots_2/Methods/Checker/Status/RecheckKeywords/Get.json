@@ -158,7 +158,7 @@
                     "regions_indexes",
                     "project_id"
                 ],
-                "title": "Получить перепроверенные запросы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\Checker\\Status\\RecheckKeywords\\Get"
+                "title": "Получить перепроверенные запросы"
             },
             "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
                 "nullable": true,

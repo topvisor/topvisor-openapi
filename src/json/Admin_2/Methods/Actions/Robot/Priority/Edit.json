@@ -42,7 +42,7 @@
                     "priority",
                     "test"
                 ],
-                "title": "Изменение приоритета задач\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Robot\\Priority\\Edit"
+                "title": "Изменение приоритета задач"
             },
             "Admin_2.Methods.Actions.Robot.Priority.Edit.Exec": {
                 "allOf": [

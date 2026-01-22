@@ -18,7 +18,7 @@
                 "required": [
                     "log_file"
                 ],
-                "title": "Загрузка текстового файла лога\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Logs\\Get"
+                "title": "Загрузка текстового файла лога"
             },
             "Admin_2.Methods.Logs.Get.Exec": {
                 "type": "string"

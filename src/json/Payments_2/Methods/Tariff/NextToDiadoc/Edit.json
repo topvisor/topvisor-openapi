@@ -18,7 +18,7 @@
                 "required": [
                     "next_to_diadoc"
                 ],
-                "title": "Настройка оплаты тарифов: выставлять ли счета через диадок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Payments_2\\Methods\\Tariff\\NextToDiadoc\\Edit"
+                "title": "Настройка оплаты тарифов: выставлять ли счета через диадок"
             },
             "Payments_2.Methods.Tariff.NextToDiadoc.Edit.Exec": {
                 "nullable": true,

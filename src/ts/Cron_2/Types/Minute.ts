@@ -11,9 +11,7 @@ export interface components {
          *
          *     Значение должно находится в диапазоне от 0 до 59 включительно
          *
-         *     Если значение является интервалом, в начало ставится символ '*'
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Types\Minute */
+         *     Если значение является интервалом, в начало ставится символ '*' */
         "Cron_2.Types.Minute": string;
     };
     responses: never;

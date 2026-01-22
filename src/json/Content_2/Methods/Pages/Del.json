@@ -18,7 +18,7 @@
                     }
                 },
                 "required": [],
-                "title": "Перенести документ в папку /archive/\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Pages\\Del"
+                "title": "Перенести документ в папку /archive/"
             },
             "Content_2.Methods.Pages.Del.Exec": {
                 "nullable": true,

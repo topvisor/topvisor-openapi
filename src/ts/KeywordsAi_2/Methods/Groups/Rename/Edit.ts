@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Переименовывание группы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Rename\Edit */
+        /** Переименовывание группы */
         "KeywordsAi_2.Methods.Groups.Rename.Edit": {
             /** Имя группы */
             name: string;

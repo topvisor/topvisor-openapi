@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип экспортируемого файла
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\Export\Table\Output
          * @enum {string}
          */
         "Competitors_2.Types.Export.Table.Output": "csv" | "csv_utf" | "xlsx";

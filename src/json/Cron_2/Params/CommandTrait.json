@@ -17,8 +17,7 @@
                 },
                 "required": [
                     "command"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Cron_2\\Params\\CommandTrait"
+                ]
             }
         }
     }

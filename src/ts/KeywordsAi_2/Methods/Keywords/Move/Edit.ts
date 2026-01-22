@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Перемещение запросов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Move\Edit */
+        /** Перемещение запросов */
         "KeywordsAi_2.Methods.Keywords.Move.Edit": {
             /** Вставить к указанному объекту
              *

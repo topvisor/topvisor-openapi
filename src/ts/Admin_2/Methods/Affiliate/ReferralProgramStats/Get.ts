@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение общей статистики по реферальной программе
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralProgramStats\Get */
+        /** Получение общей статистики по реферальной программе */
         "Admin_2.Methods.Affiliate.ReferralProgramStats.Get": Record<string, never>;
         "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": ({
             totalEarned: number;

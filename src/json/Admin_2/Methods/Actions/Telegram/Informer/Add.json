@@ -37,7 +37,7 @@
                     "message",
                     "test"
                 ],
-                "title": "Отправление рассылки бота Telegram\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Telegram\\Informer\\Add"
+                "title": "Отправление рассылки бота Telegram"
             },
             "Admin_2.Methods.Actions.Telegram.Informer.Add.Exec": {
                 "allOf": [

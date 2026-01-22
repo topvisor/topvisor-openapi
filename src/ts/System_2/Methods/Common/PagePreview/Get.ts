@@ -11,9 +11,7 @@ export interface components {
          *
          *     Вернет изображение в формате image/png
          *
-         *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\PagePreview\Get */
+         *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl} */
         "System_2.Methods.Common.PagePreview.Get": {
             /** Url страницы */
             url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Название директории для эспорта
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Types\History\Export\Repository
          * @enum {string}
          */
         "Snapshots_2.Types.History.Export.Repository": "gdrive";

@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Объект вызова модуля системы
          *
-         *     Используется для подготовки данных запроса к внутреннему API
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Calls\Call */
+         *     Используется для подготовки данных запроса к внутреннему API */
         "System_2.Types.Calls.Call": {
             /** Название модуля */
             module: string;

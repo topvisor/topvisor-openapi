@@ -38,7 +38,7 @@
                     "telegram",
                     "comment"
                 ],
-                "title": "Отправление письма с лэндинга вакансий на hr@topvisor.com\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Landings_2\\Methods\\Hr\\Feedback\\Add"
+                "title": "Отправление письма с лэндинга вакансий на hr@topvisor.com"
             },
             "Landings_2.Methods.Hr.Feedback.Add.Exec": {
                 "nullable": true,

@@ -30,7 +30,7 @@
                 "required": [
                     "target_type"
                 ],
-                "title": "Удаление сохраненного списка столбцов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Templates_2\\Methods\\Fields\\Del"
+                "title": "Удаление сохраненного списка столбцов"
             },
             "Templates_2.Methods.Fields.Del.Exec": {
                 "nullable": true,

@@ -44,7 +44,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получить список оплаченных отчетов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Competitors_2\\Methods\\Orders\\Get"
+                "title": "Получить список оплаченных отчетов"
             },
             "Competitors_2.Methods.Orders.Get.Exec": {
                 "nullable": true,

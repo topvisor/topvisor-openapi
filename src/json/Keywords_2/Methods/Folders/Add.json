@@ -33,7 +33,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Добавление папки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Folders\\Add"
+                "title": "Добавление папки"
             },
             "Keywords_2.Methods.Folders.Add.Exec": {
                 "nullable": true,

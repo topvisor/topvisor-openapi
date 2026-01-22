@@ -47,7 +47,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка папок проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Folders\\Get"
+                "title": "Получение списка папок проекта"
             },
             "KeywordsAi_2.Methods.Folders.Get.Exec": {
                 "type": "array",

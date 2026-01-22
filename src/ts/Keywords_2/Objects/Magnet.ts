@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Формат строки ответа
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Objects\Magnet */
+        /** Формат строки ответа */
         "Keywords_2.Objects.Magnet": {
             /** Запрос */
             phrase: string;

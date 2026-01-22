@@ -26,7 +26,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение информации и предыдущей кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\CountPriceReclaster\\Get"
+                "title": "Получение информации и предыдущей кластеризации"
             },
             "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
                 "type": "array"

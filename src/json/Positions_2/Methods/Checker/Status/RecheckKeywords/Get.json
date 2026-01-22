@@ -64,7 +64,7 @@
                     "regions_indexes",
                     "project_id"
                 ],
-                "title": "Получить перепроверенные запросы\n\nНе предназначен для работы в режиме сравнения\n\nПроверка на права к проекту производятся в get/positions_2/history\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Checker\\Status\\RecheckKeywords\\Get"
+                "title": "Получить перепроверенные запросы\n\nНе предназначен для работы в режиме сравнения\n\nПроверка на права к проекту производятся в get/positions_2/history"
             },
             "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
                 "nullable": true

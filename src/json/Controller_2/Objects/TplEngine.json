@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Движок работы с шаблонизатором\n\nЯвляется неотъемлемой частью Page\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Controller_2\\Objects\\TplEngine"
+                "title": "Движок работы с шаблонизатором\n\nЯвляется неотъемлемой частью Page"
             }
         }
     }

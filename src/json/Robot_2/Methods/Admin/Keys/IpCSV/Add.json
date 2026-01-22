@@ -18,7 +18,7 @@
                 "required": [
                     "list_ip"
                 ],
-                "title": "Добавление ip\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\IpCSV\\Add"
+                "title": "Добавление ip"
             },
             "Robot_2.Methods.Admin.Keys.IpCSV.Add.Exec": {
                 "nullable": true,

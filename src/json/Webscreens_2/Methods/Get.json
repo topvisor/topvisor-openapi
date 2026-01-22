@@ -65,7 +65,7 @@
                     "w",
                     "h"
                 ],
-                "title": "Получение скриншота (платная функция)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Webscreens_2\\Methods\\Get"
+                "title": "Получение скриншота (платная функция)"
             },
             "Webscreens_2.Methods.Get.Exec": {
                 "type": "never"

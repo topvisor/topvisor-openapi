@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение флага "прочитано"
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Methods\Readed\Edit */
+        /** Изменение флага "прочитано" */
         "Mentions_2.Methods.Readed.Edit": {
             /** ID проекта */
             project_id: number;

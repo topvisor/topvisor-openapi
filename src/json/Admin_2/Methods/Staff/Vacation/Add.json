@@ -41,7 +41,7 @@
                     "date2",
                     "type"
                 ],
-                "title": "Добавление отпуска для сотрудника\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Staff\\Vacation\\Add"
+                "title": "Добавление отпуска для сотрудника"
             },
             "Admin_2.Methods.Staff.Vacation.Add.Exec": {
                 "nullable": true,

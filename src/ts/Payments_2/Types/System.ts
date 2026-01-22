@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Types\System
-         * @enum {string}
-         */
+        /** @enum {string} */
         "Payments_2.Types.System": "balance" | "card" | "card_ios" | "card_android" | "card_ap" | "card_gp" | "invoice" | "tinkoff_business" | "ap" | "ym" | "qw" | "sb" | "wm2" | "pp" | "pd" | "pd_invoice" | "rk" | "pt" | "lp" | "ppg" | "pr";
     };
     responses: never;

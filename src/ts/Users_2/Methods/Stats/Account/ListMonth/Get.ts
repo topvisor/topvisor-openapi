@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка месяцев
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Stats\Account\ListMonth\Get */
+        /** Получение списка месяцев */
         "Users_2.Methods.Stats.Account.ListMonth.Get": {
             /**
              * Какую часть от периода показать

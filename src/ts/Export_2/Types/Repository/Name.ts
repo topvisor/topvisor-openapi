@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Хранилище для экспорта
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Export_2\Types\Repository\Name
          * @enum {string}
          */
         "Export_2.Types.Repository.Name": "gdrive";

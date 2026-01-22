@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение статьи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Articles\\Get"
+                "title": "Получение статьи"
             },
             "Content_2.Methods.Journal.Articles.Get.Exec": {
                 "type": "array",

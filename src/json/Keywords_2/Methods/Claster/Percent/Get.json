@@ -17,7 +17,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение обновленного процента завершения кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Percent\\Get"
+                "title": "Получение обновленного процента завершения кластеризации"
             },
             "Keywords_2.Methods.Claster.Percent.Get.Exec": {
                 "type": "number"

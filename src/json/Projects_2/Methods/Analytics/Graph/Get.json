@@ -37,7 +37,7 @@
                     "axe",
                     "data"
                 ],
-                "title": "Получение данных графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Analytics\\Graph\\Get"
+                "title": "Получение данных графика"
             },
             "Projects_2.Methods.Analytics.Graph.Get.Exec": {
                 "nullable": true,

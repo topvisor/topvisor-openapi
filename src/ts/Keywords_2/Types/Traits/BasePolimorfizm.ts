@@ -15,8 +15,6 @@ export interface components {
          *     Должен быть переопределен в целевом классе конкретным трейтом `Polimorfizm`
          *
          *     Если в целевом классе есть `MODEL`, он также должен быть переопределен, так как статическое связывание при определении констант невозможно
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Traits\BasePolimorfizm
          * @description @see Keywords_2\Types\Traits\Polimorfizm
          *     @see KeywordsAi_2\Types\Traits\Polimorfizm
          *     @see class/Services/Keywords_2/Docs/architecture.md

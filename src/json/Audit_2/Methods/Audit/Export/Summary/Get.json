@@ -26,7 +26,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Экспорт отчета Анализа сайта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Audit\\Export\\Summary\\Get"
+                "title": "Экспорт отчета Анализа сайта"
             },
             "Audit_2.Methods.Audit.Export.Summary.Get.Exec": {
                 "title": "Файл отчета анализа сайта",

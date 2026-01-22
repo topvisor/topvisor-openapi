@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Этапы расчета достижений: "Итоги года"
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rank\Step
          * @description @see Users_2\Mods\ResultsYear\Ranks::setUsersRank()
          * @enum {string}
          */

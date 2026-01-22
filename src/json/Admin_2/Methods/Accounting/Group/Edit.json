@@ -50,8 +50,7 @@
                         ]
                     }
                 },
-                "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Group\\Edit"
+                "required": []
             },
             "Admin_2.Methods.Accounting.Group.Edit.Exec": {
                 "nullable": true,

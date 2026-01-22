@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Удаление запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Del"
+                "title": "Удаление запросов"
             },
             "Keywords_2.Methods.Keywords.Del.Exec": {
                 "nullable": true,

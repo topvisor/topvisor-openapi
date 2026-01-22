@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение следующего id ключа для вставки в таблицу ключей\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\AutoIncrement\\Get"
+                "title": "Получение следующего id ключа для вставки в таблицу ключей"
             },
             "Robot_2.Methods.Admin.Keys.AutoIncrement.Get.Exec": {
                 "type": "integer"

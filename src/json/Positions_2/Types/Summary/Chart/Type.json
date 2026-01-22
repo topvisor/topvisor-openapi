@@ -30,7 +30,7 @@
                     "Медианная позиция",
                     "Видимость"
                 ],
-                "title": "Тип графика сводки\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Types\\Summary\\Chart\\Type"
+                "title": "Тип графика сводки"
             }
         }
     }

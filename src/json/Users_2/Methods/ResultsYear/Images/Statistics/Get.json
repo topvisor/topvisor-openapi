@@ -18,7 +18,7 @@
                 "required": [
                     "userId"
                 ],
-                "title": "Получение статистики\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\ResultsYear\\Images\\Statistics\\Get"
+                "title": "Получение статистики"
             },
             "Users_2.Methods.ResultsYear.Images.Statistics.Get.Exec": {
                 "type": "never"

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип экспорта группы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Groups\Output
          * @enum {string}
          */
         "Keywords_2.Types.Groups.Output": "csv";

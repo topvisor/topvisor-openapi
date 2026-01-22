@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Определитель с настройками региона для проверки частоты запросов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Volumes\Qualifier */
+        /** Определитель с настройками региона для проверки частоты запросов */
         "Keywords_2.Types.Volumes.Qualifier": {
             /** Строков идентификатор определителя */
             id: string;

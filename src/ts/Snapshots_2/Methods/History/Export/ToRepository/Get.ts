@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт в хранилище
          *
-         *     Производит редирект на файл в кранилище
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Export\ToRepository\Get */
+         *     Производит редирект на файл в кранилище */
         "Snapshots_2.Methods.History.Export.ToRepository.Get": {
             /** Id проекта */
             project_id: number;

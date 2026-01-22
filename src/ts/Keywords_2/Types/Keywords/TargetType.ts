@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип объекта над которым проводится операция редактирования
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\TargetType
          * @enum {string}
          */
         "Keywords_2.Types.Keywords.TargetType": "keywords" | "groups";

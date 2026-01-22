@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Отображать только запросы, присутствующие в первой проверке указанного периода
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\OnlyExistsFirstDate
          * @enum {integer}
          */
         "Positions_2.Types.OnlyExistsFirstDate": 0 | 1 | 2;

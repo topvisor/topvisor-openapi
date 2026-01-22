@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Получение истории urls, найденных в выдаче, за конкретную проверку
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\CHHistory\Get
          * @deprecated
          * @description @deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get
          */

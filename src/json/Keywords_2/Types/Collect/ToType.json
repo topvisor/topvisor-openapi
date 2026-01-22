@@ -21,7 +21,7 @@
                     "В папку, перед существующими группами",
                     "В папку, после существующих групп"
                 ],
-                "title": "Куда добавлять добавляемые группы\n\nВсегда должен содержать значения из Keywords_2\\Types\\Groups\\ToType\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Collect\\ToType"
+                "title": "Куда добавлять добавляемые группы\n\nВсегда должен содержать значения из Keywords_2\\Types\\Groups\\ToType"
             }
         }
     }

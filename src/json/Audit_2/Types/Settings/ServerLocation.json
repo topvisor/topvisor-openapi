@@ -21,7 +21,7 @@
                     null,
                     null
                 ],
-                "title": "Местоположение сервера для выполнения задач инструментов аудита\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Types\\Settings\\ServerLocation"
+                "title": "Местоположение сервера для выполнения задач инструментов аудита"
             }
         }
     }

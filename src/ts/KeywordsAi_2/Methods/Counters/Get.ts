@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение числа включенных/выключенных групп и запросов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Counters\Get */
+        /** Получение числа включенных/выключенных групп и запросов */
         "KeywordsAi_2.Methods.Counters.Get": {
             /** Считать для удаленных проектов */
             show_trash?: boolean;

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Имена настроек для инструментов аудита
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Settings\FieldNames
          * @description @see FieldName
          */
         "Audit_2.Types.Settings.FieldNames": import('./FieldName.ts').components['schemas']['Audit_2.Types.Settings.FieldName'][];

@@ -23,7 +23,7 @@
                     }
                 },
                 "required": [],
-                "title": "Настройка избранных проектов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Projects\\Favorite\\Edit"
+                "title": "Настройка избранных проектов"
             },
             "Projects_2.Methods.Projects.Favorite.Edit.Exec": {
                 "nullable": true,

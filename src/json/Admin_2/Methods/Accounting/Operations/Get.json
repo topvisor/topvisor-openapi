@@ -30,7 +30,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение внутренних операций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Operations\\Get"
+                "title": "Получение внутренних операций"
             },
             "Admin_2.Methods.Accounting.Operations.Get.Exec": {
                 "nullable": true,

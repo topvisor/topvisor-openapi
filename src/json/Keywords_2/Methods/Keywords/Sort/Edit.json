@@ -26,7 +26,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение сортировки запросов\n\nМожно сортировать в пределах одной группы или всего проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Sort\\Edit"
+                "title": "Изменение сортировки запросов\n\nМожно сортировать в пределах одной группы или всего проекта"
             },
             "Keywords_2.Methods.Keywords.Sort.Edit.Exec": {
                 "nullable": true,

@@ -38,7 +38,7 @@
                     "purpose",
                     "test"
                 ],
-                "title": "Создание и проведение транзакции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Bank\\Edit"
+                "title": "Создание и проведение транзакции"
             },
             "Admin_2.Methods.Actions.Bank.Edit.Exec": {
                 "allOf": [

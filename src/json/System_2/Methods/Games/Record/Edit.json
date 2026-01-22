@@ -23,7 +23,7 @@
                     "record",
                     "hash"
                 ],
-                "title": "Изменение рекорда в тетрисе\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Games\\Record\\Edit"
+                "title": "Изменение рекорда в тетрисе"
             },
             "System_2.Methods.Games.Record.Edit.Exec": {
                 "type": "integer"

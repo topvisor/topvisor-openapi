@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование параметра
          *
-         *     Не хранить в параметрах конфиденциальную информацию
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Properties\Property\Edit */
+         *     Не хранить в параметрах конфиденциальную информацию */
         "System_2.Methods.Properties.Property.Edit": {
             /** Имя параметра */
             name: string;

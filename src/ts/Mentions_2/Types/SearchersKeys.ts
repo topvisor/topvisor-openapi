@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Id поисковых системы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Mentions_2\Types\SearchersKeys
          * @description @see SearcherKey
          */
         "Mentions_2.Types.SearchersKeys": import('./SearcherKey.ts').components['schemas']['Mentions_2.Types.SearcherKey'][];

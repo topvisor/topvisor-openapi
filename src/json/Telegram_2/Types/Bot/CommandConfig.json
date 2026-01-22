@@ -29,7 +29,7 @@
                     "title",
                     "visible"
                 ],
-                "title": "Класс конфигурации команды Telegram.\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Telegram_2\\Types\\Bot\\CommandConfig"
+                "title": "Класс конфигурации команды Telegram."
             }
         }
     }

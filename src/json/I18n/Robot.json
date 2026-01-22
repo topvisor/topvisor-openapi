@@ -10,8 +10,7 @@
             "I18n.Robot": {
                 "type": "object",
                 "properties": {},
-                "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Robot\\En"
+                "required": []
             }
         }
     }

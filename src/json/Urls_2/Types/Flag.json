@@ -27,7 +27,7 @@
                     "Недавно добавлен при вторичном импорте; У карты сайта присутствовал в прошлых версиях",
                     "Недавно добавлен"
                 ],
-                "title": "Флаг активности\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Urls_2\\Types\\Flag"
+                "title": "Флаг активности"
             }
         }
     }

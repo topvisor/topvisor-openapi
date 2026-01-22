@@ -23,7 +23,7 @@
                     "campaign_tv_id",
                     "keywords_data"
                 ],
-                "title": "Удаление запросов рекламной кампании\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Broker_2\\Methods\\Keywords\\Del"
+                "title": "Удаление запросов рекламной кампании"
             },
             "Broker_2.Methods.Keywords.Del.Exec": {
                 "title": "выводит int, если функция провайдера не определена",

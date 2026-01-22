@@ -31,7 +31,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение цены сбора запросов без создания проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Keywords\\Collect\\Price\\Get"
+                "title": "Получение цены сбора запросов без создания проекта"
             },
             "Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec": {
                 "type": "number"

@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка партнеров\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partners\\Get"
+                "title": "Получение списка партнеров"
             },
             "Robot_2.Methods.Admin.Partners.Get.Exec": {
                 "nullable": true,

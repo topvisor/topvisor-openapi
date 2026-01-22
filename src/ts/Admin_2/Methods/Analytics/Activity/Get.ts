@@ -15,9 +15,7 @@ export interface components {
          *     3. Активный (постоянный) - в эту категорию попадут клиенты, которые не меняли свой статус активности за последний месяц
          *     4. Активный (вернувшийся) - в эту категорию попадут клиенты, которые вернули себе статус "Активный клиент".
          *     5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
-         *     этот статус.
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Activity\Get */
+         *     этот статус. */
         "Admin_2.Methods.Analytics.Activity.Get": {
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Валюта */

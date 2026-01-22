@@ -41,7 +41,7 @@
                     "counteragent_name",
                     "counteragent_inn"
                 ],
-                "title": "Добавление фильтра группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Group\\Filter\\Add"
+                "title": "Добавление фильтра группы"
             },
             "Admin_2.Methods.Accounting.Group.Filter.Add.Exec": {
                 "nullable": true,

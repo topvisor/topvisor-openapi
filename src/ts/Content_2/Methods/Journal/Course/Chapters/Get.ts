@@ -10,9 +10,7 @@ export interface components {
         /** Получение модулей курса
          *
          *     Дополнительные поля:
-         *      - lessons - см. includeLessons()
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Chapters\Get */
+         *      - lessons - см. includeLessons() */
         "Content_2.Methods.Journal.Course.Chapters.Get": {
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

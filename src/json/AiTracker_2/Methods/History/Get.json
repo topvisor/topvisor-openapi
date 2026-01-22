@@ -94,8 +94,7 @@
                 "required": [
                     "models",
                     "project_id"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\History\\Get"
+                ]
             },
             "AiTracker_2.Methods.History.Get.Exec": {
                 "type": "array",

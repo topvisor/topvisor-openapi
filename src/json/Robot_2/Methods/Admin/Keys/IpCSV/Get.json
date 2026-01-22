@@ -36,7 +36,7 @@
                 "required": [
                     "layer_id"
                 ],
-                "title": "Получить информацию о слое\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\IpCSV\\Get"
+                "title": "Получить информацию о слое"
             },
             "Robot_2.Methods.Admin.Keys.IpCSV.Get.Exec": {
                 "nullable": true

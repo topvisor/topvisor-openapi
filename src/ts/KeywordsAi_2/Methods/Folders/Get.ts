@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка папок проекта
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Get */
+        /** Получение списка папок проекта */
         "KeywordsAi_2.Methods.Folders.Get": {
             /** @default flat */
             view?: import('../../../Keywords_2/Types/Folders/View.ts').components['schemas']['Keywords_2.Types.Folders.View'];

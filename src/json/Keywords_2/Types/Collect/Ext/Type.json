@@ -24,7 +24,7 @@
                     "По названию группы и ключевым словам",
                     "По ключевым словам"
                 ],
-                "title": "По каким параметрам расширять группу\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Collect\\Ext\\Type"
+                "title": "По каким параметрам расширять группу"
             }
         }
     }

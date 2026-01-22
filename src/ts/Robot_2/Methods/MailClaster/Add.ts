@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка письма на почту об окончании кластеризации
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\MailClaster\Add */
+        /** Отправка письма на почту об окончании кластеризации */
         "Robot_2.Methods.MailClaster.Add": {
             /** ID проекта */
             project_id: number;

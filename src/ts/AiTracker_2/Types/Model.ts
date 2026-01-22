@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Модель для ИИ трекера
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\Model
          * @enum {string}
          */
         "AiTracker_2.Types.Model": "deepseek" | "grok";

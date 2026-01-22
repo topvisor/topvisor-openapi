@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Типы метода перебора
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Collect\HintGenerators
          * @description @extends API\Types\AbstractObjectArray<HintGenerator>
          *     @method HintGenerator[] getValues()
          *     @method HintGenerator current()

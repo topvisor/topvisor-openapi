@@ -56,7 +56,7 @@
                     "region_key",
                     "type"
                 ],
-                "title": "Получение частоты проекта или одной группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Volumes\\Get"
+                "title": "Получение частоты проекта или одной группы"
             },
             "Keywords_2.Methods.Volumes.Get.Exec": {
                 "nullable": true,

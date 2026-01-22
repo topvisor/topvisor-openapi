@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение статьи для \"Слово дня\" в модуле SEO словарь\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Dictionary\\WordOfday\\Get"
+                "title": "Получение статьи для \"Слово дня\" в модуле SEO словарь"
             },
             "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": {
                 "nullable": true,

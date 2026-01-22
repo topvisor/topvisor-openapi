@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение краткой информации о тикетах
          *
-         *     id последнего непрочитанного тикета, число непрочитанных тикетов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\Info\Get */
+         *     id последнего непрочитанного тикета, число непрочитанных тикетов */
         "Tickets_2.Methods.Tickets.Info.Get": Record<string, never>;
         "Tickets_2.Methods.Tickets.Info.Get.Exec": unknown[];
     };

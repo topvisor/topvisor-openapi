@@ -10,8 +10,7 @@
             "Tpl.Core.SecondMenu.SecondMenu": {
                 "type": "object",
                 "properties": {},
-                "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\\Core\\SecondMenu\\SecondMenu"
+                "required": []
             }
         }
     }

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Позиция перемещения
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Folders\ToType
          * @enum {string}
          */
         "Keywords_2.Types.Folders.ToType": "before" | "after" | "in";

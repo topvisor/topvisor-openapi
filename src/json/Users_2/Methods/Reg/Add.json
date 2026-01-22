@@ -46,7 +46,7 @@
                 "required": [
                     "email"
                 ],
-                "title": "Создание заявки на регистрацию пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Reg\\Add"
+                "title": "Создание заявки на регистрацию пользователя"
             },
             "Users_2.Methods.Reg.Add.Exec": {
                 "type": "integer"

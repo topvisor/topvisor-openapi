@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Example_2\Types\Number
-         * @enum {integer}
-         */
+        /** @enum {integer} */
         "Example_2.Types.Number": 1 | 2 | 3;
     };
     responses: never;

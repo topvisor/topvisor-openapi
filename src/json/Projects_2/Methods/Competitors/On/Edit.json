@@ -32,7 +32,7 @@
                     "ids",
                     "on"
                 ],
-                "title": "Включение/выключение конкурентов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Competitors\\On\\Edit"
+                "title": "Включение/выключение конкурентов"
             },
             "Projects_2.Methods.Competitors.On.Edit.Exec": {
                 "type": "integer"

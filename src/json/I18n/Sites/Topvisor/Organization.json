@@ -42,8 +42,7 @@
                     "Address_region",
                     "Contact_type",
                     "General_manager"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Sites\\Topvisor\\Organization\\En"
+                ]
             }
         }
     }

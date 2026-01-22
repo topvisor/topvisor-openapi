@@ -18,7 +18,7 @@
                 "required": [
                     "site"
                 ],
-                "title": "Добавление партнера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Partners\\Add"
+                "title": "Добавление партнера"
             },
             "Robot_2.Methods.Admin.Partners.Add.Exec": {
                 "nullable": true,

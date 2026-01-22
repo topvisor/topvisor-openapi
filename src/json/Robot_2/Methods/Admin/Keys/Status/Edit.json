@@ -31,7 +31,7 @@
                     "searcher_key",
                     "status"
                 ],
-                "title": "Редактирование статуса IP\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\Status\\Edit"
+                "title": "Редактирование статуса IP"
             },
             "Robot_2.Methods.Admin.Keys.Status.Edit.Exec": {
                 "nullable": true,

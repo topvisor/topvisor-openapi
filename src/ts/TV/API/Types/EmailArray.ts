@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Email[]
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\EmailArray
          * @description @extends AbstractStringArray<Email>
          *     @method Email[] getValues()
          *     @method Email current()

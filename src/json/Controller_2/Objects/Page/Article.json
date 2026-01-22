@@ -160,7 +160,7 @@
                     "bookmark_author",
                     "author_alias"
                 ],
-                "title": "Основные данные статьи, такие как h1, html, автор, дата публикации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Controller_2\\Objects\\Page\\Article"
+                "title": "Основные данные статьи, такие как h1, html, автор, дата публикации"
             }
         }
     }

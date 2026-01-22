@@ -21,7 +21,7 @@
                     "Рассчитать и вернуть число запросов",
                     "Выполнить перенос запросов"
                 ],
-                "title": "Тип выполняемого действия\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Actions\\MoveBySubstrings\\Action"
+                "title": "Тип выполняемого действия"
             }
         }
     }

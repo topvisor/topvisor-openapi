@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отписка от тарифа, оплаченного картой
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Tariff\DelCard\Edit */
+        /** Отписка от тарифа, оплаченного картой */
         "Payments_2.Methods.Tariff.DelCard.Edit": Record<string, never>;
         "Payments_2.Methods.Tariff.DelCard.Edit.Exec": number | null;
     };

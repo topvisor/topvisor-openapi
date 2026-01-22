@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Пометка тикета как "прочитанный" для автора тикета или админов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Tickets\SetReaded\Edit */
+        /** Пометка тикета как "прочитанный" для автора тикета или админов */
         "Tickets_2.Methods.Tickets.SetReaded.Edit": {
             /** Id тикета */
             id: number;

@@ -36,7 +36,7 @@
                     "project_id",
                     "service"
                 ],
-                "title": "Редактирование примечания\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Annotations_2\\Methods\\Edit"
+                "title": "Редактирование примечания"
             },
             "Annotations_2.Methods.Edit.Exec": {
                 "nullable": true,

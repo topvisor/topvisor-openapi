@@ -22,8 +22,7 @@
                 "required": [
                     "Og_title",
                     "Og_description"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Thundo\\En"
+                ]
             }
         }
     }

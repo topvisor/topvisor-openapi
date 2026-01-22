@@ -60,7 +60,7 @@
                     "period",
                     "project_id"
                 ],
-                "title": "Получение данных магнита по интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Magnet\\Get"
+                "title": "Получение данных магнита по интеграции"
             },
             "Keywords_2.Methods.Magnet.Get.Exec": {
                 "type": "object",

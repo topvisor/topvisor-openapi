@@ -33,7 +33,7 @@
                 "required": [
                     "test"
                 ],
-                "title": "Импортирование историй позиций из CSV\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Positions\\History\\Add"
+                "title": "Импортирование историй позиций из CSV"
             },
             "Admin_2.Methods.Actions.Positions.History.Add.Exec": {
                 "allOf": [

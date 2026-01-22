@@ -282,8 +282,7 @@
                     "Profile_successfully_linked",
                     "Impossible_link_profile",
                     "Message_summing_results_year"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Telegram\\En"
+                ]
             }
         }
     }

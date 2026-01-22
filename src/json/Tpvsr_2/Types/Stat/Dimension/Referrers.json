@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../../Tpvsr_2/Types/Stat/Dimension/Referrer.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Referrer"
                 },
-                "title": "Места откуда перешел пользователь\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpvsr_2\\Types\\Stat\\Dimension\\Referrers"
+                "title": "Места откуда перешел пользователь"
             }
         }
     }

@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение гостевой ссылки на просмотр индексации
          *
-         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Export\Links\Get */
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         "Audit_2.Methods.Indexing.Export.Links.Get": {
             /** Поисковые ключи */
             searchers_keys?: unknown[] | null;

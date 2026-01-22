@@ -12,9 +12,7 @@ export interface components {
          *     Возвращает объект с параметрами:
          *     - wait_time, если данные не готовы
          *     - created, если данные готовы
-         *     - paidtill, если данные готовы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Registrar\Get */
+         *     - paidtill, если данные готовы */
         "Projects_2.Methods.Status.Registrar.Get": {
             /** Домен */
             domain: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];

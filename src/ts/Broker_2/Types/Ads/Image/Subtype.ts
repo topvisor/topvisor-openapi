@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Подтип графического объявления
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Types\Ads\Image\Subtype
          * @enum {string}
          */
         "Broker_2.Types.Ads.Image.Subtype": "TEXT_IMAGE_AD" | "MOBILE_APP_IMAGE_AD" | "TEXT_AD_BUILDER_AD" | "MOBILE_APP_AD_BUILDER_AD";

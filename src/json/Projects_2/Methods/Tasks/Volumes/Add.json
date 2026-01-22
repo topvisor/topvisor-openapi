@@ -27,7 +27,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на проверку частоты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Add"
+                "title": "Создание задачи на проверку частоты"
             },
             "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
                 "nullable": true

@@ -18,7 +18,7 @@
                 "x-enum-descriptions": [
                     null
                 ],
-                "title": "Тип экспорта группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Groups\\Output"
+                "title": "Тип экспорта группы"
             }
         }
     }

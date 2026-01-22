@@ -29,7 +29,7 @@
                 "required": [
                     "name"
                 ],
-                "title": "Изменение параметров контрагента\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Accounting\\Counteragents\\Edit"
+                "title": "Изменение параметров контрагента"
             },
             "Admin_2.Methods.Accounting.Counteragents.Edit.Exec": {
                 "nullable": true,

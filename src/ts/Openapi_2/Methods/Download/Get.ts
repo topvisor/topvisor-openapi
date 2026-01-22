@@ -11,8 +11,6 @@ export interface components {
          * Создать Open API схемы и скачать в zip
          *
          *     В результате вернет zip файл в потоке вывода
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Openapi_2\Methods\Download\Get
          * @description @see https://editor.swagger.io/ Редактор Open API
          */
         "Openapi_2.Methods.Download.Get": {

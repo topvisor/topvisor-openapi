@@ -17,7 +17,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получить сниппеты проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Snippets\\Get"
+                "title": "Получить сниппеты проекта"
             },
             "Keywords_2.Methods.Snippets.Get.Exec": {
                 "nullable": true,

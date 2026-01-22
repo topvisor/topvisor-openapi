@@ -30,7 +30,7 @@
                     "data",
                     "type"
                 ],
-                "title": "Добавиление реквизитов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Methods\\Requisites\\Add"
+                "title": "Добавиление реквизитов"
             },
             "Bank_2.Methods.Requisites.Add.Exec": {
                 "nullable": true,

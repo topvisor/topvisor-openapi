@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Куда добавить фразу
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\ToType
          * @enum {string}
          */
         "Keywords_2.Types.Keywords.ToType": "in_group" | "in_group_last" | "before_keyword" | "after_keyword";

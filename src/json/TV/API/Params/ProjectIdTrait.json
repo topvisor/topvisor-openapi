@@ -17,8 +17,7 @@
                 },
                 "required": [
                     "project_id"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Params\\ProjectIdTrait"
+                ]
             }
         }
     }

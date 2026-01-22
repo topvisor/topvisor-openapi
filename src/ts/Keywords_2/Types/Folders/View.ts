@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Структура отображения папок
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Folders\View
          * @enum {string}
          */
         "Keywords_2.Types.Folders.View": "tree" | "flat";

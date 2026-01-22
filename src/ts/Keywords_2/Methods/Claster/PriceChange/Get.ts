@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение цены перекластеризации
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\PriceChange\Get */
+        /** Получение цены перекластеризации */
         "Keywords_2.Methods.Claster.PriceChange.Get": {
             count: import('../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
             /** Отображать сумму с учетом скидки */

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Источник данных для интеграции
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Types\Provider
          * @enum {string}
          */
         "Tpa_2.Types.Provider": "metrika" | "webmaster" | "direct" | "yandexMarket" | "analytics" | "ganalytics" | "gdrive" | "adwords" | "gsc";

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение статьи для "Слово дня" в модуле SEO словарь
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Dictionary\WordOfday\Get */
+        /** Получение статьи для "Слово дня" в модуле SEO словарь */
         "Content_2.Methods.Journal.Dictionary.WordOfday.Get": Record<string, never>;
         "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": ({
             [key: string]: {

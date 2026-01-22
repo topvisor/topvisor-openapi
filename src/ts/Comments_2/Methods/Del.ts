@@ -11,9 +11,7 @@ export interface components {
          *
          *     Удалять комментарии можно только в течение ограниченного времени
          *
-         *     Админы могут удалять комментарии в любое время
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Del */
+         *     Админы могут удалять комментарии в любое время */
         "Comments_2.Methods.Del": {
             /** ID комментария */
             id: number;

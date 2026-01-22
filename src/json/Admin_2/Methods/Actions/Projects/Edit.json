@@ -23,7 +23,7 @@
                     "projectId",
                     "test"
                 ],
-                "title": "Восстановление удаленного проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Projects\\Edit"
+                "title": "Восстановление удаленного проекта"
             },
             "Admin_2.Methods.Actions.Projects.Edit.Exec": {
                 "allOf": [

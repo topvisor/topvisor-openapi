@@ -15,9 +15,7 @@ export interface components {
          *     - при получении страницы через get/content_2/pages, см. load() и $pages->article->html
          *     - при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()
          *     - при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.
-         *     renderSiteTpl()
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Objects\Page */
+         *     renderSiteTpl() */
         "Controller_2.Objects.Page": {
             /** Аналог js location
              *

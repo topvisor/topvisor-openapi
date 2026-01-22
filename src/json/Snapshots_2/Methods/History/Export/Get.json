@@ -163,7 +163,7 @@
                     "output",
                     "project_id"
                 ],
-                "title": "Экспорт истории снимков выдачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\History\\Export\\Get"
+                "title": "Экспорт истории снимков выдачи"
             },
             "Snapshots_2.Methods.History.Export.Get.Exec": {
                 "nullable": true,

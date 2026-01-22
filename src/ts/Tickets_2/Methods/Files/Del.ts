@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Удаление временных файлов для тикета
          *
-         *     Процесс создания поста не завершен
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Del */
+         *     Процесс создания поста не завершен */
         "Tickets_2.Methods.Files.Del": {
             /** Название дирректории */
             name: string;

@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Фиксация события по ссылке на изображение
          *
-         *     см. Analytics_2\Mods\Analytics::genEventImgLink()
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Common\Analytics\Add */
+         *     см. Analytics_2\Mods\Analytics::genEventImgLink() */
         "System_2.Methods.Common.Analytics.Add": {
             /** Категория */
             ec?: string | null;

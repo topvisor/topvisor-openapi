@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление промокоды к достижению
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Users\Promocodes\Add */
+        /** Добавление промокоды к достижению */
         "Admin_2.Methods.Users.Promocodes.Add": {
             rank_id: number;
             /** single_code - многоразовый промокод */

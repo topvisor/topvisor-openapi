@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Загрузка данных из provider в базу
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Magnet\Prepare\Get
          * @description @internal
          */
         "Keywords_2.Methods.Magnet.Prepare.Get": {

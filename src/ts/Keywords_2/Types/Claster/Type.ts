@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Метод кластеризации
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Claster\Type
          * @enum {integer}
          */
         "Keywords_2.Types.Claster.Type": 0 | 1 | 2;

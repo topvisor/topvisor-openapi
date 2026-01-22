@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\Competitors\En */
         "I18n.Competitors": {
             /** @constant */
             readonly Competitor_analysis: "Competitor research";

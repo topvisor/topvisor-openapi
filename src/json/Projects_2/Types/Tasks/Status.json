@@ -21,7 +21,7 @@
                     "В процессе",
                     "Завершена"
                 ],
-                "title": "Статус задачи\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Types\\Tasks\\Status"
+                "title": "Статус задачи"
             }
         }
     }

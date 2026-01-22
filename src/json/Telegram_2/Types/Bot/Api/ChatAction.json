@@ -48,7 +48,7 @@
                     null,
                     null
                 ],
-                "title": "Статусы отправки сообщения\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Telegram_2\\Types\\Bot\\Api\\ChatAction"
+                "title": "Статусы отправки сообщения"
             }
         }
     }

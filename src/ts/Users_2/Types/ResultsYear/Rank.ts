@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Титул
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rank
          * @enum {string}
          */
         "Users_2.Types.ResultsYear.Rank": "yandexoid" | "googloid" | "masterBalance" | "prodvigator" | "googleGuru" | "trueSaintp" | "nativeMoscow" | "topAchiever" | "radarMagician" | "analizator" | "ambassadorTelegram" | "seoCat" | "knightRegions" | "semanticAlchemist";

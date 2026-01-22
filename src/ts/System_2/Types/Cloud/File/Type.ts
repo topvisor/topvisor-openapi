@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип файла, получаемого из облака Selectel
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Cloud\File\Type
          * @enum {string}
          */
         "System_2.Types.Cloud.File.Type": "pdir" | "cdir" | "dir" | "file";

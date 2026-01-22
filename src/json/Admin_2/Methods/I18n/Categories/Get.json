@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение категорий словаря\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\I18n\\Categories\\Get"
+                "title": "Получение категорий словаря"
             },
             "Admin_2.Methods.I18n.Categories.Get.Exec": {
                 "type": "array",

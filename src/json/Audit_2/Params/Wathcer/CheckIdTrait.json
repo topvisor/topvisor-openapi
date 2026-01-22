@@ -17,8 +17,7 @@
                 },
                 "required": [
                     "check_id"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Params\\Wathcer\\CheckIdTrait"
+                ]
             }
         }
     }

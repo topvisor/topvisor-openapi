@@ -33,7 +33,7 @@
                     "replace",
                     "project_id"
                 ],
-                "title": "Замена целевых ссылок\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\ReplaceTarget\\Edit"
+                "title": "Замена целевых ссылок"
             },
             "Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec": {
                 "nullable": true,

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение статистики ответов на тикеты
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Tickets\Messages\Get */
+        /** Получение статистики ответов на тикеты */
         "Admin_2.Methods.Analytics.Tickets.Messages.Get": {
             period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */

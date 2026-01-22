@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение параметров активного пользователя
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Profile\Edit */
+        /** Изменение параметров активного пользователя */
         "Users_2.Methods.Profile.Edit": {
             /** Телефон */
             phone?: string | null;

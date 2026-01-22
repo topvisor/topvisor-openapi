@@ -28,7 +28,7 @@
                     "orders",
                     "project_id"
                 ],
-                "title": "Изменение сортировки групп\n\nНе оптимизировано для работы с большим числом групп, дат и регионов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Groups\\Sort\\Edit"
+                "title": "Изменение сортировки групп\n\nНе оптимизировано для работы с большим числом групп, дат и регионов"
             },
             "Keywords_2.Methods.Groups.Sort.Edit.Exec": {
                 "nullable": true,

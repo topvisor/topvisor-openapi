@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Какие запросы следует пропусить при перепроверке частоты
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Volumes\NoRecheck
          * @enum {integer}
          */
         "Keywords_2.Types.Volumes.NoRecheck": 0 | 1 | 2;

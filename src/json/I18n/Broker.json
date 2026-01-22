@@ -837,8 +837,7 @@
                     "Bidding_activated_for_campaign_in_another_project",
                     "in_another_project",
                     "agency"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Broker\\En"
+                ]
             }
         }
     }

@@ -31,7 +31,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на сбор запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Keywords\\Collect\\Add"
+                "title": "Создание задачи на сбор запросов"
             },
             "Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec": {
                 "nullable": true

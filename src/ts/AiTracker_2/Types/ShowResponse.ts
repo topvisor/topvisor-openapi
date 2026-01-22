@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Добавить в результат данные ответа нейросети
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Types\ShowResponse
          * @enum {string}
          */
         "AiTracker_2.Types.ShowResponse": "notInclude" | "shortText" | "fullText";

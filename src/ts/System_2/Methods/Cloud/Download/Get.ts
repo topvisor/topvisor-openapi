@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Скачивание файла из директории
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Download\Get */
+        /** Скачивание файла из директории */
         "System_2.Methods.Cloud.Download.Get": {
             /** Директория */
             directory: string;

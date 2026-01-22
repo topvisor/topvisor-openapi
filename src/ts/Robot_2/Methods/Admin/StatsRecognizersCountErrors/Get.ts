@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение статистики по количествам ошибок распознавателей капч
          *
-         *     Статистика возвращается только для Google
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\StatsRecognizersCountErrors\Get */
+         *     Статистика возвращается только для Google */
         "Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get": {
             /** Дата отчета */
             date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;

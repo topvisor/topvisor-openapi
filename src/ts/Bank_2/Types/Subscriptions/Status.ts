@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Статус подписки
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Types\Subscriptions\Status
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "stopped" | "terminated";

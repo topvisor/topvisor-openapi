@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление нескольких ответов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\QuestionsResponses\Multi\Add */
+        /** Добавление нескольких ответов */
         "Quiz_2.Methods.QuestionsResponses.Multi.Add": {
             /** Ответы */
             questions_responses: unknown[];

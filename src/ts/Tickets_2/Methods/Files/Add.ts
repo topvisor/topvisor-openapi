@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Загрузка файла на сервер
          *
-         *     Процесс создания сообщения в тикет не завершен
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tickets_2\Methods\Files\Add */
+         *     Процесс создания сообщения в тикет не завершен */
         "Tickets_2.Methods.Files.Add": {
             /** Имя файла */
             filename: string;

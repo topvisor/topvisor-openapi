@@ -34,8 +34,7 @@
                 },
                 "required": [
                     "project_id"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Folders\\Move\\Edit"
+                ]
             },
             "KeywordsAi_2.Methods.Folders.Move.Edit.Exec": {
                 "nullable": true,

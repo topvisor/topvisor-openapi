@@ -79,7 +79,7 @@
                     "type_range_compare",
                     "project_id"
                 ],
-                "title": "Получение гостевой ссылки на просмотр индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Indexing\\Export\\Links\\Get"
+                "title": "Получение гостевой ссылки на просмотр индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
             },
             "Audit_2.Methods.Indexing.Export.Links.Get.Exec": {
                 "title": "Короткая гостевая ссылка на просмотр индексации",

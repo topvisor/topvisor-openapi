@@ -10,9 +10,7 @@ export interface components {
         /** Получение информации о домене и SSL сертификате
          *     Возвращает объект с параметрами:
          *     - domain_expire
-         *     - ssl_expire
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Status\Get */
+         *     - ssl_expire */
         "Projects_2.Methods.Status.Get": {
             /** ID проекта */
             project_id: number;

@@ -12,9 +12,7 @@ export interface components {
          *
          *     Будет проивзедено автоматическое приведение к формату
          *
-         *     Разрешен ввод пустой строки, для удаления значения url
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\UrlUTF */
+         *     Разрешен ввод пустой строки, для удаления значения url */
         "TV.API.Types.UrlUTF": string;
     };
     responses: never;

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Редкость титула
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Types\ResultsYear\Rare
          * @enum {string}
          */
         "Users_2.Types.ResultsYear.Rare": "national" | "Frequent" | "rare" | "legendary";

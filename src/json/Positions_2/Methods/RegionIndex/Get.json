@@ -35,7 +35,7 @@
                     "region_key",
                     "region_lang"
                 ],
-                "title": "Получение индекса региона (определяют уникальную настройку ПС и региона)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\RegionIndex\\Get"
+                "title": "Получение индекса региона (определяют уникальную настройку ПС и региона)"
             },
             "Positions_2.Methods.RegionIndex.Get.Exec": {
                 "type": "integer"

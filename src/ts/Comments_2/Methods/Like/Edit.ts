@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Редактирование статуса лайка для комментария
          *
-         *     Возвращает результат редактирования статуса лайка
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Comments_2\Methods\Like\Edit */
+         *     Возвращает результат редактирования статуса лайка */
         "Comments_2.Methods.Like.Edit": {
             /** Id комментария */
             id: number;

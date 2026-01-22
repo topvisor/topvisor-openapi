@@ -18,7 +18,7 @@
                 "required": [
                     "test"
                 ],
-                "title": "Обновление регионов Google\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Regions\\UpdateGoogle\\Edit",
+                "title": "Обновление регионов Google",
                 "description": "@see https://developers.google.com/google-ads/api/data/geotargets"
             },
             "Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit.Exec": {

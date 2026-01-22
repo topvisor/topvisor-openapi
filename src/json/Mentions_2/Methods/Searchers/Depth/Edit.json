@@ -34,7 +34,7 @@
                     "project_id",
                     "rule_id"
                 ],
-                "title": "Изменение глубины сбора упоминаний\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Depth\\Edit"
+                "title": "Изменение глубины сбора упоминаний"
             },
             "Mentions_2.Methods.Searchers.Depth.Edit.Exec": {
                 "type": "integer"

@@ -11,8 +11,6 @@ export interface components {
          * Общие статусы для всех проверок в проекте, где проверки имеют свой прогресс
          *
          *     Прогресса нет, например, в задачах wordstat, а статус сбора ядра определяется статусом группы.
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Types\ProjectStatus
          * @enum {integer}
          */
         "Robot_2.Types.ProjectStatus": 0 | 1 | 2 | 3 | 4;

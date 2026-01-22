@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение RSS раздела сайта
          *
-         *     Для выборки страниц используется модель: Pages
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Rss\Get */
+         *     Для выборки страниц используется модель: Pages */
         "Content_2.Methods.Rss.Get": {
             /**
              * Страницы раздела сайта в формате XML RSS

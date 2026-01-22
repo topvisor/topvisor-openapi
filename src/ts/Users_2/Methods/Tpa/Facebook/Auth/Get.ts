@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Авторизация через Facebook
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Users_2\Methods\Tpa\Facebook\Auth\Get */
+        /** Авторизация через Facebook */
         "Users_2.Methods.Tpa.Facebook.Auth.Get": {
             /** Токен доступа */
             access_token: string;

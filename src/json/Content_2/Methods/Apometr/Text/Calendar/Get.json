@@ -21,7 +21,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение календаря текстовых апдейтов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Apometr\\Text\\Calendar\\Get"
+                "title": "Получение календаря текстовых апдейтов"
             },
             "Content_2.Methods.Apometr.Text.Calendar.Get.Exec": {
                 "title": "Матрица: массив с индексами времени с массивом с индексами дат со значением количества страниц в индексе (в UNIXTIME)",

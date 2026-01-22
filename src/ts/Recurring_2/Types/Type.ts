@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип рекуррентного платежа
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Recurring_2\Types\Type
          * @enum {string}
          */
         "Recurring_2.Types.Type": "refill";

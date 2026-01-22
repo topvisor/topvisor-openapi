@@ -40,7 +40,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Кластеризация по релевантной странице: проверки перед началом кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\ByRelevant\\Edit"
+                "title": "Кластеризация по релевантной странице: проверки перед началом кластеризации"
             },
             "Keywords_2.Methods.Claster.ByRelevant.Edit.Exec": {
                 "nullable": true,

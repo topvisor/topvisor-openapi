@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Добавление анонса
          *
-         *     Вернет количество добавленных анонсов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Anonses\Add */
+         *     Вернет количество добавленных анонсов */
         "Robot_2.Methods.Admin.Anonses.Add": {
             type: import('../../../Types/Admin/Anonses/Type.ts').components['schemas']['Robot_2.Types.Admin.Anonses.Type'];
             /** ID ссылки */

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Массив объектов вызова модуля системы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Calls\Calls
          * @description @extends AbstractObjectArray<Call>
          *     @method Call[] getValues()
          *     @method Call current()

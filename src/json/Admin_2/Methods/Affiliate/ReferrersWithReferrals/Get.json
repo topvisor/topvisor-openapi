@@ -30,7 +30,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение партнеров c кол-вом рефералов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Affiliate\\ReferrersWithReferrals\\Get"
+                "title": "Получение партнеров c кол-вом рефералов"
             },
             "Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec": {
                 "nullable": true,

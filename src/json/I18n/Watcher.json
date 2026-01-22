@@ -123,8 +123,7 @@
                     "Hint_not_urls_btn",
                     "Hint_not_checks_text",
                     "Hint_not_checks_btn"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Watcher\\En"
+                ]
             }
         }
     }

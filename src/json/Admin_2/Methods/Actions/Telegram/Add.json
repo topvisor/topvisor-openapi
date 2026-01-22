@@ -32,7 +32,7 @@
                     "chat_id",
                     "test"
                 ],
-                "title": "Добавление бота в телеграм канал\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Telegram\\Add"
+                "title": "Добавление бота в телеграм канал"
             },
             "Admin_2.Methods.Actions.Telegram.Add.Exec": {
                 "allOf": [

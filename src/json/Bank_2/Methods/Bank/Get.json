@@ -16,7 +16,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение данных банка по БИК или Swift\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Methods\\Bank\\Get"
+                "title": "Получение данных банка по БИК или Swift"
             },
             "Bank_2.Methods.Bank.Get.Exec": {
                 "nullable": true

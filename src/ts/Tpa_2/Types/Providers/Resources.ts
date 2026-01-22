@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Ресурсы интеграции
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Tpa_2\Types\Providers\Resources
          * @description @extends API\Types\AbstractObjectArray<Tpa_2\Types\Providers\Resource>
          *     @method Tpa_2\Types\Providers\Resource[] getValues()
          *     @method Tpa_2\Types\Providers\Resource current()

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Подготовить проекты к экспорту
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\ExportPack\Prepare\Get */
+        /** Подготовить проекты к экспорту */
         "Positions_2.Methods.History.ExportPack.Prepare.Get": {
             /** Отображать сумму с учетом скидки */
             apply_discount?: boolean;

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Управление приостановкой/возобновлением рекуррентных платежей
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Payments_2\Methods\Recurrent\Suspend\Edit */
+        /** Управление приостановкой/возобновлением рекуррентных платежей */
         "Payments_2.Methods.Recurrent.Suspend.Edit": {
             /** id платежа, связанного с подпиской или тарифом */
             payment_id: number;

@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип схемы для микроразметки статьи
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Types\Article\SchemaType
          * @enum {string}
          */
         "Controller_2.Types.Article.SchemaType": "Article" | "NewsArticle";

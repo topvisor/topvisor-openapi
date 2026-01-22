@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение статуса активности группы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Groups\On\Edit */
+        /** Изменение статуса активности группы */
         "Keywords_2.Methods.Groups.On.Edit": {
             /** Статус активности */
             on: boolean;

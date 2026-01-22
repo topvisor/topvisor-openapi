@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление домена для слоя
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\Domain\Del */
+        /** Удаление домена для слоя */
         "Robot_2.Methods.Admin.Keys.Domain.Del": {
             /** ID слоя */
             layer_id: number;

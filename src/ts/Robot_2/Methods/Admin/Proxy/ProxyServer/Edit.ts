@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Сохранение настройки указанного layer на прокси сервере
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Proxy\ProxyServer\Edit */
+        /** Сохранение настройки указанного layer на прокси сервере */
         "Robot_2.Methods.Admin.Proxy.ProxyServer.Edit": {
             /** Название сервера */
             server_name: string;

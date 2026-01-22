@@ -7,16 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение меню справки
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Support\Menu\Get */
+        /** Получение меню справки */
         "Content_2.Methods.Support.Menu.Get": Record<string, never>;
         "Content_2.Methods.Support.Menu.Get.Exec": {
             support: import('../../../Objects/Menu/MenuItem.ts').components['schemas']['Content_2.Objects.Menu.MenuItem'][];
         };
-        /** Элемент меню
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Objects\Menu\MenuItem */
+        /** Элемент меню */
         "Content_2.Objects.Menu.MenuItem": {
             /** URL пункта меню */
             url: string;

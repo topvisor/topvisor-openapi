@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Добавление комментария к отзыву
          *
-         *     Оставить комментарий можно в течение часа поосле выставления оценки
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Votes_2\Methods\Comment\Edit */
+         *     Оставить комментарий можно в течение часа поосле выставления оценки */
         "Votes_2.Methods.Comment.Edit": {
             /** Id отзыва */
             id: number;

@@ -24,7 +24,7 @@
                     "Csv в кодировке сервера",
                     null
                 ],
-                "title": "Формат экспорта urls\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Urls_2\\Types\\Export\\Output"
+                "title": "Формат экспорта urls"
             }
         }
     }

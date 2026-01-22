@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Трейт для определения связей сервиса и модели\n\nОбязан использоваться в полиморфных методах, используемых в разных сервисах\n\nДолжен быть переопределен в целевом классе конкретным трейтом `Polimorfizm`\n\nЕсли в целевом классе есть `MODEL`, он также должен быть переопределен, так как статическое связывание при определении констант невозможно\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Traits\\BasePolimorfizm",
+                "title": "Трейт для определения связей сервиса и модели\n\nОбязан использоваться в полиморфных методах, используемых в разных сервисах\n\nДолжен быть переопределен в целевом классе конкретным трейтом `Polimorfizm`\n\nЕсли в целевом классе есть `MODEL`, он также должен быть переопределен, так как статическое связывание при определении констант невозможно",
                 "description": "@see Keywords_2\\Types\\Traits\\Polimorfizm\n@see KeywordsAi_2\\Types\\Traits\\Polimorfizm\n@see class/Services/Keywords_2/Docs/architecture.md"
             }
         }

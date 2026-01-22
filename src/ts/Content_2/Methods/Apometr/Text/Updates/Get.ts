@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение текстовых апдейтов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Text\Updates\Get */
+        /** Получение текстовых апдейтов */
         "Content_2.Methods.Apometr.Text.Updates.Get": {
             /** @default 100 */
             limit?: number;

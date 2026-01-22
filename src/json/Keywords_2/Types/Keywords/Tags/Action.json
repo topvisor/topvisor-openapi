@@ -24,7 +24,7 @@
                     "Добавить",
                     "Удалить"
                 ],
-                "title": "Действие с тегами запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Keywords\\Tags\\Action"
+                "title": "Действие с тегами запросов"
             }
         }
     }

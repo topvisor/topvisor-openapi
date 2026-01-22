@@ -190,7 +190,7 @@
                     "DIADOC_ID",
                     "BLOCKED_SERVICES"
                 ],
-                "title": "Интерфейс настроек сайта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\Types\\Config\\Site"
+                "title": "Интерфейс настроек сайта"
             }
         }
     }

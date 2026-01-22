@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Версия API
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Api\V
          * @enum {string}
          */
         "System_2.Types.Api.V": "v2";

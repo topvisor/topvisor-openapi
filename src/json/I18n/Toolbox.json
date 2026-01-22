@@ -57,8 +57,7 @@
                     "No_tasks",
                     "Wordstat_check",
                     "Keywords_collect"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Toolbox\\En"
+                ]
             }
         }
     }

@@ -11,8 +11,6 @@ export interface components {
          * Изменение настроек AI-трекера
          *
          *     Для получения текущих настроек используйте: /get/projects_2/projects/
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Settings\Edit
          * @description @see \Services\AiTracker_2\Objects\Settings
          */
         "AiTracker_2.Methods.Settings.Edit": {

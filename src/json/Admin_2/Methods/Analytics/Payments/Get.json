@@ -44,7 +44,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение суммы оплат за период\n\nВ статистике учитывается только сумма оплаты услуг без налогов и комиссий\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Analytics\\Payments\\Get"
+                "title": "Получение суммы оплат за период\n\nВ статистике учитывается только сумма оплаты услуг без налогов и комиссий"
             },
             "Admin_2.Methods.Analytics.Payments.Get.Exec": {
                 "nullable": true,

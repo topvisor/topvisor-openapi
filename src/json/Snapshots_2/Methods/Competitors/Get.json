@@ -156,7 +156,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка конкурентов\n\nМетод базируется на объекте keywords (доступны только фильтры)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\Competitors\\Get"
+                "title": "Получение списка конкурентов\n\nМетод базируется на объекте keywords (доступны только фильтры)"
             },
             "Snapshots_2.Methods.Competitors.Get.Exec": {
                 "type": "object",

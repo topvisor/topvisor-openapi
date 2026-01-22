@@ -162,7 +162,7 @@
                     }
                 },
                 "required": [],
-                "title": "Изменение документа\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Pages\\Edit"
+                "title": "Изменение документа"
             },
             "Content_2.Methods.Pages.Edit.Exec": {
                 "nullable": true,

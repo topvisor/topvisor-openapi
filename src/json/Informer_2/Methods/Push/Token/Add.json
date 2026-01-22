@@ -26,7 +26,7 @@
                     "type",
                     "token"
                 ],
-                "title": "Регистрация токена\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Informer_2\\Methods\\Push\\Token\\Add"
+                "title": "Регистрация токена"
             },
             "Informer_2.Methods.Push.Token.Add.Exec": {
                 "type": "integer"

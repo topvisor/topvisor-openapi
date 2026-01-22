@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип связи запросов с лидером
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Types\ByKeyword\Table\Keywords\TypeVS
          * @enum {string}
          */
         "Competitors_2.Types.ByKeyword.Table.Keywords.TypeVS": "common" | "competitor" | "exclusive_competitor";

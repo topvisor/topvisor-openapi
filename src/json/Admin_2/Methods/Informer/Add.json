@@ -79,8 +79,7 @@
                     "send_in",
                     "lang",
                     "subject"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Informer\\Add"
+                ]
             },
             "Admin_2.Methods.Informer.Add.Exec": {
                 "type": "object",

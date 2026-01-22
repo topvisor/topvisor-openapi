@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Индекс региона
          *
-         *     Если не передан индекс региона, то получит его исходя из других параметров trait
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Params\RegionIndexTrait */
+         *     Если не передан индекс региона, то получит его исходя из других параметров trait */
         "TV.API.Params.RegionIndexTrait": {
             /** Индекс региона */
             region_index: number;

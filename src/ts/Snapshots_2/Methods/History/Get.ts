@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Получение истории снимков выдачи
          *
-         *     Метод базируется на объекте keywords (доступны только фильтры)
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Snapshots_2\Methods\History\Get */
+         *     Метод базируется на объекте keywords (доступны только фильтры) */
         "Snapshots_2.Methods.History.Get": {
             /** Получение данных по всем запросам
              *

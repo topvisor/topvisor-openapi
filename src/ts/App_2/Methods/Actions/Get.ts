@@ -12,9 +12,7 @@ export interface components {
          *     Возвращает результат подтверждения в виде
          *     массива с сообщением (acceptAction),
          *     логической переменной (acceptEmail),
-         *     null при неправильно введенном типе
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Actions\Get */
+         *     null при неправильно введенном типе */
         "App_2.Methods.Actions.Get": {
             /** Email пользователя */
             email: string;

@@ -818,8 +818,7 @@
                     "js_check_cacheable",
                     "js_check_is_minified",
                     "js_check_no_render_blocking"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Audit\\Scan\\Checks\\En"
+                ]
             }
         }
     }

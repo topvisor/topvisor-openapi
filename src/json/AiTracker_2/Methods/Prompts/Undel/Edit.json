@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Восстановление промтов из корзины\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Undel\\Edit"
+                "title": "Восстановление промтов из корзины"
             },
             "AiTracker_2.Methods.Prompts.Undel.Edit.Exec": {
                 "nullable": true,

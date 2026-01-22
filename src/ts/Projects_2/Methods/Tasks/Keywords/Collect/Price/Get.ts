@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение цены сбора запросов без создания проекта
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Methods\Tasks\Keywords\Collect\Price\Get */
+        /** Получение цены сбора запросов без создания проекта */
         "Projects_2.Methods.Tasks.Keywords.Collect.Price.Get": {
             /** Массив ключевых запросов в формате CSV */
             keywords: unknown[];

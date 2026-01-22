@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Рейтинг по сообщениям в Slack за предыдущий месяц\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Slack\\Rate\\Get"
+                "title": "Рейтинг по сообщениям в Slack за предыдущий месяц"
             },
             "Admin_2.Methods.Slack.Rate.Get.Exec": {
                 "title": "Список пользователей",

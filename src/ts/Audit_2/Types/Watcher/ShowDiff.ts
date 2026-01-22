@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Добавить в результат различия данных
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Types\Watcher\ShowDiff
          * @enum {integer}
          */
         "Audit_2.Types.Watcher.ShowDiff": 0 | 1 | 2 | 3;

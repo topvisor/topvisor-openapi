@@ -21,7 +21,7 @@
                     "По запросам",
                     "По группам"
                 ],
-                "title": "Тип объекта над которым проводится операция редактирования\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Keywords\\TargetType"
+                "title": "Тип объекта над которым проводится операция редактирования"
             }
         }
     }

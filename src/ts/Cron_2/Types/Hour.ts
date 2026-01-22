@@ -11,9 +11,7 @@ export interface components {
          *
          *     Пустое значение зарезервированно для запуска cron каждый час
          *
-         *     Значение должно находиться в диапазоне от 0 до 23 включительно
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Cron_2\Types\Hour */
+         *     Значение должно находиться в диапазоне от 0 до 23 включительно */
         "Cron_2.Types.Hour": string;
     };
     responses: never;

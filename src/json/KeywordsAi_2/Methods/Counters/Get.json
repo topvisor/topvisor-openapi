@@ -21,7 +21,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение числа включенных/выключенных групп и запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Counters\\Get"
+                "title": "Получение числа включенных/выключенных групп и запросов"
             },
             "KeywordsAi_2.Methods.Counters.Get.Exec": {
                 "type": "object",

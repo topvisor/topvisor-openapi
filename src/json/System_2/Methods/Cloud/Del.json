@@ -23,7 +23,7 @@
                     "directory",
                     "basename"
                 ],
-                "title": "Удаление файлов (файл будет перенесен в директорию /cloud/recycled)\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\System_2\\Methods\\Cloud\\Del"
+                "title": "Удаление файлов (файл будет перенесен в директорию /cloud/recycled)"
             },
             "System_2.Methods.Cloud.Del.Exec": {
                 "type": "boolean"

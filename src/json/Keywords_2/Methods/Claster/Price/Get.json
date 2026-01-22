@@ -34,7 +34,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение цены кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\Price\\Get"
+                "title": "Получение цены кластеризации"
             },
             "Keywords_2.Methods.Claster.Price.Get.Exec": {
                 "type": "number"

@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение своих отзывов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Votes_2\\Methods\\Get"
+                "title": "Получение своих отзывов"
             },
             "Votes_2.Methods.Get.Exec": {
                 "nullable": true,

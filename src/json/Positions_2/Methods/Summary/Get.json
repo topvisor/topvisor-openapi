@@ -95,7 +95,7 @@
                     "dates",
                     "project_id"
                 ],
-                "title": "Получение сводки по проверкам позиций\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Summary\\Get"
+                "title": "Получение сводки по проверкам позиций"
             },
             "Positions_2.Methods.Summary.Get.Exec": {
                 "type": "array"

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка акты в диадок
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Payments\Diadoc\Add */
+        /** Отправка акты в диадок */
         "Admin_2.Methods.Actions.Payments.Diadoc.Add": {
             /** ID пользователя */
             userId: number;

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование серверов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Servers\Edit */
+        /** Редактирование серверов */
         "Robot_2.Methods.Admin.Servers.Edit": {
             /** Название сервера */
             name?: string | null;

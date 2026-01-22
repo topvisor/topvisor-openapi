@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Snapshots_2/Types/History/PositionsField.json#/components/schemas/Snapshots_2.Types.History.PositionsField"
                 },
-                "title": "Поля, возвращаемые в snapshotsData\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Types\\History\\PositionsFields"
+                "title": "Поля, возвращаемые в snapshotsData"
             }
         }
     }

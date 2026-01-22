@@ -45,7 +45,7 @@
                     "Товарное объявление (в кампании с типом «Единая перфоманс кампания»).",
                     "Текстово-графическое (обычное) объявление"
                 ],
-                "title": "Тип объявления\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Broker_2\\Types\\Ads\\Type",
+                "title": "Тип объявления",
                 "description": "@see https://yandex.ru/dev/direct/doc/ru/objects/ad#types"
             }
         }

@@ -1245,8 +1245,7 @@
                     "Enter_location",
                     "Update_count",
                     "Update_count_formula"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Projects\\En"
+                ]
             }
         }
     }

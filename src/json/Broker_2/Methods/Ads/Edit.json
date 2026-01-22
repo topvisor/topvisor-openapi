@@ -56,7 +56,7 @@
                     "id",
                     "type"
                 ],
-                "title": "Редактирование объявления\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Broker_2\\Methods\\Ads\\Edit"
+                "title": "Редактирование объявления"
             },
             "Broker_2.Methods.Ads.Edit.Exec": {
                 "title": "выводит int, если функция провайдера не определена",

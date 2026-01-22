@@ -27,7 +27,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение цены проверки частоты задачи без создания проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Projects_2\\Methods\\Tasks\\Volumes\\Price\\Get"
+                "title": "Получение цены проверки частоты задачи без создания проекта"
             },
             "Projects_2.Methods.Tasks.Volumes.Price.Get.Exec": {
                 "type": "number"

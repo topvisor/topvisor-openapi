@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение тегов сниппета
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Snippets\Edit */
+        /** Изменение тегов сниппета */
         "Keywords_2.Methods.Snippets.Edit": {
             /** crc32 hash от текста сниппета */
             hash: string;

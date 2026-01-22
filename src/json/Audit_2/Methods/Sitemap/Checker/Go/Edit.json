@@ -32,7 +32,7 @@
                 "required": [
                     "max_pages"
                 ],
-                "title": "Отправка проектов на проверку карты сайта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Sitemap\\Checker\\Go\\Edit"
+                "title": "Отправка проектов на проверку карты сайта"
             },
             "Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec": {
                 "title": "Список id проектов, отрпавленных на проверку",

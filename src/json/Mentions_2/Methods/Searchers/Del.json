@@ -29,7 +29,7 @@
                     "project_id",
                     "rule_id"
                 ],
-                "title": "Удаление поисковика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Methods\\Searchers\\Del"
+                "title": "Удаление поисковика"
             },
             "Mentions_2.Methods.Searchers.Del.Exec": {
                 "type": "integer"

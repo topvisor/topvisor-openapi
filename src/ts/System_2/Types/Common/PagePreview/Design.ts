@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Дизайн preview
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Types\Common\PagePreview\Design
          * @enum {string}
          */
         "System_2.Types.Common.PagePreview.Design": "default" | "news";

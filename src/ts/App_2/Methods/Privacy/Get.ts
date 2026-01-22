@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение объекта страницы политики конфиденциальности
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\App_2\Methods\Privacy\Get */
+        /** Получение объекта страницы политики конфиденциальности */
         "App_2.Methods.Privacy.Get": {
             /** Язык страницы */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;

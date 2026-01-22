@@ -38,7 +38,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение инофрмации о курсах\n\nПараметры выборки основаны на модели Models\\Pages\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Content_2\\Methods\\Journal\\Course\\Get"
+                "title": "Получение инофрмации о курсах\n\nПараметры выборки основаны на модели Models\\Pages"
             },
             "Content_2.Methods.Journal.Course.Get.Exec": {
                 "nullable": true,

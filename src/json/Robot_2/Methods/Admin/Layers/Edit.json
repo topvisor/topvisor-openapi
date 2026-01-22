@@ -116,7 +116,7 @@
                     }
                 },
                 "required": [],
-                "title": "Редактирование слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Edit"
+                "title": "Редактирование слоя"
             },
             "Robot_2.Methods.Admin.Layers.Edit.Exec": {
                 "type": "integer"

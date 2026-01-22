@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Интерфейс настроек валюты
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Types\Config\Currency */
+        /** Интерфейс настроек валюты */
         "TV.Types.Config.Currency": {
             /**
              * Код валюты.

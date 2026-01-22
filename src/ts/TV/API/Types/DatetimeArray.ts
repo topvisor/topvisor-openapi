@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Datetime[]
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\API\Types\DatetimeArray
          * @description @extends AbstractStringArray<Datetime>
          *     @method Datetime[] getValues()
          *     @method Datetime current()

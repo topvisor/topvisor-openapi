@@ -105,7 +105,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Измение достижение\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Users\\Ranks\\Edit"
+                "title": "Измение достижение"
             },
             "Admin_2.Methods.Users.Ranks.Edit.Exec": {
                 "nullable": true,

@@ -916,8 +916,7 @@
                     "Audit_bank_autocrawl_unhold_info",
                     "Delete_url",
                     "Scan_subdomains"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Audit\\En"
+                ]
             }
         }
     }

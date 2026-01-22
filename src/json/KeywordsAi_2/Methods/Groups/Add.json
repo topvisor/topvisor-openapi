@@ -49,7 +49,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Добавление групп\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Groups\\Add"
+                "title": "Добавление групп"
             },
             "KeywordsAi_2.Methods.Groups.Add.Exec": {
                 "nullable": true,

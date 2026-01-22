@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка сообщений в информере
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Informer_2\Methods\Informer\Get */
+        /** Получение списка сообщений в информере */
         "Informer_2.Methods.Informer.Get": {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
         };

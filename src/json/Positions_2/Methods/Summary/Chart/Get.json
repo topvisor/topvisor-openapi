@@ -101,7 +101,7 @@
                     "region_index",
                     "project_id"
                 ],
-                "title": "Получение данных сводки для отображения графика\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\Summary\\Chart\\Get"
+                "title": "Получение данных сводки для отображения графика"
             },
             "Positions_2.Methods.Summary.Chart.Get.Exec": {
                 "type": "array"

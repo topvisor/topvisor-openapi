@@ -21,7 +21,7 @@
                     "По запросам",
                     "По группам"
                 ],
-                "title": "Тип объекта по которому производить фильтрацию для выборки запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Keywords\\Export\\TargetType"
+                "title": "Тип объекта по которому производить фильтрацию для выборки запросов"
             }
         }
     }

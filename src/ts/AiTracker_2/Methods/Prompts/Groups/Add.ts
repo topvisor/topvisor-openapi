@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление групп
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\AiTracker_2\Methods\Prompts\Groups\Add */
+        /** Добавление групп */
         "AiTracker_2.Methods.Prompts.Groups.Add": {
             /** Имена групп */
             names?: unknown[] | null;

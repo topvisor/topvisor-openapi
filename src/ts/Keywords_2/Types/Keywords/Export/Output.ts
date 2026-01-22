@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * В каком формате экспортировать запросы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\Export\Output
          * @enum {string}
          */
         "Keywords_2.Types.Keywords.Export.Output": "csv" | "csvUTF8";

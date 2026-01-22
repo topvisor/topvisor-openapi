@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Tpa_2/Types/Providers/Resource.json#/components/schemas/Tpa_2.Types.Providers.Resource"
                 },
-                "title": "Ресурсы интеграции\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tpa_2\\Types\\Providers\\Resources",
+                "title": "Ресурсы интеграции",
                 "description": "@extends API\\Types\\AbstractObjectArray<Tpa_2\\Types\\Providers\\Resource>\n@method Tpa_2\\Types\\Providers\\Resource[] getValues()\n@method Tpa_2\\Types\\Providers\\Resource current()\n@method Tpa_2\\Types\\Providers\\Resource offsetGet()\n@see Tpa_2\\Types\\Providers\\Resource"
             }
         }

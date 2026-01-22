@@ -50,7 +50,7 @@
                     "regions",
                     "test"
                 ],
-                "title": "Добавить регионы Google в сервис\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Regions\\CommitGoogle\\Edit"
+                "title": "Добавить регионы Google в сервис"
             },
             "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit.Exec": {
                 "allOf": [

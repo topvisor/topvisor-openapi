@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Номер метрики
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Projects_2\Types\Analytics\Axe
          * @enum {integer}
          */
         "Projects_2.Types.Analytics.Axe": 1 | 2 | 3 | 4 | 11 | 12 | 13;

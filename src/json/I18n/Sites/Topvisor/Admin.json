@@ -22,8 +22,7 @@
                 "required": [
                     "Warning_message",
                     "Warning_message_admin"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Sites\\Topvisor\\Admin\\En"
+                ]
             }
         }
     }

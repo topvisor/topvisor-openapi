@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Перемещение группы
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Move\Edit */
+        /** Перемещение группы */
         "KeywordsAi_2.Methods.Groups.Move.Edit": {
             /** Переместить к указанному объекту */
             to_id?: number;

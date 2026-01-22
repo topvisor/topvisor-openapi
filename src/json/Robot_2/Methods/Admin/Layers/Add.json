@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Добавление нового слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Layers\\Add"
+                "title": "Добавление нового слоя"
             },
             "Robot_2.Methods.Admin.Layers.Add.Exec": {
                 "type": "integer"

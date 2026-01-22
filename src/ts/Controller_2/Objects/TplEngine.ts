@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Движок работы с шаблонизатором
          *
-         *     Является неотъемлемой частью Page
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Controller_2\Objects\TplEngine */
+         *     Является неотъемлемой частью Page */
         "Controller_2.Objects.TplEngine": Record<string, never>;
     };
     responses: never;

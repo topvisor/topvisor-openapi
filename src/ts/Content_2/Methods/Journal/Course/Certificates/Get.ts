@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение своего сертификата
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Course\Certificates\Get */
+        /** Получение своего сертификата */
         "Content_2.Methods.Journal.Course.Certificates.Get": {
             /** Url курса относительно домена */
             course_url: string;

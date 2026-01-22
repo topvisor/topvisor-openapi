@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение участников теста
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Quiz_2\Methods\ResultsUsers\Get */
+        /** Получение участников теста */
         "Quiz_2.Methods.ResultsUsers.Get": {
             /** ID теста */
             quiz_id: string;

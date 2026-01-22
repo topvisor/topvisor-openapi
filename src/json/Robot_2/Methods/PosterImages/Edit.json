@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Обновление изображения poster для апометра\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\PosterImages\\Edit"
+                "title": "Обновление изображения poster для апометра"
             },
             "Robot_2.Methods.PosterImages.Edit.Exec": {
                 "type": "integer"

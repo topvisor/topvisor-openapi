@@ -34,9 +34,7 @@ export interface components {
          *
          *     Пример имени класса, оно же id плана: `A_StarterPack1`
          *
-         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Objects\Subscriptions\Plan */
+         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости */
         "Bank_2.Objects.Subscriptions.Plan": {
             id: string;
             name: string;

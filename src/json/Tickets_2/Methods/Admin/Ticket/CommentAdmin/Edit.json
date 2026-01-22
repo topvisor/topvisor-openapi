@@ -23,7 +23,7 @@
                     "comment",
                     "ticket_id"
                 ],
-                "title": "Изменение комментария о пользователя в тикете\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Admin\\Ticket\\CommentAdmin\\Edit"
+                "title": "Изменение комментария о пользователя в тикете"
             },
             "Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec": {
                 "nullable": true,

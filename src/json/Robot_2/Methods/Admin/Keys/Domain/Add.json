@@ -28,7 +28,7 @@
                     "searcher_key",
                     "domain"
                 ],
-                "title": "Добавление домена для слоя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Keys\\Domain\\Add"
+                "title": "Добавление домена для слоя"
             },
             "Robot_2.Methods.Admin.Keys.Domain.Add.Exec": {
                 "nullable": true,

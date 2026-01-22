@@ -37,7 +37,7 @@
                     "replace",
                     "project_id"
                 ],
-                "title": "Замена текста в запросах\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Actions\\ReplaceName\\Edit"
+                "title": "Замена текста в запросах"
             },
             "Keywords_2.Methods.Actions.ReplaceName.Edit.Exec": {
                 "type": "integer"

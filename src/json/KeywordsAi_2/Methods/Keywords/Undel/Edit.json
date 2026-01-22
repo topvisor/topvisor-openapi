@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Восстановление запросов из корзины\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Undel\\Edit"
+                "title": "Восстановление запросов из корзины"
             },
             "KeywordsAi_2.Methods.Keywords.Undel.Edit.Exec": {
                 "nullable": true,

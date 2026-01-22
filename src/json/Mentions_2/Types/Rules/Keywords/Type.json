@@ -24,7 +24,7 @@
                     "Ключевые слова, все из",
                     "Ключевые слова, ни одно из"
                 ],
-                "title": "Типы доступных фраз\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Types\\Rules\\Keywords\\Type"
+                "title": "Типы доступных фраз"
             }
         }
     }

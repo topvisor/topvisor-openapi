@@ -18,7 +18,7 @@
                 "required": [
                     "server_name"
                 ],
-                "title": "Сохранение настройки указанного layer на прокси сервере\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Proxy\\ProxyServer\\Edit"
+                "title": "Сохранение настройки указанного layer на прокси сервере"
             },
             "Robot_2.Methods.Admin.Proxy.ProxyServer.Edit.Exec": {
                 "type": "object",

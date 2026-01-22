@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание ссылки на просмотр динамики
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Methods\History\Links\Get */
+        /** Создание ссылки на просмотр динамики */
         "Positions_2.Methods.History.Links.Get": {
             /** Вид сводки */
             history_view?: number | null;

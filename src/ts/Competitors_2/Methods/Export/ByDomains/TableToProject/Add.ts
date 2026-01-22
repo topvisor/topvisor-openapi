@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Экспорт запросов по доменам в проект
          *
-         *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Competitors_2\Methods\Export\ByDomains\TableToProject\Add */
+         *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
         "Competitors_2.Methods.Export.ByDomains.TableToProject.Add": {
             /** @default export_byDomains_tableToProject */
             func?: string;

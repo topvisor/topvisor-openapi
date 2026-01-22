@@ -35,7 +35,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистики ответов на тикеты\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\Messages\\Get"
+                "title": "Получение статистики ответов на тикеты"
             },
             "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": {
                 "nullable": true,

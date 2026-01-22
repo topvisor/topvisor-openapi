@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных магнита по интеграции
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Magnet\Get */
+        /** Получение данных магнита по интеграции */
         "Keywords_2.Methods.Magnet.Get": {
             provider: import('../../Types/Magnet/Provider.ts').components['schemas']['Keywords_2.Types.Magnet.Provider'];
             /** Метод источника данных */

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление ip
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Keys\IpCSV\Add */
+        /** Добавление ip */
         "Robot_2.Methods.Admin.Keys.IpCSV.Add": {
             /** Список ip */
             list_ip: string;

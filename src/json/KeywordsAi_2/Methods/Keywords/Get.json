@@ -47,7 +47,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка запросов проекта\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Keywords\\Get"
+                "title": "Получение списка запросов проекта"
             },
             "KeywordsAi_2.Methods.Keywords.Get.Exec": {
                 "nullable": true

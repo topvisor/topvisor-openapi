@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Позиция или права сотрудника
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Staff\Post
          * @enum {string}
          */
         "Admin_2.Types.Staff.Post": "DEVELOPER" | "SUPPORT" | "ACCOUNTING" | "HR" | "DOCUMENTATION" | "GHOST" | "CONTENT";

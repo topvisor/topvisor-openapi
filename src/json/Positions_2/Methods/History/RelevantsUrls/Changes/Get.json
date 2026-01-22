@@ -49,7 +49,7 @@
                     "date2",
                     "project_id"
                 ],
-                "title": "Получение истории об изменении релевантной страницы\n\nВозвращает список в формате: [[`url`, `date`]]\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\RelevantsUrls\\Changes\\Get"
+                "title": "Получение истории об изменении релевантной страницы\n\nВозвращает список в формате: [[`url`, `date`]]"
             },
             "Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec": {
                 "type": "array"

@@ -17,8 +17,7 @@
                 },
                 "required": [
                     "Text_confirm_delete_widget"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=I18n\\Analytics\\En"
+                ]
             }
         }
     }

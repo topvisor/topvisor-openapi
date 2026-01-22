@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип объекта по которому производить фильтрацию для выборки запросов
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Types\Keywords\Export\TargetType
          * @enum {string}
          */
         "Keywords_2.Types.Keywords.Export.TargetType": "keywords" | "groups";

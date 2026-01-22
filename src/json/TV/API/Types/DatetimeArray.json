@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
                 },
-                "title": "Тип массива: Datetime[]\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\\API\\Types\\DatetimeArray",
+                "title": "Тип массива: Datetime[]",
                 "description": "@extends AbstractStringArray<Datetime>\n@method Datetime[] getValues()\n@method Datetime current()\n@see \\TV\\API\\Types\\Datetime"
             }
         }

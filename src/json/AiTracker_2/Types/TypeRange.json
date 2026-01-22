@@ -36,7 +36,7 @@
                     "Две последние даты проверок",
                     "Произвольный список дат"
                 ],
-                "title": "Тип диапазона Ai-Трекера\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Types\\TypeRange"
+                "title": "Тип диапазона Ai-Трекера"
             }
         }
     }

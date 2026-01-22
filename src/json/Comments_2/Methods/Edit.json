@@ -23,7 +23,7 @@
                     "id",
                     "text"
                 ],
-                "title": "Изменение комментария\n\nИзменять комментарий можно только в течение ограниченного времени\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Comments_2\\Methods\\Edit"
+                "title": "Изменение комментария\n\nИзменять комментарий можно только в течение ограниченного времени"
             },
             "Comments_2.Methods.Edit.Exec": {
                 "nullable": true,

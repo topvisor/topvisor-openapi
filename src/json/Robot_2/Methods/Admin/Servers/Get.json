@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка серверов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Servers\\Get"
+                "title": "Получение списка серверов"
             },
             "Robot_2.Methods.Admin.Servers.Get.Exec": {
                 "nullable": true,

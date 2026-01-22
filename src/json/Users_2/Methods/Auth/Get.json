@@ -22,7 +22,7 @@
                     }
                 },
                 "required": [],
-                "title": "Информация о сессии авторизации пользователя\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Users_2\\Methods\\Auth\\Get"
+                "title": "Информация о сессии авторизации пользователя"
             },
             "Users_2.Methods.Auth.Get.Exec": {
                 "nullable": true,

@@ -41,7 +41,7 @@
                     "checks_ids",
                     "project_id"
                 ],
-                "title": "Получение сводки радара\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Audit_2\\Methods\\Watcher\\Summary\\Get"
+                "title": "Получение сводки радара"
             },
             "Audit_2.Methods.Watcher.Summary.Get.Exec": {
                 "title": "Сводка с количеством изменений по каждому типу проверки",

@@ -41,8 +41,7 @@
                 },
                 "required": [
                     "project_id"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\AiTracker_2\\Methods\\Prompts\\Get"
+                ]
             },
             "AiTracker_2.Methods.Prompts.Get.Exec": {
                 "nullable": true

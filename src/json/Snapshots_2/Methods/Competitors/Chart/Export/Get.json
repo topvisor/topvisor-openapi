@@ -156,7 +156,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Экспорт сводки с графика\n\nОписание параметров смотреть в get/snapshots_2/competitors\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Snapshots_2\\Methods\\Competitors\\Chart\\Export\\Get"
+                "title": "Экспорт сводки с графика\n\nОписание параметров смотреть в get/snapshots_2/competitors"
             },
             "Snapshots_2.Methods.Competitors.Chart.Export.Get.Exec": {
                 "type": "never"

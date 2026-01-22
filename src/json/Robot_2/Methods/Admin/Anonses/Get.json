@@ -33,7 +33,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка анонсов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Robot_2\\Methods\\Admin\\Anonses\\Get"
+                "title": "Получение списка анонсов"
             },
             "Robot_2.Methods.Admin.Anonses.Get.Exec": {
                 "nullable": true,

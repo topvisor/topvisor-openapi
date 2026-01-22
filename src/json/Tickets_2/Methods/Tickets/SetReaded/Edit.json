@@ -18,7 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Пометка тикета как \"прочитанный\" для автора тикета или админов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Tickets_2\\Methods\\Tickets\\SetReaded\\Edit"
+                "title": "Пометка тикета как \"прочитанный\" для автора тикета или админов"
             },
             "Tickets_2.Methods.Tickets.SetReaded.Edit.Exec": {
                 "nullable": true,

@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Обертка Curl с полезным функционалом для проекта Топвизор
          *
-         *     Располагается и разрабатывается в проекте **Robot**
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=TV\Libs\Curl\Curl */
+         *     Располагается и разрабатывается в проекте **Robot** */
         "TV.Libs.Curl.Curl": {
             /** @default Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 */
             userAgentDef: string;

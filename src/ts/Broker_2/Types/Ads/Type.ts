@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип объявления
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Broker_2\Types\Ads\Type
          * @description @see https://yandex.ru/dev/direct/doc/ru/objects/ad#types
          * @enum {string}
          */

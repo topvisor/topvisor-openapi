@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Настройка доступа
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Staff\Access\Edit */
+        /** Настройка доступа */
         "Admin_2.Methods.Staff.Access.Edit": {
             /** ID пользователя */
             user_id: number;

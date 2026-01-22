@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Создание директории или загрузка файла
          *
-         *     Вернет имя директории в случае создания директории или bool при загрузке файла
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\System_2\Methods\Cloud\Add */
+         *     Вернет имя директории в случае создания директории или bool при загрузке файла */
         "System_2.Methods.Cloud.Add": {
             /** Директория */
             directory: string;

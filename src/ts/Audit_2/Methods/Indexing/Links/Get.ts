@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Создание гостевой ссылки на просмотр позиций
          *
-         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Audit_2\Methods\Indexing\Links\Get */
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         "Audit_2.Methods.Indexing.Links.Get": {
             /** Диапазон значений шаблона */
             template_date_range: string;

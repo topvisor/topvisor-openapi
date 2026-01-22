@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип графика сводки
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Positions_2\Types\Summary\Chart\Type
          * @enum {string}
          */
         "Positions_2.Types.Summary.Chart.Type": "tops" | "tops_count" | "avg" | "median" | "visibility";

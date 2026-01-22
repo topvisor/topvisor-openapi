@@ -36,7 +36,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка упоминаний\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Mentions_2\\Methods\\Get"
+                "title": "Получение списка упоминаний"
             },
             "Mentions_2.Methods.Get.Exec": {
                 "type": "array",

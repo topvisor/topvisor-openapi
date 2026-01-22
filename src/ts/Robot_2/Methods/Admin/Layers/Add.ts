@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление нового слоя
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\Layers\Add */
+        /** Добавление нового слоя */
         "Robot_2.Methods.Admin.Layers.Add": {
             /** ID слоя */
             id: string;

@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка групп проекта
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Get */
+        /** Получение списка групп проекта */
         "KeywordsAi_2.Methods.Groups.Get": {
             /** При фильтрации по ID папок также искать в дочерних папках */
             folder_id_depth?: boolean | null;

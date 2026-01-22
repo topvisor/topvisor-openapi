@@ -37,7 +37,7 @@
                     "phrase_id",
                     "project_id"
                 ],
-                "title": "Получение информации о целевой ссылке\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Positions_2\\Methods\\History\\Targets\\Get"
+                "title": "Получение информации о целевой ссылке"
             },
             "Positions_2.Methods.History.Targets.Get.Exec": {
                 "type": "array"

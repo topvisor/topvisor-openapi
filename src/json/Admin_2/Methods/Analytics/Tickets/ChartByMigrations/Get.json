@@ -35,7 +35,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистики тикетов по миграциям\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByMigrations\\Get"
+                "title": "Получение статистики тикетов по миграциям"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec": {
                 "type": "object",

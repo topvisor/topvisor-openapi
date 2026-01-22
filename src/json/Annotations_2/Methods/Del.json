@@ -32,7 +32,7 @@
                     "project_id",
                     "service"
                 ],
-                "title": "Удаление примечания\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Annotations_2\\Methods\\Del"
+                "title": "Удаление примечания"
             },
             "Annotations_2.Methods.Del.Exec": {
                 "nullable": true,

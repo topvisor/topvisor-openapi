@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт всех запросов в определенном формате (экспорт всех запросов)
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Export\Get */
+        /** Экспорт всех запросов в определенном формате (экспорт всех запросов) */
         "KeywordsAi_2.Methods.Groups.Export.Get": {
             output: import('../../../../Keywords_2/Types/Groups/Output.ts').components['schemas']['Keywords_2.Types.Groups.Output'];
             /** Вывести fieldName в заголовках столбцов */

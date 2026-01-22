@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Восстановление поисковых запросов из бэкапа
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Actions\Backup\Keywords\Edit */
+        /** Восстановление поисковых запросов из бэкапа */
         "Admin_2.Methods.Actions.Backup.Keywords.Edit": {
             pass_admin_actions: string;
             /** Этап:

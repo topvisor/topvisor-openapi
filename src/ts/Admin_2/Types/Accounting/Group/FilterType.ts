@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /**
          * Тип фильтра по группам транзакций
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Types\Accounting\Group\FilterType
          * @enum {string}
          */
         "Admin_2.Types.Accounting.Group.FilterType": "minus" | "plus";

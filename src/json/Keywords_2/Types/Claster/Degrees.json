@@ -12,7 +12,7 @@
                 "items": {
                     "type": "integer"
                 },
-                "title": "Массив степеней кластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Types\\Claster\\Degrees"
+                "title": "Массив степеней кластеризации"
             }
         }
     }

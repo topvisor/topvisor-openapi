@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /** Изменение сортировки запросов
          *
-         *     Можно сортировать в пределах одной группы или всего проекта
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Keywords\Sort\Edit */
+         *     Можно сортировать в пределах одной группы или всего проекта */
         "Keywords_2.Methods.Keywords.Sort.Edit": {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

@@ -32,8 +32,7 @@
                         "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
                     }
                 },
-                "required": [],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Votes\\Get"
+                "required": []
             },
             "Admin_2.Methods.Votes.Get.Exec": {
                 "nullable": true,

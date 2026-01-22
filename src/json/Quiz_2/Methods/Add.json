@@ -32,7 +32,7 @@
                 "required": [
                     "name"
                 ],
-                "title": "Добавление теста\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Quiz_2\\Methods\\Add"
+                "title": "Добавление теста"
             },
             "Quiz_2.Methods.Add.Exec": {
                 "nullable": true,

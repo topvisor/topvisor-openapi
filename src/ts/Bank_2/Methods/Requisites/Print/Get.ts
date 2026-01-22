@@ -7,9 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Скачивание документа в формате PDF
-         *
-         *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Bank_2\Methods\Requisites\Print\Get */
+        /** Скачивание документа в формате PDF */
         "Bank_2.Methods.Requisites.Print.Get": {
             /** Id документа */
             target_id: string;

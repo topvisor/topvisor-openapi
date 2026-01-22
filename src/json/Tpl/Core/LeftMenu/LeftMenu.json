@@ -16,8 +16,7 @@
                 },
                 "required": [
                     "items"
-                ],
-                "title": "@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Tpl\\Core\\LeftMenu\\LeftMenu"
+                ]
             }
         }
     }

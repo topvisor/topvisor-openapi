@@ -32,7 +32,7 @@
                     "name",
                     "project_id"
                 ],
-                "title": "Переименовывание группы\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\KeywordsAi_2\\Methods\\Groups\\Rename\\Edit"
+                "title": "Переименовывание группы"
             },
             "KeywordsAi_2.Methods.Groups.Rename.Edit.Exec": {
                 "nullable": true,

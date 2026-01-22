@@ -35,7 +35,7 @@
                     "period",
                     "limit"
                 ],
-                "title": "Получение статистики по кол-ву пользователей, открывших первый тикет\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Analytics\\Tickets\\ChartByNew\\Get"
+                "title": "Получение статистики по кол-ву пользователей, открывших первый тикет"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec": {
                 "type": "object",

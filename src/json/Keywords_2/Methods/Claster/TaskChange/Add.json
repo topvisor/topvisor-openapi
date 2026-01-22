@@ -36,7 +36,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Запуск перекластеризации\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Claster\\TaskChange\\Add"
+                "title": "Запуск перекластеризации"
             },
             "Keywords_2.Methods.Claster.TaskChange.Add.Exec": {
                 "nullable": true,

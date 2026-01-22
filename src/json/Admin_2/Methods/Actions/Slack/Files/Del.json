@@ -23,7 +23,7 @@
                     "token",
                     "test"
                 ],
-                "title": "Удаление файлов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Admin_2\\Methods\\Actions\\Slack\\Files\\Del"
+                "title": "Удаление файлов"
             },
             "Admin_2.Methods.Actions.Slack.Files.Del.Exec": {
                 "allOf": [

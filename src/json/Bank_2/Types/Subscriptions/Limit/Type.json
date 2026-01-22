@@ -30,7 +30,7 @@
                     "Суточное ограничение на запуск услуг; Пример: Проверка позиций",
                     "Доступы к функционалу; Пример: API"
                 ],
-                "title": "Тип лимита\n\nХарактеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Bank_2\\Types\\Subscriptions\\Limit\\Type",
+                "title": "Тип лимита\n\nХарактеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться",
                 "description": "@see \\Services\\Bank_2\\Objects\\Subscriptions\\Limit"
             }
         }

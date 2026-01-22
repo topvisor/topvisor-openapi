@@ -48,7 +48,7 @@
                     "keyword_id",
                     "project_id"
                 ],
-                "title": "Получение id, имение запроса и результатов, зависимые от контекста\n\nПоддерживает работу до 10 000 запросов\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Keywords_2\\Methods\\Keywords\\Offset\\Get",
+                "title": "Получение id, имение запроса и результатов, зависимые от контекста\n\nПоддерживает работу до 10 000 запросов",
                 "description": "@see Keywords_2\\Methods\\Keywords\\Get"
             },
             "Keywords_2.Methods.Keywords.Offset.Get.Exec": {

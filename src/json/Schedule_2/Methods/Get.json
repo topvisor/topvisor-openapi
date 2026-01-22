@@ -29,7 +29,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Получение рассписания\n\n@see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\\Schedule_2\\Methods\\Get"
+                "title": "Получение рассписания"
             },
             "Schedule_2.Methods.Get.Exec": {
                 "type": "array"
