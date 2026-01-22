@@ -79,6 +79,12 @@
             "Models.Admin.Invoices": {
                 "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices"
             },
+            "Models.Admin.Staff": {
+                "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff"
+            },
+            "Models.Admin.Users": {
+                "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
+            },
             "Models.AdminLayers.Anons": {
                 "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
             },
@@ -96,12 +102,6 @@
             },
             "Models.AdminLayers.Service": {
                 "$ref": "Models/AdminLayers/Service.json#/components/schemas/Models.AdminLayers.Service"
-            },
-            "Models.Admin.Staff": {
-                "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff"
-            },
-            "Models.Admin.Users": {
-                "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
             },
             "Models.AiTracker.Prompts": {
                 "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"

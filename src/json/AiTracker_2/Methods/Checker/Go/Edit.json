@@ -10,14 +10,14 @@
             "AiTracker_2.Methods.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
+                    "debug": {
+                        "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
-                    },
-                    "debug": {
-                        "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
                     }
                 },
                 "required": [],

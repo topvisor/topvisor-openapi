@@ -18,9 +18,9 @@ export interface components {
             i?: import('../../Types/Minute.ts').components['schemas']['Cron_2.Types.Minute'] | null;
             /** Статус активности задачи */
             on?: boolean | null;
+            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
         };
         "Cron_2.Methods.Commands.Edit.Exec": number | null;
     };

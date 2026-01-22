@@ -13,6 +13,7 @@ export interface components {
         "Positions_2.Methods.Summary.Chart.Export.Get": {
             /** Использовать обратный порядок дат */
             reverse_dates?: boolean;
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             /** Индекс региона */
             region_index: number;
             /** ID конкурентов */
@@ -54,7 +55,6 @@ export interface components {
             group_folder_id_depth?: boolean;
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Positions_2.Methods.Summary.Chart.Export.Get.Exec": Record<string, never>;
     };

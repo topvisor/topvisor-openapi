@@ -20,9 +20,9 @@ export interface components {
             indexing?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в индексации */
             watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             filters?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Urls_2.Methods.Edit.Exec": number | null;
     };

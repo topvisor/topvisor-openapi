@@ -15,9 +15,9 @@ export interface components {
             to_id?: number;
             /** @default in_folder */
             to_type?: import('../../../../Keywords_2/Types/Groups/ToType.ts').components['schemas']['Keywords_2.Types.Groups.ToType'];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "KeywordsAi_2.Methods.Groups.Move.Edit.Exec": number | null;
     };

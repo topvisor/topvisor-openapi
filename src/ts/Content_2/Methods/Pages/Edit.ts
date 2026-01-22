@@ -11,6 +11,8 @@ export interface components {
          *
          *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Pages\Edit */
         "Content_2.Methods.Pages.Edit": {
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             /** Адрес документа */
             url?: string;
             /** Поддомен документа */
@@ -61,8 +63,6 @@ export interface components {
              *
              *     Доступно всем, если не заполнено */
             required_posts_any?: import('../../../Admin_2/Types/Staff/Posts.ts').components['schemas']['Admin_2.Types.Staff.Posts'] | null;
-            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         "Content_2.Methods.Pages.Edit.Exec": number | null;
     };

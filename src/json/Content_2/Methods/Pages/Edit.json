@@ -10,6 +10,12 @@
             "Content_2.Methods.Pages.Edit": {
                 "type": "object",
                 "properties": {
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
                     "url": {
                         "title": "Адрес документа",
                         "type": "string"
@@ -153,12 +159,6 @@
                                 "$ref": "../../../Admin_2/Types/Staff/Posts.json#/components/schemas/Admin_2.Types.Staff.Posts"
                             }
                         ]
-                    },
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [],

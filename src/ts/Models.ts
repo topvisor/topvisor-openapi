@@ -31,14 +31,14 @@ export interface components {
         "Models.Abstract.Groups": import('./Models/Abstract/Groups.ts').components['schemas']['Models.Abstract.Groups'];
         "Models.Abstract.Keywords": import('./Models/Abstract/Keywords.ts').components['schemas']['Models.Abstract.Keywords'];
         "Models.Admin.Invoices": import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
+        "Models.Admin.Staff": import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
+        "Models.Admin.Users": import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
         "Models.AdminLayers.Anons": import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
         "Models.AdminLayers.Key": import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];
         "Models.AdminLayers.Layers": import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
         "Models.AdminLayers.Partners": import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
         "Models.AdminLayers.Servers": import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
         "Models.AdminLayers.Service": import('./Models/AdminLayers/Service.ts').components['schemas']['Models.AdminLayers.Service'];
-        "Models.Admin.Staff": import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
-        "Models.Admin.Users": import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
         "Models.AiTracker.Prompts": import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
         "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
         "Models.Analytics.Ranks": import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];

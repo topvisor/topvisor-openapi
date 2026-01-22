@@ -44,14 +44,14 @@
                         "nullable": true,
                         "type": "boolean"
                     },
+                    "command": {
+                        "$ref": "../../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
+                    },
                     "filters": {
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
-                    },
-                    "command": {
-                        "$ref": "../../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
                     }
                 },
                 "required": [

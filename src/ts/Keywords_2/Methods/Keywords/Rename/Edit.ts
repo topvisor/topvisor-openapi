@@ -13,10 +13,10 @@ export interface components {
         "Keywords_2.Methods.Keywords.Rename.Edit": {
             /** Название запроса для переименования */
             name: string;
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
         "Keywords_2.Methods.Keywords.Rename.Edit.Exec": import('../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][];
     };

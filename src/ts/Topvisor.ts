@@ -1907,25 +1907,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Редактирование статуса закладки для автора
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\BookmarkAuthor\Edit */
-    "/edit/content_2/bookmarkAuthor/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditContent2BookmarkAuthor"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Редактирование статуса закладки для страницы
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Bookmark\Edit */
@@ -1945,10 +1926,10 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение хлебных крошек статьи справки
+    /** Редактирование статуса закладки для автора
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Breadcrumbs\Get */
-    "/get/content_2/breadcrumbs/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\BookmarkAuthor\Edit */
+    "/edit/content_2/bookmarkAuthor/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1957,7 +1938,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetContent2Breadcrumbs"];
+        post: operations["EditContent2BookmarkAuthor"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2519,6 +2500,196 @@ export interface paths {
     };  
     /** Получение числа включенных/выключенных групп и запросов
      *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Counters\Get */
+    "/get/keywordsai_2/counters/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2Counters"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление папки
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Add */
+    "/add/keywordsai_2/folders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywordsai2Folders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление папок
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Del */
+    "/del/keywordsai_2/folders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelKeywordsai2Folders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка папок проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Get */
+    "/get/keywordsai_2/folders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2Folders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление групп
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Add */
+    "/add/keywordsai_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywordsai2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление групп
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Del */
+    "/del/keywordsai_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelKeywordsai2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка групп проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Get */
+    "/get/keywordsai_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление запроса
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Add */
+    "/add/keywordsai_2/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywordsai2Keywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление запросов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Del */
+    "/del/keywordsai_2/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelKeywordsai2Keywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка запросов проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Get */
+    "/get/keywordsai_2/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2Keywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа включенных/выключенных групп и запросов
+     *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Counters\Get */
     "/get/keywords_2/counters/": {
         parameters: {
@@ -2530,6 +2701,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetKeywords2Counters"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа включенных/выключенных групп и запросов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Counters2\Get */
+    "/get/keywords_2/counters2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2Counters2"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2777,196 +2967,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetKeywords2Volumes"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение числа включенных/выключенных групп и запросов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Counters\Get */
-    "/get/keywordsai_2/counters/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2Counters"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Добавление папки
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Add */
-    "/add/keywordsai_2/folders/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddKeywordsai2Folders"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Удаление папок
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Del */
-    "/del/keywordsai_2/folders/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelKeywordsai2Folders"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение списка папок проекта
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Get */
-    "/get/keywordsai_2/folders/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2Folders"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Добавление групп
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Add */
-    "/add/keywordsai_2/groups/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddKeywordsai2Groups"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Удаление групп
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Del */
-    "/del/keywordsai_2/groups/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelKeywordsai2Groups"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение списка групп проекта
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Get */
-    "/get/keywordsai_2/groups/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2Groups"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Добавление запроса
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Add */
-    "/add/keywordsai_2/keywords/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddKeywordsai2Keywords"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Удаление запросов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Del */
-    "/del/keywordsai_2/keywords/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelKeywordsai2Keywords"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение списка запросов проекта
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Get */
-    "/get/keywordsai_2/keywords/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
@@ -5158,25 +5158,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки числа рефералов по своему уровню
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralsByLevel\Get */
-    "/get/admin_2/affiliate/referralsByLevel/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAdmin2AffiliateReferralsByLevel"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение сводки по новым рефералам
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\Referrals\Get */
@@ -5196,10 +5177,10 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки числа партнеров по числу рефералов
+    /** Получение сводки числа рефералов по своему уровню
      *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get */
-    "/get/admin_2/affiliate/referrersByReferrals/": {
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferralsByLevel\Get */
+    "/get/admin_2/affiliate/referralsByLevel/": {
         parameters: {
             query?: never;
             header?: never;
@@ -5208,7 +5189,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAdmin2AffiliateReferrersByReferrals"];
+        post: operations["GetAdmin2AffiliateReferralsByLevel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -5228,6 +5209,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAdmin2AffiliateReferrers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки числа партнеров по числу рефералов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Affiliate\ReferrersByReferrals\Get */
+    "/get/admin_2/affiliate/referrersByReferrals/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferrersByReferrals"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6534,25 +6534,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение календаря апдейтов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Calendar\Get */
-    "/get/content_2/apometr/calendar/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetContent2ApometrCalendar"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /**
      * Получение истории urls, найденных в выдаче, за конкретную проверку
      *
@@ -6570,6 +6551,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2ApometrCHHistory"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение календаря апдейтов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Apometr\Calendar\Get */
+    "/get/content_2/apometr/calendar/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2ApometrCalendar"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6652,25 +6652,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение закладок авторов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\BookmarksAuthors\Get */
-    "/get/content_2/journal/bookmarksAuthors/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetContent2JournalBookmarksAuthors"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение закладок
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\Bookmarks\Get */
@@ -6684,6 +6665,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2JournalBookmarks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение закладок авторов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Content_2\Methods\Journal\BookmarksAuthors\Get */
+    "/get/content_2/journal/bookmarksAuthors/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2JournalBookmarksAuthors"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6819,6 +6819,357 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["DelInformer2PushToken"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Move\Edit */
+    "/edit/keywordsai_2/folders/move/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2FoldersMove"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Переименовывание папок
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Rename\Edit */
+    "/edit/keywordsai_2/folders/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2FoldersRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление папок проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Undel\Edit */
+    "/edit/keywordsai_2/folders/undel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2FoldersUndel"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт всех запросов в определенном формате (экспорт всех запросов)
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Export\Get */
+    "/get/keywordsai_2/groups/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2GroupsExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Перемещение группы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Move\Edit */
+    "/edit/keywordsai_2/groups/move/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2GroupsMove"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение статуса активности группы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\On\Edit */
+    "/edit/keywordsai_2/groups/on/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2GroupsOn"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Переименовывание группы
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Rename\Edit */
+    "/edit/keywordsai_2/groups/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2GroupsRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение сортировки групп
+     *
+     *     Не оптимизировано для работы с большим числом групп, дат и регионов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Sort\Edit */
+    "/edit/keywordsai_2/groups/sort/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2GroupsSort"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление группы из корзины
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Undel\Edit */
+    "/edit/keywordsai_2/groups/undel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2GroupsUndel"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт в определенном формате (экспорт всех запросов)
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Export\Get */
+    "/get/keywordsai_2/keywords/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2KeywordsExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Импорт запросов (по необходимости зависимых с ними групп и папок)
+     *
+     *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Import\Add */
+    "/add/keywordsai_2/keywords/import/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywordsai2KeywordsImport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Перемещение запросов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Move\Edit */
+    "/edit/keywordsai_2/keywords/move/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsMove"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Получение id, имение запроса и результатов, зависимые от контекста
+     *
+     *     Поддерживает работу до 10 000 запросов
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Offset\Get
+     * @description @see Keywords_2\Methods\Keywords\Get
+     */
+    "/get/keywordsai_2/keywords/offset/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywordsai2KeywordsOffset"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Переименование запроса
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Rename\Edit */
+    "/edit/keywordsai_2/keywords/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение сортировки запросов
+     *
+     *     Можно сортировать в пределах одной группы или всего проекта
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Sort\Edit */
+    "/edit/keywordsai_2/keywords/sort/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsSort"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение тегов запроса
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Tags\Edit */
+    "/edit/keywordsai_2/keywords/tags/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsTags"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение целевой ссылки запроса
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Target\Edit */
+    "/edit/keywordsai_2/keywords/target/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsTarget"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление запросов из корзины
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Undel\Edit */
+    "/edit/keywordsai_2/keywords/undel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6977,25 +7328,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены перекластеризации
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\PriceChange\Get */
-    "/get/keywords_2/claster/priceChange/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywords2ClasterPriceChange"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение цены кластеризации
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\Price\Get */
@@ -7009,6 +7341,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetKeywords2ClasterPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение цены перекластеризации
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Claster\PriceChange\Get */
+    "/get/keywords_2/claster/priceChange/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterPriceChange"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7549,357 +7900,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetKeywords2VolumesPrice"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Move\Edit */
-    "/edit/keywordsai_2/folders/move/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2FoldersMove"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Переименовывание папок
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Rename\Edit */
-    "/edit/keywordsai_2/folders/rename/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2FoldersRename"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Восстановление папок проекта
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Folders\Undel\Edit */
-    "/edit/keywordsai_2/folders/undel/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2FoldersUndel"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Экспорт всех запросов в определенном формате (экспорт всех запросов)
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Export\Get */
-    "/get/keywordsai_2/groups/export/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2GroupsExport"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Перемещение группы
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Move\Edit */
-    "/edit/keywordsai_2/groups/move/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2GroupsMove"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение статуса активности группы
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\On\Edit */
-    "/edit/keywordsai_2/groups/on/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2GroupsOn"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Переименовывание группы
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Rename\Edit */
-    "/edit/keywordsai_2/groups/rename/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2GroupsRename"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение сортировки групп
-     *
-     *     Не оптимизировано для работы с большим числом групп, дат и регионов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Sort\Edit */
-    "/edit/keywordsai_2/groups/sort/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2GroupsSort"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Восстановление группы из корзины
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Groups\Undel\Edit */
-    "/edit/keywordsai_2/groups/undel/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2GroupsUndel"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Экспорт в определенном формате (экспорт всех запросов)
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Export\Get */
-    "/get/keywordsai_2/keywords/export/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2KeywordsExport"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Импорт запросов (по необходимости зависимых с ними групп и папок)
-     *
-     *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Import\Add */
-    "/add/keywordsai_2/keywords/import/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddKeywordsai2KeywordsImport"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Перемещение запросов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Move\Edit */
-    "/edit/keywordsai_2/keywords/move/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsMove"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получение id, имение запроса и результатов, зависимые от контекста
-     *
-     *     Поддерживает работу до 10 000 запросов
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Offset\Get
-     * @description @see Keywords_2\Methods\Keywords\Get
-     */
-    "/get/keywordsai_2/keywords/offset/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywordsai2KeywordsOffset"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Переименование запроса
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Rename\Edit */
-    "/edit/keywordsai_2/keywords/rename/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsRename"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение сортировки запросов
-     *
-     *     Можно сортировать в пределах одной группы или всего проекта
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Sort\Edit */
-    "/edit/keywordsai_2/keywords/sort/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsSort"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение тегов запроса
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Tags\Edit */
-    "/edit/keywordsai_2/keywords/tags/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsTags"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение целевой ссылки запроса
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Target\Edit */
-    "/edit/keywordsai_2/keywords/target/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsTarget"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Восстановление запросов из корзины
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Undel\Edit */
-    "/edit/keywordsai_2/keywords/undel/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -9105,27 +9105,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение статистики по количествам ошибок распознавателей капч
-     *
-     *     Статистика возвращается только для Google
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\StatsRecognizersCountErrors\Get */
-    "/get/robot_2/admin/statsRecognizersCountErrors/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetRobot2AdminStatsRecognizersCountErrors"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение статистики по работе распознавателей капч.
      *
      *     Статистика возвращается только для Google
@@ -9141,6 +9120,27 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetRobot2AdminStatsRecognizers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по количествам ошибок распознавателей капч
+     *
+     *     Статистика возвращается только для Google
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Robot_2\Methods\Admin\StatsRecognizersCountErrors\Get */
+    "/get/robot_2/admin/statsRecognizersCountErrors/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRobot2AdminStatsRecognizersCountErrors"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10673,25 +10673,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение числа автоматических проверок по часам
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHourAuto\Get */
-    "/get/admin_2/analytics/positions/chartByHourAuto/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAdmin2AnalyticsPositionsChartByHourAuto"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение числа проверок за месяц по часам
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHour\Get */
@@ -10705,6 +10686,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAdmin2AnalyticsPositionsChartByHour"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа автоматических проверок по часам
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Admin_2\Methods\Analytics\Positions\ChartByHourAuto\Get */
+    "/get/admin_2/analytics/positions/chartByHourAuto/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPositionsChartByHourAuto"];
         delete?: never;
         options?: never;
         head?: never;
@@ -11579,6 +11579,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Копирование запросов в другой проект
+     *
+     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Export\ToProject\Edit */
+    "/edit/keywordsai_2/keywords/export/toProject/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywordsai2KeywordsExportToProject"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Постановка задачи на расширение группы
      *
      *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\Keywords_2\Methods\Collect\Ext\Go\Edit */
@@ -11630,25 +11649,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditKeywords2KeywordsExportToProject"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Копирование запросов в другой проект
-     *
-     *     @see jetbrains://idea/navigate/reference?project=topvisor-com&fqn=Services\KeywordsAi_2\Methods\Keywords\Export\ToProject\Edit */
-    "/edit/keywordsai_2/keywords/export/toProject/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsExportToProject"];
         delete?: never;
         options?: never;
         head?: never;
@@ -15080,31 +15080,6 @@ export interface operations {
             };
         };
     };
-    EditContent2BookmarkAuthor: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/BookmarkAuthor/Edit.ts').components['schemas']['Content_2.Methods.BookmarkAuthor.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/BookmarkAuthor/Edit.ts').components['schemas']['Content_2.Methods.BookmarkAuthor.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     EditContent2Bookmark: {
         parameters: {
             query?: never;
@@ -15130,7 +15105,7 @@ export interface operations {
             };
         };
     };
-    GetContent2Breadcrumbs: {
+    EditContent2BookmarkAuthor: {
         parameters: {
             query?: never;
             header?: never;
@@ -15139,7 +15114,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Content_2/Methods/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Breadcrumbs.Get'];
+                "application/json": import('./Content_2/Methods/BookmarkAuthor/Edit.ts').components['schemas']['Content_2.Methods.BookmarkAuthor.Edit'];
             };
         };
         responses: {
@@ -15149,9 +15124,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Content_2/Methods/Breadcrumbs/Get.ts').components['schemas']['Content_2.Methods.Breadcrumbs.Get.Exec'];
+                        result: import('./Content_2/Methods/BookmarkAuthor/Edit.ts').components['schemas']['Content_2.Methods.BookmarkAuthor.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
             };
         };
@@ -15895,6 +15869,264 @@ export interface operations {
             };
         };
     };
+    GetKeywordsai2Counters: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Counters/Get.ts').components['schemas']['KeywordsAi_2.Methods.Counters.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Counters/Get.ts').components['schemas']['KeywordsAi_2.Methods.Counters.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
+                };
+            };
+        };
+    };
+    AddKeywordsai2Folders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Folders/Add.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Folders/Add.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+                };
+            };
+        };
+    };
+    DelKeywordsai2Folders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Folders/Del.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Folders/Del.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+                };
+            };
+        };
+    };
+    GetKeywordsai2Folders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Folders/Get.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Folders/Get.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+                };
+            };
+        };
+    };
+    AddKeywordsai2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Add.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Add.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    DelKeywordsai2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Del.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Del.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    GetKeywordsai2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    AddKeywordsai2Keywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    DelKeywordsai2Keywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Del.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Del.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    GetKeywordsai2Keywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
     GetKeywords2Counters: {
         parameters: {
             query?: never;
@@ -15916,6 +16148,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Counters/Get.ts').components['schemas']['Keywords_2.Methods.Counters.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2Counters2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Counters2/Get.ts').components['schemas']['Keywords_2.Methods.Counters2.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Counters2/Get.ts').components['schemas']['Keywords_2.Methods.Counters2.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -16249,263 +16507,6 @@ export interface operations {
                         result: import('./Keywords_2/Methods/Volumes/Get.ts').components['schemas']['Keywords_2.Methods.Volumes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2Counters: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Counters/Get.ts').components['schemas']['KeywordsAi_2.Methods.Counters.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Counters/Get.ts').components['schemas']['KeywordsAi_2.Methods.Counters.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AddKeywordsai2Folders: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Folders/Add.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Folders/Add.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
-                };
-            };
-        };
-    };
-    DelKeywordsai2Folders: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Folders/Del.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Folders/Del.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Del.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2Folders: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Folders/Get.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Folders/Get.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
-                };
-            };
-        };
-    };
-    AddKeywordsai2Groups: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Add.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Add.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    DelKeywordsai2Groups: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Del.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Del.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Del.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2Groups: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    AddKeywordsai2Keywords: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    DelKeywordsai2Keywords: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Del.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Del.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Del.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2Keywords: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -19330,31 +19331,6 @@ export interface operations {
             };
         };
     };
-    GetAdmin2AffiliateReferralsByLevel: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetAdmin2AffiliateReferrals: {
         parameters: {
             query?: never;
@@ -19380,7 +19356,7 @@ export interface operations {
             };
         };
     };
-    GetAdmin2AffiliateReferrersByReferrals: {
+    GetAdmin2AffiliateReferralsByLevel: {
         parameters: {
             query?: never;
             header?: never;
@@ -19389,7 +19365,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get'];
+                "application/json": import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get'];
             };
         };
         responses: {
@@ -19399,7 +19375,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec'];
+                        result: import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -19425,6 +19401,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Affiliate/Referrers/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferrersByReferrals: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -21118,31 +21119,6 @@ export interface operations {
             };
         };
     };
-    GetContent2ApometrCalendar: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/Apometr/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Calendar.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/Apometr/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Calendar.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetContent2ApometrCHHistory: {
         parameters: {
             query?: never;
@@ -21165,6 +21141,31 @@ export interface operations {
                         result: import('./Content_2/Methods/Apometr/CHHistory/Get.ts').components['schemas']['Content_2.Methods.Apometr.CHHistory.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'];
+                };
+            };
+        };
+    };
+    GetContent2ApometrCalendar: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Apometr/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Calendar.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Apometr/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Calendar.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -21271,32 +21272,6 @@ export interface operations {
             };
         };
     };
-    GetContent2JournalBookmarksAuthors: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/Journal/BookmarksAuthors/Get.ts').components['schemas']['Content_2.Methods.Journal.BookmarksAuthors.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/Journal/BookmarksAuthors/Get.ts').components['schemas']['Content_2.Methods.Journal.BookmarksAuthors.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
-                };
-            };
-        };
-    };
     GetContent2JournalBookmarks: {
         parameters: {
             query?: never;
@@ -21317,6 +21292,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Bookmarks/Get.ts').components['schemas']['Content_2.Methods.Journal.Bookmarks.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
+                };
+            };
+        };
+    };
+    GetContent2JournalBookmarksAuthors: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Journal/BookmarksAuthors/Get.ts').components['schemas']['Content_2.Methods.Journal.BookmarksAuthors.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Journal/BookmarksAuthors/Get.ts').components['schemas']['Content_2.Methods.Journal.BookmarksAuthors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -21496,6 +21497,467 @@ export interface operations {
                     "application/json": ({
                         result: import('./Informer_2/Methods/Push/Token/Del.ts').components['schemas']['Informer_2.Methods.Push.Token.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2FoldersMove: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Folders/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Move.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Folders/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Move.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2FoldersRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Folders/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Folders/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2FoldersUndel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Folders/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Undel.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Folders/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Undel.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
+                };
+            };
+        };
+    };
+    GetKeywordsai2GroupsExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Export/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2GroupsMove: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Move.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Move.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2GroupsOn: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/On/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.On.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/On/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.On.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2GroupsRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2GroupsSort: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Sort.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Sort.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2GroupsUndel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Groups/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Undel.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Groups/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Undel.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    GetKeywordsai2KeywordsExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Export/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    AddKeywordsai2KeywordsImport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Import/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Import.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Import/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Import.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2KeywordsMove: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Move.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Move.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    GetKeywordsai2KeywordsOffset: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Offset/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Offset.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Offset/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Offset.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2KeywordsRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2KeywordsSort: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Sort.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Sort.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2KeywordsTags: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Tags/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Tags.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Tags/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Tags.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2KeywordsTarget: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Target/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Target.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Target/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Target.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywordsai2KeywordsUndel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Undel.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Undel.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -21702,31 +22164,6 @@ export interface operations {
             };
         };
     };
-    GetKeywords2ClasterPriceChange: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetKeywords2ClasterPrice: {
         parameters: {
             query?: never;
@@ -21747,6 +22184,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Claster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterPriceChange: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -22458,467 +22920,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Volumes/Price/Get.ts').components['schemas']['Keywords_2.Methods.Volumes.Price.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2FoldersMove: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Folders/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Move.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Folders/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Move.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2FoldersRename: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Folders/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Rename.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Folders/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Rename.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2FoldersUndel: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Folders/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Undel.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Folders/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Folders.Undel.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/KeywordsAi/Folders.ts').components['schemas']['Models.KeywordsAi.Folders'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2GroupsExport: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Export/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Export.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/octet-stream": string;
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2GroupsMove: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Move.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Move.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2GroupsOn: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/On/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.On.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/On/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.On.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2GroupsRename: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Rename.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Rename.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2GroupsSort: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Sort.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Sort.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2GroupsUndel: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Groups/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Undel.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Groups/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Undel.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2KeywordsExport: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Export/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Export.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/octet-stream": string;
-                };
-            };
-        };
-    };
-    AddKeywordsai2KeywordsImport: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Import/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Import.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Import/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Import.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsMove: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Move.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Move.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    GetKeywordsai2KeywordsOffset: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Offset/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Offset.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Offset/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Offset.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsRename: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Rename.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Rename.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsSort: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Sort.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Sort.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsTags: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Tags/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Tags.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Tags/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Tags.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsTarget: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Target/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Target.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Target/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Target.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsUndel: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Undel.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Undel.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
@@ -24493,31 +24494,6 @@ export interface operations {
             };
         };
     };
-    GetRobot2AdminStatsRecognizersCountErrors: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetRobot2AdminStatsRecognizers: {
         parameters: {
             query?: never;
@@ -24538,6 +24514,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Robot_2/Methods/Admin/StatsRecognizers/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetRobot2AdminStatsRecognizersCountErrors: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Robot_2/Methods/Admin/StatsRecognizersCountErrors/Get.ts').components['schemas']['Robot_2.Methods.Admin.StatsRecognizersCountErrors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -26507,31 +26508,6 @@ export interface operations {
             };
         };
     };
-    GetAdmin2AnalyticsPositionsChartByHourAuto: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     GetAdmin2AnalyticsPositionsChartByHour: {
         parameters: {
             query?: never;
@@ -26552,6 +26528,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Analytics/Positions/ChartByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPositionsChartByHourAuto: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -27661,6 +27662,31 @@ export interface operations {
             };
         };
     };
+    EditKeywordsai2KeywordsExportToProject: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./KeywordsAi_2/Methods/Keywords/Export/ToProject/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Export.ToProject.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./KeywordsAi_2/Methods/Keywords/Export/ToProject/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Export.ToProject.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     EditKeywords2CollectExtGo: {
         parameters: {
             query?: never;
@@ -27731,31 +27757,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Keywords/Export/ToProject/Edit.ts').components['schemas']['Keywords_2.Methods.Keywords.Export.ToProject.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsExportToProject: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Export/ToProject/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Export.ToProject.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Export/ToProject/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Export.ToProject.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

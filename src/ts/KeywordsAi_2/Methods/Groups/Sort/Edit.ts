@@ -15,9 +15,9 @@ export interface components {
         "KeywordsAi_2.Methods.Groups.Sort.Edit": {
             /** Список полей объекта, по которым необходимо выполнить сортировку */
             orders: unknown[];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "KeywordsAi_2.Methods.Groups.Sort.Edit.Exec": number | null;
     };
