@@ -48,7 +48,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение целевой ссылки запроса"
+                "title": "Изменение целевой ссылки запросов"
             },
             "Keywords_2.Methods.Keywords.Target.Edit.Exec": {
                 "nullable": true,

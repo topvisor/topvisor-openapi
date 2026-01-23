@@ -55,8 +55,7 @@
                     "tags",
                     "action",
                     "project_id"
-                ],
-                "title": "Изменение тегов запроса"
+                ]
             },
             "Keywords_2.Methods.Keywords.Tags.Edit.Exec": {
                 "nullable": true,

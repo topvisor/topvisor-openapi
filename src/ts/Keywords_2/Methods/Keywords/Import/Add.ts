@@ -7,9 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Импорт запросов (по необходимости зависимых с ними групп и папок)
-         *
-         *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе */
         "Keywords_2.Methods.Keywords.Import.Add": {
             /** Id проекта */
             project_id: number;
@@ -20,7 +17,7 @@ export interface components {
              *     - resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV
              *     - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса */
             keywords?: unknown;
-            /** Id папки, если папка не указана будет использована корневая папка проекта */
+            /** Id папки, если папка не указана, будет использована корневая папка проекта */
             folder_id?: number | null;
             /** Id группы, если не указан будет создана новая группа в указанной папке */
             group_id?: number | null;

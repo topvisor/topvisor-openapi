@@ -31,7 +31,7 @@ export interface components {
             status?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Keywords_2.Methods.Groups.Add.Exec": unknown[] | null;
+        "Keywords_2.Methods.Groups.Add.Exec": import('../../../Models/Groups.ts').components['schemas']['Models.Groups'][] | null;
     };
     responses: never;
     parameters: never;

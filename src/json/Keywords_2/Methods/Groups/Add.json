@@ -53,7 +53,10 @@
             },
             "Keywords_2.Methods.Groups.Add.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Groups.json#/components/schemas/Models.Groups"
+                }
             }
         }
     }

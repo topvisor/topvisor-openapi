@@ -6813,10 +6813,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Импорт запросов (по необходимости зависимых с ними групп и папок)
-     *
-     *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе */
+    };
     "/add/keywords_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -6907,8 +6904,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение тегов запроса */
+    };
     "/edit/keywords_2/keywords/tags/": {
         parameters: {
             query?: never;
@@ -6925,7 +6921,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение целевой ссылки запроса */
+    /** Изменение целевой ссылки запросов */
     "/edit/keywords_2/keywords/target/": {
         parameters: {
             query?: never;
@@ -14887,7 +14883,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Folders/Add.ts').components['schemas']['Keywords_2.Methods.Folders.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Folders.ts').components['schemas']['Models.Folders'];
                 };
             };
         };
@@ -14965,6 +14960,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Groups/Add.ts').components['schemas']['Keywords_2.Methods.Groups.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
                 };
             };
         };
@@ -21306,6 +21302,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Keywords/Offset/Get.ts').components['schemas']['Keywords_2.Methods.Keywords.Offset.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -21409,7 +21406,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Keywords/Target/Edit.ts').components['schemas']['Keywords_2.Methods.Keywords.Target.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/Abstract/Keywords.ts').components['schemas']['Models.Abstract.Keywords'];
                 };
             };
         };

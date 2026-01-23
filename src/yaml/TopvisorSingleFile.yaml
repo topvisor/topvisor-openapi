@@ -4333,9 +4333,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Folders'
   /del/keywords_2/folders/:
     post:
       operationId: DelKeywords2Folders
@@ -4427,6 +4424,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Groups'
   /del/keywords_2/groups/:
     post:
       operationId: DelKeywords2Groups
@@ -11709,10 +11709,6 @@ paths:
       operationId: AddKeywords2KeywordsImport
       tags:
         - Keywords_2
-      summary: |-
-        Импорт запросов (по необходимости зависимых с ними групп и папок)
-
-        Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
       requestBody:
         content:
           application/json:
@@ -11802,6 +11798,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /edit/keywords_2/keywords/rename/:
     post:
       operationId: EditKeywords2KeywordsRename
@@ -11872,7 +11871,6 @@ paths:
       operationId: EditKeywords2KeywordsTags
       tags:
         - Keywords_2
-      summary: Изменение тегов запроса
       requestBody:
         content:
           application/json:
@@ -11903,7 +11901,7 @@ paths:
       operationId: EditKeywords2KeywordsTarget
       tags:
         - Keywords_2
-      summary: Изменение целевой ссылки запроса
+      summary: Изменение целевой ссылки запросов
       requestBody:
         content:
           application/json:
@@ -11928,7 +11926,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.Abstract.Keywords'
   /edit/keywords_2/keywords/undel/:
     post:
       operationId: EditKeywords2KeywordsUndel
@@ -27247,6 +27245,21 @@ components:
             - '"count_groups_active"'
             - '"expire_days"'
         - type: 'null'
+    Keywords_2.Methods.Folders.Del:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: Удаление папок
+    Keywords_2.Methods.Folders.Del.Exec:
+      nullable: true
+      type: integer
     Models.Folders:
       properties:
         COUNT(*):
@@ -27270,21 +27283,6 @@ components:
           nullable: true
         ord_path:
           nullable: true
-    Keywords_2.Methods.Folders.Del:
-      type: object
-      properties:
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - project_id
-      title: Удаление папок
-    Keywords_2.Methods.Folders.Del.Exec:
-      nullable: true
-      type: integer
     Keywords_2.Methods.Folders.Get:
       type: object
       properties:
@@ -27350,24 +27348,6 @@ components:
       required:
         - project_id
       title: Добавление групп
-    Keywords_2.Methods.Groups.Add.Exec:
-      nullable: true
-      type: array
-    Keywords_2.Methods.Groups.Del:
-      type: object
-      properties:
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - project_id
-      title: Удаление групп
-    Keywords_2.Methods.Groups.Del.Exec:
-      nullable: true
-      type: integer
     Models.Groups:
       properties:
         COUNT(*):
@@ -27419,6 +27399,26 @@ components:
               - date
               - project_id
               - region_index
+    Keywords_2.Methods.Groups.Add.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Groups'
+    Keywords_2.Methods.Groups.Del:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: Удаление групп
+    Keywords_2.Methods.Groups.Del.Exec:
+      nullable: true
+      type: integer
     Keywords_2.Methods.Groups.Get:
       type: object
       properties:
@@ -37922,7 +37922,7 @@ components:
             - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса
           nullable: true
         folder_id:
-          title: Id папки, если папка не указана будет использована корневая папка проекта
+          title: Id папки, если папка не указана, будет использована корневая папка проекта
           nullable: true
           type: integer
         group_id:
@@ -37964,10 +37964,6 @@ components:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
       required:
         - project_id
-      title: |-
-        Импорт запросов (по необходимости зависимых с ними групп и папок)
-
-        Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
     Keywords_2.Methods.Keywords.Import.Add.Exec:
       nullable: true
       type: array
@@ -38125,7 +38121,6 @@ components:
         - tags
         - action
         - project_id
-      title: Изменение тегов запроса
     Keywords_2.Methods.Keywords.Tags.Edit.Exec:
       nullable: true
       type: integer
@@ -38155,10 +38150,43 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - project_id
-      title: Изменение целевой ссылки запроса
+      title: Изменение целевой ссылки запросов
     Keywords_2.Methods.Keywords.Target.Edit.Exec:
       nullable: true
       type: integer
+    Models.Abstract.Keywords:
+      properties:
+        COUNT(*):
+          nullable: true
+        LENGTH(name):
+          nullable: true
+        tagsNames():
+          nullable: true
+        id: {}
+        phrase_id:
+          nullable: true
+        project_id:
+          nullable: true
+        group_id:
+          nullable: true
+        tags:
+          nullable: true
+        ord:
+          nullable: true
+        name:
+          nullable: true
+        group_name:
+          nullable: true
+        group_on:
+          nullable: true
+        group_ord:
+          nullable: true
+        group_folder_id:
+          nullable: true
+        group_folder_path:
+          nullable: true
+        group_folder_ord:
+          nullable: true
     Keywords_2.Methods.Keywords.Undel.Edit:
       type: object
       properties:

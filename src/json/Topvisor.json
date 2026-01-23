@@ -7885,11 +7885,6 @@
                                         }
                                     ]
                                 }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
-                                }
                             }
                         }
                     }
@@ -8061,6 +8056,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
                                 }
                             }
                         }
@@ -21556,7 +21556,6 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -21717,6 +21716,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -21845,7 +21849,6 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение тегов запроса",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -21903,7 +21906,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение целевой ссылки запроса",
+                "summary": "Изменение целевой ссылки запросов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -21947,7 +21950,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/Abstract/Keywords.json#/components/schemas/Models.Abstract.Keywords"
                                 }
                             }
                         }
