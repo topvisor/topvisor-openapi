@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка запросов проекта */
         "KeywordsAi_2.Methods.Keywords.Get": {
             /** Id проекта */
             project_id: number;

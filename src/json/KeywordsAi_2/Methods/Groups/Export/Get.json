@@ -50,8 +50,7 @@
                 "required": [
                     "output",
                     "project_id"
-                ],
-                "title": "Экспорт всех запросов в определенном формате (экспорт всех запросов)"
+                ]
             },
             "KeywordsAi_2.Methods.Groups.Export.Get.Exec": {
                 "type": "never"

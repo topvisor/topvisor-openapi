@@ -19,7 +19,7 @@
                         "nullable": true
                     },
                     "folder_id": {
-                        "title": "Id папки, если папка не указана будет использована корневая папка проекта",
+                        "title": "Id папки, если папка не указана, будет использована корневая папка проекта",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -75,12 +75,14 @@
                 },
                 "required": [
                     "project_id"
-                ],
-                "title": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе"
+                ]
             },
             "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Keywords.json#/components/schemas/Models.Keywords"
+                }
             }
         }
     }

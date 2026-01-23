@@ -67,7 +67,10 @@
                 "title": "Добавление запроса"
             },
             "KeywordsAi_2.Methods.Keywords.Add.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
+                }
             }
         }
     }

@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение тегов запроса */
         "KeywordsAi_2.Methods.Keywords.Tags.Edit": {
             /** Теги запроса */
             tags: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'];

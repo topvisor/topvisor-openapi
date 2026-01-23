@@ -22,8 +22,7 @@
                 },
                 "required": [
                     "project_id"
-                ],
-                "title": "Удаление запросов"
+                ]
             },
             "KeywordsAi_2.Methods.Keywords.Del.Exec": {
                 "nullable": true,

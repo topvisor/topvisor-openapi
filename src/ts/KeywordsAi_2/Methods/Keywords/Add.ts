@@ -31,7 +31,7 @@ export interface components {
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
-        "KeywordsAi_2.Methods.Keywords.Add.Exec": unknown[];
+        "KeywordsAi_2.Methods.Keywords.Add.Exec": import('../../../Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'][];
     };
     responses: never;
     parameters: never;

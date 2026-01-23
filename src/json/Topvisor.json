@@ -7240,6 +7240,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
+                                }
                             }
                         }
                     }
@@ -7470,6 +7475,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
+                                }
                             }
                         }
                     }
@@ -7526,7 +7536,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -7587,7 +7597,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -7642,6 +7652,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
+                                }
                             }
                         }
                     }
@@ -7654,7 +7669,6 @@
                 "tags": [
                     "Keywordsai_2"
                 ],
-                "summary": "Удаление запросов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7698,7 +7712,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -7712,7 +7726,6 @@
                 "tags": [
                     "Keywordsai_2"
                 ],
-                "summary": "Получение списка запросов проекта",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7759,7 +7772,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -7813,6 +7826,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -19488,7 +19506,6 @@
                 "tags": [
                     "Keywordsai_2"
                 ],
-                "summary": "Экспорт всех запросов в определенном формате (экспорт всех запросов)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -19511,7 +19528,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -19569,7 +19586,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -19627,7 +19644,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -19685,7 +19702,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -19743,7 +19760,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -19801,7 +19818,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                    "$ref": "Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
                                 }
                             }
                         }
@@ -19847,7 +19864,6 @@
                 "tags": [
                     "Keywordsai_2"
                 ],
-                "summary": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -19887,6 +19903,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -19944,7 +19965,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -20003,6 +20024,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
+                                }
                             }
                         }
                     }
@@ -20059,7 +20085,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -20117,7 +20143,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -20131,7 +20157,6 @@
                 "tags": [
                     "Keywordsai_2"
                 ],
-                "summary": "Изменение тегов запроса",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -20175,65 +20200,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/keywordsai_2/keywords/target/": {
-            "post": {
-                "operationId": "EditKeywordsai2KeywordsTarget",
-                "tags": [
-                    "Keywordsai_2"
-                ],
-                "summary": "Изменение целевой ссылки запроса",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "KeywordsAi_2/Methods/Keywords/Target/Edit.json#/components/schemas/KeywordsAi_2.Methods.Keywords.Target.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "KeywordsAi_2/Methods/Keywords/Target/Edit.json#/components/schemas/KeywordsAi_2.Methods.Keywords.Target.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -20291,7 +20258,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }

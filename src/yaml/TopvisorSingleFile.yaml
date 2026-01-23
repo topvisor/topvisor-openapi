@@ -3991,6 +3991,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /add/keywordsai_2/folders/:
     post:
       operationId: AddKeywordsai2Folders
@@ -4113,6 +4116,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /del/keywordsai_2/groups/:
     post:
       operationId: DelKeywordsai2Groups
@@ -4143,7 +4149,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /get/keywordsai_2/groups/:
     post:
       operationId: GetKeywordsai2Groups
@@ -4175,7 +4181,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /add/keywordsai_2/keywords/:
     post:
       operationId: AddKeywordsai2Keywords
@@ -4204,12 +4210,14 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /del/keywordsai_2/keywords/:
     post:
       operationId: DelKeywordsai2Keywords
       tags:
         - Keywordsai_2
-      summary: Удаление запросов
       requestBody:
         content:
           application/json:
@@ -4234,13 +4242,12 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /get/keywordsai_2/keywords/:
     post:
       operationId: GetKeywordsai2Keywords
       tags:
         - Keywordsai_2
-      summary: Получение списка запросов проекта
       requestBody:
         content:
           application/json:
@@ -4266,7 +4273,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /get/keywords_2/counters/:
     post:
       operationId: GetKeywords2Counters
@@ -4295,6 +4302,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /add/keywords_2/folders/:
     post:
       operationId: AddKeywords2Folders
@@ -10585,7 +10595,6 @@ paths:
       operationId: GetKeywordsai2GroupsExport
       tags:
         - Keywordsai_2
-      summary: Экспорт всех запросов в определенном формате (экспорт всех запросов)
       requestBody:
         content:
           application/json:
@@ -10602,7 +10611,7 @@ paths:
                 format: binary
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /edit/keywordsai_2/groups/move/:
     post:
       operationId: EditKeywordsai2GroupsMove
@@ -10633,7 +10642,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /edit/keywordsai_2/groups/on/:
     post:
       operationId: EditKeywordsai2GroupsOn
@@ -10664,7 +10673,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /edit/keywordsai_2/groups/rename/:
     post:
       operationId: EditKeywordsai2GroupsRename
@@ -10695,7 +10704,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /edit/keywordsai_2/groups/sort/:
     post:
       operationId: EditKeywordsai2GroupsSort
@@ -10729,7 +10738,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /edit/keywordsai_2/groups/undel/:
     post:
       operationId: EditKeywordsai2GroupsUndel
@@ -10760,7 +10769,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Groups'
+                $ref: '#/components/schemas/Models.KeywordsAi.Groups'
   /get/keywordsai_2/keywords/export/:
     post:
       operationId: GetKeywordsai2KeywordsExport
@@ -10786,10 +10795,6 @@ paths:
       operationId: AddKeywordsai2KeywordsImport
       tags:
         - Keywordsai_2
-      summary: |-
-        Импорт запросов (по необходимости зависимых с ними групп и папок)
-
-        Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
       requestBody:
         content:
           application/json:
@@ -10812,6 +10817,9 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /edit/keywordsai_2/keywords/move/:
     post:
       operationId: EditKeywordsai2KeywordsMove
@@ -10842,7 +10850,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /get/keywordsai_2/keywords/offset/:
     post:
       operationId: GetKeywordsai2KeywordsOffset
@@ -10876,6 +10884,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/keywordsai_2/keywords/rename/:
     post:
       operationId: EditKeywordsai2KeywordsRename
@@ -10906,7 +10917,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/keywordsai_2/keywords/sort/:
     post:
       operationId: EditKeywordsai2KeywordsSort
@@ -10940,13 +10951,12 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/keywordsai_2/keywords/tags/:
     post:
       operationId: EditKeywordsai2KeywordsTags
       tags:
         - Keywordsai_2
-      summary: Изменение тегов запроса
       requestBody:
         content:
           application/json:
@@ -10971,38 +10981,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
-  /edit/keywordsai_2/keywords/target/:
-    post:
-      operationId: EditKeywordsai2KeywordsTarget
-      tags:
-        - Keywordsai_2
-      summary: Изменение целевой ссылки запроса
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/KeywordsAi_2.Methods.Keywords.Target.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/KeywordsAi_2.Methods.Keywords.Target.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/keywordsai_2/keywords/undel/:
     post:
       operationId: EditKeywordsai2KeywordsUndel
@@ -11033,7 +11012,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/keywords_2/actions/moveBySubstrings/:
     post:
       operationId: EditKeywords2ActionsMoveBySubstrings
@@ -26645,6 +26624,67 @@ components:
         - count_groups_off
         - count_keywords_on
         - count_keywords_off
+    Models.KeywordsAi.Keywords:
+      properties:
+        COUNT(*):
+          nullable: true
+        LENGTH(name):
+          nullable: true
+        tagsNames():
+          nullable: true
+        id: {}
+        phrase_id:
+          nullable: true
+        project_id:
+          nullable: true
+        group_id:
+          nullable: true
+        tags:
+          nullable: true
+        ord:
+          nullable: true
+        name:
+          nullable: true
+        group_name:
+          nullable: true
+        group_on:
+          nullable: true
+        group_ord:
+          nullable: true
+        group_folder_id:
+          nullable: true
+        group_folder_path:
+          nullable: true
+        group_folder_ord:
+          nullable: true
+        response:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        mentioned:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        position:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        position_max:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
     Keywords_2.Types.Folders.ToType:
       type: string
       enum:
@@ -26847,25 +26887,7 @@ components:
       required:
         - project_id
       title: Добавление групп
-    KeywordsAi_2.Methods.Groups.Add.Exec:
-      nullable: true
-      type: array
-    KeywordsAi_2.Methods.Groups.Del:
-      type: object
-      properties:
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - project_id
-      title: Удаление групп
-    KeywordsAi_2.Methods.Groups.Del.Exec:
-      nullable: true
-      type: integer
-    Models.Groups:
+    Models.KeywordsAi.Groups:
       properties:
         COUNT(*):
           nullable: true
@@ -26888,34 +26910,26 @@ components:
           nullable: true
         count_keywords:
           nullable: true
-        volume:
-          nullable: true
-          example:
-            need set qualifiers:
-              - region_key
-              - searcher_key
-              - type
-        POSITIONS_AVG():
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - project_id
-              - region_index
-        POSITIONS_TOP10():
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - project_id
-              - region_index
-        POSITIONS_VISIBILITY():
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - project_id
-              - region_index
+    KeywordsAi_2.Methods.Groups.Add.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.KeywordsAi.Groups'
+    KeywordsAi_2.Methods.Groups.Del:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: Удаление групп
+    KeywordsAi_2.Methods.Groups.Del.Exec:
+      nullable: true
+      type: integer
     KeywordsAi_2.Methods.Groups.Get:
       type: object
       properties:
@@ -26994,6 +27008,8 @@ components:
       title: Добавление запроса
     KeywordsAi_2.Methods.Keywords.Add.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
     KeywordsAi_2.Methods.Keywords.Del:
       type: object
       properties:
@@ -27005,10 +27021,66 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - project_id
-      title: Удаление запросов
     KeywordsAi_2.Methods.Keywords.Del.Exec:
       nullable: true
       type: integer
+    KeywordsAi_2.Methods.Keywords.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Искать в корзине
+          type: boolean
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - project_id
+    KeywordsAi_2.Methods.Keywords.Get.Exec:
+      nullable: true
+    Keywords_2.Methods.Counters.Get:
+      type: object
+      properties:
+        show_trash:
+          title: Считать для удаленных проектов
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: Получение числа включенных/выключенных групп и запросов
+    Keywords_2.Methods.Counters.Get.Exec:
+      type: object
+      properties:
+        count_groups_on:
+          type: integer
+        count_groups_off:
+          type: integer
+        count_keywords_on:
+          type: integer
+        count_keywords_off:
+          type: integer
+      required:
+        - count_groups_on
+        - count_groups_off
+        - count_keywords_on
+        - count_keywords_off
     Models.Keywords:
       properties:
         COUNT(*):
@@ -27121,64 +27193,6 @@ components:
               - position
               - region_key
               - searcher_key
-    KeywordsAi_2.Methods.Keywords.Get:
-      type: object
-      properties:
-        project_id:
-          title: Id проекта
-          type: integer
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
-        show_trash:
-          title: Искать в корзине
-          type: boolean
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-      required:
-        - project_id
-      title: Получение списка запросов проекта
-    KeywordsAi_2.Methods.Keywords.Get.Exec:
-      nullable: true
-    Keywords_2.Methods.Counters.Get:
-      type: object
-      properties:
-        show_trash:
-          title: Считать для удаленных проектов
-          type: boolean
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - project_id
-      title: Получение числа включенных/выключенных групп и запросов
-    Keywords_2.Methods.Counters.Get.Exec:
-      type: object
-      properties:
-        count_groups_on:
-          type: integer
-        count_groups_off:
-          type: integer
-        count_keywords_on:
-          type: integer
-        count_keywords_off:
-          type: integer
-      required:
-        - count_groups_on
-        - count_groups_off
-        - count_keywords_on
-        - count_keywords_off
     Keywords_2.Methods.Folders.Add:
       type: object
       properties:
@@ -27354,6 +27368,57 @@ components:
     Keywords_2.Methods.Groups.Del.Exec:
       nullable: true
       type: integer
+    Models.Groups:
+      properties:
+        COUNT(*):
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        folder_id:
+          nullable: true
+        name:
+          nullable: true
+        'on':
+          nullable: true
+        status:
+          nullable: true
+        ord:
+          nullable: true
+        folder_path:
+          nullable: true
+        folder_ord:
+          nullable: true
+        count_keywords:
+          nullable: true
+        volume:
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_key
+              - searcher_key
+              - type
+        POSITIONS_AVG():
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        POSITIONS_TOP10():
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        POSITIONS_VISIBILITY():
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
     Keywords_2.Methods.Groups.Get:
       type: object
       properties:
@@ -36530,7 +36595,6 @@ components:
       required:
         - output
         - project_id
-      title: Экспорт всех запросов в определенном формате (экспорт всех запросов)
     KeywordsAi_2.Methods.Groups.Move.Edit:
       type: object
       properties:
@@ -36719,7 +36783,7 @@ components:
             - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса
           nullable: true
         folder_id:
-          title: Id папки, если папка не указана будет использована корневая папка проекта
+          title: Id папки, если папка не указана, будет использована корневая папка проекта
           nullable: true
           type: integer
         group_id:
@@ -36761,13 +36825,11 @@ components:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
       required:
         - project_id
-      title: |-
-        Импорт запросов (по необходимости зависимых с ними групп и папок)
-
-        Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
     KeywordsAi_2.Methods.Keywords.Import.Add.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
     KeywordsAi_2.Methods.Keywords.Move.Edit:
       type: object
       properties:
@@ -36869,7 +36931,7 @@ components:
     KeywordsAi_2.Methods.Keywords.Rename.Edit.Exec:
       type: array
       items:
-        $ref: '#/components/schemas/Models.Keywords'
+        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
     KeywordsAi_2.Methods.Keywords.Sort.Edit:
       type: object
       properties:
@@ -36947,38 +37009,7 @@ components:
         - tags
         - action
         - project_id
-      title: Изменение тегов запроса
     KeywordsAi_2.Methods.Keywords.Tags.Edit.Exec:
-      nullable: true
-      type: integer
-    KeywordsAi_2.Methods.Keywords.Target.Edit:
-      type: object
-      properties:
-        target:
-          title: Целевая ссылка
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Url'
-        target_type:
-          default: keywords
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.TargetType'
-        show_trash:
-          title: Учитывать ли удаленные запросы
-          type: boolean
-        group_folder_id_depth:
-          title: Искать ли в подпапках
-          type: boolean
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - project_id
-      title: Изменение целевой ссылки запроса
-    KeywordsAi_2.Methods.Keywords.Target.Edit.Exec:
       nullable: true
       type: integer
     KeywordsAi_2.Methods.Keywords.Undel.Edit:

@@ -2380,8 +2380,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление запросов */
+    };
     "/del/keywordsai_2/keywords/": {
         parameters: {
             query?: never;
@@ -2397,8 +2396,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка запросов проекта */
+    };
     "/get/keywordsai_2/keywords/": {
         parameters: {
             query?: never;
@@ -6162,8 +6160,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт всех запросов в определенном формате (экспорт всех запросов) */
+    };
     "/get/keywordsai_2/groups/export/": {
         parameters: {
             query?: never;
@@ -6283,10 +6280,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Импорт запросов (по необходимости зависимых с ними групп и папок)
-     *
-     *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе */
+    };
     "/add/keywordsai_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -6377,8 +6371,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение тегов запроса */
+    };
     "/edit/keywordsai_2/keywords/tags/": {
         parameters: {
             query?: never;
@@ -6389,23 +6382,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditKeywordsai2KeywordsTags"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение целевой ссылки запроса */
-    "/edit/keywordsai_2/keywords/target/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditKeywordsai2KeywordsTarget"];
         delete?: never;
         options?: never;
         head?: never;
@@ -14625,6 +14601,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Counters/Get.ts').components['schemas']['KeywordsAi_2.Methods.Counters.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -14728,6 +14705,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Add.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -14753,7 +14731,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Del.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -14779,7 +14757,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Get.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -14805,6 +14783,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -14830,7 +14809,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Del.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -14856,7 +14835,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -14882,6 +14861,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Counters/Get.ts').components['schemas']['Keywords_2.Methods.Counters.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -20306,7 +20286,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -20332,7 +20312,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -20358,7 +20338,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/On/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.On.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -20384,7 +20364,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Rename.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -20410,7 +20390,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -20436,7 +20416,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Groups/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Groups.Undel.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                    model: import('./Models/KeywordsAi/Groups.ts').components['schemas']['Models.KeywordsAi.Groups'];
                 };
             };
         };
@@ -20485,6 +20465,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Import/Add.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -20510,7 +20491,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Move/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -20536,6 +20517,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Offset/Get.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Offset.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -20561,7 +20543,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Rename/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Rename.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -20587,7 +20569,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Sort/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -20613,33 +20595,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Tags/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Tags.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-                };
-            };
-        };
-    };
-    EditKeywordsai2KeywordsTarget: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./KeywordsAi_2/Methods/Keywords/Target/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Target.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./KeywordsAi_2/Methods/Keywords/Target/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Target.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -20665,7 +20621,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./KeywordsAi_2/Methods/Keywords/Undel/Edit.ts').components['schemas']['KeywordsAi_2.Methods.Keywords.Undel.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };

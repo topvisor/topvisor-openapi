@@ -53,7 +53,10 @@
             },
             "KeywordsAi_2.Methods.Groups.Add.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/KeywordsAi/Groups.json#/components/schemas/Models.KeywordsAi.Groups"
+                }
             }
         }
     }
