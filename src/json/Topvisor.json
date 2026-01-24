@@ -21950,7 +21950,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Abstract/Keywords.json#/components/schemas/Models.Abstract.Keywords"
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }

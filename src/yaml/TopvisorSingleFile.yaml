@@ -11926,7 +11926,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Abstract.Keywords'
+                $ref: '#/components/schemas/Models.Keywords'
   /edit/keywords_2/keywords/undel/:
     post:
       operationId: EditKeywords2KeywordsUndel
@@ -38154,39 +38154,6 @@ components:
     Keywords_2.Methods.Keywords.Target.Edit.Exec:
       nullable: true
       type: integer
-    Models.Abstract.Keywords:
-      properties:
-        COUNT(*):
-          nullable: true
-        LENGTH(name):
-          nullable: true
-        tagsNames():
-          nullable: true
-        id: {}
-        phrase_id:
-          nullable: true
-        project_id:
-          nullable: true
-        group_id:
-          nullable: true
-        tags:
-          nullable: true
-        ord:
-          nullable: true
-        name:
-          nullable: true
-        group_name:
-          nullable: true
-        group_on:
-          nullable: true
-        group_ord:
-          nullable: true
-        group_folder_id:
-          nullable: true
-        group_folder_path:
-          nullable: true
-        group_folder_ord:
-          nullable: true
     Keywords_2.Methods.Keywords.Undel.Edit:
       type: object
       properties:
