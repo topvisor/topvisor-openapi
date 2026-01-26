@@ -15465,6 +15465,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/admin_2/actions/certificates/name/:
+    post:
+      operationId: EditAdmin2ActionsCertificatesName
+      tags:
+        - Admin_2
+      summary: Изменение имени в сертификате
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Certificates.Name.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Certificates.Name.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /add/admin_2/actions/payments/diadoc/:
     post:
       operationId: AddAdmin2ActionsPaymentsDiadoc
@@ -41709,6 +41737,26 @@ components:
         - test
       title: Оплата реферального счета
     Admin_2.Methods.Actions.Bank.Referral.Edit.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Admin_2.Methods.Actions.Certificates.Name.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        newName:
+          title: Новое имя для сертификата
+          type: string
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - newName
+        - test
+      title: Изменение имени в сертификате
+    Admin_2.Methods.Actions.Certificates.Name.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Payments.Diadoc.Add:

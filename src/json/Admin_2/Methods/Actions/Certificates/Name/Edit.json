@@ -1,0 +1,42 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Actions.Certificates.Name.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Actions.Certificates.Name.Edit": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "title": "ID пользователя",
+                        "type": "integer"
+                    },
+                    "newName": {
+                        "title": "Новое имя для сертификата",
+                        "type": "string"
+                    },
+                    "test": {
+                        "title": "Является ли запуск - тестом",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "userId",
+                    "newName",
+                    "test"
+                ],
+                "title": "Изменение имени в сертификате"
+            },
+            "Admin_2.Methods.Actions.Certificates.Name.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
+            }
+        }
+    }
+}

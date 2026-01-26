@@ -28504,6 +28504,59 @@
                 }
             }
         },
+        "/edit/admin_2/actions/certificates/name/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsCertificatesName",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Изменение имени в сертификате",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Certificates/Name/Edit.json#/components/schemas/Admin_2.Methods.Actions.Certificates.Name.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Certificates/Name/Edit.json#/components/schemas/Admin_2.Methods.Actions.Certificates.Name.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/admin_2/actions/payments/diadoc/": {
             "post": {
                 "operationId": "AddAdmin2ActionsPaymentsDiadoc",
