@@ -1720,7 +1720,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.AiTracker.Prompts'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /add/aitracker_2/prompts/:
     post:
       operationId: AddAitracker2Prompts
@@ -22405,13 +22405,17 @@ components:
       required:
         - models
         - project_id
-    Models.AiTracker.Prompts:
+    Models.KeywordsAi.Keywords:
       properties:
         COUNT(*):
+          nullable: true
+        LENGTH(name):
           nullable: true
         tagsNames():
           nullable: true
         id: {}
+        phrase_id:
+          nullable: true
         project_id:
           nullable: true
         group_id:
@@ -22424,7 +22428,15 @@ components:
           nullable: true
         group_name:
           nullable: true
+        group_on:
+          nullable: true
         group_ord:
+          nullable: true
+        group_folder_id:
+          nullable: true
+        group_folder_path:
+          nullable: true
+        group_folder_ord:
           nullable: true
         response:
           nullable: true
@@ -22457,7 +22469,7 @@ components:
     AiTracker_2.Methods.History.Get.Exec:
       type: array
       items:
-        $ref: '#/components/schemas/Models.AiTracker.Prompts'
+        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
     Keywords_2.Types.Keywords.ToType:
       type: string
       enum:
@@ -22536,6 +22548,55 @@ components:
     AiTracker_2.Methods.Prompts.Del.Exec:
       nullable: true
       type: integer
+    Models.AiTracker.Prompts:
+      properties:
+        COUNT(*):
+          nullable: true
+        tagsNames():
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        group_id:
+          nullable: true
+        tags:
+          nullable: true
+        ord:
+          nullable: true
+        name:
+          nullable: true
+        group_name:
+          nullable: true
+        group_ord:
+          nullable: true
+        response:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        mentioned:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        position:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
+        position_max:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model
+              - project_id
     AiTracker_2.Methods.Prompts.Get:
       type: object
       properties:
@@ -26622,67 +26683,6 @@ components:
         - count_groups_off
         - count_keywords_on
         - count_keywords_off
-    Models.KeywordsAi.Keywords:
-      properties:
-        COUNT(*):
-          nullable: true
-        LENGTH(name):
-          nullable: true
-        tagsNames():
-          nullable: true
-        id: {}
-        phrase_id:
-          nullable: true
-        project_id:
-          nullable: true
-        group_id:
-          nullable: true
-        tags:
-          nullable: true
-        ord:
-          nullable: true
-        name:
-          nullable: true
-        group_name:
-          nullable: true
-        group_on:
-          nullable: true
-        group_ord:
-          nullable: true
-        group_folder_id:
-          nullable: true
-        group_folder_path:
-          nullable: true
-        group_folder_ord:
-          nullable: true
-        response:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        mentioned:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        position:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        position_max:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
     Keywords_2.Types.Folders.ToType:
       type: string
       enum:

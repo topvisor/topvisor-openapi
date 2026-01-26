@@ -2977,7 +2977,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }

@@ -46,7 +46,7 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "AiTracker_2.Methods.History.Get.Exec": import('../../../Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'][];
+        "AiTracker_2.Methods.History.Get.Exec": import('../../../Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'][];
     };
     responses: never;
     parameters: never;
