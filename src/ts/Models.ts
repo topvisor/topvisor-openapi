@@ -39,7 +39,6 @@ export interface components {
         "Models.AdminLayers.Partners": import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
         "Models.AdminLayers.Servers": import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
         "Models.AdminLayers.Service": import('./Models/AdminLayers/Service.ts').components['schemas']['Models.AdminLayers.Service'];
-        "Models.AiTracker.Prompts": import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
         "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
         "Models.Analytics.Ranks": import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
         "Models.Analytics.RanksUsers": import('./Models/Analytics/RanksUsers.ts').components['schemas']['Models.Analytics.RanksUsers'];

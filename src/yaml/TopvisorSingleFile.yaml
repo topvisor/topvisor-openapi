@@ -1721,96 +1721,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /add/aitracker_2/prompts/:
-    post:
-      operationId: AddAitracker2Prompts
-      tags:
-        - Aitracker_2
-      summary: Добавление промпта
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Add'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Add.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /del/aitracker_2/prompts/:
-    post:
-      operationId: DelAitracker2Prompts
-      tags:
-        - Aitracker_2
-      summary: Удаление промтов
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Del'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Del.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.AiTracker.Prompts'
-  /get/aitracker_2/prompts/:
-    post:
-      operationId: GetAitracker2Prompts
-      tags:
-        - Aitracker_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /edit/aitracker_2/settings/:
     post:
       operationId: EditAitracker2Settings
@@ -8887,96 +8797,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-  /add/aitracker_2/prompts/groups/:
-    post:
-      operationId: AddAitracker2PromptsGroups
-      tags:
-        - Aitracker_2
-      summary: Добавление групп
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Groups.Add'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Groups.Add.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/aitracker_2/prompts/move/:
-    post:
-      operationId: EditAitracker2PromptsMove
-      tags:
-        - Aitracker_2
-      summary: Перемещение промтов
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Move.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.AiTracker.Prompts'
-  /edit/aitracker_2/prompts/undel/:
-    post:
-      operationId: EditAitracker2PromptsUndel
-      tags:
-        - Aitracker_2
-      summary: Восстановление промтов из корзины
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Undel.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/AiTracker_2.Methods.Prompts.Undel.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.AiTracker.Prompts'
   /get/audit_2/audit/browse/:
     post:
       operationId: GetAudit2AuditBrowse
@@ -22470,159 +22290,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-    Keywords_2.Types.Keywords.ToType:
-      type: string
-      enum:
-        - in_group
-        - in_group_last
-        - before_keyword
-        - after_keyword
-      x-enum-varnames:
-        - InGroup
-        - InGroupLast
-        - BeforeKeyword
-        - AfterKeyword
-      x-enum-descriptions:
-        - В начало группы
-        - В конец группы
-        - Перед запросом
-        - После запроса
-      title: Куда добавить фразу
-    AiTracker_2.Methods.Prompts.Add:
-      type: object
-      properties:
-        name:
-          title: Текст промптов
-          nullable: true
-          type: string
-        names:
-          title: Текст промптов
-          description: |-
-            @deprecated Сделать как в Keywords_2/Methods/Keywords/Add() на string. Добавление нескольких сделать через метод импорта
-            @internal
-          nullable: true
-          deprecated: true
-          type: array
-        to_id:
-          title: Вставить к указанному объекту
-          type: integer
-        to_type:
-          title: Обязательный параметр при указанном $toId
-          default: in_group
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
-        tags:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
-        move_duplicate:
-          title: Удалить дубликаты
-          type: boolean
-        move_duplicate_group_name:
-          title: |-
-            Имя группы для перемещения дубликатов
-
-            Работает вместе с move_duplicate
-          type: string
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - to_id
-        - project_id
-      title: Добавление промпта
-    AiTracker_2.Methods.Prompts.Add.Exec:
-      nullable: true
-      type: array
-    AiTracker_2.Methods.Prompts.Del:
-      type: object
-      properties:
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - project_id
-      title: Удаление промтов
-    AiTracker_2.Methods.Prompts.Del.Exec:
-      nullable: true
-      type: integer
-    Models.AiTracker.Prompts:
-      properties:
-        COUNT(*):
-          nullable: true
-        tagsNames():
-          nullable: true
-        id: {}
-        project_id:
-          nullable: true
-        group_id:
-          nullable: true
-        tags:
-          nullable: true
-        ord:
-          nullable: true
-        name:
-          nullable: true
-        group_name:
-          nullable: true
-        group_ord:
-          nullable: true
-        response:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        mentioned:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        position:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-        position_max:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model
-              - project_id
-    AiTracker_2.Methods.Prompts.Get:
-      type: object
-      properties:
-        show_trash:
-          title: Искать промты в корзине
-          type: boolean
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-      required:
-        - project_id
-    AiTracker_2.Methods.Prompts.Get.Exec:
-      nullable: true
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -26959,6 +26626,24 @@ components:
       title: Получение списка групп проекта
     KeywordsAi_2.Methods.Groups.Get.Exec:
       nullable: true
+    Keywords_2.Types.Keywords.ToType:
+      type: string
+      enum:
+        - in_group
+        - in_group_last
+        - before_keyword
+        - after_keyword
+      x-enum-varnames:
+        - InGroup
+        - InGroupLast
+        - BeforeKeyword
+        - AfterKeyword
+      x-enum-descriptions:
+        - В начало группы
+        - В конец группы
+        - Перед запросом
+        - После запроса
+      title: Куда добавить фразу
     KeywordsAi_2.Methods.Keywords.Add:
       type: object
       properties:
@@ -33739,67 +33424,6 @@ components:
     AiTracker_2.Methods.Checker.Price.Get.Exec:
       type: object
       additionalProperties: {}
-    AiTracker_2.Methods.Prompts.Groups.Add:
-      type: object
-      properties:
-        names:
-          title: Имена групп
-          nullable: true
-          type: array
-        'on':
-          title: Активность группы
-          default: true
-          type: boolean
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - project_id
-      title: Добавление групп
-    AiTracker_2.Methods.Prompts.Groups.Add.Exec:
-      nullable: true
-      type: array
-    AiTracker_2.Methods.Prompts.Move.Edit:
-      type: object
-      properties:
-        to_id:
-          title: |-
-            Вставить к указанному объекту
-
-            Если в to_type указано "Перед или после запроса", то принимает id запроса
-            Если в to_type указано "В конец или начало группы", то принимает id группы
-          type: integer
-        to_type:
-          default: in_group
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - to_id
-        - project_id
-      title: Перемещение промтов
-    AiTracker_2.Methods.Prompts.Move.Edit.Exec:
-      nullable: true
-      type: integer
-    AiTracker_2.Methods.Prompts.Undel.Edit:
-      type: object
-      properties:
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-      required:
-        - project_id
-      title: Восстановление промтов из корзины
-    AiTracker_2.Methods.Prompts.Undel.Edit.Exec:
-      nullable: true
-      type: integer
     check_id:
       title: ID проверки аудита
       type: integer

@@ -951,56 +951,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление промпта */
-    "/add/aitracker_2/prompts/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddAitracker2Prompts"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Удаление промтов */
-    "/del/aitracker_2/prompts/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelAitracker2Prompts"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/get/aitracker_2/prompts/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAitracker2Prompts"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /**
      * Изменение настроек AI-трекера
      *
@@ -5145,57 +5095,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAitracker2CheckerPrice"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Добавление групп */
-    "/add/aitracker_2/prompts/groups/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddAitracker2PromptsGroups"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Перемещение промтов */
-    "/edit/aitracker_2/prompts/move/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditAitracker2PromptsMove"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Восстановление промтов из корзины */
-    "/edit/aitracker_2/prompts/undel/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditAitracker2PromptsUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -12665,84 +12564,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/History/Get.ts').components['schemas']['AiTracker_2.Methods.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
-                };
-            };
-        };
-    };
-    AddAitracker2Prompts: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Prompts/Add.ts').components['schemas']['AiTracker_2.Methods.Prompts.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Prompts/Add.ts').components['schemas']['AiTracker_2.Methods.Prompts.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    DelAitracker2Prompts: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Prompts/Del.ts').components['schemas']['AiTracker_2.Methods.Prompts.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Prompts/Del.ts').components['schemas']['AiTracker_2.Methods.Prompts.Del.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
-                };
-            };
-        };
-    };
-    GetAitracker2Prompts: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Prompts/Get.ts').components['schemas']['AiTracker_2.Methods.Prompts.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Prompts/Get.ts').components['schemas']['AiTracker_2.Methods.Prompts.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
@@ -18798,83 +18620,6 @@ export interface operations {
             };
         };
     };
-    AddAitracker2PromptsGroups: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Prompts/Groups/Add.ts').components['schemas']['AiTracker_2.Methods.Prompts.Groups.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Prompts/Groups/Add.ts').components['schemas']['AiTracker_2.Methods.Prompts.Groups.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditAitracker2PromptsMove: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Prompts/Move/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Move.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Prompts/Move/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Move.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
-                };
-            };
-        };
-    };
-    EditAitracker2PromptsUndel: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./AiTracker_2/Methods/Prompts/Undel/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Undel.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./AiTracker_2/Methods/Prompts/Undel/Edit.ts').components['schemas']['AiTracker_2.Methods.Prompts.Undel.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/AiTracker/Prompts.ts').components['schemas']['Models.AiTracker.Prompts'];
-                };
-            };
-        };
-    };
     GetAudit2AuditBrowse: {
         parameters: {
             query?: never;
@@ -21406,7 +21151,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Keywords_2/Methods/Keywords/Target/Edit.ts').components['schemas']['Keywords_2.Methods.Keywords.Target.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Abstract/Keywords.ts').components['schemas']['Models.Abstract.Keywords'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };

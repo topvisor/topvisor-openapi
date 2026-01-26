@@ -103,9 +103,6 @@
             "Models.AdminLayers.Service": {
                 "$ref": "Models/AdminLayers/Service.json#/components/schemas/Models.AdminLayers.Service"
             },
-            "Models.AiTracker.Prompts": {
-                "$ref": "Models/AiTracker/Prompts.json#/components/schemas/Models.AiTracker.Prompts"
-            },
             "Models.Analytics.Events": {
                 "$ref": "Models/Analytics/Events.json#/components/schemas/Models.Analytics.Events"
             },
