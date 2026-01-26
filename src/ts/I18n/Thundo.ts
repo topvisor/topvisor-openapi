@@ -12,6 +12,10 @@ export interface components {
             readonly Og_title: "Thunder is coming";
             /** @constant */
             readonly Og_description: "Fasten your seatbelts, we're about to transform the view of how to do SEO!";
+            /** @constant */
+            readonly Name?: "Thundo";
+            /** @constant */
+            readonly Organization?: "Thundo Ltd.";
         };
     };
     responses: never;

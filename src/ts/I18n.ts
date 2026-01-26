@@ -56,6 +56,7 @@ export interface components {
         "Projects.Settings": import('./I18n/Projects/Settings.ts').components['schemas']['I18n.Projects.Settings'];
         "Audit.Scan.Checks": import('./I18n/Audit/Scan/Checks.ts').components['schemas']['I18n.Audit.Scan.Checks'];
         "Sites.Thundo.Admin": import('./I18n/Sites/Thundo/Admin.ts').components['schemas']['I18n.Sites.Thundo.Admin'];
+        "Sites.Thundo.Organization": import('./I18n/Sites/Thundo/Organization.ts').components['schemas']['I18n.Sites.Thundo.Organization'];
         "Sites.Topvisor.Admin": import('./I18n/Sites/Topvisor/Admin.ts').components['schemas']['I18n.Sites.Topvisor.Admin'];
         "Sites.Topvisor.Organization": import('./I18n/Sites/Topvisor/Organization.ts').components['schemas']['I18n.Sites.Topvisor.Organization'];
     };

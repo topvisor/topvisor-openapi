@@ -154,6 +154,9 @@
             "Sites.Thundo.Admin": {
                 "$ref": "I18n/Sites/Thundo/Admin.json#/components/schemas/I18n.Sites.Thundo.Admin"
             },
+            "Sites.Thundo.Organization": {
+                "$ref": "I18n/Sites/Thundo/Organization.json#/components/schemas/I18n.Sites.Thundo.Organization"
+            },
             "Sites.Topvisor.Admin": {
                 "$ref": "I18n/Sites/Topvisor/Admin.json#/components/schemas/I18n.Sites.Topvisor.Admin"
             },

@@ -17,6 +17,14 @@
                     "Og_description": {
                         "const": "Fasten your seatbelts, we're about to transform the view of how to do SEO!",
                         "readOnly": true
+                    },
+                    "Name": {
+                        "const": "Thundo",
+                        "readOnly": true
+                    },
+                    "Organization": {
+                        "const": "Thundo Ltd.",
+                        "readOnly": true
                     }
                 },
                 "required": [
