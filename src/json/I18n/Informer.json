@@ -42,10 +42,6 @@
                         "const": "Topvisor–Journal",
                         "readOnly": true
                     },
-                    "Type_toolbox": {
-                        "const": "Toolbox",
-                        "readOnly": true
-                    },
                     "Type_toolbox_completed_tasks": {
                         "const": "Completed tasks",
                         "readOnly": true
@@ -162,7 +158,6 @@
                     "Type_yandex_update",
                     "Type_comments",
                     "Type_api",
-                    "Type_toolbox",
                     "Type_toolbox_completed_tasks",
                     "Unsubscribe",
                     "Enter_title_and_text",
