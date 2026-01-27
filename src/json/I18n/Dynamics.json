@@ -457,6 +457,26 @@
                     "Good_target_status": {
                         "const": "Result matches a target link",
                         "readOnly": true
+                    },
+                    "Serp_features_maps": {
+                        "const": "Maps",
+                        "readOnly": true
+                    },
+                    "Serp_features_video": {
+                        "const": "Video",
+                        "readOnly": true
+                    },
+                    "Serp_features_images": {
+                        "const": "Images",
+                        "readOnly": true
+                    },
+                    "Serp_features_knowledge": {
+                        "const": "Knowledge",
+                        "readOnly": true
+                    },
+                    "Serp_features_aiOverview": {
+                        "const": "AI overviews",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -571,7 +591,12 @@
                     "No_target_status",
                     "No_result_target_status",
                     "Bad_target_status",
-                    "Good_target_status"
+                    "Good_target_status",
+                    "Serp_features_maps",
+                    "Serp_features_video",
+                    "Serp_features_images",
+                    "Serp_features_knowledge",
+                    "Serp_features_aiOverview"
                 ]
             }
         }

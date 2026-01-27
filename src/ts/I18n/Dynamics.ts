@@ -232,6 +232,16 @@ export interface components {
             readonly Bad_target_status: "Result does not match a target link";
             /** @constant */
             readonly Good_target_status: "Result matches a target link";
+            /** @constant */
+            readonly Serp_features_maps: "Maps";
+            /** @constant */
+            readonly Serp_features_video: "Video";
+            /** @constant */
+            readonly Serp_features_images: "Images";
+            /** @constant */
+            readonly Serp_features_knowledge: "Knowledge";
+            /** @constant */
+            readonly Serp_features_aiOverview: "AI overviews";
         };
     };
     responses: never;
