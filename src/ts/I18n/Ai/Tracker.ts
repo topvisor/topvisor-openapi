@@ -13,6 +13,12 @@ export interface components {
             /** @constant */
             readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
             /** @constant */
+            readonly No_data_in_day: "В выбранный день данные не анализировались.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как работает AI-трекер →</a>";
+            /** @constant */
+            readonly Add_neural_networks: "Выберите нейросети, чтобы запустить анализ.";
+            /** @constant */
+            readonly Add_prompts_to_go: "Добавьте промпты, чтобы запустить анализ.";
+            /** @constant */
             readonly Settings: "AI-tracker settings";
             /** @constant */
             readonly Ai_analysis: "AI-анализ";

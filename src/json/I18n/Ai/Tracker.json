@@ -18,6 +18,18 @@
                         "const": "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>",
                         "readOnly": true
                     },
+                    "No_data_in_day": {
+                        "const": "В выбранный день данные не анализировались.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как работает AI-трекер →</a>",
+                        "readOnly": true
+                    },
+                    "Add_neural_networks": {
+                        "const": "Выберите нейросети, чтобы запустить анализ.",
+                        "readOnly": true
+                    },
+                    "Add_prompts_to_go": {
+                        "const": "Добавьте промпты, чтобы запустить анализ.",
+                        "readOnly": true
+                    },
                     "Settings": {
                         "const": "AI-tracker settings",
                         "readOnly": true
@@ -58,6 +70,9 @@
                 "required": [
                     "Ai_tracker_bank_info",
                     "Add_brand_info",
+                    "No_data_in_day",
+                    "Add_neural_networks",
+                    "Add_prompts_to_go",
                     "Settings",
                     "Ai_analysis",
                     "Analysis_go",
