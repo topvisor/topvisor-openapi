@@ -22,6 +22,12 @@ export interface components {
             name: string;
             /** Отчество */
             patronymic: string;
+            /** Телефон */
+            staff_phone: string;
+            /** Телеграм */
+            staff_telegram: string;
+            /** Адрес */
+            staff_address: string;
             /** Должность (родительный падеж) */
             post_2: string;
             /** Фамилия (родительный падеж) */

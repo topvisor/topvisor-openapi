@@ -34,9 +34,6 @@
                     "group": {
                         "nullable": true
                     },
-                    "phone": {
-                        "nullable": true
-                    },
                     "email": {
                         "nullable": true
                     },
@@ -47,6 +44,15 @@
                         "nullable": true
                     },
                     "staff_email": {
+                        "nullable": true
+                    },
+                    "staff_phone": {
+                        "nullable": true
+                    },
+                    "staff_telegram": {
+                        "nullable": true
+                    },
+                    "staff_address": {
                         "nullable": true
                     },
                     "staff_department": {

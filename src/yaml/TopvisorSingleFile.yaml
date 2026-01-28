@@ -21843,6 +21843,15 @@ components:
         patronymic:
           title: Отчество
           type: string
+        staff_phone:
+          title: Телефон
+          type: string
+        staff_telegram:
+          title: Телеграм
+          type: string
+        staff_address:
+          title: Адрес
+          type: string
         post_2:
           title: Должность (родительный падеж)
           type: string
@@ -21873,6 +21882,9 @@ components:
         - surname
         - name
         - patronymic
+        - staff_phone
+        - staff_telegram
+        - staff_address
         - post_2
         - surname_2
         - name_2
@@ -21922,8 +21934,6 @@ components:
           nullable: true
         group:
           nullable: true
-        phone:
-          nullable: true
         email:
           nullable: true
         avatar:
@@ -21931,6 +21941,12 @@ components:
         staff_id:
           nullable: true
         staff_email:
+          nullable: true
+        staff_phone:
+          nullable: true
+        staff_telegram:
+          nullable: true
+        staff_address:
           nullable: true
         staff_department:
           nullable: true

@@ -46,6 +46,18 @@
                         "title": "Отчество",
                         "type": "string"
                     },
+                    "staff_phone": {
+                        "title": "Телефон",
+                        "type": "string"
+                    },
+                    "staff_telegram": {
+                        "title": "Телеграм",
+                        "type": "string"
+                    },
+                    "staff_address": {
+                        "title": "Адрес",
+                        "type": "string"
+                    },
                     "post_2": {
                         "title": "Должность (родительный падеж)",
                         "type": "string"
@@ -84,6 +96,9 @@
                     "surname",
                     "name",
                     "patronymic",
+                    "staff_phone",
+                    "staff_telegram",
+                    "staff_address",
                     "post_2",
                     "surname_2",
                     "name_2",

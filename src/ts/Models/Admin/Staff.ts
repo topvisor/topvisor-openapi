@@ -17,11 +17,13 @@ export interface components {
             dateformat?: any;
             date_reg?: any;
             group?: any;
-            phone?: any;
             email?: any;
             avatar?: any;
             staff_id?: any;
             staff_email?: any;
+            staff_phone?: any;
+            staff_telegram?: any;
+            staff_address?: any;
             staff_department?: any;
             staff_posts?: unknown[] | null;
             staff_post?: any;
