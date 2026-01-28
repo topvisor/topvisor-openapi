@@ -26,6 +26,8 @@ export interface components {
             readonly Wordstat_check: "Search volume tracking with Toolbox";
             /** @constant */
             readonly Keywords_collect: "Keyword research with Toolbox";
+            /** @constant */
+            readonly The_research_showed_zero_results: "The research showed zero results. Why this could have happened: <br>\n\t<ul>\n\t\t<li>The source has no phrases matching your research criteria</li>\n    \t<li>Too many negative keywords were specified</li>\n    \t<li>Keyword belong to the category <a href=\"/support/research/#no-keywords\" target=\"_blank\">prohibited or restricted by advertising policies</a></li>\n\t</ul>\n\tLearn more about <a href=\"/support/research/#\" target=\"_blank\">Keyword Research</a>";
         };
     };
     responses: never;
