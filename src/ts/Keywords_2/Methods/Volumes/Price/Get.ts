@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Информация о стоимости запуска проверки позиций по проектам */
         "Keywords_2.Methods.Volumes.Price.Get": {
-            /** Id проекта */
-            project_id: number;
             no_recheck?: import('../../../Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
             /**
              * Тип объекта фильтрации
@@ -39,6 +37,7 @@ export interface components {
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Keywords_2.Methods.Volumes.Price.Get.Exec": {
             [key: string]: unknown;
