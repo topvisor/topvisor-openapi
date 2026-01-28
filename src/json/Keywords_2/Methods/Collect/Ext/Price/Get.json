@@ -10,10 +10,6 @@
             "Keywords_2.Methods.Collect.Ext.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "ID проекта",
-                        "type": "integer"
-                    },
                     "keywords_minus": {
                         "title": "Минус фразы",
                         "nullable": true,
@@ -45,12 +41,15 @@
                     },
                     "id": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
                 "required": [
-                    "project_id",
                     "type",
-                    "qualifiers"
+                    "qualifiers",
+                    "project_id"
                 ],
                 "title": "Получение цены на расширение группы"
             },

@@ -10,10 +10,6 @@
             "Keywords_2.Methods.Volumes.Get": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "Id проекта",
-                        "type": "integer"
-                    },
                     "searcher_key": {
                         "title": "Ключ поисковика",
                         "type": "integer"
@@ -30,6 +26,9 @@
                         "title": "Id группы",
                         "nullable": true,
                         "type": "integer"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
@@ -51,10 +50,10 @@
                     }
                 },
                 "required": [
-                    "project_id",
                     "searcher_key",
                     "region_key",
-                    "type"
+                    "type",
+                    "project_id"
                 ],
                 "title": "Получение частоты проекта или одной группы"
             },

@@ -10,10 +10,6 @@
             "Keywords_2.Methods.Volumes.Go.Edit": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "Id проекта",
-                        "type": "integer"
-                    },
                     "no_recheck": {
                         "nullable": true,
                         "allOf": [
@@ -72,6 +68,9 @@
                     },
                     "debug": {
                         "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
                 "required": [

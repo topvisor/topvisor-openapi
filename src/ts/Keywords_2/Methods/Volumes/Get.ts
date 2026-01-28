@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Получение частоты проекта или одной группы */
         "Keywords_2.Methods.Volumes.Get": {
-            /** Id проекта */
-            project_id: number;
             /** Ключ поисковика */
             searcher_key: number;
             /** Ключ региона */
@@ -19,6 +17,7 @@ export interface components {
             type: number;
             /** Id группы */
             group_id?: number | null;
+            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

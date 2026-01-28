@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Получение цены на расширение группы */
         "Keywords_2.Methods.Collect.Ext.Price.Get": {
-            /** ID проекта */
-            project_id: number;
             /** Минус фразы */
             keywords_minus?: unknown[] | null;
             /**
@@ -24,6 +22,7 @@ export interface components {
             qualifiers: import('../../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Информация о стоимости запуска подбора запросов */
         "Keywords_2.Methods.Collect.Ext.Price.Get.Exec": {

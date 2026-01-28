@@ -27420,9 +27420,6 @@ components:
     Keywords_2.Methods.Volumes.Get:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         searcher_key:
           title: Ключ поисковика
           type: integer
@@ -27436,6 +27433,8 @@ components:
           title: Id группы
           nullable: true
           type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -27449,10 +27448,10 @@ components:
         offset:
           $ref: '#/components/schemas/offset'
       required:
-        - project_id
         - searcher_key
         - region_key
         - type
+        - project_id
       title: Получение частоты проекта или одной группы
     Keywords_2.Methods.Volumes.Get.Exec:
       nullable: true
@@ -37105,9 +37104,6 @@ components:
     Keywords_2.Methods.Collect.Go.Edit:
       type: object
       properties:
-        project_id:
-          title: ID проекта
-          type: integer
         keywords:
           title: Список исходных запросов
           type: array
@@ -37147,10 +37143,12 @@ components:
           title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
           description: '@internal'
           type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
       required:
-        - project_id
         - keywords
         - qualifiers
+        - project_id
       title: Постановка задачи на подбор запросов
     Keywords_2.Methods.Collect.Go.Edit.Exec:
       title: Массив созданных групп
@@ -38014,9 +38012,6 @@ components:
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         no_recheck:
           nullable: true
           allOf:
@@ -38061,6 +38056,8 @@ components:
           $ref: '#/components/schemas/id'
         debug:
           $ref: '#/components/schemas/debug'
+        project_id:
+          $ref: '#/components/schemas/project_id'
       required:
         - project_id
       title: Постановка задачи на проверку частоты запросов
@@ -44086,9 +44083,6 @@ components:
     Keywords_2.Methods.Collect.Ext.Price.Get:
       type: object
       properties:
-        project_id:
-          title: ID проекта
-          type: integer
         keywords_minus:
           title: Минус фразы
           nullable: true
@@ -44109,10 +44103,12 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
       required:
-        - project_id
         - type
         - qualifiers
+        - project_id
       title: Получение цены на расширение группы
     Keywords_2.Methods.Collect.Ext.Price.Get.Exec:
       title: Информация о стоимости запуска подбора запросов
