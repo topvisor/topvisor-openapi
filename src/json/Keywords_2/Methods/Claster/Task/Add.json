@@ -58,7 +58,8 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Запуск кластеризации (проверка на права в \"api_get_priceClaster()\")"
+                "title": "Запуск кластеризации",
+                "description": "@note Проверка на права в api_get_priceClaster()"
             },
             "Keywords_2.Methods.Claster.Task.Add.Exec": {
                 "nullable": true,
