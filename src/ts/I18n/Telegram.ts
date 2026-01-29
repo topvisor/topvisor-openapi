@@ -93,6 +93,8 @@ export interface components {
             /** @constant */
             readonly Message_tpvsr_cancel_done: "Link shortening canceled.";
             /** @constant */
+            readonly Message_tpvsr_error: "To shorten the URL, link the %siteName% account to the bot via the /pair command";
+            /** @constant */
             readonly Message_join_authorize: "Sign in to %siteName% and try to link your account again.";
             /** @constant */
             readonly Message_join_done1: "Account";

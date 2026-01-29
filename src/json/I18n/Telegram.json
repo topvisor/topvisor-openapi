@@ -178,6 +178,10 @@
                         "const": "Link shortening canceled.",
                         "readOnly": true
                     },
+                    "Message_tpvsr_error": {
+                        "const": "To shorten the URL, link the %siteName% account to the bot via the /pair command",
+                        "readOnly": true
+                    },
                     "Message_join_authorize": {
                         "const": "Sign in to %siteName% and try to link your account again.",
                         "readOnly": true
@@ -276,6 +280,7 @@
                     "Message_tpvsr_cancel",
                     "Message_tpvsr_failure",
                     "Message_tpvsr_cancel_done",
+                    "Message_tpvsr_error",
                     "Message_join_authorize",
                     "Message_join_done1",
                     "Message_join_done2",
