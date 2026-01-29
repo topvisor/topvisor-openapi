@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.History.FilterByDynamics",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.History.FilterByDynamics": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Positions_2/Types/History/FilterByDynamic.json#/components/schemas/Positions_2.Types.History.FilterByDynamic"
+                },
+                "title": "Фильтры по динамике",
+                "description": "@extends API\\Types\\AbstractTypedArray<FilterByDynamic>\n@method FilterByDynamic[] getValues()\n@method FilterByDynamic current()\n@see FilterByDynamic"
+            }
+        }
+    }
+}

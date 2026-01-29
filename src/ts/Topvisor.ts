@@ -7199,6 +7199,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт истории позиций */
+    "/get/positions_2/history/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Экспорт позиций указанных проектов за указанные даты без количественного ограничения
      *
      *     Архив с результатом экспорта будет продублирован на email пользователя */
@@ -9828,23 +9845,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт файла в хранилище */
-    "/get/audit_2/indexing/export/toRepository/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAudit2IndexingExportToRepository"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение сводок индексации для графика */
     "/get/audit_2/indexing/summary/chart/": {
         parameters: {
@@ -10335,6 +10335,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetPositions2CheckerStatusRecheckKeywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт отчета в хранилище
+     *
+     *     После сохранения редиректит в хранилище */
+    "/get/positions_2/history/export/toRepository/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2HistoryExportToRepository"];
         delete?: never;
         options?: never;
         head?: never;
@@ -21688,6 +21707,32 @@ export interface operations {
             };
         };
     };
+    GetPositions2HistoryExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/Export/Get.ts').components['schemas']['Positions_2.Methods.History.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/Export/Get.ts').components['schemas']['Positions_2.Methods.History.Export.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
     GetPositions2HistoryExportPack: {
         parameters: {
             query?: never;
@@ -25467,30 +25512,6 @@ export interface operations {
             };
         };
     };
-    GetAudit2IndexingExportToRepository: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Audit_2/Methods/Indexing/Export/ToRepository/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.ToRepository.Get'];
-            };
-        };
-        responses: {
-            /** @description Будет произведен редиркт на файл в хранилище */
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/octet-stream": string;
-                };
-            };
-        };
-    };
     GetAudit2IndexingSummaryChart: {
         parameters: {
             query?: never;
@@ -26189,6 +26210,30 @@ export interface operations {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2HistoryExportToRepository: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/Export/ToRepository/Get.ts').components['schemas']['Positions_2.Methods.History.Export.ToRepository.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };

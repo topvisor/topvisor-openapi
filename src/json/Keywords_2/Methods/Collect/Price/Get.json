@@ -15,10 +15,6 @@
                         "default": true,
                         "type": "boolean"
                     },
-                    "project_id": {
-                        "title": "ID проекта",
-                        "type": "integer"
-                    },
                     "keywords": {
                         "title": "Список исходных запросов",
                         "type": "array"
@@ -73,12 +69,15 @@
                         "title": "Выполняется ли запуск проверки для проекта, который является задачей toolbox",
                         "description": "@internal",
                         "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
                 "required": [
-                    "project_id",
                     "keywords",
-                    "qualifiers"
+                    "qualifiers",
+                    "project_id"
                 ],
                 "title": "Получение стоимости подбора запросов"
             },

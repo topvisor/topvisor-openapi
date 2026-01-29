@@ -1,0 +1,178 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "output": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/History/Export/Output.json#/components/schemas/Positions_2.Types.History.Export.Output"
+                            }
+                        ]
+                    },
+                    "regions_indexes": {
+                        "title": "Индексы регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Какие даты должны быть в отчете",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "date1": {
+                        "title": "От какой даты брать данные для отчета",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "До какого числа брать данные для отчета",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "type_range": {
+                        "default": 2,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/TypeRange.json#/components/schemas/Positions_2.Types.TypeRange"
+                            }
+                        ]
+                    },
+                    "count_dates": {
+                        "title": "Количество дней в диапазоне",
+                        "default": 31,
+                        "type": "integer"
+                    },
+                    "properties": {
+                        "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitGroups",
+                        "type": "array"
+                    },
+                    "painting": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/History/Export/Painting.json#/components/schemas/Positions_2.Types.History.Export.Painting"
+                            }
+                        ]
+                    },
+                    "with_tabs": {
+                        "title": "Использовать вкладки\n\nТолько для `Output`:\n- Xlsx\n- Pdf",
+                        "type": "boolean"
+                    },
+                    "tabs_fields": {
+                        "title": "Поля (fieldAlias) с привязкой к вкладкам\n\nТолько для xlsx с вкладками или pdf",
+                        "type": "array"
+                    },
+                    "show_top_by_depth": {
+                        "title": "Процент попадания в топ\n\nТолько для `Output`:\n - Xlsx\n - Pdf\n - Html",
+                        "type": "integer"
+                    },
+                    "returnFilenameFromFolder": {
+                        "title": "Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу\n\nДля внутреннего использования",
+                        "description": "@internal",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "addWorksheet": {
+                        "title": "// [name => '', handle => '']",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Искать ли запрос в подпапке",
+                        "type": "boolean"
+                    },
+                    "positions_fields": {
+                        "title": "Выбор столбцов данных с результатами проверки",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "filter_by_dynamic": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/History/FilterByDynamics.json#/components/schemas/Positions_2.Types.History.FilterByDynamics"
+                            }
+                        ]
+                    },
+                    "filter_by_positions": {
+                        "title": "Фильтр по позициям\n\nПринимает массив значений, пара из которых берется как промежуток\n- `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100\n- `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "fields": {
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    }
+                },
+                "required": [
+                    "output",
+                    "regions_indexes",
+                    "project_id"
+                ],
+                "title": "Экспорт истории позиций"
+            },
+            "Positions_2.Methods.History.Export.Get.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

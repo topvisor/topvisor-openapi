@@ -22760,6 +22760,67 @@
                 }
             }
         },
+        "/get/positions_2/history/export/": {
+            "post": {
+                "operationId": "GetPositions2HistoryExport",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Экспорт истории позиций",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/Export/Get.json#/components/schemas/Positions_2.Methods.History.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/History/Export/Get.json#/components/schemas/Positions_2.Methods.History.Export.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/positions_2/history/exportPack/": {
             "post": {
                 "operationId": "GetPositions2HistoryExportPack",
@@ -30774,38 +30835,6 @@
                 }
             }
         },
-        "/get/audit_2/indexing/export/toRepository/": {
-            "post": {
-                "operationId": "GetAudit2IndexingExportToRepository",
-                "tags": [
-                    "Audit_2"
-                ],
-                "summary": "Экспорт файла в хранилище",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Audit_2/Methods/Indexing/Export/ToRepository/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.ToRepository.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "Будет произведен редиркт на файл в хранилище",
-                        "content": {
-                            "application/octet-stream": {
-                                "schema": {
-                                    "type": "string",
-                                    "format": "binary"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/get/audit_2/indexing/summary/chart/": {
             "post": {
                 "operationId": "GetAudit2IndexingSummaryChart",
@@ -32289,6 +32318,43 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/history/export/toRepository/": {
+            "post": {
+                "operationId": "GetPositions2HistoryExportToRepository",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Экспорт отчета в хранилище\n\nПосле сохранения редиректит в хранилище",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/History/Export/ToRepository/Get.json#/components/schemas/Positions_2.Methods.History.Export.ToRepository.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }

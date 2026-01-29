@@ -8,8 +8,6 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Keywords_2.Methods.Keywords.Import.Add": {
-            /** Id проекта */
-            project_id: number;
             /** Массив ключевых запросов в формате CSV
              *
              *     - array keywords - массив ключевых запросов, допускается формат CSV
@@ -40,6 +38,7 @@ export interface components {
             remove_special_chars?: boolean | null;
             /** Массив номеров тегов */
             tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Keywords_2.Methods.Keywords.Import.Add.Exec": import('../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][] | null;
     };

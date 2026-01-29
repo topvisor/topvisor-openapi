@@ -10,10 +10,6 @@
             "Keywords_2.Methods.Keywords.Get": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "Id проекта",
-                        "type": "integer"
-                    },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"
@@ -24,6 +20,9 @@
                     },
                     "fetch_style": {
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"

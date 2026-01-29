@@ -9,13 +9,12 @@ export interface components {
     schemas: {
         /** Получение списка запросов проекта */
         "Keywords_2.Methods.Keywords.Get": {
-            /** Id проекта */
-            project_id: number;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Искать в корзине */
             show_trash?: boolean;
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

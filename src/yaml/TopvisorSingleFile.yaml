@@ -12360,6 +12360,38 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
+  /get/positions_2/history/export/:
+    post:
+      operationId: GetPositions2HistoryExport
+      tags:
+        - Positions_2
+      summary: Экспорт истории позиций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.Export.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/positions_2/history/exportPack/:
     post:
       operationId: GetPositions2HistoryExportPack
@@ -16672,26 +16704,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/audit_2/indexing/export/toRepository/:
-    post:
-      operationId: GetAudit2IndexingExportToRepository
-      tags:
-        - Audit_2
-      summary: Экспорт файла в хранилище
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Export.ToRepository.Get'
-        required: true
-      responses:
-        '200':
-          description: Будет произведен редиркт на файл в хранилище
-          content:
-            application/octet-stream:
-              schema:
-                type: string
-                format: binary
   /get/audit_2/indexing/summary/chart/:
     post:
       operationId: GetAudit2IndexingSummaryChart
@@ -17513,6 +17525,32 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/history/export/toRepository/:
+    post:
+      operationId: GetPositions2HistoryExportToRepository
+      tags:
+        - Positions_2
+      summary: |-
+        Экспорт отчета в хранилище
+
+        После сохранения редиректит в хранилище
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.Export.ToRepository.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/positions_2/history/exportPack/prepare/:
     post:
       operationId: GetPositions2HistoryExportPackPrepare
@@ -26726,9 +26764,6 @@ components:
     KeywordsAi_2.Methods.Keywords.Get:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -26737,6 +26772,8 @@ components:
           type: boolean
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -27216,9 +27253,6 @@ components:
     Keywords_2.Methods.Keywords.Get:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -27227,6 +27261,8 @@ components:
           type: boolean
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -36409,9 +36445,6 @@ components:
     KeywordsAi_2.Methods.Keywords.Import.Add:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         keywords:
           title: |-
             Массив ключевых запросов в формате CSV
@@ -36462,6 +36495,8 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
+        project_id:
+          $ref: '#/components/schemas/project_id'
       required:
         - project_id
     KeywordsAi_2.Methods.Keywords.Import.Add.Exec:
@@ -37161,9 +37196,6 @@ components:
           title: 'Отображать сумму с учетом скидки (по умолчанию: 1)'
           default: true
           type: boolean
-        project_id:
-          title: ID проекта
-          type: integer
         keywords:
           title: Список исходных запросов
           type: array
@@ -37203,10 +37235,12 @@ components:
           title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
           description: '@internal'
           type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
       required:
-        - project_id
         - keywords
         - qualifiers
+        - project_id
       title: Получение стоимости подбора запросов
     Keywords_2.Methods.Collect.Price.Get.Exec:
       title: Информация о стоимости запуска подбора запросов
@@ -37547,9 +37581,6 @@ components:
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         keywords:
           title: |-
             Массив ключевых запросов в формате CSV
@@ -37600,6 +37631,8 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
+        project_id:
+          $ref: '#/components/schemas/project_id'
       required:
         - project_id
     Keywords_2.Methods.Keywords.Import.Add.Exec:
@@ -38520,6 +38553,223 @@ components:
     Positions_2.Methods.Checker.Price.Get.Exec:
       type: object
       additionalProperties: {}
+    Positions_2.Types.History.Export.Output:
+      type: string
+      enum:
+        - csv
+        - xlsx
+        - html
+        - pdf
+      x-enum-varnames:
+        - CSV
+        - Xlsx
+        - Html
+        - Pdf
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+      title: Формат экспорта
+    Positions_2.Types.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 100
+      x-enum-varnames:
+        - FullRange
+        - YandexUpdates
+        - Range
+        - TwoChecks
+        - OneCheck
+        - LastCheckOfMonth
+        - Accumulated
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений (недокументируемй парметр)
+        - Период с выполненными проверками (Только апдейты Яндекс)
+        - Период с выполненными проверками
+        - Две проверки
+        - Одна проверка
+        - Последняя проверка месяца
+        - 'Даты через равные промежутки; - средняя позиция: используетс совместно с параметром длины периода period_days = 7 (не более MAX_LENGTH_PERIOD) - недокументируемый параметр; - возвращает не более 7 дат'
+        - Две последние даты проверок
+        - Произвольный список дат
+      title: id тега
+    Positions_2.Types.History.Export.Painting:
+      type: integer
+      enum:
+        - 0
+        - 1
+      x-enum-varnames:
+        - Top
+        - Dynamic
+      x-enum-descriptions:
+        - Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками
+        - Динамическая/градиентная раскраска; Акцент на величине изменения позиций
+      title: Режимы визуализации изменений позиций в экспорте
+    Positions_2.Types.History.FilterByDynamic:
+      type: string
+      enum:
+        - <
+        - '='
+        - '>'
+      x-enum-varnames:
+        - Down
+        - Equality
+        - Up
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+      title: Фильтр динамики запросов
+    Positions_2.Types.History.FilterByDynamics:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamic'
+      title: Фильтры по динамике
+      description: |-
+        @extends API\Types\AbstractTypedArray<FilterByDynamic>
+        @method FilterByDynamic[] getValues()
+        @method FilterByDynamic current()
+        @see FilterByDynamic
+    Positions_2.Methods.History.Export.Get:
+      type: object
+      properties:
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.Export.Output'
+        regions_indexes:
+          title: Индексы регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        dates:
+          title: Какие даты должны быть в отчете
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        date1:
+          title: От какой даты брать данные для отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: До какого числа брать данные для отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type_range:
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+        count_dates:
+          title: Количество дней в диапазоне
+          default: 31
+          type: integer
+        properties:
+          title: |-
+            Дополнительные параметры экспорта
+
+            Возможные поля:
+            - showSummary
+            - compact
+            - splitGroups
+          type: array
+        painting:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.Export.Painting'
+        with_tabs:
+          title: |-
+            Использовать вкладки
+
+            Только для `Output`:
+            - Xlsx
+            - Pdf
+          type: boolean
+        tabs_fields:
+          title: |-
+            Поля (fieldAlias) с привязкой к вкладкам
+
+            Только для xlsx с вкладками или pdf
+          type: array
+        show_top_by_depth:
+          title: |-
+            Процент попадания в топ
+
+            Только для `Output`:
+             - Xlsx
+             - Pdf
+             - Html
+          type: integer
+        returnFilenameFromFolder:
+          title: |-
+            Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
+
+            Для внутреннего использования
+          description: '@internal'
+          nullable: true
+          type: string
+        addWorksheet:
+          title: // [name => '', handle => '']
+          nullable: true
+          anyOf:
+            - type: string
+            - type: 'null'
+        group_folder_id_depth:
+          title: Искать ли запрос в подпапке
+          type: boolean
+        positions_fields:
+          title: Выбор столбцов данных с результатами проверки
+          nullable: true
+          type: array
+        filter_by_dynamic:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamics'
+        filter_by_positions:
+          title: |-
+            Фильтр по позициям
+
+            Принимает массив значений, пара из которых берется как промежуток
+            - `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100
+            - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - output
+        - regions_indexes
+        - project_id
+      title: Экспорт истории позиций
+    Positions_2.Methods.History.Export.Get.Exec:
+      nullable: true
     Positions_2.Methods.History.ExportPack.Get:
       type: object
       properties:
@@ -43024,27 +43274,6 @@ components:
       title: Короткая гостевая ссылка на просмотр индексации
       nullable: true
       type: string
-    Export_2.Types.Repository.Name:
-      type: string
-      enum:
-        - gdrive
-      x-enum-varnames:
-        - GoogleDrive
-      x-enum-descriptions:
-        - null
-      title: Хранилище для экспорта
-    Audit_2.Methods.Indexing.Export.ToRepository.Get:
-      type: object
-      properties:
-        repository:
-          allOf:
-            - $ref: '#/components/schemas/Export_2.Types.Repository.Name'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-      required:
-        - repository
-        - project_id
-      title: Экспорт файла в хранилище
     Audit_2.Methods.Indexing.Summary.Chart.Get:
       type: object
       properties:
@@ -44313,6 +44542,149 @@ components:
         Проверка на права к проекту производятся в get/positions_2/history
     Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
       nullable: true
+    Positions_2.Types.History.Export.Repository:
+      type: string
+      enum:
+        - gdrive
+      x-enum-varnames:
+        - GDrive
+      x-enum-descriptions:
+        - Google диск
+      title: Репозиторий для экспорта данных
+    Positions_2.Methods.History.Export.ToRepository.Get:
+      type: object
+      properties:
+        repository:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.Export.Repository'
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.Export.Output'
+        regions_indexes:
+          title: Индексы регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        dates:
+          title: Какие даты должны быть в отчете
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        date1:
+          title: От какой даты брать данные для отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: До какого числа брать данные для отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type_range:
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+        count_dates:
+          title: Количество дней в диапазоне
+          default: 31
+          type: integer
+        properties:
+          title: |-
+            Дополнительные параметры экспорта
+
+            Возможные поля:
+            - showSummary
+            - compact
+            - splitGroups
+          type: array
+        painting:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.Export.Painting'
+        with_tabs:
+          title: |-
+            Использовать вкладки
+
+            Только для `Output`:
+            - Xlsx
+            - Pdf
+          type: boolean
+        tabs_fields:
+          title: |-
+            Поля (fieldAlias) с привязкой к вкладкам
+
+            Только для xlsx с вкладками или pdf
+          type: array
+        show_top_by_depth:
+          title: |-
+            Процент попадания в топ
+
+            Только для `Output`:
+             - Xlsx
+             - Pdf
+             - Html
+          type: integer
+        returnFilenameFromFolder:
+          title: |-
+            Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
+
+            Для внутреннего использования
+          description: '@internal'
+          nullable: true
+          type: string
+        addWorksheet:
+          title: // [name => '', handle => '']
+          nullable: true
+          anyOf:
+            - type: string
+            - type: 'null'
+        group_folder_id_depth:
+          title: Искать ли запрос в подпапке
+          type: boolean
+        positions_fields:
+          title: Выбор столбцов данных с результатами проверки
+          nullable: true
+          type: array
+        filter_by_dynamic:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamics'
+        filter_by_positions:
+          title: |-
+            Фильтр по позициям
+
+            Принимает массив значений, пара из которых берется как промежуток
+            - `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100
+            - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - repository
+        - output
+        - regions_indexes
+        - project_id
+      title: |-
+        Экспорт отчета в хранилище
+
+        После сохранения редиректит в хранилище
     Positions_2.Methods.History.ExportPack.Prepare.Get:
       type: object
       properties:

@@ -14,8 +14,6 @@ export interface components {
              * @default true
              */
             apply_discount?: boolean;
-            /** ID проекта */
-            project_id: number;
             /** Список исходных запросов */
             keywords: unknown[];
             /** Объекты определителей настроек ПС и регионов */
@@ -39,6 +37,7 @@ export interface components {
              * @description @internal
              */
             for_project_task?: boolean;
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Информация о стоимости запуска подбора запросов */
         "Keywords_2.Methods.Collect.Price.Get.Exec": {

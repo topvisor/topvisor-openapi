@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.History.FilterByDynamic",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.History.FilterByDynamic": {
+                "type": "string",
+                "enum": [
+                    "<",
+                    "=",
+                    ">"
+                ],
+                "x-enum-varnames": [
+                    "Down",
+                    "Equality",
+                    "Up"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Фильтр динамики запросов"
+            }
+        }
+    }
+}
