@@ -53,6 +53,14 @@
                         "type": "integer",
                         "nullable": true
                     },
+                    "staff_department": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "staff_post": {
+                        "type": "string",
+                        "nullable": true
+                    },
                     "user_site": {
                         "type": "string",
                         "nullable": true

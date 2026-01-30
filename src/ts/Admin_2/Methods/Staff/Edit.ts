@@ -37,8 +37,8 @@ export interface components {
             /** Отчество (родительный падеж) */
             patronymic_2: string;
             /** Название отдела */
-            department: string;
-            /** Привелегии */
+            department: import('../../Types/Staff/Department.ts').components['schemas']['Admin_2.Types.Staff.Department'];
+            /** Привилегии */
             posts: unknown[];
             /** Группа */
             group?: number | null;

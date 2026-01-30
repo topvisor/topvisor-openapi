@@ -32,7 +32,7 @@ export interface components {
             /** Отчество (родительный падеж) */
             patronymic_2: string;
             /** Название отдела */
-            department: string;
+            department: import('../../Types/Staff/Department.ts').components['schemas']['Admin_2.Types.Staff.Department'];
             posts: import('../../Types/Staff/Posts.ts').components['schemas']['Admin_2.Types.Staff.Posts'];
         };
         "Admin_2.Methods.Staff.Add.Exec": number | null;

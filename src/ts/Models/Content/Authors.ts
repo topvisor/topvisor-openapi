@@ -19,6 +19,8 @@ export interface components {
             count_unique_views?: string | null;
             count_likes?: number | null;
             show_in_author_list?: number | null;
+            staff_department?: string | null;
+            staff_post?: string | null;
             user_site?: string | null;
             user_name?: string | null;
             user_avatar?: string | null;

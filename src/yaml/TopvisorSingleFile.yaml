@@ -21757,6 +21757,36 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Analytics.Ranks'
+    Admin_2.Types.Staff.Department:
+      type: string
+      enum:
+        - Администрация
+        - Редакция
+        - Разработка
+        - Дизайн
+        - Персонал
+        - Медиа
+        - Развитие продукта
+        - Работа с клиентами
+      x-enum-varnames:
+        - Administration
+        - Content
+        - Development
+        - Design
+        - Hr
+        - Media
+        - Product
+        - Support
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Отдел сотрудника
     Admin_2.Types.Staff.Post:
       type: string
       enum:
@@ -21834,7 +21864,8 @@ components:
           type: string
         department:
           title: Название отдела
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Staff.Department'
         posts:
           allOf:
             - $ref: '#/components/schemas/Admin_2.Types.Staff.Posts'
@@ -21905,9 +21936,10 @@ components:
           type: string
         department:
           title: Название отдела
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Staff.Department'
         posts:
-          title: Привелегии
+          title: Привилегии
           type: array
         group:
           title: Группа
@@ -24920,6 +24952,12 @@ components:
           nullable: true
         show_in_author_list:
           type: integer
+          nullable: true
+        staff_department:
+          type: string
+          nullable: true
+        staff_post:
+          type: string
           nullable: true
         user_site:
           type: string

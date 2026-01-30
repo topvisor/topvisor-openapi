@@ -64,7 +64,11 @@
                     },
                     "department": {
                         "title": "Название отдела",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Admin_2/Types/Staff/Department.json#/components/schemas/Admin_2.Types.Staff.Department"
+                            }
+                        ]
                     },
                     "posts": {
                         "allOf": [
