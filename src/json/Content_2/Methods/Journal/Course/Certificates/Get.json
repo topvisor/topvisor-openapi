@@ -21,7 +21,44 @@
                 "title": "Получение своего сертификата"
             },
             "Content_2.Methods.Journal.Course.Certificates.Get.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "user_id": {
+                                "type": "integer"
+                            },
+                            "user_name": {
+                                "type": "string"
+                            },
+                            "course_name": {
+                                "type": "string"
+                            },
+                            "course_url": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "user_id",
+                            "user_name",
+                            "course_name",
+                            "course_url",
+                            "date"
+                        ]
+                    }
+                },
+                "required": [
+                    "result"
+                ]
             }
         }
     }

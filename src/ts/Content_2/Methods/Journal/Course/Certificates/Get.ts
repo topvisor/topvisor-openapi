@@ -12,7 +12,16 @@ export interface components {
             /** Url курса относительно домена */
             course_url: string;
         };
-        "Content_2.Methods.Journal.Course.Certificates.Get.Exec": unknown;
+        "Content_2.Methods.Journal.Course.Certificates.Get.Exec": {
+            result: {
+                id: number;
+                user_id: number;
+                user_name: string;
+                course_name: string;
+                course_url: string;
+                date: string;
+            };
+        } | null;
     };
     responses: never;
     parameters: never;
