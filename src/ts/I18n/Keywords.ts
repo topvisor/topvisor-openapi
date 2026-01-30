@@ -622,6 +622,8 @@ export interface components {
             readonly Serp_features: "SERP features";
             /** @constant */
             readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.";
+            /** @constant */
+            readonly Relevance_check_already_started: "Relevant check already started";
         };
     };
     responses: never;

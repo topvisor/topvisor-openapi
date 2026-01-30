@@ -1237,6 +1237,10 @@
                     "No_keywords_in_project": {
                         "const": "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.",
                         "readOnly": true
+                    },
+                    "Relevance_check_already_started": {
+                        "const": "Relevant check already started",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1545,7 +1549,8 @@
                     "All_keywords",
                     "Select_source",
                     "Serp_features",
-                    "No_keywords_in_project"
+                    "No_keywords_in_project",
+                    "Relevance_check_already_started"
                 ]
             }
         }
