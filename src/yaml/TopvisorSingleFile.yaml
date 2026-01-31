@@ -3621,7 +3621,10 @@ paths:
       operationId: GetExample2Enum
       tags:
         - Example_2
-      summary: Метод с примерами параметров типа Enum
+      summary: |-
+        Метод с примерами параметров типа Enum
+
+        test
       requestBody:
         content:
           application/json:
@@ -26002,7 +26005,10 @@ components:
       required:
         - number2
         - letter
-      title: Метод с примерами параметров типа Enum
+      title: |-
+        Метод с примерами параметров типа Enum
+
+        test
     Example_2.Methods.Enum.Get.Exec:
       title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
       type: array
