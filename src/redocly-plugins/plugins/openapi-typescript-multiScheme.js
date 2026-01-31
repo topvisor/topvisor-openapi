@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import normalize from 'path-normalize';
+import { posix } from 'node:path';
 import YAML from 'yaml';
 
 /**
@@ -138,7 +138,7 @@ function genImport($ref, ctx) {
 
 	if ($refSchemaFileName[0] === '.') {
 		$refSchemaFileName = currentSchemaDirName + '/' + $refSchemaFileName;
-		$refSchemaFileName = './' + normalize($refSchemaFileName);
+		$refSchemaFileName = './' + posix.normalize($refSchemaFileName);
 	}
 
 	if ($refSchemaFileName === currentSchemaFileName) return;
@@ -198,7 +198,7 @@ function genOutputFileName(sourceFileName) {
 	const sourceRelativeFileName = sourceFileName.replaceAll(sourceDir + '/', './');
 
 	const outputRelativeFileName = redoclyOutpuFileNameBySourceFileName.get(sourceRelativeFileName);
-	const outputFileName = normalize(sourceDir + '/' + outputRelativeFileName);
+	const outputFileName = posix.normalize(sourceDir + '/' + outputRelativeFileName);
 
 	return outputFileName;
 }
