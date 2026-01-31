@@ -15,14 +15,18 @@ export interface components {
              * @description @internal
              */
             returnFilenameFromFolder?: string | null;
-            /** Параметры экспорта, возможные поля:
-             *     - showSummary */
+            /**
+             * Параметры экспорта, возможные поля:
+             *     - showSummary
+             */
             properties?: unknown[];
             /** Id проекта */
             project_id: number;
-            /** Индекс региона
+            /**
+             * Индекс региона
              *
-             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device */
+             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+             */
             region_index?: number | null;
             searcher_key?: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
             /** Ключ региона */
@@ -50,9 +54,11 @@ export interface components {
             domains?: unknown[] | null;
             /** Добавить в результат даты, в которых были проверки (existsDates) */
             show_exists_dates?: boolean;
-            /** Произвольные даты без использования диапазона
+            /**
+             * Произвольные даты без использования диапазона
              *
-             *     Если не задан нужно задать параметры date1, date2, type_range, count_dates */
+             *     Если не задан нужно задать параметры date1, date2, type_range, count_dates
+             */
             dates?: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /** Дата начала диапазона */
             date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
@@ -68,9 +74,11 @@ export interface components {
              * @default 31
              */
             count_dates?: number;
-            /** Только запросы, присутствующие в первой проверке указанного периода
+            /**
+             * Только запросы, присутствующие в первой проверке указанного периода
              *
-             *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH */
+             *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+             */
             only_exists_first_date?: number | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;

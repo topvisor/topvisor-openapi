@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение инофрмации о курсах
+        /**
+         * Получение инофрмации о курсах
          *
-         *     Параметры выборки основаны на модели Models\Pages */
+         *     Параметры выборки основаны на модели Models\Pages
+         */
         "Content_2.Methods.Journal.Course.Get": {
             /** Ссылка на урок для получения pageChapter и pageLesson */
             lessons_url?: string | null;

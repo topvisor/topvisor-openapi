@@ -20,9 +20,11 @@ export interface components {
              *     @see Selector\Types\Operator
              */
             filters: unknown[];
-            /** Id объекта, для фильтрации объектов по id
+            /**
+             * Id объекта, для фильтрации объектов по id
              *
-             *     Только для моделей с полем id */
+             *     Только для моделей с полем id
+             */
             id?: number | null;
         };
     };

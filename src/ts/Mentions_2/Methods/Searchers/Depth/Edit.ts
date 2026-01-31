@@ -13,9 +13,11 @@ export interface components {
             project_id: number;
             /** ID правила */
             rule_id: number;
-            /** Глубина сбора упоминаний (x100)
+            /**
+             * Глубина сбора упоминаний (x100)
              *
-             *     От 1 до 10 */
+             *     От 1 до 10
+             */
             depth?: number | null;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

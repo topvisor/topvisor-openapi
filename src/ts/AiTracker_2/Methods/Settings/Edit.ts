@@ -14,9 +14,11 @@ export interface components {
          * @description @see \Services\AiTracker_2\Objects\Settings
          */
         "AiTracker_2.Methods.Settings.Edit": {
-            /** Имя бренда
+            /**
+             * Имя бренда
              *
-             *     Участвует в поиске в ответе ИИ */
+             *     Участвует в поиске в ответе ИИ
+             */
             brand_name?: string | null;
             /** Дополнительные имена для поиска в ответе ИИ */
             aliases?: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;

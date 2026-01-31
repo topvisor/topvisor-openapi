@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение сортировки групп
+        /**
+         * Изменение сортировки групп
          *
-         *     Не оптимизировано для работы с большим числом групп, дат и регионов */
+         *     Не оптимизировано для работы с большим числом групп, дат и регионов
+         */
         "Keywords_2.Methods.Groups.Sort.Edit": {
             /** Список полей объекта, по которым необходимо выполнить сортировку */
             orders: unknown[];

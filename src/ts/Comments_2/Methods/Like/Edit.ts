@@ -7,15 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование статуса лайка для комментария
+        /**
+         * Редактирование статуса лайка для комментария
          *
-         *     Возвращает результат редактирования статуса лайка */
+         *     Возвращает результат редактирования статуса лайка
+         */
         "Comments_2.Methods.Like.Edit": {
             /** Id комментария */
             id: number;
-            /** Установка лайка
+            /**
+             * Установка лайка
              *     - 0: снять лайк
-             *     - 1: поставить лайк */
+             *     - 1: поставить лайк
+             */
             like: boolean;
         };
         "Comments_2.Methods.Like.Edit.Exec": number | null;

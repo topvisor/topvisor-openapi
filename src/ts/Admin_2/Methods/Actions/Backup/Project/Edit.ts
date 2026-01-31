@@ -10,9 +10,11 @@ export interface components {
         /** Востановление удаленного проекта */
         "Admin_2.Methods.Actions.Backup.Project.Edit": {
             pass_admin_actions: string;
-            /** Этап:
+            /**
+             * Этап:
              *     - 1: Загрузить и подготовить бекапы
-             *     - 2: Выполнить восстановление */
+             *     - 2: Выполнить восстановление
+             */
             step: number;
             /** Сервер, с которого делались бекапы */
             server_name: string;

@@ -13,9 +13,11 @@ export interface components {
             target_id: string;
             /** Тип документа enum(RequisitesDocuments::$availableDocumentsTypes) */
             type: string;
-            /** Использовать подпись
+            /**
+             * Использовать подпись
              *
-             *     Если true, то документ с подписью (не распространяется на договоры) */
+             *     Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed?: boolean;
         };
         "Bank_2.Methods.Requisites.Print.Get.Exec": Record<string, never>;

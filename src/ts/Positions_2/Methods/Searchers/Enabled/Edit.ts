@@ -13,8 +13,10 @@ export interface components {
             project_id: number;
             /** Ключ ПС */
             searcher_key: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
-            /** - 1 - включить
-             *     - 0 - выключить */
+            /**
+             * - 1 - включить
+             *     - 0 - выключить
+             */
             enabled: number;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

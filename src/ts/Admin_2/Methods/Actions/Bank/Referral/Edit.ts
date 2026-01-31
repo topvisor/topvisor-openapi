@@ -11,9 +11,11 @@ export interface components {
         "Admin_2.Methods.Actions.Bank.Referral.Edit": {
             /** ID пользователя */
             userId: number;
-            /** ID акта
+            /**
+             * ID акта
              *
-             *     Укажите `sum=`, если API не раблотает и данных акта нет */
+             *     Укажите `sum=`, если API не раблотает и данных акта нет
+             */
             entityId?: string | null;
             /** Дата акта в формате d.m.Y */
             date: string;

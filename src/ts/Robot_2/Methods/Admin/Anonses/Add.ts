@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление анонса
+        /**
+         * Добавление анонса
          *
-         *     Вернет количество добавленных анонсов */
+         *     Вернет количество добавленных анонсов
+         */
         "Robot_2.Methods.Admin.Anonses.Add": {
             type: import('../../../Types/Admin/Anonses/Type.ts').components['schemas']['Robot_2.Types.Admin.Anonses.Type'];
             /** ID ссылки */

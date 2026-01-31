@@ -24,37 +24,45 @@ export interface components {
             group_folder_id?: any;
             group_folder_path?: any;
             group_folder_ord?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "model",
              *         "project_id"
              *       ]
-             *     } */
+             *     }
+             */
             response?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "model",
              *         "project_id"
              *       ]
-             *     } */
+             *     }
+             */
             mentioned?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "model",
              *         "project_id"
              *       ]
-             *     } */
+             *     }
+             */
             position?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "model",
              *         "project_id"
              *       ]
-             *     } */
+             *     }
+             */
             position_max?: any;
         };
     };

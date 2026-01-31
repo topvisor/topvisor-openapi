@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Индекс региона
+        /**
+         * Индекс региона
          *
-         *     Если не передан индекс региона, то получит его исходя из других параметров trait */
+         *     Если не передан индекс региона, то получит его исходя из других параметров trait
+         */
         "TV.API.Params.RegionIndexTrait": {
             /** Индекс региона */
             region_index: number;

@@ -7,17 +7,21 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт в хранилище
+        /**
+         * Экспорт в хранилище
          *
-         *     Производит редирект на файл в кранилище */
+         *     Производит редирект на файл в кранилище
+         */
         "Snapshots_2.Methods.History.Export.ToRepository.Get": {
             /** Id проекта */
             project_id: number;
             repository: import('../../../../Types/History/Export/Repository.ts').components['schemas']['Snapshots_2.Types.History.Export.Repository'];
             output: import('../../../../Types/History/Export/Output.ts').components['schemas']['Snapshots_2.Types.History.Export.Output'];
-            /** Индекс региона
+            /**
+             * Индекс региона
              *
-             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device */
+             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+             */
             region_index?: number | null;
             /** Ключ региона */
             region_key?: number | null;
@@ -30,9 +34,11 @@ export interface components {
             show_ams?: boolean;
             positions_fields?: import('../../../../Types/History/PositionsFields.ts').components['schemas']['Snapshots_2.Types.History.PositionsFields'] | null;
             searcher_key?: import('../../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
-            /** Произвольные даты без использования диапазона
+            /**
+             * Произвольные даты без использования диапазона
              *
-             *     Если не задан нужно задать параметры date1, date2, type_range, count_dates */
+             *     Если не задан нужно задать параметры date1, date2, type_range, count_dates
+             */
             dates?: import('../../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /** Дата начала диапазона */
             date1?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
@@ -48,9 +54,11 @@ export interface components {
              * @default 31
              */
             count_dates?: number;
-            /** Только запросы, присутствующие в первой проверке указанного периода
+            /**
+             * Только запросы, присутствующие в первой проверке указанного периода
              *
-             *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH */
+             *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+             */
             only_exists_first_date?: number | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;

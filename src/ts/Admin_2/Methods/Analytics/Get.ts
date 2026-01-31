@@ -13,13 +13,15 @@ export interface components {
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             period: import('../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             currency: import('../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
-            /** Имя метрики
+            /**
+             * Имя метрики
              *
              *     - sum
              *     - discount
              *     - count_users
              *     - su
-             *     - su_common: Без учета валюты */
+             *     - su_common: Без учета валюты
+             */
             field_name: string;
             /** Длина периода */
             limit?: number | null;

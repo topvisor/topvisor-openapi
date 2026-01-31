@@ -15,10 +15,12 @@ export interface components {
             date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Дата окончания */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /** Тип
+            /**
+             * Тип
              *
              *     - vacation
-             *     - day_off */
+             *     - day_off
+             */
             type: string;
         };
         "Admin_2.Methods.Staff.Vacation.Add.Exec": number | null;

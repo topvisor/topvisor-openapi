@@ -9,11 +9,13 @@ export interface components {
     schemas: {
         /** Получение списка проектов */
         "Example_2.Methods.Projects.Get": {
-            /** Имя проекта
+            /**
+             * Имя проекта
              *
              *     Используется для фильтрации по имени проекта, см. self::exec()
              *
-             *     Не обязательный параметр метода строкового типа */
+             *     Не обязательный параметр метода строкового типа
+             */
             name?: string | null;
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

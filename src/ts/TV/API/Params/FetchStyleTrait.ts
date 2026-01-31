@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Данный трейт расширяет API метод поддержкой выбора FetchStyle
+        /**
+         * Данный трейт расширяет API метод поддержкой выбора FetchStyle
          *
          *     Его требуется указывать во всех методах, которые его поддерживают.
          *     Это такие методы, которые используют Selector с execFetch() без дополнительной обработки
@@ -17,7 +18,8 @@ export interface components {
          *     protected function exec(): mixed {
          *        return $this->genSelector()->execFetch();
          *     }
-         *     ``` */
+         *     ```
+         */
         "TV.API.Params.FetchStyleTrait": {
             /**
              * Определяет формат результата: коллекция, объект, значение

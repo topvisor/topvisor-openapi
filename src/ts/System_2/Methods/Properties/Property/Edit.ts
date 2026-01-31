@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование параметра
+        /**
+         * Редактирование параметра
          *
-         *     Не хранить в параметрах конфиденциальную информацию */
+         *     Не хранить в параметрах конфиденциальную информацию
+         */
         "System_2.Methods.Properties.Property.Edit": {
             /** Имя параметра */
             name: string;

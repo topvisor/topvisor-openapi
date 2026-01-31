@@ -19,9 +19,11 @@ export interface components {
              * @default json
              */
             format?: string;
-            /** Использовать инкрементальный вывод схемы
+            /**
+             * Использовать инкрементальный вывод схемы
              *
-             *     В этом режиме в схему будут добавляться только изменения за один час */
+             *     В этом режиме в схему будут добавляться только изменения за один час
+             */
             incremental?: boolean;
         };
         "Openapi_2.Methods.Download.Get.Exec": Record<string, never>;

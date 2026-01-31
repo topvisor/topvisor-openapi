@@ -13,14 +13,16 @@ export interface components {
             project_id: number;
             /** Провайдер */
             provider_n: number;
-            /** Объем трафика
+            /**
+             * Объем трафика
              *
              *     - 0: max
              *     - 1: ~75%
              *     - 2: ~15%
              *     - 3: ~5%
              *     - 4: ~95%
-             *     - 5: ~90% */
+             *     - 5: ~90%
+             */
             tactics?: number | null;
             tactics_2?: import('../../Types/Keywords/Tactics2.ts').components['schemas']['Broker_2.Types.Keywords.Tactics2'] | null;
             /** Корректировка объявлений (проценты) */

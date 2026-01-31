@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Результат успешного API запроса */
         ResponseSuccess: {
-            /** Результат ответа API метода
+            /**
+             * Результат ответа API метода
              *
-             *     Тип результата зависит от типа запроса и его настроек */
+             *     Тип результата зависит от типа запроса и его настроек
+             */
             errors?: null | null;
             /** Список сообщений, полученных при выполнении запроса */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;

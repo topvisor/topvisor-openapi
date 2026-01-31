@@ -9,10 +9,12 @@ export interface components {
     schemas: {
         /** Получение информации о выданных доступах к проекту */
         "Projects_2.Methods.Rights.Get": {
-            /** ID проекта
+            /**
+             * ID проекта
              *
              *     - если указан: будут выводиться доступы с учетом доступа к проекту самого пользователя
-             *     - если не указан: будут выводиться все доступы всех проектов текущего пользователя */
+             *     - если не указан: будут выводиться все доступы всех проектов текущего пользователя
+             */
             project_id?: number | null;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

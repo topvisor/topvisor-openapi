@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации об SSL сертификате
+        /**
+         * Получение информации об SSL сертификате
          *     Возваращает объект с параметрами:
-         *     - expire */
+         *     - expire
+         */
         "Projects_2.Methods.Status.Ssl.Get": {
             /** Домен */
             domain: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];

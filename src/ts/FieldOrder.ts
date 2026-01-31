@@ -20,11 +20,13 @@ export interface components {
             orderValues?: unknown[] | null;
             /** Оператор сравнения */
             operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'] | null;
-            /** Значения для сравенния
+            /**
+             * Значения для сравенния
              *
              *     В зависимости от типа условия оно может иметь разное количество значений
              *
-             *     Обычно оно имеет только одно значение */
+             *     Обычно оно имеет только одно значение
+             */
             values?: unknown[] | null;
         };
     };

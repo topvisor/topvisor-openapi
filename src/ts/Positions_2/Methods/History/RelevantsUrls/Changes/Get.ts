@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории об изменении релевантной страницы
+        /**
+         * Получение истории об изменении релевантной страницы
          *
-         *     Возвращает список в формате: [[`url`, `date`]] */
+         *     Возвращает список в формате: [[`url`, `date`]]
+         */
         "Positions_2.Methods.History.RelevantsUrls.Changes.Get": {
             /** ID конкурента */
             competitor_id?: number;

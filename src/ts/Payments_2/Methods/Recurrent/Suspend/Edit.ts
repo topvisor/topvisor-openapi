@@ -11,10 +11,12 @@ export interface components {
         "Payments_2.Methods.Recurrent.Suspend.Edit": {
             /** id платежа, связанного с подпиской или тарифом */
             payment_id: number;
-            /** Флаг приостановки/возобновления рекуррентных платежей
+            /**
+             * Флаг приостановки/возобновления рекуррентных платежей
              *
              *     - `true`: приостановить
-             *     - `false`: возобновить */
+             *     - `false`: возобновить
+             */
             suspend: boolean;
         };
         "Payments_2.Methods.Recurrent.Suspend.Edit.Exec": number | null;

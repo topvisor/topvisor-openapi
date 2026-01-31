@@ -63,11 +63,13 @@ export interface components {
              * @default No set
              */
             readonly LANGUAGE_MAIN: string;
-            /** Список дополнительных языков, ISO 639-1
+            /**
+             * Список дополнительных языков, ISO 639-1
              *
              *     При генерации url дополнительный язык добавляется в начало url в модуле контента
              *
-             *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN` */
+             *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`
+             */
             readonly LANGUAGES_ADDITIONAL: unknown[];
             /**
              * Список валют, используемых на сайте
@@ -76,11 +78,13 @@ export interface components {
              *     ]
              */
             readonly CURRENCIES: unknown[];
-            /** Список поддоменов
+            /**
+             * Список поддоменов
              *
              *     Примеры:
              *     - `''` для основного домена `example.com`
-             *     - `'subdomain'` для поддомена `subdomain.example.com` */
+             *     - `'subdomain'` для поддомена `subdomain.example.com`
+             */
             readonly SUBDOMAINS: unknown[];
             /** Список поддерживаемых тем оформления */
             readonly THEMES: unknown[];
@@ -143,13 +147,15 @@ export interface components {
             readonly COUNTER_GOOGLE_JOURNAL: string;
             /** @default 10000 */
             readonly DIADOC_ID: number;
-            /** Запрещенные API.
+            /**
+             * Запрещенные API.
              *
              *     Разрешается блок как сервиса, так и частного метода
              *
              *     Блокировка сервиса целиком: ['Admin_2', 'Users_2']
              *     Блокировка сервисов метода ['Admin_2\Methods\Informer'] - заблокирует только методы из Informer
-             *     Блокировка частного метода ['Admin_2\Methods\Informer\Get'] - заблокирует запрос к методу Get, остальные будут доступны */
+             *     Блокировка частного метода ['Admin_2\Methods\Informer\Get'] - заблокирует запрос к методу Get, остальные будут доступны
+             */
             readonly BLOCKED_SERVICES: unknown[];
         };
     };

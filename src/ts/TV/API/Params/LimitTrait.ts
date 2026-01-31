@@ -8,9 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "TV.API.Params.LimitTrait": {
-            /** Количество объектов, которые необходимо получить в результате
+            /**
+             * Количество объектов, которые необходимо получить в результате
              *
-             *     Используется в паре с offset */
+             *     Используется в паре с offset
+             */
             limit?: number | null;
         };
     };

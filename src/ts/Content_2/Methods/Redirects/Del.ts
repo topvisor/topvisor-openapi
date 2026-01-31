@@ -9,15 +9,19 @@ export interface components {
     schemas: {
         /** Удаление редиректа */
         "Content_2.Methods.Redirects.Del": {
-            /** Сайт
+            /**
+             * Сайт
              *
              *     - topvisor
-             *     - thundo */
+             *     - thundo
+             */
             site: string;
-            /** С поддомена
+            /**
+             * С поддомена
              *
              *     - 'journal'
-             *     - '' */
+             *     - ''
+             */
             subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
             /** С пути (маска, * - любой символ) */
             path_mask: string;

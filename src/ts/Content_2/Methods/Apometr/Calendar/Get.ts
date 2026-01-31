@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Получение календаря апдейтов */
         "Content_2.Methods.Apometr.Calendar.Get": {
-            /** Индекс региона
+            /**
+             * Индекс региона
              *
-             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device */
+             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+             */
             region_index?: number | null;
             searcher_key?: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
             /** Ключ региона */

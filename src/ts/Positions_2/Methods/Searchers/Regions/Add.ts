@@ -13,13 +13,17 @@ export interface components {
             project_id: number;
             /** Ключ ПС */
             searcher_key: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
-            /** Ключ региона
+            /**
+             * Ключ региона
              *
-             *     Для разных ПС список доступных регионов может быть разный */
+             *     Для разных ПС список доступных регионов может быть разный
+             */
             region_key: number;
-            /** Язык региона
+            /**
+             * Язык региона
              *
-             *     Для разных ПС список языков разный */
+             *     Для разных ПС список языков разный
+             */
             region_lang?: string | null;
             /** Устройство региона */
             region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];

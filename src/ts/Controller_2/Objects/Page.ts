@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Общий объект страницы
+        /**
+         * Общий объект страницы
          *
          *     Объект знает все о странице кроме одного - имени сайта, он не знает ничего о сайте, сайт определяется в Core и доступен только через Core
          *
@@ -15,35 +16,50 @@ export interface components {
          *     - при получении страницы через get/content_2/pages, см. load() и $pages->article->html
          *     - при применении шаблона страницы, шаблон страницы зависит от контроллера, см. renderTpl()
          *     - при применении шаблона сайта, шаблон сайта зависит от сайта и находитсяя в /tpl/sites/{{ site | common }}/{{ lang | common }}/main.php, см.
-         *     renderSiteTpl() */
+         *     renderSiteTpl()
+         */
         "Controller_2.Objects.Page": {
-            /** Аналог js location
+            /**
+             * Аналог js location
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
-            /** GET параметры страницы
+            /**
+             * GET параметры страницы
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             _GET: unknown[];
-            /** Объект openGraph
+            /**
+             * Объект openGraph
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
-            /** Основные опции страницы для <head> такие, как title и description
+            /**
+             * Основные опции страницы для <head> такие, как title и description
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
-            /** Основные данные статьи, такие как h1, html, автор и дата публикации
+            /**
+             * Основные данные статьи, такие как h1, html, автор и дата публикации
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
-            /** Объект второго меню (устанавливается только в tpl)
+            /**
+             * Объект второго меню (устанавливается только в tpl)
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             secondMenu: import('../../Tpl/Core/SecondMenu/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu.SecondMenu'];
-            /** Объект левого меню
+            /**
+             * Объект левого меню
              *
-             *     Сложный параметр, должен устанавливаться в конструкторе */
+             *     Сложный параметр, должен устанавливаться в конструкторе
+             */
             leftMenu: import('../../Tpl/Core/LeftMenu/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu.LeftMenu'];
             /** Хлебная крошка url в массиве, не включает домен и язык, всегда имеет не менее 5 элементов */
             params: unknown[];
@@ -103,9 +119,11 @@ export interface components {
             tplRendered: string;
             /** Исполненный php шаблон страницы в шаблоне сайта */
             tplSiteRendered: string;
-            /** Дополнительные данные страницы, зависят от $mod, передаются в шаблон сайта или в ответе API через jsonSerialize
+            /**
+             * Дополнительные данные страницы, зависят от $mod, передаются в шаблон сайта или в ответе API через jsonSerialize
              *
-             *     Данные, которые не нужно передавать в json необходимо объявлять приватными по соглашению js: $data['#variableName'] = $variableData; */
+             *     Данные, которые не нужно передавать в json необходимо объявлять приватными по соглашению js: $data['#variableName'] = $variableData;
+             */
             data: unknown[];
             /** Имеющиеся доступы, ключ => значение, определяются контроллером */
             rightsLabels: unknown[];

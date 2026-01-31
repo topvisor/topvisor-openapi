@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка телеграм аккаунтов
+        /**
+         * Получение списка телеграм аккаунтов
          *
-         *     При указании project_id получает список телеграм аккаунтов по владельцу проекта */
+         *     При указании project_id получает список телеграм аккаунтов по владельцу проекта
+         */
         "Users_2.Methods.TelegramAccounts.Get": {
             /** ID проекта */
             project_id?: number | null;

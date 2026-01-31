@@ -13,10 +13,12 @@ export interface components {
             subdomain: string;
             /** Url страницы */
             url: string;
-            /** Установлена ли закладка
+            /**
+             * Установлена ли закладка
              *
              *     - false: снять закладку
-             *     - true: сохранить закладку */
+             *     - true: сохранить закладку
+             */
             bookmark: boolean;
         };
         "Content_2.Methods.Bookmark.Edit.Exec": number | null;

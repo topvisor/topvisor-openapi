@@ -57,9 +57,11 @@ export interface components {
             quiz_id?: string | null;
             /** Статус документа */
             state?: string | null;
-            /** Ограничение доступа
+            /**
+             * Ограничение доступа
              *
-             *     Доступно всем, если не заполнено */
+             *     Доступно всем, если не заполнено
+             */
             required_posts_any?: import('../../../Admin_2/Types/Staff/Posts.ts').components['schemas']['Admin_2.Types.Staff.Posts'] | null;
         };
         "Content_2.Methods.Pages.Edit.Exec": number | null;

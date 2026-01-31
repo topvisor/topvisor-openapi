@@ -10,17 +10,21 @@ export interface components {
         /** Восстановление поисковых запросов из бэкапа */
         "Admin_2.Methods.Actions.Backup.Keywords.Edit": {
             pass_admin_actions: string;
-            /** Этап:
+            /**
+             * Этап:
              *     - 1: Загрузить и подготовить бекапы
-             *     - 2: Выполнить восстановление */
+             *     - 2: Выполнить восстановление
+             */
             step: number;
             /** Сервер, с которого делались бекапы */
             server_name: string;
             /** ID проекта */
             project_id: number;
-            /** Тип
+            /**
+             * Тип
              *
-             *     Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE */
+             *     Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE
+             */
             type: string;
             /** Дата бекапа */
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];

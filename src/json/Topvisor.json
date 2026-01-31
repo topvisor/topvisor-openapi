@@ -20473,6 +20473,7 @@
                     "Keywords_2"
                 ],
                 "summary": "Запуск кластеризации",
+                "description": "@note Проверка на права в api_get_priceClaster()",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -20516,8 +20517,7 @@
                             }
                         }
                     }
-                },
-                "description": "@note Проверка на права в api_get_priceClaster()"
+                }
             }
         },
         "/add/keywords_2/claster/taskChange/": {

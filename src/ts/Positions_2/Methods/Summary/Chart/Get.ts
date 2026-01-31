@@ -15,13 +15,17 @@ export interface components {
             competitors_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Даты для получения сводки */
             dates?: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
-            /** С какого числа получить данные
+            /**
+             * С какого числа получить данные
              *
-             *     Необязательно, если указано dates */
+             *     Необязательно, если указано dates
+             */
             date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** По какое число получить данные
+            /**
+             * По какое число получить данные
              *
-             *     Необязательно, если указано dates */
+             *     Необязательно, если указано dates
+             */
             date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
              * Период дат

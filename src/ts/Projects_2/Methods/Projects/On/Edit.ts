@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Редактирование "on" проектов */
         "Projects_2.Methods.Projects.On.Edit": {
-            /** Активность проекта
+            /**
+             * Активность проекта
              *     - -1 - архив
-             *     - 0 - обычный */
+             *     - 0 - обычный
+             */
             on: number;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание платежки и переход к оплате
+        /**
+         * Создание платежки и переход к оплате
          *
          *     Возвращает id платежа, если указан параметр $return_id = true
          *
@@ -15,7 +16,8 @@ export interface components {
          *
          *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
          *
-         *     При ошибке производит редирект на страницу с информацией об ошибке */
+         *     При ошибке производит редирект на страницу с информацией об ошибке
+         */
         "Payments_2.Methods.Add": {
             /** Платежная система */
             system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
@@ -25,17 +27,21 @@ export interface components {
             country: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
             /** Номер договора/оферты для платежа */
             requisites_id?: string;
-            /** ID тарифа
+            /**
+             * ID тарифа
              *
              *     Если указан, сумма будет переопределена
              *
-             *     Нельзя использовать вместе с `subscription_plan_id` */
+             *     Нельзя использовать вместе с `subscription_plan_id`
+             */
             tariff_id?: number;
-            /** Число предоплаченных месяцев по тарифу
+            /**
+             * Число предоплаченных месяцев по тарифу
              *
              *     Примеры:
              *     - при оплате тарифа на 1 месяц должен быть равен 1
-             *     - при оплате тарифа на 2 месяца должен быть равен 2 */
+             *     - при оплате тарифа на 2 месяца должен быть равен 2
+             */
             tariff_count_month?: number;
             /**
              * ID плана подписки

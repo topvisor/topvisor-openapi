@@ -13,10 +13,12 @@ export interface components {
             project_id: number;
             /** ID конкурентов */
             ids: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** Активность проекта
+            /**
+             * Активность проекта
              *
              *     - -1 - выключен
-             *     - 0 - включен */
+             *     - 0 - включен
+             */
             on: number;
         };
         "Projects_2.Methods.Competitors.On.Edit.Exec": number;

@@ -60,13 +60,15 @@ export interface components {
             strict_query?: boolean;
             /** Минимальная схожесть */
             intersection?: number | null;
-            /** Обработчик
+            /**
+             * Обработчик
              *
              *     Для внутреннего использования
              *
              *     Возможные значения:
              *     - handle
-             *     - name */
+             *     - name
+             */
             handler?: unknown;
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

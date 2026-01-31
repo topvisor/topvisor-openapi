@@ -11125,6 +11125,7 @@ paths:
       tags:
         - Keywords_2
       summary: Запуск кластеризации
+      description: '@note Проверка на права в api_get_priceClaster()'
       requestBody:
         content:
           application/json:
@@ -11147,7 +11148,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-      description: '@note Проверка на права в api_get_priceClaster()'
   /add/keywords_2/claster/taskChange/:
     post:
       operationId: AddKeywords2ClasterTaskChange

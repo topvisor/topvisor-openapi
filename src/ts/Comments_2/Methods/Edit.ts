@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение комментария
+        /**
+         * Изменение комментария
          *
-         *     Изменять комментарий можно только в течение ограниченного времени */
+         *     Изменять комментарий можно только в течение ограниченного времени
+         */
         "Comments_2.Methods.Edit": {
             /** ID комментария */
             id: number;

@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Изменение временной зоны */
         "Users_2.Methods.Profile.Timezone.Edit": {
-            /** Новая временная зона
+            /**
+             * Новая временная зона
              *
-             *     https://www.php.net/manual/ru/timezones.php */
+             *     https://www.php.net/manual/ru/timezones.php
+             */
             timezone: string;
         };
         "Users_2.Methods.Profile.Timezone.Edit.Exec": number | null;

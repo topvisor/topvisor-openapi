@@ -27,30 +27,38 @@ export interface components {
              * @default 31
              */
             count_dates?: number;
-            /** Дополнительные параметры экспорта
+            /**
+             * Дополнительные параметры экспорта
              *
              *     Возможные поля:
              *     - showSummary
              *     - compact
-             *     - splitGroups */
+             *     - splitGroups
+             */
             properties?: unknown[];
             painting?: import('../../../Types/History/Export/Painting.ts').components['schemas']['Positions_2.Types.History.Export.Painting'];
-            /** Использовать вкладки
+            /**
+             * Использовать вкладки
              *
              *     Только для `Output`:
              *     - Xlsx
-             *     - Pdf */
+             *     - Pdf
+             */
             with_tabs?: boolean;
-            /** Поля (fieldAlias) с привязкой к вкладкам
+            /**
+             * Поля (fieldAlias) с привязкой к вкладкам
              *
-             *     Только для xlsx с вкладками или pdf */
+             *     Только для xlsx с вкладками или pdf
+             */
             tabs_fields?: unknown[];
-            /** Процент попадания в топ
+            /**
+             * Процент попадания в топ
              *
              *     Только для `Output`:
              *      - Xlsx
              *      - Pdf
-             *      - Html */
+             *      - Html
+             */
             show_top_by_depth?: number;
             /**
              * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
@@ -66,11 +74,13 @@ export interface components {
             /** Выбор столбцов данных с результатами проверки */
             positions_fields?: unknown[] | null;
             filter_by_dynamic?: import('../../../Types/History/FilterByDynamics.ts').components['schemas']['Positions_2.Types.History.FilterByDynamics'] | null;
-            /** Фильтр по позициям
+            /**
+             * Фильтр по позициям
              *
              *     Принимает массив значений, пара из которых берется как промежуток
              *     - `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100
-             *     - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50 */
+             *     - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50
+             */
             filter_by_positions?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

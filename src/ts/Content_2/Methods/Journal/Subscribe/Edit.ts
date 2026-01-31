@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Изменение состояния подписки на рассылку журнала */
         "Content_2.Methods.Journal.Subscribe.Edit": {
-            /** Подписаться/отписаться
+            /**
+             * Подписаться/отписаться
              *     * 1: подписаться
-             *     * 0: отписаться */
+             *     * 0: отписаться
+             */
             subscribe: boolean;
         };
         "Content_2.Methods.Journal.Subscribe.Edit.Exec": number;

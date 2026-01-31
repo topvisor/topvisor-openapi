@@ -25,87 +25,109 @@ export interface components {
             group_folder_path?: any;
             group_folder_ord?: any;
             target?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             target_status?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             position?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             relevant_url?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             snippet_title?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             snippet_body?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             snippet_ext?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             visitors?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             serp_features?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             positionStatus?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "region_key",
              *         "searcher_key",
              *         "type"
              *       ]
-             *     } */
+             *     }
+             */
             volume?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "position",
              *         "region_key",
              *         "searcher_key"
              *       ]
-             *     } */
+             *     }
+             */
             cost_forecast?: any;
         };
     };

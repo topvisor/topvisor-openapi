@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение суммы оплат за период
+        /**
+         * Получение суммы оплат за период
          *
-         *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий */
+         *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий
+         */
         "Admin_2.Methods.Analytics.Payments.Get": {
             period: import('../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */

@@ -19,11 +19,13 @@ export interface components {
             groups_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта) */
             do_snapshots?: boolean | null;
-            /** Проверка одного запроса
+            /**
+             * Проверка одного запроса
              *
              *     - не допускается при массовой проверке проектов
              *     - требует указания одного `regions_indexes`
-             *     - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots` */
+             *     - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
+             */
             keyword_id?: number | null;
             /**
              * Движок проверки позиций

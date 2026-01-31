@@ -14,9 +14,11 @@ export interface components {
             show_fields_names?: boolean;
             /** Вывести fieldLabel в заголовках столбцов (для CSV) */
             show_fields_labels?: boolean;
-            /** Вернуть данные в формате для копирования в буфер обмена
+            /**
+             * Вернуть данные в формате для копирования в буфер обмена
              *
-             *     Не более 2000 результатов */
+             *     Не более 2000 результатов
+             */
             forClipboard?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

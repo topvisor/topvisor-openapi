@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение сертификата
+        /**
+         * Изменение сертификата
          *
-         *     Можно менять только имя, если оно не указано */
+         *     Можно менять только имя, если оно не указано
+         */
         "Content_2.Methods.Journal.Course.Certificates.Edit": {
             /** Url курса относительно домена */
             course_url: string;

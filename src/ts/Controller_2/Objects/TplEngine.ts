@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Движок работы с шаблонизатором
+        /**
+         * Движок работы с шаблонизатором
          *
-         *     Является неотъемлемой частью Page */
+         *     Является неотъемлемой частью Page
+         */
         "Controller_2.Objects.TplEngine": Record<string, never>;
     };
     responses: never;

@@ -11,10 +11,12 @@ export interface components {
         "Tickets_2.Methods.Tickets.Writing.Edit": {
             /** ID тикета */
             id: number;
-            /** Текст
+            /**
+             * Текст
              *
              *     - text = '': отмена написания
-             *     - text = null: написания со скрытым содержимым (без текста) */
+             *     - text = null: написания со скрытым содержимым (без текста)
+             */
             text?: string | null;
         };
         "Tickets_2.Methods.Tickets.Writing.Edit.Exec": number | null;

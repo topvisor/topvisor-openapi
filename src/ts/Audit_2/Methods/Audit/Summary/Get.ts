@@ -22,12 +22,14 @@ export interface components {
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        /** Сводка о выполненном аудите
+        /**
+         * Сводка о выполненном аудите
          *
          *     Возвращает объект со сводкой по категориям, пример:
          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
-         *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
+         *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
+         */
         "Audit_2.Methods.Audit.Summary.Get.Exec": import('../../../../Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'][] | null;
     };
     responses: never;

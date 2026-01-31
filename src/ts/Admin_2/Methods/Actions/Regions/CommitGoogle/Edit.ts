@@ -9,13 +9,15 @@ export interface components {
     schemas: {
         /** Добавить регионы Google в сервис */
         "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit": {
-            /** Список регионов в формате:
+            /**
+             * Список регионов в формате:
              *
              *     - Яндекс lr, укажите 0, если региона в Яндексе нет
              *     - Criteria ID: id региона в google
              *     - coords: координаты
              *     - name_ru: имя региона
-             *     - areaName_ru: имя родительского региона, обычно это область */
+             *     - areaName_ru: имя родительского региона, обычно это область
+             */
             regions: {
                 lr: number;
                 criteriaId: number;

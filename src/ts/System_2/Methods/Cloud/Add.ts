@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание директории или загрузка файла
+        /**
+         * Создание директории или загрузка файла
          *
-         *     Вернет имя директории в случае создания директории или bool при загрузке файла */
+         *     Вернет имя директории в случае создания директории или bool при загрузке файла
+         */
         "System_2.Methods.Cloud.Add": {
             /** Директория */
             directory: string;

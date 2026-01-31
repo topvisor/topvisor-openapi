@@ -7,12 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных подтверждения
+        /**
+         * Получение данных подтверждения
          *
          *     Возвращает результат подтверждения в виде
          *     массива с сообщением (acceptAction),
          *     логической переменной (acceptEmail),
-         *     null при неправильно введенном типе */
+         *     null при неправильно введенном типе
+         */
         "App_2.Methods.Actions.Get": {
             /** Email пользователя */
             email: string;

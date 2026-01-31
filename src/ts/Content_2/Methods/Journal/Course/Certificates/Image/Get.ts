@@ -9,15 +9,19 @@ export interface components {
     schemas: {
         /** Получение сертификата в виде изображения */
         "Content_2.Methods.Journal.Course.Certificates.Image.Get": {
-            /** Формат файла
+            /**
+             * Формат файла
              *
              *     * pdf
-             *     * png */
+             *     * png
+             */
             format: string;
-            /** Возвращаемый формат
+            /**
+             * Возвращаемый формат
              *
              *     * dataURL: вернуть в ответе как Data URL
-             *     * inline вывести файл как есть */
+             *     * inline вывести файл как есть
+             */
             output?: string | null;
             /** devicePixelRatio, см. в js window.devicePixelRatio, имеет смысл для format = png */
             dpr?: number | null;

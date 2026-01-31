@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление поисковика
+        /**
+         * Добавление поисковика
          *
-         *     Изменит, если уже существует */
+         *     Изменит, если уже существует
+         */
         "Mentions_2.Methods.Searchers.Add": {
             /** ID проекта */
             project_id: number;
@@ -21,9 +23,11 @@ export interface components {
              * @default true
              */
             enabled?: boolean;
-            /** Глубина сбора упоминаний (x100)
+            /**
+             * Глубина сбора упоминаний (x100)
              *
-             *     От 1 до 10 */
+             *     От 1 до 10
+             */
             depth?: number | null;
         };
         "Mentions_2.Methods.Searchers.Add.Exec": number;

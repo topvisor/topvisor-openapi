@@ -11,13 +11,17 @@ export interface components {
         "Projects_2.Methods.Rights.Del": {
             /** Email пользователя */
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
-            /** ID проектов
+            /**
+             * ID проектов
              *
-             *     Вместо project_ids можно укрывать project_id */
+             *     Вместо project_ids можно укрывать project_id
+             */
             projects_ids?: unknown[] | null;
-            /** ID проекта
+            /**
+             * ID проекта
              *
-             *     Вместо project_id можно укрывать projects_ids */
+             *     Вместо project_id можно укрывать projects_ids
+             */
             project_id?: number | null;
         };
         "Projects_2.Methods.Rights.Del.Exec": number | null;

@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение отчета по проверке индексации
+        /**
+         * Получение отчета по проверке индексации
          *
-         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+         */
         "Audit_2.Methods.Indexing.Get": {
             searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /**
@@ -27,9 +29,11 @@ export interface components {
             show_counts_indexing?: boolean;
             /** Вернуть ли даты проверок */
             show_exists_dates?: boolean;
-            /** Фильтр по изменениям в указанной ПС в указанную дату
+            /**
+             * Фильтр по изменениям в указанной ПС в указанную дату
              *
-             *     Формат записи: `{{ date }}:{{ searcher_key }}` */
+             *     Формат записи: `{{ date }}:{{ searcher_key }}`
+             */
             filter_by_alert?: string;
             /** Произвольные даты без использования диапазона */
             dates?: unknown[] | null;

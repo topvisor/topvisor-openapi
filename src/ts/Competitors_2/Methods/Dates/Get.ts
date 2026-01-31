@@ -11,8 +11,10 @@ export interface components {
         "Competitors_2.Methods.Dates.Get": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
-            /** - ключевая фраза или ее часть (by_type = keyword)
-             *     - url (by_type = url) */
+            /**
+             * - ключевая фраза или ее часть (by_type = keyword)
+             *     - url (by_type = url)
+             */
             query: string;
             by_type: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Дата проверки */

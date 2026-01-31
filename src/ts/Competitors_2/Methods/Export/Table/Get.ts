@@ -33,13 +33,15 @@ export interface components {
              * @default export_table
              */
             func?: string;
-            /** Обработчик
+            /**
+             * Обработчик
              *
              *     Для внутреннего использования
              *
              *     Возможные значения:
              *     - handle
-             *     - name */
+             *     - name
+             */
             handler?: unknown;
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

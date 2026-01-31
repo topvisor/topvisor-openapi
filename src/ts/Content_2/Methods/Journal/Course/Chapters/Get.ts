@@ -7,10 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение модулей курса
+        /**
+         * Получение модулей курса
          *
          *     Дополнительные поля:
-         *      - lessons - см. includeLessons() */
+         *      - lessons - см. includeLessons()
+         */
         "Content_2.Methods.Journal.Course.Chapters.Get": {
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

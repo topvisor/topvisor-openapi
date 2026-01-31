@@ -20,9 +20,11 @@ export interface components {
             qualifiers: import('../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: unknown[];
-            /** Id группы для размещения подобранных запросов
+            /**
+             * Id группы для размещения подобранных запросов
              *
-             *     Можно указывать только при `in_one_group` = `true` */
+             *     Можно указывать только при `in_one_group` = `true`
+             */
             to_group_id?: number | null;
             /** Собирать все запросы в одну группу */
             in_one_group?: boolean;

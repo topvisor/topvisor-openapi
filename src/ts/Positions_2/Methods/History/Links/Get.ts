@@ -35,12 +35,14 @@ export interface components {
             tags?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** @default tops */
             chart_type?: import('../../../Types/Summary/Chart/Type.ts').components['schemas']['Positions_2.Types.Summary.Chart.Type'];
-            /** Направление динамики
+            /**
+             * Направление динамики
              *
              *     Массив из элементов:
              *     - >
              *     - =
-             *     - < */
+             *     - <
+             */
             dynamic?: unknown[] | null;
             /** Минимальная и максимальная позиции, можно указывать несколько пар значений */
             min_max?: {

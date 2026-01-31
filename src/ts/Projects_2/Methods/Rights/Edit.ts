@@ -15,9 +15,11 @@ export interface components {
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** Побитовая маска прав */
             rights?: import('../../../TV/API/Types/BoolArray.ts').components['schemas']['TV.API.Types.BoolArray'] | null;
-            /** ID проекта
+            /**
+             * ID проекта
              *
-             *     Вместо project_id можно укзывать projects_ids */
+             *     Вместо project_id можно укзывать projects_ids
+             */
             project_id?: number | null;
             /** Имя гостевого пользователя, назначаемое хозяином проекта */
             user_name?: string | null;

@@ -15,9 +15,11 @@ export interface components {
             project_id: number;
             /** Имя сервиса */
             service: import('../Types/ServiceName.ts').components['schemas']['Annotations_2.Types.ServiceName'];
-            /** Текст комментария
+            /**
+             * Текст комментария
              *
-             *     Если не текст указан, комментарий будет удален */
+             *     Если не текст указан, комментарий будет удален
+             */
             text?: string;
         };
         "Annotations_2.Methods.Edit.Exec": number | null;

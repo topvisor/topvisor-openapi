@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Краткий URL в punycode, не может содержать UTF-символы:
+        /**
+         * Краткий URL в punycode, не может содержать UTF-символы:
          *     - без схемы
          *     - без "www." в домене
          *     - без слешей на конце
@@ -15,7 +16,8 @@ export interface components {
          *
          *     Будет проивзедено автоматическое приведение к формату
          *
-         *     Разрешен ввод пустой строки, для удаления значения url */
+         *     Разрешен ввод пустой строки, для удаления значения url
+         */
         "TV.API.Types.UrlShort": string;
     };
     responses: never;

@@ -11,7 +11,8 @@ export interface components {
         "Bank_2.Methods.Info.Get": {
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
-        /** Информация о балансе и тарифе пользователя.
+        /**
+         * Информация о балансе и тарифе пользователя.
          *
          *     - 'balance_all' - общий баланс
          *     - 'balance_all' - общий баланс
@@ -20,7 +21,8 @@ export interface components {
          *     - 'balance_tariff' - баланс по тарифу
          *     - 'tariff' - информация о текущем тарифе
          *     - 'subscription' - подписка, если есть
-         *     - 'subscription_name' - имя плана подписки, если есть */
+         *     - 'subscription_name' - имя плана подписки, если есть
+         */
         "Bank_2.Methods.Info.Get.Exec": {
             balance_all: number;
             balance_personal: number;

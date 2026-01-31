@@ -9,10 +9,12 @@ export interface components {
     schemas: {
         /** Перемещение запросов */
         "Keywords_2.Methods.Keywords.Move.Edit": {
-            /** Вставить к указанному объекту
+            /**
+             * Вставить к указанному объекту
              *
              *     Если в to_type указано "Перед или после запроса", то принимает id запроса
-             *     Если в to_type указано "В конец или начало группы", то принимает id группы */
+             *     Если в to_type указано "В конец или начало группы", то принимает id группы
+             */
             to_id: number;
             /** @default in_group */
             to_type?: import('../../../Types/Keywords/ToType.ts').components['schemas']['Keywords_2.Types.Keywords.ToType'];

@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение статистики по работе распознавателей капч.
+        /**
+         * Получение статистики по работе распознавателей капч.
          *
-         *     Статистика возвращается только для Google */
+         *     Статистика возвращается только для Google
+         */
         "Robot_2.Methods.Admin.StatsRecognizers.Get": {
             /** Дата отчета */
             date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;

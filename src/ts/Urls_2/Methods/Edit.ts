@@ -9,8 +9,10 @@ export interface components {
     schemas: {
         /** Изменение urls */
         "Urls_2.Methods.Edit": {
-            /** Флаг активности в карте сайта
-             *     - 1 - присутствовал в прошлых версиях карты сайта */
+            /**
+             * Флаг активности в карте сайта
+             *     - 1 - присутствовал в прошлых версиях карты сайта
+             */
             sitemap?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в аудите */
             audit?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;

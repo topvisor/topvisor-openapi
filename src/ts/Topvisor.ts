@@ -123,11 +123,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление комментария
+    /**
+     * Удаление комментария
      *
      *     Удалять комментарии можно только в течение ограниченного времени
      *
-     *     Админы могут удалять комментарии в любое время */
+     *     Админы могут удалять комментарии в любое время
+     */
     "/del/comments_2/": {
         parameters: {
             query?: never;
@@ -144,9 +146,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение комментария
+    /**
+     * Изменение комментария
      *
-     *     Изменять комментарий можно только в течение ограниченного времени */
+     *     Изменять комментарий можно только в течение ограниченного времени
+     */
     "/edit/comments_2/": {
         parameters: {
             query?: never;
@@ -163,9 +167,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение комментариев
+    /**
+     * Получение комментариев
      *
-     *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев */
+     *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
+     */
     "/get/comments_2/": {
         parameters: {
             query?: never;
@@ -233,7 +239,8 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание платежки и переход к оплате
+    /**
+     * Создание платежки и переход к оплате
      *
      *     Возвращает id платежа, если указан параметр $return_id = true
      *
@@ -241,7 +248,8 @@ export interface paths {
      *
      *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
      *
-     *     При ошибке производит редирект на страницу с информацией об ошибке */
+     *     При ошибке производит редирект на страницу с информацией об ошибке
+     */
     "/add/payments_2/": {
         parameters: {
             query?: never;
@@ -275,9 +283,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Генерация QR кода по тексту
+    /**
+     * Генерация QR кода по тексту
      *
-     *     Возвращает изображение в формате data:image/png;base64 */
+     *     Возвращает изображение в формате data:image/png;base64
+     */
     "/get/qr_2/": {
         parameters: {
             query?: never;
@@ -1007,12 +1017,14 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных подтверждения
+    /**
+     * Получение данных подтверждения
      *
      *     Возвращает результат подтверждения в виде
      *     массива с сообщением (acceptAction),
      *     логической переменной (acceptEmail),
-     *     null при неправильно введенном типе */
+     *     null при неправильно введенном типе
+     */
     "/get/app_2/actions/": {
         parameters: {
             query?: never;
@@ -1063,9 +1075,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение отчета по проверке индексации
+    /**
+     * Получение отчета по проверке индексации
      *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+     */
     "/get/audit_2/indexing/": {
         parameters: {
             query?: never;
@@ -1116,11 +1130,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение результатов проверок радара
+    /**
+     * Получение результатов проверок радара
      *
      *     Отчет генерируется на основе объектов urls
      *
-     *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя) */
+     *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
+     */
     "/get/audit_2/watcher/": {
         parameters: {
             query?: never;
@@ -1494,9 +1510,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Редактирование статуса лайка для комментария
+    /**
+     * Редактирование статуса лайка для комментария
      *
-     *     Возвращает результат редактирования статуса лайка */
+     *     Возвращает результат редактирования статуса лайка
+     */
     "/edit/comments_2/like/": {
         parameters: {
             query?: never;
@@ -1853,9 +1871,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение RSS раздела сайта
+    /**
+     * Получение RSS раздела сайта
      *
-     *     Для выборки страниц используется модель: Pages */
+     *     Для выборки страниц используется модель: Pages
+     */
     "/get/content_2/rss/": {
         parameters: {
             query?: never;
@@ -2669,9 +2689,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление поисковика
+    /**
+     * Добавление поисковика
      *
-     *     Изменит, если уже существует */
+     *     Изменит, если уже существует
+     */
     "/add/mentions_2/searchers/": {
         parameters: {
             query?: never;
@@ -3028,9 +3050,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление конкурента
+    /**
+     * Добавление конкурента
      *
-     *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте */
+     *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
+     */
     "/add/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -3047,9 +3071,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление конкурентов
+    /**
+     * Удаление конкурентов
      *
-     *     Обязательный параметр или ids или urls */
+     *     Обязательный параметр или ids или urls
+     */
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -3236,10 +3262,12 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации о домене и SSL сертификате
+    /**
+     * Получение информации о домене и SSL сертификате
      *     Возвращает объект с параметрами:
      *     - domain_expire
-     *     - ssl_expire */
+     *     - ssl_expire
+     */
     "/get/projects_2/status/": {
         parameters: {
             query?: never;
@@ -3550,9 +3578,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка конкурентов
+    /**
+     * Получение списка конкурентов
      *
-     *     Метод базируется на объекте keywords (доступны только фильтры) */
+     *     Метод базируется на объекте keywords (доступны только фильтры)
+     */
     "/get/snapshots_2/competitors/": {
         parameters: {
             query?: never;
@@ -3603,9 +3633,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории снимков выдачи
+    /**
+     * Получение истории снимков выдачи
      *
-     *     Метод базируется на объекте keywords (доступны только фильтры) */
+     *     Метод базируется на объекте keywords (доступны только фильтры)
+     */
     "/get/snapshots_2/history/": {
         parameters: {
             query?: never;
@@ -3639,9 +3671,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание директории или загрузка файла
+    /**
+     * Создание директории или загрузка файла
      *
-     *     Вернет имя директории в случае создания директории или bool при загрузке файла */
+     *     Вернет имя директории в случае создания директории или bool при загрузке файла
+     */
     "/add/system_2/cloud/": {
         parameters: {
             query?: never;
@@ -3794,9 +3828,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Загрузка файла на сервер
+    /**
+     * Загрузка файла на сервер
      *
-     *     Процесс создания сообщения в тикет не завершен */
+     *     Процесс создания сообщения в тикет не завершен
+     */
     "/add/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -3813,9 +3849,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление временных файлов для тикета
+    /**
+     * Удаление временных файлов для тикета
      *
-     *     Процесс создания поста не завершен */
+     *     Процесс создания поста не завершен
+     */
     "/del/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -3832,9 +3870,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка временных файлов, загруженных для тикета
+    /**
+     * Получение списка временных файлов, загруженных для тикета
      *
-     *     Процесс создания поста не завершен */
+     *     Процесс создания поста не завершен
+     */
     "/get/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -4072,7 +4112,8 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Импортирование urls
+    /**
+     * Импортирование urls
      *
      *     Доступные поля для импорта:
      *     - url
@@ -4080,7 +4121,8 @@ export interface paths {
      *     - audit
      *     - indexing
      *     - watcher
-     *     - tags */
+     *     - tags
+     */
     "/add/urls_2/import/": {
         parameters: {
             query?: never;
@@ -4233,9 +4275,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка телеграм аккаунтов
+    /**
+     * Получение списка телеграм аккаунтов
      *
-     *     При указании project_id получает список телеграм аккаунтов по владельцу проекта */
+     *     При указании project_id получает список телеграм аккаунтов по владельцу проекта
+     */
     "/get/users_2/telegramAccounts/": {
         parameters: {
             query?: never;
@@ -4273,9 +4317,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление комментария к отзыву
+    /**
+     * Добавление комментария к отзыву
      *
-     *     Оставить комментарий можно в течение часа поосле выставления оценки */
+     *     Оставить комментарий можно в течение часа поосле выставления оценки
+     */
     "/edit/votes_2/comment/": {
         parameters: {
             query?: never;
@@ -4648,7 +4694,8 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение активности пользователей по статусам активности
+    /**
+     * Получение активности пользователей по статусам активности
      *
      *     Статусы активности:
      *     1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не менее 100 рублей (или $5).
@@ -4656,7 +4703,8 @@ export interface paths {
      *     3. Активный (постоянный) - в эту категорию попадут клиенты, которые не меняли свой статус активности за последний месяц
      *     4. Активный (вернувшийся) - в эту категорию попадут клиенты, которые вернули себе статус "Активный клиент".
      *     5. Стал не активным - в эту категорию попадут клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали себе
-     *     этот статус. */
+     *     этот статус.
+     */
     "/get/admin_2/analytics/activity/": {
         parameters: {
             query?: never;
@@ -4707,9 +4755,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение суммы оплат за период
+    /**
+     * Получение суммы оплат за период
      *
-     *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий */
+     *     В статистике учитывается только сумма оплаты услуг без налогов и комиссий
+     */
     "/get/admin_2/analytics/payments/": {
         parameters: {
             query?: never;
@@ -4997,11 +5047,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение промокодов
+    /**
+     * Получение промокодов
      *
      *     В params хранится строка в формате:
      *     - {{ rank_id }}
-     *     - {{ rank_id }},single_code - для многоразового кода */
+     *     - {{ rank_id }},single_code - для многоразового кода
+     */
     "/get/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -5122,11 +5174,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение общей информации о проверках
+    /**
+     * Получение общей информации о проверках
      *     - только для проверки, которая не завершена
      *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
      *     - в ответе будет заменено значение count_pages и count_all на текущие
-     *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
+     *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
+     */
     "/get/audit_2/audit/checks/": {
         parameters: {
             query?: never;
@@ -5296,9 +5350,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт результатов индексации
+    /**
+     * Экспорт результатов индексации
      *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+     */
     "/get/audit_2/indexing/export/": {
         parameters: {
             query?: never;
@@ -5315,9 +5371,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание гостевой ссылки на просмотр позиций
+    /**
+     * Создание гостевой ссылки на просмотр позиций
      *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+     */
     "/get/audit_2/indexing/links/": {
         parameters: {
             query?: never;
@@ -5351,12 +5409,14 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Построение отчета по одному URL
+    /**
+     * Построение отчета по одному URL
      *
      *     Отличия от get/audit_2/watcher:
      *     - отчет генерируется на основе объекта watcher_results, а не urls
      *     - параметры выбора периода отчета игнорируются
-     *     - выбор проверок регулируется параметрами запроса filters, limit и offset */
+     *     - выбор проверок регулируется параметрами запроса filters, limit и offset
+     */
     "/get/audit_2/watcher/byURL/": {
         parameters: {
             query?: never;
@@ -5424,9 +5484,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка акта сверки в диадок
+    /**
+     * Отправка акта сверки в диадок
      *
-     *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt(); */
+     *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+     */
     "/get/bank_2/diadoc/sendTotalReceipt/": {
         parameters: {
             query?: never;
@@ -5889,9 +5951,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение инофрмации о курсах
+    /**
+     * Получение инофрмации о курсах
      *
-     *     Параметры выборки основаны на модели Models\Pages */
+     *     Параметры выборки основаны на модели Models\Pages
+     */
     "/get/content_2/journal/course/": {
         parameters: {
             query?: never;
@@ -6127,9 +6191,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение сортировки групп
+    /**
+     * Изменение сортировки групп
      *
-     *     Не оптимизировано для работы с большим числом групп, дат и регионов */
+     *     Не оптимизировано для работы с большим числом групп, дат и регионов
+     */
     "/edit/keywordsai_2/groups/sort/": {
         parameters: {
             query?: never;
@@ -6252,9 +6318,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение сортировки запросов
+    /**
+     * Изменение сортировки запросов
      *
-     *     Можно сортировать в пределах одной группы или всего проекта */
+     *     Можно сортировать в пределах одной группы или всего проекта
+     */
     "/edit/keywordsai_2/keywords/sort/": {
         parameters: {
             query?: never;
@@ -6474,7 +6542,10 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Запуск кластеризации (проверка на права в "api_get_priceClaster()") */
+    /**
+     * Запуск кластеризации
+     * @description @note Проверка на права в api_get_priceClaster()
+     */
     "/add/keywords_2/claster/task/": {
         parameters: {
             query?: never;
@@ -6660,9 +6731,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение сортировки групп
+    /**
+     * Изменение сортировки групп
      *
-     *     Не оптимизировано для работы с большим числом групп, дат и регионов */
+     *     Не оптимизировано для работы с большим числом групп, дат и регионов
+     */
     "/edit/keywords_2/groups/sort/": {
         parameters: {
             query?: never;
@@ -6785,9 +6858,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение сортировки запросов
+    /**
+     * Изменение сортировки запросов
      *
-     *     Можно сортировать в пределах одной группы или всего проекта */
+     *     Можно сортировать в пределах одной группы или всего проекта
+     */
     "/edit/keywords_2/keywords/sort/": {
         parameters: {
             query?: never;
@@ -7093,11 +7168,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменения подписки на следующий расчетный период
+    /**
+     * Изменения подписки на следующий расчетный период
      *
      *     Изменение доступно только в рамках одной платежной системы
      *
-     *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки */
+     *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
+     */
     "/edit/payments_2/subscriptions/next/": {
         parameters: {
             query?: never;
@@ -7216,9 +7293,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт позиций указанных проектов за указанные даты без количественного ограничения
+    /**
+     * Экспорт позиций указанных проектов за указанные даты без количественного ограничения
      *
-     *     Архив с результатом экспорта будет продублирован на email пользователя */
+     *     Архив с результатом экспорта будет продублирован на email пользователя
+     */
     "/get/positions_2/history/exportPack/": {
         parameters: {
             query?: never;
@@ -7456,9 +7535,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Переместить папку
+    /**
+     * Переместить папку
      *
-     *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка */
+     *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
+     */
     "/edit/projects_2/folders/moveFolder/": {
         parameters: {
             query?: never;
@@ -7492,9 +7573,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить подсазки конкурентов для добавления в проект
+    /**
+     * Получить подсазки конкурентов для добавления в проект
      *
-     *     Доступ по API закрыт */
+     *     Доступ по API закрыт
+     */
     "/get/projects_2/master/hintsCompetitors/": {
         parameters: {
             query?: never;
@@ -7511,9 +7594,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить подсазки запросов для добавления в проект
+    /**
+     * Получить подсазки запросов для добавления в проект
      *
-     *     Доступ по API закрыт */
+     *     Доступ по API закрыт
+     */
     "/get/projects_2/master/hintsKeywords/": {
         parameters: {
             query?: never;
@@ -7717,12 +7802,14 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации о регистрации домена
+    /**
+     * Получение информации о регистрации домена
      *
      *     Возвращает объект с параметрами:
      *     - wait_time, если данные не готовы
      *     - created, если данные готовы
-     *     - paidtill, если данные готовы */
+     *     - paidtill, если данные готовы
+     */
     "/get/projects_2/status/registrar/": {
         parameters: {
             query?: never;
@@ -7739,9 +7826,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации об SSL сертификате
+    /**
+     * Получение информации об SSL сертификате
      *     Возваращает объект с параметрами:
-     *     - expire */
+     *     - expire
+     */
     "/get/projects_2/status/ssl/": {
         parameters: {
             query?: never;
@@ -7826,9 +7915,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление анонса
+    /**
+     * Добавление анонса
      *
-     *     Вернет количество добавленных анонсов */
+     *     Вернет количество добавленных анонсов
+     */
     "/add/robot_2/admin/anonses/": {
         parameters: {
             query?: never;
@@ -8049,9 +8140,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение статистики по работе распознавателей капч.
+    /**
+     * Получение статистики по работе распознавателей капч.
      *
-     *     Статистика возвращается только для Google */
+     *     Статистика возвращается только для Google
+     */
     "/get/robot_2/admin/statsRecognizers/": {
         parameters: {
             query?: never;
@@ -8068,9 +8161,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение статистики по количествам ошибок распознавателей капч
+    /**
+     * Получение статистики по количествам ошибок распознавателей капч
      *
-     *     Статистика возвращается только для Google */
+     *     Статистика возвращается только для Google
+     */
     "/get/robot_2/admin/statsRecognizersCountErrors/": {
         parameters: {
             query?: never;
@@ -8240,9 +8335,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Фиксация события по ссылке на изображение
+    /**
+     * Фиксация события по ссылке на изображение
      *
-     *     см. Analytics_2\Mods\Analytics::genEventImgLink() */
+     *     см. Analytics_2\Mods\Analytics::genEventImgLink()
+     */
     "/add/system_2/common/analytics/": {
         parameters: {
             query?: never;
@@ -8293,11 +8390,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение превью страницы
+    /**
+     * Получение превью страницы
      *
      *     Вернет изображение в формате image/png
      *
-     *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl} */
+     *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}
+     */
     "/get/system_2/common/pagePreview/": {
         parameters: {
             query?: never;
@@ -8331,9 +8430,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение снимка сайта
+    /**
+     * Получение снимка сайта
      *
-     *     Вернет изображение в формате image/png */
+     *     Вернет изображение в формате image/png
+     */
     "/get/system_2/common/webScreensFree/": {
         parameters: {
             query?: never;
@@ -8401,9 +8502,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Редактирование параметра
+    /**
+     * Редактирование параметра
      *
-     *     Не хранить в параметрах конфиденциальную информацию */
+     *     Не хранить в параметрах конфиденциальную информацию
+     */
     "/edit/system_2/properties/property/": {
         parameters: {
             query?: never;
@@ -8607,9 +8710,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение краткой информации о тикетах
+    /**
+     * Получение краткой информации о тикетах
      *
-     *     id последнего непрочитанного тикета, число непрочитанных тикетов */
+     *     id последнего непрочитанного тикета, число непрочитанных тикетов
+     */
     "/get/tickets_2/tickets/info/": {
         parameters: {
             query?: never;
@@ -8779,9 +8884,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Запрос на смену email
+    /**
+     * Запрос на смену email
      *
-     *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email */
+     *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
+     */
     "/edit/users_2/profile/email/": {
         parameters: {
             query?: never;
@@ -9625,9 +9732,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
+    /**
+     * Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
      *
-     *     График кешируется, первый запрос может выполняться дольше */
+     *     График кешируется, первый запрос может выполняться дольше
+     */
     "/get/admin_2/users/informer/subscriptions/": {
         parameters: {
             query?: never;
@@ -9826,9 +9935,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение гостевой ссылки на просмотр индексации
+    /**
+     * Получение гостевой ссылки на просмотр индексации
      *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+     */
     "/get/audit_2/indexing/export/links/": {
         parameters: {
             query?: never;
@@ -9964,9 +10075,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт запросов по доменам
+    /**
+     * Экспорт запросов по доменам
      *
-     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
+     */
     "/get/competitors_2/export/byDomains/table/": {
         parameters: {
             query?: never;
@@ -9983,9 +10096,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт запросов по доменам в проект
+    /**
+     * Экспорт запросов по доменам в проект
      *
-     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
+     */
     "/add/competitors_2/export/byDomains/tableToProject/": {
         parameters: {
             query?: never;
@@ -10002,9 +10117,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт запросов по доменам
+    /**
+     * Экспорт запросов по доменам
      *
-     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
+     */
     "/get/competitors_2/export/byLeaders/table/": {
         parameters: {
             query?: never;
@@ -10021,9 +10138,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт запросов по доменам в проект
+    /**
+     * Экспорт запросов по доменам в проект
      *
-     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью
+     */
     "/add/competitors_2/export/byLeaders/tableToProject/": {
         parameters: {
             query?: never;
@@ -10142,9 +10261,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание сертификата
+    /**
+     * Создание сертификата
      *
-     *     Можно создавать только для пройденных курсов */
+     *     Можно создавать только для пройденных курсов
+     */
     "/add/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -10161,9 +10282,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение сертификата
+    /**
+     * Изменение сертификата
      *
-     *     Можно менять только имя, если оно не указано */
+     *     Можно менять только имя, если оно не указано
+     */
     "/edit/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -10197,10 +10320,12 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение модулей курса
+    /**
+     * Получение модулей курса
      *
      *     Дополнительные поля:
-     *      - lessons - см. includeLessons() */
+     *      - lessons - см. includeLessons()
+     */
     "/get/content_2/journal/course/chapters/": {
         parameters: {
             query?: never;
@@ -10217,8 +10342,10 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка страниц по буквам для модуля SEO словарь
-     *     Результат функции кешируется */
+    /**
+     * Получение списка страниц по буквам для модуля SEO словарь
+     *     Результат функции кешируется
+     */
     "/get/content_2/journal/dictionary/articlesByLetter/": {
         parameters: {
             query?: never;
@@ -10320,11 +10447,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить перепроверенные запросы
+    /**
+     * Получить перепроверенные запросы
      *
      *     Не предназначен для работы в режиме сравнения
      *
-     *     Проверка на права к проекту производятся в get/positions_2/history */
+     *     Проверка на права к проекту производятся в get/positions_2/history
+     */
     "/get/positions_2/checker/status/recheckKeywords/": {
         parameters: {
             query?: never;
@@ -10341,9 +10470,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт отчета в хранилище
+    /**
+     * Экспорт отчета в хранилище
      *
-     *     После сохранения редиректит в хранилище */
+     *     После сохранения редиректит в хранилище
+     */
     "/get/positions_2/history/export/toRepository/": {
         parameters: {
             query?: never;
@@ -10377,9 +10508,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории об изменении релевантной страницы
+    /**
+     * Получение истории об изменении релевантной страницы
      *
-     *     Возвращает список в формате: [[`url`, `date`]] */
+     *     Возвращает список в формате: [[`url`, `date`]]
+     */
     "/get/positions_2/history/relevantsUrls/changes/": {
         parameters: {
             query?: never;
@@ -10429,9 +10562,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт регионов (CSV)
+    /**
+     * Экспорт регионов (CSV)
      *
-     *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth] */
+     *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
+     */
     "/get/positions_2/searchers/regions/export/": {
         parameters: {
             query?: never;
@@ -10669,9 +10804,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт сводки с графика
+    /**
+     * Экспорт сводки с графика
      *
-     *     Описание параметров смотреть в get/snapshots_2/competitors */
+     *     Описание параметров смотреть в get/snapshots_2/competitors
+     */
     "/get/snapshots_2/competitors/chart/export/": {
         parameters: {
             query?: never;
@@ -10688,9 +10825,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт в хранилище
+    /**
+     * Экспорт в хранилище
      *
-     *     Производит редирект на файл в кранилище */
+     *     Производит редирект на файл в кранилище
+     */
     "/get/snapshots_2/competitors/export/toRepository/": {
         parameters: {
             query?: never;
@@ -10707,9 +10846,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт в хранилище
+    /**
+     * Экспорт в хранилище
      *
-     *     Производит редирект на файл в кранилище */
+     *     Производит редирект на файл в кранилище
+     */
     "/get/snapshots_2/history/export/toRepository/": {
         parameters: {
             query?: never;
@@ -11113,9 +11254,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение токена авторизации для работы с safari web push
+    /**
+     * Получение токена авторизации для работы с safari web push
      *
-     *     Создаст токен, если его не существует */
+     *     Создаст токен, если его не существует
+     */
     "/get/informer_2/push/safari/webService/authToken/": {
         parameters: {
             query?: never;
@@ -11149,11 +11292,13 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Генерация тестового файла
+    /**
+     * Генерация тестового файла
      *
      *     Вернет случайный набор символов в формате application/json; charset=utf-8
      *
-     *     URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token */
+     *     URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
+     */
     "/get/system_2/common/tests/speed/file/": {
         parameters: {
             query?: never;

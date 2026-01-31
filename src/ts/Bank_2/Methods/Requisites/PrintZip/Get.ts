@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Скачивание архива документов в формате PDF */
         "Bank_2.Methods.Requisites.PrintZip.Get": {
-            /** Список id документов
+            /**
+             * Список id документов
              *
-             *     Вместо targets_ids можно указывать набор параметров org_id, date1 и date2 */
+             *     Вместо targets_ids можно указывать набор параметров org_id, date1 и date2
+             */
             targets_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Id организации */
             org_id?: string | null;
@@ -21,9 +23,11 @@ export interface components {
             date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Тип документа enum(RequisitesDocuments::$availableDocumentsTypes) */
             type: string;
-            /** Использовать подпись
+            /**
+             * Использовать подпись
              *
-             *     Если true, то документ с подписью (не распространяется на договоры) */
+             *     Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed?: boolean;
         };
         "Bank_2.Methods.Requisites.PrintZip.Get.Exec": Record<string, never>;

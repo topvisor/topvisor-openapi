@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Импортирование urls
+        /**
+         * Импортирование urls
          *
          *     Доступные поля для импорта:
          *     - url
@@ -15,25 +16,32 @@ export interface components {
          *     - audit
          *     - indexing
          *     - watcher
-         *     - tags */
+         *     - tags
+         */
         "Urls_2.Methods.Import.Add": {
-            /** Список URL соответствующих домену проекта, допускается формат CSV
+            /**
+             * Список URL соответствующих домену проекта, допускается формат CSV
              *
              *     Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
              *
-             *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml */
+             *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
+             */
             urls?: unknown;
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
             link_sitemap_xml?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             /** Очистить список URL перед импортом */
             reset?: boolean;
-            /** Недокументириуемый параметр
+            /**
+             * Недокументириуемый параметр
              *
-             *     set(Audit_2\Types\Type => regexp) */
+             *     set(Audit_2\Types\Type => regexp)
+             */
             setActiveByRegexpByType?: unknown[];
-            /** Флаг активности в карте сайта
-             *     - 1 - присутствовал в прошлых версиях карты сайта */
+            /**
+             * Флаг активности в карте сайта
+             *     - 1 - присутствовал в прошлых версиях карты сайта
+             */
             sitemap?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в аудите */
             audit?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;

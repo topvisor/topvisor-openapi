@@ -11,10 +11,12 @@ export interface components {
         "KeywordsAi_2.Methods.Keywords.Add": {
             /** Ключевая фраза */
             name: string;
-            /** Вставить к указанному объекту
+            /**
+             * Вставить к указанному объекту
              *
              *     Если в to_type указано "Перед или после запроса", то принимает id запроса
-             *     Если в to_type указано "В конец или начало группы", то принимает id группы */
+             *     Если в to_type указано "В конец или начало группы", то принимает id группы
+             */
             to_id: number;
             /** @default in_group */
             to_type?: import('../../../Keywords_2/Types/Keywords/ToType.ts').components['schemas']['Keywords_2.Types.Keywords.ToType'];
@@ -24,9 +26,11 @@ export interface components {
             target?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** Удалить дубликаты */
             move_duplicate?: boolean;
-            /** Имя группы для перемещения дубликатов
+            /**
+             * Имя группы для перемещения дубликатов
              *
-             *     Работает вместе с move_duplicate */
+             *     Работает вместе с move_duplicate
+             */
             move_duplicate_group_name?: string;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

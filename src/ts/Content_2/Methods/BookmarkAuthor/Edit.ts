@@ -11,10 +11,12 @@ export interface components {
         "Content_2.Methods.BookmarkAuthor.Edit": {
             /** Id автора */
             user_id: number;
-            /** Установлена ли закладка
+            /**
+             * Установлена ли закладка
              *
              *     - false: снять закладку
-             *     - true: сохранить закладку */
+             *     - true: сохранить закладку
+             */
             bookmark: boolean;
         };
         "Content_2.Methods.BookmarkAuthor.Edit.Exec": number | null;

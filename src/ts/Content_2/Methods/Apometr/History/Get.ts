@@ -26,8 +26,10 @@ export interface components {
              * @description @deprecated
              */
             date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Время последней проверки за день в формате timestamp.
-             *     Получить данные апометра за 3 предыдущих дня и текущий день до этого времени. */
+            /**
+             * Время последней проверки за день в формате timestamp.
+             *     Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.
+             */
             timestamp?: number | null;
             /** Вернуть только средние значения по всем тематикам */
             avg?: boolean;

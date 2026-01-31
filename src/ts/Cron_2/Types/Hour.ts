@@ -7,11 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Час в который должен производиться запуск cron
+        /**
+         * Час в который должен производиться запуск cron
          *
          *     Пустое значение зарезервированно для запуска cron каждый час
          *
-         *     Значение должно находиться в диапазоне от 0 до 23 включительно */
+         *     Значение должно находиться в диапазоне от 0 до 23 включительно
+         */
         "Cron_2.Types.Hour": string;
     };
     responses: never;

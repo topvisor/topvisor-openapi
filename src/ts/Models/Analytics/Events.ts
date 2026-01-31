@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         "Models.Analytics.Events": {
             COUNT?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "action",
              *         "category",
@@ -17,7 +18,8 @@ export interface components {
              *         "label_2",
              *         "label_3"
              *       ]
-             *     } */
+             *     }
+             */
             COUNT_QUALIFIERS?: any;
             time?: any;
             category?: any;

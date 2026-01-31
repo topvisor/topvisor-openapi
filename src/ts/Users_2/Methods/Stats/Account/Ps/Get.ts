@@ -13,14 +13,16 @@ export interface components {
             project_id?: number;
             /** Какую часть от периода показать */
             period: number;
-            /** @default {
+            /**
+             * @default {
              *       "0": "#FFD633",
              *       "1": "#4285F4",
              *       "4": "#CC181E",
              *       "5": "#0C8484",
              *       "20": "#FFD633",
              *       "21": "#FFD633"
-             *     } */
+             *     }
+             */
             colorsPsBySearcherKey?: unknown[];
         };
         "Users_2.Methods.Stats.Account.Ps.Get.Exec": unknown[] | null;

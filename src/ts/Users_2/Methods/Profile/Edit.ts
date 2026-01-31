@@ -13,9 +13,11 @@ export interface components {
             phone?: string | null;
             /** ФИО */
             name?: string | null;
-            /** Формат дат, отображаемых на сайте и в скачиваемых отчетах
+            /**
+             * Формат дат, отображаемых на сайте и в скачиваемых отчетах
              *
-             *     https://www.php.net/manual/ru/datetime.format.php */
+             *     https://www.php.net/manual/ru/datetime.format.php
+             */
             dateformat?: string | null;
             /** Позиции, просмотр отчета: использовать обратный порядок дат */
             positions_reverse_dates?: boolean | null;

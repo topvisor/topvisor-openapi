@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание гостевой ссылки на просмотр позиций
+        /**
+         * Создание гостевой ссылки на просмотр позиций
          *
-         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+         */
         "Audit_2.Methods.Indexing.Links.Get": {
             /** Диапазон значений шаблона */
             template_date_range: string;

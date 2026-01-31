@@ -19,37 +19,45 @@ export interface components {
             folder_path?: any;
             folder_ord?: any;
             count_keywords?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "region_key",
              *         "searcher_key",
              *         "type"
              *       ]
-             *     } */
+             *     }
+             */
             volume?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             "POSITIONS_AVG()"?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             "POSITIONS_TOP10()"?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"
              *       ]
-             *     } */
+             *     }
+             */
             "POSITIONS_VISIBILITY()"?: any;
         };
     };

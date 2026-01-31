@@ -9,9 +9,11 @@ export interface components {
     schemas: {
         /** Изменить настройки автора */
         "Content_2.Methods.Authors.Edit": {
-            /** Имя для url страницы автора
+            /**
+             * Имя для url страницы автора
              *
-             *     Только латинские буквы, цифры и символ дефиса */
+             *     Только латинские буквы, цифры и символ дефиса
+             */
             alias?: string | null;
             /** Промо текст */
             promo_text?: string | null;

@@ -9,11 +9,13 @@ export interface components {
     schemas: {
         "Models.Urls": {
             "COUNT(*)"?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             "WATCHER_HTTP_CODES_HUNDREDS()"?: unknown[] | null;
             id?: number;
             url?: string | null;
@@ -26,85 +28,111 @@ export interface components {
             sitemap_lastmod?: any;
             sitemap_changefreq?: any;
             sitemap_priority?: any;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "searcher_key"
              *       ]
-             *     } */
+             *     }
+             */
             indexing_data?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "date",
              *         "searcher_key"
              *       ]
-             *     } */
+             *     }
+             */
             indexing_alert?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_http_codes?: unknown[] | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_http_codes_changed?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_redirects?: unknown[] | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_h1?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_h1_changed?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_title?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_title_changed?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_description?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_description_changed?: number | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_content?: string | null;
-            /** @example {
+            /**
+             * @example {
              *       "need set qualifiers": [
              *         "check_id"
              *       ]
-             *     } */
+             *     }
+             */
             watcher_content_changed?: number | null;
         };
     };

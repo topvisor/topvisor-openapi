@@ -7,11 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить перепроверенные запросы
+        /**
+         * Получить перепроверенные запросы
          *
          *     Не предназначен для работы в режиме сравнения
          *
-         *     Проверка на права к проекту производятся в get/positions_2/history */
+         *     Проверка на права к проекту производятся в get/positions_2/history
+         */
         "Positions_2.Methods.Checker.Status.RecheckKeywords.Get": {
             /** ID запросов */
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

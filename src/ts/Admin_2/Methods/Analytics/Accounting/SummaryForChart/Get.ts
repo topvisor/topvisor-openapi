@@ -13,10 +13,12 @@ export interface components {
             currency: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Дата начала отсчета периода */
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /** Тип операций (расход, приход, все операции)
+            /**
+             * Тип операций (расход, приход, все операции)
              *
              *     - profit: приход
-             *     - charges: расход */
+             *     - charges: расход
+             */
             operations_type?: string | null;
             /**
              * Длина периода

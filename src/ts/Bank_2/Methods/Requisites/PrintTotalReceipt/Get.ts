@@ -17,9 +17,11 @@ export interface components {
             org_id: string;
             /** Для внутреннего использования */
             returnPdfDataForDiadoc?: boolean;
-            /** Использовать подпись
+            /**
+             * Использовать подпись
              *
-             *     Если true, то документ с подписью (не распространяется на договоры) */
+             *     Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed?: boolean;
         };
         "Bank_2.Methods.Requisites.PrintTotalReceipt.Get.Exec": unknown;

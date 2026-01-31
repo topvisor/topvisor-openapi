@@ -7,15 +7,18 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Обертка Curl с полезным функционалом для проекта Топвизор
+        /**
+         * Обертка Curl с полезным функционалом для проекта Топвизор
          *
-         *     Располагается и разрабатывается в проекте **Robot** */
+         *     Располагается и разрабатывается в проекте **Robot**
+         */
         "TV.Libs.Curl.Curl": {
             /** @default Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 */
             userAgentDef: string;
             /** @default Mozilla/5.0 (%OS%) AppleWebKit/%v4% (KHTML, like Gecko) %label%/%v1%.0.%v2%.%v3% %mobile%Safari/%v42% */
             userAgentTpl: string;
-            /** @default {
+            /**
+             * @default {
              *       "0": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.126 Safari/537.36",
              *       "1": "Mozilla/5.0 (iPad; CPU OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/83.0.4103.88 Mobile/15E148 Safari/604.1",
              *       "2": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
@@ -29,7 +32,8 @@ export interface components {
              *       "122": "Mozilla/5.0 (Linux; Android 5.0; SM-G920A) AppleWebKit (KHTML, like Gecko) Chrome Mobile Safari (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)",
              *       "200": "Mozilla/5.0 (compatible; TopvisorBot/1.0)",
              *       "202": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 (compatible; TopvisorBot/1.0)"
-             *     } */
+             *     }
+             */
             userAgentDevice: unknown[];
             responseBodyBuffer: string;
             responseBodyBufferStop: string;

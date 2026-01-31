@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Фиксация события по ссылке на изображение
+        /**
+         * Фиксация события по ссылке на изображение
          *
-         *     см. Analytics_2\Mods\Analytics::genEventImgLink() */
+         *     см. Analytics_2\Mods\Analytics::genEventImgLink()
+         */
         "System_2.Methods.Common.Analytics.Add": {
             /** Категория */
             ec?: string | null;

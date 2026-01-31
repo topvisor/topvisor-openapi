@@ -25,9 +25,11 @@ export interface components {
              * @default true
              */
             on?: boolean;
-            /** Статус группы
+            /**
+             * Статус группы
              *
-             *     Используется для создания группы при подборе слов */
+             *     Используется для создания группы при подборе слов
+             */
             status?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };

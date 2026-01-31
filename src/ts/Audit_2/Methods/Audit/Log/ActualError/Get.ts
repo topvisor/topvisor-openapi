@@ -12,9 +12,11 @@ export interface components {
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
-        /** Информацией о текущей ошибке на роботе
+        /**
+         * Информацией о текущей ошибке на роботе
          *
-         *     Вернет null, если ошибки на роботе нет */
+         *     Вернет null, если ошибки на роботе нет
+         */
         "Audit_2.Methods.Audit.Log.ActualError.Get.Exec": {
             [key: string]: unknown;
         } | null;

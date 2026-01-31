@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка акта сверки в диадок
+        /**
+         * Отправка акта сверки в диадок
          *
-         *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt(); */
+         *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+         */
         "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
             /** Id организации */
             org_id: string;
@@ -21,9 +23,11 @@ export interface components {
             org_kpp?: string | null;
             /** Id договора */
             requisites_id?: string | null;
-            /** Использовать подпись
+            /**
+             * Использовать подпись
              *
-             *     Если true, то документ с подписью (не распространяется на договоры) */
+             *     Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed?: boolean;
         };
         "Bank_2.Methods.Diadoc.SendTotalReceipt.Get.Exec": boolean;

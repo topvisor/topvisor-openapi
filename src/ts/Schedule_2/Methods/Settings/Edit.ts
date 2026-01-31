@@ -26,9 +26,11 @@ export interface components {
             telegram_chats_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Не совершать ли повторную проверку */
             stop_repeated_check?: boolean | null;
-            /** Ключ региона для проверки частосты
+            /**
+             * Ключ региона для проверки частосты
              *
-             *     Разрешено указывать только Яндекс и Google (0, 1) */
+             *     Разрешено указывать только Яндекс и Google (0, 1)
+             */
             regions_keys_by_searcher_key?: unknown[] | null;
             /** Имеет смысл только для Яндекс */
             volumes_types?: import('../../../Keywords_2/Types/Volumes/Types.ts').components['schemas']['Keywords_2.Types.Volumes.Types'] | null;

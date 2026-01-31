@@ -7,11 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение промокодов
+        /**
+         * Получение промокодов
          *
          *     В params хранится строка в формате:
          *     - {{ rank_id }}
-         *     - {{ rank_id }},single_code - для многоразового кода */
+         *     - {{ rank_id }},single_code - для многоразового кода
+         */
         "Admin_2.Methods.Users.Promocodes.Get": {
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];

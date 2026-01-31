@@ -11,10 +11,12 @@ export interface components {
         "Admin_2.Methods.Affiliate.Referrers.Get": {
             /** Год */
             year: number;
-            /** Валюта партнеров
+            /**
+             * Валюта партнеров
              *
              *      - RUB
-             *      - USD */
+             *      - USD
+             */
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };
         "Admin_2.Methods.Affiliate.Referrers.Get.Exec": {

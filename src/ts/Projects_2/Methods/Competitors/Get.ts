@@ -9,12 +9,14 @@ export interface components {
     schemas: {
         /** Получение списка конкурентов */
         "Projects_2.Methods.Competitors.Get": {
-            /** @default [
+            /**
+             * @default [
              *       "id",
              *       "name",
              *       "site",
              *       "on"
-             *     ] */
+             *     ]
+             */
             fields?: unknown[] | null;
             /** ID проекта */
             project_id: number;

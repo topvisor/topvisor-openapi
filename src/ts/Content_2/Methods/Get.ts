@@ -25,7 +25,8 @@ export interface components {
             /** Параметры страницы, по которым будут сформированы хлебные крошки */
             page_params?: string[];
         };
-        /** Возможные парамеры $config:
+        /**
+         * Возможные парамеры $config:
          *
          *     Общие:
          *        - user_id
@@ -49,7 +50,8 @@ export interface components {
          *     Для журнала:
          *        - count_views
          *        - count_unique_views
-         *        - count_likes */
+         *        - count_likes
+         */
         "Content_2.Methods.Get.Exec": unknown[];
     };
     responses: never;

@@ -7,7 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Класс настройки плана подписки
+        /**
+         * Класс настройки плана подписки
          *
          *     Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
          *
@@ -34,14 +35,17 @@ export interface components {
          *
          *     Пример имени класса, оно же id плана: `A_StarterPack1`
          *
-         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости */
+         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости
+         */
         "Bank_2.Objects.Subscriptions.Plan": {
             id: string;
             name: string;
             priceUSD: number;
-            /** Скидка за годовую подписку в процентах от 0 до 1
+            /**
+             * Скидка за годовую подписку в процентах от 0 до 1
              *
-             *     При расчете финальной стоимости может использоваться округление */
+             *     При расчете финальной стоимости может использоваться округление
+             */
             annualDiscount: number;
             /** Выдаваемые лимиты */
             maxByName: {

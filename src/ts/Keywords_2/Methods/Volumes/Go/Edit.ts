@@ -15,11 +15,13 @@ export interface components {
              * @default keywords
              */
             target_type?: string;
-            /** Список регионов с настройками для проверки частоты
+            /**
+             * Список регионов с настройками для проверки частоты
              *
              *     - Обязателен, если `set_qualifiers_for_visibility` != `true`
              *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
-             *     - Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google` */
+             *     - Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`
+             */
             qualifiers?: import('../../../Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'] | null;
             /** Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости */
             set_qualifiers_for_visibility?: boolean | null;

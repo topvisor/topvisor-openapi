@@ -10,14 +10,16 @@ export interface components {
         /** Сохранение списка тегов */
         "Tags_2.Methods.Edit": {
             type: import('../Types/Type.ts').components['schemas']['Tags_2.Types.Type'];
-            /** Список тегов в формате:
+            /**
+             * Список тегов в формате:
              *     <code>
              *     {
              *        id:id,
              *        name:name,
              *        color_id:color_id
              *     }
-             *     </code> */
+             *     </code>
+             */
             tags: unknown[];
             project_id?: number | null;
         };

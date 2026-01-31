@@ -17,11 +17,13 @@ export interface components {
             externalPaymentId: string;
             /** Id реквизитов юр. лица, указанные при оплате */
             paymentRequisitesId: string;
-            /** Стоимость амортизации
+            /**
+             * Стоимость амортизации
              *
              *     Используется для расчета первого платежа при переподписки на другой план
              *
-             *     Указывается в валюте подписки */
+             *     Указывается в валюте подписки
+             */
             depreciationCost: number;
             /** Текущий план подписки */
             plan: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'];
@@ -37,11 +39,13 @@ export interface components {
             price: number;
             /** Стоимость продления подписки */
             renewPrice: number;
-            /** Использованные лимиты
+            /**
+             * Использованные лимиты
              *
              *     Доступные лимиты см. в `plan`
              *
-             *     Для нетарифицируемых лимитов значение всегда `null` */
+             *     Для нетарифицируемых лимитов значение всегда `null`
+             */
             limitUsedByName: {
                 positions_check?: number;
                 positions_check_manual?: number;

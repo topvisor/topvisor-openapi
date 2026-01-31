@@ -26,9 +26,11 @@ export interface components {
             /** Значение цикла новой подписки */
             subscription_cycle: import('../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
         };
-        /** Пустая строка в случае успешной автоматической оплаты
+        /**
+         * Пустая строка в случае успешной автоматической оплаты
          *
-         *     Ссылка на оплату, в случае успешного выставления счета, если требуется участие пользователя */
+         *     Ссылка на оплату, в случае успешного выставления счета, если требуется участие пользователя
+         */
         "Payments_2.Methods.Subscriptions.Edit.Exec": string | null;
     };
     responses: never;

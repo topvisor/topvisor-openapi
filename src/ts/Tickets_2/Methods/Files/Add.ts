@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Загрузка файла на сервер
+        /**
+         * Загрузка файла на сервер
          *
-         *     Процесс создания сообщения в тикет не завершен */
+         *     Процесс создания сообщения в тикет не завершен
+         */
         "Tickets_2.Methods.Files.Add": {
             /** Имя файла */
             filename: string;

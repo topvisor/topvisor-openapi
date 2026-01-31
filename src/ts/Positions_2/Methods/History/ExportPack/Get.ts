@@ -7,9 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт позиций указанных проектов за указанные даты без количественного ограничения
+        /**
+         * Экспорт позиций указанных проектов за указанные даты без количественного ограничения
          *
-         *     Архив с результатом экспорта будет продублирован на email пользователя */
+         *     Архив с результатом экспорта будет продублирован на email пользователя
+         */
         "Positions_2.Methods.History.ExportPack.Get": {
             /** Отображать сумму с учетом скидки */
             apply_discount?: boolean;

@@ -7,22 +7,26 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Состояние рекуррентного платежа
+        /**
+         * Состояние рекуррентного платежа
          *
          *     - создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить
          *     - используется при выводе состояния подписки
          *
-         *     Определяет логику работы с рекуррентными платежами */
+         *     Определяет логику работы с рекуррентными платежами
+         */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             /** Начало расчетного периода, обычно время оплаты */
             timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
             /** Окончание расчетного периода */
             timeEnd?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
-            /** Краткая информация о способе платежа
+            /**
+             * Краткая информация о способе платежа
              *
              *     - id платежа
              *     - неполный номер карты и срок действия
-             *     - номер договора */
+             *     - номер договора
+             */
             methodInfo: string;
             status: import('../../../Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
             type: import('../../../Types/Subscriptions/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Type'];
