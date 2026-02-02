@@ -242,6 +242,10 @@ export interface components {
             readonly Serp_features_knowledge: "Knowledge";
             /** @constant */
             readonly Serp_features_aiOverview: "AI overviews";
+            /** @constant */
+            readonly Serp_features_pictures: "Pictures";
+            /** @constant */
+            readonly On_display_relevant_url: "Show Ranked URLs";
         };
     };
     responses: never;

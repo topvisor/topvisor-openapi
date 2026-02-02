@@ -477,6 +477,14 @@
                     "Serp_features_aiOverview": {
                         "const": "AI overviews",
                         "readOnly": true
+                    },
+                    "Serp_features_pictures": {
+                        "const": "Pictures",
+                        "readOnly": true
+                    },
+                    "On_display_relevant_url": {
+                        "const": "Show Ranked URLs",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -596,7 +604,9 @@
                     "Serp_features_video",
                     "Serp_features_images",
                     "Serp_features_knowledge",
-                    "Serp_features_aiOverview"
+                    "Serp_features_aiOverview",
+                    "Serp_features_pictures",
+                    "On_display_relevant_url"
                 ]
             }
         }
