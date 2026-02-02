@@ -72,10 +72,6 @@
                     "update": {
                         "nullable": true
                     },
-                    "status_positions": {
-                        "type": "string",
-                        "nullable": true
-                    },
                     "positions_time": {
                         "nullable": true
                     },
@@ -83,6 +79,10 @@
                         "nullable": true
                     },
                     "positions_percent": {
+                        "nullable": true
+                    },
+                    "status_positions": {
+                        "type": "string",
                         "nullable": true
                     },
                     "status_positions_time": {

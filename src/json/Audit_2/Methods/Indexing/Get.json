@@ -40,50 +40,26 @@
                         "title": "Фильтр по изменениям в указанной ПС в указанную дату\n\nФормат записи: `{{ date }}:{{ searcher_key }}`",
                         "type": "string"
                     },
-                    "dates": {
-                        "title": "Произвольные даты без использования диапазона",
-                        "nullable": true,
-                        "type": "array"
-                    },
-                    "date1": {
-                        "title": "Дата начала диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "date2": {
-                        "title": "Дата окончания диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "period_days": {
-                        "title": "Период в днях",
-                        "default": 7,
-                        "type": "integer"
-                    },
-                    "type_range": {
-                        "title": "Тип диапазона дат",
-                        "default": 7,
-                        "allOf": [
-                            {
-                                "$ref": "../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
-                            }
-                        ]
-                    },
-                    "count_dates": {
-                        "title": "Количество дней в диапазоне",
-                        "default": 60,
-                        "type": "integer"
-                    },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "dates": {
+                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"

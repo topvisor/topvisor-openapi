@@ -39,7 +39,7 @@ export interface components {
             "CTR_BASE_VS()"?: number | null;
             "TRAFFIC_VS()"?: string | null;
             "MONTH_COST_RUB_VS()"?: number | null;
-            "MONTH_COST_USD_VS()"?: string | null;
+            "MONTH_COST_USD_VS()"?: number | null;
             "SNIPPET_VS()"?: string | null;
             position_vs?: number | null;
             url_vs?: string | null;

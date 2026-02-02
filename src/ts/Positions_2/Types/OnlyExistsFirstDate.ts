@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Отображать только запросы, присутствующие в первой проверке указанного периода
+         * Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода
          * @enum {integer}
          */
         "Positions_2.Types.OnlyExistsFirstDate": 0 | 1 | 2;

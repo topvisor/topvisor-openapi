@@ -30,12 +30,12 @@ export interface components {
             date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
              * Тип диапазона дат
-             * @default 7
+             * @default 2
              */
-            type_range?: import('../../Types/TypeRange.ts').components['schemas']['AiTracker_2.Types.TypeRange'];
+            type_range?: import('../../../Positions_2/Types/TypeRange.ts').components['schemas']['Positions_2.Types.TypeRange'];
             /**
              * Количество дней в диапазоне
-             * @default 30
+             * @default 31
              */
             count_dates?: number;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

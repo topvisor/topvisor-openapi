@@ -132,7 +132,7 @@
                         "nullable": true
                     },
                     "MONTH_COST_USD_VS()": {
-                        "type": "string",
+                        "type": "integer",
                         "nullable": true
                     },
                     "SNIPPET_VS()": {

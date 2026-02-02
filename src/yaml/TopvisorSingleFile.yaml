@@ -2693,6 +2693,38 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/comments_2/top/:
+    post:
+      operationId: GetComments2Top
+      tags:
+        - Comments_2
+      summary: Получение списка популярных комментариев
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Top.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Comments_2.Methods.Top.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Comments'
   /get/competitors_2/charts/:
     post:
       operationId: GetCompetitors2Charts
@@ -19344,6 +19376,8 @@ components:
         Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
     Models.Comments:
       properties:
+        RATING():
+          nullable: true
         id: {}
         site:
           nullable: true
@@ -22225,33 +22259,39 @@ components:
         @method AiTracker_2\Types\Model[] getValues()
         @method AiTracker_2\Types\Model current()
         @see \Services\AiTracker_2\Types\Model
-    AiTracker_2.Types.TypeRange:
+    Positions_2.Types.TypeRange:
       type: integer
       enum:
         - 0
+        - 1
         - 2
         - 3
         - 4
         - 5
+        - 6
         - 7
         - 100
       x-enum-varnames:
         - FullRange
+        - YandexUpdates
         - Range
         - TwoChecks
         - OneCheck
         - LastCheckOfMonth
+        - Accumulated
         - TwoLastChecks
         - ListDates
       x-enum-descriptions:
         - Весь период без ограничений (недокументируемй парметр)
+        - Период с выполненными проверками (Только апдейты Яндекс)
         - Период с выполненными проверками
         - Две проверки
         - Одна проверка
         - Последняя проверка месяца
+        - 'Даты через равные промежутки; - средняя позиция: используетс совместно с параметром длины периода period_days = 7 (не более MAX_LENGTH_PERIOD) - недокументируемый параметр; - возвращает не более 7 дат'
         - Две последние даты проверок
         - Произвольный список дат
-      title: Тип диапазона Ai-Трекера
+      title: id тега
     AiTracker_2.Methods.History.Get:
       type: object
       properties:
@@ -22288,12 +22328,12 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         type_range:
           title: Тип диапазона дат
-          default: 7
+          default: 2
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.TypeRange'
+            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
         count_dates:
           title: Количество дней в диапазоне
-          default: 30
+          default: 31
           type: integer
         project_id:
           $ref: '#/components/schemas/project_id'
@@ -22598,36 +22638,50 @@ components:
         $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
       title: Id поисковых систем для индексации
       description: '@see SearcherKey'
-    Audit_2.Types.Indexing.TypeRange:
+    dates:
+      title: |-
+        Произвольные даты без использования диапазона
+
+        Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+      nullable: true
+      type: array
+    type_range:
+      title: Тип диапазона дат
+      default: 7
+      allOf:
+        - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+    date1:
+      title: |-
+        Дата начала диапазона
+
+        Используется вместе с date2 для задания диапазона дат
+      nullable: true
+      allOf:
+        - $ref: '#/components/schemas/TV.API.Types.Date'
+    date2:
+      title: |-
+        Дата окончания диапазона
+
+        Используется вместе с date1 для задания диапазона дат
+      nullable: true
+      allOf:
+        - $ref: '#/components/schemas/TV.API.Types.Date'
+    count_dates:
+      title: |-
+        Количество дат в диапазоне
+
+        Максимальное значение ограничивается константой MAX_LENGTH_PERIOD конкретного модуля
+      default: 31
       type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 7
-        - 100
-      x-enum-varnames:
-        - FullRange
-        - YandexUpdates
-        - Range
-        - TwoChecks
-        - OneCheck
-        - LastCheckOfMonth
-        - TwoLastChecks
-        - ListDates
-      x-enum-descriptions:
-        - Весь период без ограничений (недокументируемй парметр)
-        - Период с выполненными проверками (Только апдейты Яндекс)
-        - Период с выполненными проверками
-        - Две проверки
-        - Одна проверка
-        - Последняя проверка месяца
-        - Две последние даты проверок
-        - Произвольный список дат
-      title: Тип диапазона индексации
+    period_days:
+      title: |-
+        Период в днях
+
+        Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+
+        Не более 31
+      default: 7
+      type: integer
     Audit_2.Methods.Indexing.Get:
       type: object
       properties:
@@ -22657,35 +22711,20 @@ components:
 
             Формат записи: `{{ date }}:{{ searcher_key }}`
           type: string
-        dates:
-          title: Произвольные даты без использования диапазона
-          nullable: true
-          type: array
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        period_days:
-          title: Период в днях
-          default: 7
-          type: integer
-        type_range:
-          title: Тип диапазона дат
-          default: 7
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 60
-          type: integer
         project_id:
           $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -24499,6 +24538,32 @@ components:
     Comments_2.Methods.Like.Edit.Exec:
       nullable: true
       type: integer
+    Comments_2.Methods.Top.Get:
+      type: object
+      properties:
+        subdomain:
+          title: Поддомен
+          default: journal
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Topvisor.Subdomain'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required: []
+      title: Получение списка популярных комментариев
+    Comments_2.Methods.Top.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Comments'
     Competitors_2.Types.Report.ByType:
       type: string
       enum:
@@ -26119,14 +26184,14 @@ components:
           nullable: true
         update:
           nullable: true
-        status_positions:
-          type: string
-          nullable: true
         positions_time:
           nullable: true
         positions_date:
           nullable: true
         positions_percent:
+          nullable: true
+        status_positions:
+          type: string
           nullable: true
         status_positions_time:
           nullable: true
@@ -28102,14 +28167,14 @@ components:
         - 1
         - 2
       x-enum-varnames:
-        - Hide
-        - Show
+        - All
+        - OnlyExistsInFirstDate
         - OnlyAddedAtPeriod
       x-enum-descriptions:
-        - Не отображать
-        - Отображать
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
         - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-      title: Отображать только запросы, присутствующие в первой проверке указанного периода
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Get:
       type: object
       properties:
@@ -34762,6 +34827,36 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Audit.Pages'
+    Audit_2.Types.Indexing.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 7
+        - 100
+      x-enum-varnames:
+        - FullRange
+        - YandexUpdates
+        - Range
+        - TwoChecks
+        - OneCheck
+        - LastCheckOfMonth
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений (недокументируемй парметр)
+        - Период с выполненными проверками (Только апдейты Яндекс)
+        - Период с выполненными проверками
+        - Две проверки
+        - Одна проверка
+        - Последняя проверка месяца
+        - Две последние даты проверок
+        - Произвольный список дат
+      title: Тип диапазона индексации
     Audit_2.Methods.Indexing.Export.Get:
       type: object
       properties:
@@ -38620,39 +38715,6 @@ components:
         - null
         - null
       title: Формат экспорта
-    Positions_2.Types.TypeRange:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-        - 100
-      x-enum-varnames:
-        - FullRange
-        - YandexUpdates
-        - Range
-        - TwoChecks
-        - OneCheck
-        - LastCheckOfMonth
-        - Accumulated
-        - TwoLastChecks
-        - ListDates
-      x-enum-descriptions:
-        - Весь период без ограничений (недокументируемй парметр)
-        - Период с выполненными проверками (Только апдейты Яндекс)
-        - Период с выполненными проверками
-        - Две проверки
-        - Одна проверка
-        - Последняя проверка месяца
-        - 'Даты через равные промежутки; - средняя позиция: используетс совместно с параметром длины периода period_days = 7 (не более MAX_LENGTH_PERIOD) - недокументируемый параметр; - возвращает не более 7 дат'
-        - Две последние даты проверок
-        - Произвольный список дат
-      title: id тега
     Positions_2.Types.History.Export.Painting:
       type: integer
       enum:

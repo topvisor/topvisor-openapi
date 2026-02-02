@@ -9,6 +9,9 @@
         "schemas": {
             "Models.Comments": {
                 "properties": {
+                    "RATING()": {
+                        "nullable": true
+                    },
                     "id": {},
                     "site": {
                         "nullable": true

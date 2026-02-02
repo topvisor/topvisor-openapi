@@ -8,6 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Comments": {
+            "RATING()"?: any;
             id?: any;
             site?: any;
             subdomain?: any;

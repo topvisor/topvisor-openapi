@@ -29,10 +29,10 @@ export interface components {
             task_noticed?: any;
             site?: any;
             update?: any;
-            status_positions?: string | null;
             positions_time?: any;
             positions_date?: any;
             positions_percent?: any;
+            status_positions?: string | null;
             status_positions_time?: any;
             status_positions_date?: any;
             status_positions_percent?: any;
