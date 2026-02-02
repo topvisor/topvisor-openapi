@@ -26,26 +26,14 @@ export interface components {
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */
             properties?: unknown[];
-            /** Произвольные даты без использования диапазона */
-            dates?: unknown[] | null;
-            /** Дата начала диапазона */
-            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Дата окончания диапазона */
-            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Период в днях
-             * @default 7
-             */
-            period_days?: number;
-            /** @default 7 */
-            type_range?: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
-            /**
-             * Количество дней в диапазоне
-             * @default 60
-             */
-            count_dates?: number;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            dates?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
+            date2?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
         };
         /** Результаты индексации */
         "Audit_2.Methods.Indexing.Export.Get.Exec": string;

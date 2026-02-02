@@ -34827,6 +34827,55 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Audit.Pages'
+    Audit_2.Methods.Indexing.Export.Get:
+      type: object
+      properties:
+        searchers_keys:
+          title: Поисковые системы
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
+        returnFilenameFromFolder:
+          title: |-
+            Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
+
+            Для внутреннего использования
+          description: '@private'
+          nullable: true
+          type: string
+        output:
+          title: Формат экспортируемого файла
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.ExportFormat'
+        properties:
+          title: Настройки экспорта
+          type: array
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+      required:
+        - searchers_keys
+        - output
+        - project_id
+      title: |-
+        Экспорт результатов индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+    Audit_2.Methods.Indexing.Export.Get.Exec:
+      title: Результаты индексации
+      type: string
     Audit_2.Types.Indexing.TypeRange:
       type: integer
       enum:
@@ -34857,69 +34906,6 @@ components:
         - Две последние даты проверок
         - Произвольный список дат
       title: Тип диапазона индексации
-    Audit_2.Methods.Indexing.Export.Get:
-      type: object
-      properties:
-        searchers_keys:
-          title: Поисковые системы
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
-        returnFilenameFromFolder:
-          title: |-
-            Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-
-            Для внутреннего использования
-          description: '@private'
-          nullable: true
-          type: string
-        output:
-          title: Формат экспортируемого файла
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.ExportFormat'
-        properties:
-          title: Настройки экспорта
-          type: array
-        dates:
-          title: Произвольные даты без использования диапазона
-          nullable: true
-          type: array
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        period_days:
-          title: Период в днях
-          default: 7
-          type: integer
-        type_range:
-          default: 7
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 60
-          type: integer
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        fields:
-          $ref: '#/components/schemas/fields'
-      required:
-        - searchers_keys
-        - output
-        - project_id
-      title: |-
-        Экспорт результатов индексации
-
-        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-    Audit_2.Methods.Indexing.Export.Get.Exec:
-      title: Результаты индексации
-      type: string
     Audit_2.Methods.Indexing.Links.Get:
       type: object
       properties:
