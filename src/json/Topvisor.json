@@ -4791,6 +4791,67 @@
                 }
             }
         },
+        "/get/comments_2/list/": {
+            "post": {
+                "operationId": "GetComments2List",
+                "tags": [
+                    "Comments_2"
+                ],
+                "summary": "Получение списка популярных комментариев",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Comments_2/Methods/List/Get.json#/components/schemas/Comments_2.Methods.List.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Comments_2/Methods/List/Get.json#/components/schemas/Comments_2.Methods.List.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Comments.json#/components/schemas/Models.Comments"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/competitors_2/charts/": {
             "post": {
                 "operationId": "GetCompetitors2Charts",

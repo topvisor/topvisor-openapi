@@ -1531,6 +1531,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение списка популярных комментариев */
+    "/get/comments_2/list/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetComments2List"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение данных для графика отчета */
     "/get/competitors_2/charts/": {
         parameters: {
@@ -13543,6 +13560,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Comments_2/Methods/Like/Edit.ts').components['schemas']['Comments_2.Methods.Like.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetComments2List: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Comments_2/Methods/List/Get.ts').components['schemas']['Comments_2.Methods.List.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Comments_2/Methods/List/Get.ts').components['schemas']['Comments_2.Methods.List.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Comments.ts').components['schemas']['Models.Comments'];
                 };
             };
         };

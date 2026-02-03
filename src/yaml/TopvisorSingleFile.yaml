@@ -2693,6 +2693,38 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/comments_2/list/:
+    post:
+      operationId: GetComments2List
+      tags:
+        - Comments_2
+      summary: Получение списка популярных комментариев
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.List.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Comments_2.Methods.List.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Comments'
   /get/competitors_2/charts/:
     post:
       operationId: GetCompetitors2Charts
@@ -24506,6 +24538,36 @@ components:
     Comments_2.Methods.Like.Edit.Exec:
       nullable: true
       type: integer
+    Comments_2.Methods.List.Get:
+      type: object
+      properties:
+        subdomain:
+          title: Поддомен
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Topvisor.Subdomain'
+        cacheable:
+          title: Кеширование результата
+          default: true
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - subdomain
+      title: Получение списка популярных комментариев
+    Comments_2.Methods.List.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Comments'
     Competitors_2.Types.Report.ByType:
       type: string
       enum:
