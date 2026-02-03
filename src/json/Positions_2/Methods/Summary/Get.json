@@ -54,7 +54,7 @@
                     "forProjectsListRegionDepth": {
                         "title": "Глубина регионов для списка проектов",
                         "description": "@internal",
-                        "type": "boolean"
+                        "type": "integer"
                     },
                     "only_exists_first_date": {
                         "allOf": [

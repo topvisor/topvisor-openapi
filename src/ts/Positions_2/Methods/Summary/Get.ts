@@ -34,7 +34,7 @@ export interface components {
              * Глубина регионов для списка проектов
              * @description @internal
              */
-            forProjectsListRegionDepth?: boolean;
+            forProjectsListRegionDepth?: number;
             only_exists_first_date?: import('../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
             /** Показывать данные из подпапок */
             group_folder_id_depth?: boolean;
