@@ -10671,7 +10671,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.Keywords'
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/keywordsai_2/keywords/move/:
     post:
       operationId: EditKeywordsai2KeywordsMove
@@ -36636,7 +36636,7 @@ components:
       nullable: true
       type: array
       items:
-        $ref: '#/components/schemas/Models.Keywords'
+        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
     KeywordsAi_2.Methods.Keywords.Move.Edit:
       type: object
       properties:

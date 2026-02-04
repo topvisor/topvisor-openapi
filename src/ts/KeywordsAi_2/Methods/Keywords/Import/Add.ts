@@ -42,7 +42,7 @@ export interface components {
             tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": import('../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][] | null;
+        "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": import('../../../../Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'][] | null;
     };
     responses: never;
     parameters: never;
