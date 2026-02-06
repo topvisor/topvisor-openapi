@@ -5090,6 +5090,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /del/positions_2/history/:
+    post:
+      operationId: DelPositions2History
+      tags:
+        - Positions_2
+      summary: Удаление проверки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/positions_2/regionIndex/:
     post:
       operationId: GetPositions2RegionIndex
@@ -27970,6 +27998,21 @@ components:
     Payments_2.Methods.ValidateMerchantCardAP.Get.Exec:
       nullable: true
       type: array
+    Positions_2.Methods.History.Del:
+      type: object
+      properties:
+        date:
+          title: Дата проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - date
+        - project_id
+      title: Удаление проверки
+    Positions_2.Methods.History.Del.Exec:
+      nullable: true
     Positions_2.Types.RegionDevice:
       type: integer
       enum:
