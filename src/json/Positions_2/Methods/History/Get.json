@@ -9,12 +9,169 @@
         "schemas": {
             "Positions_2.Methods.History.Get": {
                 "type": "object",
-                "properties": {},
-                "required": [],
+                "properties": {
+                    "regions_indexes": {
+                        "title": "Индексы регионов",
+                        "example": "[1, 2, 3]",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "example": "[10, 11]",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Произвольные даты (без диапазона)\n\nНеобходимо указать либо `date1` + `date2` + `type_range`, либо `dates` (вместе указывать нельзя).",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона\n\nИспользуется вместе с `date2`.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата окончания диапазона\n\nИспользуется вместе с `date1`.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "type_range": {
+                        "default": 2,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/TypeRange.json#/components/schemas/Positions_2.Types.TypeRange"
+                            }
+                        ]
+                    },
+                    "count_dates": {
+                        "title": "Количество дат",
+                        "description": "@see MAX_LENGTH_PERIOD Максимальное значение",
+                        "default": 31,
+                        "type": "integer"
+                    },
+                    "period_days": {
+                        "title": "Период, только `для type_range = 6`",
+                        "description": "@see MAX_LENGTH_PERIOD Максимальное значение",
+                        "default": 7,
+                        "type": "integer"
+                    },
+                    "only_exists_first_date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/OnlyExistsFirstDate.json#/components/schemas/Positions_2.Types.OnlyExistsFirstDate"
+                            }
+                        ]
+                    },
+                    "show_headers": {
+                        "title": "Добавить в результат заголовки отчета `headers`",
+                        "type": "boolean"
+                    },
+                    "show_exists_dates": {
+                        "title": "Добавить в результат даты, в которые были проверки `existsDates`",
+                        "type": "boolean"
+                    },
+                    "show_visitors": {
+                        "title": "Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors`",
+                        "type": "boolean"
+                    },
+                    "show_top_by_depth": {
+                        "title": "Добавить в результат данные по топу указанной глубины `tops`",
+                        "type": "integer"
+                    },
+                    "positions_fields": {
+                        "title": "Выбор столбцов данных с результатами проверки",
+                        "description": "@see POSITIONS_FIELDS_ALLOWED Возможные значения",
+                        "default": [
+                            "position"
+                        ],
+                        "type": "array"
+                    },
+                    "filter_by_dynamic": {
+                        "title": "Фильтрация по динамике позиций\n\nБазируется на крайних датах периода.\n\nИгнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/History/FilterByDynamics.json#/components/schemas/Positions_2.Types.History.FilterByDynamics"
+                            }
+                        ]
+                    },
+                    "filter_by_positions": {
+                        "title": "Фильтрация по запросам, позиции которых входят в указанные промежутки\n\nМассив пар значений (min, max)\n\n- Базируется на крайней дате периода отчета\n- Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион",
+                        "description": "@see Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "filter_by_positions_delta": {
+                        "title": "Фильтрация по величине изменения позиции за период (>= N)",
+                        "type": "integer"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Показывать запросы из подпапок",
+                        "type": "boolean"
+                    },
+                    "show_trash": {
+                        "title": "Показывать удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    }
+                },
+                "required": [
+                    "regions_indexes",
+                    "project_id"
+                ],
                 "title": "Получение истории позиций по запросам."
             },
             "Positions_2.Methods.History.Get.Exec": {
-                "type": "array"
+                "title": "Получение истории позиций",
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Keywords.json#/components/schemas/Models.Keywords"
+                }
             }
         }
     }

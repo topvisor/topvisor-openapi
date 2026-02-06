@@ -5175,7 +5175,11 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/positions_2/regionIndex/:
     post:
       operationId: GetPositions2RegionIndex
@@ -22368,16 +22372,16 @@ components:
         - TwoLastChecks
         - ListDates
       x-enum-descriptions:
-        - Весь период без ограничений (недокументируемй парметр)
+        - Весь период без ограничений
         - Период с выполненными проверками (Только апдейты Яндекс)
         - Период с выполненными проверками
         - Две проверки
         - Одна проверка
         - Последняя проверка месяца
-        - 'Даты через равные промежутки; - средняя позиция: используетс совместно с параметром длины периода period_days = 7 (не более MAX_LENGTH_PERIOD) - недокументируемый параметр; - возвращает не более 7 дат'
+        - 'Даты через равные промежутки; - Средняя позиция: используется совместно с параметром длины периода `period_days`; - Возвращает не более 7 дат'
         - Две последние даты проверок
         - Произвольный список дат
-      title: id тега
+      title: Тип диапазона дат
     AiTracker_2.Methods.History.Get:
       type: object
       properties:
@@ -28083,13 +28087,173 @@ components:
       title: Удаление проверки
     Positions_2.Methods.History.Del.Exec:
       type: integer
+    Positions_2.Types.OnlyExistsFirstDate:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - All
+        - OnlyExistsInFirstDate
+        - OnlyAddedAtPeriod
+      x-enum-descriptions:
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
+        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
+    Positions_2.Types.History.FilterByDynamic:
+      type: string
+      enum:
+        - <
+        - '='
+        - '>'
+      x-enum-varnames:
+        - Down
+        - Equality
+        - Up
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+      title: Фильтр по динамике запросов
+    Positions_2.Types.History.FilterByDynamics:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamic'
+      title: Фильтры по динамике запросов
+      description: |-
+        @extends API\Types\AbstractTypedArray<FilterByDynamic>
+        @method FilterByDynamic[] getValues()
+        @method FilterByDynamic current()
+        @see FilterByDynamic
     Positions_2.Methods.History.Get:
       type: object
-      properties: {}
-      required: []
+      properties:
+        regions_indexes:
+          title: Индексы регионов
+          example: '[1, 2, 3]'
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          example: '[10, 11]'
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        dates:
+          title: |-
+            Произвольные даты (без диапазона)
+
+            Необходимо указать либо `date1` + `date2` + `type_range`, либо `dates` (вместе указывать нельзя).
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        date1:
+          title: |-
+            Дата начала диапазона
+
+            Используется вместе с `date2`.
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: |-
+            Дата окончания диапазона
+
+            Используется вместе с `date1`.
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type_range:
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+        count_dates:
+          title: Количество дат
+          description: '@see MAX_LENGTH_PERIOD Максимальное значение'
+          default: 31
+          type: integer
+        period_days:
+          title: Период, только `для type_range = 6`
+          description: '@see MAX_LENGTH_PERIOD Максимальное значение'
+          default: 7
+          type: integer
+        only_exists_first_date:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
+        show_headers:
+          title: Добавить в результат заголовки отчета `headers`
+          type: boolean
+        show_exists_dates:
+          title: Добавить в результат даты, в которые были проверки `existsDates`
+          type: boolean
+        show_visitors:
+          title: Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors`
+          type: boolean
+        show_top_by_depth:
+          title: Добавить в результат данные по топу указанной глубины `tops`
+          type: integer
+        positions_fields:
+          title: Выбор столбцов данных с результатами проверки
+          description: '@see POSITIONS_FIELDS_ALLOWED Возможные значения'
+          default:
+            - position
+          type: array
+        filter_by_dynamic:
+          title: |-
+            Фильтрация по динамике позиций
+
+            Базируется на крайних датах периода.
+
+            Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamics'
+        filter_by_positions:
+          title: |-
+            Фильтрация по запросам, позиции которых входят в указанные промежутки
+
+            Массив пар значений (min, max)
+
+            - Базируется на крайней дате периода отчета
+            - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+          description: '@see Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        filter_by_positions_delta:
+          title: Фильтрация по величине изменения позиции за период (>= N)
+          type: integer
+        group_folder_id_depth:
+          title: Показывать запросы из подпапок
+          type: boolean
+        show_trash:
+          title: Показывать удаленные запросы
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - regions_indexes
+        - project_id
       title: Получение истории позиций по запросам.
     Positions_2.Methods.History.Get.Exec:
+      title: Получение истории позиций
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
     Positions_2.Types.RegionDevice:
       type: integer
       enum:
@@ -28284,21 +28448,6 @@ components:
       title: Установка общих настроек проверки позиций проекта
     Positions_2.Methods.Settings.Edit.Exec:
       nullable: true
-    Positions_2.Types.OnlyExistsFirstDate:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - All
-        - OnlyExistsInFirstDate
-        - OnlyAddedAtPeriod
-      x-enum-descriptions:
-        - Без фильтра
-        - Только запросы в первой проверке указанного периода
-        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Get:
       type: object
       properties:
@@ -38837,31 +38986,6 @@ components:
         - Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками
         - Динамическая/градиентная раскраска; Акцент на величине изменения позиций
       title: Режимы визуализации изменений позиций в экспорте
-    Positions_2.Types.History.FilterByDynamic:
-      type: string
-      enum:
-        - <
-        - '='
-        - '>'
-      x-enum-varnames:
-        - Down
-        - Equality
-        - Up
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-      title: Фильтр динамики запросов
-    Positions_2.Types.History.FilterByDynamics:
-      type: array
-      items:
-        $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamic'
-      title: Фильтры по динамике
-      description: |-
-        @extends API\Types\AbstractTypedArray<FilterByDynamic>
-        @method FilterByDynamic[] getValues()
-        @method FilterByDynamic current()
-        @see FilterByDynamic
     Positions_2.Methods.History.Export.Get:
       type: object
       properties:

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * id тега
+         * Тип диапазона дат
          * @enum {integer}
          */
         "Positions_2.Types.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 100;

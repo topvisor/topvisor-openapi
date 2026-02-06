@@ -8,8 +8,100 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Получение истории позиций по запросам. */
-        "Positions_2.Methods.History.Get": Record<string, never>;
-        "Positions_2.Methods.History.Get.Exec": unknown[];
+        "Positions_2.Methods.History.Get": {
+            /**
+             * Индексы регионов
+             * @example [1, 2, 3]
+             */
+            regions_indexes: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
+            /**
+             * ID конкурентов
+             * @example [10, 11]
+             */
+            competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /**
+             * Произвольные даты (без диапазона)
+             *
+             *     Необходимо указать либо `date1` + `date2` + `type_range`, либо `dates` (вместе указывать нельзя).
+             */
+            dates?: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
+            /**
+             * Дата начала диапазона
+             *
+             *     Используется вместе с `date2`.
+             */
+            date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /**
+             * Дата окончания диапазона
+             *
+             *     Используется вместе с `date1`.
+             */
+            date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /** @default 2 */
+            type_range?: import('../../Types/TypeRange.ts').components['schemas']['Positions_2.Types.TypeRange'];
+            /**
+             * Количество дат
+             * @description @see MAX_LENGTH_PERIOD Максимальное значение
+             * @default 31
+             */
+            count_dates?: number;
+            /**
+             * Период, только `для type_range = 6`
+             * @description @see MAX_LENGTH_PERIOD Максимальное значение
+             * @default 7
+             */
+            period_days?: number;
+            only_exists_first_date?: import('../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
+            /** Добавить в результат заголовки отчета `headers` */
+            show_headers?: boolean;
+            /** Добавить в результат даты, в которые были проверки `existsDates` */
+            show_exists_dates?: boolean;
+            /** Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors` */
+            show_visitors?: boolean;
+            /** Добавить в результат данные по топу указанной глубины `tops` */
+            show_top_by_depth?: number;
+            /**
+             * Выбор столбцов данных с результатами проверки
+             * @description @see POSITIONS_FIELDS_ALLOWED Возможные значения
+             * @default [
+             *       "position"
+             *     ]
+             */
+            positions_fields?: unknown[];
+            /**
+             * Фильтрация по динамике позиций
+             *
+             *     Базируется на крайних датах периода.
+             *
+             *     Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+             */
+            filter_by_dynamic?: import('../../Types/History/FilterByDynamics.ts').components['schemas']['Positions_2.Types.History.FilterByDynamics'] | null;
+            /**
+             * Фильтрация по запросам, позиции которых входят в указанные промежутки
+             *
+             *     Массив пар значений (min, max)
+             *
+             *     - Базируется на крайней дате периода отчета
+             *     - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+             * @description @see Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`
+             */
+            filter_by_positions?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /** Фильтрация по величине изменения позиции за период (>= N) */
+            filter_by_positions_delta?: number;
+            /** Показывать запросы из подпапок */
+            group_folder_id_depth?: boolean;
+            /** Показывать удаленные запросы */
+            show_trash?: boolean;
+            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+        };
+        /** Получение истории позиций */
+        "Positions_2.Methods.History.Get.Exec": import('../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][];
     };
     responses: never;
     parameters: never;

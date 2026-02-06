@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Фильтры по динамике
+         * Фильтры по динамике запросов
          * @description @extends API\Types\AbstractTypedArray<FilterByDynamic>
          *     @method FilterByDynamic[] getValues()
          *     @method FilterByDynamic current()

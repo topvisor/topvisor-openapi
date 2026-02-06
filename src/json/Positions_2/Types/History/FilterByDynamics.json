@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Positions_2/Types/History/FilterByDynamic.json#/components/schemas/Positions_2.Types.History.FilterByDynamic"
                 },
-                "title": "Фильтры по динамике",
+                "title": "Фильтры по динамике запросов",
                 "description": "@extends API\\Types\\AbstractTypedArray<FilterByDynamic>\n@method FilterByDynamic[] getValues()\n@method FilterByDynamic current()\n@see FilterByDynamic"
             }
         }
