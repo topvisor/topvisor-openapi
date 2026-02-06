@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Types.Drivers.Pos.Task.Action",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Types.Drivers.Pos.Task.Action": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    6
+                ],
+                "x-enum-varnames": [
+                    "Positions",
+                    "Apometr",
+                    "Claster",
+                    "Count",
+                    "Competitors",
+                    "Relevance"
+                ],
+                "x-enum-descriptions": [
+                    "Проверка позиций сайта по запросу.",
+                    "Апометр",
+                    "Кластеризация запросов",
+                    "Определение количества найденных результатов",
+                    "Анализ конкурентов",
+                    "Проверка релевантности сайта запросу"
+                ],
+                "title": "Тип действия задачи проверки позиций"
+            }
+        }
+    }
+}
