@@ -28054,7 +28054,7 @@ components:
         - project_id
       title: Удаление проверки
     Positions_2.Methods.History.Del.Exec:
-      nullable: true
+      type: integer
     Positions_2.Types.RegionDevice:
       type: integer
       enum:

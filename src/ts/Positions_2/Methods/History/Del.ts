@@ -13,7 +13,7 @@ export interface components {
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Positions_2.Methods.History.Del.Exec": unknown;
+        "Positions_2.Methods.History.Del.Exec": number;
     };
     responses: never;
     parameters: never;

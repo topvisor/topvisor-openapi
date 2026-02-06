@@ -29,7 +29,7 @@
                 "title": "Удаление проверки"
             },
             "Positions_2.Methods.History.Del.Exec": {
-                "nullable": true
+                "type": "integer"
             }
         }
     }
