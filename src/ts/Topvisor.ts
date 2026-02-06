@@ -2948,6 +2948,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение истории позиций по запросам. */
+    "/get/positions_2/history/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2History"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение индекса региона (определяют уникальную настройку ПС и региона) */
     "/get/positions_2/regionIndex/": {
         parameters: {
@@ -15682,6 +15699,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Positions_2/Methods/History/Del.ts').components['schemas']['Positions_2.Methods.History.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetPositions2History: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/History/Get.ts').components['schemas']['Positions_2.Methods.History.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Positions_2/Methods/History/Get.ts').components['schemas']['Positions_2.Methods.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

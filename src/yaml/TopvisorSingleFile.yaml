@@ -5148,6 +5148,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/positions_2/history/:
+    post:
+      operationId: GetPositions2History
+      tags:
+        - Positions_2
+      summary: Получение истории позиций по запросам.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.History.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Positions_2.Methods.History.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/positions_2/regionIndex/:
     post:
       operationId: GetPositions2RegionIndex
@@ -28055,6 +28083,13 @@ components:
       title: Удаление проверки
     Positions_2.Methods.History.Del.Exec:
       type: integer
+    Positions_2.Methods.History.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение истории позиций по запросам.
+    Positions_2.Methods.History.Get.Exec:
+      type: array
     Positions_2.Types.RegionDevice:
       type: integer
       enum:
