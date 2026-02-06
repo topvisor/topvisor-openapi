@@ -1000,6 +1000,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Постановка задачи на озвучивание текста */
+    "/edit/ai_2/textToSpeech/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAi2TextToSpeech"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение всех своих примечаний по всем проектам и сервисам */
     "/get/annotations_2/my/": {
         parameters: {
@@ -12812,6 +12829,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/Settings/Get.ts').components['schemas']['AiTracker_2.Methods.Settings.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAi2TextToSpeech: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Ai_2/Methods/TextToSpeech/Edit.ts').components['schemas']['Ai_2.Methods.TextToSpeech.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Ai_2/Methods/TextToSpeech/Edit.ts').components['schemas']['Ai_2.Methods.TextToSpeech.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

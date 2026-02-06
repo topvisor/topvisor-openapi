@@ -13,6 +13,8 @@ tags:
     description: admin_2
   - name: Aitracker_2
     description: aitracker_2
+  - name: Ai_2
+    description: ai_2
   - name: Analytics_2
     description: analytics_2
   - name: Annotations_2
@@ -1777,6 +1779,34 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/AiTracker_2.Methods.Settings.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/ai_2/textToSpeech/:
+    post:
+      operationId: EditAi2TextToSpeech
+      tags:
+        - Ai_2
+      summary: Постановка задачи на озвучивание текста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Ai_2.Methods.TextToSpeech.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Ai_2.Methods.TextToSpeech.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -22545,6 +22575,18 @@ components:
         - context_lang
         - context_location
         - context_custom
+    Ai_2.Methods.TextToSpeech.Edit:
+      type: object
+      properties:
+        text:
+          title: Текст для озвучки
+          type: string
+      required:
+        - text
+      title: Постановка задачи на озвучивание текста
+    Ai_2.Methods.TextToSpeech.Edit.Exec:
+      title: Ссылка на озвученный текст
+      type: string
     Annotations_2.Methods.My.Get:
       type: object
       properties:
