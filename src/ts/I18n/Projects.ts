@@ -439,6 +439,8 @@ export interface components {
             /** @constant */
             readonly Setup_sitemap: "Set up Sitemap Generator";
             /** @constant */
+            readonly Setup_AI_analysis: "Set up AI analysis";
+            /** @constant */
             readonly Add_all_recommended: "Add all recommended";
             /** @constant */
             readonly Delete_keywords_from_orginal_project: "Delete keywords from the orginal project";

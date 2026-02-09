@@ -13,8 +13,6 @@ export interface components {
             /** @constant */
             readonly Enter_domain_name: "Enter the domain name";
             /** @constant */
-            readonly Pick_up: "Search";
-            /** @constant */
             readonly Total: "Total";
             /** @constant */
             readonly No_domains_added: "No domains added";

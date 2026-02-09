@@ -15,8 +15,6 @@ export interface components {
             /** @constant */
             readonly Popup_go_text_before_select_2: "will contain up to";
             /** @constant */
-            readonly Popup_go_text_before_price: "Project owner will be charged:";
-            /** @constant */
             readonly Max_pages: "MAX number of pages";
             /** @constant */
             readonly Info_cost: "You will be charged";

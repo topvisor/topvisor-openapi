@@ -992,6 +992,10 @@ export interface components {
             readonly AllowCookies: "Allow all";
             /** @constant */
             readonly Unique: "Unique";
+            /** @constant */
+            readonly Pick_up: "Search";
+            /** @constant */
+            readonly Popup_go_text_before_price: "Project owner will be charged";
         };
     };
     responses: never;

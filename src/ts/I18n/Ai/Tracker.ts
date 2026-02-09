@@ -9,9 +9,47 @@ export interface components {
     schemas: {
         "I18n.Ai.Tracker": {
             /** @constant */
+            readonly English: "English";
+            /** @constant */
+            readonly Russian: "Russian";
+            /** @constant */
             readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";
             /** @constant */
             readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
+            /** @constant */
+            readonly Model_Yandex_Alice: "Yandex Alice";
+            /** @constant */
+            readonly First_you_need_to_enter_the_brand_name: "First you need to enter the brand name";
+            /** @constant */
+            readonly Brand_information: "Brand information";
+            /** @constant */
+            readonly Brand_name: "Brand name";
+            /** @constant */
+            readonly Alternative_spellings_for_the_brand_and_website: "Alternative spellings for the brand and website";
+            /** @constant */
+            readonly Enter_alternative_brand_names: "Enter alternative brand names. Each on a new line";
+            /** @constant */
+            readonly Context_setting: "Context setting";
+            /** @constant */
+            readonly System_prompt: "System prompt";
+            /** @constant */
+            readonly Enter_additional_information_to_help_you_fine_tune_the_context: "Enter additional information to help you fine-tune the context.";
+            /** @constant */
+            readonly Automatic_pick_up_of_alternative_brand_spellings: "Automatic pick up of alternative brand spellings";
+            /** @constant */
+            readonly Launch_AI_analysis: "Launch AI analysis";
+            /** @constant */
+            readonly Launching_AI_analysis: "Launching AI analysis";
+            /** @constant */
+            readonly Cost_of_analysis: "Cost of analysis";
+            /** @constant */
+            readonly Make_prompts: "Make prompts";
+            /** @constant */
+            readonly Selecting_neural_networks: "Selecting neural networks";
+            /** @constant */
+            readonly Add_prompts: "Add prompts";
+            /** @constant */
+            readonly Select_neural_networks: "Select neural networks";
             /** @constant */
             readonly No_data_in_day: "В выбранный день данные не анализировались.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как работает AI-трекер →</a>";
             /** @constant */

@@ -22,10 +22,6 @@
                         "const": "will contain up to",
                         "readOnly": true
                     },
-                    "Popup_go_text_before_price": {
-                        "const": "Project owner will be charged:",
-                        "readOnly": true
-                    },
                     "Max_pages": {
                         "const": "MAX number of pages",
                         "readOnly": true
@@ -51,7 +47,6 @@
                     "Settings",
                     "Popup_go_text_before_select_1",
                     "Popup_go_text_before_select_2",
-                    "Popup_go_text_before_price",
                     "Max_pages",
                     "Info_cost",
                     "Hint_not_checks_text",

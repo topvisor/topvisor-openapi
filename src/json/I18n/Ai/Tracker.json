@@ -10,12 +10,88 @@
             "I18n.Ai.Tracker": {
                 "type": "object",
                 "properties": {
+                    "English": {
+                        "const": "English",
+                        "readOnly": true
+                    },
+                    "Russian": {
+                        "const": "Russian",
+                        "readOnly": true
+                    },
                     "Ai_tracker_bank_info": {
                         "const": "Checking for mentions in neural networks",
                         "readOnly": true
                     },
                     "Add_brand_info": {
                         "const": "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>",
+                        "readOnly": true
+                    },
+                    "Model_Yandex_Alice": {
+                        "const": "Yandex Alice",
+                        "readOnly": true
+                    },
+                    "First_you_need_to_enter_the_brand_name": {
+                        "const": "First you need to enter the brand name",
+                        "readOnly": true
+                    },
+                    "Brand_information": {
+                        "const": "Brand information",
+                        "readOnly": true
+                    },
+                    "Brand_name": {
+                        "const": "Brand name",
+                        "readOnly": true
+                    },
+                    "Alternative_spellings_for_the_brand_and_website": {
+                        "const": "Alternative spellings for the brand and website",
+                        "readOnly": true
+                    },
+                    "Enter_alternative_brand_names": {
+                        "const": "Enter alternative brand names. Each on a new line",
+                        "readOnly": true
+                    },
+                    "Context_setting": {
+                        "const": "Context setting",
+                        "readOnly": true
+                    },
+                    "System_prompt": {
+                        "const": "System prompt",
+                        "readOnly": true
+                    },
+                    "Enter_additional_information_to_help_you_fine_tune_the_context": {
+                        "const": "Enter additional information to help you fine-tune the context.",
+                        "readOnly": true
+                    },
+                    "Automatic_pick_up_of_alternative_brand_spellings": {
+                        "const": "Automatic pick up of alternative brand spellings",
+                        "readOnly": true
+                    },
+                    "Launch_AI_analysis": {
+                        "const": "Launch AI analysis",
+                        "readOnly": true
+                    },
+                    "Launching_AI_analysis": {
+                        "const": "Launching AI analysis",
+                        "readOnly": true
+                    },
+                    "Cost_of_analysis": {
+                        "const": "Cost of analysis",
+                        "readOnly": true
+                    },
+                    "Make_prompts": {
+                        "const": "Make prompts",
+                        "readOnly": true
+                    },
+                    "Selecting_neural_networks": {
+                        "const": "Selecting neural networks",
+                        "readOnly": true
+                    },
+                    "Add_prompts": {
+                        "const": "Add prompts",
+                        "readOnly": true
+                    },
+                    "Select_neural_networks": {
+                        "const": "Select neural networks",
                         "readOnly": true
                     },
                     "No_data_in_day": {
@@ -68,8 +144,27 @@
                     }
                 },
                 "required": [
+                    "English",
+                    "Russian",
                     "Ai_tracker_bank_info",
                     "Add_brand_info",
+                    "Model_Yandex_Alice",
+                    "First_you_need_to_enter_the_brand_name",
+                    "Brand_information",
+                    "Brand_name",
+                    "Alternative_spellings_for_the_brand_and_website",
+                    "Enter_alternative_brand_names",
+                    "Context_setting",
+                    "System_prompt",
+                    "Enter_additional_information_to_help_you_fine_tune_the_context",
+                    "Automatic_pick_up_of_alternative_brand_spellings",
+                    "Launch_AI_analysis",
+                    "Launching_AI_analysis",
+                    "Cost_of_analysis",
+                    "Make_prompts",
+                    "Selecting_neural_networks",
+                    "Add_prompts",
+                    "Select_neural_networks",
                     "No_data_in_day",
                     "Add_neural_networks",
                     "Add_prompts_to_go",

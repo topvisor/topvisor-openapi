@@ -18,10 +18,6 @@
                         "const": "Enter the domain name",
                         "readOnly": true
                     },
-                    "Pick_up": {
-                        "const": "Search",
-                        "readOnly": true
-                    },
                     "Total": {
                         "const": "Total",
                         "readOnly": true
@@ -566,7 +562,6 @@
                 "required": [
                     "Domain_registrar",
                     "Enter_domain_name",
-                    "Pick_up",
                     "Total",
                     "No_domains_added",
                     "Domain_registration",

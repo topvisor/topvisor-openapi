@@ -870,6 +870,10 @@
                         "const": "Set up Sitemap Generator",
                         "readOnly": true
                     },
+                    "Setup_AI_analysis": {
+                        "const": "Set up AI analysis",
+                        "readOnly": true
+                    },
                     "Add_all_recommended": {
                         "const": "Add all recommended",
                         "readOnly": true
@@ -1214,6 +1218,7 @@
                     "Setup_indexing",
                     "Setup_indexing_urls",
                     "Setup_sitemap",
+                    "Setup_AI_analysis",
                     "Add_all_recommended",
                     "Delete_keywords_from_orginal_project",
                     "Project_name",

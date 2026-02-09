@@ -1967,6 +1967,14 @@
                     "Unique": {
                         "const": "Unique",
                         "readOnly": true
+                    },
+                    "Pick_up": {
+                        "const": "Search",
+                        "readOnly": true
+                    },
+                    "Popup_go_text_before_price": {
+                        "const": "Project owner will be charged",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2453,7 +2461,9 @@
                     "Report_an_error_response",
                     "Knowledge_base",
                     "AllowCookies",
-                    "Unique"
+                    "Unique",
+                    "Pick_up",
+                    "Popup_go_text_before_price"
                 ]
             }
         }
