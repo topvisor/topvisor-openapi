@@ -65,7 +65,7 @@
                         "default": 2,
                         "allOf": [
                             {
-                                "$ref": "../../../../Positions_2/Types/TypeRange.json#/components/schemas/Positions_2.Types.TypeRange"
+                                "$ref": "../../../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"
                             }
                         ]
                     },

@@ -19,38 +19,6 @@ export interface components {
              * @example [10, 11]
              */
             competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /**
-             * Произвольные даты (без диапазона)
-             *
-             *     Необходимо указать либо `date1` + `date2` + `type_range`, либо `dates` (вместе указывать нельзя).
-             */
-            dates?: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
-            /**
-             * Дата начала диапазона
-             *
-             *     Используется вместе с `date2`.
-             */
-            date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Дата окончания диапазона
-             *
-             *     Используется вместе с `date1`.
-             */
-            date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** @default 2 */
-            type_range?: import('../../Types/TypeRange.ts').components['schemas']['Positions_2.Types.TypeRange'];
-            /**
-             * Количество дат
-             * @description @see MAX_LENGTH_PERIOD Максимальное значение
-             * @default 31
-             */
-            count_dates?: number;
-            /**
-             * Период, только `для type_range = 6`
-             * @description @see MAX_LENGTH_PERIOD Максимальное значение
-             * @default 7
-             */
-            period_days?: number;
             only_exists_first_date?: import('../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
             /** Добавить в результат заголовки отчета `headers` */
             show_headers?: boolean;
@@ -93,6 +61,12 @@ export interface components {
             /** Показывать удаленные запросы */
             show_trash?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
+            date2?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

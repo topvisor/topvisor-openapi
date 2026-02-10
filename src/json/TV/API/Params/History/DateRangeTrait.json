@@ -13,14 +13,18 @@
                     "dates": {
                         "title": "Произвольные даты без использования диапазона\n\nНеобходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)",
                         "nullable": true,
-                        "type": "array"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
                     },
                     "type_range": {
                         "title": "Тип диапазона дат",
                         "default": 7,
                         "allOf": [
                             {
-                                "$ref": "../../../../Positions_2/Types/TypeRange.json#/components/schemas/Positions_2.Types.TypeRange"
+                                "$ref": "../../../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"
                             }
                         ]
                     },
@@ -43,7 +47,7 @@
                         ]
                     },
                     "count_dates": {
-                        "title": "Количество дат в диапазоне\n\nМаксимальное значение ограничивается константой MAX_LENGTH_PERIOD конкретного модуля",
+                        "title": "Количество дат в диапазоне\n\nМаксимальное значение ограничивается константой MAX_DATES конкретного модуля",
                         "default": 31,
                         "type": "integer"
                     },

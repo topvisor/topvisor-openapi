@@ -32,7 +32,7 @@ export interface components {
              * Тип диапазона дат
              * @default 2
              */
-            type_range?: import('../../../Positions_2/Types/TypeRange.ts').components['schemas']['Positions_2.Types.TypeRange'];
+            type_range?: import('../../../TV/API/Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
             /**
              * Количество дней в диапазоне
              * @default 31

@@ -22349,7 +22349,7 @@ components:
         @method AiTracker_2\Types\Model[] getValues()
         @method AiTracker_2\Types\Model current()
         @see \Services\AiTracker_2\Types\Model
-    Positions_2.Types.TypeRange:
+    TV.API.Types.History.TypeRange:
       type: integer
       enum:
         - 0
@@ -22420,7 +22420,7 @@ components:
           title: Тип диапазона дат
           default: 2
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+            - $ref: '#/components/schemas/TV.API.Types.History.TypeRange'
         count_dates:
           title: Количество дней в диапазоне
           default: 31
@@ -22740,18 +22740,29 @@ components:
         $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
       title: Id поисковых систем для индексации
       description: '@see SearcherKey'
+    TV.API.Types.DateArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.Date'
+      title: 'Тип массива: Date[]'
+      description: |-
+        @extends AbstractStringArray<Date>
+        @method Date[] getValues()
+        @method Date current()
+        @see \TV\API\Types\Date
     dates:
       title: |-
         Произвольные даты без использования диапазона
 
         Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
       nullable: true
-      type: array
+      allOf:
+        - $ref: '#/components/schemas/TV.API.Types.DateArray'
     type_range:
       title: Тип диапазона дат
       default: 7
       allOf:
-        - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+        - $ref: '#/components/schemas/TV.API.Types.History.TypeRange'
     date1:
       title: |-
         Дата начала диапазона
@@ -22772,7 +22783,7 @@ components:
       title: |-
         Количество дат в диапазоне
 
-        Максимальное значение ограничивается константой MAX_LENGTH_PERIOD конкретного модуля
+        Максимальное значение ограничивается константой MAX_DATES конкретного модуля
       default: 31
       type: integer
     period_days:
@@ -27517,16 +27528,6 @@ components:
         - null
         - null
       title: Источник данных магнита
-    TV.API.Types.DateArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/TV.API.Types.Date'
-      title: 'Тип массива: Date[]'
-      description: |-
-        @extends AbstractStringArray<Date>
-        @method Date[] getValues()
-        @method Date current()
-        @see \TV\API\Types\Date
     Keywords_2.Methods.Magnet.Get:
       type: object
       properties:
@@ -28141,44 +28142,6 @@ components:
           example: '[10, 11]'
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        dates:
-          title: |-
-            Произвольные даты (без диапазона)
-
-            Необходимо указать либо `date1` + `date2` + `type_range`, либо `dates` (вместе указывать нельзя).
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: |-
-            Дата начала диапазона
-
-            Используется вместе с `date2`.
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: |-
-            Дата окончания диапазона
-
-            Используется вместе с `date1`.
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          default: 2
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
-        count_dates:
-          title: Количество дат
-          description: '@see MAX_LENGTH_PERIOD Максимальное значение'
-          default: 31
-          type: integer
-        period_days:
-          title: Период, только `для type_range = 6`
-          description: '@see MAX_LENGTH_PERIOD Максимальное значение'
-          default: 7
-          type: integer
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
@@ -28233,6 +28196,18 @@ components:
           type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -39019,7 +38994,7 @@ components:
         type_range:
           default: 2
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
+            - $ref: '#/components/schemas/TV.API.Types.History.TypeRange'
         count_dates:
           title: Количество дней в диапазоне
           default: 31
@@ -44917,6 +44892,39 @@ components:
       x-enum-descriptions:
         - Google диск
       title: Репозиторий для экспорта данных
+    Positions_2.Types.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 100
+      x-enum-varnames:
+        - FullRange
+        - YandexUpdates
+        - Range
+        - TwoChecks
+        - OneCheck
+        - LastCheckOfMonth
+        - Accumulated
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений
+        - Период с выполненными проверками (Только апдейты Яндекс)
+        - Период с выполненными проверками
+        - Две проверки
+        - Одна проверка
+        - Последняя проверка месяца
+        - 'Даты через равные промежутки; - Средняя позиция: используется совместно с параметром длины периода `period_days`; - Возвращает не более 7 дат'
+        - Две последние даты проверок
+        - Произвольный список дат
+      title: Тип диапазона дат
     Positions_2.Methods.History.Export.ToRepository.Get:
       type: object
       properties:

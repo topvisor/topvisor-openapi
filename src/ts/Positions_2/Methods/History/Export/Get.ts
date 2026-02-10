@@ -21,7 +21,7 @@ export interface components {
             /** До какого числа брать данные для отчета */
             date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** @default 2 */
-            type_range?: import('../../../Types/TypeRange.ts').components['schemas']['Positions_2.Types.TypeRange'];
+            type_range?: import('../../../../TV/API/Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
             /**
              * Количество дней в диапазоне
              * @default 31

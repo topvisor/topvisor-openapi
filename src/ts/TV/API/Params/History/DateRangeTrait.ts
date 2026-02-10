@@ -20,12 +20,12 @@ export interface components {
              *
              *     Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
              */
-            dates?: unknown[] | null;
+            dates?: import('../../Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /**
              * Тип диапазона дат
              * @default 7
              */
-            type_range: import('../../../../Positions_2/Types/TypeRange.ts').components['schemas']['Positions_2.Types.TypeRange'];
+            type_range: import('../../Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
             /**
              * Дата начала диапазона
              *
@@ -41,7 +41,7 @@ export interface components {
             /**
              * Количество дат в диапазоне
              *
-             *     Максимальное значение ограничивается константой MAX_LENGTH_PERIOD конкретного модуля
+             *     Максимальное значение ограничивается константой MAX_DATES конкретного модуля
              * @default 31
              */
             count_dates: number;
