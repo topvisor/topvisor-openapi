@@ -90,6 +90,10 @@
                         "const": "Add prompts",
                         "readOnly": true
                     },
+                    "Add_prompts_2": {
+                        "const": "Add prompts",
+                        "readOnly": true
+                    },
                     "Select_neural_networks": {
                         "const": "Select neural networks",
                         "readOnly": true
@@ -141,6 +145,54 @@
                     "Sort_tone": {
                         "const": "Сортировка по тональности",
                         "readOnly": true
+                    },
+                    "Prompts_can_be_deleted_and_restored_within_the_same_group": {
+                        "const": "Prompts can be deleted/restored within the same group",
+                        "readOnly": true
+                    },
+                    "Autogeneration_of_prompts": {
+                        "const": "Autogeneration of prompts",
+                        "readOnly": true
+                    },
+                    "Type_of_activity": {
+                        "const": "Type of activity",
+                        "readOnly": true
+                    },
+                    "Enter_the_activities": {
+                        "const": "Enter the activities of the brand or website. This will help fine-tune the context and select prompts.",
+                        "readOnly": true
+                    },
+                    "Prompt_length": {
+                        "const": "Prompt length",
+                        "readOnly": true
+                    },
+                    "Number_of_prompts": {
+                        "const": "Number of prompts",
+                        "readOnly": true
+                    },
+                    "Short": {
+                        "const": "Short",
+                        "readOnly": true
+                    },
+                    "Medium": {
+                        "const": "Medium",
+                        "readOnly": true
+                    },
+                    "Long": {
+                        "const": "Long",
+                        "readOnly": true
+                    },
+                    "Add_prompts_for_checking": {
+                        "const": "Please add prompts for checking",
+                        "readOnly": true
+                    },
+                    "Added": {
+                        "const": "Added prompts",
+                        "readOnly": true
+                    },
+                    "Missed": {
+                        "const": "Skipped duplicate prompts",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -164,6 +216,7 @@
                     "Make_prompts",
                     "Selecting_neural_networks",
                     "Add_prompts",
+                    "Add_prompts_2",
                     "Select_neural_networks",
                     "No_data_in_day",
                     "Add_neural_networks",
@@ -176,7 +229,19 @@
                     "Neural_network",
                     "Remove_prompt",
                     "Sort_mentioned",
-                    "Sort_tone"
+                    "Sort_tone",
+                    "Prompts_can_be_deleted_and_restored_within_the_same_group",
+                    "Autogeneration_of_prompts",
+                    "Type_of_activity",
+                    "Enter_the_activities",
+                    "Prompt_length",
+                    "Number_of_prompts",
+                    "Short",
+                    "Medium",
+                    "Long",
+                    "Add_prompts_for_checking",
+                    "Added",
+                    "Missed"
                 ]
             }
         }

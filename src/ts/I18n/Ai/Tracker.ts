@@ -49,6 +49,8 @@ export interface components {
             /** @constant */
             readonly Add_prompts: "Add prompts";
             /** @constant */
+            readonly Add_prompts_2: "Add prompts";
+            /** @constant */
             readonly Select_neural_networks: "Select neural networks";
             /** @constant */
             readonly No_data_in_day: "В выбранный день данные не анализировались.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как работает AI-трекер →</a>";
@@ -74,6 +76,30 @@ export interface components {
             readonly Sort_mentioned: "Сортировка по упоминанию";
             /** @constant */
             readonly Sort_tone: "Сортировка по тональности";
+            /** @constant */
+            readonly Prompts_can_be_deleted_and_restored_within_the_same_group: "Prompts can be deleted/restored within the same group";
+            /** @constant */
+            readonly Autogeneration_of_prompts: "Autogeneration of prompts";
+            /** @constant */
+            readonly Type_of_activity: "Type of activity";
+            /** @constant */
+            readonly Enter_the_activities: "Enter the activities of the brand or website. This will help fine-tune the context and select prompts.";
+            /** @constant */
+            readonly Prompt_length: "Prompt length";
+            /** @constant */
+            readonly Number_of_prompts: "Number of prompts";
+            /** @constant */
+            readonly Short: "Short";
+            /** @constant */
+            readonly Medium: "Medium";
+            /** @constant */
+            readonly Long: "Long";
+            /** @constant */
+            readonly Add_prompts_for_checking: "Please add prompts for checking";
+            /** @constant */
+            readonly Added: "Added prompts";
+            /** @constant */
+            readonly Missed: "Skipped duplicate prompts";
         };
     };
     responses: never;
