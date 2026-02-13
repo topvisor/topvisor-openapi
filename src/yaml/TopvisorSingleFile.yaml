@@ -28103,6 +28103,52 @@ components:
         - Только запросы в первой проверке указанного периода
         - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
       title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
+    Positions_2.Types.History.HistoryField:
+      type: string
+      enum:
+        - position
+        - snippet
+        - snippet_hash()
+        - snippet_title
+        - snippet_body
+        - snippet_ext
+        - serp_features
+        - relevant_url
+        - relevant_url_significant
+        - visitors
+      x-enum-varnames:
+        - Position
+        - Snippet
+        - SnippetHash
+        - SnippetTitle
+        - SnippetBody
+        - SnippetExt
+        - SerpFeatures
+        - RelevantUrl
+        - RelevantUrlSignificant
+        - Visitors
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Поле с результатом проверки для отчета истории проверок
+    Positions_2.Types.History.HistoryFields:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.History.HistoryField'
+      title: Поля с результатами проверки для отчета истории проверок
+      description: |-
+        @extends API\Types\AbstractTypedArray<HistoryField>
+        @method HistoryField[] getValues()
+        @method HistoryField current()
+        @see HistoryField
     Positions_2.Types.History.FilterByDynamic:
       type: string
       enum:
@@ -28159,10 +28205,9 @@ components:
           type: integer
         positions_fields:
           title: Выбор столбцов данных с результатами проверки
-          description: '@see POSITIONS_FIELDS_ALLOWED Возможные значения'
-          default:
-            - position
-          type: array
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         filter_by_dynamic:
           title: |-
             Фильтрация по динамике позиций

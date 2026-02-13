@@ -28,14 +28,8 @@ export interface components {
             show_visitors?: boolean;
             /** Добавить в результат данные по топу указанной глубины `tops` */
             show_top_by_depth?: number;
-            /**
-             * Выбор столбцов данных с результатами проверки
-             * @description @see POSITIONS_FIELDS_ALLOWED Возможные значения
-             * @default [
-             *       "position"
-             *     ]
-             */
-            positions_fields?: unknown[];
+            /** Выбор столбцов данных с результатами проверки */
+            positions_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
             /**
              * Фильтрация по динамике позиций
              *

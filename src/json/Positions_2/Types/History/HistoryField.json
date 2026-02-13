@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.History.HistoryField",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.History.HistoryField": {
+                "type": "string",
+                "enum": [
+                    "position",
+                    "snippet",
+                    "snippet_hash()",
+                    "snippet_title",
+                    "snippet_body",
+                    "snippet_ext",
+                    "serp_features",
+                    "relevant_url",
+                    "relevant_url_significant",
+                    "visitors"
+                ],
+                "x-enum-varnames": [
+                    "Position",
+                    "Snippet",
+                    "SnippetHash",
+                    "SnippetTitle",
+                    "SnippetBody",
+                    "SnippetExt",
+                    "SerpFeatures",
+                    "RelevantUrl",
+                    "RelevantUrlSignificant",
+                    "Visitors"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Поле с результатом проверки для отчета истории проверок"
+            }
+        }
+    }
+}

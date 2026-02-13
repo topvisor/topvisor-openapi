@@ -54,11 +54,12 @@
                     },
                     "positions_fields": {
                         "title": "Выбор столбцов данных с результатами проверки",
-                        "description": "@see POSITIONS_FIELDS_ALLOWED Возможные значения",
-                        "default": [
-                            "position"
-                        ],
-                        "type": "array"
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
+                            }
+                        ]
                     },
                     "filter_by_dynamic": {
                         "title": "Фильтрация по динамике позиций\n\nБазируется на крайних датах периода.\n\nИгнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.",
