@@ -28179,13 +28179,11 @@ components:
       properties:
         regions_indexes:
           title: Индексы регионов
-          example: '[1, 2, 3]'
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         competitors_ids:
           title: ID конкурентов
           nullable: true
-          example: '[10, 11]'
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         only_exists_first_date:

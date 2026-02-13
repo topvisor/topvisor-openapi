@@ -9,15 +9,9 @@ export interface components {
     schemas: {
         /** Получение истории позиций по запросам. */
         "Positions_2.Methods.History.Get": {
-            /**
-             * Индексы регионов
-             * @example [1, 2, 3]
-             */
+            /** Индексы регионов */
             regions_indexes: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /**
-             * ID конкурентов
-             * @example [10, 11]
-             */
+            /** ID конкурентов */
             competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             only_exists_first_date?: import('../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
             /** Добавить в результат заголовки отчета `headers` */
