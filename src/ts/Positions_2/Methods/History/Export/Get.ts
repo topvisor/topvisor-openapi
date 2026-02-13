@@ -72,7 +72,7 @@ export interface components {
             /** Искать ли запрос в подпапке */
             group_folder_id_depth?: boolean;
             /** Выбор столбцов данных с результатами проверки */
-            positions_fields?: unknown[] | null;
+            positions_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
             filter_by_dynamic?: import('../../../Types/History/FilterByDynamics.ts').components['schemas']['Positions_2.Types.History.FilterByDynamics'] | null;
             /**
              * Фильтр по позициям

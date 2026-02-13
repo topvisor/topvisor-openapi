@@ -122,7 +122,11 @@
                     "positions_fields": {
                         "title": "Выбор столбцов данных с результатами проверки",
                         "nullable": true,
-                        "type": "array"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
+                            }
+                        ]
                     },
                     "filter_by_dynamic": {
                         "nullable": true,
