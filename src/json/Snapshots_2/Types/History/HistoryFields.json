@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Types.History.HistoryFields",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Types.History.HistoryFields": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Snapshots_2/Types/History/HistoryField.json#/components/schemas/Snapshots_2.Types.History.HistoryField"
+                },
+                "title": "Поля с результатами проверки для отчета истории проверок в снимках",
+                "description": "@extends API\\Types\\AbstractTypedArray<HistoryField>\n@method HistoryField[] getValues()\n@method HistoryField current()\n@see HistoryField"
+            }
+        }
+    }
+}

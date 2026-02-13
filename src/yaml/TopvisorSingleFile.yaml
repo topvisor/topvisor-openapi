@@ -28140,12 +28140,12 @@ components:
         - null
         - null
         - null
-      title: Поле с результатом проверки для отчета истории проверок
+      title: Поле с результатом проверки для отчета истории проверок позиций
     Positions_2.Types.History.HistoryFields:
       type: array
       items:
         $ref: '#/components/schemas/Positions_2.Types.History.HistoryField'
-      title: Поля с результатами проверки для отчета истории проверок
+      title: Поля с результатами проверки для отчета истории проверок позиций
       description: |-
         @extends API\Types\AbstractTypedArray<HistoryField>
         @method HistoryField[] getValues()
@@ -29919,7 +29919,7 @@ components:
       title: Получение списка сайтов (доменов), которые выделены как неважные
     Snapshots_2.Methods.HiddenDomains.Get.Exec:
       type: array
-    Snapshots_2.Types.History.PositionsField:
+    Snapshots_2.Types.History.HistoryField:
       type: string
       enum:
         - url
@@ -29939,12 +29939,17 @@ components:
         - null
         - null
         - null
-      title: Поле, возвращаемое в snapshotsData
-    Snapshots_2.Types.History.PositionsFields:
+      title: Поле с результатом проверки для отчета истории проверок в снимках
+    Snapshots_2.Types.History.HistoryFields:
       type: array
       items:
-        $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsField'
-      title: Поля, возвращаемые в snapshotsData
+        $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryField'
+      title: Поля с результатами проверки для отчета истории проверок в снимках
+      description: |-
+        @extends API\Types\AbstractTypedArray<HistoryField>
+        @method HistoryField[] getValues()
+        @method HistoryField current()
+        @see HistoryField
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
@@ -29985,7 +29990,7 @@ components:
         positions_fields:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         searcher_key:
           nullable: true
           allOf:
@@ -40990,6 +40995,32 @@ components:
         - null
         - null
       title: Тип экспортируемого файла
+    Snapshots_2.Types.History.PositionsField:
+      type: string
+      enum:
+        - url
+        - domain
+        - snippet_title
+        - snippet_body
+        - snippet_ext
+      x-enum-varnames:
+        - Url
+        - Domain
+        - SnippetTitle
+        - SnippetBody
+        - SnippetExt
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Поле, возвращаемое в snapshotsData
+    Snapshots_2.Types.History.PositionsFields:
+      type: array
+      items:
+        $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsField'
+      title: Поля, возвращаемые в snapshotsData
     Snapshots_2.Methods.History.Export.Get:
       type: object
       properties:

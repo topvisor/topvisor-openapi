@@ -36,7 +36,7 @@ export interface components {
             show_exists_dates?: boolean;
             /** Добавить ли в результат показатель шторма между выбранными проверками */
             show_ams?: boolean;
-            positions_fields?: import('../../Types/History/PositionsFields.ts').components['schemas']['Snapshots_2.Types.History.PositionsFields'] | null;
+            positions_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
             searcher_key?: import('../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
             /**
              * Только запросы, присутствующие в первой проверке указанного периода

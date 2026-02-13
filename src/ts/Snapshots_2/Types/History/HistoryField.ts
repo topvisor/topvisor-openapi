@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Поле с результатом проверки для отчета истории проверок позиций
+         * Поле с результатом проверки для отчета истории проверок в снимках
          * @enum {string}
          */
-        "Positions_2.Types.History.HistoryField": "position" | "snippet" | "snippet_hash()" | "snippet_title" | "snippet_body" | "snippet_ext" | "serp_features" | "relevant_url" | "relevant_url_significant" | "visitors";
+        "Snapshots_2.Types.History.HistoryField": "url" | "domain" | "snippet_title" | "snippet_body" | "snippet_ext";
     };
     responses: never;
     parameters: never;

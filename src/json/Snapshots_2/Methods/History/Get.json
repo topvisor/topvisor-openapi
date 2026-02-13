@@ -53,7 +53,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../Snapshots_2/Types/History/PositionsFields.json#/components/schemas/Snapshots_2.Types.History.PositionsFields"
+                                "$ref": "../../../Snapshots_2/Types/History/HistoryFields.json#/components/schemas/Snapshots_2.Types.History.HistoryFields"
                             }
                         ]
                     },
