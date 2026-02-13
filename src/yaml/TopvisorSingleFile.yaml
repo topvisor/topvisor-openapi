@@ -29990,32 +29990,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 3
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -30043,6 +30017,18 @@ components:
           $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
       required:
         - project_id
       title: |-

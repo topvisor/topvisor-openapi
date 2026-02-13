@@ -39,26 +39,6 @@ export interface components {
             positions_fields?: import('../../Types/History/PositionsFields.ts').components['schemas']['Snapshots_2.Types.History.PositionsFields'] | null;
             searcher_key?: import('../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
             /**
-             * Произвольные даты без использования диапазона
-             *
-             *     Если не задан нужно задать параметры date1, date2, type_range, count_dates
-             */
-            dates?: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
-            /** Дата начала диапазона */
-            date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Дата окончания диапазона */
-            date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Тип диапазона дат
-             * @default 3
-             */
-            type_range?: number;
-            /**
-             * Количество дней в диапазоне
-             * @default 31
-             */
-            count_dates?: number;
-            /**
              * Только запросы, присутствующие в первой проверке указанного периода
              *
              *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
@@ -75,6 +55,12 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
+            date2?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
         };
         "Snapshots_2.Methods.History.Get.Exec": (null | {
             competitors: {
