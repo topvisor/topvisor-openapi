@@ -42,6 +42,8 @@ export interface components {
              * Количество дат в диапазоне
              *
              *     Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             *
+             *     Работает совместно с `type_range`
              * @default 31
              */
             count_dates: number;

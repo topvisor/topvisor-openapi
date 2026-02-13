@@ -34,46 +34,6 @@
                             }
                         ]
                     },
-                    "dates": {
-                        "title": "Какие даты должны быть в отчете",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
-                            }
-                        ]
-                    },
-                    "date1": {
-                        "title": "От какой даты брать данные для отчета",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "date2": {
-                        "title": "До какого числа брать данные для отчета",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "type_range": {
-                        "default": 2,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"
-                            }
-                        ]
-                    },
-                    "count_dates": {
-                        "title": "Количество дней в диапазоне",
-                        "default": 31,
-                        "type": "integer"
-                    },
                     "properties": {
                         "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitGroups",
                         "type": "array"
@@ -147,6 +107,24 @@
                     },
                     "project_id": {
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "dates": {
+                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
