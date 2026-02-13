@@ -23,7 +23,7 @@ export interface components {
             dates?: import('../../Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /**
              * Тип диапазона дат
-             * @default 7
+             * @default 2
              */
             type_range: import('../../Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
             /**

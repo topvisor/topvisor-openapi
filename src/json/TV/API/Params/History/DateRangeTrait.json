@@ -21,7 +21,7 @@
                     },
                     "type_range": {
                         "title": "Тип диапазона дат",
-                        "default": 7,
+                        "default": 2,
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"

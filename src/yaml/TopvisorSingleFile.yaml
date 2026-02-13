@@ -22760,7 +22760,7 @@ components:
         - $ref: '#/components/schemas/TV.API.Types.DateArray'
     type_range:
       title: Тип диапазона дат
-      default: 7
+      default: 2
       allOf:
         - $ref: '#/components/schemas/TV.API.Types.History.TypeRange'
     date1:
