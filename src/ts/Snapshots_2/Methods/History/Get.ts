@@ -19,25 +19,11 @@ export interface components {
              *     Может быть 1 или Snapshots_2\Types\History\Export\Output
              */
             output?: unknown;
-            /** Id проекта */
-            project_id: number;
-            /**
-             * Индекс региона
-             *
-             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-             */
-            region_index?: number | null;
-            /** Ключ региона */
-            region_key?: number | null;
-            /** Язык региона */
-            region_lang?: string | null;
-            region_device?: import('../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             /** Добавить ли в результат даты, в которых были проверки (existsDates) */
             show_exists_dates?: boolean;
             /** Добавить ли в результат показатель шторма между выбранными проверками */
             show_ams?: boolean;
             positions_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
-            searcher_key?: import('../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
             /**
              * Только запросы, присутствующие в первой проверке указанного периода
              *
@@ -61,6 +47,12 @@ export interface components {
             date2?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
             count_dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
             period_days?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
+            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            region_index?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_index'];
+            searcher_key?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['searcher_key'];
+            region_key?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_key'];
+            region_lang?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_lang'];
+            region_device?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_device'];
         };
         "Snapshots_2.Methods.History.Get.Exec": (null | {
             competitors: {

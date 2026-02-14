@@ -12,10 +12,14 @@
                 "properties": {
                     "region_index": {
                         "title": "Индекс региона",
+                        "description": "@experimental Если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`",
                         "type": "integer"
                     },
                     "searcher_key": {
+                        "title": "Ключ региона",
+                        "description": "@deprecated Скрыто в API",
                         "nullable": true,
+                        "deprecated": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
@@ -24,16 +28,22 @@
                     },
                     "region_key": {
                         "title": "Ключ региона",
+                        "description": "@deprecated Скрыто в API",
                         "nullable": true,
+                        "deprecated": true,
                         "type": "integer"
                     },
                     "region_lang": {
                         "title": "Язык региона",
+                        "description": "@deprecated Скрыто в API",
                         "nullable": true,
+                        "deprecated": true,
                         "type": "string"
                     },
                     "region_device": {
+                        "title": "@deprecated Скрыто в API",
                         "nullable": true,
+                        "deprecated": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"

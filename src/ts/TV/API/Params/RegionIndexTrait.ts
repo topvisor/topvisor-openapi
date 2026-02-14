@@ -13,13 +13,33 @@ export interface components {
          *     Если не передан индекс региона, то получит его исходя из других параметров trait
          */
         "TV.API.Params.RegionIndexTrait": {
-            /** Индекс региона */
+            /**
+             * Индекс региона
+             * @description @experimental Если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
+             */
             region_index: number;
+            /**
+             * Ключ региона
+             * @deprecated
+             * @description @deprecated Скрыто в API
+             */
             searcher_key?: import('../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
-            /** Ключ региона */
+            /**
+             * Ключ региона
+             * @deprecated
+             * @description @deprecated Скрыто в API
+             */
             region_key?: number | null;
-            /** Язык региона */
+            /**
+             * Язык региона
+             * @deprecated
+             * @description @deprecated Скрыто в API
+             */
             region_lang?: string | null;
+            /**
+             * @deprecated Скрыто в API
+             * @deprecated
+             */
             region_device?: import('../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
         };
     };
