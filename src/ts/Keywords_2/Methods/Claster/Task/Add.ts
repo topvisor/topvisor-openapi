@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Запуск кластеризации
-         * @description @note Проверка на права в api_get_priceClaster()
-         */
+        /** Запуск кластеризации */
         "Keywords_2.Methods.Claster.Task.Add": {
             searcher_key: import('../../../Types/Claster/Task/SearcherKey.ts').components['schemas']['Keywords_2.Types.Claster.Task.SearcherKey'];
             /** Ключ региона */
