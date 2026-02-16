@@ -6433,6 +6433,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/system_2/calls/:
     post:
       operationId: GetSystem2Calls
@@ -11247,7 +11250,6 @@ paths:
       tags:
         - Keywords_2
       summary: Запуск кластеризации
-      description: '@note Проверка на права в api_get_priceClaster()'
       requestBody:
         content:
           application/json:
@@ -14101,6 +14103,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/snapshots_2/history/links/:
     post:
       operationId: GetSnapshots2HistoryLinks
@@ -18179,6 +18184,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/snapshots_2/competitors/chart/export/:
     post:
       operationId: GetSnapshots2CompetitorsChartExport
@@ -18225,6 +18233,9 @@ paths:
               schema:
                 type: string
                 format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/snapshots_2/history/export/toRepository/:
     post:
       operationId: GetSnapshots2HistoryExportToRepository
@@ -18248,6 +18259,9 @@ paths:
               schema:
                 type: string
                 format: binary
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /edit/tickets_2/admin/templates/sort/:
     post:
       operationId: EditTickets2AdminTemplatesSort
@@ -29988,17 +30002,18 @@ components:
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
-        output:
-          title: |-
-            Получение данных по всем запросам
-
-            Может быть 1 или Snapshots_2\Types\History\Export\Output
-          nullable: true
         show_exists_dates:
           title: Добавить ли в результат даты, в которых были проверки (existsDates)
           type: boolean
         show_ams:
           title: Добавить ли в результат показатель шторма между выбранными проверками
+          type: boolean
+        ui_save_selected_keywords:
+          title: |-
+            Сохранять ли выбранные запросы
+
+            Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
+          default: true
           type: boolean
         positions_fields:
           nullable: true
@@ -30017,20 +30032,6 @@ components:
         show_trash:
           title: Искать в корзине
           type: boolean
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
         dates:
           $ref: '#/components/schemas/dates'
         type_range:
@@ -30055,6 +30056,18 @@ components:
           $ref: '#/components/schemas/region_lang'
         region_device:
           $ref: '#/components/schemas/region_device'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
       required:
         - project_id
       title: |-
@@ -40996,32 +41009,6 @@ components:
         - null
         - null
       title: Тип экспортируемого файла
-    Snapshots_2.Types.History.PositionsField:
-      type: string
-      enum:
-        - url
-        - domain
-        - snippet_title
-        - snippet_body
-        - snippet_ext
-      x-enum-varnames:
-        - Url
-        - Domain
-        - SnippetTitle
-        - SnippetBody
-        - SnippetExt
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-        - null
-        - null
-      title: Поле, возвращаемое в snapshotsData
-    Snapshots_2.Types.History.PositionsFields:
-      type: array
-      items:
-        $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsField'
-      title: Поля, возвращаемые в snapshotsData
     Snapshots_2.Methods.History.Export.Get:
       type: object
       properties:
@@ -41047,68 +41034,10 @@ components:
         output:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
-        project_id:
-          title: Id проекта
-          type: integer
-        region_index:
-          title: |-
-            Индекс региона
-
-            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-          nullable: true
-          type: integer
-        region_key:
-          title: Ключ региона
-          nullable: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          nullable: true
-          type: string
-        region_device:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        show_exists_dates:
-          title: Добавить ли в результат даты, в которых были проверки (existsDates)
-          type: boolean
-        show_ams:
-          title: Добавить ли в результат показатель шторма между выбранными проверками
-          type: boolean
         positions_fields:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
-        searcher_key:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 3
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -41122,6 +41051,30 @@ components:
         show_trash:
           title: Искать в корзине
           type: boolean
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -41134,8 +41087,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - output
         - project_id
@@ -44922,39 +44873,6 @@ components:
       x-enum-descriptions:
         - Google диск
       title: Репозиторий для экспорта данных
-    Positions_2.Types.TypeRange:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-        - 100
-      x-enum-varnames:
-        - FullRange
-        - YandexUpdates
-        - Range
-        - TwoChecks
-        - OneCheck
-        - LastCheckOfMonth
-        - Accumulated
-        - TwoLastChecks
-        - ListDates
-      x-enum-descriptions:
-        - Весь период без ограничений
-        - Период с выполненными проверками (Только апдейты Яндекс)
-        - Период с выполненными проверками
-        - Две проверки
-        - Одна проверка
-        - Последняя проверка месяца
-        - 'Даты через равные промежутки; - Средняя позиция: используется совместно с параметром длины периода `period_days`; - Возвращает не более 7 дат'
-        - Две последние даты проверок
-        - Произвольный список дат
-      title: Тип диапазона дат
     Positions_2.Methods.History.Export.ToRepository.Get:
       type: object
       properties:
@@ -44973,29 +44891,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        dates:
-          title: Какие даты должны быть в отчете
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: От какой даты брать данные для отчета
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: До какого числа брать данные для отчета
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          default: 2
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.TypeRange'
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
         properties:
           title: |-
             Дополнительные параметры экспорта
@@ -45051,7 +44946,8 @@ components:
         positions_fields:
           title: Выбор столбцов данных с результатами проверки
           nullable: true
-          type: array
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         filter_by_dynamic:
           nullable: true
           allOf:
@@ -45068,6 +44964,18 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         project_id:
           $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -45322,41 +45230,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        dates:
-          title: Даты для получения сводки
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: |-
-            С какого числа получить данные
-
-            Необязательно, если указано dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: |-
-            По какое число получить данные
-
-            Необязательно, если указано dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: |-
-            Период дат
-
-            Не работает при указании dates
-          default: 2
-          type: integer
-        count_dates:
-          title: |-
-            Количество дат
-
-            Не работает при указании dates
-          default: 31
-          type: integer
         show_tops:
           title: Отобразить данные по топам
           type: boolean
@@ -45379,6 +45252,18 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
       required:
         - project_id
         - region_index
@@ -45590,74 +45475,23 @@ components:
           title: ID регионов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        output:
-          title: |-
-            Получение данных по всем запросам
-
-            Может быть 1 или Snapshots_2\Types\History\Export\Output
-          nullable: true
-        project_id:
-          title: Id проекта
-          type: integer
-        region_index:
-          title: |-
-            Индекс региона
-
-            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-          nullable: true
-          type: integer
-        region_key:
-          title: Ключ региона
-          nullable: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          nullable: true
-          type: string
-        region_device:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         show_exists_dates:
           title: Добавить ли в результат даты, в которых были проверки (existsDates)
           type: boolean
         show_ams:
           title: Добавить ли в результат показатель шторма между выбранными проверками
           type: boolean
+        ui_save_selected_keywords:
+          title: |-
+            Сохранять ли выбранные запросы
+
+            Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
+          default: true
+          type: boolean
         positions_fields:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
-        searcher_key:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 3
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -45671,6 +45505,30 @@ components:
         show_trash:
           title: Искать в корзине
           type: boolean
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -45683,8 +45541,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - keywords_ids
         - regions_indexes
@@ -45693,6 +45549,8 @@ components:
     Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
       nullable: true
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
     Snapshots_2.Methods.Competitors.Chart.Export.Get:
       type: object
       properties:
@@ -45825,65 +45683,10 @@ components:
         repository:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Repository'
-        region_index:
-          title: |-
-            Индекс региона
-
-            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-          nullable: true
-          type: integer
-        region_key:
-          title: Ключ региона
-          nullable: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          nullable: true
-          type: string
-        region_device:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        show_exists_dates:
-          title: Добавить ли в результат даты, в которых были проверки (existsDates)
-          type: boolean
-        show_ams:
-          title: Добавить ли в результат показатель шторма между выбранными проверками
-          type: boolean
         positions_fields:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
-        searcher_key:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 3
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -45897,6 +45700,28 @@ components:
         show_trash:
           title: Искать в корзине
           type: boolean
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -45909,8 +45734,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
         - repository
@@ -45921,74 +45744,16 @@ components:
     Snapshots_2.Methods.History.Export.ToRepository.Get:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         repository:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Repository'
         output:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
-        region_index:
-          title: |-
-            Индекс региона
-
-            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-          nullable: true
-          type: integer
-        region_key:
-          title: Ключ региона
-          nullable: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          nullable: true
-          type: string
-        region_device:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        show_exists_dates:
-          title: Добавить ли в результат даты, в которых были проверки (existsDates)
-          type: boolean
-        show_ams:
-          title: Добавить ли в результат показатель шторма между выбранными проверками
-          type: boolean
         positions_fields:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsFields'
-        searcher_key:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        dates:
-          title: |-
-            Произвольные даты без использования диапазона
-
-            Если не задан нужно задать параметры date1, date2, type_range, count_dates
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          default: 3
-          type: integer
-        count_dates:
-          title: Количество дней в диапазоне
-          default: 31
-          type: integer
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -46002,6 +45767,30 @@ components:
         show_trash:
           title: Искать в корзине
           type: boolean
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -46014,12 +45803,10 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
-        - project_id
         - repository
         - output
+        - project_id
       title: |-
         Экспорт в хранилище
 

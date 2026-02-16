@@ -10,16 +10,17 @@
             "Snapshots_2.Methods.History.Get": {
                 "type": "object",
                 "properties": {
-                    "output": {
-                        "title": "Получение данных по всем запросам\n\nМожет быть 1 или Snapshots_2\\Types\\History\\Export\\Output",
-                        "nullable": true
-                    },
                     "show_exists_dates": {
                         "title": "Добавить ли в результат даты, в которых были проверки (existsDates)",
                         "type": "boolean"
                     },
                     "show_ams": {
                         "title": "Добавить ли в результат показатель шторма между выбранными проверками",
+                        "type": "boolean"
+                    },
+                    "ui_save_selected_keywords": {
+                        "title": "Сохранять ли выбранные запросы\n\nСохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`",
+                        "default": true,
                         "type": "boolean"
                     },
                     "positions_fields": {
@@ -42,27 +43,6 @@
                     "show_trash": {
                         "title": "Искать в корзине",
                         "type": "boolean"
-                    },
-                    "fields": {
-                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
-                    },
-                    "orders": {
-                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
-                    },
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
-                    },
-                    "limit": {
-                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
-                    },
-                    "offset": {
-                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     },
                     "dates": {
                         "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
@@ -99,6 +79,24 @@
                     },
                     "region_device": {
                         "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
                     }
                 },
                 "required": [

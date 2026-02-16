@@ -16,34 +16,6 @@ export interface components {
             region_index: number;
             /** ID конкурентов */
             competitors_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Даты для получения сводки */
-            dates?: import('../../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
-            /**
-             * С какого числа получить данные
-             *
-             *     Необязательно, если указано dates
-             */
-            date1?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * По какое число получить данные
-             *
-             *     Необязательно, если указано dates
-             */
-            date2?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Период дат
-             *
-             *     Не работает при указании dates
-             * @default 2
-             */
-            type_range?: number;
-            /**
-             * Количество дат
-             *
-             *     Не работает при указании dates
-             * @default 31
-             */
-            count_dates?: number;
             /** Отобразить данные по топам */
             show_tops?: boolean;
             /** Отобразить среднюю позицию */
@@ -57,6 +29,12 @@ export interface components {
             group_folder_id_depth?: boolean;
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            dates?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
+            date2?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
         };
         "Positions_2.Methods.Summary.Chart.Export.Get.Exec": Record<string, never>;
     };

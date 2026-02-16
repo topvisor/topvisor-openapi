@@ -6610,10 +6610,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Запуск кластеризации
-     * @description @note Проверка на права в api_get_priceClaster()
-     */
+    /** Запуск кластеризации */
     "/add/keywords_2/claster/task/": {
         parameters: {
             query?: never;
@@ -15724,7 +15721,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Positions_2/Methods/History/Get.ts').components['schemas']['Positions_2.Methods.History.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -16807,6 +16805,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/History/Get.ts').components['schemas']['Snapshots_2.Methods.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -23405,6 +23404,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/History/Export/Get.ts').components['schemas']['Snapshots_2.Methods.History.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -26997,6 +26997,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Checker/Status/RecheckKeywords/Get.ts').components['schemas']['Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -27043,6 +27044,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -27066,6 +27068,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };

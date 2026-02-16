@@ -11784,6 +11784,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -20701,7 +20706,6 @@
                     "Keywords_2"
                 ],
                 "summary": "Запуск кластеризации",
-                "description": "@note Проверка на права в api_get_priceClaster()",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -25989,6 +25993,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -33520,6 +33529,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -33584,6 +33598,11 @@
                                     "type": "string",
                                     "format": "binary"
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -33615,6 +33634,11 @@
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }

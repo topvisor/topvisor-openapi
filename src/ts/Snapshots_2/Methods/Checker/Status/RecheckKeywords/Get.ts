@@ -13,51 +13,18 @@ export interface components {
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /** ID регионов */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /**
-             * Получение данных по всем запросам
-             *
-             *     Может быть 1 или Snapshots_2\Types\History\Export\Output
-             */
-            output?: unknown;
-            /** Id проекта */
-            project_id: number;
-            /**
-             * Индекс региона
-             *
-             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
-             */
-            region_index?: number | null;
-            /** Ключ региона */
-            region_key?: number | null;
-            /** Язык региона */
-            region_lang?: string | null;
-            region_device?: import('../../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             /** Добавить ли в результат даты, в которых были проверки (existsDates) */
             show_exists_dates?: boolean;
             /** Добавить ли в результат показатель шторма между выбранными проверками */
             show_ams?: boolean;
-            positions_fields?: import('../../../../Types/History/PositionsFields.ts').components['schemas']['Snapshots_2.Types.History.PositionsFields'] | null;
-            searcher_key?: import('../../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
             /**
-             * Произвольные даты без использования диапазона
+             * Сохранять ли выбранные запросы
              *
-             *     Если не задан нужно задать параметры date1, date2, type_range, count_dates
+             *     Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
+             * @default true
              */
-            dates?: import('../../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
-            /** Дата начала диапазона */
-            date1?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Дата окончания диапазона */
-            date2?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Тип диапазона дат
-             * @default 3
-             */
-            type_range?: number;
-            /**
-             * Количество дней в диапазоне
-             * @default 31
-             */
-            count_dates?: number;
+            ui_save_selected_keywords?: boolean;
+            positions_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
             /**
              * Только запросы, присутствующие в первой проверке указанного периода
              *
@@ -68,15 +35,26 @@ export interface components {
             group_folder_id_depth?: boolean;
             /** Искать в корзине */
             show_trash?: boolean;
+            dates?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
+            date2?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            region_index?: import('../../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_index'];
+            searcher_key?: import('../../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['searcher_key'];
+            region_key?: import('../../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_key'];
+            region_lang?: import('../../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_lang'];
+            region_device?: import('../../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_device'];
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": unknown[] | null;
+        "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][] | null;
     };
     responses: never;
     parameters: never;

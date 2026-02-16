@@ -30,43 +30,6 @@
                             }
                         ]
                     },
-                    "dates": {
-                        "title": "Даты для получения сводки",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
-                            }
-                        ]
-                    },
-                    "date1": {
-                        "title": "С какого числа получить данные\n\nНеобязательно, если указано dates",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "date2": {
-                        "title": "По какое число получить данные\n\nНеобязательно, если указано dates",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "type_range": {
-                        "title": "Период дат\n\nНе работает при указании dates",
-                        "default": 2,
-                        "type": "integer"
-                    },
-                    "count_dates": {
-                        "title": "Количество дат\n\nНе работает при указании dates",
-                        "default": 31,
-                        "type": "integer"
-                    },
                     "show_tops": {
                         "title": "Отобразить данные по топам",
                         "type": "boolean"
@@ -99,6 +62,24 @@
                     },
                     "id": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "dates": {
+                        "$ref": "../../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/period_days"
                     }
                 },
                 "required": [
