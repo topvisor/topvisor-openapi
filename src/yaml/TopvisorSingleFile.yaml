@@ -6409,7 +6409,7 @@ paths:
       summary: |-
         Получение истории снимков выдачи
 
-        Метод базируется на объекте keywords (доступны только фильтры)
+        Метод базируется на объекте keywords
       requestBody:
         content:
           application/json:
@@ -30073,7 +30073,7 @@ components:
       title: |-
         Получение истории снимков выдачи
 
-        Метод базируется на объекте keywords (доступны только фильтры)
+        Метод базируется на объекте keywords
     Snapshots_2.Methods.History.Get.Exec:
       nullable: true
       anyOf:

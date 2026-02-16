@@ -102,7 +102,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение истории снимков выдачи\n\nМетод базируется на объекте keywords (доступны только фильтры)"
+                "title": "Получение истории снимков выдачи\n\nМетод базируется на объекте keywords"
             },
             "Snapshots_2.Methods.History.Get.Exec": {
                 "nullable": true,

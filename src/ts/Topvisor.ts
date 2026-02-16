@@ -3704,7 +3704,7 @@ export interface paths {
     /**
      * Получение истории снимков выдачи
      *
-     *     Метод базируется на объекте keywords (доступны только фильтры)
+     *     Метод базируется на объекте keywords
      */
     "/get/snapshots_2/history/": {
         parameters: {
