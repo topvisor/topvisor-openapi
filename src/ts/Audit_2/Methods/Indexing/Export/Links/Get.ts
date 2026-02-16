@@ -15,7 +15,7 @@ export interface components {
         "Audit_2.Methods.Indexing.Export.Links.Get": {
             /** Поисковые ключи */
             searchers_keys?: unknown[] | null;
-            /** Диапозон значений шаблона */
+            /** Диапазон значений шаблона */
             template_date_range?: string | null;
             /** Произвольные даты без использования диапазона */
             dates?: unknown[] | null;

@@ -16,7 +16,7 @@
                         "type": "array"
                     },
                     "template_date_range": {
-                        "title": "Диапозон значений шаблона",
+                        "title": "Диапазон значений шаблона",
                         "nullable": true,
                         "type": "string"
                     },
