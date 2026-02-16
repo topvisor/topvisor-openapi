@@ -37239,6 +37239,18 @@ components:
     Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec:
       nullable: true
       type: integer
+    Keywords_2.Types.Actions.SetTargetsFromRelevant.From:
+      type: string
+      enum:
+        - positionCheck
+        - relevanceCheck
+      x-enum-varnames:
+        - PositionCheck
+        - RelevanceCheck
+      x-enum-descriptions:
+        - Из проверки позиций
+        - Из подбора релевантных
+      title: Откуда установить целевую ссылку
     Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit:
       type: object
       properties:
@@ -37248,6 +37260,10 @@ components:
         only_empty:
           title: Устанавливать только там, где целевые не установлены
           type: boolean
+        from:
+          default: positionCheck
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Actions.SetTargetsFromRelevant.From'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:

@@ -13,6 +13,8 @@ export interface components {
             region_index: number;
             /** Устанавливать только там, где целевые не установлены */
             only_empty?: boolean;
+            /** @default positionCheck */
+            from?: import('../../../Types/Actions/SetTargetsFromRelevant/From.ts').components['schemas']['Keywords_2.Types.Actions.SetTargetsFromRelevant.From'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         "Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit.Exec": number | null;

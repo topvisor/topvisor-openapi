@@ -1245,6 +1245,14 @@
                     "Relevance_check_already_started": {
                         "const": "Relevant check already started",
                         "readOnly": true
+                    },
+                    "Set_target_equals_relevant_from_recheck": {
+                        "const": "Assign Target = Ranked URL from the relevant recheck",
+                        "readOnly": true
+                    },
+                    "Target_equals_relevant_last_relevance_check_in_location": {
+                        "const": "Target = Ranked URL from the last relevant check in the location",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1555,7 +1563,9 @@
                     "Select_source",
                     "Serp_features",
                     "No_keywords_in_project",
-                    "Relevance_check_already_started"
+                    "Relevance_check_already_started",
+                    "Set_target_equals_relevant_from_recheck",
+                    "Target_equals_relevant_last_relevance_check_in_location"
                 ]
             }
         }

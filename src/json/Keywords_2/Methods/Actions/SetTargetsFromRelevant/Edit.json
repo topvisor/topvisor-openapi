@@ -18,6 +18,14 @@
                         "title": "Устанавливать только там, где целевые не установлены",
                         "type": "boolean"
                     },
+                    "from": {
+                        "default": "positionCheck",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Actions/SetTargetsFromRelevant/From.json#/components/schemas/Keywords_2.Types.Actions.SetTargetsFromRelevant.From"
+                            }
+                        ]
+                    },
                     "project_id": {
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }

@@ -626,6 +626,10 @@ export interface components {
             readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.";
             /** @constant */
             readonly Relevance_check_already_started: "Relevant check already started";
+            /** @constant */
+            readonly Set_target_equals_relevant_from_recheck: "Assign Target = Ranked URL from the relevant recheck";
+            /** @constant */
+            readonly Target_equals_relevant_last_relevance_check_in_location: "Target = Ranked URL from the last relevant check in the location";
         };
     };
     responses: never;
