@@ -17,23 +17,6 @@
                             }
                         ]
                     },
-                    "regions_indexes": {
-                        "title": "Индексы регионов",
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
-                            }
-                        ]
-                    },
-                    "competitors_ids": {
-                        "title": "ID конкурентов",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
-                            }
-                        ]
-                    },
                     "properties": {
                         "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitGroups",
                         "type": "array"
@@ -53,10 +36,6 @@
                         "title": "Поля (fieldAlias) с привязкой к вкладкам\n\nТолько для xlsx с вкладками или pdf",
                         "type": "array"
                     },
-                    "show_top_by_depth": {
-                        "title": "Процент попадания в топ\n\nТолько для `Output`:\n - Xlsx\n - Pdf\n - Html",
-                        "type": "integer"
-                    },
                     "returnFilenameFromFolder": {
                         "title": "Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу\n\nДля внутреннего использования",
                         "description": "@internal",
@@ -75,9 +54,26 @@
                             }
                         ]
                     },
-                    "group_folder_id_depth": {
-                        "title": "Искать ли запрос в подпапке",
-                        "type": "boolean"
+                    "regions_indexes": {
+                        "title": "Индексы регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "show_top_by_depth": {
+                        "title": "Добавить в результат данные по топу указанной глубины `tops`",
+                        "type": "integer"
                     },
                     "positions_fields": {
                         "title": "Выбор столбцов данных с результатами проверки",
@@ -89,6 +85,7 @@
                         ]
                     },
                     "filter_by_dynamic": {
+                        "title": "Фильтрация по динамике позиций\n\nБазируется на крайних датах периода.\n\nИгнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -97,13 +94,18 @@
                         ]
                     },
                     "filter_by_positions": {
-                        "title": "Фильтр по позициям\n\nПринимает массив значений, пара из которых берется как промежуток\n- `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100\n- `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50",
+                        "title": "Фильтрация по запросам, позиции которых входят в указанные промежутки\n\nМассив пар значений (min, max)\n\n- Базируется на крайней дате периода отчета\n- Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион",
+                        "description": "@see \\Selector\\Types\\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`",
                         "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
                             }
                         ]
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Показывать запросы из подпапок",
+                        "type": "boolean"
                     },
                     "project_id": {
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"

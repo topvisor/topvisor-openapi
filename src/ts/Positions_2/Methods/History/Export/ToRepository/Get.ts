@@ -15,10 +15,6 @@ export interface components {
         "Positions_2.Methods.History.Export.ToRepository.Get": {
             repository: import('../../../../Types/History/Export/Repository.ts').components['schemas']['Positions_2.Types.History.Export.Repository'];
             output: import('../../../../Types/History/Export/Output.ts').components['schemas']['Positions_2.Types.History.Export.Output'];
-            /** Индексы регионов */
-            regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID конкурентов */
-            competitors_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
              * Дополнительные параметры экспорта
              *
@@ -44,15 +40,6 @@ export interface components {
              */
             tabs_fields?: unknown[];
             /**
-             * Процент попадания в топ
-             *
-             *     Только для `Output`:
-             *      - Xlsx
-             *      - Pdf
-             *      - Html
-             */
-            show_top_by_depth?: number;
-            /**
              * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
              *
              *     Для внутреннего использования
@@ -61,19 +48,34 @@ export interface components {
             returnFilenameFromFolder?: string | null;
             /** // [name => '', handle => ''] */
             addWorksheet?: (string | null) | null;
-            /** Искать ли запрос в подпапке */
-            group_folder_id_depth?: boolean;
+            /** Индексы регионов */
+            regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
+            /** ID конкурентов */
+            competitors_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /** Добавить в результат данные по топу указанной глубины `tops` */
+            show_top_by_depth?: number;
             /** Выбор столбцов данных с результатами проверки */
             positions_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
+            /**
+             * Фильтрация по динамике позиций
+             *
+             *     Базируется на крайних датах периода.
+             *
+             *     Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+             */
             filter_by_dynamic?: import('../../../../Types/History/FilterByDynamics.ts').components['schemas']['Positions_2.Types.History.FilterByDynamics'] | null;
             /**
-             * Фильтр по позициям
+             * Фильтрация по запросам, позиции которых входят в указанные промежутки
              *
-             *     Принимает массив значений, пара из которых берется как промежуток
-             *     - `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100
-             *     - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50
+             *     Массив пар значений (min, max)
+             *
+             *     - Базируется на крайней дате периода отчета
+             *     - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+             * @description @see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`
              */
             filter_by_positions?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /** Показывать запросы из подпапок */
+            group_folder_id_depth?: boolean;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
             type_range?: import('../../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];

@@ -28234,15 +28234,6 @@ components:
     Positions_2.Methods.History.Get:
       type: object
       properties:
-        regions_indexes:
-          title: Индексы регионов
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        competitors_ids:
-          title: ID конкурентов
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
@@ -28255,6 +28246,21 @@ components:
         show_visitors:
           title: Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors`
           type: boolean
+        filter_by_positions_delta:
+          title: Фильтрация по величине изменения позиции за период (>= N)
+          type: integer
+        show_trash:
+          title: Показывать удаленные запросы
+          type: boolean
+        regions_indexes:
+          title: Индексы регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         show_top_by_depth:
           title: Добавить в результат данные по топу указанной глубины `tops`
           type: integer
@@ -28281,18 +28287,12 @@ components:
 
             - Базируется на крайней дате периода отчета
             - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
-          description: '@see Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`'
+          description: '@see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`'
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        filter_by_positions_delta:
-          title: Фильтрация по величине изменения позиции за период (>= N)
-          type: integer
         group_folder_id_depth:
           title: Показывать запросы из подпапок
-          type: boolean
-        show_trash:
-          title: Показывать удаленные запросы
           type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
@@ -39084,15 +39084,6 @@ components:
         output:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.Export.Output'
-        regions_indexes:
-          title: Индексы регионов
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        competitors_ids:
-          title: ID конкурентов
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         properties:
           title: |-
             Дополнительные параметры экспорта
@@ -39119,15 +39110,6 @@ components:
 
             Только для xlsx с вкладками или pdf
           type: array
-        show_top_by_depth:
-          title: |-
-            Процент попадания в топ
-
-            Только для `Output`:
-             - Xlsx
-             - Pdf
-             - Html
-          type: integer
         returnFilenameFromFolder:
           title: |-
             Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
@@ -39142,28 +39124,48 @@ components:
           anyOf:
             - type: string
             - type: 'null'
-        group_folder_id_depth:
-          title: Искать ли запрос в подпапке
-          type: boolean
+        regions_indexes:
+          title: Индексы регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        show_top_by_depth:
+          title: Добавить в результат данные по топу указанной глубины `tops`
+          type: integer
         positions_fields:
           title: Выбор столбцов данных с результатами проверки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         filter_by_dynamic:
+          title: |-
+            Фильтрация по динамике позиций
+
+            Базируется на крайних датах периода.
+
+            Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamics'
         filter_by_positions:
           title: |-
-            Фильтр по позициям
+            Фильтрация по запросам, позиции которых входят в указанные промежутки
 
-            Принимает массив значений, пара из которых берется как промежуток
-            - `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100
-            - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50
+            Массив пар значений (min, max)
+
+            - Базируется на крайней дате периода отчета
+            - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+          description: '@see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`'
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        group_folder_id_depth:
+          title: Показывать запросы из подпапок
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -44949,15 +44951,6 @@ components:
         output:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.Export.Output'
-        regions_indexes:
-          title: Индексы регионов
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        competitors_ids:
-          title: ID конкурентов
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         properties:
           title: |-
             Дополнительные параметры экспорта
@@ -44984,15 +44977,6 @@ components:
 
             Только для xlsx с вкладками или pdf
           type: array
-        show_top_by_depth:
-          title: |-
-            Процент попадания в топ
-
-            Только для `Output`:
-             - Xlsx
-             - Pdf
-             - Html
-          type: integer
         returnFilenameFromFolder:
           title: |-
             Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
@@ -45007,28 +44991,48 @@ components:
           anyOf:
             - type: string
             - type: 'null'
-        group_folder_id_depth:
-          title: Искать ли запрос в подпапке
-          type: boolean
+        regions_indexes:
+          title: Индексы регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        show_top_by_depth:
+          title: Добавить в результат данные по топу указанной глубины `tops`
+          type: integer
         positions_fields:
           title: Выбор столбцов данных с результатами проверки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         filter_by_dynamic:
+          title: |-
+            Фильтрация по динамике позиций
+
+            Базируется на крайних датах периода.
+
+            Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamics'
         filter_by_positions:
           title: |-
-            Фильтр по позициям
+            Фильтрация по запросам, позиции которых входят в указанные промежутки
 
-            Принимает массив значений, пара из которых берется как промежуток
-            - `[1,10,50,100]`: поиск между 1 и 10, а также между 50 и 100
-            - `[1,10,50]`: будет приведено к `[1,10,50,50]`, то есть будет произведен поиск между 1 и 10, а также между 50 и 50
+            Массив пар значений (min, max)
+
+            - Базируется на крайней дате периода отчета
+            - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+          description: '@see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`'
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        group_folder_id_depth:
+          title: Показывать запросы из подпапок
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:

@@ -10,23 +10,6 @@
             "Positions_2.Methods.History.Get": {
                 "type": "object",
                 "properties": {
-                    "regions_indexes": {
-                        "title": "Индексы регионов",
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
-                            }
-                        ]
-                    },
-                    "competitors_ids": {
-                        "title": "ID конкурентов",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
-                            }
-                        ]
-                    },
                     "only_exists_first_date": {
                         "allOf": [
                             {
@@ -45,6 +28,31 @@
                     "show_visitors": {
                         "title": "Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors`",
                         "type": "boolean"
+                    },
+                    "filter_by_positions_delta": {
+                        "title": "Фильтрация по величине изменения позиции за период (>= N)",
+                        "type": "integer"
+                    },
+                    "show_trash": {
+                        "title": "Показывать удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "regions_indexes": {
+                        "title": "Индексы регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
                     },
                     "show_top_by_depth": {
                         "title": "Добавить в результат данные по топу указанной глубины `tops`",
@@ -70,7 +78,7 @@
                     },
                     "filter_by_positions": {
                         "title": "Фильтрация по запросам, позиции которых входят в указанные промежутки\n\nМассив пар значений (min, max)\n\n- Базируется на крайней дате периода отчета\n- Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион",
-                        "description": "@see Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`",
+                        "description": "@see \\Selector\\Types\\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`",
                         "nullable": true,
                         "allOf": [
                             {
@@ -78,16 +86,8 @@
                             }
                         ]
                     },
-                    "filter_by_positions_delta": {
-                        "title": "Фильтрация по величине изменения позиции за период (>= N)",
-                        "type": "integer"
-                    },
                     "group_folder_id_depth": {
                         "title": "Показывать запросы из подпапок",
-                        "type": "boolean"
-                    },
-                    "show_trash": {
-                        "title": "Показывать удаленные запросы",
                         "type": "boolean"
                     },
                     "project_id": {

@@ -9,10 +9,6 @@ export interface components {
     schemas: {
         /** Получение истории позиций по запросам. */
         "Positions_2.Methods.History.Get": {
-            /** Индексы регионов */
-            regions_indexes: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID конкурентов */
-            competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             only_exists_first_date?: import('../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
             /** Добавить в результат заголовки отчета `headers` */
             show_headers?: boolean;
@@ -20,6 +16,14 @@ export interface components {
             show_exists_dates?: boolean;
             /** Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors` */
             show_visitors?: boolean;
+            /** Фильтрация по величине изменения позиции за период (>= N) */
+            filter_by_positions_delta?: number;
+            /** Показывать удаленные запросы */
+            show_trash?: boolean;
+            /** Индексы регионов */
+            regions_indexes: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
+            /** ID конкурентов */
+            competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Добавить в результат данные по топу указанной глубины `tops` */
             show_top_by_depth?: number;
             /** Выбор столбцов данных с результатами проверки */
@@ -39,15 +43,11 @@ export interface components {
              *
              *     - Базируется на крайней дате периода отчета
              *     - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
-             * @description @see Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`
+             * @description @see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`
              */
             filter_by_positions?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Фильтрация по величине изменения позиции за период (>= N) */
-            filter_by_positions_delta?: number;
             /** Показывать запросы из подпапок */
             group_folder_id_depth?: boolean;
-            /** Показывать удаленные запросы */
-            show_trash?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
             type_range?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
