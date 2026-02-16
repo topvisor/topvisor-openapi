@@ -56,6 +56,14 @@ export interface components {
             /**
              * @example {
              *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            project_relevant_url?: string | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"

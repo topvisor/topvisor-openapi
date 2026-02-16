@@ -27105,6 +27105,12 @@ components:
               - date
               - project_id
               - region_index
+        project_relevant_url:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_index
         snippet_title:
           type: string
           nullable: true

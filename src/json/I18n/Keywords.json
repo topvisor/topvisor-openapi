@@ -347,7 +347,11 @@
                         "readOnly": true
                     },
                     "Relevant_page": {
-                        "const": "Ranked URL",
+                        "const": "Ranked URL (Rank Tracker)",
+                        "readOnly": true
+                    },
+                    "Relevant_research": {
+                        "const": "Релевантная (Research)",
                         "readOnly": true
                     },
                     "CPC": {
@@ -1328,6 +1332,7 @@
                     "Target",
                     "Target_status",
                     "Relevant_page",
+                    "Relevant_research",
                     "CPC",
                     "Visits",
                     "Snippet",

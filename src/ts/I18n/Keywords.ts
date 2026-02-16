@@ -177,7 +177,9 @@ export interface components {
             /** @constant */
             readonly Target_status: "Target URL status";
             /** @constant */
-            readonly Relevant_page: "Ranked URL";
+            readonly Relevant_page: "Ranked URL (Rank Tracker)";
+            /** @constant */
+            readonly Relevant_research: "Релевантная (Research)";
             /** @constant */
             readonly CPC: "CPC";
             /** @constant */
