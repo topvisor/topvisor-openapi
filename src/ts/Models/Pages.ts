@@ -48,6 +48,7 @@ export interface components {
             count_unique_views?: any;
             count_comments?: any;
             count_likes?: any;
+            count_by_reaction?: any;
             rubric_name?: any;
             user_name?: any;
             user_avatar?: any;

@@ -22,15 +22,15 @@
                         "title": "Url страницы",
                         "type": "string"
                     },
-                    "like": {
-                        "title": "Установлен ли лайк",
-                        "type": "boolean"
+                    "emoji": {
+                        "title": "Emoji реакции\n\nПустая строка - удалить реакцию",
+                        "default": "❤️",
+                        "type": "string"
                     }
                 },
                 "required": [
                     "subdomain",
-                    "url",
-                    "like"
+                    "url"
                 ],
                 "title": "Редактирование статуса лайка для страницы"
             },

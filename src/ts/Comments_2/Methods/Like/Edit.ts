@@ -16,11 +16,12 @@ export interface components {
             /** Id комментария */
             id: number;
             /**
-             * Установка лайка
-             *     - 0: снять лайк
-             *     - 1: поставить лайк
+             * Emoji реакции
+             *
+             *     Пустая строка - удалить реакцию
+             * @default ❤️
              */
-            like: boolean;
+            emoji?: string;
         };
         "Comments_2.Methods.Like.Edit.Exec": number | null;
     };

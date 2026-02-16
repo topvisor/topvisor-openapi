@@ -19061,6 +19061,59 @@
                 }
             }
         },
+        "/get/content_2/reaction/popular/": {
+            "post": {
+                "operationId": "GetContent2ReactionPopular",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Получить список реакций по популярности",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/Reaction/Popular/Get.json#/components/schemas/Content_2.Methods.Reaction.Popular.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Content_2/Methods/Reaction/Popular/Get.json#/components/schemas/Content_2.Methods.Reaction.Popular.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/content_2/support/menu/": {
             "post": {
                 "operationId": "GetContent2SupportMenu",

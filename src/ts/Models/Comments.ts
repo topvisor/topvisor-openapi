@@ -18,6 +18,7 @@ export interface components {
             time?: any;
             text?: any;
             count_likes?: any;
+            count_by_reaction?: any;
             status?: any;
             user_name?: any;
             user_avatar?: any;

@@ -6091,6 +6091,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получить список реакций по популярности */
+    "/get/content_2/reaction/popular/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2ReactionPopular"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение меню справки */
     "/get/content_2/support/menu/": {
         parameters: {
@@ -20182,6 +20199,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Pages/Order/Edit.ts').components['schemas']['Content_2.Methods.Pages.Order.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetContent2ReactionPopular: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Reaction/Popular/Get.ts').components['schemas']['Content_2.Methods.Reaction.Popular.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Reaction/Popular/Get.ts').components['schemas']['Content_2.Methods.Reaction.Popular.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

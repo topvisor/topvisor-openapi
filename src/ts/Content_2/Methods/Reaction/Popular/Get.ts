@@ -7,21 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование статуса лайка для страницы */
-        "Content_2.Methods.Like.Edit": {
+        /** Получить список реакций по популярности */
+        "Content_2.Methods.Reaction.Popular.Get": {
             /** Поддомен страницы */
-            subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
+            subdomain: import('../../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
             /** Url страницы */
-            url: string;
-            /**
-             * Emoji реакции
-             *
-             *     Пустая строка - удалить реакцию
-             * @default ❤️
-             */
-            emoji?: string;
+            url?: string | null;
         };
-        "Content_2.Methods.Like.Edit.Exec": number | null;
+        "Content_2.Methods.Reaction.Popular.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

@@ -10359,6 +10359,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/content_2/reaction/popular/:
+    post:
+      operationId: GetContent2ReactionPopular
+      tags:
+        - Content_2
+      summary: Получить список реакций по популярности
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Reaction.Popular.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.Reaction.Popular.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/content_2/support/menu/:
     post:
       operationId: GetContent2SupportMenu
@@ -19499,6 +19527,8 @@ components:
           nullable: true
         count_likes:
           nullable: true
+        count_by_reaction:
+          nullable: true
         status:
           nullable: true
         user_name:
@@ -24651,15 +24681,15 @@ components:
         id:
           title: Id комментария
           type: integer
-        like:
+        emoji:
           title: |-
-            Установка лайка
-            - 0: снять лайк
-            - 1: поставить лайк
-          type: boolean
+            Emoji реакции
+
+            Пустая строка - удалить реакцию
+          default: ❤️
+          type: string
       required:
         - id
-        - like
       title: |-
         Редактирование статуса лайка для комментария
 
@@ -25226,13 +25256,16 @@ components:
         url:
           title: Url страницы
           type: string
-        like:
-          title: Установлен ли лайк
-          type: boolean
+        emoji:
+          title: |-
+            Emoji реакции
+
+            Пустая строка - удалить реакцию
+          default: ❤️
+          type: string
       required:
         - subdomain
         - url
-        - like
       title: Редактирование статуса лайка для страницы
     Content_2.Methods.Like.Edit.Exec:
       nullable: true
@@ -25434,6 +25467,8 @@ components:
         count_comments:
           nullable: true
         count_likes:
+          nullable: true
+        count_by_reaction:
           nullable: true
         rubric_name:
           nullable: true
@@ -36514,6 +36549,22 @@ components:
     Content_2.Methods.Pages.Order.Edit.Exec:
       nullable: true
       type: integer
+    Content_2.Methods.Reaction.Popular.Get:
+      type: object
+      properties:
+        subdomain:
+          title: Поддомен страницы
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Subdomain'
+        url:
+          title: Url страницы
+          nullable: true
+          type: string
+      required:
+        - subdomain
+      title: Получить список реакций по популярности
+    Content_2.Methods.Reaction.Popular.Get.Exec:
+      type: array
     Content_2.Methods.Support.Menu.Get:
       type: object
       properties: {}

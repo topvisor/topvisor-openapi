@@ -37,6 +37,9 @@
                     "count_likes": {
                         "nullable": true
                     },
+                    "count_by_reaction": {
+                        "nullable": true
+                    },
                     "status": {
                         "nullable": true
                     },
