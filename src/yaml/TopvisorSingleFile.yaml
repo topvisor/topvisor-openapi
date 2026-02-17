@@ -63,6 +63,8 @@ tags:
     description: oauth_2
   - name: Openapi_2
     description: openapi_2
+  - name: Orders_2
+    description: orders_2
   - name: Payments_2
     description: payments_2
   - name: Positions_2
@@ -20664,7 +20666,7 @@ components:
         - без слешей на конце
         - без "<" и ">"
 
-        Будет проивзедено автоматическое приведение к формату
+        Будет произведено автоматическое приведение к формату
 
         Разрешен ввод пустой строки, для удаления значения url
     Recurring_2.Methods.Edit:
