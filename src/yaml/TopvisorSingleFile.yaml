@@ -63,8 +63,6 @@ tags:
     description: oauth_2
   - name: Openapi_2
     description: openapi_2
-  - name: Orders_2
-    description: orders_2
   - name: Payments_2
     description: payments_2
   - name: Positions_2
@@ -119,6 +117,8 @@ tags:
     description: votes_2
   - name: Vue_2
     description: vue_2
+  - name: Webscreens_2
+    description: webscreens_2
   - name: Webscreens_2
     description: webscreens_2
 paths:
@@ -39121,11 +39121,17 @@ components:
           nullable: true
           type: string
         addWorksheet:
-          title: // [name => '', handle => '']
           nullable: true
-          anyOf:
-            - type: string
-            - type: 'null'
+          type: object
+          properties:
+            name:
+              type: string
+            handle:
+              type: object
+              additionalProperties: {}
+          required:
+            - name
+            - handle
         regions_indexes:
           title: Индексы регионов
           allOf:
@@ -39138,9 +39144,14 @@ components:
         show_top_by_depth:
           title: Добавить в результат данные по топу указанной глубины `tops`
           type: integer
-        positions_fields:
-          title: Выбор столбцов данных с результатами проверки
+        history_fields:
           nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
+        positions_fields:
+          title: '@deprecated Старая версия API'
+          nullable: true
+          deprecated: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         filter_by_dynamic:

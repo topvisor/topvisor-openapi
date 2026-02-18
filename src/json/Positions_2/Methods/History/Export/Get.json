@@ -43,15 +43,20 @@
                         "type": "string"
                     },
                     "addWorksheet": {
-                        "title": "// [name => '', handle => '']",
                         "nullable": true,
-                        "anyOf": [
-                            {
+                        "type": "object",
+                        "properties": {
+                            "name": {
                                 "type": "string"
                             },
-                            {
-                                "type": "null"
+                            "handle": {
+                                "type": "object",
+                                "additionalProperties": {}
                             }
+                        },
+                        "required": [
+                            "name",
+                            "handle"
                         ]
                     },
                     "regions_indexes": {
@@ -75,9 +80,18 @@
                         "title": "Добавить в результат данные по топу указанной глубины `tops`",
                         "type": "integer"
                     },
-                    "positions_fields": {
-                        "title": "Выбор столбцов данных с результатами проверки",
+                    "history_fields": {
                         "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
+                            }
+                        ]
+                    },
+                    "positions_fields": {
+                        "title": "@deprecated Старая версия API",
+                        "nullable": true,
+                        "deprecated": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
@@ -111,22 +125,22 @@
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "dates": {
-                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
+                        "$ref": "../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/dates"
                     },
                     "type_range": {
-                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/type_range"
+                        "$ref": "../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/type_range"
                     },
                     "date1": {
-                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date1"
+                        "$ref": "../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date1"
                     },
                     "date2": {
-                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date2"
+                        "$ref": "../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date2"
                     },
                     "count_dates": {
-                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/count_dates"
+                        "$ref": "../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/count_dates"
                     },
                     "period_days": {
-                        "$ref": "../../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/period_days"
+                        "$ref": "../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"

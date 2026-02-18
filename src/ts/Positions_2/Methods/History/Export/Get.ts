@@ -41,15 +41,23 @@ export interface components {
              * @description @internal
              */
             returnFilenameFromFolder?: string | null;
-            /** // [name => '', handle => ''] */
-            addWorksheet?: (string | null) | null;
+            addWorksheet?: {
+                name: string;
+                handle: {
+                    [key: string]: unknown;
+                };
+            } | null;
             /** Индексы регионов */
             regions_indexes: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /** ID конкурентов */
             competitors_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Добавить в результат данные по топу указанной глубины `tops` */
             show_top_by_depth?: number;
-            /** Выбор столбцов данных с результатами проверки */
+            history_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
+            /**
+             * @deprecated Старая версия API
+             * @deprecated
+             */
             positions_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
             /**
              * Фильтрация по динамике позиций
@@ -72,12 +80,12 @@ export interface components {
             /** Показывать запросы из подпапок */
             group_folder_id_depth?: boolean;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
-            type_range?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
-            date1?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
-            date2?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
-            count_dates?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
+            dates?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date1'];
+            date2?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['period_days'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
