@@ -14,15 +14,6 @@ export interface components {
          */
         "Audit_2.Methods.Indexing.Get": {
             searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
-            /**
-             * Список полей индексации, которые необходимо получить
-             *
-             *     См. поля indexing_* в объекте Urls
-             * @default [
-             *       "data"
-             *     ]
-             */
-            indexing_fields?: unknown[];
             /** Вернуть ли заголовки отчета */
             show_headers?: boolean;
             /** Вернуть ли суммарное количество страниц в индексе по URL */
@@ -35,13 +26,32 @@ export interface components {
              *     Формат записи: `{{ date }}:{{ searcher_key }}`
              */
             filter_by_alert?: string;
+            /**
+             * @deprecated
+             * @deprecated
+             * @default [
+             *       "data"
+             *     ]
+             */
+            indexing_fields?: unknown[];
+            /**
+             * Список полей индексации, которые необходимо получить
+             *
+             *     См. поля indexing_* в объекте Urls
+             * @default [
+             *       "data"
+             *     ]
+             */
+            history_fields?: unknown[];
+            /** При фильтрации по ID папок также искать в подпапках */
+            group_folder_id_depth?: boolean;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
-            type_range?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
-            date1?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
-            date2?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
-            count_dates?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
+            dates?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date1'];
+            date2?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['period_days'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
@@ -49,7 +59,7 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        /** Список ссылок с данными по ним */
+        /** Список url с результатами проверок */
         "Audit_2.Methods.Indexing.Get.Exec": import('../../../Models/Urls.ts').components['schemas']['Models.Urls'][];
     };
     responses: never;

@@ -24,6 +24,16 @@
                         "type": "boolean"
                     },
                     "positions_fields": {
+                        "title": "@deprecated Старая версия API",
+                        "nullable": true,
+                        "deprecated": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Snapshots_2/Types/History/HistoryFields.json#/components/schemas/Snapshots_2.Types.History.HistoryFields"
+                            }
+                        ]
+                    },
+                    "history_fields": {
                         "nullable": true,
                         "allOf": [
                             {
@@ -36,34 +46,9 @@
                         "nullable": true,
                         "type": "integer"
                     },
-                    "group_folder_id_depth": {
-                        "title": "При фильтрации по ID папок также искать в подпапках",
-                        "type": "boolean"
-                    },
                     "show_trash": {
                         "title": "Искать в корзине",
                         "type": "boolean"
-                    },
-                    "dates": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
-                    },
-                    "type_range": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/type_range"
-                    },
-                    "date1": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date1"
-                    },
-                    "date2": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date2"
-                    },
-                    "count_dates": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/count_dates"
-                    },
-                    "period_days": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/period_days"
-                    },
-                    "project_id": {
-                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "region_index": {
                         "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
@@ -79,6 +64,31 @@
                     },
                     "region_device": {
                         "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "dates": {
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"

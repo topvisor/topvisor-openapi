@@ -17,13 +17,6 @@
                             }
                         ]
                     },
-                    "indexing_fields": {
-                        "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
-                        "default": [
-                            "data"
-                        ],
-                        "type": "array"
-                    },
                     "show_headers": {
                         "title": "Вернуть ли заголовки отчета",
                         "type": "boolean"
@@ -40,26 +33,45 @@
                         "title": "Фильтр по изменениям в указанной ПС в указанную дату\n\nФормат записи: `{{ date }}:{{ searcher_key }}`",
                         "type": "string"
                     },
+                    "indexing_fields": {
+                        "title": "@deprecated",
+                        "deprecated": true,
+                        "default": [
+                            "data"
+                        ],
+                        "type": "array"
+                    },
+                    "history_fields": {
+                        "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
+                        "default": [
+                            "data"
+                        ],
+                        "type": "array"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
+                    },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "dates": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/dates"
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/dates"
                     },
                     "type_range": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/type_range"
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/type_range"
                     },
                     "date1": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date1"
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date1"
                     },
                     "date2": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/date2"
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date2"
                     },
                     "count_dates": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/count_dates"
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/count_dates"
                     },
                     "period_days": {
-                        "$ref": "../../../TV/API/Params/History/DateRangeTrait.json#/components/schemas/TV.API.Params.History.DateRangeTrait/properties/period_days"
+                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
@@ -87,7 +99,7 @@
                 "title": "Получение отчета по проверке индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
             },
             "Audit_2.Methods.Indexing.Get.Exec": {
-                "title": "Список ссылок с данными по ним",
+                "title": "Список url с результатами проверок",
                 "type": "array",
                 "items": {
                     "$ref": "../../../Models/Urls.json#/components/schemas/Models.Urls"

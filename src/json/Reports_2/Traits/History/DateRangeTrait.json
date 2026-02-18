@@ -63,7 +63,7 @@
                     "period_days"
                 ],
                 "title": "Параметры для отчетов с базисом по дате\n\nИспользуется в отчетах, где ключевым параметром является дата проверки",
-                "description": "@see class/API/Params/History/README.md\n@mixin API\\Method\\AbstractGet"
+                "description": "@note Сейчас этот трейт является вырожденным, так как используется только в одном месте: `Reports_2\\Methods\\History\\AbstractGetHistoryDates`\n@see class/Services/Reports_2/README.md\n@mixin Reports_2\\Methods\\History\\AbstractGetHistoryDates"
             }
         }
     }

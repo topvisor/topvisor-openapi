@@ -9294,6 +9294,7 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
   /get/audit_2/indexing/links/:
     post:
@@ -12801,6 +12802,7 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
   /get/projects_2/analytics/graph/:
     post:
@@ -22849,14 +22851,6 @@ components:
         searchers_keys:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
-        indexing_fields:
-          title: |-
-            Список полей индексации, которые необходимо получить
-
-            См. поля indexing_* в объекте Urls
-          default:
-            - data
-          type: array
         show_headers:
           title: Вернуть ли заголовки отчета
           type: boolean
@@ -22872,6 +22866,23 @@ components:
 
             Формат записи: `{{ date }}:{{ searcher_key }}`
           type: string
+        indexing_fields:
+          title: '@deprecated'
+          deprecated: true
+          default:
+            - data
+          type: array
+        history_fields:
+          title: |-
+            Список полей индексации, которые необходимо получить
+
+            См. поля indexing_* в объекте Urls
+          default:
+            - data
+          type: array
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -22906,7 +22917,7 @@ components:
 
         Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Get.Exec:
-      title: Список ссылок с данными по ним
+      title: Список url с результатами проверок
       type: array
       items:
         $ref: '#/components/schemas/Models.Urls'
@@ -30053,6 +30064,12 @@ components:
           default: true
           type: boolean
         positions_fields:
+          title: '@deprecated Старая версия API'
+          nullable: true
+          deprecated: true
+          allOf:
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
+        history_fields:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
@@ -30063,12 +30080,24 @@ components:
             - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
           nullable: true
           type: integer
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
         show_trash:
           title: Искать в корзине
           type: boolean
+        region_index:
+          $ref: '#/components/schemas/region_index'
+        searcher_key:
+          $ref: '#/components/schemas/searcher_key'
+        region_key:
+          $ref: '#/components/schemas/region_key'
+        region_lang:
+          $ref: '#/components/schemas/region_lang'
+        region_device:
+          $ref: '#/components/schemas/region_device'
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
         dates:
           $ref: '#/components/schemas/dates'
         type_range:
@@ -30081,18 +30110,6 @@ components:
           $ref: '#/components/schemas/count_dates'
         period_days:
           $ref: '#/components/schemas/period_days'
-        project_id:
-          $ref: '#/components/schemas/project_id'
-        region_index:
-          $ref: '#/components/schemas/region_index'
-        searcher_key:
-          $ref: '#/components/schemas/searcher_key'
-        region_key:
-          $ref: '#/components/schemas/region_key'
-        region_lang:
-          $ref: '#/components/schemas/region_lang'
-        region_device:
-          $ref: '#/components/schemas/region_device'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -35204,10 +35221,11 @@ components:
         properties:
           title: Настройки экспорта
           type: array
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
-        fields:
-          $ref: '#/components/schemas/fields'
         dates:
           $ref: '#/components/schemas/dates'
         type_range:
@@ -35220,6 +35238,18 @@ components:
           $ref: '#/components/schemas/count_dates'
         period_days:
           $ref: '#/components/schemas/period_days'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
       required:
         - searchers_keys
         - output
@@ -39575,13 +39605,13 @@ components:
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -39596,6 +39626,14 @@ components:
           $ref: '#/components/schemas/count_dates'
         period_days:
           $ref: '#/components/schemas/period_days'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
       required:
         - region_index
         - project_id

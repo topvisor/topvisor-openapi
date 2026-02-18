@@ -22,17 +22,21 @@ export interface components {
             /** Отобразить видимость */
             show_visibility?: boolean;
             only_exists_first_date?: import('../../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
-            /** При фильтрации по ID папок также искать в подпапках */
-            group_folder_id_depth?: boolean;
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /** При фильтрации по ID папок также искать в подпапках */
+            group_folder_id_depth?: boolean;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['dates'];
-            type_range?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['type_range'];
-            date1?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date1'];
-            date2?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['date2'];
-            count_dates?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../../TV/API/Params/History/DateRangeTrait.ts').components['schemas']['TV.API.Params.History.DateRangeTrait']['period_days'];
+            dates?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['dates'];
+            type_range?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['type_range'];
+            date1?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date1'];
+            date2?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['period_days'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
+            limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
         "Positions_2.Methods.Summary.Chart.Get.Exec": unknown[];
     };
