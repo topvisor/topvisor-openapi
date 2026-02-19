@@ -49,7 +49,7 @@
                 "title": "Постановка задачи на расширение группы"
             },
             "Keywords_2.Methods.Collect.Ext.Go.Edit.Exec": {
-                "nullable": true
+                "type": "array"
             }
         }
     }

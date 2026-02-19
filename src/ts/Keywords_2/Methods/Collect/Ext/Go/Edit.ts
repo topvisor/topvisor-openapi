@@ -19,7 +19,7 @@ export interface components {
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        "Keywords_2.Methods.Collect.Ext.Go.Edit.Exec": unknown;
+        "Keywords_2.Methods.Collect.Ext.Go.Edit.Exec": unknown[];
     };
     responses: never;
     parameters: never;
