@@ -18984,6 +18984,34 @@ paths:
               schema:
                 type: string
                 format: binary
+  /get/aitracker_2/history/export/links/:
+    post:
+      operationId: GetAitracker2HistoryExportLinks
+      tags:
+        - Aitracker_2
+      summary: Получение гостевой ссылки на просмотр ИИ-Трекера
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -46414,3 +46442,48 @@ components:
         Вернет случайный набор символов в формате application/json; charset=utf-8
 
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
+    AiTracker_2.Methods.History.Export.Links.Get:
+      type: object
+      properties:
+        models:
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
+        template_date_range:
+          title: Диапазон значений шаблона
+          nullable: true
+          type: string
+        type_range_compare:
+          title: Тип диапазона дат (при сравнении)
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.History.TypeRange'
+        tags_ids:
+          title: ID тегов
+          nullable: true
+          type: array
+        data_sort:
+          title: Сортировка данных
+          nullable: true
+          type: array
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+      required:
+        - models
+        - type_range_compare
+        - project_id
+      title: Получение гостевой ссылки на просмотр ИИ-Трекера
+    AiTracker_2.Methods.History.Export.Links.Get.Exec:
+      title: Короткая гостевая ссылка на просмотр индексации
+      nullable: true
+      type: string

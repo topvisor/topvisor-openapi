@@ -11,8 +11,7 @@ export interface components {
          * Параметры для отчетов с базисом по дате
          *
          *     Используется в отчетах, где ключевым параметром является дата проверки
-         * @description @note Сейчас этот трейт является вырожденным, так как используется только в одном месте: `Reports_2\Methods\History\AbstractGetHistoryDates`
-         *     @see class/Services/Reports_2/README.md
+         * @description @see class/Services/Reports_2/README.md
          *     @mixin Reports_2\Methods\History\AbstractGetHistoryDates
          */
         "Reports_2.Traits.History.DateRangeTrait": {

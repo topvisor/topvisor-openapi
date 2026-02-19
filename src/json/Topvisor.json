@@ -34970,6 +34970,59 @@
                     }
                 }
             }
+        },
+        "/get/aitracker_2/history/export/links/": {
+            "post": {
+                "operationId": "GetAitracker2HistoryExportLinks",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Получение гостевой ссылки на просмотр ИИ-Трекера",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/History/Export/Links/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/History/Export/Links/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

@@ -1,0 +1,79 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.History.Export.Links.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.History.Export.Links.Get": {
+                "type": "object",
+                "properties": {
+                    "models": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
+                            }
+                        ]
+                    },
+                    "template_date_range": {
+                        "title": "Диапазон значений шаблона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "type_range_compare": {
+                        "title": "Тип диапазона дат (при сравнении)",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"
+                            }
+                        ]
+                    },
+                    "tags_ids": {
+                        "title": "ID тегов",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "data_sort": {
+                        "title": "Сортировка данных",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "dates": {
+                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/period_days"
+                    }
+                },
+                "required": [
+                    "models",
+                    "type_range_compare",
+                    "project_id"
+                ],
+                "title": "Получение гостевой ссылки на просмотр ИИ-Трекера"
+            },
+            "AiTracker_2.Methods.History.Export.Links.Get.Exec": {
+                "title": "Короткая гостевая ссылка на просмотр индексации",
+                "nullable": true,
+                "type": "string"
+            }
+        }
+    }
+}
