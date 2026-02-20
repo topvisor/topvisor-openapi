@@ -630,6 +630,8 @@ export interface components {
             readonly Set_target_equals_relevant_from_recheck: "Assign Target = Ranked URL from the relevant recheck";
             /** @constant */
             readonly Target_equals_relevant_last_relevance_check_in_location: "Target = Ranked URL from the last relevant check in the location";
+            /** @constant */
+            readonly Check_relevance_complete: "Relevance links are checked. Please update the page";
         };
     };
     responses: never;

@@ -1253,6 +1253,10 @@
                     "Target_equals_relevant_last_relevance_check_in_location": {
                         "const": "Target = Ranked URL from the last relevant check in the location",
                         "readOnly": true
+                    },
+                    "Check_relevance_complete": {
+                        "const": "Relevance links are checked. Please update the page",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1565,7 +1569,8 @@
                     "No_keywords_in_project",
                     "Relevance_check_already_started",
                     "Set_target_equals_relevant_from_recheck",
-                    "Target_equals_relevant_last_relevance_check_in_location"
+                    "Target_equals_relevant_last_relevance_check_in_location",
+                    "Check_relevance_complete"
                 ]
             }
         }
