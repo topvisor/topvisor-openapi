@@ -14,14 +14,6 @@
                         "title": "Индекс региона",
                         "type": "integer"
                     },
-                    "dates": {
-                        "title": "Даты для получения сводки",
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
-                            }
-                        ]
-                    },
                     "show_dynamics": {
                         "title": "Отобразить динамику позиций",
                         "type": "boolean"
@@ -56,20 +48,42 @@
                         "description": "@internal",
                         "type": "integer"
                     },
+                    "group_folder_id_depth": {
+                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
+                    },
+                    "show_trash": {
+                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/fetch_style"
+                    },
                     "only_exists_first_date": {
                         "allOf": [
                             {
-                                "$ref": "../../../Positions_2/Types/OnlyExistsFirstDate.json#/components/schemas/Positions_2.Types.OnlyExistsFirstDate"
+                                "$ref": "../../../Reports_2/Types/OnlyExistsFirstDate.json#/components/schemas/Reports_2.Types.OnlyExistsFirstDate"
                             }
                         ]
                     },
-                    "group_folder_id_depth": {
-                        "title": "Показывать данные из подпапок",
-                        "type": "boolean"
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
-                    "show_trash": {
-                        "title": "Учитывать ли в статистике удаленные запросы",
-                        "type": "boolean"
+                    "dates": {
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
@@ -83,22 +97,24 @@
                     "id": {
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     },
-                    "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
                     },
-                    "project_id": {
-                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
                     }
                 },
                 "required": [
                     "region_index",
-                    "dates",
                     "project_id"
                 ],
                 "title": "Получение сводки по проверкам позиций"
             },
             "Positions_2.Methods.Summary.Get.Exec": {
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Keywords.json#/components/schemas/Models.Keywords"
+                }
             }
         }
     }

@@ -11,8 +11,6 @@ export interface components {
         "Positions_2.Methods.Summary.Get": {
             /** Индекс региона */
             region_index: number;
-            /** Даты для получения сводки */
-            dates: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'];
             /** Отобразить динамику позиций */
             show_dynamics?: boolean;
             /** Отобразить данные по топам */
@@ -35,19 +33,25 @@ export interface components {
              * @description @internal
              */
             forProjectsListRegionDepth?: number;
-            only_exists_first_date?: import('../../Types/OnlyExistsFirstDate.ts').components['schemas']['Positions_2.Types.OnlyExistsFirstDate'];
-            /** Показывать данные из подпапок */
-            group_folder_id_depth?: boolean;
-            /** Учитывать ли в статистике удаленные запросы */
-            show_trash?: boolean;
+            group_folder_id_depth?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
+            show_trash?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
+            fetch_style?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['fetch_style'];
+            only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
+            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
+            type_range?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
+            date1?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
+            date2?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
+            count_dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Positions_2.Methods.Summary.Get.Exec": unknown[];
+        "Positions_2.Methods.Summary.Get.Exec": import('../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][];
     };
     responses: never;
     parameters: never;

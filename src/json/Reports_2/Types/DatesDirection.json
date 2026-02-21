@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Types.DatesDirection",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Types.DatesDirection": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2
+                ],
+                "x-enum-varnames": [
+                    "Default",
+                    "Desc",
+                    "Asc"
+                ],
+                "x-enum-descriptions": [
+                    "От новых проверок к старым; Указанные вручную даты не сортируются",
+                    "От новых проверок к старым; - Для графиков; - Для получения дат для экспорта в нужном порядке",
+                    "От старых проверок к новым; - Для получения дат для экспорта в нужном порядке"
+                ],
+                "title": "Направление сортировки дат отчета"
+            }
+        }
+    }
+}

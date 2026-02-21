@@ -5321,7 +5321,11 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /add/projects_2/analytics/:
     post:
       operationId: AddProjects2Analytics
@@ -28567,16 +28571,33 @@ components:
       title: Установка общих настроек проверки позиций проекта
     Positions_2.Methods.Settings.Edit.Exec:
       nullable: true
+    group_folder_id_depth:
+      title: При фильтрации по ID папок также искать в подпапках
+      type: boolean
+    show_trash:
+      title: Искать в корзине
+      type: boolean
+    Reports_2.Types.OnlyExistsFirstDate:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - All
+        - OnlyExistsInFirstDate
+        - OnlyAddedAtPeriod
+      x-enum-descriptions:
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
+        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Get:
       type: object
       properties:
         region_index:
           title: Индекс региона
           type: integer
-        dates:
-          title: Даты для получения сводки
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
         show_dynamics:
           title: Отобразить динамику позиций
           type: boolean
@@ -28603,15 +28624,29 @@ components:
           title: Глубина регионов для списка проектов
           description: '@internal'
           type: integer
+        group_folder_id_depth:
+          $ref: '#/components/schemas/group_folder_id_depth'
+        show_trash:
+          $ref: '#/components/schemas/show_trash'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
-        group_folder_id_depth:
-          title: Показывать данные из подпапок
-          type: boolean
-        show_trash:
-          title: Учитывать ли в статистике удаленные запросы
-          type: boolean
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -28620,17 +28655,18 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-        project_id:
-          $ref: '#/components/schemas/project_id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
       required:
         - region_index
-        - dates
         - project_id
       title: Получение сводки по проверкам позиций
     Positions_2.Methods.Summary.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
     Projects_2.Types.Analytics.Axe:
       type: integer
       enum:
@@ -39610,27 +39646,6 @@ components:
       title: Настройка сортировки ПС
     Positions_2.Methods.Searchers.Sort.Edit.Exec:
       nullable: true
-    group_folder_id_depth:
-      title: При фильтрации по ID папок также искать в подпапках
-      type: boolean
-    show_trash:
-      title: Искать в корзине
-      type: boolean
-    Reports_2.Types.OnlyExistsFirstDate:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - All
-        - OnlyExistsInFirstDate
-        - OnlyAddedAtPeriod
-      x-enum-descriptions:
-        - Без фильтра
-        - Только запросы в первой проверке указанного периода
-        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Chart.Get:
       type: object
       properties:
