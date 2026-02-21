@@ -23584,6 +23584,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }

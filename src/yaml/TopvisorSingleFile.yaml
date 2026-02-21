@@ -12804,6 +12804,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/projects_2/analytics/graph/:
     post:
       operationId: GetProjects2AnalyticsGraph
@@ -39607,6 +39610,27 @@ components:
       title: Настройка сортировки ПС
     Positions_2.Methods.Searchers.Sort.Edit.Exec:
       nullable: true
+    group_folder_id_depth:
+      title: При фильтрации по ID папок также искать в подпапках
+      type: boolean
+    show_trash:
+      title: Искать в корзине
+      type: boolean
+    Reports_2.Types.OnlyExistsFirstDate:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - All
+        - OnlyExistsInFirstDate
+        - OnlyAddedAtPeriod
+      x-enum-descriptions:
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
+        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Chart.Get:
       type: object
       properties:
@@ -39630,16 +39654,15 @@ components:
         show_visibility:
           title: Отобразить видимость
           type: boolean
+        group_folder_id_depth:
+          $ref: '#/components/schemas/group_folder_id_depth'
+        show_trash:
+          $ref: '#/components/schemas/show_trash'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -39658,6 +39681,10 @@ components:
           $ref: '#/components/schemas/fields'
         orders:
           $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
         limit:
           $ref: '#/components/schemas/limit'
         offset:
@@ -39668,6 +39695,8 @@ components:
       title: Получение данных сводки для отображения графика
     Positions_2.Methods.Summary.Chart.Get.Exec:
       type: array
+      items:
+        $ref: '#/components/schemas/Models.Keywords'
     Projects_2.Methods.Analytics.Graph.Get:
       type: object
       properties:
