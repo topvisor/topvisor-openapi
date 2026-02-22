@@ -1,0 +1,96 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Objects.History.Result.Headers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Objects.History.Result.Headers": {
+                "type": "object",
+                "properties": {
+                    "historyFields": {
+                        "$ref": "../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/AbstractEnumArray.json#/components/schemas/TV.API.Types.AbstractEnumArray"
+                            }
+                        ]
+                    },
+                    "snippetsTagsByHash": {
+                        "title": "Теги сниппетов по хешу",
+                        "description": "@note Не используется в UI",
+                        "nullable": true,
+                        "type": "object",
+                        "additionalProperties": {}
+                    },
+                    "projects": {
+                        "title": "Информация о проектах в отчете",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../Positions_2/Objects/History/Result/HeadersProject.json#/components/schemas/Positions_2.Objects.History.Result.HeadersProject"
+                        }
+                    },
+                    "folderName": {
+                        "title": "Название папки, включенной в отчет",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "title": "Название группы, включенной в отчет",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "title": "Основной проект",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Поля объектов отчета\n\nТип объектов определяется типом отчета, например для проверки позиций это Запросы",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../Selector/Field.json#/components/schemas/Selector.Field"
+                        }
+                    },
+                    "filters": {
+                        "title": "Фильтры объектов отчета\n\nДля реализации фичей при экспорте отчетов",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../FieldsFilters.json#/components/schemas/FieldsFilters"
+                        }
+                    },
+                    "dates": {
+                        "title": "Даты, выводимые в отчете",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "worksheetName": {
+                        "title": "Модификатор для имени листа\n\nИспользуется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "api": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Method/AbstractGet.json#/components/schemas/TV.API.Method.AbstractGet"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "historyFields",
+                    "project_id",
+                    "fields",
+                    "filters",
+                    "dates",
+                    "api"
+                ],
+                "title": "Заголовки отчета истории позиций"
+            }
+        }
+    }
+}

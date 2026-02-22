@@ -1,0 +1,17 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.AbstractEnumArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.AbstractEnumArray": {
+                "type": "array",
+                "items": {},
+                "title": "Тип массива: Enum[]\n\nДля реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE"
+            }
+        }
+    }
+}

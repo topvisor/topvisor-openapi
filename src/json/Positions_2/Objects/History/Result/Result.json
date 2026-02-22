@@ -1,0 +1,63 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Objects.History.Result.Result",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Objects.History.Result.Result": {
+                "type": "object",
+                "properties": {
+                    "headers": {
+                        "nullable": true,
+                        "$ref": "../../../../Positions_2/Objects/History/Result/Headers.json#/components/schemas/Positions_2.Objects.History.Result.Headers",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeaders.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders"
+                            }
+                        ]
+                    },
+                    "keywords": {
+                        "title": "Список запросов с данными",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": {}
+                        }
+                    },
+                    "visitors": {
+                        "title": "Суммарные визиты по датам/проектам/регионам",
+                        "nullable": true,
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "integer"
+                        }
+                    },
+                    "tops": {
+                        "title": "Доля запросов в топе указанной глубины\n\nГлубина зависит от контекста и настраивается в нем же",
+                        "description": "Ключ - `date:project_id:region_index`",
+                        "nullable": true,
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "number"
+                        }
+                    },
+                    "existsDates": {
+                        "title": "Даты, в которые есть проверки",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "keywords"
+                ],
+                "title": "Результат истории позиций"
+            }
+        }
+    }
+}

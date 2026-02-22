@@ -1,0 +1,75 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Mods.Searchers.Interfaces.Region",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Mods.Searchers.Interfaces.Region": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "key": {
+                        "type": "integer"
+                    },
+                    "lang": {
+                        "type": "string"
+                    },
+                    "device": {
+                        "type": "string"
+                    },
+                    "depth": {
+                        "type": "integer"
+                    },
+                    "index": {
+                        "type": "integer"
+                    },
+                    "enabled": {
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "countryCode": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "areaName": {
+                        "type": "string"
+                    },
+                    "domain": {
+                        "type": "string"
+                    },
+                    "parentId": {
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id",
+                    "key",
+                    "lang",
+                    "device",
+                    "depth",
+                    "index",
+                    "enabled",
+                    "searcher_key",
+                    "type",
+                    "countryCode",
+                    "name",
+                    "areaName",
+                    "domain"
+                ]
+            }
+        }
+    }
+}

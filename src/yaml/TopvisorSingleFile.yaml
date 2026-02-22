@@ -28193,21 +28193,6 @@ components:
       title: Удаление проверки
     Positions_2.Methods.History.Del.Exec:
       type: integer
-    Positions_2.Types.OnlyExistsFirstDate:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - All
-        - OnlyExistsInFirstDate
-        - OnlyAddedAtPeriod
-      x-enum-descriptions:
-        - Без фильтра
-        - Только запросы в первой проверке указанного периода
-        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Types.History.HistoryField:
       type: string
       enum:
@@ -28279,12 +28264,65 @@ components:
         @method FilterByDynamic[] getValues()
         @method FilterByDynamic current()
         @see FilterByDynamic
+    group_folder_id_depth:
+      title: При фильтрации по ID папок также искать в подпапках
+      type: boolean
+    Reports_2.Types.OnlyExistsFirstDate:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - All
+        - OnlyExistsInFirstDate
+        - OnlyAddedAtPeriod
+      x-enum-descriptions:
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
+        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
+    Reports_2.Types.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 100
+      x-enum-varnames:
+        - FullRange
+        - YandexUpdates
+        - Range
+        - TwoChecks
+        - OneCheck
+        - LastCheckOfMonth
+        - Accumulated
+        - TwoLastChecks
+        - ListDates
+      x-enum-descriptions:
+        - Весь период без ограничений
+        - Период с выполненными проверками (Только апдейты Яндекс)
+        - Период с выполненными проверками
+        - Две проверки
+        - Одна проверка
+        - Последняя проверка месяца
+        - 'Даты через равные промежутки; - Средняя позиция: используется совместно с параметром длины периода `period_days`; - Возвращает не более 7 дат'
+        - Две последние даты проверок
+        - Произвольный список дат
+      title: Тип диапазона дат
+    properties-type_range:
+      title: Тип диапазона дат
+      default: 2
+      allOf:
+        - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
     Positions_2.Methods.History.Get:
       type: object
       properties:
-        only_exists_first_date:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.OnlyExistsFirstDate'
         show_headers:
           title: Добавить в результат заголовки отчета `headers`
           type: boolean
@@ -28300,6 +28338,16 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
+        positions_fields:
+          title: '@deprecated Старая версия API'
+          nullable: true
+          deprecated: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
+        history_fields:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         regions_indexes:
           title: Индексы регионов
           allOf:
@@ -28312,11 +28360,6 @@ components:
         show_top_by_depth:
           title: Добавить в результат данные по топу указанной глубины `tops`
           type: integer
-        positions_fields:
-          title: Выбор столбцов данных с результатами проверки
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         filter_by_dynamic:
           title: |-
             Фильтрация по динамике позиций
@@ -28340,14 +28383,18 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         group_folder_id_depth:
-          title: Показывать запросы из подпапок
-          type: boolean
+          $ref: '#/components/schemas/group_folder_id_depth'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        only_exists_first_date:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
           $ref: '#/components/schemas/dates'
         type_range:
-          $ref: '#/components/schemas/type_range'
+          $ref: '#/components/schemas/properties-type_range'
         date1:
           $ref: '#/components/schemas/date1'
         date2:
@@ -28372,11 +28419,417 @@ components:
         - regions_indexes
         - project_id
       title: Получение истории позиций по запросам.
-    Positions_2.Methods.History.Get.Exec:
-      title: Получение истории позиций
+    Selector.Field:
+      type: object
+      properties:
+        availableMethods:
+          default:
+            - ABS
+            - TO_PERCENT
+            - MINUS
+            - SUM
+            - DIVIDE
+            - OR
+            - AND
+          type: array
+        alias:
+          type: string
+        qualifiers:
+          type: array
+        name:
+          type: string
+      required:
+        - availableMethods
+        - alias
+        - qualifiers
+        - name
+    FieldOperator:
+      type: string
+      enum:
+        - EQUALS
+        - NOT_EQUALS
+        - IN
+        - NOT_IN
+        - GREATER_THAN
+        - GREATER_THAN_EQUALS
+        - LESS_THAN
+        - LESS_THAN_EQUALS
+        - BETWEEN
+        - STARTS_WITH
+        - CONTAINS
+        - DOES_NOT_CONTAIN
+        - REGEXP
+        - NOT_REGEXP
+        - IS_NULL
+        - IS_NOT_NULL
+      x-enum-varnames:
+        - Equals
+        - NotEquals
+        - In
+        - NotIn
+        - Greater
+        - GreaterEquals
+        - Less
+        - LessEquals
+        - Between
+        - StartsWith
+        - Like
+        - NotLike
+        - Regexp
+        - NotRegexp
+        - IsNull
+        - IsNotNull
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Операторы сравнения с полем
+    FieldFilter:
+      type: object
+      properties:
+        name:
+          title: Имя поля
+          type: string
+        operator:
+          title: Оператор сравнения
+          allOf:
+            - $ref: '#/components/schemas/FieldOperator'
+        values:
+          title: |-
+            Значения для сравнения
+
+            В зависимости от типа условия оно может иметь разное количество значений
+
+            Обычно оно имеет только одно значение
+          type: array
+      required:
+        - name
+        - operator
+        - values
+      title: Поле фильтра
+    FieldsFilters:
       type: array
       items:
-        $ref: '#/components/schemas/Models.Keywords'
+        $ref: '#/components/schemas/FieldFilter'
+      title: Список полей фильтрации
+    TV.API.Types.AbstractEnumArray:
+      type: array
+      items: {}
+      title: |-
+        Тип массива: Enum[]
+
+        Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
+    Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject:
+      type: object
+      properties:
+        id:
+          title: ID проекта
+          type: integer
+        name:
+          title: Название проекта
+          type: string
+        site:
+          title: Домен проекта или url с разделом сайта
+          type: string
+      required:
+        - id
+        - name
+        - site
+      title: Базовый проект в заголовках истории
+    TV.API.Method.AbstractGet:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Реализация API метода получения данных на основе модели
+    Reports_2.Objects.ByDate.History.Result.AbstractHeaders:
+      type: object
+      properties:
+        project_id:
+          title: Основной проект
+          type: integer
+        fields:
+          title: |-
+            Поля объектов отчета
+
+            Тип объектов определяется типом отчета, например для проверки позиций это Запросы
+          type: array
+          items:
+            $ref: '#/components/schemas/Selector.Field'
+        filters:
+          title: |-
+            Фильтры объектов отчета
+
+            Для реализации фичей при экспорте отчетов
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldsFilters'
+        historyFields:
+          title: Запрошенные поля отчета
+          description: '@note Переопределить в phpDoc нужным типом при реализации'
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
+        dates:
+          title: Даты, выводимые в отчете
+          type: array
+          items:
+            type: string
+        projects:
+          title: Информация о проектах, по которым строится отчет
+          nullable: true
+          type: array
+          items:
+            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject'
+        worksheetName:
+          title: |-
+            Модификатор для имени листа
+
+            Используется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel
+          nullable: true
+          type: string
+        api:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Method.AbstractGet'
+      required:
+        - project_id
+        - fields
+        - filters
+        - historyFields
+        - dates
+        - api
+      title: Заголовки отчета истории проверок
+    Positions_2.Mods.Searchers.Interfaces.Region:
+      type: object
+      properties:
+        id:
+          type: integer
+        key:
+          type: integer
+        lang:
+          type: string
+        device:
+          type: string
+        depth:
+          type: integer
+        index:
+          type: integer
+        enabled:
+          type: integer
+        searcher_key:
+          type: integer
+        type:
+          type: string
+        countryCode:
+          type: string
+        name:
+          type: string
+        areaName:
+          type: string
+        domain:
+          type: string
+        parentId:
+          nullable: true
+          type: integer
+      required:
+        - id
+        - key
+        - lang
+        - device
+        - depth
+        - index
+        - enabled
+        - searcher_key
+        - type
+        - countryCode
+        - name
+        - areaName
+        - domain
+    Positions_2.Mods.Searchers.Interfaces.Searcher:
+      type: object
+      properties:
+        project_id:
+          nullable: true
+          type: integer
+        id:
+          type: integer
+        searcher:
+          type: integer
+        key:
+          type: integer
+        name:
+          type: string
+        regions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Positions_2.Mods.Searchers.Interfaces.Region'
+      required:
+        - id
+        - searcher
+        - key
+        - name
+        - regions
+    Positions_2.Objects.History.Result.HeadersProject:
+      type: object
+      properties:
+        searchers:
+          title: Поисковики и регионы проекта в отчете
+          type: array
+          items:
+            $ref: '#/components/schemas/Positions_2.Mods.Searchers.Interfaces.Searcher'
+        id:
+          title: ID проекта
+          type: integer
+        name:
+          title: Название проекта
+          type: string
+        site:
+          title: Домен проекта или url с разделом сайта
+          type: string
+      required:
+        - searchers
+        - id
+        - name
+        - site
+    Positions_2.Objects.History.Result.Headers:
+      type: object
+      properties:
+        historyFields:
+          $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
+          allOf:
+            - $ref: ../../../../TV/API/Types/AbstractEnumArray.json#/components/schemas/TV.API.Types.AbstractEnumArray
+        snippetsTagsByHash:
+          title: Теги сниппетов по хешу
+          description: '@note Не используется в UI'
+          nullable: true
+          type: object
+          additionalProperties: {}
+        projects:
+          title: Информация о проектах в отчете
+          nullable: true
+          type: array
+          items:
+            $ref: '#/components/schemas/Positions_2.Objects.History.Result.HeadersProject'
+        folderName:
+          title: Название папки, включенной в отчет
+          nullable: true
+          type: string
+        groupName:
+          title: Название группы, включенной в отчет
+          nullable: true
+          type: string
+        project_id:
+          title: Основной проект
+          type: integer
+        fields:
+          title: |-
+            Поля объектов отчета
+
+            Тип объектов определяется типом отчета, например для проверки позиций это Запросы
+          type: array
+          items:
+            $ref: '#/components/schemas/Selector.Field'
+        filters:
+          title: |-
+            Фильтры объектов отчета
+
+            Для реализации фичей при экспорте отчетов
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldsFilters'
+        dates:
+          title: Даты, выводимые в отчете
+          type: array
+          items:
+            type: string
+        worksheetName:
+          title: |-
+            Модификатор для имени листа
+
+            Используется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel
+          nullable: true
+          type: string
+        api:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Method.AbstractGet'
+      required:
+        - historyFields
+        - project_id
+        - fields
+        - filters
+        - dates
+        - api
+      title: Заголовки отчета истории позиций
+    Positions_2.Objects.History.Result.Result:
+      type: object
+      properties:
+        headers:
+          nullable: true
+          $ref: '#/components/schemas/Positions_2.Objects.History.Result.Headers'
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders'
+        keywords:
+          title: Список запросов с данными
+          type: array
+          items:
+            type: object
+            additionalProperties: {}
+        visitors:
+          title: Суммарные визиты по датам/проектам/регионам
+          nullable: true
+          type: object
+          additionalProperties:
+            type: integer
+        tops:
+          title: |-
+            Доля запросов в топе указанной глубины
+
+            Глубина зависит от контекста и настраивается в нем же
+          description: Ключ - `date:project_id:region_index`
+          nullable: true
+          type: object
+          additionalProperties:
+            type: number
+        existsDates:
+          title: Даты, в которые есть проверки
+          nullable: true
+          type: array
+          items:
+            type: string
+      required:
+        - keywords
+      title: Результат истории позиций
+    Positions_2.Methods.History.Get.Exec:
+      title: Получение истории позиций
+      allOf:
+        - $ref: '#/components/schemas/Positions_2.Objects.History.Result.Result'
     Positions_2.Types.RegionDevice:
       type: integer
       enum:
@@ -28571,27 +29024,9 @@ components:
       title: Установка общих настроек проверки позиций проекта
     Positions_2.Methods.Settings.Edit.Exec:
       nullable: true
-    group_folder_id_depth:
-      title: При фильтрации по ID папок также искать в подпапках
-      type: boolean
     show_trash:
       title: Искать в корзине
       type: boolean
-    Reports_2.Types.OnlyExistsFirstDate:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - All
-        - OnlyExistsInFirstDate
-        - OnlyAddedAtPeriod
-      x-enum-descriptions:
-        - Без фильтра
-        - Только запросы в первой проверке указанного периода
-        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Get:
       type: object
       properties:
@@ -28638,7 +29073,7 @@ components:
         dates:
           $ref: '#/components/schemas/dates'
         type_range:
-          $ref: '#/components/schemas/type_range'
+          $ref: '#/components/schemas/properties-type_range'
         date1:
           $ref: '#/components/schemas/date1'
         date2:
@@ -39683,7 +40118,7 @@ components:
         dates:
           $ref: '#/components/schemas/dates'
         type_range:
-          $ref: '#/components/schemas/type_range'
+          $ref: '#/components/schemas/properties-type_range'
         date1:
           $ref: '#/components/schemas/date1'
         date2:
@@ -45408,6 +45843,21 @@ components:
       title: Настройка сортировки регионов
     Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec:
       nullable: true
+    Positions_2.Types.OnlyExistsFirstDate:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - All
+        - OnlyExistsInFirstDate
+        - OnlyAddedAtPeriod
+      x-enum-descriptions:
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
+        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Positions_2.Methods.Summary.Chart.Export.Get:
       type: object
       properties:

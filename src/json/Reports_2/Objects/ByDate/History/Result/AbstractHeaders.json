@@ -1,0 +1,80 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Objects.ByDate.History.Result.AbstractHeaders",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Objects.ByDate.History.Result.AbstractHeaders": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Основной проект",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Поля объектов отчета\n\nТип объектов определяется типом отчета, например для проверки позиций это Запросы",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../../Selector/Field.json#/components/schemas/Selector.Field"
+                        }
+                    },
+                    "filters": {
+                        "title": "Фильтры объектов отчета\n\nДля реализации фичей при экспорте отчетов",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../../FieldsFilters.json#/components/schemas/FieldsFilters"
+                        }
+                    },
+                    "historyFields": {
+                        "title": "Запрошенные поля отчета",
+                        "description": "@note Переопределить в phpDoc нужным типом при реализации",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/AbstractEnumArray.json#/components/schemas/TV.API.Types.AbstractEnumArray"
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Даты, выводимые в отчете",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "projects": {
+                        "title": "Информация о проектах, по которым строится отчет",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeadersProject.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject"
+                        }
+                    },
+                    "worksheetName": {
+                        "title": "Модификатор для имени листа\n\nИспользуется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "api": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Method/AbstractGet.json#/components/schemas/TV.API.Method.AbstractGet"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "fields",
+                    "filters",
+                    "historyFields",
+                    "dates",
+                    "api"
+                ],
+                "title": "Заголовки отчета истории проверок"
+            }
+        }
+    }
+}

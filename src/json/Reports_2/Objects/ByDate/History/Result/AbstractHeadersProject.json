@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "Название проекта",
+                        "type": "string"
+                    },
+                    "site": {
+                        "title": "Домен проекта или url с разделом сайта",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "site"
+                ],
+                "title": "Базовый проект в заголовках истории"
+            }
+        }
+    }
+}

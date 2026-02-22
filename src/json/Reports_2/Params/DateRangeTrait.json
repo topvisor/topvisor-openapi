@@ -24,7 +24,7 @@
                         "default": 2,
                         "allOf": [
                             {
-                                "$ref": "../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"
+                                "$ref": "../../Reports_2/Types/TypeRange.json#/components/schemas/Reports_2.Types.TypeRange"
                             }
                         ]
                     },

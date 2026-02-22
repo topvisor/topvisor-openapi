@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Mods.Searchers.Interfaces.Searcher",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Mods.Searchers.Interfaces.Searcher": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "searcher": {
+                        "type": "integer"
+                    },
+                    "key": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "regions": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../Positions_2/Mods/Searchers/Interfaces/Region.json#/components/schemas/Positions_2.Mods.Searchers.Interfaces.Region"
+                        }
+                    }
+                },
+                "required": [
+                    "id",
+                    "searcher",
+                    "key",
+                    "name",
+                    "regions"
+                ]
+            }
+        }
+    }
+}

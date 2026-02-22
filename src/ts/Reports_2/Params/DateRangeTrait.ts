@@ -24,7 +24,7 @@ export interface components {
              * Тип диапазона дат
              * @default 2
              */
-            type_range: import('../../TV/API/Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
+            type_range: import('../Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
             /**
              * Дата начала диапазона
              *
