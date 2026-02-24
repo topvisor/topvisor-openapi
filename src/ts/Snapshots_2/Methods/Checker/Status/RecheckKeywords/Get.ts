@@ -11,7 +11,7 @@ export interface components {
         "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get": {
             /** ID запросов данные о которых нужно получить */
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID регионов */
+            /** Индексы регионов */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /** Добавить ли в результат даты, в которых были проверки (existsDates) */
             show_exists_dates?: boolean;
@@ -52,7 +52,7 @@ export interface components {
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][] | null;
+        "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../Objects/History/Result/Result.ts').components['schemas']['Snapshots_2.Objects.History.Result.Result'] | null;
     };
     responses: never;
     parameters: never;

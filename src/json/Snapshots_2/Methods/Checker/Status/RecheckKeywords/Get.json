@@ -19,7 +19,7 @@
                         ]
                     },
                     "regions_indexes": {
-                        "title": "ID регионов",
+                        "title": "Индексы регионов",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
@@ -134,10 +134,11 @@
             },
             "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "$ref": "../../../../../Models/Keywords.json#/components/schemas/Models.Keywords"
-                }
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Snapshots_2/Objects/History/Result/Result.json#/components/schemas/Snapshots_2.Objects.History.Result.Result"
+                    }
+                ]
             }
         }
     }

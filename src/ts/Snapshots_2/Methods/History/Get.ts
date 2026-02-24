@@ -52,38 +52,7 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Snapshots_2.Methods.History.Get.Exec": (null | {
-            competitors: {
-                domain: string;
-                protocol: string;
-                summariesData: {
-                    [key: string]: {
-                        countUrls: number;
-                        avg?: number;
-                        median?: number;
-                        tops?: {
-                            "\"1_10\"": number;
-                            "\"11_20\""?: number;
-                            "\"11_30\""?: number;
-                            "\"11_50\""?: number;
-                            "\"31_50\"": number;
-                            "\"51_100\"": number;
-                            all: number;
-                            absent: number;
-                        };
-                        visibility?: number;
-                        volumes_no_collected?: "0" | "1" | "2";
-                        urls?: string[];
-                    };
-                };
-                url?: string;
-            }[];
-            dates: string[];
-            depthPositions: number;
-            countKeywords: number;
-            volumes_no_collected?: "0" | "1" | "2";
-            existsDates?: string[];
-        }) | null;
+        "Snapshots_2.Methods.History.Get.Exec": import('../../Objects/History/Result/Result.ts').components['schemas']['Snapshots_2.Objects.History.Result.Result'] | null;
     };
     responses: never;
     parameters: never;

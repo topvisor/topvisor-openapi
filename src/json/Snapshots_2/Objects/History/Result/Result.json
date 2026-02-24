@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Objects.History.Result.Result",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Objects.History.Result.Result": {
+                "type": "object",
+                "properties": {
+                    "keywords": {
+                        "title": "Список запросов с данными",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": {}
+                        }
+                    },
+                    "dates": {
+                        "title": "Даты отчета",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "depthPositions": {
+                        "title": "Глубина проверки",
+                        "type": "integer"
+                    },
+                    "existsDates": {
+                        "title": "Даты, в которые есть проверки",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "headers": {
+                        "title": "Заголовки отчета\n\nДанные заголовки можно и рекомендуется использовать при построении отчетов",
+                        "description": "@note Переопределить нужным типом в phpDoc при реализации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeaders.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "keywords",
+                    "dates",
+                    "depthPositions"
+                ],
+                "title": "Результат истории снимков"
+            }
+        }
+    }
+}

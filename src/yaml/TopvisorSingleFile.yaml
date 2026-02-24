@@ -30615,110 +30615,47 @@ components:
         Получение истории снимков выдачи
 
         Метод базируется на объекте keywords
+    Snapshots_2.Objects.History.Result.Result:
+      type: object
+      properties:
+        keywords:
+          title: Список запросов с данными
+          type: array
+          items:
+            type: object
+            additionalProperties: {}
+        dates:
+          title: Даты отчета
+          type: array
+          items:
+            type: string
+        depthPositions:
+          title: Глубина проверки
+          type: integer
+        existsDates:
+          title: Даты, в которые есть проверки
+          nullable: true
+          type: array
+          items:
+            type: string
+        headers:
+          title: |-
+            Заголовки отчета
+
+            Данные заголовки можно и рекомендуется использовать при построении отчетов
+          description: '@note Переопределить нужным типом в phpDoc при реализации'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders'
+      required:
+        - keywords
+        - dates
+        - depthPositions
+      title: Результат истории снимков
     Snapshots_2.Methods.History.Get.Exec:
       nullable: true
-      anyOf:
-        - type: 'null'
-        - type: object
-          properties:
-            competitors:
-              type: array
-              items:
-                type: object
-                properties:
-                  domain:
-                    type: string
-                  protocol:
-                    type: string
-                  summariesData:
-                    type: object
-                    additionalProperties:
-                      type: object
-                      properties:
-                        countUrls:
-                          type: integer
-                        avg:
-                          type: number
-                        median:
-                          type: number
-                        tops:
-                          type: object
-                          properties:
-                            '"1_10"':
-                              type: integer
-                            '"11_20"':
-                              type: integer
-                            '"11_30"':
-                              type: integer
-                            '"11_50"':
-                              type: integer
-                            '"31_50"':
-                              type: integer
-                            '"51_100"':
-                              type: integer
-                            all:
-                              type: integer
-                            absent:
-                              type: integer
-                          required:
-                            - '"1_10"'
-                            - '"31_50"'
-                            - '"51_100"'
-                            - all
-                            - absent
-                        visibility:
-                          type: number
-                        volumes_no_collected:
-                          anyOf:
-                            - type: integer
-                              enum:
-                                - '0'
-                            - type: integer
-                              enum:
-                                - '1'
-                            - type: integer
-                              enum:
-                                - '2'
-                        urls:
-                          type: array
-                          items:
-                            type: string
-                      required:
-                        - countUrls
-                  url:
-                    type: string
-                required:
-                  - domain
-                  - protocol
-                  - summariesData
-            dates:
-              type: array
-              items:
-                type: string
-            depthPositions:
-              type: integer
-            countKeywords:
-              type: integer
-            volumes_no_collected:
-              anyOf:
-                - type: integer
-                  enum:
-                    - '0'
-                - type: integer
-                  enum:
-                    - '1'
-                - type: integer
-                  enum:
-                    - '2'
-            existsDates:
-              type: array
-              items:
-                type: string
-          required:
-            - competitors
-            - dates
-            - depthPositions
-            - countKeywords
+      allOf:
+        - $ref: '#/components/schemas/Snapshots_2.Objects.History.Result.Result'
     TV.API.Oper:
       type: string
       enum:
@@ -46186,7 +46123,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         regions_indexes:
-          title: ID регионов
+          title: Индексы регионов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         show_exists_dates:
@@ -46262,9 +46199,8 @@ components:
       title: Получить перепроверенные запросы
     Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
       nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Keywords'
+      allOf:
+        - $ref: '#/components/schemas/Snapshots_2.Objects.History.Result.Result'
     Snapshots_2.Methods.Competitors.Chart.Export.Get:
       type: object
       properties:
