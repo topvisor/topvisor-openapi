@@ -46,6 +46,7 @@
                     "forProjectsListRegionDepth": {
                         "title": "Глубина регионов для списка проектов",
                         "description": "@internal",
+                        "nullable": true,
                         "type": "integer"
                     },
                     "group_folder_id_depth": {

@@ -88,6 +88,17 @@
                             ]
                         }
                     },
+                    "relevant_url_significant": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
                     "project_relevant_url": {
                         "type": "string",
                         "nullable": true,

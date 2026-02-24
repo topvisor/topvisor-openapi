@@ -27205,6 +27205,14 @@ components:
               - date
               - project_id
               - region_index
+        relevant_url_significant:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
         project_relevant_url:
           type: string
           nullable: true
@@ -29058,6 +29066,7 @@ components:
         forProjectsListRegionDepth:
           title: Глубина регионов для списка проектов
           description: '@internal'
+          nullable: true
           type: integer
         group_folder_id_depth:
           $ref: '#/components/schemas/group_folder_id_depth'
