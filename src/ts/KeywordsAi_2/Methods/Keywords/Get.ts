@@ -8,12 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "KeywordsAi_2.Methods.Keywords.Get": {
-            /** При фильтрации по ID папок также искать в подпапках */
-            group_folder_id_depth?: boolean;
-            /** Искать в корзине */
-            show_trash?: boolean;
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            group_folder_id_depth?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
+            show_trash?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

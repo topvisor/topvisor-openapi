@@ -7,46 +7,46 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт списка конкурентов */
-        "Snapshots_2.Methods.Competitors.Export.Get": {
-            output: import('../../../Types/Competitors/Export/Output.ts').components['schemas']['Snapshots_2.Types.Competitors.Export.Output'];
+        /**
+         * Экспорт результатов индексации
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+         * @description @todo Объединить с Positions_2\Methods\History\Export\Get
+         */
+        "AiTracker_2.Methods.History.Export.Get": {
+            output: import('../../../Types/History/Export/Output.ts').components['schemas']['AiTracker_2.Types.History.Export.Output'];
             /**
-             * Вернуть ли URI-идентификатор или имя файла, из директории.
+             * Дополнительные параметры экспорта
+             *
+             *     Возможные поля:
+             *     - showSummary
+             *     - compact
+             *     - splitGroups
+             */
+            properties?: unknown[];
+            painting?: import('../../../../Positions_2/Types/History/Export/Painting.ts').components['schemas']['Positions_2.Types.History.Export.Painting'];
+            /**
+             * Использовать вкладки
+             *
+             *     Только для `Output`:
+             *     - Xlsx
+             */
+            with_tabs?: boolean;
+            /**
+             * Поля (fieldAlias) с привязкой к вкладкам
+             *
+             *     Только для xlsx с вкладками или pdf
+             */
+            tabs_fields?: unknown[];
+            /**
+             * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
+             *
+             *     Для внутреннего использования
              * @description @internal
              */
             returnFilenameFromFolder?: string | null;
-            /**
-             * Параметры экспорта, возможные поля:
-             *     - showSummary
-             */
-            properties?: unknown[];
-            /** Добавить в результат данные по топам */
-            show_tops?: boolean;
-            /** Добавить в результат среднюю позицию */
-            show_avg?: boolean;
-            /** Добавить в результат медианную позицию */
-            show_median?: boolean;
-            /** Добавить в результат */
-            show_visibility?: boolean;
-            /** Добавить в результат */
-            show_urls?: boolean;
-            /**
-             * @deprecated Используется в старой версии дизайна
-             * @deprecated
-             * @default domain
-             */
-            competitor_by?: import('../../../Types/Competitors/OutputFormat.ts').components['schemas']['Snapshots_2.Types.Competitors.OutputFormat'];
-            /** Фильтр по доменам */
-            domains?: unknown[] | null;
-            /** Добавить в результат даты, в которых были проверки (existsDates) */
-            show_exists_dates?: boolean;
             group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
             show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
-            region_index?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_index'];
-            searcher_key?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['searcher_key'];
-            region_key?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_key'];
-            region_lang?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_lang'];
-            region_device?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_device'];
             only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
@@ -62,7 +62,8 @@ export interface components {
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Snapshots_2.Methods.Competitors.Export.Get.Exec": string | null;
+        /** Результаты индексации */
+        "AiTracker_2.Methods.History.Export.Get.Exec": string;
     };
     responses: never;
     parameters: never;

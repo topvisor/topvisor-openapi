@@ -54,6 +54,12 @@
                             }
                         ]
                     },
+                    "group_folder_id_depth": {
+                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
+                    },
+                    "show_trash": {
+                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
+                    },
                     "region_index": {
                         "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
                     },
@@ -68,12 +74,6 @@
                     },
                     "region_device": {
                         "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
-                    },
-                    "group_folder_id_depth": {
-                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
-                    },
-                    "show_trash": {
-                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
                     },
                     "only_exists_first_date": {
                         "allOf": [

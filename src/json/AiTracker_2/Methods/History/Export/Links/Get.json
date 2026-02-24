@@ -26,7 +26,7 @@
                         "title": "Тип диапазона дат (при сравнении)",
                         "allOf": [
                             {
-                                "$ref": "../../../../../TV/API/Types/History/TypeRange.json#/components/schemas/TV.API.Types.History.TypeRange"
+                                "$ref": "../../../../../Reports_2/Types/TypeRange.json#/components/schemas/Reports_2.Types.TypeRange"
                             }
                         ]
                     },
@@ -44,22 +44,22 @@
                         "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "dates": {
-                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/dates"
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/dates"
                     },
                     "type_range": {
-                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/type_range"
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/type_range"
                     },
                     "date1": {
-                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date1"
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date1"
                     },
                     "date2": {
-                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date2"
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date2"
                     },
                     "count_dates": {
-                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/count_dates"
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/count_dates"
                     },
                     "period_days": {
-                        "$ref": "../../../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/period_days"
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/period_days"
                     }
                 },
                 "required": [

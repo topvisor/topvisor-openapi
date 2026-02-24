@@ -30,28 +30,21 @@ export interface components {
              */
             positions_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
             history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
-            /**
-             * Только запросы, присутствующие в первой проверке указанного периода
-             *
-             *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-             */
-            only_exists_first_date?: number | null;
-            /** Искать в корзине */
-            show_trash?: boolean;
+            group_folder_id_depth?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
+            show_trash?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             region_index?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_index'];
             searcher_key?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['searcher_key'];
             region_key?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_key'];
             region_lang?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_lang'];
             region_device?: import('../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_device'];
-            /** При фильтрации по ID папок также искать в подпапках */
-            group_folder_id_depth?: boolean;
+            only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['dates'];
-            type_range?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['type_range'];
-            date1?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date1'];
-            date2?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date2'];
-            count_dates?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['period_days'];
+            dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
+            type_range?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
+            date1?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
+            date2?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
+            count_dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка urls проекта */
         "Urls_2.Methods.Get": {
-            fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            fetch_style?: import('../Params/ApiGetParams.ts').components['schemas']['Urls_2.Params.ApiGetParams']['fetch_style'];
             project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

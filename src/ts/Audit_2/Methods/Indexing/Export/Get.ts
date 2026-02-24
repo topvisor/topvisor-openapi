@@ -26,15 +26,15 @@ export interface components {
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */
             properties?: unknown[];
-            /** При фильтрации по ID папок также искать в подпапках */
-            group_folder_id_depth?: boolean;
+            fetch_style?: import('../../../../Urls_2/Params/ApiGetParams.ts').components['schemas']['Urls_2.Params.ApiGetParams']['fetch_style'];
+            only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['dates'];
-            type_range?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['type_range'];
-            date1?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date1'];
-            date2?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date2'];
-            count_dates?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['period_days'];
+            dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
+            type_range?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
+            date1?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
+            date2?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

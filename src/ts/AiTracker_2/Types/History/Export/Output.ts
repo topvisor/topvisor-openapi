@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип диапазона дат
-         * @enum {integer}
+         * Формат экспорта
+         * @enum {string}
          */
-        "TV.API.Types.History.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 100;
+        "AiTracker_2.Types.History.Export.Output": "csv" | "xlsx";
     };
     responses: never;
     parameters: never;

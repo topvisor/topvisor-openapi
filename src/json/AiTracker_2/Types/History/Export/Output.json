@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.History.Export.Output",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.History.Export.Output": {
+                "type": "string",
+                "enum": [
+                    "csv",
+                    "xlsx"
+                ],
+                "x-enum-varnames": [
+                    "CSV",
+                    "Xlsx"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
+                "title": "Формат экспорта"
+            }
+        }
+    }
+}

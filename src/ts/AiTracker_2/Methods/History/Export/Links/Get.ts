@@ -13,18 +13,18 @@ export interface components {
             /** Диапазон значений шаблона */
             template_date_range?: string | null;
             /** Тип диапазона дат (при сравнении) */
-            type_range_compare: import('../../../../../TV/API/Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
+            type_range_compare: import('../../../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
             /** ID тегов */
             tags_ids?: unknown[] | null;
             /** Сортировка данных */
             data_sort?: unknown[] | null;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['dates'];
-            type_range?: import('../../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['type_range'];
-            date1?: import('../../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date1'];
-            date2?: import('../../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['date2'];
-            count_dates?: import('../../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../../../Reports_2/Traits/History/DateRangeTrait.ts').components['schemas']['Reports_2.Traits.History.DateRangeTrait']['period_days'];
+            dates?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
+            type_range?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
+            date1?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
+            date2?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
         };
         /** Короткая гостевая ссылка на просмотр индексации */
         "AiTracker_2.Methods.History.Export.Links.Get.Exec": string | null;

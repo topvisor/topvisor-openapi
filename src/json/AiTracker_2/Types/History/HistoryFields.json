@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.History.HistoryFields",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.History.HistoryFields": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../AiTracker_2/Types/History/HistoryField.json#/components/schemas/AiTracker_2.Types.History.HistoryField"
+                },
+                "title": "Поля с результатами проверки для отчета истории проверок в ИИ-Трекере",
+                "description": "@extends API\\Types\\AbstractTypedArray<HistoryField>\n@method HistoryField[] getValues()\n@method HistoryField current()\n@see HistoryField"
+            }
+        }
+    }
+}

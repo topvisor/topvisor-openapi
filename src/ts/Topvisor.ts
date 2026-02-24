@@ -5222,6 +5222,28 @@ export interface paths {
         trace?: never;
     };  
     /**
+     * Экспорт результатов индексации
+     *
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+     * @description @todo Объединить с Positions_2\Methods\History\Export\Get
+     */
+    "/get/aitracker_2/history/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAitracker2HistoryExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
      * Получение сводки анализа сайта
      * @deprecated
      * @description @deprecated
@@ -9829,6 +9851,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAdmin2UsersInformerSubscriptions"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение гостевой ссылки на просмотр ИИ-Трекера */
+    "/get/aitracker_2/history/export/links/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAitracker2HistoryExportLinks"];
         delete?: never;
         options?: never;
         head?: never;
@@ -15864,7 +15903,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Summary/Get.ts').components['schemas']['Positions_2.Methods.Summary.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -16747,6 +16787,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -18969,6 +19010,32 @@ export interface operations {
             };
         };
     };
+    GetAitracker2HistoryExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/History/Export/Get.ts').components['schemas']['AiTracker_2.Methods.History.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/History/Export/Get.ts').components['schemas']['AiTracker_2.Methods.History.Export.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
+                };
+            };
+        };
+    };
     GetAudit2AuditBrowse: {
         parameters: {
             query?: never;
@@ -19271,7 +19338,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Export/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -22308,7 +22375,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Positions_2/Methods/Summary/Chart/Get.ts').components['schemas']['Positions_2.Methods.Summary.Chart.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -23396,6 +23464,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/Chart/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -23421,6 +23490,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Snapshots_2/Methods/Competitors/Export/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -25590,6 +25660,31 @@ export interface operations {
             };
         };
     };
+    GetAitracker2HistoryExportLinks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/History/Export/Links/Get.ts').components['schemas']['AiTracker_2.Methods.History.Export.Links.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/History/Export/Links/Get.ts').components['schemas']['AiTracker_2.Methods.History.Export.Links.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     EditAudit2AuditCheckerGo: {
         parameters: {
             query?: never;
@@ -26788,6 +26883,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -27063,6 +27159,7 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };

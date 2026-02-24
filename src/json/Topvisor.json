@@ -11630,6 +11630,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -16408,6 +16413,68 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/aitracker_2/history/export/": {
+            "post": {
+                "operationId": "GetAitracker2HistoryExport",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "description": "@todo Объединить с Positions_2\\Methods\\History\\Export\\Get",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/History/Export/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/History/Export/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
                                 }
                             }
                         }
@@ -25954,6 +26021,11 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -30559,6 +30631,59 @@
                 }
             }
         },
+        "/get/aitracker_2/history/export/links/": {
+            "post": {
+                "operationId": "GetAitracker2HistoryExportLinks",
+                "tags": [
+                    "Aitracker_2"
+                ],
+                "summary": "Получение гостевой ссылки на просмотр ИИ-Трекера",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/History/Export/Links/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/History/Export/Links/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/audit_2/audit/checker/go/": {
             "post": {
                 "operationId": "EditAudit2AuditCheckerGo",
@@ -33062,6 +33187,11 @@
                                     "type": "string",
                                     "format": "binary"
                                 }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
                             }
                         }
                     }
@@ -33642,6 +33772,11 @@
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -34988,59 +35123,6 @@
                     }
                 }
             }
-        },
-        "/get/aitracker_2/history/export/links/": {
-            "post": {
-                "operationId": "GetAitracker2HistoryExportLinks",
-                "tags": [
-                    "Aitracker_2"
-                ],
-                "summary": "Получение гостевой ссылки на просмотр ИИ-Трекера",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "AiTracker_2/Methods/History/Export/Links/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "AiTracker_2/Methods/History/Export/Links/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Links.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
     },
     "components": {
@@ -35290,10 +35372,6 @@
         {
             "name": "Vue_2",
             "description": "vue_2"
-        },
-        {
-            "name": "Webscreens_2",
-            "description": "webscreens_2"
         },
         {
             "name": "Webscreens_2",

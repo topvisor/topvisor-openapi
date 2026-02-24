@@ -41,14 +41,11 @@
                             }
                         ]
                     },
-                    "only_exists_first_date": {
-                        "title": "Только запросы, присутствующие в первой проверке указанного периода\n\n- 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH",
-                        "nullable": true,
-                        "type": "integer"
+                    "group_folder_id_depth": {
+                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
                     },
                     "show_trash": {
-                        "title": "Искать в корзине",
-                        "type": "boolean"
+                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
                     },
                     "region_index": {
                         "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
@@ -65,30 +62,33 @@
                     "region_device": {
                         "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
                     },
-                    "group_folder_id_depth": {
-                        "title": "При фильтрации по ID папок также искать в подпапках",
-                        "type": "boolean"
+                    "only_exists_first_date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Reports_2/Types/OnlyExistsFirstDate.json#/components/schemas/Reports_2.Types.OnlyExistsFirstDate"
+                            }
+                        ]
                     },
                     "project_id": {
                         "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "dates": {
-                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/dates"
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/dates"
                     },
                     "type_range": {
-                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/type_range"
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/type_range"
                     },
                     "date1": {
-                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date1"
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date1"
                     },
                     "date2": {
-                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/date2"
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date2"
                     },
                     "count_dates": {
-                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/count_dates"
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/count_dates"
                     },
                     "period_days": {
-                        "$ref": "../../../Reports_2/Traits/History/DateRangeTrait.json#/components/schemas/Reports_2.Traits.History.DateRangeTrait/properties/period_days"
+                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"

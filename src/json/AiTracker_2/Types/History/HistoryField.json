@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Types.History.HistoryField",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Types.History.HistoryField": {
+                "type": "string",
+                "enum": [
+                    "response"
+                ],
+                "x-enum-varnames": [
+                    "Response"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
+                "title": "Поле с результатом проверки для отчета истории проверок в ИИ-Трекере"
+            }
+        }
+    }
+}

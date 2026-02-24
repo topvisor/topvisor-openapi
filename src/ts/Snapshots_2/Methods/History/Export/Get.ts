@@ -32,13 +32,13 @@ export interface components {
              */
             positions_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
             history_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
+            group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
+            show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             region_index?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_index'];
             searcher_key?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['searcher_key'];
             region_key?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_key'];
             region_lang?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_lang'];
             region_device?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_device'];
-            group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
-            show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];

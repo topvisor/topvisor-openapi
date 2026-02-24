@@ -66,9 +66,11 @@
                         "title": "Добавить в результат даты, в которых были проверки (existsDates)",
                         "type": "boolean"
                     },
+                    "group_folder_id_depth": {
+                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
+                    },
                     "show_trash": {
-                        "title": "Искать в корзине",
-                        "type": "boolean"
+                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
                     },
                     "region_index": {
                         "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
@@ -84,9 +86,6 @@
                     },
                     "region_device": {
                         "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
-                    },
-                    "group_folder_id_depth": {
-                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
                     },
                     "only_exists_first_date": {
                         "allOf": [

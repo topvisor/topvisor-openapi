@@ -7,11 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода
-         * @enum {integer}
-         */
-        "Positions_2.Types.OnlyExistsFirstDate": 0 | 1 | 2;
+        /** @mixin Urls_2\Methods\Get */
+        "Urls_2.Params.ApiGetParams": {
+            fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+        };
     };
     responses: never;
     parameters: never;

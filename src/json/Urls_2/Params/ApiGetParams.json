@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Params.ApiGetParams",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Params.ApiGetParams": {
+                "type": "object",
+                "properties": {
+                    "fetch_style": {
+                        "$ref": "../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    }
+                },
+                "required": [],
+                "title": "@mixin Urls_2\\Methods\\Get"
+            }
+        }
+    }
+}

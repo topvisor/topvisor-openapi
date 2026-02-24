@@ -15,7 +15,7 @@ export interface components {
         "TV.API.Params.RegionIndexTrait": {
             /**
              * Индекс региона
-             * @description @experimental Если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
+             * @description @experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
              */
             region_index: number;
             /**

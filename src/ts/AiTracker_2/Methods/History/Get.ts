@@ -9,36 +9,22 @@ export interface components {
     schemas: {
         "AiTracker_2.Methods.History.Get": {
             models: import('../../Types/Models.ts').components['schemas']['AiTracker_2.Types.Models'];
-            /**
-             * Список полей проверок, которые необходимо получить
-             *
-             *     См. поля в объекте Ai\Tracker\Prompts
-             * @default [
-             *       "response"
-             *     ]
-             */
-            check_fields?: unknown[];
+            /** Выбор столбцов данных с результатами проверки */
+            history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
             /** Вернуть ли заголовки отчета */
             show_headers?: boolean;
             /** Вернуть ли даты проверок */
             show_exists_dates?: boolean;
-            /** Произвольные даты без использования диапазона */
-            dates?: unknown[] | null;
-            /** Дата начала диапазона */
-            date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Дата окончания диапазона */
-            date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Тип диапазона дат
-             * @default 2
-             */
-            type_range?: import('../../../TV/API/Types/History/TypeRange.ts').components['schemas']['TV.API.Types.History.TypeRange'];
-            /**
-             * Количество дней в диапазоне
-             * @default 31
-             */
-            count_dates?: number;
+            group_folder_id_depth?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
+            show_trash?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
+            only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
+            type_range?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
+            date1?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
+            date2?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
+            count_dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
