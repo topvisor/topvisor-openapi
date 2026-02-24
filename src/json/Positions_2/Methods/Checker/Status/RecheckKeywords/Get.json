@@ -19,26 +19,96 @@
                         ]
                     },
                     "regions_indexes": {
-                        "title": "ID регионов",
+                        "title": "Индексы регионов",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
                             }
                         ]
                     },
-                    "module_name": {
-                        "title": "@deprecated Использовать метод получения данных в нужном сервисе",
-                        "description": "@see Snapshots_2\\Methods\\Checker\\Status\\RecheckKeywords\\Get()",
+                    "positions_fields": {
+                        "title": "@deprecated Старая версия API",
+                        "nullable": true,
                         "deprecated": true,
-                        "default": "positions",
                         "allOf": [
                             {
-                                "$ref": "../../../../../Positions_2/Types/Checker/Status/RecheckKeywords/ModuleName.json#/components/schemas/Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName"
+                                "$ref": "../../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
+                            }
+                        ]
+                    },
+                    "history_fields": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
+                            }
+                        ]
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "show_top_by_depth": {
+                        "title": "Добавить в результат данные по топу указанной глубины `tops`",
+                        "type": "integer"
+                    },
+                    "filter_by_dynamic": {
+                        "title": "Фильтрация по динамике позиций\n\nБазируется на крайних датах периода.\n\nИгнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Positions_2/Types/History/FilterByDynamics.json#/components/schemas/Positions_2.Types.History.FilterByDynamics"
+                            }
+                        ]
+                    },
+                    "filter_by_positions": {
+                        "title": "Фильтрация по запросам, позиции которых входят в указанные промежутки\n\nМассив пар значений (min, max)\n\n- Базируется на крайней дате периода отчета\n- Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион",
+                        "description": "@see \\Selector\\Types\\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "group_folder_id_depth": {
+                        "$ref": "../../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
+                    },
+                    "show_trash": {
+                        "$ref": "../../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
+                    },
+                    "only_exists_first_date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Types/OnlyExistsFirstDate.json#/components/schemas/Reports_2.Types.OnlyExistsFirstDate"
                             }
                         ]
                     },
                     "project_id": {
                         "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "dates": {
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/period_days"
                     },
                     "fields": {
                         "$ref": "../../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
@@ -67,7 +137,11 @@
                 "title": "Получить перепроверенные запросы\n\nНе предназначен для работы в режиме сравнения\n\nПроверка на права к проекту производятся в get/positions_2/history"
             },
             "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
-                "nullable": true
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Positions_2/Objects/History/Result/Result.json#/components/schemas/Positions_2.Objects.History.Result.Result"
+                    }
+                ]
             }
         }
     }

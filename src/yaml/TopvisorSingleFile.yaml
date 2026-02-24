@@ -17763,6 +17763,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
   /get/positions_2/history/export/toRepository/:
     post:
       operationId: GetPositions2HistoryExportToRepository
@@ -30653,7 +30656,6 @@ components:
         - depthPositions
       title: Результат истории снимков
     Snapshots_2.Methods.History.Get.Exec:
-      nullable: true
       allOf:
         - $ref: '#/components/schemas/Snapshots_2.Objects.History.Result.Result'
     TV.API.Oper:
@@ -45433,18 +45435,6 @@ components:
             - count_added
             - count_missed
         - type: 'null'
-    Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName:
-      type: string
-      enum:
-        - positions
-        - snapshots
-      x-enum-varnames:
-        - Positions
-        - Snapshots
-      x-enum-descriptions:
-        - null
-        - null
-      title: Название модуля для получения статуса запросов
     Positions_2.Methods.Checker.Status.RecheckKeywords.Get:
       type: object
       properties:
@@ -45453,18 +45443,70 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         regions_indexes:
-          title: ID регионов
+          title: Индексы регионов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        module_name:
-          title: '@deprecated Использовать метод получения данных в нужном сервисе'
-          description: '@see Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get()'
+        positions_fields:
+          title: '@deprecated Старая версия API'
+          nullable: true
           deprecated: true
-          default: positions
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName'
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
+        history_fields:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        show_top_by_depth:
+          title: Добавить в результат данные по топу указанной глубины `tops`
+          type: integer
+        filter_by_dynamic:
+          title: |-
+            Фильтрация по динамике позиций
+
+            Базируется на крайних датах периода.
+
+            Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamics'
+        filter_by_positions:
+          title: |-
+            Фильтрация по запросам, позиции которых входят в указанные промежутки
+
+            Массив пар значений (min, max)
+
+            - Базируется на крайней дате периода отчета
+            - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+          description: '@see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        group_folder_id_depth:
+          $ref: '#/components/schemas/group_folder_id_depth'
+        show_trash:
+          $ref: '#/components/schemas/show_trash'
+        only_exists_first_date:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
         project_id:
           $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -45488,7 +45530,8 @@ components:
 
         Проверка на права к проекту производятся в get/positions_2/history
     Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
-      nullable: true
+      allOf:
+        - $ref: '#/components/schemas/Positions_2.Objects.History.Result.Result'
     Positions_2.Types.History.Export.Repository:
       type: string
       enum:
@@ -46119,26 +46162,13 @@ components:
       type: object
       properties:
         keywords_ids:
-          title: ID запросов данные о которых нужно получить
+          title: ID запросов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         regions_indexes:
           title: Индексы регионов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        show_exists_dates:
-          title: Добавить ли в результат даты, в которых были проверки (existsDates)
-          type: boolean
-        show_ams:
-          title: Добавить ли в результат показатель шторма между выбранными проверками
-          type: boolean
-        ui_save_selected_keywords:
-          title: |-
-            Сохранять ли выбранные запросы
-
-            Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
-          default: true
-          type: boolean
         positions_fields:
           title: '@deprecated Старая версия API'
           nullable: true
@@ -46198,7 +46228,6 @@ components:
         - project_id
       title: Получить перепроверенные запросы
     Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
-      nullable: true
       allOf:
         - $ref: '#/components/schemas/Snapshots_2.Objects.History.Result.Result'
     Snapshots_2.Methods.Competitors.Chart.Export.Get:

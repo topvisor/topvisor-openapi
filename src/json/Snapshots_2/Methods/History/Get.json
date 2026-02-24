@@ -115,7 +115,6 @@
                 "title": "Получение истории снимков выдачи\n\nМетод базируется на объекте keywords"
             },
             "Snapshots_2.Methods.History.Get.Exec": {
-                "nullable": true,
                 "allOf": [
                     {
                         "$ref": "../../../Snapshots_2/Objects/History/Result/Result.json#/components/schemas/Snapshots_2.Objects.History.Result.Result"

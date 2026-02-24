@@ -9,21 +9,10 @@ export interface components {
     schemas: {
         /** Получить перепроверенные запросы */
         "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get": {
-            /** ID запросов данные о которых нужно получить */
+            /** ID запросов */
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /** Индексы регионов */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** Добавить ли в результат даты, в которых были проверки (existsDates) */
-            show_exists_dates?: boolean;
-            /** Добавить ли в результат показатель шторма между выбранными проверками */
-            show_ams?: boolean;
-            /**
-             * Сохранять ли выбранные запросы
-             *
-             *     Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
-             * @default true
-             */
-            ui_save_selected_keywords?: boolean;
             /**
              * @deprecated Старая версия API
              * @deprecated
@@ -52,7 +41,7 @@ export interface components {
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../Objects/History/Result/Result.ts').components['schemas']['Snapshots_2.Objects.History.Result.Result'] | null;
+        "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../Objects/History/Result/Result.ts').components['schemas']['Snapshots_2.Objects.History.Result.Result'];
     };
     responses: never;
     parameters: never;

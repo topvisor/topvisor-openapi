@@ -17,16 +17,46 @@ export interface components {
         "Positions_2.Methods.Checker.Status.RecheckKeywords.Get": {
             /** ID запросов */
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID регионов */
+            /** Индексы регионов */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /**
-             * @deprecated Использовать метод получения данных в нужном сервисе
+             * @deprecated Старая версия API
              * @deprecated
-             * @description @see Snapshots_2\Methods\Checker\Status\RecheckKeywords\Get()
-             * @default positions
              */
-            module_name?: import('../../../../Types/Checker/Status/RecheckKeywords/ModuleName.ts').components['schemas']['Positions_2.Types.Checker.Status.RecheckKeywords.ModuleName'];
+            positions_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
+            history_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
+            /** ID конкурентов */
+            competitors_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /** Добавить в результат данные по топу указанной глубины `tops` */
+            show_top_by_depth?: number;
+            /**
+             * Фильтрация по динамике позиций
+             *
+             *     Базируется на крайних датах периода.
+             *
+             *     Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+             */
+            filter_by_dynamic?: import('../../../../Types/History/FilterByDynamics.ts').components['schemas']['Positions_2.Types.History.FilterByDynamics'] | null;
+            /**
+             * Фильтрация по запросам, позиции которых входят в указанные промежутки
+             *
+             *     Массив пар значений (min, max)
+             *
+             *     - Базируется на крайней дате периода отчета
+             *     - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
+             * @description @see \Selector\Types\Operator::Between - Смотрите описание синтаксиса фильтра для `$filter_by_positions`
+             */
+            filter_by_positions?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            group_folder_id_depth?: import('../../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
+            show_trash?: import('../../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
+            only_exists_first_date?: import('../../../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            dates?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
+            type_range?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
+            date1?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
+            date2?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
+            count_dates?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
+            period_days?: import('../../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
             fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
@@ -34,7 +64,7 @@ export interface components {
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": unknown;
+        "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../Objects/History/Result/Result.ts').components['schemas']['Positions_2.Objects.History.Result.Result'];
     };
     responses: never;
     parameters: never;

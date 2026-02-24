@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "keywords_ids": {
-                        "title": "ID запросов данные о которых нужно получить",
+                        "title": "ID запросов",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
@@ -25,19 +25,6 @@
                                 "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
                             }
                         ]
-                    },
-                    "show_exists_dates": {
-                        "title": "Добавить ли в результат даты, в которых были проверки (existsDates)",
-                        "type": "boolean"
-                    },
-                    "show_ams": {
-                        "title": "Добавить ли в результат показатель шторма между выбранными проверками",
-                        "type": "boolean"
-                    },
-                    "ui_save_selected_keywords": {
-                        "title": "Сохранять ли выбранные запросы\n\nСохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`",
-                        "default": true,
-                        "type": "boolean"
                     },
                     "positions_fields": {
                         "title": "@deprecated Старая версия API",
@@ -133,7 +120,6 @@
                 "title": "Получить перепроверенные запросы"
             },
             "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
-                "nullable": true,
                 "allOf": [
                     {
                         "$ref": "../../../../../Snapshots_2/Objects/History/Result/Result.json#/components/schemas/Snapshots_2.Objects.History.Result.Result"
