@@ -15,11 +15,8 @@
                         "type": "boolean"
                     },
                     "show_trash": {
-                        "title": "Искать в корзине",
+                        "title": "Показывать удаленные запросы",
                         "type": "boolean"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [

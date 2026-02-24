@@ -26,10 +26,6 @@
                         "title": "Фильтрация по величине изменения позиции за период (>= N)",
                         "type": "integer"
                     },
-                    "show_trash": {
-                        "title": "Показывать удаленные запросы",
-                        "type": "boolean"
-                    },
                     "positions_fields": {
                         "title": "@deprecated Старая версия API",
                         "nullable": true,
@@ -91,8 +87,8 @@
                     "group_folder_id_depth": {
                         "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
                     },
-                    "fetch_style": {
-                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/fetch_style"
+                    "show_trash": {
+                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
                     },
                     "only_exists_first_date": {
                         "allOf": [

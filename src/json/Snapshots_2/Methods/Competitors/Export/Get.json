@@ -27,41 +27,6 @@
                         "title": "Параметры экспорта, возможные поля:\n- showSummary",
                         "type": "array"
                     },
-                    "project_id": {
-                        "title": "Id проекта",
-                        "type": "integer"
-                    },
-                    "region_index": {
-                        "title": "Индекс региона\n\nЕсли не задан нужно задать параметры searcher_key, region_key, region_lang, region_device",
-                        "nullable": true,
-                        "type": "integer"
-                    },
-                    "searcher_key": {
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
-                    },
-                    "region_key": {
-                        "title": "Ключ региона",
-                        "nullable": true,
-                        "type": "integer"
-                    },
-                    "region_lang": {
-                        "title": "Язык региона",
-                        "nullable": true,
-                        "type": "string"
-                    },
-                    "region_device": {
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
-                    },
                     "show_tops": {
                         "title": "Добавить в результат данные по топам",
                         "type": "boolean"
@@ -101,58 +66,61 @@
                         "title": "Добавить в результат даты, в которых были проверки (existsDates)",
                         "type": "boolean"
                     },
-                    "dates": {
-                        "title": "Произвольные даты без использования диапазона\n\nЕсли не задан нужно задать параметры date1, date2, type_range, count_dates",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
-                            }
-                        ]
-                    },
-                    "date1": {
-                        "title": "Дата начала диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "date2": {
-                        "title": "Дата окончания диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "type_range": {
-                        "title": "Тип диапазона дат",
-                        "default": 2,
-                        "type": "integer"
-                    },
-                    "count_dates": {
-                        "title": "Количество дней в диапазоне",
-                        "default": 31,
-                        "type": "integer"
-                    },
-                    "only_exists_first_date": {
-                        "title": "Только запросы, присутствующие в первой проверке указанного периода\n\n- 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH",
-                        "nullable": true,
-                        "type": "integer"
-                    },
-                    "group_folder_id_depth": {
-                        "title": "При фильтрации по ID папок также искать в подпапках",
-                        "type": "boolean"
-                    },
                     "show_trash": {
                         "title": "Искать в корзине",
                         "type": "boolean"
                     },
+                    "region_index": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
+                    },
+                    "searcher_key": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/searcher_key"
+                    },
+                    "region_key": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_key"
+                    },
+                    "region_lang": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_lang"
+                    },
+                    "region_device": {
+                        "$ref": "../../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
+                    },
+                    "group_folder_id_depth": {
+                        "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
+                    },
+                    "only_exists_first_date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Types/OnlyExistsFirstDate.json#/components/schemas/Reports_2.Types.OnlyExistsFirstDate"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "dates": {
+                        "$ref": "../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/dates"
+                    },
+                    "type_range": {
+                        "$ref": "../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/type_range"
+                    },
+                    "date1": {
+                        "$ref": "../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date1"
+                    },
+                    "date2": {
+                        "$ref": "../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date2"
+                    },
+                    "count_dates": {
+                        "$ref": "../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/count_dates"
+                    },
+                    "period_days": {
+                        "$ref": "../../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/period_days"
+                    },
                     "fields": {
                         "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
                     },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
@@ -165,9 +133,6 @@
                     },
                     "offset": {
                         "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [

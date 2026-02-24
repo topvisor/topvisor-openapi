@@ -11,9 +11,8 @@ export interface components {
         "Keywords_2.Params.Keywords.ApiGetParams": {
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth: boolean;
-            /** Искать в корзине */
+            /** Показывать удаленные запросы */
             show_trash: boolean;
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
     };
     responses: never;

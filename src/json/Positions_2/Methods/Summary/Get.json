@@ -54,9 +54,6 @@
                     "show_trash": {
                         "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
                     },
-                    "fetch_style": {
-                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/fetch_style"
-                    },
                     "only_exists_first_date": {
                         "allOf": [
                             {
