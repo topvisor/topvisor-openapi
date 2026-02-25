@@ -120,6 +120,7 @@
                 "title": "Получить перепроверенные запросы"
             },
             "Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
+                "nullable": true,
                 "allOf": [
                     {
                         "$ref": "../../../../../Snapshots_2/Objects/History/Result/Result.json#/components/schemas/Snapshots_2.Objects.History.Result.Result"

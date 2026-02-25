@@ -64,7 +64,7 @@ export interface components {
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../Objects/History/Result/Result.ts').components['schemas']['Positions_2.Objects.History.Result.Result'];
+        "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": import('../../../../Objects/History/Result/Result.ts').components['schemas']['Positions_2.Objects.History.Result.Result'] | null;
     };
     responses: never;
     parameters: never;

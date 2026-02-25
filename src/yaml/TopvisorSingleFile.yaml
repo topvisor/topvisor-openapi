@@ -45530,6 +45530,7 @@ components:
 
         Проверка на права к проекту производятся в get/positions_2/history
     Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
+      nullable: true
       allOf:
         - $ref: '#/components/schemas/Positions_2.Objects.History.Result.Result'
     Positions_2.Types.History.Export.Repository:
@@ -46228,6 +46229,7 @@ components:
         - project_id
       title: Получить перепроверенные запросы
     Snapshots_2.Methods.Checker.Status.RecheckKeywords.Get.Exec:
+      nullable: true
       allOf:
         - $ref: '#/components/schemas/Snapshots_2.Objects.History.Result.Result'
     Snapshots_2.Methods.Competitors.Chart.Export.Get:

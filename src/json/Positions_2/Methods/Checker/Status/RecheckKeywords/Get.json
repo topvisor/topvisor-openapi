@@ -137,6 +137,7 @@
                 "title": "Получить перепроверенные запросы\n\nНе предназначен для работы в режиме сравнения\n\nПроверка на права к проекту производятся в get/positions_2/history"
             },
             "Positions_2.Methods.Checker.Status.RecheckKeywords.Get.Exec": {
+                "nullable": true,
                 "allOf": [
                     {
                         "$ref": "../../../../../Positions_2/Objects/History/Result/Result.json#/components/schemas/Positions_2.Objects.History.Result.Result"
