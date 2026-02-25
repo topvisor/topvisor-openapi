@@ -623,7 +623,7 @@ export interface components {
             /** @constant */
             readonly Serp_features: "SERP features";
             /** @constant */
-            readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.";
+            readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>Чтобы отобразить колонки с Частотой, позициями и другими данными, нажмите <b>Все запросы</b> и иконку с тремя полосками.";
             /** @constant */
             readonly Relevance_check_already_started: "Relevant check already started";
             /** @constant */
