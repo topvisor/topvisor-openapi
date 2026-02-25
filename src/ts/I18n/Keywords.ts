@@ -623,7 +623,7 @@ export interface components {
             /** @constant */
             readonly Serp_features: "SERP features";
             /** @constant */
-            readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and button with three stripes <i data-top-icon=\"\"></i>.";
+            readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and button with three stripes <i data-top-icon=\"\"></i>.";
             /** @constant */
             readonly Relevance_check_already_started: "Relevant check already started";
             /** @constant */
