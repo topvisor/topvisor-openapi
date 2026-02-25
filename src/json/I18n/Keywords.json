@@ -1239,7 +1239,7 @@
                         "readOnly": true
                     },
                     "No_keywords_in_project": {
-                        "const": "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>Чтобы отобразить колонки с Частотой, позициями и другими данными, нажмите <b>Все запросы</b> и иконку с тремя полосками.",
+                        "const": "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and button with three stripes <i data-top-icon=\"\"></i>.",
                         "readOnly": true
                     },
                     "Relevance_check_already_started": {
