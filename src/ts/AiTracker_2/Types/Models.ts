@@ -9,10 +9,10 @@ export interface components {
     schemas: {
         /**
          * Модель нейросети для AI-трекера
-         * @description @extends API\Types\AbstractTypedArray<\Services\AiTracker_2\Types\Model>
-         *     @method AiTracker_2\Types\Model[] getValues()
-         *     @method AiTracker_2\Types\Model current()
-         *     @see \Services\AiTracker_2\Types\Model
+         * @description @extends API\Types\AbstractTypedArray<Model>
+         *     @method Model[] getValues()
+         *     @method Model current()
+         *     @see Model
          */
         "AiTracker_2.Types.Models": import('./Model.ts').components['schemas']['AiTracker_2.Types.Model'][];
     };
