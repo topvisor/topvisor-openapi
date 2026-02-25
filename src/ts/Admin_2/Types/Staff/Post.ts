@@ -11,7 +11,7 @@ export interface components {
          * Позиция или права сотрудника
          * @enum {string}
          */
-        "Admin_2.Types.Staff.Post": "DEVELOPER" | "SUPPORT" | "ACCOUNTING" | "HR" | "DOCUMENTATION" | "GHOST" | "CONTENT";
+        "Admin_2.Types.Staff.Post": "DEVELOPER" | "SUPPORT" | "ACCOUNTING" | "HR" | "DOCUMENTATION" | "GHOST" | "CONTENT" | "CONTENT_COMMENT";
     };
     responses: never;
     parameters: never;

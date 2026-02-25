@@ -16,7 +16,8 @@
                     "HR",
                     "DOCUMENTATION",
                     "GHOST",
-                    "CONTENT"
+                    "CONTENT",
+                    "CONTENT_COMMENT"
                 ],
                 "x-enum-varnames": [
                     "Developer",
@@ -25,9 +26,11 @@
                     "Hr",
                     "Documentation",
                     "Ghost",
-                    "Content"
+                    "Content",
+                    "ContentComment"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,

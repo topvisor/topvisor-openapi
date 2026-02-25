@@ -22056,6 +22056,7 @@ components:
         - DOCUMENTATION
         - GHOST
         - CONTENT
+        - CONTENT_COMMENT
       x-enum-varnames:
         - Developer
         - Support
@@ -22064,7 +22065,9 @@ components:
         - Documentation
         - Ghost
         - Content
+        - ContentComment
       x-enum-descriptions:
+        - null
         - null
         - null
         - null
