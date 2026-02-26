@@ -179,7 +179,7 @@ export interface components {
             /** @constant */
             readonly Relevant_page: "Ranked URL (Rank Tracker)";
             /** @constant */
-            readonly Relevant_research: "Релевантная (Research)";
+            readonly Relevant_research: "Ranked URL (Research)";
             /** @constant */
             readonly CPC: "CPC";
             /** @constant */
