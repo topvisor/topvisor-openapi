@@ -28454,6 +28454,158 @@ components:
         - regions_indexes
         - project_id
       title: Получение истории позиций по запросам.
+    TV.API.Method.AbstractGetFS:
+      type: object
+      properties:
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Реализация API метода получения данных на основе модели с `fetch_style`
+    Reports_2.Objects.ByDate.Criteria:
+      type: object
+      properties:
+        getHistoryClass:
+          title: Класс реализации отчетов в конкретном сервисе
+          type: string
+        projectId:
+          title: ID проекта
+          type: integer
+        apiGetItems:
+          title: API метод получения объектов для строк отчета
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Method.AbstractGetFS'
+        dates:
+          title: |-
+            Даты, выводимые в отчете, фактические
+
+            Берутся из:
+            - явно указанных в `$dates` за исключением удаленных
+            - загружаются из базы по настройкам периода
+          description: '@phpstan-ignore property.uninitializedReadonly'
+          type: array
+          items:
+            type: string
+        date1:
+          title: Крайняя левая дата отчета
+          description: '@phpstan-ignore property.uninitializedReadonly'
+          type: string
+        date2:
+          title: Крайняя правая дата отчета
+          description: '@phpstan-ignore property.uninitializedReadonly'
+          type: string
+        onlyExistsFirstDate:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+        onlyExistsFirstDateDate:
+          title: Дата для `$onlyExistsFirstDate`
+          description: |-
+            @see Reports_2\Types\OnlyExistsFirstDate
+            @phpstan-ignore property.uninitializedReadonly
+          nullable: true
+          type: string
+        CHAggregator:
+          title: |-
+            Определяется при создании объекта
+
+            Может переустанавливаться для агрегации необходимых данных
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.CriteriaCHAggregator'
+        qualifiersNames:
+          title: |-
+            Список определителей для получения истории проверок
+
+            Всегда в алфавитном порядке, что соответствует принципу работы в Selector
+          type: array
+        fieldNameItemId:
+          title: Имя поля в таблице результатов, в котором хранится `id` элемента `MODEL`
+          type: string
+      required:
+        - getHistoryClass
+        - projectId
+        - apiGetItems
+        - dates
+        - date1
+        - date2
+        - onlyExistsFirstDate
+        - CHAggregator
+        - qualifiersNames
+        - fieldNameItemId
+      title: Критерии построения отчета по истории проверок с базисом по дате
+    Reports_2.Objects.ByDate.CriteriaCHAggregator:
+      type: object
+      properties:
+        criteria:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.Criteria'
+        byProjectsIds:
+          title: |-
+            ID проекта / Конкурентов
+
+            Не путать с основным ID проекта
+
+            Может содержать ID основного проекта и его конкурентов
+
+            Принадлежность конкурентов основному проекту должны проверяться в бизнес логике API метода
+          description: '@note ID основного проекта см. в `$criteria->projectId`'
+          type: array
+          items:
+            type: integer
+        qualifierValues:
+          title: Значения определителя для получения результатов проверки
+          description: '@see AbstractGetReport::QUALIFIER_NAME'
+          anyOf:
+            - type: array
+              items:
+                type: integer
+            - type: array
+              items:
+                type: string
+        dates:
+          title: |-
+            Даты для выборки по конкретным датам
+
+            Если указан `null` — выборка будет происходить по всем проверкам
+
+            Игнорирует статус удаленности проверки
+          nullable: true
+          type: array
+          items:
+            type: string
+        onlyExistsFirstDateDate:
+          title: Дата для фильтра `OnlyExistsFirstDate`
+          description: '@see Reports_2\Types\OnlyExistsFirstDate'
+          nullable: true
+          type: string
+        sqlTpl:
+          title: Шаблон CH запроса для выполнения агрегированных вычислений
+          type: string
+        CHselTV:
+          title: SQL запросов в CH на выборку объектов для отчета
+          nullable: true
+          type: string
+      required:
+        - criteria
+        - byProjectsIds
+        - qualifierValues
+        - sqlTpl
+      title: Агрегатор результатов проверок по конкретным датам по конкретным критериям
+      description: '@internal'
     Selector.Field:
       type: object
       properties:
@@ -28584,31 +28736,13 @@ components:
         - name
         - site
       title: Базовый проект в заголовках истории
-    TV.API.Method.AbstractGet:
-      type: object
-      properties:
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-      required:
-        - fields
-        - orders
-        - filters
-        - offset
-      title: Реализация API метода получения данных на основе модели
     Reports_2.Objects.ByDate.History.Result.AbstractHeaders:
       type: object
       properties:
-        project_id:
+        criteria:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.Criteria'
+        projectid:
           title: Основной проект
           type: integer
         fields:
@@ -28650,16 +28784,13 @@ components:
             Используется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel
           nullable: true
           type: string
-        api:
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Method.AbstractGet'
       required:
-        - project_id
+        - criteria
+        - projectid
         - fields
         - filters
         - historyFields
         - dates
-        - api
       title: Заголовки отчета истории проверок
     Positions_2.Mods.Searchers.Interfaces.Region:
       type: object
@@ -28780,7 +28911,10 @@ components:
           title: Название группы, включенной в отчет
           nullable: true
           type: string
-        project_id:
+        criteria:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.Criteria'
+        projectid:
           title: Основной проект
           type: integer
         fields:
@@ -28811,16 +28945,13 @@ components:
             Используется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel
           nullable: true
           type: string
-        api:
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Method.AbstractGet'
       required:
         - historyFields
-        - project_id
+        - criteria
+        - projectid
         - fields
         - filters
         - dates
-        - api
       title: Заголовки отчета истории позиций
     Positions_2.Objects.History.Result.Result:
       type: object

@@ -9,8 +9,9 @@ export interface components {
     schemas: {
         /** Заголовки отчета истории проверок */
         "Reports_2.Objects.ByDate.History.Result.AbstractHeaders": {
+            criteria: import('../../Criteria.ts').components['schemas']['Reports_2.Objects.ByDate.Criteria'];
             /** Основной проект */
-            project_id: number;
+            projectid: number;
             /**
              * Поля объектов отчета
              *
@@ -38,7 +39,6 @@ export interface components {
              *     Используется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel
              */
             worksheetName?: string | null;
-            api: import('../../../../../TV/API/Method/AbstractGet.ts').components['schemas']['TV.API.Method.AbstractGet'];
         };
     };
     responses: never;

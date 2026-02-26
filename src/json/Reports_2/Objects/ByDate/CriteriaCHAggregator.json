@@ -1,0 +1,81 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Objects.ByDate.CriteriaCHAggregator",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Objects.ByDate.CriteriaCHAggregator": {
+                "type": "object",
+                "properties": {
+                    "criteria": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Reports_2/Objects/ByDate/Criteria.json#/components/schemas/Reports_2.Objects.ByDate.Criteria"
+                            }
+                        ]
+                    },
+                    "byProjectsIds": {
+                        "title": "ID проекта / Конкурентов\n\nНе путать с основным ID проекта\n\nМожет содержать ID основного проекта и его конкурентов\n\nПринадлежность конкурентов основному проекту должны проверяться в бизнес логике API метода",
+                        "description": "@note ID основного проекта см. в `$criteria->projectId`",
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "qualifierValues": {
+                        "title": "Значения определителя для получения результатов проверки",
+                        "description": "@see AbstractGetReport::QUALIFIER_NAME",
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                }
+                            },
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Даты для выборки по конкретным датам\n\nЕсли указан `null` — выборка будет происходить по всем проверкам\n\nИгнорирует статус удаленности проверки",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "onlyExistsFirstDateDate": {
+                        "title": "Дата для фильтра `OnlyExistsFirstDate`",
+                        "description": "@see Reports_2\\Types\\OnlyExistsFirstDate",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "sqlTpl": {
+                        "title": "Шаблон CH запроса для выполнения агрегированных вычислений",
+                        "type": "string"
+                    },
+                    "CHselTV": {
+                        "title": "SQL запросов в CH на выборку объектов для отчета",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "criteria",
+                    "byProjectsIds",
+                    "qualifierValues",
+                    "sqlTpl"
+                ],
+                "title": "Агрегатор результатов проверок по конкретным датам по конкретным критериям",
+                "description": "@internal"
+            }
+        }
+    }
+}

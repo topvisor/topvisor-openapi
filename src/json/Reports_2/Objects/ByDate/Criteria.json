@@ -1,0 +1,93 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Objects.ByDate.Criteria",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Objects.ByDate.Criteria": {
+                "type": "object",
+                "properties": {
+                    "getHistoryClass": {
+                        "title": "Класс реализации отчетов в конкретном сервисе",
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "apiGetItems": {
+                        "title": "API метод получения объектов для строк отчета",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Method/AbstractGetFS.json#/components/schemas/TV.API.Method.AbstractGetFS"
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Даты, выводимые в отчете, фактические\n\nБерутся из:\n- явно указанных в `$dates` за исключением удаленных\n- загружаются из базы по настройкам периода",
+                        "description": "@phpstan-ignore property.uninitializedReadonly",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "date1": {
+                        "title": "Крайняя левая дата отчета",
+                        "description": "@phpstan-ignore property.uninitializedReadonly",
+                        "type": "string"
+                    },
+                    "date2": {
+                        "title": "Крайняя правая дата отчета",
+                        "description": "@phpstan-ignore property.uninitializedReadonly",
+                        "type": "string"
+                    },
+                    "onlyExistsFirstDate": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Reports_2/Types/OnlyExistsFirstDate.json#/components/schemas/Reports_2.Types.OnlyExistsFirstDate"
+                            }
+                        ]
+                    },
+                    "onlyExistsFirstDateDate": {
+                        "title": "Дата для `$onlyExistsFirstDate`",
+                        "description": "@see Reports_2\\Types\\OnlyExistsFirstDate\n@phpstan-ignore property.uninitializedReadonly",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "CHAggregator": {
+                        "title": "Определяется при создании объекта\n\nМожет переустанавливаться для агрегации необходимых данных",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Reports_2/Objects/ByDate/CriteriaCHAggregator.json#/components/schemas/Reports_2.Objects.ByDate.CriteriaCHAggregator"
+                            }
+                        ]
+                    },
+                    "qualifiersNames": {
+                        "title": "Список определителей для получения истории проверок\n\nВсегда в алфавитном порядке, что соответствует принципу работы в Selector",
+                        "type": "array"
+                    },
+                    "fieldNameItemId": {
+                        "title": "Имя поля в таблице результатов, в котором хранится `id` элемента `MODEL`",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "getHistoryClass",
+                    "projectId",
+                    "apiGetItems",
+                    "dates",
+                    "date1",
+                    "date2",
+                    "onlyExistsFirstDate",
+                    "CHAggregator",
+                    "qualifiersNames",
+                    "fieldNameItemId"
+                ],
+                "title": "Критерии построения отчета по истории проверок с базисом по дате"
+            }
+        }
+    }
+}

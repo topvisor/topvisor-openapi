@@ -10,7 +10,14 @@
             "Reports_2.Objects.ByDate.History.Result.AbstractHeaders": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
+                    "criteria": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Objects/ByDate/Criteria.json#/components/schemas/Reports_2.Objects.ByDate.Criteria"
+                            }
+                        ]
+                    },
+                    "projectid": {
                         "title": "Основной проект",
                         "type": "integer"
                     },
@@ -56,22 +63,15 @@
                         "title": "Модификатор для имени листа\n\nИспользуется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel",
                         "nullable": true,
                         "type": "string"
-                    },
-                    "api": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../TV/API/Method/AbstractGet.json#/components/schemas/TV.API.Method.AbstractGet"
-                            }
-                        ]
                     }
                 },
                 "required": [
-                    "project_id",
+                    "criteria",
+                    "projectid",
                     "fields",
                     "filters",
                     "historyFields",
-                    "dates",
-                    "api"
+                    "dates"
                 ],
                 "title": "Заголовки отчета истории проверок"
             }
