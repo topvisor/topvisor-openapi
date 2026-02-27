@@ -27,14 +27,6 @@
                             "additionalProperties": {}
                         }
                     },
-                    "visitors": {
-                        "title": "Суммарные визиты по датам/проектам/регионам",
-                        "nullable": true,
-                        "type": "object",
-                        "additionalProperties": {
-                            "type": "integer"
-                        }
-                    },
                     "tops": {
                         "title": "Доля запросов в топе указанной глубины\n\nГлубина зависит от контекста и настраивается в нем же",
                         "description": "Ключ - `date:project_id:region_index`",
@@ -42,6 +34,15 @@
                         "type": "object",
                         "additionalProperties": {
                             "type": "number"
+                        }
+                    },
+                    "visitors": {
+                        "title": "Суммарные визиты по датам/проектам/регионам",
+                        "description": "Ключ - `date:project_id:region_index`",
+                        "nullable": true,
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "integer"
                         }
                     },
                     "existsDates": {

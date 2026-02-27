@@ -7,9 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Заголовки отчета истории позиций */
+        /**
+         * Заголовки отчета истории позиций
+         * @description @phpstan-import-type Searcher from Positions_2\Mods\Searchers\Interfaces\Searcher
+         */
         "Positions_2.Objects.History.Result.Headers": {
-            historyFields: import('../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] & import('../../../../TV/API/Types/AbstractEnumArray.ts').components['schemas']['TV.API.Types.AbstractEnumArray'];
+            result: import('./Result.ts').components['schemas']['Positions_2.Objects.History.Result.Result'] & import('../../../../Reports_2/Objects/ByDate/History/Result/AbstractResult.ts').components['schemas']['Reports_2.Objects.ByDate.History.Result.AbstractResult'];
+            historyFields: import('../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] & components["schemas"]["TV.API.Types.AbstractEnumArray"];
             /**
              * Теги сниппетов по хешу
              * @description @note Не используется в UI
@@ -23,9 +27,22 @@ export interface components {
             folderName?: string | null;
             /** Название группы, включенной в отчет */
             groupName?: string | null;
+            /**
+             * Сводка для каждого запрошенного результата
+             * @description @see Result::$tops
+             *     @see Result::$visitors
+             */
+            summaries: {
+                tops: {
+                    [key: string]: number;
+                };
+                visitors: {
+                    [key: string]: number;
+                };
+            };
             criteria: import('../../../../Reports_2/Objects/ByDate/Criteria.ts').components['schemas']['Reports_2.Objects.ByDate.Criteria'];
             /** Основной проект */
-            projectid: number;
+            projectId: number;
             /**
              * Поля объектов отчета
              *

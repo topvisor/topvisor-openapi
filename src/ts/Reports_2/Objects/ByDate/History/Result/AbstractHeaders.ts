@@ -7,11 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Заголовки отчета истории проверок */
+        /** Заголовки отчета истории проверок с базисом по дате */
         "Reports_2.Objects.ByDate.History.Result.AbstractHeaders": {
+            result: import('./AbstractResult.ts').components['schemas']['Reports_2.Objects.ByDate.History.Result.AbstractResult'];
             criteria: import('../../Criteria.ts').components['schemas']['Reports_2.Objects.ByDate.Criteria'];
             /** Основной проект */
-            projectid: number;
+            projectId: number;
             /**
              * Поля объектов отчета
              *
@@ -25,7 +26,7 @@ export interface components {
              */
             filters: import('../../../../../FieldsFilters.ts').components['schemas']['FieldsFilters'][];
             /**
-             * Запрошенные поля отчета
+             * Запрошенные поля результатов проверок
              * @description @note Переопределить в phpDoc нужным типом при реализации
              */
             historyFields: import('../../../../../TV/API/Types/AbstractEnumArray.ts').components['schemas']['TV.API.Types.AbstractEnumArray'];
@@ -33,6 +34,12 @@ export interface components {
             dates: string[];
             /** Информация о проектах, по которым строится отчет */
             projects?: import('./AbstractHeadersProject.ts').components['schemas']['Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject'][] | null;
+            /** Отображаемая сводка */
+            summaries: {
+                [key: string]: {
+                    [key: string]: unknown;
+                };
+            };
             /**
              * Модификатор для имени листа
              *

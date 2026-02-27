@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Objects.ByDate.History.Result.AbstractResult",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Objects.ByDate.History.Result.AbstractResult": {
+                "type": "object",
+                "properties": {
+                    "headers": {
+                        "title": "Заголовки отчета\n\nДанные заголовки можно и рекомендуется использовать при построении отчетов",
+                        "description": "@note Переопределить нужным типом в phpDoc при реализации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeaders.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders"
+                            }
+                        ]
+                    }
+                },
+                "required": [],
+                "title": "Результат метода получения истории проверок с базисом по дате",
+                "description": "@see class/API/Params/History/README.md"
+            }
+        }
+    }
+}

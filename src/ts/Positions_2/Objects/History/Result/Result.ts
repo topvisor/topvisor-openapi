@@ -14,10 +14,6 @@ export interface components {
             keywords: {
                 [key: string]: unknown;
             }[];
-            /** Суммарные визиты по датам/проектам/регионам */
-            visitors?: {
-                [key: string]: number;
-            } | null;
             /**
              * Доля запросов в топе указанной глубины
              *
@@ -25,6 +21,13 @@ export interface components {
              * @description Ключ - `date:project_id:region_index`
              */
             tops?: {
+                [key: string]: number;
+            } | null;
+            /**
+             * Суммарные визиты по датам/проектам/регионам
+             * @description Ключ - `date:project_id:region_index`
+             */
+            visitors?: {
                 [key: string]: number;
             } | null;
             /** Даты, в которые есть проверки */

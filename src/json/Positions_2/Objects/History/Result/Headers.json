@@ -10,6 +10,14 @@
             "Positions_2.Objects.History.Result.Headers": {
                 "type": "object",
                 "properties": {
+                    "result": {
+                        "$ref": "../../../../Positions_2/Objects/History/Result/Result.json#/components/schemas/Positions_2.Objects.History.Result.Result",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Objects/ByDate/History/Result/AbstractResult.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractResult"
+                            }
+                        ]
+                    },
                     "historyFields": {
                         "$ref": "../../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields",
                         "allOf": [
@@ -43,6 +51,29 @@
                         "nullable": true,
                         "type": "string"
                     },
+                    "summaries": {
+                        "title": "Сводка для каждого запрошенного результата",
+                        "description": "@see Result::$tops\n@see Result::$visitors",
+                        "type": "object",
+                        "properties": {
+                            "tops": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "number"
+                                }
+                            },
+                            "visitors": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "required": [
+                            "tops",
+                            "visitors"
+                        ]
+                    },
                     "criteria": {
                         "allOf": [
                             {
@@ -50,7 +81,7 @@
                             }
                         ]
                     },
-                    "projectid": {
+                    "projectId": {
                         "title": "Основной проект",
                         "type": "integer"
                     },
@@ -82,14 +113,17 @@
                     }
                 },
                 "required": [
+                    "result",
                     "historyFields",
+                    "summaries",
                     "criteria",
-                    "projectid",
+                    "projectId",
                     "fields",
                     "filters",
                     "dates"
                 ],
-                "title": "Заголовки отчета истории позиций"
+                "title": "Заголовки отчета истории позиций",
+                "description": "@phpstan-import-type Searcher from Positions_2\\Mods\\Searchers\\Interfaces\\Searcher"
             }
         }
     }

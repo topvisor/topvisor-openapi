@@ -10,6 +10,13 @@
             "Reports_2.Objects.ByDate.History.Result.AbstractHeaders": {
                 "type": "object",
                 "properties": {
+                    "result": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Objects/ByDate/History/Result/AbstractResult.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractResult"
+                            }
+                        ]
+                    },
                     "criteria": {
                         "allOf": [
                             {
@@ -17,7 +24,7 @@
                             }
                         ]
                     },
-                    "projectid": {
+                    "projectId": {
                         "title": "Основной проект",
                         "type": "integer"
                     },
@@ -36,7 +43,7 @@
                         }
                     },
                     "historyFields": {
-                        "title": "Запрошенные поля отчета",
+                        "title": "Запрошенные поля результатов проверок",
                         "description": "@note Переопределить в phpDoc нужным типом при реализации",
                         "allOf": [
                             {
@@ -59,6 +66,14 @@
                             "$ref": "../../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeadersProject.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject"
                         }
                     },
+                    "summaries": {
+                        "title": "Отображаемая сводка",
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "additionalProperties": {}
+                        }
+                    },
                     "worksheetName": {
                         "title": "Модификатор для имени листа\n\nИспользуется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel",
                         "nullable": true,
@@ -66,14 +81,16 @@
                     }
                 },
                 "required": [
+                    "result",
                     "criteria",
-                    "projectid",
+                    "projectId",
                     "fields",
                     "filters",
                     "historyFields",
-                    "dates"
+                    "dates",
+                    "summaries"
                 ],
-                "title": "Заголовки отчета истории проверок"
+                "title": "Заголовки отчета истории проверок с базисом по дате"
             }
         }
     }
