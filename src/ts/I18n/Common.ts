@@ -885,7 +885,7 @@ export interface components {
             /** @constant */
             readonly Your_projects: "Your projects";
             /** @constant */
-            readonly Incorrect_file_format: "Invalid file format (expected: %availableExtensionsNames%)\n\tPlease check <a href=\"/support/audit/#settings\" target=\"_blank\" class=\"a\">Website Audit settings</a> and <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">White List settings</a>, also make sure that the file itself is correct";
+            readonly Incorrect_file_format: "Invalid file format (expected: %availableExtensionsNames%)\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>";
             /** @constant */
             readonly Max_size: "Maximum upload size exceeded (%maxSize%)";
             /** @constant */

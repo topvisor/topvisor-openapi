@@ -1753,7 +1753,7 @@
                         "readOnly": true
                     },
                     "Incorrect_file_format": {
-                        "const": "Invalid file format (expected: %availableExtensionsNames%)\n\tPlease check <a href=\"/support/audit/#settings\" target=\"_blank\" class=\"a\">Website Audit settings</a> and <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">White List settings</a>, also make sure that the file itself is correct",
+                        "const": "Invalid file format (expected: %availableExtensionsNames%)\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>",
                         "readOnly": true
                     },
                     "Max_size": {
