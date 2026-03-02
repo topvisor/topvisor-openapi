@@ -575,7 +575,7 @@ export interface components {
             /** @constant */
             readonly Remove_pluses_fullstops_commas_apostrophes_quotes: "Remove plus symbols, full stops, commas, apostrophes, quotes";
             /** @constant */
-            readonly HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
+            readonly HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
             /** @constant */
             readonly Collect_settings: "Collect settings";
             /** @constant */

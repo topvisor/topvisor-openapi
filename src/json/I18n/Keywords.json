@@ -1143,7 +1143,7 @@
                         "readOnly": true
                     },
                     "HintVolumeNoCollected": {
-                        "const": "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.",
+                        "const": "Volume isn't collected. Follow <a href=\"/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.",
                         "readOnly": true
                     },
                     "Collect_settings": {
