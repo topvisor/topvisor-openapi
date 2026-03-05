@@ -45,6 +45,9 @@ export interface components {
              * @description @internal
              */
             returnFilenameFromFolder?: string | null;
+            /** Выбор столбцов данных с результатами проверки */
+            history_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
+            models: import('../../../Types/Models.ts').components['schemas']['AiTracker_2.Types.Models'];
             group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
             show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];

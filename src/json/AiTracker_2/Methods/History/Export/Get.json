@@ -42,6 +42,22 @@
                         "nullable": true,
                         "type": "string"
                     },
+                    "history_fields": {
+                        "title": "Выбор столбцов данных с результатами проверки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../AiTracker_2/Types/History/HistoryFields.json#/components/schemas/AiTracker_2.Types.History.HistoryFields"
+                            }
+                        ]
+                    },
+                    "models": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
+                            }
+                        ]
+                    },
                     "group_folder_id_depth": {
                         "$ref": "../../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
                     },
@@ -97,6 +113,7 @@
                 },
                 "required": [
                     "output",
+                    "models",
                     "project_id"
                 ],
                 "title": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",

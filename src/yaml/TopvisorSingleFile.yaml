@@ -22491,9 +22491,18 @@ components:
       type: string
       enum:
         - response
+        - mentioned
+        - position
+        - position_max
       x-enum-varnames:
         - Response
+        - Mentioned
+        - Position
+        - PositionMax
       x-enum-descriptions:
+        - null
+        - null
+        - null
         - null
       title: Поле с результатом проверки для отчета истории проверок в ИИ-Трекере
     AiTracker_2.Types.History.HistoryFields:
@@ -34635,6 +34644,14 @@ components:
           description: '@internal'
           nullable: true
           type: string
+        history_fields:
+          title: Выбор столбцов данных с результатами проверки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
+        models:
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
         group_folder_id_depth:
           $ref: '#/components/schemas/group_folder_id_depth'
         show_trash:
@@ -34670,6 +34687,7 @@ components:
           $ref: '#/components/schemas/offset'
       required:
         - output
+        - models
         - project_id
       title: |-
         Экспорт результатов индексации
