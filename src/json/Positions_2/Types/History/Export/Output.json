@@ -16,7 +16,7 @@
                     "pdf"
                 ],
                 "x-enum-varnames": [
-                    "CSV",
+                    "Csv",
                     "Xlsx",
                     "Html",
                     "Pdf"
@@ -27,7 +27,8 @@
                     null,
                     null
                 ],
-                "title": "Формат экспорта"
+                "title": "Формат экспорта",
+                "description": "@see Reports_2\\Objects\\Format\\AbstractFormat"
             }
         }
     }

@@ -34593,6 +34593,7 @@ components:
         - null
         - null
       title: Формат экспорта
+      description: '@see Reports_2\Objects\Format\AbstractFormat'
     Positions_2.Types.History.Export.Painting:
       type: integer
       enum:
@@ -39829,7 +39830,7 @@ components:
         - html
         - pdf
       x-enum-varnames:
-        - CSV
+        - Csv
         - Xlsx
         - Html
         - Pdf
@@ -39839,6 +39840,7 @@ components:
         - null
         - null
       title: Формат экспорта
+      description: '@see Reports_2\Objects\Format\AbstractFormat'
     Positions_2.Methods.History.Export.Get:
       type: object
       properties:
