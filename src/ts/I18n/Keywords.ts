@@ -417,6 +417,8 @@ export interface components {
             /** @constant */
             readonly Move_by_substrings_info: "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.";
             /** @constant */
+            readonly Move_by_substrings_placeholder: "Specify a list of strings to search for. All queries containing at least one string from this list will be moved to the specified group.";
+            /** @constant */
             readonly Filter_short: "F";
             /** @constant */
             readonly Tag: "Tag";

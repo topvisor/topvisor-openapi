@@ -826,6 +826,10 @@
                         "const": "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.",
                         "readOnly": true
                     },
+                    "Move_by_substrings_placeholder": {
+                        "const": "Specify a list of strings to search for. All queries containing at least one string from this list will be moved to the specified group.",
+                        "readOnly": true
+                    },
                     "Filter_short": {
                         "const": "F",
                         "readOnly": true
@@ -1463,6 +1467,7 @@
                     "Move_by_substrings",
                     "Move_by_substrings_whole_words",
                     "Move_by_substrings_info",
+                    "Move_by_substrings_placeholder",
                     "Filter_short",
                     "Tag",
                     "Change",
