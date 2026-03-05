@@ -18,7 +18,7 @@
                         ]
                     },
                     "properties": {
-                        "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitGroups",
+                        "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitByGroup\n\nИспользуются не во всех форматах",
                         "type": "array"
                     },
                     "painting": {

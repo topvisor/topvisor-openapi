@@ -21,7 +21,9 @@ export interface components {
              *     Возможные поля:
              *     - showSummary
              *     - compact
-             *     - splitGroups
+             *     - splitByGroup
+             *
+             *     Используются не во всех форматах
              */
             properties?: unknown[];
             painting?: import('../../../../Positions_2/Types/History/Export/Painting.ts').components['schemas']['Positions_2.Types.History.Export.Painting'];

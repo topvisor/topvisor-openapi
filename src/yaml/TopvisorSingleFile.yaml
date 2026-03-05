@@ -34618,7 +34618,9 @@ components:
             Возможные поля:
             - showSummary
             - compact
-            - splitGroups
+            - splitByGroup
+
+            Используются не во всех форматах
           type: array
         painting:
           allOf:
@@ -39850,7 +39852,9 @@ components:
             Возможные поля:
             - showSummary
             - compact
-            - splitGroups
+            - splitByGroup
+
+            Используются не во всех форматах
           type: array
         painting:
           allOf:
