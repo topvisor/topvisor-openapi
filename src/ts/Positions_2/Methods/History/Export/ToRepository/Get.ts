@@ -13,7 +13,7 @@ export interface components {
          *     После сохранения редиректит в хранилище
          */
         "Positions_2.Methods.History.Export.ToRepository.Get": {
-            repository: import('../../../../Types/History/Export/Repository.ts').components['schemas']['Positions_2.Types.History.Export.Repository'];
+            repository: import('../../../../../Reports_2/Types/Export/Repository.ts').components['schemas']['Reports_2.Types.Export.Repository'];
             output: import('../../../../Types/History/Export/Output.ts').components['schemas']['Positions_2.Types.History.Export.Output'];
             /**
              * Дополнительные параметры экспорта
@@ -21,7 +21,9 @@ export interface components {
              *     Возможные поля:
              *     - showSummary
              *     - compact
-             *     - splitGroups
+             *     - splitByGroup
+             *
+             *     Используются не во всех форматах
              */
             properties?: unknown[];
             painting?: import('../../../../Types/History/Export/Painting.ts').components['schemas']['Positions_2.Types.History.Export.Painting'];

@@ -14,7 +14,7 @@
                     "xlsx"
                 ],
                 "x-enum-varnames": [
-                    "CSV",
+                    "Csv",
                     "Xlsx"
                 ],
                 "x-enum-descriptions": [

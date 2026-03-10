@@ -41,8 +41,6 @@ tags:
     description: eastereggs_2
   - name: Example_2
     description: example_2
-  - name: Export_2
-    description: export_2
   - name: Fa2_2
     description: fa2_2
   - name: Gitlab_2
@@ -117,6 +115,8 @@ tags:
     description: votes_2
   - name: Vue_2
     description: vue_2
+  - name: Webscreens_2
+    description: webscreens_2
   - name: Webscreens_2
     description: webscreens_2
 paths:
@@ -34587,7 +34587,7 @@ components:
         - csv
         - xlsx
       x-enum-varnames:
-        - CSV
+        - Csv
         - Xlsx
       x-enum-descriptions:
         - null
@@ -45743,7 +45743,7 @@ components:
       nullable: true
       allOf:
         - $ref: '#/components/schemas/Positions_2.Objects.History.Result.Result'
-    Positions_2.Types.History.Export.Repository:
+    Reports_2.Types.Export.Repository:
       type: string
       enum:
         - gdrive
@@ -45757,7 +45757,7 @@ components:
       properties:
         repository:
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.History.Export.Repository'
+            - $ref: '#/components/schemas/Reports_2.Types.Export.Repository'
         output:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.Export.Output'
@@ -45768,7 +45768,9 @@ components:
             Возможные поля:
             - showSummary
             - compact
-            - splitGroups
+            - splitByGroup
+
+            Используются не во всех форматах
           type: array
         painting:
           allOf:

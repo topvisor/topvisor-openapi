@@ -13,7 +13,7 @@
                     "repository": {
                         "allOf": [
                             {
-                                "$ref": "../../../../../Positions_2/Types/History/Export/Repository.json#/components/schemas/Positions_2.Types.History.Export.Repository"
+                                "$ref": "../../../../../Reports_2/Types/Export/Repository.json#/components/schemas/Reports_2.Types.Export.Repository"
                             }
                         ]
                     },
@@ -25,7 +25,7 @@
                         ]
                     },
                     "properties": {
-                        "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitGroups",
+                        "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitByGroup\n\nИспользуются не во всех форматах",
                         "type": "array"
                     },
                     "painting": {
