@@ -14,18 +14,9 @@
                         "title": "ID пользователя",
                         "type": "integer"
                     },
-                    "entityId": {
-                        "title": "ID акта\n\nУкажите `sum=`, если API не раблотает и данных акта нет",
-                        "nullable": true,
-                        "type": "string"
-                    },
-                    "date": {
-                        "title": "Дата акта в формате d.m.Y",
-                        "type": "string"
-                    },
-                    "pass": {
-                        "title": "Пароль в диадоке",
-                        "type": "string"
+                    "sum": {
+                        "title": "Сумма списания",
+                        "type": "integer"
                     },
                     "test": {
                         "title": "Является ли запуск - тестом",
@@ -34,8 +25,7 @@
                 },
                 "required": [
                     "userId",
-                    "date",
-                    "pass",
+                    "sum",
                     "test"
                 ],
                 "title": "Оплата реферального счета"
