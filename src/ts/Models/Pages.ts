@@ -58,7 +58,7 @@ export interface components {
             author_promo_label?: any;
             author_promo_link?: any;
             view?: any;
-            like?: any;
+            emoji?: any;
             bookmark?: any;
             bookmark_author?: any;
             publish_timestamp?: any;

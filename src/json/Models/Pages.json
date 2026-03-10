@@ -159,7 +159,7 @@
                     "view": {
                         "nullable": true
                     },
-                    "like": {
+                    "emoji": {
                         "nullable": true
                     },
                     "bookmark": {

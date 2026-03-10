@@ -10,7 +10,7 @@ export interface components {
         /** Редактирование статуса закладки для страницы */
         "Content_2.Methods.Bookmark.Edit": {
             /** Поддомен страницы */
-            subdomain: string;
+            subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
             /** Url страницы */
             url: string;
             /**

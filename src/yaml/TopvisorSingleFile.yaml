@@ -19630,7 +19630,7 @@ components:
           nullable: true
         author_count_pages:
           nullable: true
-        like:
+        emoji:
           nullable: true
         page_title:
           nullable: true
@@ -25354,7 +25354,8 @@ components:
       properties:
         subdomain:
           title: Поддомен страницы
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Subdomain'
         url:
           title: Url страницы
           type: string
@@ -25635,7 +25636,7 @@ components:
           nullable: true
         view:
           nullable: true
-        like:
+        emoji:
           nullable: true
         bookmark:
           nullable: true

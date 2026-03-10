@@ -12,7 +12,11 @@
                 "properties": {
                     "subdomain": {
                         "title": "Поддомен страницы",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
                     },
                     "url": {
                         "title": "Url страницы",
