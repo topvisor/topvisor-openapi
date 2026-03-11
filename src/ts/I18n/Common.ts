@@ -485,19 +485,19 @@ export interface components {
             /** @constant */
             readonly Yandex_Wordstat: "Yandex Wordstat";
             /** @constant */
-            readonly Y_freq: "Volume";
+            readonly Y_freq: "V";
             /** @constant */
-            readonly Y_freq2: "\"Volume\"";
+            readonly Y_freq2: "\"V\"";
             /** @constant */
-            readonly Y_freq3: "\"!Volume\"";
+            readonly Y_freq3: "\"!V\"";
             /** @constant */
-            readonly Y_freq5: "\"[Volume]\"";
+            readonly Y_freq5: "\"[V]\"";
             /** @constant */
-            readonly Y_freq6: "\"[!Volume]\"";
+            readonly Y_freq6: "\"[!V]\"";
             /** @constant */
-            readonly G_freq2: "\"[Volume]\"";
+            readonly G_freq2: "\"[V]\"";
             /** @constant */
-            readonly M_freq2: "\"Volume\"";
+            readonly M_freq2: "\"V\"";
             /** @constant */
             readonly Y_price1: "1st Premium";
             /** @constant */

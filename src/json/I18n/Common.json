@@ -953,31 +953,31 @@
                         "readOnly": true
                     },
                     "Y_freq": {
-                        "const": "Volume",
+                        "const": "V",
                         "readOnly": true
                     },
                     "Y_freq2": {
-                        "const": "\"Volume\"",
+                        "const": "\"V\"",
                         "readOnly": true
                     },
                     "Y_freq3": {
-                        "const": "\"!Volume\"",
+                        "const": "\"!V\"",
                         "readOnly": true
                     },
                     "Y_freq5": {
-                        "const": "\"[Volume]\"",
+                        "const": "\"[V]\"",
                         "readOnly": true
                     },
                     "Y_freq6": {
-                        "const": "\"[!Volume]\"",
+                        "const": "\"[!V]\"",
                         "readOnly": true
                     },
                     "G_freq2": {
-                        "const": "\"[Volume]\"",
+                        "const": "\"[V]\"",
                         "readOnly": true
                     },
                     "M_freq2": {
-                        "const": "\"Volume\"",
+                        "const": "\"V\"",
                         "readOnly": true
                     },
                     "Y_price1": {
