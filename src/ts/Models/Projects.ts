@@ -94,7 +94,7 @@ export interface components {
             watcher_types?: unknown[] | null;
             ai_tracker_brand_name?: any;
             ai_tracker_aliases?: unknown[] | null;
-            ai_tracker_models?: unknown[] | null;
+            ai_tracker_models_names?: unknown[] | null;
             ai_tracker_context_lang?: any;
             ai_tracker_context_location?: any;
         };
