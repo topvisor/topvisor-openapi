@@ -22717,28 +22717,28 @@ components:
           example:
             need set qualifiers:
               - date
-              - model
+              - model_name
               - project_id
         mentioned:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model
+              - model_name
               - project_id
         position:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model
+              - model_name
               - project_id
         position_max:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model
+              - model_name
               - project_id
     AiTracker_2.Methods.History.Get.Exec:
       type: array
@@ -34607,6 +34607,28 @@ components:
         - Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками
         - Динамическая/градиентная раскраска; Акцент на величине изменения позиций
       title: Режимы визуализации изменений позиций в экспорте
+    AiTracker_2.Types.ModelName:
+      type: string
+      enum:
+        - deepseek
+        - grok
+      x-enum-varnames:
+        - Deepseek
+        - Grok
+      x-enum-descriptions:
+        - null
+        - null
+      title: Модель для ИИ трекера
+    AiTracker_2.Types.ModelsNames:
+      type: array
+      items:
+        $ref: '#/components/schemas/AiTracker_2.Types.ModelName'
+      title: Модель нейросети для AI-трекера
+      description: |-
+        @extends API\Types\AbstractTypedArray<ModelName>
+        @method ModelName[] getValues()
+        @method ModelName current()
+        @see ModelName
     AiTracker_2.Methods.History.Export.Get:
       type: object
       properties:
@@ -34653,9 +34675,9 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
-        models:
+        models_names:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
         group_folder_id_depth:
           $ref: '#/components/schemas/group_folder_id_depth'
         show_trash:
@@ -34691,7 +34713,7 @@ components:
           $ref: '#/components/schemas/offset'
       required:
         - output
-        - models
+        - models_names
         - project_id
       title: |-
         Экспорт результатов индексации

@@ -51,10 +51,10 @@
                             }
                         ]
                     },
-                    "models": {
+                    "models_names": {
                         "allOf": [
                             {
-                                "$ref": "../../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
+                                "$ref": "../../../../AiTracker_2/Types/ModelsNames.json#/components/schemas/AiTracker_2.Types.ModelsNames"
                             }
                         ]
                     },
@@ -113,7 +113,7 @@
                 },
                 "required": [
                     "output",
-                    "models",
+                    "models_names",
                     "project_id"
                 ],
                 "title": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
