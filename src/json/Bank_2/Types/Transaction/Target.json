@@ -12,6 +12,7 @@
                 "enum": [
                     "audit",
                     "auditIndexing",
+                    "auditIndexingToolbox",
                     "auditSitemap",
                     "auditWatcher",
                     "broker",
@@ -35,6 +36,7 @@
                 "x-enum-varnames": [
                     "Audit",
                     "AuditIndexing",
+                    "AuditIndexingToolbox",
                     "AuditSitemap",
                     "AuditWatcher",
                     "Broker",
@@ -58,6 +60,7 @@
                 "x-enum-descriptions": [
                     "Анализ сайта",
                     "Индексация",
+                    "Индексация в тулбоксе",
                     "Карта сайта",
                     "Радар",
                     "Управления ставками в рекламе",
