@@ -66,6 +66,7 @@ export interface components {
             /**
              * @example {
              *       "need set qualifiers": [
+             *         "project_id",
              *         "region_index"
              *       ]
              *     }
