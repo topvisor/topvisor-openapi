@@ -20892,7 +20892,6 @@ components:
         - snippets
         - shortLinks
         - urls
-        - prompts
       x-enum-varnames:
         - Tickets
         - Projects
@@ -20900,9 +20899,7 @@ components:
         - Snippets
         - ShortLinks
         - Urls
-        - Prompts
       x-enum-descriptions:
-        - null
         - null
         - null
         - null
@@ -22915,7 +22912,7 @@ components:
           $ref: '#/components/schemas/AiTracker_2.Objects.History.Headers.Headers'
           allOf:
             - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
-        prompts:
+        keywords:
           title: Список промптов с данными
           type: array
           items:
@@ -22928,7 +22925,7 @@ components:
           items:
             type: string
       required:
-        - prompts
+        - keywords
       title: Результат истории AI-трекера
     AiTracker_2.Methods.History.Get.Exec:
       title: Получение истории AI-трекера

@@ -11,7 +11,7 @@ export interface components {
          * Тип тега, к каким объектам применяется
          * @enum {string}
          */
-        "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls" | "prompts";
+        "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls";
     };
     responses: never;
     parameters: never;

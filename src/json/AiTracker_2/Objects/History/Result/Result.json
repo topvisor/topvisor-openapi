@@ -19,7 +19,7 @@
                             }
                         ]
                     },
-                    "prompts": {
+                    "keywords": {
                         "title": "Список промптов с данными",
                         "type": "array",
                         "items": {
@@ -37,7 +37,7 @@
                     }
                 },
                 "required": [
-                    "prompts"
+                    "keywords"
                 ],
                 "title": "Результат истории AI-трекера"
             }

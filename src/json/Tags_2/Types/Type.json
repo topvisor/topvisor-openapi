@@ -15,8 +15,7 @@
                     "keywords",
                     "snippets",
                     "shortLinks",
-                    "urls",
-                    "prompts"
+                    "urls"
                 ],
                 "x-enum-varnames": [
                     "Tickets",
@@ -24,11 +23,9 @@
                     "Keywords",
                     "Snippets",
                     "ShortLinks",
-                    "Urls",
-                    "Prompts"
+                    "Urls"
                 ],
                 "x-enum-descriptions": [
-                    null,
                     null,
                     null,
                     null,
