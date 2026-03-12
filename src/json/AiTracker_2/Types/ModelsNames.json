@@ -13,7 +13,7 @@
                     "$ref": "../../AiTracker_2/Types/ModelName.json#/components/schemas/AiTracker_2.Types.ModelName"
                 },
                 "title": "Модель нейросети для AI-трекера",
-                "description": "@extends API\\Types\\AbstractTypedArray<ModelName>\n@method ModelName[] getValues()\n@method ModelName current()\n@see ModelName"
+                "description": "@see ModelName"
             }
         }
     }

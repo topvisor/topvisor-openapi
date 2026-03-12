@@ -7,11 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Модель нейросети для AI-трекера
-         * @description @see ModelName
-         */
-        "AiTracker_2.Types.ModelsNames": import('./ModelName.ts').components['schemas']['AiTracker_2.Types.ModelName'][];
+        /** Базовый проект в заголовках истории */
+        "Reports_2.Objects.ByDate.History.Headers.AbstractProject": {
+            /** ID проекта */
+            id: number;
+            /** Название проекта */
+            name: string;
+            /** Домен проекта или url с разделом сайта */
+            site: string;
+        };
     };
     responses: never;
     parameters: never;

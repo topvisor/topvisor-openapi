@@ -8,13 +8,13 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "AiTracker_2.Methods.History.Get": {
-            models: import('../../Types/Models.ts').components['schemas']['AiTracker_2.Types.Models'];
-            /** Выбор столбцов данных с результатами проверки */
-            history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
             /** Вернуть ли заголовки отчета */
             show_headers?: boolean;
             /** Вернуть ли даты проверок */
             show_exists_dates?: boolean;
+            /** Выбор столбцов данных с результатами проверки */
+            history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
+            models_names: import('../../Types/ModelsNames.ts').components['schemas']['AiTracker_2.Types.ModelsNames'];
             group_folder_id_depth?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
             show_trash?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
@@ -32,7 +32,8 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        "AiTracker_2.Methods.History.Get.Exec": import('../../../Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'][];
+        /** Получение истории AI-трекера */
+        "AiTracker_2.Methods.History.Get.Exec": import('../../Objects/History/Result/Result.ts').components['schemas']['AiTracker_2.Objects.History.Result.Result'];
     };
     responses: never;
     parameters: never;

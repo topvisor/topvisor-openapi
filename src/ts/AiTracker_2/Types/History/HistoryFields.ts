@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Поля с результатами проверки для отчета истории проверок в ИИ-Трекере
-         * @description @extends API\Types\AbstractTypedArray<HistoryField>
-         *     @method HistoryField[] getValues()
-         *     @method HistoryField current()
-         *     @see HistoryField
+         * @description @see HistoryField
          */
         "AiTracker_2.Types.History.HistoryFields": import('./HistoryField.ts').components['schemas']['AiTracker_2.Types.History.HistoryField'][];
     };

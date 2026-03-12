@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Objects.History.Headers.Headers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Objects.History.Headers.Headers": {
+                "type": "object",
+                "properties": {
+                    "snippetsTagsByHash": {
+                        "title": "Теги сниппетов по хешу",
+                        "description": "@note Не используется в UI",
+                        "nullable": true,
+                        "type": "object",
+                        "additionalProperties": {}
+                    },
+                    "folderName": {
+                        "title": "Название папки, включенной в отчет",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "title": "Название группы, включенной в отчет",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "title": "Основной проект",
+                        "type": "integer"
+                    },
+                    "dates": {
+                        "title": "Даты, выводимые в отчете",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "historyFields": {
+                        "title": "Запрошенные поля результатов проверок",
+                        "description": "@note Переопределить в phpDoc нужным типом при реализации",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/AbstractEnumArray.json#/components/schemas/TV.API.Types.AbstractEnumArray"
+                            }
+                        ]
+                    },
+                    "projects": {
+                        "title": "Информация о проектах, по которым строится отчет",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.json#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject"
+                        }
+                    },
+                    "summaries": {
+                        "title": "Сводка для каждого результата проверки",
+                        "type": "array"
+                    },
+                    "isCompare": {
+                        "title": "Режим сравнения\n\nПримеры:\n- Вывод нескольких проектов\n- Вывод нескольких регионов\n- Вывод нескольких проектов и регионов",
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "title": "Поля элементов отчета\n\nТип элементов определяется конкретным отчетом, например для проверки позиций это Запросы",
+                        "description": "@see static::MODEL",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../Selector/Field.json#/components/schemas/Selector.Field"
+                        }
+                    },
+                    "filters": {
+                        "title": "Фильтры элементов отчета\n\nДля реализации фичей при экспорте отчетов",
+                        "description": "@see static::MODEL",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../../../FieldsFilters.json#/components/schemas/FieldsFilters"
+                        }
+                    },
+                    "groupBy": {
+                        "title": "Поле для визуальной группировки элементов\n\nЕсли указно поле, которого нет в элементах, то оно буде игнорироваться",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "projectId",
+                    "dates",
+                    "historyFields",
+                    "projects",
+                    "summaries",
+                    "isCompare",
+                    "fields",
+                    "filters",
+                    "groupBy"
+                ],
+                "title": "Заголовки отчета истории позиций",
+                "description": "@phpstan-import-type Searcher from Positions_2\\Mods\\Searchers\\Interfaces\\Searcher\n@phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}\n@property Positions_2\\Types\\History\\HistoryFields $historyFields\n@property list<Project> $projects"
+            }
+        }
+    }
+}

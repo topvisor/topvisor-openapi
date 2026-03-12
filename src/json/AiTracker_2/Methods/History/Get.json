@@ -10,12 +10,13 @@
             "AiTracker_2.Methods.History.Get": {
                 "type": "object",
                 "properties": {
-                    "models": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
-                            }
-                        ]
+                    "show_headers": {
+                        "title": "Вернуть ли заголовки отчета",
+                        "type": "boolean"
+                    },
+                    "show_exists_dates": {
+                        "title": "Вернуть ли даты проверок",
+                        "type": "boolean"
                     },
                     "history_fields": {
                         "title": "Выбор столбцов данных с результатами проверки",
@@ -26,13 +27,12 @@
                             }
                         ]
                     },
-                    "show_headers": {
-                        "title": "Вернуть ли заголовки отчета",
-                        "type": "boolean"
-                    },
-                    "show_exists_dates": {
-                        "title": "Вернуть ли даты проверок",
-                        "type": "boolean"
+                    "models_names": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../AiTracker_2/Types/ModelsNames.json#/components/schemas/AiTracker_2.Types.ModelsNames"
+                            }
+                        ]
                     },
                     "group_folder_id_depth": {
                         "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
@@ -88,15 +88,17 @@
                     }
                 },
                 "required": [
-                    "models",
+                    "models_names",
                     "project_id"
                 ]
             },
             "AiTracker_2.Methods.History.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "$ref": "../../../Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
-                }
+                "title": "Получение истории AI-трекера",
+                "allOf": [
+                    {
+                        "$ref": "../../../AiTracker_2/Objects/History/Result/Result.json#/components/schemas/AiTracker_2.Objects.History.Result.Result"
+                    }
+                ]
             }
         }
     }

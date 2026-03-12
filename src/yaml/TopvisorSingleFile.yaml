@@ -22457,28 +22457,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Votes'
-    AiTracker_2.Types.Model:
-      type: string
-      enum:
-        - deepseek
-        - grok
-      x-enum-varnames:
-        - Deepseek
-        - Grok
-      x-enum-descriptions:
-        - null
-        - null
-      title: Модель для ИИ трекера
-    AiTracker_2.Types.Models:
-      type: array
-      items:
-        $ref: '#/components/schemas/AiTracker_2.Types.Model'
-      title: Модель нейросети для AI-трекера
-      description: |-
-        @extends API\Types\AbstractTypedArray<Model>
-        @method Model[] getValues()
-        @method Model current()
-        @see Model
     AiTracker_2.Types.History.HistoryField:
       type: string
       enum:
@@ -22502,11 +22480,25 @@ components:
       items:
         $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryField'
       title: Поля с результатами проверки для отчета истории проверок в ИИ-Трекере
-      description: |-
-        @extends API\Types\AbstractTypedArray<HistoryField>
-        @method HistoryField[] getValues()
-        @method HistoryField current()
-        @see HistoryField
+      description: '@see HistoryField'
+    AiTracker_2.Types.ModelName:
+      type: string
+      enum:
+        - deepseek
+        - grok
+      x-enum-varnames:
+        - Deepseek
+        - Grok
+      x-enum-descriptions:
+        - null
+        - null
+      title: Модель для ИИ трекера
+    AiTracker_2.Types.ModelsNames:
+      type: array
+      items:
+        $ref: '#/components/schemas/AiTracker_2.Types.ModelName'
+      title: Модель нейросети для AI-трекера
+      description: '@see ModelName'
     group_folder_id_depth:
       title: При фильтрации по ID папок также искать в подпапках
       type: boolean
@@ -22617,20 +22609,20 @@ components:
     AiTracker_2.Methods.History.Get:
       type: object
       properties:
-        models:
-          allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
-        history_fields:
-          title: Выбор столбцов данных с результатами проверки
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
         show_headers:
           title: Вернуть ли заголовки отчета
           type: boolean
         show_exists_dates:
           title: Вернуть ли даты проверок
           type: boolean
+        history_fields:
+          title: Выбор столбцов данных с результатами проверки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
+        models_names:
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
         group_folder_id_depth:
           $ref: '#/components/schemas/group_folder_id_depth'
         show_trash:
@@ -22665,8 +22657,283 @@ components:
         offset:
           $ref: '#/components/schemas/offset'
       required:
-        - models
+        - models_names
         - project_id
+    Selector.Field:
+      type: object
+      properties:
+        availableMethods:
+          default:
+            - ABS
+            - TO_PERCENT
+            - MINUS
+            - SUM
+            - DIVIDE
+            - OR
+            - AND
+          type: array
+        alias:
+          type: string
+        qualifiers:
+          type: array
+        name:
+          type: string
+      required:
+        - availableMethods
+        - alias
+        - qualifiers
+        - name
+    FieldOperator:
+      type: string
+      enum:
+        - EQUALS
+        - NOT_EQUALS
+        - IN
+        - NOT_IN
+        - GREATER_THAN
+        - GREATER_THAN_EQUALS
+        - LESS_THAN
+        - LESS_THAN_EQUALS
+        - BETWEEN
+        - STARTS_WITH
+        - CONTAINS
+        - DOES_NOT_CONTAIN
+        - REGEXP
+        - NOT_REGEXP
+        - IS_NULL
+        - IS_NOT_NULL
+      x-enum-varnames:
+        - Equals
+        - NotEquals
+        - In
+        - NotIn
+        - Greater
+        - GreaterEquals
+        - Less
+        - LessEquals
+        - Between
+        - StartsWith
+        - Like
+        - NotLike
+        - Regexp
+        - NotRegexp
+        - IsNull
+        - IsNotNull
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Операторы сравнения с полем
+    FieldFilter:
+      type: object
+      properties:
+        name:
+          title: Имя поля
+          type: string
+        operator:
+          title: Оператор сравнения
+          allOf:
+            - $ref: '#/components/schemas/FieldOperator'
+        values:
+          title: |-
+            Значения для сравнения
+
+            В зависимости от типа условия оно может иметь разное количество значений
+
+            Обычно оно имеет только одно значение
+          type: array
+      required:
+        - name
+        - operator
+        - values
+      title: Поле фильтра
+    FieldsFilters:
+      type: array
+      items:
+        $ref: '#/components/schemas/FieldFilter'
+      title: Список полей фильтрации
+    Reports_2.Objects.AbstractHeaders:
+      type: object
+      properties:
+        fields:
+          title: |-
+            Поля элементов отчета
+
+            Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/Selector.Field'
+        filters:
+          title: |-
+            Фильтры элементов отчета
+
+            Для реализации фичей при экспорте отчетов
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldsFilters'
+        groupBy:
+          title: |-
+            Поле для визуальной группировки элементов
+
+            Если указно поле, которого нет в элементах, то оно буде игнорироваться
+          type: string
+      required:
+        - fields
+        - filters
+        - groupBy
+      title: |-
+        Заголовки отчета
+
+        Заголовки содержат основные данные по которым строится отчет:
+        - для простых отчетов это список полей `fields`
+        - для более сложных отчетов параметры могут содержать другие данные, необходимые для построения отчета
+
+        Где используется:
+        - для вывода данных в API для последующего построения отчета в UI/другим способом на стороне клиента
+        - для генерации отчета при экспорте
+    TV.API.Types.AbstractEnumArray:
+      type: array
+      items: {}
+      title: |-
+        Тип массива: Enum[]
+
+        Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
+    Reports_2.Objects.ByDate.History.Headers.AbstractProject:
+      type: object
+      properties:
+        id:
+          title: ID проекта
+          type: integer
+        name:
+          title: Название проекта
+          type: string
+        site:
+          title: Домен проекта или url с разделом сайта
+          type: string
+      required:
+        - id
+        - name
+        - site
+      title: Базовый проект в заголовках истории
+    AiTracker_2.Objects.History.Headers.Headers:
+      type: object
+      properties:
+        folderName:
+          title: Название папки, включенной в отчет
+          nullable: true
+          type: string
+        groupName:
+          title: Название группы, включенной в отчет
+          nullable: true
+          type: string
+        projectId:
+          title: Основной проект
+          type: integer
+        dates:
+          title: Даты, выводимые в отчете
+          type: array
+          items:
+            type: string
+        historyFields:
+          title: Запрошенные поля результатов проверок
+          description: '@note Переопределить в phpDoc нужным типом при реализации'
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
+        projects:
+          title: Информация о проектах, по которым строится отчет
+          type: array
+          items:
+            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
+        summaries:
+          title: Сводка для каждого результата проверки
+          type: array
+        isCompare:
+          title: |-
+            Режим сравнения
+
+            Примеры:
+            - Вывод нескольких проектов
+            - Вывод нескольких регионов
+            - Вывод нескольких проектов и регионов
+          type: boolean
+        fields:
+          title: |-
+            Поля элементов отчета
+
+            Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/Selector.Field'
+        filters:
+          title: |-
+            Фильтры элементов отчета
+
+            Для реализации фичей при экспорте отчетов
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldsFilters'
+        groupBy:
+          title: |-
+            Поле для визуальной группировки элементов
+
+            Если указно поле, которого нет в элементах, то оно буде игнорироваться
+          type: string
+      required:
+        - projectId
+        - dates
+        - historyFields
+        - projects
+        - summaries
+        - isCompare
+        - fields
+        - filters
+        - groupBy
+      title: '@property AiTracker_2\Types\History\HistoryFields $historyFields'
+      description: '@property list<Project> $projects'
+    AiTracker_2.Objects.History.Result.Result:
+      type: object
+      properties:
+        headers:
+          nullable: true
+          $ref: '#/components/schemas/AiTracker_2.Objects.History.Headers.Headers'
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
+        prompts:
+          title: Список промптов с данными
+          type: array
+          items:
+            type: object
+            additionalProperties: {}
+        existsDates:
+          title: Даты, в которые есть проверки
+          nullable: true
+          type: array
+          items:
+            type: string
+      required:
+        - prompts
+      title: Результат истории AI-трекера
+    AiTracker_2.Methods.History.Get.Exec:
+      title: Получение истории AI-трекера
+      allOf:
+        - $ref: '#/components/schemas/AiTracker_2.Objects.History.Result.Result'
     Models.KeywordsAi.Keywords:
       properties:
         COUNT(*):
@@ -22728,10 +22995,28 @@ components:
               - date
               - model_name
               - project_id
-    AiTracker_2.Methods.History.Get.Exec:
+    AiTracker_2.Types.Model:
+      type: string
+      enum:
+        - deepseek
+        - grok
+      x-enum-varnames:
+        - Deepseek
+        - Grok
+      x-enum-descriptions:
+        - null
+        - null
+      title: Модель для ИИ трекера
+    AiTracker_2.Types.Models:
       type: array
       items:
-        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
+        $ref: '#/components/schemas/AiTracker_2.Types.Model'
+      title: Модель нейросети для AI-трекера
+      description: |-
+        @extends API\Types\AbstractTypedArray<Model>
+        @method Model[] getValues()
+        @method Model current()
+        @see Model
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -28444,178 +28729,7 @@ components:
         - regions_indexes
         - project_id
       title: Получение истории позиций по запросам.
-    Selector.Field:
-      type: object
-      properties:
-        availableMethods:
-          default:
-            - ABS
-            - TO_PERCENT
-            - MINUS
-            - SUM
-            - DIVIDE
-            - OR
-            - AND
-          type: array
-        alias:
-          type: string
-        qualifiers:
-          type: array
-        name:
-          type: string
-      required:
-        - availableMethods
-        - alias
-        - qualifiers
-        - name
-    FieldOperator:
-      type: string
-      enum:
-        - EQUALS
-        - NOT_EQUALS
-        - IN
-        - NOT_IN
-        - GREATER_THAN
-        - GREATER_THAN_EQUALS
-        - LESS_THAN
-        - LESS_THAN_EQUALS
-        - BETWEEN
-        - STARTS_WITH
-        - CONTAINS
-        - DOES_NOT_CONTAIN
-        - REGEXP
-        - NOT_REGEXP
-        - IS_NULL
-        - IS_NOT_NULL
-      x-enum-varnames:
-        - Equals
-        - NotEquals
-        - In
-        - NotIn
-        - Greater
-        - GreaterEquals
-        - Less
-        - LessEquals
-        - Between
-        - StartsWith
-        - Like
-        - NotLike
-        - Regexp
-        - NotRegexp
-        - IsNull
-        - IsNotNull
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-      title: Операторы сравнения с полем
-    FieldFilter:
-      type: object
-      properties:
-        name:
-          title: Имя поля
-          type: string
-        operator:
-          title: Оператор сравнения
-          allOf:
-            - $ref: '#/components/schemas/FieldOperator'
-        values:
-          title: |-
-            Значения для сравнения
-
-            В зависимости от типа условия оно может иметь разное количество значений
-
-            Обычно оно имеет только одно значение
-          type: array
-      required:
-        - name
-        - operator
-        - values
-      title: Поле фильтра
-    FieldsFilters:
-      type: array
-      items:
-        $ref: '#/components/schemas/FieldFilter'
-      title: Список полей фильтрации
-    Reports_2.Objects.AbstractHeaders:
-      type: object
-      properties:
-        fields:
-          title: |-
-            Поля элементов отчета
-
-            Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
-          description: '@see static::MODEL'
-          type: array
-          items:
-            $ref: '#/components/schemas/Selector.Field'
-        filters:
-          title: |-
-            Фильтры элементов отчета
-
-            Для реализации фичей при экспорте отчетов
-          description: '@see static::MODEL'
-          type: array
-          items:
-            $ref: '#/components/schemas/FieldsFilters'
-        groupBy:
-          title: |-
-            Поле для визуальной группировки элементов
-
-            Если указно поле, которого нет в элементах, то оно буде игнорироваться
-          type: string
-      required:
-        - fields
-        - filters
-        - groupBy
-      title: |-
-        Заголовки отчета
-
-        Заголовки содержат основные данные по которым строится отчет:
-        - для простых отчетов это список полей `fields`
-        - для более сложных отчетов параметры могут содержать другие данные, необходимые для построения отчета
-
-        Где используется:
-        - для вывода данных в API для последующего построения отчета в UI/другим способом на стороне клиента
-        - для генерации отчета при экспорте
-    TV.API.Types.AbstractEnumArray:
-      type: array
-      items: {}
-      title: |-
-        Тип массива: Enum[]
-
-        Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
-    Reports_2.Objects.ByDate.History.Result.Headers.AbstractProject:
-      type: object
-      properties:
-        id:
-          title: ID проекта
-          type: integer
-        name:
-          title: Название проекта
-          type: string
-        site:
-          title: Домен проекта или url с разделом сайта
-          type: string
-      required:
-        - id
-        - name
-        - site
-      title: Базовый проект в заголовках истории
-    Positions_2.Objects.History.Result.Headers.Headers:
+    Positions_2.Objects.History.Headers.Headers:
       type: object
       properties:
         snippetsTagsByHash:
@@ -28649,7 +28763,7 @@ components:
           title: Информация о проектах, по которым строится отчет
           type: array
           items:
-            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.Headers.AbstractProject'
+            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
         summaries:
           title: Сводка для каждого результата проверки
           type: array
@@ -28707,7 +28821,7 @@ components:
       properties:
         headers:
           nullable: true
-          $ref: '#/components/schemas/Positions_2.Objects.History.Result.Headers.Headers'
+          $ref: '#/components/schemas/Positions_2.Objects.History.Headers.Headers'
           allOf:
             - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
         keywords:
@@ -34548,28 +34662,6 @@ components:
         - Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками
         - Динамическая/градиентная раскраска; Акцент на величине изменения позиций
       title: Режимы визуализации изменений позиций в экспорте
-    AiTracker_2.Types.ModelName:
-      type: string
-      enum:
-        - deepseek
-        - grok
-      x-enum-varnames:
-        - Deepseek
-        - Grok
-      x-enum-descriptions:
-        - null
-        - null
-      title: Модель для ИИ трекера
-    AiTracker_2.Types.ModelsNames:
-      type: array
-      items:
-        $ref: '#/components/schemas/AiTracker_2.Types.ModelName'
-      title: Модель нейросети для AI-трекера
-      description: |-
-        @extends API\Types\AbstractTypedArray<ModelName>
-        @method ModelName[] getValues()
-        @method ModelName current()
-        @see ModelName
     AiTracker_2.Methods.History.Export.Get:
       type: object
       properties:

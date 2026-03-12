@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Objects.History.Result.Result",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Objects.History.Result.Result": {
+                "type": "object",
+                "properties": {
+                    "headers": {
+                        "nullable": true,
+                        "$ref": "../../../../AiTracker_2/Objects/History/Headers/Headers.json#/components/schemas/AiTracker_2.Objects.History.Headers.Headers",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Objects/AbstractHeaders.json#/components/schemas/Reports_2.Objects.AbstractHeaders"
+                            }
+                        ]
+                    },
+                    "prompts": {
+                        "title": "Список промптов с данными",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": {}
+                        }
+                    },
+                    "existsDates": {
+                        "title": "Даты, в которые есть проверки",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "prompts"
+                ],
+                "title": "Результат истории AI-трекера"
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Результат истории позиций */
         "Positions_2.Objects.History.Result.Result": {
-            headers?: (import('./Headers/Headers.ts').components['schemas']['Positions_2.Objects.History.Result.Headers.Headers'] & import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders']) | null;
+            headers?: (import('../Headers/Headers.ts').components['schemas']['Positions_2.Objects.History.Headers.Headers'] & import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders']) | null;
             /** Список запросов с данными */
             keywords: {
                 [key: string]: unknown;
