@@ -7,11 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Результат истории позиций
-         * @description @extends Reports_2\Objects\ByDate\History\Result\AbstractResult<Headers\Headers>
-         */
+        /** Результат истории позиций */
         "Positions_2.Objects.History.Result.Result": {
+            headers?: (import('./Headers/Headers.ts').components['schemas']['Positions_2.Objects.History.Result.Headers.Headers'] & import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders']) | null;
             /** Список запросов с данными */
             keywords: {
                 [key: string]: unknown;
@@ -36,7 +34,6 @@ export interface components {
             visitors?: {
                 [key: string]: number;
             } | null;
-            headers?: import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders'] | null;
         };
     };
     responses: never;

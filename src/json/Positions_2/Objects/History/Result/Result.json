@@ -10,6 +10,15 @@
             "Positions_2.Objects.History.Result.Result": {
                 "type": "object",
                 "properties": {
+                    "headers": {
+                        "nullable": true,
+                        "$ref": "../../../../Positions_2/Objects/History/Result/Headers/Headers.json#/components/schemas/Positions_2.Objects.History.Result.Headers.Headers",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Objects/AbstractHeaders.json#/components/schemas/Reports_2.Objects.AbstractHeaders"
+                            }
+                        ]
+                    },
                     "keywords": {
                         "title": "Список запросов с данными",
                         "type": "array",
@@ -46,21 +55,12 @@
                         "additionalProperties": {
                             "type": "integer"
                         }
-                    },
-                    "headers": {
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Reports_2/Objects/AbstractHeaders.json#/components/schemas/Reports_2.Objects.AbstractHeaders"
-                            }
-                        ]
                     }
                 },
                 "required": [
                     "keywords"
                 ],
-                "title": "Результат истории позиций",
-                "description": "@extends Reports_2\\Objects\\ByDate\\History\\Result\\AbstractResult<Headers\\Headers>"
+                "title": "Результат истории позиций"
             }
         }
     }

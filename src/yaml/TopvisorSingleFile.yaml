@@ -28611,9 +28611,126 @@ components:
         Где используется:
         - для вывода данных в API для последующего построения отчета в UI/другим способом на стороне клиента
         - для генерации отчета при экспорте
+    TV.API.Types.AbstractEnumArray:
+      type: array
+      items: {}
+      title: |-
+        Тип массива: Enum[]
+
+        Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
+    Reports_2.Objects.ByDate.History.Result.Headers.AbstractProject:
+      type: object
+      properties:
+        id:
+          title: ID проекта
+          type: integer
+        name:
+          title: Название проекта
+          type: string
+        site:
+          title: Домен проекта или url с разделом сайта
+          type: string
+      required:
+        - id
+        - name
+        - site
+      title: Базовый проект в заголовках истории
+    Positions_2.Objects.History.Result.Headers.Headers:
+      type: object
+      properties:
+        snippetsTagsByHash:
+          title: Теги сниппетов по хешу
+          description: '@note Не используется в UI'
+          nullable: true
+          type: object
+          additionalProperties: {}
+        folderName:
+          title: Название папки, включенной в отчет
+          nullable: true
+          type: string
+        groupName:
+          title: Название группы, включенной в отчет
+          nullable: true
+          type: string
+        projectId:
+          title: Основной проект
+          type: integer
+        dates:
+          title: Даты, выводимые в отчете
+          type: array
+          items:
+            type: string
+        historyFields:
+          title: Запрошенные поля результатов проверок
+          description: '@note Переопределить в phpDoc нужным типом при реализации'
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
+        projects:
+          title: Информация о проектах, по которым строится отчет
+          type: array
+          items:
+            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.Headers.AbstractProject'
+        summaries:
+          title: Сводка для каждого результата проверки
+          type: array
+        isCompare:
+          title: |-
+            Режим сравнения
+
+            Примеры:
+            - Вывод нескольких проектов
+            - Вывод нескольких регионов
+            - Вывод нескольких проектов и регионов
+          type: boolean
+        fields:
+          title: |-
+            Поля элементов отчета
+
+            Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/Selector.Field'
+        filters:
+          title: |-
+            Фильтры элементов отчета
+
+            Для реализации фичей при экспорте отчетов
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldsFilters'
+        groupBy:
+          title: |-
+            Поле для визуальной группировки элементов
+
+            Если указно поле, которого нет в элементах, то оно буде игнорироваться
+          type: string
+      required:
+        - projectId
+        - dates
+        - historyFields
+        - projects
+        - summaries
+        - isCompare
+        - fields
+        - filters
+        - groupBy
+      title: Заголовки отчета истории позиций
+      description: |-
+        @phpstan-import-type Searcher from Positions_2\Mods\Searchers\Interfaces\Searcher
+        @phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}
+        @property Positions_2\Types\History\HistoryFields $historyFields
+        @property list<Project> $projects
+        @extends Reports_2\Objects\ByDate\History\Result\Headers\AbstractHeaders<Summaries>
     Positions_2.Objects.History.Result.Result:
       type: object
       properties:
+        headers:
+          nullable: true
+          $ref: '#/components/schemas/Positions_2.Objects.History.Result.Headers.Headers'
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
         keywords:
           title: Список запросов с данными
           type: array
@@ -28645,14 +28762,9 @@ components:
           type: object
           additionalProperties:
             type: integer
-        headers:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
       required:
         - keywords
       title: Результат истории позиций
-      description: '@extends Reports_2\Objects\ByDate\History\Result\AbstractResult<Headers\Headers>'
     Positions_2.Methods.History.Get.Exec:
       title: Получение истории позиций
       allOf:
@@ -30647,13 +30759,6 @@ components:
         - sqlTpl
       title: Агрегатор результатов проверок по конкретным датам по конкретным критериям
       description: '@internal'
-    TV.API.Types.AbstractEnumArray:
-      type: array
-      items: {}
-      title: |-
-        Тип массива: Enum[]
-
-        Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
     Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject:
       type: object
       properties:
