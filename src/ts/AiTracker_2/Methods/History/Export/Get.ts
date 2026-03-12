@@ -47,6 +47,12 @@ export interface components {
              * @description @internal
              */
             returnFilenameFromFolder?: string | null;
+            addWorksheet?: {
+                name: string;
+                handle: {
+                    [key: string]: unknown;
+                };
+            } | null;
             /** Выбор столбцов данных с результатами проверки */
             history_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
             models_names: import('../../../Types/ModelsNames.ts').components['schemas']['AiTracker_2.Types.ModelsNames'];
@@ -68,7 +74,7 @@ export interface components {
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
         /** Результаты индексации */
-        "AiTracker_2.Methods.History.Export.Get.Exec": string;
+        "AiTracker_2.Methods.History.Export.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

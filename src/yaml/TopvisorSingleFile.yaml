@@ -34703,6 +34703,18 @@ components:
           description: '@internal'
           nullable: true
           type: string
+        addWorksheet:
+          nullable: true
+          type: object
+          properties:
+            name:
+              type: string
+            handle:
+              type: object
+              additionalProperties: {}
+          required:
+            - name
+            - handle
         history_fields:
           title: Выбор столбцов данных с результатами проверки
           nullable: true
@@ -34755,7 +34767,7 @@ components:
       description: '@todo Объединить с Positions_2\Methods\History\Export\Get'
     AiTracker_2.Methods.History.Export.Get.Exec:
       title: Результаты индексации
-      type: string
+      nullable: true
     check_id:
       title: ID проверки аудита
       type: integer
