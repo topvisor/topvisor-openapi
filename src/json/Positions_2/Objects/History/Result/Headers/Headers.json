@@ -95,7 +95,7 @@
                     "groupBy"
                 ],
                 "title": "Заголовки отчета истории позиций",
-                "description": "@phpstan-import-type Searcher from Positions_2\\Mods\\Searchers\\Interfaces\\Searcher\n@phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}\n@property Positions_2\\Types\\History\\HistoryFields $historyFields\n@property list<Project> $projects\n@extends Reports_2\\Objects\\ByDate\\History\\Result\\Headers\\AbstractHeaders<Summaries>"
+                "description": "@phpstan-import-type Searcher from Positions_2\\Mods\\Searchers\\Interfaces\\Searcher\n@phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}\n@property Positions_2\\Types\\History\\HistoryFields $historyFields\n@property list<Project> $projects"
             }
         }
     }

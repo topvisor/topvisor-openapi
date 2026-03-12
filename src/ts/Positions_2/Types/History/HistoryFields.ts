@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Поля с результатами проверки для отчета истории проверок позиций
-         * @description @extends API\Types\AbstractTypedArray<HistoryField>
-         *     @method HistoryField[] getValues()
+         * @description @method HistoryField[] getValues()
          *     @method HistoryField current()
          *     @see HistoryField
          */

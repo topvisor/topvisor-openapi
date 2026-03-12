@@ -11,8 +11,7 @@ export interface components {
          * Тип массива: int
          *
          *     Принимает: Любые целые числа и числа в строках
-         * @description @extends AbstractTypedArray<int>
-         *     @method int[] getValues()
+         * @description @method int[] getValues()
          *     @method int current()
          */
         "TV.API.Types.IntArray": number[];

@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Фильтры по динамике запросов
-         * @description @extends API\Types\AbstractTypedArray<FilterByDynamic>
-         *     @method FilterByDynamic[] getValues()
+         * @description @method FilterByDynamic[] getValues()
          *     @method FilterByDynamic current()
          *     @see FilterByDynamic
          */

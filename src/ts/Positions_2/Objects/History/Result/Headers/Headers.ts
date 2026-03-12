@@ -13,7 +13,6 @@ export interface components {
          *     @phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}
          *     @property Positions_2\Types\History\HistoryFields $historyFields
          *     @property list<Project> $projects
-         *     @extends Reports_2\Objects\ByDate\History\Result\Headers\AbstractHeaders<Summaries>
          */
         "Positions_2.Objects.History.Result.Headers.Headers": {
             /**

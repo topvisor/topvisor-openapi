@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Date[]
-         * @description @extends AbstractStringArray<Date>
-         *     @method Date[] getValues()
+         * @description @method Date[] getValues()
          *     @method Date current()
          *     @see \TV\API\Types\Date
          */

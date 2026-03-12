@@ -19123,7 +19123,6 @@ components:
         type: string
       title: 'Тип массива: string[]'
       description: |-
-        @extends AbstractTypedArray<string>
         @method string[] getValues()
         @method string current()
     ResponseSuccess:
@@ -21852,7 +21851,6 @@ components:
 
         Принимает: Любые целые числа и числа в строках
       description: |-
-        @extends AbstractTypedArray<int>
         @method int[] getValues()
         @method int current()
     Admin_2.Methods.Informer.Add:
@@ -22542,7 +22540,6 @@ components:
         $ref: '#/components/schemas/TV.API.Types.Date'
       title: 'Тип массива: Date[]'
       description: |-
-        @extends AbstractStringArray<Date>
         @method Date[] getValues()
         @method Date current()
         @see \TV\API\Types\Date
@@ -28339,7 +28336,6 @@ components:
         $ref: '#/components/schemas/Positions_2.Types.History.HistoryField'
       title: Поля с результатами проверки для отчета истории проверок позиций
       description: |-
-        @extends API\Types\AbstractTypedArray<HistoryField>
         @method HistoryField[] getValues()
         @method HistoryField current()
         @see HistoryField
@@ -28364,7 +28360,6 @@ components:
         $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamic'
       title: Фильтры по динамике запросов
       description: |-
-        @extends API\Types\AbstractTypedArray<FilterByDynamic>
         @method FilterByDynamic[] getValues()
         @method FilterByDynamic current()
         @see FilterByDynamic
@@ -28722,7 +28717,6 @@ components:
         @phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}
         @property Positions_2\Types\History\HistoryFields $historyFields
         @property list<Project> $projects
-        @extends Reports_2\Objects\ByDate\History\Result\Headers\AbstractHeaders<Summaries>
     Positions_2.Objects.History.Result.Result:
       type: object
       properties:
