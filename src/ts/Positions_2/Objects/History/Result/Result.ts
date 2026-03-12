@@ -7,21 +7,27 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат истории позиций */
+        /**
+         * Результат истории позиций
+         * @description @extends Reports_2\Objects\ByDate\History\Result\AbstractResult<Headers\Headers>
+         */
         "Positions_2.Objects.History.Result.Result": {
-            headers?: (import('./Headers.ts').components['schemas']['Positions_2.Objects.History.Result.Headers'] & import('../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.ByDate.History.Result.AbstractHeaders']) | null;
             /** Список запросов с данными */
             keywords: {
                 [key: string]: unknown;
             }[];
+            /** Даты, в которые есть проверки */
+            existsDates?: string[] | null;
             /**
              * Доля запросов в топе указанной глубины
              *
              *     Глубина зависит от контекста и настраивается в нем же
-             * @description Ключ - `date:project_id:region_index`
+             * @description Ключ для массива в каждом топе - `date:project_id:region_index`
              */
-            tops?: {
-                [key: string]: number;
+            topsByDepth?: {
+                [key: string]: {
+                    [key: string]: number;
+                };
             } | null;
             /**
              * Суммарные визиты по датам/проектам/регионам
@@ -30,8 +36,7 @@ export interface components {
             visitors?: {
                 [key: string]: number;
             } | null;
-            /** Даты, в которые есть проверки */
-            existsDates?: string[] | null;
+            headers?: import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders'] | null;
         };
     };
     responses: never;
