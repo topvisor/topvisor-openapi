@@ -19122,9 +19122,6 @@ components:
       items:
         type: string
       title: 'Тип массива: string[]'
-      description: |-
-        @method string[] getValues()
-        @method string current()
     ResponseSuccess:
       type: object
       properties:
@@ -21850,9 +21847,6 @@ components:
         Тип массива: int
 
         Принимает: Любые целые числа и числа в строках
-      description: |-
-        @method int[] getValues()
-        @method int current()
     Admin_2.Methods.Informer.Add:
       type: object
       properties:
@@ -22539,10 +22533,7 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.Date'
       title: 'Тип массива: Date[]'
-      description: |-
-        @method Date[] getValues()
-        @method Date current()
-        @see \TV\API\Types\Date
+      description: '@see \TV\API\Types\Date'
     dates:
       title: |-
         Произвольные даты без использования диапазона
@@ -28335,10 +28326,7 @@ components:
       items:
         $ref: '#/components/schemas/Positions_2.Types.History.HistoryField'
       title: Поля с результатами проверки для отчета истории проверок позиций
-      description: |-
-        @method HistoryField[] getValues()
-        @method HistoryField current()
-        @see HistoryField
+      description: '@see HistoryField'
     Positions_2.Types.History.FilterByDynamic:
       type: string
       enum:
@@ -28359,10 +28347,7 @@ components:
       items:
         $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamic'
       title: Фильтры по динамике запросов
-      description: |-
-        @method FilterByDynamic[] getValues()
-        @method FilterByDynamic current()
-        @see FilterByDynamic
+      description: '@see FilterByDynamic'
     Positions_2.Methods.History.Get:
       type: object
       properties:

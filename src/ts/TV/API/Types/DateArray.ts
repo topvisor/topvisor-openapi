@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Date[]
-         * @description @method Date[] getValues()
-         *     @method Date current()
-         *     @see \TV\API\Types\Date
+         * @description @see \TV\API\Types\Date
          */
         "TV.API.Types.DateArray": import('./Date.ts').components['schemas']['TV.API.Types.Date'][];
     };

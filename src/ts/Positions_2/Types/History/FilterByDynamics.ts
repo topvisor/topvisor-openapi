@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Фильтры по динамике запросов
-         * @description @method FilterByDynamic[] getValues()
-         *     @method FilterByDynamic current()
-         *     @see FilterByDynamic
+         * @description @see FilterByDynamic
          */
         "Positions_2.Types.History.FilterByDynamics": import('./FilterByDynamic.ts').components['schemas']['Positions_2.Types.History.FilterByDynamic'][];
     };

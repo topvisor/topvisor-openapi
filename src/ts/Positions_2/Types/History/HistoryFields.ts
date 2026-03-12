@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Поля с результатами проверки для отчета истории проверок позиций
-         * @description @method HistoryField[] getValues()
-         *     @method HistoryField current()
-         *     @see HistoryField
+         * @description @see HistoryField
          */
         "Positions_2.Types.History.HistoryFields": import('./HistoryField.ts').components['schemas']['Positions_2.Types.History.HistoryField'][];
     };

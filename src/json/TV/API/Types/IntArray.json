@@ -12,8 +12,7 @@
                 "items": {
                     "type": "integer"
                 },
-                "title": "Тип массива: int\n\nПринимает: Любые целые числа и числа в строках",
-                "description": "@method int[] getValues()\n@method int current()"
+                "title": "Тип массива: int\n\nПринимает: Любые целые числа и числа в строках"
             }
         }
     }
