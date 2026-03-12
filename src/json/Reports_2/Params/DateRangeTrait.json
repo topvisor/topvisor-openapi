@@ -63,7 +63,7 @@
                     "period_days"
                 ],
                 "title": "Параметры для отчетов с базисом по дате\n\nИспользуется в отчетах, где ключевым параметром является дата проверки",
-                "description": "@see class/Services/Reports_2/README.md"
+                "description": "@see /class/Services/Reports_2/Docs/bases.md"
             }
         }
     }

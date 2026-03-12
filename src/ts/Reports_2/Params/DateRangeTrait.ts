@@ -11,7 +11,7 @@ export interface components {
          * Параметры для отчетов с базисом по дате
          *
          *     Используется в отчетах, где ключевым параметром является дата проверки
-         * @description @see class/Services/Reports_2/README.md
+         * @description @see /class/Services/Reports_2/Docs/bases.md
          */
         "Reports_2.Params.DateRangeTrait": {
             /**
