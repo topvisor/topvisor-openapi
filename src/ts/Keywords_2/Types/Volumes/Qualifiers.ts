@@ -9,11 +9,7 @@ export interface components {
     schemas: {
         /**
          * Определители проверки частоты
-         * @description @extends AbstractStringArray<Qualifier>
-         *     @method Qualifier[] getValues()
-         *     @method Qualifier current()
-         *     @method Qualifier offsetGet()
-         *     @see \TV\API\Types\Qualifier
+         * @description @see \TV\API\Types\Qualifier
          */
         "Keywords_2.Types.Volumes.Qualifiers": import('./Qualifier.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifier'][];
     };

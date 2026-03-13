@@ -16,7 +16,7 @@ export interface components {
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: unknown[];
         };
-        "Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec": unknown;
+        "Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec": number;
     };
     responses: never;
     parameters: never;

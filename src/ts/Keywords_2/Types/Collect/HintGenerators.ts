@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Типы метода перебора
-         * @description @extends API\Types\AbstractObjectArray<HintGenerator>
-         *     @method HintGenerator[] getValues()
-         *     @method HintGenerator current()
-         *     @see HintGenerator
+         * @description @see HintGenerator
          */
         "Keywords_2.Types.Collect.HintGenerators": import('./HintGenerator.ts').components['schemas']['Keywords_2.Types.Collect.HintGenerator'][];
     };

@@ -30,7 +30,7 @@
                 "title": "Создание задачи на проверку частоты"
             },
             "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
-                "nullable": true
+                "type": "integer"
             }
         }
     }

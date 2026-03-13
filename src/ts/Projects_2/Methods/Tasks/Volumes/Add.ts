@@ -14,7 +14,7 @@ export interface components {
             /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
             qualifiers: import('../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
-        "Projects_2.Methods.Tasks.Volumes.Add.Exec": unknown;
+        "Projects_2.Methods.Tasks.Volumes.Add.Exec": number;
     };
     responses: never;
     parameters: never;

@@ -38413,11 +38413,7 @@ components:
       items:
         $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerator'
       title: Типы метода перебора
-      description: |-
-        @extends API\Types\AbstractObjectArray<HintGenerator>
-        @method HintGenerator[] getValues()
-        @method HintGenerator current()
-        @see HintGenerator
+      description: '@see HintGenerator'
     Keywords_2.Types.Collect.Qualifier:
       type: object
       properties:
@@ -38451,11 +38447,7 @@ components:
       items:
         $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifier'
       title: Определители с настройками для подбора
-      description: |-
-        @extends API\Types\AbstractObjectArray<Qualifier>
-        @method Qualifier[] getValues()
-        @method Qualifier current()
-        @see Qualifier
+      description: '@see Qualifier'
     Keywords_2.Types.Collect.ToType:
       type: string
       enum:
@@ -39371,12 +39363,7 @@ components:
       items:
         $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifier'
       title: Определители проверки частоты
-      description: |-
-        @extends AbstractStringArray<Qualifier>
-        @method Qualifier[] getValues()
-        @method Qualifier current()
-        @method Qualifier offsetGet()
-        @see \TV\API\Types\Qualifier
+      description: '@see \TV\API\Types\Qualifier'
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
@@ -40912,7 +40899,7 @@ components:
         - qualifiers
       title: Создание задачи на проверку частоты
     Projects_2.Methods.Tasks.Volumes.Add.Exec:
-      nullable: true
+      type: integer
     Quiz_2.Methods.QuestionsResponses.Multi.Add:
       type: object
       properties:
@@ -46248,7 +46235,7 @@ components:
         - qualifiers
       title: Создание задачи на сбор запросов
     Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec:
-      nullable: true
+      type: integer
     Projects_2.Methods.Tasks.Volumes.Price.Get:
       type: object
       properties:
