@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Позиции сотрудников
-         * @description @extends API\Types\AbstractTypedArray<Post>
-         *     @method Post[] getValues()
-         *     @method Post current()
-         *     @see Post
+         * @description @see Post
          */
         "Admin_2.Types.Staff.Posts": import('./Post.ts').components['schemas']['Admin_2.Types.Staff.Post'][];
     };

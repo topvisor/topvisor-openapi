@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Поля с результатами проверки для отчета истории проверок в снимках
-         * @description @extends API\Types\AbstractTypedArray<HistoryField>
-         *     @method HistoryField[] getValues()
-         *     @method HistoryField current()
-         *     @see HistoryField
+         * @description @see HistoryField
          */
         "Snapshots_2.Types.History.HistoryFields": import('./HistoryField.ts').components['schemas']['Snapshots_2.Types.History.HistoryField'][];
     };

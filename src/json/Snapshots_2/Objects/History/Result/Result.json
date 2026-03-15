@@ -38,12 +38,10 @@
                         }
                     },
                     "headers": {
-                        "title": "Заголовки отчета\n\nДанные заголовки можно и рекомендуется использовать при построении отчетов",
-                        "description": "@note Переопределить нужным типом в phpDoc при реализации",
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeaders.json#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders"
+                                "$ref": "../../../../Reports_2/Objects/AbstractHeaders.json#/components/schemas/Reports_2.Objects.AbstractHeaders"
                             }
                         ]
                     }

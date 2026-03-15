@@ -14308,6 +14308,59 @@
                 }
             }
         },
+        "/get/admin_2/actions/availables/": {
+            "post": {
+                "operationId": "GetAdmin2ActionsAvailables",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Получение списка доступных API методов actions",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Availables/Get.json#/components/schemas/Admin_2.Methods.Actions.Availables.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Availables/Get.json#/components/schemas/Admin_2.Methods.Actions.Availables.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/admin_2/actions/bank/": {
             "post": {
                 "operationId": "EditAdmin2ActionsBank",
@@ -35373,10 +35426,6 @@
         {
             "name": "Vue_2",
             "description": "vue_2"
-        },
-        {
-            "name": "Webscreens_2",
-            "description": "webscreens_2"
         },
         {
             "name": "Webscreens_2",

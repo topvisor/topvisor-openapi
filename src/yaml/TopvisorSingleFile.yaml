@@ -117,8 +117,6 @@ tags:
     description: vue_2
   - name: Webscreens_2
     description: webscreens_2
-  - name: Webscreens_2
-    description: webscreens_2
 paths:
   /add/analytics_2/:
     post:
@@ -7793,6 +7791,34 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.EmptyModel'
+  /get/admin_2/actions/availables/:
+    post:
+      operationId: GetAdmin2ActionsAvailables
+      tags:
+        - Admin_2
+      summary: Получение списка доступных API методов actions
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Availables.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Availables.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/admin_2/actions/bank/:
     post:
       operationId: EditAdmin2ActionsBank
@@ -19822,6 +19848,9 @@ components:
         count_comments:
           nullable: true
           type: integer
+        count_by_reaction:
+          nullable: true
+          type: array
         theme:
           type: string
         noindex:
@@ -19844,8 +19873,8 @@ components:
           type: string
         view:
           type: integer
-        like:
-          type: integer
+        emoji:
+          type: string
         bookmark:
           type: string
         bookmark_author:
@@ -19879,7 +19908,7 @@ components:
         - user_description
         - user_avatar
         - view
-        - like
+        - emoji
         - bookmark
         - bookmark_author
         - author_alias
@@ -22070,11 +22099,7 @@ components:
       items:
         $ref: '#/components/schemas/Admin_2.Types.Staff.Post'
       title: Позиции сотрудников
-      description: |-
-        @extends API\Types\AbstractTypedArray<Post>
-        @method Post[] getValues()
-        @method Post current()
-        @see Post
+      description: '@see Post'
     Admin_2.Methods.Staff.Add:
       type: object
       properties:
@@ -22992,28 +23017,6 @@ components:
               - date
               - model_name
               - project_id
-    AiTracker_2.Types.Model:
-      type: string
-      enum:
-        - deepseek
-        - grok
-      x-enum-varnames:
-        - Deepseek
-        - Grok
-      x-enum-descriptions:
-        - null
-        - null
-      title: Модель для ИИ трекера
-    AiTracker_2.Types.Models:
-      type: array
-      items:
-        $ref: '#/components/schemas/AiTracker_2.Types.Model'
-      title: Модель нейросети для AI-трекера
-      description: |-
-        @extends API\Types\AbstractTypedArray<Model>
-        @method Model[] getValues()
-        @method Model current()
-        @see Model
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -23029,11 +23032,11 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
-        models:
+        models_names:
           title: Список моделей ИИ
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
         context_lang:
           title: 'Настройки контекста: Язык'
           nullable: true
@@ -23081,10 +23084,10 @@ components:
           type: array
           items:
             type: string
-        models:
+        models_names:
           type: array
           items:
-            $ref: '#/components/schemas/AiTracker_2.Types.Model'
+            $ref: '#/components/schemas/AiTracker_2.Types.ModelName'
         context_lang:
           type: string
         context_location:
@@ -23110,7 +23113,7 @@ components:
         - project_id
         - brand_name
         - aliases
-        - models
+        - models_names
         - context_lang
         - context_location
         - context_custom
@@ -25185,11 +25188,7 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.UrlShortUTF'
       title: 'Тип массива: UrlShortUTF[]'
-      description: |-
-        @extends AbstractStringArray<UrlShortUTF>
-        @method UrlShortUTF[] getValues()
-        @method UrlShortUTF current()
-        @see \TV\API\Types\UrlShortUTF
+      description: '@see \TV\API\Types\UrlShortUTF'
     TV.API.Types.UrlUTF:
       type: string
       title: |-
@@ -25204,11 +25203,7 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.UrlUTF'
       title: 'Тип массива: UrlUTF[]'
-      description: |-
-        @extends AbstractStringArray<UrlUTF>
-        @method UrlUTF[] getValues()
-        @method UrlUTF current()
-        @see \TV\API\Types\UrlUTF
+      description: '@see \TV\API\Types\UrlUTF'
     Competitors_2.Methods.Charts.Get:
       type: object
       properties:
@@ -26552,10 +26547,6 @@ components:
         Тип массива: boolean
 
         Принимает: 0|1|false|true
-      description: |-
-        @extends AbstractTypedArray<boolean>
-        @method bool[] getValues()
-        @method bool current()
     Example_2.Types.Number:
       type: integer
       enum:
@@ -28730,6 +28721,22 @@ components:
     Positions_2.Objects.History.Headers.Headers:
       type: object
       properties:
+        summaries:
+          type: object
+          properties:
+            topsByDepth:
+              type: object
+              additionalProperties:
+                type: object
+                additionalProperties:
+                  type: number
+            visitors:
+              type: object
+              additionalProperties:
+                type: integer
+          required:
+            - topsByDepth
+            - visitors
         snippetsTagsByHash:
           title: Теги сниппетов по хешу
           description: '@note Не используется в UI'
@@ -28762,9 +28769,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
-        summaries:
-          title: Сводка для каждого результата проверки
-          type: array
         isCompare:
           title: |-
             Режим сравнения
@@ -28799,11 +28803,11 @@ components:
             Если указно поле, которого нет в элементах, то оно буде игнорироваться
           type: string
       required:
+        - summaries
         - projectId
         - dates
         - historyFields
         - projects
-        - summaries
         - isCompare
         - fields
         - filters
@@ -29339,11 +29343,7 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.UrlShort'
       title: 'Тип массива: UrlShort[]'
-      description: |-
-        @extends AbstractStringArray<UrlShort>
-        @method UrlShort[] getValues()
-        @method UrlShort current()
-        @see \TV\API\Types\UrlShort
+      description: '@see \TV\API\Types\UrlShort'
     Projects_2.Methods.Competitors.Add:
       type: object
       properties:
@@ -30014,11 +30014,7 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.Email'
       title: 'Тип массива: Email[]'
-      description: |-
-        @extends AbstractStringArray<Email>
-        @method Email[] getValues()
-        @method Email current()
-        @see \TV\API\Types\Email
+      description: '@see \TV\API\Types\Email'
     Keywords_2.Types.Volumes.Type:
       type: integer
       enum:
@@ -30536,11 +30532,7 @@ components:
       items:
         $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryField'
       title: Поля с результатами проверки для отчета истории проверок в снимках
-      description: |-
-        @extends API\Types\AbstractTypedArray<HistoryField>
-        @method HistoryField[] getValues()
-        @method HistoryField current()
-        @see HistoryField
+      description: '@see HistoryField'
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
@@ -30616,257 +30608,6 @@ components:
         Получение истории снимков выдачи
 
         Метод базируется на объекте keywords
-    Reports_2.Objects.ByDate.History.Result.AbstractHeaders:
-      type: object
-      properties:
-        result:
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractResult'
-        criteria:
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.Criteria'
-        projectId:
-          title: Основной проект
-          type: integer
-        fields:
-          title: |-
-            Поля объектов отчета
-
-            Тип объектов определяется типом отчета, например для проверки позиций это Запросы
-          type: array
-          items:
-            $ref: '#/components/schemas/Selector.Field'
-        filters:
-          title: |-
-            Фильтры объектов отчета
-
-            Для реализации фичей при экспорте отчетов
-          type: array
-          items:
-            $ref: '#/components/schemas/FieldsFilters'
-        historyFields:
-          title: Запрошенные поля результатов проверок
-          description: '@note Переопределить в phpDoc нужным типом при реализации'
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
-        dates:
-          title: Даты, выводимые в отчете
-          type: array
-          items:
-            type: string
-        projects:
-          title: Информация о проектах, по которым строится отчет
-          nullable: true
-          type: array
-          items:
-            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject'
-        summaries:
-          title: Отображаемая сводка
-          type: object
-          additionalProperties:
-            type: object
-            additionalProperties: {}
-        worksheetName:
-          title: |-
-            Модификатор для имени листа
-
-            Используется для вывода отчетов на разных страницах по разными критериями, например в разных владках в Excel
-          nullable: true
-          type: string
-      required:
-        - result
-        - criteria
-        - projectId
-        - fields
-        - filters
-        - historyFields
-        - dates
-        - summaries
-      title: Заголовки отчета истории проверок с базисом по дате
-    Reports_2.Objects.ByDate.History.Result.AbstractResult:
-      type: object
-      properties:
-        headers:
-          title: |-
-            Заголовки отчета
-
-            Данные заголовки можно и рекомендуется использовать при построении отчетов
-          description: '@note Переопределить нужным типом в phpDoc при реализации'
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders'
-      required: []
-      title: Результат метода получения истории проверок с базисом по дате
-      description: '@see class/API/Params/History/README.md'
-    TV.API.Method.AbstractGetFS:
-      type: object
-      properties:
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-      required:
-        - fields
-        - orders
-        - filters
-        - offset
-      title: Реализация API метода получения данных на основе модели с `fetch_style`
-    Reports_2.Objects.ByDate.Criteria:
-      type: object
-      properties:
-        getHistoryClass:
-          title: Класс реализации отчетов в конкретном сервисе
-          type: string
-        projectId:
-          title: ID проекта
-          type: integer
-        apiGetItems:
-          title: API метод получения объектов для строк отчета
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Method.AbstractGetFS'
-        dates:
-          title: |-
-            Даты, выводимые в отчете, фактические
-
-            Берутся из:
-            - явно указанных в `$dates` за исключением удаленных
-            - загружаются из базы по настройкам периода
-          description: '@phpstan-ignore property.uninitializedReadonly'
-          type: array
-          items:
-            type: string
-        date1:
-          title: Крайняя левая дата отчета
-          description: '@phpstan-ignore property.uninitializedReadonly'
-          type: string
-        date2:
-          title: Крайняя правая дата отчета
-          description: '@phpstan-ignore property.uninitializedReadonly'
-          type: string
-        onlyExistsFirstDate:
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
-        onlyExistsFirstDateDate:
-          title: Дата для `$onlyExistsFirstDate`
-          description: |-
-            @see Reports_2\Types\OnlyExistsFirstDate
-            @phpstan-ignore property.uninitializedReadonly
-          nullable: true
-          type: string
-        CHAggregator:
-          title: |-
-            Определяется при создании объекта
-
-            Может переустанавливаться для агрегации необходимых данных
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.CriteriaCHAggregator'
-        qualifiersNames:
-          title: |-
-            Список определителей для получения истории проверок
-
-            Всегда в алфавитном порядке, что соответствует принципу работы в Selector
-          type: array
-        fieldNameItemId:
-          title: Имя поля в таблице результатов, в котором хранится `id` элемента `MODEL`
-          type: string
-      required:
-        - getHistoryClass
-        - projectId
-        - apiGetItems
-        - dates
-        - date1
-        - date2
-        - onlyExistsFirstDate
-        - CHAggregator
-        - qualifiersNames
-        - fieldNameItemId
-      title: Критерии построения отчета по истории проверок с базисом по дате
-    Reports_2.Objects.ByDate.CriteriaCHAggregator:
-      type: object
-      properties:
-        criteria:
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.Criteria'
-        byProjectsIds:
-          title: |-
-            ID проекта / Конкурентов
-
-            Не путать с основным ID проекта
-
-            Может содержать ID основного проекта и его конкурентов
-
-            Принадлежность конкурентов основному проекту должны проверяться в бизнес логике API метода
-          description: '@note ID основного проекта см. в `$criteria->projectId`'
-          type: array
-          items:
-            type: integer
-        qualifierValues:
-          title: Значения определителя для получения результатов проверки
-          description: '@see AbstractGetReport::QUALIFIER_NAME'
-          anyOf:
-            - type: array
-              items:
-                type: integer
-            - type: array
-              items:
-                type: string
-        dates:
-          title: |-
-            Даты для выборки по конкретным датам
-
-            Если указан `null` — выборка будет происходить по всем проверкам
-
-            Игнорирует статус удаленности проверки
-          nullable: true
-          type: array
-          items:
-            type: string
-        onlyExistsFirstDateDate:
-          title: Дата для фильтра `OnlyExistsFirstDate`
-          description: '@see Reports_2\Types\OnlyExistsFirstDate'
-          nullable: true
-          type: string
-        sqlTpl:
-          title: Шаблон CH запроса для выполнения агрегированных вычислений
-          type: string
-        CHselTV:
-          title: SQL запросов в CH на выборку объектов для отчета
-          nullable: true
-          type: string
-      required:
-        - criteria
-        - byProjectsIds
-        - qualifierValues
-        - sqlTpl
-      title: Агрегатор результатов проверок по конкретным датам по конкретным критериям
-      description: '@internal'
-    Reports_2.Objects.ByDate.History.Result.AbstractHeadersProject:
-      type: object
-      properties:
-        id:
-          title: ID проекта
-          type: integer
-        name:
-          title: Название проекта
-          type: string
-        site:
-          title: Домен проекта или url с разделом сайта
-          type: string
-      required:
-        - id
-        - name
-        - site
-      title: Базовый проект в заголовках истории
     Snapshots_2.Objects.History.Result.Result:
       type: object
       properties:
@@ -30891,14 +30632,9 @@ components:
           items:
             type: string
         headers:
-          title: |-
-            Заголовки отчета
-
-            Данные заголовки можно и рекомендуется использовать при построении отчетов
-          description: '@note Переопределить нужным типом в phpDoc при реализации'
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Result.AbstractHeaders'
+            - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
       required:
         - keywords
         - dates
@@ -30954,11 +30690,6 @@ components:
       items:
         $ref: '#/components/schemas/System_2.Types.Calls.Call'
       title: Массив объектов вызова модуля системы
-      description: |-
-        @extends AbstractObjectArray<Call>
-        @method Call[] getValues()
-        @method Call current()
-        @method Call offsetGet()
     System_2.Types.Calls.Format:
       type: string
       enum:
@@ -31074,12 +30805,7 @@ components:
       items:
         $ref: '#/components/schemas/System_2.Types.Cloud.File'
       title: Возвращаемые форматы файлов
-      description: |-
-        @extends API\Types\AbstractObjectArray<File>
-        @method File[] getValues()
-        @method File current()
-        @method File offsetGet()
-        @see \TV\API\Types\Qualifier
+      description: '@see \TV\API\Types\Qualifier'
     System_2.Methods.Cloud.Get.Exec:
       allOf:
         - $ref: '#/components/schemas/System_2.Types.Cloud.Files'
@@ -33280,6 +33006,16 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.EmptyModel'
+    Admin_2.Methods.Actions.Availables.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение списка доступных API методов actions
+    Admin_2.Methods.Actions.Availables.Get.Exec:
+      title: Список доступных API путей actions
+      type: array
+      items:
+        type: string
     Admin_2.Methods.Actions.Bank.Edit:
       type: object
       properties:
@@ -44051,9 +43787,9 @@ components:
     AiTracker_2.Methods.History.Export.Links.Get:
       type: object
       properties:
-        models:
+        models_names:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.Models'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
         template_date_range:
           title: Диапазон значений шаблона
           nullable: true
@@ -44085,7 +43821,7 @@ components:
         period_days:
           $ref: '#/components/schemas/period_days'
       required:
-        - models
+        - models_names
         - type_range_compare
         - project_id
       title: Получение гостевой ссылки на просмотр ИИ-Трекера

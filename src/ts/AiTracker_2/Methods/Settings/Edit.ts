@@ -23,7 +23,7 @@ export interface components {
             /** Дополнительные имена для поиска в ответе ИИ */
             aliases?: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
             /** Список моделей ИИ */
-            models?: import('../../Types/Models.ts').components['schemas']['AiTracker_2.Types.Models'] | null;
+            models_names?: import('../../Types/ModelsNames.ts').components['schemas']['AiTracker_2.Types.ModelsNames'] | null;
             /** Настройки контекста: Язык */
             context_lang?: string | null;
             /** Настройки контекста: Регион */

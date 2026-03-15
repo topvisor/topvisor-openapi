@@ -24,12 +24,12 @@
                             }
                         ]
                     },
-                    "models": {
+                    "models_names": {
                         "title": "Список моделей ИИ",
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../AiTracker_2/Types/Models.json#/components/schemas/AiTracker_2.Types.Models"
+                                "$ref": "../../../AiTracker_2/Types/ModelsNames.json#/components/schemas/AiTracker_2.Types.ModelsNames"
                             }
                         ]
                     },

@@ -9,10 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: UrlShortUTF[]
-         * @description @extends AbstractStringArray<UrlShortUTF>
-         *     @method UrlShortUTF[] getValues()
-         *     @method UrlShortUTF current()
-         *     @see \TV\API\Types\UrlShortUTF
+         * @description @see \TV\API\Types\UrlShortUTF
          */
         "TV.API.Types.UrlShortUTFArray": import('./UrlShortUTF.ts').components['schemas']['TV.API.Types.UrlShortUTF'][];
     };

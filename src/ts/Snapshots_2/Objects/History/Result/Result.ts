@@ -19,13 +19,7 @@ export interface components {
             depthPositions: number;
             /** Даты, в которые есть проверки */
             existsDates?: string[] | null;
-            /**
-             * Заголовки отчета
-             *
-             *     Данные заголовки можно и рекомендуется использовать при построении отчетов
-             * @description @note Переопределить нужным типом в phpDoc при реализации
-             */
-            headers?: import('../../../../Reports_2/Objects/ByDate/History/Result/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.ByDate.History.Result.AbstractHeaders'] | null;
+            headers?: import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders'] | null;
         };
     };
     responses: never;

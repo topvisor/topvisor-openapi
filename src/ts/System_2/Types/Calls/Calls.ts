@@ -7,13 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Массив объектов вызова модуля системы
-         * @description @extends AbstractObjectArray<Call>
-         *     @method Call[] getValues()
-         *     @method Call current()
-         *     @method Call offsetGet()
-         */
+        /** Массив объектов вызова модуля системы */
         "System_2.Types.Calls.Calls": import('./Call.ts').components['schemas']['System_2.Types.Calls.Call'][];
     };
     responses: never;

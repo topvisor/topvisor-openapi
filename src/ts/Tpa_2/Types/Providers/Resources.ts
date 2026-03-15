@@ -9,11 +9,7 @@ export interface components {
     schemas: {
         /**
          * Ресурсы интеграции
-         * @description @extends API\Types\AbstractObjectArray<Tpa_2\Types\Providers\Resource>
-         *     @method Tpa_2\Types\Providers\Resource[] getValues()
-         *     @method Tpa_2\Types\Providers\Resource current()
-         *     @method Tpa_2\Types\Providers\Resource offsetGet()
-         *     @see Tpa_2\Types\Providers\Resource
+         * @description @see Tpa_2\Types\Providers\Resource
          */
         "Tpa_2.Types.Providers.Resources": import('./Resource.ts').components['schemas']['Tpa_2.Types.Providers.Resource'][];
     };

@@ -30,6 +30,7 @@ export interface components {
             count_unique_views?: number | null;
             count_likes: number;
             count_comments?: number | null;
+            count_by_reaction?: unknown[] | null;
             theme: string;
             noindex: boolean;
             quiz_id: string;
@@ -41,7 +42,7 @@ export interface components {
             user_description: string;
             user_avatar: string;
             view: number;
-            like: number;
+            emoji: string;
             bookmark: string;
             bookmark_author: string;
             author_alias: string;

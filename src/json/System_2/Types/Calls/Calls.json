@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../System_2/Types/Calls/Call.json#/components/schemas/System_2.Types.Calls.Call"
                 },
-                "title": "Массив объектов вызова модуля системы",
-                "description": "@extends AbstractObjectArray<Call>\n@method Call[] getValues()\n@method Call current()\n@method Call offsetGet()"
+                "title": "Массив объектов вызова модуля системы"
             }
         }
     }

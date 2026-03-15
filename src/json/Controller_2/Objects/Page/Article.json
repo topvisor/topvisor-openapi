@@ -81,6 +81,10 @@
                         "nullable": true,
                         "type": "integer"
                     },
+                    "count_by_reaction": {
+                        "nullable": true,
+                        "type": "array"
+                    },
                     "theme": {
                         "type": "string"
                     },
@@ -113,8 +117,8 @@
                     "view": {
                         "type": "integer"
                     },
-                    "like": {
-                        "type": "integer"
+                    "emoji": {
+                        "type": "string"
                     },
                     "bookmark": {
                         "type": "string"
@@ -155,7 +159,7 @@
                     "user_description",
                     "user_avatar",
                     "view",
-                    "like",
+                    "emoji",
                     "bookmark",
                     "bookmark_author",
                     "author_alias"

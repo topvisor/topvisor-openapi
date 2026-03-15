@@ -10,6 +10,30 @@
             "Positions_2.Objects.History.Headers.Headers": {
                 "type": "object",
                 "properties": {
+                    "summaries": {
+                        "type": "object",
+                        "properties": {
+                            "topsByDepth": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "number"
+                                    }
+                                }
+                            },
+                            "visitors": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "required": [
+                            "topsByDepth",
+                            "visitors"
+                        ]
+                    },
                     "snippetsTagsByHash": {
                         "title": "Теги сниппетов по хешу",
                         "description": "@note Не используется в UI",
@@ -54,10 +78,6 @@
                             "$ref": "../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.json#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject"
                         }
                     },
-                    "summaries": {
-                        "title": "Сводка для каждого результата проверки",
-                        "type": "array"
-                    },
                     "isCompare": {
                         "title": "Режим сравнения\n\nПримеры:\n- Вывод нескольких проектов\n- Вывод нескольких регионов\n- Вывод нескольких проектов и регионов",
                         "type": "boolean"
@@ -84,11 +104,11 @@
                     }
                 },
                 "required": [
+                    "summaries",
                     "projectId",
                     "dates",
                     "historyFields",
                     "projects",
-                    "summaries",
                     "isCompare",
                     "fields",
                     "filters",

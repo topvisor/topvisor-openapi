@@ -7,11 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Хранилище для экспорта
-         * @enum {string}
-         */
-        "Export_2.Types.Repository.Name": "gdrive";
+        /** Получение списка доступных API методов actions */
+        "Admin_2.Methods.Actions.Availables.Get": Record<string, never>;
+        /** Список доступных API путей actions */
+        "Admin_2.Methods.Actions.Availables.Get.Exec": string[];
     };
     responses: never;
     parameters: never;

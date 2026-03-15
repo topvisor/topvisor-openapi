@@ -12,8 +12,7 @@
                 "items": {
                     "type": "boolean"
                 },
-                "title": "Тип массива: boolean\n\nПринимает: 0|1|false|true",
-                "description": "@extends AbstractTypedArray<boolean>\n@method bool[] getValues()\n@method bool current()"
+                "title": "Тип массива: boolean\n\nПринимает: 0|1|false|true"
             }
         }
     }

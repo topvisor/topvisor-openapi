@@ -15,6 +15,16 @@ export interface components {
          *     @property list<Project> $projects
          */
         "Positions_2.Objects.History.Headers.Headers": {
+            summaries: {
+                topsByDepth: {
+                    [key: string]: {
+                        [key: string]: number;
+                    };
+                };
+                visitors: {
+                    [key: string]: number;
+                };
+            };
             /**
              * Теги сниппетов по хешу
              * @description @note Не используется в UI
@@ -37,8 +47,6 @@ export interface components {
             historyFields: import('../../../../TV/API/Types/AbstractEnumArray.ts').components['schemas']['TV.API.Types.AbstractEnumArray'];
             /** Информация о проектах, по которым строится отчет */
             projects: import('../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.ts').components['schemas']['Reports_2.Objects.ByDate.History.Headers.AbstractProject'][];
-            /** Сводка для каждого результата проверки */
-            summaries: unknown[];
             /**
              * Режим сравнения
              *
