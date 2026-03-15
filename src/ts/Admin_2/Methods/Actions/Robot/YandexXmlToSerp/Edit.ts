@@ -12,13 +12,13 @@ export interface components {
          * @deprecated
          * @description @deprecated
          */
-        "Admin_2.Methods.Actions.Robot.Checks.Edit": {
+        "Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit": {
             /** Поисковик */
             modEngine: string;
             /** Является ли запуск - тестом */
             test: boolean;
         };
-        "Admin_2.Methods.Actions.Robot.Checks.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+        "Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
     };
     responses: never;
     parameters: never;

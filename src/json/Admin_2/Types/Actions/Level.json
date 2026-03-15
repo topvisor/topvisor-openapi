@@ -11,15 +11,18 @@
                 "type": "string",
                 "enum": [
                     "all",
-                    "support"
+                    "support",
+                    "secrets"
                 ],
                 "x-enum-varnames": [
                     "All",
-                    "Support"
+                    "Support",
+                    "Secrets"
                 ],
                 "x-enum-descriptions": [
                     "Все админы",
-                    "Только Поддержка, Разработчики, Бухгалтерия"
+                    "Только Поддержка, Разработчики, Бухгалтерия",
+                    "Доступ к скрытым фичам"
                 ],
                 "title": "Уровень доступа к actions"
             }

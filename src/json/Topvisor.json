@@ -29324,61 +29324,6 @@
                 }
             }
         },
-        "/edit/admin_2/actions/robot/checks/": {
-            "post": {
-                "operationId": "EditAdmin2ActionsRobotChecks",
-                "tags": [
-                    "Admin_2"
-                ],
-                "summary": "Перевод проверок позиций яндекс",
-                "description": "@deprecated",
-                "deprecated": true,
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Robot/Checks/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Checks.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/Robot/Checks/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Checks.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/admin_2/actions/robot/priority/": {
             "post": {
                 "operationId": "EditAdmin2ActionsRobotPriority",
@@ -29463,6 +29408,61 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Admin_2/Methods/Actions/Robot/Task/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/robot/yandexXmlToSerp/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsRobotYandexXmlToSerp",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Перевод проверок позиций яндекс",
+                "description": "@deprecated",
+                "deprecated": true,
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [

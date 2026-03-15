@@ -15902,36 +15902,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/admin_2/actions/robot/checks/:
-    post:
-      operationId: EditAdmin2ActionsRobotChecks
-      tags:
-        - Admin_2
-      summary: Перевод проверок позиций яндекс
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Checks.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Checks.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /edit/admin_2/actions/robot/priority/:
     post:
       operationId: EditAdmin2ActionsRobotPriority
@@ -15984,6 +15954,36 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/admin_2/actions/robot/yandexXmlToSerp/:
+    post:
+      operationId: EditAdmin2ActionsRobotYandexXmlToSerp
+      tags:
+        - Admin_2
+      summary: Перевод проверок позиций яндекс
+      description: '@deprecated'
+      deprecated: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -42997,24 +42997,6 @@ components:
     Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-    Admin_2.Methods.Actions.Robot.Checks.Edit:
-      type: object
-      properties:
-        modEngine:
-          title: Поисковик
-          type: string
-        test:
-          title: Является ли запуск - тестом
-          type: boolean
-      required:
-        - modEngine
-        - test
-      title: Перевод проверок позиций яндекс
-      description: '@deprecated'
-      deprecated: true
-    Admin_2.Methods.Actions.Robot.Checks.Edit.Exec:
-      allOf:
-        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Robot.Priority.Edit:
       type: object
       properties:
@@ -43066,7 +43048,24 @@ components:
         - test
       title: Снятие задачи с дэбага
     Admin_2.Methods.Actions.Robot.Task.Edit.Exec:
-      nullable: true
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit:
+      type: object
+      properties:
+        modEngine:
+          title: Поисковик
+          type: string
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - modEngine
+        - test
+      title: Перевод проверок позиций яндекс
+      description: '@deprecated'
+      deprecated: true
+    Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Slack.Files.Del:

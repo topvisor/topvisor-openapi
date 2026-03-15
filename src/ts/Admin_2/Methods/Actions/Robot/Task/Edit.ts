@@ -18,7 +18,7 @@ export interface components {
             /** Является ли запуск - тестом */
             test: boolean;
         };
-        "Admin_2.Methods.Actions.Robot.Task.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'] | null;
+        "Admin_2.Methods.Actions.Robot.Task.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
     };
     responses: never;
     parameters: never;

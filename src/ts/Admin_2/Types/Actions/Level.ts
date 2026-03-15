@@ -11,7 +11,7 @@ export interface components {
          * Уровень доступа к actions
          * @enum {string}
          */
-        "Admin_2.Types.Actions.Level": "all" | "support";
+        "Admin_2.Types.Actions.Level": "all" | "support" | "secrets";
     };
     responses: never;
     parameters: never;
