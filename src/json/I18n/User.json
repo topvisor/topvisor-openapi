@@ -26,6 +26,10 @@
                         "const": "updated",
                         "readOnly": true
                     },
+                    "AITracker_alpha": {
+                        "const": "AI-tracker: Alpha version",
+                        "readOnly": true
+                    },
                     "Theme": {
                         "const": "Тема оформления",
                         "readOnly": true
@@ -988,6 +992,7 @@
                     "Name",
                     "Password",
                     "password_updated",
+                    "AITracker_alpha",
                     "Theme",
                     "Encoding",
                     "Delimiter",
