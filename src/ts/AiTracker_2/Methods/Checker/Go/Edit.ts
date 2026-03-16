@@ -8,7 +8,6 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "AiTracker_2.Methods.Checker.Go.Edit": {
-            debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

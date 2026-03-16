@@ -34493,18 +34493,9 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-    debug:
-      title: |-
-        Включить режим отладки
-
-        Учитывается только при запуске с правами администратора
-      description: '@internal'
-      type: boolean
     AiTracker_2.Methods.Checker.Go.Edit:
       type: object
       properties:
-        debug:
-          $ref: '#/components/schemas/debug'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -34520,6 +34511,13 @@ components:
             type: integer
       required:
         - projectIds
+    debug:
+      title: |-
+        Включить режим отладки
+
+        Учитывается только при запуске с правами администратора
+      description: '@internal'
+      type: boolean
     AiTracker_2.Methods.Checker.Price.Get:
       type: object
       properties:
