@@ -40,7 +40,9 @@ export interface components {
              */
             history_fields?: import('../../Types/Indexing/History/HistoryFields.ts').components['schemas']['Audit_2.Types.Indexing.History.HistoryFields'] | null;
             searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
-            only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
+            only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
+            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
+            only_exists_by_date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
             type_range?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];

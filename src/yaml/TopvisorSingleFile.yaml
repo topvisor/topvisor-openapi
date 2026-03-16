@@ -22527,7 +22527,7 @@ components:
     show_trash:
       title: Показывать удаленные запросы
       type: boolean
-    Reports_2.Types.OnlyExistsFirstDate:
+    Reports_2.Types.OnlyExistsByDateType:
       type: integer
       enum:
         - 0
@@ -22539,9 +22539,9 @@ components:
         - OnlyAddedAtPeriod
       x-enum-descriptions:
         - Без фильтра
-        - Только запросы в первой проверке указанного периода
-        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
-      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
+        - Только запросы, присутствующие в первой проверке указанного периода или в конкретной проверке
+        - Только добавленные запросы за период или начиная с конкретной даты; Работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода или в указанной проверке'
     TV.API.Types.DateArray:
       type: array
       items:
@@ -22651,7 +22651,12 @@ components:
           $ref: '#/components/schemas/show_trash'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -23305,7 +23310,12 @@ components:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -28819,7 +28829,12 @@ components:
           $ref: '#/components/schemas/show_trash'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -29229,7 +29244,12 @@ components:
           $ref: '#/components/schemas/show_trash'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -30426,6 +30446,21 @@ components:
       deprecated: true
       allOf:
         - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+    Reports_2.Types.OnlyExistsFirstDate:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - All
+        - OnlyExistsInFirstDate
+        - OnlyAddedAtPeriod
+      x-enum-descriptions:
+        - Без фильтра
+        - Только запросы в первой проверке указанного периода
+        - Только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH
+      title: 'Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода'
     Snapshots_2.Methods.Competitors.Get:
       type: object
       properties:
@@ -30707,7 +30742,12 @@ components:
           $ref: '#/components/schemas/region_device'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
@@ -40274,7 +40314,12 @@ components:
           $ref: '#/components/schemas/show_trash'
         only_exists_first_date:
           allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
           $ref: '#/components/schemas/project_id'
         dates:
