@@ -19,7 +19,7 @@ export interface components {
             /** @constant */
             readonly Check_sitemap: "Generate sitemap";
             /** @constant */
-            readonly Check_aiTracker: "Запустить проверку";
+            readonly Check_aiTracker: "Run AI Tracker";
             /** @constant */
             readonly Last_check: "Last check";
             /** @constant */

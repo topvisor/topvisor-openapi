@@ -31,7 +31,7 @@
                         "readOnly": true
                     },
                     "Check_aiTracker": {
-                        "const": "Запустить проверку",
+                        "const": "Run AI Tracker",
                         "readOnly": true
                     },
                     "Last_check": {
