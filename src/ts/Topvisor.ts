@@ -5457,11 +5457,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Экспорт результатов индексации
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-     */
+    /** Экспорт результатов индексации */
     "/get/audit_2/indexing/export/": {
         parameters: {
             query?: never;
@@ -19381,6 +19377,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Indexing/Export/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };

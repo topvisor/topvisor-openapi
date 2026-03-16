@@ -45,6 +45,7 @@ export interface components {
         "Ai.Tracker": import('./I18n/Ai/Tracker.ts').components['schemas']['I18n.Ai.Tracker'];
         "Audit.Scan": import('./I18n/Audit/Scan.ts').components['schemas']['I18n.Audit.Scan'];
         "Bank.Subscription": import('./I18n/Bank/Subscription.ts').components['schemas']['I18n.Bank.Subscription'];
+        "Content.Tags": import('./I18n/Content/Tags.ts').components['schemas']['I18n.Content.Tags'];
         "Landings.Championship": import('./I18n/Landings/Championship.ts').components['schemas']['I18n.Landings.Championship'];
         "Landings.Consent": import('./I18n/Landings/Consent.ts').components['schemas']['I18n.Landings.Consent'];
         "Landings.Jobs": import('./I18n/Landings/Jobs.ts').components['schemas']['I18n.Landings.Jobs'];

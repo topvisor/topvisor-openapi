@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Content.Tags",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Content.Tags": {
+                "type": "object",
+                "properties": {
+                    "Yandex": {
+                        "const": "Яндекс",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Yandex"
+                ]
+            }
+        }
+    }
+}

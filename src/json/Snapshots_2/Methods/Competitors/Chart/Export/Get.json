@@ -73,7 +73,16 @@
                     "only_exists_first_date": {
                         "allOf": [
                             {
-                                "$ref": "../../../../../Reports_2/Types/OnlyExistsFirstDate.json#/components/schemas/Reports_2.Types.OnlyExistsFirstDate"
+                                "$ref": "../../../../../Reports_2/Types/OnlyExistsByDateType.json#/components/schemas/Reports_2.Types.OnlyExistsByDateType"
+                            }
+                        ]
+                    },
+                    "only_exists_by_date": {
+                        "title": "Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     },

@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @mixin Urls_2\Methods\Get */
-        "Urls_2.Params.ApiGetParams": {
-            fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+        "I18n.Content.Tags": {
+            /** @constant */
+            readonly Yandex: "Яндекс";
         };
     };
     responses: never;
