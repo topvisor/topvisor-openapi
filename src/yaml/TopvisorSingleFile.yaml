@@ -9336,10 +9336,7 @@ paths:
       operationId: GetAudit2IndexingExport
       tags:
         - Audit_2
-      summary: |-
-        Экспорт результатов индексации
-
-        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      summary: Экспорт результатов индексации
       requestBody:
         content:
           application/json:
@@ -9363,6 +9360,9 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
   /get/audit_2/indexing/links/:
     post:
       operationId: GetAudit2IndexingLinks
@@ -21594,10 +21594,10 @@ components:
     Urls_2.Methods.Get:
       type: object
       properties:
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
         project_id:
           $ref: '#/components/schemas/project_id'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -23229,6 +23229,24 @@ components:
       title: Количество настроенных URL
       nullable: true
       type: integer
+    Audit_2.Types.Indexing.History.HistoryField:
+      type: string
+      enum:
+        - data
+        - alert
+      x-enum-varnames:
+        - Data
+        - Alert
+      x-enum-descriptions:
+        - null
+        - null
+      title: Поле с результатом проверки для отчета истории индексации
+    Audit_2.Types.Indexing.History.HistoryFields:
+      type: array
+      items:
+        $ref: '#/components/schemas/Audit_2.Types.Indexing.History.HistoryField'
+      title: Поля с результатами проверки для отчета истории индексации
+      description: '@see HistoryField'
     Audit_2.Types.Indexing.SearcherKey:
       type: string
       enum:
@@ -23253,17 +23271,14 @@ components:
     Audit_2.Methods.Indexing.Get:
       type: object
       properties:
-        searchers_keys:
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         show_headers:
           title: Вернуть ли заголовки отчета
           type: boolean
-        show_counts_indexing:
-          title: Вернуть ли суммарное количество страниц в индексе по URL
-          type: boolean
         show_exists_dates:
           title: Вернуть ли даты проверок
+          type: boolean
+        show_counts_indexing:
+          title: Вернуть ли суммарное количество страниц в индексе по URL
           type: boolean
         filter_by_alert:
           title: |-
@@ -23282,11 +23297,12 @@ components:
             Список полей индексации, которые необходимо получить
 
             См. поля indexing_* в объекте Urls
-          default:
-            - data
-          type: array
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.History.HistoryFields'
+        searchers_keys:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
@@ -23323,11 +23339,127 @@ components:
         Получение отчета по проверке индексации
 
         Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+    Audit_2.Objects.Indexing.History.Headers.Headers:
+      type: object
+      properties:
+        projectId:
+          title: Основной проект
+          type: integer
+        dates:
+          title: Даты, выводимые в отчете
+          type: array
+          items:
+            type: string
+        historyFields:
+          title: Запрошенные поля результатов проверок
+          description: '@note Переопределить в phpDoc нужным типом при реализации'
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
+        projects:
+          title: Информация о проектах, по которым строится отчет
+          type: array
+          items:
+            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
+        summaries:
+          title: Сводка для каждого результата проверки
+          type: array
+        isCompare:
+          title: |-
+            Режим сравнения
+
+            Примеры:
+            - Вывод нескольких проектов
+            - Вывод нескольких регионов
+            - Вывод нескольких проектов и регионов
+          type: boolean
+        fields:
+          title: |-
+            Поля элементов отчета
+
+            Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/Selector.Field'
+        filters:
+          title: |-
+            Фильтры элементов отчета
+
+            Для реализации фичей при экспорте отчетов
+          description: '@see static::MODEL'
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldsFilters'
+        groupBy:
+          title: |-
+            Поле для визуальной группировки элементов
+
+            Если указно поле, которого нет в элементах, то оно буде игнорироваться
+          type: string
+      required:
+        - projectId
+        - dates
+        - historyFields
+        - projects
+        - summaries
+        - isCompare
+        - fields
+        - filters
+        - groupBy
+      title: Заголовки отчета истории индексации
+      description: |-
+        @property Audit_2\Types\Indexing\History\HistoryFields $historyFields
+        @property list<Project> $projects
+    Audit_2.Objects.Indexing.History.Result.Result:
+      type: object
+      properties:
+        headers:
+          nullable: true
+          $ref: '#/components/schemas/Audit_2.Objects.Indexing.History.Headers.Headers'
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Objects.AbstractHeaders'
+        urls:
+          title: Список URL с данными
+          type: array
+          items:
+            type: object
+            additionalProperties: {}
+        existsDates:
+          title: Даты, в которые есть проверки
+          nullable: true
+          type: array
+          items:
+            type: string
+        countsIndexing:
+          title: Суммарные значения индексации по датам и поисковым системам
+          nullable: true
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              all:
+                anyOf:
+                  - type: integer
+                  - type: 'null'
+              in_index:
+                anyOf:
+                  - type: integer
+                  - type: 'null'
+              changes:
+                anyOf:
+                  - type: integer
+                  - type: 'null'
+            required:
+              - all
+              - in_index
+              - changes
+      required:
+        - urls
+      title: Результат истории индексации
     Audit_2.Methods.Indexing.Get.Exec:
-      title: Список url с результатами проверок
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Urls'
+      title: Список URL с результатами проверок
+      allOf:
+        - $ref: '#/components/schemas/Audit_2.Objects.Indexing.History.Result.Result'
     Audit_2.Types.Settings.WatcherType:
       type: string
       enum:
@@ -35753,7 +35885,7 @@ components:
             Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
 
             Для внутреннего использования
-          description: '@private'
+          description: '@internal'
           nullable: true
           type: string
         output:
@@ -35763,8 +35895,20 @@ components:
         properties:
           title: Настройки экспорта
           type: array
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
+        indexing_fields:
+          title: '@deprecated'
+          deprecated: true
+          default:
+            - data
+          type: array
+        history_fields:
+          title: |-
+            Список полей индексации, которые необходимо получить
+
+            См. поля indexing_* в объекте Urls
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.History.HistoryFields'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsFirstDate'
@@ -35798,13 +35942,9 @@ components:
         - searchers_keys
         - output
         - project_id
-      title: |-
-        Экспорт результатов индексации
-
-        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      title: Экспорт результатов индексации
     Audit_2.Methods.Indexing.Export.Get.Exec:
-      title: Результаты индексации
-      type: string
+      nullable: true
     Audit_2.Types.Indexing.TypeRange:
       type: integer
       enum:

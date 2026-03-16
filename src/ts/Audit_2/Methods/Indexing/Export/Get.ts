@@ -7,11 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт результатов индексации
-         *
-         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
+        /** Экспорт результатов индексации */
         "Audit_2.Methods.Indexing.Export.Get": {
             /** Поисковые системы */
             searchers_keys: import('../../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
@@ -19,14 +15,27 @@ export interface components {
              * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
              *
              *     Для внутреннего использования
-             * @description @private
+             * @description @internal
              */
             returnFilenameFromFolder?: string | null;
             /** Формат экспортируемого файла */
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */
             properties?: unknown[];
-            fetch_style?: import('../../../../Urls_2/Params/ApiGetParams.ts').components['schemas']['Urls_2.Params.ApiGetParams']['fetch_style'];
+            /**
+             * @deprecated
+             * @deprecated
+             * @default [
+             *       "data"
+             *     ]
+             */
+            indexing_fields?: unknown[];
+            /**
+             * Список полей индексации, которые необходимо получить
+             *
+             *     См. поля indexing_* в объекте Urls
+             */
+            history_fields?: import('../../../Types/Indexing/History/HistoryFields.ts').components['schemas']['Audit_2.Types.Indexing.History.HistoryFields'] | null;
             only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
@@ -42,8 +51,7 @@ export interface components {
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        /** Результаты индексации */
-        "Audit_2.Methods.Indexing.Export.Get.Exec": string;
+        "Audit_2.Methods.Indexing.Export.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

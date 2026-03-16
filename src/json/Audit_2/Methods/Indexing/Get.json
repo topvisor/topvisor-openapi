@@ -10,23 +10,16 @@
             "Audit_2.Methods.Indexing.Get": {
                 "type": "object",
                 "properties": {
-                    "searchers_keys": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../Audit_2/Types/Indexing/SearcherKeys.json#/components/schemas/Audit_2.Types.Indexing.SearcherKeys"
-                            }
-                        ]
-                    },
                     "show_headers": {
                         "title": "Вернуть ли заголовки отчета",
                         "type": "boolean"
                     },
-                    "show_counts_indexing": {
-                        "title": "Вернуть ли суммарное количество страниц в индексе по URL",
-                        "type": "boolean"
-                    },
                     "show_exists_dates": {
                         "title": "Вернуть ли даты проверок",
+                        "type": "boolean"
+                    },
+                    "show_counts_indexing": {
+                        "title": "Вернуть ли суммарное количество страниц в индексе по URL",
                         "type": "boolean"
                     },
                     "filter_by_alert": {
@@ -43,13 +36,19 @@
                     },
                     "history_fields": {
                         "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
-                        "default": [
-                            "data"
-                        ],
-                        "type": "array"
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Audit_2/Types/Indexing/History/HistoryFields.json#/components/schemas/Audit_2.Types.Indexing.History.HistoryFields"
+                            }
+                        ]
                     },
-                    "fetch_style": {
-                        "$ref": "../../../Urls_2/Params/ApiGetParams.json#/components/schemas/Urls_2.Params.ApiGetParams/properties/fetch_style"
+                    "searchers_keys": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Audit_2/Types/Indexing/SearcherKeys.json#/components/schemas/Audit_2.Types.Indexing.SearcherKeys"
+                            }
+                        ]
                     },
                     "only_exists_first_date": {
                         "allOf": [
@@ -105,11 +104,12 @@
                 "title": "Получение отчета по проверке индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
             },
             "Audit_2.Methods.Indexing.Get.Exec": {
-                "title": "Список url с результатами проверок",
-                "type": "array",
-                "items": {
-                    "$ref": "../../../Models/Urls.json#/components/schemas/Models.Urls"
-                }
+                "title": "Список URL с результатами проверок",
+                "allOf": [
+                    {
+                        "$ref": "../../../Audit_2/Objects/Indexing/History/Result/Result.json#/components/schemas/Audit_2.Objects.Indexing.History.Result.Result"
+                    }
+                ]
             }
         }
     }

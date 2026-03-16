@@ -13,13 +13,12 @@ export interface components {
          *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
          */
         "Audit_2.Methods.Indexing.Get": {
-            searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /** Вернуть ли заголовки отчета */
             show_headers?: boolean;
-            /** Вернуть ли суммарное количество страниц в индексе по URL */
-            show_counts_indexing?: boolean;
             /** Вернуть ли даты проверок */
             show_exists_dates?: boolean;
+            /** Вернуть ли суммарное количество страниц в индексе по URL */
+            show_counts_indexing?: boolean;
             /**
              * Фильтр по изменениям в указанной ПС в указанную дату
              *
@@ -38,12 +37,9 @@ export interface components {
              * Список полей индексации, которые необходимо получить
              *
              *     См. поля indexing_* в объекте Urls
-             * @default [
-             *       "data"
-             *     ]
              */
-            history_fields?: unknown[];
-            fetch_style?: import('../../../Urls_2/Params/ApiGetParams.ts').components['schemas']['Urls_2.Params.ApiGetParams']['fetch_style'];
+            history_fields?: import('../../Types/Indexing/History/HistoryFields.ts').components['schemas']['Audit_2.Types.Indexing.History.HistoryFields'] | null;
+            searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsFirstDate.ts').components['schemas']['Reports_2.Types.OnlyExistsFirstDate'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             dates?: import('../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
@@ -59,8 +55,8 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        /** Список url с результатами проверок */
-        "Audit_2.Methods.Indexing.Get.Exec": import('../../../Models/Urls.ts').components['schemas']['Models.Urls'][];
+        /** Список URL с результатами проверок */
+        "Audit_2.Methods.Indexing.Get.Exec": import('../../Objects/Indexing/History/Result/Result.ts').components['schemas']['Audit_2.Objects.Indexing.History.Result.Result'];
     };
     responses: never;
     parameters: never;

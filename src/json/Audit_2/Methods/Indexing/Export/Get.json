@@ -20,7 +20,7 @@
                     },
                     "returnFilenameFromFolder": {
                         "title": "Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу\n\nДля внутреннего использования",
-                        "description": "@private",
+                        "description": "@internal",
                         "nullable": true,
                         "type": "string"
                     },
@@ -36,8 +36,22 @@
                         "title": "Настройки экспорта",
                         "type": "array"
                     },
-                    "fetch_style": {
-                        "$ref": "../../../../Urls_2/Params/ApiGetParams.json#/components/schemas/Urls_2.Params.ApiGetParams/properties/fetch_style"
+                    "indexing_fields": {
+                        "title": "@deprecated",
+                        "deprecated": true,
+                        "default": [
+                            "data"
+                        ],
+                        "type": "array"
+                    },
+                    "history_fields": {
+                        "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Indexing/History/HistoryFields.json#/components/schemas/Audit_2.Types.Indexing.History.HistoryFields"
+                            }
+                        ]
                     },
                     "only_exists_first_date": {
                         "allOf": [
@@ -91,11 +105,10 @@
                     "output",
                     "project_id"
                 ],
-                "title": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
+                "title": "Экспорт результатов индексации"
             },
             "Audit_2.Methods.Indexing.Export.Get.Exec": {
-                "title": "Результаты индексации",
-                "type": "string"
+                "nullable": true
             }
         }
     }

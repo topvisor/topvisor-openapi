@@ -17172,7 +17172,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "summary": "Экспорт результатов индексации",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -17215,6 +17215,11 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
                                 }
                             }
                         }
