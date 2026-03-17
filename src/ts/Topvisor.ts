@@ -945,7 +945,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/get/aitracker_2/history/": {
+    "/get/aiTracker_2/history/": {
         parameters: {
             query?: never;
             header?: never;
@@ -954,7 +954,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAitracker2History"];
+        post: operations["GetAiTracker2History"];
         delete?: never;
         options?: never;
         head?: never;
@@ -967,7 +967,7 @@ export interface paths {
      *     Для получения текущих настроек используйте: /get/projects_2/projects/
      * @description @see \Services\AiTracker_2\Objects\Settings
      */
-    "/edit/aitracker_2/settings/": {
+    "/edit/aiTracker_2/settings/": {
         parameters: {
             query?: never;
             header?: never;
@@ -976,7 +976,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditAitracker2Settings"];
+        post: operations["EditAiTracker2Settings"];
         delete?: never;
         options?: never;
         head?: never;
@@ -984,7 +984,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение настроек ai трекера */
-    "/get/aitracker_2/settings/": {
+    "/get/aiTracker_2/settings/": {
         parameters: {
             query?: never;
             header?: never;
@@ -993,7 +993,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAitracker2Settings"];
+        post: operations["GetAiTracker2Settings"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2250,7 +2250,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение числа включенных/выключенных групп и запросов */
-    "/get/keywordsai_2/counters/": {
+    "/get/keywordsAi_2/counters/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2259,7 +2259,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2Counters"];
+        post: operations["GetKeywordsAi2Counters"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2267,7 +2267,7 @@ export interface paths {
         trace?: never;
     };  
     /** Добавление папки */
-    "/add/keywordsai_2/folders/": {
+    "/add/keywordsAi_2/folders/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2276,7 +2276,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddKeywordsai2Folders"];
+        post: operations["AddKeywordsAi2Folders"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2284,7 +2284,7 @@ export interface paths {
         trace?: never;
     };  
     /** Удаление папок */
-    "/del/keywordsai_2/folders/": {
+    "/del/keywordsAi_2/folders/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2293,7 +2293,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["DelKeywordsai2Folders"];
+        post: operations["DelKeywordsAi2Folders"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2301,7 +2301,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение списка папок проекта */
-    "/get/keywordsai_2/folders/": {
+    "/get/keywordsAi_2/folders/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2310,7 +2310,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2Folders"];
+        post: operations["GetKeywordsAi2Folders"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2318,7 +2318,7 @@ export interface paths {
         trace?: never;
     };  
     /** Добавление групп */
-    "/add/keywordsai_2/groups/": {
+    "/add/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2327,7 +2327,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddKeywordsai2Groups"];
+        post: operations["AddKeywordsAi2Groups"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2335,7 +2335,7 @@ export interface paths {
         trace?: never;
     };  
     /** Удаление групп */
-    "/del/keywordsai_2/groups/": {
+    "/del/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2344,7 +2344,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["DelKeywordsai2Groups"];
+        post: operations["DelKeywordsAi2Groups"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2352,7 +2352,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение списка групп проекта */
-    "/get/keywordsai_2/groups/": {
+    "/get/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2361,7 +2361,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2Groups"];
+        post: operations["GetKeywordsAi2Groups"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2369,7 +2369,7 @@ export interface paths {
         trace?: never;
     };  
     /** Добавление запроса */
-    "/add/keywordsai_2/keywords/": {
+    "/add/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2378,14 +2378,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddKeywordsai2Keywords"];
+        post: operations["AddKeywordsAi2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/del/keywordsai_2/keywords/": {
+    "/del/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2394,14 +2394,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["DelKeywordsai2Keywords"];
+        post: operations["DelKeywordsAi2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/get/keywordsai_2/keywords/": {
+    "/get/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
             header?: never;
@@ -2410,7 +2410,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2Keywords"];
+        post: operations["GetKeywordsAi2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
@@ -5206,7 +5206,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/edit/aitracker_2/checker/go/": {
+    "/edit/aiTracker_2/checker/go/": {
         parameters: {
             query?: never;
             header?: never;
@@ -5215,14 +5215,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditAitracker2CheckerGo"];
+        post: operations["EditAiTracker2CheckerGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/get/aitracker_2/checker/price/": {
+    "/get/aiTracker_2/checker/price/": {
         parameters: {
             query?: never;
             header?: never;
@@ -5231,7 +5231,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAitracker2CheckerPrice"];
+        post: operations["GetAiTracker2CheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -5244,7 +5244,7 @@ export interface paths {
      *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      * @description @todo Объединить с Positions_2\Methods\History\Export\Get
      */
-    "/get/aitracker_2/history/export/": {
+    "/get/aiTracker_2/history/export/": {
         parameters: {
             query?: never;
             header?: never;
@@ -5253,7 +5253,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAitracker2HistoryExport"];
+        post: operations["GetAiTracker2HistoryExport"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6194,7 +6194,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/edit/keywordsai_2/folders/move/": {
+    "/edit/keywordsAi_2/folders/move/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6203,7 +6203,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2FoldersMove"];
+        post: operations["EditKeywordsAi2FoldersMove"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6211,7 +6211,7 @@ export interface paths {
         trace?: never;
     };  
     /** Переименовывание папок */
-    "/edit/keywordsai_2/folders/rename/": {
+    "/edit/keywordsAi_2/folders/rename/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6220,7 +6220,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2FoldersRename"];
+        post: operations["EditKeywordsAi2FoldersRename"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6228,7 +6228,7 @@ export interface paths {
         trace?: never;
     };  
     /** Восстановление папок проекта */
-    "/edit/keywordsai_2/folders/undel/": {
+    "/edit/keywordsAi_2/folders/undel/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6237,14 +6237,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2FoldersUndel"];
+        post: operations["EditKeywordsAi2FoldersUndel"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/get/keywordsai_2/groups/export/": {
+    "/get/keywordsAi_2/groups/export/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6253,7 +6253,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2GroupsExport"];
+        post: operations["GetKeywordsAi2GroupsExport"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6261,7 +6261,7 @@ export interface paths {
         trace?: never;
     };  
     /** Перемещение группы */
-    "/edit/keywordsai_2/groups/move/": {
+    "/edit/keywordsAi_2/groups/move/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6270,7 +6270,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2GroupsMove"];
+        post: operations["EditKeywordsAi2GroupsMove"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6278,7 +6278,7 @@ export interface paths {
         trace?: never;
     };  
     /** Изменение статуса активности группы */
-    "/edit/keywordsai_2/groups/on/": {
+    "/edit/keywordsAi_2/groups/on/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6287,7 +6287,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2GroupsOn"];
+        post: operations["EditKeywordsAi2GroupsOn"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6295,7 +6295,7 @@ export interface paths {
         trace?: never;
     };  
     /** Переименовывание группы */
-    "/edit/keywordsai_2/groups/rename/": {
+    "/edit/keywordsAi_2/groups/rename/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6304,7 +6304,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2GroupsRename"];
+        post: operations["EditKeywordsAi2GroupsRename"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6316,7 +6316,7 @@ export interface paths {
      *
      *     Не оптимизировано для работы с большим числом групп, дат и регионов
      */
-    "/edit/keywordsai_2/groups/sort/": {
+    "/edit/keywordsAi_2/groups/sort/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6325,7 +6325,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2GroupsSort"];
+        post: operations["EditKeywordsAi2GroupsSort"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6333,7 +6333,7 @@ export interface paths {
         trace?: never;
     };  
     /** Восстановление группы из корзины */
-    "/edit/keywordsai_2/groups/undel/": {
+    "/edit/keywordsAi_2/groups/undel/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6342,7 +6342,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2GroupsUndel"];
+        post: operations["EditKeywordsAi2GroupsUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6350,7 +6350,7 @@ export interface paths {
         trace?: never;
     };  
     /** Экспорт в определенном формате (экспорт всех запросов) */
-    "/get/keywordsai_2/keywords/export/": {
+    "/get/keywordsAi_2/keywords/export/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6359,14 +6359,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2KeywordsExport"];
+        post: operations["GetKeywordsAi2KeywordsExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/add/keywordsai_2/keywords/import/": {
+    "/add/keywordsAi_2/keywords/import/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6375,7 +6375,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddKeywordsai2KeywordsImport"];
+        post: operations["AddKeywordsAi2KeywordsImport"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6383,7 +6383,7 @@ export interface paths {
         trace?: never;
     };  
     /** Перемещение запросов */
-    "/edit/keywordsai_2/keywords/move/": {
+    "/edit/keywordsAi_2/keywords/move/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6392,7 +6392,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2KeywordsMove"];
+        post: operations["EditKeywordsAi2KeywordsMove"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6405,7 +6405,7 @@ export interface paths {
      *     Поддерживает работу до 10 000 запросов
      * @description @see Keywords_2\Methods\Keywords\Get
      */
-    "/get/keywordsai_2/keywords/offset/": {
+    "/get/keywordsAi_2/keywords/offset/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6414,7 +6414,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetKeywordsai2KeywordsOffset"];
+        post: operations["GetKeywordsAi2KeywordsOffset"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6422,7 +6422,7 @@ export interface paths {
         trace?: never;
     };  
     /** Переименование запроса */
-    "/edit/keywordsai_2/keywords/rename/": {
+    "/edit/keywordsAi_2/keywords/rename/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6431,7 +6431,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2KeywordsRename"];
+        post: operations["EditKeywordsAi2KeywordsRename"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6443,7 +6443,7 @@ export interface paths {
      *
      *     Можно сортировать в пределах одной группы или всего проекта
      */
-    "/edit/keywordsai_2/keywords/sort/": {
+    "/edit/keywordsAi_2/keywords/sort/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6452,14 +6452,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2KeywordsSort"];
+        post: operations["EditKeywordsAi2KeywordsSort"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/edit/keywordsai_2/keywords/tags/": {
+    "/edit/keywordsAi_2/keywords/tags/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6468,7 +6468,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2KeywordsTags"];
+        post: operations["EditKeywordsAi2KeywordsTags"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6476,7 +6476,7 @@ export interface paths {
         trace?: never;
     };  
     /** Восстановление запросов из корзины */
-    "/edit/keywordsai_2/keywords/undel/": {
+    "/edit/keywordsAi_2/keywords/undel/": {
         parameters: {
             query?: never;
             header?: never;
@@ -6485,7 +6485,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2KeywordsUndel"];
+        post: operations["EditKeywordsAi2KeywordsUndel"];
         delete?: never;
         options?: never;
         head?: never;
@@ -9471,27 +9471,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Перевод проверок позиций яндекс
-     * @deprecated
-     * @description @deprecated
-     */
-    "/edit/admin_2/actions/robot/yandexXmlToSerp/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditAdmin2ActionsRobotYandexXmlToSerp"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Удаление файлов */
     "/del/admin_2/actions/slack/files/": {
         parameters: {
@@ -9871,7 +9850,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение гостевой ссылки на просмотр ИИ-Трекера */
-    "/get/aitracker_2/history/export/links/": {
+    "/get/aiTracker_2/history/export/links/": {
         parameters: {
             query?: never;
             header?: never;
@@ -9880,7 +9859,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAitracker2HistoryExportLinks"];
+        post: operations["GetAiTracker2HistoryExportLinks"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10514,7 +10493,7 @@ export interface paths {
         trace?: never;
     };  
     /** Копирование запросов в другой проект */
-    "/edit/keywordsai_2/keywords/export/toProject/": {
+    "/edit/keywordsAi_2/keywords/export/toProject/": {
         parameters: {
             query?: never;
             header?: never;
@@ -10523,7 +10502,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditKeywordsai2KeywordsExportToProject"];
+        post: operations["EditKeywordsAi2KeywordsExportToProject"];
         delete?: never;
         options?: never;
         head?: never;
@@ -12841,7 +12820,7 @@ export interface operations {
             };
         };
     };
-    GetAitracker2History: {
+    GetAiTracker2History: {
         parameters: {
             query?: never;
             header?: never;
@@ -12867,7 +12846,7 @@ export interface operations {
             };
         };
     };
-    EditAitracker2Settings: {
+    EditAiTracker2Settings: {
         parameters: {
             query?: never;
             header?: never;
@@ -12892,7 +12871,7 @@ export interface operations {
             };
         };
     };
-    GetAitracker2Settings: {
+    GetAiTracker2Settings: {
         parameters: {
             query?: never;
             header?: never;
@@ -14747,7 +14726,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2Counters: {
+    GetKeywordsAi2Counters: {
         parameters: {
             query?: never;
             header?: never;
@@ -14773,7 +14752,7 @@ export interface operations {
             };
         };
     };
-    AddKeywordsai2Folders: {
+    AddKeywordsAi2Folders: {
         parameters: {
             query?: never;
             header?: never;
@@ -14799,7 +14778,7 @@ export interface operations {
             };
         };
     };
-    DelKeywordsai2Folders: {
+    DelKeywordsAi2Folders: {
         parameters: {
             query?: never;
             header?: never;
@@ -14825,7 +14804,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2Folders: {
+    GetKeywordsAi2Folders: {
         parameters: {
             query?: never;
             header?: never;
@@ -14851,7 +14830,7 @@ export interface operations {
             };
         };
     };
-    AddKeywordsai2Groups: {
+    AddKeywordsAi2Groups: {
         parameters: {
             query?: never;
             header?: never;
@@ -14877,7 +14856,7 @@ export interface operations {
             };
         };
     };
-    DelKeywordsai2Groups: {
+    DelKeywordsAi2Groups: {
         parameters: {
             query?: never;
             header?: never;
@@ -14903,7 +14882,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2Groups: {
+    GetKeywordsAi2Groups: {
         parameters: {
             query?: never;
             header?: never;
@@ -14929,7 +14908,7 @@ export interface operations {
             };
         };
     };
-    AddKeywordsai2Keywords: {
+    AddKeywordsAi2Keywords: {
         parameters: {
             query?: never;
             header?: never;
@@ -14955,7 +14934,7 @@ export interface operations {
             };
         };
     };
-    DelKeywordsai2Keywords: {
+    DelKeywordsAi2Keywords: {
         parameters: {
             query?: never;
             header?: never;
@@ -14981,7 +14960,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2Keywords: {
+    GetKeywordsAi2Keywords: {
         parameters: {
             query?: never;
             header?: never;
@@ -18996,7 +18975,7 @@ export interface operations {
             };
         };
     };
-    EditAitracker2CheckerGo: {
+    EditAiTracker2CheckerGo: {
         parameters: {
             query?: never;
             header?: never;
@@ -19022,7 +19001,7 @@ export interface operations {
             };
         };
     };
-    GetAitracker2CheckerPrice: {
+    GetAiTracker2CheckerPrice: {
         parameters: {
             query?: never;
             header?: never;
@@ -19048,7 +19027,7 @@ export interface operations {
             };
         };
     };
-    GetAitracker2HistoryExport: {
+    GetAiTracker2HistoryExport: {
         parameters: {
             query?: never;
             header?: never;
@@ -20410,7 +20389,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2FoldersMove: {
+    EditKeywordsAi2FoldersMove: {
         parameters: {
             query?: never;
             header?: never;
@@ -20436,7 +20415,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2FoldersRename: {
+    EditKeywordsAi2FoldersRename: {
         parameters: {
             query?: never;
             header?: never;
@@ -20462,7 +20441,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2FoldersUndel: {
+    EditKeywordsAi2FoldersUndel: {
         parameters: {
             query?: never;
             header?: never;
@@ -20488,7 +20467,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2GroupsExport: {
+    GetKeywordsAi2GroupsExport: {
         parameters: {
             query?: never;
             header?: never;
@@ -20512,7 +20491,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2GroupsMove: {
+    EditKeywordsAi2GroupsMove: {
         parameters: {
             query?: never;
             header?: never;
@@ -20538,7 +20517,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2GroupsOn: {
+    EditKeywordsAi2GroupsOn: {
         parameters: {
             query?: never;
             header?: never;
@@ -20564,7 +20543,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2GroupsRename: {
+    EditKeywordsAi2GroupsRename: {
         parameters: {
             query?: never;
             header?: never;
@@ -20590,7 +20569,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2GroupsSort: {
+    EditKeywordsAi2GroupsSort: {
         parameters: {
             query?: never;
             header?: never;
@@ -20616,7 +20595,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2GroupsUndel: {
+    EditKeywordsAi2GroupsUndel: {
         parameters: {
             query?: never;
             header?: never;
@@ -20642,7 +20621,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2KeywordsExport: {
+    GetKeywordsAi2KeywordsExport: {
         parameters: {
             query?: never;
             header?: never;
@@ -20665,7 +20644,7 @@ export interface operations {
             };
         };
     };
-    AddKeywordsai2KeywordsImport: {
+    AddKeywordsAi2KeywordsImport: {
         parameters: {
             query?: never;
             header?: never;
@@ -20691,7 +20670,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2KeywordsMove: {
+    EditKeywordsAi2KeywordsMove: {
         parameters: {
             query?: never;
             header?: never;
@@ -20717,7 +20696,7 @@ export interface operations {
             };
         };
     };
-    GetKeywordsai2KeywordsOffset: {
+    GetKeywordsAi2KeywordsOffset: {
         parameters: {
             query?: never;
             header?: never;
@@ -20743,7 +20722,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2KeywordsRename: {
+    EditKeywordsAi2KeywordsRename: {
         parameters: {
             query?: never;
             header?: never;
@@ -20769,7 +20748,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2KeywordsSort: {
+    EditKeywordsAi2KeywordsSort: {
         parameters: {
             query?: never;
             header?: never;
@@ -20795,7 +20774,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2KeywordsTags: {
+    EditKeywordsAi2KeywordsTags: {
         parameters: {
             query?: never;
             header?: never;
@@ -20821,7 +20800,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2KeywordsUndel: {
+    EditKeywordsAi2KeywordsUndel: {
         parameters: {
             query?: never;
             header?: never;
@@ -25124,31 +25103,6 @@ export interface operations {
             };
         };
     };
-    EditAdmin2ActionsRobotYandexXmlToSerp: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     DelAdmin2ActionsSlackFiles: {
         parameters: {
             query?: never;
@@ -25699,7 +25653,7 @@ export interface operations {
             };
         };
     };
-    GetAitracker2HistoryExportLinks: {
+    GetAiTracker2HistoryExportLinks: {
         parameters: {
             query?: never;
             header?: never;
@@ -26579,7 +26533,7 @@ export interface operations {
             };
         };
     };
-    EditKeywordsai2KeywordsExportToProject: {
+    EditKeywordsAi2KeywordsExportToProject: {
         parameters: {
             query?: never;
             header?: never;

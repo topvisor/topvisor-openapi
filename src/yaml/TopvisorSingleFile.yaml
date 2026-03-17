@@ -1690,11 +1690,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Votes'
-  /get/aitracker_2/history/:
+  /get/aiTracker_2/history/:
     post:
-      operationId: GetAitracker2History
+      operationId: GetAiTracker2History
       tags:
-        - Aitracker_2
+        - AiTracker_2
       requestBody:
         content:
           application/json:
@@ -1721,11 +1721,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /edit/aitracker_2/settings/:
+  /edit/aiTracker_2/settings/:
     post:
-      operationId: EditAitracker2Settings
+      operationId: EditAiTracker2Settings
       tags:
-        - Aitracker_2
+        - AiTracker_2
       summary: |-
         Изменение настроек AI-трекера
 
@@ -1753,11 +1753,11 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/aitracker_2/settings/:
+  /get/aiTracker_2/settings/:
     post:
-      operationId: GetAitracker2Settings
+      operationId: GetAiTracker2Settings
       tags:
-        - Aitracker_2
+        - AiTracker_2
       summary: Получение настроек ai трекера
       requestBody:
         content:
@@ -3933,11 +3933,11 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/keywordsai_2/counters/:
+  /get/keywordsAi_2/counters/:
     post:
-      operationId: GetKeywordsai2Counters
+      operationId: GetKeywordsAi2Counters
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Получение числа включенных/выключенных групп и запросов
       requestBody:
         content:
@@ -3964,11 +3964,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /add/keywordsai_2/folders/:
+  /add/keywordsAi_2/folders/:
     post:
-      operationId: AddKeywordsai2Folders
+      operationId: AddKeywordsAi2Folders
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Добавление папки
       requestBody:
         content:
@@ -3995,11 +3995,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Folders'
-  /del/keywordsai_2/folders/:
+  /del/keywordsAi_2/folders/:
     post:
-      operationId: DelKeywordsai2Folders
+      operationId: DelKeywordsAi2Folders
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Удаление папок
       requestBody:
         content:
@@ -4026,11 +4026,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Folders'
-  /get/keywordsai_2/folders/:
+  /get/keywordsAi_2/folders/:
     post:
-      operationId: GetKeywordsai2Folders
+      operationId: GetKeywordsAi2Folders
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Получение списка папок проекта
       requestBody:
         content:
@@ -4058,11 +4058,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Folders'
-  /add/keywordsai_2/groups/:
+  /add/keywordsAi_2/groups/:
     post:
-      operationId: AddKeywordsai2Groups
+      operationId: AddKeywordsAi2Groups
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Добавление групп
       requestBody:
         content:
@@ -4089,11 +4089,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /del/keywordsai_2/groups/:
+  /del/keywordsAi_2/groups/:
     post:
-      operationId: DelKeywordsai2Groups
+      operationId: DelKeywordsAi2Groups
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Удаление групп
       requestBody:
         content:
@@ -4120,11 +4120,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /get/keywordsai_2/groups/:
+  /get/keywordsAi_2/groups/:
     post:
-      operationId: GetKeywordsai2Groups
+      operationId: GetKeywordsAi2Groups
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Получение списка групп проекта
       requestBody:
         content:
@@ -4152,11 +4152,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /add/keywordsai_2/keywords/:
+  /add/keywordsAi_2/keywords/:
     post:
-      operationId: AddKeywordsai2Keywords
+      operationId: AddKeywordsAi2Keywords
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Добавление запроса
       requestBody:
         content:
@@ -4183,11 +4183,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /del/keywordsai_2/keywords/:
+  /del/keywordsAi_2/keywords/:
     post:
-      operationId: DelKeywordsai2Keywords
+      operationId: DelKeywordsAi2Keywords
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       requestBody:
         content:
           application/json:
@@ -4213,11 +4213,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /get/keywordsai_2/keywords/:
+  /get/keywordsAi_2/keywords/:
     post:
-      operationId: GetKeywordsai2Keywords
+      operationId: GetKeywordsAi2Keywords
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       requestBody:
         content:
           application/json:
@@ -8895,11 +8895,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-  /edit/aitracker_2/checker/go/:
+  /edit/aiTracker_2/checker/go/:
     post:
-      operationId: EditAitracker2CheckerGo
+      operationId: EditAiTracker2CheckerGo
       tags:
-        - Aitracker_2
+        - AiTracker_2
       requestBody:
         content:
           application/json:
@@ -8925,11 +8925,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-  /get/aitracker_2/checker/price/:
+  /get/aiTracker_2/checker/price/:
     post:
-      operationId: GetAitracker2CheckerPrice
+      operationId: GetAiTracker2CheckerPrice
       tags:
-        - Aitracker_2
+        - AiTracker_2
       requestBody:
         content:
           application/json:
@@ -8955,11 +8955,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-  /get/aitracker_2/history/export/:
+  /get/aiTracker_2/history/export/:
     post:
-      operationId: GetAitracker2HistoryExport
+      operationId: GetAiTracker2HistoryExport
       tags:
-        - Aitracker_2
+        - AiTracker_2
       summary: |-
         Экспорт результатов индексации
 
@@ -10541,11 +10541,11 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/keywordsai_2/folders/move/:
+  /edit/keywordsAi_2/folders/move/:
     post:
-      operationId: EditKeywordsai2FoldersMove
+      operationId: EditKeywordsAi2FoldersMove
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       requestBody:
         content:
           application/json:
@@ -10571,11 +10571,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Folders'
-  /edit/keywordsai_2/folders/rename/:
+  /edit/keywordsAi_2/folders/rename/:
     post:
-      operationId: EditKeywordsai2FoldersRename
+      operationId: EditKeywordsAi2FoldersRename
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Переименовывание папок
       requestBody:
         content:
@@ -10602,11 +10602,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Folders'
-  /edit/keywordsai_2/folders/undel/:
+  /edit/keywordsAi_2/folders/undel/:
     post:
-      operationId: EditKeywordsai2FoldersUndel
+      operationId: EditKeywordsAi2FoldersUndel
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Восстановление папок проекта
       requestBody:
         content:
@@ -10633,11 +10633,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Folders'
-  /get/keywordsai_2/groups/export/:
+  /get/keywordsAi_2/groups/export/:
     post:
-      operationId: GetKeywordsai2GroupsExport
+      operationId: GetKeywordsAi2GroupsExport
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       requestBody:
         content:
           application/json:
@@ -10655,11 +10655,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /edit/keywordsai_2/groups/move/:
+  /edit/keywordsAi_2/groups/move/:
     post:
-      operationId: EditKeywordsai2GroupsMove
+      operationId: EditKeywordsAi2GroupsMove
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Перемещение группы
       requestBody:
         content:
@@ -10686,11 +10686,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /edit/keywordsai_2/groups/on/:
+  /edit/keywordsAi_2/groups/on/:
     post:
-      operationId: EditKeywordsai2GroupsOn
+      operationId: EditKeywordsAi2GroupsOn
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Изменение статуса активности группы
       requestBody:
         content:
@@ -10717,11 +10717,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /edit/keywordsai_2/groups/rename/:
+  /edit/keywordsAi_2/groups/rename/:
     post:
-      operationId: EditKeywordsai2GroupsRename
+      operationId: EditKeywordsAi2GroupsRename
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Переименовывание группы
       requestBody:
         content:
@@ -10748,11 +10748,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /edit/keywordsai_2/groups/sort/:
+  /edit/keywordsAi_2/groups/sort/:
     post:
-      operationId: EditKeywordsai2GroupsSort
+      operationId: EditKeywordsAi2GroupsSort
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: |-
         Изменение сортировки групп
 
@@ -10782,11 +10782,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /edit/keywordsai_2/groups/undel/:
+  /edit/keywordsAi_2/groups/undel/:
     post:
-      operationId: EditKeywordsai2GroupsUndel
+      operationId: EditKeywordsAi2GroupsUndel
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Восстановление группы из корзины
       requestBody:
         content:
@@ -10813,11 +10813,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Groups'
-  /get/keywordsai_2/keywords/export/:
+  /get/keywordsAi_2/keywords/export/:
     post:
-      operationId: GetKeywordsai2KeywordsExport
+      operationId: GetKeywordsAi2KeywordsExport
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Экспорт в определенном формате (экспорт всех запросов)
       requestBody:
         content:
@@ -10833,11 +10833,11 @@ paths:
               schema:
                 type: string
                 format: binary
-  /add/keywordsai_2/keywords/import/:
+  /add/keywordsAi_2/keywords/import/:
     post:
-      operationId: AddKeywordsai2KeywordsImport
+      operationId: AddKeywordsAi2KeywordsImport
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       requestBody:
         content:
           application/json:
@@ -10863,11 +10863,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /edit/keywordsai_2/keywords/move/:
+  /edit/keywordsAi_2/keywords/move/:
     post:
-      operationId: EditKeywordsai2KeywordsMove
+      operationId: EditKeywordsAi2KeywordsMove
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Перемещение запросов
       requestBody:
         content:
@@ -10894,11 +10894,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /get/keywordsai_2/keywords/offset/:
+  /get/keywordsAi_2/keywords/offset/:
     post:
-      operationId: GetKeywordsai2KeywordsOffset
+      operationId: GetKeywordsAi2KeywordsOffset
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: |-
         Получение id, имение запроса и результатов, зависимые от контекста
 
@@ -10930,11 +10930,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /edit/keywordsai_2/keywords/rename/:
+  /edit/keywordsAi_2/keywords/rename/:
     post:
-      operationId: EditKeywordsai2KeywordsRename
+      operationId: EditKeywordsAi2KeywordsRename
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Переименование запроса
       requestBody:
         content:
@@ -10961,11 +10961,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /edit/keywordsai_2/keywords/sort/:
+  /edit/keywordsAi_2/keywords/sort/:
     post:
-      operationId: EditKeywordsai2KeywordsSort
+      operationId: EditKeywordsAi2KeywordsSort
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: |-
         Изменение сортировки запросов
 
@@ -10995,11 +10995,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /edit/keywordsai_2/keywords/tags/:
+  /edit/keywordsAi_2/keywords/tags/:
     post:
-      operationId: EditKeywordsai2KeywordsTags
+      operationId: EditKeywordsAi2KeywordsTags
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       requestBody:
         content:
           application/json:
@@ -11025,11 +11025,11 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /edit/keywordsai_2/keywords/undel/:
+  /edit/keywordsAi_2/keywords/undel/:
     post:
-      operationId: EditKeywordsai2KeywordsUndel
+      operationId: EditKeywordsAi2KeywordsUndel
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Восстановление запросов из корзины
       requestBody:
         content:
@@ -15958,36 +15958,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/admin_2/actions/robot/yandexXmlToSerp/:
-    post:
-      operationId: EditAdmin2ActionsRobotYandexXmlToSerp
-      tags:
-        - Admin_2
-      summary: Перевод проверок позиций яндекс
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /del/admin_2/actions/slack/files/:
     post:
       operationId: DelAdmin2ActionsSlackFiles
@@ -16618,11 +16588,11 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/aitracker_2/history/export/links/:
+  /get/aiTracker_2/history/export/links/:
     post:
-      operationId: GetAitracker2HistoryExportLinks
+      operationId: GetAiTracker2HistoryExportLinks
       tags:
-        - Aitracker_2
+        - AiTracker_2
       summary: Получение гостевой ссылки на просмотр ИИ-Трекера
       requestBody:
         content:
@@ -17643,11 +17613,11 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/keywordsai_2/keywords/export/toProject/:
+  /edit/keywordsAi_2/keywords/export/toProject/:
     post:
-      operationId: EditKeywordsai2KeywordsExportToProject
+      operationId: EditKeywordsAi2KeywordsExportToProject
       tags:
-        - Keywordsai_2
+        - KeywordsAi_2
       summary: Копирование запросов в другой проект
       requestBody:
         content:
@@ -34511,18 +34481,9 @@ components:
             type: integer
       required:
         - projectIds
-    debug:
-      title: |-
-        Включить режим отладки
-
-        Учитывается только при запуске с правами администратора
-      description: '@internal'
-      type: boolean
     AiTracker_2.Methods.Checker.Price.Get:
       type: object
       properties:
-        debug:
-          $ref: '#/components/schemas/debug'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -39278,6 +39239,13 @@ components:
         $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifier'
       title: Определители проверки частоты
       description: '@see \TV\API\Types\Qualifier'
+    debug:
+      title: |-
+        Включить режим отладки
+
+        Учитывается только при запуске с правами администратора
+      description: '@internal'
+      type: boolean
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
@@ -43251,24 +43219,6 @@ components:
         - test
       title: Снятие задачи с дэбага
     Admin_2.Methods.Actions.Robot.Task.Edit.Exec:
-      allOf:
-        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-    Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit:
-      type: object
-      properties:
-        modEngine:
-          title: Поисковик
-          type: string
-        test:
-          title: Является ли запуск - тестом
-          type: boolean
-      required:
-        - modEngine
-        - test
-      title: Перевод проверок позиций яндекс
-      description: '@deprecated'
-      deprecated: true
-    Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Slack.Files.Del:

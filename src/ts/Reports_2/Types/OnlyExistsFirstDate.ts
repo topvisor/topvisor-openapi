@@ -7,13 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "AiTracker_2.Methods.Checker.Price.Get": {
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-        };
-        "AiTracker_2.Methods.Checker.Price.Get.Exec": {
-            [key: string]: unknown;
-        };
+        /**
+         * Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода
+         * @enum {integer}
+         */
+        "Reports_2.Types.OnlyExistsFirstDate": 0 | 1 | 2;
     };
     responses: never;
     parameters: never;
