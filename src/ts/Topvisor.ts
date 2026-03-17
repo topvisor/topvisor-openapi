@@ -944,7 +944,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение истории проверок ИИ-Трекера */
     "/get/aiTracker_2/history/": {
         parameters: {
             query?: never;
@@ -2948,7 +2949,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории позиций по запросам. */
+    /** Получение истории позиций по запросам */
     "/get/positions_2/history/": {
         parameters: {
             query?: never;
@@ -7098,6 +7099,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Удаление неявных дублей по ключевым фразам */
+    "/get/keywords_2/semantics/deduplicate/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2SemanticsDeduplicate"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получить данные сниппета в формате hash:tag */
     "/get/keywords_2/snippets/byHash/": {
         parameters: {
@@ -9465,6 +9483,27 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditAdmin2ActionsRobotTask"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Перевод проверок позиций яндекс
+     * @deprecated
+     * @description @deprecated
+     */
+    "/edit/admin_2/actions/robot/yandexXmlToSerp/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2ActionsRobotYandexXmlToSerp"];
         delete?: never;
         options?: never;
         head?: never;
@@ -21714,6 +21753,31 @@ export interface operations {
             };
         };
     };
+    GetKeywords2SemanticsDeduplicate: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Semantics/Deduplicate/Get.ts').components['schemas']['Keywords_2.Methods.Semantics.Deduplicate.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Semantics/Deduplicate/Get.ts').components['schemas']['Keywords_2.Methods.Semantics.Deduplicate.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     GetKeywords2SnippetsByHash: {
         parameters: {
             query?: never;
@@ -25098,6 +25162,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Robot/Task/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Task.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAdmin2ActionsRobotYandexXmlToSerp: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

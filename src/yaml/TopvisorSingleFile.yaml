@@ -1695,6 +1695,7 @@ paths:
       operationId: GetAiTracker2History
       tags:
         - AiTracker_2
+      summary: Получение истории проверок ИИ-Трекера
       requestBody:
         content:
           application/json:
@@ -1721,7 +1722,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-      summary: Получение истории проверок ИИ-Трекера
   /edit/aiTracker_2/settings/:
     post:
       operationId: EditAiTracker2Settings
@@ -12079,6 +12079,34 @@ paths:
                       - $ref: '#/components/schemas/ResponseSuccess'
                       - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/semantics/deduplicate/:
+    post:
+      operationId: GetKeywords2SemanticsDeduplicate
+      tags:
+        - Keywords_2
+      summary: Удаление неявных дублей по ключевым фразам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Semantics.Deduplicate.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Semantics.Deduplicate.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/keywords_2/snippets/byHash/:
     post:
       operationId: GetKeywords2SnippetsByHash
@@ -15955,6 +15983,36 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/admin_2/actions/robot/yandexXmlToSerp/:
+    post:
+      operationId: EditAdmin2ActionsRobotYandexXmlToSerp
+      tags:
+        - Admin_2
+      summary: Перевод проверок позиций яндекс
+      description: '@deprecated'
+      deprecated: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -39174,6 +39232,43 @@ components:
       description: '@internal'
     Keywords_2.Methods.Magnet.Prepare.Get.Exec:
       type: integer
+    Keywords_2.Methods.Semantics.Deduplicate.Get:
+      type: object
+      properties:
+        keywords:
+          title: Список исходных запросов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+        ignoreWordsOrder:
+          title: Игнорировать порядок слов при поиске дублей
+          default: true
+          type: boolean
+        ignoreStopWords:
+          title: Игнорировать стоп-слова при поиске дублей
+          default: true
+          type: boolean
+      required:
+        - keywords
+      title: Удаление неявных дублей по ключевым фразам
+    Keywords_2.Methods.Semantics.Deduplicate.Get.Exec:
+      type: object
+      properties:
+        canonical_by_keyword:
+          type: object
+          additionalProperties:
+            type: string
+        keywords_unique:
+          type: array
+          items:
+            type: string
+        keywords_removed:
+          type: array
+          items:
+            type: string
+      required:
+        - canonical_by_keyword
+        - keywords_unique
+        - keywords_removed
     Keywords_2.Methods.Snippets.ByHash.Get:
       type: object
       properties:
@@ -43218,6 +43313,24 @@ components:
         - test
       title: Снятие задачи с дэбага
     Admin_2.Methods.Actions.Robot.Task.Edit.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit:
+      type: object
+      properties:
+        modEngine:
+          title: Поисковик
+          type: string
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - modEngine
+        - test
+      title: Перевод проверок позиций яндекс
+      description: '@deprecated'
+      deprecated: true
+    Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Slack.Files.Del:

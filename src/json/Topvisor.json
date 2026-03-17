@@ -2931,6 +2931,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
+                "summary": "Получение истории проверок ИИ-Трекера",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2982,8 +2983,7 @@
                             }
                         }
                     }
-                },
-                "summary": "Получение истории проверок ИИ-Трекера"
+                }
             }
         },
         "/edit/aiTracker_2/settings/": {
@@ -22242,6 +22242,59 @@
                 }
             }
         },
+        "/get/keywords_2/semantics/deduplicate/": {
+            "post": {
+                "operationId": "GetKeywords2SemanticsDeduplicate",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Удаление неявных дублей по ключевым фразам",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Semantics/Deduplicate/Get.json#/components/schemas/Keywords_2.Methods.Semantics.Deduplicate.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Semantics/Deduplicate/Get.json#/components/schemas/Keywords_2.Methods.Semantics.Deduplicate.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/keywords_2/snippets/byHash/": {
             "post": {
                 "operationId": "GetKeywords2SnippetsByHash",
@@ -29414,6 +29467,61 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Admin_2/Methods/Actions/Robot/Task/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/robot/yandexXmlToSerp/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsRobotYandexXmlToSerp",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Перевод проверок позиций яндекс",
+                "description": "@deprecated",
+                "deprecated": true,
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Robot/YandexXmlToSerp/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.YandexXmlToSerp.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
