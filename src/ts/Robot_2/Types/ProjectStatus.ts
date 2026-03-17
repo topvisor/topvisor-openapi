@@ -11,9 +11,9 @@ export interface components {
          * Общие статусы для всех проверок в проекте, где проверки имеют свой прогресс
          *
          *     Прогресса нет, например, в задачах wordstat, а статус сбора ядра определяется статусом группы.
-         * @enum {integer}
+         * @enum {string}
          */
-        "Robot_2.Types.ProjectStatus": 0 | 1 | 2 | 3 | 4;
+        "Robot_2.Types.ProjectStatus": "0" | "1" | "2" | "3" | "4";
     };
     responses: never;
     parameters: never;

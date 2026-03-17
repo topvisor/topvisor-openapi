@@ -26958,30 +26958,38 @@ components:
         status_positions_by_keywords:
           nullable: true
         status_volumes:
+          type: string
           nullable: true
         status_claster:
+          type: string
           nullable: true
         status_audit:
+          type: string
           nullable: true
         status_audit_time:
           nullable: true
         status_audit_percent:
           nullable: true
         status_watcher:
+          type: string
           nullable: true
         status_watcher_percent:
           nullable: true
         status_indexing:
+          type: string
           nullable: true
         status_indexing_percent:
           nullable: true
         status_sitemap:
+          type: string
           nullable: true
         status_sitemap_percent:
           nullable: true
         status_urlsUpdater:
+          type: string
           nullable: true
         status_ai_tracker:
+          type: string
           nullable: true
         status_ai_tracker_time:
           nullable: true
@@ -39766,7 +39774,9 @@ components:
 
             - Не разрешено использовать с keyword_id
             - Для использования требуется указание region_index
-          description: '@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть разным'
+          description: |-
+            @notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть
+                разным
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'

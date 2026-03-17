@@ -39,7 +39,8 @@ export interface components {
              *
              *     - Не разрешено использовать с keyword_id
              *     - Для использования требуется указание region_index
-             * @description @notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть разным
+             * @description @notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть
+             *         разным
              */
             date_prev?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
