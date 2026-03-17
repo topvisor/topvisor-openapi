@@ -18,7 +18,7 @@ export interface components {
             project_id: number;
             brand_name: string;
             aliases: string[];
-            models_names: import('../../Types/ModelName.ts').components['schemas']['AiTracker_2.Types.ModelName'][];
+            models_keys: import('../../Types/ModelKey.ts').components['schemas']['AiTracker_2.Types.ModelKey'][];
             context_lang: string;
             context_location: string;
             context_custom: string;

@@ -49,6 +49,10 @@
                     "Advanced_options": {
                         "const": "Advanced options",
                         "readOnly": true
+                    },
+                    "For_export": {
+                        "const": "to export",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -61,7 +65,8 @@
                     "Columns_settings",
                     "Delete_columns",
                     "No_columns_added",
-                    "Advanced_options"
+                    "Advanced_options",
+                    "For_export"
                 ]
             }
         }

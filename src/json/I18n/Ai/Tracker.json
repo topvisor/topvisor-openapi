@@ -126,6 +126,10 @@
                         "const": "Prompts",
                         "readOnly": true
                     },
+                    "Prompt": {
+                        "const": "Prompt",
+                        "readOnly": true
+                    },
                     "Search_prompts": {
                         "const": "Поиск по промптам",
                         "readOnly": true
@@ -193,6 +197,18 @@
                     "Missed": {
                         "const": "Skipped duplicate prompts",
                         "readOnly": true
+                    },
+                    "Neuro_answer": {
+                        "const": "Neuro answer",
+                        "readOnly": true
+                    },
+                    "Answer_from": {
+                        "const": "Answer from",
+                        "readOnly": true
+                    },
+                    "Analysis_was_not_performed": {
+                        "const": "Analysis was not performed",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -225,6 +241,7 @@
                     "Ai_analysis",
                     "Analysis_go",
                     "Prompts",
+                    "Prompt",
                     "Search_prompts",
                     "Neural_network",
                     "Remove_prompt",
@@ -241,7 +258,10 @@
                     "Long",
                     "Add_prompts_for_checking",
                     "Added",
-                    "Missed"
+                    "Missed",
+                    "Neuro_answer",
+                    "Answer_from",
+                    "Analysis_was_not_performed"
                 ]
             }
         }

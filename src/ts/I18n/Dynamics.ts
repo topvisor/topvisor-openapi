@@ -101,6 +101,14 @@ export interface components {
             /** @constant */
             readonly Display_week_average_ranking: "Week's average";
             /** @constant */
+            readonly Split_groups: "Split groups";
+            /** @constant */
+            readonly Compact_mode: "Compact mode";
+            /** @constant */
+            readonly Show_summary: "Show summary";
+            /** @constant */
+            readonly Add_hyperlinks_to_URL: "Add hyperlinks to URL";
+            /** @constant */
             readonly Summary: "Summary";
             /** @constant */
             readonly Show_graphics: "Charts";

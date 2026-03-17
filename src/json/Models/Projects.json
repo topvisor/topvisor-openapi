@@ -274,7 +274,7 @@
                         "type": "array",
                         "nullable": true
                     },
-                    "ai_tracker_models_names": {
+                    "ai_tracker_models_keys": {
                         "type": "array",
                         "nullable": true
                     },

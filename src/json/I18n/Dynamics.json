@@ -194,6 +194,22 @@
                         "const": "Week's average",
                         "readOnly": true
                     },
+                    "Split_groups": {
+                        "const": "Split groups",
+                        "readOnly": true
+                    },
+                    "Compact_mode": {
+                        "const": "Compact mode",
+                        "readOnly": true
+                    },
+                    "Show_summary": {
+                        "const": "Show summary",
+                        "readOnly": true
+                    },
+                    "Add_hyperlinks_to_URL": {
+                        "const": "Add hyperlinks to URL",
+                        "readOnly": true
+                    },
                     "Summary": {
                         "const": "Summary",
                         "readOnly": true
@@ -538,6 +554,10 @@
                     "Report_after_tracking_30min_1",
                     "Report_after_tracking_30min_2",
                     "Display_week_average_ranking",
+                    "Split_groups",
+                    "Compact_mode",
+                    "Show_summary",
+                    "Add_hyperlinks_to_URL",
                     "Summary",
                     "Show_graphics",
                     "Target_equal_relevant",

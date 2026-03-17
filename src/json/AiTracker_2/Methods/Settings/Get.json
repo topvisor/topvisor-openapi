@@ -40,10 +40,10 @@
                             "type": "string"
                         }
                     },
-                    "models_names": {
+                    "models_keys": {
                         "type": "array",
                         "items": {
-                            "$ref": "../../../AiTracker_2/Types/ModelName.json#/components/schemas/AiTracker_2.Types.ModelName"
+                            "$ref": "../../../AiTracker_2/Types/ModelKey.json#/components/schemas/AiTracker_2.Types.ModelKey"
                         }
                     },
                     "context_lang": {
@@ -82,7 +82,7 @@
                     "project_id",
                     "brand_name",
                     "aliases",
-                    "models_names",
+                    "models_keys",
                     "context_lang",
                     "context_location",
                     "context_custom"

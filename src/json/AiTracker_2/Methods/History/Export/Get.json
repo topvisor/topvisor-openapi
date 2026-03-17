@@ -60,7 +60,6 @@
                         ]
                     },
                     "history_fields": {
-                        "title": "Выбор столбцов данных с результатами проверки",
                         "nullable": true,
                         "allOf": [
                             {
@@ -68,10 +67,10 @@
                             }
                         ]
                     },
-                    "models_names": {
+                    "models_keys": {
                         "allOf": [
                             {
-                                "$ref": "../../../../AiTracker_2/Types/ModelsNames.json#/components/schemas/AiTracker_2.Types.ModelsNames"
+                                "$ref": "../../../../AiTracker_2/Types/ModelsKeys.json#/components/schemas/AiTracker_2.Types.ModelsKeys"
                             }
                         ]
                     },
@@ -139,7 +138,7 @@
                 },
                 "required": [
                     "output",
-                    "models_names",
+                    "models_keys",
                     "project_id"
                 ],
                 "title": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",

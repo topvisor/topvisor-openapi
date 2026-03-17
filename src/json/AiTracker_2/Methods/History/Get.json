@@ -26,10 +26,10 @@
                             }
                         ]
                     },
-                    "models_names": {
+                    "models_keys": {
                         "allOf": [
                             {
-                                "$ref": "../../../AiTracker_2/Types/ModelsNames.json#/components/schemas/AiTracker_2.Types.ModelsNames"
+                                "$ref": "../../../AiTracker_2/Types/ModelsKeys.json#/components/schemas/AiTracker_2.Types.ModelsKeys"
                             }
                         ]
                     },
@@ -96,7 +96,7 @@
                     }
                 },
                 "required": [
-                    "models_names",
+                    "models_keys",
                     "project_id"
                 ],
                 "title": "Получение истории проверок ИИ-Трекера"

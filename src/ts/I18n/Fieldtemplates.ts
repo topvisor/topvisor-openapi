@@ -28,6 +28,8 @@ export interface components {
             readonly No_columns_added: "No columns added";
             /** @constant */
             readonly Advanced_options: "Advanced options";
+            /** @constant */
+            readonly For_export: "to export";
         };
     };
     responses: never;

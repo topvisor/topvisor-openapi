@@ -22474,7 +22474,7 @@ components:
         $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryField'
       title: Поля с результатами проверки для отчета истории проверок в ИИ-Трекере
       description: '@see HistoryField'
-    AiTracker_2.Types.ModelName:
+    AiTracker_2.Types.ModelKey:
       type: string
       enum:
         - deepseek
@@ -22485,13 +22485,13 @@ components:
       x-enum-descriptions:
         - null
         - null
-      title: Модель для ИИ трекера
-    AiTracker_2.Types.ModelsNames:
+      title: Ключ определения модели для ИИ трекера
+    AiTracker_2.Types.ModelsKeys:
       type: array
       items:
-        $ref: '#/components/schemas/AiTracker_2.Types.ModelName'
-      title: Модель нейросети для AI-трекера
-      description: '@see ModelName'
+        $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
+      title: Ключи моделей для AI-трекера
+      description: '@see ModelKey'
     group_folder_id_depth:
       title: При фильтрации по ID папок также искать в подпапках
       type: boolean
@@ -22612,9 +22612,9 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
-        models_names:
+        models_keys:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
         group_folder_id_depth:
           $ref: '#/components/schemas/group_folder_id_depth'
         show_trash:
@@ -22654,7 +22654,7 @@ components:
         offset:
           $ref: '#/components/schemas/offset'
       required:
-        - models_names
+        - models_keys
         - project_id
       title: Получение истории проверок ИИ-Трекера
     Selector.Field:
@@ -22969,29 +22969,29 @@ components:
           example:
             need set qualifiers:
               - date
-              - model_name
               - project_id
+              - model_name
         mentioned:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model_name
               - project_id
+              - model_name
         position:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model_name
               - project_id
+              - model_name
         position_max:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model_name
               - project_id
+              - model_name
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -23007,11 +23007,11 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
-        models_names:
+        models_keys:
           title: Список моделей ИИ
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
         context_lang:
           title: 'Настройки контекста: Язык'
           nullable: true
@@ -23059,10 +23059,10 @@ components:
           type: array
           items:
             type: string
-        models_names:
+        models_keys:
           type: array
           items:
-            $ref: '#/components/schemas/AiTracker_2.Types.ModelName'
+            $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
         context_lang:
           type: string
         context_location:
@@ -23088,7 +23088,7 @@ components:
         - project_id
         - brand_name
         - aliases
-        - models_names
+        - models_keys
         - context_lang
         - context_location
         - context_custom
@@ -27010,7 +27010,7 @@ components:
         ai_tracker_aliases:
           type: array
           nullable: true
-        ai_tracker_models_names:
+        ai_tracker_models_keys:
           type: array
           nullable: true
         ai_tracker_context_lang:
@@ -34571,13 +34571,12 @@ components:
             - name
             - handle
         history_fields:
-          title: Выбор столбцов данных с результатами проверки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
-        models_names:
+        models_keys:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
         group_folder_id_depth:
           $ref: '#/components/schemas/group_folder_id_depth'
         show_trash:
@@ -34618,7 +34617,7 @@ components:
           $ref: '#/components/schemas/offset'
       required:
         - output
-        - models_names
+        - models_keys
         - project_id
       title: |-
         Экспорт результатов индексации
@@ -43939,9 +43938,9 @@ components:
     AiTracker_2.Methods.History.Export.Links.Get:
       type: object
       properties:
-        models_names:
+        models_keys:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsNames'
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
         template_date_range:
           title: Диапазон значений шаблона
           nullable: true
@@ -43973,7 +43972,7 @@ components:
         period_days:
           $ref: '#/components/schemas/period_days'
       required:
-        - models_names
+        - models_keys
         - type_range_compare
         - project_id
       title: Получение гостевой ссылки на просмотр ИИ-Трекера

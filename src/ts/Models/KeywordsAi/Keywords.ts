@@ -28,8 +28,8 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_name",
-             *         "project_id"
+             *         "project_id",
+             *         "model_name"
              *       ]
              *     }
              */
@@ -38,8 +38,8 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_name",
-             *         "project_id"
+             *         "project_id",
+             *         "model_name"
              *       ]
              *     }
              */
@@ -48,8 +48,8 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_name",
-             *         "project_id"
+             *         "project_id",
+             *         "model_name"
              *       ]
              *     }
              */
@@ -58,8 +58,8 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_name",
-             *         "project_id"
+             *         "project_id",
+             *         "model_name"
              *       ]
              *     }
              */

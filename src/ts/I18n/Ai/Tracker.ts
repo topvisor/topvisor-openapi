@@ -67,6 +67,8 @@ export interface components {
             /** @constant */
             readonly Prompts: "Prompts";
             /** @constant */
+            readonly Prompt: "Prompt";
+            /** @constant */
             readonly Search_prompts: "Поиск по промптам";
             /** @constant */
             readonly Neural_network: "Neural network";
@@ -100,6 +102,12 @@ export interface components {
             readonly Added: "Added prompts";
             /** @constant */
             readonly Missed: "Skipped duplicate prompts";
+            /** @constant */
+            readonly Neuro_answer: "Neuro answer";
+            /** @constant */
+            readonly Answer_from: "Answer from";
+            /** @constant */
+            readonly Analysis_was_not_performed: "Analysis was not performed";
         };
     };
     responses: never;

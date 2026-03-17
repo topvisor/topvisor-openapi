@@ -53,9 +53,8 @@ export interface components {
                     [key: string]: unknown;
                 };
             } | null;
-            /** Выбор столбцов данных с результатами проверки */
             history_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
-            models_names: import('../../../Types/ModelsNames.ts').components['schemas']['AiTracker_2.Types.ModelsNames'];
+            models_keys: import('../../../Types/ModelsKeys.ts').components['schemas']['AiTracker_2.Types.ModelsKeys'];
             group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
             show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
             only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
