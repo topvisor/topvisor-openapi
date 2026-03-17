@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории позиций по запросам. */
+        /** Получение истории позиций по запросам */
         "Positions_2.Methods.History.Get": {
             /** Добавить в результат заголовки отчета `headers` */
             show_headers?: boolean;

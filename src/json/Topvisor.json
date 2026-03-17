@@ -2982,7 +2982,8 @@
                             }
                         }
                     }
-                }
+                },
+                "summary": "Получение истории проверок ИИ-Трекера"
             }
         },
         "/edit/aiTracker_2/settings/": {
@@ -9396,7 +9397,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Получение истории позиций по запросам.",
+                "summary": "Получение истории позиций по запросам",
                 "requestBody": {
                     "content": {
                         "application/json": {

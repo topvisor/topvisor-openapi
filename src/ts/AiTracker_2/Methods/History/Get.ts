@@ -7,12 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Получение истории проверок ИИ-Трекера */
         "AiTracker_2.Methods.History.Get": {
-            /** Вернуть ли заголовки отчета */
+            /** Добавить в результат заголовки отчета `headers` */
             show_headers?: boolean;
-            /** Вернуть ли даты проверок */
+            /** Добавить в результат даты, в которые были проверки `existsDates` */
             show_exists_dates?: boolean;
-            /** Выбор столбцов данных с результатами проверки */
             history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
             models_names: import('../../Types/ModelsNames.ts').components['schemas']['AiTracker_2.Types.ModelsNames'];
             group_folder_id_depth?: import('../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
@@ -34,7 +34,6 @@ export interface components {
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
-        /** Получение истории AI-трекера */
         "AiTracker_2.Methods.History.Get.Exec": import('../../Objects/History/Result/Result.ts').components['schemas']['AiTracker_2.Objects.History.Result.Result'];
     };
     responses: never;

@@ -150,7 +150,7 @@
                     "regions_indexes",
                     "project_id"
                 ],
-                "title": "Получение истории позиций по запросам."
+                "title": "Получение истории позиций по запросам"
             },
             "Positions_2.Methods.History.Get.Exec": {
                 "title": "Получение истории позиций",

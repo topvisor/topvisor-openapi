@@ -1721,6 +1721,7 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
+      summary: Получение истории проверок ИИ-Трекера
   /edit/aiTracker_2/settings/:
     post:
       operationId: EditAiTracker2Settings
@@ -5151,7 +5152,7 @@ paths:
       operationId: GetPositions2History
       tags:
         - Positions_2
-      summary: Получение истории позиций по запросам.
+      summary: Получение истории позиций по запросам
       requestBody:
         content:
           application/json:
@@ -22602,13 +22603,12 @@ components:
       type: object
       properties:
         show_headers:
-          title: Вернуть ли заголовки отчета
+          title: Добавить в результат заголовки отчета `headers`
           type: boolean
         show_exists_dates:
-          title: Вернуть ли даты проверок
+          title: Добавить в результат даты, в которые были проверки `existsDates`
           type: boolean
         history_fields:
-          title: Выбор столбцов данных с результатами проверки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
@@ -22656,6 +22656,7 @@ components:
       required:
         - models_names
         - project_id
+      title: Получение истории проверок ИИ-Трекера
     Selector.Field:
       type: object
       properties:
@@ -22928,7 +22929,6 @@ components:
         - keywords
       title: Результат истории AI-трекера
     AiTracker_2.Methods.History.Get.Exec:
-      title: Получение истории AI-трекера
       allOf:
         - $ref: '#/components/schemas/AiTracker_2.Objects.History.Result.Result'
     Models.KeywordsAi.Keywords:
@@ -28834,7 +28834,7 @@ components:
       required:
         - regions_indexes
         - project_id
-      title: Получение истории позиций по запросам.
+      title: Получение истории позиций по запросам
     Positions_2.Objects.History.Headers.Headers:
       type: object
       properties:

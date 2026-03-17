@@ -11,15 +11,14 @@
                 "type": "object",
                 "properties": {
                     "show_headers": {
-                        "title": "Вернуть ли заголовки отчета",
+                        "title": "Добавить в результат заголовки отчета `headers`",
                         "type": "boolean"
                     },
                     "show_exists_dates": {
-                        "title": "Вернуть ли даты проверок",
+                        "title": "Добавить в результат даты, в которые были проверки `existsDates`",
                         "type": "boolean"
                     },
                     "history_fields": {
-                        "title": "Выбор столбцов данных с результатами проверки",
                         "nullable": true,
                         "allOf": [
                             {
@@ -99,10 +98,10 @@
                 "required": [
                     "models_names",
                     "project_id"
-                ]
+                ],
+                "title": "Получение истории проверок ИИ-Трекера"
             },
             "AiTracker_2.Methods.History.Get.Exec": {
-                "title": "Получение истории AI-трекера",
                 "allOf": [
                     {
                         "$ref": "../../../AiTracker_2/Objects/History/Result/Result.json#/components/schemas/AiTracker_2.Objects.History.Result.Result"
