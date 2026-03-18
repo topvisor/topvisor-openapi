@@ -10,6 +10,48 @@ export interface components {
         "I18n.Content.Tags": {
             /** @constant */
             readonly worklifebalance: "worklifebalance";
+            /** @constant */
+            readonly finance: "finance";
+            /** @constant */
+            readonly legal: "legal";
+            /** @constant */
+            readonly education: "education";
+            /** @constant */
+            readonly career: "career";
+            /** @constant */
+            readonly management: "management";
+            /** @constant */
+            readonly achievements: "achievements";
+            /** @constant */
+            readonly links: "ссlinksылки";
+            /** @constant */
+            readonly geo: "GEO";
+            /** @constant */
+            readonly semantics: "semantics";
+            /** @constant */
+            readonly marketing: "marketing";
+            /** @constant */
+            readonly analytics: "analytics";
+            /** @constant */
+            readonly rankings: "rankings";
+            /** @constant */
+            readonly visibility: "Visibility";
+            /** @constant */
+            readonly serp: "SERP";
+            /** @constant */
+            readonly updates: "updates";
+            /** @constant */
+            readonly indexing: "indexing";
+            /** @constant */
+            readonly crawling: "crawling";
+            /** @constant */
+            readonly linking: "linking";
+            /** @constant */
+            readonly audit: "audit";
+            /** @constant */
+            readonly manual: "manual";
+            /** @constant */
+            readonly checklist: "checklist";
         };
     };
     responses: never;

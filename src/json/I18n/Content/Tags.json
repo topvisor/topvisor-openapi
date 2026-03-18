@@ -13,10 +13,115 @@
                     "worklifebalance": {
                         "const": "worklifebalance",
                         "readOnly": true
+                    },
+                    "finance": {
+                        "const": "finance",
+                        "readOnly": true
+                    },
+                    "legal": {
+                        "const": "legal",
+                        "readOnly": true
+                    },
+                    "education": {
+                        "const": "education",
+                        "readOnly": true
+                    },
+                    "career": {
+                        "const": "career",
+                        "readOnly": true
+                    },
+                    "management": {
+                        "const": "management",
+                        "readOnly": true
+                    },
+                    "achievements": {
+                        "const": "achievements",
+                        "readOnly": true
+                    },
+                    "links": {
+                        "const": "ссlinksылки",
+                        "readOnly": true
+                    },
+                    "geo": {
+                        "const": "GEO",
+                        "readOnly": true
+                    },
+                    "semantics": {
+                        "const": "semantics",
+                        "readOnly": true
+                    },
+                    "marketing": {
+                        "const": "marketing",
+                        "readOnly": true
+                    },
+                    "analytics": {
+                        "const": "analytics",
+                        "readOnly": true
+                    },
+                    "rankings": {
+                        "const": "rankings",
+                        "readOnly": true
+                    },
+                    "visibility": {
+                        "const": "Visibility",
+                        "readOnly": true
+                    },
+                    "serp": {
+                        "const": "SERP",
+                        "readOnly": true
+                    },
+                    "updates": {
+                        "const": "updates",
+                        "readOnly": true
+                    },
+                    "indexing": {
+                        "const": "indexing",
+                        "readOnly": true
+                    },
+                    "crawling": {
+                        "const": "crawling",
+                        "readOnly": true
+                    },
+                    "linking": {
+                        "const": "linking",
+                        "readOnly": true
+                    },
+                    "audit": {
+                        "const": "audit",
+                        "readOnly": true
+                    },
+                    "manual": {
+                        "const": "manual",
+                        "readOnly": true
+                    },
+                    "checklist": {
+                        "const": "checklist",
+                        "readOnly": true
                     }
                 },
                 "required": [
-                    "worklifebalance"
+                    "worklifebalance",
+                    "finance",
+                    "legal",
+                    "education",
+                    "career",
+                    "management",
+                    "achievements",
+                    "links",
+                    "geo",
+                    "semantics",
+                    "marketing",
+                    "analytics",
+                    "rankings",
+                    "visibility",
+                    "serp",
+                    "updates",
+                    "indexing",
+                    "crawling",
+                    "linking",
+                    "audit",
+                    "manual",
+                    "checklist"
                 ]
             }
         }
