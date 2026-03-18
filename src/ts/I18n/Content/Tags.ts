@@ -23,11 +23,19 @@ export interface components {
             /** @constant */
             readonly achievements: "achievements";
             /** @constant */
+            readonly forclients: "for clients";
+            /** @constant */
+            readonly aboutclients: "about clients";
+            /** @constant */
+            readonly cases: "case";
+            /** @constant */
             readonly links: "ссlinksылки";
             /** @constant */
             readonly geo: "GEO";
             /** @constant */
             readonly semantics: "semantics";
+            /** @constant */
+            readonly technicalseo: "technical SEO";
             /** @constant */
             readonly marketing: "marketing";
             /** @constant */
@@ -52,6 +60,8 @@ export interface components {
             readonly manual: "manual";
             /** @constant */
             readonly checklist: "checklist";
+            /** @constant */
+            readonly aisearch: "AI search";
         };
     };
     responses: never;
