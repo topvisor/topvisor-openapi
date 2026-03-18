@@ -7981,6 +7981,22 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
+    };
+    "/add/projects_2/tasks/relevants/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddProjects2TasksRelevants"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
     };  
     /** Создание задачи на проверку частоты */
     "/add/projects_2/tasks/volumes/": {
@@ -10797,6 +10813,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["AddProjects2TasksKeywordsCollect"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение цены проверки релевантности задачи без создания проекта */
+    "/get/projects_2/tasks/relevants/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetProjects2TasksRelevantsPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -23016,6 +23049,31 @@ export interface operations {
             };
         };
     };
+    AddProjects2TasksRelevants: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Relevants/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Relevants.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Tasks/Relevants/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Relevants.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     AddProjects2TasksVolumes: {
         parameters: {
             query?: never;
@@ -26991,6 +27049,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Keywords/Collect/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetProjects2TasksRelevantsPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Relevants/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Relevants.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Tasks/Relevants/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Relevants.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

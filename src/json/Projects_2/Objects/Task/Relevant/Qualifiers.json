@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Objects.Task.Relevant.Qualifiers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Objects.Task.Relevant.Qualifiers": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Projects_2/Objects/Task/Relevant/Qualifier.json#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifier"
+                },
+                "title": "Определители с настройками для подбора",
+                "description": "@see Qualifier"
+            }
+        }
+    }
+}

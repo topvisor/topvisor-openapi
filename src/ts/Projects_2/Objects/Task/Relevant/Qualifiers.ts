@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Название метода задачи
-         * @enum {string}
+         * Определители с настройками для подбора
+         * @description @see Qualifier
          */
-        "Projects_2.Types.Tasks.MethodName": "keywords_2/volumes/go" | "keywords_2/collect/go" | "positions_2/relevance/go";
+        "Projects_2.Objects.Task.Relevant.Qualifiers": import('./Qualifier.ts').components['schemas']['Projects_2.Objects.Task.Relevant.Qualifier'][];
     };
     responses: never;
     parameters: never;

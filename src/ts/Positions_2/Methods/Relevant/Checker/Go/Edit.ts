@@ -17,6 +17,11 @@ export interface components {
             folders_ids_depth?: boolean;
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
             groups_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /**
+             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
+             * @description @internal
+             */
+            for_project_task?: boolean;
             debug?: import('../../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];

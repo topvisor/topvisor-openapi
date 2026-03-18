@@ -11,15 +11,18 @@
                 "type": "string",
                 "enum": [
                     "keywords_2/volumes/go",
-                    "keywords_2/collect/go"
+                    "keywords_2/collect/go",
+                    "positions_2/relevance/go"
                 ],
                 "x-enum-varnames": [
                     "VolumeChecker",
-                    "KeywordsCollect"
+                    "KeywordsCollect",
+                    "RelevanceCheck"
                 ],
                 "x-enum-descriptions": [
                     "Проверка частоты",
-                    "Сбор запросов"
+                    "Сбор запросов",
+                    "Проверка релевантных"
                 ],
                 "title": "Название метода задачи"
             }

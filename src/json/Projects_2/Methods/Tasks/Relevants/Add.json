@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Tasks.Relevants.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Tasks.Relevants.Add": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "URL сайта",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
+                            }
+                        ]
+                    },
+                    "keywords": {
+                        "title": "Запросы",
+                        "type": "array"
+                    },
+                    "qualifiers": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Projects_2/Objects/Task/Relevant/Qualifiers.json#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifiers"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "url",
+                    "keywords",
+                    "qualifiers"
+                ]
+            },
+            "Projects_2.Methods.Tasks.Relevants.Add.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

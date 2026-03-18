@@ -41,6 +41,11 @@
                             }
                         ]
                     },
+                    "for_project_task": {
+                        "title": "Выполняется ли запуск проверки для проекта, который является задачей toolbox",
+                        "description": "@internal",
+                        "type": "boolean"
+                    },
                     "debug": {
                         "$ref": "../../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
                     },

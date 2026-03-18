@@ -46,6 +46,10 @@
                         "const": "Keyword research with Toolbox",
                         "readOnly": true
                     },
+                    "Relevance_check": {
+                        "const": "Relevance check with Toolbox",
+                        "readOnly": true
+                    },
                     "The_research_showed_zero_results": {
                         "const": "The research showed zero results. Why this could have happened: <br>\n\t<ul>\n\t\t<li>The source has no phrases matching your research criteria</li>\n    \t<li>Too many negative keywords were specified</li>\n    \t<li>Keyword belong to the category <a href=\"/support/research/#no-keywords\" target=\"_blank\">prohibited or restricted by advertising policies</a></li>\n\t</ul>\n\tLearn more about <a href=\"/support/research/#\" target=\"_blank\">Keyword Research</a>",
                         "readOnly": true
@@ -61,6 +65,7 @@
                     "No_tasks",
                     "Wordstat_check",
                     "Keywords_collect",
+                    "Relevance_check",
                     "The_research_showed_zero_results"
                 ]
             }

@@ -24963,6 +24963,58 @@
                 }
             }
         },
+        "/add/projects_2/tasks/relevants/": {
+            "post": {
+                "operationId": "AddProjects2TasksRelevants",
+                "tags": [
+                    "Projects_2"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Tasks/Relevants/Add.json#/components/schemas/Projects_2.Methods.Tasks.Relevants.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Tasks/Relevants/Add.json#/components/schemas/Projects_2.Methods.Tasks.Relevants.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/projects_2/tasks/volumes/": {
             "post": {
                 "operationId": "AddProjects2TasksVolumes",
@@ -33346,6 +33398,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Projects_2/Methods/Tasks/Keywords/Collect/Add.json#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/projects_2/tasks/relevants/price/": {
+            "post": {
+                "operationId": "GetProjects2TasksRelevantsPrice",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Получение цены проверки релевантности задачи без создания проекта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Tasks/Relevants/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Relevants.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Tasks/Relevants/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Relevants.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

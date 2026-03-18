@@ -13546,6 +13546,33 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /add/projects_2/tasks/relevants/:
+    post:
+      operationId: AddProjects2TasksRelevants
+      tags:
+        - Projects_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Relevants.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.Relevants.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /add/projects_2/tasks/volumes/:
     post:
       operationId: AddProjects2TasksVolumes
@@ -18093,6 +18120,34 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/projects_2/tasks/relevants/price/:
+    post:
+      operationId: GetProjects2TasksRelevantsPrice
+      tags:
+        - Projects_2
+      summary: Получение цены проверки релевантности задачи без создания проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Relevants.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.Relevants.Price.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -39846,7 +39901,9 @@ components:
 
             - Не разрешено использовать с keyword_id
             - Для использования требуется указание region_index
-          description: '@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть разным'
+          description: |-
+            @notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть
+                разным
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
@@ -40880,6 +40937,50 @@ components:
     Projects_2.Methods.Status.Ssl.Get.Exec:
       type: object
       additionalProperties: {}
+    Projects_2.Objects.Task.Relevant.Qualifier:
+      type: object
+      properties:
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        region_key:
+          type: integer
+        region_lang:
+          type: string
+        region_device:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+      required:
+        - searcher_key
+        - region_key
+        - region_lang
+        - region_device
+      title: Объект определитель для проверки релевантности
+    Projects_2.Objects.Task.Relevant.Qualifiers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifier'
+      title: Определители с настройками для подбора
+      description: '@see Qualifier'
+    Projects_2.Methods.Tasks.Relevants.Add:
+      type: object
+      properties:
+        url:
+          title: URL сайта
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
+        keywords:
+          title: Запросы
+          type: array
+        qualifiers:
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifiers'
+      required:
+        - url
+        - keywords
+        - qualifiers
+    Projects_2.Methods.Tasks.Relevants.Add.Exec:
+      type: integer
     Projects_2.Methods.Tasks.Volumes.Add:
       type: object
       properties:
@@ -46065,6 +46166,10 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        for_project_task:
+          title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
+          description: '@internal'
+          type: boolean
         debug:
           $ref: '#/components/schemas/debug'
         filters:
@@ -46104,6 +46209,10 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        for_project_task:
+          title: Выполняется ли запуск проверки для проекта, который является задачей toolbox
+          description: '@internal'
+          type: boolean
         debug:
           $ref: '#/components/schemas/debug'
         filters:
@@ -46261,6 +46370,21 @@ components:
       title: Создание задачи на сбор запросов
     Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec:
       type: integer
+    Projects_2.Methods.Tasks.Relevants.Price.Get:
+      type: object
+      properties:
+        keywords:
+          title: Массив ключевых запросов в формате CSV
+          type: array
+        qualifiers:
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifiers'
+      required:
+        - keywords
+        - qualifiers
+      title: Получение цены проверки релевантности задачи без создания проекта
+    Projects_2.Methods.Tasks.Relevants.Price.Get.Exec:
+      type: number
     Projects_2.Methods.Tasks.Volumes.Price.Get:
       type: object
       properties:
