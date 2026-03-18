@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "worklifebalance": {
-                        "const": "послеработы",
+                        "const": "worklifebalance",
                         "readOnly": true
                     }
                 },

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Content.Tags": {
             /** @constant */
-            readonly worklifebalance: "послеработы";
+            readonly worklifebalance: "worklifebalance";
         };
     };
     responses: never;
