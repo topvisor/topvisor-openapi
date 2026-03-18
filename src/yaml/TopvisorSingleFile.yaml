@@ -23027,28 +23027,28 @@ components:
           example:
             need set qualifiers:
               - date
-              - model_name
+              - model_key
               - project_id
         mentioned:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model_name
+              - model_key
               - project_id
         position:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model_name
+              - model_key
               - project_id
         position_max:
           nullable: true
           example:
             need set qualifiers:
               - date
-              - model_name
+              - model_key
               - project_id
     AiTracker_2.Methods.Settings.Edit:
       type: object
