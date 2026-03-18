@@ -10,13 +10,13 @@
             "I18n.Content.Tags": {
                 "type": "object",
                 "properties": {
-                    "Yandex": {
-                        "const": "Яндекс",
+                    "worklifebalance": {
+                        "const": "послеработы",
                         "readOnly": true
                     }
                 },
                 "required": [
-                    "Yandex"
+                    "worklifebalance"
                 ]
             }
         }
