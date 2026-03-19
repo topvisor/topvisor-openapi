@@ -22719,7 +22719,6 @@ components:
           title: Добавить в результат даты, в которые были проверки `existsDates`
           type: boolean
         history_fields:
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
         models_keys:
@@ -22764,6 +22763,7 @@ components:
         offset:
           $ref: '#/components/schemas/offset'
       required:
+        - history_fields
         - models_keys
         - project_id
       title: Получение истории проверок ИИ-Трекера

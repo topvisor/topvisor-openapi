@@ -19,7 +19,6 @@
                         "type": "boolean"
                     },
                     "history_fields": {
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../AiTracker_2/Types/History/HistoryFields.json#/components/schemas/AiTracker_2.Types.History.HistoryFields"
@@ -96,6 +95,7 @@
                     }
                 },
                 "required": [
+                    "history_fields",
                     "models_keys",
                     "project_id"
                 ],
