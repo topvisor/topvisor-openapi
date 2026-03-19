@@ -11,7 +11,7 @@
                 "type": "string",
                 "enum": [
                     "positionCheck",
-                    "relevanceCheck"
+                    "relevantCheck"
                 ],
                 "x-enum-varnames": [
                     "PositionCheck",

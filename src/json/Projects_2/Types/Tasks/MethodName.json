@@ -12,7 +12,7 @@
                 "enum": [
                     "keywords_2/volumes/go",
                     "keywords_2/collect/go",
-                    "positions_2/relevance/go"
+                    "positions_2/relevants/go"
                 ],
                 "x-enum-varnames": [
                     "VolumeChecker",

@@ -27001,14 +27001,14 @@ components:
           nullable: true
         status_positions_percent:
           nullable: true
-        status_relevance:
+        status_relevants:
           type: string
           nullable: true
-        status_relevance_time:
+        status_relevants_time:
           nullable: true
-        status_relevance_date:
+        status_relevants_date:
           nullable: true
-        status_relevance_percent:
+        status_relevants_percent:
           nullable: true
         status_positions_by_keywords:
           nullable: true
@@ -38129,7 +38129,7 @@ components:
       type: string
       enum:
         - positionCheck
-        - relevanceCheck
+        - relevantCheck
       x-enum-varnames:
         - PositionCheck
         - RelevanceCheck

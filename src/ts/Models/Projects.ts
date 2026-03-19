@@ -36,10 +36,10 @@ export interface components {
             status_positions_time?: any;
             status_positions_date?: any;
             status_positions_percent?: any;
-            status_relevance?: string | null;
-            status_relevance_time?: any;
-            status_relevance_date?: any;
-            status_relevance_percent?: any;
+            status_relevants?: string | null;
+            status_relevants_time?: any;
+            status_relevants_date?: any;
+            status_relevants_percent?: any;
             status_positions_by_keywords?: any;
             status_volumes?: string | null;
             status_claster?: string | null;

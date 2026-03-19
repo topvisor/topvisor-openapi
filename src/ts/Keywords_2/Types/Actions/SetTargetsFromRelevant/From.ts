@@ -11,7 +11,7 @@ export interface components {
          * Откуда установить целевую ссылку
          * @enum {string}
          */
-        "Keywords_2.Types.Actions.SetTargetsFromRelevant.From": "positionCheck" | "relevanceCheck";
+        "Keywords_2.Types.Actions.SetTargetsFromRelevant.From": "positionCheck" | "relevantCheck";
     };
     responses: never;
     parameters: never;

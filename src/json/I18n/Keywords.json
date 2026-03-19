@@ -1246,7 +1246,7 @@
                         "const": "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and <i data-top-icon=\"\"></i> in the right upper corner.",
                         "readOnly": true
                     },
-                    "Relevance_check_already_started": {
+                    "Relevant_check_already_started": {
                         "const": "Relevant check already started",
                         "readOnly": true
                     },
@@ -1254,11 +1254,11 @@
                         "const": "Assign Target = Ranked URL from the relevant recheck",
                         "readOnly": true
                     },
-                    "Target_equals_relevant_last_relevance_check_in_location": {
+                    "Target_equals_relevant_last_relevant_check_in_location": {
                         "const": "Target = Ranked URL from the last relevant check in the location",
                         "readOnly": true
                     },
-                    "Check_relevance_complete": {
+                    "Check_relevant_complete": {
                         "const": "Relevance links are checked. Please update the page",
                         "readOnly": true
                     }
@@ -1572,10 +1572,10 @@
                     "Select_source",
                     "Serp_features",
                     "No_keywords_in_project",
-                    "Relevance_check_already_started",
+                    "Relevant_check_already_started",
                     "Set_target_equals_relevant_from_recheck",
-                    "Target_equals_relevant_last_relevance_check_in_location",
-                    "Check_relevance_complete"
+                    "Target_equals_relevant_last_relevant_check_in_location",
+                    "Check_relevant_complete"
                 ]
             }
         }

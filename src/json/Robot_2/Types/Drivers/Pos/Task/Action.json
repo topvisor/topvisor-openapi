@@ -23,7 +23,7 @@
                     "Claster",
                     "Count",
                     "Competitors",
-                    "Relevance"
+                    "Relevants"
                 ],
                 "x-enum-descriptions": [
                     "Проверка позиций сайта по запросу.",

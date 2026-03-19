@@ -627,13 +627,13 @@ export interface components {
             /** @constant */
             readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and <i data-top-icon=\"\"></i> in the right upper corner.";
             /** @constant */
-            readonly Relevance_check_already_started: "Relevant check already started";
+            readonly Relevant_check_already_started: "Relevant check already started";
             /** @constant */
             readonly Set_target_equals_relevant_from_recheck: "Assign Target = Ranked URL from the relevant recheck";
             /** @constant */
-            readonly Target_equals_relevant_last_relevance_check_in_location: "Target = Ranked URL from the last relevant check in the location";
+            readonly Target_equals_relevant_last_relevant_check_in_location: "Target = Ranked URL from the last relevant check in the location";
             /** @constant */
-            readonly Check_relevance_complete: "Relevance links are checked. Please update the page";
+            readonly Check_relevant_complete: "Relevance links are checked. Please update the page";
         };
     };
     responses: never;

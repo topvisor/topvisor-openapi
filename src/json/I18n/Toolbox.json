@@ -46,7 +46,7 @@
                         "const": "Keyword research with Toolbox",
                         "readOnly": true
                     },
-                    "Relevance_check": {
+                    "Relevant_check": {
                         "const": "Relevance check with Toolbox",
                         "readOnly": true
                     },
@@ -65,7 +65,7 @@
                     "No_tasks",
                     "Wordstat_check",
                     "Keywords_collect",
-                    "Relevance_check",
+                    "Relevant_check",
                     "The_research_showed_zero_results"
                 ]
             }
