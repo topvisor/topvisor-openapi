@@ -8,9 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Экспорт результатов индексации
-         *
-         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+         * Экспорт результатов AI-Трекера
          * @description @todo Объединить с Positions_2\Methods\History\Export\Get
          */
         "AiTracker_2.Methods.History.Export.Get": {

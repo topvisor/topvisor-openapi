@@ -16480,7 +16480,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "summary": "Экспорт результатов AI-Трекера",
                 "description": "@todo Объединить с Positions_2\\Methods\\History\\Export\\Get",
                 "requestBody": {
                     "content": {

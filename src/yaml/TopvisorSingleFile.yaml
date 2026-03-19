@@ -8961,10 +8961,7 @@ paths:
       operationId: GetAiTracker2HistoryExport
       tags:
         - AiTracker_2
-      summary: |-
-        Экспорт результатов индексации
-
-        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      summary: Экспорт результатов AI-Трекера
       description: '@todo Объединить с Positions_2\Methods\History\Export\Get'
       requestBody:
         content:
@@ -34740,10 +34737,7 @@ components:
         - output
         - models_keys
         - project_id
-      title: |-
-        Экспорт результатов индексации
-
-        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      title: Экспорт результатов AI-Трекера
       description: '@todo Объединить с Positions_2\Methods\History\Export\Get'
     AiTracker_2.Methods.History.Export.Get.Exec:
       title: Результаты индексации
