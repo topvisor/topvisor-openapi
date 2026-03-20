@@ -108,6 +108,8 @@ export interface components {
             readonly Answer_from: "Answer from";
             /** @constant */
             readonly Analysis_was_not_performed: "Analysis was not performed";
+            /** @constant */
+            readonly Mentions: "Mentions";
         };
     };
     responses: never;

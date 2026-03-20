@@ -209,6 +209,10 @@
                     "Analysis_was_not_performed": {
                         "const": "Analysis was not performed",
                         "readOnly": true
+                    },
+                    "Mentions": {
+                        "const": "Mentions",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -261,7 +265,8 @@
                     "Missed",
                     "Neuro_answer",
                     "Answer_from",
-                    "Analysis_was_not_performed"
+                    "Analysis_was_not_performed",
+                    "Mentions"
                 ]
             }
         }
