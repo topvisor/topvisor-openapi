@@ -5240,9 +5240,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Экспорт результатов индексации
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+     * Экспорт результатов AI-Трекера
      * @description @todo Объединить с Positions_2\Methods\History\Export\Get
      */
     "/get/aiTracker_2/history/export/": {
@@ -7976,6 +7974,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetProjects2StatusSsl"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Создание задачи на индексацию */
+    "/add/projects_2/tasks/indexing/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddProjects2TasksIndexing"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10796,6 +10811,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetPositions2SummaryChartExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение цены проверки индексации задачи без создания проекта */
+    "/get/projects_2/tasks/indexing/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetProjects2TasksIndexingPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -23049,6 +23081,31 @@ export interface operations {
             };
         };
     };
+    AddProjects2TasksIndexing: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Indexing/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Indexing.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Tasks/Indexing/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Indexing.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     AddProjects2TasksRelevants: {
         parameters: {
             query?: never;
@@ -27025,6 +27082,31 @@ export interface operations {
                 content: {
                     "application/octet-stream": string;
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    GetProjects2TasksIndexingPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Indexing/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Indexing.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Tasks/Indexing/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Indexing.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };

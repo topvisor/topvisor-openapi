@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Tasks.Indexing.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Tasks.Indexing.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "indexing_searchers_keys": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Audit_2/Types/Indexing/SearcherKeys.json#/components/schemas/Audit_2.Types.Indexing.SearcherKeys"
+                            }
+                        ]
+                    },
+                    "server_location": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Audit_2/Types/Settings/ServerLocation.json#/components/schemas/Audit_2.Types.Settings.ServerLocation"
+                            }
+                        ]
+                    },
+                    "link_sitemap_xml": {
+                        "title": "Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "urls": {
+                        "title": "Список URL соответствующих домену проекта, допускается формат CSV\n\nМожно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)\n\nНельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml",
+                        "nullable": true
+                    }
+                },
+                "required": [
+                    "indexing_searchers_keys",
+                    "server_location"
+                ],
+                "title": "Получение цены проверки индексации задачи без создания проекта"
+            },
+            "Projects_2.Methods.Tasks.Indexing.Price.Get.Exec": {
+                "type": "number"
+            }
+        }
+    }
+}

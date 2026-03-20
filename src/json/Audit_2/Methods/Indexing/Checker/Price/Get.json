@@ -15,6 +15,11 @@
                         "description": "@private",
                         "type": "boolean"
                     },
+                    "for_project_task": {
+                        "title": "Выполняется ли запуск проверки для проекта, который является задачей toolbox",
+                        "description": "@internal\n@private",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },

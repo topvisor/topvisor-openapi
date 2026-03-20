@@ -16,6 +16,12 @@ export interface components {
              * @description @private
              */
             debug?: boolean;
+            /**
+             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
+             * @description @internal
+             *     @private
+             */
+            for_project_task?: boolean;
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

@@ -24963,6 +24963,59 @@
                 }
             }
         },
+        "/add/projects_2/tasks/indexing/": {
+            "post": {
+                "operationId": "AddProjects2TasksIndexing",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Создание задачи на индексацию",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Tasks/Indexing/Add.json#/components/schemas/Projects_2.Methods.Tasks.Indexing.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Tasks/Indexing/Add.json#/components/schemas/Projects_2.Methods.Tasks.Indexing.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/projects_2/tasks/relevants/": {
             "post": {
                 "operationId": "AddProjects2TasksRelevants",
@@ -33360,6 +33413,59 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/projects_2/tasks/indexing/price/": {
+            "post": {
+                "operationId": "GetProjects2TasksIndexingPrice",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Получение цены проверки индексации задачи без создания проекта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Tasks/Indexing/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Indexing.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Tasks/Indexing/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Indexing.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
                                 }
                             }
                         }

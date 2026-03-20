@@ -51,7 +51,7 @@ export interface components {
                     [key: string]: unknown;
                 };
             } | null;
-            history_fields?: import('../../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'] | null;
+            history_fields: import('../../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'];
             models_keys: import('../../../Types/ModelsKeys.ts').components['schemas']['AiTracker_2.Types.ModelsKeys'];
             group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
             show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
