@@ -972,7 +972,7 @@
                         "const": "\"[!V]\"",
                         "readOnly": true
                     },
-                    "G_freq2": {
+                    "G_freq3": {
                         "const": "\"[V]\"",
                         "readOnly": true
                     },
@@ -2213,7 +2213,7 @@
                     "Y_freq3",
                     "Y_freq5",
                     "Y_freq6",
-                    "G_freq2",
+                    "G_freq3",
                     "M_freq2",
                     "Y_price1",
                     "Y_price2",

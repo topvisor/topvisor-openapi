@@ -495,7 +495,7 @@ export interface components {
             /** @constant */
             readonly Y_freq6: "\"[!V]\"";
             /** @constant */
-            readonly G_freq2: "\"[V]\"";
+            readonly G_freq3: "\"[V]\"";
             /** @constant */
             readonly M_freq2: "\"V\"";
             /** @constant */
