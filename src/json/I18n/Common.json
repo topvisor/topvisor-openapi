@@ -973,7 +973,7 @@
                         "readOnly": true
                     },
                     "G_freq3": {
-                        "const": "\"[V]\"",
+                        "const": "[V]",
                         "readOnly": true
                     },
                     "M_freq2": {
