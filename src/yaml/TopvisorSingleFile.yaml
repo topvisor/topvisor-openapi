@@ -22663,12 +22663,15 @@ components:
         - mentioned
         - position
         - position_max
+        - sentiment
       x-enum-varnames:
         - Response
         - Mentioned
         - Position
         - PositionMax
+        - Sentiment
       x-enum-descriptions:
+        - null
         - null
         - null
         - null
@@ -23192,6 +23195,13 @@ components:
               - model_key
               - project_id
         position_max:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model_key
+              - project_id
+        sentiment:
           nullable: true
           example:
             need set qualifiers:

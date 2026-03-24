@@ -64,6 +64,16 @@ export interface components {
              *     }
              */
             position_max?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key",
+             *         "project_id"
+             *       ]
+             *     }
+             */
+            sentiment?: any;
         };
     };
     responses: never;

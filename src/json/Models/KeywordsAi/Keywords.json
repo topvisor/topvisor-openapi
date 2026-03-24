@@ -94,6 +94,16 @@
                                 "project_id"
                             ]
                         }
+                    },
+                    "sentiment": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model_key",
+                                "project_id"
+                            ]
+                        }
                     }
                 }
             }

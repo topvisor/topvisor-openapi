@@ -13,15 +13,18 @@
                     "response",
                     "mentioned",
                     "position",
-                    "position_max"
+                    "position_max",
+                    "sentiment"
                 ],
                 "x-enum-varnames": [
                     "Response",
                     "Mentioned",
                     "Position",
-                    "PositionMax"
+                    "PositionMax",
+                    "Sentiment"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,
