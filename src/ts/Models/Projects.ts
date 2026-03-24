@@ -97,6 +97,7 @@ export interface components {
             ai_tracker_models_keys?: unknown[] | null;
             ai_tracker_context_lang?: any;
             ai_tracker_context_location?: any;
+            ai_tracker_summary_count_mentioned?: any;
         };
     };
     responses: never;

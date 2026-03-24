@@ -1782,6 +1782,38 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/aiTracker_2/summary/:
+    post:
+      operationId: GetAiTracker2Summary
+      tags:
+        - AiTracker_2
+      summary: Получение сводки по проверкам ИИ-Трекера
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Summary.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
   /edit/ai_2/textToSpeech/:
     post:
       operationId: EditAi2TextToSpeech
@@ -20070,6 +20102,12 @@ components:
         config:
           title: 'config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
           type: string
+        isSiteTV:
+          title: Сайт - topvisor
+          type: boolean
+        isSiteTH:
+          title: Сайт - thundo
+          type: boolean
         configTPA:
           title: Настройки интеграций
           type: object
@@ -20175,6 +20213,8 @@ components:
       required:
         - host
         - config
+        - isSiteTV
+        - isSiteTH
         - configTPA
     Controller_2.Objects.TplEngine:
       type: object
@@ -23258,6 +23298,59 @@ components:
         - context_lang
         - context_location
         - context_custom
+    AiTracker_2.Methods.Summary.Get:
+      type: object
+      properties:
+        model_key:
+          allOf:
+            - $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
+        show_count_mentioned:
+          title: Отобразить данные по количеству упоминаний
+          type: boolean
+        group_folder_id_depth:
+          $ref: '#/components/schemas/group_folder_id_depth'
+        show_trash:
+          $ref: '#/components/schemas/show_trash'
+        only_exists_first_date:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        dates:
+          $ref: '#/components/schemas/dates'
+        type_range:
+          $ref: '#/components/schemas/type_range'
+        date1:
+          $ref: '#/components/schemas/date1'
+        date2:
+          $ref: '#/components/schemas/date2'
+        count_dates:
+          $ref: '#/components/schemas/count_dates'
+        period_days:
+          $ref: '#/components/schemas/period_days'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - model_key
+        - project_id
+      title: Получение сводки по проверкам ИИ-Трекера
+    AiTracker_2.Methods.Summary.Get.Exec:
+      nullable: true
     Ai_2.Methods.TextToSpeech.Edit:
       type: object
       properties:
@@ -27191,6 +27284,8 @@ components:
           nullable: true
         ai_tracker_context_location:
           nullable: true
+        ai_tracker_summary_count_mentioned:
+          nullable: true
     Example_2.Methods.Projects.Get.Exec:
       nullable: true
       type: array
@@ -29836,10 +29931,17 @@ components:
             - 1 - включенные
             - 2 - все
           type: integer
+        show_models:
+          title: Добавить в результат список моделей нейросетей, привязанных к проекту
+          type: boolean
         include_positions_summary:
           title: Добавить в результат сводку проверки позиций
           description: '@see /get/positions_2/summary/'
           nullable: true
+          type: boolean
+        include_ai_tracker_summary:
+          title: Добавить в результат сводку проверки позиций
+          description: '@see /get/aiTracker_2/summary/'
           type: boolean
         include_positions_summary_params:
           title: Добавить в результат сводку с указанными параметрами

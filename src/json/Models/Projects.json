@@ -291,6 +291,9 @@
                     },
                     "ai_tracker_context_location": {
                         "nullable": true
+                    },
+                    "ai_tracker_summary_count_mentioned": {
+                        "nullable": true
                     }
                 }
             }

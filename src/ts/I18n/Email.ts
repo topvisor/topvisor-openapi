@@ -11,7 +11,7 @@ export interface components {
             /** @constant */
             readonly User_projects_changeOwner_title: "Confirm project transfer.";
             /** @constant */
-            readonly Integration_expires: "Update integration key";
+            readonly Integration_expires: "Reconnect integration key";
             /** @constant */
             readonly Integration_has_expired1: "Integration";
             /** @constant */

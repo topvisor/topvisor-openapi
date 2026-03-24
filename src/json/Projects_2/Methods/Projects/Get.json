@@ -24,10 +24,19 @@
                         "title": "Добавить в результат список ПС и Регионов, привязанных к проекту\n\n- 1 - включенные\n- 2 - все",
                         "type": "integer"
                     },
+                    "show_models": {
+                        "title": "Добавить в результат список моделей нейросетей, привязанных к проекту",
+                        "type": "boolean"
+                    },
                     "include_positions_summary": {
                         "title": "Добавить в результат сводку проверки позиций",
                         "description": "@see /get/positions_2/summary/",
                         "nullable": true,
+                        "type": "boolean"
+                    },
+                    "include_ai_tracker_summary": {
+                        "title": "Добавить в результат сводку проверки позиций",
+                        "description": "@see /get/aiTracker_2/summary/",
                         "type": "boolean"
                     },
                     "include_positions_summary_params": {

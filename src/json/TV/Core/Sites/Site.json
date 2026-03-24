@@ -18,6 +18,14 @@
                         "title": "config - Интерфейс конфигурации сайта, пример: `Config\\Sites\\{{ SiteName }}\\ConfigSite::class`",
                         "type": "string"
                     },
+                    "isSiteTV": {
+                        "title": "Сайт - topvisor",
+                        "type": "boolean"
+                    },
+                    "isSiteTH": {
+                        "title": "Сайт - thundo",
+                        "type": "boolean"
+                    },
                     "configTPA": {
                         "title": "Настройки интеграций",
                         "type": "object",
@@ -168,6 +176,8 @@
                 "required": [
                     "host",
                     "config",
+                    "isSiteTV",
+                    "isSiteTH",
                     "configTPA"
                 ]
             }

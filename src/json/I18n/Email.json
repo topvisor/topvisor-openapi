@@ -15,7 +15,7 @@
                         "readOnly": true
                     },
                     "Integration_expires": {
-                        "const": "Update integration key",
+                        "const": "Reconnect integration key",
                         "readOnly": true
                     },
                     "Integration_has_expired1": {

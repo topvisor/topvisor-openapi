@@ -20,11 +20,18 @@ export interface components {
              *     - 2 - все
              */
             show_searchers_and_regions?: number;
+            /** Добавить в результат список моделей нейросетей, привязанных к проекту */
+            show_models?: boolean;
             /**
              * Добавить в результат сводку проверки позиций
              * @description @see /get/positions_2/summary/
              */
             include_positions_summary?: boolean | null;
+            /**
+             * Добавить в результат сводку проверки позиций
+             * @description @see /get/aiTracker_2/summary/
+             */
+            include_ai_tracker_summary?: boolean;
             /**
              * Добавить в результат сводку с указанными параметрами
              * @deprecated

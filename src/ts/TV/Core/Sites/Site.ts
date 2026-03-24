@@ -12,6 +12,10 @@ export interface components {
             host: string;
             /** config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class` */
             config: string;
+            /** Сайт - topvisor */
+            isSiteTV: boolean;
+            /** Сайт - thundo */
+            isSiteTH: boolean;
             /** Настройки интеграций */
             configTPA: {
                 yandex_client_id: string;

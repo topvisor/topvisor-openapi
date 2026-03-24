@@ -1001,6 +1001,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение сводки по проверкам ИИ-Трекера */
+    "/get/aiTracker_2/summary/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAiTracker2Summary"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Постановка задачи на озвучивание текста */
     "/edit/ai_2/textToSpeech/": {
         parameters: {
@@ -12996,6 +13013,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/Settings/Get.ts').components['schemas']['AiTracker_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetAiTracker2Summary: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/Summary/Get.ts').components['schemas']['AiTracker_2.Methods.Summary.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/Summary/Get.ts').components['schemas']['AiTracker_2.Methods.Summary.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
             };
         };
