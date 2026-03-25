@@ -7,18 +7,57 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных графика */
+        /**
+         * Получение данных графика
+         * @description @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
+         *     @phpstan-type ChartData array<string, ChartCoords>
+         *     @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<(int | string), array<int, mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
+         */
         "Projects_2.Methods.Analytics.Graph.Get": {
-            /** ID проекта */
-            project_id: number;
-            /** Номер метрики */
             axe: import('../../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'];
             /** Данные графика */
-            data: unknown[];
-            /** Сравнение метрики */
-            compare_axe?: number | null;
+            data: {
+                period?: number | string;
+                date1?: string;
+                date2?: string;
+                base_filter_values?: {
+                    [key: string]: {
+                        [key: string]: unknown;
+                    };
+                };
+                searcher?: string;
+                region?: string;
+                competitor?: number | string;
+                phrase?: string;
+                group?: string;
+                folder?: string;
+                tag?: number | string | {
+                    [key: string]: number | string;
+                };
+                top?: number | string;
+            };
+            /** Метрика для сравнения на графике */
+            compare_axe?: import('../../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'] | null;
+            /** ID проекта */
+            project_id: number;
         };
-        "Projects_2.Methods.Analytics.Graph.Get.Exec": unknown[] | null;
+        /** Выполнить построение данных графика */
+        "Projects_2.Methods.Analytics.Graph.Get.Exec": {
+            axe: {
+                [key: string]: {
+                    [key: string]: {
+                        0: number | string;
+                        1: number | string | null;
+                    };
+                };
+            };
+            compare_axe: {
+                [key: string]: {
+                    0: number | string;
+                    1: number | string | null;
+                };
+            } | null;
+        } | null;
     };
     responses: never;
     parameters: never;

@@ -12960,6 +12960,10 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+      description: |-
+        @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
+        @phpstan-type ChartData array<string, ChartCoords>
+        @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<(int | string), array<int, mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
   /edit/projects_2/competitors/move/:
     post:
       operationId: EditProjects2CompetitorsMove
@@ -29545,7 +29549,7 @@ components:
         - 13
       x-enum-varnames:
         - Visibility
-        - AveragePosition
+        - AVGPosition
         - Positions
         - Top
         - Traffic
@@ -29559,7 +29563,7 @@ components:
         - Трафик
         - Ссылки
         - Индексация
-      title: Номер метрики
+      title: Метрика для вывода на графике
     Projects_2.Types.Analytics.Base:
       type: integer
       enum:
@@ -40651,28 +40655,113 @@ components:
     Projects_2.Methods.Analytics.Graph.Get:
       type: object
       properties:
-        project_id:
-          title: ID проекта
-          type: integer
         axe:
-          title: Номер метрики
           allOf:
             - $ref: '#/components/schemas/Projects_2.Types.Analytics.Axe'
         data:
           title: Данные графика
-          type: array
+          type: object
+          properties:
+            period:
+              anyOf:
+                - type: integer
+                - type: string
+            date1:
+              type: string
+            date2:
+              type: string
+            base_filter_values:
+              type: object
+              additionalProperties:
+                type: object
+                additionalProperties: {}
+            searcher:
+              type: string
+            region:
+              type: string
+            competitor:
+              anyOf:
+                - type: integer
+                - type: string
+            phrase:
+              type: string
+            group:
+              type: string
+            folder:
+              type: string
+            tag:
+              anyOf:
+                - type: integer
+                - type: string
+                - type: object
+                  additionalProperties:
+                    anyOf:
+                      - type: integer
+                      - type: string
+            top:
+              anyOf:
+                - type: integer
+                - type: string
         compare_axe:
-          title: Сравнение метрики
+          title: Метрика для сравнения на графике
           nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Analytics.Axe'
+        project_id:
+          title: ID проекта
           type: integer
       required:
-        - project_id
         - axe
         - data
+        - project_id
       title: Получение данных графика
+      description: |-
+        @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
+        @phpstan-type ChartData array<string, ChartCoords>
+        @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<(int | string), array<int, mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
     Projects_2.Methods.Analytics.Graph.Get.Exec:
+      title: Выполнить построение данных графика
       nullable: true
-      type: array
+      type: object
+      properties:
+        axe:
+          type: object
+          additionalProperties:
+            type: object
+            additionalProperties:
+              type: object
+              properties:
+                - anyOf:
+                    - type: integer
+                    - type: string
+                - anyOf:
+                    - type: number
+                    - type: integer
+                    - type: string
+                    - type: 'null'
+              required:
+                - '0'
+                - '1'
+        compare_axe:
+          nullable: true
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              - anyOf:
+                  - type: integer
+                  - type: string
+              - anyOf:
+                  - type: number
+                  - type: integer
+                  - type: string
+                  - type: 'null'
+            required:
+              - '0'
+              - '1'
+      required:
+        - axe
+        - compare_axe
     Projects_2.Methods.Competitors.Move.Edit:
       type: object
       properties:

@@ -20,7 +20,7 @@
                 ],
                 "x-enum-varnames": [
                     "Visibility",
-                    "AveragePosition",
+                    "AVGPosition",
                     "Positions",
                     "Top",
                     "Traffic",
@@ -36,7 +36,7 @@
                     "Ссылки",
                     "Индексация"
                 ],
-                "title": "Номер метрики"
+                "title": "Метрика для вывода на графике"
             }
         }
     }
