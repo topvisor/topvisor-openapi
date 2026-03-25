@@ -262,10 +262,6 @@
                         "const": "Competitors keywords",
                         "readOnly": true
                     },
-                    "To_project": {
-                        "const": "To project",
-                        "readOnly": true
-                    },
                     "To_your_project": {
                         "const": "To your project",
                         "readOnly": true
@@ -699,7 +695,6 @@
                     "Competitors_list",
                     "Keywords_list",
                     "Keywords_of_competitors",
-                    "To_project",
                     "To_your_project",
                     "Export_keywords_to_project",
                     "To_export_keywords_to_project",

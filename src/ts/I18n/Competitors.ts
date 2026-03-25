@@ -135,8 +135,6 @@ export interface components {
             /** @constant */
             readonly Keywords_of_competitors: "Competitors keywords";
             /** @constant */
-            readonly To_project: "To project";
-            /** @constant */
             readonly To_your_project: "To your project";
             /** @constant */
             readonly Export_keywords_to_project: "Export keywords to the project";

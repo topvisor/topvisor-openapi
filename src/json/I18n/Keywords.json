@@ -690,10 +690,6 @@
                         "const": "Export group",
                         "readOnly": true
                     },
-                    "to_project": {
-                        "const": "to the project",
-                        "readOnly": true
-                    },
                     "Your_account": {
                         "const": "You",
                         "readOnly": true
@@ -1433,7 +1429,6 @@
                     "Inactive_groups_will_be_deleted",
                     "Filters_bulk_actions",
                     "Copy_group",
-                    "to_project",
                     "Your_account",
                     "project_owner",
                     "will_be_charged",

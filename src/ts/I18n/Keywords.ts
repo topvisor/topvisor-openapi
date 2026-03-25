@@ -349,8 +349,6 @@ export interface components {
             /** @constant */
             readonly Copy_group: "Export group";
             /** @constant */
-            readonly to_project: "to the project";
-            /** @constant */
             readonly Your_account: "You";
             /** @constant */
             readonly project_owner: "Project owner";

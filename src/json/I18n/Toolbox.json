@@ -53,6 +53,30 @@
                     "The_research_showed_zero_results": {
                         "const": "The research showed zero results. Why this could have happened: <br>\n\t<ul>\n\t\t<li>The source has no phrases matching your research criteria</li>\n    \t<li>Too many negative keywords were specified</li>\n    \t<li>Keyword belong to the category <a href=\"/support/research/#no-keywords\" target=\"_blank\">prohibited or restricted by advertising policies</a></li>\n\t</ul>\n\tLearn more about <a href=\"/support/research/#\" target=\"_blank\">Keyword Research</a>",
                         "readOnly": true
+                    },
+                    "Removing_implicit_duplicates": {
+                        "const": "Removing implicit duplicates",
+                        "readOnly": true
+                    },
+                    "Removing_duplicates": {
+                        "const": "Removing duplicates",
+                        "readOnly": true
+                    },
+                    "Results": {
+                        "const": "Results",
+                        "readOnly": true
+                    },
+                    "Excluded": {
+                        "const": "Excluded",
+                        "readOnly": true
+                    },
+                    "Ignore_word_order": {
+                        "const": "Ignore word order",
+                        "readOnly": true
+                    },
+                    "Ignore_stop_words": {
+                        "const": "Ignore stop words",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -66,7 +90,13 @@
                     "Wordstat_check",
                     "Keywords_collect",
                     "Relevant_check",
-                    "The_research_showed_zero_results"
+                    "The_research_showed_zero_results",
+                    "Removing_implicit_duplicates",
+                    "Removing_duplicates",
+                    "Results",
+                    "Excluded",
+                    "Ignore_word_order",
+                    "Ignore_stop_words"
                 ]
             }
         }

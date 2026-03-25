@@ -1975,6 +1975,10 @@
                     "Popup_go_text_before_price": {
                         "const": "Project owner will be charged",
                         "readOnly": true
+                    },
+                    "To_project": {
+                        "const": "To project",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2463,7 +2467,8 @@
                     "AllowCookies",
                     "Unique",
                     "Pick_up",
-                    "Popup_go_text_before_price"
+                    "Popup_go_text_before_price",
+                    "To_project"
                 ]
             }
         }
