@@ -11,7 +11,7 @@ export interface components {
          * Получение данных графика
          * @description @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
          *     @phpstan-type ChartData array<string, ChartCoords>
-         *     @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<array<int, mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
+         *     @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<string, list<mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
          */
         "Projects_2.Methods.Analytics.Graph.Get": {
             axe: import('../../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'];
@@ -21,8 +21,8 @@ export interface components {
                 date1?: string;
                 date2?: string;
                 base_filter_values?: {
-                    [key: string]: unknown;
-                }[];
+                    [key: string]: unknown[];
+                };
                 searcher?: string;
                 region?: string;
                 competitor?: number | string;
