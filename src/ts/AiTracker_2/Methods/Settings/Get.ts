@@ -19,7 +19,7 @@ export interface components {
             project_id: number;
             brand_name: string;
             aliases: string[];
-            models_keys: import('../../Types/ModelKey.ts').components['schemas']['AiTracker_2.Types.ModelKey'][];
+            models_keys: import('../../../Robot_2/Types/Drivers/AiTracker/ModelKey.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelKey'][];
             context_lang: string;
             context_location: string;
             context_custom: string;

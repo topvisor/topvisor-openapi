@@ -23141,6 +23141,24 @@ components:
               - date
               - model_key
               - project_id
+    Robot_2.Types.Drivers.AiTracker.ModelKey:
+      type: string
+      enum:
+        - deepseek
+        - grok
+      x-enum-varnames:
+        - Deepseek
+        - Grok
+      x-enum-descriptions:
+        - null
+        - null
+      title: Ключ определения модели для ИИ трекера
+    Robot_2.Types.Drivers.AiTracker.ModelsKeys:
+      type: array
+      items:
+        $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey'
+      title: Ключи моделей для AI-трекера
+      description: '@see Robot_2\Types\Drivers\AiTracker\ModelKey'
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -23160,7 +23178,7 @@ components:
           title: Список моделей ИИ
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
+            - $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys'
         context_lang:
           title: 'Настройки контекста: Язык'
           nullable: true
@@ -23213,7 +23231,7 @@ components:
         models_keys:
           type: array
           items:
-            $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
+            $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey'
         context_lang:
           type: string
         context_location:
@@ -23248,7 +23266,7 @@ components:
       properties:
         model_key:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
+            - $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey'
         show_count_mentioned:
           title: Отобразить данные по количеству упоминаний
           type: boolean
@@ -50151,7 +50169,7 @@ components:
       properties:
         models_keys:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
+            - $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys'
         template_date_range:
           title: Диапазон значений шаблона
           nullable: true

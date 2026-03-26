@@ -13,7 +13,7 @@
                     "model_key": {
                         "allOf": [
                             {
-                                "$ref": "../../../AiTracker_2/Types/ModelKey.json#/components/schemas/AiTracker_2.Types.ModelKey"
+                                "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelKey.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey"
                             }
                         ]
                     },
