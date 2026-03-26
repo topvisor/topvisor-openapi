@@ -77,7 +77,7 @@ export interface components {
             /** @constant */
             readonly Sort_mentioned: "Сортировка по упоминанию";
             /** @constant */
-            readonly Sort_tone: "Сортировка по тональности";
+            readonly Sort_sentiment: "Сортировка по тональности";
             /** @constant */
             readonly Prompts_can_be_deleted_and_restored_within_the_same_group: "Prompts can be deleted/restored within the same group";
             /** @constant */

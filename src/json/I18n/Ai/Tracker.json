@@ -146,7 +146,7 @@
                         "const": "Сортировка по упоминанию",
                         "readOnly": true
                     },
-                    "Sort_tone": {
+                    "Sort_sentiment": {
                         "const": "Сортировка по тональности",
                         "readOnly": true
                     },
@@ -250,7 +250,7 @@
                     "Neural_network",
                     "Remove_prompt",
                     "Sort_mentioned",
-                    "Sort_tone",
+                    "Sort_sentiment",
                     "Prompts_can_be_deleted_and_restored_within_the_same_group",
                     "Autogeneration_of_prompts",
                     "Type_of_activity",
