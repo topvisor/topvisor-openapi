@@ -7,16 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление домена для слоя */
-        "Robot_2.Methods.Admin.Keys.Domain.Add": {
-            /** ID слоя */
-            layer_id: number;
-            /** Ключ ПС */
-            searcher_key: number;
-            /** Домен */
-            domain: string;
-        };
-        "Robot_2.Methods.Admin.Keys.Domain.Add.Exec": number | null;
+        /**
+         * Тип SSL-сертификата
+         * @enum {string}
+         */
+        "Robot_2.Types.Admin.SSLCertificate.Provider": "global_sign" | "lets_encrypt" | "self_signed" | "private_ca";
     };
     responses: never;
     parameters: never;

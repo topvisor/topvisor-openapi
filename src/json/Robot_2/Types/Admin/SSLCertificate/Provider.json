@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Types.Admin.SSLCertificate.Provider",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Types.Admin.SSLCertificate.Provider": {
+                "type": "string",
+                "enum": [
+                    "global_sign",
+                    "lets_encrypt",
+                    "self_signed",
+                    "private_ca"
+                ],
+                "x-enum-varnames": [
+                    "GlobalSign",
+                    "LetsEncrypt",
+                    "SelfSigned",
+                    "PrivateCa"
+                ],
+                "x-enum-descriptions": [
+                    "Публичный коммерческий удостоверяющий центр GlobalSign.",
+                    "Публичный бесплатный удостоверяющий центр Let’s Encrypt.",
+                    "Самоподписанный сертификат (без внешнего доверия).",
+                    "Внутренний (корпоративный) удостоверяющий центр."
+                ],
+                "title": "Тип SSL-сертификата"
+            }
+        }
+    }
+}
