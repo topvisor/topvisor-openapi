@@ -187,6 +187,9 @@
                     "do_snapshots_with_snippets": {
                         "nullable": true
                     },
+                    "with_ai_overview_full": {
+                        "nullable": true
+                    },
                     "report_last_time": {
                         "nullable": true
                     },

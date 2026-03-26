@@ -64,6 +64,7 @@ export interface components {
             with_snippets?: any;
             do_snapshots?: any;
             do_snapshots_with_snippets?: any;
+            with_ai_overview_full?: any;
             report_last_time?: any;
             common_traffic?: any;
             guest_link_right?: any;
