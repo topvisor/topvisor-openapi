@@ -21,9 +21,31 @@ export interface components {
              * @description @internal
              */
             for_project_task?: boolean;
-            debug?: import('../../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /**
+             * Включить режим отладки
+             *
+             *     Учитывается только при запуске с правами администратора
+             * @description @internal
+             */
+            debug?: boolean;
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
         };
         "Positions_2.Methods.Relevant.Checker.Price.Get.Exec": {
             [key: string]: unknown;

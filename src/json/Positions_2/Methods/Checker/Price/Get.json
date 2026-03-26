@@ -68,13 +68,19 @@
                         ]
                     },
                     "debug": {
-                        "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
+                        "title": "Включить режим отладки\n\nУчитывается только при запуске с правами администратора",
+                        "description": "@internal",
+                        "type": "boolean"
                     },
                     "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
                     },
                     "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
                     }
                 },
                 "required": [],

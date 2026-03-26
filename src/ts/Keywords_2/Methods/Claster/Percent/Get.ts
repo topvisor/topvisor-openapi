@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /** Получение обновленного процента завершения кластеризации */
         "Keywords_2.Methods.Claster.Percent.Get": {
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Claster.Percent.Get.Exec": number;
     };

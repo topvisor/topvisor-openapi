@@ -23,7 +23,8 @@ export interface components {
             date1: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** По какое число получить изменения */
             date2: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Positions_2.Methods.History.RelevantsUrls.Changes.Get.Exec": unknown[];
     };

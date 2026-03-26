@@ -13,12 +13,56 @@ export interface components {
             project_id: number;
             /** Получить ли информацию о том, в каких проектах интегрированы указанные компании */
             include_used_in_other_projects?: boolean;
-            orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /**
+             * Список полей объекта, по которым необходимо выполнить сортировку
+             *
+             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            orders?: unknown[];
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
+            /**
+             * Число объектов, которое необходимо пропустить при получении результата
+             *
+             *     Используется в паре с limit
+             */
+            offset?: number;
+            /**
+             * Определяет формат результата: коллекция, объект, значение
+             *
+             *     Примеры:
+             *     - fetchAll - получить коллекцию объектов
+             *     - fetch - получить один объект
+             *     - fetchColumn - получить свойсвто объекта
+             * @description @see FetchStyle
+             *     @see Selector::execFetch() - см. реализацию
+             */
+            fetch_style?: import('../../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
         };
         "Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec": number;
     };

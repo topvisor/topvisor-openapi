@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /** Получить данные сниппета в формате hash:tag */
         "Keywords_2.Methods.Snippets.ByHash.Get": {
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Snippets.ByHash.Get.Exec": unknown[] | null;
     };

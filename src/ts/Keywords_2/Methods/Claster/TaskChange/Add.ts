@@ -13,7 +13,8 @@ export interface components {
             type?: import('../../../Types/Claster/Type.ts').components['schemas']['Keywords_2.Types.Claster.Type'];
             /** Отправить письмо с результатами кластеризацию на почту */
             send_email_csv?: boolean;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Claster.TaskChange.Add.Exec": number | null;
     };

@@ -11,7 +11,8 @@ export interface components {
         "Positions_2.Methods.History.Del": {
             /** Дата проверки */
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Positions_2.Methods.History.Del.Exec": number;
     };

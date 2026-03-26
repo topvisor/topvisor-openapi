@@ -11,7 +11,8 @@ export interface components {
         "AiTracker_2.Methods.Settings.Get": {
             /** Добавить ли в результат список всехдоступных моделей */
             showAvailableModels?: boolean;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         /** Настройки aiTracker проекта */
         "AiTracker_2.Methods.Settings.Get.Exec": {

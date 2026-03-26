@@ -7600,7 +7600,12 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных графика */
+    /**
+     * Получение данных графика
+     * @description @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
+     *     @phpstan-type ChartData array<string, ChartCoords>
+     *     @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<string, list<mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
+     */
     "/get/projects_2/analytics/graph/": {
         parameters: {
             query?: never;

@@ -15,7 +15,8 @@ export interface components {
             only_empty?: boolean;
             /** @default positionCheck */
             from?: import('../../../Types/Actions/SetTargetsFromRelevant/From.ts').components['schemas']['Keywords_2.Types.Actions.SetTargetsFromRelevant.From'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Actions.SetTargetsFromRelevant.Edit.Exec": number | null;
     };

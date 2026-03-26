@@ -17,8 +17,10 @@ export interface components {
             changed?: import('../../../../Types/Audit/Summary/FilterCheckState.ts').components['schemas']['Audit_2.Types.Audit.Summary.FilterCheckState'];
             /** Фильтр по тегам */
             tags_ids?: unknown[] | null;
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            check_id: import('../../../../Params/Wathcer/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Wathcer.CheckIdTrait']['check_id'];
+            /** ID проекта */
+            project_id: number;
+            /** ID проверки радара */
+            check_id: number;
         };
         /** Короткая ссылка гостевого доступа для просмотра радара */
         "Audit_2.Methods.Watcher.Export.Links.Get.Exec": string | null;

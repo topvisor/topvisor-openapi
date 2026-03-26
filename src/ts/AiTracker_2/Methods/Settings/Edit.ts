@@ -30,7 +30,8 @@ export interface components {
             context_location?: string | null;
             /** Пользовательский контекст */
             context_custom?: string | null;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "AiTracker_2.Methods.Settings.Edit.Exec": number;
     };

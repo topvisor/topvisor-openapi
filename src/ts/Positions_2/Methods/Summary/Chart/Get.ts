@@ -21,24 +21,104 @@ export interface components {
             show_median?: boolean;
             /** Отобразить видимость */
             show_visibility?: boolean;
-            group_folder_id_depth?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['group_folder_id_depth'];
-            show_trash?: import('../../../../Keywords_2/Params/Keywords/ApiGetParams.ts').components['schemas']['Keywords_2.Params.Keywords.ApiGetParams']['show_trash'];
+            /** При фильтрации по ID папок также искать в подпапках */
+            group_folder_id_depth?: boolean;
+            /** Показывать удаленные запросы */
+            show_trash?: boolean;
             only_exists_first_date?: import('../../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
             /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
             only_exists_by_date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['dates'];
-            type_range?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['type_range'];
-            date1?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date1'];
-            date2?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['date2'];
-            count_dates?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['count_dates'];
-            period_days?: import('../../../../Reports_2/Params/DateRangeTrait.ts').components['schemas']['Reports_2.Params.DateRangeTrait']['period_days'];
-            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            /** ID проекта */
+            project_id: number;
+            /**
+             * Произвольные даты без использования диапазона
+             *
+             *     Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+             */
+            dates?: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
+            /**
+             * Тип диапазона дат
+             * @default 2
+             */
+            type_range?: import('../../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
+            /**
+             * Дата начала диапазона
+             *
+             *     Используется вместе с date2 для задания диапазона дат
+             */
+            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /**
+             * Дата окончания диапазона
+             *
+             *     Используется вместе с date1 для задания диапазона дат
+             */
+            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /**
+             * Количество дат в диапазоне
+             *
+             *     Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             *
+             *     Работает совместно с `type_range`
+             * @default 31
+             */
+            count_dates?: number;
+            /**
+             * Период в днях
+             *
+             *     Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+             *
+             *     Не более 31
+             * @default 7
+             */
+            period_days?: number;
+            /**
+             * Список полей объекта, которые надо вернуть в результате
+             *
+             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            fields?: unknown[];
+            /**
+             * Список полей объекта, по которым необходимо выполнить сортировку
+             *
+             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            orders?: unknown[];
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
+            /**
+             * Число объектов, которое необходимо пропустить при получении результата
+             *
+             *     Используется в паре с limit
+             */
+            offset?: number;
         };
         "Positions_2.Methods.Summary.Chart.Get.Exec": import('../../../../Models/Keywords.ts').components['schemas']['Models.Keywords'][];
     };

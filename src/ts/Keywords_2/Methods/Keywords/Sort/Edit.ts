@@ -13,10 +13,35 @@ export interface components {
          *     Можно сортировать в пределах одной группы или всего проекта
          */
         "Keywords_2.Methods.Keywords.Sort.Edit": {
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /** ID проекта */
+            project_id: number;
+            /**
+             * Список полей объекта, по которым необходимо выполнить сортировку
+             *
+             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            orders?: unknown[];
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
         };
         "Keywords_2.Methods.Keywords.Sort.Edit.Exec": number | null;
     };

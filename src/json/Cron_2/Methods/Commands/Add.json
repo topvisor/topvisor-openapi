@@ -40,7 +40,8 @@
                         "type": "boolean"
                     },
                     "command": {
-                        "$ref": "../../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
+                        "title": "Имя команды cron",
+                        "type": "string"
                     }
                 },
                 "required": [

@@ -13,7 +13,8 @@ export interface components {
             folder_id?: number;
             /** Отображать сумму с учетом скидки */
             apply_discount?: boolean | null;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": unknown[];
     };

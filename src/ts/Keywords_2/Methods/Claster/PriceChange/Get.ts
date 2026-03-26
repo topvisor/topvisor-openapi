@@ -17,7 +17,8 @@ export interface components {
              * @description @internal
              */
             silent?: boolean;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Claster.PriceChange.Get.Exec": number;
     };

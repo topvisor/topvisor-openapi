@@ -39,7 +39,8 @@ export interface components {
              * @description @internal
              */
             for_project_task?: boolean;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         /** Информация о стоимости запуска подбора запросов */
         "Keywords_2.Methods.Collect.Price.Get.Exec": {

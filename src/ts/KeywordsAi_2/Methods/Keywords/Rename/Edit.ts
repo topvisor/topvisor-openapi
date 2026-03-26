@@ -11,10 +11,35 @@ export interface components {
         "KeywordsAi_2.Methods.Keywords.Rename.Edit": {
             /** Название запроса для переименования */
             name: string;
-            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /**
+             * Список полей объекта, которые надо вернуть в результате
+             *
+             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            fields?: unknown[];
+            /** ID проекта */
+            project_id: number;
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
         };
         "KeywordsAi_2.Methods.Keywords.Rename.Edit.Exec": import('../../../../Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'][];
     };

@@ -19,8 +19,10 @@ export interface components {
             view_signal_type: unknown[];
             /** Внешние ссылки (используется на странице с просмотром проверки) */
             links_external?: string;
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
+            /** ID проекта */
+            project_id: number;
+            /** ID проверки аудита */
+            check_id: number;
         };
         /** Короткая гостевая ссылка на просмотр аудита позиций */
         "Audit_2.Methods.Audit.Export.Links.Get.Exec": string | null;

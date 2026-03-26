@@ -9,7 +9,15 @@ export interface components {
     schemas: {
         /** Получение информации о балансе */
         "Bank_2.Methods.Info.Get": {
-            fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            /**
+             * Список полей объекта, которые надо вернуть в результате
+             *
+             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            fields?: unknown[];
         };
         /**
          * Информация о балансе и тарифе пользователя.

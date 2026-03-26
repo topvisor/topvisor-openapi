@@ -11,16 +11,23 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "title": "ID проекта",
+                        "type": "integer"
                     },
                     "orders": {
-                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
                     },
                     "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
                     },
                     "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
                     }
                 },
                 "required": [

@@ -61,7 +61,8 @@ export interface components {
             type_range_compare?: number | null;
             /** Массив тегов */
             tags_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Positions_2.Methods.History.Links.Get.Exec": unknown;
     };

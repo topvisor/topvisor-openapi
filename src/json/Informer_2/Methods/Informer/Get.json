@@ -11,7 +11,9 @@
                 "type": "object",
                 "properties": {
                     "limit": {
-                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
                     }
                 },
                 "required": [],

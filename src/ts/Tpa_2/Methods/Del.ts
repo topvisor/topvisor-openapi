@@ -10,7 +10,8 @@ export interface components {
         /** Удаление интеграции */
         "Tpa_2.Methods.Del": {
             provider: import('../Types/Provider.ts').components['schemas']['Tpa_2.Types.Provider'];
-            project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Tpa_2.Methods.Del.Exec": unknown;
     };

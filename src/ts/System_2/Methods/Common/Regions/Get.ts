@@ -26,8 +26,18 @@ export interface components {
             for_volume?: boolean;
             /** ID регионов для получения */
             region_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
+            /**
+             * Число объектов, которое необходимо пропустить при получении результата
+             *
+             *     Используется в паре с limit
+             */
+            offset?: number;
         };
         "System_2.Methods.Common.Regions.Get.Exec": unknown[] | null;
     };

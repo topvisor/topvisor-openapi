@@ -38,25 +38,43 @@
                         "type": "boolean"
                     },
                     "fields": {
-                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
                     },
                     "orders": {
-                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
                     },
                     "limit": {
-                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
                     },
                     "offset": {
-                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
                     },
                     "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                        "title": "Определяет формат результата: коллекция, объект, значение\n\nПримеры:\n- fetchAll - получить коллекцию объектов\n- fetch - получить один объект\n- fetchColumn - получить свойсвто объекта",
+                        "description": "@see FetchStyle\n@see Selector::execFetch() - см. реализацию",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Selector/Types/FetchStyle.json#/components/schemas/Selector.Types.FetchStyle"
+                            }
+                        ]
                     },
                     "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
                     },
                     "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
                     }
                 },
                 "required": [

@@ -17,7 +17,8 @@ export interface components {
             /** ID папки, фразы из которой нужно кластеризовать */
             folder_id?: number;
             count: import('../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Claster.Price.Get.Exec": number;
     };

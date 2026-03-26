@@ -50,25 +50,52 @@
                         "type": "boolean"
                     },
                     "group_folder_id_depth": {
-                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/group_folder_id_depth"
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
                     },
                     "show_trash": {
-                        "$ref": "../../../Keywords_2/Params/Keywords/ApiGetParams.json#/components/schemas/Keywords_2.Params.Keywords.ApiGetParams/properties/show_trash"
+                        "title": "Показывать удаленные запросы",
+                        "type": "boolean"
                     },
                     "region_index": {
-                        "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_index"
+                        "title": "Индекс региона",
+                        "description": "@experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`",
+                        "type": "integer"
                     },
                     "searcher_key": {
-                        "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/searcher_key"
+                        "title": "Ключ региона",
+                        "description": "@deprecated Скрыто в API",
+                        "nullable": true,
+                        "deprecated": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
                     },
                     "region_key": {
-                        "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_key"
+                        "title": "Ключ региона",
+                        "description": "@deprecated Скрыто в API",
+                        "nullable": true,
+                        "deprecated": true,
+                        "type": "integer"
                     },
                     "region_lang": {
-                        "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_lang"
+                        "title": "Язык региона",
+                        "description": "@deprecated Скрыто в API",
+                        "nullable": true,
+                        "deprecated": true,
+                        "type": "string"
                     },
                     "region_device": {
-                        "$ref": "../../../TV/API/Params/RegionIndexTrait.json#/components/schemas/TV.API.Params.RegionIndexTrait/properties/region_device"
+                        "title": "@deprecated Скрыто в API",
+                        "nullable": true,
+                        "deprecated": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
+                            }
+                        ]
                     },
                     "only_exists_first_date": {
                         "allOf": [
@@ -87,43 +114,83 @@
                         ]
                     },
                     "project_id": {
-                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "title": "ID проекта",
+                        "type": "integer"
                     },
                     "dates": {
-                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/dates"
+                        "title": "Произвольные даты без использования диапазона\n\nНеобходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
                     },
                     "type_range": {
-                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/type_range"
+                        "title": "Тип диапазона дат",
+                        "default": 2,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Reports_2/Types/TypeRange.json#/components/schemas/Reports_2.Types.TypeRange"
+                            }
+                        ]
                     },
                     "date1": {
-                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date1"
+                        "title": "Дата начала диапазона\n\nИспользуется вместе с date2 для задания диапазона дат",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
                     },
                     "date2": {
-                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/date2"
+                        "title": "Дата окончания диапазона\n\nИспользуется вместе с date1 для задания диапазона дат",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
                     },
                     "count_dates": {
-                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/count_dates"
+                        "title": "Количество дат в диапазоне\n\nМаксимальное значение ограничивается константой MAX_DATES конкретного модуля\n\nРаботает совместно с `type_range`",
+                        "default": 31,
+                        "type": "integer"
                     },
                     "period_days": {
-                        "$ref": "../../../Reports_2/Params/DateRangeTrait.json#/components/schemas/Reports_2.Params.DateRangeTrait/properties/period_days"
+                        "title": "Период в днях\n\nИспользуется для алгоритма получения дат через равные промежутки (`type_range` = 6)\n\nНе более 31",
+                        "default": 7,
+                        "type": "integer"
                     },
                     "fields": {
-                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
                     },
                     "orders": {
-                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
                     },
                     "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
                     },
                     "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
                     },
                     "limit": {
-                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
                     },
                     "offset": {
-                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
                     }
                 },
                 "required": [

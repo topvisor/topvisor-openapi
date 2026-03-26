@@ -9,7 +9,12 @@ export interface components {
     schemas: {
         /** Получение списка сообщений в информере */
         "Informer_2.Methods.Informer.Get": {
-            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
         };
         "Informer_2.Methods.Informer.Get.Exec": {
             id?: number;

@@ -23,7 +23,8 @@ export interface components {
             group_id?: number;
             /** Имя группы, в которую будут перемещены фразы */
             to_group_name?: string;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Actions.MoveBySubstrings.Edit.Exec": unknown;
     };

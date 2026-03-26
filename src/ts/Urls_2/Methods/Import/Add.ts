@@ -50,7 +50,8 @@ export interface components {
             /** Флаг активности в индексации */
             watcher?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             debug?: boolean | null;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         /** Информация об импортированных urls */
         "Urls_2.Methods.Import.Add.Exec": {

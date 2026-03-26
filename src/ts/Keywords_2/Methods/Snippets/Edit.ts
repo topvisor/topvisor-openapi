@@ -12,7 +12,8 @@ export interface components {
             /** crc32 hash от текста сниппета */
             hash: string;
             tag: import('../../Types/Snippets/Tag.ts').components['schemas']['Keywords_2.Types.Snippets.Tag'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Snippets.Edit.Exec": number | null;
     };

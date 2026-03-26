@@ -11,12 +11,36 @@ export interface components {
         "Positions_2.Methods.History.Targets.Get": {
             /** ID запроса */
             phrase_id: number;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            region_index?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_index'];
-            searcher_key?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['searcher_key'];
-            region_key?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_key'];
-            region_lang?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_lang'];
-            region_device?: import('../../../../TV/API/Params/RegionIndexTrait.ts').components['schemas']['TV.API.Params.RegionIndexTrait']['region_device'];
+            /** ID проекта */
+            project_id: number;
+            /**
+             * Индекс региона
+             * @description @experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
+             */
+            region_index?: number;
+            /**
+             * Ключ региона
+             * @deprecated
+             * @description @deprecated Скрыто в API
+             */
+            searcher_key?: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
+            /**
+             * Ключ региона
+             * @deprecated
+             * @description @deprecated Скрыто в API
+             */
+            region_key?: number | null;
+            /**
+             * Язык региона
+             * @deprecated
+             * @description @deprecated Скрыто в API
+             */
+            region_lang?: string | null;
+            /**
+             * @deprecated Скрыто в API
+             * @deprecated
+             */
+            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
         };
         "Positions_2.Methods.History.Targets.Get.Exec": unknown[];
     };

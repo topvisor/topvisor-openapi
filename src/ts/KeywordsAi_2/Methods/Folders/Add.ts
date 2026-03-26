@@ -15,7 +15,8 @@ export interface components {
             to_type?: import('../../../Keywords_2/Types/Folders/ToType.ts').components['schemas']['Keywords_2.Types.Folders.ToType'];
             /** Название папки */
             name?: string;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "KeywordsAi_2.Methods.Folders.Add.Exec": ({
             "\"id\"": number;

@@ -25,8 +25,10 @@ export interface components {
             filter?: string | null;
             /** Вид ссылок (только для PDF) */
             external?: string | null;
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
+            /** ID проекта */
+            project_id: number;
+            /** ID проверки аудита */
+            check_id: number;
         };
         /** Ответ об успешнности экспорта результатов аудита */
         "Audit_2.Methods.Audit.Results.Export.Get.Exec": boolean | null;

@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "title": "ID проекта",
+                        "type": "integer"
                     }
                 },
                 "required": [

@@ -31,7 +31,8 @@ export interface components {
              *     Используется для создания группы при подборе слов
              */
             status?: boolean;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Groups.Add.Exec": import('../../../Models/Groups.ts').components['schemas']['Models.Groups'][] | null;
     };

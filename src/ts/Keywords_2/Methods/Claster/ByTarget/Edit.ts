@@ -11,7 +11,8 @@ export interface components {
         "Keywords_2.Methods.Claster.ByTarget.Edit": {
             /** Кластеризовать по папке */
             folder_id?: number;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Claster.ByTarget.Edit.Exec": number | null;
     };

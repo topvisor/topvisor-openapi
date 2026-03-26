@@ -45,13 +45,65 @@ export interface components {
              *     - name
              */
             handler?: unknown;
-            fields?: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders?: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            /**
+             * Список полей объекта, которые надо вернуть в результате
+             *
+             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            fields?: unknown[];
+            /**
+             * Список полей объекта, по которым необходимо выполнить сортировку
+             *
+             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            orders?: unknown[];
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
+            /**
+             * Число объектов, которое необходимо пропустить при получении результата
+             *
+             *     Используется в паре с limit
+             */
+            offset?: number;
+            /**
+             * Определяет формат результата: коллекция, объект, значение
+             *
+             *     Примеры:
+             *     - fetchAll - получить коллекцию объектов
+             *     - fetch - получить один объект
+             *     - fetchColumn - получить свойсвто объекта
+             * @description @see FetchStyle
+             *     @see Selector::execFetch() - см. реализацию
+             */
+            fetch_style?: import('../../../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
         };
         "Competitors_2.Methods.Export.ByDomains.Table.Get.Exec": Record<string, never>;
     };

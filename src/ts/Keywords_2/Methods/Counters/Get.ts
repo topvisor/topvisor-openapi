@@ -11,7 +11,8 @@ export interface components {
         "Keywords_2.Methods.Counters.Get": {
             /** Считать для удаленных проектов */
             show_trash?: boolean;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
         "Keywords_2.Methods.Counters.Get.Exec": {
             count_groups_on: number;

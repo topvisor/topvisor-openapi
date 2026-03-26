@@ -28,13 +28,56 @@ export interface components {
             file_name?: string;
             /** Экспортировать ли удаленные запросы */
             show_trash?: boolean;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            /** ID проекта */
+            project_id: number;
+            /**
+             * Список полей объекта, которые надо вернуть в результате
+             *
+             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            fields?: unknown[];
+            /**
+             * Список полей объекта, по которым необходимо выполнить сортировку
+             *
+             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            orders?: unknown[];
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Selector\Types\Operator, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязательное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Selector\Types\Operator
+             */
+            filters?: unknown[];
+            /**
+             * Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id
+             */
+            id?: number | null;
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
+            /**
+             * Число объектов, которое необходимо пропустить при получении результата
+             *
+             *     Используется в паре с limit
+             */
+            offset?: number;
         };
         "KeywordsAi_2.Methods.Keywords.Export.Get.Exec": Record<string, never>;
     };

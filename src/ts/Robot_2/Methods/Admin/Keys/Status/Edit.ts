@@ -15,7 +15,12 @@ export interface components {
             searcher_key: number;
             /** Домен */
             status: string;
-            limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            /**
+             * Количество объектов, которые необходимо получить в результате
+             *
+             *     Используется в паре с offset
+             */
+            limit?: number | null;
         };
         "Robot_2.Methods.Admin.Keys.Status.Edit.Exec": number | null;
     };
