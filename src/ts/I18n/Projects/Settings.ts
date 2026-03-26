@@ -22,6 +22,8 @@ export interface components {
             readonly Token_is_active_until: "Token is active until";
             /** @constant */
             readonly Reconnect: "Reconnect";
+            /** @constant */
+            readonly Skipped_regions: "Skipped regions";
         };
     };
     responses: never;

@@ -37,6 +37,10 @@
                     "Reconnect": {
                         "const": "Reconnect",
                         "readOnly": true
+                    },
+                    "Skipped_regions": {
+                        "const": "Skipped regions",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -46,7 +50,8 @@
                     "Region_depth_adaptive_hint",
                     "Google_drive",
                     "Token_is_active_until",
-                    "Reconnect"
+                    "Reconnect",
+                    "Skipped_regions"
                 ]
             }
         }

@@ -163,6 +163,10 @@ export interface components {
             readonly Select_this_plan: "Select this plan";
             /** @constant */
             readonly Compare_plans: "Compare plans";
+            /** @constant */
+            readonly Limit_will_be_updated_at: "This limit will be updated {{ date }}";
+            /** @constant */
+            readonly Update_current_plan: "Upgrade your current plan If you need more {{ limitName }}";
         };
     };
     responses: never;

@@ -252,6 +252,14 @@
                     "Compare_plans": {
                         "const": "Compare plans",
                         "readOnly": true
+                    },
+                    "Limit_will_be_updated_at": {
+                        "const": "This limit will be updated {{ date }}",
+                        "readOnly": true
+                    },
+                    "Update_current_plan": {
+                        "const": "Upgrade your current plan If you need more {{ limitName }}",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -297,7 +305,9 @@
                     "Yearly",
                     "Exceeding_by_owner",
                     "Select_this_plan",
-                    "Compare_plans"
+                    "Compare_plans",
+                    "Limit_will_be_updated_at",
+                    "Update_current_plan"
                 ]
             }
         }

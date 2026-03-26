@@ -36,7 +36,8 @@
                 "title": "Удаление региона"
             },
             "Positions_2.Methods.Searchers.Regions.Del.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

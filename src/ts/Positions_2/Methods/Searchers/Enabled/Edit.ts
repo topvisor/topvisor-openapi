@@ -37,7 +37,7 @@ export interface components {
              */
             id?: number | null;
         };
-        "Positions_2.Methods.Searchers.Enabled.Edit.Exec": unknown;
+        "Positions_2.Methods.Searchers.Enabled.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

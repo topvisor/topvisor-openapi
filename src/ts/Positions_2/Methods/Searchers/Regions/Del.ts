@@ -32,7 +32,7 @@ export interface components {
              */
             id?: number | null;
         };
-        "Positions_2.Methods.Searchers.Regions.Del.Exec": unknown;
+        "Positions_2.Methods.Searchers.Regions.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

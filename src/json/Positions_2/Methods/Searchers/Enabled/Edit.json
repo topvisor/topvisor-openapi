@@ -45,7 +45,8 @@
                 "title": "Включение/выключение ПС"
             },
             "Positions_2.Methods.Searchers.Enabled.Edit.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

@@ -47114,6 +47114,7 @@ components:
       title: Включение/выключение ПС
     Positions_2.Methods.Searchers.Enabled.Edit.Exec:
       nullable: true
+      type: integer
     Positions_2.Methods.Searchers.Regions.Add:
       type: object
       properties:
@@ -47192,6 +47193,7 @@ components:
       title: Удаление региона
     Positions_2.Methods.Searchers.Regions.Del.Exec:
       nullable: true
+      type: integer
     Positions_2.Methods.Searchers.Regions.Edit:
       type: object
       properties:
