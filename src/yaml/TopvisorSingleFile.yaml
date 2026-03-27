@@ -13578,6 +13578,7 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+      summary: Создание задачи на проверку релевантности
   /add/projects_2/tasks/volumes/:
     post:
       operationId: AddProjects2TasksVolumes
@@ -47363,6 +47364,7 @@ components:
         - url
         - keywords
         - qualifiers
+      title: Создание задачи на проверку релевантности
     Projects_2.Methods.Tasks.Relevants.Add.Exec:
       type: integer
     Projects_2.Methods.Tasks.Volumes.Add:

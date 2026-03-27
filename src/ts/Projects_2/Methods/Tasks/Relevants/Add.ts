@@ -7,6 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Создание задачи на проверку релевантности */
         "Projects_2.Methods.Tasks.Relevants.Add": {
             /** URL сайта */
             url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
