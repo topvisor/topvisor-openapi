@@ -22570,17 +22570,20 @@ components:
       type: string
       enum:
         - response
+        - snapshot_item
         - mentioned
         - position
         - position_max
         - sentiment
       x-enum-varnames:
         - Response
+        - SnapshotItem
         - Mentioned
         - Position
         - PositionMax
         - Sentiment
       x-enum-descriptions:
+        - null
         - null
         - null
         - null
@@ -22593,7 +22596,7 @@ components:
         $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryField'
       title: Поля с результатами проверки для отчета истории проверок в ИИ-Трекере
       description: '@see HistoryField'
-    AiTracker_2.Types.ModelKey:
+    Robot_2.Types.Drivers.AiTracker.ModelKey:
       type: string
       enum:
         - deepseek
@@ -22605,12 +22608,12 @@ components:
         - null
         - null
       title: Ключ определения модели для ИИ трекера
-    AiTracker_2.Types.ModelsKeys:
+    Robot_2.Types.Drivers.AiTracker.ModelsKeys:
       type: array
       items:
-        $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
+        $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey'
       title: Ключи моделей для AI-трекера
-      description: '@see ModelKey'
+      description: '@see Robot_2\Types\Drivers\AiTracker\ModelKey'
     Reports_2.Types.OnlyExistsByDateType:
       type: integer
       enum:
@@ -22679,7 +22682,7 @@ components:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
         models_keys:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
+            - $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -23142,24 +23145,6 @@ components:
               - date
               - model_key
               - project_id
-    Robot_2.Types.Drivers.AiTracker.ModelKey:
-      type: string
-      enum:
-        - deepseek
-        - grok
-      x-enum-varnames:
-        - Deepseek
-        - Grok
-      x-enum-descriptions:
-        - null
-        - null
-      title: Ключ определения модели для ИИ трекера
-    Robot_2.Types.Drivers.AiTracker.ModelsKeys:
-      type: array
-      items:
-        $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey'
-      title: Ключи моделей для AI-трекера
-      description: '@see Robot_2\Types\Drivers\AiTracker\ModelKey'
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -38220,6 +38205,24 @@ components:
         - Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками
         - Динамическая/градиентная раскраска; Акцент на величине изменения позиций
       title: Режимы визуализации изменений позиций в экспорте
+    AiTracker_2.Types.ModelKey:
+      type: string
+      enum:
+        - deepseek
+        - grok
+      x-enum-varnames:
+        - Deepseek
+        - Grok
+      x-enum-descriptions:
+        - null
+        - null
+      title: Ключ определения модели для ИИ трекера
+    AiTracker_2.Types.ModelsKeys:
+      type: array
+      items:
+        $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
+      title: Ключи моделей для AI-трекера
+      description: '@see ModelKey'
     AiTracker_2.Methods.History.Export.Get:
       type: object
       properties:

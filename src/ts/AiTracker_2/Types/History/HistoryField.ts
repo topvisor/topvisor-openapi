@@ -11,7 +11,7 @@ export interface components {
          * Поле с результатом проверки для отчета истории проверок в ИИ-Трекере
          * @enum {string}
          */
-        "AiTracker_2.Types.History.HistoryField": "response" | "mentioned" | "position" | "position_max" | "sentiment";
+        "AiTracker_2.Types.History.HistoryField": "response" | "snapshot_item" | "mentioned" | "position" | "position_max" | "sentiment";
     };
     responses: never;
     parameters: never;
