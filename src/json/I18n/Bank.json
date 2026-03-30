@@ -130,10 +130,6 @@
                         "const": "Bonus account",
                         "readOnly": true
                     },
-                    "Comment": {
-                        "const": "Description",
-                        "readOnly": true
-                    },
                     "Operation": {
                         "const": "Operation",
                         "readOnly": true
@@ -1228,7 +1224,6 @@
                     "Payment_processed",
                     "Payment_unsuccessful",
                     "Bonuses",
-                    "Comment",
                     "Operation",
                     "Pay",
                     "Total_to_pay",

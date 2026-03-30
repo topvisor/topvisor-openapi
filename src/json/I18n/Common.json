@@ -680,6 +680,10 @@
                         "const": "Display",
                         "readOnly": true
                     },
+                    "Displaying": {
+                        "const": "Displaying",
+                        "readOnly": true
+                    },
                     "Save": {
                         "const": "Save",
                         "readOnly": true
@@ -1979,6 +1983,18 @@
                     "To_project": {
                         "const": "To project",
                         "readOnly": true
+                    },
+                    "Recipient_email": {
+                        "const": "Recipient's email",
+                        "readOnly": true
+                    },
+                    "Priority": {
+                        "const": "Priority",
+                        "readOnly": true
+                    },
+                    "Comment": {
+                        "const": "Description",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2146,6 +2162,7 @@
                     "Value",
                     "Hide",
                     "Display",
+                    "Displaying",
                     "Save",
                     "Time",
                     "Loading",
@@ -2468,7 +2485,10 @@
                     "Unique",
                     "Pick_up",
                     "Popup_go_text_before_price",
-                    "To_project"
+                    "To_project",
+                    "Recipient_email",
+                    "Priority",
+                    "Comment"
                 ]
             }
         }

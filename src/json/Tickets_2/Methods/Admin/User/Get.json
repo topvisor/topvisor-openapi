@@ -26,7 +26,73 @@
                 "title": "Получение информации о пользователе"
             },
             "Tickets_2.Methods.Admin.User.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "local_time": {
+                        "type": "string"
+                    },
+                    "average_expenses": {
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "check_position_is_high_priority": {
+                        "type": "boolean"
+                    },
+                    "date_reg": {
+                        "type": "string"
+                    },
+                    "currency": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "timezone": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "local_time",
+                    "average_expenses",
+                    "check_position_is_high_priority"
+                ]
             }
         }
     }

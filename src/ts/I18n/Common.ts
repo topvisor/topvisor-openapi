@@ -349,6 +349,8 @@ export interface components {
             /** @constant */
             readonly Display: "Display";
             /** @constant */
+            readonly Displaying: "Displaying";
+            /** @constant */
             readonly Save: "Save";
             /** @constant */
             readonly Time: "Time";
@@ -998,6 +1000,12 @@ export interface components {
             readonly Popup_go_text_before_price: "Project owner will be charged";
             /** @constant */
             readonly To_project: "To project";
+            /** @constant */
+            readonly Recipient_email: "Recipient's email";
+            /** @constant */
+            readonly Priority: "Priority";
+            /** @constant */
+            readonly Comment: "Description";
         };
     };
     responses: never;

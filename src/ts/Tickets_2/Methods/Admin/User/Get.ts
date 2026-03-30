@@ -18,7 +18,16 @@ export interface components {
              */
             ticket_id?: number | null;
         };
-        "Tickets_2.Methods.Admin.User.Get.Exec": unknown[];
+        "Tickets_2.Methods.Admin.User.Get.Exec": {
+            local_time: string;
+            average_expenses: number | string;
+            check_position_is_high_priority: boolean;
+            date_reg?: string;
+            currency?: string | null;
+            timezone?: string | null;
+            lang?: string | null;
+            comment?: string | null;
+        };
     };
     responses: never;
     parameters: never;

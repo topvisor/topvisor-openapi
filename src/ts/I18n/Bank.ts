@@ -69,8 +69,6 @@ export interface components {
             /** @constant */
             readonly Bonuses: "Bonus account";
             /** @constant */
-            readonly Comment: "Description";
-            /** @constant */
             readonly Operation: "Operation";
             /** @constant */
             readonly Pay: "Pay";
