@@ -15,7 +15,7 @@ export interface components {
             /** @constant */
             readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";
             /** @constant */
-            readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
+            readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/ai-tracker/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
             /** @constant */
             readonly Model_Yandex_Alice: "Yandex Alice";
             /** @constant */
@@ -53,11 +53,11 @@ export interface components {
             /** @constant */
             readonly Select_neural_networks: "Select neural networks";
             /** @constant */
-            readonly No_data_in_day: "В выбранный день данные не анализировались.<br> <a href=\"/support/rankings/se/\" target=\"_blank\">Как работает AI-трекер →</a>";
+            readonly No_data_in_day: "В выбранный день данные не анализировались.<br> <a href=\"/support/ai-tracker/\" target=\"_blank\">Как работает AI-трекер →</a>";
             /** @constant */
             readonly Add_neural_networks: "Выберите нейросети, чтобы запустить анализ.";
             /** @constant */
-            readonly Add_prompts_to_go: "Добавьте промпты, чтобы запустить анализ.";
+            readonly Add_prompts_to_go: "Add prompts to launch analysis. <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>";
             /** @constant */
             readonly Settings: "AI-tracker settings";
             /** @constant */
