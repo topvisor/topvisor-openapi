@@ -110,6 +110,10 @@ export interface components {
             readonly Analysis_was_not_performed: "Analysis was not performed";
             /** @constant */
             readonly Mentions: "Mentions";
+            /** @constant */
+            readonly Check_need_config: "To launch the AI-tracker, you need to configure the list of tested prompts and select neural networks.";
+            /** @constant */
+            readonly Already_started: "AI-tracker already started";
         };
     };
     responses: never;

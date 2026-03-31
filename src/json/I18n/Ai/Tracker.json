@@ -213,6 +213,14 @@
                     "Mentions": {
                         "const": "Mentions",
                         "readOnly": true
+                    },
+                    "Check_need_config": {
+                        "const": "To launch the AI-tracker, you need to configure the list of tested prompts and select neural networks.",
+                        "readOnly": true
+                    },
+                    "Already_started": {
+                        "const": "AI-tracker already started",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -266,7 +274,9 @@
                     "Neuro_answer",
                     "Answer_from",
                     "Analysis_was_not_performed",
-                    "Mentions"
+                    "Mentions",
+                    "Check_need_config",
+                    "Already_started"
                 ]
             }
         }
