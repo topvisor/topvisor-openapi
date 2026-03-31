@@ -99,7 +99,7 @@
                         "readOnly": true
                     },
                     "No_data_in_day": {
-                        "const": "В выбранный день данные не анализировались.<br><a href=\"/support/ai-tracker/\" target=\"_blank\">Как работает AI-трекер →</a>",
+                        "const": "There are no checks in the picked period.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>",
                         "readOnly": true
                     },
                     "Add_neural_networks": {
