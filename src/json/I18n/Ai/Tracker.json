@@ -103,11 +103,11 @@
                         "readOnly": true
                     },
                     "Add_neural_networks": {
-                        "const": "Выберите нейросети, чтобы запустить анализ.",
+                        "const": "Pick AIs to launch analysis.<br>✨ <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add AIs →</a>",
                         "readOnly": true
                     },
                     "Add_prompts_to_go": {
-                        "const": "Add prompts to launch analysis.<br>✨ <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>",
+                        "const": "Add prompts to launch analysis.<br>🔑 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>",
                         "readOnly": true
                     },
                     "Settings": {
