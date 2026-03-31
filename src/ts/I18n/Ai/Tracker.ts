@@ -53,11 +53,11 @@ export interface components {
             /** @constant */
             readonly Select_neural_networks: "Select neural networks";
             /** @constant */
-            readonly No_data_in_day: "В выбранный день данные не анализировались.<br> <a href=\"/support/ai-tracker/\" target=\"_blank\">Как работает AI-трекер →</a>";
+            readonly No_data_in_day: "В выбранный день данные не анализировались.<br><a href=\"/support/ai-tracker/\" target=\"_blank\">Как работает AI-трекер →</a>";
             /** @constant */
             readonly Add_neural_networks: "Выберите нейросети, чтобы запустить анализ.";
             /** @constant */
-            readonly Add_prompts_to_go: "Add prompts to launch analysis. <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>";
+            readonly Add_prompts_to_go: "Add prompts to launch analysis.<br>✨ <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>";
             /** @constant */
             readonly Settings: "AI-tracker settings";
             /** @constant */

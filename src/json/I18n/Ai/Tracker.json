@@ -99,7 +99,7 @@
                         "readOnly": true
                     },
                     "No_data_in_day": {
-                        "const": "В выбранный день данные не анализировались.<br> <a href=\"/support/ai-tracker/\" target=\"_blank\">Как работает AI-трекер →</a>",
+                        "const": "В выбранный день данные не анализировались.<br><a href=\"/support/ai-tracker/\" target=\"_blank\">Как работает AI-трекер →</a>",
                         "readOnly": true
                     },
                     "Add_neural_networks": {
@@ -107,7 +107,7 @@
                         "readOnly": true
                     },
                     "Add_prompts_to_go": {
-                        "const": "Add prompts to launch analysis. <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>",
+                        "const": "Add prompts to launch analysis.<br>✨ <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>",
                         "readOnly": true
                     },
                     "Settings": {
