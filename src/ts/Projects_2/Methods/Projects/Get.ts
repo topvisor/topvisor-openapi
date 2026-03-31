@@ -11,7 +11,7 @@ export interface components {
         "Projects_2.Methods.Projects.Get": {
             /** Добавить ли в результаты баланс владельца для гостевых проектов */
             show_owner_balance?: boolean | null;
-            /** Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС) */
+            /** Добавить ли в результат дополнительно собираемую информацию (Яндекс ИКС) */
             show_site_stat?: boolean | null;
             /**
              * Добавить в результат список ПС и Регионов, привязанных к проекту
@@ -28,7 +28,7 @@ export interface components {
              */
             include_positions_summary?: boolean | null;
             /**
-             * Добавить в результат сводку проверки позиций
+             * Добавить в результат сводку проверки ИИ-Трекера
              * @description @see /get/aiTracker_2/summary/
              */
             include_ai_tracker_summary?: boolean;

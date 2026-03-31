@@ -32194,7 +32194,7 @@ components:
           nullable: true
           type: boolean
         show_site_stat:
-          title: Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС)
+          title: Добавить ли в результат дополнительно собираемую информацию (Яндекс ИКС)
           nullable: true
           type: boolean
         show_searchers_and_regions:
@@ -32213,7 +32213,7 @@ components:
           nullable: true
           type: boolean
         include_ai_tracker_summary:
-          title: Добавить в результат сводку проверки позиций
+          title: Добавить в результат сводку проверки ИИ-Трекера
           description: '@see /get/aiTracker_2/summary/'
           type: boolean
         include_positions_summary_params:
