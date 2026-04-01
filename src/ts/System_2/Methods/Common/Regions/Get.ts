@@ -39,7 +39,17 @@ export interface components {
              */
             offset?: number;
         };
-        "System_2.Methods.Common.Regions.Get.Exec": unknown[] | null;
+        /** Получить список регионов по параметрам запроса */
+        "System_2.Methods.Common.Regions.Get.Exec": ({
+            id: number;
+            type: string;
+            countryCode: string;
+            name: string;
+            areaName: string;
+            name_en: string;
+            areaName_en: string;
+            domain: string;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;

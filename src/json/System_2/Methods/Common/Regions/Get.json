@@ -61,8 +61,55 @@
                 "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов"
             },
             "System_2.Methods.Common.Regions.Get.Exec": {
+                "title": "Получить список регионов по параметрам запроса",
                 "nullable": true,
-                "type": "array"
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "countryCode": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "areaName": {
+                                    "type": "string"
+                                },
+                                "name_en": {
+                                    "type": "string"
+                                },
+                                "areaName_en": {
+                                    "type": "string"
+                                },
+                                "domain": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "type",
+                                "countryCode",
+                                "name",
+                                "areaName",
+                                "name_en",
+                                "areaName_en",
+                                "domain"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }
