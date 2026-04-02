@@ -18553,6 +18553,34 @@ paths:
               schema:
                 type: string
                 format: binary
+  /edit/admin_2/actions/robot/status/:
+    post:
+      operationId: EditAdmin2ActionsRobotStatus
+      tags:
+        - Admin_2
+      summary: Сброс статуса проверки проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -54523,3 +54551,35 @@ components:
         Вернет случайный набор символов в формате application/json; charset=utf-8
 
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
+    Admin_2.Types.Actions.Robot.Status.ModuleName:
+      type: string
+      enum:
+        - positions
+        - relevants
+      x-enum-varnames:
+        - Positions
+        - Relevants
+      x-enum-descriptions:
+        - Проверка позиций
+        - Проверка релевантных
+      title: Модуль для изменения статуса проверки
+    Admin_2.Methods.Actions.Robot.Status.Edit:
+      type: object
+      properties:
+        module_name:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Actions.Robot.Status.ModuleName'
+        project_id:
+          title: ID проекта
+          type: integer
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - module_name
+        - project_id
+        - test
+      title: Сброс статуса проверки проекта
+    Admin_2.Methods.Actions.Robot.Status.Edit.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
