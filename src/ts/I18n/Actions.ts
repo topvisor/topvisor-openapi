@@ -15,7 +15,7 @@ export interface components {
             /** @constant */
             readonly Report_subscribe_canceled: "You successfully unsubscribed from project reports";
             /** @constant */
-            readonly Report_subscribe_canceled1: "Subscription to";
+            readonly Report_subscribe_canceled1: "Subscription ";
             /** @constant */
             readonly Report_subscribe_canceled2: "is cancelled successfully";
             /** @constant */
