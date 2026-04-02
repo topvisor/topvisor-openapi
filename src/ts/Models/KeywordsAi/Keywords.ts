@@ -43,6 +43,26 @@ export interface components {
              *       ]
              *     }
              */
+            snapshot_item?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key",
+             *         "project_id"
+             *       ]
+             *     }
+             */
+            brand_id?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key",
+             *         "project_id"
+             *       ]
+             *     }
+             */
             mentioned?: any;
             /**
              * @example {
