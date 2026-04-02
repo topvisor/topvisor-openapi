@@ -69,7 +69,7 @@
                     "models_keys": {
                         "allOf": [
                             {
-                                "$ref": "../../../../AiTracker_2/Types/ModelsKeys.json#/components/schemas/AiTracker_2.Types.ModelsKeys"
+                                "$ref": "../../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys"
                             }
                         ]
                     },

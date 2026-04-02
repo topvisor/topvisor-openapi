@@ -13556,6 +13556,7 @@ paths:
       operationId: AddProjects2TasksRelevants
       tags:
         - Projects_2
+      summary: Создание задачи на проверку релевантности
       requestBody:
         content:
           application/json:
@@ -13578,7 +13579,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-      summary: Создание задачи на проверку релевантности
   /add/projects_2/tasks/volumes/:
     post:
       operationId: AddProjects2TasksVolumes
@@ -15390,34 +15390,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/admin_2/actions/positions/status/:
-    post:
-      operationId: EditAdmin2ActionsPositionsStatus
-      tags:
-        - Admin_2
-      summary: Сброс статуса проверки позиций
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Positions.Status.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Positions.Status.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /edit/admin_2/actions/projects/domain/:
     post:
       operationId: EditAdmin2ActionsProjectsDomain
@@ -15527,6 +15499,34 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Priority.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/admin_2/actions/robot/status/:
+    post:
+      operationId: EditAdmin2ActionsRobotStatus
+      tags:
+        - Admin_2
+      summary: Сброс статуса проверки проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -18553,34 +18553,6 @@ paths:
               schema:
                 type: string
                 format: binary
-  /edit/admin_2/actions/robot/status/:
-    post:
-      operationId: EditAdmin2ActionsRobotStatus
-      tags:
-        - Admin_2
-      summary: Сброс статуса проверки проекта
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -38233,24 +38205,6 @@ components:
         - Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками
         - Динамическая/градиентная раскраска; Акцент на величине изменения позиций
       title: Режимы визуализации изменений позиций в экспорте
-    AiTracker_2.Types.ModelKey:
-      type: string
-      enum:
-        - deepseek
-        - grok
-      x-enum-varnames:
-        - Deepseek
-        - Grok
-      x-enum-descriptions:
-        - null
-        - null
-      title: Ключ определения модели для ИИ трекера
-    AiTracker_2.Types.ModelsKeys:
-      type: array
-      items:
-        $ref: '#/components/schemas/AiTracker_2.Types.ModelKey'
-      title: Ключи моделей для AI-трекера
-      description: '@see ModelKey'
     AiTracker_2.Methods.History.Export.Get:
       type: object
       properties:
@@ -38309,7 +38263,7 @@ components:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.HistoryFields'
         models_keys:
           allOf:
-            - $ref: '#/components/schemas/AiTracker_2.Types.ModelsKeys'
+            - $ref: '#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -49371,22 +49325,6 @@ components:
     Admin_2.Methods.Actions.Positions.History.Add.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-    Admin_2.Methods.Actions.Positions.Status.Edit:
-      type: object
-      properties:
-        projectId:
-          title: ID проекта
-          type: integer
-        test:
-          title: Является ли запуск - тестом
-          type: boolean
-      required:
-        - projectId
-        - test
-      title: Сброс статуса проверки позиций
-    Admin_2.Methods.Actions.Positions.Status.Edit.Exec:
-      allOf:
-        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Projects.Domain.Edit:
       type: object
       properties:
@@ -49500,6 +49438,38 @@ components:
         - test
       title: Изменение приоритета задач
     Admin_2.Methods.Actions.Robot.Priority.Edit.Exec:
+      allOf:
+        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+    Admin_2.Types.Actions.Robot.Status.ModuleName:
+      type: string
+      enum:
+        - positions
+        - relevants
+      x-enum-varnames:
+        - Positions
+        - Relevants
+      x-enum-descriptions:
+        - Проверка позиций
+        - Проверка релевантных
+      title: Модуль для изменения статуса проверки
+    Admin_2.Methods.Actions.Robot.Status.Edit:
+      type: object
+      properties:
+        module_name:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Actions.Robot.Status.ModuleName'
+        project_id:
+          title: ID проекта
+          type: integer
+        test:
+          title: Является ли запуск - тестом
+          type: boolean
+      required:
+        - module_name
+        - project_id
+        - test
+      title: Сброс статуса проверки проекта
+    Admin_2.Methods.Actions.Robot.Status.Edit.Exec:
       allOf:
         - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
     Admin_2.Methods.Actions.Robot.Task.Edit:
@@ -54551,35 +54521,3 @@ components:
         Вернет случайный набор символов в формате application/json; charset=utf-8
 
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
-    Admin_2.Types.Actions.Robot.Status.ModuleName:
-      type: string
-      enum:
-        - positions
-        - relevants
-      x-enum-varnames:
-        - Positions
-        - Relevants
-      x-enum-descriptions:
-        - Проверка позиций
-        - Проверка релевантных
-      title: Модуль для изменения статуса проверки
-    Admin_2.Methods.Actions.Robot.Status.Edit:
-      type: object
-      properties:
-        module_name:
-          allOf:
-            - $ref: '#/components/schemas/Admin_2.Types.Actions.Robot.Status.ModuleName'
-        project_id:
-          title: ID проекта
-          type: integer
-        test:
-          title: Является ли запуск - тестом
-          type: boolean
-      required:
-        - module_name
-        - project_id
-        - test
-      title: Сброс статуса проверки проекта
-    Admin_2.Methods.Actions.Robot.Status.Edit.Exec:
-      allOf:
-        - $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'

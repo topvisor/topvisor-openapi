@@ -24978,6 +24978,7 @@
                 "tags": [
                     "Projects_2"
                 ],
+                "summary": "Создание задачи на проверку релевантности",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -25021,8 +25022,7 @@
                             }
                         }
                     }
-                },
-                "summary": "Создание задачи на проверку релевантности"
+                }
             }
         },
         "/add/projects_2/tasks/volumes/": {
@@ -28377,59 +28377,6 @@
                 }
             }
         },
-        "/edit/admin_2/actions/positions/status/": {
-            "post": {
-                "operationId": "EditAdmin2ActionsPositionsStatus",
-                "tags": [
-                    "Admin_2"
-                ],
-                "summary": "Сброс статуса проверки позиций",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Positions/Status/Edit.json#/components/schemas/Admin_2.Methods.Actions.Positions.Status.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/Positions/Status/Edit.json#/components/schemas/Admin_2.Methods.Actions.Positions.Status.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/admin_2/actions/projects/domain/": {
             "post": {
                 "operationId": "EditAdmin2ActionsProjectsDomain",
@@ -28621,6 +28568,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Admin_2/Methods/Actions/Robot/Priority/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Priority.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/robot/status/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsRobotStatus",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Сброс статуса проверки проекта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Robot/Status/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Robot/Status/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -34165,59 +34165,6 @@
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/admin_2/actions/robot/status/": {
-            "post": {
-                "operationId": "EditAdmin2ActionsRobotStatus",
-                "tags": [
-                    "Admin_2"
-                ],
-                "summary": "Сброс статуса проверки проекта",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Robot/Status/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/Robot/Status/Edit.json#/components/schemas/Admin_2.Methods.Actions.Robot.Status.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
                                 }
                             }
                         }

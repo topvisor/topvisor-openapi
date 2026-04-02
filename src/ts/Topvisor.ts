@@ -7984,7 +7984,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Создание задачи на проверку релевантности */
     "/add/projects_2/tasks/relevants/": {
         parameters: {
             query?: never;
@@ -9136,23 +9137,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Сброс статуса проверки позиций */
-    "/edit/admin_2/actions/positions/status/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditAdmin2ActionsPositionsStatus"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Изменение домена проекта */
     "/edit/admin_2/actions/projects/domain/": {
         parameters: {
@@ -9218,6 +9202,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditAdmin2ActionsRobotPriority"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Сброс статуса проверки проекта */
+    "/edit/admin_2/actions/robot/status/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2ActionsRobotStatus"];
         delete?: never;
         options?: never;
         head?: never;
@@ -24326,31 +24327,6 @@ export interface operations {
             };
         };
     };
-    EditAdmin2ActionsPositionsStatus: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Actions/Positions/Status/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Status.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Actions/Positions/Status/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Status.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     EditAdmin2ActionsProjectsDomain: {
         parameters: {
             query?: never;
@@ -24446,6 +24422,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Robot/Priority/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Priority.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAdmin2ActionsRobotStatus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Robot/Status/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Status.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Methods/Actions/Robot/Status/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
