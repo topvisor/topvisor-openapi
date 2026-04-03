@@ -10,18 +10,21 @@
             "Robot_2.Types.Admin.SSLCertificate.Provider": {
                 "type": "string",
                 "enum": [
+                    "",
                     "global_sign",
                     "lets_encrypt",
                     "self_signed",
                     "private_ca"
                 ],
                 "x-enum-varnames": [
+                    "Undefined",
                     "GlobalSign",
                     "LetsEncrypt",
                     "SelfSigned",
                     "PrivateCa"
                 ],
                 "x-enum-descriptions": [
+                    "Тип не определен",
                     "Публичный коммерческий удостоверяющий центр GlobalSign.",
                     "Публичный бесплатный удостоверяющий центр Let’s Encrypt.",
                     "Самоподписанный сертификат (без внешнего доверия).",

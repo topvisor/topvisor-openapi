@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип SSL-сертификата
+         * Тональность ответа
          * @enum {string}
          */
-        "Robot_2.Types.Admin.SSLCertificate.Provider": "" | "global_sign" | "lets_encrypt" | "self_signed" | "private_ca";
+        "Robot_2.Types.Drivers.AiTracker.Sentiment": "NEGATIVE" | "NEUTRAL" | "POSITIVE";
     };
     responses: never;
     parameters: never;
