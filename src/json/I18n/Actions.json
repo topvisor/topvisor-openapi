@@ -23,7 +23,7 @@
                         "readOnly": true
                     },
                     "Report_subscribe_canceled1": {
-                        "const": "Subscription",
+                        "const": "Subscription to",
                         "readOnly": true
                     },
                     "Report_subscribe_canceled2": {
