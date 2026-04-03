@@ -502,8 +502,6 @@ export interface components {
             readonly Enter_location: "Enter location";
             /** @constant */
             readonly Update_count: "Total checks";
-            /** @constant */
-            readonly Update_count_formula: "Keywords * Locations (considering parse depth)";
         };
     };
     responses: never;

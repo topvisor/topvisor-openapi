@@ -15,24 +15,28 @@ export interface components {
                     extendedName: "rank check tasks daily";
                     description: "Total number of tasks, that are performed every day.\n\t\t\tA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
                     exceeding: "Overall limit of rank checking tasks reached";
+                    exceedingDescription: "Keywords * Locations (considering parse depth)";
                 };
                 positions_check: {
                     name: "Rank Checks";
                     extendedName: "rank checks";
                     description: "";
                     exceeding: "Daily limit of rank checks reached";
+                    exceedingDescription: "";
                 };
                 positions_check_manual: {
                     name: "Manual Rechecks";
                     extendedName: "rechecks daily";
                     description: "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse reckecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
                     exceeding: "Daily limit of position rechecks reached";
+                    exceedingDescription: "";
                 };
                 keywords_volumes: {
                     name: "Search Volume";
                     extendedName: "search volume checks";
                     description: "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.<br><br>\n\t\t\t<a href=\"https://thundo.com/support/volume/\" target=\"_blank\">More on Search Volume Checker →</a>";
                     exceeding: "Monthly limit of search volume checks reached";
+                    exceedingDescription: "";
                 };
                 keywords_collect: {
                     name: "Semantic Core Research";
@@ -45,30 +49,35 @@ export interface components {
                     extendedName: "projects";
                     description: "The number of active projects you can have on your account. A project is a container with URL which is required to launch checks and store keywords.";
                     exceeding: "Project count limit reached";
+                    exceedingDescription: "";
                 };
                 projects_rights: {
                     name: "Guest Users";
                     extendedName: "guest users";
                     description: "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.<br><br>\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.";
                     exceeding: "Guest accounts limit reached";
+                    exceedingDescription: "";
                 };
                 projects_competitors: {
                     name: "Competitors";
                     extendedName: "competitors per project";
                     description: "The number of URLs you can add in one project to compare data.";
                     exceeding: "Competitors limit in one project reached";
+                    exceedingDescription: "";
                 };
                 projects_archive: {
                     name: "Archived projects";
                     extendedName: "archived projects";
                     description: "The number of archived (inactive) projects you can have in your account. You can restore an archived project at any time if your pricing plan allows to increase the number of active projects.";
                     exceeding: "Archived projects access disabled";
+                    exceedingDescription: "";
                 };
                 api: {
                     name: "API";
                     extendedName: "API";
                     description: "API allows to contol you data via programming interface within your CRM, generate custom reports or pull data directly where you need to.";
                     exceeding: "API access disabled";
+                    exceedingDescription: "";
                 };
             };
             /** @constant */
@@ -164,9 +173,11 @@ export interface components {
             /** @constant */
             readonly Compare_plans: "Compare plans";
             /** @constant */
-            readonly Limit_will_be_updated_at: "This limit will be updated {{ date }}";
-            /** @constant */
             readonly Update_current_plan: "Upgrade your current plan If you need more {{ limitName }}";
+            /** @constant */
+            readonly You_already_using_out_of_limits: "You are already using {{ limitUsed }} out of {{ limitMax }} limits";
+            /** @constant */
+            readonly Adjust_project_settings: "Adjust project(s) settings to use limits optimally";
         };
     };
     responses: never;
