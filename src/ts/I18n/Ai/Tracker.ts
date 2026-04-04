@@ -59,25 +59,25 @@ export interface components {
             /** @constant */
             readonly Add_prompts_to_go: "Add prompts to launch analysis.<br>🔑 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>";
             /** @constant */
-            readonly Settings: "AI-tracker settings";
+            readonly Settings: "AI Tracker settings";
             /** @constant */
-            readonly Ai_analysis: "AI-анализ";
+            readonly Ai_analysis: "AI analysis";
             /** @constant */
-            readonly Analysis_go: "Запустить анализ";
+            readonly Analysis_go: "Launch analysis";
             /** @constant */
             readonly Prompts: "Prompts";
             /** @constant */
             readonly Prompt: "Prompt";
             /** @constant */
-            readonly Search_prompts: "Поиск по промптам";
+            readonly Search_prompts: "Prompt search";
             /** @constant */
             readonly Neural_network: "Neural network";
             /** @constant */
-            readonly Remove_prompt: "Вы действительно хотите удалить этот промпт?";
+            readonly Remove_prompt: "Are you sure you want to delete this prompt?";
             /** @constant */
-            readonly Sort_mentioned: "Сортировка по упоминанию";
+            readonly Sort_mentioned: "Sorting by mentions";
             /** @constant */
-            readonly Sort_sentiment: "Сортировка по тональности";
+            readonly Sort_sentiment: "Sorting by tone";
             /** @constant */
             readonly Prompts_can_be_deleted_and_restored_within_the_same_group: "Prompts can be deleted/restored within the same group";
             /** @constant */
