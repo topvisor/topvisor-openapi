@@ -13,9 +13,9 @@ export interface components {
             /** @constant */
             readonly Russian: "Russian";
             /** @constant */
-            readonly Ai_tracker_bank_info: "Checking for mentions in neural networks";
+            readonly Ai_tracker_bank_info: "Checking for mentions in AI";
             /** @constant */
-            readonly Add_brand_info: "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/ai-tracker/se/\" target=\"_blank\">Как настроить AI-трекер →</a>";
+            readonly Add_brand_info: "Add your brand to launch check.<br>💼 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add brand →</a>";
             /** @constant */
             readonly Model_Yandex_Alice: "Yandex Alice";
             /** @constant */

@@ -19,11 +19,11 @@
                         "readOnly": true
                     },
                     "Ai_tracker_bank_info": {
-                        "const": "Checking for mentions in neural networks",
+                        "const": "Checking for mentions in AI",
                         "readOnly": true
                     },
                     "Add_brand_info": {
-                        "const": "Добавьте сведения о своём бренде, чтобы запустить анализ.<br> <a href=\"/support/ai-tracker/se/\" target=\"_blank\">Как настроить AI-трекер →</a>",
+                        "const": "Add your brand to launch check.<br>💼 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add brand →</a>",
                         "readOnly": true
                     },
                     "Model_Yandex_Alice": {
