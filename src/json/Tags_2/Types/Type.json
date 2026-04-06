@@ -13,6 +13,7 @@
                     "tickets",
                     "projects",
                     "keywords",
+                    "keywordsAi",
                     "snippets",
                     "shortLinks",
                     "urls"
@@ -21,11 +22,13 @@
                     "Tickets",
                     "Projects",
                     "Keywords",
+                    "KeywordsAi",
                     "Snippets",
                     "ShortLinks",
                     "Urls"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,
