@@ -57,10 +57,30 @@
             },
             "Tickets_2.Methods.Tickets.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "$ref": "../../../Models/Tickets.json#/components/schemas/Models.Tickets"
-                }
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "user_data": {
+                                    "anyOf": [
+                                        {
+                                            "type": "object",
+                                            "additionalProperties": {}
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

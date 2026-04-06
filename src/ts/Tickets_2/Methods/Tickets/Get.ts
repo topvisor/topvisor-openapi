@@ -63,7 +63,11 @@ export interface components {
              */
             offset?: number;
         };
-        "Tickets_2.Methods.Tickets.Get.Exec": import('../../../Models/Tickets.ts').components['schemas']['Models.Tickets'][] | null;
+        "Tickets_2.Methods.Tickets.Get.Exec": ({
+            user_data?: {
+                [key: string]: unknown;
+            } | null;
+        }[] | null) | null;
     };
     responses: never;
     parameters: never;

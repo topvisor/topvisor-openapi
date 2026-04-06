@@ -34255,6 +34255,19 @@ components:
           type: integer
       required: []
       title: Получение списка тикетов с сообщениями
+    Tickets_2.Methods.Tickets.Get.Exec:
+      nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: object
+            properties:
+              user_data:
+                anyOf:
+                  - type: object
+                    additionalProperties: {}
+                  - type: 'null'
+        - type: 'null'
     Models.Tickets:
       properties:
         COUNT(*):
@@ -34354,11 +34367,6 @@ components:
           nullable: true
         message_noticed:
           nullable: true
-    Tickets_2.Methods.Tickets.Get.Exec:
-      nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Tickets'
     Tpa_2.Methods.Any.Del:
       type: object
       properties:
