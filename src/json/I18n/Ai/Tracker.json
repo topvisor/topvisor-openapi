@@ -218,7 +218,7 @@
                         "const": "AI-tracker already started",
                         "readOnly": true
                     },
-                    "Brand_description_placeholder": {
+                    "Brand_name_placeholder": {
                         "const": "Topvisor",
                         "readOnly": true
                     }

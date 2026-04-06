@@ -26,7 +26,7 @@
                         "const": "Thundo Ltd.",
                         "readOnly": true
                     },
-                    "Brand_description_placeholder": {
+                    "Brand_name_placeholder": {
                         "const": "Thundo",
                         "readOnly": true
                     }

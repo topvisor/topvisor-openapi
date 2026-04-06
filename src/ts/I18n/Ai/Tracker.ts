@@ -113,7 +113,7 @@ export interface components {
             /** @constant */
             readonly Already_started: "AI-tracker already started";
             /** @constant */
-            readonly Brand_description_placeholder?: "Topvisor";
+            readonly Brand_name_placeholder?: "Topvisor";
         };
     };
     responses: never;
