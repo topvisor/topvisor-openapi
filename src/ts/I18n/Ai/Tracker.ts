@@ -23,15 +23,13 @@ export interface components {
             /** @constant */
             readonly Brand_name: "Brand name";
             /** @constant */
-            readonly Alternative_spellings_for_the_brand_and_website: "Alternative spellings for the brand and website";
-            /** @constant */
-            readonly Enter_alternative_brand_names: "Enter alternative brand names. Each on a new line";
+            readonly Brand_description: "Brand description";
             /** @constant */
             readonly Context_setting: "Context setting";
             /** @constant */
             readonly System_prompt: "System prompt";
             /** @constant */
-            readonly Enter_additional_information_to_help_you_fine_tune_the_context: "Enter additional information to help you fine-tune the context.";
+            readonly System_prompt_placeholder: "Enter additional information to help you fine-tune the context.";
             /** @constant */
             readonly Automatic_pick_up_of_alternative_brand_spellings: "Automatic pick up of alternative brand spellings";
             /** @constant */
@@ -85,7 +83,7 @@ export interface components {
             /** @constant */
             readonly Type_of_activity: "Type of activity";
             /** @constant */
-            readonly Enter_the_activities: "Enter the activities of the brand or website. This will help fine-tune the context and select prompts.";
+            readonly Brand_description_for_collect_placeholder: "Enter the activities of the brand or website. This will help fine-tune the context and select prompts.";
             /** @constant */
             readonly Prompt_length: "Prompt length";
             /** @constant */
