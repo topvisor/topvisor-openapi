@@ -62,7 +62,7 @@ export interface components {
              */
             period_days?: number;
         };
-        /** Короткая гостевая ссылка на просмотр индексации */
+        /** Короткая гостевая ссылка на просмотр ИИ-трекера */
         "AiTracker_2.Methods.History.Export.Links.Get.Exec": string | null;
     };
     responses: never;

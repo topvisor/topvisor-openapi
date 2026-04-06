@@ -50332,7 +50332,7 @@ components:
         - project_id
       title: Получение гостевой ссылки на просмотр ИИ-Трекера
     AiTracker_2.Methods.History.Export.Links.Get.Exec:
-      title: Короткая гостевая ссылка на просмотр индексации
+      title: Короткая гостевая ссылка на просмотр ИИ-трекера
       nullable: true
       type: string
     Audit_2.Methods.Audit.Checker.Go.Edit:
