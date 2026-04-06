@@ -25,6 +25,10 @@
                     "Organization": {
                         "const": "Thundo Ltd.",
                         "readOnly": true
+                    },
+                    "Brand_description_placeholder": {
+                        "const": "Thundo",
+                        "readOnly": true
                     }
                 },
                 "required": [

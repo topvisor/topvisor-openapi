@@ -16,6 +16,8 @@ export interface components {
             readonly Name?: "Thundo";
             /** @constant */
             readonly Organization?: "Thundo Ltd.";
+            /** @constant */
+            readonly Brand_description_placeholder?: "Thundo";
         };
     };
     responses: never;
