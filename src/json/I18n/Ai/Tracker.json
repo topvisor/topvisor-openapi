@@ -102,6 +102,10 @@
                         "const": "There are no checks in the picked period.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>",
                         "readOnly": true
                     },
+                    "No_data_by_filter": {
+                        "const": "No data found with current filter.<br>Try a different filter selection.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>",
+                        "readOnly": true
+                    },
                     "Add_neural_networks": {
                         "const": "Pick AIs to launch analysis.<br>✨ <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add AIs →</a>",
                         "readOnly": true
@@ -247,6 +251,7 @@
                     "Add_prompts_2",
                     "Select_neural_networks",
                     "No_data_in_day",
+                    "No_data_by_filter",
                     "Add_neural_networks",
                     "Add_prompts_to_go",
                     "Settings",
