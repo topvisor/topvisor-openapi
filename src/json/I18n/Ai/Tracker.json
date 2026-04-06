@@ -42,6 +42,10 @@
                         "const": "Brand description",
                         "readOnly": true
                     },
+                    "Brand_description_placeholder": {
+                        "const": "",
+                        "readOnly": true
+                    },
                     "Context_setting": {
                         "const": "Context setting",
                         "readOnly": true
@@ -232,6 +236,7 @@
                     "Brand_information",
                     "Brand_name",
                     "Brand_description",
+                    "Brand_description_placeholder",
                     "Context_setting",
                     "System_prompt",
                     "System_prompt_placeholder",

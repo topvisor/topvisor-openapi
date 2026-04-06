@@ -25,6 +25,8 @@ export interface components {
             /** @constant */
             readonly Brand_description: "Brand description";
             /** @constant */
+            readonly Brand_description_placeholder: "";
+            /** @constant */
             readonly Context_setting: "Context setting";
             /** @constant */
             readonly System_prompt: "System prompt";
