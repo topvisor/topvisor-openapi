@@ -35,11 +35,8 @@
                     "brand_name": {
                         "type": "string"
                     },
-                    "aliases": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                    "brand_description": {
+                        "type": "string"
                     },
                     "models_keys": {
                         "type": "array",
@@ -82,7 +79,7 @@
                 "required": [
                     "project_id",
                     "brand_name",
-                    "aliases",
+                    "brand_description",
                     "models_keys",
                     "context_lang",
                     "context_location",

@@ -18,7 +18,7 @@ export interface components {
         "AiTracker_2.Methods.Settings.Get.Exec": {
             project_id: number;
             brand_name: string;
-            aliases: string[];
+            brand_description: string;
             models_keys: import('../../../Robot_2/Types/Drivers/AiTracker/ModelKey.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelKey'][];
             context_lang: string;
             context_location: string;

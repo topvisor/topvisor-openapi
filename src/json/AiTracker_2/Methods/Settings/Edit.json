@@ -15,14 +15,10 @@
                         "nullable": true,
                         "type": "string"
                     },
-                    "aliases": {
-                        "title": "Дополнительные имена для поиска в ответе ИИ",
+                    "brand_description": {
+                        "title": "Описание бренда",
                         "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
-                            }
-                        ]
+                        "type": "string"
                     },
                     "models_keys": {
                         "title": "Список моделей ИИ",

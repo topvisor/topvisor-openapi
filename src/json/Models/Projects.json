@@ -281,7 +281,7 @@
                     "ai_tracker_brand_name": {
                         "nullable": true
                     },
-                    "ai_tracker_aliases": {
+                    "ai_tracker_brand_description": {
                         "type": "array",
                         "nullable": true
                     },

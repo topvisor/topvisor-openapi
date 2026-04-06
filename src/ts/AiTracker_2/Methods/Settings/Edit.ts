@@ -20,8 +20,8 @@ export interface components {
              *     Участвует в поиске в ответе ИИ
              */
             brand_name?: string | null;
-            /** Дополнительные имена для поиска в ответе ИИ */
-            aliases?: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
+            /** Описание бренда */
+            brand_description?: string | null;
             /** Список моделей ИИ */
             models_keys?: import('../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelsKeys'] | null;
             /** Настройки контекста: Язык */

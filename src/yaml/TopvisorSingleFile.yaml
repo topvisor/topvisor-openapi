@@ -23175,11 +23175,10 @@ components:
             Участвует в поиске в ответе ИИ
           nullable: true
           type: string
-        aliases:
-          title: Дополнительные имена для поиска в ответе ИИ
+        brand_description:
+          title: Описание бренда
           nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+          type: string
         models_keys:
           title: Список моделей ИИ
           nullable: true
@@ -23230,10 +23229,8 @@ components:
           type: integer
         brand_name:
           type: string
-        aliases:
-          type: array
-          items:
-            type: string
+        brand_description:
+          type: string
         models_keys:
           type: array
           items:
@@ -23262,7 +23259,7 @@ components:
       required:
         - project_id
         - brand_name
-        - aliases
+        - brand_description
         - models_keys
         - context_lang
         - context_location
@@ -28668,7 +28665,7 @@ components:
           nullable: true
         ai_tracker_brand_name:
           nullable: true
-        ai_tracker_aliases:
+        ai_tracker_brand_description:
           type: array
           nullable: true
         ai_tracker_models_keys:
