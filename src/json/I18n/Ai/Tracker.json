@@ -75,7 +75,7 @@
                         "readOnly": true
                     },
                     "Make_prompts": {
-                        "const": "Make prompts",
+                        "const": "Add prompts",
                         "readOnly": true
                     },
                     "Selecting_neural_networks": {
