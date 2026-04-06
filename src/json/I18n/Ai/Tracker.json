@@ -22,10 +22,6 @@
                         "const": "Checking for mentions in AI",
                         "readOnly": true
                     },
-                    "Add_brand_info": {
-                        "const": "Add your brand to launch check.<br>💼 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add brand →</a>",
-                        "readOnly": true
-                    },
                     "Model_Yandex_Alice": {
                         "const": "Yandex Alice",
                         "readOnly": true
@@ -231,7 +227,6 @@
                     "English",
                     "Russian",
                     "Ai_tracker_bank_info",
-                    "Add_brand_info",
                     "Model_Yandex_Alice",
                     "First_you_need_to_enter_the_brand_name",
                     "Brand_information",

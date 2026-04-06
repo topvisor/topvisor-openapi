@@ -15,8 +15,6 @@ export interface components {
             /** @constant */
             readonly Ai_tracker_bank_info: "Checking for mentions in AI";
             /** @constant */
-            readonly Add_brand_info: "Add your brand to launch check.<br>💼 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add brand →</a>";
-            /** @constant */
             readonly Model_Yandex_Alice: "Yandex Alice";
             /** @constant */
             readonly First_you_need_to_enter_the_brand_name: "First you need to enter the brand name";
