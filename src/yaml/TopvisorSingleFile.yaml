@@ -22607,10 +22607,19 @@ components:
       enum:
         - deepseek
         - grok
+        - chatgpt
+        - claude
+        - gemini
       x-enum-varnames:
         - Deepseek
         - Grok
+        - ChatGPT
+        - Claude
+        - Gemini
       x-enum-descriptions:
+        - null
+        - null
+        - null
         - null
         - null
       title: Ключ определения модели для ИИ трекера

@@ -11,13 +11,22 @@
                 "type": "string",
                 "enum": [
                     "deepseek",
-                    "grok"
+                    "grok",
+                    "chatgpt",
+                    "claude",
+                    "gemini"
                 ],
                 "x-enum-varnames": [
                     "Deepseek",
-                    "Grok"
+                    "Grok",
+                    "ChatGPT",
+                    "Claude",
+                    "Gemini"
                 ],
                 "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
                     null,
                     null
                 ],

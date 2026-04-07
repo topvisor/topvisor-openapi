@@ -11,7 +11,7 @@ export interface components {
          * Ключ определения модели для ИИ трекера
          * @enum {string}
          */
-        "Robot_2.Types.Drivers.AiTracker.ModelKey": "deepseek" | "grok";
+        "Robot_2.Types.Drivers.AiTracker.ModelKey": "deepseek" | "grok" | "chatgpt" | "claude" | "gemini";
     };
     responses: never;
     parameters: never;
