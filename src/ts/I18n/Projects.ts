@@ -439,7 +439,7 @@ export interface components {
             /** @constant */
             readonly Setup_sitemap: "Set up Sitemap Generator";
             /** @constant */
-            readonly Setup_AI_analysis: "Set up AI analysis";
+            readonly Setup_AI_tracker: "Set up AI-tracker";
             /** @constant */
             readonly Add_all_recommended: "Add all recommended";
             /** @constant */

@@ -174,6 +174,10 @@
                         "const": "Number of prompts",
                         "readOnly": true
                     },
+                    "Number_of_neural_networks": {
+                        "const": "Number of neural networks",
+                        "readOnly": true
+                    },
                     "Short": {
                         "const": "Short",
                         "readOnly": true
@@ -221,6 +225,14 @@
                     "Already_started": {
                         "const": "AI-tracker already started",
                         "readOnly": true
+                    },
+                    "Please_add_prompts": {
+                        "const": "Please, add prompts for checking",
+                        "readOnly": true
+                    },
+                    "Please_select_neural_networks": {
+                        "const": "Please, select neural networks",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -265,6 +277,7 @@
                     "Brand_description_for_collect_placeholder",
                     "Prompt_length",
                     "Number_of_prompts",
+                    "Number_of_neural_networks",
                     "Short",
                     "Medium",
                     "Long",
@@ -276,7 +289,9 @@
                     "Analysis_was_not_performed",
                     "Mentions",
                     "Check_need_config",
-                    "Already_started"
+                    "Already_started",
+                    "Please_add_prompts",
+                    "Please_select_neural_networks"
                 ]
             }
         }

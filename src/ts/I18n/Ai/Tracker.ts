@@ -91,6 +91,8 @@ export interface components {
             /** @constant */
             readonly Number_of_prompts: "Number of prompts";
             /** @constant */
+            readonly Number_of_neural_networks: "Number of neural networks";
+            /** @constant */
             readonly Short: "Short";
             /** @constant */
             readonly Medium: "Medium";
@@ -114,6 +116,10 @@ export interface components {
             readonly Check_need_config: "To launch the AI-tracker, you need to configure the list of tested prompts and select neural networks.";
             /** @constant */
             readonly Already_started: "AI-tracker already started";
+            /** @constant */
+            readonly Please_add_prompts: "Please, add prompts for checking";
+            /** @constant */
+            readonly Please_select_neural_networks: "Please, select neural networks";
         };
     };
     responses: never;
