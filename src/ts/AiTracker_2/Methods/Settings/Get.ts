@@ -25,7 +25,7 @@ export interface components {
             context_custom: string;
             models_available?: {
                 name: string;
-                key: string;
+                key: import('../../../Robot_2/Types/Drivers/AiTracker/ModelKey.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelKey'];
                 enabled: number;
             }[];
         } | null;

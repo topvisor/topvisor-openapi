@@ -62,7 +62,7 @@
                                     "type": "string"
                                 },
                                 "key": {
-                                    "type": "string"
+                                    "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelKey.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey"
                                 },
                                 "enabled": {
                                     "type": "integer"
