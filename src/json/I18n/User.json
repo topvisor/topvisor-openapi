@@ -985,6 +985,10 @@
                     "Plans_and_limits": {
                         "const": "Plans & Limits",
                         "readOnly": true
+                    },
+                    "Two_factor_authorization": {
+                        "const": "Two factor authorization",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1227,7 +1231,8 @@
                     "Promo_button_text",
                     "Promo_button_link",
                     "View_the_author_page",
-                    "Plans_and_limits"
+                    "Plans_and_limits",
+                    "Two_factor_authorization"
                 ]
             }
         }

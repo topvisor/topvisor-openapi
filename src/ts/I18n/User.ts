@@ -496,6 +496,8 @@ export interface components {
             readonly View_the_author_page: "View the author's page";
             /** @constant */
             readonly Plans_and_limits: "Plans & Limits";
+            /** @constant */
+            readonly Two_factor_authorization: "Two factor authorization";
         };
     };
     responses: never;
