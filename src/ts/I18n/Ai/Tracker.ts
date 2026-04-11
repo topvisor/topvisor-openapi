@@ -25,7 +25,9 @@ export interface components {
             /** @constant */
             readonly Brand_description: "Brand description";
             /** @constant */
-            readonly Brand_description_placeholder: "";
+            readonly Brand_description_placeholder: "SEO analytics platform";
+            /** @constant */
+            readonly Brand_description_hint: "";
             /** @constant */
             readonly Context_setting: "Context setting";
             /** @constant */

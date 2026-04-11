@@ -43,6 +43,10 @@
                         "readOnly": true
                     },
                     "Brand_description_placeholder": {
+                        "const": "SEO analytics platform",
+                        "readOnly": true
+                    },
+                    "Brand_description_hint": {
                         "const": "",
                         "readOnly": true
                     },
@@ -245,6 +249,7 @@
                     "Brand_name",
                     "Brand_description",
                     "Brand_description_placeholder",
+                    "Brand_description_hint",
                     "Context_setting",
                     "System_prompt",
                     "System_prompt_placeholder",
