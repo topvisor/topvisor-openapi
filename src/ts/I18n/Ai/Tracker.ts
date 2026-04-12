@@ -43,15 +43,11 @@ export interface components {
             /** @constant */
             readonly Cost_of_analysis: "Cost of analysis";
             /** @constant */
-            readonly Config_prompts: "Add / Edit prompts";
+            readonly Settings_prompts: "Add / Edit prompts";
             /** @constant */
-            readonly Selecting_neural_networks: "Selecting neural networks";
+            readonly Prompts_placeholder: "Input new prompt";
             /** @constant */
-            readonly Add_prompts: "Add prompts";
-            /** @constant */
-            readonly Add_prompts_2: "Add prompts";
-            /** @constant */
-            readonly Select_neural_networks: "Select neural networks";
+            readonly Settings_models: "Select AI-Models";
             /** @constant */
             readonly No_data_in_day: "There are no checks in the picked period.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>";
             /** @constant */

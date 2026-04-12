@@ -78,24 +78,16 @@
                         "const": "Cost of analysis",
                         "readOnly": true
                     },
-                    "Config_prompts": {
+                    "Settings_prompts": {
                         "const": "Add / Edit prompts",
                         "readOnly": true
                     },
-                    "Selecting_neural_networks": {
-                        "const": "Selecting neural networks",
+                    "Prompts_placeholder": {
+                        "const": "Input new prompt",
                         "readOnly": true
                     },
-                    "Add_prompts": {
-                        "const": "Add prompts",
-                        "readOnly": true
-                    },
-                    "Add_prompts_2": {
-                        "const": "Add prompts",
-                        "readOnly": true
-                    },
-                    "Select_neural_networks": {
-                        "const": "Select neural networks",
+                    "Settings_models": {
+                        "const": "Select AI-Models",
                         "readOnly": true
                     },
                     "No_data_in_day": {
@@ -257,11 +249,9 @@
                     "Launch_AI_analysis",
                     "Launching_AI_analysis",
                     "Cost_of_analysis",
-                    "Config_prompts",
-                    "Selecting_neural_networks",
-                    "Add_prompts",
-                    "Add_prompts_2",
-                    "Select_neural_networks",
+                    "Settings_prompts",
+                    "Prompts_placeholder",
+                    "Settings_models",
                     "No_data_in_day",
                     "No_data_by_filter",
                     "Add_neural_networks",
