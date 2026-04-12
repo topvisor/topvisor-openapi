@@ -43,7 +43,7 @@ export interface components {
             /** @constant */
             readonly Cost_of_analysis: "Cost of analysis";
             /** @constant */
-            readonly Make_prompts: "Add prompts";
+            readonly Config_prompts: "Add / Edit prompts";
             /** @constant */
             readonly Selecting_neural_networks: "Selecting neural networks";
             /** @constant */

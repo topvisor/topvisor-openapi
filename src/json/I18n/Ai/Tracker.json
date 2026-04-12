@@ -78,8 +78,8 @@
                         "const": "Cost of analysis",
                         "readOnly": true
                     },
-                    "Make_prompts": {
-                        "const": "Add prompts",
+                    "Config_prompts": {
+                        "const": "Add / Edit prompts",
                         "readOnly": true
                     },
                     "Selecting_neural_networks": {
@@ -257,7 +257,7 @@
                     "Launch_AI_analysis",
                     "Launching_AI_analysis",
                     "Cost_of_analysis",
-                    "Make_prompts",
+                    "Config_prompts",
                     "Selecting_neural_networks",
                     "Add_prompts",
                     "Add_prompts_2",
