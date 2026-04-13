@@ -22573,23 +22573,17 @@ components:
       type: string
       enum:
         - response
-        - snapshot_item
-        - brand_id
         - mentioned
         - position
         - position_max
         - sentiment
       x-enum-varnames:
         - Response
-        - SnapshotItem
-        - BrandId
         - Mentioned
         - Position
         - PositionMax
         - Sentiment
       x-enum-descriptions:
-        - null
-        - null
         - null
         - null
         - null
@@ -23126,20 +23120,6 @@ components:
         group_folder_ord:
           nullable: true
         response:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model_key
-              - project_id
-        snapshot_item:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model_key
-              - project_id
-        brand_id:
           nullable: true
           example:
             need set qualifiers:

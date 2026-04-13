@@ -65,26 +65,6 @@
                             ]
                         }
                     },
-                    "snapshot_item": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "date",
-                                "model_key",
-                                "project_id"
-                            ]
-                        }
-                    },
-                    "brand_id": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "date",
-                                "model_key",
-                                "project_id"
-                            ]
-                        }
-                    },
                     "mentioned": {
                         "nullable": true,
                         "example": {
