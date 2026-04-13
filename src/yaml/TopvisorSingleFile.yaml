@@ -47324,20 +47324,20 @@ components:
     Projects_2.Objects.Task.Relevant.Qualifier:
       type: object
       properties:
+        region_lang:
+          nullable: true
+          type: string
         searcher_key:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         region_key:
           type: integer
-        region_lang:
-          type: string
         region_device:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
       required:
         - searcher_key
         - region_key
-        - region_lang
         - region_device
       title: Объект определитель для проверки релевантности
     Projects_2.Objects.Task.Relevant.Qualifiers:

@@ -10,6 +10,10 @@
             "Projects_2.Objects.Task.Relevant.Qualifier": {
                 "type": "object",
                 "properties": {
+                    "region_lang": {
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "searcher_key": {
                         "allOf": [
                             {
@@ -19,9 +23,6 @@
                     },
                     "region_key": {
                         "type": "integer"
-                    },
-                    "region_lang": {
-                        "type": "string"
                     },
                     "region_device": {
                         "allOf": [
@@ -34,7 +35,6 @@
                 "required": [
                     "searcher_key",
                     "region_key",
-                    "region_lang",
                     "region_device"
                 ],
                 "title": "Объект определитель для проверки релевантности"
