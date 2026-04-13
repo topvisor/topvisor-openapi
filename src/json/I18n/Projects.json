@@ -997,6 +997,14 @@
                     "Update_count": {
                         "const": "Total checks",
                         "readOnly": true
+                    },
+                    "Update_count_formula": {
+                        "const": "Keywords * Locations (considering parse depth)",
+                        "readOnly": true
+                    },
+                    "Mentions": {
+                        "const": "AI Mentions",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1244,7 +1252,9 @@
                     "Sort_by_lphabetically",
                     "Project_url",
                     "Enter_location",
-                    "Update_count"
+                    "Update_count",
+                    "Update_count_formula",
+                    "Mentions"
                 ]
             }
         }
