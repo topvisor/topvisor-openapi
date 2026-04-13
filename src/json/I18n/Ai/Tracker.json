@@ -42,6 +42,14 @@
                         "const": "Brand description",
                         "readOnly": true
                     },
+                    "Make_prompts": {
+                        "const": "Add prompts",
+                        "readOnly": true
+                    },
+                    "Selecting_neural_networks": {
+                        "const": "Select AIs",
+                        "readOnly": true
+                    },
                     "Brand_description_placeholder": {
                         "const": "SEO analytics platform",
                         "readOnly": true
@@ -240,6 +248,8 @@
                     "Brand_information",
                     "Brand_name",
                     "Brand_description",
+                    "Make_prompts",
+                    "Selecting_neural_networks",
                     "Brand_description_placeholder",
                     "Brand_description_hint",
                     "Context_setting",

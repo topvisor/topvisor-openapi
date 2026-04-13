@@ -25,6 +25,10 @@ export interface components {
             /** @constant */
             readonly Brand_description: "Brand description";
             /** @constant */
+            readonly Make_prompts: "Add prompts";
+            /** @constant */
+            readonly Selecting_neural_networks: "Select AIs";
+            /** @constant */
             readonly Brand_description_placeholder: "SEO analytics platform";
             /** @constant */
             readonly Brand_description_hint: "Add brand description or activities to exclude other brands with similar names. This will help you fine-tune the search context for brand mentions.";
