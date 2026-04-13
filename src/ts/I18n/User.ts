@@ -17,7 +17,7 @@ export interface components {
             /** @constant */
             readonly password_updated: "updated";
             /** @constant */
-            readonly AITracker_alpha: "AI-tracker: Alpha version";
+            readonly AITracker_beta: "AI-tracker: Beta version";
             /** @constant */
             readonly Theme: "Тема оформления";
             /** @constant */
