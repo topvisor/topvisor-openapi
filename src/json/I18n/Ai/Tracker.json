@@ -47,7 +47,7 @@
                         "readOnly": true
                     },
                     "Brand_description_hint": {
-                        "const": "",
+                        "const": "Add brand description or activities to exclude other brands with similar names. This will help you fine-tune the search context for brand mentions.",
                         "readOnly": true
                     },
                     "Context_setting": {

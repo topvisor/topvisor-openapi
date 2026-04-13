@@ -27,7 +27,7 @@ export interface components {
             /** @constant */
             readonly Brand_description_placeholder: "SEO analytics platform";
             /** @constant */
-            readonly Brand_description_hint: "";
+            readonly Brand_description_hint: "Add brand description or activities to exclude other brands with similar names. This will help you fine-tune the search context for brand mentions.";
             /** @constant */
             readonly Context_setting: "Context setting";
             /** @constant */
