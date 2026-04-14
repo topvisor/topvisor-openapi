@@ -86,16 +86,8 @@
                         "const": "Cost of analysis",
                         "readOnly": true
                     },
-                    "Settings_prompts": {
-                        "const": "Add prompts",
-                        "readOnly": true
-                    },
                     "Prompts_placeholder": {
                         "const": "Input new prompt",
-                        "readOnly": true
-                    },
-                    "Settings_models": {
-                        "const": "Select AI-Models",
                         "readOnly": true
                     },
                     "No_data_in_day": {
@@ -259,9 +251,7 @@
                     "Launch_AI_analysis",
                     "Launching_AI_analysis",
                     "Cost_of_analysis",
-                    "Settings_prompts",
                     "Prompts_placeholder",
-                    "Settings_models",
                     "No_data_in_day",
                     "No_data_by_filter",
                     "Add_neural_networks",
