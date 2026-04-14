@@ -9,29 +9,29 @@ export interface components {
     schemas: {
         "I18n.Pages": {
             /** @constant */
-            readonly Checking_positions: "Rank Checking and Rank Tracking";
+            readonly Checking_positions: "Rank Tracker";
             /** @constant */
             readonly Collecting_top_sites: "SERP Top Checker";
             /** @constant */
-            readonly Technical_analysis: "SEO Website Audit";
+            readonly Technical_analysis: "Website SEO Audit";
             /** @constant */
-            readonly Tracking_changes: "Changer Tracker and Meta Tag Exractor";
+            readonly Tracking_changes: "Website Watcher (tracking changes)";
             /** @constant */
-            readonly Semantic_core_research: "Semantic Core Research";
+            readonly Semantic_core_research: "Semantic core tools";
             /** @constant */
-            readonly Volume_checker: "Volume Checker";
+            readonly Volume_checker: "Search Volume Checker";
             /** @constant */
-            readonly Index_checker: "Index Checker";
+            readonly Index_checker: "Index checker";
             /** @constant */
             readonly Sitemap_generator: "Sitemap generator";
             /** @constant */
-            readonly Bid_manager: "Bid Manager";
+            readonly Bid_manager: "PPC Bid Manager";
             /** @constant */
             readonly Updates_scanner: "Updates Scanner";
             /** @constant */
-            readonly Shortener_url: "URL Shortener";
+            readonly Shortener_url: "URL shortener";
             /** @constant */
-            readonly Clustering_top: "Clustering by SERP Top";
+            readonly Clustering_top: "Keyword Clustering";
         };
     };
     responses: never;

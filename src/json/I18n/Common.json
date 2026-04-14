@@ -701,7 +701,7 @@
                         "readOnly": true
                     },
                     "Broker": {
-                        "const": "Bid manager",
+                        "const": "PPC Bid Manager",
                         "readOnly": true
                     },
                     "Maintenance": {
@@ -1733,7 +1733,7 @@
                         "readOnly": true
                     },
                     "Apometr": {
-                        "const": "Updates",
+                        "const": "Updates Scanner",
                         "readOnly": true
                     },
                     "Apometr_notice": {

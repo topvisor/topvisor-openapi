@@ -359,7 +359,7 @@ export interface components {
             /** @constant */
             readonly CY: "CY";
             /** @constant */
-            readonly Broker: "Bid manager";
+            readonly Broker: "PPC Bid Manager";
             /** @constant */
             readonly Maintenance: "Page is under maintenance";
             /** @constant */
@@ -875,7 +875,7 @@ export interface components {
             /** @constant */
             readonly Project_dynamics: "Keyword dynamics";
             /** @constant */
-            readonly Apometr: "Updates";
+            readonly Apometr: "Updates Scanner";
             /** @constant */
             readonly Apometr_notice: "Get update alerts";
             /** @constant */

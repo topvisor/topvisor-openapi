@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "Checking_positions": {
-                        "const": "Rank Checking and Rank Tracking",
+                        "const": "Rank Tracker",
                         "readOnly": true
                     },
                     "Collecting_top_sites": {
@@ -19,23 +19,23 @@
                         "readOnly": true
                     },
                     "Technical_analysis": {
-                        "const": "SEO Website Audit",
+                        "const": "Website SEO Audit",
                         "readOnly": true
                     },
                     "Tracking_changes": {
-                        "const": "Changer Tracker and Meta Tag Exractor",
+                        "const": "Website Watcher (tracking changes)",
                         "readOnly": true
                     },
                     "Semantic_core_research": {
-                        "const": "Semantic Core Research",
+                        "const": "Semantic core tools",
                         "readOnly": true
                     },
                     "Volume_checker": {
-                        "const": "Volume Checker",
+                        "const": "Search Volume Checker",
                         "readOnly": true
                     },
                     "Index_checker": {
-                        "const": "Index Checker",
+                        "const": "Index checker",
                         "readOnly": true
                     },
                     "Sitemap_generator": {
@@ -43,7 +43,7 @@
                         "readOnly": true
                     },
                     "Bid_manager": {
-                        "const": "Bid Manager",
+                        "const": "PPC Bid Manager",
                         "readOnly": true
                     },
                     "Updates_scanner": {
@@ -51,11 +51,11 @@
                         "readOnly": true
                     },
                     "Shortener_url": {
-                        "const": "URL Shortener",
+                        "const": "URL shortener",
                         "readOnly": true
                     },
                     "Clustering_top": {
-                        "const": "Clustering by SERP Top",
+                        "const": "Keyword Clustering",
                         "readOnly": true
                     }
                 },
