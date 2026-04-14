@@ -11,6 +11,7 @@
                 "type": "string",
                 "enum": [
                     "response",
+                    "brand_names",
                     "mentioned",
                     "position",
                     "position_max",
@@ -18,12 +19,14 @@
                 ],
                 "x-enum-varnames": [
                     "Response",
+                    "BrandNames",
                     "Mentioned",
                     "Position",
                     "PositionMax",
                     "Sentiment"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,

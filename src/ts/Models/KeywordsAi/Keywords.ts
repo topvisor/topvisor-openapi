@@ -43,6 +43,16 @@ export interface components {
              *       ]
              *     }
              */
+            brand_names?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key",
+             *         "project_id"
+             *       ]
+             *     }
+             */
             mentioned?: any;
             /**
              * @example {
