@@ -47,7 +47,7 @@ export interface components {
             /** @constant */
             readonly Cost_of_analysis: "Cost of analysis";
             /** @constant */
-            readonly Settings_prompts: "Add / Edit prompts";
+            readonly Settings_prompts: "Add prompts";
             /** @constant */
             readonly Prompts_placeholder: "Input new prompt";
             /** @constant */

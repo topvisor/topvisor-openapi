@@ -87,7 +87,7 @@
                         "readOnly": true
                     },
                     "Settings_prompts": {
-                        "const": "Add / Edit prompts",
+                        "const": "Add prompts",
                         "readOnly": true
                     },
                     "Prompts_placeholder": {
