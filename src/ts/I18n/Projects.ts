@@ -497,6 +497,10 @@ export interface components {
             /** @constant */
             readonly Sort_by_lphabetically: "Alphabetically";
             /** @constant */
+            readonly Sort_by_rank: "Sort by rank";
+            /** @constant */
+            readonly Sort_by_index_status: "Sort by index status";
+            /** @constant */
             readonly Project_url: "Project URL";
             /** @constant */
             readonly Enter_location: "Enter location";

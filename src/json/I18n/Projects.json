@@ -986,6 +986,14 @@
                         "const": "Alphabetically",
                         "readOnly": true
                     },
+                    "Sort_by_rank": {
+                        "const": "Sort by rank",
+                        "readOnly": true
+                    },
+                    "Sort_by_index_status": {
+                        "const": "Sort by index status",
+                        "readOnly": true
+                    },
                     "Project_url": {
                         "const": "Project URL",
                         "readOnly": true
@@ -1250,6 +1258,8 @@
                     "Sort_by_search_engine",
                     "Sort_by_yande_region_code",
                     "Sort_by_lphabetically",
+                    "Sort_by_rank",
+                    "Sort_by_index_status",
                     "Project_url",
                     "Enter_location",
                     "Update_count",
