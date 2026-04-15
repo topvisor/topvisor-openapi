@@ -1,0 +1,89 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Master",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Master": {
+                "type": "object",
+                "properties": {
+                    "Without_master": {
+                        "const": "Do not run setup wizard",
+                        "readOnly": true
+                    },
+                    "Type_name_positions": {
+                        "const": "Rank Tracker",
+                        "readOnly": true
+                    },
+                    "Type_name_ai_tracker": {
+                        "const": "AI Tracker",
+                        "readOnly": true
+                    },
+                    "Type_name_audit": {
+                        "const": "Audit",
+                        "readOnly": true
+                    },
+                    "Type_name_watcher": {
+                        "const": "Website watcher",
+                        "readOnly": true
+                    },
+                    "Type_name_indexing": {
+                        "const": "Index checker",
+                        "readOnly": true
+                    },
+                    "Type_name_sitemap": {
+                        "const": "Sitemap generator",
+                        "readOnly": true
+                    },
+                    "Type_name_create": {
+                        "const": "Do not run setup wizard",
+                        "readOnly": true
+                    },
+                    "Type_description_positions": {
+                        "const": "Track your keyword ranking dynamics",
+                        "readOnly": true
+                    },
+                    "Type_description_audit": {
+                        "const": "Diagnose your website for errors",
+                        "readOnly": true
+                    },
+                    "Type_description_watcher": {
+                        "const": "Track content changes on your website",
+                        "readOnly": true
+                    },
+                    "Type_description_indexing": {
+                        "const": "Monitor pages dropping out of search results",
+                        "readOnly": true
+                    },
+                    "Type_description_sitemap": {
+                        "const": "See your whole website at a glance",
+                        "readOnly": true
+                    },
+                    "Type_description_ai_tracker": {
+                        "const": "Check how AI see you",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Without_master",
+                    "Type_name_positions",
+                    "Type_name_ai_tracker",
+                    "Type_name_audit",
+                    "Type_name_watcher",
+                    "Type_name_indexing",
+                    "Type_name_sitemap",
+                    "Type_name_create",
+                    "Type_description_positions",
+                    "Type_description_audit",
+                    "Type_description_watcher",
+                    "Type_description_indexing",
+                    "Type_description_sitemap",
+                    "Type_description_ai_tracker"
+                ]
+            }
+        }
+    }
+}

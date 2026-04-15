@@ -26,6 +26,7 @@ export interface components {
         Informer: import('./I18n/Informer.ts').components['schemas']['I18n.Informer'];
         Keywords: import('./I18n/Keywords.ts').components['schemas']['I18n.Keywords'];
         Landings: import('./I18n/Landings.ts').components['schemas']['I18n.Landings'];
+        Master: import('./I18n/Master.ts').components['schemas']['I18n.Master'];
         Projects: import('./I18n/Projects.ts').components['schemas']['I18n.Projects'];
         Robot: import('./I18n/Robot.ts').components['schemas']['I18n.Robot'];
         Sitemap: import('./I18n/Sitemap.ts').components['schemas']['I18n.Sitemap'];

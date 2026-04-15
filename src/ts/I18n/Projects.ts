@@ -421,25 +421,7 @@ export interface components {
             /** @constant */
             readonly Locations: "Locations";
             /** @constant */
-            readonly Skip_wizard: "Do not run setup wizard";
-            /** @constant */
-            readonly Setup_rank_tracker: "Set up Rank Tracker";
-            /** @constant */
-            readonly Setup_audit: "Set up Website Audit";
-            /** @constant */
-            readonly Setup_audit_urls: "Pages for audit";
-            /** @constant */
-            readonly Setup_watcher: "Set up Watcher";
-            /** @constant */
-            readonly Setup_watcher_urls: "Pages for watcher";
-            /** @constant */
-            readonly Setup_indexing: "Set up Index Checker";
-            /** @constant */
-            readonly Setup_indexing_urls: "Pages for indexing";
-            /** @constant */
-            readonly Setup_sitemap: "Set up Sitemap Generator";
-            /** @constant */
-            readonly Setup_AI_tracker: "Set up AI-tracker";
+            readonly Setup_urls: "Pages for check";
             /** @constant */
             readonly Add_all_recommended: "Add all recommended";
             /** @constant */
@@ -510,6 +492,8 @@ export interface components {
             readonly Update_count_formula: "Keywords * Locations (considering parse depth)";
             /** @constant */
             readonly Mentions: "AI Mentions";
+            /** @constant */
+            readonly Initial_project_setup: "Initial project setup";
         };
     };
     responses: never;

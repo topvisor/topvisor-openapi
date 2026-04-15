@@ -834,44 +834,8 @@
                         "const": "Locations",
                         "readOnly": true
                     },
-                    "Skip_wizard": {
-                        "const": "Do not run setup wizard",
-                        "readOnly": true
-                    },
-                    "Setup_rank_tracker": {
-                        "const": "Set up Rank Tracker",
-                        "readOnly": true
-                    },
-                    "Setup_audit": {
-                        "const": "Set up Website Audit",
-                        "readOnly": true
-                    },
-                    "Setup_audit_urls": {
-                        "const": "Pages for audit",
-                        "readOnly": true
-                    },
-                    "Setup_watcher": {
-                        "const": "Set up Watcher",
-                        "readOnly": true
-                    },
-                    "Setup_watcher_urls": {
-                        "const": "Pages for watcher",
-                        "readOnly": true
-                    },
-                    "Setup_indexing": {
-                        "const": "Set up Index Checker",
-                        "readOnly": true
-                    },
-                    "Setup_indexing_urls": {
-                        "const": "Pages for indexing",
-                        "readOnly": true
-                    },
-                    "Setup_sitemap": {
-                        "const": "Set up Sitemap Generator",
-                        "readOnly": true
-                    },
-                    "Setup_AI_tracker": {
-                        "const": "Set up AI-tracker",
+                    "Setup_urls": {
+                        "const": "Pages for check",
                         "readOnly": true
                     },
                     "Add_all_recommended": {
@@ -1012,6 +976,10 @@
                     },
                     "Mentions": {
                         "const": "AI Mentions",
+                        "readOnly": true
+                    },
+                    "Initial_project_setup": {
+                        "const": "Initial project setup",
                         "readOnly": true
                     }
                 },
@@ -1221,16 +1189,7 @@
                     "You_can_manage_locations_in_settings",
                     "Enter_location_or_lr",
                     "Locations",
-                    "Skip_wizard",
-                    "Setup_rank_tracker",
-                    "Setup_audit",
-                    "Setup_audit_urls",
-                    "Setup_watcher",
-                    "Setup_watcher_urls",
-                    "Setup_indexing",
-                    "Setup_indexing_urls",
-                    "Setup_sitemap",
-                    "Setup_AI_tracker",
+                    "Setup_urls",
                     "Add_all_recommended",
                     "Delete_keywords_from_orginal_project",
                     "Project_name",
@@ -1264,7 +1223,8 @@
                     "Enter_location",
                     "Update_count",
                     "Update_count_formula",
-                    "Mentions"
+                    "Mentions",
+                    "Initial_project_setup"
                 ]
             }
         }

@@ -64,6 +64,9 @@
             "Landings": {
                 "$ref": "I18n/Landings.json#/components/schemas/I18n.Landings"
             },
+            "Master": {
+                "$ref": "I18n/Master.json#/components/schemas/I18n.Master"
+            },
             "Projects": {
                 "$ref": "I18n/Projects.json#/components/schemas/I18n.Projects"
             },
