@@ -70,6 +70,12 @@
                         "default": 10000,
                         "type": "number"
                     },
+                    "QUERY_COST_AI_SNIPPET": {
+                        "title": "Стоимость сбора сниппета ИИ.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
                     "QUERY_COST_DEPTH_K": {
                         "title": "Коэффициент за проверку глубины.",
                         "readOnly": true,
@@ -290,6 +296,7 @@
                     "QUERY_COST_COMPETITORS",
                     "QUERY_COST_SNIPPET",
                     "QUERY_COST_SNAPSHOT",
+                    "QUERY_COST_AI_SNIPPET",
                     "QUERY_COST_DEPTH_K",
                     "EXPORT_ONE_RESULT_COST",
                     "QUERY_COST_FREQUENCY",

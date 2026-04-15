@@ -9,8 +9,14 @@
         "schemas": {
             "Tpl.Core.SecondMenu.SecondMenu": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "items": {
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "items"
+                ]
             }
         }
     }

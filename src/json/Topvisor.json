@@ -19206,6 +19206,67 @@
                 }
             }
         },
+        "/get/content_2/sitemap/news/": {
+            "post": {
+                "operationId": "GetContent2SitemapNews",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Получение xml карты сайта для новостей",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/Sitemap/News/Get.json#/components/schemas/Content_2.Methods.Sitemap.News.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Content_2/Methods/Sitemap/News/Get.json#/components/schemas/Content_2.Methods.Sitemap.News.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/content_2/support/menu/": {
             "post": {
                 "operationId": "GetContent2SupportMenu",

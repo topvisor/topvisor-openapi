@@ -6125,6 +6125,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение xml карты сайта для новостей */
+    "/get/content_2/sitemap/news/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2SitemapNews"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение меню справки */
     "/get/content_2/support/menu/": {
         parameters: {
@@ -19993,6 +20010,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Content_2/Methods/Reaction/Popular/Get.ts').components['schemas']['Content_2.Methods.Reaction.Popular.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetContent2SitemapNews: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Sitemap/News/Get.ts').components['schemas']['Content_2.Methods.Sitemap.News.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Sitemap/News/Get.ts').components['schemas']['Content_2.Methods.Sitemap.News.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
             };
         };

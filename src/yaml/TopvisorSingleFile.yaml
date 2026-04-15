@@ -10431,6 +10431,38 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/content_2/sitemap/news/:
+    post:
+      operationId: GetContent2SitemapNews
+      tags:
+        - Content_2
+      summary: Получение xml карты сайта для новостей
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Sitemap.News.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.Sitemap.News.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
   /get/content_2/support/menu/:
     post:
       operationId: GetContent2SupportMenu
@@ -19408,8 +19440,11 @@ components:
       title: Основные данные статьи, такие как h1, html, автор, дата публикации
     Tpl.Core.SecondMenu.SecondMenu:
       type: object
-      properties: {}
-      required: []
+      properties:
+        items:
+          type: array
+      required:
+        - items
     Tpl.Core.LeftMenu.LeftMenu:
       type: object
       properties:
@@ -42318,6 +42353,79 @@ components:
       title: Получить список реакций по популярности
     Content_2.Methods.Reaction.Popular.Get.Exec:
       type: array
+    Content_2.Methods.Sitemap.News.Get:
+      type: object
+      properties:
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required: []
+      title: Получение xml карты сайта для новостей
+    Content_2.Methods.Sitemap.News.Get.Exec:
+      nullable: true
+      type: string
     Content_2.Methods.Support.Menu.Get:
       type: object
       properties: {}

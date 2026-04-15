@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Tpl.Core.SecondMenu.SecondMenu": Record<string, never>;
+        "Tpl.Core.SecondMenu.SecondMenu": {
+            items: unknown[];
+        };
     };
     responses: never;
     parameters: never;
