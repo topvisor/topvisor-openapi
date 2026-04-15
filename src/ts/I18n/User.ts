@@ -498,6 +498,8 @@ export interface components {
             readonly Plans_and_limits: "Plans & Limits";
             /** @constant */
             readonly Two_factor_authorization: "Two factor authorization";
+            /** @constant */
+            readonly New_version_keywords: "New version: Keywords";
         };
     };
     responses: never;
