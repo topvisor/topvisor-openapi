@@ -1492,6 +1492,10 @@
                         "const": "Audit",
                         "readOnly": true
                     },
+                    "Menu_website_audit": {
+                        "const": "Website audit",
+                        "readOnly": true
+                    },
                     "Menu_analytics": {
                         "const": "Overview",
                         "readOnly": true
@@ -2363,6 +2367,7 @@
                     "Menu_competitors",
                     "Menu_phrases",
                     "Menu_audit",
+                    "Menu_website_audit",
                     "Menu_analytics",
                     "Menu_PPC",
                     "Menu_broker",

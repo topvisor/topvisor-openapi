@@ -755,6 +755,8 @@ export interface components {
             /** @constant */
             readonly Menu_audit: "Audit";
             /** @constant */
+            readonly Menu_website_audit: "Website audit";
+            /** @constant */
             readonly Menu_analytics: "Overview";
             /** @constant */
             readonly Menu_PPC: "PPC";

@@ -23,7 +23,7 @@
                         "readOnly": true
                     },
                     "Type_name_audit": {
-                        "const": "Audit",
+                        "const": "Website audit",
                         "readOnly": true
                     },
                     "Type_name_watcher": {

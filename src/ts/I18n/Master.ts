@@ -15,7 +15,7 @@ export interface components {
             /** @constant */
             readonly Type_name_ai_tracker: "AI Tracker";
             /** @constant */
-            readonly Type_name_audit: "Audit";
+            readonly Type_name_audit: "Website audit";
             /** @constant */
             readonly Type_name_watcher: "Website watcher";
             /** @constant */
