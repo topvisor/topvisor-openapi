@@ -25,10 +25,6 @@ export interface components {
             /** @constant */
             readonly Brand_description: "Brand description";
             /** @constant */
-            readonly Make_prompts: "Add prompts";
-            /** @constant */
-            readonly Selecting_neural_networks: "Select AIs";
-            /** @constant */
             readonly Brand_description_placeholder: "SEO analytics platform";
             /** @constant */
             readonly Brand_description_hint: "Add brand description or activities to exclude other brands with similar names. This will help you fine-tune the search context for brand mentions.";
@@ -47,7 +43,11 @@ export interface components {
             /** @constant */
             readonly Cost_of_analysis: "Cost of analysis";
             /** @constant */
+            readonly Settings_prompts: "Add prompts";
+            /** @constant */
             readonly Prompts_placeholder: "Input new prompt";
+            /** @constant */
+            readonly Settings_models: "Select AI-Models";
             /** @constant */
             readonly No_data_in_day: "There are no checks in the picked period.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>";
             /** @constant */
