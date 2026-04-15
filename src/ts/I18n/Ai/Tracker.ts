@@ -73,9 +73,9 @@ export interface components {
             /** @constant */
             readonly Remove_prompt: "Are you sure you want to delete this prompt?";
             /** @constant */
-            readonly Sort_mentioned: "Sorting by mentions";
+            readonly Sort_mentioned: "Sort by mentions";
             /** @constant */
-            readonly Sort_sentiment: "Sorting by tone";
+            readonly Sort_sentiment: "Sort by tone";
             /** @constant */
             readonly Prompts_can_be_deleted_and_restored_within_the_same_group: "Prompts can be deleted/restored within the same group";
             /** @constant */

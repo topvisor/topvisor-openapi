@@ -139,11 +139,11 @@
                         "readOnly": true
                     },
                     "Sort_mentioned": {
-                        "const": "Sorting by mentions",
+                        "const": "Sort by mentions",
                         "readOnly": true
                     },
                     "Sort_sentiment": {
-                        "const": "Sorting by tone",
+                        "const": "Sort by tone",
                         "readOnly": true
                     },
                     "Prompts_can_be_deleted_and_restored_within_the_same_group": {
