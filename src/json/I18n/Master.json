@@ -43,27 +43,27 @@
                         "readOnly": true
                     },
                     "Type_description_positions": {
-                        "const": "Track your keyword ranking dynamics",
+                        "const": "Check website rankings and find out search Visibility",
                         "readOnly": true
                     },
                     "Type_description_audit": {
-                        "const": "Diagnose your website for errors",
+                        "const": "Find errors on the site that prevent it from ranking higher",
                         "readOnly": true
                     },
                     "Type_description_watcher": {
-                        "const": "Track content changes on your website",
+                        "const": "Monitor changes on your website and competitors websites",
                         "readOnly": true
                     },
                     "Type_description_indexing": {
-                        "const": "Monitor pages dropping out of search results",
+                        "const": "Check if your website pages or purchased links are indexed",
                         "readOnly": true
                     },
                     "Type_description_sitemap": {
-                        "const": "See your whole website at a glance",
+                        "const": "Generate a sitemap to upload to your website",
                         "readOnly": true
                     },
                     "Type_description_ai_tracker": {
-                        "const": "Check how AI see you",
+                        "const": "Check if your brand is mentioned in AI",
                         "readOnly": true
                     }
                 },

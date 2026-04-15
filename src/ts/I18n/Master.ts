@@ -25,17 +25,17 @@ export interface components {
             /** @constant */
             readonly Type_name_create: "Do not run setup wizard";
             /** @constant */
-            readonly Type_description_positions: "Track your keyword ranking dynamics";
+            readonly Type_description_positions: "Check website rankings and find out search Visibility";
             /** @constant */
-            readonly Type_description_audit: "Diagnose your website for errors";
+            readonly Type_description_audit: "Find errors on the site that prevent it from ranking higher";
             /** @constant */
-            readonly Type_description_watcher: "Track content changes on your website";
+            readonly Type_description_watcher: "Monitor changes on your website and competitors websites";
             /** @constant */
-            readonly Type_description_indexing: "Monitor pages dropping out of search results";
+            readonly Type_description_indexing: "Check if your website pages or purchased links are indexed";
             /** @constant */
-            readonly Type_description_sitemap: "See your whole website at a glance";
+            readonly Type_description_sitemap: "Generate a sitemap to upload to your website";
             /** @constant */
-            readonly Type_description_ai_tracker: "Check how AI see you";
+            readonly Type_description_ai_tracker: "Check if your brand is mentioned in AI";
         };
     };
     responses: never;
