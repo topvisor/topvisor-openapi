@@ -719,7 +719,7 @@
                         "readOnly": true
                     },
                     "Enter_domain_or_page": {
-                        "const": "Enter domain (example.com) or page URL (example.com/page/)",
+                        "const": "example.com or example.com/page/",
                         "readOnly": true
                     },
                     "Site_or_page": {

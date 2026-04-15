@@ -363,7 +363,7 @@ export interface components {
             /** @constant */
             readonly Enter_app_URL: "Enter app URL";
             /** @constant */
-            readonly Enter_domain_or_page: "Enter domain (example.com) or page URL (example.com/page/)";
+            readonly Enter_domain_or_page: "example.com or example.com/page/";
             /** @constant */
             readonly Site_or_page: "Site or webpage";
             /** @constant */
