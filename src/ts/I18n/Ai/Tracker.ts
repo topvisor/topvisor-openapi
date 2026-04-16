@@ -118,6 +118,8 @@ export interface components {
             readonly Please_add_prompts: "Please, add prompts for checking";
             /** @constant */
             readonly Please_select_neural_networks: "Please, select neural networks";
+            /** @constant */
+            readonly Answer_in_html: "HTML answer";
         };
     };
     responses: never;

@@ -229,6 +229,10 @@
                     "Please_select_neural_networks": {
                         "const": "Please, select neural networks",
                         "readOnly": true
+                    },
+                    "Answer_in_html": {
+                        "const": "HTML answer",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -286,7 +290,8 @@
                     "Check_need_config",
                     "Already_started",
                     "Please_add_prompts",
-                    "Please_select_neural_networks"
+                    "Please_select_neural_networks",
+                    "Answer_in_html"
                 ]
             }
         }
