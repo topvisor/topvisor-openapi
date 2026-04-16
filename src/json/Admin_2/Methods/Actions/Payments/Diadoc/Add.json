@@ -14,10 +14,10 @@
                         "title": "ID пользователя",
                         "type": "integer"
                     },
-                    "paymentId": {
-                        "title": "ID платежа",
+                    "payment_ids": {
+                        "title": "ID платежей",
                         "nullable": true,
-                        "type": "integer"
+                        "type": "string"
                     },
                     "test": {
                         "title": "Является ли запуск - тестом",

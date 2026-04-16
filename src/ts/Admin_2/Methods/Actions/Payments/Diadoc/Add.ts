@@ -11,8 +11,8 @@ export interface components {
         "Admin_2.Methods.Actions.Payments.Diadoc.Add": {
             /** ID пользователя */
             userId: number;
-            /** ID платежа */
-            paymentId?: number | null;
+            /** ID платежей */
+            payment_ids?: string | null;
             /** Является ли запуск - тестом */
             test: boolean;
         };
