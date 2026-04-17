@@ -66,10 +66,6 @@
                         "const": "Automatic pick up of alternative brand spellings",
                         "readOnly": true
                     },
-                    "Launch_AI_analysis": {
-                        "const": "Launch AI analysis",
-                        "readOnly": true
-                    },
                     "Launching_AI_analysis": {
                         "const": "Launching AI analysis",
                         "readOnly": true
@@ -116,6 +112,10 @@
                     },
                     "Analysis_go": {
                         "const": "Launch analysis",
+                        "readOnly": true
+                    },
+                    "Header_start_short": {
+                        "const": "Scan",
                         "readOnly": true
                     },
                     "Prompts": {
@@ -250,7 +250,6 @@
                     "System_prompt",
                     "System_prompt_placeholder",
                     "Automatic_pick_up_of_alternative_brand_spellings",
-                    "Launch_AI_analysis",
                     "Launching_AI_analysis",
                     "Cost_of_analysis",
                     "Settings_prompts",
@@ -263,6 +262,7 @@
                     "Settings",
                     "Ai_analysis",
                     "Analysis_go",
+                    "Header_start_short",
                     "Prompts",
                     "Prompt",
                     "Search_prompts",

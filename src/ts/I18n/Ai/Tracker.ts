@@ -37,8 +37,6 @@ export interface components {
             /** @constant */
             readonly Automatic_pick_up_of_alternative_brand_spellings: "Automatic pick up of alternative brand spellings";
             /** @constant */
-            readonly Launch_AI_analysis: "Launch AI analysis";
-            /** @constant */
             readonly Launching_AI_analysis: "Launching AI analysis";
             /** @constant */
             readonly Cost_of_analysis: "Cost of analysis";
@@ -62,6 +60,8 @@ export interface components {
             readonly Ai_analysis: "AI analysis";
             /** @constant */
             readonly Analysis_go: "Launch analysis";
+            /** @constant */
+            readonly Header_start_short: "Scan";
             /** @constant */
             readonly Prompts: "Prompts";
             /** @constant */
