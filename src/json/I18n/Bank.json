@@ -379,7 +379,7 @@
                         "readOnly": true
                     },
                     "Service_ai_tracker": {
-                        "const": "AI-Tracker",
+                        "const": "AI Tracker",
                         "readOnly": true
                     },
                     "Service_bid_manager": {
