@@ -27,7 +27,7 @@
                         "readOnly": true
                     },
                     "AITracker_beta": {
-                        "const": "AI-tracker: Beta version",
+                        "const": "AI Tracker: Beta version",
                         "readOnly": true
                     },
                     "Theme": {
