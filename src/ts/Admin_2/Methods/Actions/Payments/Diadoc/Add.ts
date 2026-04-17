@@ -12,7 +12,7 @@ export interface components {
             /** ID пользователя */
             userId: number;
             /** ID платежей */
-            payment_ids?: string | null;
+            payment_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Является ли запуск - тестом */
             test: boolean;
         };

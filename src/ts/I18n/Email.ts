@@ -21,6 +21,8 @@ export interface components {
             /** @constant */
             readonly Project_report: "Report: Project dynamics.";
             /** @constant */
+            readonly Project_report_ai_tracker: "Report: AI-tacker";
+            /** @constant */
             readonly Indexing_informer_title: "Index status: new changes detected.";
             /** @constant */
             readonly Watcher_informer_title: "Website watcher: new changes detected.";

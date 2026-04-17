@@ -34,6 +34,10 @@
                         "const": "Report: Project dynamics.",
                         "readOnly": true
                     },
+                    "Project_report_ai_tracker": {
+                        "const": "Report: AI-tacker",
+                        "readOnly": true
+                    },
                     "Indexing_informer_title": {
                         "const": "Index status: new changes detected.",
                         "readOnly": true
@@ -74,6 +78,7 @@
                     "Integration_has_expired2",
                     "Integration_access_error",
                     "Project_report",
+                    "Project_report_ai_tracker",
                     "Indexing_informer_title",
                     "Watcher_informer_title",
                     "Sitemap_changes_to_sitemap_email",

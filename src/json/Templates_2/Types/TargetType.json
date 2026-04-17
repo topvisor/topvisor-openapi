@@ -13,6 +13,7 @@
                     "templates",
                     "groups",
                     "keywords",
+                    "keywordsAi",
                     "competitors_keywords",
                     "competitors_wordstat"
                 ],
@@ -20,6 +21,7 @@
                     "Templates",
                     "Groups",
                     "Keywords",
+                    "KeywordsAi",
                     "CompetitorsKeywords",
                     "CompetitorsWordstat"
                 ],
@@ -27,6 +29,7 @@
                     "Шаблоны",
                     "Группы",
                     "Запросы",
+                    "Промпты",
                     "Запросы конкурентов",
                     "Статистика поисковых запросов конкурентов"
                 ],

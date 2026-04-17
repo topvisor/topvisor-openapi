@@ -17,7 +17,11 @@
                     "payment_ids": {
                         "title": "ID платежей",
                         "nullable": true,
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
                     },
                     "test": {
                         "title": "Является ли запуск - тестом",

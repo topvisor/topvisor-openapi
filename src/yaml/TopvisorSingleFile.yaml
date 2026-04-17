@@ -13723,6 +13723,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/reports_2/aiTracker/sendTest/:
+    post:
+      operationId: EditReports2AiTrackerSendTest
+      tags:
+        - Reports_2
+      summary: Отправить тестовый отчет
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reports_2.Methods.aiTracker.SendTest.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Reports_2.Methods.aiTracker.SendTest.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/schedule_2/settings/emailsHints/:
     post:
       operationId: GetSchedule2SettingsEmailsHints
@@ -20678,18 +20706,21 @@ components:
         - templates
         - groups
         - keywords
+        - keywordsAi
         - competitors_keywords
         - competitors_wordstat
       x-enum-varnames:
         - Templates
         - Groups
         - Keywords
+        - KeywordsAi
         - CompetitorsKeywords
         - CompetitorsWordstat
       x-enum-descriptions:
         - Шаблоны
         - Группы
         - Запросы
+        - Промпты
         - Запросы конкурентов
         - Статистика поисковых запросов конкурентов
       title: Тип данных (место использования)
@@ -47530,6 +47561,17 @@ components:
       title: Отправить тестовый отчет
     Reports_2.Methods.Positions.SendTest.Edit.Exec:
       type: integer
+    Reports_2.Methods.aiTracker.SendTest.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта, по которому необходимо отправить тестовый отчет
+          type: integer
+      required:
+        - project_id
+      title: Отправить тестовый отчет
+    Reports_2.Methods.aiTracker.SendTest.Edit.Exec:
+      type: integer
     Schedule_2.Methods.Settings.EmailsHints.Get:
       type: object
       properties:
@@ -49415,7 +49457,8 @@ components:
         payment_ids:
           title: ID платежей
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         test:
           title: Является ли запуск - тестом
           type: boolean

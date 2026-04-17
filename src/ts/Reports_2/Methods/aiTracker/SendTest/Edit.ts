@@ -7,11 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип данных (место использования)
-         * @enum {string}
-         */
-        "Templates_2.Types.TargetType": "templates" | "groups" | "keywords" | "keywordsAi" | "competitors_keywords" | "competitors_wordstat";
+        /** Отправить тестовый отчет */
+        "Reports_2.Methods.aiTracker.SendTest.Edit": {
+            /** Id проекта, по которому необходимо отправить тестовый отчет */
+            project_id: number;
+        };
+        "Reports_2.Methods.aiTracker.SendTest.Edit.Exec": number;
     };
     responses: never;
     parameters: never;
