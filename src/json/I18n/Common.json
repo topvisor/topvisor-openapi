@@ -784,6 +784,10 @@
                         "const": "Guest link copied to clipboard",
                         "readOnly": true
                     },
+                    "Device_type": {
+                        "const": "Device type",
+                        "readOnly": true
+                    },
                     "Device_0": {
                         "const": "PC",
                         "readOnly": true
@@ -2192,6 +2196,7 @@
                     "SE",
                     "Guest_link",
                     "Guest_link_copied_to_clipboard",
+                    "Device_type",
                     "Device_0",
                     "Device_1",
                     "Device_2",

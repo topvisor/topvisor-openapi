@@ -401,6 +401,8 @@ export interface components {
             /** @constant */
             readonly Guest_link_copied_to_clipboard: "Guest link copied to clipboard";
             /** @constant */
+            readonly Device_type: "Device type";
+            /** @constant */
             readonly Device_0: "PC";
             /** @constant */
             readonly Device_1: "Tablet";
