@@ -339,7 +339,7 @@
                         "readOnly": true
                     },
                     "Service_relevant": {
-                        "const": "Relevant check",
+                        "const": "Relevance check",
                         "readOnly": true
                     },
                     "Service_researcher": {

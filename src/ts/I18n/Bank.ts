@@ -173,7 +173,7 @@ export interface components {
             /** @constant */
             readonly Service_tracking: "Rank tracker tool";
             /** @constant */
-            readonly Service_relevant: "Relevant check";
+            readonly Service_relevant: "Relevance check";
             /** @constant */
             readonly Service_researcher: "Keyword research tool";
             /** @constant */
