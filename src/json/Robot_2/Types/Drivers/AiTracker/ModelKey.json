@@ -14,16 +14,19 @@
                     "grok",
                     "chatgpt",
                     "claude",
-                    "gemini"
+                    "gemini",
+                    "sonar"
                 ],
                 "x-enum-varnames": [
                     "Deepseek",
                     "Grok",
                     "ChatGPT",
                     "Claude",
-                    "Gemini"
+                    "Gemini",
+                    "Sonar"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,

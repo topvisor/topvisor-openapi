@@ -22673,13 +22673,16 @@ components:
         - chatgpt
         - claude
         - gemini
+        - sonar
       x-enum-varnames:
         - Deepseek
         - Grok
         - ChatGPT
         - Claude
         - Gemini
+        - Sonar
       x-enum-descriptions:
+        - null
         - null
         - null
         - null
