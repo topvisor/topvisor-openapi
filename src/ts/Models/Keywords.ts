@@ -111,6 +111,16 @@ export interface components {
              *       ]
              *     }
              */
+            serp_fearues_by_check?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
             visitors?: number | null;
             /**
              * @example {

@@ -142,6 +142,16 @@
                             ]
                         }
                     },
+                    "serp_fearues_by_check": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
                     "visitors": {
                         "type": "integer",
                         "nullable": true,
