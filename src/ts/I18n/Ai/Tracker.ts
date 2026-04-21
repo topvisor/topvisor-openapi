@@ -31,7 +31,7 @@ export interface components {
             /** @constant */
             readonly Context_setting: "Context setting";
             /** @constant */
-            readonly System_prompt: "User context";
+            readonly System_prompt: "Additional context";
             /** @constant */
             readonly System_prompt_placeholder: "Enter additional information to help you fine-tune the context";
             /** @constant */

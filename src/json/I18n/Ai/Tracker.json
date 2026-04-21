@@ -55,7 +55,7 @@
                         "readOnly": true
                     },
                     "System_prompt": {
-                        "const": "User context",
+                        "const": "Additional context",
                         "readOnly": true
                     },
                     "System_prompt_placeholder": {
