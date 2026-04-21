@@ -83,7 +83,7 @@
                         "readOnly": true
                     },
                     "Settings_models": {
-                        "const": "Select AI-Models",
+                        "const": "Select AIs",
                         "readOnly": true
                     },
                     "No_data_in_day": {

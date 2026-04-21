@@ -45,7 +45,7 @@ export interface components {
             /** @constant */
             readonly Prompts_placeholder: "Input new prompt";
             /** @constant */
-            readonly Settings_models: "Select AI-Models";
+            readonly Settings_models: "Select AIs";
             /** @constant */
             readonly No_data_in_day: "There are no checks in the picked period.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>";
             /** @constant */
