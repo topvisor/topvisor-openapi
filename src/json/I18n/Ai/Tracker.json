@@ -59,7 +59,7 @@
                         "readOnly": true
                     },
                     "System_prompt_placeholder": {
-                        "const": "Enter additional information to help you fine-tune the context.",
+                        "const": "Enter additional information to help you fine-tune the context",
                         "readOnly": true
                     },
                     "Automatic_pick_up_of_alternative_brand_spellings": {

@@ -33,7 +33,7 @@ export interface components {
             /** @constant */
             readonly System_prompt: "User context";
             /** @constant */
-            readonly System_prompt_placeholder: "Enter additional information to help you fine-tune the context.";
+            readonly System_prompt_placeholder: "Enter additional information to help you fine-tune the context";
             /** @constant */
             readonly Automatic_pick_up_of_alternative_brand_spellings: "Automatic pick up of alternative brand spellings";
             /** @constant */
