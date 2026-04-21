@@ -2003,6 +2003,10 @@
                     "Comment": {
                         "const": "Description",
                         "readOnly": true
+                    },
+                    "Relevant_URL": {
+                        "const": "Relevant URL",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2498,7 +2502,8 @@
                     "To_project",
                     "Recipient_email",
                     "Priority",
-                    "Comment"
+                    "Comment",
+                    "Relevant_URL"
                 ]
             }
         }

@@ -1010,6 +1010,8 @@ export interface components {
             readonly Priority: "Priority";
             /** @constant */
             readonly Comment: "Description";
+            /** @constant */
+            readonly Relevant_URL: "Relevant URL";
         };
     };
     responses: never;
