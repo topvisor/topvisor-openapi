@@ -111,6 +111,8 @@ export interface components {
             /** @constant */
             readonly Mentions: "Mentions";
             /** @constant */
+            readonly Ai_snippets: "AI Snippets";
+            /** @constant */
             readonly Check_need_config: "To launch the AI Tracker, you need to configure the list of tested prompts and select neural networks.";
             /** @constant */
             readonly Already_started: "AI Tracker already started";

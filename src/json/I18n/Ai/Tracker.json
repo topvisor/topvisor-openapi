@@ -214,6 +214,10 @@
                         "const": "Mentions",
                         "readOnly": true
                     },
+                    "Ai_snippets": {
+                        "const": "AI Snippets",
+                        "readOnly": true
+                    },
                     "Check_need_config": {
                         "const": "To launch the AI Tracker, you need to configure the list of tested prompts and select neural networks.",
                         "readOnly": true
@@ -287,6 +291,7 @@
                     "Answer_from",
                     "Analysis_was_not_performed",
                     "Mentions",
+                    "Ai_snippets",
                     "Check_need_config",
                     "Already_started",
                     "Please_add_prompts",
