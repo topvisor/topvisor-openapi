@@ -31603,6 +31603,10 @@ components:
           title: Собирать ли сниппеты
           nullable: true
           type: boolean
+        with_ai_overview_full:
+          title: Собирать ли AI-сниппеты
+          nullable: true
+          type: boolean
         do_snapshots:
           title: Глубина сбора снимков
           nullable: true

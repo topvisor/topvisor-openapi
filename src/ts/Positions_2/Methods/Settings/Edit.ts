@@ -13,6 +13,8 @@ export interface components {
             project_id: number;
             /** Собирать ли сниппеты */
             with_snippets?: boolean | null;
+            /** Собирать ли AI-сниппеты */
+            with_ai_overview_full?: boolean | null;
             /** Глубина сбора снимков */
             do_snapshots?: boolean | null;
             /** Собирать ли сниппеты в снимках */
