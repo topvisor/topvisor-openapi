@@ -143,7 +143,6 @@
                         }
                     },
                     "serp_fearues_by_check": {
-                        "type": "string",
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
