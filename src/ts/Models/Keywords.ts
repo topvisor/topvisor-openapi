@@ -111,7 +111,7 @@ export interface components {
              *       ]
              *     }
              */
-            serp_fearues_by_check?: any;
+            serp_fearues_by_check?: string | null;
             /**
              * @example {
              *       "need set qualifiers": [

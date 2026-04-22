@@ -29655,6 +29655,7 @@ components:
               - project_id
               - region_index
         serp_fearues_by_check:
+          type: string
           nullable: true
           example:
             need set qualifiers:
