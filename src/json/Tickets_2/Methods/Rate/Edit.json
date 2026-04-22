@@ -15,9 +15,22 @@
                         "type": "integer"
                     },
                     "rate": {
-                        "title": "Оценка\n\nПринимает оценку от 1 до 3",
+                        "title": "Оценка",
                         "nullable": true,
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tickets_2/Types/Rate/Rate.json#/components/schemas/Tickets_2.Types.Rate.Rate"
+                            }
+                        ]
+                    },
+                    "fast_answers": {
+                        "title": "Быстрые ответы",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tickets_2/Types/Rate/FastAnswers.json#/components/schemas/Tickets_2.Types.Rate.FastAnswers"
+                            }
+                        ]
                     },
                     "comment": {
                         "title": "Комментарий",

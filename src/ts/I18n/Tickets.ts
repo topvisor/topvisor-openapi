@@ -120,6 +120,22 @@ export interface components {
             readonly Online: "Online";
             /** @constant */
             readonly Visited: "Last seen";
+            /** @constant */
+            readonly Fast_answer_long_time: "They took a long time to answer";
+            /** @constant */
+            readonly Fast_answer_slow: "Slow verification speed";
+            /** @constant */
+            readonly Fast_answer_no_functionality: "There is no required functionality";
+            /** @constant */
+            readonly Fast_answer_did_not_answer: "Didn't answer the question";
+            /** @constant */
+            readonly Fast_answer_solved_problem: "They solved the problem the first time";
+            /** @constant */
+            readonly Fast_answer_detail_answer: "Gave a detailed answer";
+            /** @constant */
+            readonly Fast_answer_quickly: "They responded very quickly. Kchau!";
+            /** @constant */
+            readonly Fast_answer_best_support: "Everything is cool. The best support in the world!";
         };
     };
     responses: never;

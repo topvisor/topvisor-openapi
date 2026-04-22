@@ -34104,6 +34104,56 @@ components:
       title: Id добавленного сообщения
       nullable: true
       type: integer
+    Tickets_2.Types.Rate.Rate:
+      type: integer
+      enum:
+        - 1
+        - 2
+        - 3
+      x-enum-varnames:
+        - Bad
+        - Normal
+        - Good
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+      title: Тип оценки
+    Tickets_2.Types.Rate.FastAnswer:
+      type: string
+      enum:
+        - Solved_problem
+        - Detail_answer
+        - Quickly
+        - Best_support
+        - Long_time
+        - Slow
+        - No_functionality
+        - Did_not_answer
+      x-enum-varnames:
+        - SolvedProblem
+        - DetailAnswer
+        - Quickly
+        - BestSupport
+        - LongTime
+        - Slow
+        - NoFunctionality
+        - DidNotAnswer
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Тип быстрого ответа
+    Tickets_2.Types.Rate.FastAnswers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tickets_2.Types.Rate.FastAnswer'
+      title: Список быстрых ответов
     Tickets_2.Methods.Rate.Edit:
       type: object
       properties:
@@ -34111,12 +34161,15 @@ components:
           title: ID тикета
           type: integer
         rate:
-          title: |-
-            Оценка
-
-            Принимает оценку от 1 до 3
+          title: Оценка
           nullable: true
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/Tickets_2.Types.Rate.Rate'
+        fast_answers:
+          title: Быстрые ответы
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tickets_2.Types.Rate.FastAnswers'
         comment:
           title: Комментарий
           nullable: true
@@ -34394,6 +34447,9 @@ components:
         tags:
           nullable: true
         rate:
+          nullable: true
+        rate_fast_answers:
+          type: array
           nullable: true
         rate_comment:
           nullable: true

@@ -233,6 +233,38 @@
                     "Visited": {
                         "const": "Last seen",
                         "readOnly": true
+                    },
+                    "Fast_answer_long_time": {
+                        "const": "They took a long time to answer",
+                        "readOnly": true
+                    },
+                    "Fast_answer_slow": {
+                        "const": "Slow verification speed",
+                        "readOnly": true
+                    },
+                    "Fast_answer_no_functionality": {
+                        "const": "There is no required functionality",
+                        "readOnly": true
+                    },
+                    "Fast_answer_did_not_answer": {
+                        "const": "Didn't answer the question",
+                        "readOnly": true
+                    },
+                    "Fast_answer_solved_problem": {
+                        "const": "They solved the problem the first time",
+                        "readOnly": true
+                    },
+                    "Fast_answer_detail_answer": {
+                        "const": "Gave a detailed answer",
+                        "readOnly": true
+                    },
+                    "Fast_answer_quickly": {
+                        "const": "They responded very quickly. Kchau!",
+                        "readOnly": true
+                    },
+                    "Fast_answer_best_support": {
+                        "const": "Everything is cool. The best support in the world!",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -291,7 +323,15 @@
                     "Comment_title_bad",
                     "Button_change_review",
                     "Online",
-                    "Visited"
+                    "Visited",
+                    "Fast_answer_long_time",
+                    "Fast_answer_slow",
+                    "Fast_answer_no_functionality",
+                    "Fast_answer_did_not_answer",
+                    "Fast_answer_solved_problem",
+                    "Fast_answer_detail_answer",
+                    "Fast_answer_quickly",
+                    "Fast_answer_best_support"
                 ]
             }
         }

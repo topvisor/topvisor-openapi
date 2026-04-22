@@ -82,6 +82,10 @@
                     "rate": {
                         "nullable": true
                     },
+                    "rate_fast_answers": {
+                        "type": "array",
+                        "nullable": true
+                    },
                     "rate_comment": {
                         "nullable": true
                     },

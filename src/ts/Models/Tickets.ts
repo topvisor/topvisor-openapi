@@ -33,6 +33,7 @@ export interface components {
             task_id?: any;
             tags?: any;
             rate?: any;
+            rate_fast_answers?: unknown[] | null;
             rate_comment?: any;
             rate_time?: any;
             admin_comment?: any;

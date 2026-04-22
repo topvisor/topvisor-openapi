@@ -11,12 +11,10 @@ export interface components {
         "Tickets_2.Methods.Rate.Edit": {
             /** ID тикета */
             id: number;
-            /**
-             * Оценка
-             *
-             *     Принимает оценку от 1 до 3
-             */
-            rate?: number | null;
+            /** Оценка */
+            rate?: import('../../Types/Rate/Rate.ts').components['schemas']['Tickets_2.Types.Rate.Rate'] | null;
+            /** Быстрые ответы */
+            fast_answers?: import('../../Types/Rate/FastAnswers.ts').components['schemas']['Tickets_2.Types.Rate.FastAnswers'] | null;
             /** Комментарий */
             comment?: string | null;
         };
