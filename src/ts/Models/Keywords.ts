@@ -52,7 +52,7 @@ export interface components {
              *       ]
              *     }
              */
-            relevant_url?: string | null;
+            relevant_url?: any;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -62,7 +62,7 @@ export interface components {
              *       ]
              *     }
              */
-            relevant_url_significant?: string | null;
+            relevant_url_significant?: any;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -71,17 +71,7 @@ export interface components {
              *       ]
              *     }
              */
-            project_relevant_url?: string | null;
-            /**
-             * @example {
-             *       "need set qualifiers": [
-             *         "date",
-             *         "project_id",
-             *         "region_index"
-             *       ]
-             *     }
-             */
-            snippet_title?: string | null;
+            project_relevant_url?: any;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -91,7 +81,7 @@ export interface components {
              *       ]
              *     }
              */
-            snippet_body?: string | null;
+            snippet_title?: any;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -101,7 +91,7 @@ export interface components {
              *       ]
              *     }
              */
-            snippet_ext?: string | null;
+            snippet_body?: any;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -111,7 +101,17 @@ export interface components {
              *       ]
              *     }
              */
-            serp_fearues_by_check?: any;
+            snippet_ext?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            serp_features_by_check?: any;
             /**
              * @example {
              *       "need set qualifiers": [

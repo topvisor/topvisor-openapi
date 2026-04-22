@@ -29608,7 +29608,6 @@ components:
               - project_id
               - region_index
         relevant_url:
-          type: string
           nullable: true
           example:
             need set qualifiers:
@@ -29616,7 +29615,6 @@ components:
               - project_id
               - region_index
         relevant_url_significant:
-          type: string
           nullable: true
           example:
             need set qualifiers:
@@ -29624,14 +29622,12 @@ components:
               - project_id
               - region_index
         project_relevant_url:
-          type: string
           nullable: true
           example:
             need set qualifiers:
               - project_id
               - region_index
         snippet_title:
-          type: string
           nullable: true
           example:
             need set qualifiers:
@@ -29639,7 +29635,6 @@ components:
               - project_id
               - region_index
         snippet_body:
-          type: string
           nullable: true
           example:
             need set qualifiers:
@@ -29647,14 +29642,13 @@ components:
               - project_id
               - region_index
         snippet_ext:
-          type: string
           nullable: true
           example:
             need set qualifiers:
               - date
               - project_id
               - region_index
-        serp_fearues_by_check:
+        serp_features_by_check:
           nullable: true
           example:
             need set qualifiers:
