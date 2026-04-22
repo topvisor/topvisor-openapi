@@ -183,7 +183,7 @@
                         "readOnly": true
                     },
                     "Report_after_tracking_30min_1": {
-                        "const": "After rank tracking",
+                        "const": "After check",
                         "readOnly": true
                     },
                     "Report_after_tracking_30min_2": {

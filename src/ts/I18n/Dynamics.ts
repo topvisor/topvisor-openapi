@@ -95,7 +95,7 @@ export interface components {
             /** @constant */
             readonly Painting_1: "Improved, dropped";
             /** @constant */
-            readonly Report_after_tracking_30min_1: "After rank tracking";
+            readonly Report_after_tracking_30min_1: "After check";
             /** @constant */
             readonly Report_after_tracking_30min_2: "in 30 minutes";
             /** @constant */
