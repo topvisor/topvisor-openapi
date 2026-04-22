@@ -70,17 +70,11 @@
                         "default": 10000,
                         "type": "number"
                     },
-                    "QUERY_COST_AI_SNIPPET": {
-                        "title": "Стоимость сбора сниппета ИИ.",
+                    "QUERY_COST_AI_OVERVIEW": {
+                        "title": "Стоимость сбора SERP-Фичи AIOverview",
                         "readOnly": true,
                         "default": 10000,
                         "type": "number"
-                    },
-                    "QUERY_COST_DEPTH_K": {
-                        "title": "Коэффициент за проверку глубины.",
-                        "readOnly": true,
-                        "default": 10000,
-                        "type": "integer"
                     },
                     "EXPORT_ONE_RESULT_COST": {
                         "title": "Стоимость одного результата экспорта.",
@@ -296,8 +290,7 @@
                     "QUERY_COST_COMPETITORS",
                     "QUERY_COST_SNIPPET",
                     "QUERY_COST_SNAPSHOT",
-                    "QUERY_COST_AI_SNIPPET",
-                    "QUERY_COST_DEPTH_K",
+                    "QUERY_COST_AI_OVERVIEW",
                     "EXPORT_ONE_RESULT_COST",
                     "QUERY_COST_FREQUENCY",
                     "SY_COST",

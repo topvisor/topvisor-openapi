@@ -62,15 +62,10 @@ export interface components {
              */
             readonly QUERY_COST_SNAPSHOT: number;
             /**
-             * Стоимость сбора сниппета ИИ.
+             * Стоимость сбора SERP-Фичи AIOverview
              * @default 10000
              */
-            readonly QUERY_COST_AI_SNIPPET: number;
-            /**
-             * Коэффициент за проверку глубины.
-             * @default 10000
-             */
-            readonly QUERY_COST_DEPTH_K: number;
+            readonly QUERY_COST_AI_OVERVIEW: number;
             /**
              * Стоимость одного результата экспорта.
              * @default 10000
