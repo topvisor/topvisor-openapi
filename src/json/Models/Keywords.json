@@ -78,6 +78,7 @@
                         }
                     },
                     "relevant_url": {
+                        "type": "string",
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
@@ -88,6 +89,7 @@
                         }
                     },
                     "relevant_url_significant": {
+                        "type": "string",
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
@@ -98,6 +100,7 @@
                         }
                     },
                     "project_relevant_url": {
+                        "type": "string",
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
@@ -107,6 +110,7 @@
                         }
                     },
                     "snippet_title": {
+                        "type": "string",
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
@@ -117,6 +121,7 @@
                         }
                     },
                     "snippet_body": {
+                        "type": "string",
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [

@@ -52,7 +52,7 @@ export interface components {
              *       ]
              *     }
              */
-            relevant_url?: any;
+            relevant_url?: string | null;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -62,7 +62,7 @@ export interface components {
              *       ]
              *     }
              */
-            relevant_url_significant?: any;
+            relevant_url_significant?: string | null;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -71,17 +71,7 @@ export interface components {
              *       ]
              *     }
              */
-            project_relevant_url?: any;
-            /**
-             * @example {
-             *       "need set qualifiers": [
-             *         "date",
-             *         "project_id",
-             *         "region_index"
-             *       ]
-             *     }
-             */
-            snippet_title?: any;
+            project_relevant_url?: string | null;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -91,7 +81,17 @@ export interface components {
              *       ]
              *     }
              */
-            snippet_body?: any;
+            snippet_title?: string | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            snippet_body?: string | null;
             /**
              * @example {
              *       "need set qualifiers": [
