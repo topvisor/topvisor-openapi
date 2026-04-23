@@ -10,7 +10,8 @@
             "TV.API.Types.AbstractEnumArray": {
                 "type": "array",
                 "items": {},
-                "title": "Тип массива: Enum[]\n\nДля реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE"
+                "title": "Тип массива: Enum[]\n\nДля реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE",
+                "description": "@template ITEM_TYPE of BackedEnum"
             }
         }
     }

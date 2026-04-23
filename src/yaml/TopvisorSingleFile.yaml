@@ -11152,6 +11152,34 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Keywords'
+  /edit/keywords_2/actions/setTargetsByKeywords/:
+    post:
+      operationId: EditKeywords2ActionsSetTargetsByKeywords
+      tags:
+        - Keywords_2
+      summary: Установка целевых ссылок по CSV
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/keywords_2/actions/setTargetsFromRelevant/:
     post:
       operationId: EditKeywords2ActionsSetTargetsFromRelevant
@@ -23038,6 +23066,7 @@ components:
         Тип массива: Enum[]
 
         Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
+      description: '@template ITEM_TYPE of BackedEnum'
     Reports_2.Objects.ByDate.History.Headers.AbstractProject:
       type: object
       properties:
@@ -43635,6 +43664,25 @@ components:
         - project_id
       title: Замена целевых ссылок
     Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec:
+      nullable: true
+      type: integer
+    Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit:
+      type: object
+      properties:
+        keywords:
+          title: CSV-строки в формате `keywords;targetUrl`
+          type: string
+        only_empty:
+          title: Изменять только запросы без установленной целевой ссылки
+          type: boolean
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - keywords
+        - project_id
+      title: Установка целевых ссылок по CSV
+    Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit.Exec:
       nullable: true
       type: integer
     Keywords_2.Types.Actions.SetTargetsFromRelevant.From:

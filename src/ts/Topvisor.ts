@@ -6542,6 +6542,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Установка целевых ссылок по CSV */
+    "/edit/keywords_2/actions/setTargetsByKeywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ActionsSetTargetsByKeywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Установка целевой ссылки равной релевантной за последнюю проверку позиций */
     "/edit/keywords_2/actions/setTargetsFromRelevant/": {
         parameters: {
@@ -20642,6 +20659,31 @@ export interface operations {
                         result: import('./Keywords_2/Methods/Actions/ReplaceTarget/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.ReplaceTarget.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditKeywords2ActionsSetTargetsByKeywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Actions/SetTargetsByKeywords/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Actions/SetTargetsByKeywords/Edit.ts').components['schemas']['Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };

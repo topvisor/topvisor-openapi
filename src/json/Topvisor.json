@@ -20534,6 +20534,59 @@
                 }
             }
         },
+        "/edit/keywords_2/actions/setTargetsByKeywords/": {
+            "post": {
+                "operationId": "EditKeywords2ActionsSetTargetsByKeywords",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Установка целевых ссылок по CSV",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Actions/SetTargetsByKeywords/Edit.json#/components/schemas/Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Actions/SetTargetsByKeywords/Edit.json#/components/schemas/Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/keywords_2/actions/setTargetsFromRelevant/": {
             "post": {
                 "operationId": "EditKeywords2ActionsSetTargetsFromRelevant",
