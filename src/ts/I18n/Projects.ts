@@ -225,7 +225,7 @@ export interface components {
             /** @constant */
             readonly company_logo: "company logo";
             /** @constant */
-            readonly Settings_no_automated_update_if_manual: "Do not run scheduled update if rankings were checked on demand less than 12 hours ago";
+            readonly Settings_no_automated_update_if_manual: "Do not run scheduled update if rankings were checked on this day";
             /** @constant */
             readonly Settings_particular_days: "On dates";
             /** @constant */

@@ -443,7 +443,7 @@
                         "readOnly": true
                     },
                     "Settings_no_automated_update_if_manual": {
-                        "const": "Do not run scheduled update if rankings were checked on demand less than 12 hours ago",
+                        "const": "Do not run scheduled update if rankings were checked on this day",
                         "readOnly": true
                     },
                     "Settings_particular_days": {
