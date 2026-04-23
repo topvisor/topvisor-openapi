@@ -27,7 +27,7 @@ export interface components {
                 positions_check_manual: {
                     name: "Manual Rechecks";
                     extendedName: "rechecks daily";
-                    description: "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse reckecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
+                    description: "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse rechecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
                     exceeding: "Daily limit of position rechecks reached";
                     exceedingDescription: "";
                 };
