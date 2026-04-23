@@ -24,15 +24,15 @@ export interface components {
             send_to_informer?: boolean | null;
             /** Id чатов телеграмма для рассылки уведомлений */
             telegram_chats_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Не совершать ли повторную проверку */
+            /** Не запускать проверку, если за эту дату проверка уже проводилась */
             stop_repeated_check?: boolean | null;
             /**
-             * Ключ региона для проверки частосты
+             * Ключ региона для проверки частоты
              *
              *     Разрешено указывать только Яндекс и Google (0, 1)
              */
             regions_keys_by_searcher_key?: unknown[] | null;
-            /** Имеет смысл только для Яндекс */
+            /** Имеет смысл только для Яндекса */
             volumes_types?: import('../../../Keywords_2/Types/Volumes/Types.ts').components['schemas']['Keywords_2.Types.Volumes.Types'] | null;
             /** Добавить ли в отчет позиции конкурентов */
             with_competitors?: boolean | null;

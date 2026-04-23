@@ -33027,18 +33027,18 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         stop_repeated_check:
-          title: Не совершать ли повторную проверку
+          title: Не запускать проверку, если за эту дату проверка уже проводилась
           nullable: true
           type: boolean
         regions_keys_by_searcher_key:
           title: |-
-            Ключ региона для проверки частосты
+            Ключ региона для проверки частоты
 
             Разрешено указывать только Яндекс и Google (0, 1)
           nullable: true
           type: array
         volumes_types:
-          title: Имеет смысл только для Яндекс
+          title: Имеет смысл только для Яндекса
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Types'
