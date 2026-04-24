@@ -8,11 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Отправить тестовый отчет */
-        "Reports_2.Methods.aiTracker.SendTest.Edit": {
+        "Reports_2.Methods.AiTracker.SendTest.Edit": {
             /** Id проекта, по которому необходимо отправить тестовый отчет */
             project_id: number;
         };
-        "Reports_2.Methods.aiTracker.SendTest.Edit.Exec": number;
+        "Reports_2.Methods.AiTracker.SendTest.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

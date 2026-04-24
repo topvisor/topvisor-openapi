@@ -13723,6 +13723,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/reports_2/aiTracker/sendTest/:
+    post:
+      operationId: EditReports2AiTrackerSendTest
+      tags:
+        - Reports_2
+      summary: Отправить тестовый отчет
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reports_2.Methods.AiTracker.SendTest.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Reports_2.Methods.AiTracker.SendTest.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/reports_2/positions/sendTest/:
     post:
       operationId: EditReports2PositionsSendTest
@@ -13747,34 +13775,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/reports_2/aiTracker/sendTest/:
-    post:
-      operationId: EditReports2AiTrackerSendTest
-      tags:
-        - Reports_2
-      summary: Отправить тестовый отчет
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Reports_2.Methods.aiTracker.SendTest.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Reports_2.Methods.aiTracker.SendTest.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -47667,6 +47667,17 @@ components:
       title: Получить список групп с пользователями
     Redmine_2.Methods.Users.Groups.Get.Exec:
       type: array
+    Reports_2.Methods.AiTracker.SendTest.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта, по которому необходимо отправить тестовый отчет
+          type: integer
+      required:
+        - project_id
+      title: Отправить тестовый отчет
+    Reports_2.Methods.AiTracker.SendTest.Edit.Exec:
+      type: integer
     Reports_2.Methods.Positions.SendTest.Edit:
       type: object
       properties:
@@ -47677,17 +47688,6 @@ components:
         - project_id
       title: Отправить тестовый отчет
     Reports_2.Methods.Positions.SendTest.Edit.Exec:
-      type: integer
-    Reports_2.Methods.aiTracker.SendTest.Edit:
-      type: object
-      properties:
-        project_id:
-          title: Id проекта, по которому необходимо отправить тестовый отчет
-          type: integer
-      required:
-        - project_id
-      title: Отправить тестовый отчет
-    Reports_2.Methods.aiTracker.SendTest.Edit.Exec:
       type: integer
     Schedule_2.Methods.Settings.EmailsHints.Get:
       type: object

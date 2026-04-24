@@ -25298,6 +25298,59 @@
                 }
             }
         },
+        "/edit/reports_2/aiTracker/sendTest/": {
+            "post": {
+                "operationId": "EditReports2AiTrackerSendTest",
+                "tags": [
+                    "Reports_2"
+                ],
+                "summary": "Отправить тестовый отчет",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Reports_2/Methods/AiTracker/SendTest/Edit.json#/components/schemas/Reports_2.Methods.AiTracker.SendTest.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Reports_2/Methods/AiTracker/SendTest/Edit.json#/components/schemas/Reports_2.Methods.AiTracker.SendTest.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/reports_2/positions/sendTest/": {
             "post": {
                 "operationId": "EditReports2PositionsSendTest",
@@ -25329,59 +25382,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Reports_2/Methods/Positions/SendTest/Edit.json#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/reports_2/aiTracker/sendTest/": {
-            "post": {
-                "operationId": "EditReports2AiTrackerSendTest",
-                "tags": [
-                    "Reports_2"
-                ],
-                "summary": "Отправить тестовый отчет",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Reports_2/Methods/aiTracker/SendTest/Edit.json#/components/schemas/Reports_2.Methods.aiTracker.SendTest.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Reports_2/Methods/aiTracker/SendTest/Edit.json#/components/schemas/Reports_2.Methods.aiTracker.SendTest.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
