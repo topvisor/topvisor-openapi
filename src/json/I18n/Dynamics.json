@@ -270,6 +270,10 @@
                         "const": "snapshots collected",
                         "readOnly": true
                     },
+                    "ai_overviews_collected": {
+                        "const": "AI Overviews collected",
+                        "readOnly": true
+                    },
                     "Check_rankings": {
                         "const": "Check rankings of project",
                         "readOnly": true
@@ -577,6 +581,7 @@
                     "Only_keywords_added_in_period",
                     "Show_keywords_added_in_period",
                     "and_save_snapshots",
+                    "ai_overviews_collected",
                     "Check_rankings",
                     "Add_keywords_on_page",
                     "Keywords",

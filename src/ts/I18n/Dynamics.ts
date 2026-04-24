@@ -139,6 +139,8 @@ export interface components {
             /** @constant */
             readonly and_save_snapshots: "snapshots collected";
             /** @constant */
+            readonly ai_overviews_collected: "AI Overviews collected";
+            /** @constant */
             readonly Check_rankings: "Check rankings of project";
             /** @constant */
             readonly Add_keywords_on_page: "Add keywords on the page";
