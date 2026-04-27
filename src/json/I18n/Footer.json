@@ -15,7 +15,7 @@
                         "readOnly": true
                     },
                     "Rank_and_SERP_top_cheking": {
-                        "const": "Rank and SERP Top Checking",
+                        "const": "Rank, SERP Top and AI Checking",
                         "readOnly": true
                     },
                     "Semantics": {

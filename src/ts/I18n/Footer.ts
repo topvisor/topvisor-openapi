@@ -11,7 +11,7 @@ export interface components {
             /** @constant */
             readonly Suggestions_tool: "Search Suggestions";
             /** @constant */
-            readonly Rank_and_SERP_top_cheking: "Rank and SERP Top Checking";
+            readonly Rank_and_SERP_top_cheking: "Rank, SERP Top and AI Checking";
             /** @constant */
             readonly Semantics: "Semantics";
             /** @constant */
