@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Positions_2.Methods.History.Del",
+        "title": "Topvisor/AiTracker_2.Methods.History.Del",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Positions_2.Methods.History.Del": {
+            "AiTracker_2.Methods.History.Del": {
                 "type": "object",
                 "properties": {
                     "date": {
@@ -27,9 +27,9 @@
                     "date",
                     "project_id"
                 ],
-                "title": "Удаление проверки позииций"
+                "title": "Удаление проверки ai-трекера"
             },
-            "Positions_2.Methods.History.Del.Exec": {
+            "AiTracker_2.Methods.History.Del.Exec": {
                 "type": "integer"
             }
         }

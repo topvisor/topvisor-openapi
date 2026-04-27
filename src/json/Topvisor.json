@@ -2925,6 +2925,59 @@
                 }
             }
         },
+        "/del/aiTracker_2/history/": {
+            "post": {
+                "operationId": "DelAiTracker2History",
+                "tags": [
+                    "AiTracker_2"
+                ],
+                "summary": "Удаление проверки ai-трекера",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/History/Del.json#/components/schemas/AiTracker_2.Methods.History.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/History/Del.json#/components/schemas/AiTracker_2.Methods.History.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/aiTracker_2/history/": {
             "post": {
                 "operationId": "GetAiTracker2History",
@@ -9405,7 +9458,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Удаление проверки",
+                "summary": "Удаление проверки позииций",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -16321,6 +16374,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
+                "summary": "Отправка проектов на проверку ai-трекера",
                 "requestBody": {
                     "content": {
                         "application/json": {

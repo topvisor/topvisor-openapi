@@ -7,14 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление проверки позииций */
-        "Positions_2.Methods.History.Del": {
+        /** Удаление проверки ai-трекера */
+        "AiTracker_2.Methods.History.Del": {
             /** Дата проверки */
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** ID проекта */
             project_id: number;
         };
-        "Positions_2.Methods.History.Del.Exec": number;
+        "AiTracker_2.Methods.History.Del.Exec": number;
     };
     responses: never;
     parameters: never;

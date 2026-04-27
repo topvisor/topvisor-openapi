@@ -945,6 +945,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Удаление проверки ai-трекера */
+    "/del/aiTracker_2/history/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelAiTracker2History"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение истории проверок ИИ-Трекера */
     "/get/aiTracker_2/history/": {
         parameters: {
@@ -2949,7 +2966,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление проверки */
+    /** Удаление проверки позииций */
     "/del/positions_2/history/": {
         parameters: {
             query?: never;
@@ -5189,7 +5206,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Отправка проектов на проверку ai-трекера */
     "/edit/aiTracker_2/checker/go/": {
         parameters: {
             query?: never;
@@ -12574,6 +12592,31 @@ export interface operations {
                         result: import('./Admin_2/Methods/Votes/Get.ts').components['schemas']['Admin_2.Methods.Votes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
+                };
+            };
+        };
+    };
+    DelAiTracker2History: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/History/Del.ts').components['schemas']['AiTracker_2.Methods.History.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/History/Del.ts').components['schemas']['AiTracker_2.Methods.History.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
