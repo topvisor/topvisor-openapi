@@ -35775,6 +35775,12 @@ components:
         - null
         - null
       title: Дополнительный сегмент топа
+    Users_2.Types.Profile.PositionsTopSegments:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.TopSegment'
+      title: Дополнительные сегменты топа
+      description: '@see Positions_2\Types\TopSegment'
     Users_2.Methods.Profile.Edit:
       type: object
       properties:
@@ -35804,7 +35810,7 @@ components:
         positions_top_segments:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.TopSegment'
+            - $ref: '#/components/schemas/Users_2.Types.Profile.PositionsTopSegments'
       required: []
       title: Изменение параметров активного пользователя
     Users_2.Methods.Profile.Edit.Exec:
