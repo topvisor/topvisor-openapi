@@ -35,6 +35,8 @@ export interface components {
             /** @constant */
             readonly SERP_snapshots_tool: "SERP Top Checker";
             /** @constant */
+            readonly AI_tracker_tool: "AI Tracker (AI mentions)";
+            /** @constant */
             readonly Index_checker_tool: "Index Status Checker";
             /** @constant */
             readonly Search_volume_tool: "Search Volume Checker";

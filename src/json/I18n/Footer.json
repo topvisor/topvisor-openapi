@@ -62,6 +62,10 @@
                         "const": "SERP Top Checker",
                         "readOnly": true
                     },
+                    "AI_tracker_tool": {
+                        "const": "AI Tracker (AI mentions)",
+                        "readOnly": true
+                    },
                     "Index_checker_tool": {
                         "const": "Index Status Checker",
                         "readOnly": true
@@ -341,6 +345,7 @@
                     "Site_auditor",
                     "Site_watcher",
                     "SERP_snapshots_tool",
+                    "AI_tracker_tool",
                     "Index_checker_tool",
                     "Search_volume_tool",
                     "Sitemap_generator",
