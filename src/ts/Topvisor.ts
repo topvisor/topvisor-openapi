@@ -4610,23 +4610,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Востановление удаленной проверки */
-    "/edit/admin_2/actions/positions/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditAdmin2ActionsPositions"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Восстановление удаленного проекта */
     "/edit/admin_2/actions/projects/": {
         parameters: {
@@ -9200,6 +9183,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["AddAdmin2ActionsPositionsHistory"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Восстановление удаленной проверки */
+    "/edit/admin_2/actions/projects/check/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2ActionsProjectsCheck"];
         delete?: never;
         options?: never;
         head?: never;
@@ -17896,31 +17896,6 @@ export interface operations {
             };
         };
     };
-    EditAdmin2ActionsPositions: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Actions/Positions/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Methods/Actions/Positions/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     EditAdmin2ActionsProjects: {
         parameters: {
             query?: never;
@@ -24492,6 +24467,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Methods/Actions/Positions/History/Add.ts').components['schemas']['Admin_2.Methods.Actions.Positions.History.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAdmin2ActionsProjectsCheck: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Projects/Check/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Check.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Methods/Actions/Projects/Check/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Check.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

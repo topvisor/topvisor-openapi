@@ -14529,59 +14529,6 @@
                 }
             }
         },
-        "/edit/admin_2/actions/positions/": {
-            "post": {
-                "operationId": "EditAdmin2ActionsPositions",
-                "tags": [
-                    "Admin_2"
-                ],
-                "summary": "Востановление удаленной проверки",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Positions/Edit.json#/components/schemas/Admin_2.Methods.Actions.Positions.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/Positions/Edit.json#/components/schemas/Admin_2.Methods.Actions.Positions.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/admin_2/actions/projects/": {
             "post": {
                 "operationId": "EditAdmin2ActionsProjects",
@@ -28576,6 +28523,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Admin_2/Methods/Actions/Positions/History/Add.json#/components/schemas/Admin_2.Methods.Actions.Positions.History.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/projects/check/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsProjectsCheck",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Восстановление удаленной проверки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Projects/Check/Edit.json#/components/schemas/Admin_2.Methods.Actions.Projects.Check.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Methods/Actions/Projects/Check/Edit.json#/components/schemas/Admin_2.Methods.Actions.Projects.Check.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
