@@ -6663,7 +6663,7 @@
                 "tags": [
                     "Example_2"
                 ],
-                "summary": "Метод с примерами параметров типа Enum",
+                "summary": "Метод с примерами параметров типа Enum\n\ntest 5",
                 "requestBody": {
                     "content": {
                         "application/json": {
