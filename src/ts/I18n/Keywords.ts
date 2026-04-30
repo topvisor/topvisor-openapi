@@ -577,6 +577,8 @@ export interface components {
             /** @constant */
             readonly HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/support/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
             /** @constant */
+            readonly HintVolumeInQueue: "<i data-top-icon=\"\"></i> means Volume is being checked. Please wait till the data is displayed.<br><br>\n<i data-top-icon=\"\"></i> means there isn't enough checks for updating all Volumes. Wait up to the next billing date or <a href=\"#tabsView-account=subscription&view-dialog_bankPayment=subscription\" >upgrade your pricing plan</a> to update Volume for all keywords now.";
+            /** @constant */
             readonly Collect_settings: "Collect settings";
             /** @constant */
             readonly Collect_hint_methods: "Auto substitutions";

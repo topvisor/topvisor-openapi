@@ -1146,6 +1146,10 @@
                         "const": "Volume isn't collected. Follow <a href=\"/support/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.",
                         "readOnly": true
                     },
+                    "HintVolumeInQueue": {
+                        "const": "<i data-top-icon=\"\"></i> means Volume is being checked. Please wait till the data is displayed.<br><br>\n<i data-top-icon=\"\"></i> means there isn't enough checks for updating all Volumes. Wait up to the next billing date or <a href=\"#tabsView-account=subscription&view-dialog_bankPayment=subscription\" >upgrade your pricing plan</a> to update Volume for all keywords now.",
+                        "readOnly": true
+                    },
                     "Collect_settings": {
                         "const": "Collect settings",
                         "readOnly": true
@@ -1543,6 +1547,7 @@
                     "Keywords_to_transfer_and_delete_from_project",
                     "Remove_pluses_fullstops_commas_apostrophes_quotes",
                     "HintVolumeNoCollected",
+                    "HintVolumeInQueue",
                     "Collect_settings",
                     "Collect_hint_methods",
                     "Extension_of_groups",
