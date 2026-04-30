@@ -260,6 +260,8 @@ export interface components {
             readonly On_display_relevant_url: "Show Ranked URLs";
             /** @constant */
             readonly Confirm_delete_target_for_group: "Are you sure you want to delete this target group?";
+            /** @constant */
+            readonly Relevants_urls: "Ranked URLs";
         };
     };
     responses: never;

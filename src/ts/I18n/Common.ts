@@ -1012,6 +1012,8 @@ export interface components {
             readonly Comment: "Description";
             /** @constant */
             readonly Relevant_URL: "Relevant URL";
+            /** @constant */
+            readonly Visits: "Traffic";
         };
     };
     responses: never;

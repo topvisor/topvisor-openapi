@@ -358,10 +358,6 @@
                         "const": "CPC",
                         "readOnly": true
                     },
-                    "Visits": {
-                        "const": "Traffic",
-                        "readOnly": true
-                    },
                     "Snippet": {
                         "const": "Snippet",
                         "readOnly": true
@@ -1350,7 +1346,6 @@
                     "Relevant_page",
                     "Relevant_research",
                     "CPC",
-                    "Visits",
                     "Snippet",
                     "Research",
                     "Research_suggestions",

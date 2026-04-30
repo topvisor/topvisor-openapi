@@ -183,8 +183,6 @@ export interface components {
             /** @constant */
             readonly CPC: "CPC";
             /** @constant */
-            readonly Visits: "Traffic";
-            /** @constant */
             readonly Snippet: "Snippet";
             /** @constant */
             readonly Research: "Research keywords";

@@ -2007,6 +2007,10 @@
                     "Relevant_URL": {
                         "const": "Relevant URL",
                         "readOnly": true
+                    },
+                    "Visits": {
+                        "const": "Traffic",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2503,7 +2507,8 @@
                     "Recipient_email",
                     "Priority",
                     "Comment",
-                    "Relevant_URL"
+                    "Relevant_URL",
+                    "Visits"
                 ]
             }
         }
