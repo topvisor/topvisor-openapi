@@ -31022,7 +31022,7 @@ components:
             В этом режиме в схему будут добавляться только изменения за один час
           type: boolean
         internal:
-          title: Выгрузить internal версию / версию для разработчиков OpenAPI
+          title: Выгрузить внутреннюю версию OpenAPI
           type: boolean
       required: []
       title: |-
@@ -48613,8 +48613,8 @@ components:
           title: Формат
           default: json
           type: string
-        incremental:
-          title: Использовать инкрементальный вывод схемы
+        internal:
+          title: Выгрузить internal версию / версию для разработчиков OpenAPI
           type: boolean
       required: []
       title: Загрузка настроек OpenAPI

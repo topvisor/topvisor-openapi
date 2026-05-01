@@ -14,8 +14,8 @@ export interface components {
              * @default json
              */
             format?: string;
-            /** Использовать инкрементальный вывод схемы */
-            incremental?: boolean;
+            /** Выгрузить internal версию / версию для разработчиков OpenAPI */
+            internal?: boolean;
         };
         "System_2.Methods.Common.OpenAPI.Get.Exec": Record<string, never>;
     };

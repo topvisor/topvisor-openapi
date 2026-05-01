@@ -20,7 +20,7 @@
                         "type": "boolean"
                     },
                     "internal": {
-                        "title": "Выгрузить internal версию / версию для разработчиков OpenAPI",
+                        "title": "Выгрузить внутреннюю версию OpenAPI",
                         "type": "boolean"
                     }
                 },

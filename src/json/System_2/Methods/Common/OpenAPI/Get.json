@@ -15,8 +15,8 @@
                         "default": "json",
                         "type": "string"
                     },
-                    "incremental": {
-                        "title": "Использовать инкрементальный вывод схемы",
+                    "internal": {
+                        "title": "Выгрузить internal версию / версию для разработчиков OpenAPI",
                         "type": "boolean"
                     }
                 },
