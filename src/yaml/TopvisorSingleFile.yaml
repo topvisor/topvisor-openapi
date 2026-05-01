@@ -27108,6 +27108,8 @@ components:
         internal:
           title: Выгрузить внутреннюю версию OpenAPI
           type: boolean
+        internal_token:
+          type: string
       required: []
       title: |-
         Создать Open API схемы и скачать в zip

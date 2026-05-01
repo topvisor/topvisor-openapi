@@ -22,6 +22,9 @@
                     "internal": {
                         "title": "Выгрузить внутреннюю версию OpenAPI",
                         "type": "boolean"
+                    },
+                    "internal_token": {
+                        "type": "string"
                     }
                 },
                 "required": [],
