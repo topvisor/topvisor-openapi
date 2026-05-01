@@ -23,16 +23,6 @@ export interface components {
             show_visibility?: boolean;
             /** ID конкурента */
             competitor_id?: number;
-            /**
-             * Для списка проектов
-             * @description @internal
-             */
-            forProjectsList?: boolean;
-            /**
-             * Глубина регионов для списка проектов
-             * @description @internal
-             */
-            forProjectsListRegionDepth?: number | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */

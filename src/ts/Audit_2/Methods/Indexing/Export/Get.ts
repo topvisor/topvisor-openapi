@@ -11,13 +11,6 @@ export interface components {
         "Audit_2.Methods.Indexing.Export.Get": {
             /** Поисковые системы */
             searchers_keys: import('../../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
-            /**
-             * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-             *
-             *     Для внутреннего использования
-             * @description @internal
-             */
-            returnFilenameFromFolder?: string | null;
             /** Формат экспортируемого файла */
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */

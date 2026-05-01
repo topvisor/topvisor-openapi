@@ -157,12 +157,7 @@
                     },
                     "required_posts_any": {
                         "title": "Ограничение доступа\n\nДоступно всем, если не заполнено",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../Admin_2/Types/Staff/Posts.json#/components/schemas/Admin_2.Types.Staff.Posts"
-                            }
-                        ]
+                        "nullable": true
                     }
                 },
                 "required": [],

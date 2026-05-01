@@ -25,13 +25,7 @@
                             }
                         ]
                     },
-                    "models_keys": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys"
-                            }
-                        ]
-                    },
+                    "models_keys": {},
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"

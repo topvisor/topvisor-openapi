@@ -10,12 +10,6 @@
             "Quiz_2.Methods.Get": {
                 "type": "object",
                 "properties": {
-                    "user_id": {
-                        "title": "ID пользователя, ответы которого нужно вернуть",
-                        "description": "@internal",
-                        "nullable": true,
-                        "type": "integer"
-                    },
                     "fetch_style": {
                         "title": "Определяет формат результата: коллекция, объект, значение\n\nПримеры:\n- fetchAll - получить коллекцию объектов\n- fetch - получить один объект\n- fetchColumn - получить свойсвто объекта",
                         "description": "@see FetchStyle\n@see Selector::execFetch() - см. реализацию",

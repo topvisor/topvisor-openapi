@@ -40,9 +40,7 @@
                     },
                     "models_keys": {
                         "type": "array",
-                        "items": {
-                            "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelKey.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey"
-                        }
+                        "items": {}
                     },
                     "context_lang": {
                         "type": "string"
@@ -61,9 +59,7 @@
                                 "name": {
                                     "type": "string"
                                 },
-                                "key": {
-                                    "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelKey.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey"
-                                },
+                                "key": {},
                                 "enabled": {
                                     "type": "integer"
                                 }

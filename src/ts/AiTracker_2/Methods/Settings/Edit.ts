@@ -23,7 +23,7 @@ export interface components {
             /** Описание бренда */
             brand_description?: string | null;
             /** Список моделей ИИ */
-            models_keys?: import('../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelsKeys'] | null;
+            models_keys?: unknown;
             /** Настройки контекста: Язык */
             context_lang?: string | null;
             /** Настройки контекста: Регион */

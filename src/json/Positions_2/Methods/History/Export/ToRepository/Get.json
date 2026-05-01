@@ -43,12 +43,6 @@
                         "title": "Поля (fieldAlias) с привязкой к вкладкам\n\nТолько для xlsx с вкладками или pdf",
                         "type": "array"
                     },
-                    "returnFilenameFromFolder": {
-                        "title": "Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу\n\nДля внутреннего использования",
-                        "description": "@internal",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "addWorksheet": {
                         "nullable": true,
                         "type": "object",

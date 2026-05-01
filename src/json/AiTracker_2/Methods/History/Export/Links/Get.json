@@ -10,13 +10,7 @@
             "AiTracker_2.Methods.History.Export.Links.Get": {
                 "type": "object",
                 "properties": {
-                    "models_keys": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys"
-                            }
-                        ]
-                    },
+                    "models_keys": {},
                     "template_date_range": {
                         "title": "Диапазон значений шаблона",
                         "nullable": true,

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение сводки по проверкам ИИ-Трекера */
         "AiTracker_2.Methods.Summary.Get": {
-            model_key: import('../../../Robot_2/Types/Drivers/AiTracker/ModelKey.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelKey'];
+            model_key: unknown;
             /** Отобразить данные по количеству упоминаний */
             show_count_mentioned?: boolean;
             /** При фильтрации по ID папок также искать в подпапках */

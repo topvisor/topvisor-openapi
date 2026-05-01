@@ -18,12 +18,6 @@
                             }
                         ]
                     },
-                    "returnFilenameFromFolder": {
-                        "title": "Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу\n\nДля внутреннего использования",
-                        "description": "@internal",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "output": {
                         "title": "Формат экспортируемого файла",
                         "allOf": [

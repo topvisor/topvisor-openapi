@@ -36,12 +36,6 @@
                         "title": "Поля (fieldAlias) с привязкой к вкладкам\n\nТолько для xlsx с вкладками или pdf",
                         "type": "array"
                     },
-                    "returnFilenameFromFolder": {
-                        "title": "Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу\n\nДля внутреннего использования",
-                        "description": "@internal",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "addWorksheet": {
                         "nullable": true,
                         "type": "object",
@@ -66,13 +60,7 @@
                             }
                         ]
                     },
-                    "models_keys": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys"
-                            }
-                        ]
-                    },
+                    "models_keys": {},
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"

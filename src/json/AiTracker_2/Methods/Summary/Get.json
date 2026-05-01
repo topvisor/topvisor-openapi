@@ -10,13 +10,7 @@
             "AiTracker_2.Methods.Summary.Get": {
                 "type": "object",
                 "properties": {
-                    "model_key": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelKey.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelKey"
-                            }
-                        ]
-                    },
+                    "model_key": {},
                     "show_count_mentioned": {
                         "title": "Отобразить данные по количеству упоминаний",
                         "type": "boolean"

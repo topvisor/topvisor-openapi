@@ -10,11 +10,6 @@ export interface components {
         /** Получение вопроса */
         "Quiz_2.Methods.Questions.Get": {
             /**
-             * ID пользователя, ответы которого нужно вернуть
-             * @description @internal
-             */
-            user_id?: number | null;
-            /**
              * Определяет формат результата: коллекция, объект, значение
              *
              *     Примеры:

@@ -16,14 +16,6 @@ export interface components {
             search: string;
             /** Искать только страны */
             only_countries?: boolean;
-            /**
-             * #17499 для проверки частоты (исключить RU регионы из Google в связи с санкциями), недокументируемый параметр
-             *
-             *     Только для админов
-             * @description @private
-             *     @internal
-             */
-            for_volume?: boolean;
             /** ID регионов для получения */
             region_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**

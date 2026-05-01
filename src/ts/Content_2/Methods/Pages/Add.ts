@@ -60,7 +60,7 @@ export interface components {
              *
              *     Доступно всем, если не заполнено
              */
-            required_posts_any?: import('../../../Admin_2/Types/Staff/Posts.ts').components['schemas']['Admin_2.Types.Staff.Posts'] | null;
+            required_posts_any?: unknown;
         };
         "Content_2.Methods.Pages.Add.Exec": number;
     };

@@ -32,11 +32,6 @@ export interface components {
             /** Запустить проверку частоты по всем регионам гугла, добавленных в проект */
             check_all_regions_google?: boolean | null;
             /**
-             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
-             * @description @internal
-             */
-            for_project_task?: boolean;
-            /**
              * Список фильтров по полям объекта
              *
              *     {name: string, operator: Selector\Types\Operator, values: array}
@@ -54,13 +49,6 @@ export interface components {
              *     Только для моделей с полем id
              */
             id?: number | null;
-            /**
-             * Включить режим отладки
-             *
-             *     Учитывается только при запуске с правами администратора
-             * @description @internal
-             */
-            debug?: boolean;
             /** ID проекта */
             project_id: number;
         };

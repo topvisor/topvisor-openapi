@@ -28,13 +28,6 @@ export interface components {
              */
             keyword_id?: number | null;
             /**
-             * Движок проверки позиций
-             *
-             *     Учитывается только при запуске с правами администратора
-             * @description @internal
-             */
-            mod_engine?: string | null;
-            /**
              * Дата для фильтра по запросам, позиции с которой ухудшились
              *
              *     - Не разрешено использовать с keyword_id
@@ -43,13 +36,6 @@ export interface components {
              *         разным
              */
             date_prev?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
-             * Включить режим отладки
-             *
-             *     Учитывается только при запуске с правами администратора
-             * @description @internal
-             */
-            debug?: boolean;
             /**
              * Список фильтров по полям объекта
              *

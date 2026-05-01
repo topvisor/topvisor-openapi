@@ -51,12 +51,6 @@
                         "nullable": true,
                         "type": "integer"
                     },
-                    "mod_engine": {
-                        "title": "Движок проверки позиций\n\nУчитывается только при запуске с правами администратора",
-                        "description": "@internal",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "date_prev": {
                         "title": "Дата для фильтра по запросам, позиции с которой ухудшились\n\n- Не разрешено использовать с keyword_id\n- Для использования требуется указание region_index",
                         "description": "@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть\n    разным",
@@ -66,11 +60,6 @@
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
-                    },
-                    "debug": {
-                        "title": "Включить режим отладки\n\nУчитывается только при запуске с правами администратора",
-                        "description": "@internal",
-                        "type": "boolean"
                     },
                     "filters": {
                         "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",

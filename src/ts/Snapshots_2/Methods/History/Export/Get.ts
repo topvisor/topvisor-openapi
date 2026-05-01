@@ -10,11 +10,6 @@ export interface components {
         /** Экспорт истории снимков выдачи */
         "Snapshots_2.Methods.History.Export.Get": {
             /**
-             * Вернуть ли URI-идентификатор или имя файла, из директории
-             * @description @internal
-             */
-            returnFilenameFromFolder?: string | null;
-            /**
              * Дополнительные параметры экспорта
              *
              *     Возможные поля:
@@ -36,11 +31,6 @@ export interface components {
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */
             show_trash?: boolean;
-            /**
-             * Индекс региона
-             * @description @experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
-             */
-            region_index?: number;
             /**
              * Ключ региона
              * @deprecated

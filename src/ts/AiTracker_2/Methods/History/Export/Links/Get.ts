@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение гостевой ссылки на просмотр ИИ-Трекера */
         "AiTracker_2.Methods.History.Export.Links.Get": {
-            models_keys: import('../../../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelsKeys'];
+            models_keys: unknown;
             /** Диапазон значений шаблона */
             template_date_range?: string | null;
             /** Тип диапазона дат (при сравнении) */

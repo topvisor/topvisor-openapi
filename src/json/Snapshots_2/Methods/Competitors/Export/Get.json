@@ -17,12 +17,6 @@
                             }
                         ]
                     },
-                    "returnFilenameFromFolder": {
-                        "title": "Вернуть ли URI-идентификатор или имя файла, из директории.",
-                        "description": "@internal",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "properties": {
                         "title": "Параметры экспорта, возможные поля:\n- showSummary",
                         "type": "array"
@@ -73,11 +67,6 @@
                     "show_trash": {
                         "title": "Показывать удаленные запросы",
                         "type": "boolean"
-                    },
-                    "region_index": {
-                        "title": "Индекс региона",
-                        "description": "@experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`",
-                        "type": "integer"
                     },
                     "searcher_key": {
                         "title": "Ключ региона",

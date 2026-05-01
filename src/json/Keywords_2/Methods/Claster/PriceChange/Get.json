@@ -21,11 +21,6 @@
                         "title": "Отображать сумму с учетом скидки",
                         "type": "boolean"
                     },
-                    "silent": {
-                        "title": "Получить цену перекластеризации без учета существования прошлой проверки",
-                        "description": "@internal",
-                        "type": "boolean"
-                    },
                     "project_id": {
                         "title": "ID проекта",
                         "type": "integer"

@@ -12,11 +12,6 @@ export interface components {
             count: import('../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
             /** Отображать сумму с учетом скидки */
             apply_discount?: boolean;
-            /**
-             * Получить цену перекластеризации без учета существования прошлой проверки
-             * @description @internal
-             */
-            silent?: boolean;
             /** ID проекта */
             project_id: number;
         };

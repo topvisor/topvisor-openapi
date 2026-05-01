@@ -38,13 +38,6 @@ export interface components {
              *     Только для xlsx с вкладками или pdf
              */
             tabs_fields?: unknown[];
-            /**
-             * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-             *
-             *     Для внутреннего использования
-             * @description @internal
-             */
-            returnFilenameFromFolder?: string | null;
             addWorksheet?: {
                 name: string;
                 handle: {
@@ -52,7 +45,7 @@ export interface components {
                 };
             } | null;
             history_fields: import('../../../Types/History/HistoryFields.ts').components['schemas']['AiTracker_2.Types.History.HistoryFields'];
-            models_keys: import('../../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelsKeys'];
+            models_keys: unknown;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */

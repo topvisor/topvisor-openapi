@@ -41,13 +41,6 @@ export interface components {
              *     Только для xlsx с вкладками или pdf
              */
             tabs_fields?: unknown[];
-            /**
-             * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-             *
-             *     Для внутреннего использования
-             * @description @internal
-             */
-            returnFilenameFromFolder?: string | null;
             addWorksheet?: {
                 name: string;
                 handle: {

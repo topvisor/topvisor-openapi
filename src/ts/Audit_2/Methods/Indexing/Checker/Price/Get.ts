@@ -17,12 +17,6 @@ export interface components {
              */
             debug?: boolean;
             /**
-             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
-             * @description @internal
-             *     @private
-             */
-            for_project_task?: boolean;
-            /**
              * Список фильтров по полям объекта
              *
              *     {name: string, operator: Selector\Types\Operator, values: array}

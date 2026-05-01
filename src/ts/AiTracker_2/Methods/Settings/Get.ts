@@ -19,13 +19,13 @@ export interface components {
             project_id: number;
             brand_name: string;
             brand_description: string;
-            models_keys: import('../../../Robot_2/Types/Drivers/AiTracker/ModelKey.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelKey'][];
+            models_keys: unknown[];
             context_lang: string;
             context_location: string;
             context_custom: string;
             models_available?: {
                 name: string;
-                key: import('../../../Robot_2/Types/Drivers/AiTracker/ModelKey.ts').components['schemas']['Robot_2.Types.Drivers.AiTracker.ModelKey'];
+                key: unknown;
                 enabled: number;
             }[];
         } | null;

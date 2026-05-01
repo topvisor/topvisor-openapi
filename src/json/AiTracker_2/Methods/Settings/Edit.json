@@ -22,12 +22,7 @@
                     },
                     "models_keys": {
                         "title": "Список моделей ИИ",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../Robot_2/Types/Drivers/AiTracker/ModelsKeys.json#/components/schemas/Robot_2.Types.Drivers.AiTracker.ModelsKeys"
-                            }
-                        ]
+                        "nullable": true
                     },
                     "context_lang": {
                         "title": "Настройки контекста: Язык",

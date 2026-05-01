@@ -17,11 +17,6 @@ export interface components {
             /** Вывести fieldLabel в заголовках столбцов */
             show_fields_labels?: boolean;
             /**
-             * Для копирования
-             * @description @internal
-             */
-            forClipboard?: boolean;
-            /**
              * Имя файла
              * @default export
              */

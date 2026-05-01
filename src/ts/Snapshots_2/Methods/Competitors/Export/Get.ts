@@ -11,11 +11,6 @@ export interface components {
         "Snapshots_2.Methods.Competitors.Export.Get": {
             output: import('../../../Types/Competitors/Export/Output.ts').components['schemas']['Snapshots_2.Types.Competitors.Export.Output'];
             /**
-             * Вернуть ли URI-идентификатор или имя файла, из директории.
-             * @description @internal
-             */
-            returnFilenameFromFolder?: string | null;
-            /**
              * Параметры экспорта, возможные поля:
              *     - showSummary
              */
@@ -44,11 +39,6 @@ export interface components {
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */
             show_trash?: boolean;
-            /**
-             * Индекс региона
-             * @description @experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
-             */
-            region_index?: number;
             /**
              * Ключ региона
              * @deprecated

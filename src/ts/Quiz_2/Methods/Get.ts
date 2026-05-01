@@ -10,11 +10,6 @@ export interface components {
         /** Получение тестов */
         "Quiz_2.Methods.Get": {
             /**
-             * ID пользователя, ответы которого нужно вернуть
-             * @description @internal
-             */
-            user_id?: number | null;
-            /**
              * Определяет формат результата: коллекция, объект, значение
              *
              *     Примеры:

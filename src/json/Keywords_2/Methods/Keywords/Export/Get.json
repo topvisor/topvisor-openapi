@@ -33,11 +33,6 @@
                         "title": "Вывести fieldLabel в заголовках столбцов",
                         "type": "boolean"
                     },
-                    "forClipboard": {
-                        "title": "Для копирования",
-                        "description": "@internal",
-                        "type": "boolean"
-                    },
                     "file_name": {
                         "title": "Имя файла",
                         "default": "export",

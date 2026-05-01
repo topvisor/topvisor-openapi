@@ -41,16 +41,6 @@
                             }
                         ]
                     },
-                    "for_project_task": {
-                        "title": "Выполняется ли запуск проверки для проекта, который является задачей toolbox",
-                        "description": "@internal",
-                        "type": "boolean"
-                    },
-                    "debug": {
-                        "title": "Включить режим отладки\n\nУчитывается только при запуске с правами администратора",
-                        "description": "@internal",
-                        "type": "boolean"
-                    },
                     "filters": {
                         "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",

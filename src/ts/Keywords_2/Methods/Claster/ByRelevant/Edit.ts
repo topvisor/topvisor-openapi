@@ -16,11 +16,6 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /**
-             * Индекс региона
-             * @description @experimental Дополнительная фича: если не задан нужно задать параметры `searcher_key`, `region_key`, `region_lang`, `region_device`
-             */
-            region_index?: number;
-            /**
              * Ключ региона
              * @deprecated
              * @description @deprecated Скрыто в API

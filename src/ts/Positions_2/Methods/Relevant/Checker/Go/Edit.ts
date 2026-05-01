@@ -18,18 +18,6 @@ export interface components {
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
             groups_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
-             * Выполняется ли запуск проверки для проекта, который является задачей toolbox
-             * @description @internal
-             */
-            for_project_task?: boolean;
-            /**
-             * Включить режим отладки
-             *
-             *     Учитывается только при запуске с правами администратора
-             * @description @internal
-             */
-            debug?: boolean;
-            /**
              * Список фильтров по полям объекта
              *
              *     {name: string, operator: Selector\Types\Operator, values: array}

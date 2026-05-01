@@ -30,11 +30,6 @@
                         "title": "Искать только страны",
                         "type": "boolean"
                     },
-                    "for_volume": {
-                        "title": "#17499 для проверки частоты (исключить RU регионы из Google в связи с санкциями), недокументируемый параметр\n\nТолько для админов",
-                        "description": "@private\n@internal",
-                        "type": "boolean"
-                    },
                     "region_ids": {
                         "title": "ID регионов для получения",
                         "nullable": true,
