@@ -76,15 +76,6 @@
             "Models.Abstract.Keywords": {
                 "$ref": "Models/Abstract/Keywords.json#/components/schemas/Models.Abstract.Keywords"
             },
-            "Models.Admin.Invoices": {
-                "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices"
-            },
-            "Models.Admin.Staff": {
-                "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff"
-            },
-            "Models.Admin.Users": {
-                "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
-            },
             "Models.AdminLayers.Anons": {
                 "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
             },
@@ -219,12 +210,6 @@
             },
             "Models.Watcher.Results": {
                 "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
-            },
-            "Models.Admin.Accounting.Counteragents": {
-                "$ref": "Models/Admin/Accounting/Counteragents.json#/components/schemas/Models.Admin.Accounting.Counteragents"
-            },
-            "Models.Admin.Users.Ranks": {
-                "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
             }
         }
     }

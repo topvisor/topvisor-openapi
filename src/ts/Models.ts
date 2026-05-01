@@ -30,9 +30,6 @@ export interface components {
         "Models.Abstract.Folders": import('./Models/Abstract/Folders.ts').components['schemas']['Models.Abstract.Folders'];
         "Models.Abstract.Groups": import('./Models/Abstract/Groups.ts').components['schemas']['Models.Abstract.Groups'];
         "Models.Abstract.Keywords": import('./Models/Abstract/Keywords.ts').components['schemas']['Models.Abstract.Keywords'];
-        "Models.Admin.Invoices": import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
-        "Models.Admin.Staff": import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
-        "Models.Admin.Users": import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
         "Models.AdminLayers.Anons": import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
         "Models.AdminLayers.Key": import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];
         "Models.AdminLayers.Layers": import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
@@ -78,8 +75,6 @@ export interface components {
         "Models.Users.Referrals": import('./Models/Users/Referrals.ts').components['schemas']['Models.Users.Referrals'];
         "Models.Users.Verif": import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
         "Models.Watcher.Results": import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
-        "Models.Admin.Accounting.Counteragents": import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
-        "Models.Admin.Users.Ranks": import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
     };
     responses: never;
     parameters: never;
