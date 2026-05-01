@@ -3284,7 +3284,10 @@ paths:
       operationId: GetExample2Array
       tags:
         - Example_2
-      summary: Метод с примерами параметров типа Enum
+      summary: |-
+        Метод с примерами параметров типа Enum
+
+        test
       requestBody:
         content:
           application/json:
@@ -24466,14 +24469,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.CronCommands'
-    TV.API.Types.IntArray:
-      type: array
-      items:
-        type: integer
-      title: |-
-        Тип массива: int
-
-        Принимает: Любые целые числа и числа в строках
     TV.API.Types.BoolArray:
       type: array
       items:
@@ -24509,9 +24504,7 @@ components:
     Example_2.Methods.Array.Get:
       type: object
       properties:
-        ints:
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        ints: {}
         strings:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
@@ -24526,7 +24519,10 @@ components:
         - strings
         - booleans
         - enum_numbers
-      title: Метод с примерами параметров типа Enum
+      title: |-
+        Метод с примерами параметров типа Enum
+
+        test
     Example_2.Methods.Array.Get.Exec:
       title: Ассоциативный массив с результирующими переданными параметрами и результатом implodeQuotes() и genSet()
       type: object
@@ -25023,6 +25019,14 @@ components:
       title: Получение информации о сообщениях в информере
     Informer_2.Methods.Info.Get.Exec:
       type: array
+    TV.API.Types.IntArray:
+      type: array
+      items:
+        type: integer
+      title: |-
+        Тип массива: int
+
+        Принимает: Любые целые числа и числа в строках
     Informer_2.Methods.Informer.Del:
       type: object
       properties:
