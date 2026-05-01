@@ -5904,7 +5904,7 @@
                 "tags": [
                     "Example_2"
                 ],
-                "summary": "Метод с примерами параметров типа Enum\n\ntest",
+                "summary": "Метод с примерами параметров типа Enum",
                 "requestBody": {
                     "content": {
                         "application/json": {
