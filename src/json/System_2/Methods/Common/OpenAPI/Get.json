@@ -18,6 +18,9 @@
                     "internal": {
                         "title": "Выгрузить internal версию / версию для разработчиков OpenAPI",
                         "type": "boolean"
+                    },
+                    "internal_token": {
+                        "type": "string"
                     }
                 },
                 "required": [],

@@ -42373,6 +42373,8 @@ components:
         internal:
           title: Выгрузить internal версию / версию для разработчиков OpenAPI
           type: boolean
+        internal_token:
+          type: string
       required: []
       title: Загрузка настроек OpenAPI
     System_2.Types.Common.PagePreview.Format:

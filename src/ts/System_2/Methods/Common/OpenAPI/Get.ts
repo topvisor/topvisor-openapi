@@ -16,6 +16,7 @@ export interface components {
             format?: string;
             /** Выгрузить internal версию / версию для разработчиков OpenAPI */
             internal?: boolean;
+            internal_token?: string;
         };
         "System_2.Methods.Common.OpenAPI.Get.Exec": Record<string, never>;
     };
