@@ -15,12 +15,9 @@
                         "default": "json",
                         "type": "string"
                     },
-                    "internal": {
-                        "title": "Выгрузить internal версию / версию для разработчиков OpenAPI",
+                    "incremental": {
+                        "title": "Выгрузить внутреннюю версию OpenAPI",
                         "type": "boolean"
-                    },
-                    "internal_token": {
-                        "type": "string"
                     }
                 },
                 "required": [],

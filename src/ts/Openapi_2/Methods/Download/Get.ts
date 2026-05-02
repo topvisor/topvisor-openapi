@@ -25,9 +25,6 @@ export interface components {
              *     В этом режиме в схему будут добавляться только изменения за один час
              */
             incremental?: boolean;
-            /** Выгрузить внутреннюю версию OpenAPI */
-            internal?: boolean;
-            internal_token?: string;
         };
         "Openapi_2.Methods.Download.Get.Exec": Record<string, never>;
     };

@@ -27105,11 +27105,6 @@ components:
 
             В этом режиме в схему будут добавляться только изменения за один час
           type: boolean
-        internal:
-          title: Выгрузить внутреннюю версию OpenAPI
-          type: boolean
-        internal_token:
-          type: string
       required: []
       title: |-
         Создать Open API схемы и скачать в zip
@@ -42370,11 +42365,9 @@ components:
           title: Формат
           default: json
           type: string
-        internal:
-          title: Выгрузить internal версию / версию для разработчиков OpenAPI
+        incremental:
+          title: Выгрузить внутреннюю версию OpenAPI
           type: boolean
-        internal_token:
-          type: string
       required: []
       title: Загрузка настроек OpenAPI
     System_2.Types.Common.PagePreview.Format:

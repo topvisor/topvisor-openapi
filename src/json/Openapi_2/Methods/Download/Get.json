@@ -18,13 +18,6 @@
                     "incremental": {
                         "title": "Использовать инкрементальный вывод схемы\n\nВ этом режиме в схему будут добавляться только изменения за один час",
                         "type": "boolean"
-                    },
-                    "internal": {
-                        "title": "Выгрузить внутреннюю версию OpenAPI",
-                        "type": "boolean"
-                    },
-                    "internal_token": {
-                        "type": "string"
                     }
                 },
                 "required": [],
