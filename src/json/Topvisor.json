@@ -22734,7 +22734,7 @@
                 "tags": [
                     "System_2"
                 ],
-                "summary": "Получение превью страницы\n\nВернет изображение в формате image/png\n\nСсылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}",
+                "summary": "Получение превью страницы\n\nВернет изображение в формате image/png",
                 "requestBody": {
                     "content": {
                         "application/json": {
