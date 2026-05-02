@@ -32,12 +32,6 @@ export interface components {
              * @description @see /get/aiTracker_2/summary/
              */
             include_ai_tracker_summary?: boolean;
-            /**
-             * Добавить в результат сводку с указанными параметрами
-             * @deprecated
-             * @description @deprecated 2026-02-01
-             */
-            include_positions_summary_params?: unknown[] | null;
             /** Является ли проект задачей */
             is_task?: boolean | null;
             /**

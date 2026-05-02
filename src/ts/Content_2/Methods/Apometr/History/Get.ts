@@ -21,12 +21,6 @@ export interface components {
             region_lang?: string;
             region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
             /**
-             * Дата
-             * @deprecated
-             * @description @deprecated
-             */
-            date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /**
              * Время последней проверки за день в формате timestamp.
              *     Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.
              */

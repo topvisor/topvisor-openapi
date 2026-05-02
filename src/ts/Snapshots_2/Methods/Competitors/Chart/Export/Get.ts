@@ -23,12 +23,6 @@ export interface components {
             show_visibility?: boolean;
             /** Добавить в результат */
             show_urls?: boolean;
-            /**
-             * @deprecated Используется в старой версии дизайна
-             * @deprecated
-             * @default domain
-             */
-            competitor_by?: import('../../../../Types/Competitors/OutputFormat.ts').components['schemas']['Snapshots_2.Types.Competitors.OutputFormat'];
             /** Фильтр по доменам */
             domains?: unknown[] | null;
             /** Добавить в результат даты, в которых были проверки (existsDates) */
@@ -37,29 +31,6 @@ export interface components {
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */
             show_trash?: boolean;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            searcher_key?: import('../../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_key?: number | null;
-            /**
-             * Язык региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_lang?: string | null;
-            /**
-             * @deprecated Скрыто в API
-             * @deprecated
-             */
-            region_device?: import('../../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             only_exists_first_date?: import('../../../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
             /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
             only_exists_by_date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;

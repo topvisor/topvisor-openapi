@@ -26,14 +26,6 @@
                         "title": "Фильтр по изменениям в указанной ПС в указанную дату\n\nФормат записи: `{{ date }}:{{ searcher_key }}`",
                         "type": "string"
                     },
-                    "indexing_fields": {
-                        "title": "@deprecated",
-                        "deprecated": true,
-                        "default": [
-                            "data"
-                        ],
-                        "type": "array"
-                    },
                     "history_fields": {
                         "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
                         "nullable": true,

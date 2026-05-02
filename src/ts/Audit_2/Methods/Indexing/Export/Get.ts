@@ -16,14 +16,6 @@ export interface components {
             /** Настройки экспорта */
             properties?: unknown[];
             /**
-             * @deprecated
-             * @deprecated
-             * @default [
-             *       "data"
-             *     ]
-             */
-            indexing_fields?: unknown[];
-            /**
              * Список полей индексации, которые необходимо получить
              *
              *     См. поля indexing_* в объекте Urls

@@ -15,29 +15,6 @@ export interface components {
             folder_id?: number;
             /** ID проекта */
             project_id: number;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            searcher_key?: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_key?: number | null;
-            /**
-             * Язык региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_lang?: string | null;
-            /**
-             * @deprecated Скрыто в API
-             * @deprecated
-             */
-            region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
         };
         "Keywords_2.Methods.Claster.ByRelevant.Edit.Exec": number | null;
     };

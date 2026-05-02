@@ -19,11 +19,6 @@ export interface components {
             keywords_ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /** Индексы регионов */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /**
-             * @deprecated Старая версия API
-             * @deprecated
-             */
-            positions_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
             history_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
             /** ID конкурентов */
             competitors_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;

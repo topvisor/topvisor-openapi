@@ -38,17 +38,6 @@
                             }
                         ]
                     },
-                    "date": {
-                        "title": "Дата",
-                        "description": "@deprecated",
-                        "nullable": true,
-                        "deprecated": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
                     "timestamp": {
                         "title": "Время последней проверки за день в формате timestamp.\nПолучить данные апометра за 3 предыдущих дня и текущий день до этого времени.",
                         "nullable": true,

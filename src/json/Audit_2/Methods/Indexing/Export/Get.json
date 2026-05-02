@@ -30,14 +30,6 @@
                         "title": "Настройки экспорта",
                         "type": "array"
                     },
-                    "indexing_fields": {
-                        "title": "@deprecated",
-                        "deprecated": true,
-                        "default": [
-                            "data"
-                        ],
-                        "type": "array"
-                    },
                     "history_fields": {
                         "title": "Список полей индексации, которые необходимо получить\n\nСм. поля indexing_* в объекте Urls",
                         "nullable": true,

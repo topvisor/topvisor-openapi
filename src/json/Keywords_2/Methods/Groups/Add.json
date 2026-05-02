@@ -27,12 +27,6 @@
                         "nullable": true,
                         "type": "array"
                     },
-                    "name": {
-                        "title": "@deprecated",
-                        "nullable": true,
-                        "deprecated": true,
-                        "type": "array"
-                    },
                     "on": {
                         "title": "Активность группы",
                         "default": true,

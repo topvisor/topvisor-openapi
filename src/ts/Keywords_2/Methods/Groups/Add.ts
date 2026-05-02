@@ -16,11 +16,6 @@ export interface components {
             /** Имена групп */
             names?: unknown[] | null;
             /**
-             * @deprecated
-             * @deprecated
-             */
-            name?: unknown[] | null;
-            /**
              * Активность группы
              * @default true
              */

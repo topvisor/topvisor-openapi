@@ -1931,7 +1931,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка проектов */
+    /**
+     * Получение списка проектов
+     *
+     *     test
+     */
     "/get/example_2/projects/": {
         parameters: {
             query?: never;
@@ -4132,27 +4136,6 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Нужно для обратной совместимости с приложениями
-     * @deprecated
-     * @description @deprecated
-     */
-    "/get/users_2/xml/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetUsers2Xml"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
      * Добавление комментария к отзыву
      *
      *     Оставить комментарий можно в течение часа поосле выставления оценки
@@ -4220,27 +4203,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAiTracker2HistoryExport"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получение сводки анализа сайта
-     * @deprecated
-     * @description @deprecated
-     */
-    "/get/audit_2/audit/browse/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAudit2AuditBrowse"];
         delete?: never;
         options?: never;
         head?: never;
@@ -4874,27 +4836,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditCompetitors2OrdersPay"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получение истории urls, найденных в выдаче, за конкретную проверку
-     * @deprecated
-     * @description @deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get
-     */
-    "/get/content_2/apometr/cHHistory/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetContent2ApometrCHHistory"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7297,8 +7238,6 @@ export interface paths {
      * Получение превью страницы
      *
      *     Вернет изображение в формате image/png
-     *
-     *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}
      */
     "/get/system_2/common/pagePreview/": {
         parameters: {
@@ -8057,69 +7996,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAudit2AuditLogActualError"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получение данных для графика
-     * @deprecated
-     * @description @deprecated
-     */
-    "/get/audit_2/audit/log/chart/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAudit2AuditLogChart"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Экспорт результатов аудита
-     * @deprecated
-     * @description @deprecated
-     */
-    "/get/audit_2/audit/results/export/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAudit2AuditResultsExport"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получение результатов анализа страницы
-     * @deprecated
-     * @description @deprecated
-     */
-    "/get/audit_2/audit/results/page/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetAudit2AuditResultsPage"];
         delete?: never;
         options?: never;
         head?: never;
@@ -15421,31 +15297,6 @@ export interface operations {
             };
         };
     };
-    GetUsers2Xml: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Users_2/Methods/Xml/Get.ts').components['schemas']['Users_2.Methods.Xml.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Users_2/Methods/Xml/Get.ts').components['schemas']['Users_2.Methods.Xml.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     EditVotes2Comment: {
         parameters: {
             query?: never;
@@ -15545,31 +15396,6 @@ export interface operations {
                         result: import('./AiTracker_2/Methods/History/Export/Get.ts').components['schemas']['AiTracker_2.Methods.History.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
-                };
-            };
-        };
-    };
-    GetAudit2AuditBrowse: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Audit_2/Methods/Audit/Browse/Get.ts').components['schemas']['Audit_2.Methods.Audit.Browse.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Audit_2/Methods/Audit/Browse/Get.ts').components['schemas']['Audit_2.Methods.Audit.Browse.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -16474,32 +16300,6 @@ export interface operations {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/Pay/Edit.ts').components['schemas']['Competitors_2.Methods.Orders.Pay.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetContent2ApometrCHHistory: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Content_2/Methods/Apometr/CHHistory/Get.ts').components['schemas']['Content_2.Methods.Apometr.CHHistory.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Content_2/Methods/Apometr/CHHistory/Get.ts').components['schemas']['Content_2.Methods.Apometr.CHHistory.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'];
                 };
             };
         };
@@ -21063,81 +20863,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Audit/Log/ActualError/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.ActualError.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetAudit2AuditLogChart: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Audit_2/Methods/Audit/Log/Chart/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Chart.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Audit_2/Methods/Audit/Log/Chart/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Chart.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetAudit2AuditResultsExport: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Audit_2/Methods/Audit/Results/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Export.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Audit_2/Methods/Audit/Results/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Export.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetAudit2AuditResultsPage: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Audit_2/Methods/Audit/Results/Page/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Page.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Audit_2/Methods/Audit/Results/Page/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Page.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

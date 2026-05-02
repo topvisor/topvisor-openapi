@@ -26,16 +26,6 @@
                         "title": "Фильтрация по величине изменения позиции за период (>= N)",
                         "type": "integer"
                     },
-                    "positions_fields": {
-                        "title": "@deprecated Старая версия API",
-                        "nullable": true,
-                        "deprecated": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../Positions_2/Types/History/HistoryFields.json#/components/schemas/Positions_2.Types.History.HistoryFields"
-                            }
-                        ]
-                    },
                     "history_fields": {
                         "nullable": true,
                         "allOf": [

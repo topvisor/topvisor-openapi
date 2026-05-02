@@ -7094,36 +7094,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/users_2/xml/:
-    post:
-      operationId: GetUsers2Xml
-      tags:
-        - Users_2
-      summary: Нужно для обратной совместимости с приложениями
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Users_2.Methods.Xml.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Users_2.Methods.Xml.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /edit/votes_2/comment/:
     post:
       operationId: EditVotes2Comment
@@ -7249,36 +7219,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
-  /get/audit_2/audit/browse/:
-    post:
-      operationId: GetAudit2AuditBrowse
-      tags:
-        - Audit_2
-      summary: Получение сводки анализа сайта
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Audit_2.Methods.Audit.Browse.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Browse.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /get/audit_2/audit/checks/:
     post:
       operationId: GetAudit2AuditChecks
@@ -8318,40 +8258,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/content_2/apometr/cHHistory/:
-    post:
-      operationId: GetContent2ApometrCHHistory
-      tags:
-        - Content_2
-      summary: Получение истории urls, найденных в выдаче, за конкретную проверку
-      description: '@deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Content_2.Methods.Apometr.CHHistory.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Content_2.Methods.Apometr.CHHistory.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                $ref: '#/components/schemas/Models.Apometr.History'
   /get/content_2/apometr/calendar/:
     post:
       operationId: GetContent2ApometrCalendar
@@ -13586,97 +13492,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.ActualError.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /get/audit_2/audit/log/chart/:
-    post:
-      operationId: GetAudit2AuditLogChart
-      tags:
-        - Audit_2
-      summary: Получение данных для графика
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-  /get/audit_2/audit/results/export/:
-    post:
-      operationId: GetAudit2AuditResultsExport
-      tags:
-        - Audit_2
-      summary: Экспорт результатов аудита
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /get/audit_2/audit/results/page/:
-    post:
-      operationId: GetAudit2AuditResultsPage
-      tags:
-        - Audit_2
-      summary: Получение результатов анализа страницы
-      description: '@deprecated'
-      deprecated: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -19811,12 +19626,6 @@ components:
 
             Формат записи: `{{ date }}:{{ searcher_key }}`
           type: string
-        indexing_fields:
-          title: '@deprecated'
-          deprecated: true
-          default:
-            - data
-          type: array
         history_fields:
           title: |-
             Список полей индексации, которые необходимо получить
@@ -25342,11 +25151,6 @@ components:
           title: Имена групп
           nullable: true
           type: array
-        name:
-          title: '@deprecated'
-          nullable: true
-          deprecated: true
-          type: array
         'on':
           title: Активность группы
           default: true
@@ -26048,11 +25852,6 @@ components:
         names:
           title: Имена групп
           nullable: true
-          type: array
-        name:
-          title: '@deprecated'
-          nullable: true
-          deprecated: true
           type: array
         'on':
           title: Активность группы
@@ -27291,12 +27090,6 @@ components:
         filter_by_positions_delta:
           title: Фильтрация по величине изменения позиции за период (>= N)
           type: integer
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -28464,12 +28257,6 @@ components:
           title: Добавить в результат сводку проверки ИИ-Трекера
           description: '@see /get/aiTracker_2/summary/'
           type: boolean
-        include_positions_summary_params:
-          title: Добавить в результат сводку с указанными параметрами
-          description: '@deprecated 2026-02-01'
-          nullable: true
-          deprecated: true
-          type: array
         is_task:
           title: Является ли проект задачей
           nullable: true
@@ -29297,18 +29084,6 @@ components:
       title: Отправить код для подтверждения действия
     Sms_2.Methods.SendPIN.Get.Exec:
       type: boolean
-    Snapshots_2.Types.Competitors.OutputFormat:
-      type: string
-      enum:
-        - domain
-        - url
-      x-enum-varnames:
-        - Domain
-        - Url
-      x-enum-descriptions:
-        - По домену
-        - По url
-      title: Формат вывода конкурентов
     Snapshots_2.Methods.Competitors.Get:
       type: object
       properties:
@@ -29327,12 +29102,6 @@ components:
         show_urls:
           title: Добавить в результат
           type: boolean
-        competitor_by:
-          title: '@deprecated Используется в старой версии дизайна'
-          deprecated: true
-          default: domain
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.Competitors.OutputFormat'
         domains:
           title: Фильтр по доменам
           nullable: true
@@ -29346,31 +29115,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -29661,12 +29405,6 @@ components:
             Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
           default: true
           type: boolean
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -29677,31 +29415,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -32256,16 +31969,6 @@ components:
     Users_2.Methods.TelegramAccounts.Get.Exec:
       nullable: true
       type: array
-    Users_2.Methods.Xml.Get:
-      type: object
-      properties: {}
-      required: []
-      title: Нужно для обратной совместимости с приложениями
-      description: '@deprecated'
-      deprecated: true
-    Users_2.Methods.Xml.Get.Exec:
-      nullable: true
-      type: array
     Votes_2.Methods.Comment.Edit:
       type: object
       properties:
@@ -32546,25 +32249,6 @@ components:
     AiTracker_2.Methods.History.Export.Get.Exec:
       title: Результаты индексации
       nullable: true
-    Audit_2.Methods.Audit.Browse.Get:
-      type: object
-      properties:
-        project_id:
-          title: ID проекта
-          type: integer
-        check_id:
-          title: ID проверки аудита
-          type: integer
-      required:
-        - project_id
-        - check_id
-      title: Получение сводки анализа сайта
-      description: '@deprecated'
-      deprecated: true
-    Audit_2.Methods.Audit.Browse.Get.Exec:
-      title: Сводка анализа сайта
-      nullable: true
-      type: array
     Audit_2.Methods.Audit.Checks.Get:
       type: object
       properties:
@@ -34257,12 +33941,6 @@ components:
         properties:
           title: Настройки экспорта
           type: array
-        indexing_fields:
-          title: '@deprecated'
-          deprecated: true
-          default:
-            - data
-          type: array
         history_fields:
           title: |-
             Список полей индексации, которые необходимо получить
@@ -35658,119 +35336,6 @@ components:
         - Обычная выдача
         - XML выдача
       title: Тип выдачи
-    Content_2.Methods.Apometr.CHHistory.Get:
-      type: object
-      properties:
-        datetime:
-          title: Дата и время проверки
-          description: '@deprecated'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        timestamp:
-          title: Время проверки в timestamp
-          nullable: true
-          type: integer
-        region_index:
-          title: Индекс региона
-          type: integer
-        action:
-          allOf:
-            - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
-        fetch_style:
-          title: |-
-            Определяет формат результата: коллекция, объект, значение
-
-            Примеры:
-            - fetchAll - получить коллекцию объектов
-            - fetch - получить один объект
-            - fetchColumn - получить свойсвто объекта
-          description: |-
-            @see FetchStyle
-            @see Selector::execFetch() - см. реализацию
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
-        fields:
-          title: |-
-            Список полей объекта, которые надо вернуть в результате
-
-            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
-
-            Использует поля модели
-          description: '@see AbstractMethod::MODEL'
-          type: array
-        orders:
-          title: |-
-            Список полей объекта, по которым необходимо выполнить сортировку
-
-            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
-
-            Использует поля модели
-          description: '@see AbstractMethod::MODEL'
-          type: array
-        filters:
-          title: |-
-            Список фильтров по полям объекта
-
-            {name: string, operator: Selector\Types\Operator, values: array}
-
-            Использует поля модели
-
-            Поля обязательное, если $id не указан
-          description: |-
-            @see AbstractMethod::MODEL
-            @see Selector\Types\Operator
-          type: array
-        id:
-          title: |-
-            Id объекта, для фильтрации объектов по id
-
-            Только для моделей с полем id
-          nullable: true
-          type: integer
-        limit:
-          title: |-
-            Количество объектов, которые необходимо получить в результате
-
-            Используется в паре с offset
-          nullable: true
-          type: integer
-        offset:
-          title: |-
-            Число объектов, которое необходимо пропустить при получении результата
-
-            Используется в паре с limit
-          type: integer
-      required:
-        - region_index
-        - action
-      title: Получение истории urls, найденных в выдаче, за конкретную проверку
-      description: '@deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get'
-      deprecated: true
-    Models.Apometr.History:
-      properties:
-        time:
-          nullable: true
-        action:
-          nullable: true
-        region_index:
-          nullable: true
-        keyword_id:
-          nullable: true
-        url:
-          nullable: true
-        position:
-          nullable: true
-        d:
-          nullable: true
-        d_day:
-          nullable: true
-    Content_2.Methods.Apometr.CHHistory.Get.Exec:
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.Apometr.History'
     Content_2.Methods.Apometr.Calendar.Get:
       type: object
       properties:
@@ -35848,13 +35413,6 @@ components:
         region_device:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        date:
-          title: Дата
-          description: '@deprecated'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
         timestamp:
           title: |-
             Время последней проверки за день в формате timestamp.
@@ -37694,31 +37252,6 @@ components:
         project_id:
           title: ID проекта
           type: integer
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
       required:
         - project_id
       title: 'Кластеризация по релевантной странице: проверки перед началом кластеризации'
@@ -40039,12 +39572,6 @@ components:
           required:
             - name
             - handle
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -40371,31 +39898,6 @@ components:
         project_id:
           title: ID проекта
           type: integer
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
       required:
         - phrase_id
         - project_id
@@ -41528,12 +41030,6 @@ components:
         show_urls:
           title: Добавить в результат
           type: boolean
-        competitor_by:
-          title: '@deprecated Используется в старой версии дизайна'
-          deprecated: true
-          default: domain
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.Competitors.OutputFormat'
         domains:
           title: Фильтр по доменам
           nullable: true
@@ -41547,31 +41043,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -41754,12 +41225,6 @@ components:
         show_urls:
           title: Добавить в результат
           type: boolean
-        competitor_by:
-          title: '@deprecated Используется в старой версии дизайна'
-          deprecated: true
-          default: domain
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.Competitors.OutputFormat'
         domains:
           title: Фильтр по доменам
           nullable: true
@@ -41773,31 +41238,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -41958,12 +41398,6 @@ components:
         output:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -41974,31 +41408,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -43328,172 +42737,6 @@ components:
       nullable: true
       type: object
       additionalProperties: {}
-    Audit_2.Methods.Audit.Log.Chart.Get:
-      type: object
-      properties:
-        time1:
-          title: Фильтр по периоду
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        time2:
-          title: Фильтр по периоду
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        limit:
-          title: |-
-            Количество объектов, которые необходимо получить в результате
-
-            Используется в паре с offset
-          nullable: true
-          type: integer
-        offset:
-          title: |-
-            Число объектов, которое необходимо пропустить при получении результата
-
-            Используется в паре с limit
-          type: integer
-        project_id:
-          title: ID проекта
-          type: integer
-        check_id:
-          title: ID проверки аудита
-          type: integer
-      required:
-        - project_id
-        - check_id
-      title: Получение данных для графика
-      description: '@deprecated'
-      deprecated: true
-    Audit_2.Methods.Audit.Log.Chart.Get.Exec:
-      title: Данные для графика
-      nullable: true
-      type: array
-    Audit_2.Types.Audit.Results.Export.TypeReport:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-      x-enum-varnames:
-        - Review
-        - Indexing
-        - Snippet
-        - Links
-        - Images
-        - Content
-        - Pages
-        - Page
-      x-enum-descriptions:
-        - Обзор
-        - Индексация
-        - Сниппет
-        - Ссылки
-        - Изображения
-        - Контент
-        - Страницы
-        - Одна страница
-      title: Тип отчета аудита для экспорта
-    Audit_2.Methods.Audit.Results.Export.Get:
-      type: object
-      properties:
-        type_report:
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Audit.Results.Export.TypeReport'
-        format:
-          title: Формат экспорта
-          nullable: true
-          default: pdf
-          type: string
-        search:
-          title: Данные поиска во всех табличных разделах (только для PDF)
-          nullable: true
-          type: string
-        filter:
-          title: Данные фильтрации во всех табличных разделах (только для PDF)
-          nullable: true
-          type: string
-        external:
-          title: Вид ссылок (только для PDF)
-          nullable: true
-          type: string
-        project_id:
-          title: ID проекта
-          type: integer
-        check_id:
-          title: ID проверки аудита
-          type: integer
-      required:
-        - type_report
-        - project_id
-        - check_id
-      title: Экспорт результатов аудита
-      description: '@deprecated'
-      deprecated: true
-    Audit_2.Methods.Audit.Results.Export.Get.Exec:
-      title: Ответ об успешнности экспорта результатов аудита
-      nullable: true
-      type: boolean
-    Audit_2.Methods.Audit.Results.Page.Get:
-      type: object
-      properties:
-        url:
-          title: Ссылка на анализируемую страницу
-          type: string
-        search:
-          title: Поиск
-          nullable: true
-          type: string
-        orders:
-          title: |-
-            Список полей объекта, по которым необходимо выполнить сортировку
-
-            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
-
-            Использует поля модели
-          description: '@see AbstractMethod::MODEL'
-          type: array
-        project_id:
-          title: ID проекта
-          type: integer
-        check_id:
-          title: ID проверки аудита
-          type: integer
-      required:
-        - url
-        - project_id
-        - check_id
-      title: Получение результатов анализа страницы
-      description: '@deprecated'
-      deprecated: true
-    Audit_2.Methods.Audit.Results.Page.Get.Exec:
-      title: Результаты анализа страницы
-      type: object
-      properties:
-        result:
-          type: object
-          properties:
-            page_in_filter:
-              type: boolean
-            index:
-              type: integer
-            snippet:
-              type: string
-            content:
-              type: string
-          required:
-            - page_in_filter
-            - index
-            - snippet
-            - content
-      required:
-        - result
     Audit_2.Methods.Indexing.Checker.Go.Edit:
       type: object
       properties:
@@ -45284,12 +44527,6 @@ components:
           title: Индексы регионов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -45511,12 +44748,6 @@ components:
           required:
             - name
             - handle
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -46175,12 +45406,6 @@ components:
           title: Индексы регионов
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -46191,31 +45416,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -46352,12 +45552,6 @@ components:
         show_urls:
           title: Добавить в результат
           type: boolean
-        competitor_by:
-          title: '@deprecated Используется в старой версии дизайна'
-          deprecated: true
-          default: domain
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.Competitors.OutputFormat'
         domains:
           title: Фильтр по доменам
           nullable: true
@@ -46371,31 +45565,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -46529,12 +45698,6 @@ components:
         repository:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Repository'
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -46545,31 +45708,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
@@ -46692,12 +45830,6 @@ components:
         output:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
-        positions_fields:
-          title: '@deprecated Старая версия API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.HistoryFields'
         history_fields:
           nullable: true
           allOf:
@@ -46708,31 +45840,6 @@ components:
         show_trash:
           title: Показывать удаленные запросы
           type: boolean
-        searcher_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_key:
-          title: Ключ региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: integer
-        region_lang:
-          title: Язык региона
-          description: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          type: string
-        region_device:
-          title: '@deprecated Скрыто в API'
-          nullable: true
-          deprecated: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         only_exists_first_date:
           allOf:
             - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'

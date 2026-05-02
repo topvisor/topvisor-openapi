@@ -26,14 +26,6 @@ export interface components {
              */
             filter_by_alert?: string;
             /**
-             * @deprecated
-             * @deprecated
-             * @default [
-             *       "data"
-             *     ]
-             */
-            indexing_fields?: unknown[];
-            /**
              * Список полей индексации, которые необходимо получить
              *
              *     См. поля indexing_* в объекте Urls

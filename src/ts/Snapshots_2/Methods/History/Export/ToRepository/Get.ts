@@ -15,39 +15,11 @@ export interface components {
         "Snapshots_2.Methods.History.Export.ToRepository.Get": {
             repository: import('../../../../Types/History/Export/Repository.ts').components['schemas']['Snapshots_2.Types.History.Export.Repository'];
             output: import('../../../../Types/History/Export/Output.ts').components['schemas']['Snapshots_2.Types.History.Export.Output'];
-            /**
-             * @deprecated Старая версия API
-             * @deprecated
-             */
-            positions_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
             history_fields?: import('../../../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */
             show_trash?: boolean;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            searcher_key?: import('../../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_key?: number | null;
-            /**
-             * Язык региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_lang?: string | null;
-            /**
-             * @deprecated Скрыто в API
-             * @deprecated
-             */
-            region_device?: import('../../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             only_exists_first_date?: import('../../../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
             /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
             only_exists_by_date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;

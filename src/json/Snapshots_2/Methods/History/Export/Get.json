@@ -30,16 +30,6 @@
                             }
                         ]
                     },
-                    "positions_fields": {
-                        "title": "@deprecated Старая версия API",
-                        "nullable": true,
-                        "deprecated": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Snapshots_2/Types/History/HistoryFields.json#/components/schemas/Snapshots_2.Types.History.HistoryFields"
-                            }
-                        ]
-                    },
                     "history_fields": {
                         "nullable": true,
                         "allOf": [
@@ -55,41 +45,6 @@
                     "show_trash": {
                         "title": "Показывать удаленные запросы",
                         "type": "boolean"
-                    },
-                    "searcher_key": {
-                        "title": "Ключ региона",
-                        "description": "@deprecated Скрыто в API",
-                        "nullable": true,
-                        "deprecated": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
-                    },
-                    "region_key": {
-                        "title": "Ключ региона",
-                        "description": "@deprecated Скрыто в API",
-                        "nullable": true,
-                        "deprecated": true,
-                        "type": "integer"
-                    },
-                    "region_lang": {
-                        "title": "Язык региона",
-                        "description": "@deprecated Скрыто в API",
-                        "nullable": true,
-                        "deprecated": true,
-                        "type": "string"
-                    },
-                    "region_device": {
-                        "title": "@deprecated Скрыто в API",
-                        "nullable": true,
-                        "deprecated": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
                     },
                     "only_exists_first_date": {
                         "allOf": [

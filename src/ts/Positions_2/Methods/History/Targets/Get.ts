@@ -13,29 +13,6 @@ export interface components {
             phrase_id: number;
             /** ID проекта */
             project_id: number;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            searcher_key?: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
-            /**
-             * Ключ региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_key?: number | null;
-            /**
-             * Язык региона
-             * @deprecated
-             * @description @deprecated Скрыто в API
-             */
-            region_lang?: string | null;
-            /**
-             * @deprecated Скрыто в API
-             * @deprecated
-             */
-            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
         };
         "Positions_2.Methods.History.Targets.Get.Exec": unknown[];
     };
