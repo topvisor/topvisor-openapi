@@ -43,7 +43,7 @@
                         "readOnly": true
                     },
                     "Rank_tracker_and_collecting_TOP": {
-                        "const": "Rank Tracking and SERP Top",
+                        "const": "Rank Tracking, SERP Top and AI",
                         "readOnly": true
                     },
                     "Semantics": {

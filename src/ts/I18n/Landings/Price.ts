@@ -25,7 +25,7 @@ export interface components {
             /** @constant */
             readonly What_is_a_tariff: "What is a pricing plan (tariff)?";
             /** @constant */
-            readonly Rank_tracker_and_collecting_TOP: "Rank Tracking and SERP Top";
+            readonly Rank_tracker_and_collecting_TOP: "Rank Tracking, SERP Top and AI";
             /** @constant */
             readonly Semantics: "Semantics";
             /** @constant */
