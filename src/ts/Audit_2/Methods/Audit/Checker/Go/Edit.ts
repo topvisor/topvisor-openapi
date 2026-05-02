@@ -10,13 +10,6 @@ export interface components {
         /** Запуск проверки аудита */
         "Audit_2.Methods.Audit.Checker.Go.Edit": {
             /**
-             * Запуск в режиме отладки
-             *
-             *     Только для админов
-             * @description @private
-             */
-            debug?: boolean;
-            /**
              * Список фильтров по полям объекта
              *
              *     {name: string, operator: Selector\Types\Operator, values: array}

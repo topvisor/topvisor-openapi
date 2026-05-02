@@ -10,11 +10,6 @@
             "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
-                    "debug": {
-                        "title": "Запуск в режиме отладки\n\n Только для админов",
-                        "description": "@private",
-                        "type": "boolean"
-                    },
                     "max_pages": {
                         "allOf": [
                             {

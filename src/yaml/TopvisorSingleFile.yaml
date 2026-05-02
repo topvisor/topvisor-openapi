@@ -34176,13 +34176,6 @@ components:
         show_counts_all:
           title: Отобразить количество проверенных страниц
           type: boolean
-        forChart:
-          title: |-
-            Вернуть данные в формате для графика
-
-            Недокументируемый параметр
-          description: '@private'
-          type: boolean
         project_id:
           title: ID проекта
           type: integer
@@ -42590,13 +42583,6 @@ components:
     Audit_2.Methods.Audit.Checker.Go.Edit:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-            Только для админов
-          description: '@private'
-          type: boolean
         filters:
           title: |-
             Список фильтров по полям объекта
@@ -42740,13 +42726,6 @@ components:
     Audit_2.Methods.Indexing.Checker.Go.Edit:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-             Только для админов
-          description: '@private'
-          type: boolean
         filters:
           title: |-
             Список фильтров по полям объекта
@@ -42964,13 +42943,6 @@ components:
     Audit_2.Methods.Sitemap.Checker.Go.Edit:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-             Только для админов
-          description: '@private'
-          type: boolean
         max_pages:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
@@ -43049,13 +43021,6 @@ components:
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-             Только для админов
-          description: '@private'
-          type: boolean
         filters:
           title: |-
             Список фильтров по полям объекта

@@ -9,13 +9,6 @@ export interface components {
     schemas: {
         /** Отправка проектов на проверку карты сайта */
         "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
-            /**
-             * Запуск в режиме отладки
-             *
-             *      Только для админов
-             * @description @private
-             */
-            debug?: boolean;
             max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
             /**
              * Список фильтров по полям объекта

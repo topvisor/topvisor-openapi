@@ -34,11 +34,6 @@
                         "title": "Отобразить количество проверенных страниц",
                         "type": "boolean"
                     },
-                    "forChart": {
-                        "title": "Вернуть данные в формате для графика\n\nНедокументируемый параметр",
-                        "description": "@private",
-                        "type": "boolean"
-                    },
                     "project_id": {
                         "title": "ID проекта",
                         "type": "integer"

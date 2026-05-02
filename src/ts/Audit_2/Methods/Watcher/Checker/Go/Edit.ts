@@ -10,13 +10,6 @@ export interface components {
         /** Отправка проектов на проверку радара */
         "Audit_2.Methods.Watcher.Checker.Go.Edit": {
             /**
-             * Запуск в режиме отладки
-             *
-             *      Только для админов
-             * @description @private
-             */
-            debug?: boolean;
-            /**
              * Список фильтров по полям объекта
              *
              *     {name: string, operator: Selector\Types\Operator, values: array}
