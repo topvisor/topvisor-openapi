@@ -3396,10 +3396,7 @@ paths:
       operationId: GetExample2Projects
       tags:
         - Example_2
-      summary: |-
-        Получение списка проектов
-
-        test
+      summary: Получение списка проектов
       requestBody:
         content:
           application/json:
@@ -4625,34 +4622,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Payments_2.Methods.Companies.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/payments_2/contractSign/:
-    post:
-      operationId: EditPayments2ContractSign
-      tags:
-        - Payments_2
-      summary: Подписание контракта (только для админов)
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Payments_2.Methods.ContractSign.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Payments_2.Methods.ContractSign.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12456,62 +12425,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /del/tickets_2/admin/message/:
-    post:
-      operationId: DelTickets2AdminMessage
-      tags:
-        - Tickets_2
-      summary: Удаление ответа в тикете, только для админов
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Message.Del'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Tickets_2.Methods.Admin.Message.Del.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/tickets_2/admin/message/:
-    post:
-      operationId: EditTickets2AdminMessage
-      tags:
-        - Tickets_2
-      summary: Редактирование текста ответа в тикете, только для админов
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Message.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Tickets_2.Methods.Admin.Message.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /add/tickets_2/admin/templates/:
     post:
       operationId: AddTickets2AdminTemplates
@@ -14935,34 +14848,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/tickets_2/admin/ticket/resourceAdmin/:
-    post:
-      operationId: EditTickets2AdminTicketResourceAdmin
-      tags:
-        - Tickets_2
-      summary: Изменение админской ссылки к тикетам. Только для админов
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -24511,10 +24396,7 @@ components:
             Используется в паре с limit
           type: integer
       required: []
-      title: |-
-        Получение списка проектов
-
-        test
+      title: Получение списка проектов
     Models.Projects:
       properties:
         COUNT(*):
@@ -26916,22 +26798,6 @@ components:
     Payments_2.Methods.Companies.Get.Exec:
       nullable: true
       type: array
-    Payments_2.Methods.ContractSign.Edit:
-      type: object
-      properties:
-        requisites_id:
-          title: Номер договора/оферты для платежа
-          type: string
-        signed:
-          title: Флаг обозначающий подписан ли контракт
-          type: boolean
-      required:
-        - requisites_id
-        - signed
-      title: Подписание контракта (только для админов)
-    Payments_2.Methods.ContractSign.Edit.Exec:
-      nullable: true
-      type: integer
     Payments_2.Methods.NextRequisitesId.Edit:
       type: object
       properties:
@@ -42005,34 +41871,6 @@ components:
     System_2.Methods.Properties.Property.Edit.Exec:
       nullable: true
       type: integer
-    Tickets_2.Methods.Admin.Message.Del:
-      type: object
-      properties:
-        id:
-          title: ID ответа
-          type: integer
-      required:
-        - id
-      title: Удаление ответа в тикете, только для админов
-    Tickets_2.Methods.Admin.Message.Del.Exec:
-      nullable: true
-      type: integer
-    Tickets_2.Methods.Admin.Message.Edit:
-      type: object
-      properties:
-        id:
-          title: ID редактируемого сообщения тикета
-          type: integer
-        text:
-          title: Текст сообщения
-          type: string
-      required:
-        - id
-        - text
-      title: Редактирование текста ответа в тикете, только для админов
-    Tickets_2.Methods.Admin.Message.Edit.Exec:
-      nullable: true
-      type: integer
     Tickets_2.Methods.Admin.Templates.Add:
       type: object
       properties:
@@ -42618,13 +42456,6 @@ components:
     Audit_2.Methods.Audit.Checker.Price.Get:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-            Только для админов
-          description: '@private'
-          type: boolean
         filters:
           title: |-
             Список фильтров по полям объекта
@@ -42761,13 +42592,6 @@ components:
     Audit_2.Methods.Indexing.Checker.Price.Get:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-             Только для админов
-          description: '@private'
-          type: boolean
         filters:
           title: |-
             Список фильтров по полям объекта
@@ -42873,13 +42697,6 @@ components:
         show_counts_all:
           title: Отобразить количество проверенных страниц
           type: boolean
-        forChart:
-          title: |-
-            Вернуть данные в формате для графика
-
-            Недокументируемый параметр
-          description: '@private'
-          type: boolean
         project_id:
           title: ID проекта
           type: integer
@@ -42982,13 +42799,6 @@ components:
     Audit_2.Methods.Sitemap.Checker.Price.Get:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-             Только для админов
-          description: '@private'
-          type: boolean
         max_pages:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
@@ -43056,13 +42866,6 @@ components:
     Audit_2.Methods.Watcher.Checker.Price.Get:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-             Только для админов
-          description: '@private'
-          type: boolean
         filters:
           title: |-
             Список фильтров по полям объекта
@@ -45949,22 +45752,6 @@ components:
         - ticket_id
       title: Изменение комментария о пользователя в тикете
     Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec:
-      nullable: true
-      type: integer
-    Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit:
-      type: object
-      properties:
-        resource_admin:
-          title: Ссылка
-          type: string
-        ticket_id:
-          title: ID тикета
-          type: integer
-      required:
-        - resource_admin
-        - ticket_id
-      title: Изменение админской ссылки к тикетам. Только для админов
-    Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec:
       nullable: true
       type: integer
     Tpvsr_2.Methods.Stat.Export.GuestLinks.Get:

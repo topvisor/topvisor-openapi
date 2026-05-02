@@ -6116,7 +6116,7 @@
                 "tags": [
                     "Example_2"
                 ],
-                "summary": "Получение списка проектов\n\ntest",
+                "summary": "Получение списка проектов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8405,59 +8405,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Payments_2/Methods/Companies/Get.json#/components/schemas/Payments_2.Methods.Companies.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/payments_2/contractSign/": {
-            "post": {
-                "operationId": "EditPayments2ContractSign",
-                "tags": [
-                    "Payments_2"
-                ],
-                "summary": "Подписание контракта (только для админов)",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Payments_2/Methods/ContractSign/Edit.json#/components/schemas/Payments_2.Methods.ContractSign.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Payments_2/Methods/ContractSign/Edit.json#/components/schemas/Payments_2.Methods.ContractSign.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22887,112 +22834,6 @@
                 }
             }
         },
-        "/del/tickets_2/admin/message/": {
-            "post": {
-                "operationId": "DelTickets2AdminMessage",
-                "tags": [
-                    "Tickets_2"
-                ],
-                "summary": "Удаление ответа в тикете, только для админов",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Tickets_2/Methods/Admin/Message/Del.json#/components/schemas/Tickets_2.Methods.Admin.Message.Del"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Tickets_2/Methods/Admin/Message/Del.json#/components/schemas/Tickets_2.Methods.Admin.Message.Del.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/tickets_2/admin/message/": {
-            "post": {
-                "operationId": "EditTickets2AdminMessage",
-                "tags": [
-                    "Tickets_2"
-                ],
-                "summary": "Редактирование текста ответа в тикете, только для админов",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Tickets_2/Methods/Admin/Message/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Message.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Tickets_2/Methods/Admin/Message/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Message.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/tickets_2/admin/templates/": {
             "post": {
                 "operationId": "AddTickets2AdminTemplates",
@@ -27402,59 +27243,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Tickets_2/Methods/Admin/Ticket/CommentAdmin/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/tickets_2/admin/ticket/resourceAdmin/": {
-            "post": {
-                "operationId": "EditTickets2AdminTicketResourceAdmin",
-                "tags": [
-                    "Tickets_2"
-                ],
-                "summary": "Изменение админской ссылки к тикетам. Только для админов",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [

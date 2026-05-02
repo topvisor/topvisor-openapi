@@ -1931,11 +1931,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка проектов
-     *
-     *     test
-     */
+    /** Получение списка проектов */
     "/get/example_2/projects/": {
         parameters: {
             query?: never;
@@ -2633,23 +2629,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetPayments2Companies"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Подписание контракта (только для админов) */
-    "/edit/payments_2/contractSign/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditPayments2ContractSign"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7365,40 +7344,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление ответа в тикете, только для админов */
-    "/del/tickets_2/admin/message/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelTickets2AdminMessage"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Редактирование текста ответа в тикете, только для админов */
-    "/edit/tickets_2/admin/message/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditTickets2AdminMessage"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Добавление шаблона тикета */
     "/add/tickets_2/admin/templates/": {
         parameters: {
@@ -8911,23 +8856,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditTickets2AdminTicketCommentAdmin"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение админской ссылки к тикетам. Только для админов */
-    "/edit/tickets_2/admin/ticket/resourceAdmin/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditTickets2AdminTicketResourceAdmin"];
         delete?: never;
         options?: never;
         head?: never;
@@ -13177,31 +13105,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Payments_2/Methods/Companies/Get.ts').components['schemas']['Payments_2.Methods.Companies.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditPayments2ContractSign: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Payments_2/Methods/ContractSign/Edit.ts').components['schemas']['Payments_2.Methods.ContractSign.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Payments_2/Methods/ContractSign/Edit.ts').components['schemas']['Payments_2.Methods.ContractSign.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
@@ -19942,56 +19845,6 @@ export interface operations {
             };
         };
     };
-    DelTickets2AdminMessage: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Tickets_2/Methods/Admin/Message/Del.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Tickets_2/Methods/Admin/Message/Del.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Del.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditTickets2AdminMessage: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Tickets_2/Methods/Admin/Message/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Tickets_2/Methods/Admin/Message/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     AddTickets2AdminTemplates: {
         parameters: {
             query?: never;
@@ -22114,31 +21967,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Ticket/CommentAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.CommentAdmin.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditTickets2AdminTicketResourceAdmin: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

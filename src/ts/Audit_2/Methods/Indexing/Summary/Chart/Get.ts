@@ -18,13 +18,6 @@ export interface components {
             show_counts_in_index?: boolean;
             /** Отобразить количество проверенных страниц */
             show_counts_all?: boolean;
-            /**
-             * Вернуть данные в формате для графика
-             *
-             *     Недокументируемый параметр
-             * @description @private
-             */
-            forChart?: boolean;
             /** ID проекта */
             project_id: number;
             /**

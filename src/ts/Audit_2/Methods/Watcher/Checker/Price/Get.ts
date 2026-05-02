@@ -10,13 +10,6 @@ export interface components {
         /** Информация о стоимости запуска индексации по проектам */
         "Audit_2.Methods.Watcher.Checker.Price.Get": {
             /**
-             * Запуск в режиме отладки
-             *
-             *      Только для админов
-             * @description @private
-             */
-            debug?: boolean;
-            /**
              * Список фильтров по полям объекта
              *
              *     {name: string, operator: Selector\Types\Operator, values: array}

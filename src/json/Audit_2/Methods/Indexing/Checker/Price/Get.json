@@ -10,11 +10,6 @@
             "Audit_2.Methods.Indexing.Checker.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "debug": {
-                        "title": "Запуск в режиме отладки\n\n Только для админов",
-                        "description": "@private",
-                        "type": "boolean"
-                    },
                     "filters": {
                         "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
