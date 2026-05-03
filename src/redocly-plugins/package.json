@@ -12,6 +12,6 @@
 		"openapi-typescript": "^7.10.1",
 		"path": "^0.12.7",
 		"path-normalize": "^8.0.0",
-		"yaml": "^2.8.2"
+		"yaml": "^2.8.3"
 	}
 }
