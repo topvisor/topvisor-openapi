@@ -3396,10 +3396,7 @@ paths:
       operationId: GetExample2Projects
       tags:
         - Example_2
-      summary: |-
-        Получение списка проектов
-
-        test
+      summary: Получение списка проектов
       requestBody:
         content:
           application/json:
@@ -24231,10 +24228,7 @@ components:
             Используется в паре с limit
           type: integer
       required: []
-      title: |-
-        Получение списка проектов
-
-        test
+      title: Получение списка проектов
     Models.Projects:
       properties:
         COUNT(*):
