@@ -11,11 +11,272 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение данных пользователя"
+                "title": "Получение данных пользователя",
+                "description": "@phpstan-type Informer array{count: int, lastDate: ?string}\n@phpstan-type TicketsInfo array{no_readed_count: ?int, ticket_id: ?int, ticket_time: ?string}\n@phpstan-type BankInfoTariff array{system: string, next_requisites_id: string, next_to_diadoc: int, months_left: int, state_time_end: string, state_method_info: string, state_status: Bank_2\\Types\\Subscriptions\\Status, balance: float, id: int, name: string, price: int, discount: int, next_id: int, next_name: string, next_price: int, next_discount: int}\n@phpstan-type BankInfo array{type: ('balance' | 'limits'), balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff?: BankInfoTariff, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription, subscription_name?: string}\n@phpstan-type UserAdditional array{refIsAllowed: bool, csvDelimiter: string, charset: string, currencyData: array{name: string, precision: int, prefix: string, suffix: string, prefix_ico: string, suffix_ico: string, label: string}, ip: string, timezoneOffset: int, useArchiveTariff: int, informer?: (Informer | stdClass), ticketsInfo?: (TicketsInfo | stdClass), bankInfo?: (BankInfo | stdClass), useDiadoc?: bool, mayChangeCurrency?: bool}"
             },
             "Users_2.Methods.Get.Exec": {
                 "type": "object",
-                "additionalProperties": {}
+                "properties": {
+                    "additional": {
+                        "type": "object",
+                        "properties": {
+                            "refIsAllowed": {
+                                "type": "boolean"
+                            },
+                            "csvDelimiter": {
+                                "type": "string"
+                            },
+                            "charset": {
+                                "type": "string"
+                            },
+                            "currencyData": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "precision": {
+                                        "type": "integer"
+                                    },
+                                    "prefix": {
+                                        "type": "string"
+                                    },
+                                    "suffix": {
+                                        "type": "string"
+                                    },
+                                    "prefix_ico": {
+                                        "type": "string"
+                                    },
+                                    "suffix_ico": {
+                                        "type": "string"
+                                    },
+                                    "label": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "precision",
+                                    "prefix",
+                                    "suffix",
+                                    "prefix_ico",
+                                    "suffix_ico",
+                                    "label"
+                                ]
+                            },
+                            "ip": {
+                                "type": "string"
+                            },
+                            "timezoneOffset": {
+                                "type": "integer"
+                            },
+                            "useArchiveTariff": {
+                                "type": "integer"
+                            },
+                            "informer": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "count": {
+                                                "type": "integer"
+                                            },
+                                            "lastDate": {
+                                                "nullable": true,
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "count",
+                                            "lastDate"
+                                        ]
+                                    },
+                                    {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                ]
+                            },
+                            "ticketsInfo": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "no_readed_count": {
+                                                "nullable": true,
+                                                "type": "integer"
+                                            },
+                                            "ticket_id": {
+                                                "nullable": true,
+                                                "type": "integer"
+                                            },
+                                            "ticket_time": {
+                                                "nullable": true,
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "no_readed_count",
+                                            "ticket_id",
+                                            "ticket_time"
+                                        ]
+                                    },
+                                    {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                ]
+                            },
+                            "bankInfo": {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "balance"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "limits"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "balance_all": {
+                                                "type": "number"
+                                            },
+                                            "balance_personal": {
+                                                "type": "number"
+                                            },
+                                            "balance_bonus": {
+                                                "type": "number"
+                                            },
+                                            "balance_tariff": {
+                                                "type": "number"
+                                            },
+                                            "tariff": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "system": {
+                                                        "type": "string"
+                                                    },
+                                                    "next_requisites_id": {
+                                                        "type": "string"
+                                                    },
+                                                    "next_to_diadoc": {
+                                                        "type": "integer"
+                                                    },
+                                                    "months_left": {
+                                                        "type": "integer"
+                                                    },
+                                                    "state_time_end": {
+                                                        "type": "string"
+                                                    },
+                                                    "state_method_info": {
+                                                        "type": "string"
+                                                    },
+                                                    "state_status": {
+                                                        "$ref": "../../Bank_2/Types/Subscriptions/Status.json#/components/schemas/Bank_2.Types.Subscriptions.Status"
+                                                    },
+                                                    "balance": {
+                                                        "type": "number"
+                                                    },
+                                                    "id": {
+                                                        "type": "integer"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "price": {
+                                                        "type": "integer"
+                                                    },
+                                                    "discount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "next_id": {
+                                                        "type": "integer"
+                                                    },
+                                                    "next_name": {
+                                                        "type": "string"
+                                                    },
+                                                    "next_price": {
+                                                        "type": "integer"
+                                                    },
+                                                    "next_discount": {
+                                                        "type": "integer"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "system",
+                                                    "next_requisites_id",
+                                                    "next_to_diadoc",
+                                                    "months_left",
+                                                    "state_time_end",
+                                                    "state_method_info",
+                                                    "state_status",
+                                                    "balance",
+                                                    "id",
+                                                    "name",
+                                                    "price",
+                                                    "discount",
+                                                    "next_id",
+                                                    "next_name",
+                                                    "next_price",
+                                                    "next_discount"
+                                                ]
+                                            },
+                                            "subscription": {
+                                                "$ref": "../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
+                                            },
+                                            "subscription_name": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "type",
+                                            "balance_all",
+                                            "balance_personal",
+                                            "balance_bonus",
+                                            "balance_tariff"
+                                        ]
+                                    },
+                                    {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                ]
+                            },
+                            "useDiadoc": {
+                                "type": "boolean"
+                            },
+                            "mayChangeCurrency": {
+                                "type": "boolean"
+                            }
+                        },
+                        "required": [
+                            "refIsAllowed",
+                            "csvDelimiter",
+                            "charset",
+                            "currencyData",
+                            "ip",
+                            "timezoneOffset",
+                            "useArchiveTariff"
+                        ]
+                    },
+                    "passTime": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "additional",
+                    "passTime"
+                ]
             }
         }
     }

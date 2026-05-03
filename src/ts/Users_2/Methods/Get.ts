@@ -7,10 +7,78 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных пользователя */
+        /**
+         * Получение данных пользователя
+         * @description @phpstan-type Informer array{count: int, lastDate: ?string}
+         *     @phpstan-type TicketsInfo array{no_readed_count: ?int, ticket_id: ?int, ticket_time: ?string}
+         *     @phpstan-type BankInfoTariff array{system: string, next_requisites_id: string, next_to_diadoc: int, months_left: int, state_time_end: string, state_method_info: string, state_status: Bank_2\Types\Subscriptions\Status, balance: float, id: int, name: string, price: int, discount: int, next_id: int, next_name: string, next_price: int, next_discount: int}
+         *     @phpstan-type BankInfo array{type: ('balance' | 'limits'), balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff?: BankInfoTariff, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: string}
+         *     @phpstan-type UserAdditional array{refIsAllowed: bool, csvDelimiter: string, charset: string, currencyData: array{name: string, precision: int, prefix: string, suffix: string, prefix_ico: string, suffix_ico: string, label: string}, ip: string, timezoneOffset: int, useArchiveTariff: int, informer?: (Informer | stdClass), ticketsInfo?: (TicketsInfo | stdClass), bankInfo?: (BankInfo | stdClass), useDiadoc?: bool, mayChangeCurrency?: bool}
+         */
         "Users_2.Methods.Get": Record<string, never>;
         "Users_2.Methods.Get.Exec": {
-            [key: string]: unknown;
+            additional: {
+                refIsAllowed: boolean;
+                csvDelimiter: string;
+                charset: string;
+                currencyData: {
+                    name: string;
+                    precision: number;
+                    prefix: string;
+                    suffix: string;
+                    prefix_ico: string;
+                    suffix_ico: string;
+                    label: string;
+                };
+                ip: string;
+                timezoneOffset: number;
+                useArchiveTariff: number;
+                informer?: {
+                    count: number;
+                    lastDate: string | null;
+                } | {
+                    [key: string]: unknown;
+                };
+                ticketsInfo?: {
+                    no_readed_count: number | null;
+                    ticket_id: number | null;
+                    ticket_time: string | null;
+                } | {
+                    [key: string]: unknown;
+                };
+                bankInfo?: {
+                    type: "balance" | "limits";
+                    balance_all: number;
+                    balance_personal: number;
+                    balance_bonus: number;
+                    balance_tariff: number;
+                    tariff?: {
+                        system: string;
+                        next_requisites_id: string;
+                        next_to_diadoc: number;
+                        months_left: number;
+                        state_time_end: string;
+                        state_method_info: string;
+                        state_status: import('../../Bank_2/Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
+                        balance: number;
+                        id: number;
+                        name: string;
+                        price: number;
+                        discount: number;
+                        next_id: number;
+                        next_name: string;
+                        next_price: number;
+                        next_discount: number;
+                    };
+                    subscription?: import('../../Bank_2/Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'];
+                    subscription_name?: string;
+                } | {
+                    [key: string]: unknown;
+                };
+                useDiadoc?: boolean;
+                mayChangeCurrency?: boolean;
+            };
+            passTime: string;
         };
     };
     responses: never;

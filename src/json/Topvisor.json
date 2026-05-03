@@ -2012,7 +2012,8 @@
                             }
                         }
                     }
-                }
+                },
+                "description": "@phpstan-type Informer array{count: int, lastDate: ?string}\n@phpstan-type TicketsInfo array{no_readed_count: ?int, ticket_id: ?int, ticket_time: ?string}\n@phpstan-type BankInfoTariff array{system: string, next_requisites_id: string, next_to_diadoc: int, months_left: int, state_time_end: string, state_method_info: string, state_status: Bank_2\\Types\\Subscriptions\\Status, balance: float, id: int, name: string, price: int, discount: int, next_id: int, next_name: string, next_price: int, next_discount: int}\n@phpstan-type BankInfo array{type: ('balance' | 'limits'), balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff?: BankInfoTariff, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription, subscription_name?: string}\n@phpstan-type UserAdditional array{refIsAllowed: bool, csvDelimiter: string, charset: string, currencyData: array{name: string, precision: int, prefix: string, suffix: string, prefix_ico: string, suffix_ico: string, label: string}, ip: string, timezoneOffset: int, useArchiveTariff: int, informer?: (Informer | stdClass), ticketsInfo?: (TicketsInfo | stdClass), bankInfo?: (BankInfo | stdClass), useDiadoc?: bool, mayChangeCurrency?: bool}"
             }
         },
         "/add/votes_2/": {
