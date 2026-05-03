@@ -23,7 +23,6 @@ export interface components {
          * Информация о балансе и тарифе пользователя.
          *
          *     - 'balance_all' - общий баланс
-         *     - 'balance_all' - общий баланс
          *     - 'balance_personal'- персональный баланс
          *     - 'balance_bonus' - бонусный баланс
          *     - 'balance_tariff' - баланс по тарифу

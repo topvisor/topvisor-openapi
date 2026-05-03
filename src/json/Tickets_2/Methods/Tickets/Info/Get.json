@@ -11,10 +11,29 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение краткой информации о тикетах\n\nid последнего непрочитанного тикета, число непрочитанных тикетов"
+                "title": "Получение краткой информации о тикетах\n\n- число непрочитанных тикетов\n- время крайнего изменения чата\n- число непрочитанных тикетов"
             },
             "Tickets_2.Methods.Tickets.Info.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "no_readed_count": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "ticket_id": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "ticket_time": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "no_readed_count",
+                    "ticket_id",
+                    "ticket_time"
+                ]
             }
         }
     }

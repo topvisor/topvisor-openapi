@@ -10,10 +10,16 @@ export interface components {
         /**
          * Получение краткой информации о тикетах
          *
-         *     id последнего непрочитанного тикета, число непрочитанных тикетов
+         *     - число непрочитанных тикетов
+         *     - время крайнего изменения чата
+         *     - число непрочитанных тикетов
          */
         "Tickets_2.Methods.Tickets.Info.Get": Record<string, never>;
-        "Tickets_2.Methods.Tickets.Info.Get.Exec": unknown[];
+        "Tickets_2.Methods.Tickets.Info.Get.Exec": {
+            no_readed_count: number | null;
+            ticket_id: number | null;
+            ticket_time: string | null;
+        };
     };
     responses: never;
     parameters: never;

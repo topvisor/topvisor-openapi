@@ -12663,7 +12663,9 @@ paths:
       summary: |-
         Получение краткой информации о тикетах
 
-        id последнего непрочитанного тикета, число непрочитанных тикетов
+        - число непрочитанных тикетов
+        - время крайнего изменения чата
+        - число непрочитанных тикетов
       requestBody:
         content:
           application/json:
@@ -20826,7 +20828,6 @@ components:
       title: |-
         Информация о балансе и тарифе пользователя.
 
-        - 'balance_all' - общий баланс
         - 'balance_all' - общий баланс
         - 'balance_personal'- персональный баланс
         - 'balance_bonus' - бонусный баланс
@@ -42064,9 +42065,25 @@ components:
       title: |-
         Получение краткой информации о тикетах
 
-        id последнего непрочитанного тикета, число непрочитанных тикетов
+        - число непрочитанных тикетов
+        - время крайнего изменения чата
+        - число непрочитанных тикетов
     Tickets_2.Methods.Tickets.Info.Get.Exec:
-      type: array
+      type: object
+      properties:
+        no_readed_count:
+          nullable: true
+          type: integer
+        ticket_id:
+          nullable: true
+          type: integer
+        ticket_time:
+          nullable: true
+          type: string
+      required:
+        - no_readed_count
+        - ticket_id
+        - ticket_time
     Tickets_2.Methods.Tickets.SetReaded.Edit:
       type: object
       properties:
