@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Broker_2.Methods.Campaigns.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Broker_2.Methods.Campaigns.Del": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Удаление рекламной компании из управления ставками"
+            },
+            "Broker_2.Methods.Campaigns.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

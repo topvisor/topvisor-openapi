@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Telegram_2.Types.Bot.Api.Operation",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Telegram_2.Types.Bot.Api.Operation": {
+                "type": "integer",
+                "enum": [
+                    1,
+                    2
+                ],
+                "x-enum-varnames": [
+                    "Send",
+                    "Change"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
+                "title": "Операции выполняемые ботом"
+            }
+        }
+    }
+}

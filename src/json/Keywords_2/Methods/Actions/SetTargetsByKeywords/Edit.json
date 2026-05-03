@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit": {
+                "type": "object",
+                "properties": {
+                    "keywords": {
+                        "title": "CSV-строки в формате `keywords;targetUrl`",
+                        "type": "string"
+                    },
+                    "only_empty": {
+                        "title": "Изменять только запросы без установленной целевой ссылки",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "keywords",
+                    "project_id"
+                ],
+                "title": "Установка целевых ссылок по CSV"
+            },
+            "Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

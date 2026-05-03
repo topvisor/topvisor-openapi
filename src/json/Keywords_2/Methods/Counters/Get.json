@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Counters.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Counters.Get": {
+                "type": "object",
+                "properties": {
+                    "show_trash": {
+                        "title": "Считать для удаленных проектов",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение числа включенных/выключенных групп и запросов"
+            },
+            "Keywords_2.Methods.Counters.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "count_groups_on": {
+                        "type": "integer"
+                    },
+                    "count_groups_off": {
+                        "type": "integer"
+                    },
+                    "count_keywords_on": {
+                        "type": "integer"
+                    },
+                    "count_keywords_off": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "count_groups_on",
+                    "count_groups_off",
+                    "count_keywords_on",
+                    "count_keywords_off"
+                ]
+            }
+        }
+    }
+}

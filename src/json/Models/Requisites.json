@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Requisites",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Requisites": {
+                "properties": {
+                    "LABEL()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "user_id": {
+                        "nullable": true
+                    },
+                    "country": {
+                        "nullable": true
+                    },
+                    "contract_date": {
+                        "nullable": true
+                    },
+                    "contract_type": {
+                        "nullable": true
+                    },
+                    "contract_balance": {
+                        "nullable": true
+                    },
+                    "contract_tariff_id": {
+                        "nullable": true
+                    },
+                    "data": {
+                        "nullable": true
+                    },
+                    "signed": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    },
+                    "edc_connected": {
+                        "nullable": true
+                    },
+                    "fromBase64Data": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

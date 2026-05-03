@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.ByRelevant.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.ByRelevant.Edit": {
+                "type": "object",
+                "properties": {
+                    "competitor_id": {
+                        "title": "Кластеризовать по конкуренту",
+                        "type": "integer"
+                    },
+                    "folder_id": {
+                        "title": "Кластеризовать по папке",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Кластеризация по релевантной странице: проверки перед началом кластеризации"
+            },
+            "Keywords_2.Methods.Claster.ByRelevant.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

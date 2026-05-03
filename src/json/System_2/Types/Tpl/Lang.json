@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Tpl.Lang",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Tpl.Lang": {
+                "type": "string",
+                "enum": [
+                    "ru",
+                    "en",
+                    ""
+                ],
+                "x-enum-varnames": [
+                    "Ru",
+                    "En",
+                    "Uni"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Язык шаблона"
+            }
+        }
+    }
+}

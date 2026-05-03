@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Rights.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Rights.Del": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "title": "Email пользователя",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
+                    "projects_ids": {
+                        "title": "ID проектов\n\nВместо project_ids можно укрывать project_id",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "project_id": {
+                        "title": "ID проекта\n\nВместо project_id можно укрывать projects_ids",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "email"
+                ],
+                "title": "Удаление прав у пользователя"
+            },
+            "Projects_2.Methods.Rights.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

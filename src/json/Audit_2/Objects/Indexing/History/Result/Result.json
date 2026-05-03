@@ -1,0 +1,91 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Objects.Indexing.History.Result.Result",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Objects.Indexing.History.Result.Result": {
+                "type": "object",
+                "properties": {
+                    "headers": {
+                        "nullable": true,
+                        "$ref": "../../../../../Audit_2/Objects/Indexing/History/Headers/Headers.json#/components/schemas/Audit_2.Objects.Indexing.History.Headers.Headers",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Objects/AbstractHeaders.json#/components/schemas/Reports_2.Objects.AbstractHeaders"
+                            }
+                        ]
+                    },
+                    "urls": {
+                        "title": "Список URL с данными",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": {}
+                        }
+                    },
+                    "existsDates": {
+                        "title": "Даты, в которые есть проверки",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "countsIndexing": {
+                        "title": "Суммарные значения индексации по датам и поисковым системам",
+                        "nullable": true,
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "all": {
+                                    "anyOf": [
+                                        {
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                },
+                                "in_index": {
+                                    "anyOf": [
+                                        {
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                },
+                                "changes": {
+                                    "anyOf": [
+                                        {
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "all",
+                                "in_index",
+                                "changes"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "urls"
+                ],
+                "title": "Результат истории индексации"
+            }
+        }
+    }
+}

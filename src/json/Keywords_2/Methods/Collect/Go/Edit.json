@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Collect.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Collect.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "keywords": {
+                        "title": "Список исходных запросов",
+                        "type": "array"
+                    },
+                    "qualifiers": {
+                        "title": "Объекты определителей настроек ПС и регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
+                            }
+                        ]
+                    },
+                    "keywords_minus": {
+                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1)",
+                        "type": "array"
+                    },
+                    "to_group_id": {
+                        "title": "Id группы для размещения подобранных запросов\n\nМожно указывать только при `in_one_group` = `true`",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "in_one_group": {
+                        "title": "Собирать все запросы в одну группу",
+                        "type": "boolean"
+                    },
+                    "to_id": {
+                        "title": "Id папки для новых групп",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "nullable": true,
+                        "default": "in_folder_last",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Collect/ToType.json#/components/schemas/Keywords_2.Types.Collect.ToType"
+                            }
+                        ]
+                    },
+                    "currency": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    },
+                    "debug": {
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "keywords",
+                    "qualifiers",
+                    "project_id"
+                ],
+                "title": "Постановка задачи на подбор запросов"
+            },
+            "Keywords_2.Methods.Collect.Go.Edit.Exec": {
+                "title": "Массив созданных групп",
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

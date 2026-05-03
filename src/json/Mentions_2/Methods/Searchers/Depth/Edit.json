@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Searchers.Depth.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Searchers.Depth.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "rule_id": {
+                        "title": "ID правила",
+                        "type": "integer"
+                    },
+                    "depth": {
+                        "title": "Глубина сбора упоминаний (x100)\n\nОт 1 до 10",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "rule_id"
+                ],
+                "title": "Изменение глубины сбора упоминаний"
+            },
+            "Mentions_2.Methods.Searchers.Depth.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

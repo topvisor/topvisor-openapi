@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Cron_2.Types.Days",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Cron_2.Types.Days": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../Cron_2/Types/Day.json#/components/schemas/Cron_2.Types.Day"
+                },
+                "title": "Дни недели, в которые должен производиться запуск cron"
+            }
+        }
+    }
+}

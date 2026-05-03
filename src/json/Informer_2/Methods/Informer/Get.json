@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Methods.Informer.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Methods.Informer.Get": {
+                "type": "object",
+                "properties": {
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "Получение списка сообщений в информере"
+            },
+            "Informer_2.Methods.Informer.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "user_id": {
+                            "type": "integer"
+                        },
+                        "type": {
+                            "type": "integer"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "message": {
+                            "type": "string"
+                        },
+                        "link": {
+                            "type": "string"
+                        },
+                        "readed": {
+                            "type": "integer"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "site": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

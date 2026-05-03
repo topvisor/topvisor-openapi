@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.WebScreensFree.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.WebScreensFree.Get": {
+                "type": "object",
+                "properties": {
+                    "domain": {
+                        "title": "Домен",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "title": "Язык",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "domain",
+                    "lang"
+                ],
+                "title": "Получение снимка сайта\n\nВернет изображение в формате image/png"
+            },
+            "System_2.Methods.Common.WebScreensFree.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

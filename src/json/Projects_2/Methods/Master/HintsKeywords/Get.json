@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Master.HintsKeywords.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Master.HintsKeywords.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "strict_query": {
+                        "title": "Делать ли проверку на наличие пути в URL",
+                        "type": "boolean"
+                    },
+                    "query_vs": {
+                        "title": "Ключевая фраза (или ее часть) для сравнения запросов",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "rel_vs": {
+                        "title": "Тип связи запросов между конкурентами",
+                        "default": "me",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Competitors_2/Types/ByUrl/Table/Keywords/TypeVS.json#/components/schemas/Competitors_2.Types.ByUrl.Table.Keywords.TypeVS"
+                            }
+                        ]
+                    },
+                    "intersection": {
+                        "title": "Минимальная схожесть",
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получить подсазки запросов для добавления в проект\n\nДоступ по API закрыт"
+            },
+            "Projects_2.Methods.Master.HintsKeywords.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Apometr.History.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Apometr.History.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "type": "integer"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "default": "ru",
+                        "type": "string"
+                    },
+                    "region_device": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
+                            }
+                        ]
+                    },
+                    "timestamp": {
+                        "title": "Время последней проверки за день в формате timestamp.\nПолучить данные апометра за 3 предыдущих дня и текущий день до этого времени.",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "avg": {
+                        "title": "Вернуть только средние значения по всем тематикам",
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Получение истории шторма за период в 2 суток"
+            },
+            "Content_2.Methods.Apometr.History.Get.Exec": {
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "pool_id": {
+                                    "type": "integer"
+                                },
+                                "action": {
+                                    "type": "string"
+                                },
+                                "region_index": {
+                                    "type": "integer"
+                                },
+                                "Am": {
+                                    "type": "number"
+                                },
+                                "is_update": {
+                                    "type": "integer"
+                                },
+                                "is_storm": {
+                                    "type": "integer"
+                                },
+                                "time": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "pool_id",
+                                "action",
+                                "region_index",
+                                "Am",
+                                "is_update",
+                                "is_storm",
+                                "time"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

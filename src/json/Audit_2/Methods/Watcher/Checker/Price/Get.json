@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Watcher.Checker.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Watcher.Checker.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "Информация о стоимости запуска индексации по проектам"
+            },
+            "Audit_2.Methods.Watcher.Checker.Price.Get.Exec": {
+                "type": "object",
+                "additionalProperties": {}
+            }
+        }
+    }
+}

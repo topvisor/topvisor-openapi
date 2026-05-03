@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Journal.Course.Certificates.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Journal.Course.Certificates.Get": {
+                "type": "object",
+                "properties": {
+                    "course_url": {
+                        "title": "Url курса относительно домена",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "course_url"
+                ],
+                "title": "Получение своего сертификата"
+            },
+            "Content_2.Methods.Journal.Course.Certificates.Get.Exec": {
+                "nullable": true,
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "user_name": {
+                        "type": "string"
+                    },
+                    "course_name": {
+                        "type": "string"
+                    },
+                    "course_url": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "user_id",
+                    "user_name",
+                    "course_name",
+                    "course_url",
+                    "date"
+                ]
+            }
+        }
+    }
+}

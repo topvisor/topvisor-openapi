@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/FieldOrder",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "FieldOrder": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Имя поля",
+                        "type": "string"
+                    },
+                    "direction": {
+                        "title": "Оператор сравнения",
+                        "default": "ASC",
+                        "allOf": [
+                            {
+                                "$ref": "FieldDirection.json#/components/schemas/FieldDirection"
+                            }
+                        ]
+                    },
+                    "orderValues": {
+                        "title": "Список значений поля, для ручной сортировки",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "operator": {
+                        "title": "Оператор сравнения",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
+                            }
+                        ]
+                    },
+                    "values": {
+                        "title": "Значения для сравенния\n\nВ зависимости от типа условия оно может иметь разное количество значений\n\nОбычно оно имеет только одно значение",
+                        "nullable": true,
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "name",
+                    "direction"
+                ],
+                "title": "Поле сортировки"
+            }
+        }
+    }
+}

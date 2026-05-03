@@ -1,0 +1,139 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Methods.History.Links.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Methods.History.Links.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "snapshots_view": {
+                        "title": "Просматриваемые снимки\n- 1 - snapshots\n- 2 - competitors",
+                        "default": 1,
+                        "type": "integer"
+                    },
+                    "keywords_ids": {
+                        "title": "Список ids ключевых слов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "view_snapshots": {
+                        "title": "Отображать снимки выдачи",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "title": "Id запроса",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "dates": {
+                        "title": "Произвольные даты без использования диапазона",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата конца диапазона",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "type_range": {
+                        "title": "Тип диапазона дат",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "count_dates": {
+                        "title": "Количество дат в диапазоне",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "folder_id": {
+                        "title": "Id папки",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "group_id": {
+                        "title": "Id группы",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "chart_type": {
+                        "default": "tops",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Snapshots_2/Types/History/Links/ChartType.json#/components/schemas/Snapshots_2.Types.History.Links.ChartType"
+                            }
+                        ]
+                    },
+                    "regions_indexes": {
+                        "title": "Список ids регионов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "tags_ids": {
+                        "title": "Список ids тегов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "history_view": {
+                        "title": "Отображать историю",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "competitors_show_summary": {
+                        "title": "Отображать описание конкурентов",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Создание гостевой ссылки на просмотр снимков выдачи"
+            },
+            "Snapshots_2.Methods.History.Links.Get.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

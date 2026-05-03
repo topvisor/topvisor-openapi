@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Currency.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Currency.Edit": {
+                "type": "object",
+                "properties": {
+                    "currency": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "currency"
+                ],
+                "title": "Изменение валюты пользователя"
+            },
+            "Users_2.Methods.Profile.Currency.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

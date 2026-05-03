@@ -1,0 +1,269 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Collect.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Collect.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки (по умолчанию: 1)",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "keywords": {
+                        "title": "Список исходных запросов",
+                        "type": "array"
+                    },
+                    "qualifiers": {
+                        "title": "Объекты определителей настроек ПС и регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
+                            }
+                        ]
+                    },
+                    "keywords_minus": {
+                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1)",
+                        "type": "array"
+                    },
+                    "to_group_id": {
+                        "title": "Id группы для размещения подобранных запросов\n\nМожно указывать только при `in_one_group` = `true`",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "in_one_group": {
+                        "title": "Собирать все запросы в одну группу",
+                        "type": "boolean"
+                    },
+                    "to_id": {
+                        "title": "Id папки для новых групп",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "nullable": true,
+                        "default": "in_folder_last",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Collect/ToType.json#/components/schemas/Keywords_2.Types.Collect.ToType"
+                            }
+                        ]
+                    },
+                    "currency": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    },
+                    "debug": {
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "keywords",
+                    "qualifiers",
+                    "project_id"
+                ],
+                "title": "Получение стоимости подбора запросов"
+            },
+            "Keywords_2.Methods.Collect.Price.Get.Exec": {
+                "title": "Информация о стоимости запуска подбора запросов",
+                "type": "object",
+                "properties": {
+                    "pricesByUsers": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "price": {
+                                    "type": "number"
+                                },
+                                "priceOriginal": {
+                                    "type": "number"
+                                },
+                                "qualifiers": {
+                                    "type": "object",
+                                    "properties": {
+                                        "region_key": {
+                                            "type": "integer"
+                                        },
+                                        "searcher_key": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "0"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "1"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "5"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "100"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "101"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "102"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "104"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "105"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "106"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "region_lang": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "type": "null"
+                                                }
+                                            ]
+                                        },
+                                        "also_searched": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "integer"
+                                                },
+                                                {
+                                                    "type": "null"
+                                                }
+                                            ]
+                                        },
+                                        "depth": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "integer"
+                                                },
+                                                {
+                                                    "type": "null"
+                                                }
+                                            ]
+                                        },
+                                        "hint_depth": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "1"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "2"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "integer",
+                                                    "enum": [
+                                                        "3"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "hint_generators": {
+                                            "type": "array",
+                                            "items": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "letter"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "letter_ru"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "number"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "space"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "region_key",
+                                        "searcher_key",
+                                        "hint_depth",
+                                        "hint_generators"
+                                    ]
+                                },
+                                "comment": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "price",
+                                "priceOriginal",
+                                "qualifiers",
+                                "comment"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "pricesByUsers"
+                ]
+            }
+        }
+    }
+}

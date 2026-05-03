@@ -1,0 +1,162 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Tpvsr",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Tpvsr": {
+                "type": "object",
+                "properties": {
+                    "Link_deleted": {
+                        "const": "Link deleted",
+                        "readOnly": true
+                    },
+                    "Show_links": {
+                        "const": "Show links",
+                        "readOnly": true
+                    },
+                    "Show_deleted_links": {
+                        "const": "Show deleted links",
+                        "readOnly": true
+                    },
+                    "Show_favorite_links": {
+                        "const": "Show favorite links",
+                        "readOnly": true
+                    },
+                    "Remove_link": {
+                        "const": "Delete link",
+                        "readOnly": true
+                    },
+                    "Recover_link": {
+                        "const": "Restore link",
+                        "readOnly": true
+                    },
+                    "Set_favorite": {
+                        "const": "Star link",
+                        "readOnly": true
+                    },
+                    "Link_cannot_be_shortened": {
+                        "const": "URL cannot be shorten.",
+                        "readOnly": true
+                    },
+                    "Link_blocked_roskomnadzor": {
+                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
+                        "readOnly": true
+                    },
+                    "Limit_exceeded": {
+                        "const": "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.",
+                        "readOnly": true
+                    },
+                    "Insert_link_and_press_enter": {
+                        "const": "Insert link and press enter",
+                        "readOnly": true
+                    },
+                    "Search_by_link": {
+                        "const": "Search by link",
+                        "readOnly": true
+                    },
+                    "Sort_name_desc": {
+                        "const": "Title Z-A",
+                        "readOnly": true
+                    },
+                    "Sort_name_asc": {
+                        "const": "Title A-Z",
+                        "readOnly": true
+                    },
+                    "Sort_clicks_desc": {
+                        "const": "Clicks descending",
+                        "readOnly": true
+                    },
+                    "Sort_clicks_asc": {
+                        "const": "Clicks ascending",
+                        "readOnly": true
+                    },
+                    "Sort_date_asc": {
+                        "const": "By date from oldest to newest",
+                        "readOnly": true
+                    },
+                    "Sort_date_desc": {
+                        "const": "By date from newest to oldest",
+                        "readOnly": true
+                    },
+                    "Short_url_faster_with_bot": {
+                        "const": "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>",
+                        "readOnly": true
+                    },
+                    "Free_url_limit_reached": {
+                        "const": "Free URL Shortener limit reached!",
+                        "readOnly": true
+                    },
+                    "To_continue_use_need_to_pay": {
+                        "const": "To use free URL Shortener, top up your balance with not less than {{ minSum }} within one year. You can use funds on your balance to pay for any of Topvisor tools and features.",
+                        "readOnly": true
+                    },
+                    "Browsers": {
+                        "const": "Browsers",
+                        "readOnly": true
+                    },
+                    "Platforms": {
+                        "const": "Platforms",
+                        "readOnly": true
+                    },
+                    "Source_other": {
+                        "const": "Others",
+                        "readOnly": true
+                    },
+                    "Source_yandex": {
+                        "const": "Yandex.Browser",
+                        "readOnly": true
+                    },
+                    "Source_social": {
+                        "const": "Social Networks",
+                        "readOnly": true
+                    },
+                    "Source_sites": {
+                        "const": "Sites",
+                        "readOnly": true
+                    },
+                    "Geography": {
+                        "const": "Geography",
+                        "readOnly": true
+                    },
+                    "Enter_title": {
+                        "const": "Enter title",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Link_deleted",
+                    "Show_links",
+                    "Show_deleted_links",
+                    "Show_favorite_links",
+                    "Remove_link",
+                    "Recover_link",
+                    "Set_favorite",
+                    "Link_cannot_be_shortened",
+                    "Link_blocked_roskomnadzor",
+                    "Insert_link_and_press_enter",
+                    "Search_by_link",
+                    "Sort_name_desc",
+                    "Sort_name_asc",
+                    "Sort_clicks_desc",
+                    "Sort_clicks_asc",
+                    "Sort_date_asc",
+                    "Sort_date_desc",
+                    "Short_url_faster_with_bot",
+                    "Free_url_limit_reached",
+                    "Browsers",
+                    "Platforms",
+                    "Source_other",
+                    "Source_yandex",
+                    "Source_social",
+                    "Source_sites",
+                    "Geography",
+                    "Enter_title"
+                ]
+            }
+        }
+    }
+}

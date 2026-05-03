@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Reaction.Popular.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Reaction.Popular.Get": {
+                "type": "object",
+                "properties": {
+                    "subdomain": {
+                        "title": "Поддомен страницы",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "title": "Url страницы",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "subdomain"
+                ],
+                "title": "Получить список реакций по популярности"
+            },
+            "Content_2.Methods.Reaction.Popular.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

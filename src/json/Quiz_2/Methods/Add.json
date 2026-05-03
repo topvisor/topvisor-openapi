@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Имя теста",
+                        "type": "string"
+                    },
+                    "text": {
+                        "title": "Описание теста",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "status": {
+                        "title": "Статус теста",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Quiz_2/Types/Quiz/Status.json#/components/schemas/Quiz_2.Types.Quiz.Status"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "name"
+                ],
+                "title": "Добавление теста"
+            },
+            "Quiz_2.Methods.Add.Exec": {
+                "nullable": true,
+                "type": "string"
+            }
+        }
+    }
+}

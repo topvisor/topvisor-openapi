@@ -1,0 +1,156 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Competitors.Domains",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Competitors.Domains": {
+                "properties": {
+                    "COUNT(*)": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "COUNT_KEYWORDS_ME()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "COUNT_KEYWORDS_ME_ADS()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "MAX_SUM_TRAFFIC()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "MAX_SUM_TRAFFIC_ADS()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "date": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "region_index": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "domain": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "is_shark": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "count_keywords_common": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "count_keywords_common_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "count_keywords_exclusive": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "count_keywords_exclusive_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "relevant": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "relevant_reverse": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "relevant_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "relevant_reverse_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "intersection": {
+                        "type": "number",
+                        "nullable": true
+                    },
+                    "intersection_ads": {
+                        "type": "number",
+                        "nullable": true
+                    },
+                    "avg_position_common": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "median_position_common": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "count_keywords": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "avg_position": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "median_position": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "visibility": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_volume": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_traffic": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_month_cost_rub": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_month_cost_usd": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "topvisor_rank": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "count_keywords_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_volume_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_traffic_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_month_cost_rub_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sum_month_cost_usd_ads": {
+                        "type": "integer",
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

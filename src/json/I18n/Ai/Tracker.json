@@ -1,0 +1,304 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Ai.Tracker",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Ai.Tracker": {
+                "type": "object",
+                "properties": {
+                    "English": {
+                        "const": "English",
+                        "readOnly": true
+                    },
+                    "Russian": {
+                        "const": "Russian",
+                        "readOnly": true
+                    },
+                    "Ai_tracker_bank_info": {
+                        "const": "Checking for mentions in AI",
+                        "readOnly": true
+                    },
+                    "Model_Yandex_Alice": {
+                        "const": "Yandex Alice",
+                        "readOnly": true
+                    },
+                    "First_you_need_to_enter_the_brand_name": {
+                        "const": "First you need to enter the brand name",
+                        "readOnly": true
+                    },
+                    "Brand_information": {
+                        "const": "Brand information",
+                        "readOnly": true
+                    },
+                    "Brand_name": {
+                        "const": "Brand name",
+                        "readOnly": true
+                    },
+                    "Brand_description": {
+                        "const": "Brand description",
+                        "readOnly": true
+                    },
+                    "Brand_description_placeholder": {
+                        "const": "SEO analytics platform",
+                        "readOnly": true
+                    },
+                    "Brand_description_hint": {
+                        "const": "Add brand description or activities to exclude other brands with similar names. This will help you fine-tune the search context for brand mentions.",
+                        "readOnly": true
+                    },
+                    "Context_setting": {
+                        "const": "Context setting",
+                        "readOnly": true
+                    },
+                    "System_prompt": {
+                        "const": "Additional context",
+                        "readOnly": true
+                    },
+                    "System_prompt_placeholder": {
+                        "const": "Enter additional information to help you fine-tune the context",
+                        "readOnly": true
+                    },
+                    "Automatic_pick_up_of_alternative_brand_spellings": {
+                        "const": "Automatic pick up of alternative brand spellings",
+                        "readOnly": true
+                    },
+                    "Launching_AI_analysis": {
+                        "const": "Launching AI analysis",
+                        "readOnly": true
+                    },
+                    "Cost_of_analysis": {
+                        "const": "Cost of analysis",
+                        "readOnly": true
+                    },
+                    "Settings_prompts": {
+                        "const": "Add prompts",
+                        "readOnly": true
+                    },
+                    "Prompts_placeholder": {
+                        "const": "Input new prompt",
+                        "readOnly": true
+                    },
+                    "Settings_models": {
+                        "const": "Select AIs",
+                        "readOnly": true
+                    },
+                    "No_data_in_day": {
+                        "const": "There are no checks in the picked period.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>",
+                        "readOnly": true
+                    },
+                    "No_data_by_filter": {
+                        "const": "No data found with current filter.<br>Try a different filter selection.<br>🛠️ <a href=\"/support/ai-tracker/\" target=\"_blank\">How AI Tracker works →</a> and 🎯 <a href=\"/ai-tracker/\" target=\"_blank\">Why you need to check mentions in AI</a>",
+                        "readOnly": true
+                    },
+                    "Add_neural_networks": {
+                        "const": "Pick AIs to launch analysis.<br>✨ <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add AIs →</a>",
+                        "readOnly": true
+                    },
+                    "Add_prompts_to_go": {
+                        "const": "Add prompts to launch analysis.<br>🔑 <a href=\"/support/ai-tracker/\" target=\"_blank\">How to add prompts →</a>",
+                        "readOnly": true
+                    },
+                    "Settings": {
+                        "const": "AI Tracker settings",
+                        "readOnly": true
+                    },
+                    "Ai_analysis": {
+                        "const": "AI analysis",
+                        "readOnly": true
+                    },
+                    "Analysis_go": {
+                        "const": "Launch analysis",
+                        "readOnly": true
+                    },
+                    "Header_start_short": {
+                        "const": "Scan",
+                        "readOnly": true
+                    },
+                    "Prompts": {
+                        "const": "Prompts",
+                        "readOnly": true
+                    },
+                    "Prompt": {
+                        "const": "Prompt",
+                        "readOnly": true
+                    },
+                    "Search_prompts": {
+                        "const": "Prompt search",
+                        "readOnly": true
+                    },
+                    "Neural_network": {
+                        "const": "Neural network",
+                        "readOnly": true
+                    },
+                    "Remove_prompt": {
+                        "const": "Are you sure you want to delete this prompt?",
+                        "readOnly": true
+                    },
+                    "Sort_mentioned": {
+                        "const": "Sort by mentions",
+                        "readOnly": true
+                    },
+                    "Sort_sentiment": {
+                        "const": "Sort by tone",
+                        "readOnly": true
+                    },
+                    "Prompts_can_be_deleted_and_restored_within_the_same_group": {
+                        "const": "Prompts can be deleted/restored within the same group",
+                        "readOnly": true
+                    },
+                    "Autogeneration_of_prompts": {
+                        "const": "Autogeneration of prompts",
+                        "readOnly": true
+                    },
+                    "Type_of_activity": {
+                        "const": "Type of activity",
+                        "readOnly": true
+                    },
+                    "Brand_description_for_collect_placeholder": {
+                        "const": "Enter the activities of the brand or website. This will help fine-tune the context and select prompts.",
+                        "readOnly": true
+                    },
+                    "Prompt_length": {
+                        "const": "Prompt length",
+                        "readOnly": true
+                    },
+                    "Number_of_prompts": {
+                        "const": "Number of prompts",
+                        "readOnly": true
+                    },
+                    "Number_of_neural_networks": {
+                        "const": "Number of neural networks",
+                        "readOnly": true
+                    },
+                    "Short": {
+                        "const": "Short",
+                        "readOnly": true
+                    },
+                    "Medium": {
+                        "const": "Medium",
+                        "readOnly": true
+                    },
+                    "Long": {
+                        "const": "Long",
+                        "readOnly": true
+                    },
+                    "Add_prompts_for_checking": {
+                        "const": "Please add prompts for checking",
+                        "readOnly": true
+                    },
+                    "Added": {
+                        "const": "Added prompts",
+                        "readOnly": true
+                    },
+                    "Missed": {
+                        "const": "Skipped duplicate prompts",
+                        "readOnly": true
+                    },
+                    "Neuro_answer": {
+                        "const": "Neuro answer",
+                        "readOnly": true
+                    },
+                    "Answer_from": {
+                        "const": "Answer from",
+                        "readOnly": true
+                    },
+                    "Analysis_was_not_performed": {
+                        "const": "Analysis was not performed",
+                        "readOnly": true
+                    },
+                    "Mentions": {
+                        "const": "Mentions",
+                        "readOnly": true
+                    },
+                    "Ai_snippets": {
+                        "const": "AI Snippets",
+                        "readOnly": true
+                    },
+                    "Check_need_config": {
+                        "const": "To launch the AI Tracker, you need to configure the list of tested prompts and select neural networks.",
+                        "readOnly": true
+                    },
+                    "Already_started": {
+                        "const": "AI Tracker already started",
+                        "readOnly": true
+                    },
+                    "Please_add_prompts": {
+                        "const": "Please, add prompts for checking",
+                        "readOnly": true
+                    },
+                    "Please_select_neural_networks": {
+                        "const": "Please, select neural networks",
+                        "readOnly": true
+                    },
+                    "Answer_in_html": {
+                        "const": "HTML answer",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "English",
+                    "Russian",
+                    "Ai_tracker_bank_info",
+                    "Model_Yandex_Alice",
+                    "First_you_need_to_enter_the_brand_name",
+                    "Brand_information",
+                    "Brand_name",
+                    "Brand_description",
+                    "Brand_description_placeholder",
+                    "Brand_description_hint",
+                    "Context_setting",
+                    "System_prompt",
+                    "System_prompt_placeholder",
+                    "Automatic_pick_up_of_alternative_brand_spellings",
+                    "Launching_AI_analysis",
+                    "Cost_of_analysis",
+                    "Settings_prompts",
+                    "Prompts_placeholder",
+                    "Settings_models",
+                    "No_data_in_day",
+                    "No_data_by_filter",
+                    "Add_neural_networks",
+                    "Add_prompts_to_go",
+                    "Settings",
+                    "Ai_analysis",
+                    "Analysis_go",
+                    "Header_start_short",
+                    "Prompts",
+                    "Prompt",
+                    "Search_prompts",
+                    "Neural_network",
+                    "Remove_prompt",
+                    "Sort_mentioned",
+                    "Sort_sentiment",
+                    "Prompts_can_be_deleted_and_restored_within_the_same_group",
+                    "Autogeneration_of_prompts",
+                    "Type_of_activity",
+                    "Brand_description_for_collect_placeholder",
+                    "Prompt_length",
+                    "Number_of_prompts",
+                    "Number_of_neural_networks",
+                    "Short",
+                    "Medium",
+                    "Long",
+                    "Add_prompts_for_checking",
+                    "Added",
+                    "Missed",
+                    "Neuro_answer",
+                    "Answer_from",
+                    "Analysis_was_not_performed",
+                    "Mentions",
+                    "Ai_snippets",
+                    "Check_need_config",
+                    "Already_started",
+                    "Please_add_prompts",
+                    "Please_select_neural_networks",
+                    "Answer_in_html"
+                ]
+            }
+        }
+    }
+}

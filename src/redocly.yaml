@@ -1,0 +1,2645 @@
+plugins:
+  - redocly-plugins/plugins/openapi-typescript-multiScheme.js
+decorators:
+  openapi-typescript-multiScheme/replace$refToImportType: 'on'
+apis:
+  json/I18n/Common.json:
+    root: ./json/I18n/Common.json
+    x-openapi-ts:
+      output: ./ts/I18n/Common.ts
+  json/I18n/Actions.json:
+    root: ./json/I18n/Actions.json
+    x-openapi-ts:
+      output: ./ts/I18n/Actions.ts
+  json/I18n/Analytics.json:
+    root: ./json/I18n/Analytics.json
+    x-openapi-ts:
+      output: ./ts/I18n/Analytics.ts
+  json/I18n/Api.json:
+    root: ./json/I18n/Api.json
+    x-openapi-ts:
+      output: ./ts/I18n/Api.ts
+  json/I18n/Audit.json:
+    root: ./json/I18n/Audit.json
+    x-openapi-ts:
+      output: ./ts/I18n/Audit.ts
+  json/I18n/Bank.json:
+    root: ./json/I18n/Bank.json
+    x-openapi-ts:
+      output: ./ts/I18n/Bank.ts
+  json/I18n/Broker.json:
+    root: ./json/I18n/Broker.json
+    x-openapi-ts:
+      output: ./ts/I18n/Broker.ts
+  json/I18n/Calendar.json:
+    root: ./json/I18n/Calendar.json
+    x-openapi-ts:
+      output: ./ts/I18n/Calendar.ts
+  json/I18n/Competitors.json:
+    root: ./json/I18n/Competitors.json
+    x-openapi-ts:
+      output: ./ts/I18n/Competitors.ts
+  json/I18n/Cron.json:
+    root: ./json/I18n/Cron.json
+    x-openapi-ts:
+      output: ./ts/I18n/Cron.ts
+  json/I18n/Domains.json:
+    root: ./json/I18n/Domains.json
+    x-openapi-ts:
+      output: ./ts/I18n/Domains.ts
+  json/I18n/Dynamics.json:
+    root: ./json/I18n/Dynamics.json
+    x-openapi-ts:
+      output: ./ts/I18n/Dynamics.ts
+  json/I18n/Email.json:
+    root: ./json/I18n/Email.json
+    x-openapi-ts:
+      output: ./ts/I18n/Email.ts
+  json/I18n/Fieldtemplates.json:
+    root: ./json/I18n/Fieldtemplates.json
+    x-openapi-ts:
+      output: ./ts/I18n/Fieldtemplates.ts
+  json/I18n/Footer.json:
+    root: ./json/I18n/Footer.json
+    x-openapi-ts:
+      output: ./ts/I18n/Footer.ts
+  json/I18n/Indexing.json:
+    root: ./json/I18n/Indexing.json
+    x-openapi-ts:
+      output: ./ts/I18n/Indexing.ts
+  json/I18n/Informer.json:
+    root: ./json/I18n/Informer.json
+    x-openapi-ts:
+      output: ./ts/I18n/Informer.ts
+  json/I18n/Keywords.json:
+    root: ./json/I18n/Keywords.json
+    x-openapi-ts:
+      output: ./ts/I18n/Keywords.ts
+  json/I18n/Landings.json:
+    root: ./json/I18n/Landings.json
+    x-openapi-ts:
+      output: ./ts/I18n/Landings.ts
+  json/I18n/Projects.json:
+    root: ./json/I18n/Projects.json
+    x-openapi-ts:
+      output: ./ts/I18n/Projects.ts
+  json/I18n/Robot.json:
+    root: ./json/I18n/Robot.json
+    x-openapi-ts:
+      output: ./ts/I18n/Robot.ts
+  json/I18n/Sitemap.json:
+    root: ./json/I18n/Sitemap.json
+    x-openapi-ts:
+      output: ./ts/I18n/Sitemap.ts
+  json/I18n/Snapshots.json:
+    root: ./json/I18n/Snapshots.json
+    x-openapi-ts:
+      output: ./ts/I18n/Snapshots.ts
+  json/I18n/Telegram.json:
+    root: ./json/I18n/Telegram.json
+    x-openapi-ts:
+      output: ./ts/I18n/Telegram.ts
+  json/I18n/Thundo.json:
+    root: ./json/I18n/Thundo.json
+    x-openapi-ts:
+      output: ./ts/I18n/Thundo.ts
+  json/I18n/Tickets.json:
+    root: ./json/I18n/Tickets.json
+    x-openapi-ts:
+      output: ./ts/I18n/Tickets.ts
+  json/I18n/Toolbox.json:
+    root: ./json/I18n/Toolbox.json
+    x-openapi-ts:
+      output: ./ts/I18n/Toolbox.ts
+  json/I18n/Tpvsr.json:
+    root: ./json/I18n/Tpvsr.json
+    x-openapi-ts:
+      output: ./ts/I18n/Tpvsr.ts
+  json/I18n/Tv.json:
+    root: ./json/I18n/Tv.json
+    x-openapi-ts:
+      output: ./ts/I18n/Tv.ts
+  json/I18n/Units.json:
+    root: ./json/I18n/Units.json
+    x-openapi-ts:
+      output: ./ts/I18n/Units.ts
+  json/I18n/Updates.json:
+    root: ./json/I18n/Updates.json
+    x-openapi-ts:
+      output: ./ts/I18n/Updates.ts
+  json/I18n/User.json:
+    root: ./json/I18n/User.json
+    x-openapi-ts:
+      output: ./ts/I18n/User.ts
+  json/I18n/Votes.json:
+    root: ./json/I18n/Votes.json
+    x-openapi-ts:
+      output: ./ts/I18n/Votes.ts
+  json/I18n/Watcher.json:
+    root: ./json/I18n/Watcher.json
+    x-openapi-ts:
+      output: ./ts/I18n/Watcher.ts
+  json/I18n/Widget.json:
+    root: ./json/I18n/Widget.json
+    x-openapi-ts:
+      output: ./ts/I18n/Widget.ts
+  json/I18n/Audit/Scan.json:
+    root: ./json/I18n/Audit/Scan.json
+    x-openapi-ts:
+      output: ./ts/I18n/Audit/Scan.ts
+  json/I18n/Bank/Subscription.json:
+    root: ./json/I18n/Bank/Subscription.json
+    x-openapi-ts:
+      output: ./ts/I18n/Bank/Subscription.ts
+  json/I18n/Landings/Championship.json:
+    root: ./json/I18n/Landings/Championship.json
+    x-openapi-ts:
+      output: ./ts/I18n/Landings/Championship.ts
+  json/I18n/Landings/Jobs.json:
+    root: ./json/I18n/Landings/Jobs.json
+    x-openapi-ts:
+      output: ./ts/I18n/Landings/Jobs.ts
+  json/I18n/Landings/Price.json:
+    root: ./json/I18n/Landings/Price.json
+    x-openapi-ts:
+      output: ./ts/I18n/Landings/Price.ts
+  json/I18n/Landings/Promocode.json:
+    root: ./json/I18n/Landings/Promocode.json
+    x-openapi-ts:
+      output: ./ts/I18n/Landings/Promocode.ts
+  json/I18n/Pages/Help.json:
+    root: ./json/I18n/Pages/Help.json
+    x-openapi-ts:
+      output: ./ts/I18n/Pages/Help.ts
+  json/I18n/Pages.json:
+    root: ./json/I18n/Pages.json
+    x-openapi-ts:
+      output: ./ts/I18n/Pages.ts
+  json/I18n/Projects/CheckButton.json:
+    root: ./json/I18n/Projects/CheckButton.json
+    x-openapi-ts:
+      output: ./ts/I18n/Projects/CheckButton.ts
+  json/I18n/Projects/Settings.json:
+    root: ./json/I18n/Projects/Settings.json
+    x-openapi-ts:
+      output: ./ts/I18n/Projects/Settings.ts
+  json/I18n/Audit/Scan/Checks.json:
+    root: ./json/I18n/Audit/Scan/Checks.json
+    x-openapi-ts:
+      output: ./ts/I18n/Audit/Scan/Checks.ts
+  json/I18n/Sites/Thundo/Admin.json:
+    root: ./json/I18n/Sites/Thundo/Admin.json
+    x-openapi-ts:
+      output: ./ts/I18n/Sites/Thundo/Admin.ts
+  json/I18n/Sites/Topvisor/Admin.json:
+    root: ./json/I18n/Sites/Topvisor/Admin.json
+    x-openapi-ts:
+      output: ./ts/I18n/Sites/Topvisor/Admin.ts
+  json/I18n/Sites/Topvisor/Organization.json:
+    root: ./json/I18n/Sites/Topvisor/Organization.json
+    x-openapi-ts:
+      output: ./ts/I18n/Sites/Topvisor/Organization.ts
+  json/Models/Annotations.json:
+    root: ./json/Models/Annotations.json
+    x-openapi-ts:
+      output: ./ts/Models/Annotations.ts
+  json/Models/BalanceHistory.json:
+    root: ./json/Models/BalanceHistory.json
+    x-openapi-ts:
+      output: ./ts/Models/BalanceHistory.ts
+  json/Models/Comments.json:
+    root: ./json/Models/Comments.json
+    x-openapi-ts:
+      output: ./ts/Models/Comments.ts
+  json/Models/ContentsRedirects.json:
+    root: ./json/Models/ContentsRedirects.json
+    x-openapi-ts:
+      output: ./ts/Models/ContentsRedirects.ts
+  json/Models/CronCommands.json:
+    root: ./json/Models/CronCommands.json
+    x-openapi-ts:
+      output: ./ts/Models/CronCommands.ts
+  json/Models/EmptyModel.json:
+    root: ./json/Models/EmptyModel.json
+    x-openapi-ts:
+      output: ./ts/Models/EmptyModel.ts
+  json/Models/Folders.json:
+    root: ./json/Models/Folders.json
+    x-openapi-ts:
+      output: ./ts/Models/Folders.ts
+  json/Models/Groups.json:
+    root: ./json/Models/Groups.json
+    x-openapi-ts:
+      output: ./ts/Models/Groups.ts
+  json/Models/Keywords.json:
+    root: ./json/Models/Keywords.json
+    x-openapi-ts:
+      output: ./ts/Models/Keywords.ts
+  json/Models/Magnet.json:
+    root: ./json/Models/Magnet.json
+    x-openapi-ts:
+      output: ./ts/Models/Magnet.ts
+  json/Models/Model.json:
+    root: ./json/Models/Model.json
+    x-openapi-ts:
+      output: ./ts/Models/Model.ts
+  json/Models/Pages.json:
+    root: ./json/Models/Pages.json
+    x-openapi-ts:
+      output: ./ts/Models/Pages.ts
+  json/Models/Payments.json:
+    root: ./json/Models/Payments.json
+    x-openapi-ts:
+      output: ./ts/Models/Payments.ts
+  json/Models/Projects.json:
+    root: ./json/Models/Projects.json
+    x-openapi-ts:
+      output: ./ts/Models/Projects.ts
+  json/Models/Quizes.json:
+    root: ./json/Models/Quizes.json
+    x-openapi-ts:
+      output: ./ts/Models/Quizes.ts
+  json/Models/Requisites.json:
+    root: ./json/Models/Requisites.json
+    x-openapi-ts:
+      output: ./ts/Models/Requisites.ts
+  json/Models/ShortLink.json:
+    root: ./json/Models/ShortLink.json
+    x-openapi-ts:
+      output: ./ts/Models/ShortLink.ts
+  json/Models/Tickets.json:
+    root: ./json/Models/Tickets.json
+    x-openapi-ts:
+      output: ./ts/Models/Tickets.ts
+  json/Models/Urls.json:
+    root: ./json/Models/Urls.json
+    x-openapi-ts:
+      output: ./ts/Models/Urls.ts
+  json/Models/Votes.json:
+    root: ./json/Models/Votes.json
+    x-openapi-ts:
+      output: ./ts/Models/Votes.ts
+  json/Models/Admin/Invoices.json:
+    root: ./json/Models/Admin/Invoices.json
+    x-openapi-ts:
+      output: ./ts/Models/Admin/Invoices.ts
+  json/Models/Admin/Staff.json:
+    root: ./json/Models/Admin/Staff.json
+    x-openapi-ts:
+      output: ./ts/Models/Admin/Staff.ts
+  json/Models/Admin/Users.json:
+    root: ./json/Models/Admin/Users.json
+    x-openapi-ts:
+      output: ./ts/Models/Admin/Users.ts
+  json/Models/Analytics/Events.json:
+    root: ./json/Models/Analytics/Events.json
+    x-openapi-ts:
+      output: ./ts/Models/Analytics/Events.ts
+  json/Models/Analytics/Ranks.json:
+    root: ./json/Models/Analytics/Ranks.json
+    x-openapi-ts:
+      output: ./ts/Models/Analytics/Ranks.ts
+  json/Models/Analytics/RanksUsers.json:
+    root: ./json/Models/Analytics/RanksUsers.json
+    x-openapi-ts:
+      output: ./ts/Models/Analytics/RanksUsers.ts
+  json/Models/Apometr/History.json:
+    root: ./json/Models/Apometr/History.json
+    x-openapi-ts:
+      output: ./ts/Models/Apometr/History.ts
+  json/Models/Apometr/Keywords.json:
+    root: ./json/Models/Apometr/Keywords.json
+    x-openapi-ts:
+      output: ./ts/Models/Apometr/Keywords.ts
+  json/Models/Audit/Checks.json:
+    root: ./json/Models/Audit/Checks.json
+    x-openapi-ts:
+      output: ./ts/Models/Audit/Checks.ts
+  json/Models/Audit/Css.json:
+    root: ./json/Models/Audit/Css.json
+    x-openapi-ts:
+      output: ./ts/Models/Audit/Css.ts
+  json/Models/Audit/Images.json:
+    root: ./json/Models/Audit/Images.json
+    x-openapi-ts:
+      output: ./ts/Models/Audit/Images.ts
+  json/Models/Audit/Js.json:
+    root: ./json/Models/Audit/Js.json
+    x-openapi-ts:
+      output: ./ts/Models/Audit/Js.ts
+  json/Models/Audit/Links.json:
+    root: ./json/Models/Audit/Links.json
+    x-openapi-ts:
+      output: ./ts/Models/Audit/Links.ts
+  json/Models/Audit/Pages.json:
+    root: ./json/Models/Audit/Pages.json
+    x-openapi-ts:
+      output: ./ts/Models/Audit/Pages.ts
+  json/Models/Broker/Ads.json:
+    root: ./json/Models/Broker/Ads.json
+    x-openapi-ts:
+      output: ./ts/Models/Broker/Ads.ts
+  json/Models/Broker/Campaigns.json:
+    root: ./json/Models/Broker/Campaigns.json
+    x-openapi-ts:
+      output: ./ts/Models/Broker/Campaigns.ts
+  json/Models/Broker/Groups.json:
+    root: ./json/Models/Broker/Groups.json
+    x-openapi-ts:
+      output: ./ts/Models/Broker/Groups.ts
+  json/Models/Broker/Keywords.json:
+    root: ./json/Models/Broker/Keywords.json
+    x-openapi-ts:
+      output: ./ts/Models/Broker/Keywords.ts
+  json/Models/Broker/Log.json:
+    root: ./json/Models/Broker/Log.json
+    x-openapi-ts:
+      output: ./ts/Models/Broker/Log.ts
+  json/Models/Competitors/Domains.json:
+    root: ./json/Models/Competitors/Domains.json
+    x-openapi-ts:
+      output: ./ts/Models/Competitors/Domains.ts
+  json/Models/Competitors/Keywords.json:
+    root: ./json/Models/Competitors/Keywords.json
+    x-openapi-ts:
+      output: ./ts/Models/Competitors/Keywords.ts
+  json/Models/Competitors/Urls.json:
+    root: ./json/Models/Competitors/Urls.json
+    x-openapi-ts:
+      output: ./ts/Models/Competitors/Urls.ts
+  json/Models/Competitors/Wordstat.json:
+    root: ./json/Models/Competitors/Wordstat.json
+    x-openapi-ts:
+      output: ./ts/Models/Competitors/Wordstat.ts
+  json/Models/Content/Authors.json:
+    root: ./json/Models/Content/Authors.json
+    x-openapi-ts:
+      output: ./ts/Models/Content/Authors.ts
+  json/Models/Magnet/Ganalytics.json:
+    root: ./json/Models/Magnet/Ganalytics.json
+    x-openapi-ts:
+      output: ./ts/Models/Magnet/Ganalytics.ts
+  json/Models/Magnet/Gsc.json:
+    root: ./json/Models/Magnet/Gsc.json
+    x-openapi-ts:
+      output: ./ts/Models/Magnet/Gsc.ts
+  json/Models/Magnet/Metrika.json:
+    root: ./json/Models/Magnet/Metrika.json
+    x-openapi-ts:
+      output: ./ts/Models/Magnet/Metrika.ts
+  json/Models/Magnet/Webmaster.json:
+    root: ./json/Models/Magnet/Webmaster.json
+    x-openapi-ts:
+      output: ./ts/Models/Magnet/Webmaster.ts
+  json/Models/Mentions/Mentions.json:
+    root: ./json/Models/Mentions/Mentions.json
+    x-openapi-ts:
+      output: ./ts/Models/Mentions/Mentions.ts
+  json/Models/Mentions/Rules.json:
+    root: ./json/Models/Mentions/Rules.json
+    x-openapi-ts:
+      output: ./ts/Models/Mentions/Rules.ts
+  json/Models/Mentions/Searchers.json:
+    root: ./json/Models/Mentions/Searchers.json
+    x-openapi-ts:
+      output: ./ts/Models/Mentions/Searchers.ts
+  json/Models/Projects/Folders.json:
+    root: ./json/Models/Projects/Folders.json
+    x-openapi-ts:
+      output: ./ts/Models/Projects/Folders.ts
+  json/Models/Quizes/Questions.json:
+    root: ./json/Models/Quizes/Questions.json
+    x-openapi-ts:
+      output: ./ts/Models/Quizes/Questions.ts
+  json/Models/Users/Ranks.json:
+    root: ./json/Models/Users/Ranks.json
+    x-openapi-ts:
+      output: ./ts/Models/Users/Ranks.ts
+  json/Models/Users/Referrals.json:
+    root: ./json/Models/Users/Referrals.json
+    x-openapi-ts:
+      output: ./ts/Models/Users/Referrals.ts
+  json/Models/Users/Verif.json:
+    root: ./json/Models/Users/Verif.json
+    x-openapi-ts:
+      output: ./ts/Models/Users/Verif.ts
+  json/Models/Watcher/Results.json:
+    root: ./json/Models/Watcher/Results.json
+    x-openapi-ts:
+      output: ./ts/Models/Watcher/Results.ts
+  json/Models/Admin/Accounting/Counteragents.json:
+    root: ./json/Models/Admin/Accounting/Counteragents.json
+    x-openapi-ts:
+      output: ./ts/Models/Admin/Accounting/Counteragents.ts
+  json/Models/Admin/Users/Ranks.json:
+    root: ./json/Models/Admin/Users/Ranks.json
+    x-openapi-ts:
+      output: ./ts/Models/Admin/Users/Ranks.ts
+  json/Error.json:
+    root: ./json/Error.json
+    x-openapi-ts:
+      output: ./ts/Error.ts
+  json/Errors.json:
+    root: ./json/Errors.json
+    x-openapi-ts:
+      output: ./ts/Errors.ts
+  json/FetchStyle.json:
+    root: ./json/FetchStyle.json
+    x-openapi-ts:
+      output: ./ts/FetchStyle.ts
+  json/FieldDirection.json:
+    root: ./json/FieldDirection.json
+    x-openapi-ts:
+      output: ./ts/FieldDirection.ts
+  json/FieldFilter.json:
+    root: ./json/FieldFilter.json
+    x-openapi-ts:
+      output: ./ts/FieldFilter.ts
+  json/FieldOperator.json:
+    root: ./json/FieldOperator.json
+    x-openapi-ts:
+      output: ./ts/FieldOperator.ts
+  json/FieldOrder.json:
+    root: ./json/FieldOrder.json
+    x-openapi-ts:
+      output: ./ts/FieldOrder.ts
+  json/FieldsFilters.json:
+    root: ./json/FieldsFilters.json
+    x-openapi-ts:
+      output: ./ts/FieldsFilters.ts
+  json/FieldsNames.json:
+    root: ./json/FieldsNames.json
+    x-openapi-ts:
+      output: ./ts/FieldsNames.ts
+  json/FieldsOrders.json:
+    root: ./json/FieldsOrders.json
+    x-openapi-ts:
+      output: ./ts/FieldsOrders.ts
+  json/Pagination.json:
+    root: ./json/Pagination.json
+    x-openapi-ts:
+      output: ./ts/Pagination.ts
+  json/ResponseError.json:
+    root: ./json/ResponseError.json
+    x-openapi-ts:
+      output: ./ts/ResponseError.ts
+  json/ResponseSuccess.json:
+    root: ./json/ResponseSuccess.json
+    x-openapi-ts:
+      output: ./ts/ResponseSuccess.ts
+  json/TV/Types/Config/Currency.json:
+    root: ./json/TV/Types/Config/Currency.json
+    x-openapi-ts:
+      output: ./ts/TV/Types/Config/Currency.ts
+  json/TV/Types/Config/Site.json:
+    root: ./json/TV/Types/Config/Site.json
+    x-openapi-ts:
+      output: ./ts/TV/Types/Config/Site.ts
+  json/TV/API/Types/BoolArray.json:
+    root: ./json/TV/API/Types/BoolArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/BoolArray.ts
+  json/TV/API/Types/Currency.json:
+    root: ./json/TV/API/Types/Currency.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Currency.ts
+  json/TV/API/Types/DateArray.json:
+    root: ./json/TV/API/Types/DateArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/DateArray.ts
+  json/TV/API/Types/Date.json:
+    root: ./json/TV/API/Types/Date.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Date.ts
+  json/TV/API/Types/DatetimeArray.json:
+    root: ./json/TV/API/Types/DatetimeArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/DatetimeArray.ts
+  json/TV/API/Types/Datetime.json:
+    root: ./json/TV/API/Types/Datetime.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Datetime.ts
+  json/TV/API/Types/EmailArray.json:
+    root: ./json/TV/API/Types/EmailArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/EmailArray.ts
+  json/TV/API/Types/Email.json:
+    root: ./json/TV/API/Types/Email.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Email.ts
+  json/TV/API/Types/ExportFormat.json:
+    root: ./json/TV/API/Types/ExportFormat.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/ExportFormat.ts
+  json/TV/API/Types/FloatArray.json:
+    root: ./json/TV/API/Types/FloatArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/FloatArray.ts
+  json/TV/API/Types/IntArray.json:
+    root: ./json/TV/API/Types/IntArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/IntArray.ts
+  json/TV/API/Types/Lang.json:
+    root: ./json/TV/API/Types/Lang.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Lang.ts
+  json/TV/API/Types/RegExp.json:
+    root: ./json/TV/API/Types/RegExp.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/RegExp.ts
+  json/TV/API/Types/StringArray.json:
+    root: ./json/TV/API/Types/StringArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/StringArray.ts
+  json/TV/API/Types/UrlArray.json:
+    root: ./json/TV/API/Types/UrlArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlArray.ts
+  json/TV/API/Types/Url.json:
+    root: ./json/TV/API/Types/Url.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Url.ts
+  json/TV/API/Types/UrlShortArray.json:
+    root: ./json/TV/API/Types/UrlShortArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlShortArray.ts
+  json/TV/API/Types/UrlShort.json:
+    root: ./json/TV/API/Types/UrlShort.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlShort.ts
+  json/TV/API/Types/UrlShortUTFArray.json:
+    root: ./json/TV/API/Types/UrlShortUTFArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlShortUTFArray.ts
+  json/TV/API/Types/UrlShortUTF.json:
+    root: ./json/TV/API/Types/UrlShortUTF.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlShortUTF.ts
+  json/TV/API/Types/UrlUTFArray.json:
+    root: ./json/TV/API/Types/UrlUTFArray.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlUTFArray.ts
+  json/TV/API/Types/UrlUTF.json:
+    root: ./json/TV/API/Types/UrlUTF.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/UrlUTF.ts
+  json/TV/API/Types/Topvisor/Subdomain.json:
+    root: ./json/TV/API/Types/Topvisor/Subdomain.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Types/Topvisor/Subdomain.ts
+  json/Annotations_2/Types/ServiceName.json:
+    root: ./json/Annotations_2/Types/ServiceName.json
+    x-openapi-ts:
+      output: ./ts/Annotations_2/Types/ServiceName.ts
+  json/Audit_2/Types/Type.json:
+    root: ./json/Audit_2/Types/Type.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Type.ts
+  json/Content_2/Types/Subdomain.json:
+    root: ./json/Content_2/Types/Subdomain.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Types/Subdomain.ts
+  json/Cron_2/Types/Day.json:
+    root: ./json/Cron_2/Types/Day.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Types/Day.ts
+  json/Cron_2/Types/Days.json:
+    root: ./json/Cron_2/Types/Days.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Types/Days.ts
+  json/Cron_2/Types/Hour.json:
+    root: ./json/Cron_2/Types/Hour.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Types/Hour.ts
+  json/Cron_2/Types/Minute.json:
+    root: ./json/Cron_2/Types/Minute.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Types/Minute.ts
+  json/Example_2/Types/EnumNumberArray.json:
+    root: ./json/Example_2/Types/EnumNumberArray.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Types/EnumNumberArray.ts
+  json/Example_2/Types/Letter.json:
+    root: ./json/Example_2/Types/Letter.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Types/Letter.ts
+  json/Example_2/Types/Number.json:
+    root: ./json/Example_2/Types/Number.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Types/Number.ts
+  json/Informer_2/Types/Provider.json:
+    root: ./json/Informer_2/Types/Provider.json
+    x-openapi-ts:
+      output: ./ts/Informer_2/Types/Provider.ts
+  json/Informer_2/Types/Rubric.json:
+    root: ./json/Informer_2/Types/Rubric.json
+    x-openapi-ts:
+      output: ./ts/Informer_2/Types/Rubric.ts
+  json/Payments_2/Types/Country.json:
+    root: ./json/Payments_2/Types/Country.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Types/Country.ts
+  json/Payments_2/Types/System.json:
+    root: ./json/Payments_2/Types/System.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Types/System.ts
+  json/Positions_2/Types/RegionDevice.json:
+    root: ./json/Positions_2/Types/RegionDevice.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Types/RegionDevice.ts
+  json/Positions_2/Types/SearcherKey.json:
+    root: ./json/Positions_2/Types/SearcherKey.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Types/SearcherKey.ts
+  json/Positions_2/Types/SearchersKeys.json:
+    root: ./json/Positions_2/Types/SearchersKeys.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Types/SearchersKeys.ts
+  json/Positions_2/Types/TypeRange.json:
+    root: ./json/Positions_2/Types/TypeRange.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Types/TypeRange.ts
+  json/Qr_2/Types/TplN.json:
+    root: ./json/Qr_2/Types/TplN.json
+    x-openapi-ts:
+      output: ./ts/Qr_2/Types/TplN.ts
+  json/Recurring_2/Types/System.json:
+    root: ./json/Recurring_2/Types/System.json
+    x-openapi-ts:
+      output: ./ts/Recurring_2/Types/System.ts
+  json/Recurring_2/Types/Type.json:
+    root: ./json/Recurring_2/Types/Type.json
+    x-openapi-ts:
+      output: ./ts/Recurring_2/Types/Type.ts
+  json/Tags_2/Types/TagId.json:
+    root: ./json/Tags_2/Types/TagId.json
+    x-openapi-ts:
+      output: ./ts/Tags_2/Types/TagId.ts
+  json/Tags_2/Types/TagsIds.json:
+    root: ./json/Tags_2/Types/TagsIds.json
+    x-openapi-ts:
+      output: ./ts/Tags_2/Types/TagsIds.ts
+  json/Tags_2/Types/Type.json:
+    root: ./json/Tags_2/Types/Type.json
+    x-openapi-ts:
+      output: ./ts/Tags_2/Types/Type.ts
+  json/Templates_2/Types/TargetType.json:
+    root: ./json/Templates_2/Types/TargetType.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Types/TargetType.ts
+  json/Urls_2/Types/Flag.json:
+    root: ./json/Urls_2/Types/Flag.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Types/Flag.ts
+  json/Votes_2/Types/Rate.json:
+    root: ./json/Votes_2/Types/Rate.json
+    x-openapi-ts:
+      output: ./ts/Votes_2/Types/Rate.ts
+  json/Admin_2/Types/Analytics/Segment.json:
+    root: ./json/Admin_2/Types/Analytics/Segment.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Types/Analytics/Segment.ts
+  json/Audit_2/Types/Audit/TargetType.json:
+    root: ./json/Audit_2/Types/Audit/TargetType.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Audit/TargetType.ts
+  json/Audit_2/Types/Indexing/SearcherKey.json:
+    root: ./json/Audit_2/Types/Indexing/SearcherKey.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Indexing/SearcherKey.ts
+  json/Audit_2/Types/Indexing/SearcherKeys.json:
+    root: ./json/Audit_2/Types/Indexing/SearcherKeys.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Indexing/SearcherKeys.ts
+  json/Audit_2/Types/Indexing/TypeRange.json:
+    root: ./json/Audit_2/Types/Indexing/TypeRange.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Indexing/TypeRange.ts
+  json/Audit_2/Types/Settings/Device.json:
+    root: ./json/Audit_2/Types/Settings/Device.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Settings/Device.ts
+  json/Audit_2/Types/Settings/FieldName.json:
+    root: ./json/Audit_2/Types/Settings/FieldName.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Settings/FieldName.ts
+  json/Audit_2/Types/Settings/FieldNames.json:
+    root: ./json/Audit_2/Types/Settings/FieldNames.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Settings/FieldNames.ts
+  json/Audit_2/Types/Settings/ServerLocation.json:
+    root: ./json/Audit_2/Types/Settings/ServerLocation.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Settings/ServerLocation.ts
+  json/Audit_2/Types/Settings/WatcherType.json:
+    root: ./json/Audit_2/Types/Settings/WatcherType.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Settings/WatcherType.ts
+  json/Audit_2/Types/Settings/WatcherTypes.json:
+    root: ./json/Audit_2/Types/Settings/WatcherTypes.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Settings/WatcherTypes.ts
+  json/Audit_2/Types/Sitemap/MaxPages.json:
+    root: ./json/Audit_2/Types/Sitemap/MaxPages.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Sitemap/MaxPages.ts
+  json/Audit_2/Types/Watcher/ShowDiff.json:
+    root: ./json/Audit_2/Types/Watcher/ShowDiff.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Watcher/ShowDiff.ts
+  json/Audit_2/Types/Watcher/Type.json:
+    root: ./json/Audit_2/Types/Watcher/Type.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Watcher/Type.ts
+  json/Audit_2/Types/Watcher/TypeRange.json:
+    root: ./json/Audit_2/Types/Watcher/TypeRange.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Watcher/TypeRange.ts
+  json/Bank_2/Types/Requisites/Type.json:
+    root: ./json/Bank_2/Types/Requisites/Type.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Requisites/Type.ts
+  json/Bank_2/Types/Subscriptions/Cycle.json:
+    root: ./json/Bank_2/Types/Subscriptions/Cycle.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Subscriptions/Cycle.ts
+  json/Bank_2/Types/Subscriptions/Manager.json:
+    root: ./json/Bank_2/Types/Subscriptions/Manager.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Subscriptions/Manager.ts
+  json/Bank_2/Types/Subscriptions/Status.json:
+    root: ./json/Bank_2/Types/Subscriptions/Status.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Subscriptions/Status.ts
+  json/Bank_2/Types/Subscriptions/Type.json:
+    root: ./json/Bank_2/Types/Subscriptions/Type.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Subscriptions/Type.ts
+  json/Bank_2/Types/Transaction/Target.json:
+    root: ./json/Bank_2/Types/Transaction/Target.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Transaction/Target.ts
+  json/Bank_2/Types/Transaction/Type.json:
+    root: ./json/Bank_2/Types/Transaction/Type.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Transaction/Type.ts
+  json/Broker_2/Types/Ads/Type.json:
+    root: ./json/Broker_2/Types/Ads/Type.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Types/Ads/Type.ts
+  json/Broker_2/Types/Keywords/Tactics2.json:
+    root: ./json/Broker_2/Types/Keywords/Tactics2.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Types/Keywords/Tactics2.ts
+  json/Content_2/Types/Apometr/Action.json:
+    root: ./json/Content_2/Types/Apometr/Action.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Types/Apometr/Action.ts
+  json/Content_2/Types/Pages/RequiredPost.json:
+    root: ./json/Content_2/Types/Pages/RequiredPost.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Types/Pages/RequiredPost.ts
+  json/Content_2/Types/Pages/RequiredPosts.json:
+    root: ./json/Content_2/Types/Pages/RequiredPosts.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Types/Pages/RequiredPosts.ts
+  json/Export_2/Types/Repository/Name.json:
+    root: ./json/Export_2/Types/Repository/Name.json
+    x-openapi-ts:
+      output: ./ts/Export_2/Types/Repository/Name.ts
+  json/Keywords_2/Types/Collect/HintGenerator.json:
+    root: ./json/Keywords_2/Types/Collect/HintGenerator.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/HintGenerator.ts
+  json/Keywords_2/Types/Collect/HintGenerators.json:
+    root: ./json/Keywords_2/Types/Collect/HintGenerators.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/HintGenerators.ts
+  json/Keywords_2/Types/Collect/Qualifier.json:
+    root: ./json/Keywords_2/Types/Collect/Qualifier.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/Qualifier.ts
+  json/Keywords_2/Types/Collect/Qualifiers.json:
+    root: ./json/Keywords_2/Types/Collect/Qualifiers.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/Qualifiers.ts
+  json/Keywords_2/Types/Collect/SearcherKey.json:
+    root: ./json/Keywords_2/Types/Collect/SearcherKey.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/SearcherKey.ts
+  json/Keywords_2/Types/Collect/ToType.json:
+    root: ./json/Keywords_2/Types/Collect/ToType.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/ToType.ts
+  json/Keywords_2/Types/Volumes/NoRecheck.json:
+    root: ./json/Keywords_2/Types/Volumes/NoRecheck.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Volumes/NoRecheck.ts
+  json/Keywords_2/Types/Volumes/Qualifier.json:
+    root: ./json/Keywords_2/Types/Volumes/Qualifier.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Volumes/Qualifier.ts
+  json/Keywords_2/Types/Volumes/Qualifiers.json:
+    root: ./json/Keywords_2/Types/Volumes/Qualifiers.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Volumes/Qualifiers.ts
+  json/Keywords_2/Types/Volumes/SearcherKey.json:
+    root: ./json/Keywords_2/Types/Volumes/SearcherKey.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Volumes/SearcherKey.ts
+  json/Keywords_2/Types/Volumes/Type.json:
+    root: ./json/Keywords_2/Types/Volumes/Type.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Volumes/Type.ts
+  json/Keywords_2/Types/Volumes/Types.json:
+    root: ./json/Keywords_2/Types/Volumes/Types.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Volumes/Types.ts
+  json/Positions_2/Types/Settings/GuestLinkRight.json:
+    root: ./json/Positions_2/Types/Settings/GuestLinkRight.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Types/Settings/GuestLinkRight.ts
+  json/Positions_2/Types/Settings/GuestLinkRights.json:
+    root: ./json/Positions_2/Types/Settings/GuestLinkRights.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Types/Settings/GuestLinkRights.ts
+  json/Projects_2/Types/Analytics/Axe.json:
+    root: ./json/Projects_2/Types/Analytics/Axe.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Types/Analytics/Axe.ts
+  json/Projects_2/Types/Analytics/Base.json:
+    root: ./json/Projects_2/Types/Analytics/Base.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Types/Analytics/Base.ts
+  json/Schedule_2/Types/Settings/AdditionalField.json:
+    root: ./json/Schedule_2/Types/Settings/AdditionalField.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Types/Settings/AdditionalField.ts
+  json/Schedule_2/Types/Settings/AdditionalFields.json:
+    root: ./json/Schedule_2/Types/Settings/AdditionalFields.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Types/Settings/AdditionalFields.ts
+  json/Schedule_2/Types/Settings/Format.json:
+    root: ./json/Schedule_2/Types/Settings/Format.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Types/Settings/Format.ts
+  json/Schedule_2/Types/Settings/Formats.json:
+    root: ./json/Schedule_2/Types/Settings/Formats.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Types/Settings/Formats.ts
+  json/Schedule_2/Types/Settings/Period.json:
+    root: ./json/Schedule_2/Types/Settings/Period.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Types/Settings/Period.ts
+  json/Telegram_2/Types/Bot/BotResponse.json:
+    root: ./json/Telegram_2/Types/Bot/BotResponse.json
+    x-openapi-ts:
+      output: ./ts/Telegram_2/Types/Bot/BotResponse.ts
+  json/Telegram_2/Types/Bot/CommandConfig.json:
+    root: ./json/Telegram_2/Types/Bot/CommandConfig.json
+    x-openapi-ts:
+      output: ./ts/Telegram_2/Types/Bot/CommandConfig.ts
+  json/Telegram_2/Types/Bot/Name.json:
+    root: ./json/Telegram_2/Types/Bot/Name.json
+    x-openapi-ts:
+      output: ./ts/Telegram_2/Types/Bot/Name.ts
+  json/Tickets_2/Types/Tickets/Type.json:
+    root: ./json/Tickets_2/Types/Tickets/Type.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Types/Tickets/Type.ts
+  json/Urls_2/Types/Export/Output.json:
+    root: ./json/Urls_2/Types/Export/Output.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Types/Export/Output.ts
+  json/Urls_2/Types/Tags/Action.json:
+    root: ./json/Urls_2/Types/Tags/Action.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Types/Tags/Action.ts
+  json/Admin_2/Types/Users/Ranks/Category.json:
+    root: ./json/Admin_2/Types/Users/Ranks/Category.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Types/Users/Ranks/Category.ts
+  json/Audit_2/Types/Audit/Summary/FilterCheckState.json:
+    root: ./json/Audit_2/Types/Audit/Summary/FilterCheckState.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Audit/Summary/FilterCheckState.ts
+  json/Bank_2/Types/Subscriptions/Limit/Name.json:
+    root: ./json/Bank_2/Types/Subscriptions/Limit/Name.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Subscriptions/Limit/Name.ts
+  json/Bank_2/Types/Subscriptions/Limit/Type.json:
+    root: ./json/Bank_2/Types/Subscriptions/Limit/Type.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Types/Subscriptions/Limit/Type.ts
+  json/Broker_2/Types/Ads/Image/Subtype.json:
+    root: ./json/Broker_2/Types/Ads/Image/Subtype.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Types/Ads/Image/Subtype.ts
+  json/Keywords_2/Types/Collect/Ext/Type.json:
+    root: ./json/Keywords_2/Types/Collect/Ext/Type.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Types/Collect/Ext/Type.ts
+  json/Telegram_2/Types/Bot/Api/Operation.json:
+    root: ./json/Telegram_2/Types/Bot/Api/Operation.json
+    x-openapi-ts:
+      output: ./ts/Telegram_2/Types/Bot/Api/Operation.ts
+  json/Audit_2/Types/Audit/Results/Export/TypeReport.json:
+    root: ./json/Audit_2/Types/Audit/Results/Export/TypeReport.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Types/Audit/Results/Export/TypeReport.ts
+  json/Analytics_2/Methods/Add.json:
+    root: ./json/Analytics_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Analytics_2/Methods/Add.ts
+  json/Annotations_2/Methods/Add.json:
+    root: ./json/Annotations_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Annotations_2/Methods/Add.ts
+  json/Annotations_2/Methods/Del.json:
+    root: ./json/Annotations_2/Methods/Del.json
+    x-openapi-ts:
+      output: ./ts/Annotations_2/Methods/Del.ts
+  json/Annotations_2/Methods/Edit.json:
+    root: ./json/Annotations_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Annotations_2/Methods/Edit.ts
+  json/Annotations_2/Methods/Get.json:
+    root: ./json/Annotations_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Annotations_2/Methods/Get.ts
+  json/App_2/Methods/Get.json:
+    root: ./json/App_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/App_2/Methods/Get.ts
+  json/Comments_2/Methods/Add.json:
+    root: ./json/Comments_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Comments_2/Methods/Add.ts
+  json/Comments_2/Methods/Del.json:
+    root: ./json/Comments_2/Methods/Del.json
+    x-openapi-ts:
+      output: ./ts/Comments_2/Methods/Del.ts
+  json/Comments_2/Methods/Edit.json:
+    root: ./json/Comments_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Comments_2/Methods/Edit.ts
+  json/Comments_2/Methods/Get.json:
+    root: ./json/Comments_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Comments_2/Methods/Get.ts
+  json/Content_2/Methods/Get.json:
+    root: ./json/Content_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Get.ts
+  json/Payments_2/Methods/Add.json:
+    root: ./json/Payments_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Add.ts
+  json/Payments_2/Methods/Get.json:
+    root: ./json/Payments_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Get.ts
+  json/Qr_2/Methods/Get.json:
+    root: ./json/Qr_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Qr_2/Methods/Get.ts
+  json/Recurring_2/Methods/Edit.json:
+    root: ./json/Recurring_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Recurring_2/Methods/Edit.ts
+  json/Schedule_2/Methods/AbstractRegular.json:
+    root: ./json/Schedule_2/Methods/AbstractRegular.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/AbstractRegular.ts
+  json/Schedule_2/Methods/Del.json:
+    root: ./json/Schedule_2/Methods/Del.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/Del.ts
+  json/Schedule_2/Methods/Edit.json:
+    root: ./json/Schedule_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/Edit.ts
+  json/Schedule_2/Methods/Get.json:
+    root: ./json/Schedule_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/Get.ts
+  json/Tags_2/Methods/Edit.json:
+    root: ./json/Tags_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tags_2/Methods/Edit.ts
+  json/Tags_2/Methods/Get.json:
+    root: ./json/Tags_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Tags_2/Methods/Get.ts
+  json/Templates_2/Methods/Add.json:
+    root: ./json/Templates_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Add.ts
+  json/Templates_2/Methods/Del.json:
+    root: ./json/Templates_2/Methods/Del.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Del.ts
+  json/Templates_2/Methods/Edit.json:
+    root: ./json/Templates_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Edit.ts
+  json/Templates_2/Methods/Get.json:
+    root: ./json/Templates_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Get.ts
+  json/Urls_2/Methods/Add.json:
+    root: ./json/Urls_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Add.ts
+  json/Urls_2/Methods/Edit.json:
+    root: ./json/Urls_2/Methods/Edit.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Edit.ts
+  json/Urls_2/Methods/Get.json:
+    root: ./json/Urls_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Get.ts
+  json/Votes_2/Methods/Add.json:
+    root: ./json/Votes_2/Methods/Add.json
+    x-openapi-ts:
+      output: ./ts/Votes_2/Methods/Add.ts
+  json/Votes_2/Methods/Get.json:
+    root: ./json/Votes_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Votes_2/Methods/Get.ts
+  json/Webscreens_2/Methods/Get.json:
+    root: ./json/Webscreens_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Webscreens_2/Methods/Get.ts
+  json/Admin_2/Methods/Actions/AbstractRegular.json:
+    root: ./json/Admin_2/Methods/Actions/AbstractRegular.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/AbstractRegular.ts
+  json/Admin_2/Methods/Ghost/Get.json:
+    root: ./json/Admin_2/Methods/Ghost/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Ghost/Get.ts
+  json/Admin_2/Methods/I18n/Get.json:
+    root: ./json/Admin_2/Methods/I18n/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/I18n/Get.ts
+  json/Admin_2/Methods/Informer/Add.json:
+    root: ./json/Admin_2/Methods/Informer/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Informer/Add.ts
+  json/Admin_2/Methods/Logs/Edit.json:
+    root: ./json/Admin_2/Methods/Logs/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Logs/Edit.ts
+  json/Admin_2/Methods/Logs/Get.json:
+    root: ./json/Admin_2/Methods/Logs/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Logs/Get.ts
+  json/Admin_2/Methods/Ranks/Get.json:
+    root: ./json/Admin_2/Methods/Ranks/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Ranks/Get.ts
+  json/Admin_2/Methods/Staff/Add.json:
+    root: ./json/Admin_2/Methods/Staff/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Add.ts
+  json/Admin_2/Methods/Staff/Edit.json:
+    root: ./json/Admin_2/Methods/Staff/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Edit.ts
+  json/Admin_2/Methods/Staff/Get.json:
+    root: ./json/Admin_2/Methods/Staff/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Get.ts
+  json/Admin_2/Methods/TariffChangeExpire/Edit.json:
+    root: ./json/Admin_2/Methods/TariffChangeExpire/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/TariffChangeExpire/Edit.ts
+  json/Admin_2/Methods/Tpl/Get.json:
+    root: ./json/Admin_2/Methods/Tpl/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Tpl/Get.ts
+  json/Admin_2/Methods/Users/Edit.json:
+    root: ./json/Admin_2/Methods/Users/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Edit.ts
+  json/Admin_2/Methods/Users/Get.json:
+    root: ./json/Admin_2/Methods/Users/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Get.ts
+  json/Admin_2/Methods/Votes/Get.json:
+    root: ./json/Admin_2/Methods/Votes/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Votes/Get.ts
+  json/Annotations_2/Methods/My/Get.json:
+    root: ./json/Annotations_2/Methods/My/Get.json
+    x-openapi-ts:
+      output: ./ts/Annotations_2/Methods/My/Get.ts
+  json/App_2/Methods/Actions/Get.json:
+    root: ./json/App_2/Methods/Actions/Get.json
+    x-openapi-ts:
+      output: ./ts/App_2/Methods/Actions/Get.ts
+  json/App_2/Methods/Privacy/Get.json:
+    root: ./json/App_2/Methods/Privacy/Get.json
+    x-openapi-ts:
+      output: ./ts/App_2/Methods/Privacy/Get.ts
+  json/Controller_2/Objects/Page.json:
+    root: ./json/Controller_2/Objects/Page.json
+    x-openapi-ts:
+      output: ./ts/Controller_2/Objects/Page.ts
+  json/Audit_2/Methods/CountUrls/Get.json:
+    root: ./json/Audit_2/Methods/CountUrls/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/CountUrls/Get.ts
+  json/Audit_2/Methods/Indexing/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Get.ts
+  json/Audit_2/Methods/Settings/Edit.json:
+    root: ./json/Audit_2/Methods/Settings/Edit.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Settings/Edit.ts
+  json/Audit_2/Methods/Settings/Get.json:
+    root: ./json/Audit_2/Methods/Settings/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Settings/Get.ts
+  json/Audit_2/Methods/Watcher/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Get.ts
+  json/Bank_2/Methods/Bank/Get.json:
+    root: ./json/Bank_2/Methods/Bank/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Bank/Get.ts
+  json/Bank_2/Methods/History/Get.json:
+    root: ./json/Bank_2/Methods/History/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/History/Get.ts
+  json/Bank_2/Methods/Info/Get.json:
+    root: ./json/Bank_2/Methods/Info/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Info/Get.ts
+  json/Bank_2/Methods/Requisites/Add.json:
+    root: ./json/Bank_2/Methods/Requisites/Add.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/Add.ts
+  json/Bank_2/Methods/Requisites/Del.json:
+    root: ./json/Bank_2/Methods/Requisites/Del.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/Del.ts
+  json/Bank_2/Methods/Requisites/Edit.json:
+    root: ./json/Bank_2/Methods/Requisites/Edit.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/Edit.ts
+  json/Bank_2/Methods/Requisites/Get.json:
+    root: ./json/Bank_2/Methods/Requisites/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/Get.ts
+  json/Bank_2/Methods/Ur/Get.json:
+    root: ./json/Bank_2/Methods/Ur/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Ur/Get.ts
+  json/Broker_2/Methods/Ads/Edit.json:
+    root: ./json/Broker_2/Methods/Ads/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Ads/Edit.ts
+  json/Broker_2/Methods/Ads/Get.json:
+    root: ./json/Broker_2/Methods/Ads/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Ads/Get.ts
+  json/Broker_2/Methods/Campaigns/Add.json:
+    root: ./json/Broker_2/Methods/Campaigns/Add.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Campaigns/Add.ts
+  json/Broker_2/Methods/Campaigns/Del.json:
+    root: ./json/Broker_2/Methods/Campaigns/Del.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Campaigns/Del.ts
+  json/Broker_2/Methods/Campaigns/Edit.json:
+    root: ./json/Broker_2/Methods/Campaigns/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Campaigns/Edit.ts
+  json/Broker_2/Methods/Campaigns/Get.json:
+    root: ./json/Broker_2/Methods/Campaigns/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Campaigns/Get.ts
+  json/Broker_2/Methods/Groups/Add.json:
+    root: ./json/Broker_2/Methods/Groups/Add.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Groups/Add.ts
+  json/Broker_2/Methods/Groups/Get.json:
+    root: ./json/Broker_2/Methods/Groups/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Groups/Get.ts
+  json/Broker_2/Methods/Keywords/Del.json:
+    root: ./json/Broker_2/Methods/Keywords/Del.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Keywords/Del.ts
+  json/Broker_2/Methods/Keywords/Edit.json:
+    root: ./json/Broker_2/Methods/Keywords/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Keywords/Edit.ts
+  json/Broker_2/Methods/Keywords/Get.json:
+    root: ./json/Broker_2/Methods/Keywords/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Keywords/Get.ts
+  json/Broker_2/Methods/Log/Get.json:
+    root: ./json/Broker_2/Methods/Log/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Log/Get.ts
+  json/Comments_2/Methods/ByAuthor/Get.json:
+    root: ./json/Comments_2/Methods/ByAuthor/Get.json
+    x-openapi-ts:
+      output: ./ts/Comments_2/Methods/ByAuthor/Get.ts
+  json/Comments_2/Methods/Like/Edit.json:
+    root: ./json/Comments_2/Methods/Like/Edit.json
+    x-openapi-ts:
+      output: ./ts/Comments_2/Methods/Like/Edit.ts
+  json/Content_2/Methods/Authors/Edit.json:
+    root: ./json/Content_2/Methods/Authors/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Authors/Edit.ts
+  json/Content_2/Methods/Authors/Get.json:
+    root: ./json/Content_2/Methods/Authors/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Authors/Get.ts
+  json/Content_2/Methods/BookmarkAuthor/Edit.json:
+    root: ./json/Content_2/Methods/BookmarkAuthor/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/BookmarkAuthor/Edit.ts
+  json/Content_2/Methods/Bookmark/Edit.json:
+    root: ./json/Content_2/Methods/Bookmark/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Bookmark/Edit.ts
+  json/Content_2/Methods/Like/Edit.json:
+    root: ./json/Content_2/Methods/Like/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Like/Edit.ts
+  json/Content_2/Methods/Pages/AbstractPage.json:
+    root: ./json/Content_2/Methods/Pages/AbstractPage.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Pages/AbstractPage.ts
+  json/Content_2/Methods/Pages/Add.json:
+    root: ./json/Content_2/Methods/Pages/Add.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Pages/Add.ts
+  json/Content_2/Methods/Pages/Del.json:
+    root: ./json/Content_2/Methods/Pages/Del.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Pages/Del.ts
+  json/Content_2/Methods/Pages/Edit.json:
+    root: ./json/Content_2/Methods/Pages/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Pages/Edit.ts
+  json/Content_2/Methods/Pages/Get.json:
+    root: ./json/Content_2/Methods/Pages/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Pages/Get.ts
+  json/Content_2/Methods/Redirects/AbstractRegular.json:
+    root: ./json/Content_2/Methods/Redirects/AbstractRegular.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Redirects/AbstractRegular.ts
+  json/Content_2/Methods/Redirects/Add.json:
+    root: ./json/Content_2/Methods/Redirects/Add.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Redirects/Add.ts
+  json/Content_2/Methods/Redirects/Del.json:
+    root: ./json/Content_2/Methods/Redirects/Del.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Redirects/Del.ts
+  json/Content_2/Methods/Redirects/Edit.json:
+    root: ./json/Content_2/Methods/Redirects/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Redirects/Edit.ts
+  json/Content_2/Methods/Redirects/Get.json:
+    root: ./json/Content_2/Methods/Redirects/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Redirects/Get.ts
+  json/Content_2/Methods/Rss/Get.json:
+    root: ./json/Content_2/Methods/Rss/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Rss/Get.ts
+  json/Content_2/Methods/Search/Get.json:
+    root: ./json/Content_2/Methods/Search/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Search/Get.ts
+  json/Content_2/Methods/Sitemap/Get.json:
+    root: ./json/Content_2/Methods/Sitemap/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Sitemap/Get.ts
+  json/Content_2/Methods/Tags/Get.json:
+    root: ./json/Content_2/Methods/Tags/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Tags/Get.ts
+  json/Cron_2/Methods/Commands/Add.json:
+    root: ./json/Cron_2/Methods/Commands/Add.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Methods/Commands/Add.ts
+  json/Cron_2/Methods/Commands/Del.json:
+    root: ./json/Cron_2/Methods/Commands/Del.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Methods/Commands/Del.ts
+  json/Cron_2/Methods/Commands/Edit.json:
+    root: ./json/Cron_2/Methods/Commands/Edit.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Methods/Commands/Edit.ts
+  json/Cron_2/Methods/Commands/Get.json:
+    root: ./json/Cron_2/Methods/Commands/Get.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Methods/Commands/Get.ts
+  json/Cron_2/Methods/Get.json:
+    root: ./json/Cron_2/Methods/Get.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Methods/Get.ts
+  json/Example_2/Methods/Array/Get.json:
+    root: ./json/Example_2/Methods/Array/Get.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Methods/Array/Get.ts
+  json/Example_2/Methods/Bag/Get.json:
+    root: ./json/Example_2/Methods/Bag/Get.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Methods/Bag/Get.ts
+  json/Example_2/Methods/Custom/Get.json:
+    root: ./json/Example_2/Methods/Custom/Get.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Methods/Custom/Get.ts
+  json/Example_2/Methods/Enum/Get.json:
+    root: ./json/Example_2/Methods/Enum/Get.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Methods/Enum/Get.ts
+  json/Example_2/Methods/Object/Get.json:
+    root: ./json/Example_2/Methods/Object/Get.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Methods/Object/Get.ts
+  json/Example_2/Methods/Projects/Get.json:
+    root: ./json/Example_2/Methods/Projects/Get.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Methods/Projects/Get.ts
+  json/Keywords_2/Methods/Collect/AbstractRegular.json:
+    root: ./json/Keywords_2/Methods/Collect/AbstractRegular.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Collect/AbstractRegular.ts
+  json/Keywords_2/Methods/Keywords/Get.json:
+    root: ./json/Keywords_2/Methods/Keywords/Get.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Keywords/Get.ts
+  json/Keywords_2/Methods/Volumes/Get.json:
+    root: ./json/Keywords_2/Methods/Volumes/Get.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Volumes/Get.ts
+  json/OpenAPI_2/Methods/Download/Get.json:
+    root: ./json/OpenAPI_2/Methods/Download/Get.json
+    x-openapi-ts:
+      output: ./ts/OpenAPI_2/Methods/Download/Get.ts
+  json/Payments_2/Methods/Companies/Get.json:
+    root: ./json/Payments_2/Methods/Companies/Get.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Companies/Get.ts
+  json/Payments_2/Methods/ContractSign/Edit.json:
+    root: ./json/Payments_2/Methods/ContractSign/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/ContractSign/Edit.ts
+  json/Payments_2/Methods/NextRequisitesId/Edit.json:
+    root: ./json/Payments_2/Methods/NextRequisitesId/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/NextRequisitesId/Edit.ts
+  json/Payments_2/Methods/Subscriptions/Edit.json:
+    root: ./json/Payments_2/Methods/Subscriptions/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Subscriptions/Edit.ts
+  json/Payments_2/Methods/UrTinkoffCreateApplication/Add.json:
+    root: ./json/Payments_2/Methods/UrTinkoffCreateApplication/Add.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/UrTinkoffCreateApplication/Add.ts
+  json/Payments_2/Methods/ValidateMerchantCardAP/Get.json:
+    root: ./json/Payments_2/Methods/ValidateMerchantCardAP/Get.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/ValidateMerchantCardAP/Get.ts
+  json/Positions_2/Methods/Searchers/Add.json:
+    root: ./json/Positions_2/Methods/Searchers/Add.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Add.ts
+  json/Positions_2/Methods/Searchers/Del.json:
+    root: ./json/Positions_2/Methods/Searchers/Del.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Del.ts
+  json/Positions_2/Methods/Settings/Edit.json:
+    root: ./json/Positions_2/Methods/Settings/Edit.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Settings/Edit.ts
+  json/Projects_2/Methods/Analytics/Add.json:
+    root: ./json/Projects_2/Methods/Analytics/Add.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Analytics/Add.ts
+  json/Projects_2/Methods/Analytics/Del.json:
+    root: ./json/Projects_2/Methods/Analytics/Del.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Analytics/Del.ts
+  json/Projects_2/Methods/Analytics/Edit.json:
+    root: ./json/Projects_2/Methods/Analytics/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Analytics/Edit.ts
+  json/Projects_2/Methods/Analytics/Get.json:
+    root: ./json/Projects_2/Methods/Analytics/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Analytics/Get.ts
+  json/Projects_2/Methods/Competitors/Add.json:
+    root: ./json/Projects_2/Methods/Competitors/Add.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Competitors/Add.ts
+  json/Projects_2/Methods/Competitors/Del.json:
+    root: ./json/Projects_2/Methods/Competitors/Del.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Competitors/Del.ts
+  json/Projects_2/Methods/Competitors/Get.json:
+    root: ./json/Projects_2/Methods/Competitors/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Competitors/Get.ts
+  json/Projects_2/Methods/Folders/Add.json:
+    root: ./json/Projects_2/Methods/Folders/Add.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Folders/Add.ts
+  json/Projects_2/Methods/Folders/Del.json:
+    root: ./json/Projects_2/Methods/Folders/Del.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Folders/Del.ts
+  json/Projects_2/Methods/Folders/Get.json:
+    root: ./json/Projects_2/Methods/Folders/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Folders/Get.ts
+  json/Projects_2/Methods/Projects/Add.json:
+    root: ./json/Projects_2/Methods/Projects/Add.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Add.ts
+  json/Projects_2/Methods/Projects/Del.json:
+    root: ./json/Projects_2/Methods/Projects/Del.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Del.ts
+  json/Projects_2/Methods/Projects/Get.json:
+    root: ./json/Projects_2/Methods/Projects/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Get.ts
+  json/Projects_2/Methods/Rights/Del.json:
+    root: ./json/Projects_2/Methods/Rights/Del.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Rights/Del.ts
+  json/Projects_2/Methods/Rights/Edit.json:
+    root: ./json/Projects_2/Methods/Rights/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Rights/Edit.ts
+  json/Projects_2/Methods/Rights/Get.json:
+    root: ./json/Projects_2/Methods/Rights/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Rights/Get.ts
+  json/Projects_2/Methods/Status/Get.json:
+    root: ./json/Projects_2/Methods/Status/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Status/Get.ts
+  json/stdClass.json:
+    root: ./json/stdClass.json
+    x-openapi-ts:
+      output: ./ts/stdClass.ts
+  json/Projects_2/Methods/Tasks/Get.json:
+    root: ./json/Projects_2/Methods/Tasks/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Tasks/Get.ts
+  json/Recurring_2/Methods/RecurringCard/Del.json:
+    root: ./json/Recurring_2/Methods/RecurringCard/Del.json
+    x-openapi-ts:
+      output: ./ts/Recurring_2/Methods/RecurringCard/Del.ts
+  json/Recurring_2/Methods/RecurringCard/Get.json:
+    root: ./json/Recurring_2/Methods/RecurringCard/Get.json
+    x-openapi-ts:
+      output: ./ts/Recurring_2/Methods/RecurringCard/Get.ts
+  json/Schedule_2/Methods/Settings/Edit.json:
+    root: ./json/Schedule_2/Methods/Settings/Edit.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/Settings/Edit.ts
+  json/Schedule_2/Methods/Settings/Get.json:
+    root: ./json/Schedule_2/Methods/Settings/Get.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/Settings/Get.ts
+  json/Sms_2/Methods/CheckPIN/Get.json:
+    root: ./json/Sms_2/Methods/CheckPIN/Get.json
+    x-openapi-ts:
+      output: ./ts/Sms_2/Methods/CheckPIN/Get.ts
+  json/Sms_2/Methods/SendPIN/Get.json:
+    root: ./json/Sms_2/Methods/SendPIN/Get.json
+    x-openapi-ts:
+      output: ./ts/Sms_2/Methods/SendPIN/Get.ts
+  json/Templates_2/Methods/AvailableFieldsData/Get.json:
+    root: ./json/Templates_2/Methods/AvailableFieldsData/Get.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/AvailableFieldsData/Get.ts
+  json/Templates_2/Methods/Fields/Del.json:
+    root: ./json/Templates_2/Methods/Fields/Del.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Fields/Del.ts
+  json/Templates_2/Methods/Fields/Edit.json:
+    root: ./json/Templates_2/Methods/Fields/Edit.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Fields/Edit.ts
+  json/Templates_2/Methods/Fields/Get.json:
+    root: ./json/Templates_2/Methods/Fields/Get.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/Fields/Get.ts
+  json/Templates_2/Methods/FieldsProperties/Get.json:
+    root: ./json/Templates_2/Methods/FieldsProperties/Get.json
+    x-openapi-ts:
+      output: ./ts/Templates_2/Methods/FieldsProperties/Get.ts
+  json/Tickets_2/Methods/Files/Add.json:
+    root: ./json/Tickets_2/Methods/Files/Add.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Files/Add.ts
+  json/Tickets_2/Methods/Files/Del.json:
+    root: ./json/Tickets_2/Methods/Files/Del.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Files/Del.ts
+  json/Tickets_2/Methods/Files/Get.json:
+    root: ./json/Tickets_2/Methods/Files/Get.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Files/Get.ts
+  json/Tickets_2/Methods/Messages/Add.json:
+    root: ./json/Tickets_2/Methods/Messages/Add.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Messages/Add.ts
+  json/Tickets_2/Methods/Rate/Edit.json:
+    root: ./json/Tickets_2/Methods/Rate/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Rate/Edit.ts
+  json/Tickets_2/Methods/Tickets/Add.json:
+    root: ./json/Tickets_2/Methods/Tickets/Add.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/Add.ts
+  json/Tickets_2/Methods/Tickets/Edit.json:
+    root: ./json/Tickets_2/Methods/Tickets/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/Edit.ts
+  json/Tickets_2/Methods/Tickets/Get.json:
+    root: ./json/Tickets_2/Methods/Tickets/Get.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/Get.ts
+  json/Urls_2/Methods/Export/Get.json:
+    root: ./json/Urls_2/Methods/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Export/Get.ts
+  json/Urls_2/Methods/Import/Add.json:
+    root: ./json/Urls_2/Methods/Import/Add.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Import/Add.ts
+  json/Urls_2/Methods/Tags/Edit.json:
+    root: ./json/Urls_2/Methods/Tags/Edit.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Tags/Edit.ts
+  json/Votes_2/Methods/Comment/Edit.json:
+    root: ./json/Votes_2/Methods/Comment/Edit.json
+    x-openapi-ts:
+      output: ./ts/Votes_2/Methods/Comment/Edit.ts
+  json/Admin_2/Methods/Accounting/Counteragents/Edit.json:
+    root: ./json/Admin_2/Methods/Accounting/Counteragents/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Counteragents/Edit.ts
+  json/Admin_2/Methods/Accounting/Counteragents/Get.json:
+    root: ./json/Admin_2/Methods/Accounting/Counteragents/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Counteragents/Get.ts
+  json/Admin_2/Methods/Accounting/Group/Edit.json:
+    root: ./json/Admin_2/Methods/Accounting/Group/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Group/Edit.ts
+  json/Admin_2/Methods/Accounting/Group/Get.json:
+    root: ./json/Admin_2/Methods/Accounting/Group/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Group/Get.ts
+  json/Admin_2/Methods/Accounting/Invoices/Add.json:
+    root: ./json/Admin_2/Methods/Accounting/Invoices/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Invoices/Add.ts
+  json/Admin_2/Methods/Accounting/Invoices/Del.json:
+    root: ./json/Admin_2/Methods/Accounting/Invoices/Del.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Invoices/Del.ts
+  json/Admin_2/Methods/Accounting/Invoices/Get.json:
+    root: ./json/Admin_2/Methods/Accounting/Invoices/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Invoices/Get.ts
+  json/Admin_2/Methods/Accounting/Operations/Get.json:
+    root: ./json/Admin_2/Methods/Accounting/Operations/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Operations/Get.ts
+  json/Admin_2/Methods/Actions/Bank/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Bank/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Bank/Edit.ts
+  json/Admin_2/Objects/Actions/Result.json:
+    root: ./json/Admin_2/Objects/Actions/Result.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Objects/Actions/Result.ts
+  json/Admin_2/Methods/Actions/Payments/Del.json:
+    root: ./json/Admin_2/Methods/Actions/Payments/Del.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Payments/Del.ts
+  json/Admin_2/Methods/Actions/Payments/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Payments/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Payments/Edit.ts
+  json/Admin_2/Methods/Actions/Positions/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Positions/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Positions/Edit.ts
+  json/Admin_2/Methods/Actions/Projects/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Projects/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Projects/Edit.ts
+  json/Admin_2/Methods/Actions/Projects/Get.json:
+    root: ./json/Admin_2/Methods/Actions/Projects/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Projects/Get.ts
+  json/Admin_2/Methods/Actions/Telegram/Add.json:
+    root: ./json/Admin_2/Methods/Actions/Telegram/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Telegram/Add.ts
+  json/Admin_2/Methods/Affiliate/ReferralProgramStats/Get.json:
+    root: ./json/Admin_2/Methods/Affiliate/ReferralProgramStats/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Affiliate/ReferralProgramStats/Get.ts
+  json/Admin_2/Methods/Affiliate/ReferralsByLevel/Get.json:
+    root: ./json/Admin_2/Methods/Affiliate/ReferralsByLevel/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts
+  json/Admin_2/Methods/Affiliate/Referrals/Get.json:
+    root: ./json/Admin_2/Methods/Affiliate/Referrals/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Affiliate/Referrals/Get.ts
+  json/Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.json:
+    root: ./json/Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts
+  json/Admin_2/Methods/Affiliate/Referrers/Get.json:
+    root: ./json/Admin_2/Methods/Affiliate/Referrers/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Affiliate/Referrers/Get.ts
+  json/Admin_2/Methods/Affiliate/ReferrersWithReferrals/Get.json:
+    root: ./json/Admin_2/Methods/Affiliate/ReferrersWithReferrals/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Affiliate/ReferrersWithReferrals/Get.ts
+  json/Admin_2/Methods/Analytics/Activity/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Activity/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Activity/Get.ts
+  json/Admin_2/Methods/Analytics/CountOnlineUsers/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/CountOnlineUsers/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/CountOnlineUsers/Get.ts
+  json/Admin_2/Methods/Analytics/Events/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Events/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Events/Get.ts
+  json/Admin_2/Methods/Analytics/Payments/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Payments/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Payments/Get.ts
+  json/Admin_2/Methods/Analytics/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Get.ts
+  json/Admin_2/Methods/Analytics/Statistics/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Statistics/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Statistics/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts
+  json/Admin_2/Methods/Analytics/Tickets/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/Get.ts
+  json/Admin_2/Methods/I18n/Categories/Get.json:
+    root: ./json/Admin_2/Methods/I18n/Categories/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/I18n/Categories/Get.ts
+  json/Admin_2/Methods/Logs/System/Get.json:
+    root: ./json/Admin_2/Methods/Logs/System/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Logs/System/Get.ts
+  json/Admin_2/Methods/Ranks/Activations/Get.json:
+    root: ./json/Admin_2/Methods/Ranks/Activations/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Ranks/Activations/Get.ts
+  json/Admin_2/Methods/Slack/Rate/Get.json:
+    root: ./json/Admin_2/Methods/Slack/Rate/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Slack/Rate/Get.ts
+  json/Admin_2/Methods/Staff/Access/Edit.json:
+    root: ./json/Admin_2/Methods/Staff/Access/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Access/Edit.ts
+  json/Admin_2/Methods/Staff/ByPost/Get.json:
+    root: ./json/Admin_2/Methods/Staff/ByPost/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/ByPost/Get.ts
+  json/Admin_2/Methods/Staff/ContractPrint/Get.json:
+    root: ./json/Admin_2/Methods/Staff/ContractPrint/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/ContractPrint/Get.ts
+  json/Admin_2/Methods/Staff/Posts/Get.json:
+    root: ./json/Admin_2/Methods/Staff/Posts/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Posts/Get.ts
+  json/Admin_2/Methods/Staff/Vacation/Add.json:
+    root: ./json/Admin_2/Methods/Staff/Vacation/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Vacation/Add.ts
+  json/Admin_2/Methods/Staff/Vacation/Del.json:
+    root: ./json/Admin_2/Methods/Staff/Vacation/Del.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/Vacation/Del.ts
+  json/Admin_2/Methods/Staff/VacationPrint/Get.json:
+    root: ./json/Admin_2/Methods/Staff/VacationPrint/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Staff/VacationPrint/Get.ts
+  json/Admin_2/Methods/Tpl/Schema/Get.json:
+    root: ./json/Admin_2/Methods/Tpl/Schema/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Tpl/Schema/Get.ts
+  json/Admin_2/Methods/Users/Promocodes/Add.json:
+    root: ./json/Admin_2/Methods/Users/Promocodes/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Promocodes/Add.ts
+  json/Admin_2/Methods/Users/Promocodes/Get.json:
+    root: ./json/Admin_2/Methods/Users/Promocodes/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Promocodes/Get.ts
+  json/Admin_2/Methods/Users/Ranks/Add.json:
+    root: ./json/Admin_2/Methods/Users/Ranks/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Ranks/Add.ts
+  json/Admin_2/Methods/Users/Ranks/Edit.json:
+    root: ./json/Admin_2/Methods/Users/Ranks/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Ranks/Edit.ts
+  json/Admin_2/Methods/Users/Ranks/Get.json:
+    root: ./json/Admin_2/Methods/Users/Ranks/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Ranks/Get.ts
+  json/Audit_2/Methods/Audit/Browse/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Browse/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Browse/Get.ts
+  json/Audit_2/Methods/Audit/Checks/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Checks/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Checks/Get.ts
+  json/Audit_2/Methods/Audit/Css/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Css/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Css/Get.ts
+  json/Audit_2/Methods/Audit/Export/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Export/Get.ts
+  json/Audit_2/Methods/Audit/Images/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Images/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Images/Get.ts
+  json/Audit_2/Methods/Audit/Js/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Js/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Js/Get.ts
+  json/Audit_2/Methods/Audit/Links/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Links/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Links/Get.ts
+  json/Audit_2/Methods/Audit/Log/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Log/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Log/Get.ts
+  json/Audit_2/Methods/Audit/Pages/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Pages/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Pages/Get.ts
+  json/Audit_2/Methods/Audit/Summary/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Summary/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Summary/Get.ts
+  json/Audit_2/Methods/Audit/SummaryPage/Get.json:
+    root: ./json/Audit_2/Methods/Audit/SummaryPage/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/SummaryPage/Get.ts
+  json/Audit_2/Methods/Indexing/Export/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Export/Get.ts
+  json/Audit_2/Methods/Indexing/Links/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Links/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Links/Get.ts
+  json/Audit_2/Methods/Indexing/Summary/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Summary/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Summary/Get.ts
+  json/Audit_2/Methods/Watcher/ByURL/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/ByURL/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/ByURL/Get.ts
+  json/Audit_2/Methods/Watcher/Checks/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/Checks/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Checks/Get.ts
+  json/Audit_2/Methods/Watcher/Summary/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/Summary/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Summary/Get.ts
+  json/Bank_2/Methods/Diadoc/SendContract/Get.json:
+    root: ./json/Bank_2/Methods/Diadoc/SendContract/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Diadoc/SendContract/Get.ts
+  json/Bank_2/Methods/Diadoc/SendTotalReceipt/Get.json:
+    root: ./json/Bank_2/Methods/Diadoc/SendTotalReceipt/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Diadoc/SendTotalReceipt/Get.ts
+  json/Bank_2/Methods/History/Export/Get.json:
+    root: ./json/Bank_2/Methods/History/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/History/Export/Get.ts
+  json/Bank_2/Methods/History/Summary/Get.json:
+    root: ./json/Bank_2/Methods/History/Summary/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/History/Summary/Get.ts
+  json/Bank_2/Methods/Referrals/ToBonus/Edit.json:
+    root: ./json/Bank_2/Methods/Referrals/ToBonus/Edit.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Referrals/ToBonus/Edit.ts
+  json/Bank_2/Methods/Requisites/ContractTariffId/Get.json:
+    root: ./json/Bank_2/Methods/Requisites/ContractTariffId/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/ContractTariffId/Get.ts
+  json/Bank_2/Methods/Requisites/Print/Get.json:
+    root: ./json/Bank_2/Methods/Requisites/Print/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/Print/Get.ts
+  json/Bank_2/Methods/Requisites/PrintTotalReceipt/Get.json:
+    root: ./json/Bank_2/Methods/Requisites/PrintTotalReceipt/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/PrintTotalReceipt/Get.ts
+  json/Bank_2/Methods/Requisites/PrintZip/Get.json:
+    root: ./json/Bank_2/Methods/Requisites/PrintZip/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Requisites/PrintZip/Get.ts
+  json/Bank_2/Methods/Subscriptions/Plans/Get.json:
+    root: ./json/Bank_2/Methods/Subscriptions/Plans/Get.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Methods/Subscriptions/Plans/Get.ts
+  json/Broker_2/Methods/Ads/Status/Edit.json:
+    root: ./json/Broker_2/Methods/Ads/Status/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Ads/Status/Edit.ts
+  json/Broker_2/Methods/Ads/ToModerate/Edit.json:
+    root: ./json/Broker_2/Methods/Ads/ToModerate/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Ads/ToModerate/Edit.ts
+  json/Broker_2/Methods/Campaigns/UpdateTargeting/Edit.json:
+    root: ./json/Broker_2/Methods/Campaigns/UpdateTargeting/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Campaigns/UpdateTargeting/Edit.ts
+  json/Broker_2/Methods/Groups/Editor/Get.json:
+    root: ./json/Broker_2/Methods/Groups/Editor/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Groups/Editor/Get.ts
+  json/Broker_2/Methods/Keywords/Status/Edit.json:
+    root: ./json/Broker_2/Methods/Keywords/Status/Edit.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Keywords/Status/Edit.ts
+  json/Broker_2/Methods/Log/Export/Get.json:
+    root: ./json/Broker_2/Methods/Log/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Log/Export/Get.ts
+  json/Broker_2/Methods/Tasks/RateTask/Add.json:
+    root: ./json/Broker_2/Methods/Tasks/RateTask/Add.json
+    x-openapi-ts:
+      output: ./ts/Broker_2/Methods/Tasks/RateTask/Add.ts
+  json/Competitors_2/Methods/Orders/Pay/Edit.json:
+    root: ./json/Competitors_2/Methods/Orders/Pay/Edit.json
+    x-openapi-ts:
+      output: ./ts/Competitors_2/Methods/Orders/Pay/Edit.ts
+  json/Content_2/Methods/Apometr/Calendar/Get.json:
+    root: ./json/Content_2/Methods/Apometr/Calendar/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/Calendar/Get.ts
+  json/Content_2/Methods/Apometr/CHHistory/Get.json:
+    root: ./json/Content_2/Methods/Apometr/CHHistory/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/CHHistory/Get.ts
+  json/Content_2/Methods/Apometr/History/Get.json:
+    root: ./json/Content_2/Methods/Apometr/History/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/History/Get.ts
+  json/Content_2/Methods/Apometr/Keywords/Get.json:
+    root: ./json/Content_2/Methods/Apometr/Keywords/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/Keywords/Get.ts
+  json/Content_2/Methods/Apometr/Updates/Get.json:
+    root: ./json/Content_2/Methods/Apometr/Updates/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/Updates/Get.ts
+  json/Content_2/Methods/Journal/Articles/Get.json:
+    root: ./json/Content_2/Methods/Journal/Articles/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Articles/Get.ts
+  json/Content_2/Methods/Journal/BookmarksAuthors/Get.json:
+    root: ./json/Content_2/Methods/Journal/BookmarksAuthors/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/BookmarksAuthors/Get.ts
+  json/Content_2/Methods/Journal/Bookmarks/Get.json:
+    root: ./json/Content_2/Methods/Journal/Bookmarks/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Bookmarks/Get.ts
+  json/Content_2/Methods/Journal/Course/Get.json:
+    root: ./json/Content_2/Methods/Journal/Course/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Get.ts
+  json/Content_2/Methods/Journal/Rubrics/Get.json:
+    root: ./json/Content_2/Methods/Journal/Rubrics/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Rubrics/Get.ts
+  json/Content_2/Methods/Journal/Subscribe/Edit.json:
+    root: ./json/Content_2/Methods/Journal/Subscribe/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Subscribe/Edit.ts
+  json/Content_2/Methods/Pages/Order/Edit.json:
+    root: ./json/Content_2/Methods/Pages/Order/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Pages/Order/Edit.ts
+  json/Content_2/Methods/Support/Menu/Get.json:
+    root: ./json/Content_2/Methods/Support/Menu/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Support/Menu/Get.ts
+  json/Keywords_2/Methods/Collect/Go/Edit.json:
+    root: ./json/Keywords_2/Methods/Collect/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Collect/Go/Edit.ts
+  json/Keywords_2/Methods/Collect/Price/Get.json:
+    root: ./json/Keywords_2/Methods/Collect/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Collect/Price/Get.ts
+  json/Keywords_2/Methods/Keywords/Import/Add.json:
+    root: ./json/Keywords_2/Methods/Keywords/Import/Add.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Keywords/Import/Add.ts
+  json/Keywords_2/Methods/Volumes/Go/Edit.json:
+    root: ./json/Keywords_2/Methods/Volumes/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Volumes/Go/Edit.ts
+  json/Keywords_2/Methods/Volumes/Price/Get.json:
+    root: ./json/Keywords_2/Methods/Volumes/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Volumes/Price/Get.ts
+  json/Landings_2/Methods/Hr/Feedback/Add.json:
+    root: ./json/Landings_2/Methods/Hr/Feedback/Add.json
+    x-openapi-ts:
+      output: ./ts/Landings_2/Methods/Hr/Feedback/Add.ts
+  json/Payments_2/Methods/Recurrent/Suspend/Edit.json:
+    root: ./json/Payments_2/Methods/Recurrent/Suspend/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Recurrent/Suspend/Edit.ts
+  json/Payments_2/Methods/Subscriptions/Next/Edit.json:
+    root: ./json/Payments_2/Methods/Subscriptions/Next/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Subscriptions/Next/Edit.ts
+  json/Payments_2/Methods/Tariff/DelCard/Edit.json:
+    root: ./json/Payments_2/Methods/Tariff/DelCard/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Tariff/DelCard/Edit.ts
+  json/Payments_2/Methods/Tariff/NextToDiadoc/Edit.json:
+    root: ./json/Payments_2/Methods/Tariff/NextToDiadoc/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Tariff/NextToDiadoc/Edit.ts
+  json/Payments_2/Methods/Tariff/SetNext/Edit.json:
+    root: ./json/Payments_2/Methods/Tariff/SetNext/Edit.json
+    x-openapi-ts:
+      output: ./ts/Payments_2/Methods/Tariff/SetNext/Edit.ts
+  json/Positions_2/Methods/Checker/Go/Edit.json:
+    root: ./json/Positions_2/Methods/Checker/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Checker/Go/Edit.ts
+  json/Positions_2/Methods/Checker/Price/Get.json:
+    root: ./json/Positions_2/Methods/Checker/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Checker/Price/Get.ts
+  json/Positions_2/Methods/Searchers/Enabled/Edit.json:
+    root: ./json/Positions_2/Methods/Searchers/Enabled/Edit.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Enabled/Edit.ts
+  json/Positions_2/Methods/Searchers/Regions/Add.json:
+    root: ./json/Positions_2/Methods/Searchers/Regions/Add.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Regions/Add.ts
+  json/Positions_2/Methods/Searchers/Regions/Del.json:
+    root: ./json/Positions_2/Methods/Searchers/Regions/Del.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Regions/Del.ts
+  json/Positions_2/Methods/Searchers/Regions/Edit.json:
+    root: ./json/Positions_2/Methods/Searchers/Regions/Edit.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Regions/Edit.ts
+  json/Positions_2/Methods/Searchers/Sort/Edit.json:
+    root: ./json/Positions_2/Methods/Searchers/Sort/Edit.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Sort/Edit.ts
+  json/Projects_2/Methods/Analytics/Graph/Get.json:
+    root: ./json/Projects_2/Methods/Analytics/Graph/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Analytics/Graph/Get.ts
+  json/Projects_2/Methods/Competitors/Move/Edit.json:
+    root: ./json/Projects_2/Methods/Competitors/Move/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Competitors/Move/Edit.ts
+  json/Projects_2/Methods/Competitors/Name/Edit.json:
+    root: ./json/Projects_2/Methods/Competitors/Name/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Competitors/Name/Edit.ts
+  json/Projects_2/Methods/Competitors/On/Edit.json:
+    root: ./json/Projects_2/Methods/Competitors/On/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Competitors/On/Edit.ts
+  json/Projects_2/Methods/Folders/Move/Edit.json:
+    root: ./json/Projects_2/Methods/Folders/Move/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Folders/Move/Edit.ts
+  json/Projects_2/Methods/Folders/MoveFolder/Edit.json:
+    root: ./json/Projects_2/Methods/Folders/MoveFolder/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Folders/MoveFolder/Edit.ts
+  json/Projects_2/Methods/Folders/Name/Edit.json:
+    root: ./json/Projects_2/Methods/Folders/Name/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Folders/Name/Edit.ts
+  json/Projects_2/Methods/Master/HintsCompetitors/Get.json:
+    root: ./json/Projects_2/Methods/Master/HintsCompetitors/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Master/HintsCompetitors/Get.ts
+  json/Projects_2/Methods/Master/HintsKeywords/Get.json:
+    root: ./json/Projects_2/Methods/Master/HintsKeywords/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Master/HintsKeywords/Get.ts
+  json/Projects_2/Methods/Projects/Copy/Add.json:
+    root: ./json/Projects_2/Methods/Projects/Copy/Add.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Copy/Add.ts
+  json/Projects_2/Methods/Projects/Favorite/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/Favorite/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Favorite/Edit.ts
+  json/Projects_2/Methods/Projects/Move/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/Move/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Move/Edit.ts
+  json/Projects_2/Methods/Projects/Name/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/Name/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Name/Edit.ts
+  json/Projects_2/Methods/Projects/On/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/On/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/On/Edit.ts
+  json/Projects_2/Methods/Projects/Sort/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/Sort/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Sort/Edit.ts
+  json/Projects_2/Methods/Projects/Tags/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/Tags/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Tags/Edit.ts
+  json/Projects_2/Methods/Projects/Url/Edit.json:
+    root: ./json/Projects_2/Methods/Projects/Url/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Projects/Url/Edit.ts
+  json/Projects_2/Methods/Rights/ChangeOwner/Del.json:
+    root: ./json/Projects_2/Methods/Rights/ChangeOwner/Del.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Rights/ChangeOwner/Del.ts
+  json/Projects_2/Methods/Rights/ChangeOwner/Edit.json:
+    root: ./json/Projects_2/Methods/Rights/ChangeOwner/Edit.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Rights/ChangeOwner/Edit.ts
+  json/Projects_2/Methods/Status/Registrar/Get.json:
+    root: ./json/Projects_2/Methods/Status/Registrar/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Status/Registrar/Get.ts
+  json/Projects_2/Methods/Status/Ssl/Get.json:
+    root: ./json/Projects_2/Methods/Status/Ssl/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Status/Ssl/Get.ts
+  json/Projects_2/Methods/Tasks/Volumes/Add.json:
+    root: ./json/Projects_2/Methods/Tasks/Volumes/Add.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Tasks/Volumes/Add.ts
+  json/Redmine_2/Methods/Users/Groups/Get.json:
+    root: ./json/Redmine_2/Methods/Users/Groups/Get.json
+    x-openapi-ts:
+      output: ./ts/Redmine_2/Methods/Users/Groups/Get.ts
+  json/Reports_2/Methods/Positions/SendTest/Edit.json:
+    root: ./json/Reports_2/Methods/Positions/SendTest/Edit.json
+    x-openapi-ts:
+      output: ./ts/Reports_2/Methods/Positions/SendTest/Edit.ts
+  json/Schedule_2/Methods/Settings/EmailsHints/Get.json:
+    root: ./json/Schedule_2/Methods/Settings/EmailsHints/Get.json
+    x-openapi-ts:
+      output: ./ts/Schedule_2/Methods/Settings/EmailsHints/Get.ts
+  json/Tickets_2/Methods/Admin/Message/Del.json:
+    root: ./json/Tickets_2/Methods/Admin/Message/Del.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Message/Del.ts
+  json/Tickets_2/Methods/Admin/Message/Edit.json:
+    root: ./json/Tickets_2/Methods/Admin/Message/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Message/Edit.ts
+  json/Tickets_2/Methods/Admin/Templates/Add.json:
+    root: ./json/Tickets_2/Methods/Admin/Templates/Add.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Templates/Add.ts
+  json/Tickets_2/Methods/Admin/Templates/Del.json:
+    root: ./json/Tickets_2/Methods/Admin/Templates/Del.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Templates/Del.ts
+  json/Tickets_2/Methods/Admin/Templates/Edit.json:
+    root: ./json/Tickets_2/Methods/Admin/Templates/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Templates/Edit.ts
+  json/Tickets_2/Methods/Admin/Templates/Get.json:
+    root: ./json/Tickets_2/Methods/Admin/Templates/Get.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Templates/Get.ts
+  json/Tickets_2/Methods/Admin/Ticket/Edit.json:
+    root: ./json/Tickets_2/Methods/Admin/Ticket/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Ticket/Edit.ts
+  json/Tickets_2/Methods/Admin/TicketSplit/Edit.json:
+    root: ./json/Tickets_2/Methods/Admin/TicketSplit/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/TicketSplit/Edit.ts
+  json/Tickets_2/Methods/Admin/User/Get.json:
+    root: ./json/Tickets_2/Methods/Admin/User/Get.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/User/Get.ts
+  json/Tickets_2/Methods/Admin/UserId/Edit.json:
+    root: ./json/Tickets_2/Methods/Admin/UserId/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/UserId/Edit.ts
+  json/Tickets_2/Methods/Tickets/AdminComment/Edit.json:
+    root: ./json/Tickets_2/Methods/Tickets/AdminComment/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/AdminComment/Edit.ts
+  json/Tickets_2/Methods/Tickets/Info/Get.json:
+    root: ./json/Tickets_2/Methods/Tickets/Info/Get.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/Info/Get.ts
+  json/Tickets_2/Methods/Tickets/SetReaded/Edit.json:
+    root: ./json/Tickets_2/Methods/Tickets/SetReaded/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/SetReaded/Edit.ts
+  json/Tickets_2/Methods/Tickets/Writing/Edit.json:
+    root: ./json/Tickets_2/Methods/Tickets/Writing/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Tickets/Writing/Edit.ts
+  json/Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.json:
+    root: ./json/Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.json
+    x-openapi-ts:
+      output: ./ts/Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.ts
+  json/Users_2/Methods/Join/Email/Add.json:
+    root: ./json/Users_2/Methods/Join/Email/Add.json
+    x-openapi-ts:
+      output: ./ts/Users_2/Methods/Join/Email/Add.ts
+  json/Admin_2/Methods/Accounting/Group/Filter/Add.json:
+    root: ./json/Admin_2/Methods/Accounting/Group/Filter/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Group/Filter/Add.ts
+  json/Admin_2/Methods/Accounting/Group/Filter/Del.json:
+    root: ./json/Admin_2/Methods/Accounting/Group/Filter/Del.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Group/Filter/Del.ts
+  json/Admin_2/Methods/Accounting/Group/Filter/Edit.json:
+    root: ./json/Admin_2/Methods/Accounting/Group/Filter/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Group/Filter/Edit.ts
+  json/Admin_2/Methods/Accounting/Invoices/File/Get.json:
+    root: ./json/Admin_2/Methods/Accounting/Invoices/File/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Invoices/File/Get.ts
+  json/Admin_2/Methods/Accounting/Operations/Export/Get.json:
+    root: ./json/Admin_2/Methods/Accounting/Operations/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Accounting/Operations/Export/Get.ts
+  json/Admin_2/Methods/Actions/Backup/Keywords/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Backup/Keywords/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Backup/Keywords/Edit.ts
+  json/Admin_2/Methods/Actions/Backup/Loader/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Backup/Loader/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Backup/Loader/Edit.ts
+  json/Admin_2/Methods/Actions/Backup/Project/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Backup/Project/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Backup/Project/Edit.ts
+  json/Admin_2/Methods/Actions/Bank/Referral/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Bank/Referral/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Bank/Referral/Edit.ts
+  json/Admin_2/Methods/Actions/Payments/Diadoc/Add.json:
+    root: ./json/Admin_2/Methods/Actions/Payments/Diadoc/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Payments/Diadoc/Add.ts
+  json/Admin_2/Methods/Actions/Positions/History/Add.json:
+    root: ./json/Admin_2/Methods/Actions/Positions/History/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Positions/History/Add.ts
+  json/Admin_2/Methods/Actions/Positions/Status/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Positions/Status/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Positions/Status/Edit.ts
+  json/Admin_2/Methods/Actions/Projects/Domain/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Projects/Domain/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Projects/Domain/Edit.ts
+  json/Admin_2/Methods/Actions/Regions/CommitGoogle/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Regions/CommitGoogle/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Regions/CommitGoogle/Edit.ts
+  json/Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.ts
+  json/Admin_2/Methods/Actions/Robot/Checks/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Robot/Checks/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Robot/Checks/Edit.ts
+  json/Admin_2/Methods/Actions/Robot/Priority/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Robot/Priority/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Robot/Priority/Edit.ts
+  json/Admin_2/Methods/Actions/Robot/Task/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/Robot/Task/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Robot/Task/Edit.ts
+  json/Admin_2/Methods/Actions/Slack/Files/Del.json:
+    root: ./json/Admin_2/Methods/Actions/Slack/Files/Del.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Slack/Files/Del.ts
+  json/Admin_2/Methods/Actions/Slack/Messages/Del.json:
+    root: ./json/Admin_2/Methods/Actions/Slack/Messages/Del.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Slack/Messages/Del.ts
+  json/Admin_2/Methods/Actions/User/Currency/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/User/Currency/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/User/Currency/Edit.ts
+  json/Admin_2/Methods/Actions/User/Email/Edit.json:
+    root: ./json/Admin_2/Methods/Actions/User/Email/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/User/Email/Edit.ts
+  json/Admin_2/Methods/Analytics/Accounting/SummaryForChart/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Accounting/SummaryForChart/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Accounting/SummaryForChart/Get.ts
+  json/Admin_2/Methods/Analytics/Activity/ChartByPeriod/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Activity/ChartByPeriod/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Activity/ChartByPeriod/Get.ts
+  json/Admin_2/Methods/Analytics/Competitors/SummaryForOrdersChart/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Competitors/SummaryForOrdersChart/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Competitors/SummaryForOrdersChart/Get.ts
+  json/Admin_2/Methods/Analytics/Payments/Systems/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Payments/Systems/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Payments/Systems/Get.ts
+  json/Admin_2/Methods/Analytics/Payments/Tariff/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Payments/Tariff/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Payments/Tariff/Get.ts
+  json/Admin_2/Methods/Analytics/Positions/ChartByDayByHourAuto/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Positions/ChartByDayByHourAuto/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Positions/ChartByDayByHourAuto/Get.ts
+  json/Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts
+  json/Admin_2/Methods/Analytics/Positions/ChartByHour/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Positions/ChartByHour/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Positions/ChartByHour/Get.ts
+  json/Admin_2/Methods/Analytics/Positions/ChartCountUsersByHour/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Positions/ChartCountUsersByHour/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Positions/ChartCountUsersByHour/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/ChartByMigrations/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/ChartByMigrations/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/ChartByMigrations/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/ChartByNew/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/ChartByNew/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/ChartByNew/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/ChartByRates/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/ChartByRates/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/ChartByRates/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/ChartByTags/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/ChartByTags/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/ChartByTags/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/ChartByWaitTime/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/ChartByWaitTime/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/ChartByWaitTime/Get.ts
+  json/Admin_2/Methods/Analytics/Tickets/Messages/Get.json:
+    root: ./json/Admin_2/Methods/Analytics/Tickets/Messages/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Analytics/Tickets/Messages/Get.ts
+  json/Admin_2/Methods/Logs/System/Checked/Edit.json:
+    root: ./json/Admin_2/Methods/Logs/System/Checked/Edit.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Logs/System/Checked/Edit.ts
+  json/Admin_2/Methods/Users/Informer/Subscriptions/Get.json:
+    root: ./json/Admin_2/Methods/Users/Informer/Subscriptions/Get.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Users/Informer/Subscriptions/Get.ts
+  json/TV/Objects/Highcharts/Chart.json:
+    root: ./json/TV/Objects/Highcharts/Chart.json
+    x-openapi-ts:
+      output: ./ts/TV/Objects/Highcharts/Chart.ts
+  json/Audit_2/Methods/Audit/Checker/Go/Edit.json:
+    root: ./json/Audit_2/Methods/Audit/Checker/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Checker/Go/Edit.ts
+  json/Audit_2/Methods/Audit/Checker/Price/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Checker/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Checker/Price/Get.ts
+  json/Audit_2/Methods/Audit/Export/Links/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Export/Links/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Export/Links/Get.ts
+  json/Audit_2/Methods/Audit/Export/Summary/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Export/Summary/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Export/Summary/Get.ts
+  json/Audit_2/Methods/Audit/Log/ActualError/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Log/ActualError/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Log/ActualError/Get.ts
+  json/Audit_2/Methods/Audit/Log/Chart/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Log/Chart/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Log/Chart/Get.ts
+  json/Audit_2/Methods/Audit/Results/Export/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Results/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Results/Export/Get.ts
+  json/Audit_2/Methods/Audit/Results/Page/Get.json:
+    root: ./json/Audit_2/Methods/Audit/Results/Page/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Audit/Results/Page/Get.ts
+  json/Audit_2/Methods/Indexing/Checker/Go/Edit.json:
+    root: ./json/Audit_2/Methods/Indexing/Checker/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Checker/Go/Edit.ts
+  json/Audit_2/Methods/Indexing/Checker/Price/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Checker/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Checker/Price/Get.ts
+  json/Audit_2/Methods/Indexing/Export/Links/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Export/Links/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Export/Links/Get.ts
+  json/Audit_2/Methods/Indexing/Export/ToRepository/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Export/ToRepository/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Export/ToRepository/Get.ts
+  json/Audit_2/Methods/Indexing/Summary/Chart/Get.json:
+    root: ./json/Audit_2/Methods/Indexing/Summary/Chart/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Indexing/Summary/Chart/Get.ts
+  json/Audit_2/Methods/Sitemap/Checker/Go/Edit.json:
+    root: ./json/Audit_2/Methods/Sitemap/Checker/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Sitemap/Checker/Go/Edit.ts
+  json/Audit_2/Methods/Sitemap/Checker/Price/Get.json:
+    root: ./json/Audit_2/Methods/Sitemap/Checker/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Sitemap/Checker/Price/Get.ts
+  json/Audit_2/Methods/Watcher/Checker/Go/Edit.json:
+    root: ./json/Audit_2/Methods/Watcher/Checker/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Checker/Go/Edit.ts
+  json/Audit_2/Methods/Watcher/Checker/Price/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/Checker/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Checker/Price/Get.ts
+  json/Audit_2/Methods/Watcher/Export/Links/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/Export/Links/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Export/Links/Get.ts
+  json/Audit_2/Methods/Watcher/Summary/Chart/Get.json:
+    root: ./json/Audit_2/Methods/Watcher/Summary/Chart/Get.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Methods/Watcher/Summary/Chart/Get.ts
+  json/Content_2/Methods/Apometr/Text/Calendar/Get.json:
+    root: ./json/Content_2/Methods/Apometr/Text/Calendar/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/Text/Calendar/Get.ts
+  json/Content_2/Methods/Apometr/Text/Updates/Get.json:
+    root: ./json/Content_2/Methods/Apometr/Text/Updates/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/Text/Updates/Get.ts
+  json/Content_2/Methods/Apometr/Updates/Dates/Get.json:
+    root: ./json/Content_2/Methods/Apometr/Updates/Dates/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Apometr/Updates/Dates/Get.ts
+  json/Content_2/Methods/Journal/Course/Certificates/Add.json:
+    root: ./json/Content_2/Methods/Journal/Course/Certificates/Add.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Certificates/Add.ts
+  json/Content_2/Methods/Journal/Course/Certificates/Edit.json:
+    root: ./json/Content_2/Methods/Journal/Course/Certificates/Edit.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Certificates/Edit.ts
+  json/Content_2/Methods/Journal/Course/Certificates/Get.json:
+    root: ./json/Content_2/Methods/Journal/Course/Certificates/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Certificates/Get.ts
+  json/Content_2/Methods/Journal/Course/Chapters/Get.json:
+    root: ./json/Content_2/Methods/Journal/Course/Chapters/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Chapters/Get.ts
+  json/Content_2/Methods/Journal/Dictionary/ArticlesByLetter/Get.json:
+    root: ./json/Content_2/Methods/Journal/Dictionary/ArticlesByLetter/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Dictionary/ArticlesByLetter/Get.ts
+  json/Content_2/Methods/Journal/Dictionary/WordOfday/Get.json:
+    root: ./json/Content_2/Methods/Journal/Dictionary/WordOfday/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Dictionary/WordOfday/Get.ts
+  json/Keywords_2/Methods/Collect/Ext/Go/Edit.json:
+    root: ./json/Keywords_2/Methods/Collect/Ext/Go/Edit.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Collect/Ext/Go/Edit.ts
+  json/Keywords_2/Methods/Collect/Ext/Price/Get.json:
+    root: ./json/Keywords_2/Methods/Collect/Ext/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Keywords_2/Methods/Collect/Ext/Price/Get.ts
+  json/Positions_2/Methods/Searchers/Regions/Export/Get.json:
+    root: ./json/Positions_2/Methods/Searchers/Regions/Export/Get.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Regions/Export/Get.ts
+  json/Positions_2/Methods/Searchers/Regions/Import/Add.json:
+    root: ./json/Positions_2/Methods/Searchers/Regions/Import/Add.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Regions/Import/Add.ts
+  json/Positions_2/Methods/Searchers/Regions/Sort/Edit.json:
+    root: ./json/Positions_2/Methods/Searchers/Regions/Sort/Edit.json
+    x-openapi-ts:
+      output: ./ts/Positions_2/Methods/Searchers/Regions/Sort/Edit.ts
+  json/Projects_2/Methods/Tasks/Volumes/Price/Get.json:
+    root: ./json/Projects_2/Methods/Tasks/Volumes/Price/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Tasks/Volumes/Price/Get.ts
+  json/Projects_2/Methods/Tasks/Volumes/Status/Get.json:
+    root: ./json/Projects_2/Methods/Tasks/Volumes/Status/Get.json
+    x-openapi-ts:
+      output: ./ts/Projects_2/Methods/Tasks/Volumes/Status/Get.ts
+  json/Tickets_2/Methods/Admin/Templates/Sort/Edit.json:
+    root: ./json/Tickets_2/Methods/Admin/Templates/Sort/Edit.json
+    x-openapi-ts:
+      output: ./ts/Tickets_2/Methods/Admin/Templates/Sort/Edit.ts
+  json/Admin_2/Methods/Actions/Positions/History/Copy/Add.json:
+    root: ./json/Admin_2/Methods/Actions/Positions/History/Copy/Add.json
+    x-openapi-ts:
+      output: ./ts/Admin_2/Methods/Actions/Positions/History/Copy/Add.ts
+  json/Content_2/Methods/Journal/Course/Certificates/ByID/Get.json:
+    root: ./json/Content_2/Methods/Journal/Course/Certificates/ByID/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Certificates/ByID/Get.ts
+  json/Content_2/Methods/Journal/Course/Certificates/Image/Get.json:
+    root: ./json/Content_2/Methods/Journal/Course/Certificates/Image/Get.json
+    x-openapi-ts:
+      output: ./ts/Content_2/Methods/Journal/Course/Certificates/Image/Get.ts
+  json/Closure.json:
+    root: ./json/Closure.json
+    x-openapi-ts:
+      output: ./ts/Closure.ts
+  json/TV/API/Params/FieldsTrait.json:
+    root: ./json/TV/API/Params/FieldsTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/FieldsTrait.ts
+  json/TV/API/Params/OrdersTrait.json:
+    root: ./json/TV/API/Params/OrdersTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/OrdersTrait.ts
+  json/TV/API/Params/FiltersTrait.json:
+    root: ./json/TV/API/Params/FiltersTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/FiltersTrait.ts
+  json/TV/API/Params/LimitTrait.json:
+    root: ./json/TV/API/Params/LimitTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/LimitTrait.ts
+  json/TV/API/Params/OffsetTrait.json:
+    root: ./json/TV/API/Params/OffsetTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/OffsetTrait.ts
+  json/TV/API/Params/FetchStyleTrait.json:
+    root: ./json/TV/API/Params/FetchStyleTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/FetchStyleTrait.ts
+  json/TV/API/Params/ProjectIdTrait.json:
+    root: ./json/TV/API/Params/ProjectIdTrait.json
+    x-openapi-ts:
+      output: ./ts/TV/API/Params/ProjectIdTrait.ts
+  json/Controller_2/Objects/Location.json:
+    root: ./json/Controller_2/Objects/Location.json
+    x-openapi-ts:
+      output: ./ts/Controller_2/Objects/Location.ts
+  json/Controller_2/Objects/OpenGraph.json:
+    root: ./json/Controller_2/Objects/OpenGraph.json
+    x-openapi-ts:
+      output: ./ts/Controller_2/Objects/OpenGraph.ts
+  json/Controller_2/Objects/Page/Options.json:
+    root: ./json/Controller_2/Objects/Page/Options.json
+    x-openapi-ts:
+      output: ./ts/Controller_2/Objects/Page/Options.ts
+  json/Controller_2/Objects/Page/Article.json:
+    root: ./json/Controller_2/Objects/Page/Article.json
+    x-openapi-ts:
+      output: ./ts/Controller_2/Objects/Page/Article.ts
+  json/Tpl/Core/SecondMenu.json:
+    root: ./json/Tpl/Core/SecondMenu.json
+    x-openapi-ts:
+      output: ./ts/Tpl/Core/SecondMenu.ts
+  json/Tpl/Core/LeftMenu.json:
+    root: ./json/Tpl/Core/LeftMenu.json
+    x-openapi-ts:
+      output: ./ts/Tpl/Core/LeftMenu.ts
+  json/TV/Core/Sites/Site.json:
+    root: ./json/TV/Core/Sites/Site.json
+    x-openapi-ts:
+      output: ./ts/TV/Core/Sites/Site.ts
+  json/Controller_2/Objects/TplEngine.json:
+    root: ./json/Controller_2/Objects/TplEngine.json
+    x-openapi-ts:
+      output: ./ts/Controller_2/Objects/TplEngine.ts
+  json/Bank_2/Objects/Subscriptions/Subscription.json:
+    root: ./json/Bank_2/Objects/Subscriptions/Subscription.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Objects/Subscriptions/Subscription.ts
+  json/Cron_2/Params/CommandTrait.json:
+    root: ./json/Cron_2/Params/CommandTrait.json
+    x-openapi-ts:
+      output: ./ts/Cron_2/Params/CommandTrait.ts
+  json/Example_2/Objects/User.json:
+    root: ./json/Example_2/Objects/User.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Objects/User.ts
+  json/TV/Core/Sites/Sites.json:
+    root: ./json/TV/Core/Sites/Sites.json
+    x-openapi-ts:
+      output: ./ts/TV/Core/Sites/Sites.ts
+  json/Audit_2/Params/Audit/CheckIdTrait.json:
+    root: ./json/Audit_2/Params/Audit/CheckIdTrait.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Params/Audit/CheckIdTrait.ts
+  json/Audit_2/Params/Wathcer/CheckIdTrait.json:
+    root: ./json/Audit_2/Params/Wathcer/CheckIdTrait.json
+    x-openapi-ts:
+      output: ./ts/Audit_2/Params/Wathcer/CheckIdTrait.ts
+  json/Bank_2/Objects/Subscriptions/Plan.json:
+    root: ./json/Bank_2/Objects/Subscriptions/Plan.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Objects/Subscriptions/Plan.ts
+  json/Bank_2/Objects/Requisites/Payment/RecurrentState.json:
+    root: ./json/Bank_2/Objects/Requisites/Payment/RecurrentState.json
+    x-openapi-ts:
+      output: ./ts/Bank_2/Objects/Requisites/Payment/RecurrentState.ts
+  json/Example_2/Objects/Address.json:
+    root: ./json/Example_2/Objects/Address.json
+    x-openapi-ts:
+      output: ./ts/Example_2/Objects/Address.ts
+  json/Datetime.json:
+    root: ./json/Datetime.json
+    x-openapi-ts:
+      output: ./ts/Datetime.ts
+  json/Topvisor.json:
+    root: ./json/Topvisor.json
+    x-openapi-ts:
+      output: ./ts/Topvisor.ts
+  json/I18n.json:
+    root: ./json/I18n.json
+    x-openapi-ts:
+      output: ./ts/I18n.ts
+  json/Models.json:
+    root: ./json/Models.json
+    x-openapi-ts:
+      output: ./ts/Models.ts

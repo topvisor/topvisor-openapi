@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Searchers.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Searchers.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "rule_id": {
+                        "title": "ID правила",
+                        "type": "integer"
+                    },
+                    "key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Mentions_2/Types/SearcherKey.json#/components/schemas/Mentions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "title": "Включен ли поисковик",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "depth": {
+                        "title": "Глубина сбора упоминаний (x100)\n\nОт 1 до 10",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "rule_id",
+                    "key"
+                ],
+                "title": "Добавление поисковика\n\nИзменит, если уже существует"
+            },
+            "Mentions_2.Methods.Searchers.Add.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

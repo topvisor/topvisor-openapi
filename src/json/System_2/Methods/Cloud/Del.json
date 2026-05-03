@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Cloud.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Cloud.Del": {
+                "type": "object",
+                "properties": {
+                    "directory": {
+                        "title": "Название директории",
+                        "type": "string"
+                    },
+                    "basename": {
+                        "title": "Название файла вместе с расширением",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "directory",
+                    "basename"
+                ],
+                "title": "Удаление файлов (файл будет перенесен в директорию /cloud/recycled)"
+            },
+            "System_2.Methods.Cloud.Del.Exec": {
+                "type": "boolean"
+            }
+        }
+    }
+}

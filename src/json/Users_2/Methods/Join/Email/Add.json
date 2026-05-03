@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Join.Email.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Join.Email.Add": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    },
+                    "pass": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "email"
+                ],
+                "title": "Привязка email к аккаунту"
+            },
+            "Users_2.Methods.Join.Email.Add.Exec": {
+                "title": "\n- 0: произошла ошибка\n- 1: email успешно привязан\n- 2: требуется ввести пароль\n- 3: отправлен запрос на подтверждение",
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Checker.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Checker.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "regions_indexes": {
+                        "title": "Проверка с учетом фильтра по регионам",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids": {
+                        "title": "Проверка с учетом фильтра по папкам",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids_depth": {
+                        "title": "При фильтрации по ID папок также проверять в подпапках",
+                        "type": "boolean"
+                    },
+                    "groups_ids": {
+                        "title": "Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "do_snapshots": {
+                        "title": "Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "keyword_id": {
+                        "title": "Проверка одного запроса\n\n- не допускается при массовой проверке проектов\n- требует указания одного `regions_indexes`\n- не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "date_prev": {
+                        "title": "Дата для фильтра по запросам, позиции с которой ухудшились\n\n- Не разрешено использовать с keyword_id\n- Для использования требуется указание region_index",
+                        "description": "@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть\n    разным",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "Отправка проектов на проверку позиций"
+            },
+            "Positions_2.Methods.Checker.Go.Edit.Exec": {
+                "title": "Список id проектов, отправленных на проверку",
+                "type": "object",
+                "properties": {
+                    "projectIds": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "required": [
+                    "projectIds"
+                ]
+            }
+        }
+    }
+}

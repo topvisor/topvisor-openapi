@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.Topvisor.Subdomain",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.Topvisor.Subdomain": {
+                "type": "string",
+                "enum": [
+                    "",
+                    "journal"
+                ],
+                "x-enum-varnames": [
+                    "Default",
+                    "Journal"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ]
+            }
+        }
+    }
+}

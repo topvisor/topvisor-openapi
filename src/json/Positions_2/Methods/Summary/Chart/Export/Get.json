@@ -1,0 +1,161 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Summary.Chart.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Summary.Chart.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "reverse_dates": {
+                        "title": "Использовать обратный порядок дат",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "type": "integer"
+                    },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "show_tops": {
+                        "title": "Отобразить данные по топам",
+                        "type": "boolean"
+                    },
+                    "show_avg": {
+                        "title": "Отобразить среднюю позицию",
+                        "type": "boolean"
+                    },
+                    "show_median": {
+                        "title": "Отобразить медианную позицию",
+                        "type": "boolean"
+                    },
+                    "show_visibility": {
+                        "title": "Отобразить видимость",
+                        "type": "boolean"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
+                    },
+                    "show_trash": {
+                        "title": "Показывать удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "only_exists_first_date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Types/OnlyExistsByDateType.json#/components/schemas/Reports_2.Types.OnlyExistsByDateType"
+                            }
+                        ]
+                    },
+                    "only_exists_by_date": {
+                        "title": "Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Произвольные даты без использования диапазона\n\nНеобходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "type_range": {
+                        "title": "Тип диапазона дат",
+                        "default": 2,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Reports_2/Types/TypeRange.json#/components/schemas/Reports_2.Types.TypeRange"
+                            }
+                        ]
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона\n\nИспользуется вместе с date2 для задания диапазона дат",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата окончания диапазона\n\nИспользуется вместе с date1 для задания диапазона дат",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "count_dates": {
+                        "title": "Количество дат в диапазоне\n\nМаксимальное значение ограничивается константой MAX_DATES конкретного модуля\n\nРаботает совместно с `type_range`",
+                        "default": 31,
+                        "type": "integer"
+                    },
+                    "period_days": {
+                        "title": "Период в днях\n\nИспользуется для алгоритма получения дат через равные промежутки (`type_range` = 6)\n\nНе более 31",
+                        "default": 7,
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "region_index"
+                ],
+                "title": "Экспорт сводки с графика"
+            },
+            "Positions_2.Methods.Summary.Chart.Export.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

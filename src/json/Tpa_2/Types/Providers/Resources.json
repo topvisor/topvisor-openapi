@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Types.Providers.Resources",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Types.Providers.Resources": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Tpa_2/Types/Providers/Resource.json#/components/schemas/Tpa_2.Types.Providers.Resource"
+                },
+                "title": "Ресурсы интеграции",
+                "description": "@see Tpa_2\\Types\\Providers\\Resource"
+            }
+        }
+    }
+}

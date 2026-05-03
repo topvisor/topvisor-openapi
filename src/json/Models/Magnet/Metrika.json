@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Magnet.Metrika",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Magnet.Metrika": {
+                "properties": {
+                    "id": {},
+                    "key": {
+                        "nullable": true
+                    },
+                    "phrase": {
+                        "nullable": true
+                    },
+                    "path": {
+                        "nullable": true
+                    },
+                    "visits": {
+                        "nullable": true
+                    },
+                    "bounce": {
+                        "nullable": true
+                    },
+                    "pageviews": {
+                        "nullable": true
+                    },
+                    "duration": {
+                        "nullable": true
+                    },
+                    "domain": {
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "IS_EXISTS()": {
+                        "nullable": true
+                    },
+                    "COUNT(*)": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

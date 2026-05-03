@@ -1,0 +1,37 @@
+plugins:
+  - plugins/openapi-typescript-multiScheme.js
+decorators:
+  openapi-typescript-multiScheme/replace$refToImportType: 'on'
+apis:
+  openapi:
+    root: ./yaml/openapi.yaml
+    x-openapi-ts:
+      output: ./ts/openapi.ts
+  openapi/Address:
+    root: ./yaml/Components/Address.yaml
+    x-openapi-ts:
+      output: ./ts/Components/Address.ts
+  openapi/Category:
+    root: ./yaml/Components/Category.yaml
+    x-openapi-ts:
+      output: ./ts/Components/Category.ts
+  openapi/Customer:
+    root: ./yaml/Components/Customer.yaml
+    x-openapi-ts:
+      output: ./ts/Components/Customer.ts
+  openapi/Order:
+    root: ./yaml/Components/Order.yaml
+    x-openapi-ts:
+      output: ./ts/Components/Order.ts
+  openapi/Pet:
+    root: ./yaml/Components/Pet.yaml
+    x-openapi-ts:
+      output: ./ts/Components/Pet.ts
+  openapi/Tag:
+    root: ./yaml/Components/Tag.yaml
+    x-openapi-ts:
+      output: ./ts/Components/Tag.ts
+  openapi/User:
+    root: ./yaml/Components/User.yaml
+    x-openapi-ts:
+      output: ./ts/Components/User.ts

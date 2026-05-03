@@ -1,0 +1,113 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Broker.Campaigns",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Broker.Campaigns": {
+                "properties": {
+                    "id": {},
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "provider_n": {
+                        "nullable": true
+                    },
+                    "campaign_tv_id": {
+                        "nullable": true
+                    },
+                    "client_id": {
+                        "nullable": true
+                    },
+                    "login": {
+                        "nullable": true
+                    },
+                    "agency_name": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "shows": {
+                        "nullable": true
+                    },
+                    "clicks": {
+                        "nullable": true
+                    },
+                    "count_tasks": {
+                        "nullable": true
+                    },
+                    "frequency": {
+                        "nullable": true
+                    },
+                    "rest": {
+                        "nullable": true
+                    },
+                    "price": {
+                        "nullable": true
+                    },
+                    "timezone": {
+                        "nullable": true
+                    },
+                    "currency": {
+                        "nullable": true
+                    },
+                    "state": {
+                        "nullable": true
+                    },
+                    "servingStatus": {
+                        "nullable": true
+                    },
+                    "status_name": {
+                        "nullable": true
+                    },
+                    "manualBids": {
+                        "nullable": true
+                    },
+                    "no_manage_suspended_keywords": {
+                        "nullable": true
+                    },
+                    "added": {
+                        "nullable": true
+                    },
+                    "on": {
+                        "nullable": true
+                    },
+                    "on_tv": {
+                        "nullable": true
+                    },
+                    "off": {
+                        "nullable": true
+                    },
+                    "for_off": {
+                        "nullable": true
+                    },
+                    "groups_load_time": {
+                        "nullable": true
+                    },
+                    "keywords_statistics_update": {
+                        "nullable": true
+                    },
+                    "count_keywords": {
+                        "nullable": true
+                    },
+                    "count_keywords_autocorrect": {
+                        "nullable": true
+                    },
+                    "targeting": {
+                        "nullable": true
+                    },
+                    "limits": {
+                        "nullable": true
+                    },
+                    "limits_max": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

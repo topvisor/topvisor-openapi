@@ -1,0 +1,61 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Collect.Ext.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Collect.Ext.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "keywords_minus": {
+                        "title": "Минус фразы",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "type": {
+                        "title": "Каким типом расширять группу",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Keywords_2/Types/Collect/Ext/Type.json#/components/schemas/Keywords_2.Types.Collect.Ext.Type"
+                            }
+                        ]
+                    },
+                    "qualifiers": {
+                        "title": "Объекты определителей настроек ПС и регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "type",
+                    "qualifiers",
+                    "project_id"
+                ],
+                "title": "Постановка задачи на расширение группы"
+            },
+            "Keywords_2.Methods.Collect.Ext.Go.Edit.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

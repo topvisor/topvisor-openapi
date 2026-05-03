@@ -1,0 +1,65 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Indexing.Summary.Chart.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Indexing.Summary.Chart.Get": {
+                "type": "object",
+                "properties": {
+                    "dates": {
+                        "title": "Произвольные даты без диапазона",
+                        "type": "array"
+                    },
+                    "searcher_key": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Audit_2/Types/Indexing/SearcherKey.json#/components/schemas/Audit_2.Types.Indexing.SearcherKey"
+                            }
+                        ]
+                    },
+                    "show_counts_changes": {
+                        "title": "Отобразить количество изменений",
+                        "type": "boolean"
+                    },
+                    "show_counts_in_index": {
+                        "title": "Отобразить количество страниц в индексе",
+                        "type": "boolean"
+                    },
+                    "show_counts_all": {
+                        "title": "Отобразить количество проверенных страниц",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "dates",
+                    "project_id"
+                ],
+                "title": "Получение сводок индексации для графика"
+            },
+            "Audit_2.Methods.Indexing.Summary.Chart.Get.Exec": {
+                "title": "Сводки индексации",
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

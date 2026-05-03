@@ -1,0 +1,71 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Keywords.Tags.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Keywords.Tags.Edit": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "title": "Теги запроса",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/Tags/Action.json#/components/schemas/Keywords_2.Types.Keywords.Tags.Action"
+                            }
+                        ]
+                    },
+                    "target_type": {
+                        "default": "keywords",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/TargetType.json#/components/schemas/Keywords_2.Types.Keywords.TargetType"
+                            }
+                        ]
+                    },
+                    "show_trash": {
+                        "title": "Учитывать ли удаленные запросы",
+                        "type": "boolean"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "Искать ли в подпапках",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "tags",
+                    "action",
+                    "project_id"
+                ]
+            },
+            "Keywords_2.Methods.Keywords.Tags.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

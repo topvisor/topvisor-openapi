@@ -1,0 +1,79 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "target_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Audit/TargetType.json#/components/schemas/Audit_2.Types.Audit.TargetType"
+                            }
+                        ]
+                    },
+                    "filters_resources_target_type": {
+                        "title": "Тип отчета для фильтра по ресурсам страницы\n\nТолько для $target_type = pages",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Audit/TargetType.json#/components/schemas/Audit_2.Types.Audit.TargetType"
+                            }
+                        ]
+                    },
+                    "filters_resources": {
+                        "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type\n\nТолько для $target_type = pages",
+                        "type": "array"
+                    },
+                    "output": {
+                        "title": "Формат экспортируемого файла",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/ExportFormat.json#/components/schemas/TV.API.Types.ExportFormat"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "check_id": {
+                        "title": "ID проверки аудита",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "target_type",
+                    "output",
+                    "project_id",
+                    "check_id"
+                ],
+                "title": "Экспорт результатов проверки файла"
+            },
+            "Audit_2.Methods.Audit.Export.Get.Exec": {
+                "title": "Файл результатов проверки сайта",
+                "type": "never"
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Stat.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Stat.Get": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "Хэш ссылки",
+                        "type": "string"
+                    },
+                    "type_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Types.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Types"
+                            }
+                        ]
+                    },
+                    "browser_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Browsers.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Browsers"
+                            }
+                        ]
+                    },
+                    "os_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Oses.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Oses"
+                            }
+                        ]
+                    },
+                    "referrers_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Referrers.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Referrers"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "hash"
+                ],
+                "title": "Получение статистики по ссылке"
+            },
+            "Tpvsr_2.Methods.Stat.Get.Exec": {
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "chart_data": {
+                                "type": "object",
+                                "properties": {
+                                    "dates": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "clicks": {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                },
+                                "required": [
+                                    "dates",
+                                    "clicks"
+                                ]
+                            },
+                            "counts_unique": {
+                                "type": "integer"
+                            },
+                            "referrers": {
+                                "type": "object",
+                                "properties": {
+                                    "sites": {
+                                        "type": "object",
+                                        "properties": {
+                                            "count": {
+                                                "type": "integer"
+                                            },
+                                            "refs": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": {}
+                                                }
+                                            }
+                                        },
+                                        "required": [
+                                            "count",
+                                            "refs"
+                                        ]
+                                    },
+                                    "overall": {
+                                        "type": "object",
+                                        "properties": {
+                                            "count": {
+                                                "type": "integer"
+                                            },
+                                            "refs": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": {}
+                                                }
+                                            }
+                                        },
+                                        "required": [
+                                            "count",
+                                            "refs"
+                                        ]
+                                    },
+                                    "social": {
+                                        "type": "object",
+                                        "additionalProperties": {}
+                                    }
+                                }
+                            },
+                            "countries": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "country_code": {
+                                            "type": "string"
+                                        },
+                                        "count": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "country_code",
+                                        "count"
+                                    ]
+                                }
+                            },
+                            "browsers": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            },
+                            "oses": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.ByUrl.Charts.Structure.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.ByUrl.Charts.Structure.Type": {
+                "type": "string",
+                "enum": [
+                    "small",
+                    "summary",
+                    "count_keywords",
+                    "sum_traffic",
+                    "sum_traffic_forecast",
+                    "sum_month_cost_rub",
+                    "sum_month_cost_usd"
+                ],
+                "x-enum-varnames": [
+                    "Small",
+                    "Summary",
+                    "CountKeywords",
+                    "SumTraffic",
+                    "SumTrafficForecast",
+                    "SumMonthCostRub",
+                    "SumMonthCostUsd"
+                ],
+                "x-enum-descriptions": [
+                    "Маленький",
+                    "График структуры сайта",
+                    "Количество запросов",
+                    "Сумма трафика",
+                    "Сумма прогнозируемого трафика",
+                    "Общая месячная стоимость в рублях",
+                    "Общая месячная стоимость в долларах"
+                ],
+                "title": "Тип графика"
+            }
+        }
+    }
+}

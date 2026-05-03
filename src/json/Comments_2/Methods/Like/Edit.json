@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Like.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Like.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id комментария",
+                        "type": "integer"
+                    },
+                    "emoji": {
+                        "title": "Emoji реакции\n\nПустая строка - удалить реакцию",
+                        "default": "❤️",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Редактирование статуса лайка для комментария\n\nВозвращает результат редактирования статуса лайка"
+            },
+            "Comments_2.Methods.Like.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

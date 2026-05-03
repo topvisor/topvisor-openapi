@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Collect.Ext.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Collect.Ext.Type": {
+                "type": "string",
+                "enum": [
+                    "groupName",
+                    "groupNameWithKeywords",
+                    "keywords"
+                ],
+                "x-enum-varnames": [
+                    "GroupName",
+                    "GroupnameWithKeywords",
+                    "Keywords"
+                ],
+                "x-enum-descriptions": [
+                    "По названию группы",
+                    "По названию группы и ключевым словам",
+                    "По ключевым словам"
+                ],
+                "title": "По каким параметрам расширять группу"
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Methods.Config.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Methods.Config.Edit": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Название типа. Содержит название провайдера и метода",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Informer_2/Types/Config/Name.json#/components/schemas/Informer_2.Types.Config.Name"
+                            }
+                        ]
+                    },
+                    "value": {
+                        "title": "Значение",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "name",
+                    "value"
+                ],
+                "title": "Настройка уведомлений"
+            },
+            "Informer_2.Methods.Config.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

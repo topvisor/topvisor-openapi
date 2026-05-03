@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tags_2.Types.TagId",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tags_2.Types.TagId": {
+                "type": "string",
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                    "18",
+                    "19",
+                    "20"
+                ],
+                "x-enum-varnames": [
+                    "Tag1",
+                    "Tag2",
+                    "Tag3",
+                    "Tag4",
+                    "Tag5",
+                    "Tag6",
+                    "Tag7",
+                    "Tag8",
+                    "Tag9",
+                    "Tag10",
+                    "Tag11",
+                    "Tag12",
+                    "Tag13",
+                    "Tag14",
+                    "Tag15",
+                    "Tag16",
+                    "Tag17",
+                    "Tag18",
+                    "Tag19",
+                    "Tag20"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Id тега"
+            }
+        }
+    }
+}

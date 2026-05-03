@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.Del": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "title": "Дата проверки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "date",
+                    "project_id"
+                ],
+                "title": "Удаление проверки позииций"
+            },
+            "Positions_2.Methods.History.Del.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

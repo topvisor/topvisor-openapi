@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Projects.Rights",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Projects.Rights": {
+                "properties": {
+                    "COUNT_USER_ID()": {
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "user_id": {
+                        "nullable": true
+                    },
+                    "from_user_id": {
+                        "nullable": true
+                    },
+                    "right": {
+                        "nullable": true
+                    },
+                    "user_name": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "limit": {
+                        "nullable": true
+                    },
+                    "limit_used": {
+                        "nullable": true
+                    },
+                    "project_user_id": {
+                        "nullable": true
+                    },
+                    "project_on": {
+                        "nullable": true
+                    },
+                    "user_email": {
+                        "nullable": true
+                    },
+                    "user_avatar": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Email",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Email": {
+                "type": "object",
+                "properties": {
+                    "User_projects_changeOwner_title": {
+                        "const": "Confirm project transfer.",
+                        "readOnly": true
+                    },
+                    "Integration_expires": {
+                        "const": "Reconnect integration key",
+                        "readOnly": true
+                    },
+                    "Integration_has_expired1": {
+                        "const": "Integration",
+                        "readOnly": true
+                    },
+                    "Integration_has_expired2": {
+                        "const": "integration key has expired.",
+                        "readOnly": true
+                    },
+                    "Integration_access_error": {
+                        "const": "integration error",
+                        "readOnly": true
+                    },
+                    "Project_report": {
+                        "const": "Report: Project dynamics.",
+                        "readOnly": true
+                    },
+                    "Project_report_ai_tracker": {
+                        "const": "Report: AI-tacker",
+                        "readOnly": true
+                    },
+                    "Indexing_informer_title": {
+                        "const": "Index status: new changes detected.",
+                        "readOnly": true
+                    },
+                    "Watcher_informer_title": {
+                        "const": "Website watcher: new changes detected.",
+                        "readOnly": true
+                    },
+                    "Sitemap_changes_to_sitemap_email": {
+                        "const": "Sitemap: new changes detected.",
+                        "readOnly": true
+                    },
+                    "Audit_informer_title": {
+                        "const": "Website audit is completed.",
+                        "readOnly": true
+                    },
+                    "Total_indexed": {
+                        "const": "Total indexed",
+                        "readOnly": true
+                    },
+                    "Dropped_from_index": {
+                        "const": "Dropped from index",
+                        "readOnly": true
+                    },
+                    "Got_indexed": {
+                        "const": "New indexed",
+                        "readOnly": true
+                    },
+                    "Dogovor": {
+                        "const": "User agreement",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "User_projects_changeOwner_title",
+                    "Integration_expires",
+                    "Integration_has_expired1",
+                    "Integration_has_expired2",
+                    "Integration_access_error",
+                    "Project_report",
+                    "Project_report_ai_tracker",
+                    "Indexing_informer_title",
+                    "Watcher_informer_title",
+                    "Sitemap_changes_to_sitemap_email",
+                    "Audit_informer_title",
+                    "Total_indexed",
+                    "Dropped_from_index",
+                    "Got_indexed",
+                    "Dogovor"
+                ]
+            }
+        }
+    }
+}

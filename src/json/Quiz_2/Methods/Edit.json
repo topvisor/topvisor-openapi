@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "quiz_id": {
+                        "title": "ID теста",
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "Имя теста",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "text": {
+                        "title": "Описание теста",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "status": {
+                        "title": "Статус теста",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Quiz_2/Types/Quiz/Status.json#/components/schemas/Quiz_2.Types.Quiz.Status"
+                            }
+                        ]
+                    },
+                    "min_score": {
+                        "title": "Минимальное число очков",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "available_reset_second": {
+                        "title": "Число секунд, через которое тест можно перепройти, 0 - тест перепройти нельзя",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "quiz_id"
+                ],
+                "title": "Редактирование теста"
+            },
+            "Quiz_2.Methods.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

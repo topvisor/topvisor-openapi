@@ -1,0 +1,77 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Settings.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Settings.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "with_snippets": {
+                        "title": "Собирать ли сниппеты",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "with_ai_overview_full": {
+                        "title": "Собирать ли AI-сниппеты",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "do_snapshots": {
+                        "title": "Глубина сбора снимков",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "do_snapshots_with_snippets": {
+                        "title": "Собирать ли сниппеты в снимках",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "subdomains": {
+                        "title": "Учитывать ли поддомены при проверке\n\n- 1: находить позиции сайта, являющиеся поддоменом к основному",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "filter": {
+                        "title": "Ограничения\n\n- 0: без ограничений\n- 1: умеренный\n- 2: семейный поиск",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "auto_correct": {
+                        "title": "Учитывать ли регион",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "common_traffic": {
+                        "title": "Способ получения трафика\n\n- 0: с учетом регионов\n- 1: без учета регионов",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "guest_link_right": {
+                        "title": "Права для гостевых ссылок",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/Settings/GuestLinkRights.json#/components/schemas/Positions_2.Types.Settings.GuestLinkRights"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Установка общих настроек проверки позиций проекта"
+            },
+            "Positions_2.Methods.Settings.Edit.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

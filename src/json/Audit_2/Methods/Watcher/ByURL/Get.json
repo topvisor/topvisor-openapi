@@ -1,0 +1,94 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Watcher.ByURL.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Watcher.ByURL.Get": {
+                "type": "object",
+                "properties": {
+                    "url_id": {
+                        "title": "ID URL",
+                        "type": "integer"
+                    },
+                    "show_headers": {
+                        "title": "Включать ли в результат названия столбцов",
+                        "type": "boolean"
+                    },
+                    "watcher_fields": {
+                        "title": "Выбор столбцов данных с результатами проверки",
+                        "default": [
+                            "http_codes",
+                            "redirects"
+                        ],
+                        "type": "array"
+                    },
+                    "show_diff": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Watcher/ShowDiff.json#/components/schemas/Audit_2.Types.Watcher.ShowDiff"
+                            }
+                        ]
+                    },
+                    "watcher_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Watcher/Type.json#/components/schemas/Audit_2.Types.Watcher.Type"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "url_id",
+                    "watcher_type",
+                    "project_id"
+                ],
+                "title": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор проверок регулируется параметрами запроса filters, limit и offset"
+            },
+            "Audit_2.Methods.Watcher.ByURL.Get.Exec": {
+                "title": "Отчет по одному URL",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Payments_2.Types.System",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Payments_2.Types.System": {
+                "type": "string",
+                "enum": [
+                    "balance",
+                    "card",
+                    "card_ios",
+                    "card_android",
+                    "card_ap",
+                    "card_gp",
+                    "invoice",
+                    "tinkoff_business",
+                    "ap",
+                    "ym",
+                    "qw",
+                    "sb",
+                    "wm2",
+                    "pp",
+                    "pd",
+                    "pd_invoice",
+                    "rk",
+                    "pt",
+                    "lp",
+                    "ppg",
+                    "pr"
+                ],
+                "x-enum-varnames": [
+                    "Balance",
+                    "Card",
+                    "CardIso",
+                    "CardAndroid",
+                    "CardAp",
+                    "CardGp",
+                    "Invoice",
+                    "TinkoffBusiness",
+                    "Ap",
+                    "Ym",
+                    "Qw",
+                    "Sb",
+                    "Wm2",
+                    "Pp",
+                    "Pd",
+                    "PdInvoice",
+                    "Rk",
+                    "Pt",
+                    "Lp",
+                    "Ppg",
+                    "Pr"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            }
+        }
+    }
+}

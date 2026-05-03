@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.CountPriceReclaster.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.CountPriceReclaster.Get": {
+                "type": "object",
+                "properties": {
+                    "folder_id": {
+                        "title": "ID папки",
+                        "type": "integer"
+                    },
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение информации и предыдущей кластеризации"
+            },
+            "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

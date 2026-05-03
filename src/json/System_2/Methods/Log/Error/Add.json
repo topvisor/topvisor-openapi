@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Log.Error.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Log.Error.Add": {
+                "type": "object",
+                "properties": {
+                    "log": {
+                        "title": "Строка лога с данными ошибки",
+                        "type": "string"
+                    },
+                    "from": {
+                        "title": "На какой странице произошла ошибка",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "log",
+                    "from"
+                ],
+                "title": "Логирование ошибки js и отправка в канал slack"
+            },
+            "System_2.Methods.Log.Error.Add.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

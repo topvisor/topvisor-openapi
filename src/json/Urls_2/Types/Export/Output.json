@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Types.Export.Output",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Types.Export.Output": {
+                "type": "string",
+                "enum": [
+                    "csv",
+                    "csvUTF8s",
+                    "xml"
+                ],
+                "x-enum-varnames": [
+                    "Csv",
+                    "CsvUTF8s",
+                    "Xml"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    "Csv в кодировке сервера",
+                    null
+                ],
+                "title": "Формат экспорта urls"
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Methods.Any.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Methods.Any.Del": {
+                "type": "object",
+                "properties": {
+                    "projects_ids": {
+                        "title": "ID проектов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "provider": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpa_2/Types/Provider.json#/components/schemas/Tpa_2.Types.Provider"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "projects_ids",
+                    "provider"
+                ],
+                "title": "Удаление интеграции для нескольких проектов"
+            },
+            "Tpa_2.Methods.Any.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

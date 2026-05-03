@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Types.Stat.Dimension.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Types.Stat.Dimension.Type": {
+                "type": "string",
+                "enum": [
+                    "chart_data",
+                    "counts_unique",
+                    "referrers",
+                    "browsers",
+                    "oses",
+                    "countries"
+                ],
+                "x-enum-varnames": [
+                    "ChartData",
+                    "CountsUnique",
+                    "Referrers",
+                    "Browsers",
+                    "Oses",
+                    "Countries"
+                ],
+                "x-enum-descriptions": [
+                    "Клик, за несколько дат, для графика",
+                    "Количество уникальных переходов",
+                    "Клики, разделение по источникам",
+                    "Клики, разделение по браузерам",
+                    "Клики, разделение по операционным системам",
+                    "Клики, разделение по странам"
+                ],
+                "title": "Тип статистики кликов по ссылке"
+            }
+        }
+    }
+}

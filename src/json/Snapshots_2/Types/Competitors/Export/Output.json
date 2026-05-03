@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Types.Competitors.Export.Output",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Types.Competitors.Export.Output": {
+                "type": "string",
+                "enum": [
+                    "csv"
+                ],
+                "x-enum-varnames": [
+                    "Csv"
+                ],
+                "x-enum-descriptions": [
+                    null
+                ],
+                "title": "Тип экспортируемого файла"
+            }
+        }
+    }
+}

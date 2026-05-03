@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "title": "Ссылка",
+                        "type": "string"
+                    },
+                    "title": {
+                        "title": "Название ссылки",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "add_secret": {
+                        "title": "Добавить секретную строку",
+                        "type": "boolean"
+                    },
+                    "tags": {
+                        "title": "Тэги ссылки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Tpvsr_2/Types/Tags.json#/components/schemas/Tpvsr_2.Types.Tags"
+                            }
+                        ]
+                    },
+                    "fields": {
+                        "title": "Поля, которые нужно получить",
+                        "nullable": true,
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "link"
+                ],
+                "title": "Добавление ссылки"
+            },
+            "Tpvsr_2.Methods.Add.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

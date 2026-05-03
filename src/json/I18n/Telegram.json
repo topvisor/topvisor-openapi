@@ -1,0 +1,294 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Telegram",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Telegram": {
+                "type": "object",
+                "properties": {
+                    "Panel_get_command_list": {
+                        "const": "Get list of commands",
+                        "readOnly": true
+                    },
+                    "Panel_enable_notifications": {
+                        "const": "Turn on notifications",
+                        "readOnly": true
+                    },
+                    "Panel_disable_notifications": {
+                        "const": "Turn off notifications",
+                        "readOnly": true
+                    },
+                    "Panel_pair_account": {
+                        "const": "Link %siteName% account",
+                        "readOnly": true
+                    },
+                    "Panel_unpair_account": {
+                        "const": "Remove %siteName% account",
+                        "readOnly": true
+                    },
+                    "Panel_get_short_link": {
+                        "const": "Create short link",
+                        "readOnly": true
+                    },
+                    "Panel_back": {
+                        "const": "Back",
+                        "readOnly": true
+                    },
+                    "Panel_cancel": {
+                        "const": "Cancel",
+                        "readOnly": true
+                    },
+                    "Panel_main_menu": {
+                        "const": "Main menu",
+                        "readOnly": true
+                    },
+                    "Panel_select_lang": {
+                        "const": "Select language",
+                        "readOnly": true
+                    },
+                    "Panel_eng": {
+                        "const": "English",
+                        "readOnly": true
+                    },
+                    "Panel_rus": {
+                        "const": "Russian",
+                        "readOnly": true
+                    },
+                    "Panel_i_subscribed": {
+                        "const": "Already subscribed 😎",
+                        "readOnly": true
+                    },
+                    "Panel_subscribe": {
+                        "const": "Subscribe",
+                        "readOnly": true
+                    },
+                    "Panel_log_in": {
+                        "const": "Log in",
+                        "readOnly": true
+                    },
+                    "Panel_open_materials": {
+                        "const": "Open materials 📚",
+                        "readOnly": true
+                    },
+                    "Panel_library": {
+                        "const": "Open library",
+                        "readOnly": true
+                    },
+                    "Message_chat_disabled": {
+                        "const": "Message not received. To contact Customer Care and read replies, type /start",
+                        "readOnly": true
+                    },
+                    "Message_available_commands": {
+                        "const": "Commands that I understand:",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_help": {
+                        "const": "Get list of commands",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_start": {
+                        "const": "Turn on notifications",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_stop": {
+                        "const": "Turn off notifications",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_pair": {
+                        "const": "Link Topvisor account",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_unpair": {
+                        "const": "Remove Topvisor account",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_tpvsr": {
+                        "const": "Create short link",
+                        "readOnly": true
+                    },
+                    "Message_start_text1": {
+                        "const": "Hi! I can send your questions to Customer Support and get replies.",
+                        "readOnly": true
+                    },
+                    "Message_start_text2": {
+                        "const": "To get a list of commands that I understand, type /help.",
+                        "readOnly": true
+                    },
+                    "Message_start_text3": {
+                        "const": "To contact support, send your question in the chat.",
+                        "readOnly": true
+                    },
+                    "Message_start_apometer_text": {
+                        "const": "",
+                        "readOnly": true
+                    },
+                    "Message_start_library_text": {
+                        "const": "",
+                        "readOnly": true
+                    },
+                    "Message_start_results_year_text": {
+                        "const": "",
+                        "readOnly": true
+                    },
+                    "Message_stop_text": {
+                        "const": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.",
+                        "readOnly": true
+                    },
+                    "Message_pair_done1": {
+                        "const": "Your Telegram already linked to the account",
+                        "readOnly": true
+                    },
+                    "Message_pair_done2": {
+                        "const": "To remove account, type /unpair",
+                        "readOnly": true
+                    },
+                    "Message_pair_authorize": {
+                        "const": "Sign in to %siteName% and click the <a href=\"%url%\">link</a> to link your Telegram to the %siteName% account",
+                        "readOnly": true
+                    },
+                    "Message_pair_authorize_link": {
+                        "const": "https://%siteId%.com/income/telegram/join/%botName%/%chatId%/%nickname%",
+                        "readOnly": true
+                    },
+                    "Message_pair_authorize_link_text": {
+                        "const": "Connect an account",
+                        "readOnly": true
+                    },
+                    "Message_unpair": {
+                        "const": "Account removed.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr": {
+                        "const": "Send me a URL to shorten.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_cancel": {
+                        "const": "Type /cancel to step backwards.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_failure": {
+                        "const": "Link not shortened",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_cancel_done": {
+                        "const": "Link shortening canceled.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_error": {
+                        "const": "To shorten the URL, link the %siteName% account to the bot via the /pair command",
+                        "readOnly": true
+                    },
+                    "Message_join_authorize": {
+                        "const": "Sign in to %siteName% and try to link your account again.",
+                        "readOnly": true
+                    },
+                    "Message_join_done1": {
+                        "const": "Account",
+                        "readOnly": true
+                    },
+                    "Message_join_done2": {
+                        "const": "successfully linked.",
+                        "readOnly": true
+                    },
+                    "Message_check_journal_subscription": {
+                        "const": "You are in the library of useful content from Topvisor-Journal. Checkin you library card 🧐",
+                        "readOnly": true
+                    },
+                    "Message_not_subscribed": {
+                        "const": "It seems you are not reading the Topvisor-Journal channel yet 😳🕶🤏\nSubscribe to get a bunch of useful things 🔥",
+                        "readOnly": true
+                    },
+                    "Message_subscribed": {
+                        "const": "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️",
+                        "readOnly": true
+                    },
+                    "Topvisor": {
+                        "const": "Topvisor",
+                        "readOnly": true
+                    },
+                    "Thundo": {
+                        "const": "Thundo",
+                        "readOnly": true
+                    },
+                    "Profile_successfully_linked": {
+                        "const": "Profile ID %userId% has been successfully linked.",
+                        "readOnly": true
+                    },
+                    "Impossible_link_profile": {
+                        "const": "It is impossible to link a profile",
+                        "readOnly": true
+                    },
+                    "Message_summing_results_year": {
+                        "const": "Подвожу итоги 🎅🥂 Это займет пару минут...",
+                        "readOnly": true
+                    },
+                    "Message_statistics_results_year": {
+                        "const": "Вот как прошел ваш год в @topvisor ⬆️",
+                        "readOnly": true
+                    },
+                    "Message_rank_results_year": {
+                        "const": "Вот какие титулы вы заработали в @topvisor в этом году ⬆️",
+                        "readOnly": true
+                    },
+                    "Message_cant_answer": {
+                        "const": "Извините, я не умею отвечать на вопросы. Если у вас есть вопрос по сервису, напишите в поддержку через @topvisorBot",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Panel_get_command_list",
+                    "Panel_enable_notifications",
+                    "Panel_disable_notifications",
+                    "Panel_pair_account",
+                    "Panel_unpair_account",
+                    "Panel_get_short_link",
+                    "Panel_back",
+                    "Panel_cancel",
+                    "Panel_main_menu",
+                    "Panel_select_lang",
+                    "Panel_eng",
+                    "Panel_rus",
+                    "Panel_i_subscribed",
+                    "Panel_subscribe",
+                    "Panel_log_in",
+                    "Panel_open_materials",
+                    "Panel_library",
+                    "Message_chat_disabled",
+                    "Message_available_commands",
+                    "Message_available_commands_help",
+                    "Message_available_commands_start",
+                    "Message_available_commands_stop",
+                    "Message_available_commands_tpvsr",
+                    "Message_start_text1",
+                    "Message_start_text2",
+                    "Message_start_text3",
+                    "Message_start_apometer_text",
+                    "Message_start_library_text",
+                    "Message_start_results_year_text",
+                    "Message_stop_text",
+                    "Message_pair_done1",
+                    "Message_pair_done2",
+                    "Message_pair_authorize",
+                    "Message_pair_authorize_link",
+                    "Message_pair_authorize_link_text",
+                    "Message_unpair",
+                    "Message_tpvsr",
+                    "Message_tpvsr_cancel",
+                    "Message_tpvsr_failure",
+                    "Message_tpvsr_cancel_done",
+                    "Message_tpvsr_error",
+                    "Message_join_authorize",
+                    "Message_join_done1",
+                    "Message_join_done2",
+                    "Profile_successfully_linked",
+                    "Impossible_link_profile",
+                    "Message_summing_results_year"
+                ]
+            }
+        }
+    }
+}

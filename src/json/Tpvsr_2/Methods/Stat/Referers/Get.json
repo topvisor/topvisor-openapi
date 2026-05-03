@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Stat.Referers.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Stat.Referers.Get": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "Хэш ссылки",
+                        "type": "string"
+                    },
+                    "referer_index": {
+                        "title": "Индекс источника",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "hash",
+                    "referer_index"
+                ],
+                "title": "Получение всех источников по индексу источника"
+            },
+            "Tpvsr_2.Methods.Stat.Referers.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

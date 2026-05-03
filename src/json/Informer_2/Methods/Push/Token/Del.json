@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Methods.Push.Token.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Methods.Push.Token.Del": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Informer_2/Types/Push/Token/Type.json#/components/schemas/Informer_2.Types.Push.Token.Type"
+                            }
+                        ]
+                    },
+                    "token": {
+                        "title": "Токен",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "token"
+                ],
+                "title": "Удаление токена"
+            },
+            "Informer_2.Methods.Push.Token.Del.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

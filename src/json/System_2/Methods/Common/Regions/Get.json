@@ -1,0 +1,111 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.Regions.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.Regions.Get": {
+                "type": "object",
+                "properties": {
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "country_code": {
+                        "title": "Код страны по ISO 3166-1 alpha-2",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "search": {
+                        "title": "Поисковая фраза",
+                        "type": "string"
+                    },
+                    "only_countries": {
+                        "title": "Искать только страны",
+                        "type": "boolean"
+                    },
+                    "region_ids": {
+                        "title": "ID регионов для получения",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "searcher_key",
+                    "search"
+                ],
+                "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов"
+            },
+            "System_2.Methods.Common.Regions.Get.Exec": {
+                "title": "Получить список регионов по параметрам запроса",
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "countryCode": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "areaName": {
+                                    "type": "string"
+                                },
+                                "name_en": {
+                                    "type": "string"
+                                },
+                                "areaName_en": {
+                                    "type": "string"
+                                },
+                                "domain": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "type",
+                                "countryCode",
+                                "name",
+                                "areaName",
+                                "name_en",
+                                "areaName_en",
+                                "domain"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

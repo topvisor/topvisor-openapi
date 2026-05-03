@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Methods.Object.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Methods.Object.Get": {
+                "type": "object",
+                "properties": {
+                    "user": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Example_2/Types/User.json#/components/schemas/Example_2.Types.User"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "user"
+                ],
+                "title": "Метод с примерами параметров типа Object"
+            },
+            "Example_2.Methods.Object.Get.Exec": {
+                "title": "Ассоциативный массив с результирующими переданными параметрами и результатом genSet()",
+                "type": "array"
+            }
+        }
+    }
+}

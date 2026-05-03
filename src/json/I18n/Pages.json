@@ -1,0 +1,79 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Pages",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Pages": {
+                "type": "object",
+                "properties": {
+                    "Checking_positions": {
+                        "const": "Rank Tracker",
+                        "readOnly": true
+                    },
+                    "Collecting_top_sites": {
+                        "const": "SERP Top Checker",
+                        "readOnly": true
+                    },
+                    "Technical_analysis": {
+                        "const": "Website SEO Audit",
+                        "readOnly": true
+                    },
+                    "Tracking_changes": {
+                        "const": "Website Watcher (tracking changes)",
+                        "readOnly": true
+                    },
+                    "Semantic_core_research": {
+                        "const": "Semantic core tools",
+                        "readOnly": true
+                    },
+                    "Volume_checker": {
+                        "const": "Search Volume Checker",
+                        "readOnly": true
+                    },
+                    "Index_checker": {
+                        "const": "Index checker",
+                        "readOnly": true
+                    },
+                    "Sitemap_generator": {
+                        "const": "Sitemap generator",
+                        "readOnly": true
+                    },
+                    "Bid_manager": {
+                        "const": "PPC Bid Manager",
+                        "readOnly": true
+                    },
+                    "Updates_scanner": {
+                        "const": "Updates Scanner",
+                        "readOnly": true
+                    },
+                    "Shortener_url": {
+                        "const": "URL shortener",
+                        "readOnly": true
+                    },
+                    "Clustering_top": {
+                        "const": "Keyword Clustering",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Checking_positions",
+                    "Collecting_top_sites",
+                    "Technical_analysis",
+                    "Tracking_changes",
+                    "Semantic_core_research",
+                    "Volume_checker",
+                    "Index_checker",
+                    "Sitemap_generator",
+                    "Bid_manager",
+                    "Updates_scanner",
+                    "Shortener_url",
+                    "Clustering_top"
+                ]
+            }
+        }
+    }
+}

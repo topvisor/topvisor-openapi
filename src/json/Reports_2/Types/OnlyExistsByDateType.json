@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Types.OnlyExistsByDateType",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Types.OnlyExistsByDateType": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2
+                ],
+                "x-enum-varnames": [
+                    "All",
+                    "OnlyExistsInFirstDate",
+                    "OnlyAddedAtPeriod"
+                ],
+                "x-enum-descriptions": [
+                    "Без фильтра",
+                    "Только запросы, присутствующие в первой проверке указанного периода или в конкретной проверке",
+                    "Только добавленные запросы за период или начиная с конкретной даты; Работает не корректно из-за ограничения JOIN CH"
+                ],
+                "title": "Значение для фильтра: Отображать только запросы, присутствующие в первой проверке указанного периода или в указанной проверке"
+            }
+        }
+    }
+}

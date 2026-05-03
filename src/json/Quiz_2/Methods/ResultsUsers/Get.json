@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.ResultsUsers.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.ResultsUsers.Get": {
+                "type": "object",
+                "properties": {
+                    "quiz_id": {
+                        "title": "ID теста",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "quiz_id"
+                ],
+                "title": "Получение участников теста"
+            },
+            "Quiz_2.Methods.ResultsUsers.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

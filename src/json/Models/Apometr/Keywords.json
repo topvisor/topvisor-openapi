@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Apometr.Keywords",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Apometr.Keywords": {
+                "properties": {
+                    "id": {},
+                    "lang": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "pool_id": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

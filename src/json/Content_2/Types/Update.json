@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Types.Update",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Types.Update": {
+                "type": "object",
+                "properties": {
+                    "Am": {
+                        "title": "Балл апометра",
+                        "type": "number"
+                    },
+                    "action": {
+                        "title": "0 - обычная выдача, xml - xml выдача",
+                        "type": "string"
+                    },
+                    "is_storm": {
+                        "title": "Зафиксирован шторм",
+                        "type": "integer"
+                    },
+                    "is_update": {
+                        "title": "Зафиксирован апдейт",
+                        "type": "integer"
+                    },
+                    "pool_id": {
+                        "title": "Id категории",
+                        "type": "integer"
+                    },
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "type": "integer"
+                    },
+                    "time": {
+                        "title": "Дата и время проверки",
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "Am",
+                    "action",
+                    "is_storm",
+                    "is_update",
+                    "pool_id",
+                    "region_index",
+                    "time"
+                ]
+            }
+        }
+    }
+}

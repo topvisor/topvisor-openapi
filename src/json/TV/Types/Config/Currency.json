@@ -1,0 +1,329 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.Types.Config.Currency",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.Types.Config.Currency": {
+                "type": "object",
+                "properties": {
+                    "GA_CU": {
+                        "title": "Код валюты.",
+                        "readOnly": true,
+                        "default": "No set",
+                        "type": "string"
+                    },
+                    "CU_LABEL": {
+                        "title": "Символ валюты.",
+                        "readOnly": true,
+                        "default": "No set",
+                        "type": "string"
+                    },
+                    "CU_PREFIX": {
+                        "title": "Префикс валюты.\n\n`CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение",
+                        "readOnly": true,
+                        "default": "No set",
+                        "type": "string"
+                    },
+                    "CU_PREFIX_ICO": {
+                        "title": "Иконка префикса валюты.",
+                        "readOnly": true,
+                        "default": "No set",
+                        "type": "string"
+                    },
+                    "CU_SUFFIX_ICO": {
+                        "title": "Иконка суффикса валюты.",
+                        "readOnly": true,
+                        "default": "No set",
+                        "type": "string"
+                    },
+                    "CU_PRECISION": {
+                        "title": "Точность округления для валюты.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "integer"
+                    },
+                    "QUERY_COST": {
+                        "title": "Стоимость проверки позиций.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "QUERY_COST_COMPETITORS": {
+                        "title": "Стоимость дополнительного конкурента.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "QUERY_COST_SNIPPET": {
+                        "title": "Стоимость сбора сниппетов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "QUERY_COST_SNAPSHOT": {
+                        "title": "Стоимость сбора снимка в проверке позиций.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "QUERY_COST_AI_OVERVIEW": {
+                        "title": "Стоимость сбора SERP-Фичи AIOverview",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "EXPORT_ONE_RESULT_COST": {
+                        "title": "Стоимость одного результата экспорта.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "QUERY_COST_FREQUENCY": {
+                        "title": "Проверка частоты запросов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "SY_COST": {
+                        "title": "Сбор ядра.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "SY_HINTS_COST": {
+                        "title": "Сбор подсказок в поиске, за 1, 2 и 3 глубину",
+                        "readOnly": true,
+                        "default": [
+                            10000,
+                            10000,
+                            10000
+                        ],
+                        "type": "array"
+                    },
+                    "BROKER_COST": {
+                        "title": "Корректировка ставок.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "BROKER_MIN_BALANCE": {
+                        "title": "Необходимый баланс для запуска корректировки ставок.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "CLASTER_COST": {
+                        "title": "Стоимость кластеризации.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "CLASTER_COST_10": {
+                        "title": "Стоимость кластеризации от 10 000 запросов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "CLASTER_COST_50": {
+                        "title": "Стоимость кластеризации от 50 000 запросов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "CLASTER_COST_250": {
+                        "title": "Стоимость кластеризации от 250 000 запросов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "CLASTER_CHANGE_COST": {
+                        "title": "Стоимость перекластеризации.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_SITEMAP_100": {
+                        "title": "Генерации карты сайта до 100 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_SITEMAP_1000": {
+                        "title": "Генерации карты сайта до 1000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_SITEMAP_10000": {
+                        "title": "Генерации карты сайта до 10 000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_SITEMAP_100000": {
+                        "title": "Генерации карты сайта до 100 000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_SITEMAP_150000": {
+                        "title": "Генерации карты сайта до 150 000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_SITEMAP_300000": {
+                        "title": "Генерации карты сайта до 300 000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_COST": {
+                        "title": "Стоимость аудита.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_COST_100": {
+                        "title": "Стоимость аудита от 100 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_COST_1000": {
+                        "title": "Стоимость аудита от 1000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AUDIT_COST_10000": {
+                        "title": "Стоимость аудита от 10 000 страниц.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "WATCHER_COST": {
+                        "title": "Стоимость радара.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "INDEXING_COST": {
+                        "title": "Стоимость индексации.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "MENTIONS_COST": {
+                        "title": "Стоимость упоминатора.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "COMPETITORS_COST": {
+                        "title": "Стоимость анализа конкурентов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "WEB_SCREENS_COST": {
+                        "title": "Стоимость веб-скриншотов.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "AI_TRACKER_COST": {
+                        "title": "Стоимость ИИ трекера.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
+                    "TARIFF_NAMES": {
+                        "title": "Список тарифных планов.",
+                        "readOnly": true,
+                        "default": [
+                            "No set",
+                            "No set",
+                            "No set",
+                            "No set",
+                            "No set"
+                        ],
+                        "type": "array"
+                    },
+                    "TARIFF_VALUES": {
+                        "title": "Список стоимости тарифов.",
+                        "readOnly": true,
+                        "default": [
+                            10000,
+                            10000,
+                            10000,
+                            10000,
+                            10000
+                        ],
+                        "type": "array"
+                    },
+                    "TARIFF_DISCOUNT": {
+                        "title": "Список скидок по тарифам.",
+                        "readOnly": true,
+                        "default": [
+                            0,
+                            10,
+                            15,
+                            20,
+                            30
+                        ],
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "GA_CU",
+                    "CU_LABEL",
+                    "CU_PREFIX",
+                    "CU_PREFIX_ICO",
+                    "CU_SUFFIX_ICO",
+                    "CU_PRECISION",
+                    "QUERY_COST",
+                    "QUERY_COST_COMPETITORS",
+                    "QUERY_COST_SNIPPET",
+                    "QUERY_COST_SNAPSHOT",
+                    "QUERY_COST_AI_OVERVIEW",
+                    "EXPORT_ONE_RESULT_COST",
+                    "QUERY_COST_FREQUENCY",
+                    "SY_COST",
+                    "SY_HINTS_COST",
+                    "BROKER_COST",
+                    "BROKER_MIN_BALANCE",
+                    "CLASTER_COST",
+                    "CLASTER_COST_10",
+                    "CLASTER_COST_50",
+                    "CLASTER_COST_250",
+                    "CLASTER_CHANGE_COST",
+                    "AUDIT_SITEMAP_100",
+                    "AUDIT_SITEMAP_1000",
+                    "AUDIT_SITEMAP_10000",
+                    "AUDIT_SITEMAP_100000",
+                    "AUDIT_SITEMAP_150000",
+                    "AUDIT_SITEMAP_300000",
+                    "AUDIT_COST",
+                    "AUDIT_COST_100",
+                    "AUDIT_COST_1000",
+                    "AUDIT_COST_10000",
+                    "WATCHER_COST",
+                    "INDEXING_COST",
+                    "MENTIONS_COST",
+                    "COMPETITORS_COST",
+                    "WEB_SCREENS_COST",
+                    "AI_TRACKER_COST",
+                    "TARIFF_NAMES",
+                    "TARIFF_VALUES",
+                    "TARIFF_DISCOUNT"
+                ],
+                "title": "Интерфейс настроек валюты"
+            }
+        }
+    }
+}

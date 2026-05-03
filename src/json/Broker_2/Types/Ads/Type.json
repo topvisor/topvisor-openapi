@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Broker_2.Types.Ads.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Broker_2.Types.Ads.Type": {
+                "type": "string",
+                "enum": [
+                    "TEXT_AD",
+                    "SMART_AD",
+                    "MOBILE_APP_AD",
+                    "DYNAMIC_TEXT_AD",
+                    "IMAGE_AD",
+                    "CPC_VIDEO_AD",
+                    "CPM_BANNER_AD",
+                    "CPM_VIDEO_AD",
+                    "SHOPPING_AD",
+                    "LISTING_AD"
+                ],
+                "x-enum-varnames": [
+                    "Text",
+                    "Smart",
+                    "MobileApp",
+                    "DynamicText",
+                    "Image",
+                    "CpcVideo",
+                    "CpmBanner",
+                    "CpmVideo",
+                    "Shopping",
+                    "Listing"
+                ],
+                "x-enum-descriptions": [
+                    "Текстово-графическое (обычное) объявление",
+                    "Смарт-баннер",
+                    "Объявление для рекламы мобильных приложений",
+                    "Динамическое объявление",
+                    "Графическое объявление.",
+                    "Видеообъявление в кампаниях с типом «Текстово-графические объявления» или «Реклама мобильных приложений».",
+                    "Медийный баннер",
+                    "Медийное видеообъявление (в кампании с типом «Медийная кампания»).",
+                    "Товарное объявление (в кампании с типом «Единая перфоманс кампания»).",
+                    "Текстово-графическое (обычное) объявление"
+                ],
+                "title": "Тип объявления",
+                "description": "@see https://yandex.ru/dev/direct/doc/ru/objects/ad#types"
+            }
+        }
+    }
+}

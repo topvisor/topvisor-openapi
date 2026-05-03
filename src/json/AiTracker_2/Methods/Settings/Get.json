@@ -1,0 +1,87 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.Settings.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.Settings.Get": {
+                "type": "object",
+                "properties": {
+                    "showAvailableModels": {
+                        "title": "Добавить ли в результат список всехдоступных моделей",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение настроек ai трекера"
+            },
+            "AiTracker_2.Methods.Settings.Get.Exec": {
+                "title": "Настройки aiTracker проекта",
+                "nullable": true,
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "type": "integer"
+                    },
+                    "brand_name": {
+                        "type": "string"
+                    },
+                    "brand_description": {
+                        "type": "string"
+                    },
+                    "models_keys": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "context_lang": {
+                        "type": "string"
+                    },
+                    "context_location": {
+                        "type": "string"
+                    },
+                    "context_custom": {
+                        "type": "string"
+                    },
+                    "models_available": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "key": {},
+                                "enabled": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "key",
+                                "enabled"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "brand_name",
+                    "brand_description",
+                    "models_keys",
+                    "context_lang",
+                    "context_location",
+                    "context_custom"
+                ]
+            }
+        }
+    }
+}

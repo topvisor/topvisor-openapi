@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Templates_2.Types.TargetType",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Templates_2.Types.TargetType": {
+                "type": "string",
+                "enum": [
+                    "templates",
+                    "groups",
+                    "keywords",
+                    "keywordsAi",
+                    "competitors_keywords",
+                    "competitors_wordstat"
+                ],
+                "x-enum-varnames": [
+                    "Templates",
+                    "Groups",
+                    "Keywords",
+                    "KeywordsAi",
+                    "CompetitorsKeywords",
+                    "CompetitorsWordstat"
+                ],
+                "x-enum-descriptions": [
+                    "Шаблоны",
+                    "Группы",
+                    "Запросы",
+                    "Промпты",
+                    "Запросы конкурентов",
+                    "Статистика поисковых запросов конкурентов"
+                ],
+                "title": "Тип данных (место использования)"
+            }
+        }
+    }
+}

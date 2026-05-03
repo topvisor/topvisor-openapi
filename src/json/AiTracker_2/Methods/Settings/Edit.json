@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/AiTracker_2.Methods.Settings.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "AiTracker_2.Methods.Settings.Edit": {
+                "type": "object",
+                "properties": {
+                    "brand_name": {
+                        "title": "Имя бренда\n\nУчаствует в поиске в ответе ИИ",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "brand_description": {
+                        "title": "Описание бренда",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "models_keys": {
+                        "title": "Список моделей ИИ",
+                        "nullable": true
+                    },
+                    "context_lang": {
+                        "title": "Настройки контекста: Язык",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "context_location": {
+                        "title": "Настройки контекста: Регион",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "context_custom": {
+                        "title": "Пользовательский контекст",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
+                "description": "@see \\Services\\AiTracker_2\\Objects\\Settings"
+            },
+            "AiTracker_2.Methods.Settings.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Types.Indexing.History.HistoryField",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Types.Indexing.History.HistoryField": {
+                "type": "string",
+                "enum": [
+                    "data",
+                    "alert"
+                ],
+                "x-enum-varnames": [
+                    "Data",
+                    "Alert"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null
+                ],
+                "title": "Поле с результатом проверки для отчета истории индексации"
+            }
+        }
+    }
+}

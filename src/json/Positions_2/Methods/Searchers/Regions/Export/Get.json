@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Searchers.Regions.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Searchers.Regions.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Экспорт регионов (CSV)\n\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]"
+            },
+            "Positions_2.Methods.Searchers.Regions.Export.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

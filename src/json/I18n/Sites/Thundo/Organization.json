@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Sites.Thundo.Organization",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Sites.Thundo.Organization": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "const": "Thundo is top SEO tool for rank tracking, SERP analysis, and website optimization. Track rankings, analyze competitors, and boost organic traffic with our top SEO tools.",
+                        "readOnly": true
+                    },
+                    "Street_address": {
+                        "const": "5/14 Moo 8, BTC Building, 3rd Floor, Room No. 303",
+                        "readOnly": true
+                    },
+                    "Address_locality": {
+                        "const": "Chalong",
+                        "readOnly": true
+                    },
+                    "Address_region": {
+                        "const": "Phuket",
+                        "readOnly": true
+                    },
+                    "Contact_type": {
+                        "const": "Sales",
+                        "readOnly": true
+                    },
+                    "General_manager": {
+                        "const": "Pustovoyt Denis Anatolievich",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Street_address",
+                    "Address_locality",
+                    "Address_region",
+                    "Contact_type",
+                    "General_manager"
+                ]
+            }
+        }
+    }
+}

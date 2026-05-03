@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Objects.Requisites.Payment.RecurrentState",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Objects.Requisites.Payment.RecurrentState": {
+                "type": "object",
+                "properties": {
+                    "timeStart": {
+                        "title": "Начало расчетного периода, обычно время оплаты",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Datetime.json#/components/schemas/Datetime"
+                            }
+                        ]
+                    },
+                    "timeEnd": {
+                        "title": "Окончание расчетного периода",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Datetime.json#/components/schemas/Datetime"
+                            }
+                        ]
+                    },
+                    "methodInfo": {
+                        "title": "Краткая информация о способе платежа\n\n- id платежа\n- неполный номер карты и срок действия\n- номер договора",
+                        "type": "string"
+                    },
+                    "status": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Bank_2/Types/Subscriptions/Status.json#/components/schemas/Bank_2.Types.Subscriptions.Status"
+                            }
+                        ]
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Bank_2/Types/Subscriptions/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Type"
+                            }
+                        ]
+                    },
+                    "manager": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Bank_2/Types/Subscriptions/Manager.json#/components/schemas/Bank_2.Types.Subscriptions.Manager"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "methodInfo",
+                    "status",
+                    "type",
+                    "manager"
+                ],
+                "title": "Состояние рекуррентного платежа\n\n- создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить\n- используется при выводе состояния подписки\n\nОпределяет логику работы с рекуррентными платежами"
+            }
+        }
+    }
+}

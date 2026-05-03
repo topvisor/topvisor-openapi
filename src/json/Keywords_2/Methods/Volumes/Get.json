@@ -1,0 +1,78 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Volumes.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Volumes.Get": {
+                "type": "object",
+                "properties": {
+                    "searcher_key": {
+                        "title": "Ключ поисковика",
+                        "type": "integer"
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "title": "Индекс тип частоты",
+                        "type": "integer"
+                    },
+                    "group_id": {
+                        "title": "Id группы",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "searcher_key",
+                    "region_key",
+                    "type",
+                    "project_id"
+                ],
+                "title": "Получение частоты проекта или одной группы"
+            },
+            "Keywords_2.Methods.Volumes.Get.Exec": {
+                "nullable": true,
+                "type": "number"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Calls.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Calls.Get": {
+                "type": "object",
+                "properties": {
+                    "calls": {
+                        "title": "Методы",
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Calls/Calls.json#/components/schemas/System_2.Types.Calls.Calls"
+                            }
+                        ]
+                    },
+                    "getFormat": {
+                        "default": "apiV2",
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Calls/Format.json#/components/schemas/System_2.Types.Calls.Format"
+                            }
+                        ]
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "calls"
+                ],
+                "title": "Вызов нескольких методов в одном вызове"
+            },
+            "System_2.Methods.Calls.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

@@ -1,0 +1,197 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Export.ByLeaders.TableToProject.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Export.ByLeaders.TableToProject.Add": {
+                "type": "object",
+                "properties": {
+                    "func": {
+                        "default": "export_byLeaders_tableToProject",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "auto_grouping": {
+                        "title": "Добавить разделение на группы",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "filters_keywords": {
+                        "title": "Фильтры для поисковых запросов",
+                        "type": "array"
+                    },
+                    "set_targets": {
+                        "title": "Добавить ли в результат url",
+                        "type": "boolean"
+                    },
+                    "group_id": {
+                        "title": "Id группы, если не указан будет создана новая группа в указанной папке",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "group_name": {
+                        "title": "Имя группы, если не указан group_id, если группа с таким именем уже существует, то будет исползоваться она",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "group_on": {
+                        "title": "Активность создаваемых групп (по умолчанию: 1 - активные)",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "move_duplicate": {
+                        "title": "Переносить ли дубли (по умолчанию: 0 - не переносить)",
+                        "type": "boolean"
+                    },
+                    "move_duplicate_group_id": {
+                        "title": "Id группы для переноса дублей, если не указана будет использован параметр move_duplicate_group_name",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "move_duplicate_group_name": {
+                        "title": "Имя группы для переноса дублей, если группы с таким именем в папке move_duplicate_folder_id нет, она будет создана",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "move_duplicate_folder_id": {
+                        "title": "Id папки для переноса дублей, если не указана, то будет использоваться корневая папка проекта",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "remove_special_chars": {
+                        "title": "Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)",
+                        "type": "boolean"
+                    },
+                    "tags": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "by_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Competitors_2/Types/Report/ByType.json#/components/schemas/Competitors_2.Types.Report.ByType"
+                            }
+                        ]
+                    },
+                    "region_index": {
+                        "title": "Индекс региона (не путать с ключом региона)",
+                        "type": "integer"
+                    },
+                    "query": {
+                        "title": "Ключевая фраза (или ее часть) / url",
+                        "type": "string"
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Competitors_2/Types/Report/Type.json#/components/schemas/Competitors_2.Types.Report.Type"
+                            }
+                        ]
+                    },
+                    "view": {
+                        "title": "Представление отчета",
+                        "type": "string"
+                    },
+                    "date": {
+                        "title": "Дата проверки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "query_vs": {
+                        "title": "Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "rel_vs": {
+                        "title": "Тип связи запросов между конкурентами",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "strict_query": {
+                        "title": "Делать ли проверку на наличие пути в URL (используется при (by_type = url))",
+                        "type": "boolean"
+                    },
+                    "intersection": {
+                        "title": "Минимальная схожесть",
+                        "nullable": true,
+                        "type": "number"
+                    },
+                    "handler": {
+                        "title": "Обработчик\n\nДля внутреннего использования\n\nВозможные значения:\n- handle\n- name",
+                        "nullable": true
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    },
+                    "fetch_style": {
+                        "title": "Определяет формат результата: коллекция, объект, значение\n\nПримеры:\n- fetchAll - получить коллекцию объектов\n- fetch - получить один объект\n- fetchColumn - получить свойсвто объекта",
+                        "description": "@see FetchStyle\n@see Selector::execFetch() - см. реализацию",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Selector/Types/FetchStyle.json#/components/schemas/Selector.Types.FetchStyle"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "by_type",
+                    "region_index",
+                    "query",
+                    "type",
+                    "view",
+                    "date"
+                ],
+                "title": "Экспорт запросов по доменам в проект\n\nРаботает только с отчетами по URL по списку доменов с оплаченной схожестью"
+            },
+            "Competitors_2.Methods.Export.ByLeaders.TableToProject.Add.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

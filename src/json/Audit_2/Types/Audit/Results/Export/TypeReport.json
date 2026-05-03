@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Types.Audit.Results.Export.TypeReport",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Types.Audit.Results.Export.TypeReport": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "x-enum-varnames": [
+                    "Review",
+                    "Indexing",
+                    "Snippet",
+                    "Links",
+                    "Images",
+                    "Content",
+                    "Pages",
+                    "Page"
+                ],
+                "x-enum-descriptions": [
+                    "Обзор",
+                    "Индексация",
+                    "Сниппет",
+                    "Ссылки",
+                    "Изображения",
+                    "Контент",
+                    "Страницы",
+                    "Одна страница"
+                ],
+                "title": "Тип отчета аудита для экспорта"
+            }
+        }
+    }
+}

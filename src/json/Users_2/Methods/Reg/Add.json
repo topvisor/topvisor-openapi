@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Reg.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Reg.Add": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "default": "ru",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    },
+                    "redirect": {
+                        "title": "URL страницы, которую нужно открыть после подтверждения регистрации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "connect_to_me": {
+                        "title": "Текущий аккаунт должен быть объединен с новым (для текущих аккаунтов без email)",
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "title": "Дополнительные данные для регистрации",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "email"
+                ],
+                "title": "Создание заявки на регистрацию пользователя"
+            },
+            "Users_2.Methods.Reg.Add.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

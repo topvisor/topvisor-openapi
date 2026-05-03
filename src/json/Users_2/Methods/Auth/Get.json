@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Auth.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Auth.Get": {
+                "type": "object",
+                "properties": {
+                    "authorisation_login": {
+                        "title": "Логин авторизации\n\nМожет принимать: email или идентификатор Open Auth системы авторизации",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "authorisation_pass": {
+                        "title": "Пароль авторизации",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Информация о сессии авторизации пользователя"
+            },
+            "Users_2.Methods.Auth.Get.Exec": {
+                "nullable": true,
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "auth": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "auth"
+                ]
+            }
+        }
+    }
+}

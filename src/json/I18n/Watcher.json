@@ -1,0 +1,130 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Watcher",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Watcher": {
+                "type": "object",
+                "properties": {
+                    "Settings": {
+                        "const": "Watcher settings",
+                        "readOnly": true
+                    },
+                    "menu": {
+                        "const": {
+                            "http_codes": "HTTP Code",
+                            "title": "Title",
+                            "description": "Description",
+                            "h1": "H1 Header",
+                            "content": "Content"
+                        },
+                        "readOnly": true
+                    },
+                    "Status_code": {
+                        "const": "Status",
+                        "readOnly": true
+                    },
+                    "Without_changes": {
+                        "const": "Without changes",
+                        "readOnly": true
+                    },
+                    "Fulltext": {
+                        "const": "Full text",
+                        "readOnly": true
+                    },
+                    "Only_with_changed": {
+                        "const": "With changes",
+                        "readOnly": true
+                    },
+                    "Header_start_short": {
+                        "const": "Track",
+                        "readOnly": true
+                    },
+                    "Common_settings": {
+                        "const": "Common settings",
+                        "readOnly": true
+                    },
+                    "Tracking": {
+                        "const": "Tracking",
+                        "readOnly": true
+                    },
+                    "Cut_script": {
+                        "const": "Cut &lt;script&gt;",
+                        "readOnly": true
+                    },
+                    "Scan_method": {
+                        "const": "Scan method",
+                        "readOnly": true
+                    },
+                    "Strip_tags": {
+                        "const": "Text only / Cut tags",
+                        "readOnly": true
+                    },
+                    "Change_history": {
+                        "const": "Change history: ",
+                        "readOnly": true
+                    },
+                    "Hints_settings": {
+                        "const": {
+                            "watcher_max_redirects": "",
+                            "watcher_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
+                            "audit_page_delay": "",
+                            "audit_resource_delay": "",
+                            "audit_use_cookie": "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.",
+                            "server_location": "Change server location to access blocked websites.",
+                            "watcher_ignore_js": "",
+                            "watcher_types": {
+                                "title": "",
+                                "description": "",
+                                "h1": "",
+                                "content": ""
+                            },
+                            "watcher_strip_tags_from_result": ""
+                        },
+                        "readOnly": true
+                    },
+                    "Hint_not_urls_text": {
+                        "const": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
+                        "readOnly": true
+                    },
+                    "Hint_not_urls_btn": {
+                        "const": "URLs",
+                        "readOnly": true
+                    },
+                    "Hint_not_checks_text": {
+                        "const": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
+                        "readOnly": true
+                    },
+                    "Hint_not_checks_btn": {
+                        "const": "Launch Watcher",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Settings",
+                    "menu",
+                    "Status_code",
+                    "Without_changes",
+                    "Fulltext",
+                    "Only_with_changed",
+                    "Header_start_short",
+                    "Common_settings",
+                    "Tracking",
+                    "Cut_script",
+                    "Scan_method",
+                    "Strip_tags",
+                    "Change_history",
+                    "Hints_settings",
+                    "Hint_not_urls_text",
+                    "Hint_not_urls_btn",
+                    "Hint_not_checks_text",
+                    "Hint_not_checks_btn"
+                ]
+            }
+        }
+    }
+}

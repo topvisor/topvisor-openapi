@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Dates.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Dates.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона (не путать с ключом региона)",
+                        "type": "integer"
+                    },
+                    "query": {
+                        "title": "- ключевая фраза или ее часть (by_type = keyword)\n- url (by_type = url)",
+                        "type": "string"
+                    },
+                    "by_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Competitors_2/Types/Report/ByType.json#/components/schemas/Competitors_2.Types.Report.ByType"
+                            }
+                        ]
+                    },
+                    "date": {
+                        "title": "Дата проверки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "strict_query": {
+                        "title": "Делать ли проверку на наоичие пути в URL (используется при (by_type = url))",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "region_index",
+                    "query",
+                    "by_type"
+                ],
+                "title": "Получение даты проверок по заданному критерию (последние 12)"
+            },
+            "Competitors_2.Methods.Dates.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

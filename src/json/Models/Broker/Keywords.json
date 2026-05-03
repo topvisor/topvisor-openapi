@@ -1,0 +1,116 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Broker.Keywords",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Broker.Keywords": {
+                "properties": {
+                    "id": {},
+                    "campaign_tv_id": {
+                        "nullable": true
+                    },
+                    "keyword_id": {
+                        "nullable": true
+                    },
+                    "group_id": {
+                        "nullable": true
+                    },
+                    "keyword": {
+                        "nullable": true
+                    },
+                    "status": {
+                        "nullable": true
+                    },
+                    "state": {
+                        "nullable": true
+                    },
+                    "shows": {
+                        "nullable": true
+                    },
+                    "clicks": {
+                        "nullable": true
+                    },
+                    "P11": {
+                        "nullable": true
+                    },
+                    "P12": {
+                        "nullable": true
+                    },
+                    "P13": {
+                        "nullable": true
+                    },
+                    "P1L": {
+                        "nullable": true
+                    },
+                    "P21": {
+                        "nullable": true
+                    },
+                    "P2L": {
+                        "nullable": true
+                    },
+                    "P11_f": {
+                        "nullable": true
+                    },
+                    "P12_f": {
+                        "nullable": true
+                    },
+                    "P13_f": {
+                        "nullable": true
+                    },
+                    "P1L_f": {
+                        "nullable": true
+                    },
+                    "P21_f": {
+                        "nullable": true
+                    },
+                    "P2L_f": {
+                        "nullable": true
+                    },
+                    "TrafficVolumes": {
+                        "nullable": true
+                    },
+                    "bid": {
+                        "nullable": true
+                    },
+                    "contextBid": {
+                        "nullable": true
+                    },
+                    "price": {
+                        "nullable": true
+                    },
+                    "price_max": {
+                        "nullable": true
+                    },
+                    "price_risk": {
+                        "nullable": true
+                    },
+                    "percent": {
+                        "nullable": true
+                    },
+                    "tactics": {
+                        "nullable": true
+                    },
+                    "tactics_2_old": {
+                        "nullable": true
+                    },
+                    "tactics_2": {
+                        "nullable": true
+                    },
+                    "on": {
+                        "nullable": true
+                    },
+                    "off": {
+                        "nullable": true
+                    },
+                    "for_off": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

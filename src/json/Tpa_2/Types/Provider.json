@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpa_2.Types.Provider",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpa_2.Types.Provider": {
+                "type": "string",
+                "enum": [
+                    "metrika",
+                    "webmaster",
+                    "direct",
+                    "yandexMarket",
+                    "analytics",
+                    "ganalytics",
+                    "gdrive",
+                    "adwords",
+                    "gsc"
+                ],
+                "x-enum-varnames": [
+                    "YandexMetrika",
+                    "YandexWebmaster",
+                    "YandexDirect",
+                    "YandexMarket",
+                    "Analytics",
+                    "GoogleAnalytics",
+                    "GoogleDrive",
+                    "GoogleAdwords",
+                    "GoogleSearchConsole"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Источник данных для интеграции"
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+	"name": "topvisor-openapi",
+	"version": "1.0.0",
+	"description": "OpenApi schemas for Topvisor API",
+	"author": "Artemeey <artemeey2@gmail.com>",
+	"type": "module",
+	"license": "MIT",
+	"files": [
+		"src"
+	],
+	"engines": {
+		"npm": ">=10.0.0",
+		"node": ">=22.0.0"
+	},
+	"scripts": {
+		"build-yaml-sf": "redocly bundle src/json/Topvisor.json -o src/yaml/TopvisorSingleFile.yaml"
+	},
+	"dependencies": {
+		"@redocly/cli": "^2.30.3"
+	}
+}

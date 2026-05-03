@@ -1,0 +1,145 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Log.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Log.Get": {
+                "type": "object",
+                "properties": {
+                    "time1": {
+                        "title": "Фильтр по периоду",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "time2": {
+                        "title": "Фильтр по периоду",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "show_urls": {
+                        "title": "Добавить url к записям",
+                        "type": "boolean"
+                    },
+                    "show_locations": {
+                        "title": "Добавить массив locations - адреса страницы и редиректы с HTTP кодами",
+                        "type": "boolean"
+                    },
+                    "http_codes_hundreds": {
+                        "title": "Фильтр по категориям кодов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    },
+                    "check_id": {
+                        "title": "ID проверки аудита",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "check_id"
+                ],
+                "title": "Получение данных проверенных ресурсов"
+            },
+            "Audit_2.Methods.Audit.Log.Get.Exec": {
+                "title": "Данные проверенных ресурсов",
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "http_codes": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        },
+                        "time_parse": {
+                            "type": "string"
+                        },
+                        "loading_time": {
+                            "type": "integer"
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "redirects": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "array"
+                                }
+                            ]
+                        },
+                        "locations": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "http_code": {
+                                        "type": "integer"
+                                    },
+                                    "url": {
+                                        "anyOf": [
+                                            {
+                                                "type": "string"
+                                            },
+                                            {
+                                                "type": "null"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "http_code",
+                                    "url"
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+                        "http_codes",
+                        "time_parse",
+                        "loading_time",
+                        "type"
+                    ]
+                }
+            }
+        }
+    }
+}

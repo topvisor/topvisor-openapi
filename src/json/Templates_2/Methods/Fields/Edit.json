@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Templates_2.Methods.Fields.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Templates_2.Methods.Fields.Edit": {
+                "type": "object",
+                "properties": {
+                    "target_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Templates_2/Types/TargetType.json#/components/schemas/Templates_2.Types.TargetType"
+                            }
+                        ]
+                    },
+                    "target_subtype": {
+                        "title": "Подтип данных (место использования)",
+                        "type": "integer"
+                    },
+                    "target_id": {
+                        "title": "Id целевого проекта",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "properties": {
+                        "title": "Свойства шаблона",
+                        "type": "array"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "target_type"
+                ],
+                "title": "Сохранение списка столбцов"
+            },
+            "Templates_2.Methods.Fields.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Cron",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Cron": {
+                "type": "object",
+                "properties": {
+                    "Field_command": {
+                        "const": "Сommand",
+                        "readOnly": true
+                    },
+                    "Field_description": {
+                        "const": "Description",
+                        "readOnly": true
+                    },
+                    "Field_days": {
+                        "const": "Days of the week",
+                        "readOnly": true
+                    },
+                    "Field_hh": {
+                        "const": "Hours",
+                        "readOnly": true
+                    },
+                    "Field_i": {
+                        "const": "Minutes",
+                        "readOnly": true
+                    },
+                    "Field_on": {
+                        "const": "On/Off",
+                        "readOnly": true
+                    },
+                    "Field_task_create_time": {
+                        "const": "Task created",
+                        "readOnly": true
+                    },
+                    "Field_task_start_time": {
+                        "const": "Task runned",
+                        "readOnly": true
+                    },
+                    "Field_task_status": {
+                        "const": "Execution status",
+                        "readOnly": true
+                    },
+                    "Disabled": {
+                        "const": "Disabled",
+                        "readOnly": true
+                    },
+                    "Enabled": {
+                        "const": "Enabled",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Field_command",
+                    "Field_description",
+                    "Field_days",
+                    "Field_hh",
+                    "Field_i",
+                    "Field_on",
+                    "Field_task_create_time",
+                    "Field_task_start_time",
+                    "Field_task_status",
+                    "Disabled",
+                    "Enabled"
+                ]
+            }
+        }
+    }
+}

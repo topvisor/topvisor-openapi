@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Sms_2.Methods.SendPIN.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Sms_2.Methods.SendPIN.Get": {
+                "type": "object",
+                "properties": {
+                    "phones": {
+                        "title": "Телефон/массив или строка (через запятую) телефонов, на которые надо отправить код подтверждения",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "array"
+                            }
+                        ]
+                    }
+                },
+                "required": [],
+                "title": "Отправить код для подтверждения действия"
+            },
+            "Sms_2.Methods.SendPIN.Get.Exec": {
+                "type": "boolean"
+            }
+        }
+    }
+}

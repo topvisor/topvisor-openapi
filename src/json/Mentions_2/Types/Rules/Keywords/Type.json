@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Types.Rules.Keywords.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Types.Rules.Keywords.Type": {
+                "type": "string",
+                "enum": [
+                    "any",
+                    "plus",
+                    "minus"
+                ],
+                "x-enum-varnames": [
+                    "Any",
+                    "Plus",
+                    "Minus"
+                ],
+                "x-enum-descriptions": [
+                    "Ключевые слова, любое из",
+                    "Ключевые слова, все из",
+                    "Ключевые слова, ни одно из"
+                ],
+                "title": "Типы доступных фраз"
+            }
+        }
+    }
+}

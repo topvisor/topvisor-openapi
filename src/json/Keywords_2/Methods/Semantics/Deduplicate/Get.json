@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Semantics.Deduplicate.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Semantics.Deduplicate.Get": {
+                "type": "object",
+                "properties": {
+                    "keywords": {
+                        "title": "Список исходных запросов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                            }
+                        ]
+                    },
+                    "ignoreWordsOrder": {
+                        "title": "Игнорировать порядок слов при поиске дублей",
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "ignoreStopWords": {
+                        "title": "Игнорировать стоп-слова при поиске дублей",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "keywords"
+                ],
+                "title": "Удаление неявных дублей по ключевым фразам"
+            },
+            "Keywords_2.Methods.Semantics.Deduplicate.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "canonical_by_keyword": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    },
+                    "keywords_unique": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "keywords_removed": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "canonical_by_keyword",
+                    "keywords_unique",
+                    "keywords_removed"
+                ]
+            }
+        }
+    }
+}

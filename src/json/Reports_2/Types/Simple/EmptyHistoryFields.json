@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Types.Simple.EmptyHistoryFields",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Types.Simple.EmptyHistoryFields": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Reports_2/Types/Simple/EmptyHistoryField.json#/components/schemas/Reports_2.Types.Simple.EmptyHistoryField"
+                },
+                "title": "Заглушка полей проверок для простых экспортов"
+            }
+        }
+    }
+}

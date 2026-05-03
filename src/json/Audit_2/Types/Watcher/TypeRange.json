@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Types.Watcher.TypeRange",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Types.Watcher.TypeRange": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    7,
+                    100
+                ],
+                "x-enum-varnames": [
+                    "FullRange",
+                    "Range",
+                    "TwoChecks",
+                    "OneCheck",
+                    "TwoLastChecks",
+                    "ListDates"
+                ],
+                "x-enum-descriptions": [
+                    "Весь период без ограничений (недокументируемй парметр)",
+                    "Период",
+                    "Две проверки",
+                    "Одна проверка",
+                    "Две последние проверки",
+                    "Произвольный список дат"
+                ],
+                "title": "Тип диапазона радара"
+            }
+        }
+    }
+}

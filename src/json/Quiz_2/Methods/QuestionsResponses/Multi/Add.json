@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.QuestionsResponses.Multi.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.QuestionsResponses.Multi.Add": {
+                "type": "object",
+                "properties": {
+                    "questions_responses": {
+                        "title": "Ответы",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "questions_responses"
+                ],
+                "title": "Добавление нескольких ответов"
+            },
+            "Quiz_2.Methods.QuestionsResponses.Multi.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

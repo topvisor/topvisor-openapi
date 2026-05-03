@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Tpl.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Tpl.Get": {
+                "type": "object",
+                "properties": {
+                    "tpl": {
+                        "title": "Путь к шаблону",
+                        "type": "string"
+                    },
+                    "tpl_data": {
+                        "title": "Данные для шаблона (кеш будет отключен)",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "wait_change_etag": {
+                        "title": "Ожидать изменение шаблона (кеш будет отключен)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "lang": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Tpl/Lang.json#/components/schemas/System_2.Types.Tpl.Lang"
+                            }
+                        ]
+                    },
+                    "currency": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Tpl/Currency.json#/components/schemas/System_2.Types.Tpl.Currency"
+                            }
+                        ]
+                    },
+                    "v": {
+                        "title": "Версия кэша",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "tpl"
+                ],
+                "title": "Получение кешируемого HTML-шаблона"
+            },
+            "System_2.Methods.Tpl.Get.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

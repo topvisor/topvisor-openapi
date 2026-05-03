@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Objects.Task.Relevant.Qualifier",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Objects.Task.Relevant.Qualifier": {
+                "type": "object",
+                "properties": {
+                    "region_lang": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_key": {
+                        "type": "integer"
+                    },
+                    "region_device": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "searcher_key",
+                    "region_key",
+                    "region_device"
+                ],
+                "title": "Объект определитель для проверки релевантности"
+            }
+        }
+    }
+}

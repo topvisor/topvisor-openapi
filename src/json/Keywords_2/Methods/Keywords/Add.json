@@ -1,0 +1,77 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Keywords.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Keywords.Add": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Ключевая фраза",
+                        "type": "string"
+                    },
+                    "to_id": {
+                        "title": "Вставить к указанному объекту\n\nЕсли в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in_group",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Keywords/ToType.json#/components/schemas/Keywords_2.Types.Keywords.ToType"
+                            }
+                        ]
+                    },
+                    "tags": {
+                        "title": "Теги запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
+                    },
+                    "target": {
+                        "title": "Целевая страница для запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "move_duplicate": {
+                        "title": "Удалить дубликаты",
+                        "type": "boolean"
+                    },
+                    "move_duplicate_group_name": {
+                        "title": "Имя группы для перемещения дубликатов\n\nРаботает вместе с move_duplicate",
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "name",
+                    "to_id",
+                    "project_id"
+                ],
+                "title": "Добавление запроса"
+            },
+            "Keywords_2.Methods.Keywords.Add.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

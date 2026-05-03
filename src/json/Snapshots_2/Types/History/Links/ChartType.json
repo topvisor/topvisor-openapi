@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Types.History.Links.ChartType",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Types.History.Links.ChartType": {
+                "type": "string",
+                "enum": [
+                    "tops",
+                    "tops_count",
+                    "avg",
+                    "visibility",
+                    "median"
+                ],
+                "x-enum-varnames": [
+                    "Tops",
+                    "TopsCount",
+                    "Avg",
+                    "Visibility",
+                    "Median"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Тип диаграммы"
+            }
+        }
+    }
+}

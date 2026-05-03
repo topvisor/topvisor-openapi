@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Types.Rate.FastAnswer",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Types.Rate.FastAnswer": {
+                "type": "string",
+                "enum": [
+                    "Solved_problem",
+                    "Detail_answer",
+                    "Quickly",
+                    "Best_support",
+                    "Long_time",
+                    "Slow",
+                    "No_functionality",
+                    "Did_not_answer"
+                ],
+                "x-enum-varnames": [
+                    "SolvedProblem",
+                    "DetailAnswer",
+                    "Quickly",
+                    "BestSupport",
+                    "LongTime",
+                    "Slow",
+                    "NoFunctionality",
+                    "DidNotAnswer"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Тип быстрого ответа"
+            }
+        }
+    }
+}

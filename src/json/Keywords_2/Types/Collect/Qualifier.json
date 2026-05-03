@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Collect.Qualifier",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Collect.Qualifier": {
+                "type": "object",
+                "properties": {
+                    "region_key": {
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Collect/SearcherKey.json#/components/schemas/Keywords_2.Types.Collect.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_lang": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "also_searched": {
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "depth": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "hint_depth": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "hint_generators": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Collect/HintGenerators.json#/components/schemas/Keywords_2.Types.Collect.HintGenerators"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "region_key",
+                    "searcher_key"
+                ],
+                "title": "Определитель с настройками для подбора"
+            }
+        }
+    }
+}

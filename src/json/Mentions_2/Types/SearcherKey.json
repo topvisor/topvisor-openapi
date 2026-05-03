@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Types.SearcherKey",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Types.SearcherKey": {
+                "type": "integer",
+                "enum": [
+                    101,
+                    102,
+                    103
+                ],
+                "x-enum-varnames": [
+                    "Vk",
+                    "Fb",
+                    "Tw"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Доступные ключи поисковика"
+            }
+        }
+    }
+}

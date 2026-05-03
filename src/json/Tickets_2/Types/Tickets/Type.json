@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Types.Tickets.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Types.Tickets.Type": {
+                "type": "string",
+                "enum": [
+                    "system",
+                    "other",
+                    "email",
+                    "ios",
+                    "vk",
+                    "chrome",
+                    "twitter",
+                    "facebook",
+                    "telegram",
+                    "android",
+                    "guest"
+                ],
+                "x-enum-varnames": [
+                    "System",
+                    "Other",
+                    "Email",
+                    "Ios",
+                    "Vk",
+                    "Chrome",
+                    "Twitter",
+                    "Facebook",
+                    "Telegram",
+                    "Android",
+                    "Guest"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Откуда поступил тикет"
+            }
+        }
+    }
+}

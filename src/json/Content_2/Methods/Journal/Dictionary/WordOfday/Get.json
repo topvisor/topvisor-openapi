@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Journal.Dictionary.WordOfday.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Journal.Dictionary.WordOfday.Get": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Получение статьи для \"Слово дня\" в модуле SEO словарь"
+            },
+            "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": {
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "url": {
+                                    "type": "string"
+                                },
+                                "menu_name": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "count_views": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "url",
+                                "menu_name",
+                                "description",
+                                "count_views"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}

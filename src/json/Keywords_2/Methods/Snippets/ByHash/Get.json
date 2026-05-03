@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Snippets.ByHash.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Snippets.ByHash.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получить данные сниппета в формате hash:tag"
+            },
+            "Keywords_2.Methods.Snippets.ByHash.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

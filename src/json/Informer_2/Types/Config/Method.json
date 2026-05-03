@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Types.Config.Method",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Types.Config.Method": {
+                "type": "string",
+                "enum": [
+                    "news",
+                    "balance",
+                    "yandex-update",
+                    "comments",
+                    "api",
+                    "journal",
+                    "academy",
+                    "tickets",
+                    "toolbox"
+                ],
+                "x-enum-varnames": [
+                    "News",
+                    "Balance",
+                    "YandexUpdate",
+                    "Comments",
+                    "Api",
+                    "Journal",
+                    "Academy",
+                    "Tickets",
+                    "Toolbox"
+                ],
+                "x-enum-descriptions": [
+                    "Новости",
+                    "Баланс",
+                    "Обновление Яндекса",
+                    "Комментарии",
+                    "API",
+                    "Журнал",
+                    "Академия",
+                    "Тикеты",
+                    "Тулбокс"
+                ],
+                "title": "Тема сообщения"
+            }
+        }
+    }
+}

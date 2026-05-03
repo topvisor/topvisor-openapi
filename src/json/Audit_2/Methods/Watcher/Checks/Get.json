@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Watcher.Checks.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Watcher.Checks.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получение проверок радара"
+            },
+            "Audit_2.Methods.Watcher.Checks.Get.Exec": {
+                "title": "Список проверок радара",
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

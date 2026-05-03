@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/FieldsOrders",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "FieldsOrders": {
+                "type": "array",
+                "items": {
+                    "$ref": "FieldOrder.json#/components/schemas/FieldOrder"
+                },
+                "title": "Список полей сортировки"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Types.Analytics.Base",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Types.Analytics.Base": {
+                "type": "integer",
+                "enum": [
+                    1,
+                    11,
+                    13,
+                    2,
+                    3,
+                    6,
+                    4,
+                    5,
+                    12
+                ],
+                "x-enum-varnames": [
+                    "SearchEngineAndRegions",
+                    "SearchEngine",
+                    "TrafficSources",
+                    "Requests",
+                    "Groups",
+                    "Folders",
+                    "Competitors",
+                    "Tags",
+                    "Tops"
+                ],
+                "x-enum-descriptions": [
+                    "ПС и регионы",
+                    "ПС",
+                    "Источники трафика",
+                    "Запросы",
+                    "Группы",
+                    "Папки",
+                    "Конкуренты",
+                    "Теги",
+                    "Топы"
+                ],
+                "title": "Тип группировки"
+            }
+        }
+    }
+}

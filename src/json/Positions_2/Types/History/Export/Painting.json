@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.History.Export.Painting",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.History.Export.Painting": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1
+                ],
+                "x-enum-varnames": [
+                    "Top",
+                    "Dynamic"
+                ],
+                "x-enum-descriptions": [
+                    "Топ-ориентированная раскраска; Акцент на позиции в топ-10 и переходы между десятками",
+                    "Динамическая/градиентная раскраска; Акцент на величине изменения позиций"
+                ],
+                "title": "Режимы визуализации изменений позиций в экспорте"
+            }
+        }
+    }
+}

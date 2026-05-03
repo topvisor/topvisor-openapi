@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Ai_2.Types.TextToSpeech.Status",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Ai_2.Types.TextToSpeech.Status": {
+                "type": "string",
+                "enum": [
+                    "0",
+                    "1"
+                ],
+                "x-enum-varnames": [
+                    "InProgress",
+                    "Completed"
+                ],
+                "x-enum-descriptions": [
+                    "Задача в процессе",
+                    "Задача завершена"
+                ],
+                "title": "Статус выполнения задачи синтеза речи"
+            }
+        }
+    }
+}

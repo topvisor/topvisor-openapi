@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Controller_2.Methods.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Controller_2.Methods.Get": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "Адрес страницы",
+                        "type": "string"
+                    },
+                    "debug": {
+                        "title": "Вернуть страницу с состоянием дебага",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "url"
+                ],
+                "title": "Получить объект страницы с отрендериным контентом"
+            },
+            "Controller_2.Methods.Get.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
+                    }
+                ]
+            }
+        }
+    }
+}

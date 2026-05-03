@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.History.Targets.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.History.Targets.Get": {
+                "type": "object",
+                "properties": {
+                    "phrase_id": {
+                        "title": "ID запроса",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "phrase_id",
+                    "project_id"
+                ],
+                "title": "Получение информации о целевой ссылке"
+            },
+            "Positions_2.Methods.History.Targets.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

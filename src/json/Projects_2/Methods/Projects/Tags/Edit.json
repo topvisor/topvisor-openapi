@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Projects.Tags.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Projects.Tags.Edit": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "title": "enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "nullable": true,
+                        "default": [
+                            1
+                        ],
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Редактирование тегов проектов"
+            },
+            "Projects_2.Methods.Projects.Tags.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AdminLayers.Layers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AdminLayers.Layers": {
+                "properties": {
+                    "SERVICE_TYPE()": {
+                        "nullable": true
+                    },
+                    "IDS()": {
+                        "nullable": true
+                    },
+                    "IP_SUBNETS()": {
+                        "nullable": true
+                    },
+                    "ORDER_ID()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "frequency": {
+                        "nullable": true
+                    },
+                    "robot_id": {
+                        "nullable": true
+                    },
+                    "type": {
+                        "nullable": true
+                    },
+                    "count_keys": {
+                        "nullable": true
+                    },
+                    "partner_site": {
+                        "nullable": true
+                    },
+                    "order_number": {
+                        "nullable": true
+                    },
+                    "create_date": {
+                        "nullable": true
+                    },
+                    "paidto_date": {
+                        "nullable": true
+                    },
+                    "price": {
+                        "nullable": true
+                    },
+                    "price_currency": {
+                        "nullable": true
+                    },
+                    "service_comment": {
+                        "nullable": true
+                    },
+                    "server_name": {
+                        "nullable": true
+                    },
+                    "as": {
+                        "nullable": true
+                    },
+                    "as_name": {
+                        "nullable": true
+                    },
+                    "ip_subnet": {
+                        "nullable": true
+                    },
+                    "ip_add_method": {
+                        "nullable": true
+                    },
+                    "interface": {
+                        "nullable": true
+                    },
+                    "comment": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    },
+                    "server_ip": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

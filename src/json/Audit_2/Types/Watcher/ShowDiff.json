@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Types.Watcher.ShowDiff",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Types.Watcher.ShowDiff": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "x-enum-varnames": [
+                    "NotInclude",
+                    "ShortText",
+                    "FullText",
+                    "AlwaysFullText"
+                ],
+                "x-enum-descriptions": [
+                    "Не добавлять",
+                    "Сокращенный текст",
+                    "Полный текст",
+                    "Всегда полный текст, даже если нет изменений"
+                ],
+                "title": "Добавить в результат различия данных"
+            }
+        }
+    }
+}

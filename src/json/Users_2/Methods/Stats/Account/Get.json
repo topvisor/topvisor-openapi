@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Stats.Account.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Stats.Account.Get": {
+                "type": "object",
+                "properties": {
+                    "period": {
+                        "title": "Какую часть от периода показать",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "period"
+                ],
+                "title": "Получение общего числа проектов / запросов (автоматических / ручных)"
+            },
+            "Users_2.Methods.Stats.Account.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

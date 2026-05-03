@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Broker_2.Types.Keywords.Tactics2",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Broker_2.Types.Keywords.Tactics2": {
+                "type": "string",
+                "enum": [
+                    "maxBid",
+                    "minBid",
+                    "lowerPos",
+                    "suspend"
+                ],
+                "x-enum-varnames": [
+                    "MaxBid",
+                    "MinBid",
+                    "LowerPos",
+                    "Suspend"
+                ],
+                "x-enum-descriptions": [
+                    "Установить максимальную ставку",
+                    "Установить минимальную ставку",
+                    "Понижать позицию",
+                    "Отключить показы"
+                ],
+                "title": "Тактика при превышении максимальной цены"
+            }
+        }
+    }
+}

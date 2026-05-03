@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Methods.Test.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Methods.Test.Get": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Тест долго ответа сервера"
+            },
+            "Example_2.Methods.Test.Get.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.TelegramAccounts.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.TelegramAccounts.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "bot_name": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Telegram_2/Types/Bot/Name.json#/components/schemas/Telegram_2.Types.Bot.Name"
+                            }
+                        ]
+                    }
+                },
+                "required": [],
+                "title": "Получение списка телеграм аккаунтов\n\nПри указании project_id получает список телеграм аккаунтов по владельцу проекта"
+            },
+            "Users_2.Methods.TelegramAccounts.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

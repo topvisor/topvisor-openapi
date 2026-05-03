@@ -1,0 +1,84 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Volumes.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Volumes.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "no_recheck": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Volumes/NoRecheck.json#/components/schemas/Keywords_2.Types.Volumes.NoRecheck"
+                            }
+                        ]
+                    },
+                    "target_type": {
+                        "title": "Тип объекта фильтрации",
+                        "default": "keywords",
+                        "type": "string"
+                    },
+                    "qualifiers": {
+                        "title": "Список регионов с настройками для проверки частоты\n\n- Обязателен, если `set_qualifiers_for_visibility` != `true`\n- Нельзя указывать, если `set_qualifiers_for_visibility` = `true`\n- Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Volumes/Qualifiers.json#/components/schemas/Keywords_2.Types.Volumes.Qualifiers"
+                            }
+                        ]
+                    },
+                    "set_qualifiers_for_visibility": {
+                        "title": "Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
+                    },
+                    "check_all_regions_yandex_types": {
+                        "title": "Запустить проверку указанных типов частоты по всем регионам яндекса, добавленных в проект",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Volumes/Types.json#/components/schemas/Keywords_2.Types.Volumes.Types"
+                            }
+                        ]
+                    },
+                    "check_all_regions_google": {
+                        "title": "Запустить проверку частоты по всем регионам гугла, добавленных в проект",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Информация о стоимости запуска проверки позиций по проектам"
+            },
+            "Keywords_2.Methods.Volumes.Price.Get.Exec": {
+                "type": "object",
+                "additionalProperties": {}
+            }
+        }
+    }
+}

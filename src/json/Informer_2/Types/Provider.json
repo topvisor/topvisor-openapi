@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Types.Provider",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Types.Provider": {
+                "type": "string",
+                "enum": [
+                    "info",
+                    "email",
+                    "sms",
+                    "push",
+                    "min"
+                ],
+                "x-enum-varnames": [
+                    "Info",
+                    "Email",
+                    "Sms",
+                    "Push",
+                    "Min"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    "Дополнительный конфиг к каждому типу рассылки; Используется только для типа: Уведомление о низком балансе"
+                ],
+                "title": "Способ рассылки"
+            }
+        }
+    }
+}

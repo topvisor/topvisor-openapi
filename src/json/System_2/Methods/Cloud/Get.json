@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Cloud.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Cloud.Get": {
+                "type": "object",
+                "properties": {
+                    "directory": {
+                        "title": "Директория",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "directory"
+                ],
+                "title": "Получение директорий и файлов из облака"
+            },
+            "System_2.Methods.Cloud.Get.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../System_2/Types/Cloud/Files.json#/components/schemas/System_2.Types.Cloud.Files"
+                    }
+                ]
+            }
+        }
+    }
+}

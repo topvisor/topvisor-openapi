@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Methods.Informer.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Methods.Informer.Del": {
+                "type": "object",
+                "properties": {
+                    "ids": {
+                        "title": "ID сообщений для удаления",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "ids"
+                ],
+                "title": "Удаление сообщений из инфомера"
+            },
+            "Informer_2.Methods.Informer.Del.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

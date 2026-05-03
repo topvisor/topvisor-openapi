@@ -1,0 +1,376 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Watcher.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Watcher.Get": {
+                "type": "object",
+                "properties": {
+                    "checks_ids": {
+                        "title": "ID проверок в произвольном порядке",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "check_id1": {
+                        "title": "ID проверки начала диапазона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "check_id2": {
+                        "title": "ID проверки конца диапазона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "type_range": {
+                        "default": 7,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Audit_2/Types/Watcher/TypeRange.json#/components/schemas/Audit_2.Types.Watcher.TypeRange"
+                            }
+                        ]
+                    },
+                    "count_ids": {
+                        "title": "Максимальное число возвращаемых проверок (не более 60)",
+                        "default": 60,
+                        "type": "integer"
+                    },
+                    "watcher_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Audit_2/Types/Watcher/Type.json#/components/schemas/Audit_2.Types.Watcher.Type"
+                            }
+                        ]
+                    },
+                    "watcher_fields": {
+                        "title": "Выбор столбцов данных с результатами проверки",
+                        "default": [
+                            "http_codes",
+                            "redirects"
+                        ],
+                        "type": "array"
+                    },
+                    "show_headers": {
+                        "title": "Добавить в результат заголовки отчета",
+                        "type": "boolean"
+                    },
+                    "show_diff": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Audit_2/Types/Watcher/ShowDiff.json#/components/schemas/Audit_2.Types.Watcher.ShowDiff"
+                            }
+                        ]
+                    },
+                    "show_counts_watcher": {
+                        "title": "Добавить в результат количество проверок",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array"
+                    },
+                    "offset": {
+                        "title": "Число объектов, которое необходимо пропустить при получении результата\n\nИспользуется в паре с limit",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "watcher_type",
+                    "project_id"
+                ],
+                "title": "Получение результатов проверок радара\n\nОтчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)"
+            },
+            "Audit_2.Methods.Watcher.Get.Exec": {
+                "title": "Генерируемый на основе urls, список результатов проверок радара",
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "urls": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        },
+                                        "\"COUNT(*)\"": {
+                                            "type": "integer"
+                                        },
+                                        "\"WATCHER_HTTP_CODES_HUNDREDS()\"": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "project_id": {
+                                            "type": "integer"
+                                        },
+                                        "sitemap": {
+                                            "type": "boolean"
+                                        },
+                                        "audit": {
+                                            "type": "boolean"
+                                        },
+                                        "watcher": {
+                                            "type": "boolean"
+                                        },
+                                        "indexing": {
+                                            "type": "boolean"
+                                        },
+                                        "tags": {
+                                            "anyOf": [
+                                                {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        "sitemap_lastmod": {
+                                            "type": "string"
+                                        },
+                                        "sitemap_changefreq": {
+                                            "type": "string"
+                                        },
+                                        "sitemap_priority": {
+                                            "type": "number"
+                                        },
+                                        "indexing_data": {
+                                            "type": "integer"
+                                        },
+                                        "indexing_alert": {
+                                            "type": "integer"
+                                        },
+                                        "watcher_http_codes": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "watcher_http_codes_changed": {
+                                            "type": "integer"
+                                        },
+                                        "watcher_redirects": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "watcher_h1": {
+                                            "type": "string"
+                                        },
+                                        "watcher_h1_changed": {
+                                            "type": "integer"
+                                        },
+                                        "watcher_title": {
+                                            "type": "string"
+                                        },
+                                        "watcher_title_changed": {
+                                            "type": "integer"
+                                        },
+                                        "watcher_description": {
+                                            "type": "string"
+                                        },
+                                        "watcher_description_changed": {
+                                            "type": "integer"
+                                        },
+                                        "watcher_content": {
+                                            "type": "string"
+                                        },
+                                        "watcher_content_changed": {
+                                            "type": "integer"
+                                        },
+                                        "watcherData": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "http_codes": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "redirects": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "h1": {
+                                                        "type": "string"
+                                                    },
+                                                    "title": {
+                                                        "type": "string"
+                                                    },
+                                                    "description": {
+                                                        "type": "string"
+                                                    },
+                                                    "content": {
+                                                        "type": "string"
+                                                    },
+                                                    "diff": {
+                                                        "anyOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "null"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "id",
+                                        "url"
+                                    ]
+                                }
+                            },
+                            "headers": {
+                                "type": "object",
+                                "properties": {
+                                    "fields": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "alias": {
+                                                    "type": "string"
+                                                },
+                                                "qualifiers": {
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "string"
+                                                        }
+                                                    ]
+                                                },
+                                                "label": {
+                                                    "anyOf": [
+                                                        {
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "type": "null"
+                                                        }
+                                                    ]
+                                                },
+                                                "labelData": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "label": {
+                                                            "type": "string"
+                                                        },
+                                                        "tooltip": {
+                                                            "type": "string"
+                                                        },
+                                                        "hint": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "label",
+                                                        "tooltip",
+                                                        "hint"
+                                                    ]
+                                                }
+                                            },
+                                            "required": [
+                                                "name",
+                                                "alias",
+                                                "qualifiers",
+                                                "label",
+                                                "labelData"
+                                            ]
+                                        }
+                                    },
+                                    "timesByChecksIds": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "watcherFields": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "watcherType": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "fields",
+                                    "timesByChecksIds",
+                                    "watcherFields",
+                                    "watcherType"
+                                ]
+                            },
+                            "countsWatcher": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "required": [
+                            "urls"
+                        ]
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
+        }
+    }
+}
