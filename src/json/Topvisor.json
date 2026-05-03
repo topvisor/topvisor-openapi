@@ -6116,7 +6116,7 @@
                 "tags": [
                     "Example_2"
                 ],
-                "summary": "Получение списка проектов",
+                "summary": "Получение списка проектов\n\ntest",
                 "requestBody": {
                     "content": {
                         "application/json": {

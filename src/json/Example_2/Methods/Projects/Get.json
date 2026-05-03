@@ -56,7 +56,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка проектов"
+                "title": "Получение списка проектов\n\ntest"
             },
             "Example_2.Methods.Projects.Get.Exec": {
                 "nullable": true,
