@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Заголовки отчета истории позиций
-         * @description @phpstan-import-type Searcher from Positions_2\Mods\Searchers\Interfaces\Searcher
-         *     @phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}
-         *     @property Positions_2\Types\History\HistoryFields $historyFields
+         * @description @property Positions_2\Types\History\HistoryFields $historyFields
          *     @property list<Project> $projects
          */
         "Positions_2.Objects.History.Headers.Headers": {

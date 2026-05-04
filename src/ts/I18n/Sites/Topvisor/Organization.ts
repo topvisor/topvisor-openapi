@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         "I18n.Sites.Topvisor.Organization": {
             /** @constant */
+            readonly Name_in?: "Topvisor";
+            /** @constant */
             readonly Description: "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.";
             /** @constant */
             readonly Street_address: "Voronezhskaya st., 5A, Prisma office building, office 242";

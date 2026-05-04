@@ -51,7 +51,7 @@
                         "readOnly": true
                     },
                     "Refill_balance": {
-                        "const": "Top up balance",
+                        "const": "Balance replenishment",
                         "readOnly": true
                     },
                     "Bonus_refill": {

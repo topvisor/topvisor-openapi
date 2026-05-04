@@ -10,6 +10,10 @@
             "I18n.Sites.Thundo.Organization": {
                 "type": "object",
                 "properties": {
+                    "Name_in": {
+                        "const": "Thundo",
+                        "readOnly": true
+                    },
                     "Description": {
                         "const": "Thundo is top SEO tool for rank tracking, SERP analysis, and website optimization. Track rankings, analyze competitors, and boost organic traffic with our top SEO tools.",
                         "readOnly": true

@@ -1205,12 +1205,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-      description: |-
-        @phpstan-type Informer array{count: int, lastDate: ?string}
-        @phpstan-type TicketsInfo array{no_readed_count: ?int, ticket_id: ?int, ticket_time: ?string}
-        @phpstan-type BankInfoTariff array{system: string, next_requisites_id: string, next_to_diadoc: int, months_left: int, state_time_end: string, state_method_info: string, state_status: Bank_2\Types\Subscriptions\Status, balance: float, id: int, name: string, price: int, discount: int, next_id: int, next_name: string, next_price: int, next_discount: int}
-        @phpstan-type BankInfo array{type: ('balance' | 'limits'), balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff?: BankInfoTariff, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: string}
-        @phpstan-type UserAdditional array{refIsAllowed: bool, csvDelimiter: string, charset: string, currencyData: array{name: string, precision: int, prefix: string, suffix: string, prefix_ico: string, suffix_ico: string, label: string}, ip: string, timezoneOffset: int, useArchiveTariff: int, informer?: (Informer | stdClass), ticketsInfo?: (TicketsInfo | stdClass), bankInfo?: (BankInfo | stdClass), useDiadoc?: bool, mayChangeCurrency?: bool}
   /add/votes_2/:
     post:
       operationId: AddVotes2
@@ -11077,10 +11071,6 @@ paths:
       tags:
         - Projects_2
       summary: Получение данных графика
-      description: |-
-        @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
-        @phpstan-type ChartData array<string, ChartCoords>
-        @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<string, list<mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
       requestBody:
         content:
           application/json:
@@ -27222,8 +27212,6 @@ components:
         - groupBy
       title: Заголовки отчета истории позиций
       description: |-
-        @phpstan-import-type Searcher from Positions_2\Mods\Searchers\Interfaces\Searcher
-        @phpstan-type Summaries array{topsByDepth: array<int, array<string, float>>, visitors: array<string, int>}
         @property Positions_2\Types\History\HistoryFields $historyFields
         @property list<Project> $projects
     Positions_2.Objects.History.Result.Result:
@@ -40208,10 +40196,6 @@ components:
         - data
         - project_id
       title: Получение данных графика
-      description: |-
-        @phpstan-type ChartCoords array<int, array{0: (int | string), 1: (float | int | string | null)}>
-        @phpstan-type ChartData array<string, ChartCoords>
-        @phpstan-type ChartRequestData array{period?: (int | string), date1?: string, date2?: string, base_filter_values?: array<string, list<mixed>>, searcher?: string, region?: string, competitor?: (int | string), phrase?: string, group?: string, folder?: string, tag?: (int | string | array<int, (int | string)>), top?: (int | string)}
     Projects_2.Methods.Analytics.Graph.Get.Exec:
       title: Выполнить построение данных графика
       nullable: true

@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         "I18n.Sites.Thundo.Organization": {
             /** @constant */
+            readonly Name_in?: "Thundo";
+            /** @constant */
             readonly Description?: "Thundo is top SEO tool for rank tracking, SERP analysis, and website optimization. Track rankings, analyze competitors, and boost organic traffic with our top SEO tools.";
             /** @constant */
             readonly Street_address: "5/14 Moo 8, BTC Building, 3rd Floor, Room No. 303";

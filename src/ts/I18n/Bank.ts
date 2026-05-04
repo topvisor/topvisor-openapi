@@ -29,7 +29,7 @@ export interface components {
             /** @constant */
             readonly Not_enough_balance_limit2: " if you need to raise the limit";
             /** @constant */
-            readonly Refill_balance: "Top up balance";
+            readonly Refill_balance: "Balance replenishment";
             /** @constant */
             readonly Bonus_refill: "Bonus for balance top-up";
             /** @constant */

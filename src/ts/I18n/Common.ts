@@ -297,6 +297,8 @@ export interface components {
             /** @constant */
             readonly at: "at";
             /** @constant */
+            readonly in: "in";
+            /** @constant */
             readonly To: "Until";
             /** @constant */
             readonly Until: "Up to ";
@@ -950,8 +952,6 @@ export interface components {
             readonly Contact_us: "Contact us";
             /** @constant */
             readonly Competitor_analysis: "Competitor research";
-            /** @constant */
-            readonly Refill_balance: "Top up your balance";
             /** @constant */
             readonly Median: "Median";
             /** @constant */
