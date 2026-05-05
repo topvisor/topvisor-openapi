@@ -237,6 +237,10 @@
                     "Answer_in_html": {
                         "const": "HTML answer",
                         "readOnly": true
+                    },
+                    "Delete_group_warning": {
+                        "const": "<b>Внимание!</b> Удаление группы приведет к удалению всех промптов внутри группы.",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -296,7 +300,8 @@
                     "Already_started",
                     "Please_add_prompts",
                     "Please_select_neural_networks",
-                    "Answer_in_html"
+                    "Answer_in_html",
+                    "Delete_group_warning"
                 ]
             }
         }

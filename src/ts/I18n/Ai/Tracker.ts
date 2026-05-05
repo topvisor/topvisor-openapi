@@ -122,6 +122,8 @@ export interface components {
             readonly Please_select_neural_networks: "Please, select neural networks";
             /** @constant */
             readonly Answer_in_html: "HTML answer";
+            /** @constant */
+            readonly Delete_group_warning: "<b>Внимание!</b> Удаление группы приведет к удалению всех промптов внутри группы.";
         };
     };
     responses: never;
