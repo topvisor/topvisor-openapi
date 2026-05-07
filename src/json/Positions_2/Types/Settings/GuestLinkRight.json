@@ -15,7 +15,6 @@
                     "visitors",
                     "dates",
                     "summary",
-                    "graphics",
                     "charts",
                     "competitors"
                 ],
@@ -25,7 +24,6 @@
                     "Visitors",
                     "Dates",
                     "Summary",
-                    "Graphics",
                     "Charts",
                     "Competitors"
                 ],
@@ -35,7 +33,6 @@
                     "Трафик",
                     "Выбор дат",
                     "Сводка",
-                    "Расширенная сводка",
                     "Расширенная сводка, графики",
                     "Конкуренты"
                 ],

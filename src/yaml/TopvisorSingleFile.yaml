@@ -27390,7 +27390,6 @@ components:
         - visitors
         - dates
         - summary
-        - graphics
         - charts
         - competitors
       x-enum-varnames:
@@ -27399,7 +27398,6 @@ components:
         - Visitors
         - Dates
         - Summary
-        - Graphics
         - Charts
         - Competitors
       x-enum-descriptions:
@@ -27408,7 +27406,6 @@ components:
         - Трафик
         - Выбор дат
         - Сводка
-        - Расширенная сводка
         - Расширенная сводка, графики
         - Конкуренты
       title: Право для гостевых ссылок

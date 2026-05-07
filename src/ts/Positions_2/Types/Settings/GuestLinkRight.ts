@@ -11,7 +11,7 @@ export interface components {
          * Право для гостевых ссылок
          * @enum {string}
          */
-        "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "graphics" | "charts" | "competitors";
+        "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "charts" | "competitors";
     };
     responses: never;
     parameters: never;
