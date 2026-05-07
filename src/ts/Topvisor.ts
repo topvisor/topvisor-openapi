@@ -6949,40 +6949,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправить тестовый отчет */
-    "/edit/reports_2/aiTracker/sendTest/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditReports2AiTrackerSendTest"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Отправить тестовый отчет */
-    "/edit/reports_2/positions/sendTest/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditReports2PositionsSendTest"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта */
     "/get/schedule_2/settings/emailsHints/": {
         parameters: {
@@ -19254,56 +19220,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Quiz_2/Methods/QuestionsResponses/Multi/Add.ts').components['schemas']['Quiz_2.Methods.QuestionsResponses.Multi.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditReports2AiTrackerSendTest: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Reports_2/Methods/AiTracker/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.AiTracker.SendTest.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Reports_2/Methods/AiTracker/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.AiTracker.SendTest.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditReports2PositionsSendTest: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Reports_2/Methods/Positions/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.Positions.SendTest.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Reports_2/Methods/Positions/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.Positions.SendTest.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

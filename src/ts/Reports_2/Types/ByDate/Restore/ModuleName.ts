@@ -7,12 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправить тестовый отчет */
-        "Reports_2.Methods.AiTracker.SendTest.Edit": {
-            /** Id проекта, по которому необходимо отправить тестовый отчет */
-            project_id: number;
-        };
-        "Reports_2.Methods.AiTracker.SendTest.Edit.Exec": number;
+        /**
+         * Модуль для восстановления проверки
+         * @enum {string}
+         */
+        "Reports_2.Types.ByDate.Restore.ModuleName": "positions" | "aiTracker";
     };
     responses: never;
     parameters: never;
