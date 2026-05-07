@@ -27391,6 +27391,7 @@ components:
         - dates
         - summary
         - graphics
+        - charts
         - competitors
       x-enum-varnames:
         - Volume
@@ -27399,6 +27400,7 @@ components:
         - Dates
         - Summary
         - Graphics
+        - Charts
         - Competitors
       x-enum-descriptions:
         - Частота запросов
@@ -27407,6 +27409,7 @@ components:
         - Выбор дат
         - Сводка
         - Расширенная сводка
+        - Расширенная сводка, графики
         - Конкуренты
       title: Право для гостевых ссылок
     Positions_2.Types.Settings.GuestLinkRights:
