@@ -47,7 +47,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
+                "title": "Изменение настроек ИИ-Трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
                 "description": "@see \\Services\\AiTracker_2\\Objects\\Settings"
             },
             "AiTracker_2.Methods.Settings.Edit.Exec": {

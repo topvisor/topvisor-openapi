@@ -1293,7 +1293,7 @@ paths:
       operationId: DelAiTracker2History
       tags:
         - AiTracker_2
-      summary: Удаление проверки ai-трекера
+      summary: Удаление проверки ИИ-Трекера
       requestBody:
         content:
           application/json:
@@ -1354,7 +1354,7 @@ paths:
       tags:
         - AiTracker_2
       summary: |-
-        Изменение настроек AI-трекера
+        Изменение настроек ИИ-Трекера
 
         Для получения текущих настроек используйте: /get/projects_2/projects/
       description: '@see \Services\AiTracker_2\Objects\Settings'
@@ -1385,7 +1385,7 @@ paths:
       operationId: GetAiTracker2Settings
       tags:
         - AiTracker_2
-      summary: Получение настроек ai трекера
+      summary: Получение настроек ИИ-Трекера
       requestBody:
         content:
           application/json:
@@ -4754,7 +4754,7 @@ paths:
       operationId: DelPositions2History
       tags:
         - Positions_2
-      summary: Удаление проверки позииций
+      summary: Удаление проверки позиций
       requestBody:
         content:
           application/json:
@@ -7099,7 +7099,7 @@ paths:
       operationId: EditAiTracker2CheckerGo
       tags:
         - AiTracker_2
-      summary: Отправка проектов на проверку ai-трекера
+      summary: Отправка проектов на проверку ИИ-Трекера
       requestBody:
         content:
           application/json:
@@ -7160,7 +7160,7 @@ paths:
       operationId: GetAiTracker2HistoryExport
       tags:
         - AiTracker_2
-      summary: Экспорт результатов AI-Трекера
+      summary: Экспорт результатов ИИ-Трекера
       description: '@todo Объединить с Positions_2\Methods\History\Export\Get'
       requestBody:
         content:
@@ -18762,7 +18762,7 @@ components:
       required:
         - date
         - project_id
-      title: Удаление проверки ai-трекера
+      title: Удаление проверки ИИ-Трекера
     AiTracker_2.Methods.History.Del.Exec:
       type: integer
     AiTracker_2.Types.History.HistoryField:
@@ -19367,7 +19367,7 @@ components:
       required:
         - project_id
       title: |-
-        Изменение настроек AI-трекера
+        Изменение настроек ИИ-Трекера
 
         Для получения текущих настроек используйте: /get/projects_2/projects/
       description: '@see \Services\AiTracker_2\Objects\Settings'
@@ -19384,7 +19384,7 @@ components:
           type: integer
       required:
         - project_id
-      title: Получение настроек ai трекера
+      title: Получение настроек ИИ-Трекера
     AiTracker_2.Methods.Settings.Get.Exec:
       title: Настройки aiTracker проекта
       nullable: true
@@ -26822,7 +26822,7 @@ components:
       required:
         - date
         - project_id
-      title: Удаление проверки позииций
+      title: Удаление проверки позиций
     Positions_2.Methods.History.Del.Exec:
       type: integer
     Positions_2.Types.History.HistoryField:
@@ -31823,7 +31823,7 @@ components:
           nullable: true
           type: integer
       required: []
-      title: Отправка проектов на проверку ai-трекера
+      title: Отправка проектов на проверку ИИ-Трекера
     AiTracker_2.Methods.Checker.Go.Edit.Exec:
       title: Список id проектов, отправленных на проверку
       type: object
@@ -32055,7 +32055,7 @@ components:
         - history_fields
         - models_keys
         - project_id
-      title: Экспорт результатов AI-Трекера
+      title: Экспорт результатов ИИ-Трекера
       description: '@todo Объединить с Positions_2\Methods\History\Export\Get'
     AiTracker_2.Methods.History.Export.Get.Exec:
       title: Результаты индексации

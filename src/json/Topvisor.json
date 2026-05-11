@@ -2172,7 +2172,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Удаление проверки ai-трекера",
+                "summary": "Удаление проверки ИИ-Трекера",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2286,7 +2286,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Изменение настроек AI-трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
+                "summary": "Изменение настроек ИИ-Трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
                 "description": "@see \\Services\\AiTracker_2\\Objects\\Settings",
                 "requestBody": {
                     "content": {
@@ -2340,7 +2340,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Получение настроек ai трекера",
+                "summary": "Получение настроек ИИ-Трекера",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8646,7 +8646,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Удаление проверки позииций",
+                "summary": "Удаление проверки позиций",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -12996,7 +12996,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Отправка проектов на проверку ai-трекера",
+                "summary": "Отправка проектов на проверку ИИ-Трекера",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -13111,7 +13111,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Экспорт результатов AI-Трекера",
+                "summary": "Экспорт результатов ИИ-Трекера",
                 "description": "@todo Объединить с Positions_2\\Methods\\History\\Export\\Get",
                 "requestBody": {
                     "content": {

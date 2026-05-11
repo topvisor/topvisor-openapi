@@ -171,7 +171,7 @@
                     "models_keys",
                     "project_id"
                 ],
-                "title": "Экспорт результатов AI-Трекера",
+                "title": "Экспорт результатов ИИ-Трекера",
                 "description": "@todo Объединить с Positions_2\\Methods\\History\\Export\\Get"
             },
             "AiTracker_2.Methods.History.Export.Get.Exec": {

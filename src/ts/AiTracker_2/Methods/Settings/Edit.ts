@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Изменение настроек AI-трекера
+         * Изменение настроек ИИ-Трекера
          *
          *     Для получения текущих настроек используйте: /get/projects_2/projects/
          * @description @see \Services\AiTracker_2\Objects\Settings

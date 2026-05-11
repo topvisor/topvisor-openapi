@@ -27,7 +27,7 @@
                     "date",
                     "project_id"
                 ],
-                "title": "Удаление проверки позииций"
+                "title": "Удаление проверки позиций"
             },
             "Positions_2.Methods.History.Del.Exec": {
                 "type": "integer"
