@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Модуль для восстановления проверки
+         * Имя сервиса, в котором ведутся проверки
          * @enum {string}
          */
         "Reports_2.Types.ByDate.ServiceName": "positions" | "aiTracker";
