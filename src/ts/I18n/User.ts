@@ -139,7 +139,7 @@ export interface components {
             /** @constant */
             readonly Logo_required_height_notice: "Max company logo height is";
             /** @constant */
-            readonly Cannot_form_report_without_updates: "At least one project update required to generate a report";
+            readonly Cannot_form_report_without_updates: "At least one project check and format required to generate a report";
             /** @constant */
             readonly logo_required_format: "required image formats: .png, .svg";
             /** @constant */

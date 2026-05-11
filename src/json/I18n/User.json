@@ -271,7 +271,7 @@
                         "readOnly": true
                     },
                     "Cannot_form_report_without_updates": {
-                        "const": "At least one project update required to generate a report",
+                        "const": "At least one project check and format required to generate a report",
                         "readOnly": true
                     },
                     "logo_required_format": {
