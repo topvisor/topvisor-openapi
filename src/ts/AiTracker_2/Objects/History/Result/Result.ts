@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат истории AI-трекера */
+        /** Результат истории ИИ-Трекера */
         "AiTracker_2.Objects.History.Result.Result": {
             headers?: (import('../Headers/Headers.ts').components['schemas']['AiTracker_2.Objects.History.Headers.Headers'] & import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders']) | null;
             /** Список промптов с данными */

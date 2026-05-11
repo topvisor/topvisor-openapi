@@ -19253,7 +19253,7 @@ components:
             type: string
       required:
         - keywords
-      title: Результат истории AI-трекера
+      title: Результат истории ИИ-Трекера
     AiTracker_2.Methods.History.Get.Exec:
       allOf:
         - $ref: '#/components/schemas/AiTracker_2.Objects.History.Result.Result'

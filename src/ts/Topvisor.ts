@@ -711,7 +711,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление проверки ai-трекера */
+    /** Удаление проверки ИИ-Трекера */
     "/del/aiTracker_2/history/": {
         parameters: {
             query?: never;
@@ -746,7 +746,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Изменение настроек AI-трекера
+     * Изменение настроек ИИ-Трекера
      *
      *     Для получения текущих настроек используйте: /get/projects_2/projects/
      * @description @see \Services\AiTracker_2\Objects\Settings
@@ -767,7 +767,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение настроек ai трекера */
+    /** Получение настроек ИИ-Трекера */
     "/get/aiTracker_2/settings/": {
         parameters: {
             query?: never;
@@ -2715,7 +2715,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление проверки позииций */
+    /** Удаление проверки позиций */
     "/del/positions_2/history/": {
         parameters: {
             query?: never;
@@ -4135,7 +4135,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку ai-трекера */
+    /** Отправка проектов на проверку ИИ-Трекера */
     "/edit/aiTracker_2/checker/go/": {
         parameters: {
             query?: never;
@@ -4169,7 +4169,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Экспорт результатов AI-Трекера
+     * Экспорт результатов ИИ-Трекера
      * @description @todo Объединить с Positions_2\Methods\History\Export\Get
      */
     "/get/aiTracker_2/history/export/": {
