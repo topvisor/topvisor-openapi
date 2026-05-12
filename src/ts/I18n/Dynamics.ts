@@ -169,7 +169,7 @@ export interface components {
             /** @constant */
             readonly Calendar_legend_yandex_update: "Yandex update";
             /** @constant */
-            readonly Sort_keywords: "Sort";
+            readonly Sort_keywords: "Sorting";
             /** @constant */
             readonly Filter: "Filter";
             /** @constant */

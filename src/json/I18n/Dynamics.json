@@ -331,7 +331,7 @@
                         "readOnly": true
                     },
                     "Sort_keywords": {
-                        "const": "Sort",
+                        "const": "Sorting",
                         "readOnly": true
                     },
                     "Filter": {
