@@ -29481,7 +29481,7 @@ components:
 
         Вернет имя директории в случае создания директории или bool при загрузке файла
     System_2.Methods.Cloud.Add.Exec:
-      nullable: true
+      type: boolean
     System_2.Methods.Cloud.Del:
       type: object
       properties:

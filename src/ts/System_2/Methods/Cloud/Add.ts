@@ -20,7 +20,7 @@ export interface components {
             /** Данные файла, если не указано - считается, что создается папка */
             file?: string;
         };
-        "System_2.Methods.Cloud.Add.Exec": unknown;
+        "System_2.Methods.Cloud.Add.Exec": boolean;
     };
     responses: never;
     parameters: never;
