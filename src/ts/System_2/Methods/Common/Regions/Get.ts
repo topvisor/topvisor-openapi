@@ -18,7 +18,7 @@ export interface components {
             only_countries?: boolean;
             /** ID регионов для получения */
             regions_keys?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Отображать только регионы, существующие в проекте */
+            /** Отображать только регионы, добавленные в проект в указанной ПС */
             for_project_id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате

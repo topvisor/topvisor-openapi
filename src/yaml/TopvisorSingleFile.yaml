@@ -41626,7 +41626,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         for_project_id:
-          title: Отображать только регионы, существующие в проекте
+          title: Отображать только регионы, добавленные в проект в указанной ПС
           nullable: true
           type: integer
         limit:
