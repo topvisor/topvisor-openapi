@@ -17,7 +17,7 @@ export interface components {
             /** Искать только страны */
             only_countries?: boolean;
             /** ID регионов для получения */
-            region_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            regions_keys?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
              * Количество объектов, которые необходимо получить в результате
              *

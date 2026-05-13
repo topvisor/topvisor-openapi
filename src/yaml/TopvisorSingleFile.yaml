@@ -41620,7 +41620,7 @@ components:
         only_countries:
           title: Искать только страны
           type: boolean
-        region_ids:
+        regions_keys:
           title: ID регионов для получения
           nullable: true
           allOf:
