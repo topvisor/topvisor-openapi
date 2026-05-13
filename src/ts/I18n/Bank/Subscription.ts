@@ -13,7 +13,7 @@ export interface components {
                 positions_tasks: {
                     name: "Rank Checks";
                     extendedName: "rank check tasks daily";
-                    description: "Total number of tasks, that are performed every day.\n\t\t\tA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
+                    description: "Total number of tasks, that are performed every day.\n\t\t\tA check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
                     exceeding: "Overall limit of rank checking tasks reached";
                     exceedingDescription: "Keywords * Locations (considering parse depth)";
                 };
@@ -27,21 +27,21 @@ export interface components {
                 positions_check_manual: {
                     name: "Manual Rechecks";
                     extendedName: "rechecks daily";
-                    description: "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse rechecks to update rankings in your reports if they were affected by <a href=\"https://thundo.com/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.<br><br>\n\t\t\t<a href=\"https://thundo.com/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
+                    description: "The number of rechecks you can launch every day. 1 recheck = 1 task. A check (task) is a rank checking for 1 keyword in 1 search engine, 1 location and 1 device type.<br><br>\n\t\t\tUse rechecks to update rankings in your reports if they were affected by <a href=\"{{ $site.host }}/thundostorm/\" target=\"_blank\">SERP volatility</a> or Google Dance or if you just want to refresh some data.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/rank-tracker/\" target=\"_blank\">More on Rank Tracker →</a>";
                     exceeding: "Daily limit of position rechecks reached";
                     exceedingDescription: "";
                 };
                 keywords_volumes: {
                     name: "Search Volume";
                     extendedName: "search volume checks";
-                    description: "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.<br><br>\n\t\t\t<a href=\"https://thundo.com/support/volume/\" target=\"_blank\">More on Search Volume Checker →</a>";
+                    description: "Total number of tasks you can launch within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London. Or checking of 1000 keywords в Google New York 5 times a month.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/volume/\" target=\"_blank\">More on Search Volume Checker →</a>";
                     exceeding: "Monthly limit of search volume checks reached";
                     exceedingDescription: "";
                 };
                 keywords_collect: {
                     name: "Semantic Core Research";
                     extendedName: "tasks for semantic research";
-                    description: "Total number of semantic core extension tasks you can launch within a month.\n\t\t\tSemantic core extension tools include <a href=\"https://thundo.com/keyword-research/\" target=\"_blank\">Keyword Research Tool</a> and <a href=\"https://thundo.com/search-suggestions/\" target=\"_blank\">Search Suggestions Tool</a>.\n\t\t\tA task is a semantics extension for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 100 tasks is using Keyword Research and Search Suggestions tools for 50 keywords в Google New York each. Or using Search Suggestions Tool for 20 keywords in Google London 5 times a month.";
+                    description: "Total number of semantic core extension tasks you can launch within a month.\n\t\t\tSemantic core extension tools include <a href=\"https://{{ $site.host }}/keyword-research/\" target=\"_blank\">Keyword Research Tool</a> and <a href=\"{{ $site.host }}/search-suggestions/\" target=\"_blank\">Search Suggestions Tool</a>.\n\t\t\tA task is a semantics extension for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 100 tasks is using Keyword Research and Search Suggestions tools for 50 keywords в Google New York each. Or using Search Suggestions Tool for 20 keywords in Google London 5 times a month.";
                     exceeding: "Monthly limit of keyword collection reached";
                 };
                 projects: {

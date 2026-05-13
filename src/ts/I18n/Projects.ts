@@ -59,7 +59,7 @@ export interface components {
             /** @constant */
             readonly Searcher_not_found: "Search engine not found";
             /** @constant */
-            readonly Delegating_impossible2?: "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://topvisor.com/support/bank/currency/";
+            readonly Delegating_impossible2: "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://{{ $site.host }}/support/bank/currency/";
             /** @constant */
             readonly You_are_owner: "You are the project owner already";
             /** @constant */

@@ -111,7 +111,7 @@
                         "readOnly": true
                     },
                     "Delegating_impossible2": {
-                        "const": "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://topvisor.com/support/bank/currency/",
+                        "const": "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://{{ $site.host }}/support/bank/currency/",
                         "readOnly": true
                     },
                     "You_are_owner": {
@@ -1009,6 +1009,7 @@
                     "Region_not_available",
                     "Project_not_available_for_Youtube",
                     "Searcher_not_found",
+                    "Delegating_impossible2",
                     "You_are_owner",
                     "Add_to_favorites",
                     "User_not_exists",
