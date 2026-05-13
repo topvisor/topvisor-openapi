@@ -95,7 +95,9 @@ export interface components {
             /** @constant */
             readonly Positions_check_with_snippets: "Keyword ranking and snippets report for";
             /** @constant */
-            readonly Project_has_no_tasks: "Add keywords: <a href=\"/project/keywords/%projectId%\">https://{{ $site.host }}/project/keywords/%projectId%</a>. Add search engines and locations: <a href=\"/project/settings/%projectId%\">https://{{ $site.host }}/project/settings/%projectId%</a>";
+            readonly Project_has_no_tasks: "Add keywords: <a href=\"/project/keywords/{{ projectId }}\">https://{{ $site.host }}/project/keywords/{{ projectId }}</a>. Add search engines and locations: <a href=\"/project/settings/{{ projectId }}\">https://{{ $site.host }}/project/settings/{{ projectId }}</a>";
+            /** @constant */
+            readonly Project_has_no_regions: "Add search engines and locations: <a href=\"/project/settings/{{ projectId }}\">https://{{ $site.host }}/project/settings/{{ projectId }}</a>";
             /** @constant */
             readonly Keyword_ranking_already_started: "Keyword ranking already started";
             /** @constant */
