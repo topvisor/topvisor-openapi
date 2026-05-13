@@ -695,7 +695,7 @@
                         "readOnly": true
                     },
                     "Shortener_add_url_here": {
-                        "const": "Paste URL http://... and press Enter",
+                        "const": "Paste URL https://... and press Enter",
                         "readOnly": true
                     },
                     "Shortener_search_url": {

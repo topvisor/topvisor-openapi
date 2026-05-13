@@ -351,7 +351,7 @@ export interface components {
             /** @constant */
             readonly Shortener_url_shortener: "{{ siteName }} URL Shortener: customize, share and track your links!";
             /** @constant */
-            readonly Shortener_add_url_here: "Paste URL http://... and press Enter";
+            readonly Shortener_add_url_here: "Paste URL https://... and press Enter";
             /** @constant */
             readonly Shortener_search_url: "Search URL...";
             /** @constant */

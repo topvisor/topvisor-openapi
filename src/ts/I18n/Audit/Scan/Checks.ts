@@ -40,14 +40,14 @@ export interface components {
             readonly domain_check_www_redirect_exists: {
                 title: "www redirect found";
                 title_negative: "No www redirect";
-                description: "Search engines consider URLs with and without www as different pages. We check redirects this way: we send requests to http://www.example.com/ and http://example.com/. If the final protocol (or redirecting URL) is the same, there will be no warning.\n\t\tRegardless of which domain is the main one — with www or viсe versa — set up the redirect, otherwise it may lead to negative impact on rankings and cause duplicate content issues.";
+                description: "Search engines consider URLs with and without www as different pages. We check redirects this way: we send requests to https://www.example.com/ and https://example.com/. If the final protocol (or redirecting URL) is the same, there will be no warning.\n\t\tRegardless of which domain is the main one — with www or viсe versa — set up the redirect, otherwise it may lead to negative impact on rankings and cause duplicate content issues.";
                 resolve: "Set up redirect to the version that should be the main one.";
             };
             /** @constant */
             readonly domain_check_ssl_redirect_exists: {
                 title: "HTTP/HTTPS redirect found";
                 title_negative: "No HTTP/HTTPS redirect";
-                description: "Search engines consider URLs with HTTP and HTTPS as different pages. We check redirects this way: we send requests to http://example.com/ and https://example.com/. If the final protocol (or redirecting URL) is the same, there will be no warning.\n\t\tAlso HTTPS protocol supports secure encryption. Google <a href=\"https://developers.google.com/search/blog/2014/08/https-as-ranking-signal\" target=\"_blank\">considers HTTPS a ranking factor</a>, so it's strictly recommended to do use HTTPS.";
+                description: "Search engines consider URLs with HTTP and HTTPS as different pages. We check redirects this way: we send requests to https://example.com/ and https://example.com/. If the final protocol (or redirecting URL) is the same, there will be no warning.\n\t\tAlso HTTPS protocol supports secure encryption. Google <a href=\"https://developers.google.com/search/blog/2014/08/https-as-ranking-signal\" target=\"_blank\">considers HTTPS a ranking factor</a>, so it's strictly recommended to do use HTTPS.";
                 resolve: "Set up redirect from HTTP to HTTPS.";
             };
             /** @constant */
