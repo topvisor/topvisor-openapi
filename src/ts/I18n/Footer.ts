@@ -73,6 +73,8 @@ export interface components {
             /** @constant */
             readonly Jobs?: "Work in Topvisor";
             /** @constant */
+            readonly Brand: "Branding";
+            /** @constant */
             readonly Sales: "Sales";
             /** @constant */
             readonly Help: "Help & Support";

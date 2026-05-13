@@ -138,6 +138,10 @@
                         "const": "Work in Topvisor",
                         "readOnly": true
                     },
+                    "Brand": {
+                        "const": "Branding",
+                        "readOnly": true
+                    },
                     "Sales": {
                         "const": "Sales",
                         "readOnly": true
@@ -362,6 +366,7 @@
                     "API",
                     "Referrals",
                     "Pricing",
+                    "Brand",
                     "Sales",
                     "Help",
                     "Help_center",
