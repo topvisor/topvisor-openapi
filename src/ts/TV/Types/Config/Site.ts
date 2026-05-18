@@ -88,6 +88,8 @@ export interface components {
             readonly SUBDOMAINS: unknown[];
             /** Список поддерживаемых тем оформления */
             readonly THEMES: unknown[];
+            /** Список сервисов, доступных для переноса на сайте */
+            readonly MIGRATION_SOURCE_DOMAINS: unknown[];
             /**
              * Почта рассыльщика
              *

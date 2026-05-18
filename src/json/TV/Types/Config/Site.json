@@ -92,6 +92,11 @@
                         "readOnly": true,
                         "type": "array"
                     },
+                    "MIGRATION_SOURCE_DOMAINS": {
+                        "title": "Список сервисов, доступных для переноса на сайте",
+                        "readOnly": true,
+                        "type": "array"
+                    },
                     "MAILING_EMAIL": {
                         "title": "Почта рассыльщика\n\nОна же используется в тикетнице",
                         "readOnly": true,
@@ -177,6 +182,7 @@
                     "CURRENCIES",
                     "SUBDOMAINS",
                     "THEMES",
+                    "MIGRATION_SOURCE_DOMAINS",
                     "MAILING_EMAIL",
                     "MAILING_ALT_EMAIL",
                     "SUPPORT_EMAIL",
