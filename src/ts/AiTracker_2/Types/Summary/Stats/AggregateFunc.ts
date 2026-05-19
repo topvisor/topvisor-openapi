@@ -11,7 +11,7 @@ export interface components {
          * Агрегатная функция для расчета показателей сводки
          * @enum {string}
          */
-        "AiTracker_2.Types.Summary.Stats.AggregateFunc": "countMentioned";
+        "AiTracker_2.Types.Summary.Stats.AggregateFunc": "countMentioned" | "visibility";
     };
     responses: never;
     parameters: never;

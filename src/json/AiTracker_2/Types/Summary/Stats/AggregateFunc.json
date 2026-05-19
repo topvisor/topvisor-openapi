@@ -10,13 +10,16 @@
             "AiTracker_2.Types.Summary.Stats.AggregateFunc": {
                 "type": "string",
                 "enum": [
-                    "countMentioned"
+                    "countMentioned",
+                    "visibility"
                 ],
                 "x-enum-varnames": [
-                    "CountMentioned"
+                    "CountMentioned",
+                    "Visibility"
                 ],
                 "x-enum-descriptions": [
-                    "Количество упоминаний в ответах ИИ"
+                    "Количество упоминаний в ответах ИИ",
+                    "Видимость бренда в ответах ИИ"
                 ],
                 "title": "Агрегатная функция для расчета показателей сводки"
             }

@@ -12,6 +12,10 @@ export interface components {
             model_key: unknown;
             /** Отобразить данные по количеству упоминаний */
             show_count_mentioned?: boolean;
+            /** Отобразить данные по видимости */
+            show_visibility?: boolean;
+            /** Отобразить данные по тональности */
+            show_sentiments?: boolean;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */

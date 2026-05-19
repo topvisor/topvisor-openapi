@@ -19462,6 +19462,12 @@ components:
         show_count_mentioned:
           title: Отобразить данные по количеству упоминаний
           type: boolean
+        show_visibility:
+          title: Отобразить данные по видимости
+          type: boolean
+        show_sentiments:
+          title: Отобразить данные по тональности
+          type: boolean
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
