@@ -495,11 +495,11 @@
                         "readOnly": true
                     },
                     "Serp_features_aiOverview": {
-                        "const": "AI overviews",
+                        "const": "AI Overviews",
                         "readOnly": true
                     },
                     "Serp_features_aiOverviewPreview": {
-                        "const": "AI overviews (Preview)",
+                        "const": "AI Overviews (Preview)",
                         "readOnly": true
                     },
                     "Serp_features_pictures": {

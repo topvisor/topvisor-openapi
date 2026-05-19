@@ -251,9 +251,9 @@ export interface components {
             /** @constant */
             readonly Serp_features_knowledge: "Knowledge";
             /** @constant */
-            readonly Serp_features_aiOverview: "AI overviews";
+            readonly Serp_features_aiOverview: "AI Overviews";
             /** @constant */
-            readonly Serp_features_aiOverviewPreview: "AI overviews (Preview)";
+            readonly Serp_features_aiOverviewPreview: "AI Overviews (Preview)";
             /** @constant */
             readonly Serp_features_pictures: "Pictures";
             /** @constant */
