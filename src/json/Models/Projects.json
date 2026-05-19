@@ -297,6 +297,60 @@
                     },
                     "ai_tracker_summary_count_mentioned": {
                         "nullable": true
+                    },
+                    "guest_link_right_summary": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "tool_name"
+                            ]
+                        }
+                    },
+                    "guest_link_right_charts": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "tool_name"
+                            ]
+                        }
+                    },
+                    "guest_link_right_competitors": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "tool_name"
+                            ]
+                        }
+                    },
+                    "guest_link_right_calendar": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "tool_name"
+                            ]
+                        }
+                    },
+                    "guest_link_right_volumes": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "tool_name"
+                            ]
+                        }
+                    },
+                    "guest_link_right_visitors": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "tool_name"
+                            ]
+                        }
                     }
                 }
             }

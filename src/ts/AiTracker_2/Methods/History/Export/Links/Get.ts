@@ -18,8 +18,6 @@ export interface components {
             tags_ids?: unknown[] | null;
             /** Сортировка данных */
             data_sort?: unknown[] | null;
-            /** ID проекта */
-            project_id: number;
             /**
              * Произвольные даты без использования диапазона
              *
@@ -61,8 +59,9 @@ export interface components {
              * @default 7
              */
             period_days?: number;
+            /** ID проекта */
+            project_id: number;
         };
-        /** Короткая гостевая ссылка на просмотр ИИ-трекера */
         "AiTracker_2.Methods.History.Export.Links.Get.Exec": string | null;
     };
     responses: never;

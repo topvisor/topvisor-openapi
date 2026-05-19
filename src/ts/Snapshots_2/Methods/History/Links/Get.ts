@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Создание гостевой ссылки на просмотр снимков выдачи */
         "Snapshots_2.Methods.History.Links.Get": {
-            /** Id проекта */
-            project_id: number;
             /**
              * Просматриваемые снимки
              *     - 1 - snapshots
@@ -24,16 +22,6 @@ export interface components {
             view_snapshots?: boolean;
             /** Id запроса */
             id?: number | null;
-            /** Произвольные даты без использования диапазона */
-            dates?: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
-            /** Дата начала диапазона */
-            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Дата конца диапазона */
-            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Тип диапазона дат */
-            type_range?: number | null;
-            /** Количество дат в диапазоне */
-            count_dates?: number | null;
             /** Индекс региона */
             region_index?: number | null;
             /** Id папки */
@@ -50,8 +38,51 @@ export interface components {
             history_view?: number | null;
             /** Отображать описание конкурентов */
             competitors_show_summary?: number | null;
+            /**
+             * Произвольные даты без использования диапазона
+             *
+             *     Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+             */
+            dates?: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
+            /**
+             * Тип диапазона дат
+             * @default 2
+             */
+            type_range?: import('../../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
+            /**
+             * Дата начала диапазона
+             *
+             *     Используется вместе с date2 для задания диапазона дат
+             */
+            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /**
+             * Дата окончания диапазона
+             *
+             *     Используется вместе с date1 для задания диапазона дат
+             */
+            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /**
+             * Количество дат в диапазоне
+             *
+             *     Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             *
+             *     Работает совместно с `type_range`
+             * @default 31
+             */
+            count_dates?: number;
+            /**
+             * Период в днях
+             *
+             *     Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+             *
+             *     Не более 31
+             * @default 7
+             */
+            period_days?: number;
+            /** ID проекта */
+            project_id: number;
         };
-        "Snapshots_2.Methods.History.Links.Get.Exec": string;
+        "Snapshots_2.Methods.History.Links.Get.Exec": string | null;
     };
     responses: never;
     parameters: never;

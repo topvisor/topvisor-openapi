@@ -30,12 +30,12 @@
                         "title": "Внешние ссылки (используется на странице с просмотром проверки)",
                         "type": "string"
                     },
-                    "project_id": {
-                        "title": "ID проекта",
+                    "check_id": {
+                        "title": "ID проверки",
                         "type": "integer"
                     },
-                    "check_id": {
-                        "title": "ID проверки аудита",
+                    "project_id": {
+                        "title": "ID проекта",
                         "type": "integer"
                     }
                 },
@@ -43,13 +43,12 @@
                     "view_template",
                     "log_http_codes_hundreds",
                     "view_signal_type",
-                    "project_id",
-                    "check_id"
+                    "check_id",
+                    "project_id"
                 ],
                 "title": "Получение гостевой ссылки на просмотр аудита позиций"
             },
             "Audit_2.Methods.Audit.Export.Links.Get.Exec": {
-                "title": "Короткая гостевая ссылка на просмотр аудита позиций",
                 "nullable": true,
                 "type": "string"
             }

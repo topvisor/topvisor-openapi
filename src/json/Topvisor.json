@@ -28126,6 +28126,59 @@
                     }
                 }
             }
+        },
+        "/edit/reports_2/guestLink/": {
+            "post": {
+                "operationId": "EditReports2GuestLink",
+                "tags": [
+                    "Reports_2"
+                ],
+                "summary": "Редактирование прав гостевой ссылки для сервиса проекта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Reports_2/Methods/GuestLink/Edit.json#/components/schemas/Reports_2.Methods.GuestLink.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Reports_2/Methods/GuestLink/Edit.json#/components/schemas/Reports_2.Methods.GuestLink.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

@@ -10,10 +10,6 @@
             "Snapshots_2.Methods.History.Links.Get": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "Id проекта",
-                        "type": "integer"
-                    },
                     "snapshots_view": {
                         "title": "Просматриваемые снимки\n- 1 - snapshots\n- 2 - competitors",
                         "default": 1,
@@ -34,43 +30,6 @@
                     },
                     "id": {
                         "title": "Id запроса",
-                        "nullable": true,
-                        "type": "integer"
-                    },
-                    "dates": {
-                        "title": "Произвольные даты без использования диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
-                            }
-                        ]
-                    },
-                    "date1": {
-                        "title": "Дата начала диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "date2": {
-                        "title": "Дата конца диапазона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "type_range": {
-                        "title": "Тип диапазона дат",
-                        "nullable": true,
-                        "type": "integer"
-                    },
-                    "count_dates": {
-                        "title": "Количество дат в диапазоне",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -124,6 +83,56 @@
                         "title": "Отображать описание конкурентов",
                         "nullable": true,
                         "type": "integer"
+                    },
+                    "dates": {
+                        "title": "Произвольные даты без использования диапазона\n\nНеобходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "type_range": {
+                        "title": "Тип диапазона дат",
+                        "default": 2,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Reports_2/Types/TypeRange.json#/components/schemas/Reports_2.Types.TypeRange"
+                            }
+                        ]
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона\n\nИспользуется вместе с date2 для задания диапазона дат",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата окончания диапазона\n\nИспользуется вместе с date1 для задания диапазона дат",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "count_dates": {
+                        "title": "Количество дат в диапазоне\n\nМаксимальное значение ограничивается константой MAX_DATES конкретного модуля\n\nРаботает совместно с `type_range`",
+                        "default": 31,
+                        "type": "integer"
+                    },
+                    "period_days": {
+                        "title": "Период в днях\n\nИспользуется для алгоритма получения дат через равные промежутки (`type_range` = 6)\n\nНе более 31",
+                        "default": 7,
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
                     }
                 },
                 "required": [
@@ -132,6 +141,7 @@
                 "title": "Создание гостевой ссылки на просмотр снимков выдачи"
             },
             "Snapshots_2.Methods.History.Links.Get.Exec": {
+                "nullable": true,
                 "type": "string"
             }
         }

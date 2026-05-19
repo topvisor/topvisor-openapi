@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Methods.GuestLink.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Methods.GuestLink.Edit": {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "title": "Сервис отчёта",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Reports_2/Types/GuestLink/ToolName.json#/components/schemas/Reports_2.Types.GuestLink.ToolName"
+                            }
+                        ]
+                    },
+                    "summary": {
+                        "title": "Доступ к сводке",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "charts": {
+                        "title": "Доступ к графикам",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "competitors": {
+                        "title": "Доступ к конкурентам",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "calendar": {
+                        "title": "Доступ к выбору дат",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "volumes": {
+                        "title": "Доступ к просмотру частот",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "visitors": {
+                        "title": "Доступ к просмотру визитов",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "project_id"
+                ],
+                "title": "Редактирование прав гостевой ссылки для сервиса проекта"
+            },
+            "Reports_2.Methods.GuestLink.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -15319,6 +15319,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/reports_2/guestLink/:
+    post:
+      operationId: EditReports2GuestLink
+      tags:
+        - Reports_2
+      summary: Редактирование прав гостевой ссылки для сервиса проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reports_2.Methods.GuestLink.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Reports_2.Methods.GuestLink.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -24545,6 +24573,42 @@ components:
           nullable: true
         ai_tracker_summary_count_mentioned:
           nullable: true
+        guest_link_right_summary:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - tool_name
+        guest_link_right_charts:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - tool_name
+        guest_link_right_competitors:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - tool_name
+        guest_link_right_calendar:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - tool_name
+        guest_link_right_volumes:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - tool_name
+        guest_link_right_visitors:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - tool_name
     Example_2.Methods.Projects.Get.Exec:
       nullable: true
       type: array
@@ -33876,64 +33940,12 @@ components:
       title: Экспорт результатов индексации
     Audit_2.Methods.Indexing.Export.Get.Exec:
       nullable: true
-    Audit_2.Types.Indexing.TypeRange:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 7
-        - 100
-      x-enum-varnames:
-        - FullRange
-        - YandexUpdates
-        - Range
-        - TwoChecks
-        - OneCheck
-        - LastCheckOfMonth
-        - TwoLastChecks
-        - ListDates
-      x-enum-descriptions:
-        - Весь период без ограничений (недокументируемй парметр)
-        - Период с выполненными проверками (Только апдейты Яндекс)
-        - Период с выполненными проверками
-        - Две проверки
-        - Одна проверка
-        - Последняя проверка месяца
-        - Две последние даты проверок
-        - Произвольный список дат
-      title: Тип диапазона индексации
     Audit_2.Methods.Indexing.Links.Get:
       type: object
       properties:
         template_date_range:
           title: Диапазон значений шаблона
           type: string
-        dates:
-          title: Произвольные даты без использования диапазона
-          nullable: true
-          type: array
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          type: string
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          type: string
-        type_range:
-          title: Тип диапазона дат
-          nullable: true
-          default: 7
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
-        count_dates:
-          title: Количество дней в диапазоне
-          nullable: true
-          type: integer
         searchers_keys:
           title: Ппоисковые ключи
           nullable: true
@@ -33954,6 +33966,52 @@ components:
           title: Сортировка данных
           nullable: true
           type: array
+        type_range:
+          default: 7
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
+        dates:
+          title: |-
+            Произвольные даты без использования диапазона
+
+            Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        date1:
+          title: |-
+            Дата начала диапазона
+
+            Используется вместе с date2 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: |-
+            Дата окончания диапазона
+
+            Используется вместе с date1 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        count_dates:
+          title: |-
+            Количество дат в диапазоне
+
+            Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+
+            Работает совместно с `type_range`
+          default: 31
+          type: integer
+        period_days:
+          title: |-
+            Период в днях
+
+            Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+
+            Не более 31
+          default: 7
+          type: integer
         project_id:
           title: ID проекта
           type: integer
@@ -33965,7 +34023,6 @@ components:
 
         Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Links.Get.Exec:
-      title: Короткая гостевая ссылка на просмотр позиций
       nullable: true
       type: string
     Audit_2.Methods.Indexing.Summary.Get:
@@ -39591,26 +39648,6 @@ components:
           title: Шаблон диапазона дат
           nullable: true
           type: string
-        dates:
-          title: Массив дат
-          nullable: true
-          type: array
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          type: string
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          type: string
-        type_range:
-          title: Тип диапазона дат
-          nullable: true
-          type: integer
-        count_dates:
-          title: Количество дат
-          nullable: true
-          type: integer
         regions_indexes:
           title: Индексы регионов
           nullable: true
@@ -39679,12 +39716,60 @@ components:
         type_range_compare:
           title: Сравнение диапазонов типов
           nullable: true
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
         tags_ids:
           title: Массив тегов
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        dates:
+          title: |-
+            Произвольные даты без использования диапазона
+
+            Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        type_range:
+          title: Тип диапазона дат
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
+        date1:
+          title: |-
+            Дата начала диапазона
+
+            Используется вместе с date2 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: |-
+            Дата окончания диапазона
+
+            Используется вместе с date1 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        count_dates:
+          title: |-
+            Количество дат в диапазоне
+
+            Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+
+            Работает совместно с `type_range`
+          default: 31
+          type: integer
+        period_days:
+          title: |-
+            Период в днях
+
+            Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+
+            Не более 31
+          default: 7
+          type: integer
         project_id:
           title: ID проекта
           type: integer
@@ -39693,6 +39778,7 @@ components:
       title: Создание ссылки на просмотр динамики
     Positions_2.Methods.History.Links.Get.Exec:
       nullable: true
+      type: string
     Positions_2.Methods.History.Targets.Get:
       type: object
       properties:
@@ -41319,9 +41405,6 @@ components:
     Snapshots_2.Methods.History.Links.Get:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         snapshots_view:
           title: |-
             Просматриваемые снимки
@@ -41339,29 +41422,6 @@ components:
           type: boolean
         id:
           title: Id запроса
-          nullable: true
-          type: integer
-        dates:
-          title: Произвольные даты без использования диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.DateArray'
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        date2:
-          title: Дата конца диапазона
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        type_range:
-          title: Тип диапазона дат
-          nullable: true
-          type: integer
-        count_dates:
-          title: Количество дат в диапазоне
           nullable: true
           type: integer
         region_index:
@@ -41398,10 +41458,61 @@ components:
           title: Отображать описание конкурентов
           nullable: true
           type: integer
+        dates:
+          title: |-
+            Произвольные даты без использования диапазона
+
+            Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        type_range:
+          title: Тип диапазона дат
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
+        date1:
+          title: |-
+            Дата начала диапазона
+
+            Используется вместе с date2 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: |-
+            Дата окончания диапазона
+
+            Используется вместе с date1 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        count_dates:
+          title: |-
+            Количество дат в диапазоне
+
+            Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+
+            Работает совместно с `type_range`
+          default: 31
+          type: integer
+        period_days:
+          title: |-
+            Период в днях
+
+            Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+
+            Не более 31
+          default: 7
+          type: integer
+        project_id:
+          title: ID проекта
+          type: integer
       required:
         - project_id
       title: Создание гостевой ссылки на просмотр снимков выдачи
     Snapshots_2.Methods.History.Links.Get.Exec:
+      nullable: true
       type: string
     System_2.Methods.Api.GenKey.Edit:
       type: object
@@ -42291,9 +42402,6 @@ components:
           title: Сортировка данных
           nullable: true
           type: array
-        project_id:
-          title: ID проекта
-          type: integer
         dates:
           title: |-
             Произвольные даты без использования диапазона
@@ -42341,13 +42449,15 @@ components:
             Не более 31
           default: 7
           type: integer
+        project_id:
+          title: ID проекта
+          type: integer
       required:
         - models_keys
         - type_range_compare
         - project_id
       title: Получение гостевой ссылки на просмотр ИИ-Трекера
     AiTracker_2.Methods.History.Export.Links.Get.Exec:
-      title: Короткая гостевая ссылка на просмотр ИИ-трекера
       nullable: true
       type: string
     Audit_2.Methods.Audit.Checker.Go.Edit:
@@ -42431,21 +42541,20 @@ components:
         links_external:
           title: Внешние ссылки (используется на странице с просмотром проверки)
           type: string
+        check_id:
+          title: ID проверки
+          type: integer
         project_id:
           title: ID проекта
-          type: integer
-        check_id:
-          title: ID проверки аудита
           type: integer
       required:
         - view_template
         - log_http_codes_hundreds
         - view_signal_type
-        - project_id
         - check_id
+        - project_id
       title: Получение гостевой ссылки на просмотр аудита позиций
     Audit_2.Methods.Audit.Export.Links.Get.Exec:
-      title: Короткая гостевая ссылка на просмотр аудита позиций
       nullable: true
       type: string
     Audit_2.Methods.Audit.Export.Summary.Get:
@@ -42560,29 +42669,10 @@ components:
           title: Диапазон значений шаблона
           nullable: true
           type: string
-        dates:
-          title: Произвольные даты без использования диапазона
-          nullable: true
-          type: array
-        date1:
-          title: Дата начала диапазона
-          nullable: true
-          type: string
-        date2:
-          title: Дата окончания диапазона
-          nullable: true
-          type: string
-        type_range:
-          title: Тип диапазона дат
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
         type_range_compare:
           title: Тип диапазона дат (при сравнении)
           allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
-        count_dates:
-          title: Количество дней в диапазоне
-          type: integer
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
         tags_ids:
           title: ID тегов
           nullable: true
@@ -42595,11 +42685,57 @@ components:
           title: Применение изменений только для
           nullable: true
           type: string
+        dates:
+          title: |-
+            Произвольные даты без использования диапазона
+
+            Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        type_range:
+          title: Тип диапазона дат
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
+        date1:
+          title: |-
+            Дата начала диапазона
+
+            Используется вместе с date2 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: |-
+            Дата окончания диапазона
+
+            Используется вместе с date1 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        count_dates:
+          title: |-
+            Количество дат в диапазоне
+
+            Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+
+            Работает совместно с `type_range`
+          default: 31
+          type: integer
+        period_days:
+          title: |-
+            Период в днях
+
+            Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+
+            Не более 31
+          default: 7
+          type: integer
         project_id:
           title: ID проекта
           type: integer
       required:
-        - type_range
         - type_range_compare
         - project_id
       title: |-
@@ -42607,7 +42743,6 @@ components:
 
         Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Export.Links.Get.Exec:
-      title: Короткая гостевая ссылка на просмотр индексации
       nullable: true
       type: string
     Audit_2.Methods.Indexing.Summary.Chart.Get:
@@ -42840,19 +42975,18 @@ components:
           title: Фильтр по тегам
           nullable: true
           type: array
+        check_id:
+          title: ID проверки
+          type: integer
         project_id:
           title: ID проекта
           type: integer
-        check_id:
-          title: ID проверки радара
-          type: integer
       required:
         - fulltext
-        - project_id
         - check_id
+        - project_id
       title: Создание гостевой ссылки на просмотр радара
     Audit_2.Methods.Watcher.Export.Links.Get.Exec:
-      title: Короткая ссылка гостевого доступа для просмотра радара
       nullable: true
       type: string
     Audit_2.Methods.Watcher.Summary.Chart.Get:
@@ -46080,3 +46214,58 @@ components:
       title: Получение цены сбора запросов без создания проекта
     Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
       type: number
+    Reports_2.Types.GuestLink.ToolName:
+      type: string
+      enum:
+        - positions
+        - aiTracker
+        - indexing
+      x-enum-varnames:
+        - Positions
+        - AiTracker
+        - Indexing
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+      title: Название инструмента, для которого редактируются права гостевой ссылки
+    Reports_2.Methods.GuestLink.Edit:
+      type: object
+      properties:
+        tool_name:
+          title: Сервис отчёта
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.GuestLink.ToolName'
+        summary:
+          title: Доступ к сводке
+          nullable: true
+          type: boolean
+        charts:
+          title: Доступ к графикам
+          nullable: true
+          type: boolean
+        competitors:
+          title: Доступ к конкурентам
+          nullable: true
+          type: boolean
+        calendar:
+          title: Доступ к выбору дат
+          nullable: true
+          type: boolean
+        volumes:
+          title: Доступ к просмотру частот
+          nullable: true
+          type: boolean
+        visitors:
+          title: Доступ к просмотру визитов
+          nullable: true
+          type: boolean
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - tool_name
+        - project_id
+      title: Редактирование прав гостевой ссылки для сервиса проекта
+    Reports_2.Methods.GuestLink.Edit.Exec:
+      type: integer

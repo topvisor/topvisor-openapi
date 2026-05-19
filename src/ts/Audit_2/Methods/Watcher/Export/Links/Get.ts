@@ -17,12 +17,11 @@ export interface components {
             changed?: import('../../../../Types/Audit/Summary/FilterCheckState.ts').components['schemas']['Audit_2.Types.Audit.Summary.FilterCheckState'];
             /** Фильтр по тегам */
             tags_ids?: unknown[] | null;
+            /** ID проверки */
+            check_id: number;
             /** ID проекта */
             project_id: number;
-            /** ID проверки радара */
-            check_id: number;
         };
-        /** Короткая ссылка гостевого доступа для просмотра радара */
         "Audit_2.Methods.Watcher.Export.Links.Get.Exec": string | null;
     };
     responses: never;

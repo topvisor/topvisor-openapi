@@ -31,24 +31,23 @@
                         "nullable": true,
                         "type": "array"
                     },
-                    "project_id": {
-                        "title": "ID проекта",
+                    "check_id": {
+                        "title": "ID проверки",
                         "type": "integer"
                     },
-                    "check_id": {
-                        "title": "ID проверки радара",
+                    "project_id": {
+                        "title": "ID проекта",
                         "type": "integer"
                     }
                 },
                 "required": [
                     "fulltext",
-                    "project_id",
-                    "check_id"
+                    "check_id",
+                    "project_id"
                 ],
                 "title": "Создание гостевой ссылки на просмотр радара"
             },
             "Audit_2.Methods.Watcher.Export.Links.Get.Exec": {
-                "title": "Короткая ссылка гостевого доступа для просмотра радара",
                 "nullable": true,
                 "type": "string"
             }

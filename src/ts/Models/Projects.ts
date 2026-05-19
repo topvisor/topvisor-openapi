@@ -99,6 +99,54 @@ export interface components {
             ai_tracker_context_lang?: any;
             ai_tracker_context_location?: any;
             ai_tracker_summary_count_mentioned?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "tool_name"
+             *       ]
+             *     }
+             */
+            guest_link_right_summary?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "tool_name"
+             *       ]
+             *     }
+             */
+            guest_link_right_charts?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "tool_name"
+             *       ]
+             *     }
+             */
+            guest_link_right_competitors?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "tool_name"
+             *       ]
+             *     }
+             */
+            guest_link_right_calendar?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "tool_name"
+             *       ]
+             *     }
+             */
+            guest_link_right_volumes?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "tool_name"
+             *       ]
+             *     }
+             */
+            guest_link_right_visitors?: number | null;
         };
     };
     responses: never;
