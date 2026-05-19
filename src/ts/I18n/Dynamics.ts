@@ -255,6 +255,8 @@ export interface components {
             /** @constant */
             readonly Serp_features_aiOverviewPreview: "AI Overviews (Preview)";
             /** @constant */
+            readonly Serp_features_aiOverviewExists: "AI Overviews";
+            /** @constant */
             readonly Serp_features_pictures: "Pictures";
             /** @constant */
             readonly On_display_relevant_url: "Show Ranked URLs";

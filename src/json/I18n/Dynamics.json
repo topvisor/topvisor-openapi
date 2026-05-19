@@ -502,6 +502,10 @@
                         "const": "AI Overviews (Preview)",
                         "readOnly": true
                     },
+                    "Serp_features_aiOverviewExists": {
+                        "const": "AI Overviews",
+                        "readOnly": true
+                    },
                     "Serp_features_pictures": {
                         "const": "Pictures",
                         "readOnly": true
@@ -643,6 +647,7 @@
                     "Serp_features_knowledge",
                     "Serp_features_aiOverview",
                     "Serp_features_aiOverviewPreview",
+                    "Serp_features_aiOverviewExists",
                     "Serp_features_pictures",
                     "On_display_relevant_url",
                     "Confirm_delete_target_for_group",
