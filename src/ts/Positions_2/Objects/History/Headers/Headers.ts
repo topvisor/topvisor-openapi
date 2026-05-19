@@ -23,10 +23,7 @@ export interface components {
                     [key: string]: number;
                 };
             };
-            /**
-             * Теги сниппетов по хешу
-             * @description @note Не используется в UI
-             */
+            /** Теги сниппетов по хешу */
             snippetsTagsByHash?: {
                 [key: string]: unknown;
             } | null;
@@ -38,10 +35,7 @@ export interface components {
             projectId: number;
             /** Даты, выводимые в отчете */
             dates: string[];
-            /**
-             * Запрошенные поля результатов проверок
-             * @description @note Переопределить в phpDoc нужным типом при реализации
-             */
+            /** Запрошенные поля результатов проверок */
             historyFields: import('../../../../TV/API/Types/AbstractEnumArray.ts').components['schemas']['TV.API.Types.AbstractEnumArray'];
             /** Информация о проектах, по которым строится отчет */
             projects: import('../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.ts').components['schemas']['Reports_2.Objects.ByDate.History.Headers.AbstractProject'][];

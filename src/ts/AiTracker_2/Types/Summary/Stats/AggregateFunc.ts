@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Добавить в результат данные ответа ИИ
+         * Агрегатная функция для расчета показателей сводки
          * @enum {string}
          */
-        "AiTracker_2.Types.ShowResponse": "notInclude" | "shortText" | "fullText";
+        "AiTracker_2.Types.Summary.Stats.AggregateFunc": "countMentioned";
     };
     responses: never;
     parameters: never;
