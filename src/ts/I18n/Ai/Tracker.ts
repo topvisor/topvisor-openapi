@@ -124,6 +124,10 @@ export interface components {
             readonly Answer_in_html: "HTML answer";
             /** @constant */
             readonly Delete_group_warning: "<b>Внимание!</b> Удаление группы приведет к удалению всех промптов внутри группы.";
+            /** @constant */
+            readonly Visibility_description: "Visibility is a percentage of prompts your brand is being mentioned in AI. Dynamics shows how much the metrics changed compared with the first check in the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/ai-tracker/summary/\" target=\"_blank\">More on AI Visibility →</a>";
+            /** @constant */
+            readonly Mentions_description: "Mentions are how much your brand is mentioned in AI. Dynamics shows how much the metrics changed compared with the first check in the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/ai-tracker/summary/\" target=\"_blank\">More on mentions →</a>";
         };
     };
     responses: never;
