@@ -14,7 +14,7 @@ export interface components {
             /**
              * Массив регионов в формате CSV
              *
-             *     array regions - массив регионов в формате CSV
+             *     array regions - массив csv строк
              *     file(csv) regions - файл с содержимым для импорта в формат CSV
              *     - нельзя передавать regions одновременно в виде массива и в виде файла
              *
