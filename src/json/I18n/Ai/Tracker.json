@@ -79,7 +79,7 @@
                         "readOnly": true
                     },
                     "Prompts_placeholder": {
-                        "const": "Input new prompt",
+                        "const": "Add prompts, each on a new line",
                         "readOnly": true
                     },
                     "Settings_models": {

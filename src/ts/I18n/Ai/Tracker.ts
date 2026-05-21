@@ -43,7 +43,7 @@ export interface components {
             /** @constant */
             readonly Settings_prompts: "Settings prompts";
             /** @constant */
-            readonly Prompts_placeholder: "Input new prompt";
+            readonly Prompts_placeholder: "Add prompts, each on a new line";
             /** @constant */
             readonly Settings_models: "Select AIs";
             /** @constant */
