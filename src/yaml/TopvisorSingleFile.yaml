@@ -27177,8 +27177,7 @@ components:
         projects:
           title: Информация о проектах, по которым строится отчет
           type: array
-          items:
-            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
+          items: {}
         isCompare:
           title: |-
             Режим сравнения

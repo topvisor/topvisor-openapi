@@ -38,7 +38,7 @@ export interface components {
             /** Запрошенные поля результатов проверок */
             historyFields: import('../../../../TV/API/Types/AbstractEnumArray.ts').components['schemas']['TV.API.Types.AbstractEnumArray'];
             /** Информация о проектах, по которым строится отчет */
-            projects: import('../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.ts').components['schemas']['Reports_2.Objects.ByDate.History.Headers.AbstractProject'][];
+            projects: unknown[];
             /**
              * Режим сравнения
              *

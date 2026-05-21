@@ -72,9 +72,7 @@
                     "projects": {
                         "title": "Информация о проектах, по которым строится отчет",
                         "type": "array",
-                        "items": {
-                            "$ref": "../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.json#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject"
-                        }
+                        "items": {}
                     },
                     "isCompare": {
                         "title": "Режим сравнения\n\nПримеры:\n- Вывод нескольких проектов\n- Вывод нескольких регионов\n- Вывод нескольких проектов и регионов",
