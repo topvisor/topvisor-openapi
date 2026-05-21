@@ -257,6 +257,8 @@ export interface components {
             /** @constant */
             readonly Serp_features_aiOverviewExists: "AI Overviews";
             /** @constant */
+            readonly Serp_features_aiOverviewExists_popup: "Find out whether there are AI answers for your queries. It will also display the neural network response text and whether your site or your competitors are there.<br><br>To activate collection, enable the <b>AI Overviews</b> option in <a href=\"#view-win_master_positions=settings:{{ projectId }}\">Project settings</a> and run a check.";
+            /** @constant */
             readonly Serp_features_pictures: "Pictures";
             /** @constant */
             readonly On_display_relevant_url: "Show Ranked URLs";
