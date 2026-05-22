@@ -40768,9 +40768,6 @@ components:
         indexing_searchers_keys:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
-        server_location:
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Settings.ServerLocation'
         link_sitemap_xml:
           title: Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)
           nullable: true
@@ -40786,7 +40783,6 @@ components:
           nullable: true
       required:
         - indexing_searchers_keys
-        - server_location
       title: Создание задачи на индексацию
     Projects_2.Methods.Tasks.Indexing.Add.Exec:
       type: integer
@@ -45160,9 +45156,6 @@ components:
         indexing_searchers_keys:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
-        server_location:
-          allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Settings.ServerLocation'
         link_sitemap_xml:
           title: Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)
           nullable: true
@@ -45178,7 +45171,6 @@ components:
           nullable: true
       required:
         - indexing_searchers_keys
-        - server_location
       title: Получение цены проверки индексации задачи без создания проекта
     Projects_2.Methods.Tasks.Indexing.Price.Get.Exec:
       type: number
