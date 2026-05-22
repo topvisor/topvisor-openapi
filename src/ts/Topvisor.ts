@@ -3323,6 +3323,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Редактирование прав гостевой ссылки для сервиса проекта */
+    "/edit/reports_2/guestLink/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditReports2GuestLink"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменить дополнительные параметры расписания */
     "/edit/schedule_2/settings/": {
         parameters: {
@@ -4182,6 +4199,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAiTracker2HistoryExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение данных сводки для отображения графика */
+    "/get/aiTracker_2/summary/chart/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAiTracker2SummaryChart"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6601,48 +6635,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditProjects2FoldersName"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получить подсазки конкурентов для добавления в проект
-     *
-     *     Доступ по API закрыт
-     */
-    "/get/projects_2/master/hintsCompetitors/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetProjects2MasterHintsCompetitors"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /**
-     * Получить подсазки запросов для добавления в проект
-     *
-     *     Доступ по API закрыт
-     */
-    "/get/projects_2/master/hintsKeywords/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetProjects2MasterHintsKeywords"];
         delete?: never;
         options?: never;
         head?: never;
@@ -14017,6 +14009,31 @@ export interface operations {
             };
         };
     };
+    EditReports2GuestLink: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Reports_2/Methods/GuestLink/Edit.ts').components['schemas']['Reports_2.Methods.GuestLink.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Reports_2/Methods/GuestLink/Edit.ts').components['schemas']['Reports_2.Methods.GuestLink.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     EditSchedule2Settings: {
         parameters: {
             query?: never;
@@ -15220,6 +15237,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./AiTracker_2/Methods/History/Export/Get.ts').components['schemas']['AiTracker_2.Methods.History.Export.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
+                };
+            };
+        };
+    };
+    GetAiTracker2SummaryChart: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./AiTracker_2/Methods/Summary/Chart/Get.ts').components['schemas']['AiTracker_2.Methods.Summary.Chart.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./AiTracker_2/Methods/Summary/Chart/Get.ts').components['schemas']['AiTracker_2.Methods.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
                 };
@@ -18742,56 +18785,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Folders/Name/Edit.ts').components['schemas']['Projects_2.Methods.Folders.Name.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetProjects2MasterHintsCompetitors: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Projects_2/Methods/Master/HintsCompetitors/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsCompetitors.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Projects_2/Methods/Master/HintsCompetitors/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsCompetitors.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetProjects2MasterHintsKeywords: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Projects_2/Methods/Master/HintsKeywords/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsKeywords.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Projects_2/Methods/Master/HintsKeywords/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsKeywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

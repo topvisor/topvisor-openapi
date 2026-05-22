@@ -5774,6 +5774,34 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/reports_2/guestLink/:
+    post:
+      operationId: EditReports2GuestLink
+      tags:
+        - Reports_2
+      summary: Редактирование прав гостевой ссылки для сервиса проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reports_2.Methods.GuestLink.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Reports_2.Methods.GuestLink.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
   /edit/schedule_2/settings/:
     post:
       operationId: EditSchedule2Settings
@@ -7180,6 +7208,38 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/AiTracker_2.Methods.History.Export.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
+  /get/aiTracker_2/summary/chart/:
+    post:
+      operationId: GetAiTracker2SummaryChart
+      tags:
+        - AiTracker_2
+      summary: Получение данных сводки для отображения графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AiTracker_2.Methods.Summary.Chart.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/AiTracker_2.Methods.Summary.Chart.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11264,68 +11324,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /get/projects_2/master/hintsCompetitors/:
-    post:
-      operationId: GetProjects2MasterHintsCompetitors
-      tags:
-        - Projects_2
-      summary: |-
-        Получить подсазки конкурентов для добавления в проект
-
-        Доступ по API закрыт
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Projects_2.Methods.Master.HintsCompetitors.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Projects_2.Methods.Master.HintsCompetitors.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /get/projects_2/master/hintsKeywords/:
-    post:
-      operationId: GetProjects2MasterHintsKeywords
-      tags:
-        - Projects_2
-      summary: |-
-        Получить подсазки запросов для добавления в проект
-
-        Доступ по API закрыт
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Projects_2.Methods.Master.HintsKeywords.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Projects_2.Methods.Master.HintsKeywords.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /add/projects_2/projects/copy/:
     post:
       operationId: AddProjects2ProjectsCopy
@@ -15319,34 +15317,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/reports_2/guestLink/:
-    post:
-      operationId: EditReports2GuestLink
-      tags:
-        - Reports_2
-      summary: Редактирование прав гостевой ссылки для сервиса проекта
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Reports_2.Methods.GuestLink.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Reports_2.Methods.GuestLink.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -19165,23 +19135,6 @@ components:
 
         Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
       description: '@template ITEM_TYPE of BackedEnum'
-    Reports_2.Objects.ByDate.History.Headers.AbstractProject:
-      type: object
-      properties:
-        id:
-          title: ID проекта
-          type: integer
-        name:
-          title: Название проекта
-          type: string
-        site:
-          title: Домен проекта или url с разделом сайта
-          type: string
-      required:
-        - id
-        - name
-        - site
-      title: Базовый проект в заголовках истории
     AiTracker_2.Objects.History.Headers.Headers:
       type: object
       properties:
@@ -19203,14 +19156,12 @@ components:
             type: string
         historyFields:
           title: Запрошенные поля результатов проверок
-          description: '@note Переопределить в phpDoc нужным типом при реализации'
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
         projects:
           title: Информация о проектах, по которым строится отчет
           type: array
-          items:
-            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
+          items: {}
         summaries:
           title: Сводка для каждого результата проверки
           type: array
@@ -19950,14 +19901,12 @@ components:
             type: string
         historyFields:
           title: Запрошенные поля результатов проверок
-          description: '@note Переопределить в phpDoc нужным типом при реализации'
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.AbstractEnumArray'
         projects:
           title: Информация о проектах, по которым строится отчет
           type: array
-          items:
-            $ref: '#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject'
+          items: {}
         summaries:
           title: Сводка для каждого результата проверки
           type: array
@@ -28718,6 +28667,61 @@ components:
       title: Получение привязанных карт пользователя
     Recurring_2.Methods.RecurringCard.Get.Exec:
       nullable: true
+    Reports_2.Types.GuestLink.ToolName:
+      type: string
+      enum:
+        - positions
+        - aiTracker
+        - indexing
+      x-enum-varnames:
+        - Positions
+        - AiTracker
+        - Indexing
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+      title: Название инструмента, для которого редактируются права гостевой ссылки
+    Reports_2.Methods.GuestLink.Edit:
+      type: object
+      properties:
+        tool_name:
+          title: Сервис отчёта
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.GuestLink.ToolName'
+        summary:
+          title: Доступ к сводке
+          nullable: true
+          type: boolean
+        charts:
+          title: Доступ к графикам
+          nullable: true
+          type: boolean
+        competitors:
+          title: Доступ к конкурентам
+          nullable: true
+          type: boolean
+        calendar:
+          title: Доступ к выбору дат
+          nullable: true
+          type: boolean
+        volumes:
+          title: Доступ к просмотру частот
+          nullable: true
+          type: boolean
+        visitors:
+          title: Доступ к просмотру визитов
+          nullable: true
+          type: boolean
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - tool_name
+        - project_id
+      title: Редактирование прав гостевой ссылки для сервиса проекта
+    Reports_2.Methods.GuestLink.Edit.Exec:
+      type: integer
     TV.API.Types.EmailArray:
       type: array
       items:
@@ -32127,6 +32131,139 @@ components:
     AiTracker_2.Methods.History.Export.Get.Exec:
       title: Результаты индексации
       nullable: true
+    AiTracker_2.Methods.Summary.Chart.Get:
+      type: object
+      properties:
+        model_key: {}
+        show_count_mentioned:
+          title: Отобразить данные по количеству упоминаний
+          type: boolean
+        show_visibility:
+          title: Отобразить данные по видимости
+          type: boolean
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Показывать удаленные запросы
+          type: boolean
+        only_exists_first_date:
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.OnlyExistsByDateType'
+        only_exists_by_date:
+          title: Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        project_id:
+          title: ID проекта
+          type: integer
+        dates:
+          title: |-
+            Произвольные даты без использования диапазона
+
+            Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.DateArray'
+        type_range:
+          title: Тип диапазона дат
+          default: 2
+          allOf:
+            - $ref: '#/components/schemas/Reports_2.Types.TypeRange'
+        date1:
+          title: |-
+            Дата начала диапазона
+
+            Используется вместе с date2 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: |-
+            Дата окончания диапазона
+
+            Используется вместе с date1 для задания диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        count_dates:
+          title: |-
+            Количество дат в диапазоне
+
+            Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+
+            Работает совместно с `type_range`
+          default: 31
+          type: integer
+        period_days:
+          title: |-
+            Период в днях
+
+            Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+
+            Не более 31
+          default: 7
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - model_key
+        - project_id
+      title: Получение данных сводки для отображения графика
+    AiTracker_2.Methods.Summary.Chart.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
     Audit_2.Methods.Audit.Checks.Get:
       type: object
       properties:
@@ -40411,85 +40548,6 @@ components:
       title: Изменение имени папки
     Projects_2.Methods.Folders.Name.Edit.Exec:
       nullable: true
-    Competitors_2.Types.ByUrl.Table.Keywords.TypeVS:
-      type: string
-      enum:
-        - me
-        - exclusive_me
-        - common
-        - competitor
-        - exclusive_competitor
-      x-enum-varnames:
-        - Me
-        - ExclusiveMe
-        - Common
-        - Competitor
-        - ExclusiveCompetitor
-      x-enum-descriptions:
-        - Все запросы
-        - Уникальные запросы
-        - Общие запросы
-        - Все запросыы  конкурента
-        - Уникальные запросы конкурента
-      title: Тип связи запросов между конкурентами
-    Projects_2.Methods.Master.HintsCompetitors.Get:
-      type: object
-      properties:
-        project_id:
-          title: ID проекта
-          type: integer
-        query_vs:
-          title: Url конкурента для сравнения запросов
-          nullable: true
-          type: string
-        rel_vs:
-          title: Тип связи запросов между конкурентами
-          default: me
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'
-        intersection:
-          title: Минимальная схожесть
-          type: number
-        strict_query:
-          title: Делать ли проверку на наличие пути в URL
-          type: boolean
-      required:
-        - project_id
-      title: |-
-        Получить подсазки конкурентов для добавления в проект
-
-        Доступ по API закрыт
-    Projects_2.Methods.Master.HintsCompetitors.Get.Exec:
-      type: array
-    Projects_2.Methods.Master.HintsKeywords.Get:
-      type: object
-      properties:
-        project_id:
-          title: ID проекта
-          type: integer
-        strict_query:
-          title: Делать ли проверку на наличие пути в URL
-          type: boolean
-        query_vs:
-          title: Ключевая фраза (или ее часть) для сравнения запросов
-          nullable: true
-          type: string
-        rel_vs:
-          title: Тип связи запросов между конкурентами
-          default: me
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'
-        intersection:
-          title: Минимальная схожесть
-          type: number
-      required:
-        - project_id
-      title: |-
-        Получить подсазки запросов для добавления в проект
-
-        Доступ по API закрыт
-    Projects_2.Methods.Master.HintsKeywords.Get.Exec:
-      type: array
     Projects_2.Methods.Projects.Copy.Add:
       type: object
       properties:
@@ -46209,58 +46267,3 @@ components:
       title: Получение цены сбора запросов без создания проекта
     Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
       type: number
-    Reports_2.Types.GuestLink.ToolName:
-      type: string
-      enum:
-        - positions
-        - aiTracker
-        - indexing
-      x-enum-varnames:
-        - Positions
-        - AiTracker
-        - Indexing
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-      title: Название инструмента, для которого редактируются права гостевой ссылки
-    Reports_2.Methods.GuestLink.Edit:
-      type: object
-      properties:
-        tool_name:
-          title: Сервис отчёта
-          allOf:
-            - $ref: '#/components/schemas/Reports_2.Types.GuestLink.ToolName'
-        summary:
-          title: Доступ к сводке
-          nullable: true
-          type: boolean
-        charts:
-          title: Доступ к графикам
-          nullable: true
-          type: boolean
-        competitors:
-          title: Доступ к конкурентам
-          nullable: true
-          type: boolean
-        calendar:
-          title: Доступ к выбору дат
-          nullable: true
-          type: boolean
-        volumes:
-          title: Доступ к просмотру частот
-          nullable: true
-          type: boolean
-        visitors:
-          title: Доступ к просмотру визитов
-          nullable: true
-          type: boolean
-        project_id:
-          title: ID проекта
-          type: integer
-      required:
-        - tool_name
-        - project_id
-      title: Редактирование прав гостевой ссылки для сервиса проекта
-    Reports_2.Methods.GuestLink.Edit.Exec:
-      type: integer

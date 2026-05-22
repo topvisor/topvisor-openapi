@@ -23,7 +23,6 @@
                     },
                     "historyFields": {
                         "title": "Запрошенные поля результатов проверок",
-                        "description": "@note Переопределить в phpDoc нужным типом при реализации",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/AbstractEnumArray.json#/components/schemas/TV.API.Types.AbstractEnumArray"
@@ -33,9 +32,7 @@
                     "projects": {
                         "title": "Информация о проектах, по которым строится отчет",
                         "type": "array",
-                        "items": {
-                            "$ref": "../../../../../Reports_2/Objects/ByDate/History/Headers/AbstractProject.json#/components/schemas/Reports_2.Objects.ByDate.History.Headers.AbstractProject"
-                        }
+                        "items": {}
                     },
                     "summaries": {
                         "title": "Сводка для каждого результата проверки",

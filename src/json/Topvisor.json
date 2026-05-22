@@ -10564,6 +10564,59 @@
                 }
             }
         },
+        "/edit/reports_2/guestLink/": {
+            "post": {
+                "operationId": "EditReports2GuestLink",
+                "tags": [
+                    "Reports_2"
+                ],
+                "summary": "Редактирование прав гостевой ссылки для сервиса проекта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Reports_2/Methods/GuestLink/Edit.json#/components/schemas/Reports_2.Methods.GuestLink.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Reports_2/Methods/GuestLink/Edit.json#/components/schemas/Reports_2.Methods.GuestLink.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/schedule_2/settings/": {
             "post": {
                 "operationId": "EditSchedule2Settings",
@@ -13137,6 +13190,67 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "AiTracker_2/Methods/History/Export/Get.json#/components/schemas/AiTracker_2.Methods.History.Export.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/KeywordsAi/Keywords.json#/components/schemas/Models.KeywordsAi.Keywords"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/aiTracker_2/summary/chart/": {
+            "post": {
+                "operationId": "GetAiTracker2SummaryChart",
+                "tags": [
+                    "AiTracker_2"
+                ],
+                "summary": "Получение данных сводки для отображения графика",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "AiTracker_2/Methods/Summary/Chart/Get.json#/components/schemas/AiTracker_2.Methods.Summary.Chart.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "AiTracker_2/Methods/Summary/Chart/Get.json#/components/schemas/AiTracker_2.Methods.Summary.Chart.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20723,112 +20837,6 @@
                 }
             }
         },
-        "/get/projects_2/master/hintsCompetitors/": {
-            "post": {
-                "operationId": "GetProjects2MasterHintsCompetitors",
-                "tags": [
-                    "Projects_2"
-                ],
-                "summary": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Projects_2/Methods/Master/HintsCompetitors/Get.json#/components/schemas/Projects_2.Methods.Master.HintsCompetitors.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Projects_2/Methods/Master/HintsCompetitors/Get.json#/components/schemas/Projects_2.Methods.Master.HintsCompetitors.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/projects_2/master/hintsKeywords/": {
-            "post": {
-                "operationId": "GetProjects2MasterHintsKeywords",
-                "tags": [
-                    "Projects_2"
-                ],
-                "summary": "Получить подсазки запросов для добавления в проект\n\nДоступ по API закрыт",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Projects_2/Methods/Master/HintsKeywords/Get.json#/components/schemas/Projects_2.Methods.Master.HintsKeywords.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Projects_2/Methods/Master/HintsKeywords/Get.json#/components/schemas/Projects_2.Methods.Master.HintsKeywords.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/projects_2/projects/copy/": {
             "post": {
                 "operationId": "AddProjects2ProjectsCopy",
@@ -28105,59 +28113,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Projects_2/Methods/Tasks/Keywords/Collect/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/reports_2/guestLink/": {
-            "post": {
-                "operationId": "EditReports2GuestLink",
-                "tags": [
-                    "Reports_2"
-                ],
-                "summary": "Редактирование прав гостевой ссылки для сервиса проекта",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Reports_2/Methods/GuestLink/Edit.json#/components/schemas/Reports_2.Methods.GuestLink.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Reports_2/Methods/GuestLink/Edit.json#/components/schemas/Reports_2.Methods.GuestLink.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
