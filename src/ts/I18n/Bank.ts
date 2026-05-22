@@ -321,7 +321,7 @@ export interface components {
             /** @constant */
             readonly Contract_offer: "Contract offer";
             /** @constant */
-            readonly Contract: "Agreement";
+            readonly Contract: "License agreement";
             /** @constant */
             readonly Add_payment_details: "Add payment details";
             /** @constant */

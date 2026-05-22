@@ -635,7 +635,7 @@
                         "readOnly": true
                     },
                     "Contract": {
-                        "const": "Agreement",
+                        "const": "License agreement",
                         "readOnly": true
                     },
                     "Add_payment_details": {
