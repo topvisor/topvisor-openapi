@@ -17,13 +17,6 @@
                             }
                         ]
                     },
-                    "server_location": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Audit_2/Types/Settings/ServerLocation.json#/components/schemas/Audit_2.Types.Settings.ServerLocation"
-                            }
-                        ]
-                    },
                     "link_sitemap_xml": {
                         "title": "Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)",
                         "nullable": true,
@@ -39,8 +32,7 @@
                     }
                 },
                 "required": [
-                    "indexing_searchers_keys",
-                    "server_location"
+                    "indexing_searchers_keys"
                 ],
                 "title": "Создание задачи на индексацию"
             },
