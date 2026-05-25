@@ -20162,6 +20162,10 @@ components:
           title: Учитывать ли поддомены
           nullable: true
           type: boolean
+        audit_scan_ignore_urls:
+          title: Игнорировать URL (Ресурсы)
+          nullable: true
+          type: string
         project_id:
           title: ID проекта
           type: integer
@@ -20182,6 +20186,7 @@ components:
         - audit_scan_images
         - audit_scan_js
         - audit_scan_css
+        - audit_scan_ignore_urls
         - audit_api_key
         - audit_page_delay
         - audit_resource_delay
@@ -20205,6 +20210,7 @@ components:
         - AuditScanImages
         - AuditScanJs
         - AuditScanCss
+        - AuditScanIgnoreUrls
         - AuditApiKey
         - AuditPageDelay
         - AuditResourceDelay
@@ -20221,6 +20227,7 @@ components:
         - WatcherStripTagsFromResult
         - ServerLocation
       x-enum-descriptions:
+        - null
         - null
         - null
         - null

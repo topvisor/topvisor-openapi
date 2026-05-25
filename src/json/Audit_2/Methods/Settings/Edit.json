@@ -146,6 +146,11 @@
                         "nullable": true,
                         "type": "boolean"
                     },
+                    "audit_scan_ignore_urls": {
+                        "title": "Игнорировать URL (Ресурсы)",
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "project_id": {
                         "title": "ID проекта",
                         "type": "integer"

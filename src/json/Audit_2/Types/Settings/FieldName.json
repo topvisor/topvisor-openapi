@@ -17,6 +17,7 @@
                     "audit_scan_images",
                     "audit_scan_js",
                     "audit_scan_css",
+                    "audit_scan_ignore_urls",
                     "audit_api_key",
                     "audit_page_delay",
                     "audit_resource_delay",
@@ -41,6 +42,7 @@
                     "AuditScanImages",
                     "AuditScanJs",
                     "AuditScanCss",
+                    "AuditScanIgnoreUrls",
                     "AuditApiKey",
                     "AuditPageDelay",
                     "AuditResourceDelay",
@@ -58,6 +60,7 @@
                     "ServerLocation"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,

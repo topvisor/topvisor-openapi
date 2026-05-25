@@ -626,6 +626,10 @@
                         "const": "Scan links",
                         "readOnly": true
                     },
+                    "Scan_ignore_urls": {
+                        "const": "Ignore URL (Resources)",
+                        "readOnly": true
+                    },
                     "Indexed_pages_with_no_snippet": {
                         "const": "Indexed pages without snippet",
                         "readOnly": true
@@ -641,6 +645,7 @@
                             "audit_scan_css": "",
                             "audit_scan_links": "",
                             "audit_scan_subdomains": "",
+                            "audit_scan_ignore_urls": "Specify URLs for the crawler to skip during page autocollection and checking of links, images, CSS and JS. URL masks with \"*\" are supported.",
                             "server_location": "Change server location to access blocked websites."
                         },
                         "readOnly": true
@@ -892,6 +897,7 @@
                     "Scan_js",
                     "Scan_css",
                     "Scan_links",
+                    "Scan_ignore_urls",
                     "Indexed_pages_with_no_snippet",
                     "Hints_settings",
                     "Server_location",

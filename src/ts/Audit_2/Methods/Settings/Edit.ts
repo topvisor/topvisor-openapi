@@ -68,6 +68,8 @@ export interface components {
             server_location?: import('../../Types/Settings/ServerLocation.ts').components['schemas']['Audit_2.Types.Settings.ServerLocation'] | null;
             /** Учитывать ли поддомены */
             audit_scan_subdomains?: boolean | null;
+            /** Игнорировать URL (Ресурсы) */
+            audit_scan_ignore_urls?: string | null;
             /** ID проекта */
             project_id: number;
         };

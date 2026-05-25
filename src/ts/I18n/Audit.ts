@@ -317,6 +317,8 @@ export interface components {
             /** @constant */
             readonly Scan_links: "Scan links";
             /** @constant */
+            readonly Scan_ignore_urls: "Ignore URL (Resources)";
+            /** @constant */
             readonly Indexed_pages_with_no_snippet: "Indexed pages without snippet";
             /** @constant */
             readonly Hints_settings: {
@@ -329,6 +331,7 @@ export interface components {
                 audit_scan_css: "";
                 audit_scan_links: "";
                 audit_scan_subdomains: "";
+                audit_scan_ignore_urls: "Specify URLs for the crawler to skip during page autocollection and checking of links, images, CSS and JS. URL masks with \"*\" are supported.";
                 server_location: "Change server location to access blocked websites.";
             };
             /** @constant */
