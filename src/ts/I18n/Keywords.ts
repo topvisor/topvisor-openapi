@@ -29,8 +29,6 @@ export interface components {
             /** @constant */
             readonly Add_phrase: "Add keyword";
             /** @constant */
-            readonly Add_keyword_to_phrase_not_in_project: "You're trying to add a keyword to a phrase that is not in your project. Please refresh the page and add the keyword once more.";
-            /** @constant */
             readonly Add_group: "Add new group";
             /** @constant */
             readonly New_folder: "New folder";

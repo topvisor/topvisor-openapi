@@ -50,10 +50,6 @@
                         "const": "Add keyword",
                         "readOnly": true
                     },
-                    "Add_keyword_to_phrase_not_in_project": {
-                        "const": "You're trying to add a keyword to a phrase that is not in your project. Please refresh the page and add the keyword once more.",
-                        "readOnly": true
-                    },
                     "Add_group": {
                         "const": "Add new group",
                         "readOnly": true
@@ -1278,7 +1274,6 @@
                     "import_error_columns2",
                     "import_error1",
                     "Add_phrase",
-                    "Add_keyword_to_phrase_not_in_project",
                     "Add_group",
                     "New_folder",
                     "New_group",
