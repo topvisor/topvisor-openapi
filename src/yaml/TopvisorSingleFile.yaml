@@ -18885,7 +18885,7 @@ components:
           title: |-
             Фильтрация по тональности на последнюю дату периода
 
-            Игнорируется, если выбрано несколько моделей, так как для фильтрации нужен конкретный `model_key`
+            Игнорируется в режиме сравнения, так как для фильтрации нужен конкретный `model_key`
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.FilterBySentiments'
@@ -32046,7 +32046,7 @@ components:
           title: |-
             Фильтрация по тональности на последнюю дату периода
 
-            Игнорируется, если выбрано несколько моделей, так как для фильтрации нужен конкретный `model_key`
+            Игнорируется в режиме сравнения, так как для фильтрации нужен конкретный `model_key`
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.FilterBySentiments'

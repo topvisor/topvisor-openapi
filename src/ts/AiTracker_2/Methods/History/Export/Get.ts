@@ -49,7 +49,7 @@ export interface components {
             /**
              * Фильтрация по тональности на последнюю дату периода
              *
-             *     Игнорируется, если выбрано несколько моделей, так как для фильтрации нужен конкретный `model_key`
+             *     Игнорируется в режиме сравнения, так как для фильтрации нужен конкретный `model_key`
              */
             filter_by_sentiment?: import('../../../Types/History/FilterBySentiments.ts').components['schemas']['AiTracker_2.Types.History.FilterBySentiments'] | null;
             /** При фильтрации по ID папок также искать в подпапках */
