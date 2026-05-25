@@ -26,6 +26,15 @@
                         ]
                     },
                     "models_keys": {},
+                    "filter_by_sentiment": {
+                        "title": "Фильтрация по тональности на последнюю дату периода\n\nИгнорируется, если выбрано несколько моделей, так как для фильтрации нужен конкретный `model_key`",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../AiTracker_2/Types/History/FilterBySentiments.json#/components/schemas/AiTracker_2.Types.History.FilterBySentiments"
+                            }
+                        ]
+                    },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"
