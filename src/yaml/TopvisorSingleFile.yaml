@@ -24564,6 +24564,8 @@ components:
           nullable: true
         ai_tracker_summary_count_mentioned:
           nullable: true
+        ai_tracker_summary_visibility:
+          nullable: true
         guest_link_right_summary:
           type: integer
           nullable: true

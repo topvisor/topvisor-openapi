@@ -99,6 +99,7 @@ export interface components {
             ai_tracker_context_lang?: any;
             ai_tracker_context_location?: any;
             ai_tracker_summary_count_mentioned?: any;
+            ai_tracker_summary_visibility?: any;
             /**
              * @example {
              *       "need set qualifiers": [
