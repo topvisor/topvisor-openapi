@@ -30,6 +30,10 @@
                         "const": "Miscellaneous",
                         "readOnly": true
                     },
+                    "Toolbox": {
+                        "const": "Toolbox (checks without project)",
+                        "readOnly": true
+                    },
                     "About_us": {
                         "const": "About Us",
                         "readOnly": true
@@ -341,6 +345,7 @@
                     "Semantics",
                     "Technical_SEO",
                     "Miscellaneous",
+                    "Toolbox",
                     "About_us",
                     "Resources",
                     "Questions",

@@ -19,6 +19,8 @@ export interface components {
             /** @constant */
             readonly Miscellaneous: "Miscellaneous";
             /** @constant */
+            readonly Toolbox: "Toolbox (checks without project)";
+            /** @constant */
             readonly About_us: "About Us";
             /** @constant */
             readonly Resources: "Resources";
