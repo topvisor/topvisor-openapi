@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "CSV-строки в формате `keywords;targetUrl`",
+                        "title": "CSV-строки в формате `keywords;targetUrl` с разделителем `\\n`",
                         "type": "string"
                     },
                     "only_empty": {

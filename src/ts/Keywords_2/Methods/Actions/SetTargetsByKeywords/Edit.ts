@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Установка целевых ссылок по CSV */
         "Keywords_2.Methods.Actions.SetTargetsByKeywords.Edit": {
-            /** CSV-строки в формате `keywords;targetUrl` */
+            /** CSV-строки в формате `keywords;targetUrl` с разделителем `\n` */
             keywords: string;
             /** Изменять только запросы без установленной целевой ссылки */
             only_empty?: boolean;

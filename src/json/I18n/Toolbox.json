@@ -77,6 +77,30 @@
                     "Ignore_stop_words": {
                         "const": "Ignore stop words",
                         "readOnly": true
+                    },
+                    "Set_as_target_in_project": {
+                        "const": "Set as target in project",
+                        "readOnly": true
+                    },
+                    "Export_relevant_to_project": {
+                        "const": "Export relevant to the project",
+                        "readOnly": true
+                    },
+                    "Set_target": {
+                        "const": "Set target",
+                        "readOnly": true
+                    },
+                    "Relevant": {
+                        "const": "Relevant",
+                        "readOnly": true
+                    },
+                    "Do_not_change_already_set_targets": {
+                        "const": "Do not change already set targets",
+                        "readOnly": true
+                    },
+                    "No_relevant_urls_for_region": {
+                        "const": "No relevant URLs were found for the selected region",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -96,7 +120,13 @@
                     "Results",
                     "Excluded",
                     "Ignore_word_order",
-                    "Ignore_stop_words"
+                    "Ignore_stop_words",
+                    "Set_as_target_in_project",
+                    "Export_relevant_to_project",
+                    "Set_target",
+                    "Relevant",
+                    "Do_not_change_already_set_targets",
+                    "No_relevant_urls_for_region"
                 ]
             }
         }

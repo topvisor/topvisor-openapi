@@ -42,6 +42,18 @@ export interface components {
             readonly Ignore_word_order: "Ignore word order";
             /** @constant */
             readonly Ignore_stop_words: "Ignore stop words";
+            /** @constant */
+            readonly Set_as_target_in_project: "Set as target in project";
+            /** @constant */
+            readonly Export_relevant_to_project: "Export relevant to the project";
+            /** @constant */
+            readonly Set_target: "Set target";
+            /** @constant */
+            readonly Relevant: "Relevant";
+            /** @constant */
+            readonly Do_not_change_already_set_targets: "Do not change already set targets";
+            /** @constant */
+            readonly No_relevant_urls_for_region: "No relevant URLs were found for the selected region";
         };
     };
     responses: never;

@@ -37237,7 +37237,7 @@ components:
       type: object
       properties:
         keywords:
-          title: CSV-строки в формате `keywords;targetUrl`
+          title: CSV-строки в формате `keywords;targetUrl` с разделителем `\n`
           type: string
         only_empty:
           title: Изменять только запросы без установленной целевой ссылки
