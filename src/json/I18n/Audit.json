@@ -86,6 +86,10 @@
                         "const": "Sitemap not found",
                         "readOnly": true
                     },
+                    "Sitemap_invalid": {
+                        "const": "The sitemap.xml file contains invalid content",
+                        "readOnly": true
+                    },
                     "Sitemap_already_started_error": {
                         "const": "Sitemap already started",
                         "readOnly": true
@@ -762,6 +766,7 @@
                     "Pages_to_check",
                     "Generated_sitemap",
                     "Sitemap_not_found",
+                    "Sitemap_invalid",
                     "Sitemap_already_started_error",
                     "Sitemap_gen",
                     "pages",

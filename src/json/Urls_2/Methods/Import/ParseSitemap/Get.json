@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Methods.Import.ParseSitemap.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Methods.Import.ParseSitemap.Get": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "URL карты сайта",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "url"
+                ],
+                "title": "Получение URLs из карты сайта по её URL"
+            },
+            "Urls_2.Methods.Import.ParseSitemap.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

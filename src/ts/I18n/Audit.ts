@@ -47,6 +47,8 @@ export interface components {
             /** @constant */
             readonly Sitemap_not_found: "Sitemap not found";
             /** @constant */
+            readonly Sitemap_invalid: "The sitemap.xml file contains invalid content";
+            /** @constant */
             readonly Sitemap_already_started_error: "Sitemap already started";
             /** @constant */
             readonly Sitemap_gen: "Sitemap generator";

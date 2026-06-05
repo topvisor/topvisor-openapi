@@ -23371,6 +23371,59 @@
                 }
             }
         },
+        "/get/urls_2/import/parseSitemap/": {
+            "post": {
+                "operationId": "GetUrls2ImportParseSitemap",
+                "tags": [
+                    "Urls_2"
+                ],
+                "summary": "Получение URLs из карты сайта по её URL",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Urls_2/Methods/Import/ParseSitemap/Get.json#/components/schemas/Urls_2.Methods.Import.ParseSitemap.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Urls_2/Methods/Import/ParseSitemap/Get.json#/components/schemas/Urls_2.Methods.Import.ParseSitemap.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/urls_2/import/recognizeLinkSitemapXml/": {
             "post": {
                 "operationId": "GetUrls2ImportRecognizeLinkSitemapXml",

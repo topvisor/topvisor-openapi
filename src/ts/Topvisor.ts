@@ -7507,6 +7507,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение URLs из карты сайта по её URL */
+    "/get/urls_2/import/parseSitemap/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUrls2ImportParseSitemap"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
     "/get/urls_2/import/recognizeLinkSitemapXml/": {
         parameters: {
@@ -20006,6 +20023,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Stat/Referers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Referers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetUrls2ImportParseSitemap: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Import/ParseSitemap/Get.ts').components['schemas']['Urls_2.Methods.Import.ParseSitemap.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Urls_2/Methods/Import/ParseSitemap/Get.ts').components['schemas']['Urls_2.Methods.Import.ParseSitemap.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

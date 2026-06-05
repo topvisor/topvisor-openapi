@@ -877,6 +877,10 @@ export interface components {
             /** @constant */
             readonly Missed_project_id2: "`Project_id` is missing";
             /** @constant */
+            readonly Pages: "Pages";
+            /** @constant */
+            readonly List_of_pages_to_check: "List of pages to check (each URL on a new line)";
+            /** @constant */
             readonly Project_analytics: "Project analytics";
             /** @constant */
             readonly Project_dynamics: "Keyword dynamics";

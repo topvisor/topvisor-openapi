@@ -1736,6 +1736,14 @@
                         "const": "`Project_id` is missing",
                         "readOnly": true
                     },
+                    "Pages": {
+                        "const": "Pages",
+                        "readOnly": true
+                    },
+                    "List_of_pages_to_check": {
+                        "const": "List of pages to check (each URL on a new line)",
+                        "readOnly": true
+                    },
                     "Project_analytics": {
                         "const": "Project analytics",
                         "readOnly": true
@@ -2440,6 +2448,8 @@
                     "Manage",
                     "Missed_project_id",
                     "Missed_project_id2",
+                    "Pages",
+                    "List_of_pages_to_check",
                     "Project_analytics",
                     "Project_dynamics",
                     "Apometr",
