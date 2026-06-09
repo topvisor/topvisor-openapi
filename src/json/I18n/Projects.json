@@ -414,8 +414,12 @@
                         "const": "Custom frequency",
                         "readOnly": true
                     },
-                    "Send_competitor_report": {
-                        "const": "Send competition report",
+                    "My_project_and_competitors_in_different_files": {
+                        "const": "My project and competitors in separate files",
+                        "readOnly": true
+                    },
+                    "My_project_and_competitors_in_single_files": {
+                        "const": "My project and competitors in a single file",
                         "readOnly": true
                     },
                     "Report_format": {
@@ -1085,7 +1089,8 @@
                     "Copy_project",
                     "Report_on_weekdays",
                     "Report_custom_frequency",
-                    "Send_competitor_report",
+                    "My_project_and_competitors_in_different_files",
+                    "My_project_and_competitors_in_single_files",
                     "Report_format",
                     "Send_test_report",
                     "Test_report_sent_email",

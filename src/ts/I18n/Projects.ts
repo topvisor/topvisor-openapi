@@ -211,7 +211,9 @@ export interface components {
             /** @constant */
             readonly Report_custom_frequency: "Custom frequency";
             /** @constant */
-            readonly Send_competitor_report: "Send competition report";
+            readonly My_project_and_competitors_in_different_files: "My project and competitors in separate files";
+            /** @constant */
+            readonly My_project_and_competitors_in_single_files: "My project and competitors in a single file";
             /** @constant */
             readonly Report_format: "Report format";
             /** @constant */

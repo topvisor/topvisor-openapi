@@ -69,7 +69,11 @@
                     "with_competitors": {
                         "title": "Добавить ли в отчет позиции конкурентов",
                         "nullable": true,
-                        "type": "boolean"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Schedule_2/Types/Settings/WithCompetitors.json#/components/schemas/Schedule_2.Types.Settings.WithCompetitors"
+                            }
+                        ]
                     },
                     "period": {
                         "nullable": true,

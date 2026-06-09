@@ -35,7 +35,7 @@ export interface components {
             /** Имеет смысл только для Яндекса */
             volumes_types?: import('../../../Keywords_2/Types/Volumes/Types.ts').components['schemas']['Keywords_2.Types.Volumes.Types'] | null;
             /** Добавить ли в отчет позиции конкурентов */
-            with_competitors?: boolean | null;
+            with_competitors?: import('../../Types/Settings/WithCompetitors.ts').components['schemas']['Schedule_2.Types.Settings.WithCompetitors'] | null;
             period?: import('../../Types/Settings/Period.ts').components['schemas']['Schedule_2.Types.Settings.Period'] | null;
             formats?: import('../../Types/Settings/Formats.ts').components['schemas']['Schedule_2.Types.Settings.Formats'] | null;
             additional_fields?: import('../../Types/Settings/AdditionalFields.ts').components['schemas']['Schedule_2.Types.Settings.AdditionalFields'] | null;

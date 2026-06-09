@@ -28820,6 +28820,21 @@ components:
       items:
         $ref: '#/components/schemas/Keywords_2.Types.Volumes.Type'
       title: Типы частоты
+    Schedule_2.Types.Settings.WithCompetitors:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - ProjectOnly
+        - ProjectAndCompetitorsInSeparateFiles
+        - ProjectAndCompetitorsInSingleFile
+      x-enum-descriptions:
+        - Только свой проект
+        - Проект и конкурентов в разных файлах
+        - Проект и конкурентов в одном файле
+      title: В каком формате отправить проект и конкурентов
     Schedule_2.Types.Settings.Period:
       type: string
       enum:
@@ -28933,7 +28948,8 @@ components:
         with_competitors:
           title: Добавить ли в отчет позиции конкурентов
           nullable: true
-          type: boolean
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Settings.WithCompetitors'
         period:
           nullable: true
           allOf:
