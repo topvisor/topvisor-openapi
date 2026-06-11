@@ -495,6 +495,8 @@ export interface components {
             /** @constant */
             readonly Mentions: "AI Mentions";
             /** @constant */
+            readonly AI_visibility: "AI Visibility";
+            /** @constant */
             readonly Initial_project_setup: "Initial project setup";
         };
     };

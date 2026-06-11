@@ -982,6 +982,10 @@
                         "const": "AI Mentions",
                         "readOnly": true
                     },
+                    "AI_visibility": {
+                        "const": "AI Visibility",
+                        "readOnly": true
+                    },
                     "Initial_project_setup": {
                         "const": "Initial project setup",
                         "readOnly": true
@@ -1230,6 +1234,7 @@
                     "Update_count",
                     "Update_count_formula",
                     "Mentions",
+                    "AI_visibility",
                     "Initial_project_setup"
                 ]
             }
