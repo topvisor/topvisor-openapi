@@ -51,14 +51,14 @@
                                 "extendedName": "projects",
                                 "description": "The number of active projects you can have on your account. A project is a container with URL which is required to launch checks and store keywords.",
                                 "exceeding": "Project count limit reached",
-                                "exceedingDescription": ""
+                                "exceedingDescription": "Upgrade your current plan if you need more projects."
                             },
                             "projects_rights": {
                                 "name": "Guest Users",
                                 "extendedName": "guest users",
                                 "description": "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.<br><br>\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.",
                                 "exceeding": "Guest accounts limit reached",
-                                "exceedingDescription": ""
+                                "exceedingDescription": "Upgrade your current plan if you need more Guest accounts."
                             },
                             "projects_competitors": {
                                 "name": "Competitors",
