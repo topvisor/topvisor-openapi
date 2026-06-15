@@ -117,6 +117,10 @@
                     "aisearch": {
                         "const": "AI search",
                         "readOnly": true
+                    },
+                    "newtag": {
+                        "const": "test",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -146,7 +150,8 @@
                     "audit",
                     "manual",
                     "checklist",
-                    "aisearch"
+                    "aisearch",
+                    "newtag"
                 ]
             }
         }
