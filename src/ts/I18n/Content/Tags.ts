@@ -62,8 +62,6 @@ export interface components {
             readonly checklist: "checklist";
             /** @constant */
             readonly aisearch: "AI search";
-            /** @constant */
-            readonly newtag: "test";
         };
     };
     responses: never;
