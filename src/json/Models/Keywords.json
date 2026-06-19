@@ -170,6 +170,28 @@
                             ]
                         }
                     },
+                    "sf_ai_oveview_body": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "sf_ai_oveview_links": {
+                        "type": "array",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
                     "positionStatus": {
                         "nullable": true,
                         "example": {

@@ -133,6 +133,26 @@ export interface components {
             /**
              * @example {
              *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            sf_ai_oveview_body?: string | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            sf_ai_oveview_links?: unknown[] | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
              *         "region_index"
              *       ]
              *     }
