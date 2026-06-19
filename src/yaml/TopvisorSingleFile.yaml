@@ -25553,6 +25553,12 @@ components:
           example:
             need set qualifiers:
               - region_index
+        serp_features_count:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_index
         sf_ai_oveview_body:
           type: string
           nullable: true

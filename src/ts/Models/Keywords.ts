@@ -133,6 +133,14 @@ export interface components {
             /**
              * @example {
              *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            serp_features_count?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"

@@ -1239,7 +1239,7 @@
                         "readOnly": true
                     },
                     "Serp_features": {
-                        "const": "SERP features",
+                        "const": "SERP Features",
                         "readOnly": true
                     },
                     "No_keywords_in_project": {
