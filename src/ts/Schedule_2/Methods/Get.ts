@@ -19,7 +19,36 @@ export interface components {
             /** Id второго объекта, для которого требуется получить расписание (обзятельно для mentions) */
             target_id_2?: number | null;
         };
-        "Schedule_2.Methods.Get.Exec": unknown[];
+        "Schedule_2.Methods.Get.Exec": {
+            schedule: {
+                times: {
+                    hour: number | string;
+                    minute: number | string;
+                }[];
+                days: (number | string)[];
+            }[];
+            settings: {
+                emails?: string[];
+                send_to_informer?: "0" | "1";
+                telegram_chats_ids?: number[];
+                stop_repeated_check?: "0" | "1";
+                regions_keys_by_searcher_key?: {
+                    0?: number[];
+                    1?: number[];
+                };
+                volumes_types?: string[];
+                with_competitors?: import('../Types/Settings/WithCompetitors.ts').components['schemas']['Schedule_2.Types.Settings.WithCompetitors'];
+                period?: import('../Types/Settings/Period.ts').components['schemas']['Schedule_2.Types.Settings.Period'];
+                formats?: import('../Types/Settings/Format.ts').components['schemas']['Schedule_2.Types.Settings.Format'][];
+                additional_fields?: import('../Types/Settings/AdditionalField.ts').components['schemas']['Schedule_2.Types.Settings.AdditionalField'][];
+                link_sitemap_xml?: string | null;
+                regexp_sitemap?: string | null;
+                regexp_audit?: string | null;
+                regexp_watcher?: string | null;
+                regexp_indexing?: string | null;
+                max_urls_count?: number | null;
+            };
+        };
     };
     responses: never;
     parameters: never;

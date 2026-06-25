@@ -32,7 +32,184 @@
                 "title": "Получение рассписания"
             },
             "Schedule_2.Methods.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "schedule": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "times": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "hour": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            },
+                                            "minute": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "integer"
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "required": [
+                                            "hour",
+                                            "minute"
+                                        ]
+                                    }
+                                },
+                                "days": {
+                                    "type": "array",
+                                    "items": {
+                                        "anyOf": [
+                                            {
+                                                "type": "integer"
+                                            },
+                                            {
+                                                "type": "string"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "required": [
+                                "times",
+                                "days"
+                            ]
+                        }
+                    },
+                    "settings": {
+                        "type": "object",
+                        "properties": {
+                            "emails": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "send_to_informer": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer",
+                                        "enum": [
+                                            "0"
+                                        ]
+                                    },
+                                    {
+                                        "type": "integer",
+                                        "enum": [
+                                            "1"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "telegram_chats_ids": {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                }
+                            },
+                            "stop_repeated_check": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer",
+                                        "enum": [
+                                            "0"
+                                        ]
+                                    },
+                                    {
+                                        "type": "integer",
+                                        "enum": [
+                                            "1"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "regions_keys_by_searcher_key": {
+                                "type": "object",
+                                "properties": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                ]
+                            },
+                            "volumes_types": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "with_competitors": {
+                                "$ref": "../../Schedule_2/Types/Settings/WithCompetitors.json#/components/schemas/Schedule_2.Types.Settings.WithCompetitors"
+                            },
+                            "period": {
+                                "$ref": "../../Schedule_2/Types/Settings/Period.json#/components/schemas/Schedule_2.Types.Settings.Period"
+                            },
+                            "formats": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../../Schedule_2/Types/Settings/Format.json#/components/schemas/Schedule_2.Types.Settings.Format"
+                                }
+                            },
+                            "additional_fields": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../../Schedule_2/Types/Settings/AdditionalField.json#/components/schemas/Schedule_2.Types.Settings.AdditionalField"
+                                }
+                            },
+                            "link_sitemap_xml": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "regexp_sitemap": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "regexp_audit": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "regexp_watcher": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "regexp_indexing": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "max_urls_count": {
+                                "nullable": true,
+                                "type": "integer"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "schedule",
+                    "settings"
+                ]
             }
         }
     }

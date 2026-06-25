@@ -17224,8 +17224,181 @@ components:
         - type
         - target_id
       title: Получение рассписания
+    Schedule_2.Types.Settings.WithCompetitors:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - ProjectOnly
+        - ProjectAndCompetitorsInSeparateFiles
+        - ProjectAndCompetitorsInSingleFile
+      x-enum-descriptions:
+        - Только свой проект
+        - Проект и конкурентов в разных файлах
+        - Проект и конкурентов в одном файле
+      title: В каком формате отправить проект и конкурентов
+    Schedule_2.Types.Settings.Period:
+      type: string
+      enum:
+        - none
+        - month
+        - week
+        - weekly
+      x-enum-varnames:
+        - None
+        - Month
+        - Week
+        - Weekly
+      x-enum-descriptions:
+        - Без периода, последние две проверки
+        - Месяц
+        - Неделя
+        - Каждую неделю
+      title: Период отправки отчета
+    Schedule_2.Types.Settings.Format:
+      type: string
+      enum:
+        - csv
+        - xlsx
+        - pdf
+        - html
+      x-enum-varnames:
+        - Csv
+        - Xlsx
+        - Pdf
+        - Html
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+      title: Формат отчета
+    Schedule_2.Types.Settings.AdditionalField:
+      type: string
+      enum:
+        - summary
+        - traffic
+        - url
+        - frequency
+      x-enum-varnames:
+        - Summary
+        - Traffic
+        - Url
+        - Frequency
+      x-enum-descriptions:
+        - Сводка
+        - Трафик
+        - Ссылка
+        - Частота
+      title: Дополнительное поле отчета проверки позиций
     Schedule_2.Methods.Get.Exec:
-      type: array
+      type: object
+      properties:
+        schedule:
+          type: array
+          items:
+            type: object
+            properties:
+              times:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    hour:
+                      anyOf:
+                        - type: integer
+                        - type: string
+                    minute:
+                      anyOf:
+                        - type: integer
+                        - type: string
+                  required:
+                    - hour
+                    - minute
+              days:
+                type: array
+                items:
+                  anyOf:
+                    - type: integer
+                    - type: string
+            required:
+              - times
+              - days
+        settings:
+          type: object
+          properties:
+            emails:
+              type: array
+              items:
+                type: string
+            send_to_informer:
+              anyOf:
+                - type: integer
+                  enum:
+                    - '0'
+                - type: integer
+                  enum:
+                    - '1'
+            telegram_chats_ids:
+              type: array
+              items:
+                type: integer
+            stop_repeated_check:
+              anyOf:
+                - type: integer
+                  enum:
+                    - '0'
+                - type: integer
+                  enum:
+                    - '1'
+            regions_keys_by_searcher_key:
+              type: object
+              properties:
+                - type: array
+                  items:
+                    type: integer
+                - type: array
+                  items:
+                    type: integer
+            volumes_types:
+              type: array
+              items:
+                type: string
+            with_competitors:
+              $ref: '#/components/schemas/Schedule_2.Types.Settings.WithCompetitors'
+            period:
+              $ref: '#/components/schemas/Schedule_2.Types.Settings.Period'
+            formats:
+              type: array
+              items:
+                $ref: '#/components/schemas/Schedule_2.Types.Settings.Format'
+            additional_fields:
+              type: array
+              items:
+                $ref: '#/components/schemas/Schedule_2.Types.Settings.AdditionalField'
+            link_sitemap_xml:
+              nullable: true
+              type: string
+            regexp_sitemap:
+              nullable: true
+              type: string
+            regexp_audit:
+              nullable: true
+              type: string
+            regexp_watcher:
+              nullable: true
+              type: string
+            regexp_indexing:
+              nullable: true
+              type: string
+            max_urls_count:
+              nullable: true
+              type: integer
+      required:
+        - schedule
+        - settings
     Tags_2.Types.Type:
       type: string
       enum:
@@ -28865,81 +29038,12 @@ components:
       items:
         $ref: '#/components/schemas/Keywords_2.Types.Volumes.Type'
       title: Типы частоты
-    Schedule_2.Types.Settings.WithCompetitors:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - ProjectOnly
-        - ProjectAndCompetitorsInSeparateFiles
-        - ProjectAndCompetitorsInSingleFile
-      x-enum-descriptions:
-        - Только свой проект
-        - Проект и конкурентов в разных файлах
-        - Проект и конкурентов в одном файле
-      title: В каком формате отправить проект и конкурентов
-    Schedule_2.Types.Settings.Period:
-      type: string
-      enum:
-        - none
-        - month
-        - week
-        - weekly
-      x-enum-varnames:
-        - None
-        - Month
-        - Week
-        - Weekly
-      x-enum-descriptions:
-        - Без периода, последние две проверки
-        - Месяц
-        - Неделя
-        - Каждую неделю
-      title: Период отправки отчета
-    Schedule_2.Types.Settings.Format:
-      type: string
-      enum:
-        - csv
-        - xlsx
-        - pdf
-        - html
-      x-enum-varnames:
-        - Csv
-        - Xlsx
-        - Pdf
-        - Html
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-        - null
-      title: Формат отчета
     Schedule_2.Types.Settings.Formats:
       type: array
       items:
         $ref: '#/components/schemas/Schedule_2.Types.Settings.Format'
       title: Форматыы отчета
       description: '@see Format'
-    Schedule_2.Types.Settings.AdditionalField:
-      type: string
-      enum:
-        - summary
-        - traffic
-        - url
-        - frequency
-      x-enum-varnames:
-        - Summary
-        - Traffic
-        - Url
-        - Frequency
-      x-enum-descriptions:
-        - Сводка
-        - Трафик
-        - Ссылка
-        - Частота
-      title: Дополнительное поле отчета проверки позиций
     Schedule_2.Types.Settings.AdditionalFields:
       type: array
       items:
