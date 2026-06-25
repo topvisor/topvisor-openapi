@@ -84,6 +84,16 @@ export interface components {
              *     }
              */
             sentiment?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key",
+             *         "project_id"
+             *       ]
+             *     }
+             */
+            metadata?: any;
         };
     };
     responses: never;
