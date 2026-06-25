@@ -281,7 +281,7 @@
                         "readOnly": true
                     },
                     "Tool_digest": {
-                        "const": "2025 year in Topvisor",
+                        "const": "Tool digest spring 2026",
                         "readOnly": true
                     },
                     "Ticket": {
@@ -2087,6 +2087,7 @@
                     "project",
                     "Project",
                     "of_project",
+                    "Tool_digest",
                     "Ticket",
                     "Tickets",
                     "All_tickets",

@@ -149,7 +149,7 @@ export interface components {
             /** @constant */
             readonly of_project: "of project";
             /** @constant */
-            readonly Tool_digest?: "2025 year in Topvisor";
+            readonly Tool_digest: "Tool digest spring 2026";
             /** @constant */
             readonly Ticket: "Ticket";
             /** @constant */
