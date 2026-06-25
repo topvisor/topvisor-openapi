@@ -10,10 +10,6 @@
             "Projects_2.Methods.Competitors.Add": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "ID проекта",
-                        "type": "integer"
-                    },
                     "urls": {
                         "title": "Список url конкурентов",
                         "allOf": [
@@ -26,11 +22,39 @@
                         "title": "Список имен конкурентов (если указан, должен быть такой же длины как urls)",
                         "nullable": true,
                         "type": "array"
+                    },
+                    "brand_names": {
+                        "title": "Список имен брендов для настроек ИИ-Трекера",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "service_name": {
+                        "title": "Сервис, которому принадлежит набор конкурентов",
+                        "default": "positions",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Projects_2/Types/Competitors/ServiceName.json#/components/schemas/Projects_2.Types.Competitors.ServiceName"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
                     }
                 },
                 "required": [
-                    "project_id",
-                    "urls"
+                    "urls",
+                    "project_id"
                 ],
                 "title": "Добавление конкурента\n\nОграничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте"
             },

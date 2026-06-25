@@ -9298,7 +9298,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Удаление конкурентов\n\nОбязательный параметр или ids или urls",
+                "summary": "Удаление конкурентов",
                 "requestBody": {
                     "content": {
                         "application/json": {

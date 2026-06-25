@@ -33,6 +33,15 @@
                         "title": "Включить ли в результат основной проект",
                         "nullable": true,
                         "type": "boolean"
+                    },
+                    "service_name": {
+                        "title": "Сервис, которому принадлежит набор конкурентов",
+                        "default": "positions",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Projects_2/Types/Competitors/ServiceName.json#/components/schemas/Projects_2.Types.Competitors.ServiceName"
+                            }
+                        ]
                     }
                 },
                 "required": [

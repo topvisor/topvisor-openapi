@@ -7,14 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление конкурентов */
-        "Projects_2.Methods.Competitors.Del": {
-            /** ID конкурентов */
-            ids: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID проекта */
-            project_id: number;
-        };
-        "Projects_2.Methods.Competitors.Del.Exec": number;
+        /**
+         * Имя сервиса конкурента
+         * @enum {string}
+         */
+        "Projects_2.Types.Competitors.ServiceName": "positions" | "aiTracker";
     };
     responses: never;
     parameters: never;

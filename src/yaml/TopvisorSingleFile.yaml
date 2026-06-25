@@ -5101,10 +5101,7 @@ paths:
       operationId: DelProjects2Competitors
       tags:
         - Projects_2
-      summary: |-
-        Удаление конкурентов
-
-        Обязательный параметр или ids или urls
+      summary: Удаление конкурентов
       requestBody:
         content:
           application/json:
@@ -27881,12 +27878,21 @@ components:
         $ref: '#/components/schemas/TV.API.Types.UrlShort'
       title: 'Тип массива: UrlShort[]'
       description: '@see \TV\API\Types\UrlShort'
+    Projects_2.Types.Competitors.ServiceName:
+      type: string
+      enum:
+        - positions
+        - aiTracker
+      x-enum-varnames:
+        - Positions
+        - AiTracker
+      x-enum-descriptions:
+        - null
+        - null
+      title: Имя сервиса конкурента
     Projects_2.Methods.Competitors.Add:
       type: object
       properties:
-        project_id:
-          title: ID проекта
-          type: integer
         urls:
           title: Список url конкурентов
           allOf:
@@ -27895,9 +27901,25 @@ components:
           title: Список имен конкурентов (если указан, должен быть такой же длины как urls)
           nullable: true
           type: array
+        brand_names:
+          title: Список имен брендов для настроек ИИ-Трекера
+          nullable: true
+          anyOf:
+            - type: array
+              items:
+                type: string
+            - type: 'null'
+        service_name:
+          title: Сервис, которому принадлежит набор конкурентов
+          default: positions
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Competitors.ServiceName'
+        project_id:
+          title: ID проекта
+          type: integer
       required:
-        - project_id
         - urls
+        - project_id
       title: |-
         Добавление конкурента
 
@@ -27907,25 +27929,17 @@ components:
     Projects_2.Methods.Competitors.Del:
       type: object
       properties:
+        ids:
+          title: ID конкурентов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         project_id:
           title: ID проекта
           type: integer
-        ids:
-          title: ID конкурентов
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        urls:
-          title: Url конкурентов
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.UrlShortArray'
       required:
+        - ids
         - project_id
-      title: |-
-        Удаление конкурентов
-
-        Обязательный параметр или ids или urls
+      title: Удаление конкурентов
     Projects_2.Methods.Competitors.Del.Exec:
       type: integer
     Projects_2.Methods.Competitors.Get:
@@ -27950,6 +27964,11 @@ components:
           title: Включить ли в результат основной проект
           nullable: true
           type: boolean
+        service_name:
+          title: Сервис, которому принадлежит набор конкурентов
+          default: positions
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Competitors.ServiceName'
       required:
         - project_id
       title: Получение списка конкурентов
@@ -40542,6 +40561,11 @@ components:
           nullable: true
           default: after
           type: string
+        service_name:
+          title: Сервис, которому принадлежит набор конкурентов
+          default: positions
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Competitors.ServiceName'
       required:
         - project_id
         - id

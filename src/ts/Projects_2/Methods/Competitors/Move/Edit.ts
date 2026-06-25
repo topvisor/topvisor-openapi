@@ -23,6 +23,11 @@ export interface components {
              * @default after
              */
             to_type?: string | null;
+            /**
+             * Сервис, которому принадлежит набор конкурентов
+             * @default positions
+             */
+            service_name?: import('../../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];
         };
         "Projects_2.Methods.Competitors.Move.Edit.Exec": number | null;
     };

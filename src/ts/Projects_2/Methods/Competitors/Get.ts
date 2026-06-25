@@ -24,6 +24,11 @@ export interface components {
             only_enabled?: boolean | null;
             /** Включить ли в результат основной проект */
             include_project?: boolean | null;
+            /**
+             * Сервис, которому принадлежит набор конкурентов
+             * @default positions
+             */
+            service_name?: import('../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];
         };
         "Projects_2.Methods.Competitors.Get.Exec": unknown[];
     };

@@ -13,12 +13,19 @@ export interface components {
          *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
          */
         "Projects_2.Methods.Competitors.Add": {
-            /** ID проекта */
-            project_id: number;
             /** Список url конкурентов */
             urls: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'];
             /** Список имен конкурентов (если указан, должен быть такой же длины как urls) */
             names?: unknown[] | null;
+            /** Список имен брендов для настроек ИИ-Трекера */
+            brand_names?: (string[] | null) | null;
+            /**
+             * Сервис, которому принадлежит набор конкурентов
+             * @default positions
+             */
+            service_name?: import('../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];
+            /** ID проекта */
+            project_id: number;
         };
         "Projects_2.Methods.Competitors.Add.Exec": unknown[];
     };

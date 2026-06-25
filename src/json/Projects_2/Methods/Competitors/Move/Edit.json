@@ -27,6 +27,15 @@
                         "nullable": true,
                         "default": "after",
                         "type": "string"
+                    },
+                    "service_name": {
+                        "title": "Сервис, которому принадлежит набор конкурентов",
+                        "default": "positions",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Projects_2/Types/Competitors/ServiceName.json#/components/schemas/Projects_2.Types.Competitors.ServiceName"
+                            }
+                        ]
                     }
                 },
                 "required": [
