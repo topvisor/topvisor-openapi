@@ -29058,7 +29058,75 @@ components:
         Для каждого типа могут быть свои параметры
       description: '@see Schedule_2\Mods\Settings'
     Schedule_2.Methods.Settings.Get.Exec:
-      type: array
+      type: object
+      properties:
+        emails:
+          type: array
+          items:
+            type: string
+        send_to_informer:
+          anyOf:
+            - type: integer
+              enum:
+                - '0'
+            - type: integer
+              enum:
+                - '1'
+        telegram_chats_ids:
+          type: array
+          items:
+            type: integer
+        stop_repeated_check:
+          anyOf:
+            - type: integer
+              enum:
+                - '0'
+            - type: integer
+              enum:
+                - '1'
+        regions_keys_by_searcher_key:
+          type: object
+          properties:
+            - type: array
+              items:
+                type: integer
+            - type: array
+              items:
+                type: integer
+        volumes_types:
+          type: array
+          items:
+            type: string
+        with_competitors:
+          $ref: '#/components/schemas/Schedule_2.Types.Settings.WithCompetitors'
+        period:
+          $ref: '#/components/schemas/Schedule_2.Types.Settings.Period'
+        formats:
+          type: array
+          items:
+            $ref: '#/components/schemas/Schedule_2.Types.Settings.Format'
+        additional_fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/Schedule_2.Types.Settings.AdditionalField'
+        link_sitemap_xml:
+          nullable: true
+          type: string
+        regexp_sitemap:
+          nullable: true
+          type: string
+        regexp_audit:
+          nullable: true
+          type: string
+        regexp_watcher:
+          nullable: true
+          type: string
+        regexp_indexing:
+          nullable: true
+          type: string
+        max_urls_count:
+          nullable: true
+          type: integer
     Sms_2.Methods.CheckPIN.Get:
       type: object
       properties:
