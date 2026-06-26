@@ -19009,6 +19009,14 @@ components:
         $ref: '#/components/schemas/AiTracker_2.Types.History.FilterBySentiment'
       title: Фильтры по тональности
       description: '@see FilterBySentiment'
+    TV.API.Types.IntArray:
+      type: array
+      items:
+        type: integer
+      title: |-
+        Тип массива: int
+
+        Принимает: Любые целые числа и числа в строках
     Reports_2.Types.OnlyExistsByDateType:
       type: integer
       enum:
@@ -19084,6 +19092,11 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.FilterBySentiments'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -19650,6 +19663,9 @@ components:
         show_sentiments:
           title: Отобразить данные по тональности
           type: boolean
+        competitor_id:
+          title: ID конкурента
+          type: integer
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -24329,14 +24345,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.CronCommands'
-    TV.API.Types.IntArray:
-      type: array
-      items:
-        type: integer
-      title: |-
-        Тип массива: int
-
-        Принимает: Любые целые числа и числа в строках
     TV.API.Types.BoolArray:
       type: array
       items:
@@ -32448,6 +32456,11 @@ components:
         show_visibility:
           title: Отобразить данные по видимости
           type: boolean
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean

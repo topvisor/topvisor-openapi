@@ -23,6 +23,10 @@
                         "title": "Отобразить данные по тональности",
                         "type": "boolean"
                     },
+                    "competitor_id": {
+                        "title": "ID конкурента",
+                        "type": "integer"
+                    },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"

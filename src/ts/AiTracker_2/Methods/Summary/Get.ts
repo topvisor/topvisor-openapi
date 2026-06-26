@@ -16,6 +16,8 @@ export interface components {
             show_visibility?: boolean;
             /** Отобразить данные по тональности */
             show_sentiments?: boolean;
+            /** ID конкурента */
+            competitor_id?: number;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */

@@ -21,6 +21,8 @@ export interface components {
              *     Игнорируется в режиме сравнения, так как для фильтрации нужен конкретный `model_key`
              */
             filter_by_sentiment?: import('../../Types/History/FilterBySentiments.ts').components['schemas']['AiTracker_2.Types.History.FilterBySentiments'] | null;
+            /** ID конкурентов */
+            competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы */

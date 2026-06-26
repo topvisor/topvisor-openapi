@@ -35,6 +35,15 @@
                             }
                         ]
                     },
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"
