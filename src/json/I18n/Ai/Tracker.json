@@ -146,6 +146,14 @@
                         "const": "Sort by tone",
                         "readOnly": true
                     },
+                    "Sentiment_positive": {
+                        "const": "Positive sentiment",
+                        "readOnly": true
+                    },
+                    "Sentiment_negative": {
+                        "const": "Negative sentiment",
+                        "readOnly": true
+                    },
                     "Prompts_can_be_deleted_and_restored_within_the_same_group": {
                         "const": "Prompts can be deleted/restored within the same group",
                         "readOnly": true
@@ -286,6 +294,8 @@
                     "Remove_prompt",
                     "Sort_mentioned",
                     "Sort_sentiment",
+                    "Sentiment_positive",
+                    "Sentiment_negative",
                     "Prompts_can_be_deleted_and_restored_within_the_same_group",
                     "Autogeneration_of_prompts",
                     "Type_of_activity",

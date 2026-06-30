@@ -77,6 +77,10 @@ export interface components {
             /** @constant */
             readonly Sort_sentiment: "Sort by tone";
             /** @constant */
+            readonly Sentiment_positive: "Positive sentiment";
+            /** @constant */
+            readonly Sentiment_negative: "Negative sentiment";
+            /** @constant */
             readonly Prompts_can_be_deleted_and_restored_within_the_same_group: "Prompts can be deleted/restored within the same group";
             /** @constant */
             readonly Autogeneration_of_prompts: "Autogeneration of prompts";
