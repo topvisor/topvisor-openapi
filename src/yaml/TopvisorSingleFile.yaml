@@ -32105,13 +32105,12 @@ components:
     Users_2.Methods.Reg.Add:
       type: object
       properties:
+        name:
+          title: Имя пользователя
+          type: string
         email:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
-        name:
-          title: Имя пользователя
-          nullable: true
-          type: string
         lang:
           default: ru
           allOf:
@@ -32128,6 +32127,7 @@ components:
           title: Дополнительные данные для регистрации
           type: array
       required:
+        - name
         - email
       title: Создание заявки на регистрацию пользователя
     Users_2.Methods.Reg.Add.Exec:

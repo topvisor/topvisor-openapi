@@ -10,17 +10,16 @@
             "Users_2.Methods.Reg.Add": {
                 "type": "object",
                 "properties": {
+                    "name": {
+                        "title": "Имя пользователя",
+                        "type": "string"
+                    },
                     "email": {
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
                             }
                         ]
-                    },
-                    "name": {
-                        "title": "Имя пользователя",
-                        "nullable": true,
-                        "type": "string"
                     },
                     "lang": {
                         "default": "ru",
@@ -49,6 +48,7 @@
                     }
                 },
                 "required": [
+                    "name",
                     "email"
                 ],
                 "title": "Создание заявки на регистрацию пользователя"
