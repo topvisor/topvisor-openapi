@@ -16,7 +16,7 @@
                         "type": "string"
                     },
                     "name": {
-                        "title": "ФИО",
+                        "title": "Имя пользователя",
                         "nullable": true,
                         "type": "string"
                     },

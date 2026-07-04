@@ -11,7 +11,7 @@ export interface components {
         "Users_2.Methods.Profile.Edit": {
             /** Телефон */
             phone?: string | null;
-            /** ФИО */
+            /** Имя пользователя */
             name?: string | null;
             /**
              * Формат дат, отображаемых на сайте и в скачиваемых отчетах
