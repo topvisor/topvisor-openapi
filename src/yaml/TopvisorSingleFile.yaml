@@ -15457,6 +15457,16 @@ components:
                       - link
                 location:
                   type: string
+                fieldViolation:
+                  type: object
+                  properties:
+                    field:
+                      type: string
+                    message:
+                      type: string
+                  required:
+                    - field
+                    - message
               required:
                 - text
             - type: 'null'

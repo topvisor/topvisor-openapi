@@ -35,6 +35,10 @@ export interface components {
                     link: string;
                 }[];
                 location?: string;
+                fieldViolation?: {
+                    field: string;
+                    message: string;
+                };
             } | null) | null;
         };
     };
