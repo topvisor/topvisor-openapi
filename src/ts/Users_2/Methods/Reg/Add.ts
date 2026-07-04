@@ -10,6 +10,8 @@ export interface components {
         /** Создание заявки на регистрацию пользователя */
         "Users_2.Methods.Reg.Add": {
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
+            /** Имя пользователя */
+            name?: string | null;
             /** @default ru */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
             /** URL страницы, которую нужно открыть после подтверждения регистрации */

@@ -17,6 +17,11 @@
                             }
                         ]
                     },
+                    "name": {
+                        "title": "Имя пользователя",
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "lang": {
                         "default": "ru",
                         "allOf": [

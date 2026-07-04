@@ -424,6 +424,10 @@
                         "const": "The email or password you entered is incorrect!",
                         "readOnly": true
                     },
+                    "Enter_name": {
+                        "const": "Enter name",
+                        "readOnly": true
+                    },
                     "Enter_email": {
                         "const": "Enter email",
                         "readOnly": true
@@ -2123,6 +2127,7 @@
                     "Email",
                     "Email_not_exist",
                     "Password_incorrect",
+                    "Enter_name",
                     "Enter_email",
                     "Enter_password",
                     "Remember_me",

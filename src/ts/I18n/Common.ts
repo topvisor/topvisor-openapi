@@ -221,6 +221,8 @@ export interface components {
             /** @constant */
             readonly Password_incorrect: "The email or password you entered is incorrect!";
             /** @constant */
+            readonly Enter_name: "Enter name";
+            /** @constant */
             readonly Enter_email: "Enter email";
             /** @constant */
             readonly Enter_password: "Enter password";

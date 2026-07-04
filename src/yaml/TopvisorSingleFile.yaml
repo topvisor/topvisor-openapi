@@ -32098,6 +32098,10 @@ components:
         email:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
+        name:
+          title: Имя пользователя
+          nullable: true
+          type: string
         lang:
           default: ru
           allOf:
