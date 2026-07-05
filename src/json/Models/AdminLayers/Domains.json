@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AdminLayers.Domains",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AdminLayers.Domains": {
+                "properties": {
+                    "SERVICE_TYPE()": {
+                        "nullable": true
+                    },
+                    "domain": {
+                        "nullable": true
+                    },
+                    "partner_site": {
+                        "nullable": true
+                    },
+                    "order_number": {
+                        "nullable": true
+                    },
+                    "create_date": {
+                        "nullable": true
+                    },
+                    "paidto_date": {
+                        "nullable": true
+                    },
+                    "price": {
+                        "nullable": true
+                    },
+                    "price_currency": {
+                        "nullable": true
+                    },
+                    "partner_site_hosting": {
+                        "nullable": true
+                    },
+                    "service_comment": {
+                        "nullable": true
+                    },
+                    "comment": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

@@ -210,6 +210,12 @@
             },
             "Models.Watcher.Results": {
                 "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
+            },
+            "Models.AdminLayers.Domains": {
+                "$ref": "Models/AdminLayers/Domains.json#/components/schemas/Models.AdminLayers.Domains"
+            },
+            "Models.AdminLayers.SSLCert": {
+                "$ref": "Models/AdminLayers/SSLCert.json#/components/schemas/Models.AdminLayers.SSLCert"
             }
         }
     }

@@ -27,6 +27,7 @@ export interface components {
             ban_search_101?: any;
             ban_search_102?: any;
             stop_to?: any;
+            robot_id?: any;
         };
     };
     responses: never;
