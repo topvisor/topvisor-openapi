@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Snapshots": {
             /** @constant */
-            readonly Snippets_in_snapshots: "Snippets in snapshots";
+            readonly Snippets_in_snapshots: "Snippets in Snapshots";
             /** @constant */
             readonly No_snapshots_these_dates_note: "No Snapshots saved for the applied filters and dates";
             /** @constant */

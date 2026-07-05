@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "Snippets_in_snapshots": {
-                        "const": "Snippets in snapshots",
+                        "const": "Snippets in Snapshots",
                         "readOnly": true
                     },
                     "No_snapshots_these_dates_note": {
