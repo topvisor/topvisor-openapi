@@ -946,11 +946,11 @@
                         "const": "By search engine",
                         "readOnly": true
                     },
-                    "Sort_by_yande_region_code": {
+                    "Sort_by_yandex_region_code": {
                         "const": "By Yandex region code (lr)",
                         "readOnly": true
                     },
-                    "Sort_by_lphabetically": {
+                    "Sort_by_alphabetically": {
                         "const": "Alphabetically",
                         "readOnly": true
                     },
@@ -1225,8 +1225,8 @@
                     "Change_url_no_available",
                     "Create_folder",
                     "Sort_by_search_engine",
-                    "Sort_by_yande_region_code",
-                    "Sort_by_lphabetically",
+                    "Sort_by_yandex_region_code",
+                    "Sort_by_alphabetically",
                     "Sort_by_rank",
                     "Sort_by_index_status",
                     "Project_url",

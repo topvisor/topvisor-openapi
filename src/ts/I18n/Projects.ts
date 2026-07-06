@@ -477,9 +477,9 @@ export interface components {
             /** @constant */
             readonly Sort_by_search_engine: "By search engine";
             /** @constant */
-            readonly Sort_by_yande_region_code: "By Yandex region code (lr)";
+            readonly Sort_by_yandex_region_code: "By Yandex region code (lr)";
             /** @constant */
-            readonly Sort_by_lphabetically: "Alphabetically";
+            readonly Sort_by_alphabetically: "Alphabetically";
             /** @constant */
             readonly Sort_by_rank: "Sort by rank";
             /** @constant */
