@@ -17,7 +17,7 @@ export interface components {
              *       "on"
              *     ]
              */
-            fields?: unknown[] | null;
+            fields?: string[];
             /** ID проекта */
             project_id: number;
             /** Вернуть ли в результате только включенных конкурентов */

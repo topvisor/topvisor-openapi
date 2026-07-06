@@ -28141,13 +28141,14 @@ components:
       type: object
       properties:
         fields:
-          nullable: true
           default:
             - id
             - name
             - site
             - 'on'
           type: array
+          items:
+            type: string
         project_id:
           title: ID проекта
           type: integer
