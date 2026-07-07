@@ -510,6 +510,14 @@
                         "const": "Find out whether there are AI answers for your queries. It will also display the neural network response text and whether your site or your competitors are there.<br><br>To activate collection, enable the <b>AI Overviews</b> option in <a href=\"#view-win_master_positions=settings:{{ projectId }}\">Project settings</a> and run a check.",
                         "readOnly": true
                     },
+                    "Snippet_ext_url_by_pos_popup": {
+                        "const": "Website appears in Top several times",
+                        "readOnly": true
+                    },
+                    "Snippet_ext_url_by_pos_popup_enable_snapshots": {
+                        "const": "Website appears in Top several times. To see the list of URLs and their rankings, enable the collection of <a href=\"/support/snapshots/\" target=\"_blank\">SERP Snapshots</a> and run a check.",
+                        "readOnly": true
+                    },
                     "Serp_features_pictures": {
                         "const": "Pictures",
                         "readOnly": true
@@ -653,6 +661,8 @@
                     "Serp_features_aiOverviewPreview",
                     "Serp_features_aiOverviewExists",
                     "Serp_features_aiOverviewExists_popup",
+                    "Snippet_ext_url_by_pos_popup",
+                    "Snippet_ext_url_by_pos_popup_enable_snapshots",
                     "Serp_features_pictures",
                     "On_display_relevant_url",
                     "Confirm_delete_target_for_group",

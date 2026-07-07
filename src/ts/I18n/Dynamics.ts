@@ -259,6 +259,10 @@ export interface components {
             /** @constant */
             readonly Serp_features_aiOverviewExists_popup: "Find out whether there are AI answers for your queries. It will also display the neural network response text and whether your site or your competitors are there.<br><br>To activate collection, enable the <b>AI Overviews</b> option in <a href=\"#view-win_master_positions=settings:{{ projectId }}\">Project settings</a> and run a check.";
             /** @constant */
+            readonly Snippet_ext_url_by_pos_popup: "Website appears in Top several times";
+            /** @constant */
+            readonly Snippet_ext_url_by_pos_popup_enable_snapshots: "Website appears in Top several times. To see the list of URLs and their rankings, enable the collection of <a href=\"/support/snapshots/\" target=\"_blank\">SERP Snapshots</a> and run a check.";
+            /** @constant */
             readonly Serp_features_pictures: "Pictures";
             /** @constant */
             readonly On_display_relevant_url: "Show Ranked URLs";
