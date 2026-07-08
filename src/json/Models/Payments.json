@@ -22,6 +22,9 @@
                     "user_id": {
                         "nullable": true
                     },
+                    "site": {
+                        "nullable": true
+                    },
                     "system": {
                         "nullable": true
                     },

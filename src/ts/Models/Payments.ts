@@ -13,6 +13,7 @@ export interface components {
             id?: any;
             external_id?: any;
             user_id?: any;
+            site?: any;
             system?: any;
             requisites_id?: any;
             data?: any;
