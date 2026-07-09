@@ -11,7 +11,7 @@ export interface components {
             /** @constant */
             readonly Warning_message: "";
             /** @constant */
-            readonly Warning_message_admin?: "Это пример растяжки с маркетинговыми новостями. <a href=\"https://t.me/thundo_com\" target=\"_blank\">Это телеграм Thundo</a> (кстати, подписывайтесь). Щас будет переенос<br><br>Это <b>пример жирного текста</b> с эмодзи 😀🤗😜🫶🧡";
+            readonly Warning_message_admin?: "Это пример растяжки с маркетинговыми новостями. <a href=\"https://t.me/thundo_com\" target=\"_blank\">Это телеграм Thundo</a> (кстати, подписывайтесь). Щас будет перенос👇<br><br>Это <b>пример жирного текста</b> с эмодзи 😀🤗😜🫶🧡";
         };
     };
     responses: never;
