@@ -15,13 +15,12 @@
                         "readOnly": true
                     },
                     "Warning_message_admin": {
-                        "const": "",
+                        "const": "Это пример растяжки с маркетинговыми новостями. <a href=\"https://t.me/thundo_com\" target=\"_blank\">Это телеграм Thundo</a> (кстати подписывайтесь). Это <b>пример жирного текста</b> с эмодзи 😀🤗😜🫶🧡",
                         "readOnly": true
                     }
                 },
                 "required": [
-                    "Warning_message",
-                    "Warning_message_admin"
+                    "Warning_message"
                 ]
             }
         }
