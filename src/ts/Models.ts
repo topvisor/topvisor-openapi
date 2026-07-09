@@ -31,9 +31,11 @@ export interface components {
         "Models.Abstract.Groups": import('./Models/Abstract/Groups.ts').components['schemas']['Models.Abstract.Groups'];
         "Models.Abstract.Keywords": import('./Models/Abstract/Keywords.ts').components['schemas']['Models.Abstract.Keywords'];
         "Models.AdminLayers.Anons": import('./Models/AdminLayers/Anons.ts').components['schemas']['Models.AdminLayers.Anons'];
+        "Models.AdminLayers.Domains": import('./Models/AdminLayers/Domains.ts').components['schemas']['Models.AdminLayers.Domains'];
         "Models.AdminLayers.Key": import('./Models/AdminLayers/Key.ts').components['schemas']['Models.AdminLayers.Key'];
         "Models.AdminLayers.Layers": import('./Models/AdminLayers/Layers.ts').components['schemas']['Models.AdminLayers.Layers'];
         "Models.AdminLayers.Partners": import('./Models/AdminLayers/Partners.ts').components['schemas']['Models.AdminLayers.Partners'];
+        "Models.AdminLayers.SSLCert": import('./Models/AdminLayers/SSLCert.ts').components['schemas']['Models.AdminLayers.SSLCert'];
         "Models.AdminLayers.Servers": import('./Models/AdminLayers/Servers.ts').components['schemas']['Models.AdminLayers.Servers'];
         "Models.AdminLayers.Service": import('./Models/AdminLayers/Service.ts').components['schemas']['Models.AdminLayers.Service'];
         "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];

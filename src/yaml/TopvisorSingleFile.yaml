@@ -3062,6 +3062,71 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
+  /get/content_2/searchAuthors/:
+    post:
+      operationId: GetContent2SearchAuthors
+      tags:
+        - Content_2
+      summary: Поиск страниц авторов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.SearchAuthors.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.SearchAuthors.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Content.Authors'
+  /get/content_2/searchDifferent/:
+    post:
+      operationId: GetContent2SearchDifferent
+      tags:
+        - Content_2
+      summary: |-
+        Комбинированный поиск по авторам и страницам
+
+        Авторы имеют приоритет в выдаче.
+        Оставшийся лимит заполняется найденными страницами.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.SearchDifferent.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.SearchDifferent.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
   /get/content_2/sitemap/:
     post:
       operationId: GetContent2Sitemap
@@ -23934,6 +23999,164 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Models.Pages'
+    Content_2.Methods.SearchAuthors.Get:
+      type: object
+      properties:
+        subdomain:
+          title: Фильтр по поддомену
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Subdomain'
+        lang:
+          title: Язык документа
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+        search:
+          title: Искомая строка
+          type: string
+        folder:
+          title: Папка в которой производить поиск
+          nullable: true
+          type: string
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - subdomain
+        - lang
+        - search
+      title: Поиск страниц авторов
+    Content_2.Methods.SearchAuthors.Get.Exec:
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Content.Authors'
+    Content_2.Methods.SearchDifferent.Get:
+      type: object
+      properties:
+        subdomain:
+          title: Фильтр по поддомену
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Subdomain'
+        lang:
+          title: Язык документа
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+        search:
+          title: Искомая строка
+          type: string
+        folder:
+          title: Папка в которой производить поиск
+          nullable: true
+          type: string
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - subdomain
+        - lang
+        - search
+      title: |-
+        Комбинированный поиск по авторам и страницам
+
+        Авторы имеют приоритет в выдаче.
+        Оставшийся лимит заполняется найденными страницами.
+    Content_2.Methods.SearchDifferent.Get.Exec:
+      type: array
     Content_2.Methods.Sitemap.Get:
       type: object
       properties:
@@ -32338,6 +32561,11 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/AiTracker_2.Types.History.FilterBySentiments'
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -41268,6 +41496,13 @@ components:
       title: Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
     Schedule_2.Methods.Settings.EmailsHints.Get.Exec:
       type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+        required:
+          - id
     Snapshots_2.Methods.Competitors.Chart.Get:
       type: object
       properties:

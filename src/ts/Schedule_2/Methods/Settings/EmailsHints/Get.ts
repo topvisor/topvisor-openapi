@@ -11,7 +11,9 @@ export interface components {
         "Schedule_2.Methods.Settings.EmailsHints.Get": {
             search?: string;
         };
-        "Schedule_2.Methods.Settings.EmailsHints.Get.Exec": unknown[];
+        "Schedule_2.Methods.Settings.EmailsHints.Get.Exec": {
+            id: string;
+        }[];
     };
     responses: never;
     parameters: never;

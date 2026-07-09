@@ -206,6 +206,11 @@ export interface components {
              */
             readonly AI_TRACKER_COST: number;
             /**
+             * Стоимость дополнительного конкурента в ИИ трекере.
+             * @default 10000
+             */
+            readonly AI_TRACKER_COMPETITOR_COST: number;
+            /**
              * Список тарифных планов.
              * @default [
              *       "No set",

@@ -5488,6 +5488,123 @@
                 }
             }
         },
+        "/get/content_2/searchAuthors/": {
+            "post": {
+                "operationId": "GetContent2SearchAuthors",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Поиск страниц авторов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/SearchAuthors/Get.json#/components/schemas/Content_2.Methods.SearchAuthors.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Content_2/Methods/SearchAuthors/Get.json#/components/schemas/Content_2.Methods.SearchAuthors.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/content_2/searchDifferent/": {
+            "post": {
+                "operationId": "GetContent2SearchDifferent",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Комбинированный поиск по авторам и страницам\n\nАвторы имеют приоритет в выдаче.\nОставшийся лимит заполняется найденными страницами.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/SearchDifferent/Get.json#/components/schemas/Content_2.Methods.SearchDifferent.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Content_2/Methods/SearchDifferent/Get.json#/components/schemas/Content_2.Methods.SearchDifferent.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/content_2/sitemap/": {
             "post": {
                 "operationId": "GetContent2Sitemap",

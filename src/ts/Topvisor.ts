@@ -1744,6 +1744,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Поиск страниц авторов */
+    "/get/content_2/searchAuthors/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2SearchAuthors"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Комбинированный поиск по авторам и страницам
+     *
+     *     Авторы имеют приоритет в выдаче.
+     *     Оставшийся лимит заполняется найденными страницами.
+     */
+    "/get/content_2/searchDifferent/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2SearchDifferent"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение xml карты сайта */
     "/get/content_2/sitemap/": {
         parameters: {
@@ -2923,11 +2962,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление конкурентов
-     *
-     *     Обязательный параметр или ids или urls
-     */
+    /** Удаление конкурентов */
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -11708,6 +11743,57 @@ export interface operations {
                         result: import('./Content_2/Methods/Search/Get.ts').components['schemas']['Content_2.Methods.Search.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
+                };
+            };
+        };
+    };
+    GetContent2SearchAuthors: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/SearchAuthors/Get.ts').components['schemas']['Content_2.Methods.SearchAuthors.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/SearchAuthors/Get.ts').components['schemas']['Content_2.Methods.SearchAuthors.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
+                };
+            };
+        };
+    };
+    GetContent2SearchDifferent: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/SearchDifferent/Get.ts').components['schemas']['Content_2.Methods.SearchDifferent.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/SearchDifferent/Get.ts').components['schemas']['Content_2.Methods.SearchDifferent.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };

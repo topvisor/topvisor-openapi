@@ -79,6 +79,9 @@
             "Models.AdminLayers.Anons": {
                 "$ref": "Models/AdminLayers/Anons.json#/components/schemas/Models.AdminLayers.Anons"
             },
+            "Models.AdminLayers.Domains": {
+                "$ref": "Models/AdminLayers/Domains.json#/components/schemas/Models.AdminLayers.Domains"
+            },
             "Models.AdminLayers.Key": {
                 "$ref": "Models/AdminLayers/Key.json#/components/schemas/Models.AdminLayers.Key"
             },
@@ -87,6 +90,9 @@
             },
             "Models.AdminLayers.Partners": {
                 "$ref": "Models/AdminLayers/Partners.json#/components/schemas/Models.AdminLayers.Partners"
+            },
+            "Models.AdminLayers.SSLCert": {
+                "$ref": "Models/AdminLayers/SSLCert.json#/components/schemas/Models.AdminLayers.SSLCert"
             },
             "Models.AdminLayers.Servers": {
                 "$ref": "Models/AdminLayers/Servers.json#/components/schemas/Models.AdminLayers.Servers"
@@ -210,12 +216,6 @@
             },
             "Models.Watcher.Results": {
                 "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
-            },
-            "Models.AdminLayers.Domains": {
-                "$ref": "Models/AdminLayers/Domains.json#/components/schemas/Models.AdminLayers.Domains"
-            },
-            "Models.AdminLayers.SSLCert": {
-                "$ref": "Models/AdminLayers/SSLCert.json#/components/schemas/Models.AdminLayers.SSLCert"
             }
         }
     }
