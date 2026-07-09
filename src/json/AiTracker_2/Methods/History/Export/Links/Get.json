@@ -11,6 +11,15 @@
                 "type": "object",
                 "properties": {
                     "models_keys": {},
+                    "competitors_ids": {
+                        "title": "ID конкурентов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
                     "template_date_range": {
                         "title": "Диапазон значений шаблона",
                         "nullable": true,

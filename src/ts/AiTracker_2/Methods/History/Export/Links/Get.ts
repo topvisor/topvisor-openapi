@@ -10,6 +10,8 @@ export interface components {
         /** Получение гостевой ссылки на просмотр ИИ-Трекера */
         "AiTracker_2.Methods.History.Export.Links.Get": {
             models_keys: unknown;
+            /** ID конкурентов */
+            competitors_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Диапазон значений шаблона */
             template_date_range?: string | null;
             /** Тип диапазона дат (при сравнении) */

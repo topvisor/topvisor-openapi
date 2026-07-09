@@ -43037,6 +43037,11 @@ components:
       type: object
       properties:
         models_keys: {}
+        competitors_ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         template_date_range:
           title: Диапазон значений шаблона
           nullable: true
