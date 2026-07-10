@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Имя сервиса конкурента
+         * Имя сервиса, к котором привязывается конкурент проекта
          * @enum {string}
          */
         "Projects_2.Types.Competitors.ServiceName": "positions" | "aiTracker";

@@ -28309,7 +28309,7 @@ components:
       x-enum-descriptions:
         - null
         - null
-      title: Имя сервиса конкурента
+      title: Имя сервиса, к котором привязывается конкурент проекта
     Projects_2.Methods.Competitors.Add:
       type: object
       properties:
