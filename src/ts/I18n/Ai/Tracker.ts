@@ -67,6 +67,8 @@ export interface components {
             /** @constant */
             readonly Prompt: "Prompt";
             /** @constant */
+            readonly for_prompt: "to each prompt";
+            /** @constant */
             readonly Search_prompts: "Prompt search";
             /** @constant */
             readonly Neural_network: "Neural network";

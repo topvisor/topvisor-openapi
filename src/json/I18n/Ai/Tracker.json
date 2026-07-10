@@ -126,6 +126,10 @@
                         "const": "Prompt",
                         "readOnly": true
                     },
+                    "for_prompt": {
+                        "const": "to each prompt",
+                        "readOnly": true
+                    },
                     "Search_prompts": {
                         "const": "Prompt search",
                         "readOnly": true
@@ -289,6 +293,7 @@
                     "Header_start_short",
                     "Prompts",
                     "Prompt",
+                    "for_prompt",
                     "Search_prompts",
                     "Neural_network",
                     "Remove_prompt",
