@@ -223,7 +223,7 @@
                         "readOnly": true
                     },
                     "Payment_by_schedule": {
-                        "const": "Payment will be processed according to schedule",
+                        "const": "Next payment is scheduled on",
                         "readOnly": true
                     },
                     "Subscribe": {

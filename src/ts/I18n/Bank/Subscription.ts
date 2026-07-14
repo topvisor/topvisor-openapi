@@ -153,7 +153,7 @@ export interface components {
             /** @constant */
             readonly Will_be_charged_now: "Will be charged of upgrade";
             /** @constant */
-            readonly Payment_by_schedule: "Payment will be processed according to schedule";
+            readonly Payment_by_schedule: "Next payment is scheduled on";
             /** @constant */
             readonly Subscribe: "Subscribe";
             /** @constant */
