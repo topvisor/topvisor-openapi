@@ -97,7 +97,7 @@ export interface components {
             /** @constant */
             readonly FieldDescriptionDbl: "Duplicates\nDescription";
             /** @constant */
-            readonly FieldBacklinksInnerCount: "Back Links\ninner";
+            readonly FieldBacklinksInnerCount: "Backlinks\ninner";
             /** @constant */
             readonly FieldTextLength: "Text length";
             /** @constant */

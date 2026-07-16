@@ -135,7 +135,7 @@
                         "readOnly": true
                     },
                     "FieldBacklinksInnerCount": {
-                        "const": "Back Links\ninner",
+                        "const": "Backlinks\ninner",
                         "readOnly": true
                     },
                     "FieldTextLength": {
