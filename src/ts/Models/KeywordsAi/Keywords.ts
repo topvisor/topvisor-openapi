@@ -43,16 +43,6 @@ export interface components {
              *       ]
              *     }
              */
-            brand_names?: any;
-            /**
-             * @example {
-             *       "need set qualifiers": [
-             *         "date",
-             *         "model_key",
-             *         "project_id"
-             *       ]
-             *     }
-             */
             mentioned?: any;
             /**
              * @example {
@@ -94,6 +84,16 @@ export interface components {
              *     }
              */
             metadata?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key",
+             *         "project_id"
+             *       ]
+             *     }
+             */
+            response_marked?: any;
         };
     };
     responses: never;

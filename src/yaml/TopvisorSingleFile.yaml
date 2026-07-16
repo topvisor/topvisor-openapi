@@ -19590,13 +19590,6 @@ components:
               - date
               - model_key
               - project_id
-        brand_names:
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - model_key
-              - project_id
         mentioned:
           nullable: true
           example:
@@ -19626,6 +19619,13 @@ components:
               - model_key
               - project_id
         metadata:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model_key
+              - project_id
+        response_marked:
           nullable: true
           example:
             need set qualifiers:

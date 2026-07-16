@@ -65,16 +65,6 @@
                             ]
                         }
                     },
-                    "brand_names": {
-                        "nullable": true,
-                        "example": {
-                            "need set qualifiers": [
-                                "date",
-                                "model_key",
-                                "project_id"
-                            ]
-                        }
-                    },
                     "mentioned": {
                         "nullable": true,
                         "example": {
@@ -116,6 +106,16 @@
                         }
                     },
                     "metadata": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model_key",
+                                "project_id"
+                            ]
+                        }
+                    },
+                    "response_marked": {
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
