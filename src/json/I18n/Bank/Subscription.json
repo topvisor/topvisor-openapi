@@ -219,7 +219,7 @@
                         "readOnly": true
                     },
                     "Will_be_charged_now": {
-                        "const": "Will be charged of upgrade",
+                        "const": "You will be charged for upgrade",
                         "readOnly": true
                     },
                     "Payment_by_schedule": {

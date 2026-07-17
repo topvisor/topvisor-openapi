@@ -151,7 +151,7 @@ export interface components {
             /** @constant */
             readonly Activate_immediately: "Activate immediately";
             /** @constant */
-            readonly Will_be_charged_now: "Will be charged of upgrade";
+            readonly Will_be_charged_now: "You will be charged for upgrade";
             /** @constant */
             readonly Payment_by_schedule: "Next payment is scheduled on";
             /** @constant */
