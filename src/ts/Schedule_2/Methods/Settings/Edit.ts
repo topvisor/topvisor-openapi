@@ -9,11 +9,8 @@ export interface components {
     schemas: {
         /** Изменить дополнительные параметры расписания */
         "Schedule_2.Methods.Settings.Edit": {
-            /**
-             * Тип расписания
-             * @description @see Schedule_2\Mods\Schedule::$availableTypes
-             */
-            type: string;
+            /** Тип расписания */
+            type: import('../../Types/Type.ts').components['schemas']['Schedule_2.Types.Type'];
             /** Id объекта, для которого требуется получить параметры расписания */
             target_id: number;
             /** Id второго объекта, для которого требуется получить параметры расписания (обязательно для mentions) */

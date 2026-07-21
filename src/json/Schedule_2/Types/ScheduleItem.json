@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.ScheduleItem",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.ScheduleItem": {
+                "type": "object",
+                "properties": {
+                    "times": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Schedule_2/Types/Times.json#/components/schemas/Schedule_2.Types.Times"
+                            }
+                        ]
+                    },
+                    "days": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Schedule_2/Types/Days.json#/components/schemas/Schedule_2.Types.Days"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "times",
+                    "days"
+                ],
+                "title": "Кортеж расписания\n\nОпределяется парой:\n- Время запуска (может быть несколько)\n- Дни запуска"
+            }
+        }
+    }
+}

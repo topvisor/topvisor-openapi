@@ -12,8 +12,11 @@
                 "properties": {
                     "type": {
                         "title": "Тип расписания",
-                        "description": "@see Schedule_2\\Mods\\Schedule::$availableTypes",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
+                            }
+                        ]
                     },
                     "target_id": {
                         "title": "Id объекта, для которого требуется получить параметры расписания",

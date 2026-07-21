@@ -7,13 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Schedule_2.Methods.Del": {
-            /** Тип расписания */
-            type: import('../Types/Type.ts').components['schemas']['Schedule_2.Types.Type'];
-            /** Id объекта, к которому будет привязано расписание */
-            target_id: number;
-        };
-        "Schedule_2.Methods.Del.Exec": number | null;
+        /**
+         * Допустимый час в расписании
+         * @enum {string}
+         */
+        "Schedule_2.Types.Hour": "ALL" | "EVERY_FOUR" | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23";
     };
     responses: never;
     parameters: never;

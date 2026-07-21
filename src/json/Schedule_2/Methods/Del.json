@@ -12,16 +12,14 @@
                 "properties": {
                     "type": {
                         "title": "Тип расписания",
-                        "description": "@see Schedule_2\\Mods\\Schedule::$availableTypes",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
+                            }
+                        ]
                     },
                     "target_id": {
                         "title": "Id объекта, к которому будет привязано расписание",
-                        "type": "integer"
-                    },
-                    "target_id_2": {
-                        "title": "Id второго объекта, к которому будет привязано расписание (для mentions)",
-                        "nullable": true,
                         "type": "integer"
                     }
                 },

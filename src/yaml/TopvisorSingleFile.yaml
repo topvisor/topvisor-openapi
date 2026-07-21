@@ -17049,19 +17049,66 @@ components:
       title: Настройка рекуррентного платежа
     Recurring_2.Methods.Edit.Exec:
       type: integer
+    Schedule_2.Types.Type:
+      type: string
+      enum:
+        - aiTracker_go
+        - aiTracker_report
+        - positions_go
+        - positions_report
+        - volumes_go
+        - audit_go
+        - audit_report
+        - watcher_go
+        - watcher_report
+        - indexing_go
+        - indexing_report
+        - urlsUpdater_go
+        - urlsUpdater_report
+      x-enum-varnames:
+        - AiTrackerGo
+        - AiTrackerReport
+        - PositionsGo
+        - PositionsReport
+        - VolumesGo
+        - AuditGo
+        - AuditReport
+        - WatcherGo
+        - WatcherReport
+        - IndexingGo
+        - IndexingReport
+        - UrlsUpdaterGo
+        - UrlsUpdaterReport
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Тип расписания
+
+        Включает в себя имя сервиса и функцию
+      description: |-
+        @see TypeService
+        @see TypeMethod
     Schedule_2.Methods.Del:
       type: object
       properties:
         type:
           title: Тип расписания
-          description: '@see Schedule_2\Mods\Schedule::$availableTypes'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Type'
         target_id:
           title: Id объекта, к которому будет привязано расписание
-          type: integer
-        target_id_2:
-          title: Id второго объекта, к которому будет привязано расписание (для mentions)
-          nullable: true
           type: integer
       required:
         - type
@@ -17069,54 +17116,468 @@ components:
     Schedule_2.Methods.Del.Exec:
       nullable: true
       type: integer
+    Schedule_2.Types.Hour:
+      type: string
+      enum:
+        - ALL
+        - EVERY_FOUR
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '18'
+        - '19'
+        - '20'
+        - '21'
+        - '22'
+        - '23'
+      x-enum-varnames:
+        - All
+        - EveryFour
+        - Zero
+        - One
+        - Two
+        - Three
+        - Four
+        - Five
+        - Six
+        - Seven
+        - Eight
+        - Nine
+        - Ten
+        - Eleven
+        - Twelve
+        - Thirteen
+        - Fourteen
+        - Fifteen
+        - Sixteen
+        - Seventeen
+        - Eighteen
+        - Nineteen
+        - Twenty
+        - TwentyOne
+        - TwentyTwo
+        - TwentyThree
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Допустимый час в расписании
+    Schedule_2.Types.Minute:
+      type: string
+      enum:
+        - ALL
+        - EVERY_FIVE
+        - EVERY_TEN
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '18'
+        - '19'
+        - '20'
+        - '21'
+        - '22'
+        - '23'
+        - '24'
+        - '25'
+        - '26'
+        - '27'
+        - '28'
+        - '29'
+        - '30'
+        - '31'
+        - '32'
+        - '33'
+        - '34'
+        - '35'
+        - '36'
+        - '37'
+        - '38'
+        - '39'
+        - '40'
+        - '41'
+        - '42'
+        - '43'
+        - '44'
+        - '45'
+        - '46'
+        - '47'
+        - '48'
+        - '49'
+        - '50'
+        - '51'
+        - '52'
+        - '53'
+        - '54'
+        - '55'
+        - '56'
+        - '57'
+        - '58'
+        - '59'
+      x-enum-varnames:
+        - All
+        - EveryFive
+        - EveryTen
+        - Zero
+        - One
+        - Two
+        - Three
+        - Four
+        - Five
+        - Six
+        - Seven
+        - Eight
+        - Nine
+        - Ten
+        - Eleven
+        - Twelve
+        - Thirteen
+        - Fourteen
+        - Fifteen
+        - Sixteen
+        - Seventeen
+        - Eighteen
+        - Nineteen
+        - Twenty
+        - TwentyOne
+        - TwentyTwo
+        - TwentyThree
+        - TwentyFour
+        - TwentyFive
+        - TwentySix
+        - TwentySeven
+        - TwentyEight
+        - TwentyNine
+        - Thirty
+        - ThirtyOne
+        - ThirtyTwo
+        - ThirtyThree
+        - ThirtyFour
+        - ThirtyFive
+        - ThirtySix
+        - ThirtySeven
+        - ThirtyEight
+        - ThirtyNine
+        - Forty
+        - FortyOne
+        - FortyTwo
+        - FortyThree
+        - FortyFour
+        - FortyFive
+        - FortySix
+        - FortySeven
+        - FortyEight
+        - FortyNine
+        - Fifty
+        - FiftyOne
+        - FiftyTwo
+        - FiftyThree
+        - FiftyFour
+        - FiftyFive
+        - FiftySix
+        - FiftySeven
+        - FiftyEight
+        - FiftyNine
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Допустимая минута в расписании
+    Schedule_2.Types.Time:
+      type: object
+      properties:
+        hour:
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Hour'
+        minute:
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Minute'
+      required:
+        - hour
+        - minute
+      title: Период времени расписании
+    Schedule_2.Types.Times:
+      type: array
+      items:
+        $ref: '#/components/schemas/Schedule_2.Types.Time'
+      title: Список периодов времени в расписании
+    Schedule_2.Types.Day:
+      type: string
+      enum:
+        - ALL
+        - YANDEX_UPDATE
+        - CHECK_POSITIONS
+        - LAST_OF_MONTH
+        - MONDAY
+        - TUESDAY
+        - WEDNESDAY
+        - THURSDAY
+        - FRIDAY
+        - SATURDAY
+        - SUNDAY
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '18'
+        - '19'
+        - '20'
+        - '21'
+        - '22'
+        - '23'
+        - '24'
+        - '25'
+        - '26'
+        - '27'
+      x-enum-varnames:
+        - All
+        - YandexUpdate
+        - CheckPositions
+        - LastOfMonth
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+        - One
+        - Two
+        - Three
+        - Four
+        - Five
+        - Six
+        - Seven
+        - Eight
+        - Nine
+        - Ten
+        - Eleven
+        - Twelve
+        - Thirteen
+        - Fourteen
+        - Fifteen
+        - Sixteen
+        - Seventeen
+        - Eighteen
+        - Nineteen
+        - Twenty
+        - TwentyOne
+        - TwentyTwo
+        - TwentyThree
+        - TwentyFour
+        - TwentyFive
+        - TwentySix
+        - TwentySeven
+      x-enum-descriptions:
+        - Запуск в любой день месяца и любой день недели
+        - Запуск после обновления данных Яндекса
+        - Запуск после завершения проверки позиций
+        - Последний день месяца; Внутри расписания дата 31 используется как маркер последнего дня и корректно работает для месяцев с разной длиной.; В феврале и месяцах с 30 днями запуск произойдет в фактический последний день, а не только в дату 31.
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: |-
+        Допустимый день в расписании
+
+        Дни 28–31 не задаются напрямую: при переводе времени между часовыми поясами дата может перейти через границу месяца.
+        Для последнего дня месяца используется `LAST_OF_MONTH`, который учитывает фактическую длину месяца.
+    Schedule_2.Types.Days:
+      type: array
+      items:
+        $ref: '#/components/schemas/Schedule_2.Types.Day'
+      title: Дни в расписании
+    Schedule_2.Types.ScheduleItem:
+      type: object
+      properties:
+        times:
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Times'
+        days:
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Days'
+      required:
+        - times
+        - days
+      title: |-
+        Кортеж расписания
+
+        Определяется парой:
+        - Время запуска (может быть несколько)
+        - Дни запуска
+    Schedule_2.Types.Schedule:
+      type: array
+      items:
+        $ref: '#/components/schemas/Schedule_2.Types.ScheduleItem'
+      title: Расписание, является списком кортежей расписания
     Schedule_2.Methods.Edit:
       type: object
       properties:
         schedule:
-          title: |-
-            Каждый элемент содержит:
-            - times: Массив времени, где каждый элемент — ассоциативный массив с ключами:
-            - - hour: Час из перечисления доступных часов (см. $availableHours)
-            - - minute: Минута из перечисления доступных минут (см. $availableMinutes)
-            - days: Массив дней из перечисления доступных дней (см. $availableDays)
-          description: |-
-            Массив расписания, содержащий элементы с данными о времени и днях.
-            @see Schedule_2\Mods\Schedule::$availableHours
-            @see Schedule_2\Mods\Schedule::$availableMinutes
-            @see Schedule_2\Mods\Schedule::$availableDays
-          type: array
-          items:
-            type: object
-            properties:
-              times:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    hour:
-                      type: string
-                    minute:
-                      type: string
-                  required:
-                    - hour
-                    - minute
-              days:
-                type: array
-                items:
-                  type: string
-            required:
-              - times
-              - days
+          title: Строки расписания с периодами времени и днями запуска
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Schedule'
         type:
           title: Тип расписания
-          description: '@see Schedule_2\Mods\Schedule::$availableTypes'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Type'
         target_id:
           title: Id объекта, к которому будет привязано расписание
-          type: integer
-        target_id_2:
-          title: Id второго объекта, к которому будет привязано расписание (для mentions)
-          nullable: true
           type: integer
       required:
         - schedule
@@ -17131,8 +17592,8 @@ components:
       properties:
         type:
           title: Тип расписания
-          description: '@see Schedule_2\Mods\Schedule::$availableTypes'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Type'
         target_id:
           title: Id объекта, для которого требуется получить расписание
           type: integer
@@ -28812,8 +29273,8 @@ components:
       properties:
         type:
           title: Тип расписания
-          description: '@see Schedule_2\Mods\Schedule::$availableTypes'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Type'
         target_id:
           title: Id объекта, для которого требуется получить параметры расписания
           type: integer
@@ -28905,8 +29366,8 @@ components:
       properties:
         type:
           title: Тип расписания
-          description: '@see Schedule_2\Mods\Schedule::$availableTypes'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Schedule_2.Types.Type'
         target_id:
           title: Id объекта, для которого требуется получить расписание
           type: integer

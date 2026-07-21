@@ -1,0 +1,62 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.Type": {
+                "type": "string",
+                "enum": [
+                    "aiTracker_go",
+                    "aiTracker_report",
+                    "positions_go",
+                    "positions_report",
+                    "volumes_go",
+                    "audit_go",
+                    "audit_report",
+                    "watcher_go",
+                    "watcher_report",
+                    "indexing_go",
+                    "indexing_report",
+                    "urlsUpdater_go",
+                    "urlsUpdater_report"
+                ],
+                "x-enum-varnames": [
+                    "AiTrackerGo",
+                    "AiTrackerReport",
+                    "PositionsGo",
+                    "PositionsReport",
+                    "VolumesGo",
+                    "AuditGo",
+                    "AuditReport",
+                    "WatcherGo",
+                    "WatcherReport",
+                    "IndexingGo",
+                    "IndexingReport",
+                    "UrlsUpdaterGo",
+                    "UrlsUpdaterReport"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Тип расписания\n\nВключает в себя имя сервиса и функцию",
+                "description": "@see TypeService\n@see TypeMethod"
+            }
+        }
+    }
+}

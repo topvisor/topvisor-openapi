@@ -14,11 +14,8 @@ export interface components {
          * @description @see Schedule_2\Mods\Settings
          */
         "Schedule_2.Methods.Settings.Get": {
-            /**
-             * Тип расписания
-             * @description @see Schedule_2\Mods\Schedule::$availableTypes
-             */
-            type: string;
+            /** Тип расписания */
+            type: import('../../Types/Type.ts').components['schemas']['Schedule_2.Types.Type'];
             /** Id объекта, для которого требуется получить расписание */
             target_id: number;
             /** Id второго объекта, для которого требуется получить расписание (обзятельно для mentions) */

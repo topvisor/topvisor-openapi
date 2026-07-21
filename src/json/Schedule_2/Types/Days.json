@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.Days",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.Days": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../Schedule_2/Types/Day.json#/components/schemas/Schedule_2.Types.Day"
+                },
+                "title": "Дни в расписании"
+            }
+        }
+    }
+}

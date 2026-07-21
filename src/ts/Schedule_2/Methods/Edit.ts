@@ -9,33 +9,12 @@ export interface components {
     schemas: {
         /** Привязать расписание к объекту */
         "Schedule_2.Methods.Edit": {
-            /**
-             * Каждый элемент содержит:
-             *     - times: Массив времени, где каждый элемент — ассоциативный массив с ключами:
-             *     - - hour: Час из перечисления доступных часов (см. $availableHours)
-             *     - - minute: Минута из перечисления доступных минут (см. $availableMinutes)
-             *     - days: Массив дней из перечисления доступных дней (см. $availableDays)
-             * @description Массив расписания, содержащий элементы с данными о времени и днях.
-             *     @see Schedule_2\Mods\Schedule::$availableHours
-             *     @see Schedule_2\Mods\Schedule::$availableMinutes
-             *     @see Schedule_2\Mods\Schedule::$availableDays
-             */
-            schedule: {
-                times: {
-                    hour: string;
-                    minute: string;
-                }[];
-                days: string[];
-            }[];
-            /**
-             * Тип расписания
-             * @description @see Schedule_2\Mods\Schedule::$availableTypes
-             */
-            type: string;
+            /** Строки расписания с периодами времени и днями запуска */
+            schedule: import('../Types/Schedule.ts').components['schemas']['Schedule_2.Types.Schedule'];
+            /** Тип расписания */
+            type: import('../Types/Type.ts').components['schemas']['Schedule_2.Types.Type'];
             /** Id объекта, к которому будет привязано расписание */
             target_id: number;
-            /** Id второго объекта, к которому будет привязано расписание (для mentions) */
-            target_id_2?: number | null;
         };
         "Schedule_2.Methods.Edit.Exec": number | null;
     };

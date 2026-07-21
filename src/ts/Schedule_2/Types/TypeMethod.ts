@@ -7,13 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Schedule_2.Methods.Del": {
-            /** Тип расписания */
-            type: import('../Types/Type.ts').components['schemas']['Schedule_2.Types.Type'];
-            /** Id объекта, к которому будет привязано расписание */
-            target_id: number;
-        };
-        "Schedule_2.Methods.Del.Exec": number | null;
+        /**
+         * Операции для типа расписания
+         * @description @see Type
+         * @enum {string}
+         */
+        "Schedule_2.Types.TypeMethod": "go" | "report";
     };
     responses: never;
     parameters: never;
