@@ -210,6 +210,14 @@
                         "const": "Add hyperlinks to URL",
                         "readOnly": true
                     },
+                    "To_repository_google_drive": {
+                        "const": "Upload to Google Drive",
+                        "readOnly": true
+                    },
+                    "To_repository_google_drive_message": {
+                        "const": "To export report, <a href=\"/project/settings/%projectId%/#to_project_tpa_search\">integrate</a> your account with Google Drive in the project settings",
+                        "readOnly": true
+                    },
                     "Summary": {
                         "const": "Summary",
                         "readOnly": true
@@ -586,6 +594,8 @@
                     "Compact_mode",
                     "Show_summary",
                     "Add_hyperlinks_to_URL",
+                    "To_repository_google_drive",
+                    "To_repository_google_drive_message",
                     "Summary",
                     "Show_graphics",
                     "Target_equal_relevant",
