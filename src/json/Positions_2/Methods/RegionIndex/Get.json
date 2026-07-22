@@ -22,13 +22,7 @@
                         "title": "Язык региона",
                         "type": "string"
                     },
-                    "region_device": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
-                    }
+                    "region_device": {}
                 },
                 "required": [
                     "searcher_key",

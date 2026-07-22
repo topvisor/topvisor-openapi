@@ -11,7 +11,7 @@ export interface components {
         "Content_2.Methods.Apometr.History.Get": {
             /** Индекс региона */
             region_index?: number | null;
-            searcher_key?: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key?: unknown;
             /** Ключ региона */
             region_key?: number;
             /**
@@ -19,7 +19,7 @@ export interface components {
              * @default ru
              */
             region_lang?: string;
-            region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
+            region_device?: unknown;
             /**
              * Время последней проверки за день в формате timestamp.
              *     Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.

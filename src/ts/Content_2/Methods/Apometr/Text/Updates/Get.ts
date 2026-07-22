@@ -11,7 +11,7 @@ export interface components {
         "Content_2.Methods.Apometr.Text.Updates.Get": {
             /** @default 100 */
             limit?: number;
-            searcher_key: import('../../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: unknown;
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
         "Content_2.Methods.Apometr.Text.Updates.Get.Exec": unknown[];

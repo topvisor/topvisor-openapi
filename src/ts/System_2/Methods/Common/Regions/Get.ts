@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение регионов для поисковиков с последующим кэшированием для Get запросов */
         "System_2.Methods.Common.Regions.Get": {
-            searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: unknown;
             /** Код страны по ISO 3166-1 alpha-2 */
             country_code?: string | null;
             /** Поисковая фраза */

@@ -15,12 +15,7 @@
                         "type": "integer"
                     },
                     "searcher_key": {
-                        "title": "Ключ ПС",
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
+                        "title": "Ключ ПС"
                     },
                     "regions_indexes": {
                         "title": "Ключи регионов",

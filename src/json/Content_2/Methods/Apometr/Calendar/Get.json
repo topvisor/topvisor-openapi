@@ -16,12 +16,7 @@
                         "type": "integer"
                     },
                     "searcher_key": {
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
+                        "nullable": true
                     },
                     "region_key": {
                         "title": "Ключ региона",
@@ -34,12 +29,7 @@
                         "type": "string"
                     },
                     "region_device": {
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
+                        "nullable": true
                     },
                     "action": {
                         "allOf": [

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Id поисковых системы
-         * @description @see SearcherKey
+         * @description @see Robot_2\Types\Drivers\Pos\SearcherKey
          */
         "Mentions_2.Types.SearchersKeys": import('./SearcherKey.ts').components['schemas']['Mentions_2.Types.SearcherKey'][];
     };

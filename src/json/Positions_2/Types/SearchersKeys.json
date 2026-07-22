@@ -9,9 +9,7 @@
         "schemas": {
             "Positions_2.Types.SearchersKeys": {
                 "type": "array",
-                "items": {
-                    "$ref": "../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                },
+                "items": {},
                 "title": "Id поисковых системы для проверки позиций"
             }
         }

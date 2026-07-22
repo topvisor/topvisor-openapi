@@ -25,12 +25,7 @@
                     },
                     "region_device": {
                         "title": "Устройство региона",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
+                        "nullable": true
                     },
                     "region_depth": {
                         "title": "Глубина региона\n\n- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",

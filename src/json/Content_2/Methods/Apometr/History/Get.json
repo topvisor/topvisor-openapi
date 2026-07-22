@@ -15,13 +15,7 @@
                         "nullable": true,
                         "type": "integer"
                     },
-                    "searcher_key": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
-                    },
+                    "searcher_key": {},
                     "region_key": {
                         "title": "Ключ региона",
                         "type": "integer"
@@ -31,13 +25,7 @@
                         "default": "ru",
                         "type": "string"
                     },
-                    "region_device": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
-                    },
+                    "region_device": {},
                     "timestamp": {
                         "title": "Время последней проверки за день в формате timestamp.\nПолучить данные апометра за 3 предыдущих дня и текущий день до этого времени.",
                         "nullable": true,

@@ -20,7 +20,7 @@ export interface components {
              */
             region_lang?: string | null;
             /** Устройство региона */
-            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
+            region_device?: unknown;
             /**
              * Глубина региона
              *

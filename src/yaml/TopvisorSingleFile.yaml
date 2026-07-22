@@ -20370,7 +20370,7 @@ components:
       items:
         $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
       title: Id поисковых систем для индексации
-      description: '@see SearcherKey'
+      description: '@see Robot_2\Types\Drivers\Pos\SearcherKey'
     Audit_2.Methods.Indexing.Get:
       type: object
       properties:
@@ -27699,21 +27699,6 @@ components:
       title: Получение истории позиций
       allOf:
         - $ref: '#/components/schemas/Positions_2.Objects.History.Result.Result'
-    Positions_2.Types.RegionDevice:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      x-enum-varnames:
-        - PC
-        - Tablet
-        - Smartphone
-      x-enum-descriptions:
-        - ПК
-        - Планшет
-        - Смартфон
-      title: Устройство региона
     Positions_2.Methods.RegionIndex.Get:
       type: object
       properties:
@@ -27726,9 +27711,7 @@ components:
         region_lang:
           title: Язык региона
           type: string
-        region_device:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        region_device: {}
       required:
         - searcher_key
         - region_key
@@ -27736,39 +27719,6 @@ components:
       title: Получение индекса региона (определяют уникальную настройку ПС и региона)
     Positions_2.Methods.RegionIndex.Get.Exec:
       type: integer
-    Positions_2.Types.SearcherKey:
-      type: integer
-      enum:
-        - 0
-        - 20
-        - 21
-        - 1
-        - 4
-        - 5
-        - 7
-        - 8
-        - 9
-      x-enum-varnames:
-        - Yandex
-        - YandexCom
-        - YandexTr
-        - Google
-        - YouTube
-        - Bing
-        - Seznam
-        - AppStore
-        - GooglePlay
-      x-enum-descriptions:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-      title: Ключ поисковой системы для проверки позиций
     Positions_2.Methods.Searchers.Add:
       type: object
       properties:
@@ -27777,8 +27727,6 @@ components:
           type: integer
         searcher_key:
           title: Ключ ПС
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
       required:
         - project_id
         - searcher_key
@@ -27793,8 +27741,6 @@ components:
           type: integer
         searcher_key:
           title: Id проекта
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         filters:
           title: |-
             Список фильтров по полям объекта
@@ -35888,8 +35834,6 @@ components:
           type: integer
         searcher_key:
           nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         region_key:
           title: Ключ региона
           nullable: true
@@ -35900,8 +35844,6 @@ components:
           type: string
         region_device:
           nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         action:
           allOf:
             - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
@@ -35940,9 +35882,7 @@ components:
           title: Индекс региона
           nullable: true
           type: integer
-        searcher_key:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        searcher_key: {}
         region_key:
           title: Ключ региона
           type: integer
@@ -35950,9 +35890,7 @@ components:
           title: Язык региона
           default: ru
           type: string
-        region_device:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        region_device: {}
         timestamp:
           title: |-
             Время последней проверки за день в формате timestamp.
@@ -39606,7 +39544,7 @@ components:
       items:
         $ref: '#/components/schemas/Mentions_2.Types.SearcherKey'
       title: Id поисковых системы
-      description: '@see SearcherKey'
+      description: '@see Robot_2\Types\Drivers\Pos\SearcherKey'
     Mentions_2.Methods.Checker.Go.Edit:
       type: object
       properties:
@@ -40481,8 +40419,6 @@ components:
           type: integer
         searcher_key:
           title: Ключ ПС
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         enabled:
           title: |-
             - 1 - включить
@@ -40524,8 +40460,6 @@ components:
           type: integer
         searcher_key:
           title: Ключ ПС
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         region_key:
           title: |-
             Ключ региона
@@ -40541,8 +40475,6 @@ components:
           type: string
         region_device:
           title: Устройство региона
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         region_depth:
           title: |-
             Глубина региона
@@ -40614,8 +40546,6 @@ components:
         region_device:
           title: Устройство региона
           nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         region_depth:
           title: |-
             Глубина региона
@@ -40657,8 +40587,7 @@ components:
       type: integer
     Positions_2.Types.SearchersKeys:
       type: array
-      items:
-        $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+      items: {}
       title: Id поисковых системы для проверки позиций
     Positions_2.Methods.Searchers.Sort.Edit:
       type: object
@@ -41394,14 +41323,10 @@ components:
         region_lang:
           nullable: true
           type: string
-        searcher_key:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        searcher_key: {}
         region_key:
           type: integer
-        region_device:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        region_device: {}
       required:
         - searcher_key
         - region_key
@@ -42326,9 +42251,7 @@ components:
     System_2.Methods.Common.Regions.Get:
       type: object
       properties:
-        searcher_key:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        searcher_key: {}
         country_code:
           title: Код страны по ISO 3166-1 alpha-2
           nullable: true
@@ -44437,9 +44360,7 @@ components:
         limit:
           default: 100
           type: integer
-        searcher_key:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        searcher_key: {}
         date:
           nullable: true
           allOf:
@@ -45603,8 +45524,6 @@ components:
           type: integer
         searcher_key:
           title: Ключ ПС
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         regions_indexes:
           title: Ключи регионов
           allOf:

@@ -12,7 +12,7 @@ export interface components {
             /** Id проекта */
             project_id: number;
             /** Ключ ПС */
-            searcher_key: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: unknown;
             /**
              * - 1 - включить
              *     - 0 - выключить

@@ -15,12 +15,7 @@
                         "type": "integer"
                     },
                     "searcher_key": {
-                        "title": "Id проекта",
-                        "allOf": [
-                            {
-                                "$ref": "../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
+                        "title": "Id проекта"
                     },
                     "filters": {
                         "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",

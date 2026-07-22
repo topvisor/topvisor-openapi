@@ -10,9 +10,9 @@ export interface components {
         /** Объект определитель для проверки релевантности */
         "Projects_2.Objects.Task.Relevant.Qualifier": {
             region_lang?: string | null;
-            searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: unknown;
             region_key: number;
-            region_device: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
+            region_device: unknown;
         };
     };
     responses: never;

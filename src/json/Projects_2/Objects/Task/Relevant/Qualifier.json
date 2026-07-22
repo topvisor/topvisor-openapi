@@ -14,23 +14,11 @@
                         "nullable": true,
                         "type": "string"
                     },
-                    "searcher_key": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
-                    },
+                    "searcher_key": {},
                     "region_key": {
                         "type": "integer"
                     },
-                    "region_device": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
-                            }
-                        ]
-                    }
+                    "region_device": {}
                 },
                 "required": [
                     "searcher_key",

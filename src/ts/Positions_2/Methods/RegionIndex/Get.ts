@@ -15,7 +15,7 @@ export interface components {
             region_key: number;
             /** Язык региона */
             region_lang: string;
-            region_device?: import('../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
+            region_device?: unknown;
         };
         "Positions_2.Methods.RegionIndex.Get.Exec": number;
     };

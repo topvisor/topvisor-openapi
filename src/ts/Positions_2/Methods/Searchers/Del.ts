@@ -12,7 +12,7 @@ export interface components {
             /** Id проекта */
             project_id: number;
             /** Id проекта */
-            searcher_key: import('../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: unknown;
             /**
              * Список фильтров по полям объекта
              *

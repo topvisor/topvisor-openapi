@@ -10,13 +10,7 @@
             "System_2.Methods.Common.Regions.Get": {
                 "type": "object",
                 "properties": {
-                    "searcher_key": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
-                    },
+                    "searcher_key": {},
                     "country_code": {
                         "title": "Код страны по ISO 3166-1 alpha-2",
                         "nullable": true,
