@@ -19346,17 +19346,23 @@ components:
       type: string
       enum:
         - response
+        - response_marked
+        - metadata
         - mentioned
         - position
         - position_max
         - sentiment
       x-enum-varnames:
         - Response
+        - ResponseMarked
+        - Metadata
         - Mentioned
         - Position
         - PositionMax
         - Sentiment
       x-enum-descriptions:
+        - null
+        - null
         - null
         - null
         - null
@@ -19893,7 +19899,8 @@ components:
             need set qualifiers:
               - date
               - model_key
-              - project_id
+        brand_names:
+          nullable: true
         mentioned:
           nullable: true
           example:
@@ -19928,14 +19935,12 @@ components:
             need set qualifiers:
               - date
               - model_key
-              - project_id
         response_marked:
           nullable: true
           example:
             need set qualifiers:
               - date
               - model_key
-              - project_id
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:

@@ -11,6 +11,8 @@
                 "type": "string",
                 "enum": [
                     "response",
+                    "response_marked",
+                    "metadata",
                     "mentioned",
                     "position",
                     "position_max",
@@ -18,12 +20,16 @@
                 ],
                 "x-enum-varnames": [
                     "Response",
+                    "ResponseMarked",
+                    "Metadata",
                     "Mentioned",
                     "Position",
                     "PositionMax",
                     "Sentiment"
                 ],
                 "x-enum-descriptions": [
+                    null,
+                    null,
                     null,
                     null,
                     null,

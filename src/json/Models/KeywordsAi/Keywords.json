@@ -60,10 +60,12 @@
                         "example": {
                             "need set qualifiers": [
                                 "date",
-                                "model_key",
-                                "project_id"
+                                "model_key"
                             ]
                         }
+                    },
+                    "brand_names": {
+                        "nullable": true
                     },
                     "mentioned": {
                         "nullable": true,
@@ -110,8 +112,7 @@
                         "example": {
                             "need set qualifiers": [
                                 "date",
-                                "model_key",
-                                "project_id"
+                                "model_key"
                             ]
                         }
                     },
@@ -120,8 +121,7 @@
                         "example": {
                             "need set qualifiers": [
                                 "date",
-                                "model_key",
-                                "project_id"
+                                "model_key"
                             ]
                         }
                     }

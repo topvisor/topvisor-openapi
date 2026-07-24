@@ -28,12 +28,12 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_key",
-             *         "project_id"
+             *         "model_key"
              *       ]
              *     }
              */
             response?: any;
+            brand_names?: any;
             /**
              * @example {
              *       "need set qualifiers": [
@@ -78,8 +78,7 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_key",
-             *         "project_id"
+             *         "model_key"
              *       ]
              *     }
              */
@@ -88,8 +87,7 @@ export interface components {
              * @example {
              *       "need set qualifiers": [
              *         "date",
-             *         "model_key",
-             *         "project_id"
+             *         "model_key"
              *       ]
              *     }
              */
