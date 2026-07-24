@@ -9,12 +9,12 @@ export interface components {
     schemas: {
         /** Добавление ПС */
         "Positions_2.Methods.Searchers.Add": {
-            /** Id проекта */
-            project_id: number;
             /** Ключ ПС */
             searcher_key: unknown;
+            /** ID проекта */
+            project_id: number;
         };
-        "Positions_2.Methods.Searchers.Add.Exec": unknown;
+        "Positions_2.Methods.Searchers.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

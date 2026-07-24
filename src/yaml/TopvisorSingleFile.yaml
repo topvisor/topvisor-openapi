@@ -27727,17 +27727,18 @@ components:
     Positions_2.Methods.Searchers.Add:
       type: object
       properties:
-        project_id:
-          title: Id проекта
-          type: integer
         searcher_key:
           title: Ключ ПС
+        project_id:
+          title: ID проекта
+          type: integer
       required:
-        - project_id
         - searcher_key
+        - project_id
       title: Добавление ПС
     Positions_2.Methods.Searchers.Add.Exec:
       nullable: true
+      type: integer
     Positions_2.Methods.Searchers.Del:
       type: object
       properties:
@@ -41341,7 +41342,7 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifier'
-      title: Определители с настройками для подбора
+      title: Определители для проверки релевантности
       description: '@see Qualifier'
     Projects_2.Methods.Tasks.Relevants.Add:
       type: object
