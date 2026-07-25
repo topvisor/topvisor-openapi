@@ -67,6 +67,8 @@ export interface components {
             /** @constant */
             readonly Audit_bank_info: "Project audit for";
             /** @constant */
+            readonly PageSpeed_Insights_API_key_invalid: "The PageSpeed Insights API key is invalid and has been disabled. Add a new key in project settings.";
+            /** @constant */
             readonly Report: "Report";
             /** @constant */
             readonly Header_browse: "Summary";

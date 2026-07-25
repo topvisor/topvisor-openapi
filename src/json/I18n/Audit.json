@@ -126,6 +126,10 @@
                         "const": "Project audit for",
                         "readOnly": true
                     },
+                    "PageSpeed_Insights_API_key_invalid": {
+                        "const": "The PageSpeed Insights API key is invalid and has been disabled. Add a new key in project settings.",
+                        "readOnly": true
+                    },
                     "Report": {
                         "const": "Report",
                         "readOnly": true
@@ -776,6 +780,7 @@
                     "Step1_gen_notice",
                     "Sitemap_bank_info",
                     "Audit_bank_info",
+                    "PageSpeed_Insights_API_key_invalid",
                     "Report",
                     "Header_browse",
                     "Header_common",
