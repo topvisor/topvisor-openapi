@@ -17,7 +17,6 @@
                     },
                     "errors": {
                         "title": "Список ошибок, полученных при выполнении запроса",
-                        "description": "@requires",
                         "allOf": [
                             {
                                 "$ref": "Errors.json#/components/schemas/Errors"

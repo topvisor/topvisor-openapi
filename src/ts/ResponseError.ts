@@ -11,10 +11,7 @@ export interface components {
         ResponseError: {
             /** При ошибке результат отсутствует */
             result?: null | null;
-            /**
-             * Список ошибок, полученных при выполнении запроса
-             * @description @requires
-             */
+            /** Список ошибок, полученных при выполнении запроса */
             errors: import('./Errors.ts').components['schemas']['Errors'];
             /** Список сообщений, полученных при выполнении запроса */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;

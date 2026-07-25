@@ -22,8 +22,7 @@ export interface components {
             operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'] | null;
             /**
              * Значения для сравенния
-             *
-             *     В зависимости от типа условия оно может иметь разное количество значений
+             * @description В зависимости от типа условия оно может иметь разное количество значений
              *
              *     Обычно оно имеет только одно значение
              */

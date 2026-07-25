@@ -5343,10 +5343,8 @@ components:
       type: object
       properties:
         errors:
-          title: |-
-            Результат ответа API метода
-
-            Тип результата зависит от типа запроса и его настроек
+          title: Результат ответа API метода
+          description: Тип результата зависит от типа запроса и его настроек
           nullable: true
           type: 'null'
         messages:
@@ -5360,10 +5358,8 @@ components:
       type: object
       properties:
         nextOffset:
-          title: |-
-            Смещение для получения следующий порции данных
-
-            Вернется только в случае существования следующей порции
+          title: Смещение для получения следующий порции данных
+          description: Вернется только в случае существования следующей порции
           nullable: true
           type: integer
         total:
@@ -5376,17 +5372,15 @@ components:
       type: object
       properties:
         code:
-          title: |-
-            Код ошибки
-
-            Код ошибки 0 - deprecated
+          title: Код ошибки
+          description: Код ошибки 0 - deprecated
           type: integer
         string:
           title: Описание ошибки
           type: string
         detail:
-          title: |-
-            Объект с дополнительной информацией
+          title: Объект с дополнительной информацией
+          description: |-
             - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
              Нужно передать название и, если требуется, дополнительные параметры
           nullable: true
@@ -5450,7 +5444,6 @@ components:
           type: 'null'
         errors:
           title: Список ошибок, полученных при выполнении запроса
-          description: '@requires'
           allOf:
             - $ref: '#/components/schemas/Errors'
         messages:
@@ -7292,9 +7285,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/FieldOperator'
         values:
-          title: |-
-            Значения для сравнения
-
+          title: Значения для сравнения
+          description: |-
             В зависимости от типа условия оно может иметь разное количество значений
 
             Обычно оно имеет только одно значение

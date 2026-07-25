@@ -11,15 +11,14 @@ export interface components {
         Error: {
             /**
              * Код ошибки
-             *
-             *     Код ошибки 0 - deprecated
+             * @description Код ошибки 0 - deprecated
              */
             code: number;
             /** Описание ошибки */
             string: string;
             /**
              * Объект с дополнительной информацией
-             *     - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
+             * @description - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
              *      Нужно передать название и, если требуется, дополнительные параметры
              */
             detail?: ({
