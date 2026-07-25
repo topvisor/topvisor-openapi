@@ -8747,6 +8747,583 @@
                     }
                 }
             }
+        },
+        "/get/audit_2/countUrls/": {
+            "post": {
+                "operationId": "GetAudit2CountUrls",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение количества настроенных URL",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/CountUrls/Get.json#/components/schemas/Audit_2.Methods.CountUrls.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/CountUrls/Get.json#/components/schemas/Audit_2.Methods.CountUrls.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/checks/": {
+            "post": {
+                "operationId": "GetAudit2AuditChecks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение общей информации о проверках\n- только для проверки, которая не завершена\n- в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx\n- в ответе будет заменено значение count_pages и count_all на текущие\n- в ответ будет добавлены значения robot_step и robot_count_tasks_allм",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Checks/Get.json#/components/schemas/Audit_2.Methods.Audit.Checks.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Checks/Get.json#/components/schemas/Audit_2.Methods.Audit.Checks.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/css/": {
+            "post": {
+                "operationId": "GetAudit2AuditCss",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных css",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Css/Get.json#/components/schemas/Audit_2.Methods.Audit.Css.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Css/Get.json#/components/schemas/Audit_2.Methods.Audit.Css.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Css.json#/components/schemas/Models.Audit.Css"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/export/": {
+            "post": {
+                "operationId": "GetAudit2AuditExport",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Экспорт результатов проверки файла",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Export/Get.json#/components/schemas/Audit_2.Methods.Audit.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Файл результатов проверки сайта",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/js/": {
+            "post": {
+                "operationId": "GetAudit2AuditJs",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных js",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Js/Get.json#/components/schemas/Audit_2.Methods.Audit.Js.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Js/Get.json#/components/schemas/Audit_2.Methods.Audit.Js.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Js.json#/components/schemas/Models.Audit.Js"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/links/": {
+            "post": {
+                "operationId": "GetAudit2AuditLinks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных ссылок",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Links.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Links.json#/components/schemas/Models.Audit.Links"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/summary/": {
+            "post": {
+                "operationId": "GetAudit2AuditSummary",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводки о выполненном аудите",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Summary/Get.json#/components/schemas/Audit_2.Methods.Audit.Summary.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Summary/Get.json#/components/schemas/Audit_2.Methods.Audit.Summary.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/summaryPage/": {
+            "post": {
+                "operationId": "GetAudit2AuditSummaryPage",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводки страницы",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/SummaryPage/Get.json#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/SummaryPage/Get.json#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/audit_2/audit/checker/go/": {
+            "post": {
+                "operationId": "EditAudit2AuditCheckerGo",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Запуск проверки аудита",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/checker/price/": {
+            "post": {
+                "operationId": "GetAudit2AuditCheckerPrice",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Информация о стоимости запуска аудита по проектам",
+                "description": "@api",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Audit_2/Methods/Audit/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

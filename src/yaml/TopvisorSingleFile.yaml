@@ -4882,6 +4882,323 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /get/audit_2/countUrls/:
+    post:
+      operationId: GetAudit2CountUrls
+      tags:
+        - Audit_2
+      summary: Получение количества настроенных URL
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.CountUrls.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.CountUrls.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/audit_2/audit/checks/:
+    post:
+      operationId: GetAudit2AuditChecks
+      tags:
+        - Audit_2
+      summary: |-
+        Получение общей информации о проверках
+        - только для проверки, которая не завершена
+        - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
+        - в ответе будет заменено значение count_pages и count_all на текущие
+        - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Checks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Checks.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Checks'
+  /get/audit_2/audit/css/:
+    post:
+      operationId: GetAudit2AuditCss
+      tags:
+        - Audit_2
+      summary: Получение проверенных css
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Css.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Css.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Css'
+  /get/audit_2/audit/export/:
+    post:
+      operationId: GetAudit2AuditExport
+      tags:
+        - Audit_2
+      summary: Экспорт результатов проверки файла
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: Файл результатов проверки сайта
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/audit_2/audit/js/:
+    post:
+      operationId: GetAudit2AuditJs
+      tags:
+        - Audit_2
+      summary: Получение проверенных js
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Js.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Js.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Js'
+  /get/audit_2/audit/links/:
+    post:
+      operationId: GetAudit2AuditLinks
+      tags:
+        - Audit_2
+      summary: Получение проверенных ссылок
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Links.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Links'
+  /get/audit_2/audit/summary/:
+    post:
+      operationId: GetAudit2AuditSummary
+      tags:
+        - Audit_2
+      summary: Получение сводки о выполненном аудите
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Summary.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Checks'
+  /get/audit_2/audit/summaryPage/:
+    post:
+      operationId: GetAudit2AuditSummaryPage
+      tags:
+        - Audit_2
+      summary: Получение сводки страницы
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Pages'
+  /edit/audit_2/audit/checker/go/:
+    post:
+      operationId: EditAudit2AuditCheckerGo
+      tags:
+        - Audit_2
+      summary: Запуск проверки аудита
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+  /get/audit_2/audit/checker/price/:
+    post:
+      operationId: GetAudit2AuditCheckerPrice
+      tags:
+        - Audit_2
+      summary: Информация о стоимости запуска аудита по проектам
+      description: '@api'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
 components:
   securitySchemes:
     authToken:
@@ -16744,3 +17061,1434 @@ components:
       description: '@api'
     Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
       type: number
+    Audit_2.Types.Type:
+      type: string
+      enum:
+        - audit
+        - indexing
+        - sitemap
+        - watcher
+      x-enum-varnames:
+        - Audit
+        - Indexing
+        - Sitemap
+        - Watcher
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+      title: Модуль аудита
+    Audit_2.Methods.CountUrls.Get:
+      type: object
+      properties:
+        audit_type:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Type'
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - audit_type
+        - project_id
+      title: Получение количества настроенных URL
+      description: '@api'
+    Audit_2.Methods.CountUrls.Get.Exec:
+      title: Количество настроенных URL
+      nullable: true
+      type: integer
+    Audit_2.Methods.Audit.Checks.Get:
+      type: object
+      properties:
+        show_raw_data:
+          title: Добавить в результат данные о незавершенной проверке
+          type: boolean
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        project_id:
+          title: ID проекта
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - project_id
+      title: |-
+        Получение общей информации о проверках
+        - только для проверки, которая не завершена
+        - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
+        - в ответе будет заменено значение count_pages и count_all на текущие
+        - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
+      description: '@api'
+    Audit_2.Methods.Audit.Checks.Get.Exec:
+      title: Список выполненных (выполняемых) проверок аудита
+      nullable: true
+    Models.Audit.Checks:
+      properties:
+        DURATION():
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        device:
+          nullable: true
+        scan_links:
+          nullable: true
+        scan_images:
+          nullable: true
+        scan_js:
+          nullable: true
+        scan_css:
+          nullable: true
+        robots_txt_exists:
+          nullable: true
+        sitemap_xml_exists:
+          nullable: true
+        www_redirect_exists:
+          nullable: true
+        ssl_redirect_exists:
+          nullable: true
+        tls_exists:
+          nullable: true
+        fatal:
+          nullable: true
+        rkn_no_ban:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        time_start:
+          nullable: true
+        time_finish:
+          nullable: true
+        count_pages:
+          nullable: true
+        count_all:
+          nullable: true
+        count_000:
+          nullable: true
+        count_1xx:
+          nullable: true
+        count_2xx:
+          nullable: true
+        count_3xx:
+          nullable: true
+        count_4xx:
+          nullable: true
+        count_5xx:
+          nullable: true
+        complete:
+          nullable: true
+        count_warnings:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_problems:
+          nullable: true
+        is_mobile:
+          nullable: true
+        domain_check_rkn_no_ban:
+          nullable: true
+        domain_check_webmaster_no_errors:
+          nullable: true
+        domain_check_robots_txt_exists:
+          nullable: true
+        domain_check_sitemap_xml_exists:
+          nullable: true
+        domain_check_www_redirect_exists:
+          nullable: true
+        domain_check_ssl_redirect_exists:
+          nullable: true
+        domain_check_tls_exists:
+          nullable: true
+        pages_check_http_code_200_errors:
+          nullable: true
+        pages_check_redirects_not_exists_errors:
+          nullable: true
+        pages_check_redirects_many_not_exists_errors:
+          nullable: true
+        pages_check_ttfb_max_errors:
+          nullable: true
+        pages_check_cacheable_errors:
+          nullable: true
+        pages_check_robots_txt_allowed_errors:
+          nullable: true
+        pages_check_sitemap_xml_exists_errors:
+          nullable: true
+        pages_check_sitemap_xml_exists_with_canonical_errors:
+          nullable: true
+        pages_check_sitemap_included_none_blocked_errors:
+          nullable: true
+        pages_check_noindex_off_errors:
+          nullable: true
+        pages_check_nofollow_off_errors:
+          nullable: true
+        pages_check_title_exists_errors:
+          nullable: true
+        pages_check_title_length_max_errors:
+          nullable: true
+        pages_check_title_is_unique_errors:
+          nullable: true
+        pages_check_description_exists_errors:
+          nullable: true
+        pages_check_description_is_unique_errors:
+          nullable: true
+        pages_check_description_length_min_errors:
+          nullable: true
+        pages_check_description_length_max_errors:
+          nullable: true
+        pages_check_h1_exists_errors:
+          nullable: true
+        pages_check_html_lang_exists_errors:
+          nullable: true
+        pages_check_url_length_errors:
+          nullable: true
+        pages_check_canonical_exists_errors:
+          nullable: true
+        pages_check_alternate_errors:
+          nullable: true
+        pages_check_http_resources_count_errors:
+          nullable: true
+        pages_check_links_exists_errors:
+          nullable: true
+        pages_check_refresh_not_exists_errors:
+          nullable: true
+        pages_check_compression_exists_errors:
+          nullable: true
+        pages_check_schema_exists_errors:
+          nullable: true
+        pages_check_og_title_exists_errors:
+          nullable: true
+        pages_check_og_description_exists_errors:
+          nullable: true
+        pages_check_og_image_exists_errors:
+          nullable: true
+        pages_check_og_url_exists_errors:
+          nullable: true
+        pages_check_og_url_canonical_errors:
+          nullable: true
+        pages_check_lcp_max_errors:
+          nullable: true
+        pages_check_fid_max_errors:
+          nullable: true
+        pages_check_inp_max_errors:
+          nullable: true
+        pages_check_cls_max_errors:
+          nullable: true
+        pages_check_fcp_max_errors:
+          nullable: true
+        pages_check_si_max_errors:
+          nullable: true
+        pages_check_tbt_max_errors:
+          nullable: true
+        links_check_http_code_200_errors:
+          nullable: true
+        links_check_redirects_not_exists_errors:
+          nullable: true
+        links_check_redirects_many_not_exists_errors:
+          nullable: true
+        links_check_ttfb_max_errors:
+          nullable: true
+        links_check_url_slash_unique_errors:
+          nullable: true
+        links_check_url_format_good_errors:
+          nullable: true
+        links_check_title_or_content_exists_errors:
+          nullable: true
+        links_check_nofollow_off_errors:
+          nullable: true
+        images_check_http_code_200_errors:
+          nullable: true
+        images_check_redirects_not_exists_errors:
+          nullable: true
+        images_check_redirects_many_not_exists_errors:
+          nullable: true
+        images_check_ttfb_max_errors:
+          nullable: true
+        images_check_cacheable_errors:
+          nullable: true
+        images_check_alt_exists_errors:
+          nullable: true
+        images_check_alt_length_max_errors:
+          nullable: true
+        images_check_size_max_errors:
+          nullable: true
+        images_check_robots_disallow_off_errors:
+          nullable: true
+        images_check_modern_format_errors:
+          nullable: true
+        js_check_http_code_200_errors:
+          nullable: true
+        js_check_redirects_not_exists_errors:
+          nullable: true
+        js_check_redirects_many_not_exists_errors:
+          nullable: true
+        js_check_ttfb_max_errors:
+          nullable: true
+        js_check_compression_exists_errors:
+          nullable: true
+        js_check_cacheable_errors:
+          nullable: true
+        js_check_is_minified_errors:
+          nullable: true
+        js_check_no_render_blocking_errors:
+          nullable: true
+        css_check_http_code_200_errors:
+          nullable: true
+        css_check_redirects_not_exists_errors:
+          nullable: true
+        css_check_redirects_many_not_exists_errors:
+          nullable: true
+        css_check_ttfb_max_errors:
+          nullable: true
+        css_check_compression_exists_errors:
+          nullable: true
+        css_check_cacheable_errors:
+          nullable: true
+        css_check_is_minified_errors:
+          nullable: true
+        css_check_no_render_blocking_errors:
+          nullable: true
+    Audit_2.Methods.Audit.Css.Get:
+      type: object
+      properties:
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        project_id:
+          title: ID проекта
+          type: integer
+        check_id:
+          title: ID проверки аудита
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - project_id
+        - check_id
+      title: Получение проверенных css
+      description: '@api'
+    Models.Audit.Css:
+      properties:
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          nullable: true
+        check_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url_id:
+          nullable: true
+        url:
+          nullable: true
+        count:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          nullable: true
+        last_http_code:
+          nullable: true
+        redirects:
+          type: array
+          nullable: true
+        locations:
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        compression:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        minified:
+          nullable: true
+        broken:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        render_blocking:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_compression_exists:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_is_minified:
+          nullable: true
+        check_no_render_blocking:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    Audit_2.Methods.Audit.Css.Get.Exec:
+      title: Список проверенных css
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Css'
+    Audit_2.Types.Audit.TargetType:
+      type: string
+      enum:
+        - pages
+        - links
+        - images
+        - js
+        - css
+      x-enum-varnames:
+        - Pages
+        - Links
+        - Images
+        - JS
+        - CSS
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Тип очтета аудита
+    TV.API.Types.ExportFormat:
+      type: string
+      enum:
+        - csv
+        - xlsx
+      x-enum-varnames:
+        - Csv
+        - Xlsx
+      x-enum-descriptions:
+        - null
+        - null
+    Audit_2.Methods.Audit.Export.Get:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
+        filters_resources_target_type:
+          title: |-
+            Тип отчета для фильтра по ресурсам страницы
+
+            Только для $target_type = pages
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
+        filters_resources:
+          title: |-
+            Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
+
+            Только для $target_type = pages
+          type: array
+        output:
+          title: Формат экспортируемого файла
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.ExportFormat'
+        project_id:
+          title: ID проекта
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        check_id:
+          title: ID проверки аудита
+          type: integer
+      required:
+        - target_type
+        - output
+        - project_id
+        - check_id
+      title: Экспорт результатов проверки файла
+      description: '@api'
+    Audit_2.Methods.Audit.Js.Get:
+      type: object
+      properties:
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        project_id:
+          title: ID проекта
+          type: integer
+        check_id:
+          title: ID проверки аудита
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - project_id
+        - check_id
+      title: Получение проверенных js
+      description: '@api'
+    Models.Audit.Js:
+      properties:
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          nullable: true
+        check_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url_id:
+          nullable: true
+        url:
+          nullable: true
+        count:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          nullable: true
+        last_http_code:
+          nullable: true
+        redirects:
+          type: array
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        compression:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        minified:
+          nullable: true
+        broken:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        render_blocking:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_compression_exists:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_is_minified:
+          nullable: true
+        check_no_render_blocking:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    Audit_2.Methods.Audit.Js.Get.Exec:
+      title: Список проверенных js
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Js'
+    Audit_2.Methods.Audit.Links.Get:
+      type: object
+      properties:
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        project_id:
+          title: ID проекта
+          type: integer
+        check_id:
+          title: ID проверки аудита
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - project_id
+        - check_id
+      title: Получение проверенных ссылок
+      description: '@api'
+    Models.Audit.Links:
+      properties:
+        COUNT(*):
+          nullable: true
+        search:
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          nullable: true
+        check_id:
+          nullable: true
+        project_id:
+          nullable: true
+        url_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url:
+          nullable: true
+        type:
+          nullable: true
+        content:
+          type: string
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          nullable: true
+        last_http_code:
+          nullable: true
+        count:
+          nullable: true
+        title:
+          nullable: true
+        redirects:
+          type: array
+          nullable: true
+        nofollow:
+          nullable: true
+        sponsored:
+          nullable: true
+        ugc:
+          nullable: true
+        external:
+          nullable: true
+        broken:
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_url_slash_unique:
+          nullable: true
+        check_url_format_good:
+          nullable: true
+        check_title_or_content_exists:
+          nullable: true
+        check_nofollow_off:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    Audit_2.Methods.Audit.Links.Get.Exec:
+      title: Список проверенных ссылок
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Links'
+    Audit_2.Types.Audit.Summary.FilterCheckState:
+      type: string
+      enum:
+        - all
+        - changed
+      x-enum-varnames:
+        - All
+        - Changed
+      x-enum-descriptions:
+        - null
+        - null
+      title: Фильтр по состоянию изменения в сводке
+    Audit_2.Methods.Audit.Summary.Get:
+      type: object
+      properties:
+        filter_check_type:
+          title: Фильтр по состоянию сигнала (success, warning, error)
+          type: array
+        filter_check_state:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.Summary.FilterCheckState'
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        project_id:
+          title: ID проекта
+          type: integer
+        check_id:
+          title: ID проверки аудита
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - project_id
+        - check_id
+      title: Получение сводки о выполненном аудите
+      description: '@api'
+    Audit_2.Methods.Audit.Summary.Get.Exec:
+      title: |-
+        Сводка о выполненном аудите
+
+        Возвращает объект со сводкой по категориям, пример:
+         - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
+         - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
+         - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Checks'
+    Audit_2.Methods.Audit.SummaryPage.Get:
+      type: object
+      properties:
+        url_id:
+          title: Id ссылки на страницу
+          type: integer
+        fetch_style:
+          title: |-
+            Определяет формат результата: коллекция, объект, значение
+
+            Примеры:
+            - fetchAll - получить коллекцию объектов
+            - fetch - получить один объект
+            - fetchColumn - получить свойсвто объекта
+          description: |-
+            @see FetchStyle
+            @see Selector::execFetch() - см. реализацию
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Selector.Types.FetchStyle'
+        project_id:
+          title: ID проекта
+          type: integer
+        check_id:
+          title: ID проверки аудита
+          type: integer
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        orders:
+          title: |-
+            Список полей объекта, по которым необходимо выполнить сортировку
+
+            Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+        limit:
+          title: |-
+            Количество объектов, которые необходимо получить в результате
+
+            Используется в паре с offset
+          nullable: true
+          type: integer
+        offset:
+          title: |-
+            Число объектов, которое необходимо пропустить при получении результата
+
+            Используется в паре с limit
+          type: integer
+      required:
+        - url_id
+        - project_id
+        - check_id
+      title: Получение сводки страницы
+      description: '@api'
+    Models.Audit.Pages:
+      properties:
+        dummy_opener_summary_page:
+          nullable: true
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          nullable: true
+        check_id:
+          nullable: true
+        url_id:
+          nullable: true
+        url:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          nullable: true
+        last_http_code:
+          nullable: true
+        tls_version:
+          nullable: true
+        redirects:
+          type: array
+          nullable: true
+        meta_robots_none:
+          nullable: true
+        x_robots_tag_none:
+          nullable: true
+        meta_robots_noindex:
+          nullable: true
+        x_robots_tag_noindex:
+          nullable: true
+        meta_robots_nofollow:
+          nullable: true
+        x_robots_tag_nofollow:
+          nullable: true
+        canonical:
+          nullable: true
+        canonical_count:
+          nullable: true
+        http_resources_count:
+          nullable: true
+        html_lang:
+          nullable: true
+        hreflang:
+          nullable: true
+        rdfa:
+          nullable: true
+        json_ld:
+          nullable: true
+        microdata:
+          nullable: true
+        alternates:
+          nullable: true
+        refresh:
+          nullable: true
+        title:
+          nullable: true
+        description:
+          nullable: true
+        h1:
+          nullable: true
+        links_count:
+          nullable: true
+        images_count:
+          nullable: true
+        js_count:
+          nullable: true
+        css_count:
+          nullable: true
+        lastmod:
+          nullable: true
+        lastmod_since:
+          nullable: true
+        sitemap_xml_mention:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        og_title:
+          nullable: true
+        og_description:
+          nullable: true
+        og_image:
+          nullable: true
+        og_url:
+          nullable: true
+        og_type:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+        count_problems:
+          nullable: true
+        broken:
+          nullable: true
+        ttfb:
+          nullable: true
+        compression:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        search:
+          nullable: true
+        snippet_search:
+          nullable: true
+        title_dbl:
+          nullable: true
+        description_dbl:
+          nullable: true
+        lcp:
+          nullable: true
+        fid:
+          nullable: true
+        inp:
+          nullable: true
+        cls:
+          nullable: true
+        fcp:
+          nullable: true
+        si:
+          nullable: true
+        tti:
+          nullable: true
+        tbt:
+          nullable: true
+        cwv_performance:
+          nullable: true
+        backlinks_inner_count:
+          nullable: true
+        text_length:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_robots_txt_allowed:
+          nullable: true
+        check_sitemap_xml_exists:
+          nullable: true
+        check_sitemap_xml_exists_with_canonical:
+          nullable: true
+        check_sitemap_included_none_blocked:
+          nullable: true
+        check_noindex_off:
+          nullable: true
+        check_nofollow_off:
+          nullable: true
+        check_title_exists:
+          nullable: true
+        check_title_length_max:
+          nullable: true
+        check_title_is_unique:
+          nullable: true
+        check_description_exists:
+          nullable: true
+        check_description_is_unique:
+          nullable: true
+        check_description_length_min:
+          nullable: true
+        check_description_length_max:
+          nullable: true
+        check_h1_exists:
+          nullable: true
+        check_html_lang_exists:
+          nullable: true
+        check_url_length:
+          nullable: true
+        check_canonical_exists:
+          nullable: true
+        check_alternate:
+          nullable: true
+        check_http_resources_count:
+          nullable: true
+        check_links_exists:
+          nullable: true
+        check_refresh_not_exists:
+          nullable: true
+        check_compression_exists:
+          nullable: true
+        check_schema_exists:
+          nullable: true
+        check_og_title_exists:
+          nullable: true
+        check_og_description_exists:
+          nullable: true
+        check_og_image_exists:
+          nullable: true
+        check_og_url_exists:
+          nullable: true
+        check_og_url_canonical:
+          nullable: true
+        check_lcp_max:
+          nullable: true
+        check_fid_max:
+          nullable: true
+        check_inp_max:
+          nullable: true
+        check_cls_max:
+          nullable: true
+        check_fcp_max:
+          nullable: true
+        check_si_max:
+          nullable: true
+        check_tbt_max:
+          nullable: true
+    Audit_2.Methods.Audit.SummaryPage.Get.Exec:
+      title: Сводка о выполненном аудите по одной странице
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Audit.Pages'
+    Audit_2.Methods.Audit.Checker.Go.Edit:
+      type: object
+      properties:
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+      required: []
+      title: Запуск проверки аудита
+      description: '@api'
+    Audit_2.Methods.Audit.Checker.Go.Edit.Exec:
+      title: Список id проектов, отправленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
+    Audit_2.Methods.Audit.Checker.Price.Get:
+      type: object
+      properties:
+        filters:
+          title: |-
+            Список фильтров по полям объекта
+
+            {name: string, operator: Selector\Types\Operator, values: array}
+
+            Использует поля модели
+
+            Поля обязательное, если $id не указан
+          description: |-
+            @see AbstractMethod::MODEL
+            @see Selector\Types\Operator
+          type: array
+        id:
+          title: |-
+            Id объекта, для фильтрации объектов по id
+
+            Только для моделей с полем id
+          nullable: true
+          type: integer
+      required: []
+      title: Информация о стоимости запуска аудита по проектам
+      description: '@api'
+    Audit_2.Methods.Audit.Checker.Price.Get.Exec:
+      type: object
+      additionalProperties: {}
