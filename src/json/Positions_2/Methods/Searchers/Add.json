@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Searchers.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Searchers.Add": {
+                "type": "object",
+                "properties": {
+                    "searcher_key": {
+                        "title": "Ключ ПС"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "searcher_key",
+                    "project_id"
+                ],
+                "title": "Добавление ПС",
+                "description": "@api"
+            },
+            "Positions_2.Methods.Searchers.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

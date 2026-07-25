@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "schedule": {
+                        "title": "Строки расписания с периодами времени и днями запуска",
+                        "allOf": [
+                            {
+                                "$ref": "../../Schedule_2/Types/Schedule.json#/components/schemas/Schedule_2.Types.Schedule"
+                            }
+                        ]
+                    },
+                    "type": {
+                        "title": "Тип расписания",
+                        "allOf": [
+                            {
+                                "$ref": "../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
+                            }
+                        ]
+                    },
+                    "target_id": {
+                        "title": "Id объекта, к которому будет привязано расписание",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "schedule",
+                    "type",
+                    "target_id"
+                ],
+                "title": "Привязать расписание к объекту",
+                "description": "@api"
+            },
+            "Schedule_2.Methods.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

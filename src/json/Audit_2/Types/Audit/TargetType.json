@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Types.Audit.TargetType",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Types.Audit.TargetType": {
+                "type": "string",
+                "enum": [
+                    "pages",
+                    "links",
+                    "images",
+                    "js",
+                    "css"
+                ],
+                "x-enum-varnames": [
+                    "Pages",
+                    "Links",
+                    "Images",
+                    "JS",
+                    "CSS"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Тип очтета аудита"
+            }
+        }
+    }
+}

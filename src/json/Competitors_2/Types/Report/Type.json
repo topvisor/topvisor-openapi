@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.Report.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.Report.Type": {
+                "type": "string",
+                "enum": [
+                    "serp",
+                    "ads"
+                ],
+                "x-enum-varnames": [
+                    "Serp",
+                    "Ads"
+                ],
+                "x-enum-descriptions": [
+                    "Поисковая выдача",
+                    "Реклама"
+                ],
+                "title": "Тип отчета"
+            }
+        }
+    }
+}

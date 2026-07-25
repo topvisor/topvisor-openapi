@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Types.Stat.Dimension.Browser",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Types.Stat.Dimension.Browser": {
+                "type": "string",
+                "enum": [
+                    "IE",
+                    "Chrome",
+                    "Firefox",
+                    "Opera",
+                    "Safari",
+                    "Ya",
+                    "Other"
+                ],
+                "x-enum-varnames": [
+                    "InternetExplorer",
+                    "Chrome",
+                    "Firefox",
+                    "Opera",
+                    "Safari",
+                    "Yahoo",
+                    "Other"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Бразуер для получение информации"
+            }
+        }
+    }
+}

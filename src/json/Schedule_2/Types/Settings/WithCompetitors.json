@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.Settings.WithCompetitors",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.Settings.WithCompetitors": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2
+                ],
+                "x-enum-varnames": [
+                    "ProjectOnly",
+                    "ProjectAndCompetitorsInSeparateFiles",
+                    "ProjectAndCompetitorsInSingleFile"
+                ],
+                "x-enum-descriptions": [
+                    "Только свой проект",
+                    "Проект и конкурентов в разных файлах",
+                    "Проект и конкурентов в одном файле"
+                ],
+                "title": "В каком формате отправить проект и конкурентов"
+            }
+        }
+    }
+}

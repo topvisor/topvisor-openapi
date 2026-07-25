@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.TypeMethod",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.TypeMethod": {
+                "type": "string",
+                "enum": [
+                    "go",
+                    "report"
+                ],
+                "x-enum-varnames": [
+                    "Go",
+                    "Report"
+                ],
+                "x-enum-descriptions": [
+                    "Запуск проверки",
+                    "Запуск рассылки отчетов"
+                ],
+                "title": "Операции для типа расписания",
+                "description": "@see Type"
+            }
+        }
+    }
+}

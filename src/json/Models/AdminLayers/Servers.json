@@ -1,0 +1,79 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AdminLayers.Servers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AdminLayers.Servers": {
+                "properties": {
+                    "SERVICE_TYPE()": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "ip": {
+                        "nullable": true
+                    },
+                    "count_layers": {
+                        "nullable": true
+                    },
+                    "count_keys": {
+                        "nullable": true
+                    },
+                    "partner_site": {
+                        "nullable": true
+                    },
+                    "order_number": {
+                        "nullable": true
+                    },
+                    "create_date": {
+                        "nullable": true
+                    },
+                    "paidto_date": {
+                        "nullable": true
+                    },
+                    "price": {
+                        "nullable": true
+                    },
+                    "price_currency": {
+                        "nullable": true
+                    },
+                    "service_comment": {
+                        "nullable": true
+                    },
+                    "cpu": {
+                        "nullable": true
+                    },
+                    "disk": {
+                        "nullable": true
+                    },
+                    "ddr": {
+                        "nullable": true
+                    },
+                    "network_speed": {
+                        "nullable": true
+                    },
+                    "network_amount": {
+                        "nullable": true
+                    },
+                    "as": {
+                        "nullable": true
+                    },
+                    "comment": {
+                        "nullable": true
+                    },
+                    "auto": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

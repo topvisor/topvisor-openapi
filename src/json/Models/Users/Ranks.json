@@ -1,0 +1,98 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Users.Ranks",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Users.Ranks": {
+                "properties": {
+                    "IS_VISIBLE()": {
+                        "nullable": true
+                    },
+                    "IS_ACTIVE()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "category": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "descr": {
+                        "nullable": true
+                    },
+                    "descr_how_to_use": {
+                        "nullable": true
+                    },
+                    "bonus": {
+                        "nullable": true
+                    },
+                    "currency": {
+                        "nullable": true
+                    },
+                    "cashback_expenses": {
+                        "nullable": true
+                    },
+                    "cashback_first_payment": {
+                        "nullable": true
+                    },
+                    "discount": {
+                        "nullable": true
+                    },
+                    "color": {
+                        "nullable": true
+                    },
+                    "image_url": {
+                        "nullable": true
+                    },
+                    "always_visible": {
+                        "nullable": true
+                    },
+                    "site": {
+                        "nullable": true
+                    },
+                    "code": {
+                        "nullable": true
+                    },
+                    "used": {
+                        "nullable": true
+                    },
+                    "date": {
+                        "nullable": true
+                    },
+                    "retention_week": {
+                        "nullable": true
+                    },
+                    "retention_month": {
+                        "nullable": true
+                    },
+                    "payment_week": {
+                        "nullable": true
+                    },
+                    "payment_month": {
+                        "nullable": true
+                    },
+                    "payment_month_6": {
+                        "nullable": true
+                    },
+                    "payment_year": {
+                        "nullable": true
+                    },
+                    "new_user": {
+                        "nullable": true
+                    },
+                    "returned_user": {
+                        "nullable": true
+                    },
+                    "quitted_user": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

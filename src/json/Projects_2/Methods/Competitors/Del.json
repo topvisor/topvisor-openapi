@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Competitors.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Competitors.Del": {
+                "type": "object",
+                "properties": {
+                    "ids": {
+                        "title": "ID конкурентов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "ids",
+                    "project_id"
+                ],
+                "title": "Удаление конкурентов",
+                "description": "@api"
+            },
+            "Projects_2.Methods.Competitors.Del.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

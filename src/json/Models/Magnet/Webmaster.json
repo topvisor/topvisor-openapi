@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Magnet.Webmaster",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Magnet.Webmaster": {
+                "properties": {
+                    "id": {},
+                    "phrase": {
+                        "nullable": true
+                    },
+                    "clicks": {
+                        "nullable": true
+                    },
+                    "shows": {
+                        "nullable": true
+                    },
+                    "ctr": {
+                        "nullable": true
+                    },
+                    "position": {
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "demand": {
+                        "nullable": true
+                    },
+                    "IS_EXISTS()": {
+                        "nullable": true
+                    },
+                    "COUNT(*)": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

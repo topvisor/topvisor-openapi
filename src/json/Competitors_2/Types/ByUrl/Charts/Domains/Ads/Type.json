@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.ByUrl.Charts.Domains.Ads.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.ByUrl.Charts.Domains.Ads.Type": {
+                "type": "string",
+                "enum": [
+                    "small",
+                    "summary",
+                    "count_keywords",
+                    "sum_month_cost_rub_ads",
+                    "sum_month_cost_usd_ads"
+                ],
+                "x-enum-varnames": [
+                    "Small",
+                    "Summary",
+                    "CountKeywords",
+                    "SumMonthCostRubAds",
+                    "SumMonthCostUsdAds"
+                ],
+                "x-enum-descriptions": [
+                    "Маленький",
+                    "График сводки по доменам",
+                    "Количество запросов",
+                    "Общая месячная стоимость рекламы в рублях",
+                    "Общая месячная стоимость рекламы в долларах"
+                ],
+                "title": "Тип графика"
+            }
+        }
+    }
+}

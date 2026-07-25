@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Types.Transaction.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Types.Transaction.Type": {
+                "type": "string",
+                "enum": [
+                    "minus",
+                    "plus",
+                    "plusBonus",
+                    "minusAdmin",
+                    "minusGhost"
+                ],
+                "x-enum-varnames": [
+                    "Minus",
+                    "Plus",
+                    "PlusBonus",
+                    "MinusAdmin",
+                    "MinusGhost"
+                ],
+                "x-enum-descriptions": [
+                    "Списание",
+                    "Пополнение",
+                    "Пополнение (бонус)",
+                    "Списание из админки",
+                    "Бесплатный запуск услуги, подарок, тесты"
+                ],
+                "title": "Тип транзакции"
+            }
+        }
+    }
+}

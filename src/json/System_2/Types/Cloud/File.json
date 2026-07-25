@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Cloud.File",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Cloud.File": {
+                "type": "object",
+                "properties": {
+                    "modify": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Cloud/File/Type.json#/components/schemas/System_2.Types.Cloud.File.Type"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "modify",
+                    "size",
+                    "type",
+                    "name"
+                ],
+                "title": "Возвращаемый формат файла из директории"
+            }
+        }
+    }
+}

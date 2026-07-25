@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Annotations",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Annotations": {
+                "properties": {
+                    "id": {},
+                    "user_id": {
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "service": {
+                        "nullable": true
+                    },
+                    "target_id": {
+                        "nullable": true
+                    },
+                    "text": {
+                        "nullable": true
+                    },
+                    "create_time": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

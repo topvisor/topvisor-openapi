@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Types.Requisites.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Types.Requisites.Type": {
+                "type": "string",
+                "enum": [
+                    "contract",
+                    "offer",
+                    "partnerOffer",
+                    "fl223",
+                    "domainsContract",
+                    "domainsOffer",
+                    "domainsPersonContract",
+                    "domainsPersonOffer"
+                ],
+                "x-enum-varnames": [
+                    "Contract",
+                    "Offer",
+                    "PartnerOffer",
+                    "Fl223",
+                    "DomainsContract",
+                    "DomainsOffer",
+                    "DomainsPersonContract",
+                    "DomainsPersonOffer"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Тип реквизитов"
+            }
+        }
+    }
+}

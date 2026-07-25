@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Collect.SearcherKey",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Collect.SearcherKey": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    5,
+                    100,
+                    101,
+                    104,
+                    105
+                ],
+                "x-enum-varnames": [
+                    "Yandex",
+                    "Google",
+                    "Bing",
+                    "Yandex_hint",
+                    "Google_hint",
+                    "YouTube_hint",
+                    "Bing_hint"
+                ],
+                "x-enum-descriptions": [
+                    "Подбор ключевых слов",
+                    null,
+                    null,
+                    "Подбор подсказок, суррогатный ключ поисковика",
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Ключ поисковой системы для сбора запросов"
+            }
+        }
+    }
+}

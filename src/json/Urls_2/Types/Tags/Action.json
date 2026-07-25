@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Types.Tags.Action",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Types.Tags.Action": {
+                "type": "string",
+                "enum": [
+                    "set",
+                    "add",
+                    "remove"
+                ],
+                "x-enum-varnames": [
+                    "Set",
+                    "Add",
+                    "Remove"
+                ],
+                "x-enum-descriptions": [
+                    "Установить указанные тэги, ранее установленные тэги будут сняты",
+                    "Установить указанные тэги, ранее установленные тэги будут сохранены",
+                    "Снять указанные тэги"
+                ],
+                "title": "Способ установки тегов"
+            }
+        }
+    }
+}

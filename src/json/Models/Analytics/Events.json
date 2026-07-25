@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Analytics.Events",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Analytics.Events": {
+                "properties": {
+                    "COUNT": {
+                        "nullable": true
+                    },
+                    "COUNT_QUALIFIERS": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "action",
+                                "category",
+                                "label",
+                                "label_2",
+                                "label_3"
+                            ]
+                        }
+                    },
+                    "time": {
+                        "nullable": true
+                    },
+                    "category": {
+                        "nullable": true
+                    },
+                    "action": {
+                        "nullable": true
+                    },
+                    "label": {
+                        "nullable": true
+                    },
+                    "label_2": {
+                        "nullable": true
+                    },
+                    "label_3": {
+                        "nullable": true
+                    },
+                    "user_id": {
+                        "nullable": true
+                    },
+                    "hash_id": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

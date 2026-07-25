@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.Settings.Period",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.Settings.Period": {
+                "type": "string",
+                "enum": [
+                    "none",
+                    "month",
+                    "week",
+                    "weekly"
+                ],
+                "x-enum-varnames": [
+                    "None",
+                    "Month",
+                    "Week",
+                    "Weekly"
+                ],
+                "x-enum-descriptions": [
+                    "Без периода, последние две проверки",
+                    "Месяц",
+                    "Неделя",
+                    "Каждую неделю"
+                ],
+                "title": "Период отправки отчета"
+            }
+        }
+    }
+}

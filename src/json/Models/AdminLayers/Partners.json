@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.AdminLayers.Partners",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.AdminLayers.Partners": {
+                "properties": {
+                    "site": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "create_date": {
+                        "nullable": true
+                    },
+                    "links": {
+                        "nullable": true
+                    },
+                    "contacts": {
+                        "nullable": true
+                    },
+                    "comment": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

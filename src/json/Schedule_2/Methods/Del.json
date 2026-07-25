@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Methods.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Methods.Del": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "title": "Тип расписания",
+                        "allOf": [
+                            {
+                                "$ref": "../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
+                            }
+                        ]
+                    },
+                    "target_id": {
+                        "title": "Id объекта, к которому будет привязано расписание",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "type",
+                    "target_id"
+                ],
+                "title": "Удаление расписания",
+                "description": "@api"
+            },
+            "Schedule_2.Methods.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Actions",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Actions": {
+                "type": "object",
+                "properties": {
+                    "Link_not_available": {
+                        "const": "This link is no longer active",
+                        "readOnly": true
+                    },
+                    "User_blocked": {
+                        "const": "Your user is blocked",
+                        "readOnly": true
+                    },
+                    "Report_subscribe_canceled": {
+                        "const": "You successfully unsubscribed from project reports",
+                        "readOnly": true
+                    },
+                    "Report_subscribe_canceled1": {
+                        "const": "Subscription to",
+                        "readOnly": true
+                    },
+                    "Report_subscribe_canceled2": {
+                        "const": "is cancelled successfully",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_news": {
+                        "const": "unsubscribe from news",
+                        "readOnly": true
+                    },
+                    "Informer_subscribe_balance": {
+                        "const": "unsubscribe from low balance alerts",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_tickets": {
+                        "const": "unsubscribe from new ticket replies",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_update": {
+                        "const": "unsubscribe from Yandex updates",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_comments": {
+                        "const": "unsubscribe from new comments",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_api": {
+                        "const": "unsubscribe from API updates",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_journal": {
+                        "const": "unsubscribe from Topvisor–Journal",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_academy_news": {
+                        "const": "unsubscribe from Topvisor-academy news",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Link_not_available",
+                    "User_blocked",
+                    "Report_subscribe_canceled",
+                    "Report_subscribe_canceled1",
+                    "Report_subscribe_canceled2",
+                    "Informer_unsubscribe_news",
+                    "Informer_subscribe_balance",
+                    "Informer_unsubscribe_tickets",
+                    "Informer_unsubscribe_update",
+                    "Informer_unsubscribe_comments",
+                    "Informer_unsubscribe_api"
+                ]
+            }
+        }
+    }
+}

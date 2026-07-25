@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Types.History.HistoryField",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Types.History.HistoryField": {
+                "type": "string",
+                "enum": [
+                    "url",
+                    "domain",
+                    "snippet_title",
+                    "snippet_body",
+                    "snippet_ext"
+                ],
+                "x-enum-varnames": [
+                    "Url",
+                    "Domain",
+                    "SnippetTitle",
+                    "SnippetBody",
+                    "SnippetExt"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Поле с результатом проверки для отчета истории проверок в снимках"
+            }
+        }
+    }
+}

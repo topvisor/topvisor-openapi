@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.KeywordsAi.Groups",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.KeywordsAi.Groups": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "folder_id": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "on": {
+                        "nullable": true
+                    },
+                    "status": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "folder_path": {
+                        "nullable": true
+                    },
+                    "folder_ord": {
+                        "nullable": true
+                    },
+                    "count_keywords": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

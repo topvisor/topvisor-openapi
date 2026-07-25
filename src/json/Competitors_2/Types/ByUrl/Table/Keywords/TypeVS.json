@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.ByUrl.Table.Keywords.TypeVS",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.ByUrl.Table.Keywords.TypeVS": {
+                "type": "string",
+                "enum": [
+                    "me",
+                    "exclusive_me",
+                    "common",
+                    "competitor",
+                    "exclusive_competitor"
+                ],
+                "x-enum-varnames": [
+                    "Me",
+                    "ExclusiveMe",
+                    "Common",
+                    "Competitor",
+                    "ExclusiveCompetitor"
+                ],
+                "x-enum-descriptions": [
+                    "Все запросы",
+                    "Уникальные запросы",
+                    "Общие запросы",
+                    "Все запросыы  конкурента",
+                    "Уникальные запросы конкурента"
+                ],
+                "title": "Тип связи запросов между конкурентами"
+            }
+        }
+    }
+}

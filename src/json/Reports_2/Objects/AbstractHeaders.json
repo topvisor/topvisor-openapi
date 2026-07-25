@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Reports_2.Objects.AbstractHeaders",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Reports_2.Objects.AbstractHeaders": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "title": "Поля элементов отчета\n\nТип элементов определяется конкретным отчетом, например для проверки позиций это Запросы",
+                        "description": "@see static::MODEL",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../Selector/Field.json#/components/schemas/Selector.Field"
+                        }
+                    },
+                    "filters": {
+                        "title": "Фильтры элементов отчета\n\nДля реализации фичей при экспорте отчетов",
+                        "description": "@see static::MODEL",
+                        "type": "array",
+                        "items": {
+                            "$ref": "../../FieldsFilters.json#/components/schemas/FieldsFilters"
+                        }
+                    },
+                    "groupBy": {
+                        "title": "Поле для визуальной группировки элементов\n\nЕсли указно поле, которого нет в элементах, то оно буде игнорироваться",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "fields",
+                    "filters",
+                    "groupBy"
+                ],
+                "title": "Заголовки отчета\n\nЗаголовки содержат основные данные по которым строится отчет:\n- для простых отчетов это список полей `fields`\n- для более сложных отчетов параметры могут содержать другие данные, необходимые для построения отчета\n\nГде используется:\n- для вывода данных в API для последующего построения отчета в UI/другим способом на стороне клиента\n- для генерации отчета при экспорте"
+            }
+        }
+    }
+}

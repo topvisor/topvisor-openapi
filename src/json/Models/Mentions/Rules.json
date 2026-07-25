@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Mentions.Rules",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Mentions.Rules": {
+                "properties": {
+                    "id": {},
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "any": {
+                        "nullable": true
+                    },
+                    "plus": {
+                        "nullable": true
+                    },
+                    "minus": {
+                        "nullable": true
+                    },
+                    "status": {
+                        "nullable": true
+                    },
+                    "report_last_time": {
+                        "nullable": true
+                    },
+                    "searcher_depth_by_keys": {
+                        "nullable": true
+                    },
+                    "searcher_key": {
+                        "nullable": true
+                    },
+                    "project_user_id": {
+                        "nullable": true
+                    },
+                    "project_competitor": {
+                        "nullable": true
+                    },
+                    "project_right": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}
