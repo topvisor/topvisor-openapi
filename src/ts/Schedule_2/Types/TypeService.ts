@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Сервис (инструмент) для типа расписания
-         *
-         *     Не путать с сервисом API
-         * @description @see Type
+         * @description Не путать с сервисом API
          * @enum {string}
          */
         "Schedule_2.Types.TypeService": "aiTracker" | "audit" | "indexing" | "positions" | "urlsUpdater" | "volumes" | "watcher";

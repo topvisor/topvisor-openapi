@@ -19,7 +19,8 @@
                         ]
                     },
                     "sitemap": {
-                        "title": "Флаг активности в карте сайта\n- 1 - присутствовал в прошлых версиях карты сайта",
+                        "title": "Флаг активности в карте сайта",
+                        "description": "- 1 - присутствовал в прошлых версиях карты сайта",
                         "nullable": true,
                         "allOf": [
                             {
@@ -71,8 +72,7 @@
                     "url",
                     "project_id"
                 ],
-                "title": "Добавление url",
-                "description": "@api"
+                "title": "Добавление url"
             },
             "Urls_2.Methods.Add.Exec": {
                 "nullable": true,

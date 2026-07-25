@@ -21,7 +21,8 @@
                         "type": "string"
                     },
                     "dateformat": {
-                        "title": "Формат дат, отображаемых на сайте и в скачиваемых отчетах\n\nhttps://www.php.net/manual/ru/datetime.format.php",
+                        "title": "Формат дат, отображаемых на сайте и в скачиваемых отчетах",
+                        "description": "https://www.php.net/manual/ru/datetime.format.php",
                         "nullable": true,
                         "type": "string"
                     },
@@ -45,8 +46,7 @@
                     }
                 },
                 "required": [],
-                "title": "Изменение параметров активного пользователя",
-                "description": "@api"
+                "title": "Изменение параметров активного пользователя"
             },
             "Users_2.Methods.Profile.Edit.Exec": {
                 "nullable": true,

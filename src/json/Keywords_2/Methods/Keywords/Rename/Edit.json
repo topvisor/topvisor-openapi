@@ -15,8 +15,8 @@
                         "type": "string"
                     },
                     "fields": {
-                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
-                        "description": "@see AbstractMethod::MODEL",
+                        "title": "Список полей объекта, которые надо вернуть в результате",
+                        "description": "Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
                         "type": "array"
                     },
                     "project_id": {
@@ -24,12 +24,13 @@
                         "type": "integer"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -38,8 +39,7 @@
                     "name",
                     "project_id"
                 ],
-                "title": "Переименование запроса",
-                "description": "@api"
+                "title": "Переименование запроса"
             },
             "Keywords_2.Methods.Keywords.Rename.Edit.Exec": {
                 "type": "array",

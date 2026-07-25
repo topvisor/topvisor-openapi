@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменение параметров активного пользователя
-         * @description @api
-         */
+        /** Изменение параметров активного пользователя */
         "Users_2.Methods.Profile.Edit": {
             /** Телефон */
             phone?: string | null;
@@ -18,8 +15,7 @@ export interface components {
             name?: string | null;
             /**
              * Формат дат, отображаемых на сайте и в скачиваемых отчетах
-             *
-             *     https://www.php.net/manual/ru/datetime.format.php
+             * @description https://www.php.net/manual/ru/datetime.format.php
              */
             dateformat?: string | null;
             /** Позиции, просмотр отчета: использовать обратный порядок дат */

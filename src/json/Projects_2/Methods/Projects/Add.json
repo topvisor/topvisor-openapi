@@ -50,8 +50,7 @@
                 "required": [
                     "url"
                 ],
-                "title": "Добавление проекта",
-                "description": "@api"
+                "title": "Добавление проекта"
             },
             "Projects_2.Methods.Projects.Add.Exec": {
                 "nullable": true

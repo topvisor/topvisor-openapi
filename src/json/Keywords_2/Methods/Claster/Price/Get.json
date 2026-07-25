@@ -35,8 +35,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение цены кластеризации",
-                "description": "@api"
+                "title": "Получение цены кластеризации"
             },
             "Keywords_2.Methods.Claster.Price.Get.Exec": {
                 "type": "number"

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип массива: Email[]
-         * @description @see \TV\API\Types\Email
-         */
+        /** Тип массива: Email[] */
         "TV.API.Types.EmailArray": import('./Email.ts').components['schemas']['TV.API.Types.Email'][];
     };
     responses: never;

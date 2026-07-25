@@ -34,8 +34,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Добавление папки",
-                "description": "@api"
+                "title": "Добавление папки"
             },
             "Keywords_2.Methods.Folders.Add.Exec": {
                 "nullable": true,

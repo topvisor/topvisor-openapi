@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение количества настроенных URL
-         * @description @api
-         */
+        /** Получение количества настроенных URL */
         "Audit_2.Methods.CountUrls.Get": {
             audit_type: import('../../Types/Type.ts').components['schemas']['Audit_2.Types.Type'];
             /** ID проекта */

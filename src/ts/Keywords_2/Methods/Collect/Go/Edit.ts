@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Постановка задачи на подбор запросов
-         * @description @api
-         */
+        /** Постановка задачи на подбор запросов */
         "Keywords_2.Methods.Collect.Go.Edit": {
             /** Список исходных запросов */
             keywords: unknown[];
@@ -20,8 +17,7 @@ export interface components {
             keywords_minus?: unknown[];
             /**
              * Id группы для размещения подобранных запросов
-             *
-             *     Можно указывать только при `in_one_group` = `true`
+             * @description Можно указывать только при `in_one_group` = `true`
              */
             to_group_id?: number | null;
             /** Собирать все запросы в одну группу */

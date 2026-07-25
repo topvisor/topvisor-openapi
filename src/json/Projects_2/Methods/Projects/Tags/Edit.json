@@ -26,8 +26,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Редактирование тегов проектов",
-                "description": "@api"
+                "title": "Редактирование тегов проектов"
             },
             "Projects_2.Methods.Projects.Tags.Edit.Exec": {
                 "nullable": true,

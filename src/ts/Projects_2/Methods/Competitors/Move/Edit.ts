@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Перемещение конкурента (сортировка)
-         * @description @api
-         */
+        /** Перемещение конкурента (сортировка) */
         "Projects_2.Methods.Competitors.Move.Edit": {
             /** ID проекта */
             project_id: number;
@@ -20,8 +17,7 @@ export interface components {
             to_id: number;
             /**
              * Позиция перемещения
-             *
-             *     - before
+             * @description - before
              *     - after
              * @default after
              */

@@ -9,7 +9,6 @@ export interface components {
     schemas: {
         /**
          * Операции для типа расписания
-         * @description @see Type
          * @enum {string}
          */
         "Schedule_2.Types.TypeMethod": "go" | "report";

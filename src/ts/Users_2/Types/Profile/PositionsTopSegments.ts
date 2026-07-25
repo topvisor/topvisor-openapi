@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Дополнительные сегменты топа
-         * @description @see Positions_2\Types\TopSegment
-         */
+        /** Дополнительные сегменты топа */
         "Users_2.Types.Profile.PositionsTopSegments": import('../../../Positions_2/Types/TopSegment.ts').components['schemas']['Positions_2.Types.TopSegment'][];
     };
     responses: never;

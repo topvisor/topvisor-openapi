@@ -16,7 +16,8 @@
                         "type": "integer"
                     },
                     "query": {
-                        "title": "- ключевая фраза или ее часть (by_type = keyword)\n- url (by_type = url)",
+                        "title": "- ключевая фраза или ее часть (by_type = keyword)",
+                        "description": "- url (by_type = url)",
                         "nullable": true,
                         "type": "string"
                     },
@@ -44,8 +45,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получить список оплаченных отчетов",
-                "description": "@api"
+                "title": "Получить список оплаченных отчетов"
             },
             "Competitors_2.Methods.Orders.Get.Exec": {
                 "nullable": true,

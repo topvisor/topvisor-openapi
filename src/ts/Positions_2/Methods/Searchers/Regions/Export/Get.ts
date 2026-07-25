@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Экспорт регионов (CSV)
-         *
-         *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
-         * @description @api
+         * @description - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
          */
         "Positions_2.Methods.Searchers.Regions.Export.Get": {
             /** Id проекта */

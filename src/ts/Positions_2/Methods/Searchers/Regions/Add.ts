@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавление региона
-         * @description @api
-         */
+        /** Добавление региона */
         "Positions_2.Methods.Searchers.Regions.Add": {
             /** Id проекта */
             project_id: number;
@@ -18,22 +15,19 @@ export interface components {
             searcher_key: unknown;
             /**
              * Ключ региона
-             *
-             *     Для разных ПС список доступных регионов может быть разный
+             * @description Для разных ПС список доступных регионов может быть разный
              */
             region_key: number;
             /**
              * Язык региона
-             *
-             *     Для разных ПС список языков разный
+             * @description Для разных ПС список языков разный
              */
             region_lang?: string | null;
             /** Устройство региона */
             region_device?: unknown;
             /**
              * Глубина региона
-             *
-             *     - 1-3 для Яндекса (ПК)
+             * @description - 1-3 для Яндекса (ПК)
              *     - 1-10 для Google
              *     - 1-3 для GooglePlay
              * @default 1

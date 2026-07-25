@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Определители для проверки релевантности
-         * @description @see Qualifier
-         */
+        /** Определители для проверки релевантности */
         "Projects_2.Objects.Task.Relevant.Qualifiers": import('./Qualifier.ts').components['schemas']['Projects_2.Objects.Task.Relevant.Qualifier'][];
     };
     responses: never;

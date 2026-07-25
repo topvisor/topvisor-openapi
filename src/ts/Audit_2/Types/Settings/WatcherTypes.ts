@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Типы отчетов радара
-         * @description @see WatcherType
-         */
+        /** Типы отчетов радара */
         "Audit_2.Types.Settings.WatcherTypes": import('./WatcherType.ts').components['schemas']['Audit_2.Types.Settings.WatcherType'][];
     };
     responses: never;

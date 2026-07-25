@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Установка имени конкурента
-         * @description @api
-         */
+        /** Установка имени конкурента */
         "Projects_2.Methods.Competitors.Name.Edit": {
             /** ID проекта */
             project_id: number;

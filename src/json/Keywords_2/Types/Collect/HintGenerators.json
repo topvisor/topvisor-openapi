@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Collect/HintGenerator.json#/components/schemas/Keywords_2.Types.Collect.HintGenerator"
                 },
-                "title": "Типы метода перебора",
-                "description": "@see HintGenerator"
+                "title": "Типы метода перебора"
             }
         }
     }

@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../System_2/Types/Cloud/File.json#/components/schemas/System_2.Types.Cloud.File"
                 },
-                "title": "Возвращаемые форматы файлов",
-                "description": "@see \\TV\\API\\Types\\Qualifier"
+                "title": "Возвращаемые форматы файлов"
             }
         }
     }

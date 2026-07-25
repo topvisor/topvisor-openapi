@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Дополнительные поля отчета проверки позиций
-         * @description @see AdditionalField
-         */
+        /** Дополнительные поля отчета проверки позиций */
         "Schedule_2.Types.Settings.AdditionalFields": import('./AdditionalField.ts').components['schemas']['Schedule_2.Types.Settings.AdditionalField'][];
     };
     responses: never;

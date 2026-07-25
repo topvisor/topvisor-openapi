@@ -19,7 +19,8 @@
                         "type": "integer"
                     },
                     "to_type": {
-                        "title": "Позиция перемещения:\n- before\n- after",
+                        "title": "Позиция перемещения:",
+                        "description": "- before\n- after",
                         "nullable": true,
                         "default": "after",
                         "type": "string"
@@ -29,8 +30,7 @@
                     "id",
                     "to_id"
                 ],
-                "title": "Перемещение проекта (сортировка)",
-                "description": "@api"
+                "title": "Перемещение проекта (сортировка)"
             },
             "Projects_2.Methods.Projects.Move.Edit.Exec": {
                 "nullable": true,

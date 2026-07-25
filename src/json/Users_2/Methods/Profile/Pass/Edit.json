@@ -28,8 +28,7 @@
                     "pass_new",
                     "pass_new_confirm"
                 ],
-                "title": "Изменение пароля",
-                "description": "@api"
+                "title": "Изменение пароля"
             },
             "Users_2.Methods.Profile.Pass.Edit.Exec": {
                 "nullable": true,

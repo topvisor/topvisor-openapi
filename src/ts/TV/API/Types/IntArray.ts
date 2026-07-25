@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: int
-         *
-         *     Принимает: Любые целые числа и числа в строках
+         * @description Принимает: Любые целые числа и числа в строках
          */
         "TV.API.Types.IntArray": number[];
     };

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение апдейтов
-         * @description @api
-         */
+        /** Получение апдейтов */
         "Content_2.Methods.Apometr.Updates.Get": {
             /** Индекс региона */
             region_index: number;

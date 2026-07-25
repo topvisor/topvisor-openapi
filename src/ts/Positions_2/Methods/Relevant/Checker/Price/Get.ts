@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Информация о стоимости проверки релевантности
-         * @description @api
-         */
+        /** Информация о стоимости проверки релевантности */
         "Positions_2.Methods.Relevant.Checker.Price.Get": {
             /** Проверка с учетом фильтра по регионам */
             regions_indexes?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
@@ -22,20 +19,16 @@ export interface components {
             groups_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
         };

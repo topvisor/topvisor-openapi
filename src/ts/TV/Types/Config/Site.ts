@@ -11,15 +11,13 @@ export interface components {
         "TV.Types.Config.Site": {
             /**
              * Ключ домена
-             *
-             *     Используется в путях файлов и в БД
+             * @description Используется в путях файлов и в БД
              * @default No set
              */
             readonly ID: string;
             /**
              * Аббревиатура ключа домена
-             *
-             *     Используется в путях публичных ресурсов, например для файлов на CDN
+             * @description Используется в путях публичных ресурсов, например для файлов на CDN
              * @default No set
              */
             readonly ID_ASSETS: string;
@@ -50,8 +48,7 @@ export interface components {
             readonly TELEGRAM_BOT: string;
             /**
              * Тип биллинга по умолчанию
-             *
-             *     - balance
+             * @description - balance
              *     - limits
              * @default balance
              */
@@ -65,8 +62,7 @@ export interface components {
             readonly LANGUAGE_MAIN: string;
             /**
              * Список дополнительных языков, ISO 639-1
-             *
-             *     При генерации url дополнительный язык добавляется в начало url в модуле контента
+             * @description При генерации url дополнительный язык добавляется в начало url в модуле контента
              *
              *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`
              */
@@ -80,8 +76,7 @@ export interface components {
             readonly CURRENCIES: unknown[];
             /**
              * Список поддоменов
-             *
-             *     Примеры:
+             * @description Примеры:
              *     - `''` для основного домена `example.com`
              *     - `'subdomain'` для поддомена `subdomain.example.com`
              */
@@ -90,23 +85,20 @@ export interface components {
             readonly THEMES: unknown[];
             /**
              * Цвета темы сайта
-             *
-             *     Зависят от CSS-переменных в UI
+             * @description Зависят от CSS-переменных в UI
              */
             readonly THEME_COLORS: unknown[];
             /** Список сервисов, доступных для переноса на сайте */
             readonly MIGRATION_SOURCE_DOMAINS: unknown[];
             /**
              * Почта рассыльщика
-             *
-             *     Она же используется в тикетнице
+             * @description Она же используется в тикетнице
              * @default No set
              */
             readonly MAILING_EMAIL: string;
             /**
              * Альтернативная почта рассыльщика
-             *
-             *     Используется, если нужно отправлять почту от имени другого домена
+             * @description Используется, если нужно отправлять почту от имени другого домена
              *
              *     Данная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL
              * @default No set
@@ -124,11 +116,9 @@ export interface components {
             readonly NO_REPLY_EMAIL: string;
             /**
              * Словарь модулей, доступ к которым надо закрыть
-             *
-             *     Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`
+             * @description Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`
              *
              *     Значение: всегда true, значение игнорируется
-             * @description @see Controller_2\Objects\Page::params
              */
             readonly CLOSED_BY_MOD: unknown[];
             /** @default No set */
@@ -157,8 +147,7 @@ export interface components {
             readonly DIADOC_ID: number;
             /**
              * Запрещенные API.
-             *
-             *     Разрешается блок как сервиса, так и частного метода
+             * @description Разрешается блок как сервиса, так и частного метода
              *
              *     Блокировка сервиса целиком: ['Admin_2', 'Users_2']
              *     Блокировка сервисов метода ['Admin_2\Methods\Informer'] - заблокирует только методы из Informer

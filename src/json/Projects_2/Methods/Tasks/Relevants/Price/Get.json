@@ -26,8 +26,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение цены проверки релевантности задачи без создания проекта",
-                "description": "@api"
+                "title": "Получение цены проверки релевантности задачи без создания проекта"
             },
             "Projects_2.Methods.Tasks.Relevants.Price.Get.Exec": {
                 "type": "number"

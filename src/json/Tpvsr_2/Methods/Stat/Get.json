@@ -50,8 +50,7 @@
                 "required": [
                     "hash"
                 ],
-                "title": "Получение статистики по ссылке",
-                "description": "@api"
+                "title": "Получение статистики по ссылке"
             },
             "Tpvsr_2.Methods.Stat.Get.Exec": {
                 "nullable": true,

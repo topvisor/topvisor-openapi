@@ -23,7 +23,8 @@
                         "type": "integer"
                     },
                     "to_type": {
-                        "title": "Позиция перемещения\n\n- before\n- after",
+                        "title": "Позиция перемещения",
+                        "description": "- before\n- after",
                         "nullable": true,
                         "default": "after",
                         "type": "string"
@@ -43,8 +44,7 @@
                     "id",
                     "to_id"
                 ],
-                "title": "Перемещение конкурента (сортировка)",
-                "description": "@api"
+                "title": "Перемещение конкурента (сортировка)"
             },
             "Projects_2.Methods.Competitors.Move.Edit.Exec": {
                 "nullable": true,

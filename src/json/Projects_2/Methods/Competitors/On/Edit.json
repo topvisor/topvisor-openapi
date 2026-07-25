@@ -23,7 +23,8 @@
                         ]
                     },
                     "on": {
-                        "title": "Активность проекта\n\n- -1 - выключен\n- 0 - включен",
+                        "title": "Активность проекта",
+                        "description": "- -1 - выключен\n- 0 - включен",
                         "type": "integer"
                     }
                 },
@@ -32,8 +33,7 @@
                     "ids",
                     "on"
                 ],
-                "title": "Включение/выключение конкурентов",
-                "description": "@api"
+                "title": "Включение/выключение конкурентов"
             },
             "Projects_2.Methods.Competitors.On.Edit.Exec": {
                 "type": "integer"

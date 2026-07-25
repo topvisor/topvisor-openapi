@@ -30,8 +30,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение цены перекластеризации",
-                "description": "@api"
+                "title": "Получение цены перекластеризации"
             },
             "Keywords_2.Methods.Claster.PriceChange.Get.Exec": {
                 "type": "number"

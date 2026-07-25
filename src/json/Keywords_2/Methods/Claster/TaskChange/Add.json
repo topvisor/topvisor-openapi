@@ -37,8 +37,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Запуск перекластеризации",
-                "description": "@api"
+                "title": "Запуск перекластеризации"
             },
             "Keywords_2.Methods.Claster.TaskChange.Add.Exec": {
                 "nullable": true,

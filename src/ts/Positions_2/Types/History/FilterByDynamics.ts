@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Фильтры по динамике запросов
-         * @description @see FilterByDynamic
-         */
+        /** Фильтры по динамике запросов */
         "Positions_2.Types.History.FilterByDynamics": import('./FilterByDynamic.ts').components['schemas']['Positions_2.Types.History.FilterByDynamic'][];
     };
     responses: never;

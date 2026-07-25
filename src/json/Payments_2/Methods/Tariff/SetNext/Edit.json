@@ -18,8 +18,7 @@
                 "required": [
                     "id"
                 ],
-                "title": "Смена тарифа со следующего месяца",
-                "description": "@api"
+                "title": "Смена тарифа со следующего месяца"
             },
             "Payments_2.Methods.Tariff.SetNext.Edit.Exec": {
                 "nullable": true,

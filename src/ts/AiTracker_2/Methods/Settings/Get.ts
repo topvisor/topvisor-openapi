@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение настроек ИИ-Трекера
-         * @description @api
-         */
+        /** Получение настроек ИИ-Трекера */
         "AiTracker_2.Methods.Settings.Get": {
             /** Добавить ли в результат список всехдоступных моделей */
             showAvailableModels?: boolean;

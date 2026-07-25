@@ -7,15 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение календаря апдейтов
-         * @description @api
-         */
+        /** Получение календаря апдейтов */
         "Content_2.Methods.Apometr.Calendar.Get": {
             /**
              * Индекс региона
-             *
-             *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+             * @description Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
              */
             region_index?: number | null;
             searcher_key?: unknown;

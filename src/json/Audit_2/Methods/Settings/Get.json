@@ -26,8 +26,7 @@
                     "fields",
                     "project_id"
                 ],
-                "title": "Получение настроек аудита",
-                "description": "@api"
+                "title": "Получение настроек аудита"
             },
             "Audit_2.Methods.Settings.Get.Exec": {
                 "title": "Настройки аудита",

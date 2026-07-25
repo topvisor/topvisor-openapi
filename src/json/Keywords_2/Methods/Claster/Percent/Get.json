@@ -18,8 +18,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение обновленного процента завершения кластеризации",
-                "description": "@api"
+                "title": "Получение обновленного процента завершения кластеризации"
             },
             "Keywords_2.Methods.Claster.Percent.Get.Exec": {
                 "type": "number"

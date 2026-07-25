@@ -18,12 +18,13 @@
                         ]
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -31,8 +32,7 @@
                 "required": [
                     "max_pages"
                 ],
-                "title": "Информация о стоимости запуска индексации по проектам",
-                "description": "@api"
+                "title": "Информация о стоимости запуска индексации по проектам"
             },
             "Audit_2.Methods.Sitemap.Checker.Price.Get.Exec": {
                 "type": "object",

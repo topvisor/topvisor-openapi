@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление неявных дублей по ключевым фразам
-         * @description @api
-         */
+        /** Удаление неявных дублей по ключевым фразам */
         "Keywords_2.Methods.Semantics.Deduplicate.Get": {
             /** Список исходных запросов */
             keywords: import('../../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];

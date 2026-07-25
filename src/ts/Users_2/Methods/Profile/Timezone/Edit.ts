@@ -7,15 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменение временной зоны
-         * @description @api
-         */
+        /** Изменение временной зоны */
         "Users_2.Methods.Profile.Timezone.Edit": {
             /**
              * Новая временная зона
-             *
-             *     https://www.php.net/manual/ru/timezones.php
+             * @description https://www.php.net/manual/ru/timezones.php
              */
             timezone: string;
         };

@@ -7,15 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Перемещение запросов
-         * @description @api
-         */
+        /** Перемещение запросов */
         "Keywords_2.Methods.Keywords.Move.Edit": {
             /**
              * Вставить к указанному объекту
-             *
-             *     Если в to_type указано "Перед или после запроса", то принимает id запроса
+             * @description Если в to_type указано "Перед или после запроса", то принимает id запроса
              *     Если в to_type указано "В конец или начало группы", то принимает id группы
              */
             to_id: number;
@@ -25,20 +21,16 @@ export interface components {
             project_id: number;
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
         };

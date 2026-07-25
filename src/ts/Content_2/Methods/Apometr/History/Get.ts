@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение истории шторма за период в 2 суток
-         * @description @api
-         */
+        /** Получение истории шторма за период в 2 суток */
         "Content_2.Methods.Apometr.History.Get": {
             /** Индекс региона */
             region_index?: number | null;
@@ -25,7 +22,7 @@ export interface components {
             region_device?: unknown;
             /**
              * Время последней проверки за день в формате timestamp.
-             *     Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.
+             * @description Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.
              */
             timestamp?: number | null;
             /** Вернуть только средние значения по всем тематикам */

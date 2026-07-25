@@ -27,8 +27,8 @@
                     "email",
                     "pass"
                 ],
-                "title": "Запрос на смену email\n\nБудет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email",
-                "description": "@api"
+                "title": "Запрос на смену email",
+                "description": "Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email"
             },
             "Users_2.Methods.Profile.Email.Edit.Exec": {
                 "type": "integer"

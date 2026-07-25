@@ -31,8 +31,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение цены сбора запросов без создания проекта",
-                "description": "@api"
+                "title": "Получение цены сбора запросов без создания проекта"
             },
             "Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec": {
                 "type": "number"

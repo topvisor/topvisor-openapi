@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Установка общих настроек проверки позиций проекта
-         * @description @api
-         */
+        /** Установка общих настроек проверки позиций проекта */
         "Positions_2.Methods.Settings.Edit": {
             /** Id проекта */
             project_id: number;
@@ -24,14 +21,12 @@ export interface components {
             do_snapshots_with_snippets?: boolean | null;
             /**
              * Учитывать ли поддомены при проверке
-             *
-             *     - 1: находить позиции сайта, являющиеся поддоменом к основному
+             * @description - 1: находить позиции сайта, являющиеся поддоменом к основному
              */
             subdomains?: boolean | null;
             /**
              * Ограничения
-             *
-             *     - 0: без ограничений
+             * @description - 0: без ограничений
              *     - 1: умеренный
              *     - 2: семейный поиск
              */
@@ -40,8 +35,7 @@ export interface components {
             auto_correct?: boolean | null;
             /**
              * Способ получения трафика
-             *
-             *     - 0: с учетом регионов
+             * @description - 0: с учетом регионов
              *     - 1: без учета регионов
              */
             common_traffic?: boolean | null;

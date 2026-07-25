@@ -4,10 +4,7 @@
  */
 
 export interface paths {  
-    /**
-     * Получение списка платежей
-     * @description @api
-     */
+    /** Получение списка платежей */
     "/get/payments_2/": {
         parameters: {
             query?: never;
@@ -24,10 +21,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление расписания
-     * @description @api
-     */
+    /** Удаление расписания */
     "/del/schedule_2/": {
         parameters: {
             query?: never;
@@ -44,10 +38,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Привязать расписание к объекту
-     * @description @api
-     */
+    /** Привязать расписание к объекту */
     "/edit/schedule_2/": {
         parameters: {
             query?: never;
@@ -64,10 +55,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение рассписания
-     * @description @api
-     */
+    /** Получение рассписания */
     "/get/schedule_2/": {
         parameters: {
             query?: never;
@@ -84,10 +72,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление ссылки
-     * @description @api
-     */
+    /** Добавление ссылки */
     "/add/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -104,10 +89,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Редактирование ссылки
-     * @description @api
-     */
+    /** Редактирование ссылки */
     "/edit/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -124,10 +106,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка ссылок пользователя
-     * @description @api
-     */
+    /** Получение списка ссылок пользователя */
     "/get/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -144,10 +123,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление url
-     * @description @api
-     */
+    /** Добавление url */
     "/add/urls_2/": {
         parameters: {
             query?: never;
@@ -164,10 +140,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение urls
-     * @description @api
-     */
+    /** Изменение urls */
     "/edit/urls_2/": {
         parameters: {
             query?: never;
@@ -184,10 +157,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка urls проекта
-     * @description @api
-     */
+    /** Получение списка urls проекта */
     "/get/urls_2/": {
         parameters: {
             query?: never;
@@ -204,10 +174,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение скриншота (платная функция)
-     * @description @api
-     */
+    /** Получение скриншота (платная функция) */
     "/get/webscreens_2/": {
         parameters: {
             query?: never;
@@ -224,10 +191,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление проверки ИИ-Трекера
-     * @description @api
-     */
+    /** Удаление проверки ИИ-Трекера */
     "/del/aiTracker_2/history/": {
         parameters: {
             query?: never;
@@ -244,10 +208,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение истории проверок ИИ-Трекера
-     * @description @api
-     */
+    /** Получение истории проверок ИИ-Трекера */
     "/get/aiTracker_2/history/": {
         parameters: {
             query?: never;
@@ -266,10 +227,7 @@ export interface paths {
     };  
     /**
      * Изменение настроек ИИ-Трекера
-     *
-     *     Для получения текущих настроек используйте: /get/projects_2/projects/
-     * @description @api
-     *     @see \Services\AiTracker_2\Objects\Settings
+     * @description Для получения текущих настроек используйте: /get/projects_2/projects/
      */
     "/edit/aiTracker_2/settings/": {
         parameters: {
@@ -287,10 +245,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение настроек ИИ-Трекера
-     * @description @api
-     */
+    /** Получение настроек ИИ-Трекера */
     "/get/aiTracker_2/settings/": {
         parameters: {
             query?: never;
@@ -307,10 +262,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение сводки по проверкам ИИ-Трекера
-     * @description @api
-     */
+    /** Получение сводки по проверкам ИИ-Трекера */
     "/get/aiTracker_2/summary/": {
         parameters: {
             query?: never;
@@ -327,11 +279,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение количества настроенных URL */
+    "/get/audit_2/countUrls/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2CountUrls"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
      * Получение отчета по проверке индексации
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-     * @description @api
+     * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      */
     "/get/audit_2/indexing/": {
         parameters: {
@@ -349,10 +316,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Применение настроек Анализа сайта
-     * @description @api
-     */
+    /** Применение настроек Анализа сайта */
     "/edit/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -369,10 +333,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение настроек аудита
-     * @description @api
-     */
+    /** Получение настроек аудита */
     "/get/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -391,11 +352,9 @@ export interface paths {
     };  
     /**
      * Получение результатов проверок радара
-     *
-     *     Отчет генерируется на основе объектов urls
+     * @description Отчет генерируется на основе объектов urls
      *
      *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
-     * @description @api
      */
     "/get/audit_2/watcher/": {
         parameters: {
@@ -413,10 +372,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение истории транзакций
-     * @description @api
-     */
+    /** Получение истории транзакций */
     "/get/bank_2/history/": {
         parameters: {
             query?: never;
@@ -433,10 +389,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение информации о балансе
-     * @description @api
-     */
+    /** Получение информации о балансе */
     "/get/bank_2/info/": {
         parameters: {
             query?: never;
@@ -453,10 +406,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение данных для графика отчета
-     * @description @api
-     */
+    /** Получение данных для графика отчета */
     "/get/competitors_2/charts/": {
         parameters: {
             query?: never;
@@ -473,10 +423,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получить список оплаченных отчетов
-     * @description @api
-     */
+    /** Получить список оплаченных отчетов */
     "/get/competitors_2/orders/": {
         parameters: {
             query?: never;
@@ -493,10 +440,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение данных для отчета
-     * @description @api
-     */
+    /** Получение данных для отчета */
     "/get/competitors_2/table/": {
         parameters: {
             query?: never;
@@ -513,10 +457,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление групп
-     * @description @api
-     */
+    /** Добавление групп */
     "/add/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
@@ -533,10 +474,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление групп
-     * @description @api
-     */
+    /** Удаление групп */
     "/del/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
@@ -553,10 +491,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка групп проекта
-     * @description @api
-     */
+    /** Получение списка групп проекта */
     "/get/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
@@ -573,10 +508,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление AI-запросов
-     * @description @api
-     */
+    /** Удаление AI-запросов */
     "/del/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
@@ -593,10 +525,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка AI-запросов
-     * @description @api
-     */
+    /** Получение списка AI-запросов */
     "/get/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
@@ -613,10 +542,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление папки
-     * @description @api
-     */
+    /** Добавление папки */
     "/add/keywords_2/folders/": {
         parameters: {
             query?: never;
@@ -633,10 +559,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление папок
-     * @description @api
-     */
+    /** Удаление папок */
     "/del/keywords_2/folders/": {
         parameters: {
             query?: never;
@@ -653,10 +576,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка папок проекта
-     * @description @api
-     */
+    /** Получение списка папок проекта */
     "/get/keywords_2/folders/": {
         parameters: {
             query?: never;
@@ -673,10 +593,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление групп
-     * @description @api
-     */
+    /** Добавление групп */
     "/add/keywords_2/groups/": {
         parameters: {
             query?: never;
@@ -693,10 +610,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление групп
-     * @description @api
-     */
+    /** Удаление групп */
     "/del/keywords_2/groups/": {
         parameters: {
             query?: never;
@@ -713,10 +627,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка групп проекта
-     * @description @api
-     */
+    /** Получение списка групп проекта */
     "/get/keywords_2/groups/": {
         parameters: {
             query?: never;
@@ -733,10 +644,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление запроса
-     * @description @api
-     */
+    /** Добавление запроса */
     "/add/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -753,10 +661,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление запросов
-     * @description @api
-     */
+    /** Удаление запросов */
     "/del/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -773,10 +678,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка запросов проекта
-     * @description @api
-     */
+    /** Получение списка запросов проекта */
     "/get/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -793,10 +695,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение данных магнита по интеграции
-     * @description @api
-     */
+    /** Получение данных магнита по интеграции */
     "/get/keywords_2/magnet/": {
         parameters: {
             query?: never;
@@ -813,10 +712,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение компании пользователя, через которых, были совершены платежи
-     * @description @api
-     */
+    /** Получение компании пользователя, через которых, были совершены платежи */
     "/get/payments_2/companies/": {
         parameters: {
             query?: never;
@@ -833,10 +729,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение платежных реквизитов тарифа
-     * @description @api
-     */
+    /** Изменение платежных реквизитов тарифа */
     "/edit/payments_2/nextRequisitesId/": {
         parameters: {
             query?: never;
@@ -855,8 +748,7 @@ export interface paths {
     };  
     /**
      * Изменения подписки сейчас
-     *
-     *     Реализует две взаимоисключающие стратегии:
+     * @description Реализует две взаимоисключающие стратегии:
      *
      *     - Проведение доплаты по текущей подписке
      *     - Остановка текущей подписки и создание новой
@@ -864,8 +756,6 @@ export interface paths {
      *        - После оплаты новой подписки действующая подписка будет досрочно завершена
      *
      *     Выбор стратегии зависит от типа управления подпиской
-     * @description @see Bank_2\Types\Subscriptions\Manager
-     *     @api
      */
     "/edit/payments_2/subscriptions/": {
         parameters: {
@@ -883,10 +773,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение истории позиций по запросам
-     * @description @api
-     */
+    /** Получение истории позиций по запросам */
     "/get/positions_2/history/": {
         parameters: {
             query?: never;
@@ -903,10 +790,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление ПС
-     * @description @api
-     */
+    /** Добавление ПС */
     "/add/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -923,10 +807,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление ПС
-     * @description @api
-     */
+    /** Удаление ПС */
     "/del/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -943,10 +824,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Установка общих настроек проверки позиций проекта
-     * @description @api
-     */
+    /** Установка общих настроек проверки позиций проекта */
     "/edit/positions_2/settings/": {
         parameters: {
             query?: never;
@@ -963,10 +841,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение сводки по проверкам позиций
-     * @description @api
-     */
+    /** Получение сводки по проверкам позиций */
     "/get/positions_2/summary/": {
         parameters: {
             query?: never;
@@ -983,10 +858,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление графика
-     * @description @api
-     */
+    /** Добавление графика */
     "/add/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -1005,9 +877,7 @@ export interface paths {
     };  
     /**
      * Добавление конкурента
-     *
-     *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
-     * @description @api
+     * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
      */
     "/add/projects_2/competitors/": {
         parameters: {
@@ -1025,10 +895,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление конкурентов
-     * @description @api
-     */
+    /** Удаление конкурентов */
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -1045,10 +912,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка конкурентов
-     * @description @api
-     */
+    /** Получение списка конкурентов */
     "/get/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -1065,10 +929,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление проекта
-     * @description @api
-     */
+    /** Добавление проекта */
     "/add/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -1085,10 +946,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление проектов
-     * @description @api
-     */
+    /** Удаление проектов */
     "/del/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -1105,10 +963,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка проектов
-     * @description @api
-     */
+    /** Получение списка проектов */
     "/get/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -1125,10 +980,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка задач
-     * @description @api
-     */
+    /** Получение списка задач */
     "/get/projects_2/tasks/": {
         parameters: {
             query?: never;
@@ -1147,9 +999,7 @@ export interface paths {
     };  
     /**
      * Получение списка конкурентов
-     *
-     *     Метод базируется на объекте keywords (доступны только фильтры)
-     * @description @api
+     * @description Метод базируется на объекте keywords (доступны только фильтры)
      */
     "/get/snapshots_2/competitors/": {
         parameters: {
@@ -1169,9 +1019,7 @@ export interface paths {
     };  
     /**
      * Получение истории снимков выдачи
-     *
-     *     Метод базируется на объекте keywords
-     * @description @api
+     * @description Метод базируется на объекте keywords
      */
     "/get/snapshots_2/history/": {
         parameters: {
@@ -1189,10 +1037,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение статистики по ссылке
-     * @description @api
-     */
+    /** Получение статистики по ссылке */
     "/get/tpvsr_2/stat/": {
         parameters: {
             query?: never;
@@ -1209,10 +1054,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение тегов
-     * @description @api
-     */
+    /** Изменение тегов */
     "/edit/tpvsr_2/tags/": {
         parameters: {
             query?: never;
@@ -1229,10 +1071,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение тегов
-     * @description @api
-     */
+    /** Изменение тегов */
     "/edit/urls_2/tags/": {
         parameters: {
             query?: never;
@@ -1249,10 +1088,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение параметров активного пользователя
-     * @description @api
-     */
+    /** Изменение параметров активного пользователя */
     "/edit/users_2/profile/": {
         parameters: {
             query?: never;
@@ -1269,10 +1105,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка проектов на проверку ИИ-Трекера
-     * @description @api
-     */
+    /** Отправка проектов на проверку ИИ-Трекера */
     "/edit/aiTracker_2/checker/go/": {
         parameters: {
             query?: never;
@@ -1289,10 +1122,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости проверки ИИ-Трекера
-     * @description @api
-     */
+    /** Информация о стоимости проверки ИИ-Трекера */
     "/get/aiTracker_2/checker/price/": {
         parameters: {
             query?: never;
@@ -1310,9 +1140,114 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получение сводки индексации
-     * @description @api
+     * Получение общей информации о проверках
+     * @description - только для проверки, которая не завершена
+     *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
+     *     - в ответе будет заменено значение count_pages и count_all на текущие
+     *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
      */
+    "/get/audit_2/audit/checks/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditChecks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение проверенных css */
+    "/get/audit_2/audit/css/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditCss"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение проверенных js */
+    "/get/audit_2/audit/js/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditJs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение проверенных ссылок */
+    "/get/audit_2/audit/links/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditLinks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки о выполненном аудите */
+    "/get/audit_2/audit/summary/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditSummary"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки страницы */
+    "/get/audit_2/audit/summaryPage/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditSummaryPage"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки индексации */
     "/get/audit_2/indexing/summary/": {
         parameters: {
             query?: never;
@@ -1329,10 +1264,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение сводки радара
-     * @description @api
-     */
+    /** Получение сводки радара */
     "/get/audit_2/watcher/summary/": {
         parameters: {
             query?: never;
@@ -1349,10 +1281,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение сводки проведенных операций
-     * @description @api
-     */
+    /** Получение сводки проведенных операций */
     "/get/bank_2/history/summary/": {
         parameters: {
             query?: never;
@@ -1369,10 +1298,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Оплатить отчет
-     * @description @api
-     */
+    /** Оплатить отчет */
     "/edit/competitors_2/orders/pay/": {
         parameters: {
             query?: never;
@@ -1389,10 +1315,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение календаря апдейтов
-     * @description @api
-     */
+    /** Получение календаря апдейтов */
     "/get/content_2/apometr/calendar/": {
         parameters: {
             query?: never;
@@ -1409,10 +1332,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение истории шторма за период в 2 суток
-     * @description @api
-     */
+    /** Получение истории шторма за период в 2 суток */
     "/get/content_2/apometr/history/": {
         parameters: {
             query?: never;
@@ -1429,10 +1349,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение апдейтов
-     * @description @api
-     */
+    /** Получение апдейтов */
     "/get/content_2/apometr/updates/": {
         parameters: {
             query?: never;
@@ -1449,10 +1366,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импорт AI-запросов
-     * @description @api
-     */
+    /** Импорт AI-запросов */
     "/add/keywordsAi_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -1469,10 +1383,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Кластеризация по релевантной странице: проверки перед началом кластеризации
-     * @description @api
-     */
+    /** Кластеризация по релевантной странице: проверки перед началом кластеризации */
     "/edit/keywords_2/claster/byRelevant/": {
         parameters: {
             query?: never;
@@ -1489,10 +1400,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Кластеризация по целевой ссылке: проверки перед началом кластеризации
-     * @description @api
-     */
+    /** Кластеризация по целевой ссылке: проверки перед началом кластеризации */
     "/edit/keywords_2/claster/byTarget/": {
         parameters: {
             query?: never;
@@ -1509,10 +1417,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение информации и предыдущей кластеризации
-     * @description @api
-     */
+    /** Получение информации и предыдущей кластеризации */
     "/get/keywords_2/claster/countPriceReclaster/": {
         parameters: {
             query?: never;
@@ -1529,10 +1434,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение обновленного процента завершения кластеризации
-     * @description @api
-     */
+    /** Получение обновленного процента завершения кластеризации */
     "/get/keywords_2/claster/percent/": {
         parameters: {
             query?: never;
@@ -1549,10 +1451,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение цены кластеризации
-     * @description @api
-     */
+    /** Получение цены кластеризации */
     "/get/keywords_2/claster/price/": {
         parameters: {
             query?: never;
@@ -1569,10 +1468,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение цены перекластеризации
-     * @description @api
-     */
+    /** Получение цены перекластеризации */
     "/get/keywords_2/claster/priceChange/": {
         parameters: {
             query?: never;
@@ -1589,10 +1485,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Запуск кластеризации
-     * @description @api
-     */
+    /** Запуск кластеризации */
     "/add/keywords_2/claster/task/": {
         parameters: {
             query?: never;
@@ -1609,10 +1502,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Запуск перекластеризации
-     * @description @api
-     */
+    /** Запуск перекластеризации */
     "/add/keywords_2/claster/taskChange/": {
         parameters: {
             query?: never;
@@ -1629,10 +1519,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Постановка задачи на подбор запросов
-     * @description @api
-     */
+    /** Постановка задачи на подбор запросов */
     "/edit/keywords_2/collect/go/": {
         parameters: {
             query?: never;
@@ -1649,10 +1536,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение стоимости подбора запросов
-     * @description @api
-     */
+    /** Получение стоимости подбора запросов */
     "/get/keywords_2/collect/price/": {
         parameters: {
             query?: never;
@@ -1669,10 +1553,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Перемещение папок
-     * @description @api
-     */
+    /** Перемещение папок */
     "/edit/keywords_2/folders/move/": {
         parameters: {
             query?: never;
@@ -1689,10 +1570,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Переименовывание папок
-     * @description @api
-     */
+    /** Переименовывание папок */
     "/edit/keywords_2/folders/rename/": {
         parameters: {
             query?: never;
@@ -1709,10 +1587,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Восстановление папок проекта
-     * @description @api
-     */
+    /** Восстановление папок проекта */
     "/edit/keywords_2/folders/undel/": {
         parameters: {
             query?: never;
@@ -1729,10 +1604,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Перемещение группы
-     * @description @api
-     */
+    /** Перемещение группы */
     "/edit/keywords_2/groups/move/": {
         parameters: {
             query?: never;
@@ -1749,10 +1621,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение статуса активности группы
-     * @description @api
-     */
+    /** Изменение статуса активности группы */
     "/edit/keywords_2/groups/on/": {
         parameters: {
             query?: never;
@@ -1769,10 +1638,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Переименовывание группы
-     * @description @api
-     */
+    /** Переименовывание группы */
     "/edit/keywords_2/groups/rename/": {
         parameters: {
             query?: never;
@@ -1791,9 +1657,7 @@ export interface paths {
     };  
     /**
      * Изменение сортировки групп
-     *
-     *     Не оптимизировано для работы с большим числом групп, дат и регионов
-     * @description @api
+     * @description Не оптимизировано для работы с большим числом групп, дат и регионов
      */
     "/edit/keywords_2/groups/sort/": {
         parameters: {
@@ -1811,10 +1675,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Восстановление группы из корзины
-     * @description @api
-     */
+    /** Восстановление группы из корзины */
     "/edit/keywords_2/groups/undel/": {
         parameters: {
             query?: never;
@@ -1831,10 +1692,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Экспорт в определенном формате (экспорт всех запросов)
-     * @description @api
-     */
+    /** Экспорт в определенном формате (экспорт всех запросов) */
     "/get/keywords_2/keywords/export/": {
         parameters: {
             query?: never;
@@ -1851,10 +1709,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импорт запросов
-     * @description @api
-     */
+    /** Импорт запросов */
     "/add/keywords_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -1871,10 +1726,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Перемещение запросов
-     * @description @api
-     */
+    /** Перемещение запросов */
     "/edit/keywords_2/keywords/move/": {
         parameters: {
             query?: never;
@@ -1891,10 +1743,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Переименование запроса
-     * @description @api
-     */
+    /** Переименование запроса */
     "/edit/keywords_2/keywords/rename/": {
         parameters: {
             query?: never;
@@ -1913,9 +1762,7 @@ export interface paths {
     };  
     /**
      * Изменение сортировки запросов
-     *
-     *     Можно сортировать в пределах одной группы или всего проекта
-     * @description @api
+     * @description Можно сортировать в пределах одной группы или всего проекта
      */
     "/edit/keywords_2/keywords/sort/": {
         parameters: {
@@ -1933,10 +1780,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение тегов запросов
-     * @description @api
-     */
+    /** Изменение тегов запросов */
     "/edit/keywords_2/keywords/tags/": {
         parameters: {
             query?: never;
@@ -1953,10 +1797,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение целевой ссылки запросов
-     * @description @api
-     */
+    /** Изменение целевой ссылки запросов */
     "/edit/keywords_2/keywords/target/": {
         parameters: {
             query?: never;
@@ -1973,10 +1814,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Восстановление запросов из корзины
-     * @description @api
-     */
+    /** Восстановление запросов из корзины */
     "/edit/keywords_2/keywords/undel/": {
         parameters: {
             query?: never;
@@ -1993,10 +1831,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Экспорт данных магнита
-     * @description @api
-     */
+    /** Экспорт данных магнита */
     "/get/keywords_2/magnet/export/": {
         parameters: {
             query?: never;
@@ -2013,10 +1848,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импорт данных магнита
-     * @description @api
-     */
+    /** Импорт данных магнита */
     "/get/keywords_2/magnet/import/": {
         parameters: {
             query?: never;
@@ -2033,10 +1865,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление неявных дублей по ключевым фразам
-     * @description @api
-     */
+    /** Удаление неявных дублей по ключевым фразам */
     "/get/keywords_2/semantics/deduplicate/": {
         parameters: {
             query?: never;
@@ -2053,10 +1882,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Постановка задачи на проверку частоты запросов
-     * @description @api
-     */
+    /** Постановка задачи на проверку частоты запросов */
     "/edit/keywords_2/volumes/go/": {
         parameters: {
             query?: never;
@@ -2073,10 +1899,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости запуска проверки позиций по проектам
-     * @description @api
-     */
+    /** Информация о стоимости запуска проверки позиций по проектам */
     "/get/keywords_2/volumes/price/": {
         parameters: {
             query?: never;
@@ -2093,10 +1916,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Управление приостановкой/возобновлением рекуррентных платежей
-     * @description @api
-     */
+    /** Управление приостановкой/возобновлением рекуррентных платежей */
     "/edit/payments_2/recurrent/suspend/": {
         parameters: {
             query?: never;
@@ -2115,11 +1935,9 @@ export interface paths {
     };  
     /**
      * Изменения подписки на следующий расчетный период
-     *
-     *     Изменение доступно только в рамках одной платежной системы
+     * @description Изменение доступно только в рамках одной платежной системы
      *
      *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
-     * @description @api
      */
     "/edit/payments_2/subscriptions/next/": {
         parameters: {
@@ -2137,10 +1955,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отписка от тарифа, оплаченного картой
-     * @description @api
-     */
+    /** Отписка от тарифа, оплаченного картой */
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
             query?: never;
@@ -2157,10 +1972,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Смена тарифа со следующего месяца
-     * @description @api
-     */
+    /** Смена тарифа со следующего месяца */
     "/edit/payments_2/tariff/setNext/": {
         parameters: {
             query?: never;
@@ -2177,10 +1989,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка проектов на проверку позиций
-     * @description @api
-     */
+    /** Отправка проектов на проверку позиций */
     "/edit/positions_2/checker/go/": {
         parameters: {
             query?: never;
@@ -2197,10 +2006,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости запуска проверки позиций по проектам
-     * @description @api
-     */
+    /** Информация о стоимости запуска проверки позиций по проектам */
     "/get/positions_2/checker/price/": {
         parameters: {
             query?: never;
@@ -2217,10 +2023,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Включение/выключение ПС
-     * @description @api
-     */
+    /** Включение/выключение ПС */
     "/edit/positions_2/searchers/enabled/": {
         parameters: {
             query?: never;
@@ -2237,10 +2040,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление региона
-     * @description @api
-     */
+    /** Добавление региона */
     "/add/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -2257,10 +2057,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление региона
-     * @description @api
-     */
+    /** Удаление региона */
     "/del/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -2277,10 +2074,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение региона
-     * @description @api
-     */
+    /** Изменение региона */
     "/edit/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -2297,10 +2091,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Настройка сортировки ПС
-     * @description @api
-     */
+    /** Настройка сортировки ПС */
     "/edit/positions_2/searchers/sort/": {
         parameters: {
             query?: never;
@@ -2317,10 +2108,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение данных сводки для отображения графика
-     * @description @api
-     */
+    /** Получение данных сводки для отображения графика */
     "/get/positions_2/summary/chart/": {
         parameters: {
             query?: never;
@@ -2337,10 +2125,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Перемещение конкурента (сортировка)
-     * @description @api
-     */
+    /** Перемещение конкурента (сортировка) */
     "/edit/projects_2/competitors/move/": {
         parameters: {
             query?: never;
@@ -2357,10 +2142,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Установка имени конкурента
-     * @description @api
-     */
+    /** Установка имени конкурента */
     "/edit/projects_2/competitors/name/": {
         parameters: {
             query?: never;
@@ -2377,10 +2159,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Включение/выключение конкурентов
-     * @description @api
-     */
+    /** Включение/выключение конкурентов */
     "/edit/projects_2/competitors/on/": {
         parameters: {
             query?: never;
@@ -2397,10 +2176,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Копирование проекта
-     * @description @api
-     */
+    /** Копирование проекта */
     "/add/projects_2/projects/copy/": {
         parameters: {
             query?: never;
@@ -2417,10 +2193,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Настройка избранных проектов
-     * @description @api
-     */
+    /** Настройка избранных проектов */
     "/edit/projects_2/projects/favorite/": {
         parameters: {
             query?: never;
@@ -2437,10 +2210,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Перемещение проекта (сортировка)
-     * @description @api
-     */
+    /** Перемещение проекта (сортировка) */
     "/edit/projects_2/projects/move/": {
         parameters: {
             query?: never;
@@ -2457,10 +2227,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Установка имени проекта
-     * @description @api
-     */
+    /** Установка имени проекта */
     "/edit/projects_2/projects/name/": {
         parameters: {
             query?: never;
@@ -2477,10 +2244,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Редактирование "on" проектов
-     * @description @api
-     */
+    /** Редактирование "on" проектов */
     "/edit/projects_2/projects/on/": {
         parameters: {
             query?: never;
@@ -2497,10 +2261,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение сортировки проектов
-     * @description @api
-     */
+    /** Изменение сортировки проектов */
     "/edit/projects_2/projects/sort/": {
         parameters: {
             query?: never;
@@ -2517,10 +2278,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Редактирование тегов проектов
-     * @description @api
-     */
+    /** Редактирование тегов проектов */
     "/edit/projects_2/projects/tags/": {
         parameters: {
             query?: never;
@@ -2537,10 +2295,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание задачи на индексацию
-     * @description @api
-     */
+    /** Создание задачи на индексацию */
     "/add/projects_2/tasks/indexing/": {
         parameters: {
             query?: never;
@@ -2557,10 +2312,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание задачи на проверку релевантности
-     * @description @api
-     */
+    /** Создание задачи на проверку релевантности */
     "/add/projects_2/tasks/relevants/": {
         parameters: {
             query?: never;
@@ -2577,10 +2329,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание задачи на проверку частоты
-     * @description @api
-     */
+    /** Создание задачи на проверку частоты */
     "/add/projects_2/tasks/volumes/": {
         parameters: {
             query?: never;
@@ -2597,10 +2346,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение регионов для поисковиков с последующим кэшированием для Get запросов
-     * @description @api
-     */
+    /** Получение регионов для поисковиков с последующим кэшированием для Get запросов */
     "/get/system_2/common/regions/": {
         parameters: {
             query?: never;
@@ -2617,10 +2363,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение пути на аватар пользователя от корня сайта
-     * @description @api
-     */
+    /** Получение пути на аватар пользователя от корня сайта */
     "/get/users_2/profile/avatar/": {
         parameters: {
             query?: never;
@@ -2637,10 +2380,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение валюты пользователя
-     * @description @api
-     */
+    /** Изменение валюты пользователя */
     "/edit/users_2/profile/currency/": {
         parameters: {
             query?: never;
@@ -2659,9 +2399,7 @@ export interface paths {
     };  
     /**
      * Запрос на смену email
-     *
-     *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
-     * @description @api
+     * @description Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
      */
     "/edit/users_2/profile/email/": {
         parameters: {
@@ -2679,10 +2417,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение языка
-     * @description @api
-     */
+    /** Изменение языка */
     "/edit/users_2/profile/lang/": {
         parameters: {
             query?: never;
@@ -2699,10 +2434,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение пароля
-     * @description @api
-     */
+    /** Изменение пароля */
     "/edit/users_2/profile/pass/": {
         parameters: {
             query?: never;
@@ -2719,10 +2451,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail())
-     * @description @api
-     */
+    /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail()) */
     "/edit/users_2/profile/retrievePass/": {
         parameters: {
             query?: never;
@@ -2739,10 +2468,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение временной зоны
-     * @description @api
-     */
+    /** Изменение временной зоны */
     "/edit/users_2/profile/timezone/": {
         parameters: {
             query?: never;
@@ -2759,10 +2485,41 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка проектов на проверку индексации
-     * @description @api
-     */
+    /** Запуск проверки аудита */
+    "/edit/audit_2/audit/checker/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAudit2AuditCheckerGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Информация о стоимости запуска аудита по проектам */
+    "/get/audit_2/audit/checker/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAudit2AuditCheckerPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Отправка проектов на проверку индексации */
     "/edit/audit_2/indexing/checker/go/": {
         parameters: {
             query?: never;
@@ -2779,10 +2536,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости запуска индексации по проектам
-     * @description @api
-     */
+    /** Информация о стоимости запуска индексации по проектам */
     "/get/audit_2/indexing/checker/price/": {
         parameters: {
             query?: never;
@@ -2799,10 +2553,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка проектов на проверку карты сайта
-     * @description @api
-     */
+    /** Отправка проектов на проверку карты сайта */
     "/edit/audit_2/sitemap/checker/go/": {
         parameters: {
             query?: never;
@@ -2819,10 +2570,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости запуска индексации по проектам
-     * @description @api
-     */
+    /** Информация о стоимости запуска индексации по проектам */
     "/get/audit_2/sitemap/checker/price/": {
         parameters: {
             query?: never;
@@ -2839,10 +2587,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка проектов на проверку радара
-     * @description @api
-     */
+    /** Отправка проектов на проверку радара */
     "/edit/audit_2/watcher/checker/go/": {
         parameters: {
             query?: never;
@@ -2859,10 +2604,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости запуска индексации по проектам
-     * @description @api
-     */
+    /** Информация о стоимости запуска индексации по проектам */
     "/get/audit_2/watcher/checker/price/": {
         parameters: {
             query?: never;
@@ -2879,10 +2621,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
-     * @description @api
-     */
+    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
     "/get/competitors_2/orders/byKeyword/info/": {
         parameters: {
             query?: never;
@@ -2899,10 +2638,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
-     * @description @api
-     */
+    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
     "/get/competitors_2/orders/byUrl/info/": {
         parameters: {
             query?: never;
@@ -2919,10 +2655,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение календаря текстовых апдейтов
-     * @description @api
-     */
+    /** Получение календаря текстовых апдейтов */
     "/get/content_2/apometr/text/calendar/": {
         parameters: {
             query?: never;
@@ -2939,10 +2672,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Копирование запросов в другой проект
-     * @description @api
-     */
+    /** Копирование запросов в другой проект */
     "/edit/keywords_2/keywords/export/toProject/": {
         parameters: {
             query?: never;
@@ -2959,10 +2689,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка проектов на проверку релевантности
-     * @description @api
-     */
+    /** Отправка проектов на проверку релевантности */
     "/edit/positions_2/relevant/checker/go/": {
         parameters: {
             query?: never;
@@ -2979,10 +2706,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Информация о стоимости проверки релевантности
-     * @description @api
-     */
+    /** Информация о стоимости проверки релевантности */
     "/get/positions_2/relevant/checker/price/": {
         parameters: {
             query?: never;
@@ -3001,9 +2725,7 @@ export interface paths {
     };  
     /**
      * Экспорт регионов (CSV)
-     *
-     *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
-     * @description @api
+     * @description - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
      */
     "/get/positions_2/searchers/regions/export/": {
         parameters: {
@@ -3021,10 +2743,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импорт регионов (CSV)
-     * @description @api
-     */
+    /** Импорт регионов (CSV) */
     "/add/positions_2/searchers/regions/import/": {
         parameters: {
             query?: never;
@@ -3041,10 +2760,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Настройка сортировки регионов
-     * @description @api
-     */
+    /** Настройка сортировки регионов */
     "/edit/positions_2/searchers/regions/sort/": {
         parameters: {
             query?: never;
@@ -3061,10 +2777,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение цены проверки индексации задачи без создания проекта
-     * @description @api
-     */
+    /** Получение цены проверки индексации задачи без создания проекта */
     "/get/projects_2/tasks/indexing/price/": {
         parameters: {
             query?: never;
@@ -3081,10 +2794,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание задачи на сбор запросов
-     * @description @api
-     */
+    /** Создание задачи на сбор запросов */
     "/add/projects_2/tasks/keywords/collect/": {
         parameters: {
             query?: never;
@@ -3101,10 +2811,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение цены проверки релевантности задачи без создания проекта
-     * @description @api
-     */
+    /** Получение цены проверки релевантности задачи без создания проекта */
     "/get/projects_2/tasks/relevants/price/": {
         parameters: {
             query?: never;
@@ -3121,10 +2828,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение цены проверки частоты задачи без создания проекта
-     * @description @api
-     */
+    /** Получение цены проверки частоты задачи без создания проекта */
     "/get/projects_2/tasks/volumes/price/": {
         parameters: {
             query?: never;
@@ -3141,10 +2845,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение цены сбора запросов без создания проекта
-     * @description @api
-     */
+    /** Получение цены сбора запросов без создания проекта */
     "/get/projects_2/tasks/keywords/collect/price/": {
         parameters: {
             query?: never;
@@ -3575,6 +3276,31 @@ export interface operations {
                         result: import('./AiTracker_2/Methods/Summary/Get.ts').components['schemas']['AiTracker_2.Methods.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'];
+                };
+            };
+        };
+    };
+    GetAudit2CountUrls: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/CountUrls/Get.ts').components['schemas']['Audit_2.Methods.CountUrls.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/CountUrls/Get.ts').components['schemas']['Audit_2.Methods.CountUrls.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -4799,6 +4525,162 @@ export interface operations {
                         result: import('./AiTracker_2/Methods/Checker/Price/Get.ts').components['schemas']['AiTracker_2.Methods.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditChecks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Checks/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checks.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Checks/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checks.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditCss: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Css/Get.ts').components['schemas']['Audit_2.Methods.Audit.Css.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Css/Get.ts').components['schemas']['Audit_2.Methods.Audit.Css.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditJs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Js/Get.ts').components['schemas']['Audit_2.Methods.Audit.Js.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Js/Get.ts').components['schemas']['Audit_2.Methods.Audit.Js.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditLinks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Links.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Links.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditSummary: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Summary/Get.ts').components['schemas']['Audit_2.Methods.Audit.Summary.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Summary/Get.ts').components['schemas']['Audit_2.Methods.Audit.Summary.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditSummaryPage: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/SummaryPage/Get.ts').components['schemas']['Audit_2.Methods.Audit.SummaryPage.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/SummaryPage/Get.ts').components['schemas']['Audit_2.Methods.Audit.SummaryPage.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
             };
         };
@@ -6620,6 +6502,58 @@ export interface operations {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Timezone/Edit.ts').components['schemas']['Users_2.Methods.Profile.Timezone.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditAudit2AuditCheckerGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Go.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Go.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
+                };
+            };
+        };
+    };
+    GetAudit2AuditCheckerPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Audit_2/Methods/Audit/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Audit_2/Methods/Audit/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };

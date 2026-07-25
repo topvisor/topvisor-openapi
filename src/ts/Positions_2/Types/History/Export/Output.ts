@@ -9,7 +9,6 @@ export interface components {
     schemas: {
         /**
          * Формат экспорта
-         * @description @see Reports_2\Objects\Format\AbstractFormat
          * @enum {string}
          */
         "Positions_2.Types.History.Export.Output": "csv" | "xlsx" | "html" | "pdf";

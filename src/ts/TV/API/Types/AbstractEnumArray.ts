@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Enum[]
-         *
-         *     Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
-         * @description @template ITEM_TYPE of BackedEnum
+         * @description Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
          */
         "TV.API.Types.AbstractEnumArray": unknown[];
     };

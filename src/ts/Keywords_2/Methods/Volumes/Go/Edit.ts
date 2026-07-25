@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Постановка задачи на проверку частоты запросов
-         * @description @api
-         */
+        /** Постановка задачи на проверку частоты запросов */
         "Keywords_2.Methods.Volumes.Go.Edit": {
             no_recheck?: import('../../../Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
             /**
@@ -20,8 +17,7 @@ export interface components {
             target_type?: string;
             /**
              * Список регионов с настройками для проверки частоты
-             *
-             *     - Обязателен, если `set_qualifiers_for_visibility` != `true`
+             * @description - Обязателен, если `set_qualifiers_for_visibility` != `true`
              *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
              *     - Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`
              */
@@ -36,26 +32,22 @@ export interface components {
             check_all_regions_google?: boolean | null;
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
             /** ID проекта */
             project_id: number;
         };
-        /** Список id проектов, отправленных на проверку */
+        /** @description Список id проектов, отправленных на проверку */
         "Keywords_2.Methods.Volumes.Go.Edit.Exec": {
             projectIds: number[];
         };

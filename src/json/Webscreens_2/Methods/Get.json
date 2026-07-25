@@ -31,7 +31,8 @@
                         "type": "integer"
                     },
                     "full_page": {
-                        "title": "Сделать ли полноразмерный скриншот страницы\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Сделать ли полноразмерный скриншот страницы",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно",
                         "type": "boolean"
                     },
                     "lang": {
@@ -40,22 +41,26 @@
                         "type": "string"
                     },
                     "clip_w": {
-                        "title": "Ширины фрагмента\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Ширины фрагмента",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_h": {
-                        "title": "Высота фрашгмента\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Высота фрашгмента",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_x": {
-                        "title": "Координата фрагмента `x`\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Координата фрагмента `x`",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_y": {
-                        "title": "Координата фрагмента `y`\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Координата фрагмента `y`",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -65,8 +70,7 @@
                     "w",
                     "h"
                 ],
-                "title": "Получение скриншота (платная функция)",
-                "description": "@api"
+                "title": "Получение скриншота (платная функция)"
             },
             "Webscreens_2.Methods.Get.Exec": {
                 "type": "never"

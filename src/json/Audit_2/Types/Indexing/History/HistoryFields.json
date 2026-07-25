@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../../Audit_2/Types/Indexing/History/HistoryField.json#/components/schemas/Audit_2.Types.Indexing.History.HistoryField"
                 },
-                "title": "Поля с результатами проверки для отчета истории индексации",
-                "description": "@see HistoryField"
+                "title": "Поля с результатами проверки для отчета истории индексации"
             }
         }
     }

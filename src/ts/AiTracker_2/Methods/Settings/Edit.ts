@@ -9,16 +9,12 @@ export interface components {
     schemas: {
         /**
          * Изменение настроек ИИ-Трекера
-         *
-         *     Для получения текущих настроек используйте: /get/projects_2/projects/
-         * @description @api
-         *     @see \Services\AiTracker_2\Objects\Settings
+         * @description Для получения текущих настроек используйте: /get/projects_2/projects/
          */
         "AiTracker_2.Methods.Settings.Edit": {
             /**
              * Имя бренда
-             *
-             *     Участвует в поиске в ответе ИИ
+             * @description Участвует в поиске в ответе ИИ
              */
             brand_name?: string | null;
             /** Описание бренда */

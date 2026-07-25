@@ -27,8 +27,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на проверку частоты",
-                "description": "@api"
+                "title": "Создание задачи на проверку частоты"
             },
             "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
                 "type": "integer"

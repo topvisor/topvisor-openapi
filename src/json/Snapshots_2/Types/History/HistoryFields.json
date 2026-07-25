@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../Snapshots_2/Types/History/HistoryField.json#/components/schemas/Snapshots_2.Types.History.HistoryField"
                 },
-                "title": "Поля с результатами проверки для отчета истории проверок в снимках",
-                "description": "@see HistoryField"
+                "title": "Поля с результатами проверки для отчета истории проверок в снимках"
             }
         }
     }

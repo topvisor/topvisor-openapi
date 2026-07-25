@@ -11,13 +11,15 @@
                 "type": "object",
                 "properties": {
                     "ID": {
-                        "title": "Ключ домена\n\nИспользуется в путях файлов и в БД",
+                        "title": "Ключ домена",
+                        "description": "Используется в путях файлов и в БД",
                         "readOnly": true,
                         "default": "No set",
                         "type": "string"
                     },
                     "ID_ASSETS": {
-                        "title": "Аббревиатура ключа домена\n\nИспользуется в путях публичных ресурсов, например для файлов на CDN",
+                        "title": "Аббревиатура ключа домена",
+                        "description": "Используется в путях публичных ресурсов, например для файлов на CDN",
                         "readOnly": true,
                         "default": "No set",
                         "type": "string"
@@ -53,7 +55,8 @@
                         "type": "string"
                     },
                     "DEFAULT_BANK_TYPE": {
-                        "title": "Тип биллинга по умолчанию\n\n- balance\n- limits",
+                        "title": "Тип биллинга по умолчанию",
+                        "description": "- balance\n- limits",
                         "readOnly": true,
                         "default": "balance",
                         "type": "string"
@@ -70,7 +73,8 @@
                         "type": "string"
                     },
                     "LANGUAGES_ADDITIONAL": {
-                        "title": "Список дополнительных языков, ISO 639-1\n\nПри генерации url дополнительный язык добавляется в начало url в модуле контента\n\nАналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`",
+                        "title": "Список дополнительных языков, ISO 639-1",
+                        "description": "При генерации url дополнительный язык добавляется в начало url в модуле контента\n\nАналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`",
                         "readOnly": true,
                         "type": "array"
                     },
@@ -83,7 +87,8 @@
                         "type": "array"
                     },
                     "SUBDOMAINS": {
-                        "title": "Список поддоменов\n\nПримеры:\n- `''` для основного домена `example.com`\n- `'subdomain'` для поддомена `subdomain.example.com`",
+                        "title": "Список поддоменов",
+                        "description": "Примеры:\n- `''` для основного домена `example.com`\n- `'subdomain'` для поддомена `subdomain.example.com`",
                         "readOnly": true,
                         "type": "array"
                     },
@@ -93,7 +98,8 @@
                         "type": "array"
                     },
                     "THEME_COLORS": {
-                        "title": "Цвета темы сайта\n\nЗависят от CSS-переменных в UI",
+                        "title": "Цвета темы сайта",
+                        "description": "Зависят от CSS-переменных в UI",
                         "readOnly": true,
                         "type": "array"
                     },
@@ -103,13 +109,15 @@
                         "type": "array"
                     },
                     "MAILING_EMAIL": {
-                        "title": "Почта рассыльщика\n\nОна же используется в тикетнице",
+                        "title": "Почта рассыльщика",
+                        "description": "Она же используется в тикетнице",
                         "readOnly": true,
                         "default": "No set",
                         "type": "string"
                     },
                     "MAILING_ALT_EMAIL": {
-                        "title": "Альтернативная почта рассыльщика\n\nИспользуется, если нужно отправлять почту от имени другого домена\n\nДанная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL",
+                        "title": "Альтернативная почта рассыльщика",
+                        "description": "Используется, если нужно отправлять почту от имени другого домена\n\nДанная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL",
                         "readOnly": true,
                         "default": "No set",
                         "type": "string"
@@ -127,8 +135,8 @@
                         "type": "string"
                     },
                     "CLOSED_BY_MOD": {
-                        "title": "Словарь модулей, доступ к которым надо закрыть\n\nФормат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`\n\nЗначение: всегда true, значение игнорируется",
-                        "description": "@see Controller_2\\Objects\\Page::params",
+                        "title": "Словарь модулей, доступ к которым надо закрыть",
+                        "description": "Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`\n\nЗначение: всегда true, значение игнорируется",
                         "readOnly": true,
                         "type": "array"
                     },
@@ -167,7 +175,8 @@
                         "type": "integer"
                     },
                     "BLOCKED_SERVICES": {
-                        "title": "Запрещенные API.\n\nРазрешается блок как сервиса, так и частного метода\n\nБлокировка сервиса целиком: ['Admin_2', 'Users_2']\nБлокировка сервисов метода ['Admin_2\\Methods\\Informer'] - заблокирует только методы из Informer\nБлокировка частного метода ['Admin_2\\Methods\\Informer\\Get'] - заблокирует запрос к методу Get, остальные будут доступны",
+                        "title": "Запрещенные API.",
+                        "description": "Разрешается блок как сервиса, так и частного метода\n\nБлокировка сервиса целиком: ['Admin_2', 'Users_2']\nБлокировка сервисов метода ['Admin_2\\Methods\\Informer'] - заблокирует только методы из Informer\nБлокировка частного метода ['Admin_2\\Methods\\Informer\\Get'] - заблокирует запрос к методу Get, остальные будут доступны",
                         "readOnly": true,
                         "type": "array"
                     }

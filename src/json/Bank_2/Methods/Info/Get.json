@@ -11,17 +11,17 @@
                 "type": "object",
                 "properties": {
                     "fields": {
-                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
-                        "description": "@see AbstractMethod::MODEL",
+                        "title": "Список полей объекта, которые надо вернуть в результате",
+                        "description": "Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
                         "type": "array"
                     }
                 },
                 "required": [],
-                "title": "Получение информации о балансе",
-                "description": "@api"
+                "title": "Получение информации о балансе"
             },
             "Bank_2.Methods.Info.Get.Exec": {
-                "title": "Информация о балансе и тарифе пользователя.\n\n- 'balance_all' - общий баланс\n- 'balance_personal'- персональный баланс\n- 'balance_bonus' - бонусный баланс\n- 'balance_tariff' - баланс по тарифу\n- 'tariff' - информация о текущем тарифе\n- 'subscription' - подписка, если есть\n- 'subscription_name' - имя плана подписки, если есть",
+                "title": "Информация о балансе и тарифе пользователя.",
+                "description": "- 'balance_all' - общий баланс\n- 'balance_personal'- персональный баланс\n- 'balance_bonus' - бонусный баланс\n- 'balance_tariff' - баланс по тарифу\n- 'tariff' - информация о текущем тарифе\n- 'subscription' - подписка, если есть\n- 'subscription_name' - имя плана подписки, если есть",
                 "type": "object",
                 "properties": {
                     "balance_all": {

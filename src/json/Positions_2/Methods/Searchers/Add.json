@@ -22,8 +22,7 @@
                     "searcher_key",
                     "project_id"
                 ],
-                "title": "Добавление ПС",
-                "description": "@api"
+                "title": "Добавление ПС"
             },
             "Positions_2.Methods.Searchers.Add.Exec": {
                 "nullable": true,

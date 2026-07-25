@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "region_index": {
-                        "title": "Индекс региона\n\nЕсли не задан нужно задать параметры searcher_key, region_key, region_lang, region_device",
+                        "title": "Индекс региона",
+                        "description": "Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -49,8 +50,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение календаря апдейтов",
-                "description": "@api"
+                "title": "Получение календаря апдейтов"
             },
             "Content_2.Methods.Apometr.Calendar.Get.Exec": {
                 "nullable": true,

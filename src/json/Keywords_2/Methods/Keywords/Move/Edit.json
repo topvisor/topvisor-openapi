@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "to_id": {
-                        "title": "Вставить к указанному объекту\n\nЕсли в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы",
+                        "title": "Вставить к указанному объекту",
+                        "description": "Если в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы",
                         "type": "integer"
                     },
                     "to_type": {
@@ -27,12 +28,13 @@
                         "type": "integer"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -41,8 +43,7 @@
                     "to_id",
                     "project_id"
                 ],
-                "title": "Перемещение запросов",
-                "description": "@api"
+                "title": "Перемещение запросов"
             },
             "Keywords_2.Methods.Keywords.Move.Edit.Exec": {
                 "nullable": true,

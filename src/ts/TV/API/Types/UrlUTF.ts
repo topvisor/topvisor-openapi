@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * URL не в punycode, может содержать UTF-символы:
-         *     - без "<" и ">"
+         * @description - без "<" и ">"
          *
          *     Будет проивзедено автоматическое приведение к формату
          *

@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Volumes/Qualifier.json#/components/schemas/Keywords_2.Types.Volumes.Qualifier"
                 },
-                "title": "Определители проверки частоты",
-                "description": "@see \\TV\\API\\Types\\Qualifier"
+                "title": "Определители проверки частоты"
             }
         }
     }

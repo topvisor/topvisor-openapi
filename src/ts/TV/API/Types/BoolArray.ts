@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип массива: boolean
-         *
-         *     Принимает: 0|1|false|true
+         * @description Принимает: 0|1|false|true
          */
         "TV.API.Types.BoolArray": boolean[];
     };

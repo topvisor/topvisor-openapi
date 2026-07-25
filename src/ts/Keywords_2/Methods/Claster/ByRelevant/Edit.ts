@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Кластеризация по релевантной странице: проверки перед началом кластеризации
-         * @description @api
-         */
+        /** Кластеризация по релевантной странице: проверки перед началом кластеризации */
         "Keywords_2.Methods.Claster.ByRelevant.Edit": {
             /** Кластеризовать по конкуренту */
             competitor_id?: number;

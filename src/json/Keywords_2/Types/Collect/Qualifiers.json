@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Collect/Qualifier.json#/components/schemas/Keywords_2.Types.Collect.Qualifier"
                 },
-                "title": "Определители с настройками для подбора",
-                "description": "@see Qualifier"
+                "title": "Определители с настройками для подбора"
             }
         }
     }

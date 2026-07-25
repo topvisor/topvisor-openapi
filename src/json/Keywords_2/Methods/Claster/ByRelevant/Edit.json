@@ -26,8 +26,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Кластеризация по релевантной странице: проверки перед началом кластеризации",
-                "description": "@api"
+                "title": "Кластеризация по релевантной странице: проверки перед началом кластеризации"
             },
             "Keywords_2.Methods.Claster.ByRelevant.Edit.Exec": {
                 "nullable": true,

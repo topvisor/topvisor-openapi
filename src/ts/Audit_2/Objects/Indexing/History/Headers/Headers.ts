@@ -7,11 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Заголовки отчета истории индексации
-         * @description @property Audit_2\Types\Indexing\History\HistoryFields $historyFields
-         *     @property list<Project> $projects
-         */
+        /** Заголовки отчета истории индексации */
         "Audit_2.Objects.Indexing.History.Headers.Headers": {
             /** Основной проект */
             projectId: number;
@@ -25,8 +21,7 @@ export interface components {
             summaries: unknown[];
             /**
              * Режим сравнения
-             *
-             *     Примеры:
+             * @description Примеры:
              *     - Вывод нескольких проектов
              *     - Вывод нескольких регионов
              *     - Вывод нескольких проектов и регионов
@@ -34,22 +29,17 @@ export interface components {
             isCompare: boolean;
             /**
              * Поля элементов отчета
-             *
-             *     Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
-             * @description @see static::MODEL
+             * @description Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
              */
             fields: import('../../../../../Selector/Field.ts').components['schemas']['Selector.Field'][];
             /**
              * Фильтры элементов отчета
-             *
-             *     Для реализации фичей при экспорте отчетов
-             * @description @see static::MODEL
+             * @description Для реализации фичей при экспорте отчетов
              */
             filters: import('../../../../../FieldsFilters.ts').components['schemas']['FieldsFilters'][];
             /**
              * Поле для визуальной группировки элементов
-             *
-             *     Если указно поле, которого нет в элементах, то оно буде игнорироваться
+             * @description Если указно поле, которого нет в элементах, то оно буде игнорироваться
              */
             groupBy: string;
         };

@@ -27,8 +27,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение информации и предыдущей кластеризации",
-                "description": "@api"
+                "title": "Получение информации и предыдущей кластеризации"
             },
             "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
                 "type": "array"

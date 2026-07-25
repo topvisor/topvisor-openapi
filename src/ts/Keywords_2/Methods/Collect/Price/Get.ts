@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение стоимости подбора запросов
-         * @description @api
-         */
+        /** Получение стоимости подбора запросов */
         "Keywords_2.Methods.Collect.Price.Get": {
             /**
              * Отображать сумму с учетом скидки (по умолчанию: 1)
@@ -25,8 +22,7 @@ export interface components {
             keywords_minus?: unknown[];
             /**
              * Id группы для размещения подобранных запросов
-             *
-             *     Можно указывать только при `in_one_group` = `true`
+             * @description Можно указывать только при `in_one_group` = `true`
              */
             to_group_id?: number | null;
             /** Собирать все запросы в одну группу */

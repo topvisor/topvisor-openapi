@@ -27,7 +27,8 @@
                         "type": "array"
                     },
                     "to_group_id": {
-                        "title": "Id группы для размещения подобранных запросов\n\nМожно указывать только при `in_one_group` = `true`",
+                        "title": "Id группы для размещения подобранных запросов",
+                        "description": "Можно указывать только при `in_one_group` = `true`",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -70,8 +71,7 @@
                     "qualifiers",
                     "project_id"
                 ],
-                "title": "Постановка задачи на подбор запросов",
-                "description": "@api"
+                "title": "Постановка задачи на подбор запросов"
             },
             "Keywords_2.Methods.Collect.Go.Edit.Exec": {
                 "title": "Массив созданных групп",

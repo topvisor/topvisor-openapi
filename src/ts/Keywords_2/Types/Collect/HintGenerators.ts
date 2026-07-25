@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Типы метода перебора
-         * @description @see HintGenerator
-         */
+        /** Типы метода перебора */
         "Keywords_2.Types.Collect.HintGenerators": import('./HintGenerator.ts').components['schemas']['Keywords_2.Types.Collect.HintGenerator'][];
     };
     responses: never;

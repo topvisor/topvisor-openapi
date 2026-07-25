@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменение пароля
-         * @description @api
-         */
+        /** Изменение пароля */
         "Users_2.Methods.Profile.Pass.Edit": {
             /** Текущий пароль */
             pass: string;

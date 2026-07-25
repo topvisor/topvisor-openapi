@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail())
-         * @description @api
-         */
+        /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail()) */
         "Users_2.Methods.Profile.RetrievePass.Edit": {
             /** Email пользователя */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение цены кластеризации
-         * @description @api
-         */
+        /** Получение цены кластеризации */
         "Keywords_2.Methods.Claster.Price.Get": {
             /**
              * Отображать сумму с учетом скидки

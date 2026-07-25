@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../Audit_2/Types/Settings/FieldName.json#/components/schemas/Audit_2.Types.Settings.FieldName"
                 },
-                "title": "Имена настроек для инструментов аудита",
-                "description": "@see FieldName"
+                "title": "Имена настроек для инструментов аудита"
             }
         }
     }

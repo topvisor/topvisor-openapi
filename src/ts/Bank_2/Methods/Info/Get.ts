@@ -7,25 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение информации о балансе
-         * @description @api
-         */
+        /** Получение информации о балансе */
         "Bank_2.Methods.Info.Get": {
             /**
              * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             fields?: unknown[];
         };
         /**
          * Информация о балансе и тарифе пользователя.
-         *
-         *     - 'balance_all' - общий баланс
+         * @description - 'balance_all' - общий баланс
          *     - 'balance_personal'- персональный баланс
          *     - 'balance_bonus' - бонусный баланс
          *     - 'balance_tariff' - баланс по тарифу

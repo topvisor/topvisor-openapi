@@ -7,17 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Управление приостановкой/возобновлением рекуррентных платежей
-         * @description @api
-         */
+        /** Управление приостановкой/возобновлением рекуррентных платежей */
         "Payments_2.Methods.Recurrent.Suspend.Edit": {
             /** id платежа, связанного с подпиской или тарифом */
             payment_id: number;
             /**
              * Флаг приостановки/возобновления рекуррентных платежей
-             *
-             *     - `true`: приостановить
+             * @description - `true`: приостановить
              *     - `false`: возобновить
              */
             suspend: boolean;

@@ -10,8 +10,7 @@
             "Keywords_2.Types.Traits.Polimorfizm": {
                 "type": "object",
                 "properties": {},
-                "required": [],
-                "title": "@see Keywords_2\\Types\\Traits\\BasePolimorfizm"
+                "required": []
             }
         }
     }

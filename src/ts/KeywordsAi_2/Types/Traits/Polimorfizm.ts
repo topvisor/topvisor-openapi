@@ -7,7 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @see Keywords_2\Types\Traits\BasePolimorfizm */
         "KeywordsAi_2.Types.Traits.Polimorfizm": Record<string, never>;
     };
     responses: never;

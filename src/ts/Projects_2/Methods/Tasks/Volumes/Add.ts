@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Создание задачи на проверку частоты
-         * @description @api
-         */
+        /** Создание задачи на проверку частоты */
         "Projects_2.Methods.Tasks.Volumes.Add": {
             /** Массив ключевых запросов в формате CSV */
             keywords: unknown[];

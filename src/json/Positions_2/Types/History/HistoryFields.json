@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../Positions_2/Types/History/HistoryField.json#/components/schemas/Positions_2.Types.History.HistoryField"
                 },
-                "title": "Поля с результатами проверки для отчета истории проверок позиций",
-                "description": "@see HistoryField"
+                "title": "Поля с результатами проверки для отчета истории проверок позиций"
             }
         }
     }

@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
                 },
-                "title": "Тип массива: Url[]",
-                "description": "@see \\TV\\API\\Types\\Url"
+                "title": "Тип массива: Url[]"
             }
         }
     }

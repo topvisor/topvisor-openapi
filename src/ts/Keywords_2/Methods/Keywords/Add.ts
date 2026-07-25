@@ -7,17 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавление запроса
-         * @description @api
-         */
+        /** Добавление запроса */
         "Keywords_2.Methods.Keywords.Add": {
             /** Ключевая фраза */
             name: string;
             /**
              * Вставить к указанному объекту
-             *
-             *     Если в to_type указано "Перед или после запроса", то принимает id запроса
+             * @description Если в to_type указано "Перед или после запроса", то принимает id запроса
              *     Если в to_type указано "В конец или начало группы", то принимает id группы
              */
             to_id: number;
@@ -31,19 +27,16 @@ export interface components {
             move_duplicate?: boolean;
             /**
              * Имя группы для перемещения дубликатов
-             *
-             *     Работает вместе с move_duplicate
+             * @description Работает вместе с move_duplicate
              */
             move_duplicate_group_name?: string;
             /** ID проекта */
             project_id: number;
             /**
              * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             fields?: unknown[];
         };

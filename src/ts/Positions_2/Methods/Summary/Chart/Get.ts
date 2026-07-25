@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение данных сводки для отображения графика
-         * @description @api
-         */
+        /** Получение данных сводки для отображения графика */
         "Positions_2.Methods.Summary.Chart.Get": {
             /** Индекс региона */
             region_index: number;
@@ -35,8 +32,7 @@ export interface components {
             project_id: number;
             /**
              * Произвольные даты без использования диапазона
-             *
-             *     Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
+             * @description Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
              */
             dates?: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /**
@@ -46,20 +42,17 @@ export interface components {
             type_range?: import('../../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
             /**
              * Дата начала диапазона
-             *
-             *     Используется вместе с date2 для задания диапазона дат
+             * @description Используется вместе с date2 для задания диапазона дат
              */
             date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
              * Дата окончания диапазона
-             *
-             *     Используется вместе с date1 для задания диапазона дат
+             * @description Используется вместе с date1 для задания диапазона дат
              */
             date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
              * Количество дат в диапазоне
-             *
-             *     Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля
              *
              *     Работает совместно с `type_range`
              * @default 31
@@ -67,8 +60,7 @@ export interface components {
             count_dates?: number;
             /**
              * Период в днях
-             *
-             *     Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
+             * @description Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
              *
              *     Не более 31
              * @default 7
@@ -76,50 +68,40 @@ export interface components {
             period_days?: number;
             /**
              * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             fields?: unknown[];
             /**
              * Список полей объекта, по которым необходимо выполнить сортировку
-             *
-             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             orders?: unknown[];
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате
-             *
-             *     Используется в паре с offset
+             * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
              * Число объектов, которое необходимо пропустить при получении результата
-             *
-             *     Используется в паре с limit
+             * @description Используется в паре с limit
              */
             offset?: number;
         };

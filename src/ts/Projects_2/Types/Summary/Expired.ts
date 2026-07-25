@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Состояние кеша сводки
-         *
-         *     Кеш сводки не должен сбрасываться в момент выполнения проверки
+         * @description Кеш сводки не должен сбрасываться в момент выполнения проверки
          * @enum {integer}
          */
         "Projects_2.Types.Summary.Expired": 0 | 1 | 2;

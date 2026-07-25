@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип подписки
-         *
-         *     Определяет способ списания средств и порядок продления подписки
+         * @description Определяет способ списания средств и порядок продления подписки
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Type": "auto" | "manual";

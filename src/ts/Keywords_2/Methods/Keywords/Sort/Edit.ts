@@ -9,38 +9,30 @@ export interface components {
     schemas: {
         /**
          * Изменение сортировки запросов
-         *
-         *     Можно сортировать в пределах одной группы или всего проекта
-         * @description @api
+         * @description Можно сортировать в пределах одной группы или всего проекта
          */
         "Keywords_2.Methods.Keywords.Sort.Edit": {
             /** ID проекта */
             project_id: number;
             /**
              * Список полей объекта, по которым необходимо выполнить сортировку
-             *
-             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             orders?: unknown[];
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
         };

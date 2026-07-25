@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Добавление конкурента
-         *
-         *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
-         * @description @api
+         * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
          */
         "Projects_2.Methods.Competitors.Add": {
             /** Список url конкурентов */

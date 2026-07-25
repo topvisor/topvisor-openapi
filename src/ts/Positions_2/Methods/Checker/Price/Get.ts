@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Информация о стоимости запуска проверки позиций по проектам
-         * @description @api
-         */
+        /** Информация о стоимости запуска проверки позиций по проектам */
         "Positions_2.Methods.Checker.Price.Get": {
             /** Проверка с учетом фильтра по регионам */
             regions_indexes?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
@@ -24,37 +21,29 @@ export interface components {
             do_snapshots?: boolean | null;
             /**
              * Проверка одного запроса
-             *
-             *     - не допускается при массовой проверке проектов
+             * @description - не допускается при массовой проверке проектов
              *     - требует указания одного `regions_indexes`
              *     - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
              */
             keyword_id?: number | null;
             /**
              * Дата для фильтра по запросам, позиции с которой ухудшились
-             *
-             *     - Не разрешено использовать с keyword_id
+             * @description - Не разрешено использовать с keyword_id
              *     - Для использования требуется указание region_index
-             * @description @notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть
-             *         разным
              */
             date_prev?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
         };

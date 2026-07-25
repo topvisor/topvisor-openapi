@@ -32,8 +32,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Получение рассписания",
-                "description": "@api"
+                "title": "Получение рассписания"
             },
             "Schedule_2.Methods.Get.Exec": {
                 "type": "object",

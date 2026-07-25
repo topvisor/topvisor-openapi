@@ -32,12 +32,13 @@
                         "type": "integer"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -46,8 +47,7 @@
                     "checks_ids",
                     "project_id"
                 ],
-                "title": "Получение сводки радара",
-                "description": "@api"
+                "title": "Получение сводки радара"
             },
             "Audit_2.Methods.Watcher.Summary.Get.Exec": {
                 "title": "Сводка с количеством изменений по каждому типу проверки",

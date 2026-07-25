@@ -9,15 +9,11 @@ export interface components {
     schemas: {
         /**
          * Трейт для определения связей сервиса и модели
-         *
-         *     Обязан использоваться в полиморфных методах, используемых в разных сервисах
+         * @description Обязан использоваться в полиморфных методах, используемых в разных сервисах
          *
          *     Должен быть переопределен в целевом классе конкретным трейтом `Polimorfizm`
          *
          *     Если в целевом классе есть `MODEL`, он также должен быть переопределен, так как статическое связывание при определении констант невозможно
-         * @description @see Keywords_2\Types\Traits\Polimorfizm
-         *     @see KeywordsAi_2\Types\Traits\Polimorfizm
-         *     @see class/Services/Keywords_2/Docs/architecture.md
          */
         "Keywords_2.Types.Traits.BasePolimorfizm": Record<string, never>;
     };

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменение валюты пользователя
-         * @description @api
-         */
+        /** Изменение валюты пользователя */
         "Users_2.Methods.Profile.Currency.Edit": {
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };

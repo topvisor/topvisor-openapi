@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение данных для отчета
-         * @description @api
-         */
+        /** Получение данных для отчета */
         "Competitors_2.Methods.Table.Get": {
             by_type: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
@@ -37,61 +34,48 @@ export interface components {
             func?: string;
             /**
              * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             fields?: unknown[];
             /**
              * Список полей объекта, по которым необходимо выполнить сортировку
-             *
-             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             orders?: unknown[];
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате
-             *
-             *     Используется в паре с offset
+             * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
              * Число объектов, которое необходимо пропустить при получении результата
-             *
-             *     Используется в паре с limit
+             * @description Используется в паре с limit
              */
             offset?: number;
             /**
              * Определяет формат результата: коллекция, объект, значение
-             *
-             *     Примеры:
+             * @description Примеры:
              *     - fetchAll - получить коллекцию объектов
              *     - fetch - получить один объект
              *     - fetchColumn - получить свойсвто объекта
-             * @description @see FetchStyle
-             *     @see Selector::execFetch() - см. реализацию
              */
             fetch_style?: import('../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
         };

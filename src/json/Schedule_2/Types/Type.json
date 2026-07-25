@@ -54,8 +54,8 @@
                     null,
                     null
                 ],
-                "title": "Тип расписания\n\nВключает в себя имя сервиса и функцию",
-                "description": "@see TypeService\n@see TypeMethod"
+                "title": "Тип расписания",
+                "description": "Включает в себя имя сервиса и функцию"
             }
         }
     }

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение обновленного процента завершения кластеризации
-         * @description @api
-         */
+        /** Получение обновленного процента завершения кластеризации */
         "Keywords_2.Methods.Claster.Percent.Get": {
             /** ID проекта */
             project_id: number;

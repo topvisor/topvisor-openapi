@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../AiTracker_2/Types/History/HistoryField.json#/components/schemas/AiTracker_2.Types.History.HistoryField"
                 },
-                "title": "Поля с результатами проверки для отчета истории проверок в ИИ-Трекере",
-                "description": "@see HistoryField"
+                "title": "Поля с результатами проверки для отчета истории проверок в ИИ-Трекере"
             }
         }
     }

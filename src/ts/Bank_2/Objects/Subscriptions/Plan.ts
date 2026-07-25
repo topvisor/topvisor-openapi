@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Класс настройки плана подписки
-         *
-         *     Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
+         * @description Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
          *
          *     В плане нужно указать его имя, стоимость и лимиты
          *
@@ -43,8 +42,7 @@ export interface components {
             priceUSD: number;
             /**
              * Скидка за годовую подписку в процентах от 0 до 1
-             *
-             *     При расчете финальной стоимости может использоваться округление
+             * @description При расчете финальной стоимости может использоваться округление
              */
             annualDiscount: number;
             /** Выдаваемые лимиты */

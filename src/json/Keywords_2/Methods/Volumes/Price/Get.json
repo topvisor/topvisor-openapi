@@ -24,7 +24,8 @@
                         "type": "string"
                     },
                     "qualifiers": {
-                        "title": "Список регионов с настройками для проверки частоты\n\n- Обязателен, если `set_qualifiers_for_visibility` != `true`\n- Нельзя указывать, если `set_qualifiers_for_visibility` = `true`\n- Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`",
+                        "title": "Список регионов с настройками для проверки частоты",
+                        "description": "- Обязателен, если `set_qualifiers_for_visibility` != `true`\n- Нельзя указывать, если `set_qualifiers_for_visibility` = `true`\n- Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`",
                         "nullable": true,
                         "allOf": [
                             {
@@ -56,12 +57,13 @@
                         "type": "boolean"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -73,8 +75,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Информация о стоимости запуска проверки позиций по проектам",
-                "description": "@api"
+                "title": "Информация о стоимости запуска проверки позиций по проектам"
             },
             "Keywords_2.Methods.Volumes.Price.Get.Exec": {
                 "type": "object",

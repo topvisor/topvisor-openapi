@@ -27,8 +27,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Удаление расписания",
-                "description": "@api"
+                "title": "Удаление расписания"
             },
             "Schedule_2.Methods.Del.Exec": {
                 "nullable": true,

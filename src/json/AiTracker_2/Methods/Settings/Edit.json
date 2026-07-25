@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "brand_name": {
-                        "title": "Имя бренда\n\nУчаствует в поиске в ответе ИИ",
+                        "title": "Имя бренда",
+                        "description": "Участвует в поиске в ответе ИИ",
                         "nullable": true,
                         "type": "string"
                     },
@@ -47,8 +48,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек ИИ-Трекера\n\nДля получения текущих настроек используйте: /get/projects_2/projects/",
-                "description": "@api\n@see \\Services\\AiTracker_2\\Objects\\Settings"
+                "title": "Изменение настроек ИИ-Трекера",
+                "description": "Для получения текущих настроек используйте: /get/projects_2/projects/"
             },
             "AiTracker_2.Methods.Settings.Edit.Exec": {
                 "type": "integer"

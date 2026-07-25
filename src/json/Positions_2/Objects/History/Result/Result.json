@@ -36,8 +36,8 @@
                         }
                     },
                     "topsByDepth": {
-                        "title": "Доля запросов в топе указанной глубины\n\nГлубина зависит от контекста и настраивается в нем же",
-                        "description": "Ключ для массива в каждом топе - `date:project_id:region_index`",
+                        "title": "Доля запросов в топе указанной глубины",
+                        "description": "Глубина зависит от контекста и настраивается в нем же\n\nКлюч для массива в каждом топе - `date:project_id:region_index`",
                         "nullable": true,
                         "type": "object",
                         "additionalProperties": {

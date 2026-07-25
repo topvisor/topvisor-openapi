@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип массива: Date[]
-         * @description @see \TV\API\Types\Date
-         */
+        /** Тип массива: Date[] */
         "TV.API.Types.DateArray": import('./Date.ts').components['schemas']['TV.API.Types.Date'][];
     };
     responses: never;

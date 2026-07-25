@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "sitemap": {
-                        "title": "Флаг активности в карте сайта\n- 1 - присутствовал в прошлых версиях карты сайта",
+                        "title": "Флаг активности в карте сайта",
+                        "description": "- 1 - присутствовал в прошлых версиях карты сайта",
                         "nullable": true,
                         "allOf": [
                             {
@@ -51,12 +52,13 @@
                         "type": "integer"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -64,8 +66,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение urls",
-                "description": "@api"
+                "title": "Изменение urls"
             },
             "Urls_2.Methods.Edit.Exec": {
                 "nullable": true,

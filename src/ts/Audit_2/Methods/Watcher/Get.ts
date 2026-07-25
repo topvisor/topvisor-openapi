@@ -9,11 +9,9 @@ export interface components {
     schemas: {
         /**
          * Получение результатов проверок радара
-         *
-         *     Отчет генерируется на основе объектов urls
+         * @description Отчет генерируется на основе объектов urls
          *
          *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
-         * @description @api
          */
         "Audit_2.Methods.Watcher.Get": {
             /** ID проверок в произвольном порядке */
@@ -47,50 +45,40 @@ export interface components {
             project_id: number;
             /**
              * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             fields?: unknown[];
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате
-             *
-             *     Используется в паре с offset
+             * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
              * Список полей объекта, по которым необходимо выполнить сортировку
-             *
-             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             orders?: unknown[];
             /**
              * Число объектов, которое необходимо пропустить при получении результата
-             *
-             *     Используется в паре с limit
+             * @description Используется в паре с limit
              */
             offset?: number;
         };

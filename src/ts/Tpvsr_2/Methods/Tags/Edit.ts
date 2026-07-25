@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Изменение тегов
-         * @description @api
-         */
+        /** Изменение тегов */
         "Tpvsr_2.Methods.Tags.Edit": {
             /** Хеш ссылки */
             hash: string;

@@ -18,9 +18,9 @@ export interface components {
             existsDates?: string[] | null;
             /**
              * Доля запросов в топе указанной глубины
+             * @description Глубина зависит от контекста и настраивается в нем же
              *
-             *     Глубина зависит от контекста и настраивается в нем же
-             * @description Ключ для массива в каждом топе - `date:project_id:region_index`
+             *     Ключ для массива в каждом топе - `date:project_id:region_index`
              */
             topsByDepth?: {
                 [key: string]: {

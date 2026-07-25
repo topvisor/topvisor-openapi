@@ -59,8 +59,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Запуск кластеризации",
-                "description": "@api"
+                "title": "Запуск кластеризации"
             },
             "Keywords_2.Methods.Claster.Task.Add.Exec": {
                 "nullable": true,

@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип массива: UrlShortUTF[]
-         * @description @see \TV\API\Types\UrlShortUTF
-         */
+        /** Тип массива: UrlShortUTF[] */
         "TV.API.Types.UrlShortUTFArray": import('./UrlShortUTF.ts').components['schemas']['TV.API.Types.UrlShortUTF'][];
     };
     responses: never;

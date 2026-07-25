@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавление папки
-         * @description @api
-         */
+        /** Добавление папки */
         "Keywords_2.Methods.Folders.Add": {
             /** Добавить рядом с указанной папкой */
             to_id?: number;

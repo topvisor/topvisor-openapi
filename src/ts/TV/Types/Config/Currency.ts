@@ -21,8 +21,7 @@ export interface components {
             readonly CU_LABEL: string;
             /**
              * Префикс валюты.
-             *
-             *     `CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение
+             * @description `CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение
              * @default No set
              */
             readonly CU_PREFIX: string;

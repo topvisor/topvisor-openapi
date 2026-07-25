@@ -62,8 +62,7 @@
                     "date",
                     "intersection"
                 ],
-                "title": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)",
-                "description": "@api"
+                "title": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)"
             },
             "Competitors_2.Methods.Orders.ByUrl.Info.Get.Exec": {
                 "type": "array"

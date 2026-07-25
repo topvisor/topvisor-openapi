@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Краткий URL не в punycode, может содержать UTF-символы:
-         *     - без схемы
+         * @description - без схемы
          *     - без "www." в домене
          *     - без слешей на конце
          *     - без "<" и ">"

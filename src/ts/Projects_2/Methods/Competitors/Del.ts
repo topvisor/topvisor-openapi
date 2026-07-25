@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление конкурентов
-         * @description @api
-         */
+        /** Удаление конкурентов */
         "Projects_2.Methods.Competitors.Del": {
             /** ID конкурентов */
             ids: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];

@@ -7,16 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавление url
-         * @description @api
-         */
+        /** Добавление url */
         "Urls_2.Methods.Add": {
             /** URL соответствующий домену проекта */
             url: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
             /**
              * Флаг активности в карте сайта
-             *     - 1 - присутствовал в прошлых версиях карты сайта
+             * @description - 1 - присутствовал в прошлых версиях карты сайта
              */
             sitemap?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в аудите */

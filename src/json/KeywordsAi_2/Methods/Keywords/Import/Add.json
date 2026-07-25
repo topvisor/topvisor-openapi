@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Массив ключевых запросов в формате CSV\n\n- array keywords - массив ключевых запросов, допускается формат CSV\n- file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV\n- resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV\n- нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса",
+                        "title": "Массив ключевых запросов в формате CSV",
+                        "description": "- array keywords - массив ключевых запросов, допускается формат CSV\n- file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV\n- resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV\n- нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса",
                         "nullable": true
                     },
                     "folder_id": {
@@ -76,8 +77,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Импорт AI-запросов",
-                "description": "@api"
+                "title": "Импорт AI-запросов"
             },
             "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": {
                 "nullable": true,

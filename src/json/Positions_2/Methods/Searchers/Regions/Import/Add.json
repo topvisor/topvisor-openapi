@@ -15,15 +15,15 @@
                         "type": "integer"
                     },
                     "regions": {
-                        "title": "Массив регионов в формате CSV\n\narray regions - массив csv строк\nfile(csv) regions - файл с содержимым для импорта в формат CSV\n- нельзя передавать regions одновременно в виде массива и в виде файла\n\nформат csv (от 2 до 6 столбцов):\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]",
+                        "title": "Массив регионов в формате CSV",
+                        "description": "array regions - массив csv строк\nfile(csv) regions - файл с содержимым для импорта в формат CSV\n- нельзя передавать regions одновременно в виде массива и в виде файла\n\nформат csv (от 2 до 6 столбцов):\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]",
                         "nullable": true
                     }
                 },
                 "required": [
                     "project_id"
                 ],
-                "title": "Импорт регионов (CSV)",
-                "description": "@api"
+                "title": "Импорт регионов (CSV)"
             },
             "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": {
                 "nullable": true,

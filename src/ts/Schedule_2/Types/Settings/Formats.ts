@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Форматыы отчета
-         * @description @see Format
-         */
+        /** Форматыы отчета */
         "Schedule_2.Types.Settings.Formats": import('./Format.ts').components['schemas']['Schedule_2.Types.Settings.Format'][];
     };
     responses: never;

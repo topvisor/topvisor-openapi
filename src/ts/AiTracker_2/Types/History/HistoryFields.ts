@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Поля с результатами проверки для отчета истории проверок в ИИ-Трекере
-         * @description @see HistoryField
-         */
+        /** Поля с результатами проверки для отчета истории проверок в ИИ-Трекере */
         "AiTracker_2.Types.History.HistoryFields": import('./HistoryField.ts').components['schemas']['AiTracker_2.Types.History.HistoryField'][];
     };
     responses: never;

@@ -11,15 +11,15 @@
                 "type": "object",
                 "properties": {
                     "timezone": {
-                        "title": "Новая временная зона\n\nhttps://www.php.net/manual/ru/timezones.php",
+                        "title": "Новая временная зона",
+                        "description": "https://www.php.net/manual/ru/timezones.php",
                         "type": "string"
                     }
                 },
                 "required": [
                     "timezone"
                 ],
-                "title": "Изменение временной зоны",
-                "description": "@api"
+                "title": "Изменение временной зоны"
             },
             "Users_2.Methods.Profile.Timezone.Edit.Exec": {
                 "nullable": true,

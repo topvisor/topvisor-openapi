@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение скриншота (платная функция)
-         * @description @api
-         */
+        /** Получение скриншота (платная функция) */
         "Webscreens_2.Methods.Get": {
             url: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
             /** Ширина экрна */
@@ -24,34 +21,29 @@ export interface components {
             timeout_ms?: number;
             /**
              * Сделать ли полноразмерный скриншот страницы
-             *
-             *     Параметры clip и full_page нельзя использовать одновременно
+             * @description Параметры clip и full_page нельзя использовать одновременно
              */
             full_page?: boolean;
             /** Язык браузера, например ru, по умолчанию язык пользователя */
             lang?: string | null;
             /**
              * Ширины фрагмента
-             *
-             *     Параметры clip и full_page нельзя использовать одновременно
+             * @description Параметры clip и full_page нельзя использовать одновременно
              */
             clip_w?: number | null;
             /**
              * Высота фрашгмента
-             *
-             *     Параметры clip и full_page нельзя использовать одновременно
+             * @description Параметры clip и full_page нельзя использовать одновременно
              */
             clip_h?: number | null;
             /**
              * Координата фрагмента `x`
-             *
-             *     Параметры clip и full_page нельзя использовать одновременно
+             * @description Параметры clip и full_page нельзя использовать одновременно
              */
             clip_x?: number | null;
             /**
              * Координата фрагмента `y`
-             *
-             *     Параметры clip и full_page нельзя использовать одновременно
+             * @description Параметры clip и full_page нельзя использовать одновременно
              */
             clip_y?: number | null;
         };

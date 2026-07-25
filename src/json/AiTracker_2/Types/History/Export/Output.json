@@ -21,8 +21,7 @@
                     null,
                     null
                 ],
-                "title": "Формат экспорта",
-                "description": "@see Reports_2\\Objects\\Format\\AbstractFormat"
+                "title": "Формат экспорта"
             }
         }
     }

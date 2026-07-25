@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Редактирование тегов проектов
-         * @description @api
-         */
+        /** Редактирование тегов проектов */
         "Projects_2.Methods.Projects.Tags.Edit": {
             /**
              * enum(1..10) tags - теги проекта (по умолчанию - [1])

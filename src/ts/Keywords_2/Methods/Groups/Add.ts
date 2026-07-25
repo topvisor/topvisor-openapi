@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Добавление групп
-         * @description @api
-         */
+        /** Добавление групп */
         "Keywords_2.Methods.Groups.Add": {
             /** Вставить к указанному объекту */
             to_id?: number;
@@ -25,8 +22,7 @@ export interface components {
             on?: boolean;
             /**
              * Статус группы
-             *
-             *     Используется для создания группы при подборе слов
+             * @description Используется для создания группы при подборе слов
              */
             status?: boolean;
             /** ID проекта */

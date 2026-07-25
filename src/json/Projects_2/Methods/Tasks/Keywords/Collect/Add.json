@@ -31,8 +31,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на сбор запросов",
-                "description": "@api"
+                "title": "Создание задачи на сбор запросов"
             },
             "Projects_2.Methods.Tasks.Keywords.Collect.Add.Exec": {
                 "type": "integer"

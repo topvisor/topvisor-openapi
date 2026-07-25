@@ -26,8 +26,7 @@
                     "region_index",
                     "date"
                 ],
-                "title": "Получение апдейтов",
-                "description": "@api"
+                "title": "Получение апдейтов"
             },
             "Content_2.Methods.Apometr.Updates.Get.Exec": {
                 "nullable": true,

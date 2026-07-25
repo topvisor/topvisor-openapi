@@ -32,8 +32,7 @@
                 "required": [
                     "keywords"
                 ],
-                "title": "Удаление неявных дублей по ключевым фразам",
-                "description": "@api"
+                "title": "Удаление неявных дублей по ключевым фразам"
             },
             "Keywords_2.Methods.Semantics.Deduplicate.Get.Exec": {
                 "type": "object",

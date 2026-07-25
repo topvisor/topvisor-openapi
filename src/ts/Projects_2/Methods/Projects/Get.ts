@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение списка проектов
-         * @description @api
-         */
+        /** Получение списка проектов */
         "Projects_2.Methods.Projects.Get": {
             /** Добавить ли в результаты баланс владельца для гостевых проектов */
             show_owner_balance?: boolean | null;
@@ -18,71 +15,54 @@ export interface components {
             show_site_stat?: boolean | null;
             /**
              * Добавить в результат список ПС и Регионов, привязанных к проекту
-             *
-             *     - 1 - включенные
+             * @description - 1 - включенные
              *     - 2 - все
              */
             show_searchers_and_regions?: number;
             /** Добавить в результат список моделей нейросетей, привязанных к проекту */
             show_models?: boolean;
-            /**
-             * Добавить в результат сводку проверки позиций
-             * @description @see /get/positions_2/summary/
-             */
+            /** Добавить в результат сводку проверки позиций */
             include_positions_summary?: boolean | null;
-            /**
-             * Добавить в результат сводку проверки ИИ-Трекера
-             * @description @see /get/aiTracker_2/summary/
-             */
+            /** Добавить в результат сводку проверки ИИ-Трекера */
             include_ai_tracker_summary?: boolean;
             /** Является ли проект задачей */
             is_task?: boolean | null;
             /**
              * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
+             * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             fields?: unknown[];
             /**
              * Список полей объекта, по которым необходимо выполнить сортировку
-             *
-             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
+             * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
              */
             orders?: unknown[];
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате
-             *
-             *     Используется в паре с offset
+             * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
              * Число объектов, которое необходимо пропустить при получении результата
-             *
-             *     Используется в паре с limit
+             * @description Используется в паре с limit
              */
             offset?: number;
         };

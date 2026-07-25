@@ -18,16 +18,18 @@
                         "title": "Ключ ПС"
                     },
                     "enabled": {
-                        "title": "- 1 - включить\n- 0 - выключить",
+                        "title": "- 1 - включить",
+                        "description": "- 0 - выключить",
                         "type": "integer"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
@@ -37,8 +39,7 @@
                     "searcher_key",
                     "enabled"
                 ],
-                "title": "Включение/выключение ПС",
-                "description": "@api"
+                "title": "Включение/выключение ПС"
             },
             "Positions_2.Methods.Searchers.Enabled.Edit.Exec": {
                 "nullable": true,

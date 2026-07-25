@@ -47,13 +47,14 @@
                         "type": "boolean"
                     },
                     "keyword_id": {
-                        "title": "Проверка одного запроса\n\n- не допускается при массовой проверке проектов\n- требует указания одного `regions_indexes`\n- не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`",
+                        "title": "Проверка одного запроса",
+                        "description": "- не допускается при массовой проверке проектов\n- требует указания одного `regions_indexes`\n- не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`",
                         "nullable": true,
                         "type": "integer"
                     },
                     "date_prev": {
-                        "title": "Дата для фильтра по запросам, позиции с которой ухудшились\n\n- Не разрешено использовать с keyword_id\n- Для использования требуется указание region_index",
-                        "description": "@notice Требует указания конкретного региона, так как сумма рассчитывается по числу запросов, а в разных регионах число запросов может быть\n    разным",
+                        "title": "Дата для фильтра по запросам, позиции с которой ухудшились",
+                        "description": "- Не разрешено использовать с keyword_id\n- Для использования требуется указание region_index",
                         "nullable": true,
                         "allOf": [
                             {
@@ -62,19 +63,19 @@
                         ]
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Selector\\Types\\Operator",
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"
                     }
                 },
                 "required": [],
-                "title": "Информация о стоимости запуска проверки позиций по проектам",
-                "description": "@api"
+                "title": "Информация о стоимости запуска проверки позиций по проектам"
             },
             "Positions_2.Methods.Checker.Price.Get.Exec": {
                 "type": "object",

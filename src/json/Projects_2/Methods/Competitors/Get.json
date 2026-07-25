@@ -49,8 +49,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка конкурентов",
-                "description": "@api"
+                "title": "Получение списка конкурентов"
             },
             "Projects_2.Methods.Competitors.Get.Exec": {
                 "type": "array"

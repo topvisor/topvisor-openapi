@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение регионов для поисковиков с последующим кэшированием для Get запросов
-         * @description @api
-         */
+        /** Получение регионов для поисковиков с последующим кэшированием для Get запросов */
         "System_2.Methods.Common.Regions.Get": {
             searcher_key: unknown;
             /** Код страны по ISO 3166-1 alpha-2 */
@@ -25,14 +22,12 @@ export interface components {
             for_project_id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате
-             *
-             *     Используется в паре с offset
+             * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
              * Число объектов, которое необходимо пропустить при получении результата
-             *
-             *     Используется в паре с limit
+             * @description Используется в паре с limit
              */
             offset?: number;
         };

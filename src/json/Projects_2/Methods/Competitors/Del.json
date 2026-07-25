@@ -27,8 +27,7 @@
                     "ids",
                     "project_id"
                 ],
-                "title": "Удаление конкурентов",
-                "description": "@api"
+                "title": "Удаление конкурентов"
             },
             "Projects_2.Methods.Competitors.Del.Exec": {
                 "type": "integer"

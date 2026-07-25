@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /**
          * Куда добавлять добавляемые группы
-         *
-         *     Всегда должен содержать значения из Keywords_2\Types\Groups\ToType
+         * @description Всегда должен содержать значения из Keywords_2\Types\Groups\ToType
          * @enum {string}
          */
         "Keywords_2.Types.Collect.ToType": "in_folder" | "in_folder_last";

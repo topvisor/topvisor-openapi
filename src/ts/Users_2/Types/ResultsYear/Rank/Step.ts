@@ -9,7 +9,6 @@ export interface components {
     schemas: {
         /**
          * Этапы расчета достижений: "Итоги года"
-         * @description @see Users_2\Mods\ResultsYear\Ranks::setUsersRank()
          * @enum {string}
          */
         "Users_2.Types.ResultsYear.Rank.Step": "seoCat" | "activatedTelegramRank" | "auditCheck" | "errorsStatusCode" | "checksPositions" | "projectRegion" | "saintPetersburgChecks" | "moscowChecks" | "topPositions" | "keywordsClaster" | "googleCashback" | "leaderTopPositions";

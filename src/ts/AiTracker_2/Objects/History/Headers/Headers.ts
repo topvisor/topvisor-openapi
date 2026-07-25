@@ -7,10 +7,6 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * @property AiTracker_2\Types\History\HistoryFields $historyFields
-         * @description @property list<Project> $projects
-         */
         "AiTracker_2.Objects.History.Headers.Headers": {
             /** Название папки, включенной в отчет */
             folderName?: string | null;
@@ -28,8 +24,7 @@ export interface components {
             summaries: unknown[];
             /**
              * Режим сравнения
-             *
-             *     Примеры:
+             * @description Примеры:
              *     - Вывод нескольких проектов
              *     - Вывод нескольких регионов
              *     - Вывод нескольких проектов и регионов
@@ -37,22 +32,17 @@ export interface components {
             isCompare: boolean;
             /**
              * Поля элементов отчета
-             *
-             *     Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
-             * @description @see static::MODEL
+             * @description Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
              */
             fields: import('../../../../Selector/Field.ts').components['schemas']['Selector.Field'][];
             /**
              * Фильтры элементов отчета
-             *
-             *     Для реализации фичей при экспорте отчетов
-             * @description @see static::MODEL
+             * @description Для реализации фичей при экспорте отчетов
              */
             filters: import('../../../../FieldsFilters.ts').components['schemas']['FieldsFilters'][];
             /**
              * Поле для визуальной группировки элементов
-             *
-             *     Если указно поле, которого нет в элементах, то оно буде игнорироваться
+             * @description Если указно поле, которого нет в элементах, то оно буде игнорироваться
              */
             groupBy: string;
         };

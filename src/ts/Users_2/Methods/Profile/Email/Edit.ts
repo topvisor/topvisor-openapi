@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Запрос на смену email
-         *
-         *     Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
-         * @description @api
+         * @description Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
          */
         "Users_2.Methods.Profile.Email.Edit": {
             /** Новый email */

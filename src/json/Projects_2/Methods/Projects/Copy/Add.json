@@ -28,8 +28,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Копирование проекта",
-                "description": "@api"
+                "title": "Копирование проекта"
             },
             "Projects_2.Methods.Projects.Copy.Add.Exec": {
                 "nullable": true,

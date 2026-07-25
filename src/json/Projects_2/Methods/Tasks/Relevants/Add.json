@@ -35,8 +35,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на проверку релевантности",
-                "description": "@api"
+                "title": "Создание задачи на проверку релевантности"
             },
             "Projects_2.Methods.Tasks.Relevants.Add.Exec": {
                 "type": "integer"

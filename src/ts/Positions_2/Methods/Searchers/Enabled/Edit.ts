@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Включение/выключение ПС
-         * @description @api
-         */
+        /** Включение/выключение ПС */
         "Positions_2.Methods.Searchers.Enabled.Edit": {
             /** Id проекта */
             project_id: number;
@@ -18,25 +15,21 @@ export interface components {
             searcher_key: unknown;
             /**
              * - 1 - включить
-             *     - 0 - выключить
+             * @description - 0 - выключить
              */
             enabled: number;
             /**
              * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Selector\Types\Operator, values: array}
+             * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
              *
              *     Поля обязательное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Selector\Types\Operator
              */
             filters?: unknown[];
             /**
              * Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id
+             * @description Только для моделей с полем id
              */
             id?: number | null;
         };

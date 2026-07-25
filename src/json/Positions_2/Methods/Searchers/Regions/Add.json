@@ -18,11 +18,13 @@
                         "title": "Ключ ПС"
                     },
                     "region_key": {
-                        "title": "Ключ региона\n\nДля разных ПС список доступных регионов может быть разный",
+                        "title": "Ключ региона",
+                        "description": "Для разных ПС список доступных регионов может быть разный",
                         "type": "integer"
                     },
                     "region_lang": {
-                        "title": "Язык региона\n\nДля разных ПС список языков разный",
+                        "title": "Язык региона",
+                        "description": "Для разных ПС список языков разный",
                         "nullable": true,
                         "type": "string"
                     },
@@ -30,7 +32,8 @@
                         "title": "Устройство региона"
                     },
                     "region_depth": {
-                        "title": "Глубина региона\n\n- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
+                        "title": "Глубина региона",
+                        "description": "- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
                         "default": 1,
                         "type": "integer"
                     }
@@ -40,8 +43,7 @@
                     "searcher_key",
                     "region_key"
                 ],
-                "title": "Добавление региона",
-                "description": "@api"
+                "title": "Добавление региона"
             },
             "Positions_2.Methods.Searchers.Regions.Add.Exec": {
                 "nullable": true

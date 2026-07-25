@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение пути на аватар пользователя от корня сайта",
-                "description": "@api"
+                "title": "Получение пути на аватар пользователя от корня сайта"
             },
             "Users_2.Methods.Profile.Avatar.Get.Exec": {
                 "type": "string"

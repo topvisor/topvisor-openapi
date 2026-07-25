@@ -7,17 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Оплатить отчет
-         * @description @api
-         */
+        /** Оплатить отчет */
         "Competitors_2.Methods.Orders.Pay.Edit": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
-            /**
-             * Тип отчета (по ключевой фразе или по домену)
-             * @description @see Competitors_2\Mods\Competitors::$availableByTypes
-             */
+            /** Тип отчета (по ключевой фразе или по домену) */
             by_type: string;
             /** Ключевая фраза (или ее часть) / url */
             query: string;

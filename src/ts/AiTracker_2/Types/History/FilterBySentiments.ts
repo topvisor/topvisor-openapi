@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Фильтры по тональности
-         * @description @see FilterBySentiment
-         */
+        /** Фильтры по тональности */
         "AiTracker_2.Types.History.FilterBySentiments": import('./FilterBySentiment.ts').components['schemas']['AiTracker_2.Types.History.FilterBySentiment'][];
     };
     responses: never;

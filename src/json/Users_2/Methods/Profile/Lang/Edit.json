@@ -22,8 +22,7 @@
                 "required": [
                     "lang"
                 ],
-                "title": "Изменение языка",
-                "description": "@api"
+                "title": "Изменение языка"
             },
             "Users_2.Methods.Profile.Lang.Edit.Exec": {
                 "nullable": true,

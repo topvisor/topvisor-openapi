@@ -12,8 +12,7 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/UrlUTF.json#/components/schemas/TV.API.Types.UrlUTF"
                 },
-                "title": "Тип массива: UrlUTF[]",
-                "description": "@see \\TV\\API\\Types\\UrlUTF"
+                "title": "Тип массива: UrlUTF[]"
             }
         }
     }

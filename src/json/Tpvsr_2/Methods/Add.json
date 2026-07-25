@@ -41,8 +41,7 @@
                 "required": [
                     "link"
                 ],
-                "title": "Добавление ссылки",
-                "description": "@api"
+                "title": "Добавление ссылки"
             },
             "Tpvsr_2.Methods.Add.Exec": {
                 "nullable": true

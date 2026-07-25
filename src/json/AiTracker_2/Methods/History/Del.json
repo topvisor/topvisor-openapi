@@ -27,8 +27,7 @@
                     "date",
                     "project_id"
                 ],
-                "title": "Удаление проверки ИИ-Трекера",
-                "description": "@api"
+                "title": "Удаление проверки ИИ-Трекера"
             },
             "AiTracker_2.Methods.History.Del.Exec": {
                 "type": "integer"

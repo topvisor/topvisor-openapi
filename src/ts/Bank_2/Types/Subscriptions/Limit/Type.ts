@@ -9,9 +9,7 @@ export interface components {
     schemas: {
         /**
          * Тип лимита
-         *
-         *     Характеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться
-         * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
+         * @description Характеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Limit.Type": "object" | "object_by_project" | "action_monthly" | "action_daily" | "access";

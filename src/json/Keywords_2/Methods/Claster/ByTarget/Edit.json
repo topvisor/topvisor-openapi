@@ -22,8 +22,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Кластеризация по целевой ссылке: проверки перед началом кластеризации",
-                "description": "@api"
+                "title": "Кластеризация по целевой ссылке: проверки перед началом кластеризации"
             },
             "Keywords_2.Methods.Claster.ByTarget.Edit.Exec": {
                 "nullable": true,

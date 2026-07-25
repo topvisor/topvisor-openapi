@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Отписка от тарифа, оплаченного картой",
-                "description": "@api"
+                "title": "Отписка от тарифа, оплаченного картой"
             },
             "Payments_2.Methods.Tariff.DelCard.Edit.Exec": {
                 "nullable": true,

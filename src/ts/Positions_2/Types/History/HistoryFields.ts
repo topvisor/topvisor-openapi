@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Поля с результатами проверки для отчета истории проверок позиций
-         * @description @see HistoryField
-         */
+        /** Поля с результатами проверки для отчета истории проверок позиций */
         "Positions_2.Types.History.HistoryFields": import('./HistoryField.ts').components['schemas']['Positions_2.Types.History.HistoryField'][];
     };
     responses: never;

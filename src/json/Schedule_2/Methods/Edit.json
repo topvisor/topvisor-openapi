@@ -36,8 +36,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Привязать расписание к объекту",
-                "description": "@api"
+                "title": "Привязать расписание к объекту"
             },
             "Schedule_2.Methods.Edit.Exec": {
                 "nullable": true,

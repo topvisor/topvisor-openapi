@@ -7,18 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение цены проверки индексации задачи без создания проекта
-         * @description @api
-         */
+        /** Получение цены проверки индексации задачи без создания проекта */
         "Projects_2.Methods.Tasks.Indexing.Price.Get": {
             indexing_searchers_keys: import('../../../../../Audit_2/Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
             link_sitemap_xml?: import('../../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /**
              * Список URL соответствующих домену проекта, допускается формат CSV
-             *
-             *     Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
+             * @description Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
              *
              *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
              */

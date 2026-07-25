@@ -7,15 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Импорт AI-запросов
-         * @description @api
-         */
+        /** Импорт AI-запросов */
         "KeywordsAi_2.Methods.Keywords.Import.Add": {
             /**
              * Массив ключевых запросов в формате CSV
-             *
-             *     - array keywords - массив ключевых запросов, допускается формат CSV
+             * @description - array keywords - массив ключевых запросов, допускается формат CSV
              *     - file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV
              *     - resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV
              *     - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса

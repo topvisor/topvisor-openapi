@@ -22,8 +22,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение настроек ИИ-Трекера",
-                "description": "@api"
+                "title": "Получение настроек ИИ-Трекера"
             },
             "AiTracker_2.Methods.Settings.Get.Exec": {
                 "title": "Настройки aiTracker проекта",

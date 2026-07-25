@@ -32,7 +32,8 @@
                         "type": "array"
                     },
                     "to_group_id": {
-                        "title": "Id группы для размещения подобранных запросов\n\nМожно указывать только при `in_one_group` = `true`",
+                        "title": "Id группы для размещения подобранных запросов",
+                        "description": "Можно указывать только при `in_one_group` = `true`",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -75,8 +76,7 @@
                     "qualifiers",
                     "project_id"
                 ],
-                "title": "Получение стоимости подбора запросов",
-                "description": "@api"
+                "title": "Получение стоимости подбора запросов"
             },
             "Keywords_2.Methods.Collect.Price.Get.Exec": {
                 "title": "Информация о стоимости запуска подбора запросов",

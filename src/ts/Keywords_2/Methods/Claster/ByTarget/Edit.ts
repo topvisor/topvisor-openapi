@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Кластеризация по целевой ссылке: проверки перед началом кластеризации
-         * @description @api
-         */
+        /** Кластеризация по целевой ссылке: проверки перед началом кластеризации */
         "Keywords_2.Methods.Claster.ByTarget.Edit": {
             /** Кластеризовать по папке */
             folder_id?: number;

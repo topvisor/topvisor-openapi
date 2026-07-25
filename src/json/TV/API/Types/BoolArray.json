@@ -12,7 +12,8 @@
                 "items": {
                     "type": "boolean"
                 },
-                "title": "Тип массива: boolean\n\nПринимает: 0|1|false|true"
+                "title": "Тип массива: boolean",
+                "description": "Принимает: 0|1|false|true"
             }
         }
     }
