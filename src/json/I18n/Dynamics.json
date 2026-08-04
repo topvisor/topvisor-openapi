@@ -503,7 +503,7 @@
                         "readOnly": true
                     },
                     "Serp_features_aiOverview": {
-                        "const": "AI Overviews and Dynamic places",
+                        "const": "AI Overviews",
                         "readOnly": true
                     },
                     "Serp_features_aiOverviewPreview": {
@@ -511,7 +511,7 @@
                         "readOnly": true
                     },
                     "Serp_features_aiOverviewExists": {
-                        "const": "AI Overviews and Dynamic places",
+                        "const": "AI Overviews",
                         "readOnly": true
                     },
                     "Serp_features_aiOverviewExists_popup": {
