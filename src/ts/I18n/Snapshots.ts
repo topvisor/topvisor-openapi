@@ -33,8 +33,6 @@ export interface components {
             /** @constant */
             readonly Save_snapshot_top_N: "Save a snapshot of TOP";
             /** @constant */
-            readonly Do_not_save: "Don't save";
-            /** @constant */
             readonly selected_keywords_only: "selected keywords only";
             /** @constant */
             readonly Saved_list: "Saved list";

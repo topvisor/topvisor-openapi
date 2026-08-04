@@ -58,10 +58,6 @@
                         "const": "Save a snapshot of TOP",
                         "readOnly": true
                     },
-                    "Do_not_save": {
-                        "const": "Don't save",
-                        "readOnly": true
-                    },
                     "selected_keywords_only": {
                         "const": "selected keywords only",
                         "readOnly": true
@@ -160,7 +156,6 @@
                     "Read_competitor_help_article",
                     "Competitor_website",
                     "Save_snapshot_top_N",
-                    "Do_not_save",
                     "selected_keywords_only",
                     "Saved_list",
                     "First_40_keywords",
