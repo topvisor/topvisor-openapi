@@ -4208,35 +4208,6 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
-  /edit/users_2/profile/email/:
-    post:
-      operationId: EditUsers2ProfileEmail
-      tags:
-        - Users_2
-      summary: Запрос на смену email
-      description: Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Users_2.Methods.Profile.Email.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Users_2.Methods.Profile.Email.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
   /edit/users_2/profile/lang/:
     post:
       operationId: EditUsers2ProfileLang
@@ -4261,62 +4232,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Users_2.Methods.Profile.Lang.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/users_2/profile/pass/:
-    post:
-      operationId: EditUsers2ProfilePass
-      tags:
-        - Users_2
-      summary: Изменение пароля
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Users_2.Methods.Profile.Pass.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Users_2.Methods.Profile.Pass.Edit.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-  /edit/users_2/profile/retrievePass/:
-    post:
-      operationId: EditUsers2ProfileRetrievePass
-      tags:
-        - Users_2
-      summary: Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail())
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Users_2.Methods.Profile.RetrievePass.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Users_2.Methods.Profile.RetrievePass.Edit.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10851,6 +10766,10 @@ components:
           title: Список имен конкурентов (если указан, должен быть такой же длины как urls)
           nullable: true
           type: array
+        descriptions:
+          title: Список описаний конкурентов (если указан, должен быть такой же длины как urls)
+          nullable: true
+          type: array
         brand_names:
           title: Список имен брендов для настроек ИИ-Трекера
           nullable: true
@@ -16143,27 +16062,6 @@ components:
     Users_2.Methods.Profile.Currency.Edit.Exec:
       nullable: true
       type: integer
-    TV.API.Types.Email:
-      type: string
-      title: E-mail
-      example: name@example.com
-    Users_2.Methods.Profile.Email.Edit:
-      type: object
-      properties:
-        email:
-          title: Новый email
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Email'
-        pass:
-          title: Пароль
-          type: string
-      required:
-        - email
-        - pass
-      title: Запрос на смену email
-      description: Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
-    Users_2.Methods.Profile.Email.Edit.Exec:
-      type: integer
     TV.API.Types.Lang:
       type: string
       enum:
@@ -16187,38 +16085,6 @@ components:
       title: Изменение языка
     Users_2.Methods.Profile.Lang.Edit.Exec:
       nullable: true
-      type: integer
-    Users_2.Methods.Profile.Pass.Edit:
-      type: object
-      properties:
-        pass:
-          title: Текущий пароль
-          type: string
-        pass_new:
-          title: Новый пароль
-          type: string
-        pass_new_confirm:
-          title: Повтор нового пароля
-          type: string
-      required:
-        - pass
-        - pass_new
-        - pass_new_confirm
-      title: Изменение пароля
-    Users_2.Methods.Profile.Pass.Edit.Exec:
-      nullable: true
-      type: array
-    Users_2.Methods.Profile.RetrievePass.Edit:
-      type: object
-      properties:
-        email:
-          title: Email пользователя
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Email'
-      required:
-        - email
-      title: Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail())
-    Users_2.Methods.Profile.RetrievePass.Edit.Exec:
       type: integer
     Users_2.Methods.Profile.Timezone.Edit:
       type: object

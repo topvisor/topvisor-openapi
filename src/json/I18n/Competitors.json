@@ -629,6 +629,10 @@
                     "Results_not_found": {
                         "const": "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>",
                         "readOnly": true
+                    },
+                    "Brand_name_and_description": {
+                        "const": "Brand name and description",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -786,7 +790,8 @@
                     "Length",
                     "Intersection_level_required",
                     "Download_keywords_snippets_after_purchase",
-                    "Results_not_found"
+                    "Results_not_found",
+                    "Brand_name_and_description"
                 ]
             }
         }

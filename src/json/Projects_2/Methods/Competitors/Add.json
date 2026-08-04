@@ -23,6 +23,11 @@
                         "nullable": true,
                         "type": "array"
                     },
+                    "descriptions": {
+                        "title": "Список описаний конкурентов (если указан, должен быть такой же длины как urls)",
+                        "nullable": true,
+                        "type": "array"
+                    },
                     "brand_names": {
                         "title": "Список имен брендов для настроек ИИ-Трекера",
                         "nullable": true,

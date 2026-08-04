@@ -16,6 +16,8 @@ export interface components {
             urls: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'];
             /** Список имен конкурентов (если указан, должен быть такой же длины как urls) */
             names?: unknown[] | null;
+            /** Список описаний конкурентов (если указан, должен быть такой же длины как urls) */
+            descriptions?: unknown[] | null;
             /** Список имен брендов для настроек ИИ-Трекера */
             brand_names?: (string[] | null) | null;
             /**

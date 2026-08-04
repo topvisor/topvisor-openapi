@@ -83,10 +83,7 @@ export interface components {
             readonly SUBDOMAINS: unknown[];
             /** Список поддерживаемых тем оформления */
             readonly THEMES: unknown[];
-            /**
-             * Цвета темы сайта
-             * @description Зависят от CSS-переменных в UI
-             */
+            /** Цвета темы сайта */
             readonly THEME_COLORS: unknown[];
             /** Список сервисов, доступных для переноса на сайте */
             readonly MIGRATION_SOURCE_DOMAINS: unknown[];

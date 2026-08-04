@@ -2397,26 +2397,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Запрос на смену email
-     * @description Будет оправлено письмо на новый email для подтверждения его привязки к аккаунту вместо текущего email
-     */
-    "/edit/users_2/profile/email/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditUsers2ProfileEmail"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Изменение языка */
     "/edit/users_2/profile/lang/": {
         parameters: {
@@ -2428,40 +2408,6 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditUsers2ProfileLang"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение пароля */
-    "/edit/users_2/profile/pass/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditUsers2ProfilePass"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail()) */
-    "/edit/users_2/profile/retrievePass/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditUsers2ProfileRetrievePass"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6381,31 +6327,6 @@ export interface operations {
             };
         };
     };
-    EditUsers2ProfileEmail: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Users_2/Methods/Profile/Email/Edit.ts').components['schemas']['Users_2.Methods.Profile.Email.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Users_2/Methods/Profile/Email/Edit.ts').components['schemas']['Users_2.Methods.Profile.Email.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     EditUsers2ProfileLang: {
         parameters: {
             query?: never;
@@ -6426,56 +6347,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Users_2/Methods/Profile/Lang/Edit.ts').components['schemas']['Users_2.Methods.Profile.Lang.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditUsers2ProfilePass: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Users_2/Methods/Profile/Pass/Edit.ts').components['schemas']['Users_2.Methods.Profile.Pass.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Users_2/Methods/Profile/Pass/Edit.ts').components['schemas']['Users_2.Methods.Profile.Pass.Edit.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    EditUsers2ProfileRetrievePass: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Users_2/Methods/Profile/RetrievePass/Edit.ts').components['schemas']['Users_2.Methods.Profile.RetrievePass.Edit'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Users_2/Methods/Profile/RetrievePass/Edit.ts').components['schemas']['Users_2.Methods.Profile.RetrievePass.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

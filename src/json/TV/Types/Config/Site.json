@@ -99,7 +99,6 @@
                     },
                     "THEME_COLORS": {
                         "title": "Цвета темы сайта",
-                        "description": "Зависят от CSS-переменных в UI",
                         "readOnly": true,
                         "type": "array"
                     },

@@ -393,8 +393,6 @@ export interface components {
             /** @constant */
             readonly see: "see";
             /** @constant */
-            readonly Add_competitors: "Add competitors";
-            /** @constant */
             readonly My_competitors: "My competitors";
             /** @constant */
             readonly Competitor_URL: "Competitor URL";
@@ -498,6 +496,8 @@ export interface components {
             readonly AI_visibility: "AI Visibility";
             /** @constant */
             readonly Initial_project_setup: "Initial project setup";
+            /** @constant */
+            readonly Confirm_deletion: "Confirm deletion";
         };
     };
     responses: never;

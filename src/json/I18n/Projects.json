@@ -778,10 +778,6 @@
                         "const": "see",
                         "readOnly": true
                     },
-                    "Add_competitors": {
-                        "const": "Add competitors",
-                        "readOnly": true
-                    },
                     "My_competitors": {
                         "const": "My competitors",
                         "readOnly": true
@@ -989,6 +985,10 @@
                     "Initial_project_setup": {
                         "const": "Initial project setup",
                         "readOnly": true
+                    },
+                    "Confirm_deletion": {
+                        "const": "Confirm deletion",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1184,7 +1184,6 @@
                     "Added_keywords",
                     "Group_manage_tags_on_page",
                     "see",
-                    "Add_competitors",
                     "My_competitors",
                     "Competitor_URL",
                     "Competitor_name",
@@ -1235,7 +1234,8 @@
                     "Update_count_formula",
                     "Mentions",
                     "AI_visibility",
-                    "Initial_project_setup"
+                    "Initial_project_setup",
+                    "Confirm_deletion"
                 ]
             }
         }
