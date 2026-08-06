@@ -233,7 +233,9 @@ export interface components {
             /** @constant */
             readonly Delete_keyword: "Delete keyword";
             /** @constant */
-            readonly Recheck: "Recheck keyword ranking";
+            readonly Recheck: "Recheck";
+            /** @constant */
+            readonly Recheck_more: "Paid check of 1 keyword + price of enabled additional settings";
             /** @constant */
             readonly Checking: "Tracking";
             /** @constant */

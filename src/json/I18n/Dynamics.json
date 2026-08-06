@@ -459,7 +459,11 @@
                         "readOnly": true
                     },
                     "Recheck": {
-                        "const": "Recheck keyword ranking",
+                        "const": "Recheck",
+                        "readOnly": true
+                    },
+                    "Recheck_more": {
+                        "const": "Paid check of 1 keyword + price of enabled additional settings",
                         "readOnly": true
                     },
                     "Checking": {
@@ -657,6 +661,7 @@
                     "Selected_time_is_hightload",
                     "Delete_keyword",
                     "Recheck",
+                    "Recheck_more",
                     "Checking",
                     "Recheck_finish",
                     "No_target_status",
