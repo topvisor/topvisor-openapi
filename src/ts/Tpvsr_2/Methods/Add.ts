@@ -18,7 +18,7 @@ export interface components {
             /** Тэги ссылки */
             tags?: import('../Types/Tags.ts').components['schemas']['Tpvsr_2.Types.Tags'] | null;
             /** Поля, которые нужно получить */
-            fields?: unknown[] | null;
+            fields?: (string[] | null) | null;
         };
         "Tpvsr_2.Methods.Add.Exec": unknown;
     };

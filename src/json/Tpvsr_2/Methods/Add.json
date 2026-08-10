@@ -35,7 +35,17 @@
                     "fields": {
                         "title": "Поля, которые нужно получить",
                         "nullable": true,
-                        "type": "array"
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
                     }
                 },
                 "required": [

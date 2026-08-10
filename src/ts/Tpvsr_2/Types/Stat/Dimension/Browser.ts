@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Бразуер для получение информации
+         * Браузер для получения информации
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Browser": "IE" | "Chrome" | "Firefox" | "Opera" | "Safari" | "Ya" | "Other";

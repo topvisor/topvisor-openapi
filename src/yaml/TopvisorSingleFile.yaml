@@ -5972,7 +5972,11 @@ components:
         fields:
           title: Поля, которые нужно получить
           nullable: true
-          type: array
+          anyOf:
+            - type: array
+              items:
+                type: string
+            - type: 'null'
       required:
         - link
       title: Добавление ссылки
@@ -11741,12 +11745,12 @@ components:
         - null
         - null
         - null
-      title: Бразуер для получение информации
+      title: Браузер для получения информации
     Tpvsr_2.Types.Stat.Dimension.Browsers:
       type: array
       items:
         $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Browser'
-      title: Бразуеры для получение информации
+      title: Браузеры для получения информации
     Tpvsr_2.Types.Stat.Dimension.Os:
       type: string
       enum:
