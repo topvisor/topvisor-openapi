@@ -467,7 +467,7 @@
                         "readOnly": true
                     },
                     "in_hour": {
-                        "const": "in %hour% h.",
+                        "const": "in {{ hour }} h.",
                         "readOnly": true
                     },
                     "Settings_on_demand": {

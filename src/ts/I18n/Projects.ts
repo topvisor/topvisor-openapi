@@ -237,7 +237,7 @@ export interface components {
             /** @constant */
             readonly immediately: "immediately";
             /** @constant */
-            readonly in_hour: "in %hour% h.";
+            readonly in_hour: "in {{ hour }} h.";
             /** @constant */
             readonly Settings_on_demand: "On demand";
             /** @constant */
