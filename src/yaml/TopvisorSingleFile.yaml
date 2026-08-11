@@ -10775,7 +10775,7 @@ components:
           nullable: true
           type: array
         brand_names:
-          title: Список имен брендов для настроек ИИ-Трекера
+          title: Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls)
           nullable: true
           anyOf:
             - type: array
