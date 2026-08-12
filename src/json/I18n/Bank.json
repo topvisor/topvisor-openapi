@@ -267,7 +267,7 @@
                         "readOnly": true
                     },
                     "New_referral_email_title": {
-                        "const": "You already have %count_referrals% referrals. Keep it up! 🎉",
+                        "const": "You already have {{ count_referrals }} referrals. Keep it up! 🎉",
                         "readOnly": true
                     },
                     "Account_plan": {
@@ -471,15 +471,15 @@
                         "readOnly": true
                     },
                     "Name_payment": {
-                        "const": "Topvisor Software - Payment TV-%paymentId%",
+                        "const": "Topvisor Software - Payment TV-{{ paymentId }}",
                         "readOnly": true
                     },
                     "Name_payment_tariff": {
-                        "const": "Topvisor Software 1-Month Subscription %tariffName% plan - Payment TV-%paymentId%",
+                        "const": "Topvisor Software 1-Month Subscription {{ tariffName }} plan - Payment TV-{{ paymentId }}",
                         "readOnly": true
                     },
                     "Name_payment_short": {
-                        "const": "Topvisor Software TV-%paymentId%",
+                        "const": "Topvisor Software TV-{{ paymentId }}",
                         "readOnly": true
                     },
                     "Name_payment_subscription": {
@@ -487,19 +487,19 @@
                         "readOnly": true
                     },
                     "Name_payment_tariff_short": {
-                        "const": "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%",
+                        "const": "Topvisor Software 1-Month {{ tariffName }} plan TV-{{ paymentId }}",
                         "readOnly": true
                     },
                     "Name_payment_log": {
-                        "const": "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
+                        "const": "Credit {{ systemType }} - Payment TV-{{ paymentId }} via \"{{ systemName }}\"{{ contractInfo }}",
                         "readOnly": true
                     },
                     "Name_payment_log_tariff": {
-                        "const": "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
+                        "const": "1-Month Subscription {{ tariffName }} - plan - Payment TV-{{ paymentId }} via \"{{ systemName }}\"{{ contractInfo }}",
                         "readOnly": true
                     },
                     "Name_payment_log_subscription_in": {
-                        "const": "Incoming payment #%paymentId% for subscription  via \"%systemName%\"%contractInfo%",
+                        "const": "Incoming payment #{{ paymentId }} for subscription  via \"{{ systemName }}\"{{ contractInfo }}",
                         "readOnly": true
                     },
                     "Name_payment_log_subscription_pay": {
@@ -1023,7 +1023,7 @@
                         "readOnly": true
                     },
                     "Domain_registration_or_renewal": {
-                        "const": "Domain registration or renewal ID%paymentId%",
+                        "const": "Domain registration or renewal ID{{ paymentId }}",
                         "readOnly": true
                     },
                     "Not_enough_money_for_purchase": {

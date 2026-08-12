@@ -137,7 +137,7 @@ export interface components {
             /** @constant */
             readonly Referrals_transfer_from_referral_to_bonus_balance: "Transfer from referral balance to bonus balance";
             /** @constant */
-            readonly New_referral_email_title: "You already have %count_referrals% referrals. Keep it up! 🎉";
+            readonly New_referral_email_title: "You already have {{ count_referrals }} referrals. Keep it up! 🎉";
             /** @constant */
             readonly Account_plan: "Account (Pricing plan)";
             /** @constant */
@@ -239,21 +239,21 @@ export interface components {
             /** @constant */
             readonly Payments_willbe_made_in_currency: "Payments will be accepted in the following currency";
             /** @constant */
-            readonly Name_payment?: "Topvisor Software - Payment TV-%paymentId%";
+            readonly Name_payment?: "Topvisor Software - Payment TV-{{ paymentId }}";
             /** @constant */
-            readonly Name_payment_tariff?: "Topvisor Software 1-Month Subscription %tariffName% plan - Payment TV-%paymentId%";
+            readonly Name_payment_tariff?: "Topvisor Software 1-Month Subscription {{ tariffName }} plan - Payment TV-{{ paymentId }}";
             /** @constant */
-            readonly Name_payment_short?: "Topvisor Software TV-%paymentId%";
+            readonly Name_payment_short?: "Topvisor Software TV-{{ paymentId }}";
             /** @constant */
             readonly Name_payment_subscription: "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months";
             /** @constant */
-            readonly Name_payment_tariff_short?: "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%";
+            readonly Name_payment_tariff_short?: "Topvisor Software 1-Month {{ tariffName }} plan TV-{{ paymentId }}";
             /** @constant */
-            readonly Name_payment_log: "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
+            readonly Name_payment_log: "Credit {{ systemType }} - Payment TV-{{ paymentId }} via \"{{ systemName }}\"{{ contractInfo }}";
             /** @constant */
-            readonly Name_payment_log_tariff: "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
+            readonly Name_payment_log_tariff: "1-Month Subscription {{ tariffName }} - plan - Payment TV-{{ paymentId }} via \"{{ systemName }}\"{{ contractInfo }}";
             /** @constant */
-            readonly Name_payment_log_subscription_in: "Incoming payment #%paymentId% for subscription  via \"%systemName%\"%contractInfo%";
+            readonly Name_payment_log_subscription_in: "Incoming payment #{{ paymentId }} for subscription  via \"{{ systemName }}\"{{ contractInfo }}";
             /** @constant */
             readonly Name_payment_log_subscription_pay: "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months";
             /** @constant */
@@ -515,7 +515,7 @@ export interface components {
             /** @constant */
             readonly Create_Tinkoff_business_account: "Create T-Business account";
             /** @constant */
-            readonly Domain_registration_or_renewal: "Domain registration or renewal ID%paymentId%";
+            readonly Domain_registration_or_renewal: "Domain registration or renewal ID{{ paymentId }}";
             /** @constant */
             readonly Not_enough_money_for_purchase: "You do not have enough funds to complete purchase";
             /** @constant */
