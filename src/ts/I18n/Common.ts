@@ -250,7 +250,7 @@ export interface components {
             /** @constant */
             readonly Enter_valid_email_notice: "Enter a valid E-mail address";
             /** @constant */
-            readonly No_account_sign_up: "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>";
+            readonly No_account_sign_up: "No account? <a href=\".\" data-to-view=\"{{ toViewReg }}\">Sign up</a>";
             /** @constant */
             readonly No_account: "No account?";
             /** @constant */
@@ -258,9 +258,9 @@ export interface components {
             /** @constant */
             readonly Already_have_account: "Already have an account";
             /** @constant */
-            readonly Try_again_or_sign_up: "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>";
+            readonly Try_again_or_sign_up: "<a href=\".\" data-to-view=\"{{ toViewAuth }}\">Log in</a> or <a href=\".\" data-to-view=\"{{ toViewReg }}\">sign up</a>";
             /** @constant */
-            readonly If_no_msg_check_spam_ask_support_notice: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>";
+            readonly If_no_msg_check_spam_ask_support_notice: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"{{ hrefCreateTicket }}\">Customer support</a>";
             /** @constant */
             readonly If_no_msg: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ";
             /** @constant */
@@ -900,9 +900,9 @@ export interface components {
             /** @constant */
             readonly Your_projects: "Your projects";
             /** @constant */
-            readonly Incorrect_file_format: "Invalid file format (expected: %availableExtensionsNames%)\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>";
+            readonly Incorrect_file_format: "Invalid file format (expected: {{ availableExtensionsNames }})\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>";
             /** @constant */
-            readonly Max_size: "Maximum upload size exceeded (%maxSize%)";
+            readonly Max_size: "Maximum upload size exceeded ({{ maxSize }})";
             /** @constant */
             readonly Audit: "Website SEO Audit tool";
             /** @constant */

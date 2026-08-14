@@ -15,9 +15,9 @@ export interface components {
             /** @constant */
             readonly Panel_disable_notifications: "Turn off notifications";
             /** @constant */
-            readonly Panel_pair_account: "Link %siteName% account";
+            readonly Panel_pair_account: "Link {{ siteName }} account";
             /** @constant */
-            readonly Panel_unpair_account: "Remove %siteName% account";
+            readonly Panel_unpair_account: "Remove {{ siteName }} account";
             /** @constant */
             readonly Panel_get_short_link: "Create short link";
             /** @constant */
@@ -77,9 +77,9 @@ export interface components {
             /** @constant */
             readonly Message_pair_done2: "To remove account, type /unpair";
             /** @constant */
-            readonly Message_pair_authorize: "Sign in to %siteName% and click the <a href=\"%url%\">link</a> to link your Telegram to the %siteName% account";
+            readonly Message_pair_authorize: "Sign in to {{ siteName }} and click the <a href=\"{{ url }}\">link</a> to link your Telegram to the {{ siteName }} account";
             /** @constant */
-            readonly Message_pair_authorize_link: "https://%siteId%.com/income/telegram/join/%botName%/%chatId%/%nickname%";
+            readonly Message_pair_authorize_link: "https://{{ siteId }}.com/income/telegram/join/{{ botName }}/{{ chatId }}/{{ nickname }}";
             /** @constant */
             readonly Message_pair_authorize_link_text: "Connect an account";
             /** @constant */
@@ -93,9 +93,9 @@ export interface components {
             /** @constant */
             readonly Message_tpvsr_cancel_done: "Link shortening canceled.";
             /** @constant */
-            readonly Message_tpvsr_error: "To shorten the URL, link the %siteName% account to the bot via the /pair command";
+            readonly Message_tpvsr_error: "To shorten the URL, link the {{ siteName }} account to the bot via the /pair command";
             /** @constant */
-            readonly Message_join_authorize: "Sign in to %siteName% and try to link your account again.";
+            readonly Message_join_authorize: "Sign in to {{ siteName }} and try to link your account again.";
             /** @constant */
             readonly Message_join_done1: "Account";
             /** @constant */
@@ -107,7 +107,7 @@ export interface components {
             /** @constant */
             readonly Message_subscribed?: "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️";
             /** @constant */
-            readonly Profile_successfully_linked: "Profile ID %userId% has been successfully linked.";
+            readonly Profile_successfully_linked: "Profile ID {{ userId }} has been successfully linked.";
             /** @constant */
             readonly Impossible_link_profile: "It is impossible to link a profile";
             /** @constant */

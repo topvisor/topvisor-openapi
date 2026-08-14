@@ -1011,7 +1011,7 @@
                         "readOnly": true
                     },
                     "Copy_to_clipboard_up_to": {
-                        "const": "Copy to clipboard (up to %max% keywords)",
+                        "const": "Copy to clipboard (up to {{ max }} keywords)",
                         "readOnly": true
                     },
                     "To_copy_and_move": {

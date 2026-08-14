@@ -509,7 +509,7 @@ export interface components {
             /** @constant */
             readonly Copy_to_clipboard: "Copy to clipboard";
             /** @constant */
-            readonly Copy_to_clipboard_up_to: "Copy to clipboard (up to %max% keywords)";
+            readonly Copy_to_clipboard_up_to: "Copy to clipboard (up to {{ max }} keywords)";
             /** @constant */
             readonly To_copy_and_move: "Copy and transfer";
             /** @constant */

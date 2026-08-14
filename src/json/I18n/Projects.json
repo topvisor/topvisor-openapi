@@ -627,7 +627,7 @@
                         "readOnly": true
                     },
                     "To_accept_project_click_msg": {
-                        "const": "To accept a project <b>%project_name%</b> transfer, click the message",
+                        "const": "To accept a project <b>{{ project_name }}</b> transfer, click the message",
                         "readOnly": true
                     },
                     "Reports_send_to_address": {

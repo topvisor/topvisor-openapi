@@ -317,7 +317,7 @@ export interface components {
             /** @constant */
             readonly Do_not_ask: "Do not ask me again";
             /** @constant */
-            readonly To_accept_project_click_msg: "To accept a project <b>%project_name%</b> transfer, click the message";
+            readonly To_accept_project_click_msg: "To accept a project <b>{{ project_name }}</b> transfer, click the message";
             /** @constant */
             readonly Reports_send_to_address: "Send to";
             /** @constant */

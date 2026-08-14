@@ -111,7 +111,7 @@ export interface components {
             /** @constant */
             readonly To_repository_google_drive: "Upload to Google Drive";
             /** @constant */
-            readonly To_repository_google_drive_message: "To export report, <a href=\"/project/settings/%projectId%/#to_project_tpa_search\">integrate</a> your account with Google Drive in the project settings";
+            readonly To_repository_google_drive_message: "To export report, <a href=\"/project/settings/{{ projectId }}/#to_project_tpa_search\">integrate</a> your account with Google Drive in the project settings";
             /** @constant */
             readonly Summary: "Summary";
             /** @constant */

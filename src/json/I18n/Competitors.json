@@ -623,7 +623,7 @@
                         "readOnly": true
                     },
                     "Download_keywords_snippets_after_purchase": {
-                        "const": "After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report.",
+                        "const": "After purchase, you can download keywords and snippets of this and other competitors with the intersection level {{ intersection }} in one click and compare their data with the main domain on this report.",
                         "readOnly": true
                     },
                     "Results_not_found": {

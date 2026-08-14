@@ -23,11 +23,11 @@
                         "readOnly": true
                     },
                     "Panel_pair_account": {
-                        "const": "Link %siteName% account",
+                        "const": "Link {{ siteName }} account",
                         "readOnly": true
                     },
                     "Panel_unpair_account": {
-                        "const": "Remove %siteName% account",
+                        "const": "Remove {{ siteName }} account",
                         "readOnly": true
                     },
                     "Panel_get_short_link": {
@@ -147,11 +147,11 @@
                         "readOnly": true
                     },
                     "Message_pair_authorize": {
-                        "const": "Sign in to %siteName% and click the <a href=\"%url%\">link</a> to link your Telegram to the %siteName% account",
+                        "const": "Sign in to {{ siteName }} and click the <a href=\"{{ url }}\">link</a> to link your Telegram to the {{ siteName }} account",
                         "readOnly": true
                     },
                     "Message_pair_authorize_link": {
-                        "const": "https://%siteId%.com/income/telegram/join/%botName%/%chatId%/%nickname%",
+                        "const": "https://{{ siteId }}.com/income/telegram/join/{{ botName }}/{{ chatId }}/{{ nickname }}",
                         "readOnly": true
                     },
                     "Message_pair_authorize_link_text": {
@@ -179,11 +179,11 @@
                         "readOnly": true
                     },
                     "Message_tpvsr_error": {
-                        "const": "To shorten the URL, link the %siteName% account to the bot via the /pair command",
+                        "const": "To shorten the URL, link the {{ siteName }} account to the bot via the /pair command",
                         "readOnly": true
                     },
                     "Message_join_authorize": {
-                        "const": "Sign in to %siteName% and try to link your account again.",
+                        "const": "Sign in to {{ siteName }} and try to link your account again.",
                         "readOnly": true
                     },
                     "Message_join_done1": {
@@ -207,7 +207,7 @@
                         "readOnly": true
                     },
                     "Profile_successfully_linked": {
-                        "const": "Profile ID %userId% has been successfully linked.",
+                        "const": "Profile ID {{ userId }} has been successfully linked.",
                         "readOnly": true
                     },
                     "Impossible_link_profile": {

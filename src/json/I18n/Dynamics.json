@@ -215,7 +215,7 @@
                         "readOnly": true
                     },
                     "To_repository_google_drive_message": {
-                        "const": "To export report, <a href=\"/project/settings/%projectId%/#to_project_tpa_search\">integrate</a> your account with Google Drive in the project settings",
+                        "const": "To export report, <a href=\"/project/settings/{{ projectId }}/#to_project_tpa_search\">integrate</a> your account with Google Drive in the project settings",
                         "readOnly": true
                     },
                     "Summary": {

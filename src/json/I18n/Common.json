@@ -482,7 +482,7 @@
                         "readOnly": true
                     },
                     "No_account_sign_up": {
-                        "const": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>",
+                        "const": "No account? <a href=\".\" data-to-view=\"{{ toViewReg }}\">Sign up</a>",
                         "readOnly": true
                     },
                     "No_account": {
@@ -498,11 +498,11 @@
                         "readOnly": true
                     },
                     "Try_again_or_sign_up": {
-                        "const": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>",
+                        "const": "<a href=\".\" data-to-view=\"{{ toViewAuth }}\">Log in</a> or <a href=\".\" data-to-view=\"{{ toViewReg }}\">sign up</a>",
                         "readOnly": true
                     },
                     "If_no_msg_check_spam_ask_support_notice": {
-                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>",
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"{{ hrefCreateTicket }}\">Customer support</a>",
                         "readOnly": true
                     },
                     "If_no_msg": {
@@ -1782,11 +1782,11 @@
                         "readOnly": true
                     },
                     "Incorrect_file_format": {
-                        "const": "Invalid file format (expected: %availableExtensionsNames%)\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>",
+                        "const": "Invalid file format (expected: {{ availableExtensionsNames }})\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>",
                         "readOnly": true
                     },
                     "Max_size": {
-                        "const": "Maximum upload size exceeded (%maxSize%)",
+                        "const": "Maximum upload size exceeded ({{ maxSize }})",
                         "readOnly": true
                     },
                     "Audit": {
