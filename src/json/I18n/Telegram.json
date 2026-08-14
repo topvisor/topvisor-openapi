@@ -206,14 +206,6 @@
                         "const": "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️",
                         "readOnly": true
                     },
-                    "Topvisor": {
-                        "const": "Topvisor",
-                        "readOnly": true
-                    },
-                    "Thundo": {
-                        "const": "Thundo",
-                        "readOnly": true
-                    },
                     "Profile_successfully_linked": {
                         "const": "Profile ID %userId% has been successfully linked.",
                         "readOnly": true

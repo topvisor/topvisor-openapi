@@ -107,10 +107,6 @@ export interface components {
             /** @constant */
             readonly Message_subscribed?: "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️";
             /** @constant */
-            readonly Topvisor?: "Topvisor";
-            /** @constant */
-            readonly Thundo?: "Thundo";
-            /** @constant */
             readonly Profile_successfully_linked: "Profile ID %userId% has been successfully linked.";
             /** @constant */
             readonly Impossible_link_profile: "It is impossible to link a profile";
