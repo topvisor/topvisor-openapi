@@ -16,7 +16,6 @@ export interface components {
             i?: string | null;
             on?: number | null;
             task_create_time?: any;
-            task_start_time?: any;
             task_status?: string | null;
         };
     };

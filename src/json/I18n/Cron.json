@@ -38,10 +38,6 @@
                         "const": "Task created",
                         "readOnly": true
                     },
-                    "Field_task_start_time": {
-                        "const": "Task runned",
-                        "readOnly": true
-                    },
                     "Field_task_status": {
                         "const": "Execution status",
                         "readOnly": true
@@ -63,7 +59,6 @@
                     "Field_i",
                     "Field_on",
                     "Field_task_create_time",
-                    "Field_task_start_time",
                     "Field_task_status",
                     "Disabled",
                     "Enabled"

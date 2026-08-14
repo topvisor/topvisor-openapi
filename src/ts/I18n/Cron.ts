@@ -23,8 +23,6 @@ export interface components {
             /** @constant */
             readonly Field_task_create_time: "Task created";
             /** @constant */
-            readonly Field_task_start_time: "Task runned";
-            /** @constant */
             readonly Field_task_status: "Execution status";
             /** @constant */
             readonly Disabled: "Disabled";
