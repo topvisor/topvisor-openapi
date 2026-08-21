@@ -47,28 +47,28 @@ export interface components {
                 projects: {
                     name: "Projects";
                     extendedName: "projects";
-                    description: "The number of active projects you can have on your account. A project is a container with URL which is required to launch checks and store keywords.";
+                    description: "The number of active projects you can have on your account. A project is a container with URL which is required to launch checks and store keywords.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/projects/\" target=\"_blank\">More on projects →</a>";
                     exceeding: "Project count limit reached";
                     exceedingDescription: "";
                 };
                 projects_rights: {
                     name: "Guest Users";
                     extendedName: "guest users";
-                    description: "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.<br><br>\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.";
+                    description: "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.<br><br>\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/projects/guest-access/\" target=\"_blank\">More on Guest Users →</a>";
                     exceeding: "Guest accounts limit reached";
                     exceedingDescription: "";
                 };
                 projects_competitors: {
                     name: "Competitors";
                     extendedName: "competitors per project";
-                    description: "The number of URLs you can add in one project to compare data.";
+                    description: "The number of URLs you can add in one project to compare data.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/rankings/competitors/\" target=\"_blank\">More on competitors →";
                     exceeding: "Competitors limit in one project reached";
                     exceedingDescription: "";
                 };
                 projects_archive: {
                     name: "Archived projects";
                     extendedName: "archived projects";
-                    description: "The number of archived (inactive) projects you can have in your account. You can restore an archived project at any time if your pricing plan allows to increase the number of active projects.";
+                    description: "The number of archived (inactive) projects you can have in your account. You can restore an archived project at any time if your pricing plan allows to increase the number of active projects.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/projects/archive/\" target=\"_blank\">More on Archive →";
                     exceeding: "Archived projects access disabled";
                     exceedingDescription: "";
                 };
