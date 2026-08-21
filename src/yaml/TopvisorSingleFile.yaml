@@ -8345,7 +8345,7 @@ components:
         Пример имени класса, оно же id плана: `A_StarterPack1`
 
         При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости
-    Datetime:
+    DateTime:
       type: object
       properties: {}
       required: []
@@ -8403,12 +8403,12 @@ components:
           title: Начало расчетного периода, обычно время оплаты
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Datetime'
+            - $ref: '#/components/schemas/DateTime'
         timeEnd:
           title: Окончание расчетного периода
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Datetime'
+            - $ref: '#/components/schemas/DateTime'
         methodInfo:
           title: Краткая информация о способе платежа
           description: |-

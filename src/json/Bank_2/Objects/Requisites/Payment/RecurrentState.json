@@ -15,7 +15,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Datetime.json#/components/schemas/Datetime"
+                                "$ref": "../../../../DateTime.json#/components/schemas/DateTime"
                             }
                         ]
                     },
@@ -24,7 +24,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Datetime.json#/components/schemas/Datetime"
+                                "$ref": "../../../../DateTime.json#/components/schemas/DateTime"
                             }
                         ]
                     },

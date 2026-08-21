@@ -16,9 +16,9 @@ export interface components {
          */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             /** Начало расчетного периода, обычно время оплаты */
-            timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
+            timeStart?: import('../../../../DateTime.ts').components['schemas']['DateTime'] | null;
             /** Окончание расчетного периода */
-            timeEnd?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
+            timeEnd?: import('../../../../DateTime.ts').components['schemas']['DateTime'] | null;
             /**
              * Краткая информация о способе платежа
              * @description - id платежа
