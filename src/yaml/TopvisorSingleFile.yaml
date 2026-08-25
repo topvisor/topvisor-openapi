@@ -9877,6 +9877,7 @@ components:
             - $ref: '#/components/schemas/Keywords_2.Types.Magnet.Provider'
         method:
           title: Метод источника данных
+          description: Для `webmaster` принимает `monitoring` или `popular`, для всех остальных - запрещен
           type: string
         period:
           title: Период дат для получения данных

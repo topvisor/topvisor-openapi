@@ -19,6 +19,7 @@
                     },
                     "method": {
                         "title": "Метод источника данных",
+                        "description": "Для `webmaster` принимает `monitoring` или `popular`, для всех остальных - запрещен",
                         "type": "string"
                     },
                     "period": {
