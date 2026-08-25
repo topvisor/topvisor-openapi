@@ -2024,6 +2024,10 @@
                     "Visits": {
                         "const": "Traffic",
                         "readOnly": true
+                    },
+                    "Check_rankings": {
+                        "const": "Check rankings",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2525,7 +2529,8 @@
                     "Priority",
                     "Comment",
                     "Relevant_URL",
-                    "Visits"
+                    "Visits",
+                    "Check_rankings"
                 ]
             }
         }

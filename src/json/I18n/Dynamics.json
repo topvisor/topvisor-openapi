@@ -545,6 +545,10 @@
                     "Relevants_urls": {
                         "const": "Ranked URLs",
                         "readOnly": true
+                    },
+                    "No_rank_checks_in_project": {
+                        "const": "You haven't checked rankings in this project.<br>📈 <a href=\"/rank-tracker/\" target=\"_blank\">Why you need to check rankings →</a> and 📊 <a href=\"/snapshots/\" target=\"_blank\">SERP Top →</a>",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -681,7 +685,8 @@
                     "Serp_features_pictures",
                     "On_display_relevant_url",
                     "Confirm_delete_target_for_group",
-                    "Relevants_urls"
+                    "Relevants_urls",
+                    "No_rank_checks_in_project"
                 ]
             }
         }

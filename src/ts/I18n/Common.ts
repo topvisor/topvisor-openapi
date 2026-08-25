@@ -1021,6 +1021,8 @@ export interface components {
             readonly Relevant_URL: "Relevant URL";
             /** @constant */
             readonly Visits: "Traffic";
+            /** @constant */
+            readonly Check_rankings: "Check rankings";
         };
     };
     responses: never;
