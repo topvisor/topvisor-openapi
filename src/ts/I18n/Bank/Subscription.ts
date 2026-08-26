@@ -61,7 +61,7 @@ export interface components {
                 projects_competitors: {
                     name: "Competitors";
                     extendedName: "competitors per project";
-                    description: "The number of URLs you can add in one project to compare data.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/rankings/competitors/\" target=\"_blank\">More on competitors →";
+                    description: "The number of URLs you can add in one project to compare data.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/rank-tracker/competitors/\" target=\"_blank\">More on competitors →";
                     exceeding: "Competitors limit in one project reached";
                     exceedingDescription: "";
                 };
