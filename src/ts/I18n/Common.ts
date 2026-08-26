@@ -1022,6 +1022,8 @@ export interface components {
             /** @constant */
             readonly Visits: "Traffic";
             /** @constant */
+            readonly User_card: "User card";
+            /** @constant */
             readonly Check_rankings: "Check rankings";
         };
     };

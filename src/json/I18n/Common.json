@@ -2025,6 +2025,10 @@
                         "const": "Traffic",
                         "readOnly": true
                     },
+                    "User_card": {
+                        "const": "User card",
+                        "readOnly": true
+                    },
                     "Check_rankings": {
                         "const": "Check rankings",
                         "readOnly": true
@@ -2530,6 +2534,7 @@
                     "Comment",
                     "Relevant_URL",
                     "Visits",
+                    "User_card",
                     "Check_rankings"
                 ]
             }
