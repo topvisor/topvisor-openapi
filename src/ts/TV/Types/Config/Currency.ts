@@ -210,6 +210,11 @@ export interface components {
              */
             readonly AI_TRACKER_COMPETITOR_COST: number;
             /**
+             * Стоимость веб-поиска
+             * @default 10000
+             */
+            readonly AI_TRACKER_WEB_SEARCH_COST: number;
+            /**
              * Список тарифных планов.
              * @default [
              *       "No set",
