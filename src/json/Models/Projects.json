@@ -244,6 +244,10 @@
                     "competitor_ord": {
                         "nullable": true
                     },
+                    "competitor_service_name": {
+                        "type": "string",
+                        "nullable": true
+                    },
                     "pos_summary_up": {
                         "nullable": true
                     },

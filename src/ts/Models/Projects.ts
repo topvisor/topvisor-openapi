@@ -83,6 +83,7 @@ export interface components {
             ssl_expire?: any;
             competitor?: any;
             competitor_ord?: any;
+            competitor_service_name?: string | null;
             pos_summary_up?: any;
             pos_summary_stay?: any;
             pos_summary_down?: any;
