@@ -36,7 +36,7 @@
                             "keywords_volumes": {
                                 "name": "Search Volume",
                                 "extendedName": "search volume checks",
-                                "description": "Total number of tasks that can be launched within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/volume/\" target=\"_blank\">More on Search Volume Checker →</a>",
+                                "description": "Total number of search volume tasks that can be launched within a month. A check (task) is a search volume checking for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 5000 checks is checking volumes for 5000 keywords в Google New York or 2500 keywords in both Google New York и Google London.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/volume/\" target=\"_blank\">More on Search Volume Checker →</a>",
                                 "exceeding": "Monthly limit of search volume checks reached",
                                 "exceedingDescription": ""
                             },
