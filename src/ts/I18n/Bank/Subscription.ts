@@ -131,7 +131,7 @@ export interface components {
             /** @constant */
             readonly get_2_months: "get 2 months free";
             /** @constant */
-            readonly Do_you_need_more_1: "Do you need more than {{ count }} keywords?";
+            readonly Do_you_need_more_1: "Need more than {{ count }} keywords?";
             /** @constant */
             readonly Do_you_need_more_2: "Just get in touch to get a tailored quote.";
             /** @constant */

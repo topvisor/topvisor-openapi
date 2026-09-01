@@ -179,7 +179,7 @@
                         "readOnly": true
                     },
                     "Do_you_need_more_1": {
-                        "const": "Do you need more than {{ count }} keywords?",
+                        "const": "Need more than {{ count }} keywords?",
                         "readOnly": true
                     },
                     "Do_you_need_more_2": {
