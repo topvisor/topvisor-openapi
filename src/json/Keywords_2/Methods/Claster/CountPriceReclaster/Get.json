@@ -30,7 +30,97 @@
                 "title": "Получение информации и предыдущей кластеризации"
             },
             "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "price": {
+                        "type": "number"
+                    },
+                    "reclaster": {
+                        "type": "object",
+                        "properties": {
+                            "folder_id": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "searcher_key": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "region_lang": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "region_key": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "region_name": {
+                                "type": "string"
+                            },
+                            "count": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "type": {
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "price": {
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "folder_id",
+                            "searcher_key",
+                            "region_lang",
+                            "region_key",
+                            "region_name",
+                            "count",
+                            "type",
+                            "price"
+                        ]
+                    }
+                },
+                "required": [
+                    "price",
+                    "reclaster"
+                ]
             }
         }
     }

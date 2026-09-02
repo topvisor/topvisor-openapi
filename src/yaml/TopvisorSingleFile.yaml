@@ -13690,7 +13690,53 @@ components:
         - project_id
       title: Получение информации и предыдущей кластеризации
     Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec:
-      type: array
+      type: object
+      properties:
+        price:
+          type: number
+        reclaster:
+          type: object
+          properties:
+            folder_id:
+              anyOf:
+                - type: integer
+                - type: 'null'
+            searcher_key:
+              anyOf:
+                - type: integer
+                - type: 'null'
+            region_lang:
+              anyOf:
+                - type: string
+                - type: 'null'
+            region_key:
+              anyOf:
+                - type: integer
+                - type: 'null'
+            region_name:
+              type: string
+            count:
+              anyOf:
+                - type: string
+                - type: 'null'
+            type:
+              anyOf:
+                - type: integer
+                - type: 'null'
+            price:
+              type: number
+          required:
+            - folder_id
+            - searcher_key
+            - region_lang
+            - region_key
+            - region_name
+            - count
+            - type
+            - price
+      required:
+        - price
+        - reclaster
     Keywords_2.Methods.Claster.Percent.Get:
       type: object
       properties:
@@ -14054,89 +14100,18 @@ components:
                 type: number
               priceOriginal:
                 type: number
+              limits:
+                type: integer
               qualifiers:
-                type: object
-                properties:
-                  region_key:
-                    type: integer
-                  searcher_key:
-                    anyOf:
-                      - type: integer
-                        enum:
-                          - '0'
-                      - type: integer
-                        enum:
-                          - '1'
-                      - type: integer
-                        enum:
-                          - '5'
-                      - type: integer
-                        enum:
-                          - '100'
-                      - type: integer
-                        enum:
-                          - '101'
-                      - type: integer
-                        enum:
-                          - '102'
-                      - type: integer
-                        enum:
-                          - '104'
-                      - type: integer
-                        enum:
-                          - '105'
-                      - type: integer
-                        enum:
-                          - '106'
-                  region_lang:
-                    anyOf:
-                      - type: string
-                      - type: 'null'
-                  also_searched:
-                    anyOf:
-                      - type: integer
-                      - type: 'null'
-                  depth:
-                    anyOf:
-                      - type: integer
-                      - type: 'null'
-                  hint_depth:
-                    anyOf:
-                      - type: integer
-                        enum:
-                          - '1'
-                      - type: integer
-                        enum:
-                          - '2'
-                      - type: integer
-                        enum:
-                          - '3'
-                  hint_generators:
-                    type: array
-                    items:
-                      anyOf:
-                        - type: string
-                          enum:
-                            - letter
-                        - type: string
-                          enum:
-                            - letter_ru
-                        - type: string
-                          enum:
-                            - number
-                        - type: string
-                          enum:
-                            - space
-                required:
-                  - region_key
-                  - searcher_key
-                  - hint_depth
-                  - hint_generators
+                type: array
+                items:
+                  $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifier'
               comment:
                 type: string
             required:
               - price
               - priceOriginal
+              - limits
               - qualifiers
               - comment
       required:
@@ -15179,7 +15154,29 @@ components:
       title: Информация о стоимости запуска проверки позиций по проектам
     Keywords_2.Methods.Volumes.Price.Get.Exec:
       type: object
-      additionalProperties: {}
+      properties:
+        pricesByUsers:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              projectsIds:
+                type: array
+                items:
+                  type: integer
+              price:
+                type: number
+              priceOriginal:
+                type: number
+              limits:
+                type: integer
+            required:
+              - projectsIds
+              - price
+              - priceOriginal
+              - limits
+      required:
+        - pricesByUsers
     Payments_2.Methods.Recurrent.Suspend.Edit:
       type: object
       properties:
@@ -16590,7 +16587,29 @@ components:
       title: Информация о стоимости проверки релевантности
     Positions_2.Methods.Relevant.Checker.Price.Get.Exec:
       type: object
-      additionalProperties: {}
+      properties:
+        pricesByUsers:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              projectsIds:
+                type: array
+                items:
+                  type: integer
+              price:
+                type: number
+              priceOriginal:
+                type: number
+              limits:
+                type: integer
+            required:
+              - projectsIds
+              - price
+              - priceOriginal
+              - limits
+      required:
+        - pricesByUsers
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:

@@ -33,7 +33,14 @@ export interface components {
             id?: number | null;
         };
         "Positions_2.Methods.Relevant.Checker.Price.Get.Exec": {
-            [key: string]: unknown;
+            pricesByUsers: {
+                [key: string]: {
+                    projectsIds: number[];
+                    price: number;
+                    priceOriginal: number;
+                    limits: number;
+                };
+            };
         };
     };
     responses: never;

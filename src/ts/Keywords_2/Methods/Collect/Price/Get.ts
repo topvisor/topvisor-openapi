@@ -42,15 +42,8 @@ export interface components {
                 [key: string]: {
                     price: number;
                     priceOriginal: number;
-                    qualifiers: {
-                        region_key: number;
-                        searcher_key: "0" | "1" | "5" | "100" | "101" | "102" | "104" | "105" | "106";
-                        region_lang?: string | null;
-                        also_searched?: number | null;
-                        depth?: number | null;
-                        hint_depth: "1" | "2" | "3";
-                        hint_generators: ("letter" | "letter_ru" | "number" | "space")[];
-                    };
+                    limits: number;
+                    qualifiers: import('../../../Types/Collect/Qualifier.ts').components['schemas']['Keywords_2.Types.Collect.Qualifier'][];
                     comment: string;
                 };
             };

@@ -48,7 +48,14 @@ export interface components {
             project_id: number;
         };
         "Keywords_2.Methods.Volumes.Price.Get.Exec": {
-            [key: string]: unknown;
+            pricesByUsers: {
+                [key: string]: {
+                    projectsIds: number[];
+                    price: number;
+                    priceOriginal: number;
+                    limits: number;
+                };
+            };
         };
     };
     responses: never;

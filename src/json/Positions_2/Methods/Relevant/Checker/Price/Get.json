@@ -58,7 +58,40 @@
             },
             "Positions_2.Methods.Relevant.Checker.Price.Get.Exec": {
                 "type": "object",
-                "additionalProperties": {}
+                "properties": {
+                    "pricesByUsers": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "projectsIds": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "price": {
+                                    "type": "number"
+                                },
+                                "priceOriginal": {
+                                    "type": "number"
+                                },
+                                "limits": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "projectsIds",
+                                "price",
+                                "priceOriginal",
+                                "limits"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "pricesByUsers"
+                ]
             }
         }
     }

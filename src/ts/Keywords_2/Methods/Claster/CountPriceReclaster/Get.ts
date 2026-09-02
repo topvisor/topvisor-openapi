@@ -16,7 +16,19 @@ export interface components {
             /** ID проекта */
             project_id: number;
         };
-        "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": unknown[];
+        "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
+            price: number;
+            reclaster: {
+                folder_id: number | null;
+                searcher_key: number | null;
+                region_lang: string | null;
+                region_key: number | null;
+                region_name: string;
+                count: string | null;
+                type: number | null;
+                price: number;
+            };
+        };
     };
     responses: never;
     parameters: never;
