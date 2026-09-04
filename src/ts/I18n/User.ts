@@ -373,6 +373,8 @@ export interface components {
             /** @constant */
             readonly Need_to_top_up_balance: "Top up your balance first";
             /** @constant */
+            readonly Need_to_start_subscription: "Start a subscription first";
+            /** @constant */
             readonly PWD_changed: "Your password was successfully changed!";
             /** @constant */
             readonly Change_profile_pic: "Change profile picture";

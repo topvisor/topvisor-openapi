@@ -738,6 +738,10 @@
                         "const": "Top up your balance first",
                         "readOnly": true
                     },
+                    "Need_to_start_subscription": {
+                        "const": "Start a subscription first",
+                        "readOnly": true
+                    },
                     "PWD_changed": {
                         "const": "Your password was successfully changed!",
                         "readOnly": true
@@ -1172,6 +1176,7 @@
                     "Shortener_use_brand",
                     "Hide_this_message",
                     "Need_to_top_up_balance",
+                    "Need_to_start_subscription",
                     "PWD_changed",
                     "Change_profile_pic",
                     "Upload_pic",
