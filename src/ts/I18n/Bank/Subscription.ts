@@ -54,6 +54,7 @@ export interface components {
                 projects_rights: {
                     name: "Guest Users";
                     extendedName: "guest users";
+                    hint: "per account";
                     description: "The number of Guest Users you can share your projects with. If you share several projects with one user, it counts as one Guest Seat.<br><br>\n\t\t\tFor example, you need only 1 Guest Seat to share all your projects with one and the same user.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/projects/guest-access/\" target=\"_blank\">More on Guest Users →</a>";
                     exceeding: "Guest accounts limit reached";
                     exceedingDescription: "";
