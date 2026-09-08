@@ -111,7 +111,7 @@
                         "readOnly": true
                     },
                     "Delegating_impossible2": {
-                        "const": "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://{{ $site.host }}/support/bank/currency/",
+                        "const": "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: <a href=\"https://{{ $site.host }}/support/bank/#currency\" target=\"_blank\">https://{{ $site.host }}/support/bank/#currency</a>",
                         "readOnly": true
                     },
                     "You_are_owner": {
