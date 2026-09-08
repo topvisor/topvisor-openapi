@@ -94,8 +94,11 @@ export interface components {
             audit_auto_collect_pages_limit?: number | null;
             indexing_searchers_keys?: unknown[] | null;
             watcher_types?: unknown[] | null;
+            brand_name?: any;
+            brand_aliases?: unknown[] | null;
+            brand_description?: any;
             ai_tracker_brand_name?: any;
-            ai_tracker_brand_description?: unknown[] | null;
+            ai_tracker_brand_description?: any;
             ai_tracker_models_keys?: unknown[] | null;
             ai_tracker_context_lang?: any;
             ai_tracker_context_location?: any;

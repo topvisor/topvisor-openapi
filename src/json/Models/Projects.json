@@ -282,11 +282,20 @@
                         "type": "array",
                         "nullable": true
                     },
+                    "brand_name": {
+                        "nullable": true
+                    },
+                    "brand_aliases": {
+                        "type": "array",
+                        "nullable": true
+                    },
+                    "brand_description": {
+                        "nullable": true
+                    },
                     "ai_tracker_brand_name": {
                         "nullable": true
                     },
                     "ai_tracker_brand_description": {
-                        "type": "array",
                         "nullable": true
                     },
                     "ai_tracker_models_keys": {

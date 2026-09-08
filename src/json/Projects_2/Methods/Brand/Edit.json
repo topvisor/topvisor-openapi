@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Brand.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Brand.Edit": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "title": "Описание бренда",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "Имя бренда",
+                        "description": "Участвует в поиске в ответе ИИ",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "aliases": {
+                        "title": "Дополнительные имена бренда",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Изменение настроек бренда проекта"
+            },
+            "Projects_2.Methods.Brand.Edit.Exec": {
+                "title": "Сохранить настройки бренда",
+                "type": "integer"
+            }
+        }
+    }
+}

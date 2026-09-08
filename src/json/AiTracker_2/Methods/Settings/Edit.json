@@ -10,17 +10,6 @@
             "AiTracker_2.Methods.Settings.Edit": {
                 "type": "object",
                 "properties": {
-                    "brand_name": {
-                        "title": "Имя бренда",
-                        "description": "Участвует в поиске в ответе ИИ",
-                        "nullable": true,
-                        "type": "string"
-                    },
-                    "brand_description": {
-                        "title": "Описание бренда",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "models_keys": {
                         "title": "Список моделей ИИ",
                         "nullable": true

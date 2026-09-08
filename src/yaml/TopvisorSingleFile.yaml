@@ -4903,6 +4903,62 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/projects_2/brand/:
+    post:
+      operationId: EditProjects2Brand
+      tags:
+        - Projects_2
+      summary: Изменение настроек бренда проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Brand.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Brand.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/projects_2/competitors/brand/:
+    post:
+      operationId: EditProjects2CompetitorsBrand
+      tags:
+        - Projects_2
+      summary: Изменение настроек бренда
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Brand.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Competitors.Brand.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -7088,15 +7144,6 @@ components:
     AiTracker_2.Methods.Settings.Edit:
       type: object
       properties:
-        brand_name:
-          title: Имя бренда
-          description: Участвует в поиске в ответе ИИ
-          nullable: true
-          type: string
-        brand_description:
-          title: Описание бренда
-          nullable: true
-          type: string
         models_keys:
           title: Список моделей ИИ
           nullable: true
@@ -7140,10 +7187,6 @@ components:
       properties:
         project_id:
           type: integer
-        brand_name:
-          type: string
-        brand_description:
-          type: string
         models_keys:
           type: array
           items: {}
@@ -7169,8 +7212,6 @@ components:
               - enabled
       required:
         - project_id
-        - brand_name
-        - brand_description
         - models_keys
         - context_lang
         - context_location
@@ -10771,10 +10812,6 @@ components:
           title: Список имен конкурентов (если указан, должен быть такой же длины как urls)
           nullable: true
           type: array
-        descriptions:
-          title: Список описаний конкурентов (если указан, должен быть такой же длины как urls)
-          nullable: true
-          type: array
         brand_names:
           title: Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls)
           nullable: true
@@ -10783,6 +10820,10 @@ components:
               items:
                 type: string
             - type: 'null'
+        brand_aliases:
+          title: Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls)
+          nullable: true
+          type: array
         service_name:
           title: Сервис, которому принадлежит набор конкурентов
           default: positions
@@ -11096,10 +11137,16 @@ components:
         watcher_types:
           type: array
           nullable: true
+        brand_name:
+          nullable: true
+        brand_aliases:
+          type: array
+          nullable: true
+        brand_description:
+          nullable: true
         ai_tracker_brand_name:
           nullable: true
         ai_tracker_brand_description:
-          type: array
           nullable: true
         ai_tracker_models_keys:
           type: array
@@ -16767,3 +16814,55 @@ components:
       title: Получение цены сбора запросов без создания проекта
     Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
       type: number
+    Projects_2.Methods.Brand.Edit:
+      type: object
+      properties:
+        description:
+          title: Описание бренда
+          nullable: true
+          type: string
+        name:
+          title: Имя бренда
+          description: Участвует в поиске в ответе ИИ
+          nullable: true
+          type: string
+        aliases:
+          title: Дополнительные имена бренда
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - project_id
+      title: Изменение настроек бренда проекта
+    Projects_2.Methods.Brand.Edit.Exec:
+      title: Сохранить настройки бренда
+      type: integer
+    Projects_2.Methods.Competitors.Brand.Edit:
+      type: object
+      properties:
+        id:
+          title: ID конкурента
+          type: integer
+        name:
+          title: Имя бренда
+          description: Участвует в поиске в ответе ИИ
+          nullable: true
+          type: string
+        aliases:
+          title: Дополнительные имена бренда
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - id
+        - project_id
+      title: Изменение настроек бренда
+    Projects_2.Methods.Competitors.Brand.Edit.Exec:
+      title: Сохранить настройки бренда
+      type: integer

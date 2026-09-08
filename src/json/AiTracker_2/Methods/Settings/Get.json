@@ -32,12 +32,6 @@
                     "project_id": {
                         "type": "integer"
                     },
-                    "brand_name": {
-                        "type": "string"
-                    },
-                    "brand_description": {
-                        "type": "string"
-                    },
                     "models_keys": {
                         "type": "array",
                         "items": {}
@@ -74,8 +68,6 @@
                 },
                 "required": [
                     "project_id",
-                    "brand_name",
-                    "brand_description",
                     "models_keys",
                     "context_lang",
                     "context_location",

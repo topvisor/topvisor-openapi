@@ -17,8 +17,6 @@ export interface components {
         /** Настройки aiTracker проекта */
         "AiTracker_2.Methods.Settings.Get.Exec": {
             project_id: number;
-            brand_name: string;
-            brand_description: string;
             models_keys: unknown[];
             context_lang: string;
             context_location: string;

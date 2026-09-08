@@ -12,13 +12,6 @@ export interface components {
          * @description Для получения текущих настроек используйте: /get/projects_2/projects/
          */
         "AiTracker_2.Methods.Settings.Edit": {
-            /**
-             * Имя бренда
-             * @description Участвует в поиске в ответе ИИ
-             */
-            brand_name?: string | null;
-            /** Описание бренда */
-            brand_description?: string | null;
             /** Список моделей ИИ */
             models_keys?: unknown;
             /** Настройки контекста: Язык */

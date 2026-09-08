@@ -16,10 +16,10 @@ export interface components {
             urls: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'];
             /** Список имен конкурентов (если указан, должен быть такой же длины как urls) */
             names?: unknown[] | null;
-            /** Список описаний конкурентов (если указан, должен быть такой же длины как urls) */
-            descriptions?: unknown[] | null;
             /** Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls) */
             brand_names?: (string[] | null) | null;
+            /** Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls) */
+            brand_aliases?: unknown[] | null;
             /**
              * Сервис, которому принадлежит набор конкурентов
              * @default positions
