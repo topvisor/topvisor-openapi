@@ -875,6 +875,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменение настроек бренда проекта */
+    "/edit/projects_2/brand/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditProjects2Brand"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
      * Добавление конкурента
      * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
@@ -2119,6 +2136,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetPositions2SummaryChart"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение настроек бренда */
+    "/edit/projects_2/competitors/brand/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditProjects2CompetitorsBrand"];
         delete?: never;
         options?: never;
         head?: never;
@@ -4092,6 +4126,31 @@ export interface operations {
             };
         };
     };
+    EditProjects2Brand: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Brand/Edit.ts').components['schemas']['Projects_2.Methods.Brand.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Brand/Edit.ts').components['schemas']['Projects_2.Methods.Brand.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     AddProjects2Competitors: {
         parameters: {
             query?: never;
@@ -5920,6 +5979,31 @@ export interface operations {
                         result: import('./Positions_2/Methods/Summary/Chart/Get.ts').components['schemas']['Positions_2.Methods.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
+                };
+            };
+        };
+    };
+    EditProjects2CompetitorsBrand: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Competitors/Brand/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Brand.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Competitors/Brand/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Brand.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
