@@ -1649,7 +1649,7 @@ paths:
       tags:
         - Projects_2
       summary: Добавление конкурента
-      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
+      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проектее'
       requestBody:
         content:
           application/json:
@@ -10862,7 +10862,7 @@ components:
         - urls
         - project_id
       title: Добавление конкурента
-      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
+      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проектее'
     Projects_2.Methods.Competitors.Add.Exec:
       type: array
     Projects_2.Methods.Competitors.Del:
