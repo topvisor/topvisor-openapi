@@ -66,7 +66,7 @@ export interface components {
              */
             offset?: number;
         };
-        "Projects_2.Methods.Projects.Get.Exec": import('../../../Models/Projects.ts').components['schemas']['Models.Projects'][] | null;
+        "Projects_2.Methods.Projects.Get.Exec": import('../../../Models/Projects.ts').components['schemas']['Models.Projects'][];
     };
     responses: never;
     parameters: never;

@@ -80,7 +80,6 @@
                 "title": "Получение списка проектов"
             },
             "Projects_2.Methods.Projects.Get.Exec": {
-                "nullable": true,
                 "type": "array",
                 "items": {
                     "$ref": "../../../Models/Projects.json#/components/schemas/Models.Projects"

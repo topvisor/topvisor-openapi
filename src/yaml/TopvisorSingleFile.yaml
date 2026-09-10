@@ -11292,7 +11292,6 @@ components:
       required: []
       title: Получение списка проектов
     Projects_2.Methods.Projects.Get.Exec:
-      nullable: true
       type: array
       items:
         $ref: '#/components/schemas/Models.Projects'
