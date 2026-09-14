@@ -35,11 +35,27 @@
                         "readOnly": true
                     },
                     "Brand_name": {
-                        "const": "Brand name",
+                        "const": "Name",
+                        "readOnly": true
+                    },
+                    "Brand_aliases": {
+                        "const": "Aliases",
+                        "readOnly": true
+                    },
+                    "Brand_aliases_placeholder": {
+                        "const": "Topvisor",
+                        "readOnly": true
+                    },
+                    "Brand_aliases_hint": {
+                        "const": "List, separated by commas, all the names by which AIs can refer to your brand. If we find listed names in AI responses, it will be counted as brand mention in the report.",
+                        "readOnly": true
+                    },
+                    "Brand_aliases_for_competitors_placeholder": {
+                        "const": "Aliases, separated by commas",
                         "readOnly": true
                     },
                     "Brand_description": {
-                        "const": "Brand description",
+                        "const": "Description",
                         "readOnly": true
                     },
                     "Brand_description_placeholder": {
@@ -271,6 +287,9 @@
                     "First_you_need_to_enter_the_brand_name",
                     "Brand_information",
                     "Brand_name",
+                    "Brand_aliases",
+                    "Brand_aliases_hint",
+                    "Brand_aliases_for_competitors_placeholder",
                     "Brand_description",
                     "Brand_description_placeholder",
                     "Brand_description_hint",

@@ -21,9 +21,17 @@ export interface components {
             /** @constant */
             readonly Brand_information: "Brand information";
             /** @constant */
-            readonly Brand_name: "Brand name";
+            readonly Brand_name: "Name";
             /** @constant */
-            readonly Brand_description: "Brand description";
+            readonly Brand_aliases: "Aliases";
+            /** @constant */
+            readonly Brand_aliases_placeholder?: "Topvisor";
+            /** @constant */
+            readonly Brand_aliases_hint: "List, separated by commas, all the names by which AIs can refer to your brand. If we find listed names in AI responses, it will be counted as brand mention in the report.";
+            /** @constant */
+            readonly Brand_aliases_for_competitors_placeholder: "Aliases, separated by commas";
+            /** @constant */
+            readonly Brand_description: "Description";
             /** @constant */
             readonly Brand_description_placeholder: "SEO analytics platform";
             /** @constant */
