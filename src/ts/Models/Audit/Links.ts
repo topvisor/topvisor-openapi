@@ -12,7 +12,6 @@ export interface components {
             search?: any;
             "HTTP_CODES_HUNDREDS()"?: unknown[] | null;
             check_id?: any;
-            project_id?: any;
             url_id?: any;
             url_ids?: any;
             url?: any;

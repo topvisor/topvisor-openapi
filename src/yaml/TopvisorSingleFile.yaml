@@ -12828,8 +12828,6 @@ components:
           nullable: true
         check_id:
           nullable: true
-        project_id:
-          nullable: true
         url_id:
           nullable: true
         url_ids:
