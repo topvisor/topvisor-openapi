@@ -21,7 +21,7 @@ export interface components {
             /** @constant */
             readonly Token_is_active_until: "Token is active until";
             /** @constant */
-            readonly Reconnect: "Reconnect";
+            readonly Reconnect: "Refresh API-key";
             /** @constant */
             readonly Skipped_regions: "Skipped regions";
         };

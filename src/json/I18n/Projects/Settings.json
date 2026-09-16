@@ -35,7 +35,7 @@
                         "readOnly": true
                     },
                     "Reconnect": {
-                        "const": "Reconnect",
+                        "const": "Refresh API-key",
                         "readOnly": true
                     },
                     "Skipped_regions": {
