@@ -54,6 +54,8 @@ export interface components {
             readonly Do_not_change_already_set_targets: "Do not change already set targets";
             /** @constant */
             readonly No_relevant_urls_for_region: "No relevant URLs were found for the selected region";
+            /** @constant */
+            readonly Show_results: "Show results";
         };
     };
     responses: never;

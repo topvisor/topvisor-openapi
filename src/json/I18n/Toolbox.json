@@ -101,6 +101,10 @@
                     "No_relevant_urls_for_region": {
                         "const": "No relevant URLs were found for the selected region",
                         "readOnly": true
+                    },
+                    "Show_results": {
+                        "const": "Show results",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -126,7 +130,8 @@
                     "Set_target",
                     "Relevant",
                     "Do_not_change_already_set_targets",
-                    "No_relevant_urls_for_region"
+                    "No_relevant_urls_for_region",
+                    "Show_results"
                 ]
             }
         }
