@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип выполняемого действия
+         * Тип выполняемого действия.
          * @enum {string}
          */
         "Keywords_2.Types.Actions.MoveBySubstrings.Action": "test" | "exec";

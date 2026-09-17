@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Добавить в результат различия данных
+         * Добавить в результат различия данных.
          * @enum {integer}
          */
         "Audit_2.Types.Watcher.ShowDiff": 0 | 1 | 2 | 3;

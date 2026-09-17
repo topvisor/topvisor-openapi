@@ -7,22 +7,22 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Импорт данных магнита */
+        /** Импорт данных магнита. */
         "Keywords_2.Methods.Magnet.Import.Get": {
             provider: import('../../../Types/Magnet/Provider.ts').components['schemas']['Keywords_2.Types.Magnet.Provider'];
-            /** Импортировать целевые ссылки */
+            /** Импортировать целевые ссылки. */
             need_import_targets?: boolean;
-            /** Id папки для импорта */
+            /** Id папки для импорта. */
             folder_id?: number;
-            /** Id группы для импорта */
+            /** Id группы для импорта. */
             group_id?: number;
-            /** Имя группы для импорта */
+            /** Имя группы для импорта. */
             group_name?: string;
-            /** Теги по умолчанию */
+            /** Теги по умолчанию. */
             tags: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'];
-            /** Период для импорта */
+            /** Период для импорта. */
             period: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'];
-            /** Метод источника данных */
+            /** Метод источника данных. */
             method?: string;
             /** ID проекта */
             project_id: number;

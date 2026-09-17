@@ -7,14 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение цены кластеризации */
+        /** Получение цены кластеризации. */
         "Keywords_2.Methods.Claster.Price.Get": {
             /**
-             * Отображать сумму с учетом скидки
+             * Отображать сумму с учетом скидки.
              * @default true
              */
             apply_discount?: boolean;
-            /** ID папки, фразы из которой нужно кластеризовать */
+            /** ID папки, фразы из которой нужно кластеризовать. */
             folder_id?: number;
             count: import('../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
             /** ID проекта */

@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "title": "Новое имя проекта",
+                        "title": "Новое имя проекта.",
                         "type": "string"
                     },
                     "id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },
@@ -23,7 +23,7 @@
                     "name",
                     "id"
                 ],
-                "title": "Установка имени проекта"
+                "title": "Установка имени проекта."
             },
             "Projects_2.Methods.Projects.Name.Edit.Exec": {
                 "type": "integer"

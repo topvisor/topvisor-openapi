@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Агрегатная функция для расчета сводной позиции
+         * Агрегатная функция для расчета сводной позиции.
          * @enum {string}
          */
         "Positions_2.Types.Summary.Stats.AggregateFunc": "avg" | "median";

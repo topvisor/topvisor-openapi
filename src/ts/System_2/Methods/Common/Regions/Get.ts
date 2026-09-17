@@ -7,18 +7,18 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение регионов для поисковиков с последующим кэшированием для Get запросов */
+        /** Получение регионов для поисковиков с последующим кэшированием для Get запросов. */
         "System_2.Methods.Common.Regions.Get": {
             searcher_key: unknown;
-            /** Код страны по ISO 3166-1 alpha-2 */
+            /** Код страны по ISO 3166-1 alpha-2. */
             country_code?: string | null;
-            /** Поисковая фраза */
+            /** Поисковая фраза. */
             search: string;
-            /** Искать только страны */
+            /** Искать только страны. */
             only_countries?: boolean;
-            /** ID регионов для получения */
+            /** ID регионов для получения. */
             regions_keys?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Отображать только регионы, добавленные в проект в указанной ПС */
+            /** Отображать только регионы, добавленные в проект в указанной ПС. */
             for_project_id?: number | null;
             /**
              * Количество объектов, которые необходимо получить в результате
@@ -31,7 +31,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Получить список регионов по параметрам запроса */
+        /** Получить список регионов по параметрам запроса. */
         "System_2.Methods.Common.Regions.Get.Exec": ({
             id: number;
             type: string;

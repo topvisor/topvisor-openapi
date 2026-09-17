@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип частоты
+         * Тип частоты.
          * @enum {integer}
          */
         "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;

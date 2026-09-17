@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип расписания
-         * @description Включает в себя имя сервиса и функцию
+         * Тип расписания.
+         * @description Включает в себя имя сервиса и функцию.
          * @enum {string}
          */
         "Schedule_2.Types.Type": "aiTracker_go" | "aiTracker_report" | "positions_go" | "positions_report" | "volumes_go" | "audit_go" | "audit_report" | "watcher_go" | "watcher_report" | "indexing_go" | "indexing_report" | "urlsUpdater_go" | "urlsUpdater_report";

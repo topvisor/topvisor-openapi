@@ -11,22 +11,22 @@
                 "type": "object",
                 "properties": {
                     "favorite": {
-                        "title": "Избранная ссылка",
+                        "title": "Избранная ссылка.",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "deleted": {
-                        "title": "Удаленная ссылка",
+                        "title": "Удаленная ссылка.",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "title": {
-                        "title": "Заголовок ссылки",
+                        "title": "Заголовок ссылки.",
                         "nullable": true,
                         "type": "string"
                     },
                     "hash": {
-                        "title": "Хэш ссылки",
+                        "title": "Хэш ссылки.",
                         "nullable": true,
                         "type": "string"
                     },
@@ -43,7 +43,7 @@
                     }
                 },
                 "required": [],
-                "title": "Редактирование ссылки"
+                "title": "Редактирование ссылки."
             },
             "Tpvsr_2.Methods.Edit.Exec": {
                 "nullable": true,

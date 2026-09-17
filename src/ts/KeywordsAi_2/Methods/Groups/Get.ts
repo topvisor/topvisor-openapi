@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка групп проекта */
+        /** Получение списка групп проекта. */
         "KeywordsAi_2.Methods.Groups.Get": {
-            /** При фильтрации по ID папок также искать в дочерних папках */
+            /** При фильтрации по ID папок также искать в дочерних папках. */
             folder_id_depth?: boolean | null;
-            /** Показать удаленные дочерние папки */
+            /** Показать удаленные дочерние папки. */
             show_trash?: number;
             /** ID проекта */
             project_id: number;

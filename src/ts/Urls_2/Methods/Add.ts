@@ -7,20 +7,20 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление url */
+        /** Добавление url. */
         "Urls_2.Methods.Add": {
-            /** URL соответствующий домену проекта */
+            /** URL соответствующий домену проекта. */
             url: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
             /**
              * Флаг активности в карте сайта
              * @description - 1 - присутствовал в прошлых версиях карты сайта
              */
             sitemap?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
-            /** Флаг активности в аудите */
+            /** Флаг активности в аудите. */
             audit?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
-            /** Флаг активности в радаре */
+            /** Флаг активности в радаре. */
             indexing?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
-            /** Флаг активности в индексации */
+            /** Флаг активности в индексации. */
             watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             tags?: import('../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             /** ID проекта */

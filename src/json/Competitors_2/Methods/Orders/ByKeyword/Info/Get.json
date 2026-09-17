@@ -15,11 +15,11 @@
                         "type": "integer"
                     },
                     "query": {
-                        "title": "Ключевая фраза",
+                        "title": "Ключевая фраза.",
                         "type": "string"
                     },
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -27,11 +27,11 @@
                         ]
                     },
                     "intersection": {
-                        "title": "Степень схожести конкурентов для сравнения",
+                        "title": "Степень схожести конкурентов для сравнения.",
                         "type": "number"
                     },
                     "short_if_paid": {
-                        "title": "Не возвращать информацию кроме is_paymented и options, если отчет оплачен",
+                        "title": "Не возвращать информацию кроме is_paymented и options, если отчет оплачен.",
                         "type": "boolean"
                     },
                     "short_domains_info": {
@@ -44,11 +44,11 @@
                         "type": "integer"
                     },
                     "deleted": {
-                        "title": "Использовать удаленные отчеты",
+                        "title": "Использовать удаленные отчеты.",
                         "type": "boolean"
                     },
                     "short": {
-                        "title": "Получить краткую статистику, только количество конкурентов",
+                        "title": "Получить краткую статистику, только количество конкурентов.",
                         "type": "boolean"
                     }
                 },

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Возвращаемый формат файла из директории */
+        /** Возвращаемый формат файла из директории. */
         "System_2.Types.Cloud.File": {
             modify: string;
             size: number;

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Дизайн preview
+         * Дизайн preview.
          * @enum {string}
          */
         "System_2.Types.Common.PagePreview.Design": "default" | "news";

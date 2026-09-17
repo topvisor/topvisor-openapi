@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "folder_id": {
-                        "title": "ID папки",
+                        "title": "ID папки.",
                         "type": "integer"
                     },
                     "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки",
+                        "title": "Отображать сумму с учетом скидки.",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -27,7 +27,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение информации и предыдущей кластеризации"
+                "title": "Получение информации и предыдущей кластеризации."
             },
             "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
                 "type": "object",

@@ -23,7 +23,7 @@
                     }
                 },
                 "required": [],
-                "title": "Информация о стоимости запуска индексации по проектам"
+                "title": "Информация о стоимости запуска индексации по проектам."
             },
             "Audit_2.Methods.Watcher.Checker.Price.Get.Exec": {
                 "type": "object",

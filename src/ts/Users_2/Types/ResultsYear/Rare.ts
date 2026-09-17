@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Редкость титула
+         * Редкость титула.
          * @enum {string}
          */
         "Users_2.Types.ResultsYear.Rare": "national" | "Frequent" | "rare" | "legendary";

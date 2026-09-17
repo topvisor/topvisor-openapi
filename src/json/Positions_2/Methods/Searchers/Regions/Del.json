@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "Id проекта",
+                        "title": "Id проекта.",
                         "type": "integer"
                     },
                     "region_index": {
-                        "title": "Регион, который требуется удалить",
+                        "title": "Регион, который требуется удалить.",
                         "type": "integer"
                     },
                     "filters": {
@@ -34,7 +34,7 @@
                     "project_id",
                     "region_index"
                 ],
-                "title": "Удаление региона"
+                "title": "Удаление региона."
             },
             "Positions_2.Methods.Searchers.Regions.Del.Exec": {
                 "nullable": true,

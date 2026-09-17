@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "hash": {
-                        "title": "Хеш ссылки",
+                        "title": "Хеш ссылки.",
                         "type": "string"
                     },
                     "tags": {
-                        "title": "Новые теги",
+                        "title": "Новые теги.",
                         "allOf": [
                             {
                                 "$ref": "../../../Tpvsr_2/Types/Tags.json#/components/schemas/Tpvsr_2.Types.Tags"
@@ -27,7 +27,7 @@
                     "hash",
                     "tags"
                 ],
-                "title": "Изменение тегов"
+                "title": "Изменение тегов."
             },
             "Tpvsr_2.Methods.Tags.Edit.Exec": {
                 "nullable": true,

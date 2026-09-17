@@ -11,28 +11,28 @@
                 "type": "object",
                 "properties": {
                     "phone": {
-                        "title": "Телефон",
+                        "title": "Телефон.",
                         "nullable": true,
                         "type": "string"
                     },
                     "name": {
-                        "title": "Имя пользователя",
+                        "title": "Имя пользователя.",
                         "nullable": true,
                         "type": "string"
                     },
                     "dateformat": {
-                        "title": "Формат дат, отображаемых на сайте и в скачиваемых отчетах",
-                        "description": "https://www.php.net/manual/ru/datetime.format.php",
+                        "title": "Формат дат, отображаемых на сайте и в скачиваемых отчетах.",
+                        "description": "Https://www.php.net/manual/ru/datetime.format.php.",
                         "nullable": true,
                         "type": "string"
                     },
                     "positions_reverse_dates": {
-                        "title": "Позиции, просмотр отчета: использовать обратный порядок дат",
+                        "title": "Позиции, просмотр отчета: использовать обратный порядок дат.",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "positions_save_regions": {
-                        "title": "Позиции, просмотр отчета: запоминать последние выбранные регионы",
+                        "title": "Позиции, просмотр отчета: запоминать последние выбранные регионы.",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -46,7 +46,7 @@
                     }
                 },
                 "required": [],
-                "title": "Изменение параметров активного пользователя"
+                "title": "Изменение параметров активного пользователя."
             },
             "Users_2.Methods.Profile.Edit.Exec": {
                 "nullable": true,

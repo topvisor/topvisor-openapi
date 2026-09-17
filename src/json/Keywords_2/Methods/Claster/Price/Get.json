@@ -11,12 +11,12 @@
                 "type": "object",
                 "properties": {
                     "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки",
+                        "title": "Отображать сумму с учетом скидки.",
                         "default": true,
                         "type": "boolean"
                     },
                     "folder_id": {
-                        "title": "ID папки, фразы из которой нужно кластеризовать",
+                        "title": "ID папки, фразы из которой нужно кластеризовать.",
                         "type": "integer"
                     },
                     "count": {
@@ -35,7 +35,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение цены кластеризации"
+                "title": "Получение цены кластеризации."
             },
             "Keywords_2.Methods.Claster.Price.Get.Exec": {
                 "type": "number"

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Статус подписки
+         * Статус подписки.
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "stopped" | "terminated";

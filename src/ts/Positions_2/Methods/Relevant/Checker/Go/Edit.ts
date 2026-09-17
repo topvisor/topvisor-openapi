@@ -7,13 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка проектов на проверку релевантности */
+        /** Отправка проектов на проверку релевантности. */
         "Positions_2.Methods.Relevant.Checker.Go.Edit": {
-            /** Проверка с учетом фильтра по регионам */
+            /** Проверка с учетом фильтра по регионам. */
             regions_indexes?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Проверка с учетом фильтра по папкам */
+            /** Проверка с учетом фильтра по папкам. */
             folders_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** При фильтрации по ID папок также проверять в подпапках */
+            /** При фильтрации по ID папок также проверять в подпапках. */
             folders_ids_depth?: boolean;
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
             groups_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;

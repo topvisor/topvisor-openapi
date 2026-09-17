@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Язык шаблона
+         * Язык шаблона.
          * @enum {string}
          */
         "System_2.Types.Tpl.Lang": "ru" | "en" | "";

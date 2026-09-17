@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип диапазона индексации
+         * Тип диапазона индексации.
          * @enum {integer}
          */
         "Audit_2.Types.Indexing.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 7 | 100;

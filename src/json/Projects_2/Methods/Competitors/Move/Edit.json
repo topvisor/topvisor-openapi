@@ -11,26 +11,26 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "id": {
-                        "title": "ID конкурента",
+                        "title": "ID конкурента.",
                         "type": "integer"
                     },
                     "to_id": {
-                        "title": "Переместить к указанному конкуренту",
+                        "title": "Переместить к указанному конкуренту.",
                         "type": "integer"
                     },
                     "to_type": {
-                        "title": "Позиция перемещения",
+                        "title": "Позиция перемещения.",
                         "description": "- before\n- after",
                         "nullable": true,
                         "default": "after",
                         "type": "string"
                     },
                     "service_name": {
-                        "title": "Сервис, которому принадлежит набор конкурентов",
+                        "title": "Сервис, которому принадлежит набор конкурентов.",
                         "default": "positions",
                         "allOf": [
                             {

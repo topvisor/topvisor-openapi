@@ -28,7 +28,7 @@
                 "required": [
                     "orders"
                 ],
-                "title": "Изменение сортировки проектов"
+                "title": "Изменение сортировки проектов."
             },
             "Projects_2.Methods.Projects.Sort.Edit.Exec": {
                 "nullable": true,

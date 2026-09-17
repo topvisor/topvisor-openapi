@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Переименовывание папок */
+        /** Переименовывание папок. */
         "Keywords_2.Methods.Folders.Rename.Edit": {
-            /** Название папок */
+            /** Название папок. */
             name: string;
-            /** Учитывать ли удаленные папки */
+            /** Учитывать ли удаленные папки. */
             show_trash?: boolean;
             /** ID проекта */
             project_id: number;

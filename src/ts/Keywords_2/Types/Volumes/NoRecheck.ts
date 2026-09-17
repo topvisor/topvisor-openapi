@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Какие запросы следует пропусить при перепроверке частоты
+         * Какие запросы следует пропусить при перепроверке частоты.
          * @enum {integer}
          */
         "Keywords_2.Types.Volumes.NoRecheck": 0 | 1 | 2;

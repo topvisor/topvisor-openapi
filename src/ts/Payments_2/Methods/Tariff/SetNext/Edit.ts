@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Смена тарифа со следующего месяца */
+        /** Смена тарифа со следующего месяца. */
         "Payments_2.Methods.Tariff.SetNext.Edit": {
-            /** Id тарифа */
+            /** Id тарифа. */
             id: number;
         };
         "Payments_2.Methods.Tariff.SetNext.Edit.Exec": number | null;

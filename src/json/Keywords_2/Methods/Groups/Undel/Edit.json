@@ -29,7 +29,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Восстановление группы из корзины"
+                "title": "Восстановление группы из корзины."
             },
             "Keywords_2.Methods.Groups.Undel.Edit.Exec": {
                 "nullable": true,

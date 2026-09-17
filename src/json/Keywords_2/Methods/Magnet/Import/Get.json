@@ -18,23 +18,23 @@
                         ]
                     },
                     "need_import_targets": {
-                        "title": "Импортировать целевые ссылки",
+                        "title": "Импортировать целевые ссылки.",
                         "type": "boolean"
                     },
                     "folder_id": {
-                        "title": "Id папки для импорта",
+                        "title": "Id папки для импорта.",
                         "type": "integer"
                     },
                     "group_id": {
-                        "title": "Id группы для импорта",
+                        "title": "Id группы для импорта.",
                         "type": "integer"
                     },
                     "group_name": {
-                        "title": "Имя группы для импорта",
+                        "title": "Имя группы для импорта.",
                         "type": "string"
                     },
                     "tags": {
-                        "title": "Теги по умолчанию",
+                        "title": "Теги по умолчанию.",
                         "allOf": [
                             {
                                 "$ref": "../../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
@@ -42,7 +42,7 @@
                         ]
                     },
                     "period": {
-                        "title": "Период для импорта",
+                        "title": "Период для импорта.",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
@@ -50,7 +50,7 @@
                         ]
                     },
                     "method": {
-                        "title": "Метод источника данных",
+                        "title": "Метод источника данных.",
                         "type": "string"
                     },
                     "project_id": {
@@ -96,7 +96,7 @@
                     "period",
                     "project_id"
                 ],
-                "title": "Импорт данных магнита"
+                "title": "Импорт данных магнита."
             },
             "Keywords_2.Methods.Magnet.Import.Get.Exec": {
                 "nullable": true,

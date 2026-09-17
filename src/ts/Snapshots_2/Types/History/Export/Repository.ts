@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Название директории для эспорта
+         * Название директории для эспорта.
          * @enum {string}
          */
         "Snapshots_2.Types.History.Export.Repository": "gdrive";

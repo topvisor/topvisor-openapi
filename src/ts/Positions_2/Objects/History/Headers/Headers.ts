@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Заголовки отчета истории позиций */
+        /** Заголовки отчета истории позиций. */
         "Positions_2.Objects.History.Headers.Headers": {
             summaries: {
                 topsByDepth: {
@@ -19,24 +19,24 @@ export interface components {
                     [key: string]: number;
                 };
             };
-            /** Теги сниппетов по хешу */
+            /** Теги сниппетов по хешу. */
             snippetsTagsByHash?: {
                 [key: string]: unknown;
             } | null;
-            /** Название папки, включенной в отчет */
+            /** Название папки, включенной в отчет. */
             folderName?: string | null;
-            /** Название группы, включенной в отчет */
+            /** Название группы, включенной в отчет. */
             groupName?: string | null;
-            /** Основной проект */
+            /** Основной проект. */
             projectId: number;
-            /** Даты, выводимые в отчете */
+            /** Даты, выводимые в отчете. */
             dates: string[];
-            /** Запрошенные поля результатов проверок */
+            /** Запрошенные поля результатов проверок. */
             historyFields: import('../../../../TV/API/Types/AbstractEnumArray.ts').components['schemas']['TV.API.Types.AbstractEnumArray'];
-            /** Информация о проектах, по которым строится отчет */
+            /** Информация о проектах, по которым строится отчет. */
             projects: unknown[];
             /**
-             * Режим сравнения
+             * Режим сравнения.
              * @description Примеры:
              *     - Вывод нескольких проектов
              *     - Вывод нескольких регионов
@@ -44,18 +44,18 @@ export interface components {
              */
             isCompare: boolean;
             /**
-             * Поля элементов отчета
-             * @description Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы
+             * Поля элементов отчета.
+             * @description Тип элементов определяется конкретным отчетом, например для проверки позиций это Запросы.
              */
             fields: import('../../../../Selector/Field.ts').components['schemas']['Selector.Field'][];
             /**
-             * Фильтры элементов отчета
-             * @description Для реализации фичей при экспорте отчетов
+             * Фильтры элементов отчета.
+             * @description Для реализации фичей при экспорте отчетов.
              */
             filters: import('../../../../FieldsFilters.ts').components['schemas']['FieldsFilters'][];
             /**
-             * Поле для визуальной группировки элементов
-             * @description Если указно поле, которого нет в элементах, то оно буде игнорироваться
+             * Поле для визуальной группировки элементов.
+             * @description Если указно поле, которого нет в элементах, то оно буде игнорироваться.
              */
             groupBy: string;
         };

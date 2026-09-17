@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение статистики по ссылке */
+        /** Получение статистики по ссылке. */
         "Tpvsr_2.Methods.Stat.Get": {
-            /** Хэш ссылки */
+            /** Хэш ссылки. */
             hash: string;
             type_dimensions?: import('../../Types/Stat/Dimension/Types.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Types'] | null;
             browser_dimensions?: import('../../Types/Stat/Dimension/Browsers.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Browsers'] | null;

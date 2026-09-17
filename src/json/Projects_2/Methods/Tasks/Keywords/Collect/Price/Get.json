@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Массив ключевых запросов в формате CSV",
+                        "title": "Массив ключевых запросов в формате CSV.",
                         "type": "array"
                     },
                     "qualifiers": {
-                        "title": "Объекты определителей настроек ПС и регионов",
+                        "title": "Объекты определителей настроек ПС и регионов.",
                         "allOf": [
                             {
                                 "$ref": "../../../../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
@@ -31,7 +31,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение цены сбора запросов без создания проекта"
+                "title": "Получение цены сбора запросов без создания проекта."
             },
             "Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec": {
                 "type": "number"

@@ -7,16 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат истории индексации */
+        /** Результат истории индексации. */
         "Audit_2.Objects.Indexing.History.Result.Result": {
             headers?: (import('../Headers/Headers.ts').components['schemas']['Audit_2.Objects.Indexing.History.Headers.Headers'] & import('../../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders']) | null;
-            /** Список URL с данными */
+            /** Список URL с данными. */
             urls: {
                 [key: string]: unknown;
             }[];
-            /** Даты, в которые есть проверки */
+            /** Даты, в которые есть проверки. */
             existsDates?: string[] | null;
-            /** Суммарные значения индексации по датам и поисковым системам */
+            /** Суммарные значения индексации по датам и поисковым системам. */
             countsIndexing?: {
                 [key: string]: {
                     all: number | null;

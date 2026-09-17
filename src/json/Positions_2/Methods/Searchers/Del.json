@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "Id проекта",
+                        "title": "Id проекта.",
                         "type": "integer"
                     },
                     "searcher_key": {
-                        "title": "Id проекта"
+                        "title": "Id проекта."
                     },
                     "filters": {
                         "title": "Список фильтров по полям объекта",
@@ -33,7 +33,7 @@
                     "project_id",
                     "searcher_key"
                 ],
-                "title": "Удаление ПС"
+                "title": "Удаление ПС."
             },
             "Positions_2.Methods.Searchers.Del.Exec": {
                 "nullable": true

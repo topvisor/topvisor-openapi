@@ -23,7 +23,7 @@
                     }
                 },
                 "required": [],
-                "title": "Информация о стоимости проверки ИИ-Трекера"
+                "title": "Информация о стоимости проверки ИИ-Трекера."
             },
             "AiTracker_2.Methods.Checker.Price.Get.Exec": {
                 "type": "object",

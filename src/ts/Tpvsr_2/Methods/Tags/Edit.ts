@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение тегов */
+        /** Изменение тегов. */
         "Tpvsr_2.Methods.Tags.Edit": {
-            /** Хеш ссылки */
+            /** Хеш ссылки. */
             hash: string;
-            /** Новые теги */
+            /** Новые теги. */
             tags: import('../../Types/Tags.ts').components['schemas']['Tpvsr_2.Types.Tags'];
         };
         "Tpvsr_2.Methods.Tags.Edit.Exec": number | null;

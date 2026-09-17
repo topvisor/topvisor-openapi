@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../System_2/Types/Cloud/File.json#/components/schemas/System_2.Types.Cloud.File"
                 },
-                "title": "Возвращаемые форматы файлов"
+                "title": "Возвращаемые форматы файлов."
             }
         }
     }

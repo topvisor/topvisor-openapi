@@ -7,13 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Привязать расписание к объекту */
+        /** Привязать расписание к объекту. */
         "Schedule_2.Methods.Edit": {
-            /** Строки расписания с периодами времени и днями запуска */
+            /** Строки расписания с периодами времени и днями запуска. */
             schedule: import('../Types/Schedule.ts').components['schemas']['Schedule_2.Types.Schedule'];
-            /** Тип расписания */
+            /** Тип расписания. */
             type: import('../Types/Type.ts').components['schemas']['Schedule_2.Types.Type'];
-            /** Id объекта, к которому будет привязано расписание */
+            /** Id объекта, к которому будет привязано расписание. */
             target_id: number;
         };
         "Schedule_2.Methods.Edit.Exec": number | null;

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "title": "Тип расписания",
+                        "title": "Тип расписания.",
                         "allOf": [
                             {
                                 "$ref": "../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
@@ -19,7 +19,7 @@
                         ]
                     },
                     "target_id": {
-                        "title": "Id объекта, для которого требуется получить расписание",
+                        "title": "Id объекта, для которого требуется получить расписание.",
                         "type": "integer"
                     },
                     "target_id_2": {
@@ -32,7 +32,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Получение рассписания"
+                "title": "Получение рассписания."
             },
             "Schedule_2.Methods.Get.Exec": {
                 "type": "object",

@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление региона */
+        /** Удаление региона. */
         "Positions_2.Methods.Searchers.Regions.Del": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
-            /** Регион, который требуется удалить */
+            /** Регион, который требуется удалить. */
             region_index: number;
             /**
              * Список фильтров по полям объекта

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "title": "Название запроса для переименования",
+                        "title": "Название запроса для переименования.",
                         "type": "string"
                     },
                     "fields": {
@@ -39,7 +39,7 @@
                     "name",
                     "project_id"
                 ],
-                "title": "Переименование запроса"
+                "title": "Переименование запроса."
             },
             "Keywords_2.Methods.Keywords.Rename.Edit.Exec": {
                 "type": "array",

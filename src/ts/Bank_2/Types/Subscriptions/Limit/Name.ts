@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Имя лимита
-         * @description Гайдлайн: Имя лимита начинается с имени сервиса и характеризуется именем обеъкта или именем метода
+         * Имя лимита.
+         * @description Гайдлайн: Имя лимита начинается с имени сервиса и характеризуется именем обеъкта или именем метода.
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Limit.Name": "positions_check" | "positions_check_manual" | "keywords_volumes" | "keywords_collect" | "positions_tasks" | "projects" | "projects_rights" | "projects_competitors" | "projects_archive" | "api";

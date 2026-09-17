@@ -16,11 +16,11 @@
                         "type": "boolean"
                     },
                     "keywords": {
-                        "title": "Список исходных запросов",
+                        "title": "Список исходных запросов.",
                         "type": "array"
                     },
                     "qualifiers": {
-                        "title": "Объекты определителей настроек ПС и регионов",
+                        "title": "Объекты определителей настроек ПС и регионов.",
                         "allOf": [
                             {
                                 "$ref": "../../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
@@ -32,17 +32,17 @@
                         "type": "array"
                     },
                     "to_group_id": {
-                        "title": "Id группы для размещения подобранных запросов",
-                        "description": "Можно указывать только при `in_one_group` = `true`",
+                        "title": "Id группы для размещения подобранных запросов.",
+                        "description": "Можно указывать только при `in_one_group` = `true`.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "in_one_group": {
-                        "title": "Собирать все запросы в одну группу",
+                        "title": "Собирать все запросы в одну группу.",
                         "type": "boolean"
                     },
                     "to_id": {
-                        "title": "Id папки для новых групп",
+                        "title": "Id папки для новых групп.",
                         "type": "integer"
                     },
                     "to_type": {
@@ -76,10 +76,10 @@
                     "qualifiers",
                     "project_id"
                 ],
-                "title": "Получение стоимости подбора запросов"
+                "title": "Получение стоимости подбора запросов."
             },
             "Keywords_2.Methods.Collect.Price.Get.Exec": {
-                "title": "Информация о стоимости запуска подбора запросов",
+                "title": "Информация о стоимости запуска подбора запросов.",
                 "type": "object",
                 "properties": {
                     "pricesByUsers": {

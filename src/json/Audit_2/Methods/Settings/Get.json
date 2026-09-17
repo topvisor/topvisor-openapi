@@ -26,10 +26,10 @@
                     "fields",
                     "project_id"
                 ],
-                "title": "Получение настроек аудита"
+                "title": "Получение настроек аудита."
             },
             "Audit_2.Methods.Settings.Get.Exec": {
-                "title": "Настройки аудита",
+                "title": "Настройки аудита.",
                 "nullable": true,
                 "type": "array"
             }

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Id достижения
+         * Id достижения.
          * @enum {integer}
          */
         "Users_2.Types.Ranks.Id": 3 | 27 | 28 | 44 | 56;

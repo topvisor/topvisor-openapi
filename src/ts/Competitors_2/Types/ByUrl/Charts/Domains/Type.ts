@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип графика
+         * Тип графика.
          * @enum {string}
          */
         "Competitors_2.Types.ByUrl.Charts.Domains.Type": "small" | "summary" | "count_keywords" | "avg_position" | "visibility" | "sum_traffic" | "sum_traffic_forecast" | "sum_month_cost_rub" | "sum_month_cost_usd";

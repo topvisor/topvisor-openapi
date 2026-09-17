@@ -7,21 +7,21 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение календаря апдейтов */
+        /** Получение календаря апдейтов. */
         "Content_2.Methods.Apometr.Calendar.Get": {
             /**
-             * Индекс региона
-             * @description Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+             * Индекс региона.
+             * @description Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device.
              */
             region_index?: number | null;
             searcher_key?: unknown;
-            /** Ключ региона */
+            /** Ключ региона. */
             region_key?: number | null;
-            /** Язык региона */
+            /** Язык региона. */
             region_lang?: string | null;
             region_device?: unknown;
             action?: import('../../../Types/Apometr/Action.ts').components['schemas']['Content_2.Types.Apometr.Action'];
-            /** Дата, определяющая месяц, в формате YYYY-MM-01 */
+            /** Дата, определяющая месяц, в формате YYYY-MM-01. */
             date_month?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
         "Content_2.Methods.Apometr.Calendar.Get.Exec": ({

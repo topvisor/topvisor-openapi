@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Поле фильтра */
+        /** Поле фильтра. */
         FieldFilter: {
-            /** Имя поля */
+            /** Имя поля. */
             name: string;
-            /** Оператор сравнения */
+            /** Оператор сравнения. */
             operator: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
             /**
-             * Значения для сравнения
-             * @description В зависимости от типа условия оно может иметь разное количество значений
+             * Значения для сравнения.
+             * @description В зависимости от типа условия оно может иметь разное количество значений.
              *
-             *     Обычно оно имеет только одно значение
+             *     Обычно оно имеет только одно значение.
              */
             values: unknown[];
         };

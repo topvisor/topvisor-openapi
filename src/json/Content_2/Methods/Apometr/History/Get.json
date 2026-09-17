@@ -11,17 +11,17 @@
                 "type": "object",
                 "properties": {
                     "region_index": {
-                        "title": "Индекс региона",
+                        "title": "Индекс региона.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "searcher_key": {},
                     "region_key": {
-                        "title": "Ключ региона",
+                        "title": "Ключ региона.",
                         "type": "integer"
                     },
                     "region_lang": {
-                        "title": "Язык региона",
+                        "title": "Язык региона.",
                         "default": "ru",
                         "type": "string"
                     },
@@ -33,12 +33,12 @@
                         "type": "integer"
                     },
                     "avg": {
-                        "title": "Вернуть только средние значения по всем тематикам",
+                        "title": "Вернуть только средние значения по всем тематикам.",
                         "type": "boolean"
                     }
                 },
                 "required": [],
-                "title": "Получение истории шторма за период в 2 суток"
+                "title": "Получение истории шторма за период в 2 суток."
             },
             "Content_2.Methods.Apometr.History.Get.Exec": {
                 "nullable": true,

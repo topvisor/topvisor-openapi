@@ -18,7 +18,7 @@
                         ]
                     },
                     "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки",
+                        "title": "Отображать сумму с учетом скидки.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -30,7 +30,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение цены перекластеризации"
+                "title": "Получение цены перекластеризации."
             },
             "Keywords_2.Methods.Claster.PriceChange.Get.Exec": {
                 "type": "number"

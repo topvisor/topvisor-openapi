@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Валюта шаблонов
+         * Валюта шаблонов.
          * @enum {string}
          */
         "System_2.Types.Tpl.Currency": "RUB" | "USD" | "";

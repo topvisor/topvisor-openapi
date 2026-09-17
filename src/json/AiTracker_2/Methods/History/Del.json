@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -27,7 +27,7 @@
                     "date",
                     "project_id"
                 ],
-                "title": "Удаление проверки ИИ-Трекера"
+                "title": "Удаление проверки ИИ-Трекера."
             },
             "AiTracker_2.Methods.History.Del.Exec": {
                 "type": "integer"

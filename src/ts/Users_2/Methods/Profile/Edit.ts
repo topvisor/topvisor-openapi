@@ -7,20 +7,20 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение параметров активного пользователя */
+        /** Изменение параметров активного пользователя. */
         "Users_2.Methods.Profile.Edit": {
-            /** Телефон */
+            /** Телефон. */
             phone?: string | null;
-            /** Имя пользователя */
+            /** Имя пользователя. */
             name?: string | null;
             /**
-             * Формат дат, отображаемых на сайте и в скачиваемых отчетах
-             * @description https://www.php.net/manual/ru/datetime.format.php
+             * Формат дат, отображаемых на сайте и в скачиваемых отчетах.
+             * @description Https://www.php.net/manual/ru/datetime.format.php.
              */
             dateformat?: string | null;
-            /** Позиции, просмотр отчета: использовать обратный порядок дат */
+            /** Позиции, просмотр отчета: использовать обратный порядок дат. */
             positions_reverse_dates?: boolean | null;
-            /** Позиции, просмотр отчета: запоминать последние выбранные регионы */
+            /** Позиции, просмотр отчета: запоминать последние выбранные регионы. */
             positions_save_regions?: boolean | null;
             positions_top_segments?: import('../../Types/Profile/PositionsTopSegments.ts').components['schemas']['Users_2.Types.Profile.PositionsTopSegments'] | null;
         };

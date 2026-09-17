@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "showAvailableModels": {
-                        "title": "Добавить ли в результат список всехдоступных моделей",
+                        "title": "Добавить ли в результат список всехдоступных моделей.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -22,10 +22,10 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение настроек ИИ-Трекера"
+                "title": "Получение настроек ИИ-Трекера."
             },
             "AiTracker_2.Methods.Settings.Get.Exec": {
-                "title": "Настройки aiTracker проекта",
+                "title": "Настройки aiTracker проекта.",
                 "nullable": true,
                 "type": "object",
                 "properties": {

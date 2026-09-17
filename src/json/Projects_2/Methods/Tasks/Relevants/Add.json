@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "url": {
-                        "title": "URL сайта",
+                        "title": "URL сайта.",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
@@ -19,7 +19,7 @@
                         ]
                     },
                     "keywords": {
-                        "title": "Запросы",
+                        "title": "Запросы.",
                         "type": "array"
                     },
                     "qualifiers": {
@@ -35,7 +35,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на проверку релевантности"
+                "title": "Создание задачи на проверку релевантности."
             },
             "Projects_2.Methods.Tasks.Relevants.Add.Exec": {
                 "type": "integer"

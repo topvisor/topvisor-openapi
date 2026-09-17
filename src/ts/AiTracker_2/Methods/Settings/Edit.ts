@@ -8,17 +8,17 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Изменение настроек ИИ-Трекера
-         * @description Для получения текущих настроек используйте: /get/projects_2/projects/
+         * Изменение настроек ИИ-Трекера.
+         * @description Для получения текущих настроек используйте: /get/projects_2/projects/.
          */
         "AiTracker_2.Methods.Settings.Edit": {
-            /** Список моделей ИИ */
+            /** Список моделей ИИ. */
             models_keys?: unknown;
-            /** Настройки контекста: Язык */
+            /** Настройки контекста: Язык. */
             context_lang?: string | null;
-            /** Настройки контекста: Регион */
+            /** Настройки контекста: Регион. */
             context_location?: string | null;
-            /** Пользовательский контекст */
+            /** Пользовательский контекст. */
             context_custom?: string | null;
             /** ID проекта */
             project_id: number;

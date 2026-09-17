@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Объект определитель для проверки релевантности */
+        /** Объект определитель для проверки релевантности. */
         "Projects_2.Objects.Task.Relevant.Qualifier": {
             region_lang?: string | null;
             searcher_key: unknown;

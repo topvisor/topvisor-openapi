@@ -23,7 +23,7 @@
                     }
                 },
                 "required": [],
-                "title": "Запуск проверки аудита"
+                "title": "Запуск проверки аудита."
             },
             "Audit_2.Methods.Audit.Checker.Go.Edit.Exec": {
                 "description": "Список id проектов, отправленных на проверку",

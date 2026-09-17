@@ -7,24 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление групп */
+        /** Добавление групп. */
         "KeywordsAi_2.Methods.Groups.Add": {
-            /** Вставить к указанному объекту */
+            /** Вставить к указанному объекту. */
             to_id?: number;
             /** @default in_folder */
             to_type?: import('../../../Keywords_2/Types/Groups/ToType.ts').components['schemas']['Keywords_2.Types.Groups.ToType'];
-            /** Имена групп */
+            /** Имена групп. */
             names?: unknown[] | null;
             /**
-             * Активность группы
+             * Активность группы.
              * @default true
              */
             on?: boolean;
-            /**
-             * Статус группы
-             * @description Используется для создания группы при подборе слов
-             */
-            status?: boolean;
             /** ID проекта */
             project_id: number;
         };

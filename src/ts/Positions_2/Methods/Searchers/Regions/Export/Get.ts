@@ -12,7 +12,7 @@ export interface components {
          * @description - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
          */
         "Positions_2.Methods.Searchers.Regions.Export.Get": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
         };
         "Positions_2.Methods.Searchers.Regions.Export.Get.Exec": Record<string, never>;

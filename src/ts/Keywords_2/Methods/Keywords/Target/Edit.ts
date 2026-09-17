@@ -7,15 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение целевой ссылки запросов */
+        /** Изменение целевой ссылки запросов. */
         "Keywords_2.Methods.Keywords.Target.Edit": {
-            /** Целевая ссылка */
+            /** Целевая ссылка. */
             target?: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** @default keywords */
             target_type?: import('../../../Types/Keywords/TargetType.ts').components['schemas']['Keywords_2.Types.Keywords.TargetType'];
-            /** Учитывать ли удаленные запросы */
+            /** Учитывать ли удаленные запросы. */
             show_trash?: boolean;
-            /** Искать ли в подпапках */
+            /** Искать ли в подпапках. */
             group_folder_id_depth?: boolean;
             /** ID проекта */
             project_id: number;

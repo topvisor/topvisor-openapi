@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип экспортируемого файла
+         * Тип экспортируемого файла.
          * @enum {string}
          */
         "Snapshots_2.Types.History.Export.Output": "csv" | "csvOld" | "xlsx";

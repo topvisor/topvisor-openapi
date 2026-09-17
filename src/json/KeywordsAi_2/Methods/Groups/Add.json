@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "to_id": {
-                        "title": "Вставить к указанному объекту",
+                        "title": "Вставить к указанному объекту.",
                         "type": "integer"
                     },
                     "to_type": {
@@ -23,18 +23,13 @@
                         ]
                     },
                     "names": {
-                        "title": "Имена групп",
+                        "title": "Имена групп.",
                         "nullable": true,
                         "type": "array"
                     },
                     "on": {
-                        "title": "Активность группы",
+                        "title": "Активность группы.",
                         "default": true,
-                        "type": "boolean"
-                    },
-                    "status": {
-                        "title": "Статус группы",
-                        "description": "Используется для создания группы при подборе слов",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -45,7 +40,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Добавление групп"
+                "title": "Добавление групп."
             },
             "KeywordsAi_2.Methods.Groups.Add.Exec": {
                 "nullable": true,

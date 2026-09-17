@@ -7,19 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Копирование запросов в другой проект */
+        /** Копирование запросов в другой проект. */
         "Keywords_2.Methods.Keywords.Export.ToProject.Edit": {
-            /** В какой проект перенести */
+            /** В какой проект перенести. */
             to_project_id: number;
             /** Перенести в корневую папку? */
             in_root_folder?: boolean;
             /** @default keywords */
             target_type?: import('../../../../Types/Keywords/Export/TargetType.ts').components['schemas']['Keywords_2.Types.Keywords.Export.TargetType'];
-            /** Перенести вместе с историей позиций */
+            /** Перенести вместе с историей позиций. */
             with_history?: boolean;
-            /** Удалить дубликаты */
+            /** Удалить дубликаты. */
             move_duplicate?: boolean;
-            /** Удалить данные и оригинального проекта */
+            /** Удалить данные и оригинального проекта. */
             delete_from_original_project?: boolean;
             /** ID проекта */
             project_id: number;

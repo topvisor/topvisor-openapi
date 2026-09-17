@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Переименование запроса */
+        /** Переименование запроса. */
         "Keywords_2.Methods.Keywords.Rename.Edit": {
-            /** Название запроса для переименования */
+            /** Название запроса для переименования. */
             name: string;
             /**
              * Список полей объекта, которые надо вернуть в результате

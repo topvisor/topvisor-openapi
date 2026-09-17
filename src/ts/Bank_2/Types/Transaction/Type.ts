@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип транзакции
+         * Тип транзакции.
          * @enum {string}
          */
         "Bank_2.Types.Transaction.Type": "minus" | "plus" | "plusBonus" | "minusAdmin" | "minusGhost";

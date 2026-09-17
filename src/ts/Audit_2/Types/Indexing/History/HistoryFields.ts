@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Поля с результатами проверки для отчета истории индексации */
+        /** Поля с результатами проверки для отчета истории индексации. */
         "Audit_2.Types.Indexing.History.HistoryFields": import('./HistoryField.ts').components['schemas']['Audit_2.Types.Indexing.History.HistoryField'][];
     };
     responses: never;

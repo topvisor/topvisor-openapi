@@ -7,42 +7,42 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о текущей подписки пользователя и ее лимитах */
+        /** Информация о текущей подписки пользователя и ее лимитах. */
         "Bank_2.Objects.Subscriptions.Subscription": {
-            /** id платежа, подписки */
+            /** Id платежа, подписки. */
             paymentId: number;
-            /** Платежная система */
+            /** Платежная система. */
             paymentSystem: string;
-            /** Id платежа в платежной системе */
+            /** Id платежа в платежной системе. */
             externalPaymentId: string;
-            /** Id реквизитов юр. лица, указанные при оплате */
+            /** Id реквизитов юр. лица, указанные при оплате. */
             paymentRequisitesId: string;
             /**
-             * Стоимость амортизации
-             * @description Используется для расчета первого платежа при переподписки на другой план
+             * Стоимость амортизации.
+             * @description Используется для расчета первого платежа при переподписки на другой план.
              *
-             *     Указывается в валюте подписки
+             *     Указывается в валюте подписки.
              */
             depreciationCost: number;
-            /** Текущий план подписки */
+            /** Текущий план подписки. */
             plan: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'];
-            /** Следующий план подписки */
+            /** Следующий план подписки. */
             nextPlan?: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'] | null;
-            /** Состояние подписки */
+            /** Состояние подписки. */
             recurrentState: import('../Requisites/Payment/RecurrentState.ts').components['schemas']['Bank_2.Objects.Requisites.Payment.RecurrentState'];
-            /** Текущий цикл для подписки */
+            /** Текущий цикл для подписки. */
             cycle: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
-            /** Цикл для следующей подписки */
+            /** Цикл для следующей подписки. */
             nextCycle: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
-            /** Стоимость текущей подписки */
+            /** Стоимость текущей подписки. */
             price: number;
-            /** Стоимость продления подписки */
+            /** Стоимость продления подписки. */
             renewPrice: number;
             /**
-             * Использованные лимиты
-             * @description Доступные лимиты см. в `plan`
+             * Использованные лимиты.
+             * @description Доступные лимиты см. в `plan`.
              *
-             *     Для нетарифицируемых лимитов значение всегда `null`
+             *     Для нетарифицируемых лимитов значение всегда `null`.
              */
             limitUsedByName: {
                 positions_check?: number;
@@ -56,7 +56,7 @@ export interface components {
                 projects_archive?: number;
                 api?: number;
             };
-            /** Типы лимитов */
+            /** Типы лимитов. */
             limitTypeByName: {
                 positions_check?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];
                 positions_check_manual?: import('../../Types/Subscriptions/Limit/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Limit.Type'];

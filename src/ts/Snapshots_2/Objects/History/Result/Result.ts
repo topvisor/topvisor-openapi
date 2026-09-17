@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат истории снимков */
+        /** Результат истории снимков. */
         "Snapshots_2.Objects.History.Result.Result": {
-            /** Список запросов с данными */
+            /** Список запросов с данными. */
             keywords: {
                 [key: string]: unknown;
             }[];
-            /** Даты отчета */
+            /** Даты отчета. */
             dates: string[];
-            /** Глубина проверки */
+            /** Глубина проверки. */
             depthPositions: number;
-            /** Даты, в которые есть проверки */
+            /** Даты, в которые есть проверки. */
             existsDates?: string[] | null;
             headers?: import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders'] | null;
         };

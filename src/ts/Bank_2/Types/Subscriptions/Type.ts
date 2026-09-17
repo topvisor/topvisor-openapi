@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип подписки
-         * @description Определяет способ списания средств и порядок продления подписки
+         * Тип подписки.
+         * @description Определяет способ списания средств и порядок продления подписки.
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Type": "auto" | "manual";

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тег для установки к сниппету
+         * Тег для установки к сниппету.
          * @enum {integer}
          */
         "Keywords_2.Types.Snippets.Tag": 1 | 2 | 7;

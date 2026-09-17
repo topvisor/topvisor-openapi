@@ -18,11 +18,11 @@
                         ]
                     },
                     "region_key": {
-                        "title": "Ключ региона",
+                        "title": "Ключ региона.",
                         "type": "integer"
                     },
                     "region_lang": {
-                        "title": "Язык региона",
+                        "title": "Язык региона.",
                         "type": "string"
                     },
                     "count": {
@@ -40,11 +40,11 @@
                         ]
                     },
                     "send_email_csv": {
-                        "title": "Отправить письмо с результатами кластеризацию на почту",
+                        "title": "Отправить письмо с результатами кластеризацию на почту.",
                         "type": "boolean"
                     },
                     "folder_id": {
-                        "title": "ID кластеризуемой папки",
+                        "title": "ID кластеризуемой папки.",
                         "type": "integer"
                     },
                     "project_id": {
@@ -59,7 +59,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Запуск кластеризации"
+                "title": "Запуск кластеризации."
             },
             "Keywords_2.Methods.Claster.Task.Add.Exec": {
                 "nullable": true,

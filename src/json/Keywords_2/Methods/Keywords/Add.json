@@ -11,12 +11,12 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "title": "Ключевая фраза",
+                        "title": "Ключевая фраза.",
                         "type": "string"
                     },
                     "to_id": {
-                        "title": "Вставить к указанному объекту",
-                        "description": "Если в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы",
+                        "title": "Вставить к указанному объекту.",
+                        "description": "Если в to_type указано \"Перед или после запроса\", то принимает id запроса\nЕсли в to_type указано \"В конец или начало группы\", то принимает id группы.",
                         "type": "integer"
                     },
                     "to_type": {
@@ -28,7 +28,7 @@
                         ]
                     },
                     "tags": {
-                        "title": "Теги запроса",
+                        "title": "Теги запроса.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -37,7 +37,7 @@
                         ]
                     },
                     "target": {
-                        "title": "Целевая страница для запроса",
+                        "title": "Целевая страница для запроса.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -46,12 +46,12 @@
                         ]
                     },
                     "move_duplicate": {
-                        "title": "Удалить дубликаты",
+                        "title": "Удалить дубликаты.",
                         "type": "boolean"
                     },
                     "move_duplicate_group_name": {
-                        "title": "Имя группы для перемещения дубликатов",
-                        "description": "Работает вместе с move_duplicate",
+                        "title": "Имя группы для перемещения дубликатов.",
+                        "description": "Работает вместе с move_duplicate.",
                         "type": "string"
                     },
                     "project_id": {
@@ -69,7 +69,7 @@
                     "to_id",
                     "project_id"
                 ],
-                "title": "Добавление запроса"
+                "title": "Добавление запроса."
             },
             "Keywords_2.Methods.Keywords.Add.Exec": {
                 "type": "array"

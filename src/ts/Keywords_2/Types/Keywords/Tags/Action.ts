@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Действие с тегами запросов
+         * Действие с тегами запросов.
          * @enum {string}
          */
         "Keywords_2.Types.Keywords.Tags.Action": "set" | "add" | "remove";

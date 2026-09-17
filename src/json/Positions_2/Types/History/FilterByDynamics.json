@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Positions_2/Types/History/FilterByDynamic.json#/components/schemas/Positions_2.Types.History.FilterByDynamic"
                 },
-                "title": "Фильтры по динамике запросов"
+                "title": "Фильтры по динамике запросов."
             }
         }
     }

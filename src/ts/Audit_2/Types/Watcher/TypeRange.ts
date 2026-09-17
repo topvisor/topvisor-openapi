@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип диапазона радара
+         * Тип диапазона радара.
          * @enum {integer}
          */
         "Audit_2.Types.Watcher.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;

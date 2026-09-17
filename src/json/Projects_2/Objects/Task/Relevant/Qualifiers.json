@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../../Projects_2/Objects/Task/Relevant/Qualifier.json#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifier"
                 },
-                "title": "Определители для проверки релевантности"
+                "title": "Определители для проверки релевантности."
             }
         }
     }

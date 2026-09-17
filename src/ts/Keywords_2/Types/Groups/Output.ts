@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип экспорта группы
+         * Тип экспорта группы.
          * @enum {string}
          */
         "Keywords_2.Types.Groups.Output": "csv";

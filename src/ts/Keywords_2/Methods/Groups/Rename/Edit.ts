@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Переименовывание группы */
+        /** Переименовывание группы. */
         "Keywords_2.Methods.Groups.Rename.Edit": {
-            /** Имя группы */
+            /** Имя группы. */
             name: string;
-            /** Учитывать ли удаленные группы */
+            /** Учитывать ли удаленные группы. */
             show_trash?: boolean;
             /** ID проекта */
             project_id: number;

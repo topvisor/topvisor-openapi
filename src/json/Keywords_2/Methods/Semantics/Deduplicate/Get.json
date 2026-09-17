@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Список исходных запросов",
+                        "title": "Список исходных запросов.",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
@@ -19,12 +19,12 @@
                         ]
                     },
                     "ignoreWordsOrder": {
-                        "title": "Игнорировать порядок слов при поиске дублей",
+                        "title": "Игнорировать порядок слов при поиске дублей.",
                         "default": true,
                         "type": "boolean"
                     },
                     "ignoreStopWords": {
-                        "title": "Игнорировать стоп-слова при поиске дублей",
+                        "title": "Игнорировать стоп-слова при поиске дублей.",
                         "default": true,
                         "type": "boolean"
                     }
@@ -32,7 +32,7 @@
                 "required": [
                     "keywords"
                 ],
-                "title": "Удаление неявных дублей по ключевым фразам"
+                "title": "Удаление неявных дублей по ключевым фразам."
             },
             "Keywords_2.Methods.Semantics.Deduplicate.Get.Exec": {
                 "type": "object",

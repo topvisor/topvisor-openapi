@@ -7,21 +7,21 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение настроек бренда проекта */
+        /** Изменение настроек бренда проекта. */
         "Projects_2.Methods.Brand.Edit": {
-            /** Описание бренда */
+            /** Описание бренда. */
             description?: string | null;
             /**
-             * Имя бренда
-             * @description Участвует в поиске в ответе ИИ
+             * Имя бренда.
+             * @description Участвует в поиске в ответе ИИ.
              */
             name?: string | null;
-            /** Дополнительные имена бренда */
+            /** Дополнительные имена бренда. */
             aliases?: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
             /** ID проекта */
             project_id: number;
         };
-        /** Сохранить настройки бренда */
+        /** Сохранить настройки бренда. */
         "Projects_2.Methods.Brand.Edit.Exec": number;
     };
     responses: never;

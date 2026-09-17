@@ -7,24 +7,24 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Поле сортировки */
+        /** Поле сортировки. */
         FieldOrder: {
-            /** Имя поля */
+            /** Имя поля. */
             name: string;
             /**
-             * Оператор сравнения
+             * Оператор сравнения.
              * @default ASC
              */
             direction: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
-            /** Список значений поля, для ручной сортировки */
+            /** Список значений поля, для ручной сортировки. */
             orderValues?: unknown[] | null;
-            /** Оператор сравнения */
+            /** Оператор сравнения. */
             operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'] | null;
             /**
-             * Значения для сравенния
-             * @description В зависимости от типа условия оно может иметь разное количество значений
+             * Значения для сравенния.
+             * @description В зависимости от типа условия оно может иметь разное количество значений.
              *
-             *     Обычно оно имеет только одно значение
+             *     Обычно оно имеет только одно значение.
              */
             values?: unknown[] | null;
         };

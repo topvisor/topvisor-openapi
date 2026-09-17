@@ -11,28 +11,28 @@
                 "type": "object",
                 "properties": {
                     "paymentId": {
-                        "title": "id платежа, подписки",
+                        "title": "Id платежа, подписки.",
                         "type": "integer"
                     },
                     "paymentSystem": {
-                        "title": "Платежная система",
+                        "title": "Платежная система.",
                         "type": "string"
                     },
                     "externalPaymentId": {
-                        "title": "Id платежа в платежной системе",
+                        "title": "Id платежа в платежной системе.",
                         "type": "string"
                     },
                     "paymentRequisitesId": {
-                        "title": "Id реквизитов юр. лица, указанные при оплате",
+                        "title": "Id реквизитов юр. лица, указанные при оплате.",
                         "type": "string"
                     },
                     "depreciationCost": {
-                        "title": "Стоимость амортизации",
-                        "description": "Используется для расчета первого платежа при переподписки на другой план\n\nУказывается в валюте подписки",
+                        "title": "Стоимость амортизации.",
+                        "description": "Используется для расчета первого платежа при переподписки на другой план.\n\nУказывается в валюте подписки.",
                         "type": "integer"
                     },
                     "plan": {
-                        "title": "Текущий план подписки",
+                        "title": "Текущий план подписки.",
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
@@ -40,7 +40,7 @@
                         ]
                     },
                     "nextPlan": {
-                        "title": "Следующий план подписки",
+                        "title": "Следующий план подписки.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -49,7 +49,7 @@
                         ]
                     },
                     "recurrentState": {
-                        "title": "Состояние подписки",
+                        "title": "Состояние подписки.",
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Objects/Requisites/Payment/RecurrentState.json#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState"
@@ -57,7 +57,7 @@
                         ]
                     },
                     "cycle": {
-                        "title": "Текущий цикл для подписки",
+                        "title": "Текущий цикл для подписки.",
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
@@ -65,7 +65,7 @@
                         ]
                     },
                     "nextCycle": {
-                        "title": "Цикл для следующей подписки",
+                        "title": "Цикл для следующей подписки.",
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
@@ -73,16 +73,16 @@
                         ]
                     },
                     "price": {
-                        "title": "Стоимость текущей подписки",
+                        "title": "Стоимость текущей подписки.",
                         "type": "integer"
                     },
                     "renewPrice": {
-                        "title": "Стоимость продления подписки",
+                        "title": "Стоимость продления подписки.",
                         "type": "integer"
                     },
                     "limitUsedByName": {
-                        "title": "Использованные лимиты",
-                        "description": "Доступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
+                        "title": "Использованные лимиты.",
+                        "description": "Доступные лимиты см. в `plan`.\n\nДля нетарифицируемых лимитов значение всегда `null`.",
                         "type": "object",
                         "properties": {
                             "positions_check": {
@@ -118,7 +118,7 @@
                         }
                     },
                     "limitTypeByName": {
-                        "title": "Типы лимитов",
+                        "title": "Типы лимитов.",
                         "type": "object",
                         "properties": {
                             "positions_check": {
@@ -169,7 +169,7 @@
                     "limitUsedByName",
                     "limitTypeByName"
                 ],
-                "title": "Информация о текущей подписки пользователя и ее лимитах"
+                "title": "Информация о текущей подписки пользователя и ее лимитах."
             }
         }
     }

@@ -32,7 +32,7 @@
                 "required": [
                     "max_pages"
                 ],
-                "title": "Отправка проектов на проверку карты сайта"
+                "title": "Отправка проектов на проверку карты сайта."
             },
             "Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec": {
                 "description": "Список id проектов, отрпавленных на проверку",

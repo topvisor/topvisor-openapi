@@ -7,14 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация об ошибке */
+        /** Информация об ошибке. */
         Error: {
             /**
-             * Код ошибки
-             * @description Код ошибки 0 - deprecated
+             * Код ошибки.
+             * @description Код ошибки 0 - deprecated.
              */
             code: number;
-            /** Описание ошибки */
+            /** Описание ошибки. */
             string: string;
             /**
              * Объект с дополнительной информацией

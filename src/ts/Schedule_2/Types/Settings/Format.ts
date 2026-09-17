@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат отчета
+         * Формат отчета.
          * @enum {string}
          */
         "Schedule_2.Types.Settings.Format": "csv" | "xlsx" | "pdf" | "html";

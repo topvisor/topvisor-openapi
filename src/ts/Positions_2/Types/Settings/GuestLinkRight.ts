@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Право для гостевых ссылок
+         * Право для гостевых ссылок.
          * @enum {string}
          */
         "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "charts" | "competitors";

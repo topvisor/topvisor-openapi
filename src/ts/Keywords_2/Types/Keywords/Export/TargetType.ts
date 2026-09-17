@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип объекта по которому производить фильтрацию для выборки запросов
+         * Тип объекта по которому производить фильтрацию для выборки запросов.
          * @enum {string}
          */
         "Keywords_2.Types.Keywords.Export.TargetType": "keywords" | "groups";

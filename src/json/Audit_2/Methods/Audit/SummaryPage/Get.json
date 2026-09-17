@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "url_id": {
-                        "title": "Id ссылки на страницу",
+                        "title": "Id ссылки на страницу.",
                         "type": "integer"
                     },
                     "fetch_style": {
@@ -29,7 +29,7 @@
                         "type": "integer"
                     },
                     "check_id": {
-                        "title": "ID проверки аудита",
+                        "title": "ID проверки аудита.",
                         "type": "integer"
                     },
                     "fields": {
@@ -70,10 +70,10 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение сводки страницы"
+                "title": "Получение сводки страницы."
             },
             "Audit_2.Methods.Audit.SummaryPage.Get.Exec": {
-                "title": "Сводка о выполненном аудите по одной странице",
+                "title": "Сводка о выполненном аудите по одной странице.",
                 "nullable": true,
                 "type": "array",
                 "items": {

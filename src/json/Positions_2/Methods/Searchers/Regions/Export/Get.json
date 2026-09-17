@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "Id проекта",
+                        "title": "Id проекта.",
                         "type": "integer"
                     }
                 },

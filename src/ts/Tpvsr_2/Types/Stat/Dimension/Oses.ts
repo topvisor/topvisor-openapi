@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Операционные системы */
+        /** Операционные системы. */
         "Tpvsr_2.Types.Stat.Dimension.Oses": import('./Os.ts').components['schemas']['Tpvsr_2.Types.Stat.Dimension.Os'][];
     };
     responses: never;

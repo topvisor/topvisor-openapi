@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Агрегатная функция для расчета показателей сводки
+         * Агрегатная функция для расчета показателей сводки.
          * @enum {string}
          */
         "AiTracker_2.Types.Summary.Stats.AggregateFunc": "countMentioned" | "visibility";

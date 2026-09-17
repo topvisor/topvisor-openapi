@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить список оплаченных отчетов */
+        /** Получить список оплаченных отчетов. */
         "Competitors_2.Methods.Orders.Get": {
             /** Индекс региона (не путать с ключом региона) */
             region_index?: number | null;
@@ -17,9 +17,9 @@ export interface components {
              */
             query?: string | null;
             by_type?: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'] | null;
-            /** Дата проверки */
+            /** Дата проверки. */
             date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** Показать удаленные отчеты */
+            /** Показать удаленные отчеты. */
             deleted?: boolean | null;
         };
         "Competitors_2.Methods.Orders.Get.Exec": unknown[] | null;

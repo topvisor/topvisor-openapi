@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование "on" проектов */
+        /** Редактирование "on" проектов. */
         "Projects_2.Methods.Projects.On.Edit": {
             /**
              * Активность проекта

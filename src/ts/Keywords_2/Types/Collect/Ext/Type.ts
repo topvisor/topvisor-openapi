@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * По каким параметрам расширять группу
+         * По каким параметрам расширять группу.
          * @enum {string}
          */
         "Keywords_2.Types.Collect.Ext.Type": "groupName" | "groupNameWithKeywords" | "keywords";

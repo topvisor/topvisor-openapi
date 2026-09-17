@@ -7,13 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Настройка сортировки регионов */
+        /** Настройка сортировки регионов. */
         "Positions_2.Methods.Searchers.Regions.Sort.Edit": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
-            /** Ключ ПС */
+            /** Ключ ПС. */
             searcher_key: unknown;
-            /** Ключи регионов */
+            /** Ключи регионов. */
             regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             /**
              * Список фильтров по полям объекта

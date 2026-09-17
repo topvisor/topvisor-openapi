@@ -18,7 +18,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение обновленного процента завершения кластеризации"
+                "title": "Получение обновленного процента завершения кластеризации."
             },
             "Keywords_2.Methods.Claster.Percent.Get.Exec": {
                 "type": "number"

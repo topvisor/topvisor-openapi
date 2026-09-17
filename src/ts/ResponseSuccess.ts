@@ -7,14 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат успешного API запроса */
+        /** Результат успешного API запроса. */
         ResponseSuccess: {
             /**
-             * Результат ответа API метода
-             * @description Тип результата зависит от типа запроса и его настроек
+             * Результат ответа API метода.
+             * @description Тип результата зависит от типа запроса и его настроек.
              */
             errors?: null | null;
-            /** Список сообщений, полученных при выполнении запроса */
+            /** Список сообщений, полученных при выполнении запроса. */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
         };
     };

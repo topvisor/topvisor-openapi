@@ -7,22 +7,22 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Постановка задачи на подбор запросов */
+        /** Постановка задачи на подбор запросов. */
         "Keywords_2.Methods.Collect.Go.Edit": {
-            /** Список исходных запросов */
+            /** Список исходных запросов. */
             keywords: unknown[];
-            /** Объекты определителей настроек ПС и регионов */
+            /** Объекты определителей настроек ПС и регионов. */
             qualifiers: import('../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: unknown[];
             /**
-             * Id группы для размещения подобранных запросов
-             * @description Можно указывать только при `in_one_group` = `true`
+             * Id группы для размещения подобранных запросов.
+             * @description Можно указывать только при `in_one_group` = `true`.
              */
             to_group_id?: number | null;
-            /** Собирать все запросы в одну группу */
+            /** Собирать все запросы в одну группу. */
             in_one_group?: boolean;
-            /** Id папки для новых групп */
+            /** Id папки для новых групп. */
             to_id?: number;
             /** @default in_folder_last */
             to_type?: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'] | null;
@@ -31,7 +31,7 @@ export interface components {
             /** ID проекта */
             project_id: number;
         };
-        /** Массив созданных групп */
+        /** Массив созданных групп. */
         "Keywords_2.Methods.Collect.Go.Edit.Exec": unknown[] | null;
     };
     responses: never;

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Расписание, является списком кортежей расписания */
+        /** Расписание, является списком кортежей расписания. */
         "Schedule_2.Types.Schedule": import('./ScheduleItem.ts').components['schemas']['Schedule_2.Types.ScheduleItem'][];
     };
     responses: never;

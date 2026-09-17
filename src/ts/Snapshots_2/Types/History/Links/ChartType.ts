@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип диаграммы
+         * Тип диаграммы.
          * @enum {string}
          */
         "Snapshots_2.Types.History.Links.ChartType": "tops" | "tops_count" | "avg" | "visibility" | "median";

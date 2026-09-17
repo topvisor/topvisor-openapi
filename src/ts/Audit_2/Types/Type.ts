@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Модуль аудита
+         * Модуль аудита.
          * @enum {string}
          */
         "Audit_2.Types.Type": "audit" | "indexing" | "sitemap" | "watcher";

@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Копирование проекта */
+        /** Копирование проекта. */
         "Projects_2.Methods.Projects.Copy.Add": {
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
-            /** Копировать ли запросы проекта */
+            /** Копировать ли запросы проекта. */
             copy_keywords?: boolean | null;
             /** Копировать ли позиции по запросам проекта (если copy_keywords = 1) */
             copy_positions?: boolean | null;

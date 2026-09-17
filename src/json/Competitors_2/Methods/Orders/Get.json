@@ -30,7 +30,7 @@
                         ]
                     },
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -39,13 +39,13 @@
                         ]
                     },
                     "deleted": {
-                        "title": "Показать удаленные отчеты",
+                        "title": "Показать удаленные отчеты.",
                         "nullable": true,
                         "type": "boolean"
                     }
                 },
                 "required": [],
-                "title": "Получить список оплаченных отчетов"
+                "title": "Получить список оплаченных отчетов."
             },
             "Competitors_2.Methods.Orders.Get.Exec": {
                 "nullable": true,

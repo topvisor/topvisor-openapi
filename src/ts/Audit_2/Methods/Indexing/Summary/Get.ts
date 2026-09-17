@@ -7,16 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сводки индексации */
+        /** Получение сводки индексации. */
         "Audit_2.Methods.Indexing.Summary.Get": {
-            /** Произвольные даты без диапазона */
+            /** Произвольные даты без диапазона. */
             dates: unknown[];
             searcher_key?: import('../../../Types/Indexing/SearcherKey.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKey'] | null;
-            /** Отобразить количество изменений */
+            /** Отобразить количество изменений. */
             show_counts_changes?: boolean;
-            /** Отобразить количество страниц в индексе */
+            /** Отобразить количество страниц в индексе. */
             show_counts_in_index?: boolean;
-            /** Отобразить количество проверенных страниц */
+            /** Отобразить количество проверенных страниц. */
             show_counts_all?: boolean;
             /** ID проекта */
             project_id: number;
@@ -35,7 +35,7 @@ export interface components {
              */
             id?: number | null;
         };
-        /** Сводка индексации */
+        /** Сводка индексации. */
         "Audit_2.Methods.Indexing.Summary.Get.Exec": unknown[] | null;
     };
     responses: never;

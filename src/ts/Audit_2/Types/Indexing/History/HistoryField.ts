@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Поле с результатом проверки для отчета истории индексации
+         * Поле с результатом проверки для отчета истории индексации.
          * @enum {string}
          */
         "Audit_2.Types.Indexing.History.HistoryField": "data" | "alert";

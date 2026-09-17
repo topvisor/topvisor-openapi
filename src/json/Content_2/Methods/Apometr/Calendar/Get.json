@@ -11,8 +11,8 @@
                 "type": "object",
                 "properties": {
                     "region_index": {
-                        "title": "Индекс региона",
-                        "description": "Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device",
+                        "title": "Индекс региона.",
+                        "description": "Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device.",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -20,12 +20,12 @@
                         "nullable": true
                     },
                     "region_key": {
-                        "title": "Ключ региона",
+                        "title": "Ключ региона.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "region_lang": {
-                        "title": "Язык региона",
+                        "title": "Язык региона.",
                         "nullable": true,
                         "type": "string"
                     },
@@ -40,7 +40,7 @@
                         ]
                     },
                     "date_month": {
-                        "title": "Дата, определяющая месяц, в формате YYYY-MM-01",
+                        "title": "Дата, определяющая месяц, в формате YYYY-MM-01.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -50,7 +50,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение календаря апдейтов"
+                "title": "Получение календаря апдейтов."
             },
             "Content_2.Methods.Apometr.Calendar.Get.Exec": {
                 "nullable": true,

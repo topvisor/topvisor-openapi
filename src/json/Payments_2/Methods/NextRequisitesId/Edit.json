@@ -11,14 +11,14 @@
                 "type": "object",
                 "properties": {
                     "next_requisites_id": {
-                        "title": "ID реквизитов для продления тарифа",
+                        "title": "ID реквизитов для продления тарифа.",
                         "type": "string"
                     }
                 },
                 "required": [
                     "next_requisites_id"
                 ],
-                "title": "Изменение платежных реквизитов тарифа"
+                "title": "Изменение платежных реквизитов тарифа."
             },
             "Payments_2.Methods.NextRequisitesId.Edit.Exec": {
                 "nullable": true,

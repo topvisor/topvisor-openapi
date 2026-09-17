@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание задачи на проверку частоты */
+        /** Создание задачи на проверку частоты. */
         "Projects_2.Methods.Tasks.Volumes.Add": {
-            /** Массив ключевых запросов в формате CSV */
+            /** Массив ключевых запросов в формате CSV. */
             keywords: unknown[];
             /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
             qualifiers: import('../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];

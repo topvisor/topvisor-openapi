@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип лимита
-         * @description Характеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться
+         * Тип лимита.
+         * @description Характеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться.
          * @enum {string}
          */
         "Bank_2.Types.Subscriptions.Limit.Type": "object" | "object_by_project" | "action_monthly" | "action_daily" | "access";

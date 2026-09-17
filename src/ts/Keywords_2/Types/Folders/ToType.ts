@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Позиция перемещения
+         * Позиция перемещения.
          * @enum {string}
          */
         "Keywords_2.Types.Folders.ToType": "before" | "after" | "in";

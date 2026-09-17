@@ -7,14 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Экспорт данных магнита */
+        /** Экспорт данных магнита. */
         "Keywords_2.Methods.Magnet.Export.Get": {
             provider: import('../../../Types/Magnet/Provider.ts').components['schemas']['Keywords_2.Types.Magnet.Provider'];
             /** @default csv */
             type?: import('../../../Types/Magnet/Export/Type.ts').components['schemas']['Keywords_2.Types.Magnet.Export.Type'];
-            /** Период для экспорта */
+            /** Период для экспорта. */
             period: import('../../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'];
-            /** Метод источника данных */
+            /** Метод источника данных. */
             method?: string;
             /** ID проекта */
             project_id: number;

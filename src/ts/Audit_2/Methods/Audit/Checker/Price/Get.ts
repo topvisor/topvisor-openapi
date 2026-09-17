@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о стоимости запуска аудита по проектам */
+        /** Информация о стоимости запуска аудита по проектам. */
         "Audit_2.Methods.Audit.Checker.Price.Get": {
             /**
              * Список фильтров по полям объекта

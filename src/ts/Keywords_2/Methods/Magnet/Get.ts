@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных магнита по интеграции */
+        /** Получение данных магнита по интеграции. */
         "Keywords_2.Methods.Magnet.Get": {
             provider: import('../../Types/Magnet/Provider.ts').components['schemas']['Keywords_2.Types.Magnet.Provider'];
             /**
-             * Метод источника данных
-             * @description Для `webmaster` принимает `monitoring` или `popular`, для всех остальных - запрещен
+             * Метод источника данных.
+             * @description Для `webmaster` принимает `monitoring` или `popular`, для всех остальных - запрещен.
              */
             method?: string;
-            /** Период дат для получения данных */
+            /** Период дат для получения данных. */
             period: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'];
-            /** Поиск по пути вебмастера */
+            /** Поиск по пути вебмастера. */
             webmaster_monitoring_path?: string;
             /** ID проекта */
             project_id: number;

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о стоимости запуска индексации по проектам */
+        /** Информация о стоимости запуска индексации по проектам. */
         "Audit_2.Methods.Sitemap.Checker.Price.Get": {
             max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
             /**

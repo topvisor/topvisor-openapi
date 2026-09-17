@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Устройство для выполнения аудита и радара
+         * Устройство для выполнения аудита и радара.
          * @enum {string}
          */
         "Audit_2.Types.Settings.Device": "0" | "1" | "2" | "100" | "102" | "110" | "112" | "200" | "202";

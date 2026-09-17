@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат вызова
+         * Формат вызова.
          * @enum {string}
          */
         "System_2.Types.Calls.Format": "apiV2";

@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../Positions_2/Types/TopSegment.json#/components/schemas/Positions_2.Types.TopSegment"
                 },
-                "title": "Дополнительные сегменты топа"
+                "title": "Дополнительные сегменты топа."
             }
         }
     }

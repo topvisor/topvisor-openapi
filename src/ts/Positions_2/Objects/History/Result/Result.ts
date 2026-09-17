@@ -7,18 +7,18 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат истории позиций */
+        /** Результат истории позиций. */
         "Positions_2.Objects.History.Result.Result": {
             headers?: (import('../Headers/Headers.ts').components['schemas']['Positions_2.Objects.History.Headers.Headers'] & import('../../../../Reports_2/Objects/AbstractHeaders.ts').components['schemas']['Reports_2.Objects.AbstractHeaders']) | null;
-            /** Список запросов с данными */
+            /** Список запросов с данными. */
             keywords: {
                 [key: string]: unknown;
             }[];
-            /** Даты, в которые есть проверки */
+            /** Даты, в которые есть проверки. */
             existsDates?: string[] | null;
             /**
-             * Доля запросов в топе указанной глубины
-             * @description Глубина зависит от контекста и настраивается в нем же
+             * Доля запросов в топе указанной глубины.
+             * @description Глубина зависит от контекста и настраивается в нем же.
              *
              *     Ключ для массива в каждом топе - `date:project_id:region_index`
              */
@@ -28,7 +28,7 @@ export interface components {
                 };
             } | null;
             /**
-             * Суммарные визиты по датам/проектам/регионам
+             * Суммарные визиты по датам/проектам/регионам.
              * @description Ключ - `date:project_id:region_index`
              */
             visitors?: {

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Фильтр по состоянию изменения в сводке
+         * Фильтр по состоянию изменения в сводке.
          * @enum {string}
          */
         "Audit_2.Types.Audit.Summary.FilterCheckState": "all" | "changed";

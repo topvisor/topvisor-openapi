@@ -7,27 +7,27 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Оплатить отчет */
+        /** Оплатить отчет. */
         "Competitors_2.Methods.Orders.Pay.Edit": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
             /** Тип отчета (по ключевой фразе или по домену) */
             by_type: string;
-            /** Ключевая фраза (или ее часть) / url */
+            /** Ключевая фраза (или ее часть) / url. */
             query: string;
-            /** Дата проверки */
+            /** Дата проверки. */
             date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /** Оплаченная степень схожести доменов */
+            /** Оплаченная степень схожести доменов. */
             intersection: number;
-            /** Не возвращать информацию кроме is_paymented, если отчет оплачен */
+            /** Не возвращать информацию кроме is_paymented, если отчет оплачен. */
             short_if_paid?: boolean;
             /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads) */
             short_domains_info?: boolean;
-            /** Использовать удаленные отчеты */
+            /** Использовать удаленные отчеты. */
             deleted?: boolean;
             /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
             strict_query?: boolean;
-            /** Получить краткую статистику, только количество конкурентов */
+            /** Получить краткую статистику, только количество конкурентов. */
             short?: boolean;
         };
         "Competitors_2.Methods.Orders.Pay.Edit.Exec": number | null;

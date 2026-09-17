@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Место откуда перешел пользователь
+         * Место откуда перешел пользователь.
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Referrer": "social" | "sites" | "undefined" | "overall";

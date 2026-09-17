@@ -11,7 +11,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Получение списка платежей",
+                "summary": "Получение списка платежей.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -72,7 +72,7 @@
                 "tags": [
                     "Schedule_2"
                 ],
-                "summary": "Удаление расписания",
+                "summary": "Удаление расписания.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -125,7 +125,7 @@
                 "tags": [
                     "Schedule_2"
                 ],
-                "summary": "Привязать расписание к объекту",
+                "summary": "Привязать расписание к объекту.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -178,7 +178,7 @@
                 "tags": [
                     "Schedule_2"
                 ],
-                "summary": "Получение рассписания",
+                "summary": "Получение рассписания.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -231,7 +231,7 @@
                 "tags": [
                     "Tpvsr_2"
                 ],
-                "summary": "Добавление ссылки",
+                "summary": "Добавление ссылки.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -284,7 +284,7 @@
                 "tags": [
                     "Tpvsr_2"
                 ],
-                "summary": "Редактирование ссылки",
+                "summary": "Редактирование ссылки.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -342,7 +342,7 @@
                 "tags": [
                     "Tpvsr_2"
                 ],
-                "summary": "Получение списка ссылок пользователя",
+                "summary": "Получение списка ссылок пользователя.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -403,7 +403,7 @@
                 "tags": [
                     "Urls_2"
                 ],
-                "summary": "Добавление url",
+                "summary": "Добавление url.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -461,7 +461,7 @@
                 "tags": [
                     "Urls_2"
                 ],
-                "summary": "Изменение urls",
+                "summary": "Изменение urls.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -519,7 +519,7 @@
                 "tags": [
                     "Urls_2"
                 ],
-                "summary": "Получение списка urls проекта",
+                "summary": "Получение списка urls проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -612,7 +612,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Удаление проверки ИИ-Трекера",
+                "summary": "Удаление проверки ИИ-Трекера.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -665,7 +665,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Получение истории проверок ИИ-Трекера",
+                "summary": "Получение истории проверок ИИ-Трекера.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -726,8 +726,8 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Изменение настроек ИИ-Трекера",
-                "description": "Для получения текущих настроек используйте: /get/projects_2/projects/",
+                "summary": "Изменение настроек ИИ-Трекера.",
+                "description": "Для получения текущих настроек используйте: /get/projects_2/projects/.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -780,7 +780,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Получение настроек ИИ-Трекера",
+                "summary": "Получение настроек ИИ-Трекера.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -833,7 +833,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Получение сводки по проверкам ИИ-Трекера",
+                "summary": "Получение сводки по проверкам ИИ-Трекера.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -894,7 +894,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение количества настроенных URL",
+                "summary": "Получение количества настроенных URL.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -947,7 +947,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение отчета по проверке индексации",
+                "summary": "Получение отчета по проверке индексации.",
                 "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
@@ -1009,7 +1009,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Применение настроек Анализа сайта",
+                "summary": "Применение настроек Анализа сайта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1062,7 +1062,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение настроек аудита",
+                "summary": "Получение настроек аудита.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1115,8 +1115,8 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение результатов проверок радара",
-                "description": "Отчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)",
+                "summary": "Получение результатов проверок радара.",
+                "description": "Отчет генерируется на основе объектов urls.\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1172,7 +1172,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Получение истории транзакций",
+                "summary": "Получение истории транзакций.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1233,7 +1233,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Получение информации о балансе",
+                "summary": "Получение информации о балансе.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1286,7 +1286,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
-                "summary": "Получение данных для графика отчета",
+                "summary": "Получение данных для графика отчета.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1342,7 +1342,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
-                "summary": "Получить список оплаченных отчетов",
+                "summary": "Получить список оплаченных отчетов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1395,7 +1395,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
-                "summary": "Получение данных для отчета",
+                "summary": "Получение данных для отчета.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1451,7 +1451,7 @@
                 "tags": [
                     "KeywordsAi_2"
                 ],
-                "summary": "Добавление групп",
+                "summary": "Добавление групп.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1509,7 +1509,7 @@
                 "tags": [
                     "KeywordsAi_2"
                 ],
-                "summary": "Удаление групп",
+                "summary": "Удаление групп.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1567,7 +1567,7 @@
                 "tags": [
                     "KeywordsAi_2"
                 ],
-                "summary": "Получение списка групп проекта",
+                "summary": "Получение списка групп проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1628,7 +1628,7 @@
                 "tags": [
                     "KeywordsAi_2"
                 ],
-                "summary": "Удаление AI-запросов",
+                "summary": "Удаление AI-запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1686,7 +1686,7 @@
                 "tags": [
                     "KeywordsAi_2"
                 ],
-                "summary": "Получение списка AI-запросов",
+                "summary": "Получение списка AI-запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1747,7 +1747,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Добавление папки",
+                "summary": "Добавление папки.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1800,7 +1800,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Удаление папок",
+                "summary": "Удаление папок.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1858,7 +1858,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение списка папок проекта",
+                "summary": "Получение списка папок проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1919,7 +1919,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Добавление групп",
+                "summary": "Добавление групп.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1977,7 +1977,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Удаление групп",
+                "summary": "Удаление групп.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2035,7 +2035,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение списка групп проекта",
+                "summary": "Получение списка групп проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2096,7 +2096,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Добавление запроса",
+                "summary": "Добавление запроса.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2149,7 +2149,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Удаление запросов",
+                "summary": "Удаление запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2207,7 +2207,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение списка запросов проекта",
+                "summary": "Получение списка запросов проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2268,7 +2268,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение данных магнита по интеграции",
+                "summary": "Получение данных магнита по интеграции.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2324,7 +2324,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Получение компании пользователя, через которых, были совершены платежи",
+                "summary": "Получение компании пользователя, через которых, были совершены платежи.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2377,7 +2377,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Изменение платежных реквизитов тарифа",
+                "summary": "Изменение платежных реквизитов тарифа.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2430,8 +2430,8 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Изменения подписки сейчас",
-                "description": "Реализует две взаимоисключающие стратегии:\n\n- Проведение доплаты по текущей подписке\n- Остановка текущей подписки и создание новой\n   - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку\n   - После оплаты новой подписки действующая подписка будет досрочно завершена\n\nВыбор стратегии зависит от типа управления подпиской",
+                "summary": "Изменения подписки сейчас.",
+                "description": "Реализует две взаимоисключающие стратегии:\n\n- Проведение доплаты по текущей подписке\n- Остановка текущей подписки и создание новой\n   - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку\n   - После оплаты новой подписки действующая подписка будет досрочно завершена\n\nВыбор стратегии зависит от типа управления подпиской.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2484,7 +2484,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Получение истории позиций по запросам",
+                "summary": "Получение истории позиций по запросам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2545,7 +2545,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Добавление ПС",
+                "summary": "Добавление ПС.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2598,7 +2598,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Удаление ПС",
+                "summary": "Удаление ПС.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2651,7 +2651,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Установка общих настроек проверки позиций проекта",
+                "summary": "Установка общих настроек проверки позиций проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2704,7 +2704,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Получение сводки по проверкам позиций",
+                "summary": "Получение сводки по проверкам позиций.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2765,7 +2765,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Добавление графика",
+                "summary": "Добавление графика.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2818,7 +2818,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Изменение настроек бренда проекта",
+                "summary": "Изменение настроек бренда проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2871,8 +2871,8 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Добавление конкурента",
-                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте",
+                "summary": "Добавление конкурента.",
+                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2925,7 +2925,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Удаление конкурентов",
+                "summary": "Удаление конкурентов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2978,7 +2978,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение списка конкурентов",
+                "summary": "Получение списка конкурентов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3031,7 +3031,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Добавление проекта",
+                "summary": "Добавление проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3084,7 +3084,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Удаление проектов",
+                "summary": "Удаление проектов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3142,7 +3142,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение списка проектов",
+                "summary": "Получение списка проектов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3203,7 +3203,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение списка задач",
+                "summary": "Получение списка задач.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3264,7 +3264,7 @@
                 "tags": [
                     "Snapshots_2"
                 ],
-                "summary": "Получение списка конкурентов",
+                "summary": "Получение списка конкурентов.",
                 "description": "Метод базируется на объекте keywords (доступны только фильтры)",
                 "requestBody": {
                     "content": {
@@ -3326,8 +3326,8 @@
                 "tags": [
                     "Snapshots_2"
                 ],
-                "summary": "Получение истории снимков выдачи",
-                "description": "Метод базируется на объекте keywords",
+                "summary": "Получение истории снимков выдачи.",
+                "description": "Метод базируется на объекте keywords.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3388,7 +3388,7 @@
                 "tags": [
                     "Tpvsr_2"
                 ],
-                "summary": "Получение статистики по ссылке",
+                "summary": "Получение статистики по ссылке.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3441,7 +3441,7 @@
                 "tags": [
                     "Tpvsr_2"
                 ],
-                "summary": "Изменение тегов",
+                "summary": "Изменение тегов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3494,7 +3494,7 @@
                 "tags": [
                     "Urls_2"
                 ],
-                "summary": "Изменение тегов",
+                "summary": "Изменение тегов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3552,7 +3552,7 @@
                 "tags": [
                     "Users_2"
                 ],
-                "summary": "Изменение параметров активного пользователя",
+                "summary": "Изменение параметров активного пользователя.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3605,7 +3605,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Отправка проектов на проверку ИИ-Трекера",
+                "summary": "Отправка проектов на проверку ИИ-Трекера.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3663,7 +3663,7 @@
                 "tags": [
                     "AiTracker_2"
                 ],
-                "summary": "Информация о стоимости проверки ИИ-Трекера",
+                "summary": "Информация о стоимости проверки ИИ-Трекера.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3783,7 +3783,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение проверенных css",
+                "summary": "Получение проверенных css.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3844,7 +3844,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение проверенных js",
+                "summary": "Получение проверенных js.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3905,7 +3905,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение проверенных ссылок",
+                "summary": "Получение проверенных ссылок.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3966,7 +3966,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение сводки о выполненном аудите",
+                "summary": "Получение сводки о выполненном аудите.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4027,7 +4027,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение сводки страницы",
+                "summary": "Получение сводки страницы.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4088,7 +4088,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение сводки индексации",
+                "summary": "Получение сводки индексации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4141,7 +4141,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение сводки радара",
+                "summary": "Получение сводки радара.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4194,7 +4194,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Получение сводки проведенных операций",
+                "summary": "Получение сводки проведенных операций.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4255,7 +4255,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
-                "summary": "Оплатить отчет",
+                "summary": "Оплатить отчет.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4308,7 +4308,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение календаря апдейтов",
+                "summary": "Получение календаря апдейтов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4361,7 +4361,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение истории шторма за период в 2 суток",
+                "summary": "Получение истории шторма за период в 2 суток.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4414,7 +4414,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение апдейтов",
+                "summary": "Получение апдейтов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4467,7 +4467,7 @@
                 "tags": [
                     "KeywordsAi_2"
                 ],
-                "summary": "Импорт AI-запросов",
+                "summary": "Импорт AI-запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4525,7 +4525,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Кластеризация по релевантной странице: проверки перед началом кластеризации",
+                "summary": "Кластеризация по релевантной странице: проверки перед началом кластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4578,7 +4578,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Кластеризация по целевой ссылке: проверки перед началом кластеризации",
+                "summary": "Кластеризация по целевой ссылке: проверки перед началом кластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4631,7 +4631,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение информации и предыдущей кластеризации",
+                "summary": "Получение информации и предыдущей кластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4684,7 +4684,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение обновленного процента завершения кластеризации",
+                "summary": "Получение обновленного процента завершения кластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4737,7 +4737,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение цены кластеризации",
+                "summary": "Получение цены кластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4790,7 +4790,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение цены перекластеризации",
+                "summary": "Получение цены перекластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4843,7 +4843,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Запуск кластеризации",
+                "summary": "Запуск кластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4896,7 +4896,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Запуск перекластеризации",
+                "summary": "Запуск перекластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4949,7 +4949,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Постановка задачи на подбор запросов",
+                "summary": "Постановка задачи на подбор запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5002,7 +5002,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение стоимости подбора запросов",
+                "summary": "Получение стоимости подбора запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5055,7 +5055,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Перемещение папок",
+                "summary": "Перемещение папок.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5113,7 +5113,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Переименовывание папок",
+                "summary": "Переименовывание папок.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5171,7 +5171,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Восстановление папок проекта",
+                "summary": "Восстановление папок проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5229,7 +5229,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Перемещение группы",
+                "summary": "Перемещение группы.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5287,7 +5287,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение статуса активности группы",
+                "summary": "Изменение статуса активности группы.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5345,7 +5345,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Переименовывание группы",
+                "summary": "Переименовывание группы.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5403,8 +5403,8 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение сортировки групп",
-                "description": "Не оптимизировано для работы с большим числом групп, дат и регионов",
+                "summary": "Изменение сортировки групп.",
+                "description": "Не оптимизировано для работы с большим числом групп, дат и регионов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5462,7 +5462,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Восстановление группы из корзины",
+                "summary": "Восстановление группы из корзины.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5552,7 +5552,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Импорт запросов",
+                "summary": "Импорт запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5610,7 +5610,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Перемещение запросов",
+                "summary": "Перемещение запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5668,7 +5668,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Переименование запроса",
+                "summary": "Переименование запроса.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5726,8 +5726,8 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение сортировки запросов",
-                "description": "Можно сортировать в пределах одной группы или всего проекта",
+                "summary": "Изменение сортировки запросов.",
+                "description": "Можно сортировать в пределах одной группы или всего проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5785,7 +5785,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение тегов запросов",
+                "summary": "Изменение тегов запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5843,7 +5843,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Изменение целевой ссылки запросов",
+                "summary": "Изменение целевой ссылки запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5901,7 +5901,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Восстановление запросов из корзины",
+                "summary": "Восстановление запросов из корзины.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5959,7 +5959,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Экспорт данных магнита",
+                "summary": "Экспорт данных магнита.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5991,7 +5991,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Импорт данных магнита",
+                "summary": "Импорт данных магнита.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6047,7 +6047,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Удаление неявных дублей по ключевым фразам",
+                "summary": "Удаление неявных дублей по ключевым фразам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6100,7 +6100,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Постановка задачи на проверку частоты запросов",
+                "summary": "Постановка задачи на проверку частоты запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6158,7 +6158,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Информация о стоимости запуска проверки позиций по проектам",
+                "summary": "Информация о стоимости запуска проверки позиций по проектам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6216,7 +6216,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Управление приостановкой/возобновлением рекуррентных платежей",
+                "summary": "Управление приостановкой/возобновлением рекуррентных платежей.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6269,8 +6269,8 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Изменения подписки на следующий расчетный период",
-                "description": "Изменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки",
+                "summary": "Изменения подписки на следующий расчетный период.",
+                "description": "Изменение доступно только в рамках одной платежной системы.\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6323,7 +6323,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Отписка от тарифа, оплаченного картой",
+                "summary": "Отписка от тарифа, оплаченного картой.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6376,7 +6376,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Смена тарифа со следующего месяца",
+                "summary": "Смена тарифа со следующего месяца.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6429,7 +6429,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Отправка проектов на проверку позиций",
+                "summary": "Отправка проектов на проверку позиций.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6487,7 +6487,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Информация о стоимости запуска проверки позиций по проектам",
+                "summary": "Информация о стоимости запуска проверки позиций по проектам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6545,7 +6545,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Включение/выключение ПС",
+                "summary": "Включение/выключение ПС.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6598,7 +6598,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Добавление региона",
+                "summary": "Добавление региона.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6651,7 +6651,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Удаление региона",
+                "summary": "Удаление региона.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6704,7 +6704,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Изменение региона",
+                "summary": "Изменение региона.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6757,7 +6757,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Настройка сортировки ПС",
+                "summary": "Настройка сортировки ПС.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6810,7 +6810,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Получение данных сводки для отображения графика",
+                "summary": "Получение данных сводки для отображения графика.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6871,7 +6871,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Изменение настроек бренда",
+                "summary": "Изменение настроек бренда.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6977,7 +6977,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Установка имени конкурента",
+                "summary": "Установка имени конкурента.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7030,7 +7030,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Включение/выключение конкурентов",
+                "summary": "Включение/выключение конкурентов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7083,7 +7083,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Копирование проекта",
+                "summary": "Копирование проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7136,7 +7136,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Настройка избранных проектов",
+                "summary": "Настройка избранных проектов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7247,7 +7247,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Установка имени проекта",
+                "summary": "Установка имени проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7300,7 +7300,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Редактирование \"on\" проектов",
+                "summary": "Редактирование \"on\" проектов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7358,7 +7358,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Изменение сортировки проектов",
+                "summary": "Изменение сортировки проектов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7416,7 +7416,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Редактирование тегов проектов",
+                "summary": "Редактирование тегов проектов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7469,7 +7469,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Создание задачи на индексацию",
+                "summary": "Создание задачи на индексацию.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7522,7 +7522,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Создание задачи на проверку релевантности",
+                "summary": "Создание задачи на проверку релевантности.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7575,7 +7575,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Создание задачи на проверку частоты",
+                "summary": "Создание задачи на проверку частоты.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7628,7 +7628,7 @@
                 "tags": [
                     "System_2"
                 ],
-                "summary": "Получение регионов для поисковиков с последующим кэшированием для Get запросов",
+                "summary": "Получение регионов для поисковиков с последующим кэшированием для Get запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7684,7 +7684,7 @@
                 "tags": [
                     "Users_2"
                 ],
-                "summary": "Получение пути на аватар пользователя от корня сайта",
+                "summary": "Получение пути на аватар пользователя от корня сайта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7737,7 +7737,7 @@
                 "tags": [
                     "Users_2"
                 ],
-                "summary": "Изменение валюты пользователя",
+                "summary": "Изменение валюты пользователя.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7790,7 +7790,7 @@
                 "tags": [
                     "Users_2"
                 ],
-                "summary": "Изменение языка",
+                "summary": "Изменение языка.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7843,7 +7843,7 @@
                 "tags": [
                     "Users_2"
                 ],
-                "summary": "Изменение временной зоны",
+                "summary": "Изменение временной зоны.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7896,7 +7896,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Запуск проверки аудита",
+                "summary": "Запуск проверки аудита.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -7954,7 +7954,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Информация о стоимости запуска аудита по проектам",
+                "summary": "Информация о стоимости запуска аудита по проектам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8012,7 +8012,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Отправка проектов на проверку индексации",
+                "summary": "Отправка проектов на проверку индексации.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8070,7 +8070,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Информация о стоимости запуска индексации по проектам",
+                "summary": "Информация о стоимости запуска индексации по проектам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8128,7 +8128,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Отправка проектов на проверку карты сайта",
+                "summary": "Отправка проектов на проверку карты сайта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8186,7 +8186,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Информация о стоимости запуска индексации по проектам",
+                "summary": "Информация о стоимости запуска индексации по проектам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8244,7 +8244,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Отправка проектов на проверку радара",
+                "summary": "Отправка проектов на проверку радара.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8302,7 +8302,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Информация о стоимости запуска индексации по проектам",
+                "summary": "Информация о стоимости запуска индексации по проектам.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8466,7 +8466,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение календаря текстовых апдейтов",
+                "summary": "Получение календаря текстовых апдейтов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8519,7 +8519,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Копирование запросов в другой проект",
+                "summary": "Копирование запросов в другой проект.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8572,7 +8572,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Отправка проектов на проверку релевантности",
+                "summary": "Отправка проектов на проверку релевантности.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8630,7 +8630,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Информация о стоимости проверки релевантности",
+                "summary": "Информация о стоимости проверки релевантности.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8774,7 +8774,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Настройка сортировки регионов",
+                "summary": "Настройка сортировки регионов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8827,7 +8827,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение цены проверки индексации задачи без создания проекта",
+                "summary": "Получение цены проверки индексации задачи без создания проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8880,7 +8880,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Создание задачи на сбор запросов",
+                "summary": "Создание задачи на сбор запросов.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8933,7 +8933,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение цены проверки релевантности задачи без создания проекта",
+                "summary": "Получение цены проверки релевантности задачи без создания проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8986,7 +8986,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение цены проверки частоты задачи без создания проекта",
+                "summary": "Получение цены проверки частоты задачи без создания проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -9039,7 +9039,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение цены сбора запросов без создания проекта",
+                "summary": "Получение цены сбора запросов без создания проекта.",
                 "requestBody": {
                     "content": {
                         "application/json": {

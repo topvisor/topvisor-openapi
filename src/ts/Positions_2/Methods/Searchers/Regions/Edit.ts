@@ -7,27 +7,27 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение региона */
+        /** Изменение региона. */
         "Positions_2.Methods.Searchers.Regions.Edit": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
-            /** Регион, который требуется изменить */
+            /** Регион, который требуется изменить. */
             region_index: number;
             /**
-             * Язык региона
-             * @description Для разных ПС список языков разный
+             * Язык региона.
+             * @description Для разных ПС список языков разный.
              */
             region_lang?: string | null;
-            /** Устройство региона */
+            /** Устройство региона. */
             region_device?: unknown;
             /**
-             * Глубина региона
+             * Глубина региона.
              * @description - 1-3 для Яндекса (ПК)
              *     - 1-10 для Google
              *     - 1-3 для GooglePlay
              */
             region_depth?: number | null;
-            /** Включен */
+            /** Включен. */
             enabled?: boolean | null;
             /**
              * Список фильтров по полям объекта

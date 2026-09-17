@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип связи запросов с лидером
+         * Тип связи запросов с лидером.
          * @enum {string}
          */
         "Competitors_2.Types.ByKeyword.Table.Keywords.TypeVS": "common" | "competitor" | "exclusive_competitor";

@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка AI-запросов */
+        /** Получение списка AI-запросов. */
         "KeywordsAi_2.Methods.Keywords.Get": {
-            /** При фильтрации по ID папок также искать в подпапках */
+            /** При фильтрации по ID папок также искать в подпапках. */
             group_folder_id_depth?: boolean;
-            /** Показывать удаленные запросы */
+            /** Показывать удаленные запросы. */
             show_trash?: boolean;
             /** ID проекта */
             project_id: number;

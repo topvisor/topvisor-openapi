@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../Schedule_2/Types/Day.json#/components/schemas/Schedule_2.Types.Day"
                 },
-                "title": "Дни в расписании"
+                "title": "Дни в расписании."
             }
         }
     }

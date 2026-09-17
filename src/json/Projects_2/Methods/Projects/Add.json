@@ -24,7 +24,7 @@
                         "type": "string"
                     },
                     "tags": {
-                        "title": "enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "title": "Enum(1..10) tags - теги проекта (по умолчанию - [1])",
                         "nullable": true,
                         "default": [
                             1
@@ -32,17 +32,17 @@
                         "type": "array"
                     },
                     "folder_id": {
-                        "title": "Id папки, к которой будет привязан проект",
+                        "title": "Id папки, к которой будет привязан проект.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "on": {
-                        "title": "Активность проекта",
+                        "title": "Активность проекта.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "is_task": {
-                        "title": "Является ли проект задачей",
+                        "title": "Является ли проект задачей.",
                         "nullable": true,
                         "type": "boolean"
                     }
@@ -50,7 +50,7 @@
                 "required": [
                     "url"
                 ],
-                "title": "Добавление проекта"
+                "title": "Добавление проекта."
             },
             "Projects_2.Methods.Projects.Add.Exec": {
                 "nullable": true

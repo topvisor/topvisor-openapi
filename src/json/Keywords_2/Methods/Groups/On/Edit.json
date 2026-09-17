@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "on": {
-                        "title": "Статус активности",
+                        "title": "Статус активности.",
                         "type": "boolean"
                     },
                     "show_trash": {
-                        "title": "Учитывать ли удаленные группы",
+                        "title": "Учитывать ли удаленные группы.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -38,7 +38,7 @@
                     "on",
                     "project_id"
                 ],
-                "title": "Изменение статуса активности группы"
+                "title": "Изменение статуса активности группы."
             },
             "Keywords_2.Methods.Groups.On.Edit.Exec": {
                 "nullable": true,

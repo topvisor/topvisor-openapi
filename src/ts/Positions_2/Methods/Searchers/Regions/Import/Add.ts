@@ -9,15 +9,15 @@ export interface components {
     schemas: {
         /** Импорт регионов (CSV) */
         "Positions_2.Methods.Searchers.Regions.Import.Add": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
             /**
-             * Массив регионов в формате CSV
-             * @description array regions - массив csv строк
-             *     file(csv) regions - файл с содержимым для импорта в формат CSV
+             * Массив регионов в формате CSV.
+             * @description Array regions - массив csv строк
+             *     File(csv) regions - файл с содержимым для импорта в формат CSV
              *     - нельзя передавать regions одновременно в виде массива и в виде файла
              *
-             *     формат csv (от 2 до 6 столбцов):
+             *     Формат csv (от 2 до 6 столбцов):
              *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
              */
             regions?: unknown;

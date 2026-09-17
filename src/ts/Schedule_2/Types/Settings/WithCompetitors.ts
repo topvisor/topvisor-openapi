@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * В каком формате отправить проект и конкурентов
+         * В каком формате отправить проект и конкурентов.
          * @enum {integer}
          */
         "Schedule_2.Types.Settings.WithCompetitors": 0 | 1 | 2;

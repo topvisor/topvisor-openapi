@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "Id проекта",
+                        "title": "Id проекта.",
                         "type": "integer"
                     },
                     "searchers_keys": {
-                        "title": "Ключи ПС",
+                        "title": "Ключи ПС.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -38,7 +38,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Настройка сортировки ПС"
+                "title": "Настройка сортировки ПС."
             },
             "Positions_2.Methods.Searchers.Sort.Edit.Exec": {
                 "nullable": true

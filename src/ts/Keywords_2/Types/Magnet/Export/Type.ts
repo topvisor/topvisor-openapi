@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат экспорта данных
+         * Формат экспорта данных.
          * @enum {string}
          */
         "Keywords_2.Types.Magnet.Export.Type": "csv";

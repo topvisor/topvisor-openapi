@@ -29,7 +29,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Удаление групп"
+                "title": "Удаление групп."
             },
             "KeywordsAi_2.Methods.Groups.Del.Exec": {
                 "nullable": true,

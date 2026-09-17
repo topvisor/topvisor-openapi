@@ -11,17 +11,17 @@
                 "type": "object",
                 "properties": {
                     "id": {
-                        "title": "ID конкурента",
+                        "title": "ID конкурента.",
                         "type": "integer"
                     },
                     "name": {
-                        "title": "Имя бренда",
-                        "description": "Участвует в поиске в ответе ИИ",
+                        "title": "Имя бренда.",
+                        "description": "Участвует в поиске в ответе ИИ.",
                         "nullable": true,
                         "type": "string"
                     },
                     "aliases": {
-                        "title": "Дополнительные имена бренда",
+                        "title": "Дополнительные имена бренда.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -38,10 +38,10 @@
                     "id",
                     "project_id"
                 ],
-                "title": "Изменение настроек бренда"
+                "title": "Изменение настроек бренда."
             },
             "Projects_2.Methods.Competitors.Brand.Edit.Exec": {
-                "title": "Сохранить настройки бренда",
+                "title": "Сохранить настройки бренда.",
                 "type": "integer"
             }
         }

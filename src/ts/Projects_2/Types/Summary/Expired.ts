@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Состояние кеша сводки
-         * @description Кеш сводки не должен сбрасываться в момент выполнения проверки
+         * Состояние кеша сводки.
+         * @description Кеш сводки не должен сбрасываться в момент выполнения проверки.
          * @enum {integer}
          */
         "Projects_2.Types.Summary.Expired": 0 | 1 | 2;

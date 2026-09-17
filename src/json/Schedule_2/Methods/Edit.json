@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "schedule": {
-                        "title": "Строки расписания с периодами времени и днями запуска",
+                        "title": "Строки расписания с периодами времени и днями запуска.",
                         "allOf": [
                             {
                                 "$ref": "../../Schedule_2/Types/Schedule.json#/components/schemas/Schedule_2.Types.Schedule"
@@ -19,7 +19,7 @@
                         ]
                     },
                     "type": {
-                        "title": "Тип расписания",
+                        "title": "Тип расписания.",
                         "allOf": [
                             {
                                 "$ref": "../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
@@ -27,7 +27,7 @@
                         ]
                     },
                     "target_id": {
-                        "title": "Id объекта, к которому будет привязано расписание",
+                        "title": "Id объекта, к которому будет привязано расписание.",
                         "type": "integer"
                     }
                 },
@@ -36,7 +36,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Привязать расписание к объекту"
+                "title": "Привязать расписание к объекту."
             },
             "Schedule_2.Methods.Edit.Exec": {
                 "nullable": true,

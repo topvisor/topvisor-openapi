@@ -32,7 +32,7 @@
                 "required": [
                     "max_pages"
                 ],
-                "title": "Информация о стоимости запуска индексации по проектам"
+                "title": "Информация о стоимости запуска индексации по проектам."
             },
             "Audit_2.Methods.Sitemap.Checker.Price.Get.Exec": {
                 "type": "object",

@@ -54,7 +54,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение истории транзакций"
+                "title": "Получение истории транзакций."
             },
             "Bank_2.Methods.History.Get.Exec": {
                 "nullable": true

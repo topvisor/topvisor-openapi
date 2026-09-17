@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Перемещение папок */
+        /** Перемещение папок. */
         "Keywords_2.Methods.Folders.Move.Edit": {
-            /** Переместить к указанной папке */
+            /** Переместить к указанной папке. */
             to_id?: number;
             /** @default in */
             to_type?: import('../../../Types/Folders/ToType.ts').components['schemas']['Keywords_2.Types.Folders.ToType'];

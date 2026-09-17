@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип группировки
+         * Тип группировки.
          * @enum {integer}
          */
         "Projects_2.Types.Analytics.Base": 1 | 11 | 13 | 2 | 3 | 6 | 4 | 5 | 12;

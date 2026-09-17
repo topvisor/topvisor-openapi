@@ -7,15 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории шторма за период в 2 суток */
+        /** Получение истории шторма за период в 2 суток. */
         "Content_2.Methods.Apometr.History.Get": {
-            /** Индекс региона */
+            /** Индекс региона. */
             region_index?: number | null;
             searcher_key?: unknown;
-            /** Ключ региона */
+            /** Ключ региона. */
             region_key?: number;
             /**
-             * Язык региона
+             * Язык региона.
              * @default ru
              */
             region_lang?: string;
@@ -25,7 +25,7 @@ export interface components {
              * @description Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.
              */
             timestamp?: number | null;
-            /** Вернуть только средние значения по всем тематикам */
+            /** Вернуть только средние значения по всем тематикам. */
             avg?: boolean;
         };
         "Content_2.Methods.Apometr.History.Get.Exec": ({

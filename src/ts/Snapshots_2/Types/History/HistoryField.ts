@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Поле с результатом проверки для отчета истории проверок в снимках
+         * Поле с результатом проверки для отчета истории проверок в снимках.
          * @enum {string}
          */
         "Snapshots_2.Types.History.HistoryField": "url" | "domain" | "snippet_title" | "snippet_body" | "snippet_ext";

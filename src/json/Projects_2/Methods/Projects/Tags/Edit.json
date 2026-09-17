@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "tags": {
-                        "title": "enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "title": "Enum(1..10) tags - теги проекта (по умолчанию - [1])",
                         "nullable": true,
                         "default": [
                             1
@@ -19,14 +19,14 @@
                         "type": "array"
                     },
                     "id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },
                 "required": [
                     "id"
                 ],
-                "title": "Редактирование тегов проектов"
+                "title": "Редактирование тегов проектов."
             },
             "Projects_2.Methods.Projects.Tags.Edit.Exec": {
                 "nullable": true,

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Id поисковых системы для проверки позиций */
+        /** Id поисковых системы для проверки позиций. */
         "Positions_2.Types.SearchersKeys": unknown[];
     };
     responses: never;

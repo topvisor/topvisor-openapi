@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Применение настроек Анализа сайта */
+        /** Применение настроек Анализа сайта. */
         "Audit_2.Methods.Settings.Edit": {
             /**
              * User-Agent (аудит)
-             * @description Можно указать id устройства
+             * @description Можно указать id устройства.
              */
             audit_user_agent?: string | null;
             /** Сохранять куки между запросами (аудит) */
@@ -42,7 +42,7 @@ export interface components {
             indexing_searchers_keys?: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'] | null;
             /**
              * User-Agent (радар)
-             * @description Можно указать id устройства
+             * @description Можно указать id устройства.
              */
             watcher_user_agent?: string | null;
             watcher_max_redirects?: number | null;
@@ -50,7 +50,7 @@ export interface components {
             watcher_types?: import('../../Types/Settings/WatcherTypes.ts').components['schemas']['Audit_2.Types.Settings.WatcherTypes'] | null;
             /**
              * Регулярное выражение для сбора контента (радар)
-             * @description Если не указано, будут ипользоваться теги разметки
+             * @description Если не указано, будут ипользоваться теги разметки.
              */
             watcher_regexp?: import('../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
             /** Вырезать из кода страницы javascript (радар) */
@@ -60,14 +60,14 @@ export interface components {
             /** Дополнитлеьные cookies (радар) */
             watcher_cookies?: string | null;
             server_location?: import('../../Types/Settings/ServerLocation.ts').components['schemas']['Audit_2.Types.Settings.ServerLocation'] | null;
-            /** Учитывать ли поддомены */
+            /** Учитывать ли поддомены. */
             audit_scan_subdomains?: boolean | null;
             /** Игнорировать URL (Ресурсы) */
             audit_scan_ignore_urls?: string | null;
             /** ID проекта */
             project_id: number;
         };
-        /** Количество применных настроек */
+        /** Количество применных настроек. */
         "Audit_2.Methods.Settings.Edit.Exec": number | null;
     };
     responses: never;

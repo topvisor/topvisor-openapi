@@ -18,12 +18,12 @@
                         ]
                     },
                     "method": {
-                        "title": "Метод источника данных",
-                        "description": "Для `webmaster` принимает `monitoring` или `popular`, для всех остальных - запрещен",
+                        "title": "Метод источника данных.",
+                        "description": "Для `webmaster` принимает `monitoring` или `popular`, для всех остальных - запрещен.",
                         "type": "string"
                     },
                     "period": {
-                        "title": "Период дат для получения данных",
+                        "title": "Период дат для получения данных.",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
@@ -31,7 +31,7 @@
                         ]
                     },
                     "webmaster_monitoring_path": {
-                        "title": "Поиск по пути вебмастера",
+                        "title": "Поиск по пути вебмастера.",
                         "type": "string"
                     },
                     "project_id": {
@@ -76,7 +76,7 @@
                     "period",
                     "project_id"
                 ],
-                "title": "Получение данных магнита по интеграции"
+                "title": "Получение данных магнита по интеграции."
             },
             "Keywords_2.Methods.Magnet.Get.Exec": {
                 "type": "object",

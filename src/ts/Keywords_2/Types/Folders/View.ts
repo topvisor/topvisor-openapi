@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Структура отображения папок
+         * Структура отображения папок.
          * @enum {string}
          */
         "Keywords_2.Types.Folders.View": "tree" | "flat";

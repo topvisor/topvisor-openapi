@@ -7,15 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Редактирование ссылки */
+        /** Редактирование ссылки. */
         "Tpvsr_2.Methods.Edit": {
-            /** Избранная ссылка */
+            /** Избранная ссылка. */
             favorite?: boolean | null;
-            /** Удаленная ссылка */
+            /** Удаленная ссылка. */
             deleted?: boolean | null;
-            /** Заголовок ссылки */
+            /** Заголовок ссылки. */
             title?: string | null;
-            /** Хэш ссылки */
+            /** Хэш ссылки. */
             hash?: string | null;
             /**
              * Список фильтров по полям объекта

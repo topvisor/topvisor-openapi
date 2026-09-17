@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тэг для установки
+         * Тэг для установки.
          * @enum {integer}
          */
         "Tpvsr_2.Types.Tag": 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;

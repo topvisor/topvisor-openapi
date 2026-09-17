@@ -7,13 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение настроек аудита */
+        /** Получение настроек аудита. */
         "Audit_2.Methods.Settings.Get": {
             fields: import('../../Types/Settings/FieldNames.ts').components['schemas']['Audit_2.Types.Settings.FieldNames'];
             /** ID проекта */
             project_id: number;
         };
-        /** Настройки аудита */
+        /** Настройки аудита. */
         "Audit_2.Methods.Settings.Get.Exec": unknown[] | null;
     };
     responses: never;

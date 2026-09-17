@@ -15,7 +15,7 @@
                         "type": "integer"
                     },
                     "query": {
-                        "title": "Url",
+                        "title": "Url.",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/UrlUTF.json#/components/schemas/TV.API.Types.UrlUTF"
@@ -23,7 +23,7 @@
                         ]
                     },
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -31,7 +31,7 @@
                         ]
                     },
                     "short_if_paid": {
-                        "title": "Не возвращать информацию кроме is_paymented, если отчет оплачен",
+                        "title": "Не возвращать информацию кроме is_paymented, если отчет оплачен.",
                         "type": "boolean"
                     },
                     "short_domains_info": {
@@ -44,7 +44,7 @@
                         "type": "integer"
                     },
                     "deleted": {
-                        "title": "Использовать удаленные отчеты",
+                        "title": "Использовать удаленные отчеты.",
                         "type": "boolean"
                     },
                     "strict_query": {
@@ -52,7 +52,7 @@
                         "type": "boolean"
                     },
                     "intersection": {
-                        "title": "Степень схожести конкурентов для сравнения",
+                        "title": "Степень схожести конкурентов для сравнения.",
                         "type": "number"
                     }
                 },

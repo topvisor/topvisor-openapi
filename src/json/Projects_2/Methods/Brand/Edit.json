@@ -11,18 +11,18 @@
                 "type": "object",
                 "properties": {
                     "description": {
-                        "title": "Описание бренда",
+                        "title": "Описание бренда.",
                         "nullable": true,
                         "type": "string"
                     },
                     "name": {
-                        "title": "Имя бренда",
-                        "description": "Участвует в поиске в ответе ИИ",
+                        "title": "Имя бренда.",
+                        "description": "Участвует в поиске в ответе ИИ.",
                         "nullable": true,
                         "type": "string"
                     },
                     "aliases": {
-                        "title": "Дополнительные имена бренда",
+                        "title": "Дополнительные имена бренда.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -38,10 +38,10 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек бренда проекта"
+                "title": "Изменение настроек бренда проекта."
             },
             "Projects_2.Methods.Brand.Edit.Exec": {
-                "title": "Сохранить настройки бренда",
+                "title": "Сохранить настройки бренда.",
                 "type": "integer"
             }
         }

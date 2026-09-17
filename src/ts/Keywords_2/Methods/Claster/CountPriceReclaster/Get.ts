@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации и предыдущей кластеризации */
+        /** Получение информации и предыдущей кластеризации. */
         "Keywords_2.Methods.Claster.CountPriceReclaster.Get": {
-            /** ID папки */
+            /** ID папки. */
             folder_id?: number;
-            /** Отображать сумму с учетом скидки */
+            /** Отображать сумму с учетом скидки. */
             apply_discount?: boolean | null;
             /** ID проекта */
             project_id: number;

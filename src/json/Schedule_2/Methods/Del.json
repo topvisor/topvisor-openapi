@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "title": "Тип расписания",
+                        "title": "Тип расписания.",
                         "allOf": [
                             {
                                 "$ref": "../../Schedule_2/Types/Type.json#/components/schemas/Schedule_2.Types.Type"
@@ -19,7 +19,7 @@
                         ]
                     },
                     "target_id": {
-                        "title": "Id объекта, к которому будет привязано расписание",
+                        "title": "Id объекта, к которому будет привязано расписание.",
                         "type": "integer"
                     }
                 },
@@ -27,7 +27,7 @@
                     "type",
                     "target_id"
                 ],
-                "title": "Удаление расписания"
+                "title": "Удаление расписания."
             },
             "Schedule_2.Methods.Del.Exec": {
                 "nullable": true,

@@ -11,12 +11,12 @@
                 "type": "object",
                 "properties": {
                     "folder_id_depth": {
-                        "title": "При фильтрации по ID папок также искать в дочерних папках",
+                        "title": "При фильтрации по ID папок также искать в дочерних папках.",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "show_trash": {
-                        "title": "Показать удаленные дочерние папки",
+                        "title": "Показать удаленные дочерние папки.",
                         "type": "integer"
                     },
                     "project_id": {
@@ -69,7 +69,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка групп проекта"
+                "title": "Получение списка групп проекта."
             },
             "KeywordsAi_2.Methods.Groups.Get.Exec": {
                 "nullable": true

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Список полей сортировки */
+        /** Список полей сортировки. */
         FieldsOrders: import('./FieldOrder.ts').components['schemas']['FieldOrder'][];
     };
     responses: never;

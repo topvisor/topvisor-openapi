@@ -8,17 +8,17 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Получение результатов проверок радара
-         * @description Отчет генерируется на основе объектов urls
+         * Получение результатов проверок радара.
+         * @description Отчет генерируется на основе объектов urls.
          *
          *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
          */
         "Audit_2.Methods.Watcher.Get": {
-            /** ID проверок в произвольном порядке */
+            /** ID проверок в произвольном порядке. */
             checks_ids?: unknown[] | null;
-            /** ID проверки начала диапазона */
+            /** ID проверки начала диапазона. */
             check_id1?: number | null;
-            /** ID проверки конца диапазона */
+            /** ID проверки конца диапазона. */
             check_id2?: number | null;
             /** @default 7 */
             type_range?: import('../../Types/Watcher/TypeRange.ts').components['schemas']['Audit_2.Types.Watcher.TypeRange'];
@@ -29,17 +29,17 @@ export interface components {
             count_ids?: number;
             watcher_type: import('../../Types/Watcher/Type.ts').components['schemas']['Audit_2.Types.Watcher.Type'];
             /**
-             * Выбор столбцов данных с результатами проверки
+             * Выбор столбцов данных с результатами проверки.
              * @default [
              *       "http_codes",
              *       "redirects"
              *     ]
              */
             watcher_fields?: unknown[];
-            /** Добавить в результат заголовки отчета */
+            /** Добавить в результат заголовки отчета. */
             show_headers?: boolean;
             show_diff?: import('../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
-            /** Добавить в результат количество проверок */
+            /** Добавить в результат количество проверок. */
             show_counts_watcher?: boolean;
             /** ID проекта */
             project_id: number;
@@ -82,7 +82,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Генерируемый на основе urls, список результатов проверок радара */
+        /** Генерируемый на основе urls, список результатов проверок радара. */
         "Audit_2.Methods.Watcher.Get.Exec": ({
             urls: {
                 id: number;

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка urls проекта */
+        /** Получение списка urls проекта. */
         "Urls_2.Methods.Get": {
             /** ID проекта */
             project_id: number;
@@ -58,7 +58,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Список urls проекта */
+        /** Список urls проекта. */
         "Urls_2.Methods.Get.Exec": unknown;
     };
     responses: never;

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "dates": {
-                        "title": "Произвольные даты без диапазона",
+                        "title": "Произвольные даты без диапазона.",
                         "type": "array"
                     },
                     "searcher_key": {
@@ -23,15 +23,15 @@
                         ]
                     },
                     "show_counts_changes": {
-                        "title": "Отобразить количество изменений",
+                        "title": "Отобразить количество изменений.",
                         "type": "boolean"
                     },
                     "show_counts_in_index": {
-                        "title": "Отобразить количество страниц в индексе",
+                        "title": "Отобразить количество страниц в индексе.",
                         "type": "boolean"
                     },
                     "show_counts_all": {
-                        "title": "Отобразить количество проверенных страниц",
+                        "title": "Отобразить количество проверенных страниц.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -54,10 +54,10 @@
                     "dates",
                     "project_id"
                 ],
-                "title": "Получение сводки индексации"
+                "title": "Получение сводки индексации."
             },
             "Audit_2.Methods.Indexing.Summary.Get.Exec": {
-                "title": "Сводка индексации",
+                "title": "Сводка индексации.",
                 "nullable": true,
                 "type": "array"
             }

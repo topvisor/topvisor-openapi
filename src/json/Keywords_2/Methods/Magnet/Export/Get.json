@@ -26,7 +26,7 @@
                         ]
                     },
                     "period": {
-                        "title": "Период для экспорта",
+                        "title": "Период для экспорта.",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
@@ -34,7 +34,7 @@
                         ]
                     },
                     "method": {
-                        "title": "Метод источника данных",
+                        "title": "Метод источника данных.",
                         "type": "string"
                     },
                     "project_id": {
@@ -79,7 +79,7 @@
                     "period",
                     "project_id"
                 ],
-                "title": "Экспорт данных магнита"
+                "title": "Экспорт данных магнита."
             },
             "Keywords_2.Methods.Magnet.Export.Get.Exec": {
                 "type": "never"

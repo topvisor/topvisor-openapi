@@ -11,21 +11,21 @@
                 "type": "object",
                 "properties": {
                     "models_keys": {
-                        "title": "Список моделей ИИ",
+                        "title": "Список моделей ИИ.",
                         "nullable": true
                     },
                     "context_lang": {
-                        "title": "Настройки контекста: Язык",
+                        "title": "Настройки контекста: Язык.",
                         "nullable": true,
                         "type": "string"
                     },
                     "context_location": {
-                        "title": "Настройки контекста: Регион",
+                        "title": "Настройки контекста: Регион.",
                         "nullable": true,
                         "type": "string"
                     },
                     "context_custom": {
-                        "title": "Пользовательский контекст",
+                        "title": "Пользовательский контекст.",
                         "nullable": true,
                         "type": "string"
                     },
@@ -37,8 +37,8 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение настроек ИИ-Трекера",
-                "description": "Для получения текущих настроек используйте: /get/projects_2/projects/"
+                "title": "Изменение настроек ИИ-Трекера.",
+                "description": "Для получения текущих настроек используйте: /get/projects_2/projects/."
             },
             "AiTracker_2.Methods.Settings.Edit.Exec": {
                 "type": "integer"

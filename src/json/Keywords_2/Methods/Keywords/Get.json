@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "group_folder_id_depth": {
-                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "title": "При фильтрации по ID папок также искать в подпапках.",
                         "type": "boolean"
                     },
                     "show_trash": {
-                        "title": "Показывать удаленные запросы",
+                        "title": "Показывать удаленные запросы.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -68,7 +68,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка запросов проекта"
+                "title": "Получение списка запросов проекта."
             },
             "Keywords_2.Methods.Keywords.Get.Exec": {
                 "nullable": true

@@ -7,18 +7,18 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Запуск кластеризации */
+        /** Запуск кластеризации. */
         "Keywords_2.Methods.Claster.Task.Add": {
             searcher_key: import('../../../Types/Claster/Task/SearcherKey.ts').components['schemas']['Keywords_2.Types.Claster.Task.SearcherKey'];
-            /** Ключ региона */
+            /** Ключ региона. */
             region_key: number;
-            /** Язык региона */
+            /** Язык региона. */
             region_lang: string;
             count: import('../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
             type?: import('../../../Types/Claster/Type.ts').components['schemas']['Keywords_2.Types.Claster.Type'];
-            /** Отправить письмо с результатами кластеризацию на почту */
+            /** Отправить письмо с результатами кластеризацию на почту. */
             send_email_csv?: boolean;
-            /** ID кластеризуемой папки */
+            /** ID кластеризуемой папки. */
             folder_id?: number;
             /** ID проекта */
             project_id: number;

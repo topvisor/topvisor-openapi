@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Местоположение сервера для выполнения задач инструментов аудита
+         * Местоположение сервера для выполнения задач инструментов аудита.
          * @enum {string}
          */
         "Audit_2.Types.Settings.ServerLocation": "EASTERN_EUROPE" | "WESTERN_EUROPE";

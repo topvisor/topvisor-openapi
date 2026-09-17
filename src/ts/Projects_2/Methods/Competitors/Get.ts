@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка конкурентов */
+        /** Получение списка конкурентов. */
         "Projects_2.Methods.Competitors.Get": {
             /**
              * @default [
@@ -18,14 +18,14 @@ export interface components {
              *     ]
              */
             fields?: string[];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
-            /** Вернуть ли в результате только включенных конкурентов */
+            /** Вернуть ли в результате только включенных конкурентов. */
             only_enabled?: boolean | null;
-            /** Включить ли в результат основной проект */
+            /** Включить ли в результат основной проект. */
             include_project?: boolean | null;
             /**
-             * Сервис, которому принадлежит набор конкурентов
+             * Сервис, которому принадлежит набор конкурентов.
              * @default positions
              */
             service_name?: import('../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];

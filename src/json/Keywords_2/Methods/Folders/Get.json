@@ -19,7 +19,7 @@
                         ]
                     },
                     "show_trash": {
-                        "title": "Показывать ли удаленные папки",
+                        "title": "Показывать ли удаленные папки.",
                         "type": "integer"
                     },
                     "project_id": {
@@ -62,7 +62,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка папок проекта"
+                "title": "Получение списка папок проекта."
             },
             "Keywords_2.Methods.Folders.Get.Exec": {
                 "type": "array",

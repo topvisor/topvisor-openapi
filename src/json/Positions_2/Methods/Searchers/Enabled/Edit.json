@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "Id проекта",
+                        "title": "Id проекта.",
                         "type": "integer"
                     },
                     "searcher_key": {
-                        "title": "Ключ ПС"
+                        "title": "Ключ ПС."
                     },
                     "enabled": {
                         "title": "- 1 - включить",
@@ -39,7 +39,7 @@
                     "searcher_key",
                     "enabled"
                 ],
-                "title": "Включение/выключение ПС"
+                "title": "Включение/выключение ПС."
             },
             "Positions_2.Methods.Searchers.Enabled.Edit.Exec": {
                 "nullable": true,

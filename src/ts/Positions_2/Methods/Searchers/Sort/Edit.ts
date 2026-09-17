@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Настройка сортировки ПС */
+        /** Настройка сортировки ПС. */
         "Positions_2.Methods.Searchers.Sort.Edit": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
-            /** Ключи ПС */
+            /** Ключи ПС. */
             searchers_keys?: import('../../../Types/SearchersKeys.ts').components['schemas']['Positions_2.Types.SearchersKeys'] | null;
             /**
              * Список фильтров по полям объекта

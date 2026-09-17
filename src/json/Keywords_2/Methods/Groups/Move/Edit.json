@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "to_id": {
-                        "title": "Переместить к указанному объекту",
+                        "title": "Переместить к указанному объекту.",
                         "type": "integer"
                     },
                     "to_type": {
@@ -41,7 +41,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Перемещение группы"
+                "title": "Перемещение группы."
             },
             "Keywords_2.Methods.Groups.Move.Edit.Exec": {
                 "nullable": true,

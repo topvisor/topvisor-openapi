@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Ключ поисковика для кластеризации
+         * Ключ поисковика для кластеризации.
          * @enum {integer}
          */
         "Keywords_2.Types.Claster.Task.SearcherKey": 0 | 1;

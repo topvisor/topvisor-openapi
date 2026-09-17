@@ -11,13 +11,13 @@ export interface components {
         "Competitors_2.Methods.Orders.ByKeyword.Info.Get": {
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
-            /** Ключевая фраза */
+            /** Ключевая фраза. */
             query: string;
-            /** Дата проверки */
+            /** Дата проверки. */
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /** Степень схожести конкурентов для сравнения */
+            /** Степень схожести конкурентов для сравнения. */
             intersection: number;
-            /** Не возвращать информацию кроме is_paymented и options, если отчет оплачен */
+            /** Не возвращать информацию кроме is_paymented и options, если отчет оплачен. */
             short_if_paid?: boolean;
             /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads) */
             short_domains_info?: boolean;
@@ -26,9 +26,9 @@ export interface components {
              * @default 1
              */
             apply_discount?: number;
-            /** Использовать удаленные отчеты */
+            /** Использовать удаленные отчеты. */
             deleted?: boolean;
-            /** Получить краткую статистику, только количество конкурентов */
+            /** Получить краткую статистику, только количество конкурентов. */
             short?: boolean;
         };
         "Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec": unknown[];

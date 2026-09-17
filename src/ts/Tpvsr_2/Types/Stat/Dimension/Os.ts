@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Операционная система
+         * Операционная система.
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Os": "Android" | "iOS" | "WP" | "Windows" | "Macintosh" | "Linux" | "Other";

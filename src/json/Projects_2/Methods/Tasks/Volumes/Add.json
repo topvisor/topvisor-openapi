@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Массив ключевых запросов в формате CSV",
+                        "title": "Массив ключевых запросов в формате CSV.",
                         "type": "array"
                     },
                     "qualifiers": {
@@ -27,7 +27,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Создание задачи на проверку частоты"
+                "title": "Создание задачи на проверку частоты."
             },
             "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
                 "type": "integer"

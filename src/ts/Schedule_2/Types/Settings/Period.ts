@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Период отправки отчета
+         * Период отправки отчета.
          * @enum {string}
          */
         "Schedule_2.Types.Settings.Period": "none" | "month" | "week" | "weekly";

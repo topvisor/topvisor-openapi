@@ -8,15 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Объект вызова модуля системы
-         * @description Используется для подготовки данных запроса к внутреннему API
+         * Объект вызова модуля системы.
+         * @description Используется для подготовки данных запроса к внутреннему API.
          */
         "System_2.Types.Calls.Call": {
-            /** Название модуля */
+            /** Название модуля. */
             module: string;
-            /** Название функции */
+            /** Название функции. */
             func: string;
-            /** Параметры вызова */
+            /** Параметры вызова. */
             data?: unknown[] | null;
             oper: import('../../../TV/API/Oper.ts').components['schemas']['TV.API.Oper'];
         };

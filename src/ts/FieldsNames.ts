@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Список имен полей */
+        /** Список имен полей. */
         FieldsNames: string[];
     };
     responses: never;

@@ -8,65 +8,65 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Получение отчета по проверке индексации
+         * Получение отчета по проверке индексации.
          * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
          */
         "Audit_2.Methods.Indexing.Get": {
-            /** Вернуть ли заголовки отчета */
+            /** Вернуть ли заголовки отчета. */
             show_headers?: boolean;
-            /** Вернуть ли даты проверок */
+            /** Вернуть ли даты проверок. */
             show_exists_dates?: boolean;
-            /** Вернуть ли суммарное количество страниц в индексе по URL */
+            /** Вернуть ли суммарное количество страниц в индексе по URL. */
             show_counts_indexing?: boolean;
             /**
-             * Фильтр по изменениям в указанной ПС в указанную дату
-             * @description Формат записи: `{{ date }}:{{ searcher_key }}`
+             * Фильтр по изменениям в указанной ПС в указанную дату.
+             * @description Формат записи: `{{ date }}:{{ searcher_key }}`.
              */
             filter_by_alert?: string;
             /**
-             * Список полей индексации, которые необходимо получить
-             * @description См. поля indexing_* в объекте Urls
+             * Список полей индексации, которые необходимо получить.
+             * @description См. поля indexing_* в объекте Urls.
              */
             history_fields?: import('../../Types/Indexing/History/HistoryFields.ts').components['schemas']['Audit_2.Types.Indexing.History.HistoryFields'] | null;
             searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
-            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
+            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`. */
             only_exists_by_date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** ID проекта */
             project_id: number;
             /**
-             * Произвольные даты без использования диапазона
+             * Произвольные даты без использования диапазона.
              * @description Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
              */
             dates?: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /**
-             * Тип диапазона дат
+             * Тип диапазона дат.
              * @default 2
              */
             type_range?: import('../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
             /**
-             * Дата начала диапазона
-             * @description Используется вместе с date2 для задания диапазона дат
+             * Дата начала диапазона.
+             * @description Используется вместе с date2 для задания диапазона дат.
              */
             date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
-             * Дата окончания диапазона
-             * @description Используется вместе с date1 для задания диапазона дат
+             * Дата окончания диапазона.
+             * @description Используется вместе с date1 для задания диапазона дат.
              */
             date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
-             * Количество дат в диапазоне
-             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             * Количество дат в диапазоне.
+             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля.
              *
-             *     Работает совместно с `type_range`
+             *     Работает совместно с `type_range`.
              * @default 31
              */
             count_dates?: number;
             /**
-             * Период в днях
+             * Период в днях.
              * @description Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
              *
-             *     Не более 31
+             *     Не более 31.
              * @default 7
              */
             period_days?: number;
@@ -109,7 +109,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Список URL с результатами проверок */
+        /** Список URL с результатами проверок. */
         "Audit_2.Methods.Indexing.Get.Exec": import('../../Objects/Indexing/History/Result/Result.ts').components['schemas']['Audit_2.Objects.Indexing.History.Result.Result'];
     };
     responses: never;

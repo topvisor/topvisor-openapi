@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сводки о выполненном аудите */
+        /** Получение сводки о выполненном аудите. */
         "Audit_2.Methods.Audit.Summary.Get": {
             /** Фильтр по состоянию сигнала (success, warning, error) */
             filter_check_type?: unknown[];
@@ -22,7 +22,7 @@ export interface components {
             fetch_style?: import('../../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
             /** ID проекта */
             project_id: number;
-            /** ID проверки аудита */
+            /** ID проверки аудита. */
             check_id: number;
             /**
              * Список полей объекта, которые надо вернуть в результате
@@ -64,7 +64,7 @@ export interface components {
             offset?: number;
         };
         /**
-         * Сводка о выполненном аудите
+         * Сводка о выполненном аудите.
          * @description Возвращает объект со сводкой по категориям, пример:
          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация

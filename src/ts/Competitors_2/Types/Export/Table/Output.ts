@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип экспортируемого файла
+         * Тип экспортируемого файла.
          * @enum {string}
          */
         "Competitors_2.Types.Export.Table.Output": "csv" | "csv_utf" | "xlsx";

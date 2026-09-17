@@ -9,21 +9,21 @@ export interface components {
     schemas: {
         /** Перемещение конкурента (сортировка) */
         "Projects_2.Methods.Competitors.Move.Edit": {
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
-            /** ID конкурента */
+            /** ID конкурента. */
             id: number;
-            /** Переместить к указанному конкуренту */
+            /** Переместить к указанному конкуренту. */
             to_id: number;
             /**
-             * Позиция перемещения
+             * Позиция перемещения.
              * @description - before
              *     - after
              * @default after
              */
             to_type?: string | null;
             /**
-             * Сервис, которому принадлежит набор конкурентов
+             * Сервис, которому принадлежит набор конкурентов.
              * @default positions
              */
             service_name?: import('../../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];

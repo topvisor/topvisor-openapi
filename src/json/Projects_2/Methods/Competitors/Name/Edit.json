@@ -11,15 +11,15 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "id": {
-                        "title": "ID конкурента",
+                        "title": "ID конкурента.",
                         "type": "integer"
                     },
                     "name": {
-                        "title": "Имя",
+                        "title": "Имя.",
                         "type": "string"
                     }
                 },
@@ -28,7 +28,7 @@
                     "id",
                     "name"
                 ],
-                "title": "Установка имени конкурента"
+                "title": "Установка имени конкурента."
             },
             "Projects_2.Methods.Competitors.Name.Edit.Exec": {
                 "type": "integer"

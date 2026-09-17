@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Фильтр по динамике запросов
+         * Фильтр по динамике запросов.
          * @enum {string}
          */
         "Positions_2.Types.History.FilterByDynamic": "<" | "=" | ">";

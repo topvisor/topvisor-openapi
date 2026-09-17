@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Операции для типа расписания
+         * Операции для типа расписания.
          * @enum {string}
          */
         "Schedule_2.Types.TypeMethod": "go" | "report";

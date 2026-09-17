@@ -11,12 +11,12 @@
                 "type": "object",
                 "properties": {
                     "code": {
-                        "title": "Код ошибки",
-                        "description": "Код ошибки 0 - deprecated",
+                        "title": "Код ошибки.",
+                        "description": "Код ошибки 0 - deprecated.",
                         "type": "integer"
                     },
                     "string": {
-                        "title": "Описание ошибки",
+                        "title": "Описание ошибки.",
                         "type": "string"
                     },
                     "detail": {
@@ -96,7 +96,7 @@
                     "code",
                     "string"
                 ],
-                "title": "Информация об ошибке"
+                "title": "Информация об ошибке."
             }
         }
     }

@@ -22,7 +22,7 @@
                         "type": "integer"
                     },
                     "query": {
-                        "title": "Ключевая фраза (или ее часть) / url",
+                        "title": "Ключевая фраза (или ее часть) / url.",
                         "type": "string"
                     },
                     "type": {
@@ -33,11 +33,11 @@
                         ]
                     },
                     "view": {
-                        "title": "Представление отчета",
+                        "title": "Представление отчета.",
                         "type": "string"
                     },
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -50,7 +50,7 @@
                         "type": "string"
                     },
                     "rel_vs": {
-                        "title": "Тип связи запросов между конкурентами",
+                        "title": "Тип связи запросов между конкурентами.",
                         "nullable": true,
                         "type": "string"
                     },
@@ -59,12 +59,12 @@
                         "type": "boolean"
                     },
                     "intersection": {
-                        "title": "Минимальная схожесть",
+                        "title": "Минимальная схожесть.",
                         "nullable": true,
                         "type": "number"
                     },
                     "func": {
-                        "title": "Название функции",
+                        "title": "Название функции.",
                         "default": "table",
                         "type": "string"
                     },
@@ -119,7 +119,7 @@
                     "view",
                     "date"
                 ],
-                "title": "Получение данных для отчета"
+                "title": "Получение данных для отчета."
             },
             "Competitors_2.Methods.Table.Get.Exec": {
                 "type": "array"

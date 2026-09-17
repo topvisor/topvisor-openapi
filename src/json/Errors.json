@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "Error.json#/components/schemas/Error"
                 },
-                "title": "Список ошибок"
+                "title": "Список ошибок."
             }
         }
     }

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Категория данных
+         * Категория данных.
          * @enum {string}
          */
         "System_2.Types.Properties.Property.TargetName": "mod_projects";

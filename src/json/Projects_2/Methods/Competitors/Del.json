@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "ids": {
-                        "title": "ID конкурентов",
+                        "title": "ID конкурентов.",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
@@ -27,7 +27,7 @@
                     "ids",
                     "project_id"
                 ],
-                "title": "Удаление конкурентов"
+                "title": "Удаление конкурентов."
             },
             "Projects_2.Methods.Competitors.Del.Exec": {
                 "type": "integer"

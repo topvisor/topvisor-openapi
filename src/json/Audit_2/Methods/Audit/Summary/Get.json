@@ -37,7 +37,7 @@
                         "type": "integer"
                     },
                     "check_id": {
-                        "title": "ID проверки аудита",
+                        "title": "ID проверки аудита.",
                         "type": "integer"
                     },
                     "fields": {
@@ -77,10 +77,10 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение сводки о выполненном аудите"
+                "title": "Получение сводки о выполненном аудите."
             },
             "Audit_2.Methods.Audit.Summary.Get.Exec": {
-                "title": "Сводка о выполненном аудите",
+                "title": "Сводка о выполненном аудите.",
                 "description": "Возвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях",
                 "nullable": true,
                 "type": "array",

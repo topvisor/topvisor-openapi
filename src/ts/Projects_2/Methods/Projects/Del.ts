@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление проектов */
+        /** Удаление проектов. */
         "Projects_2.Methods.Projects.Del": {
-            /** Является ли проект - задачей */
+            /** Является ли проект - задачей. */
             is_tasks?: boolean;
             /**
              * Список фильтров по полям объекта

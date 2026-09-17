@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип проверки радара
+         * Тип проверки радара.
          * @enum {string}
          */
         "Audit_2.Types.Watcher.Type": "http_codes" | "redirects" | "h1" | "title" | "description" | "content";

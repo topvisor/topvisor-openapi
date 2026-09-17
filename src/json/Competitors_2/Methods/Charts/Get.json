@@ -22,7 +22,7 @@
                         "type": "integer"
                     },
                     "query": {
-                        "title": "Ключевая фраза (или ее часть) / url",
+                        "title": "Ключевая фраза (или ее часть) / url.",
                         "type": "string"
                     },
                     "type": {
@@ -33,15 +33,15 @@
                         ]
                     },
                     "view": {
-                        "title": "Представление отчета",
+                        "title": "Представление отчета.",
                         "type": "string"
                     },
                     "chart_type": {
-                        "title": "Тип графика",
+                        "title": "Тип графика.",
                         "type": "string"
                     },
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -58,17 +58,17 @@
                         "type": "boolean"
                     },
                     "intersection": {
-                        "title": "Минимальная схожесть",
+                        "title": "Минимальная схожесть.",
                         "nullable": true,
                         "type": "number"
                     },
                     "func": {
-                        "title": "Название функции",
+                        "title": "Название функции.",
                         "default": "charts",
                         "type": "string"
                     },
                     "domains": {
-                        "title": "Домены",
+                        "title": "Домены.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -77,7 +77,7 @@
                         ]
                     },
                     "urls": {
-                        "title": "Urls адреса",
+                        "title": "Urls адреса.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -86,7 +86,7 @@
                         ]
                     },
                     "keywords_names": {
-                        "title": "Поисковые запросы",
+                        "title": "Поисковые запросы.",
                         "nullable": true,
                         "type": "array"
                     },
@@ -142,7 +142,7 @@
                     "chart_type",
                     "date"
                 ],
-                "title": "Получение данных для графика отчета"
+                "title": "Получение данных для графика отчета."
             },
             "Competitors_2.Methods.Charts.Get.Exec": {
                 "nullable": true,

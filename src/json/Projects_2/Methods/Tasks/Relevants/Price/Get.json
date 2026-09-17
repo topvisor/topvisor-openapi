@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Массив ключевых запросов в формате CSV",
+                        "title": "Массив ключевых запросов в формате CSV.",
                         "type": "array"
                     },
                     "qualifiers": {
@@ -26,7 +26,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение цены проверки релевантности задачи без создания проекта"
+                "title": "Получение цены проверки релевантности задачи без создания проекта."
             },
             "Projects_2.Methods.Tasks.Relevants.Price.Get.Exec": {
                 "type": "number"

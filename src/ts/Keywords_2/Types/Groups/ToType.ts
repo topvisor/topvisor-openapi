@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Куда добавить группу
+         * Куда добавить группу.
          * @enum {string}
          */
         "Keywords_2.Types.Groups.ToType": "in_folder" | "in_folder_last" | "before_group" | "after_group";

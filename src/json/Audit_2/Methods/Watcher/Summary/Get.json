@@ -11,20 +11,20 @@
                 "type": "object",
                 "properties": {
                     "watcher_types": {
-                        "title": "Тип проверки",
+                        "title": "Тип проверки.",
                         "nullable": true,
                         "type": "array"
                     },
                     "checks_ids": {
-                        "title": "ID проверок",
+                        "title": "ID проверок.",
                         "type": "array"
                     },
                     "show_counts_changes": {
-                        "title": "Отобразить количество изменений по типам",
+                        "title": "Отобразить количество изменений по типам.",
                         "type": "boolean"
                     },
                     "forChart": {
-                        "title": "Недокументируемый параметр, данные для графика",
+                        "title": "Недокументируемый параметр, данные для графика.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -47,10 +47,10 @@
                     "checks_ids",
                     "project_id"
                 ],
-                "title": "Получение сводки радара"
+                "title": "Получение сводки радара."
             },
             "Audit_2.Methods.Watcher.Summary.Get.Exec": {
-                "title": "Сводка с количеством изменений по каждому типу проверки",
+                "title": "Сводка с количеством изменений по каждому типу проверки.",
                 "nullable": true,
                 "type": "array"
             }

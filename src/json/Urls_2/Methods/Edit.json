@@ -21,7 +21,7 @@
                         ]
                     },
                     "audit": {
-                        "title": "Флаг активности в аудите",
+                        "title": "Флаг активности в аудите.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -30,7 +30,7 @@
                         ]
                     },
                     "indexing": {
-                        "title": "Флаг активности в радаре",
+                        "title": "Флаг активности в радаре.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -39,7 +39,7 @@
                         ]
                     },
                     "watcher": {
-                        "title": "Флаг активности в индексации",
+                        "title": "Флаг активности в индексации.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -66,7 +66,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение urls"
+                "title": "Изменение urls."
             },
             "Urls_2.Methods.Edit.Exec": {
                 "nullable": true,

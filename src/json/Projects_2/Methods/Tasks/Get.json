@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "show_owner_balance": {
-                        "title": "Добавить ли в результаты баланс владельца для гостевых проектов",
+                        "title": "Добавить ли в результаты баланс владельца для гостевых проектов.",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -21,12 +21,12 @@
                         "type": "boolean"
                     },
                     "show_searchers_and_regions": {
-                        "title": "Добавить в результат список ПС и Регионов, привязанных к проекту",
+                        "title": "Добавить в результат список ПС и Регионов, привязанных к проекту.",
                         "description": "- 1 - включенные\n- 2 - все",
                         "type": "integer"
                     },
                     "include_positions_summary": {
-                        "title": "Добавить в результат сводку проверки позиций",
+                        "title": "Добавить в результат сводку проверки позиций.",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -74,7 +74,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка задач"
+                "title": "Получение списка задач."
             },
             "Projects_2.Methods.Tasks.Get.Exec": {
                 "nullable": true

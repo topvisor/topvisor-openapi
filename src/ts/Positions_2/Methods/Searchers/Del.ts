@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление ПС */
+        /** Удаление ПС. */
         "Positions_2.Methods.Searchers.Del": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
-            /** Id проекта */
+            /** Id проекта. */
             searcher_key: unknown;
             /**
              * Список фильтров по полям объекта

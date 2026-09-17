@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Статус задачи
+         * Статус задачи.
          * @enum {string}
          */
         "Projects_2.Types.Tasks.Status": "ongoing" | "completed";

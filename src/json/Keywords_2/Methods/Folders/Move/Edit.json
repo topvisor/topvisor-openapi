@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "to_id": {
-                        "title": "Переместить к указанной папке",
+                        "title": "Переместить к указанной папке.",
                         "type": "integer"
                     },
                     "to_type": {
@@ -41,7 +41,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Перемещение папок"
+                "title": "Перемещение папок."
             },
             "Keywords_2.Methods.Folders.Move.Edit.Exec": {
                 "nullable": true,

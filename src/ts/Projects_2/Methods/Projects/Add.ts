@@ -7,24 +7,24 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление проекта */
+        /** Добавление проекта. */
         "Projects_2.Methods.Projects.Add": {
             /** Url проекта (домен или url страницы) */
             url: import('../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
             /** Имя проекта (по умолчанию равен url проекта) */
             name?: string | null;
             /**
-             * enum(1..10) tags - теги проекта (по умолчанию - [1])
+             * Enum(1..10) tags - теги проекта (по умолчанию - [1])
              * @default [
              *       1
              *     ]
              */
             tags?: unknown[] | null;
-            /** Id папки, к которой будет привязан проект */
+            /** Id папки, к которой будет привязан проект. */
             folder_id?: number | null;
-            /** Активность проекта */
+            /** Активность проекта. */
             on?: number | null;
-            /** Является ли проект задачей */
+            /** Является ли проект задачей. */
             is_task?: boolean | null;
         };
         "Projects_2.Methods.Projects.Add.Exec": unknown;

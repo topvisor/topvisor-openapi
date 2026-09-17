@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка папок проекта */
+        /** Получение списка папок проекта. */
         "Keywords_2.Methods.Folders.Get": {
             /** @default flat */
             view?: import('../../Types/Folders/View.ts').components['schemas']['Keywords_2.Types.Folders.View'];
-            /** Показывать ли удаленные папки */
+            /** Показывать ли удаленные папки. */
             show_trash?: number;
             /** ID проекта */
             project_id: number;

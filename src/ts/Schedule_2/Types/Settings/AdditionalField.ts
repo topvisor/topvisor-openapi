@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Дополнительное поле отчета проверки позиций
+         * Дополнительное поле отчета проверки позиций.
          * @enum {string}
          */
         "Schedule_2.Types.Settings.AdditionalField": "summary" | "traffic" | "url" | "frequency";

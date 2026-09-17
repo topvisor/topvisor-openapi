@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение цены проверки релевантности задачи без создания проекта */
+        /** Получение цены проверки релевантности задачи без создания проекта. */
         "Projects_2.Methods.Tasks.Relevants.Price.Get": {
-            /** Массив ключевых запросов в формате CSV */
+            /** Массив ключевых запросов в формате CSV. */
             keywords: unknown[];
             qualifiers: import('../../../../Objects/Task/Relevant/Qualifiers.ts').components['schemas']['Projects_2.Objects.Task.Relevant.Qualifiers'];
         };

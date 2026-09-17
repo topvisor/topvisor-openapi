@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Версия API
+         * Версия API.
          * @enum {string}
          */
         "System_2.Types.Api.V": "v2";

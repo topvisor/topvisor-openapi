@@ -8,63 +8,63 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Получение истории снимков выдачи
-         * @description Метод базируется на объекте keywords
+         * Получение истории снимков выдачи.
+         * @description Метод базируется на объекте keywords.
          */
         "Snapshots_2.Methods.History.Get": {
             /** Добавить ли в результат даты, в которых были проверки (existsDates) */
             show_exists_dates?: boolean;
-            /** Добавить ли в результат показатель шторма между выбранными проверками */
+            /** Добавить ли в результат показатель шторма между выбранными проверками. */
             show_ams?: boolean;
             /**
-             * Сохранять ли выбранные запросы
-             * @description Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`
+             * Сохранять ли выбранные запросы.
+             * @description Сохраненные запросы будут выводиться в интерфейсе, если вы не хотите менять настройки интерфейса, то укажите `false`.
              * @default true
              */
             ui_save_selected_keywords?: boolean;
             history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Snapshots_2.Types.History.HistoryFields'] | null;
-            /** При фильтрации по ID папок также искать в подпапках */
+            /** При фильтрации по ID папок также искать в подпапках. */
             group_folder_id_depth?: boolean;
-            /** Показывать удаленные запросы */
+            /** Показывать удаленные запросы. */
             show_trash?: boolean;
             only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
-            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
+            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`. */
             only_exists_by_date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** ID проекта */
             project_id: number;
             /**
-             * Произвольные даты без использования диапазона
+             * Произвольные даты без использования диапазона.
              * @description Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
              */
             dates?: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /**
-             * Тип диапазона дат
+             * Тип диапазона дат.
              * @default 2
              */
             type_range?: import('../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
             /**
-             * Дата начала диапазона
-             * @description Используется вместе с date2 для задания диапазона дат
+             * Дата начала диапазона.
+             * @description Используется вместе с date2 для задания диапазона дат.
              */
             date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
-             * Дата окончания диапазона
-             * @description Используется вместе с date1 для задания диапазона дат
+             * Дата окончания диапазона.
+             * @description Используется вместе с date1 для задания диапазона дат.
              */
             date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
-             * Количество дат в диапазоне
-             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             * Количество дат в диапазоне.
+             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля.
              *
-             *     Работает совместно с `type_range`
+             *     Работает совместно с `type_range`.
              * @default 31
              */
             count_dates?: number;
             /**
-             * Период в днях
+             * Период в днях.
              * @description Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
              *
-             *     Не более 31
+             *     Не более 31.
              * @default 7
              */
             period_days?: number;

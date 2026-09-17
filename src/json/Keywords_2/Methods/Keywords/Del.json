@@ -29,7 +29,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Удаление запросов"
+                "title": "Удаление запросов."
             },
             "Keywords_2.Methods.Keywords.Del.Exec": {
                 "nullable": true,

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Источник данных магнита
+         * Источник данных магнита.
          * @enum {string}
          */
         "Keywords_2.Types.Magnet.Provider": "metrika" | "webmaster" | "ganalytics" | "gsc";

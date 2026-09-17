@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание задачи на проверку релевантности */
+        /** Создание задачи на проверку релевантности. */
         "Projects_2.Methods.Tasks.Relevants.Add": {
-            /** URL сайта */
+            /** URL сайта. */
             url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
-            /** Запросы */
+            /** Запросы. */
             keywords: unknown[];
             qualifiers: import('../../../Objects/Task/Relevant/Qualifiers.ts').components['schemas']['Projects_2.Objects.Task.Relevant.Qualifiers'];
         };

@@ -7,28 +7,28 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о стоимости запуска проверки позиций по проектам */
+        /** Информация о стоимости запуска проверки позиций по проектам. */
         "Keywords_2.Methods.Volumes.Price.Get": {
             no_recheck?: import('../../../Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
             /**
-             * Тип объекта фильтрации
+             * Тип объекта фильтрации.
              * @default keywords
              */
             target_type?: string;
             /**
-             * Список регионов с настройками для проверки частоты
+             * Список регионов с настройками для проверки частоты.
              * @description - Обязателен, если `set_qualifiers_for_visibility` != `true`
              *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
              *     - Нельзя указывать, если указан `check_all_regions_yandex_types` или `check_all_regions_google`
              */
             qualifiers?: import('../../../Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'] | null;
-            /** Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости */
+            /** Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости. */
             set_qualifiers_for_visibility?: boolean | null;
-            /** При фильтрации по ID папок также искать в подпапках */
+            /** При фильтрации по ID папок также искать в подпапках. */
             group_folder_id_depth?: boolean;
-            /** Запустить проверку указанных типов частоты по всем регионам яндекса, добавленных в проект */
+            /** Запустить проверку указанных типов частоты по всем регионам яндекса, добавленных в проект. */
             check_all_regions_yandex_types?: import('../../../Types/Volumes/Types.ts').components['schemas']['Keywords_2.Types.Volumes.Types'] | null;
-            /** Запустить проверку частоты по всем регионам гугла, добавленных в проект */
+            /** Запустить проверку частоты по всем регионам гугла, добавленных в проект. */
             check_all_regions_google?: boolean | null;
             /**
              * Список фильтров по полям объекта

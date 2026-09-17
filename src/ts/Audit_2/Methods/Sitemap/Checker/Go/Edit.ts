@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка проектов на проверку карты сайта */
+        /** Отправка проектов на проверку карты сайта. */
         "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
             max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
             /**

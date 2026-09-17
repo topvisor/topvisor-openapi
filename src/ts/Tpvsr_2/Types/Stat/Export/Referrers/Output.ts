@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат экспорта
+         * Формат экспорта.
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Export.Referrers.Output": "csv";

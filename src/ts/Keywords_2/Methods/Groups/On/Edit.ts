@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение статуса активности группы */
+        /** Изменение статуса активности группы. */
         "Keywords_2.Methods.Groups.On.Edit": {
-            /** Статус активности */
+            /** Статус активности. */
             on: boolean;
-            /** Учитывать ли удаленные группы */
+            /** Учитывать ли удаленные группы. */
             show_trash?: boolean;
             /** ID проекта */
             project_id: number;

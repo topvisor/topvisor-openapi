@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип отчета
+         * Тип отчета.
          * @enum {string}
          */
         "Competitors_2.Types.Report.Type": "serp" | "ads";

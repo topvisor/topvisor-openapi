@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Откуда установить целевую ссылку
+         * Откуда установить целевую ссылку.
          * @enum {string}
          */
         "Keywords_2.Types.Actions.SetTargetsFromRelevant.From": "positionCheck" | "relevantCheck";

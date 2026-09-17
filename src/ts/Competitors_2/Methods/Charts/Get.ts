@@ -7,36 +7,36 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных для графика отчета */
+        /** Получение данных для графика отчета. */
         "Competitors_2.Methods.Charts.Get": {
             by_type: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
-            /** Ключевая фраза (или ее часть) / url */
+            /** Ключевая фраза (или ее часть) / url. */
             query: string;
             type: import('../../Types/Report/Type.ts').components['schemas']['Competitors_2.Types.Report.Type'];
-            /** Представление отчета */
+            /** Представление отчета. */
             view: string;
-            /** Тип графика */
+            /** Тип графика. */
             chart_type: string;
-            /** Дата проверки */
+            /** Дата проверки. */
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов) */
             query_vs?: string | null;
             /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
             strict_query?: boolean;
-            /** Минимальная схожесть */
+            /** Минимальная схожесть. */
             intersection?: number | null;
             /**
-             * Название функции
+             * Название функции.
              * @default charts
              */
             func?: string;
-            /** Домены */
+            /** Домены. */
             domains?: import('../../../TV/API/Types/UrlShortUTFArray.ts').components['schemas']['TV.API.Types.UrlShortUTFArray'] | null;
-            /** Urls адреса */
+            /** Urls адреса. */
             urls?: import('../../../TV/API/Types/UrlUTFArray.ts').components['schemas']['TV.API.Types.UrlUTFArray'] | null;
-            /** Поисковые запросы */
+            /** Поисковые запросы. */
             keywords_names?: unknown[] | null;
             /**
              * Список полей объекта, которые надо вернуть в результате

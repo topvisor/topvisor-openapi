@@ -11,17 +11,17 @@
                 "type": "object",
                 "properties": {
                     "checks_ids": {
-                        "title": "ID проверок в произвольном порядке",
+                        "title": "ID проверок в произвольном порядке.",
                         "nullable": true,
                         "type": "array"
                     },
                     "check_id1": {
-                        "title": "ID проверки начала диапазона",
+                        "title": "ID проверки начала диапазона.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "check_id2": {
-                        "title": "ID проверки конца диапазона",
+                        "title": "ID проверки конца диапазона.",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -46,7 +46,7 @@
                         ]
                     },
                     "watcher_fields": {
-                        "title": "Выбор столбцов данных с результатами проверки",
+                        "title": "Выбор столбцов данных с результатами проверки.",
                         "default": [
                             "http_codes",
                             "redirects"
@@ -54,7 +54,7 @@
                         "type": "array"
                     },
                     "show_headers": {
-                        "title": "Добавить в результат заголовки отчета",
+                        "title": "Добавить в результат заголовки отчета.",
                         "type": "boolean"
                     },
                     "show_diff": {
@@ -65,7 +65,7 @@
                         ]
                     },
                     "show_counts_watcher": {
-                        "title": "Добавить в результат количество проверок",
+                        "title": "Добавить в результат количество проверок.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -109,11 +109,11 @@
                     "watcher_type",
                     "project_id"
                 ],
-                "title": "Получение результатов проверок радара",
-                "description": "Отчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)"
+                "title": "Получение результатов проверок радара.",
+                "description": "Отчет генерируется на основе объектов urls.\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)"
             },
             "Audit_2.Methods.Watcher.Get.Exec": {
-                "title": "Генерируемый на основе urls, список результатов проверок радара",
+                "title": "Генерируемый на основе urls, список результатов проверок радара.",
                 "nullable": true,
                 "anyOf": [
                     {

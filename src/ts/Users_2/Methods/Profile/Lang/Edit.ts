@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение языка */
+        /** Изменение языка. */
         "Users_2.Methods.Profile.Lang.Edit": {
-            /** Новый язык */
+            /** Новый язык. */
             lang: import('../../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
         };
         "Users_2.Methods.Profile.Lang.Edit.Exec": number | null;

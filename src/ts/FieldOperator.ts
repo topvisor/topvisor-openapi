@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Операторы сравнения с полем
+         * Операторы сравнения с полем.
          * @enum {string}
          */
         FieldOperator: "EQUALS" | "NOT_EQUALS" | "IN" | "NOT_IN" | "GREATER_THAN" | "GREATER_THAN_EQUALS" | "LESS_THAN" | "LESS_THAN_EQUALS" | "BETWEEN" | "STARTS_WITH" | "CONTAINS" | "DOES_NOT_CONTAIN" | "REGEXP" | "NOT_REGEXP" | "IS_NULL" | "IS_NOT_NULL";

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "target": {
-                        "title": "Целевая ссылка",
+                        "title": "Целевая ссылка.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -28,11 +28,11 @@
                         ]
                     },
                     "show_trash": {
-                        "title": "Учитывать ли удаленные запросы",
+                        "title": "Учитывать ли удаленные запросы.",
                         "type": "boolean"
                     },
                     "group_folder_id_depth": {
-                        "title": "Искать ли в подпапках",
+                        "title": "Искать ли в подпапках.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -54,7 +54,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Изменение целевой ссылки запросов"
+                "title": "Изменение целевой ссылки запросов."
             },
             "Keywords_2.Methods.Keywords.Target.Edit.Exec": {
                 "nullable": true,

@@ -8,19 +8,19 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Content_2.Types.Update": {
-            /** Балл апометра */
+            /** Балл апометра. */
             Am: number;
             /** 0 - обычная выдача, xml - xml выдача */
             action: string;
-            /** Зафиксирован шторм */
+            /** Зафиксирован шторм. */
             is_storm: number;
-            /** Зафиксирован апдейт */
+            /** Зафиксирован апдейт. */
             is_update: number;
-            /** Id категории */
+            /** Id категории. */
             pool_id: number;
-            /** Индекс региона */
+            /** Индекс региона. */
             region_index: number;
-            /** Дата и время проверки */
+            /** Дата и время проверки. */
             time: import('../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'];
         };
     };

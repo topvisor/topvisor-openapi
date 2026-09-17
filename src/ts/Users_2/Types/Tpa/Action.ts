@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Действие, выполняемое при авторизации
+         * Действие, выполняемое при авторизации.
          * @enum {string}
          */
         "Users_2.Types.Tpa.Action": "auth" | "join";

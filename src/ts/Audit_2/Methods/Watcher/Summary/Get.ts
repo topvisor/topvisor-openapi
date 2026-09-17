@@ -7,15 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение сводки радара */
+        /** Получение сводки радара. */
         "Audit_2.Methods.Watcher.Summary.Get": {
-            /** Тип проверки */
+            /** Тип проверки. */
             watcher_types?: unknown[] | null;
-            /** ID проверок */
+            /** ID проверок. */
             checks_ids: unknown[];
-            /** Отобразить количество изменений по типам */
+            /** Отобразить количество изменений по типам. */
             show_counts_changes?: boolean;
-            /** Недокументируемый параметр, данные для графика */
+            /** Недокументируемый параметр, данные для графика. */
             forChart?: boolean;
             /** ID проекта */
             project_id: number;
@@ -34,7 +34,7 @@ export interface components {
              */
             id?: number | null;
         };
-        /** Сводка с количеством изменений по каждому типу проверки */
+        /** Сводка с количеством изменений по каждому типу проверки. */
         "Audit_2.Methods.Watcher.Summary.Get.Exec": unknown[] | null;
     };
     responses: never;

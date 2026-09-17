@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "axe": {
-                        "title": "Номер метрики",
+                        "title": "Номер метрики.",
                         "allOf": [
                             {
                                 "$ref": "../../../Projects_2/Types/Analytics/Axe.json#/components/schemas/Projects_2.Types.Analytics.Axe"
@@ -23,7 +23,7 @@
                         ]
                     },
                     "base_filter": {
-                        "title": "Тип группировки",
+                        "title": "Тип группировки.",
                         "allOf": [
                             {
                                 "$ref": "../../../Projects_2/Types/Analytics/Base.json#/components/schemas/Projects_2.Types.Analytics.Base"
@@ -31,12 +31,12 @@
                         ]
                     },
                     "insert_after_id": {
-                        "title": "Id графика, после которого нужно вставить новый график",
+                        "title": "Id графика, после которого нужно вставить новый график.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "narrow": {
-                        "title": "Маленький график",
+                        "title": "Маленький график.",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -51,7 +51,7 @@
                     "axe",
                     "base_filter"
                 ],
-                "title": "Добавление графика"
+                "title": "Добавление графика."
             },
             "Projects_2.Methods.Analytics.Add.Exec": {
                 "nullable": true,

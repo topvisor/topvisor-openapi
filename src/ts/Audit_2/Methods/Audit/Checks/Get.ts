@@ -15,7 +15,7 @@ export interface components {
          *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
          */
         "Audit_2.Methods.Audit.Checks.Get": {
-            /** Добавить в результат данные о незавершенной проверке */
+            /** Добавить в результат данные о незавершенной проверке. */
             show_raw_data?: boolean;
             /**
              * Определяет формат результата: коллекция, объект, значение
@@ -66,7 +66,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Список выполненных (выполняемых) проверок аудита */
+        /** Список выполненных (выполняемых) проверок аудита. */
         "Audit_2.Methods.Audit.Checks.Get.Exec": unknown;
     };
     responses: never;

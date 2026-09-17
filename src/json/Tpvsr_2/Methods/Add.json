@@ -11,20 +11,20 @@
                 "type": "object",
                 "properties": {
                     "link": {
-                        "title": "Ссылка",
+                        "title": "Ссылка.",
                         "type": "string"
                     },
                     "title": {
-                        "title": "Название ссылки",
+                        "title": "Название ссылки.",
                         "nullable": true,
                         "type": "string"
                     },
                     "add_secret": {
-                        "title": "Добавить секретную строку",
+                        "title": "Добавить секретную строку.",
                         "type": "boolean"
                     },
                     "tags": {
-                        "title": "Тэги ссылки",
+                        "title": "Тэги ссылки.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -33,7 +33,7 @@
                         ]
                     },
                     "fields": {
-                        "title": "Поля, которые нужно получить",
+                        "title": "Поля, которые нужно получить.",
                         "nullable": true,
                         "anyOf": [
                             {
@@ -51,7 +51,7 @@
                 "required": [
                     "link"
                 ],
-                "title": "Добавление ссылки"
+                "title": "Добавление ссылки."
             },
             "Tpvsr_2.Methods.Add.Exec": {
                 "nullable": true

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Список ошибок */
+        /** Список ошибок. */
         Errors: import('./Error.ts').components['schemas']['Error'][];
     };
     responses: never;

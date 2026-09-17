@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление ссылки */
+        /** Добавление ссылки. */
         "Tpvsr_2.Methods.Add": {
-            /** Ссылка */
+            /** Ссылка. */
             link: string;
-            /** Название ссылки */
+            /** Название ссылки. */
             title?: string | null;
-            /** Добавить секретную строку */
+            /** Добавить секретную строку. */
             add_secret?: boolean;
-            /** Тэги ссылки */
+            /** Тэги ссылки. */
             tags?: import('../Types/Tags.ts').components['schemas']['Tpvsr_2.Types.Tags'] | null;
-            /** Поля, которые нужно получить */
+            /** Поля, которые нужно получить. */
             fields?: (string[] | null) | null;
         };
         "Tpvsr_2.Methods.Add.Exec": unknown;

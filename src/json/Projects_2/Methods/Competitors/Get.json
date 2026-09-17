@@ -23,21 +23,21 @@
                         }
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "only_enabled": {
-                        "title": "Вернуть ли в результате только включенных конкурентов",
+                        "title": "Вернуть ли в результате только включенных конкурентов.",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "include_project": {
-                        "title": "Включить ли в результат основной проект",
+                        "title": "Включить ли в результат основной проект.",
                         "nullable": true,
                         "type": "boolean"
                     },
                     "service_name": {
-                        "title": "Сервис, которому принадлежит набор конкурентов",
+                        "title": "Сервис, которому принадлежит набор конкурентов.",
                         "default": "positions",
                         "allOf": [
                             {
@@ -49,7 +49,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Получение списка конкурентов"
+                "title": "Получение списка конкурентов."
             },
             "Projects_2.Methods.Competitors.Get.Exec": {
                 "type": "array"

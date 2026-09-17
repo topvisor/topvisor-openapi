@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Режимы визуализации изменений позиций в экспорте
+         * Режимы визуализации изменений позиций в экспорте.
          * @enum {integer}
          */
         "Positions_2.Types.History.Export.Painting": 0 | 1;

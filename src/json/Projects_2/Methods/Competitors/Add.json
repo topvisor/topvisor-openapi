@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "urls": {
-                        "title": "Список url конкурентов",
+                        "title": "Список url конкурентов.",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/UrlShortArray.json#/components/schemas/TV.API.Types.UrlShortArray"
@@ -44,7 +44,7 @@
                         "type": "array"
                     },
                     "service_name": {
-                        "title": "Сервис, которому принадлежит набор конкурентов",
+                        "title": "Сервис, которому принадлежит набор конкурентов.",
                         "default": "positions",
                         "allOf": [
                             {
@@ -61,8 +61,8 @@
                     "urls",
                     "project_id"
                 ],
-                "title": "Добавление конкурента",
-                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте"
+                "title": "Добавление конкурента.",
+                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте."
             },
             "Projects_2.Methods.Competitors.Add.Exec": {
                 "type": "array"

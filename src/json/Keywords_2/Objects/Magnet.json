@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "phrase": {
-                        "title": "Запрос",
+                        "title": "Запрос.",
                         "type": "string"
                     },
                     "path": {
@@ -19,43 +19,43 @@
                         "type": "string"
                     },
                     "visits": {
-                        "title": "Визиты",
+                        "title": "Визиты.",
                         "type": "integer"
                     },
                     "bounce": {
-                        "title": "Отказы",
+                        "title": "Отказы.",
                         "type": "number"
                     },
                     "pageviews": {
-                        "title": "Глубина просмотра",
+                        "title": "Глубина просмотра.",
                         "type": "number"
                     },
                     "duration": {
-                        "title": "Время на сайте",
+                        "title": "Время на сайте.",
                         "type": "number"
                     },
                     "clicks": {
-                        "title": "Клики",
+                        "title": "Клики.",
                         "type": "integer"
                     },
                     "shows": {
-                        "title": "Показы",
+                        "title": "Показы.",
                         "type": "integer"
                     },
                     "ctr": {
-                        "title": "CTR",
+                        "title": "CTR.",
                         "type": "integer"
                     },
                     "position": {
-                        "title": "Позиция сайта в поиске",
+                        "title": "Позиция сайта в поиске.",
                         "type": "integer"
                     },
                     "demand": {
-                        "title": "Спрос",
+                        "title": "Спрос.",
                         "type": "integer"
                     },
                     "domain": {
-                        "title": "schema://host",
+                        "title": "Schema://host.",
                         "type": "integer"
                     }
                 },
@@ -73,7 +73,7 @@
                     "demand",
                     "domain"
                 ],
-                "title": "Формат строки ответа"
+                "title": "Формат строки ответа."
             }
         }
     }

@@ -29,7 +29,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Восстановление запросов из корзины"
+                "title": "Восстановление запросов из корзины."
             },
             "Keywords_2.Methods.Keywords.Undel.Edit.Exec": {
                 "nullable": true,

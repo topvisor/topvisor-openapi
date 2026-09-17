@@ -7,16 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение тегов запросов */
+        /** Изменение тегов запросов. */
         "Keywords_2.Methods.Keywords.Tags.Edit": {
-            /** Теги запроса */
+            /** Теги запроса. */
             tags: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'];
             action: import('../../../Types/Keywords/Tags/Action.ts').components['schemas']['Keywords_2.Types.Keywords.Tags.Action'];
             /** @default keywords */
             target_type?: import('../../../Types/Keywords/TargetType.ts').components['schemas']['Keywords_2.Types.Keywords.TargetType'];
-            /** Учитывать ли удаленные запросы */
+            /** Учитывать ли удаленные запросы. */
             show_trash?: boolean;
-            /** Искать ли в подпапках */
+            /** Искать ли в подпапках. */
             group_folder_id_depth?: boolean;
             /** ID проекта */
             project_id: number;

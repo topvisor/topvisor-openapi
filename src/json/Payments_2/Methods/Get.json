@@ -54,7 +54,7 @@
                     }
                 },
                 "required": [],
-                "title": "Получение списка платежей"
+                "title": "Получение списка платежей."
             },
             "Payments_2.Methods.Get.Exec": {
                 "nullable": true

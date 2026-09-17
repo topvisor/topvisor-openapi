@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "to_id": {
-                        "title": "Добавить рядом с указанной папкой",
+                        "title": "Добавить рядом с указанной папкой.",
                         "type": "integer"
                     },
                     "to_type": {
@@ -23,7 +23,7 @@
                         ]
                     },
                     "name": {
-                        "title": "Название папки",
+                        "title": "Название папки.",
                         "type": "string"
                     },
                     "project_id": {
@@ -34,7 +34,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Добавление папки"
+                "title": "Добавление папки."
             },
             "Keywords_2.Methods.Folders.Add.Exec": {
                 "nullable": true,

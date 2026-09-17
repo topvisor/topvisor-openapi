@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "Am": {
-                        "title": "Балл апометра",
+                        "title": "Балл апометра.",
                         "type": "number"
                     },
                     "action": {
@@ -19,23 +19,23 @@
                         "type": "string"
                     },
                     "is_storm": {
-                        "title": "Зафиксирован шторм",
+                        "title": "Зафиксирован шторм.",
                         "type": "integer"
                     },
                     "is_update": {
-                        "title": "Зафиксирован апдейт",
+                        "title": "Зафиксирован апдейт.",
                         "type": "integer"
                     },
                     "pool_id": {
-                        "title": "Id категории",
+                        "title": "Id категории.",
                         "type": "integer"
                     },
                     "region_index": {
-                        "title": "Индекс региона",
+                        "title": "Индекс региона.",
                         "type": "integer"
                     },
                     "time": {
-                        "title": "Дата и время проверки",
+                        "title": "Дата и время проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"

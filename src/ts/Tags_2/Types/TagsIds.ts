@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Список id тегов
-         * @description Тип массива: TagId[]
+         * Список id тегов.
+         * @description Тип массива: TagId[].
          */
         "Tags_2.Types.TagsIds": import('./TagId.ts').components['schemas']['Tags_2.Types.TagId'][];
     };

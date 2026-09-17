@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение проверенных css */
+        /** Получение проверенных css. */
         "Audit_2.Methods.Audit.Css.Get": {
             /**
              * Определяет формат результата: коллекция, объект, значение
@@ -19,7 +19,7 @@ export interface components {
             fetch_style?: import('../../../../Selector/Types/FetchStyle.ts').components['schemas']['Selector.Types.FetchStyle'] | null;
             /** ID проекта */
             project_id: number;
-            /** ID проверки аудита */
+            /** ID проверки аудита. */
             check_id: number;
             /**
              * Список полей объекта, которые надо вернуть в результате
@@ -60,7 +60,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Список проверенных css */
+        /** Список проверенных css. */
         "Audit_2.Methods.Audit.Css.Get.Exec": import('../../../../Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'][] | null;
     };
     responses: never;

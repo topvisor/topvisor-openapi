@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Определитель с настройками для подбора */
+        /** Определитель с настройками для подбора. */
         "Keywords_2.Types.Collect.Qualifier": {
             region_key: number;
             searcher_key: import('./SearcherKey.ts').components['schemas']['Keywords_2.Types.Collect.SearcherKey'];

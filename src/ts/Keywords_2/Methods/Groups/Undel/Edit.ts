@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Восстановление группы из корзины */
+        /** Восстановление группы из корзины. */
         "Keywords_2.Methods.Groups.Undel.Edit": {
             /** ID проекта */
             project_id: number;

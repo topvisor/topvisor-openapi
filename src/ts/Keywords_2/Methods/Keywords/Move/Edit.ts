@@ -7,12 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Перемещение запросов */
+        /** Перемещение запросов. */
         "Keywords_2.Methods.Keywords.Move.Edit": {
             /**
-             * Вставить к указанному объекту
+             * Вставить к указанному объекту.
              * @description Если в to_type указано "Перед или после запроса", то принимает id запроса
-             *     Если в to_type указано "В конец или начало группы", то принимает id группы
+             *     Если в to_type указано "В конец или начало группы", то принимает id группы.
              */
             to_id: number;
             /** @default in_group */

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "searcher_key": {
-                        "title": "Ключ ПС"
+                        "title": "Ключ ПС."
                     },
                     "project_id": {
                         "title": "ID проекта",
@@ -22,7 +22,7 @@
                     "searcher_key",
                     "project_id"
                 ],
-                "title": "Добавление ПС"
+                "title": "Добавление ПС."
             },
             "Positions_2.Methods.Searchers.Add.Exec": {
                 "nullable": true,

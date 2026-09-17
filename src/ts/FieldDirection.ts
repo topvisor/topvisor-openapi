@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Направление сортировки
+         * Направление сортировки.
          * @enum {string}
          */
         FieldDirection: "ASC" | "DESC";

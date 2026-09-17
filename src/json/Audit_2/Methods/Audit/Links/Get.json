@@ -25,7 +25,7 @@
                         "type": "integer"
                     },
                     "check_id": {
-                        "title": "ID проверки аудита",
+                        "title": "ID проверки аудита.",
                         "type": "integer"
                     },
                     "fields": {
@@ -65,10 +65,10 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение проверенных ссылок"
+                "title": "Получение проверенных ссылок."
             },
             "Audit_2.Methods.Audit.Links.Get.Exec": {
-                "title": "Список проверенных ссылок",
+                "title": "Список проверенных ссылок.",
                 "nullable": true,
                 "type": "array",
                 "items": {

@@ -7,27 +7,27 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о стоимости запуска проверки позиций по проектам */
+        /** Информация о стоимости запуска проверки позиций по проектам. */
         "Positions_2.Methods.Checker.Price.Get": {
-            /** Проверка с учетом фильтра по регионам */
+            /** Проверка с учетом фильтра по регионам. */
             regions_indexes?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Проверка с учетом фильтра по папкам */
+            /** Проверка с учетом фильтра по папкам. */
             folders_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** При фильтрации по ID папок также проверять в подпапках */
+            /** При фильтрации по ID папок также проверять в подпапках. */
             folders_ids_depth?: boolean;
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
             groups_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта) */
             do_snapshots?: boolean | null;
             /**
-             * Проверка одного запроса
+             * Проверка одного запроса.
              * @description - не допускается при массовой проверке проектов
              *     - требует указания одного `regions_indexes`
              *     - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
              */
             keyword_id?: number | null;
             /**
-             * Дата для фильтра по запросам, позиции с которой ухудшились
+             * Дата для фильтра по запросам, позиции с которой ухудшились.
              * @description - Не разрешено использовать с keyword_id
              *     - Для использования требуется указание region_index
              */

@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Изменение сортировки запросов
-         * @description Можно сортировать в пределах одной группы или всего проекта
+         * Изменение сортировки запросов.
+         * @description Можно сортировать в пределах одной группы или всего проекта.
          */
         "Keywords_2.Methods.Keywords.Sort.Edit": {
             /** ID проекта */

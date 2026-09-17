@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "folder_id": {
-                        "title": "Кластеризовать по папке",
+                        "title": "Кластеризовать по папке.",
                         "type": "integer"
                     },
                     "project_id": {
@@ -22,7 +22,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Кластеризация по целевой ссылке: проверки перед началом кластеризации"
+                "title": "Кластеризация по целевой ссылке: проверки перед началом кластеризации."
             },
             "Keywords_2.Methods.Claster.ByTarget.Edit.Exec": {
                 "nullable": true,

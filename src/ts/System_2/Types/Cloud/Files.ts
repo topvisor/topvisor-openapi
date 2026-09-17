@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Возвращаемые форматы файлов */
+        /** Возвращаемые форматы файлов. */
         "System_2.Types.Cloud.Files": import('./File.ts').components['schemas']['System_2.Types.Cloud.File'][];
     };
     responses: never;

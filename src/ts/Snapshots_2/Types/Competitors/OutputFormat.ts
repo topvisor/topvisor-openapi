@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Формат вывода конкурентов
+         * Формат вывода конкурентов.
          * @enum {string}
          */
         "Snapshots_2.Types.Competitors.OutputFormat": "domain" | "url";

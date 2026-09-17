@@ -11,14 +11,14 @@
                 "type": "object",
                 "properties": {
                     "id": {
-                        "title": "Id тарифа",
+                        "title": "Id тарифа.",
                         "type": "integer"
                     }
                 },
                 "required": [
                     "id"
                 ],
-                "title": "Смена тарифа со следующего месяца"
+                "title": "Смена тарифа со следующего месяца."
             },
             "Payments_2.Methods.Tariff.SetNext.Edit.Exec": {
                 "nullable": true,

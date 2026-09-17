@@ -12,20 +12,20 @@
                 "properties": {
                     "searcher_key": {},
                     "country_code": {
-                        "title": "Код страны по ISO 3166-1 alpha-2",
+                        "title": "Код страны по ISO 3166-1 alpha-2.",
                         "nullable": true,
                         "type": "string"
                     },
                     "search": {
-                        "title": "Поисковая фраза",
+                        "title": "Поисковая фраза.",
                         "type": "string"
                     },
                     "only_countries": {
-                        "title": "Искать только страны",
+                        "title": "Искать только страны.",
                         "type": "boolean"
                     },
                     "regions_keys": {
-                        "title": "ID регионов для получения",
+                        "title": "ID регионов для получения.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -34,7 +34,7 @@
                         ]
                     },
                     "for_project_id": {
-                        "title": "Отображать только регионы, добавленные в проект в указанной ПС",
+                        "title": "Отображать только регионы, добавленные в проект в указанной ПС.",
                         "nullable": true,
                         "type": "integer"
                     },
@@ -54,10 +54,10 @@
                     "searcher_key",
                     "search"
                 ],
-                "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов"
+                "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов."
             },
             "System_2.Methods.Common.Regions.Get.Exec": {
-                "title": "Получить список регионов по параметрам запроса",
+                "title": "Получить список регионов по параметрам запроса.",
                 "nullable": true,
                 "anyOf": [
                     {

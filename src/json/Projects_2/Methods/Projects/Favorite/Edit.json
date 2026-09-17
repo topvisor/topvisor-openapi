@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "favorite": {
-                        "title": "Флаг того, что проект ибранный",
+                        "title": "Флаг того, что проект ибранный.",
                         "default": true,
                         "type": "boolean"
                     },
@@ -28,7 +28,7 @@
                     }
                 },
                 "required": [],
-                "title": "Настройка избранных проектов"
+                "title": "Настройка избранных проектов."
             },
             "Projects_2.Methods.Projects.Favorite.Edit.Exec": {
                 "nullable": true,

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Метрика для вывода на графике
+         * Метрика для вывода на графике.
          * @enum {integer}
          */
         "Projects_2.Types.Analytics.Axe": 1 | 2 | 3 | 4 | 11 | 12 | 13;

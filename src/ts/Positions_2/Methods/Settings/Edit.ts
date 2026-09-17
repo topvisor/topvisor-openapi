@@ -7,39 +7,39 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Установка общих настроек проверки позиций проекта */
+        /** Установка общих настроек проверки позиций проекта. */
         "Positions_2.Methods.Settings.Edit": {
-            /** Id проекта */
+            /** Id проекта. */
             project_id: number;
-            /** Собирать ли сниппеты */
+            /** Собирать ли сниппеты. */
             with_snippets?: boolean | null;
-            /** Собирать ли AI-сниппеты */
+            /** Собирать ли AI-сниппеты. */
             with_ai_overview_full?: boolean | null;
-            /** Глубина сбора снимков */
+            /** Глубина сбора снимков. */
             do_snapshots?: boolean | null;
-            /** Собирать ли сниппеты в снимках */
+            /** Собирать ли сниппеты в снимках. */
             do_snapshots_with_snippets?: boolean | null;
             /**
-             * Учитывать ли поддомены при проверке
+             * Учитывать ли поддомены при проверке.
              * @description - 1: находить позиции сайта, являющиеся поддоменом к основному
              */
             subdomains?: boolean | null;
             /**
-             * Ограничения
+             * Ограничения.
              * @description - 0: без ограничений
              *     - 1: умеренный
              *     - 2: семейный поиск
              */
             filter?: number | null;
-            /** Учитывать ли регион */
+            /** Учитывать ли регион. */
             auto_correct?: boolean | null;
             /**
-             * Способ получения трафика
+             * Способ получения трафика.
              * @description - 0: с учетом регионов
              *     - 1: без учета регионов
              */
             common_traffic?: boolean | null;
-            /** Права для гостевых ссылок */
+            /** Права для гостевых ссылок. */
             guest_link_right?: import('../../Types/Settings/GuestLinkRights.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRights'] | null;
         };
         "Positions_2.Methods.Settings.Edit.Exec": unknown;

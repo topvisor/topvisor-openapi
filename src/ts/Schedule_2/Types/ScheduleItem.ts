@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Кортеж расписания
+         * Кортеж расписания.
          * @description Определяется парой:
          *     - Время запуска (может быть несколько)
          *     - Дни запуска

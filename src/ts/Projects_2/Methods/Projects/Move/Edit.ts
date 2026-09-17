@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /** Перемещение проекта (сортировка) */
         "Projects_2.Methods.Projects.Move.Edit": {
-            /** ID проекта */
+            /** ID проекта. */
             id: number;
-            /** Переместить к указанному проекту */
+            /** Переместить к указанному проекту. */
             to_id: number;
             /**
              * Позиция перемещения:

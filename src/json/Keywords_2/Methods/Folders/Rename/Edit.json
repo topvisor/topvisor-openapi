@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "title": "Название папок",
+                        "title": "Название папок.",
                         "type": "string"
                     },
                     "show_trash": {
-                        "title": "Учитывать ли удаленные папки",
+                        "title": "Учитывать ли удаленные папки.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -38,7 +38,7 @@
                     "name",
                     "project_id"
                 ],
-                "title": "Переименовывание папок"
+                "title": "Переименовывание папок."
             },
             "Keywords_2.Methods.Folders.Rename.Edit.Exec": {
                 "nullable": true,

@@ -16,9 +16,9 @@
                     "V2"
                 ],
                 "x-enum-descriptions": [
-                    "Вторая"
+                    "Вторая."
                 ],
-                "title": "Версия API"
+                "title": "Версия API."
             }
         }
     }

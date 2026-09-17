@@ -7,11 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание задачи на сбор запросов */
+        /** Создание задачи на сбор запросов. */
         "Projects_2.Methods.Tasks.Keywords.Collect.Add": {
-            /** Массив ключевых запросов в формате CSV */
+            /** Массив ключевых запросов в формате CSV. */
             keywords: unknown[];
-            /** Объекты определителей настроек ПС и регионов */
+            /** Объекты определителей настроек ПС и регионов. */
             qualifiers: import('../../../../../Keywords_2/Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: unknown[];

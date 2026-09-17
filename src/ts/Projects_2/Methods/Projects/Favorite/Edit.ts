@@ -7,10 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Настройка избранных проектов */
+        /** Настройка избранных проектов. */
         "Projects_2.Methods.Projects.Favorite.Edit": {
             /**
-             * Флаг того, что проект ибранный
+             * Флаг того, что проект ибранный.
              * @default true
              */
             favorite?: boolean;

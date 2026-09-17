@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "url": {
-                        "title": "URL соответствующий домену проекта",
+                        "title": "URL соответствующий домену проекта.",
                         "allOf": [
                             {
                                 "$ref": "../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
@@ -29,7 +29,7 @@
                         ]
                     },
                     "audit": {
-                        "title": "Флаг активности в аудите",
+                        "title": "Флаг активности в аудите.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -38,7 +38,7 @@
                         ]
                     },
                     "indexing": {
-                        "title": "Флаг активности в радаре",
+                        "title": "Флаг активности в радаре.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -47,7 +47,7 @@
                         ]
                     },
                     "watcher": {
-                        "title": "Флаг активности в индексации",
+                        "title": "Флаг активности в индексации.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -72,7 +72,7 @@
                     "url",
                     "project_id"
                 ],
-                "title": "Добавление url"
+                "title": "Добавление url."
             },
             "Urls_2.Methods.Add.Exec": {
                 "nullable": true,

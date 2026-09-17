@@ -19,11 +19,11 @@
                         "type": "string"
                     },
                     "query": {
-                        "title": "Ключевая фраза (или ее часть) / url",
+                        "title": "Ключевая фраза (или ее часть) / url.",
                         "type": "string"
                     },
                     "date": {
-                        "title": "Дата проверки",
+                        "title": "Дата проверки.",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -31,11 +31,11 @@
                         ]
                     },
                     "intersection": {
-                        "title": "Оплаченная степень схожести доменов",
+                        "title": "Оплаченная степень схожести доменов.",
                         "type": "number"
                     },
                     "short_if_paid": {
-                        "title": "Не возвращать информацию кроме is_paymented, если отчет оплачен",
+                        "title": "Не возвращать информацию кроме is_paymented, если отчет оплачен.",
                         "type": "boolean"
                     },
                     "short_domains_info": {
@@ -43,7 +43,7 @@
                         "type": "boolean"
                     },
                     "deleted": {
-                        "title": "Использовать удаленные отчеты",
+                        "title": "Использовать удаленные отчеты.",
                         "type": "boolean"
                     },
                     "strict_query": {
@@ -51,7 +51,7 @@
                         "type": "boolean"
                     },
                     "short": {
-                        "title": "Получить краткую статистику, только количество конкурентов",
+                        "title": "Получить краткую статистику, только количество конкурентов.",
                         "type": "boolean"
                     }
                 },
@@ -62,7 +62,7 @@
                     "date",
                     "intersection"
                 ],
-                "title": "Оплатить отчет"
+                "title": "Оплатить отчет."
             },
             "Competitors_2.Methods.Orders.Pay.Edit.Exec": {
                 "nullable": true,

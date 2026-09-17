@@ -11,11 +11,11 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "copy_keywords": {
-                        "title": "Копировать ли запросы проекта",
+                        "title": "Копировать ли запросы проекта.",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -28,7 +28,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Копирование проекта"
+                "title": "Копирование проекта."
             },
             "Projects_2.Methods.Projects.Copy.Add.Exec": {
                 "nullable": true,

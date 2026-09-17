@@ -7,80 +7,80 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории позиций по запросам */
+        /** Получение истории позиций по запросам. */
         "Positions_2.Methods.History.Get": {
-            /** Добавить в результат заголовки отчета `headers` */
+            /** Добавить в результат заголовки отчета `headers`. */
             show_headers?: boolean;
-            /** Добавить в результат даты, в которые были проверки `existsDates` */
+            /** Добавить в результат даты, в которые были проверки `existsDates`. */
             show_exists_dates?: boolean;
-            /** Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors` */
+            /** Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors`. */
             show_visitors?: boolean;
             /** Фильтрация по величине изменения позиции за период (>= N) */
             filter_by_positions_delta?: number;
             history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
-            /** Индексы регионов */
+            /** Индексы регионов. */
             regions_indexes: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID конкурентов */
+            /** ID конкурентов. */
             competitors_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** Добавить в результат данные по топу указанной глубины `tops` */
+            /** Добавить в результат данные по топу указанной глубины `tops`. */
             show_top_by_depth?: number;
             /**
-             * Фильтрация по динамике позиций
+             * Фильтрация по динамике позиций.
              * @description Базируется на крайних датах периода.
              *
              *     Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
              */
             filter_by_dynamic?: import('../../Types/History/FilterByDynamics.ts').components['schemas']['Positions_2.Types.History.FilterByDynamics'] | null;
             /**
-             * Фильтрация по запросам, позиции которых входят в указанные промежутки
+             * Фильтрация по запросам, позиции которых входят в указанные промежутки.
              * @description Массив пар значений (min, max)
              *
              *     - Базируется на крайней дате периода отчета
              *     - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
              */
             filter_by_positions?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /** При фильтрации по ID папок также искать в подпапках */
+            /** При фильтрации по ID папок также искать в подпапках. */
             group_folder_id_depth?: boolean;
-            /** Показывать удаленные запросы */
+            /** Показывать удаленные запросы. */
             show_trash?: boolean;
             only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
-            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date` */
+            /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`. */
             only_exists_by_date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** ID проекта */
             project_id: number;
             /**
-             * Произвольные даты без использования диапазона
+             * Произвольные даты без использования диапазона.
              * @description Необходимо указать либо `date1`, `date2`, `type_range`, либо `dates` (вместе указывать нельзя)
              */
             dates?: import('../../../TV/API/Types/DateArray.ts').components['schemas']['TV.API.Types.DateArray'] | null;
             /**
-             * Тип диапазона дат
+             * Тип диапазона дат.
              * @default 2
              */
             type_range?: import('../../../Reports_2/Types/TypeRange.ts').components['schemas']['Reports_2.Types.TypeRange'];
             /**
-             * Дата начала диапазона
-             * @description Используется вместе с date2 для задания диапазона дат
+             * Дата начала диапазона.
+             * @description Используется вместе с date2 для задания диапазона дат.
              */
             date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
-             * Дата окончания диапазона
-             * @description Используется вместе с date1 для задания диапазона дат
+             * Дата окончания диапазона.
+             * @description Используется вместе с date1 для задания диапазона дат.
              */
             date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
-             * Количество дат в диапазоне
-             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля
+             * Количество дат в диапазоне.
+             * @description Максимальное значение ограничивается константой MAX_DATES конкретного модуля.
              *
-             *     Работает совместно с `type_range`
+             *     Работает совместно с `type_range`.
              * @default 31
              */
             count_dates?: number;
             /**
-             * Период в днях
+             * Период в днях.
              * @description Используется для алгоритма получения дат через равные промежутки (`type_range` = 6)
              *
-             *     Не более 31
+             *     Не более 31.
              * @default 7
              */
             period_days?: number;
@@ -123,7 +123,7 @@ export interface components {
              */
             offset?: number;
         };
-        /** Получение истории позиций */
+        /** Получение истории позиций. */
         "Positions_2.Methods.History.Get.Exec": import('../../Objects/History/Result/Result.ts').components['schemas']['Positions_2.Objects.History.Result.Result'];
     };
     responses: never;

@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Фильтр по тональности
+         * Фильтр по тональности.
          * @enum {string}
          */
         "AiTracker_2.Types.History.FilterBySentiment": "bad" | "neutral" | "good";

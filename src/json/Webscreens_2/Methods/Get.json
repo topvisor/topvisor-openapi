@@ -18,49 +18,49 @@
                         ]
                     },
                     "w": {
-                        "title": "Ширина экрна",
+                        "title": "Ширина экрна.",
                         "type": "integer"
                     },
                     "h": {
-                        "title": "Высота экрна",
+                        "title": "Высота экрна.",
                         "type": "integer"
                     },
                     "timeout_ms": {
-                        "title": "Таймаут, от 1 до 30000",
+                        "title": "Таймаут, от 1 до 30000.",
                         "default": 1500,
                         "type": "integer"
                     },
                     "full_page": {
-                        "title": "Сделать ли полноразмерный скриншот страницы",
-                        "description": "Параметры clip и full_page нельзя использовать одновременно",
+                        "title": "Сделать ли полноразмерный скриншот страницы.",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно.",
                         "type": "boolean"
                     },
                     "lang": {
-                        "title": "Язык браузера, например ru, по умолчанию язык пользователя",
+                        "title": "Язык браузера, например ru, по умолчанию язык пользователя.",
                         "nullable": true,
                         "type": "string"
                     },
                     "clip_w": {
-                        "title": "Ширины фрагмента",
-                        "description": "Параметры clip и full_page нельзя использовать одновременно",
+                        "title": "Ширины фрагмента.",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_h": {
-                        "title": "Высота фрашгмента",
-                        "description": "Параметры clip и full_page нельзя использовать одновременно",
+                        "title": "Высота фрашгмента.",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_x": {
-                        "title": "Координата фрагмента `x`",
-                        "description": "Параметры clip и full_page нельзя использовать одновременно",
+                        "title": "Координата фрагмента `x`.",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно.",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_y": {
-                        "title": "Координата фрагмента `y`",
-                        "description": "Параметры clip и full_page нельзя использовать одновременно",
+                        "title": "Координата фрагмента `y`.",
+                        "description": "Параметры clip и full_page нельзя использовать одновременно.",
                         "nullable": true,
                         "type": "integer"
                     }

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Массив степеней кластеризации */
+        /** Массив степеней кластеризации. */
         "Keywords_2.Types.Claster.Degrees": number[];
     };
     responses: never;

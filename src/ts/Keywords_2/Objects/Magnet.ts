@@ -7,31 +7,31 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Формат строки ответа */
+        /** Формат строки ответа. */
         "Keywords_2.Objects.Magnet": {
-            /** Запрос */
+            /** Запрос. */
             phrase: string;
             /** Путь (часть url после домена) */
             path: string;
-            /** Визиты */
+            /** Визиты. */
             visits: number;
-            /** Отказы */
+            /** Отказы. */
             bounce: number;
-            /** Глубина просмотра */
+            /** Глубина просмотра. */
             pageviews: number;
-            /** Время на сайте */
+            /** Время на сайте. */
             duration: number;
-            /** Клики */
+            /** Клики. */
             clicks: number;
-            /** Показы */
+            /** Показы. */
             shows: number;
-            /** CTR */
+            /** CTR. */
             ctr: number;
-            /** Позиция сайта в поиске */
+            /** Позиция сайта в поиске. */
             position: number;
-            /** Спрос */
+            /** Спрос. */
             demand: number;
-            /** schema://host */
+            /** Schema://host. */
             domain: number;
         };
     };

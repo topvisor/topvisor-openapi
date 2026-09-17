@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Флаг активности
+         * Флаг активности.
          * @enum {integer}
          */
         "Urls_2.Types.Flag": -1 | 0 | 1 | 2;

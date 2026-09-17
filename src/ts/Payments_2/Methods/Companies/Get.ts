@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение компании пользователя, через которых, были совершены платежи */
+        /** Получение компании пользователя, через которых, были совершены платежи. */
         "Payments_2.Methods.Companies.Get": Record<string, never>;
         "Payments_2.Methods.Companies.Get.Exec": unknown[] | null;
     };

@@ -7,27 +7,27 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление запроса */
+        /** Добавление запроса. */
         "Keywords_2.Methods.Keywords.Add": {
-            /** Ключевая фраза */
+            /** Ключевая фраза. */
             name: string;
             /**
-             * Вставить к указанному объекту
+             * Вставить к указанному объекту.
              * @description Если в to_type указано "Перед или после запроса", то принимает id запроса
-             *     Если в to_type указано "В конец или начало группы", то принимает id группы
+             *     Если в to_type указано "В конец или начало группы", то принимает id группы.
              */
             to_id: number;
             /** @default in_group */
             to_type?: import('../../Types/Keywords/ToType.ts').components['schemas']['Keywords_2.Types.Keywords.ToType'];
-            /** Теги запроса */
+            /** Теги запроса. */
             tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
-            /** Целевая страница для запроса */
+            /** Целевая страница для запроса. */
             target?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
-            /** Удалить дубликаты */
+            /** Удалить дубликаты. */
             move_duplicate?: boolean;
             /**
-             * Имя группы для перемещения дубликатов
-             * @description Работает вместе с move_duplicate
+             * Имя группы для перемещения дубликатов.
+             * @description Работает вместе с move_duplicate.
              */
             move_duplicate_group_name?: string;
             /** ID проекта */

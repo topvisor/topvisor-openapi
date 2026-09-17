@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Информация о стоимости проверки ИИ-Трекера */
+        /** Информация о стоимости проверки ИИ-Трекера. */
         "AiTracker_2.Methods.Checker.Price.Get": {
             /**
              * Список фильтров по полям объекта

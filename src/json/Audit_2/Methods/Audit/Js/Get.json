@@ -25,7 +25,7 @@
                         "type": "integer"
                     },
                     "check_id": {
-                        "title": "ID проверки аудита",
+                        "title": "ID проверки аудита.",
                         "type": "integer"
                     },
                     "fields": {
@@ -65,10 +65,10 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение проверенных js"
+                "title": "Получение проверенных js."
             },
             "Audit_2.Methods.Audit.Js.Get.Exec": {
-                "title": "Список проверенных js",
+                "title": "Список проверенных js.",
                 "nullable": true,
                 "type": "array",
                 "items": {

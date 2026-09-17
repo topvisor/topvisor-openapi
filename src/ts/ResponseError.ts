@@ -7,13 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Результат API запроса с ошибкой */
+        /** Результат API запроса с ошибкой. */
         ResponseError: {
-            /** При ошибке результат отсутствует */
+            /** При ошибке результат отсутствует. */
             result?: null | null;
-            /** Список ошибок, полученных при выполнении запроса */
+            /** Список ошибок, полученных при выполнении запроса. */
             errors: import('./Errors.ts').components['schemas']['Errors'];
-            /** Список сообщений, полученных при выполнении запроса */
+            /** Список сообщений, полученных при выполнении запроса. */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
         };
     };

@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление графика */
+        /** Добавление графика. */
         "Projects_2.Methods.Analytics.Add": {
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
-            /** Номер метрики */
+            /** Номер метрики. */
             axe: import('../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'];
-            /** Тип группировки */
+            /** Тип группировки. */
             base_filter: import('../../Types/Analytics/Base.ts').components['schemas']['Projects_2.Types.Analytics.Base'];
-            /** Id графика, после которого нужно вставить новый график */
+            /** Id графика, после которого нужно вставить новый график. */
             insert_after_id?: number | null;
-            /** Маленький график */
+            /** Маленький график. */
             narrow?: number | null;
             /** Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта) */
             share?: number | null;

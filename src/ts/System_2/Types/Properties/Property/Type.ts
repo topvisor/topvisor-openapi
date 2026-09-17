@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Поле хранения параметра
+         * Поле хранения параметра.
          * @enum {string}
          */
         "System_2.Types.Properties.Property.Type": "varchar" | "text";

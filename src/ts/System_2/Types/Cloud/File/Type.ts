@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип файла, получаемого из облака Selectel
+         * Тип файла, получаемого из облака Selectel.
          * @enum {string}
          */
         "System_2.Types.Cloud.File.Type": "pdir" | "cdir" | "dir" | "file";

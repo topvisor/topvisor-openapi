@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Удаление неявных дублей по ключевым фразам */
+        /** Удаление неявных дублей по ключевым фразам. */
         "Keywords_2.Methods.Semantics.Deduplicate.Get": {
-            /** Список исходных запросов */
+            /** Список исходных запросов. */
             keywords: import('../../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
             /**
-             * Игнорировать порядок слов при поиске дублей
+             * Игнорировать порядок слов при поиске дублей.
              * @default true
              */
             ignoreWordsOrder?: boolean;
             /**
-             * Игнорировать стоп-слова при поиске дублей
+             * Игнорировать стоп-слова при поиске дублей.
              * @default true
              */
             ignoreStopWords?: boolean;

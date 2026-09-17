@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Этапы расчета достижений: "Итоги года"
+         * Этапы расчета достижений: "Итоги года".
          * @enum {string}
          */
         "Users_2.Types.ResultsYear.Rank.Step": "seoCat" | "activatedTelegramRank" | "auditCheck" | "errorsStatusCode" | "checksPositions" | "projectRegion" | "saintPetersburgChecks" | "moscowChecks" | "topPositions" | "keywordsClaster" | "googleCashback" | "leaderTopPositions";

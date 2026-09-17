@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "tags": {
-                        "title": "Теги запроса",
+                        "title": "Теги запроса.",
                         "allOf": [
                             {
                                 "$ref": "../../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
@@ -34,11 +34,11 @@
                         ]
                     },
                     "show_trash": {
-                        "title": "Учитывать ли удаленные запросы",
+                        "title": "Учитывать ли удаленные запросы.",
                         "type": "boolean"
                     },
                     "group_folder_id_depth": {
-                        "title": "Искать ли в подпапках",
+                        "title": "Искать ли в подпапках.",
                         "type": "boolean"
                     },
                     "project_id": {
@@ -62,7 +62,7 @@
                     "action",
                     "project_id"
                 ],
-                "title": "Изменение тегов запросов"
+                "title": "Изменение тегов запросов."
             },
             "Keywords_2.Methods.Keywords.Tags.Edit.Exec": {
                 "nullable": true,

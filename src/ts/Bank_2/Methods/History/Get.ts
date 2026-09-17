@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории транзакций */
+        /** Получение истории транзакций. */
         "Bank_2.Methods.History.Get": {
             /**
              * Определяет формат результата: коллекция, объект, значение

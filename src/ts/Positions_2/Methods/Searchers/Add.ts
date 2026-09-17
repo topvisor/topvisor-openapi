@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление ПС */
+        /** Добавление ПС. */
         "Positions_2.Methods.Searchers.Add": {
-            /** Ключ ПС */
+            /** Ключ ПС. */
             searcher_key: unknown;
             /** ID проекта */
             project_id: number;
