@@ -227,7 +227,7 @@
                         "readOnly": true
                     },
                     "Referrals_levels_description_title": {
-                        "const": "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels.",
+                        "const": "Referrals get levels that depend on the total amount paid. A Partner gets a reward each time a Referral reaches new level on the Affiliate program.<br><br><a href=\"/support/bank/affiliate/\" target=\"_blank\">More on referral levels →</a>",
                         "readOnly": true
                     },
                     "Referrals_download_invoice_act": {
@@ -1126,6 +1126,10 @@
                         "const": "Faster payments system",
                         "readOnly": true
                     },
+                    "Digital_ruble": {
+                        "const": "Digital ruble",
+                        "readOnly": true
+                    },
                     "QR_code": {
                         "const": "QR code",
                         "readOnly": true
@@ -1463,6 +1467,7 @@
                     "View_all_pricing_1",
                     "View_all_pricing_2",
                     "Faster_payments_system",
+                    "Digital_ruble",
                     "QR_code",
                     "Full_amount",
                     "Money_be_transferred_to_bonus_acc_no_withdraw",

@@ -117,7 +117,7 @@ export interface components {
             /** @constant */
             readonly Referrals_confirm_funds_transfer_to_bonus_account_notice: "Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>\n\tDo you want to continue?";
             /** @constant */
-            readonly Referrals_levels_description_title: "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels.";
+            readonly Referrals_levels_description_title: "Referrals get levels that depend on the total amount paid. A Partner gets a reward each time a Referral reaches new level on the Affiliate program.<br><br><a href=\"/support/bank/affiliate/\" target=\"_blank\">More on referral levels →</a>";
             /** @constant */
             readonly Referrals_download_invoice_act: "Download invoice and UTD";
             /** @constant */
@@ -566,6 +566,8 @@ export interface components {
             readonly View_all_pricing_2: "pricing";
             /** @constant */
             readonly Faster_payments_system: "Faster payments system";
+            /** @constant */
+            readonly Digital_ruble: "Digital ruble";
             /** @constant */
             readonly QR_code: "QR code";
             /** @constant */
