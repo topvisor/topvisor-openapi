@@ -15463,9 +15463,6 @@ components:
     Positions_2.Methods.Searchers.Regions.Add:
       type: object
       properties:
-        project_id:
-          title: Id проекта.
-          type: integer
         searcher_key:
           title: Ключ ПС.
         region_key:
@@ -15479,6 +15476,8 @@ components:
           type: string
         region_device:
           title: Устройство региона.
+        region_alt:
+          title: Формат выдачи региона
         region_depth:
           title: Глубина региона.
           description: |-
@@ -15487,13 +15486,17 @@ components:
             - 1-3 для GooglePlay
           default: 1
           type: integer
+        project_id:
+          title: ID проекта
+          type: integer
       required:
-        - project_id
         - searcher_key
         - region_key
+        - project_id
       title: Добавление региона.
     Positions_2.Methods.Searchers.Regions.Add.Exec:
       nullable: true
+      type: integer
     Positions_2.Methods.Searchers.Regions.Del:
       type: object
       properties:
@@ -15527,9 +15530,6 @@ components:
     Positions_2.Methods.Searchers.Regions.Edit:
       type: object
       properties:
-        project_id:
-          title: Id проекта.
-          type: integer
         region_index:
           title: Регион, который требуется изменить.
           type: integer
@@ -15540,6 +15540,9 @@ components:
           type: string
         region_device:
           title: Устройство региона.
+          nullable: true
+        region_alt:
+          title: Формат выдачи региона
           nullable: true
         region_depth:
           title: Глубина региона.
@@ -15553,6 +15556,9 @@ components:
           title: Включен.
           nullable: true
           type: boolean
+        project_id:
+          title: ID проекта
+          type: integer
         filters:
           title: Список фильтров по полям объекта
           description: |-
@@ -15568,8 +15574,8 @@ components:
           nullable: true
           type: integer
       required:
-        - project_id
         - region_index
+        - project_id
       title: Изменение региона.
     Positions_2.Methods.Searchers.Regions.Edit.Exec:
       type: integer

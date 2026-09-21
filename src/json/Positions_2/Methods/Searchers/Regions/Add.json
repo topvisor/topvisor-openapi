@@ -10,10 +10,6 @@
             "Positions_2.Methods.Searchers.Regions.Add": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "Id проекта.",
-                        "type": "integer"
-                    },
                     "searcher_key": {
                         "title": "Ключ ПС."
                     },
@@ -31,22 +27,30 @@
                     "region_device": {
                         "title": "Устройство региона."
                     },
+                    "region_alt": {
+                        "title": "Формат выдачи региона"
+                    },
                     "region_depth": {
                         "title": "Глубина региона.",
                         "description": "- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
                         "default": 1,
                         "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
                     }
                 },
                 "required": [
-                    "project_id",
                     "searcher_key",
-                    "region_key"
+                    "region_key",
+                    "project_id"
                 ],
                 "title": "Добавление региона."
             },
             "Positions_2.Methods.Searchers.Regions.Add.Exec": {
-                "nullable": true
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

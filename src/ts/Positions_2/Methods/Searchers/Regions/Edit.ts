@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Изменение региона. */
         "Positions_2.Methods.Searchers.Regions.Edit": {
-            /** Id проекта. */
-            project_id: number;
             /** Регион, который требуется изменить. */
             region_index: number;
             /**
@@ -20,6 +18,8 @@ export interface components {
             region_lang?: string | null;
             /** Устройство региона. */
             region_device?: unknown;
+            /** Формат выдачи региона */
+            region_alt?: unknown;
             /**
              * Глубина региона.
              * @description - 1-3 для Яндекса (ПК)
@@ -29,6 +29,8 @@ export interface components {
             region_depth?: number | null;
             /** Включен. */
             enabled?: boolean | null;
+            /** ID проекта */
+            project_id: number;
             /**
              * Список фильтров по полям объекта
              * @description {name: string, operator: Selector\Types\Operator, values: array}

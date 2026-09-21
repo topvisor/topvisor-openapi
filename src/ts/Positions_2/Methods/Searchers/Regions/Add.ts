@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Добавление региона. */
         "Positions_2.Methods.Searchers.Regions.Add": {
-            /** Id проекта. */
-            project_id: number;
             /** Ключ ПС. */
             searcher_key: unknown;
             /**
@@ -25,6 +23,8 @@ export interface components {
             region_lang?: string | null;
             /** Устройство региона. */
             region_device?: unknown;
+            /** Формат выдачи региона */
+            region_alt?: unknown;
             /**
              * Глубина региона.
              * @description - 1-3 для Яндекса (ПК)
@@ -33,8 +33,10 @@ export interface components {
              * @default 1
              */
             region_depth?: number;
+            /** ID проекта */
+            project_id: number;
         };
-        "Positions_2.Methods.Searchers.Regions.Add.Exec": unknown;
+        "Positions_2.Methods.Searchers.Regions.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -10,10 +10,6 @@
             "Positions_2.Methods.Searchers.Regions.Edit": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "Id проекта.",
-                        "type": "integer"
-                    },
                     "region_index": {
                         "title": "Регион, который требуется изменить.",
                         "type": "integer"
@@ -28,6 +24,10 @@
                         "title": "Устройство региона.",
                         "nullable": true
                     },
+                    "region_alt": {
+                        "title": "Формат выдачи региона",
+                        "nullable": true
+                    },
                     "region_depth": {
                         "title": "Глубина региона.",
                         "description": "- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
@@ -38,6 +38,10 @@
                         "title": "Включен.",
                         "nullable": true,
                         "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
                     },
                     "filters": {
                         "title": "Список фильтров по полям объекта",
@@ -52,8 +56,8 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "region_index"
+                    "region_index",
+                    "project_id"
                 ],
                 "title": "Изменение региона."
             },
