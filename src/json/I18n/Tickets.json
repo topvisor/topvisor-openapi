@@ -182,6 +182,10 @@
                         "const": "Support engineer",
                         "readOnly": true
                     },
+                    "Guest_active_ticket_limit": {
+                        "const": "You already have an open ticket",
+                        "readOnly": true
+                    },
                     "Bad": {
                         "const": "Bad",
                         "readOnly": true
@@ -311,6 +315,7 @@
                     "Send",
                     "Go_to_new_line",
                     "Support_engineer",
+                    "Guest_active_ticket_limit",
                     "Bad",
                     "Normal",
                     "Good",

@@ -95,6 +95,8 @@ export interface components {
             /** @constant */
             readonly Support_engineer: "Support engineer";
             /** @constant */
+            readonly Guest_active_ticket_limit: "You already have an open ticket";
+            /** @constant */
             readonly Bad: "Bad";
             /** @constant */
             readonly Normal: "OK";
