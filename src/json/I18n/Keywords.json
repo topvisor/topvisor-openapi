@@ -531,15 +531,11 @@
                         "readOnly": true
                     },
                     "Each_keyword_on_new_line": {
-                        "const": "Keywords (each keyword on a new line)",
+                        "const": "Keywords (each on a new line)",
                         "readOnly": true
                     },
                     "Source": {
                         "const": "Source",
-                        "readOnly": true
-                    },
-                    "Phrases_on_new_line": {
-                        "const": "Phrases (each one on a new line)",
                         "readOnly": true
                     },
                     "Import_to_group": {
@@ -560,6 +556,14 @@
                     },
                     "Move_duplicates_another_group_name": {
                         "const": "Where move duplicates?",
+                        "readOnly": true
+                    },
+                    "Added_groups": {
+                        "const": "Added groups",
+                        "readOnly": true
+                    },
+                    "Added_folders": {
+                        "const": "Added folders",
                         "readOnly": true
                     },
                     "Match_type": {
@@ -1130,8 +1134,8 @@
                         "const": "Move to another project",
                         "readOnly": true
                     },
-                    "Move_group_and_delete_from_orginal_project": {
-                        "const": "Transfer (delete from the orginal project)",
+                    "Transfer_group_and_delete_from_orginal_project": {
+                        "const": "Transfer (delete from the original project)",
                         "readOnly": true
                     },
                     "Keywords_to_transfer_and_delete_from_project": {
@@ -1396,12 +1400,13 @@
                     "Delete_group_warning",
                     "Each_keyword_on_new_line",
                     "Source",
-                    "Phrases_on_new_line",
                     "Import_to_group",
                     "Skip_duplicates",
                     "Move_duplicates",
                     "Move_duplicates_another_group",
                     "Move_duplicates_another_group_name",
+                    "Added_groups",
+                    "Added_folders",
                     "Match_type",
                     "Match_type_broad",
                     "Match_type_phrase",
@@ -1544,7 +1549,7 @@
                     "Activity_status",
                     "No_target_URL",
                     "Move_keywords_to_another_project",
-                    "Move_group_and_delete_from_orginal_project",
+                    "Transfer_group_and_delete_from_orginal_project",
                     "Keywords_to_transfer_and_delete_from_project",
                     "Remove_pluses_fullstops_commas_apostrophes_quotes",
                     "HintVolumeNoCollected",

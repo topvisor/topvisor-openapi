@@ -269,11 +269,9 @@ export interface components {
             /** @constant */
             readonly Delete_group_warning: "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.";
             /** @constant */
-            readonly Each_keyword_on_new_line: "Keywords (each keyword on a new line)";
+            readonly Each_keyword_on_new_line: "Keywords (each on a new line)";
             /** @constant */
             readonly Source: "Source";
-            /** @constant */
-            readonly Phrases_on_new_line: "Phrases (each one on a new line)";
             /** @constant */
             readonly Import_to_group: "Import into group";
             /** @constant */
@@ -284,6 +282,10 @@ export interface components {
             readonly Move_duplicates_another_group: "Move duplicates to another group";
             /** @constant */
             readonly Move_duplicates_another_group_name: "Where move duplicates?";
+            /** @constant */
+            readonly Added_groups: "Added groups";
+            /** @constant */
+            readonly Added_folders: "Added folders";
             /** @constant */
             readonly Match_type: "Match type";
             /** @constant */
@@ -569,7 +571,7 @@ export interface components {
             /** @constant */
             readonly Move_keywords_to_another_project: "Move to another project";
             /** @constant */
-            readonly Move_group_and_delete_from_orginal_project: "Transfer (delete from the orginal project)";
+            readonly Transfer_group_and_delete_from_orginal_project: "Transfer (delete from the original project)";
             /** @constant */
             readonly Keywords_to_transfer_and_delete_from_project: "To transfer and delete from the original project";
             /** @constant */
