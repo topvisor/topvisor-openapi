@@ -451,7 +451,7 @@
                         "readOnly": true
                     },
                     "Selected_time_is_hightload": {
-                        "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>",
+                        "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i>{{ recommendedCheckStart }}</i> to <i>{{ recommendedCheckEnd }}</i> in the morning.</p>",
                         "readOnly": true
                     },
                     "Delete_keyword": {

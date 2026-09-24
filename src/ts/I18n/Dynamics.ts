@@ -229,7 +229,7 @@ export interface components {
             /** @constant */
             readonly Snippets_no_checking: "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.";
             /** @constant */
-            readonly Selected_time_is_hightload: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>";
+            readonly Selected_time_is_hightload: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i>{{ recommendedCheckStart }}</i> to <i>{{ recommendedCheckEnd }}</i> in the morning.</p>";
             /** @constant */
             readonly Delete_keyword: "Delete keyword";
             /** @constant */
