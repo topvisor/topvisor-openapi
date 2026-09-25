@@ -4,7 +4,7 @@
  */
 
 export interface paths {  
-    /** Получение списка платежей */
+    /** Получение списка платежей. */
     "/get/payments_2/": {
         parameters: {
             query?: never;
@@ -21,7 +21,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление расписания */
+    /** Удаление расписания. */
     "/del/schedule_2/": {
         parameters: {
             query?: never;
@@ -38,7 +38,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Привязать расписание к объекту */
+    /** Привязать расписание к объекту. */
     "/edit/schedule_2/": {
         parameters: {
             query?: never;
@@ -55,7 +55,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение рассписания */
+    /** Получение рассписания. */
     "/get/schedule_2/": {
         parameters: {
             query?: never;
@@ -72,7 +72,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление ссылки */
+    /** Добавление ссылки. */
     "/add/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -89,7 +89,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Редактирование ссылки */
+    /** Редактирование ссылки. */
     "/edit/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -106,7 +106,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка ссылок пользователя */
+    /** Получение списка ссылок пользователя. */
     "/get/tpvsr_2/": {
         parameters: {
             query?: never;
@@ -123,7 +123,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление url */
+    /** Добавление url. */
     "/add/urls_2/": {
         parameters: {
             query?: never;
@@ -140,7 +140,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение urls */
+    /** Изменение urls. */
     "/edit/urls_2/": {
         parameters: {
             query?: never;
@@ -157,7 +157,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка urls проекта */
+    /** Получение списка urls проекта. */
     "/get/urls_2/": {
         parameters: {
             query?: never;
@@ -191,7 +191,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление проверки ИИ-Трекера */
+    /** Удаление проверки ИИ-Трекера. */
     "/del/aiTracker_2/history/": {
         parameters: {
             query?: never;
@@ -208,7 +208,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории проверок ИИ-Трекера */
+    /** Получение истории проверок ИИ-Трекера. */
     "/get/aiTracker_2/history/": {
         parameters: {
             query?: never;
@@ -226,8 +226,8 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Изменение настроек ИИ-Трекера
-     * @description Для получения текущих настроек используйте: /get/projects_2/projects/
+     * Изменение настроек ИИ-Трекера.
+     * @description Для получения текущих настроек используйте: /get/projects_2/projects/.
      */
     "/edit/aiTracker_2/settings/": {
         parameters: {
@@ -245,7 +245,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение настроек ИИ-Трекера */
+    /** Получение настроек ИИ-Трекера. */
     "/get/aiTracker_2/settings/": {
         parameters: {
             query?: never;
@@ -262,7 +262,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки по проверкам ИИ-Трекера */
+    /** Получение сводки по проверкам ИИ-Трекера. */
     "/get/aiTracker_2/summary/": {
         parameters: {
             query?: never;
@@ -279,7 +279,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение количества настроенных URL */
+    /** Получение количества настроенных URL. */
     "/get/audit_2/countUrls/": {
         parameters: {
             query?: never;
@@ -297,7 +297,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получение отчета по проверке индексации
+     * Получение отчета по проверке индексации.
      * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
      */
     "/get/audit_2/indexing/": {
@@ -316,7 +316,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Применение настроек Анализа сайта */
+    /** Применение настроек Анализа сайта. */
     "/edit/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -333,7 +333,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение настроек аудита */
+    /** Получение настроек аудита. */
     "/get/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -351,8 +351,8 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получение результатов проверок радара
-     * @description Отчет генерируется на основе объектов urls
+     * Получение результатов проверок радара.
+     * @description Отчет генерируется на основе объектов urls.
      *
      *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
      */
@@ -372,7 +372,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории транзакций */
+    /** Получение истории транзакций. */
     "/get/bank_2/history/": {
         parameters: {
             query?: never;
@@ -389,7 +389,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации о балансе */
+    /** Получение информации о балансе. */
     "/get/bank_2/info/": {
         parameters: {
             query?: never;
@@ -406,7 +406,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных для графика отчета */
+    /** Получение данных для графика отчета. */
     "/get/competitors_2/charts/": {
         parameters: {
             query?: never;
@@ -423,7 +423,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить список оплаченных отчетов */
+    /** Получить список оплаченных отчетов. */
     "/get/competitors_2/orders/": {
         parameters: {
             query?: never;
@@ -440,7 +440,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных для отчета */
+    /** Получение данных для отчета. */
     "/get/competitors_2/table/": {
         parameters: {
             query?: never;
@@ -457,7 +457,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление групп */
+    /** Добавление групп. */
     "/add/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
@@ -474,7 +474,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление групп */
+    /** Удаление групп. */
     "/del/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
@@ -491,7 +491,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка групп проекта */
+    /** Получение списка групп проекта. */
     "/get/keywordsAi_2/groups/": {
         parameters: {
             query?: never;
@@ -508,7 +508,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление AI-запросов */
+    /** Удаление AI-запросов. */
     "/del/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
@@ -525,7 +525,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка AI-запросов */
+    /** Получение списка AI-запросов. */
     "/get/keywordsAi_2/keywords/": {
         parameters: {
             query?: never;
@@ -542,7 +542,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление папки */
+    /** Добавление папки. */
     "/add/keywords_2/folders/": {
         parameters: {
             query?: never;
@@ -559,7 +559,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление папок */
+    /** Удаление папок. */
     "/del/keywords_2/folders/": {
         parameters: {
             query?: never;
@@ -576,7 +576,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка папок проекта */
+    /** Получение списка папок проекта. */
     "/get/keywords_2/folders/": {
         parameters: {
             query?: never;
@@ -593,7 +593,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление групп */
+    /** Добавление групп. */
     "/add/keywords_2/groups/": {
         parameters: {
             query?: never;
@@ -610,7 +610,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление групп */
+    /** Удаление групп. */
     "/del/keywords_2/groups/": {
         parameters: {
             query?: never;
@@ -627,7 +627,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка групп проекта */
+    /** Получение списка групп проекта. */
     "/get/keywords_2/groups/": {
         parameters: {
             query?: never;
@@ -644,7 +644,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление запроса */
+    /** Добавление запроса. */
     "/add/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -661,7 +661,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление запросов */
+    /** Удаление запросов. */
     "/del/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -678,7 +678,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка запросов проекта */
+    /** Получение списка запросов проекта. */
     "/get/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -695,7 +695,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных магнита по интеграции */
+    /** Получение данных магнита по интеграции. */
     "/get/keywords_2/magnet/": {
         parameters: {
             query?: never;
@@ -712,7 +712,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение компании пользователя, через которых, были совершены платежи */
+    /** Получение компании пользователя, через которых, были совершены платежи. */
     "/get/payments_2/companies/": {
         parameters: {
             query?: never;
@@ -729,7 +729,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение платежных реквизитов тарифа */
+    /** Изменение платежных реквизитов тарифа. */
     "/edit/payments_2/nextRequisitesId/": {
         parameters: {
             query?: never;
@@ -747,7 +747,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Изменения подписки сейчас
+     * Изменения подписки сейчас.
      * @description Реализует две взаимоисключающие стратегии:
      *
      *     - Проведение доплаты по текущей подписке
@@ -755,7 +755,7 @@ export interface paths {
      *        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
      *        - После оплаты новой подписки действующая подписка будет досрочно завершена
      *
-     *     Выбор стратегии зависит от типа управления подпиской
+     *     Выбор стратегии зависит от типа управления подпиской.
      */
     "/edit/payments_2/subscriptions/": {
         parameters: {
@@ -773,7 +773,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории позиций по запросам */
+    /** Получение истории позиций по запросам. */
     "/get/positions_2/history/": {
         parameters: {
             query?: never;
@@ -790,7 +790,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление ПС */
+    /** Добавление ПС. */
     "/add/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -807,7 +807,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление ПС */
+    /** Удаление ПС. */
     "/del/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -824,7 +824,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Установка общих настроек проверки позиций проекта */
+    /** Установка общих настроек проверки позиций проекта. */
     "/edit/positions_2/settings/": {
         parameters: {
             query?: never;
@@ -841,7 +841,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки по проверкам позиций */
+    /** Получение сводки по проверкам позиций. */
     "/get/positions_2/summary/": {
         parameters: {
             query?: never;
@@ -858,7 +858,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление графика */
+    /** Добавление графика. */
     "/add/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -875,7 +875,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение настроек бренда проекта */
+    /** Изменение настроек бренда проекта. */
     "/edit/projects_2/brand/": {
         parameters: {
             query?: never;
@@ -893,8 +893,8 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Добавление конкурента
-     * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
+     * Добавление конкурента.
+     * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте.
      */
     "/add/projects_2/competitors/": {
         parameters: {
@@ -912,7 +912,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление конкурентов */
+    /** Удаление конкурентов. */
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -929,7 +929,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка конкурентов */
+    /** Получение списка конкурентов. */
     "/get/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -946,7 +946,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление проекта */
+    /** Добавление проекта. */
     "/add/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -963,7 +963,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление проектов */
+    /** Удаление проектов. */
     "/del/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -980,7 +980,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка проектов */
+    /** Получение списка проектов. */
     "/get/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -997,7 +997,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение списка задач */
+    /** Получение списка задач. */
     "/get/projects_2/tasks/": {
         parameters: {
             query?: never;
@@ -1015,7 +1015,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получение списка конкурентов
+     * Получение списка конкурентов.
      * @description Метод базируется на объекте keywords (доступны только фильтры)
      */
     "/get/snapshots_2/competitors/": {
@@ -1035,8 +1035,8 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получение истории снимков выдачи
-     * @description Метод базируется на объекте keywords
+     * Получение истории снимков выдачи.
+     * @description Метод базируется на объекте keywords.
      */
     "/get/snapshots_2/history/": {
         parameters: {
@@ -1054,7 +1054,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение статистики по ссылке */
+    /** Получение статистики по ссылке. */
     "/get/tpvsr_2/stat/": {
         parameters: {
             query?: never;
@@ -1071,7 +1071,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение тегов */
+    /** Изменение тегов. */
     "/edit/tpvsr_2/tags/": {
         parameters: {
             query?: never;
@@ -1088,7 +1088,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение тегов */
+    /** Изменение тегов. */
     "/edit/urls_2/tags/": {
         parameters: {
             query?: never;
@@ -1105,7 +1105,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение параметров активного пользователя */
+    /** Изменение параметров активного пользователя. */
     "/edit/users_2/profile/": {
         parameters: {
             query?: never;
@@ -1122,7 +1122,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку ИИ-Трекера */
+    /** Отправка проектов на проверку ИИ-Трекера. */
     "/edit/aiTracker_2/checker/go/": {
         parameters: {
             query?: never;
@@ -1139,7 +1139,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости проверки ИИ-Трекера */
+    /** Информация о стоимости проверки ИИ-Трекера. */
     "/get/aiTracker_2/checker/price/": {
         parameters: {
             query?: never;
@@ -1179,7 +1179,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение проверенных css */
+    /** Получение проверенных css. */
     "/get/audit_2/audit/css/": {
         parameters: {
             query?: never;
@@ -1196,7 +1196,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение проверенных js */
+    /** Получение проверенных js. */
     "/get/audit_2/audit/js/": {
         parameters: {
             query?: never;
@@ -1213,7 +1213,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение проверенных ссылок */
+    /** Получение проверенных ссылок. */
     "/get/audit_2/audit/links/": {
         parameters: {
             query?: never;
@@ -1230,7 +1230,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки о выполненном аудите */
+    /** Получение сводки о выполненном аудите. */
     "/get/audit_2/audit/summary/": {
         parameters: {
             query?: never;
@@ -1247,7 +1247,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки страницы */
+    /** Получение сводки страницы. */
     "/get/audit_2/audit/summaryPage/": {
         parameters: {
             query?: never;
@@ -1264,7 +1264,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки индексации */
+    /** Получение сводки индексации. */
     "/get/audit_2/indexing/summary/": {
         parameters: {
             query?: never;
@@ -1281,7 +1281,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки радара */
+    /** Получение сводки радара. */
     "/get/audit_2/watcher/summary/": {
         parameters: {
             query?: never;
@@ -1298,7 +1298,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение сводки проведенных операций */
+    /** Получение сводки проведенных операций. */
     "/get/bank_2/history/summary/": {
         parameters: {
             query?: never;
@@ -1315,7 +1315,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Оплатить отчет */
+    /** Оплатить отчет. */
     "/edit/competitors_2/orders/pay/": {
         parameters: {
             query?: never;
@@ -1332,7 +1332,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение календаря апдейтов */
+    /** Получение календаря апдейтов. */
     "/get/content_2/apometr/calendar/": {
         parameters: {
             query?: never;
@@ -1349,7 +1349,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории шторма за период в 2 суток */
+    /** Получение истории шторма за период в 2 суток. */
     "/get/content_2/apometr/history/": {
         parameters: {
             query?: never;
@@ -1366,7 +1366,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение апдейтов */
+    /** Получение апдейтов. */
     "/get/content_2/apometr/updates/": {
         parameters: {
             query?: never;
@@ -1383,7 +1383,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Импорт AI-запросов */
+    /** Импорт AI-запросов. */
     "/add/keywordsAi_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -1400,7 +1400,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Кластеризация по релевантной странице: проверки перед началом кластеризации */
+    /** Кластеризация по релевантной странице: проверки перед началом кластеризации. */
     "/edit/keywords_2/claster/byRelevant/": {
         parameters: {
             query?: never;
@@ -1417,7 +1417,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Кластеризация по целевой ссылке: проверки перед началом кластеризации */
+    /** Кластеризация по целевой ссылке: проверки перед началом кластеризации. */
     "/edit/keywords_2/claster/byTarget/": {
         parameters: {
             query?: never;
@@ -1434,7 +1434,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации и предыдущей кластеризации */
+    /** Получение информации и предыдущей кластеризации. */
     "/get/keywords_2/claster/countPriceReclaster/": {
         parameters: {
             query?: never;
@@ -1451,7 +1451,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение обновленного процента завершения кластеризации */
+    /** Получение обновленного процента завершения кластеризации. */
     "/get/keywords_2/claster/percent/": {
         parameters: {
             query?: never;
@@ -1468,7 +1468,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены кластеризации */
+    /** Получение цены кластеризации. */
     "/get/keywords_2/claster/price/": {
         parameters: {
             query?: never;
@@ -1485,7 +1485,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены перекластеризации */
+    /** Получение цены перекластеризации. */
     "/get/keywords_2/claster/priceChange/": {
         parameters: {
             query?: never;
@@ -1502,7 +1502,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Запуск кластеризации */
+    /** Запуск кластеризации. */
     "/add/keywords_2/claster/task/": {
         parameters: {
             query?: never;
@@ -1519,7 +1519,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Запуск перекластеризации */
+    /** Запуск перекластеризации. */
     "/add/keywords_2/claster/taskChange/": {
         parameters: {
             query?: never;
@@ -1536,7 +1536,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Постановка задачи на подбор запросов */
+    /** Постановка задачи на подбор запросов. */
     "/edit/keywords_2/collect/go/": {
         parameters: {
             query?: never;
@@ -1553,7 +1553,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение стоимости подбора запросов */
+    /** Получение стоимости подбора запросов. */
     "/get/keywords_2/collect/price/": {
         parameters: {
             query?: never;
@@ -1570,7 +1570,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Перемещение папок */
+    /** Перемещение папок. */
     "/edit/keywords_2/folders/move/": {
         parameters: {
             query?: never;
@@ -1587,7 +1587,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Переименовывание папок */
+    /** Переименовывание папок. */
     "/edit/keywords_2/folders/rename/": {
         parameters: {
             query?: never;
@@ -1604,7 +1604,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Восстановление папок проекта */
+    /** Восстановление папок проекта. */
     "/edit/keywords_2/folders/undel/": {
         parameters: {
             query?: never;
@@ -1621,7 +1621,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Перемещение группы */
+    /** Перемещение группы. */
     "/edit/keywords_2/groups/move/": {
         parameters: {
             query?: never;
@@ -1638,7 +1638,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение статуса активности группы */
+    /** Изменение статуса активности группы. */
     "/edit/keywords_2/groups/on/": {
         parameters: {
             query?: never;
@@ -1655,7 +1655,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Переименовывание группы */
+    /** Переименовывание группы. */
     "/edit/keywords_2/groups/rename/": {
         parameters: {
             query?: never;
@@ -1673,8 +1673,8 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Изменение сортировки групп
-     * @description Не оптимизировано для работы с большим числом групп, дат и регионов
+     * Изменение сортировки групп.
+     * @description Не оптимизировано для работы с большим числом групп, дат и регионов.
      */
     "/edit/keywords_2/groups/sort/": {
         parameters: {
@@ -1692,7 +1692,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Восстановление группы из корзины */
+    /** Восстановление группы из корзины. */
     "/edit/keywords_2/groups/undel/": {
         parameters: {
             query?: never;
@@ -1726,7 +1726,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Импорт запросов */
+    /** Импорт запросов. */
     "/add/keywords_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -1743,7 +1743,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Перемещение запросов */
+    /** Перемещение запросов. */
     "/edit/keywords_2/keywords/move/": {
         parameters: {
             query?: never;
@@ -1760,7 +1760,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Переименование запроса */
+    /** Переименование запроса. */
     "/edit/keywords_2/keywords/rename/": {
         parameters: {
             query?: never;
@@ -1778,8 +1778,8 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Изменение сортировки запросов
-     * @description Можно сортировать в пределах одной группы или всего проекта
+     * Изменение сортировки запросов.
+     * @description Можно сортировать в пределах одной группы или всего проекта.
      */
     "/edit/keywords_2/keywords/sort/": {
         parameters: {
@@ -1797,7 +1797,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение тегов запросов */
+    /** Изменение тегов запросов. */
     "/edit/keywords_2/keywords/tags/": {
         parameters: {
             query?: never;
@@ -1814,7 +1814,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение целевой ссылки запросов */
+    /** Изменение целевой ссылки запросов. */
     "/edit/keywords_2/keywords/target/": {
         parameters: {
             query?: never;
@@ -1831,7 +1831,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Восстановление запросов из корзины */
+    /** Восстановление запросов из корзины. */
     "/edit/keywords_2/keywords/undel/": {
         parameters: {
             query?: never;
@@ -1848,7 +1848,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт данных магнита */
+    /** Экспорт данных магнита. */
     "/get/keywords_2/magnet/export/": {
         parameters: {
             query?: never;
@@ -1865,7 +1865,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Импорт данных магнита */
+    /** Импорт данных магнита. */
     "/get/keywords_2/magnet/import/": {
         parameters: {
             query?: never;
@@ -1882,7 +1882,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление неявных дублей по ключевым фразам */
+    /** Удаление неявных дублей по ключевым фразам. */
     "/get/keywords_2/semantics/deduplicate/": {
         parameters: {
             query?: never;
@@ -1899,7 +1899,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Постановка задачи на проверку частоты запросов */
+    /** Постановка задачи на проверку частоты запросов. */
     "/edit/keywords_2/volumes/go/": {
         parameters: {
             query?: never;
@@ -1916,7 +1916,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости запуска проверки позиций по проектам */
+    /** Информация о стоимости запуска проверки позиций по проектам. */
     "/get/keywords_2/volumes/price/": {
         parameters: {
             query?: never;
@@ -1933,7 +1933,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Управление приостановкой/возобновлением рекуррентных платежей */
+    /** Управление приостановкой/возобновлением рекуррентных платежей. */
     "/edit/payments_2/recurrent/suspend/": {
         parameters: {
             query?: never;
@@ -1951,10 +1951,10 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Изменения подписки на следующий расчетный период
-     * @description Изменение доступно только в рамках одной платежной системы
+     * Изменения подписки на следующий расчетный период.
+     * @description Изменение доступно только в рамках одной платежной системы.
      *
-     *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
+     *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки.
      */
     "/edit/payments_2/subscriptions/next/": {
         parameters: {
@@ -1972,7 +1972,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отписка от тарифа, оплаченного картой */
+    /** Отписка от тарифа, оплаченного картой. */
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
             query?: never;
@@ -1989,7 +1989,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Смена тарифа со следующего месяца */
+    /** Смена тарифа со следующего месяца. */
     "/edit/payments_2/tariff/setNext/": {
         parameters: {
             query?: never;
@@ -2006,7 +2006,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку позиций */
+    /** Отправка проектов на проверку позиций. */
     "/edit/positions_2/checker/go/": {
         parameters: {
             query?: never;
@@ -2023,7 +2023,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости запуска проверки позиций по проектам */
+    /** Информация о стоимости запуска проверки позиций по проектам. */
     "/get/positions_2/checker/price/": {
         parameters: {
             query?: never;
@@ -2040,7 +2040,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Включение/выключение ПС */
+    /** Включение/выключение ПС. */
     "/edit/positions_2/searchers/enabled/": {
         parameters: {
             query?: never;
@@ -2057,7 +2057,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление региона */
+    /** Добавление региона. */
     "/add/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -2074,7 +2074,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление региона */
+    /** Удаление региона. */
     "/del/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -2091,7 +2091,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение региона */
+    /** Изменение региона. */
     "/edit/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -2108,7 +2108,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Настройка сортировки ПС */
+    /** Настройка сортировки ПС. */
     "/edit/positions_2/searchers/sort/": {
         parameters: {
             query?: never;
@@ -2125,7 +2125,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных сводки для отображения графика */
+    /** Получение данных сводки для отображения графика. */
     "/get/positions_2/summary/chart/": {
         parameters: {
             query?: never;
@@ -2142,7 +2142,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение настроек бренда */
+    /** Изменение настроек бренда. */
     "/edit/projects_2/competitors/brand/": {
         parameters: {
             query?: never;
@@ -2176,7 +2176,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Установка имени конкурента */
+    /** Установка имени конкурента. */
     "/edit/projects_2/competitors/name/": {
         parameters: {
             query?: never;
@@ -2193,7 +2193,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Включение/выключение конкурентов */
+    /** Включение/выключение конкурентов. */
     "/edit/projects_2/competitors/on/": {
         parameters: {
             query?: never;
@@ -2210,7 +2210,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Копирование проекта */
+    /** Копирование проекта. */
     "/add/projects_2/projects/copy/": {
         parameters: {
             query?: never;
@@ -2227,7 +2227,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Настройка избранных проектов */
+    /** Настройка избранных проектов. */
     "/edit/projects_2/projects/favorite/": {
         parameters: {
             query?: never;
@@ -2261,7 +2261,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Установка имени проекта */
+    /** Установка имени проекта. */
     "/edit/projects_2/projects/name/": {
         parameters: {
             query?: never;
@@ -2278,7 +2278,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Редактирование "on" проектов */
+    /** Редактирование "on" проектов. */
     "/edit/projects_2/projects/on/": {
         parameters: {
             query?: never;
@@ -2295,7 +2295,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение сортировки проектов */
+    /** Изменение сортировки проектов. */
     "/edit/projects_2/projects/sort/": {
         parameters: {
             query?: never;
@@ -2312,7 +2312,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Редактирование тегов проектов */
+    /** Редактирование тегов проектов. */
     "/edit/projects_2/projects/tags/": {
         parameters: {
             query?: never;
@@ -2329,7 +2329,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание задачи на индексацию */
+    /** Создание задачи на индексацию. */
     "/add/projects_2/tasks/indexing/": {
         parameters: {
             query?: never;
@@ -2346,7 +2346,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание задачи на проверку релевантности */
+    /** Создание задачи на проверку релевантности. */
     "/add/projects_2/tasks/relevants/": {
         parameters: {
             query?: never;
@@ -2363,7 +2363,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание задачи на проверку частоты */
+    /** Создание задачи на проверку частоты. */
     "/add/projects_2/tasks/volumes/": {
         parameters: {
             query?: never;
@@ -2380,7 +2380,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение регионов для поисковиков с последующим кэшированием для Get запросов */
+    /** Получение регионов для поисковиков с последующим кэшированием для Get запросов. */
     "/get/system_2/common/regions/": {
         parameters: {
             query?: never;
@@ -2397,7 +2397,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение пути на аватар пользователя от корня сайта */
+    /** Получение пути на аватар пользователя от корня сайта. */
     "/get/users_2/profile/avatar/": {
         parameters: {
             query?: never;
@@ -2414,7 +2414,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение валюты пользователя */
+    /** Изменение валюты пользователя. */
     "/edit/users_2/profile/currency/": {
         parameters: {
             query?: never;
@@ -2431,7 +2431,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение языка */
+    /** Изменение языка. */
     "/edit/users_2/profile/lang/": {
         parameters: {
             query?: never;
@@ -2448,7 +2448,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменение временной зоны */
+    /** Изменение временной зоны. */
     "/edit/users_2/profile/timezone/": {
         parameters: {
             query?: never;
@@ -2465,7 +2465,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Запуск проверки аудита */
+    /** Запуск проверки аудита. */
     "/edit/audit_2/audit/checker/go/": {
         parameters: {
             query?: never;
@@ -2482,7 +2482,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости запуска аудита по проектам */
+    /** Информация о стоимости запуска аудита по проектам. */
     "/get/audit_2/audit/checker/price/": {
         parameters: {
             query?: never;
@@ -2499,7 +2499,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку индексации */
+    /** Отправка проектов на проверку индексации. */
     "/edit/audit_2/indexing/checker/go/": {
         parameters: {
             query?: never;
@@ -2516,7 +2516,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости запуска индексации по проектам */
+    /** Информация о стоимости запуска индексации по проектам. */
     "/get/audit_2/indexing/checker/price/": {
         parameters: {
             query?: never;
@@ -2533,7 +2533,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку карты сайта */
+    /** Отправка проектов на проверку карты сайта. */
     "/edit/audit_2/sitemap/checker/go/": {
         parameters: {
             query?: never;
@@ -2550,7 +2550,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости запуска индексации по проектам */
+    /** Информация о стоимости запуска индексации по проектам. */
     "/get/audit_2/sitemap/checker/price/": {
         parameters: {
             query?: never;
@@ -2567,7 +2567,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку радара */
+    /** Отправка проектов на проверку радара. */
     "/edit/audit_2/watcher/checker/go/": {
         parameters: {
             query?: never;
@@ -2584,7 +2584,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости запуска индексации по проектам */
+    /** Информация о стоимости запуска индексации по проектам. */
     "/get/audit_2/watcher/checker/price/": {
         parameters: {
             query?: never;
@@ -2635,7 +2635,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение календаря текстовых апдейтов */
+    /** Получение календаря текстовых апдейтов. */
     "/get/content_2/apometr/text/calendar/": {
         parameters: {
             query?: never;
@@ -2652,7 +2652,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Копирование запросов в другой проект */
+    /** Копирование запросов в другой проект. */
     "/edit/keywords_2/keywords/export/toProject/": {
         parameters: {
             query?: never;
@@ -2669,7 +2669,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправка проектов на проверку релевантности */
+    /** Отправка проектов на проверку релевантности. */
     "/edit/positions_2/relevant/checker/go/": {
         parameters: {
             query?: never;
@@ -2686,7 +2686,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Информация о стоимости проверки релевантности */
+    /** Информация о стоимости проверки релевантности. */
     "/get/positions_2/relevant/checker/price/": {
         parameters: {
             query?: never;
@@ -2740,7 +2740,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Настройка сортировки регионов */
+    /** Настройка сортировки регионов. */
     "/edit/positions_2/searchers/regions/sort/": {
         parameters: {
             query?: never;
@@ -2757,7 +2757,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены проверки индексации задачи без создания проекта */
+    /** Получение цены проверки индексации задачи без создания проекта. */
     "/get/projects_2/tasks/indexing/price/": {
         parameters: {
             query?: never;
@@ -2774,7 +2774,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Создание задачи на сбор запросов */
+    /** Создание задачи на сбор запросов. */
     "/add/projects_2/tasks/keywords/collect/": {
         parameters: {
             query?: never;
@@ -2791,7 +2791,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены проверки релевантности задачи без создания проекта */
+    /** Получение цены проверки релевантности задачи без создания проекта. */
     "/get/projects_2/tasks/relevants/price/": {
         parameters: {
             query?: never;
@@ -2808,7 +2808,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены проверки частоты задачи без создания проекта */
+    /** Получение цены проверки частоты задачи без создания проекта. */
     "/get/projects_2/tasks/volumes/price/": {
         parameters: {
             query?: never;
@@ -2825,7 +2825,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены сбора запросов без создания проекта */
+    /** Получение цены сбора запросов без создания проекта. */
     "/get/projects_2/tasks/keywords/collect/price/": {
         parameters: {
             query?: never;

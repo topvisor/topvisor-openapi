@@ -11,6 +11,8 @@ export interface components {
             /** @constant */
             readonly Competitor_analysis: "Competitor research";
             /** @constant */
+            readonly Competitor_analysis_short: "CA";
+            /** @constant */
             readonly Powerful_tool_for_competitve_analysis: "Powerful tool for comprehensive competitve reserach";
             /** @constant */
             readonly Results_on_serp: "Total search results count";
@@ -318,8 +320,6 @@ export interface components {
             readonly Download_keywords_snippets_after_purchase: "After purchase, you can download keywords and snippets of this and other competitors with the intersection level {{ intersection }} in one click and compare their data with the main domain on this report.";
             /** @constant */
             readonly Results_not_found: "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>";
-            /** @constant */
-            readonly Brand_name_and_description: "Brand name and description";
         };
     };
     responses: never;

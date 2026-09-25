@@ -989,6 +989,14 @@
                     "Confirm_deletion": {
                         "const": "Confirm deletion",
                         "readOnly": true
+                    },
+                    "Skipped_competitors": {
+                        "const": "Skipped competitors",
+                        "readOnly": true
+                    },
+                    "Compare_all_keywords": {
+                        "const": "Compare all keywords",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1235,7 +1243,9 @@
                     "Mentions",
                     "AI_visibility",
                     "Initial_project_setup",
-                    "Confirm_deletion"
+                    "Confirm_deletion",
+                    "Skipped_competitors",
+                    "Compare_all_keywords"
                 ]
             }
         }

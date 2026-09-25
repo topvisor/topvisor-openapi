@@ -26,20 +26,20 @@
                         ]
                     },
                     "show_fields_names": {
-                        "title": "Вывести fieldName в заголовках столбцов",
+                        "title": "Вывести fieldName в заголовках столбцов.",
                         "type": "boolean"
                     },
                     "show_fields_labels": {
-                        "title": "Вывести fieldLabel в заголовках столбцов",
+                        "title": "Вывести fieldLabel в заголовках столбцов.",
                         "type": "boolean"
                     },
                     "file_name": {
-                        "title": "Имя файла",
+                        "title": "Имя файла.",
                         "default": "export",
                         "type": "string"
                     },
                     "show_trash": {
-                        "title": "Экспортировать ли удаленные запросы",
+                        "title": "Экспортировать ли удаленные запросы.",
                         "type": "boolean"
                     },
                     "project_id": {

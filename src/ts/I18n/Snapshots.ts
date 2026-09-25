@@ -59,8 +59,6 @@ export interface components {
             /** @constant */
             readonly Added_competitors: "Added competitors";
             /** @constant */
-            readonly Compare_all_keywords: "Compare all keywords";
-            /** @constant */
             readonly Keyword_dynamics: "Keyword dynamics";
             /** @constant */
             readonly Select_keyword: "Select keyword";

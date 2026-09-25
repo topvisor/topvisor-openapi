@@ -23,7 +23,7 @@
                         "type": "boolean"
                     },
                     "filter_by_positions_delta": {
-                        "title": "Фильтрация по величине изменения позиции за период (>= N)",
+                        "title": "Фильтрация по величине изменения позиции за период (>= N).",
                         "type": "integer"
                     },
                     "history_fields": {

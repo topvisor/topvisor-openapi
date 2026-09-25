@@ -12,16 +12,16 @@ export interface components {
             output: import('../../../Types/Keywords/Export/Output.ts').components['schemas']['Keywords_2.Types.Keywords.Export.Output'];
             /** @default keywords */
             target_type?: import('../../../Types/Keywords/Export/TargetType.ts').components['schemas']['Keywords_2.Types.Keywords.Export.TargetType'];
-            /** Вывести fieldName в заголовках столбцов */
+            /** Вывести fieldName в заголовках столбцов. */
             show_fields_names?: boolean;
-            /** Вывести fieldLabel в заголовках столбцов */
+            /** Вывести fieldLabel в заголовках столбцов. */
             show_fields_labels?: boolean;
             /**
-             * Имя файла
+             * Имя файла.
              * @default export
              */
             file_name?: string;
-            /** Экспортировать ли удаленные запросы */
+            /** Экспортировать ли удаленные запросы. */
             show_trash?: boolean;
             /** ID проекта */
             project_id: number;

@@ -15,7 +15,7 @@ export interface components {
             show_exists_dates?: boolean;
             /** Добавить в результат данные о суммарных визитах по запросам по каждой проверке `visitors`. */
             show_visitors?: boolean;
-            /** Фильтрация по величине изменения позиции за период (>= N) */
+            /** Фильтрация по величине изменения позиции за период (>= N). */
             filter_by_positions_delta?: number;
             history_fields?: import('../../Types/History/HistoryFields.ts').components['schemas']['Positions_2.Types.History.HistoryFields'] | null;
             /** Индексы регионов. */

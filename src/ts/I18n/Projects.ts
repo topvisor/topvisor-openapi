@@ -498,6 +498,10 @@ export interface components {
             readonly Initial_project_setup: "Initial project setup";
             /** @constant */
             readonly Confirm_deletion: "Confirm deletion";
+            /** @constant */
+            readonly Skipped_competitors: "Skipped competitors";
+            /** @constant */
+            readonly Compare_all_keywords: "Compare all keywords";
         };
     };
     responses: never;

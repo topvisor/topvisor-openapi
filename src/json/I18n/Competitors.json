@@ -14,6 +14,10 @@
                         "const": "Competitor research",
                         "readOnly": true
                     },
+                    "Competitor_analysis_short": {
+                        "const": "CA",
+                        "readOnly": true
+                    },
                     "Powerful_tool_for_competitve_analysis": {
                         "const": "Powerful tool for comprehensive competitve reserach",
                         "readOnly": true
@@ -629,14 +633,11 @@
                     "Results_not_found": {
                         "const": "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>",
                         "readOnly": true
-                    },
-                    "Brand_name_and_description": {
-                        "const": "Brand name and description",
-                        "readOnly": true
                     }
                 },
                 "required": [
                     "Competitor_analysis",
+                    "Competitor_analysis_short",
                     "Powerful_tool_for_competitve_analysis",
                     "Results_on_serp",
                     "Keywords",
@@ -790,8 +791,7 @@
                     "Length",
                     "Intersection_level_required",
                     "Download_keywords_snippets_after_purchase",
-                    "Results_not_found",
-                    "Brand_name_and_description"
+                    "Results_not_found"
                 ]
             }
         }

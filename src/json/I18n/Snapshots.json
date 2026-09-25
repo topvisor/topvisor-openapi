@@ -110,10 +110,6 @@
                         "const": "Added competitors",
                         "readOnly": true
                     },
-                    "Compare_all_keywords": {
-                        "const": "Compare all keywords",
-                        "readOnly": true
-                    },
                     "Keyword_dynamics": {
                         "const": "Keyword dynamics",
                         "readOnly": true
@@ -169,7 +165,6 @@
                     "Add_to_competitors",
                     "Remove_from_competitors",
                     "Added_competitors",
-                    "Compare_all_keywords",
                     "Keyword_dynamics",
                     "Select_keyword",
                     "Snippets_no_checked",
