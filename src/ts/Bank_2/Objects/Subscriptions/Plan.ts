@@ -51,6 +51,7 @@ export interface components {
                 positions_check_manual?: number;
                 keywords_volumes?: number;
                 keywords_collect?: number;
+                keywords_claster?: number;
                 positions_tasks?: number;
                 projects?: number;
                 projects_rights?: number;

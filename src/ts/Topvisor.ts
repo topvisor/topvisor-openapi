@@ -1468,74 +1468,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение цены кластеризации. */
-    "/get/keywords_2/claster/price/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywords2ClasterPrice"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение цены перекластеризации. */
-    "/get/keywords_2/claster/priceChange/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetKeywords2ClasterPriceChange"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Запуск кластеризации. */
-    "/add/keywords_2/claster/task/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddKeywords2ClasterTask"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Запуск перекластеризации. */
-    "/add/keywords_2/claster/taskChange/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddKeywords2ClasterTaskChange"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Постановка задачи на подбор запросов. */
     "/edit/keywords_2/collect/go/": {
         parameters: {
@@ -2819,6 +2751,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetProjects2TasksVolumesPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение стоимости перекластеризации */
+    "/get/keywords_2/claster/checker/reclaster/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterCheckerReclasterPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -4992,106 +4941,6 @@ export interface operations {
             };
         };
     };
-    GetKeywords2ClasterPrice: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Keywords_2/Methods/Claster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Price.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Keywords_2/Methods/Claster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Price.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    GetKeywords2ClasterPriceChange: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Keywords_2/Methods/Claster/PriceChange/Get.ts').components['schemas']['Keywords_2.Methods.Claster.PriceChange.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AddKeywords2ClasterTask: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Keywords_2/Methods/Claster/Task/Add.ts').components['schemas']['Keywords_2.Methods.Claster.Task.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Keywords_2/Methods/Claster/Task/Add.ts').components['schemas']['Keywords_2.Methods.Claster.Task.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
-    AddKeywords2ClasterTaskChange: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Keywords_2/Methods/Claster/TaskChange/Add.ts').components['schemas']['Keywords_2.Methods.Claster.TaskChange.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Keywords_2/Methods/Claster/TaskChange/Add.ts').components['schemas']['Keywords_2.Methods.Claster.TaskChange.Add.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                };
-            };
-        };
-    };
     EditKeywords2CollectGo: {
         parameters: {
             query?: never;
@@ -6989,6 +6838,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Volumes/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterCheckerReclasterPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Checker/Reclaster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Checker/Reclaster/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

@@ -18,6 +18,7 @@ export interface components {
         };
         "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {
             price: number;
+            limits: number;
             reclaster: {
                 folder_id: number | null;
                 searcher_key: number | null;
@@ -27,6 +28,7 @@ export interface components {
                 count: string | null;
                 type: number | null;
                 price: number;
+                limits: number;
             };
         };
     };

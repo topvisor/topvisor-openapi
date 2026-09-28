@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки",
+                        "type": "boolean"
+                    },
+                    "count": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../../Keywords_2/Types/Claster/Degrees.json#/components/schemas/Keywords_2.Types.Claster.Degrees"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "count",
+                    "project_id"
+                ],
+                "title": "Получение стоимости перекластеризации"
+            },
+            "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "pricesByUsers": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "price": {
+                                    "type": "number"
+                                },
+                                "priceOriginal": {
+                                    "type": "number"
+                                },
+                                "limits": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "price",
+                                "priceOriginal",
+                                "limits"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "pricesByUsers"
+                ]
+            }
+        }
+    }
+}

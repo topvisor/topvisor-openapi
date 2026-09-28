@@ -44,6 +44,13 @@ export interface components {
                     description: "Total number of semantic core extension tasks you can launch within a month.\n\t\t\tSemantic core extension tools include <a href=\"https://{{ $site.host }}/keyword-research/\" target=\"_blank\">Keyword Research Tool</a> and <a href=\"https://{{ $site.host }}/search-suggestions/\" target=\"_blank\">Search Suggestions Tool</a>.\n\t\t\tA task is a semantics extension for 1 keyword in 1 search engine and 1 location.<br><br>\n\t\t\tFor example, 100 tasks is using Keyword Research and Search Suggestions tools for 50 keywords в Google New York each. Or using Search Suggestions Tool for 20 keywords in Google London 5 times a month.";
                     exceeding: "Monthly limit of keyword collection reached";
                 };
+                keywords_claster: {
+                    name: "Clustering by Top-10";
+                    extendedName: "clustering by Top-10";
+                    description: "Total number of clustering tasks that can be launched within a month.";
+                    exceeding: "Monthly limit for keyword clustering reached";
+                    exceedingDescription: "";
+                };
                 projects: {
                     name: "Projects";
                     extendedName: "projects";

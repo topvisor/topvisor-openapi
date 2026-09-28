@@ -4731,218 +4731,6 @@
                 }
             }
         },
-        "/get/keywords_2/claster/price/": {
-            "post": {
-                "operationId": "GetKeywords2ClasterPrice",
-                "tags": [
-                    "Keywords_2"
-                ],
-                "summary": "Получение цены кластеризации.",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Keywords_2/Methods/Claster/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Price.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Keywords_2/Methods/Claster/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Price.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/keywords_2/claster/priceChange/": {
-            "post": {
-                "operationId": "GetKeywords2ClasterPriceChange",
-                "tags": [
-                    "Keywords_2"
-                ],
-                "summary": "Получение цены перекластеризации.",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Keywords_2/Methods/Claster/PriceChange/Get.json#/components/schemas/Keywords_2.Methods.Claster.PriceChange.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Keywords_2/Methods/Claster/PriceChange/Get.json#/components/schemas/Keywords_2.Methods.Claster.PriceChange.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/keywords_2/claster/task/": {
-            "post": {
-                "operationId": "AddKeywords2ClasterTask",
-                "tags": [
-                    "Keywords_2"
-                ],
-                "summary": "Запуск кластеризации.",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Keywords_2/Methods/Claster/Task/Add.json#/components/schemas/Keywords_2.Methods.Claster.Task.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Keywords_2/Methods/Claster/Task/Add.json#/components/schemas/Keywords_2.Methods.Claster.Task.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/add/keywords_2/claster/taskChange/": {
-            "post": {
-                "operationId": "AddKeywords2ClasterTaskChange",
-                "tags": [
-                    "Keywords_2"
-                ],
-                "summary": "Запуск перекластеризации.",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Keywords_2/Methods/Claster/TaskChange/Add.json#/components/schemas/Keywords_2.Methods.Claster.TaskChange.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Keywords_2/Methods/Claster/TaskChange/Add.json#/components/schemas/Keywords_2.Methods.Claster.TaskChange.Add.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/keywords_2/collect/go/": {
             "post": {
                 "operationId": "EditKeywords2CollectGo",
@@ -9011,6 +8799,59 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Projects_2/Methods/Tasks/Volumes/Price/Get.json#/components/schemas/Projects_2.Methods.Tasks.Volumes.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/claster/checker/reclaster/price/": {
+            "post": {
+                "operationId": "GetKeywords2ClasterCheckerReclasterPrice",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение стоимости перекластеризации",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Checker/Reclaster/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Checker/Reclaster/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

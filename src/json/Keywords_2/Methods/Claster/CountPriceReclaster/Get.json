@@ -35,6 +35,9 @@
                     "price": {
                         "type": "number"
                     },
+                    "limits": {
+                        "type": "integer"
+                    },
                     "reclaster": {
                         "type": "object",
                         "properties": {
@@ -103,6 +106,9 @@
                             },
                             "price": {
                                 "type": "number"
+                            },
+                            "limits": {
+                                "type": "integer"
                             }
                         },
                         "required": [
@@ -113,12 +119,14 @@
                             "region_name",
                             "count",
                             "type",
-                            "price"
+                            "price",
+                            "limits"
                         ]
                     }
                 },
                 "required": [
                     "price",
+                    "limits",
                     "reclaster"
                 ]
             }

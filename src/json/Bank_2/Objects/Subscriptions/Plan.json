@@ -40,6 +40,9 @@
                             "keywords_collect": {
                                 "type": "integer"
                             },
+                            "keywords_claster": {
+                                "type": "integer"
+                            },
                             "positions_tasks": {
                                 "type": "integer"
                             },

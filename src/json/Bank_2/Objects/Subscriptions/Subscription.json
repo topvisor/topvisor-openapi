@@ -97,6 +97,9 @@
                             "keywords_collect": {
                                 "type": "integer"
                             },
+                            "keywords_claster": {
+                                "type": "integer"
+                            },
                             "positions_tasks": {
                                 "type": "integer"
                             },
@@ -131,6 +134,9 @@
                                 "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
                             },
                             "keywords_collect": {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
+                            },
+                            "keywords_claster": {
                                 "$ref": "../../../Bank_2/Types/Subscriptions/Limit/Type.json#/components/schemas/Bank_2.Types.Subscriptions.Limit.Type"
                             },
                             "positions_tasks": {
