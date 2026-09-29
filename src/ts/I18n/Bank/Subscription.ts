@@ -47,7 +47,7 @@ export interface components {
                 keywords_claster: {
                     name: "Clustering by Top-10";
                     extendedName: "clustering by Top-10";
-                    description: "Total number of clustering tasks that can be launched within a month.";
+                    description: "Total number of clustering tasks that can be launched within a month.<br><br>\n\t\t\t<a href=\"https://{{ $site.host }}/support/clustering/\" target=\"_blank\">More on Clustering by Top-10 →</a>";
                     exceeding: "Monthly limit for keyword clustering reached";
                     exceedingDescription: "";
                 };
