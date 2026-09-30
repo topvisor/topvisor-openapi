@@ -990,6 +990,10 @@
                         "const": "Confirm deletion",
                         "readOnly": true
                     },
+                    "Added_competitors": {
+                        "const": "Added competitors",
+                        "readOnly": true
+                    },
                     "Skipped_competitors": {
                         "const": "Skipped competitors",
                         "readOnly": true
@@ -1244,6 +1248,7 @@
                     "AI_visibility",
                     "Initial_project_setup",
                     "Confirm_deletion",
+                    "Added_competitors",
                     "Skipped_competitors",
                     "Compare_all_keywords"
                 ]

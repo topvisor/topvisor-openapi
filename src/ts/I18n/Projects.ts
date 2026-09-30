@@ -499,6 +499,8 @@ export interface components {
             /** @constant */
             readonly Confirm_deletion: "Confirm deletion";
             /** @constant */
+            readonly Added_competitors: "Added competitors";
+            /** @constant */
             readonly Skipped_competitors: "Skipped competitors";
             /** @constant */
             readonly Compare_all_keywords: "Compare all keywords";

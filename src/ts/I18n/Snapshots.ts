@@ -57,8 +57,6 @@ export interface components {
             /** @constant */
             readonly Remove_from_competitors: "Remove from competitors";
             /** @constant */
-            readonly Added_competitors: "Added competitors";
-            /** @constant */
             readonly Keyword_dynamics: "Keyword dynamics";
             /** @constant */
             readonly Select_keyword: "Select keyword";
