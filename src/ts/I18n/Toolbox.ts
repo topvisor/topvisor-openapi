@@ -56,6 +56,8 @@ export interface components {
             readonly No_relevant_urls_for_region: "No relevant URLs were found for the selected region";
             /** @constant */
             readonly Show_results: "Show results";
+            /** @constant */
+            readonly Upload_from_sitemap: "Upload from sitemap";
         };
     };
     responses: never;
