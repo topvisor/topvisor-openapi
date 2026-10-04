@@ -235,7 +235,7 @@
                         "readOnly": true
                     },
                     "Referrals_withdrawal_available_from_amount_notice": {
-                        "const": "You can withdraw the amount from 5000 rubles on IE or LTD bank account.",
+                        "const": "You can withdraw the amount from 5000 rubles on IE or LTD bank account. Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.",
                         "readOnly": true
                     },
                     "Referrals_link_to_EDF_setup_instruction": {
@@ -1254,7 +1254,6 @@
                     "Referrals_confirm_funds_transfer_to_bonus_account_notice",
                     "Referrals_levels_description_title",
                     "Referrals_download_invoice_act",
-                    "Referrals_withdrawal_available_from_amount_notice",
                     "Referrals_link_to_EDF_setup_instruction",
                     "Referrals_visits",
                     "Referrals_registrations",
