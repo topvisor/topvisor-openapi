@@ -239,7 +239,7 @@
                         "readOnly": true
                     },
                     "Referrals_link_to_EDF_setup_instruction": {
-                        "const": "What is EDF, how can I use it?",
+                        "const": "What is EDF how can I use it →",
                         "readOnly": true
                     },
                     "Referrals_send_documents_to_get_payout_comment": {
