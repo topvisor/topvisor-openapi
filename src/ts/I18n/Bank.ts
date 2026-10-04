@@ -125,8 +125,6 @@ export interface components {
             /** @constant */
             readonly Referrals_link_to_EDF_setup_instruction: "What is EDF how can I use it →";
             /** @constant */
-            readonly Referrals_send_documents_to_get_payout_comment?: "Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.";
-            /** @constant */
             readonly Referrals_visits: "Visits";
             /** @constant */
             readonly Referrals_registrations: "Registrations";

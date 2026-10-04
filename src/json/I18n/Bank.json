@@ -242,10 +242,6 @@
                         "const": "What is EDF how can I use it →",
                         "readOnly": true
                     },
-                    "Referrals_send_documents_to_get_payout_comment": {
-                        "const": "Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.",
-                        "readOnly": true
-                    },
                     "Referrals_visits": {
                         "const": "Visits",
                         "readOnly": true
