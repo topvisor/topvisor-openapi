@@ -153,6 +153,8 @@ export interface components {
             /** @constant */
             readonly Link_card: "Save";
             /** @constant */
+            readonly Card_subscription_required: "Link a card to an active subscription first.";
+            /** @constant */
             readonly Removed_card_notice: "Your credit card is removed. You can add a credit card again at the end of the current billing period.";
             /** @constant */
             readonly plan_payment: "pricing plan subscription fee";

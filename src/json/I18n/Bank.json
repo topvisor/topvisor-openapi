@@ -298,6 +298,10 @@
                         "const": "Save",
                         "readOnly": true
                     },
+                    "Card_subscription_required": {
+                        "const": "Link a card to an active subscription first.",
+                        "readOnly": true
+                    },
                     "Removed_card_notice": {
                         "const": "Your credit card is removed. You can add a credit card again at the end of the current billing period.",
                         "readOnly": true
@@ -1265,6 +1269,7 @@
                     "Remove_card",
                     "Cancel_subscription",
                     "Link_card",
+                    "Card_subscription_required",
                     "Removed_card_notice",
                     "plan_payment",
                     "Extending_subscription_failed",
