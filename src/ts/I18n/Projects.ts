@@ -504,6 +504,8 @@ export interface components {
             readonly Skipped_competitors: "Skipped competitors";
             /** @constant */
             readonly Compare_all_keywords: "Compare all keywords";
+            /** @constant */
+            readonly Competitors_was_enabled: "Competitors was enabled";
         };
     };
     responses: never;
