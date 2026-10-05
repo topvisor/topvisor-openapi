@@ -14,6 +14,7 @@
                     27,
                     28,
                     44,
+                    113,
                     56
                 ],
                 "x-enum-varnames": [
@@ -21,13 +22,15 @@
                     "TelegramSeoChat",
                     "TelegramPPCChat",
                     "Silver",
+                    "Card",
                     "TelegramTopvisor"
                 ],
                 "x-enum-descriptions": [
                     "Twitter.",
                     "Telegram SEO Chat.",
                     "Telegram PPC Chat.",
-                    "Белые ночи (Silver)",
+                    "Белые ночи (Silver).",
+                    "Привязанная карта.",
                     "Канал Топвизора."
                 ],
                 "title": "Id достижения."

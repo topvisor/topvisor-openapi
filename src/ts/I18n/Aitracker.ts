@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Ai.Tracker": {
+        "I18n.Aitracker": {
             /** @constant */
             readonly English: "English";
             /** @constant */

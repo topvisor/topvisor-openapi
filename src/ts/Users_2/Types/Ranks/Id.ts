@@ -11,7 +11,7 @@ export interface components {
          * Id достижения.
          * @enum {integer}
          */
-        "Users_2.Types.Ranks.Id": 3 | 27 | 28 | 44 | 56;
+        "Users_2.Types.Ranks.Id": 3 | 27 | 28 | 44 | 113 | 56;
     };
     responses: never;
     parameters: never;

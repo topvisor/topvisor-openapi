@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/I18n.Ai.Tracker",
+        "title": "Topvisor/I18n.Aitracker",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "I18n.Ai.Tracker": {
+            "I18n.Aitracker": {
                 "type": "object",
                 "properties": {
                     "English": {
