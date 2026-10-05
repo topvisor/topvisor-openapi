@@ -10749,11 +10749,11 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.UrlShortArray'
         names:
-          title: Список имен конкурентов (если указан, должен быть такой же длины как urls)
+          title: Список имен конкурентов (если указан, должен быть такой же длины как urls).
           nullable: true
           type: array
         brand_names:
-          title: Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls)
+          title: Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls).
           nullable: true
           anyOf:
             - type: array
@@ -10761,7 +10761,7 @@ components:
                 type: string
             - type: 'null'
         brand_aliases:
-          title: Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls)
+          title: Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls).
           nullable: true
           type: array
         service_name:
