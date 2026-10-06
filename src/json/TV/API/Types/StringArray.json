@@ -12,7 +12,7 @@
                 "items": {
                     "type": "string"
                 },
-                "title": "Тип массива: string[]"
+                "title": "Тип массива: string[]."
             }
         }
     }

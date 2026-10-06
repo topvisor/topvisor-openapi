@@ -30,7 +30,7 @@
                     "id",
                     "to_id"
                 ],
-                "title": "Перемещение проекта (сортировка)"
+                "title": "Перемещение проекта (сортировка)."
             },
             "Projects_2.Methods.Projects.Move.Edit.Exec": {
                 "nullable": true,

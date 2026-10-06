@@ -11,7 +11,7 @@ export interface components {
         "Projects_2.Methods.Tasks.Volumes.Price.Get": {
             /** Массив ключевых запросов в формате CSV. */
             keywords: unknown[];
-            /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
+            /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true). */
             qualifiers: import('../../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
         "Projects_2.Methods.Tasks.Volumes.Price.Get.Exec": number;

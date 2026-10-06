@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Экспорт регионов (CSV)
+         * Экспорт регионов (CSV).
          * @description - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
          */
         "Positions_2.Methods.Searchers.Regions.Export.Get": {

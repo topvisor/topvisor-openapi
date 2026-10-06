@@ -33,7 +33,7 @@
                         "type": "boolean"
                     },
                     "groups_ids": {
-                        "title": "Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)",
+                        "title": "Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И).",
                         "nullable": true,
                         "allOf": [
                             {
@@ -42,12 +42,12 @@
                         ]
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта",
+                        "title": "Список фильтров по полям объекта.",
                         "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id",
+                        "title": "Id объекта, для фильтрации объектов по id.",
                         "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"

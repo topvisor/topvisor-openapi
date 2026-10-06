@@ -12,7 +12,7 @@
                 "properties": {
                     "sitemap": {
                         "title": "Флаг активности в карте сайта",
-                        "description": "- 1 - присутствовал в прошлых версиях карты сайта",
+                        "description": "- 1 - присутствовал в прошлых версиях карты сайта.",
                         "nullable": true,
                         "allOf": [
                             {
@@ -48,16 +48,16 @@
                         ]
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта",
+                        "title": "Список фильтров по полям объекта.",
                         "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id",
+                        "title": "Id объекта, для фильтрации объектов по id.",
                         "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"

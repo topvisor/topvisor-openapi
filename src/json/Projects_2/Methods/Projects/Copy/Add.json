@@ -20,7 +20,7 @@
                         "type": "boolean"
                     },
                     "copy_positions": {
-                        "title": "Копировать ли позиции по запросам проекта (если copy_keywords = 1)",
+                        "title": "Копировать ли позиции по запросам проекта (если copy_keywords = 1).",
                         "nullable": true,
                         "type": "boolean"
                     }

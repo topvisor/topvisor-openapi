@@ -7,16 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Интерфейс настроек сайта */
+        /** Интерфейс настроек сайта. */
         "TV.Types.Config.Site": {
             /**
-             * Ключ домена
+             * Ключ домена.
              * @description Используется в путях файлов и в БД
              * @default No set
              */
             readonly ID: string;
             /**
-             * Аббревиатура ключа домена
+             * Аббревиатура ключа домена.
              * @description Используется в путях публичных ресурсов, например для файлов на CDN
              * @default No set
              */
@@ -27,74 +27,74 @@ export interface components {
              */
             readonly HOST: string;
             /**
-             * Основной хост для разработки
+             * Основной хост для разработки.
              * @default No set
              */
             readonly HOST_DEV: string;
             /**
-             * Хост сокращателя ссылок
+             * Хост сокращателя ссылок.
              * @default No set
              */
             readonly HOST_TPVSR: string;
             /**
-             * Имя модуля
+             * Имя модуля.
              * @default No set
              */
             readonly HOST_TPVSR_MODULE: string;
             /**
-             * Имя основного телеграмм бота
+             * Имя основного телеграмм бота.
              * @default No set
              */
             readonly TELEGRAM_BOT: string;
             /**
-             * Тип биллинга по умолчанию
+             * Тип биллинга по умолчанию.
              * @description - balance
              *     - limits
              * @default balance
              */
             readonly DEFAULT_BANK_TYPE: string;
-            /** Список поддерживаемых языков, ISO 639-1 */
+            /** Список поддерживаемых языков, ISO 639-1. */
             readonly LANGUAGES: unknown[];
             /**
-             * Оснвоной язык, ISO 639-1
+             * Оснвоной язык, ISO 639-1.
              * @default No set
              */
             readonly LANGUAGE_MAIN: string;
             /**
-             * Список дополнительных языков, ISO 639-1
+             * Список дополнительных языков, ISO 639-1.
              * @description При генерации url дополнительный язык добавляется в начало url в модуле контента
              *
              *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`
              */
             readonly LANGUAGES_ADDITIONAL: unknown[];
             /**
-             * Список валют, используемых на сайте
+             * Список валют, используемых на сайте.
              * @default [
              *       "No set"
              *     ]
              */
             readonly CURRENCIES: unknown[];
             /**
-             * Список поддоменов
+             * Список поддоменов.
              * @description Примеры:
              *     - `''` для основного домена `example.com`
              *     - `'subdomain'` для поддомена `subdomain.example.com`
              */
             readonly SUBDOMAINS: unknown[];
-            /** Список поддерживаемых тем оформления */
+            /** Список поддерживаемых тем оформления. */
             readonly THEMES: unknown[];
-            /** Цвета темы сайта */
+            /** Цвета темы сайта. */
             readonly THEME_COLORS: unknown[];
-            /** Список сервисов, доступных для переноса на сайте */
+            /** Список сервисов, доступных для переноса на сайте. */
             readonly MIGRATION_SOURCE_DOMAINS: unknown[];
             /**
-             * Почта рассыльщика
+             * Почта рассыльщика.
              * @description Она же используется в тикетнице
              * @default No set
              */
             readonly MAILING_EMAIL: string;
             /**
-             * Альтернативная почта рассыльщика
+             * Альтернативная почта рассыльщика.
              * @description Используется, если нужно отправлять почту от имени другого домена
              *
              *     Данная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL
@@ -102,17 +102,17 @@ export interface components {
              */
             readonly MAILING_ALT_EMAIL: string;
             /**
-             * Почта поддержки, обычно alias MAILING_EMAIL
+             * Почта поддержки, обычно alias MAILING_EMAIL.
              * @default No set
              */
             readonly SUPPORT_EMAIL: string;
             /**
-             * Почта рассыльщика, без приема ответов
+             * Почта рассыльщика, без приема ответов.
              * @default No set
              */
             readonly NO_REPLY_EMAIL: string;
             /**
-             * Словарь модулей, доступ к которым надо закрыть
+             * Словарь модулей, доступ к которым надо закрыть.
              * @description Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`
              *
              *     Значение: всегда true, значение игнорируется
@@ -121,22 +121,22 @@ export interface components {
             /** @default No set */
             readonly INN: string;
             /**
-             * Счетчик Яндекс метрики
+             * Счетчик Яндекс метрики.
              * @default No set
              */
             readonly COUNTER_YANDEX: string;
             /**
-             * Счетчик Яндекс метрики для модуля Журнал
+             * Счетчик Яндекс метрики для модуля Журнал.
              * @default No set
              */
             readonly COUNTER_YANDEX_JOURNAL: string;
             /**
-             * Счетчик Google Аналитики
+             * Счетчик Google Аналитики.
              * @default No set
              */
             readonly COUNTER_GOOGLE: string;
             /**
-             * Счетчик Google Аналитики для модуля Журнал
+             * Счетчик Google Аналитики для модуля Журнал.
              * @default No set
              */
             readonly COUNTER_GOOGLE_JOURNAL: string;

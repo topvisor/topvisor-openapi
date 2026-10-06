@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Валюта
+         * Валюта.
          * @description Этот общий тип, не зависящий от контекста
          *
          *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "tags": {
-                        "title": "Enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "title": "Enum(1..10) tags - теги проекта (по умолчанию - [1]).",
                         "nullable": true,
                         "default": [
                             1

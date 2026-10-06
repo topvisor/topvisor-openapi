@@ -11,13 +11,13 @@
                 "type": "object",
                 "properties": {
                     "region_index": {
-                        "title": "Индекс региона (не путать с ключом региона)",
+                        "title": "Индекс региона (не путать с ключом региона).",
                         "nullable": true,
                         "type": "integer"
                     },
                     "query": {
                         "title": "- ключевая фраза или ее часть (by_type = keyword)",
-                        "description": "- url (by_type = url)",
+                        "description": "- url (by_type = url).",
                         "nullable": true,
                         "type": "string"
                     },

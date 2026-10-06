@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
+        /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен). */
         "Competitors_2.Methods.Orders.ByUrl.Info.Get": {
-            /** Индекс региона (не путать с ключом региона) */
+            /** Индекс региона (не путать с ключом региона). */
             region_index: number;
             /** Url. */
             query: import('../../../../../TV/API/Types/UrlUTF.ts').components['schemas']['TV.API.Types.UrlUTF'];
@@ -17,16 +17,16 @@ export interface components {
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Не возвращать информацию кроме is_paymented, если отчет оплачен. */
             short_if_paid?: boolean;
-            /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads) */
+            /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads). */
             short_domains_info?: boolean;
             /**
-             * Отображать сумму с учетом скидки (по умолчанию 1)
+             * Отображать сумму с учетом скидки (по умолчанию 1).
              * @default 1
              */
             apply_discount?: number;
             /** Использовать удаленные отчеты. */
             deleted?: boolean;
-            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
+            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)). */
             strict_query?: boolean;
             /** Степень схожести конкурентов для сравнения. */
             intersection: number;

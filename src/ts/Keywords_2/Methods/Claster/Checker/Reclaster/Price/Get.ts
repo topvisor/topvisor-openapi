@@ -7,12 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение стоимости перекластеризации */
+        /** Получение стоимости перекластеризации. */
         "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get": {
-            /** Отображать сумму с учетом скидки */
+            /** Отображать сумму с учетом скидки. */
             apply_discount?: boolean;
             count: import('../../../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get.Exec": {

@@ -9,12 +9,12 @@ export interface components {
     schemas: {
         /** Добавление проекта. */
         "Projects_2.Methods.Projects.Add": {
-            /** Url проекта (домен или url страницы) */
+            /** Url проекта (домен или url страницы). */
             url: import('../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
-            /** Имя проекта (по умолчанию равен url проекта) */
+            /** Имя проекта (по умолчанию равен url проекта). */
             name?: string | null;
             /**
-             * Enum(1..10) tags - теги проекта (по умолчанию - [1])
+             * Enum(1..10) tags - теги проекта (по умолчанию - [1]).
              * @default [
              *       1
              *     ]

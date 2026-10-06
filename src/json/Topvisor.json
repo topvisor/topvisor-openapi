@@ -580,7 +580,7 @@
                 "tags": [
                     "Webscreens_2"
                 ],
-                "summary": "Получение скриншота (платная функция)",
+                "summary": "Получение скриншота (платная функция).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5308,7 +5308,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Экспорт в определенном формате (экспорт всех запросов)",
+                "summary": "Экспорт в определенном формате (экспорт всех запросов).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6712,7 +6712,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Перемещение конкурента (сортировка)",
+                "summary": "Перемещение конкурента (сортировка).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6982,7 +6982,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Перемещение проекта (сортировка)",
+                "summary": "Перемещение проекта (сортировка).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8148,7 +8148,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
-                "summary": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)",
+                "summary": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8201,7 +8201,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
-                "summary": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)",
+                "summary": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8476,7 +8476,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Экспорт регионов (CSV)",
+                "summary": "Экспорт регионов (CSV).",
                 "description": "- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]",
                 "requestBody": {
                     "content": {
@@ -8509,7 +8509,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Импорт регионов (CSV)",
+                "summary": "Импорт регионов (CSV).",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8827,7 +8827,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение стоимости перекластеризации",
+                "summary": "Получение стоимости перекластеризации.",
                 "requestBody": {
                     "content": {
                         "application/json": {

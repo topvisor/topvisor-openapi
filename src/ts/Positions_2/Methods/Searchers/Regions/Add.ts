@@ -23,7 +23,7 @@ export interface components {
             region_lang?: string | null;
             /** Устройство региона. */
             region_device?: unknown;
-            /** Формат выдачи региона */
+            /** Формат выдачи региона. */
             region_alt?: unknown;
             /**
              * Глубина региона.
@@ -33,7 +33,7 @@ export interface components {
              * @default 1
              */
             region_depth?: number;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Positions_2.Methods.Searchers.Regions.Add.Exec": number | null;

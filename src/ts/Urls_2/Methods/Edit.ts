@@ -11,7 +11,7 @@ export interface components {
         "Urls_2.Methods.Edit": {
             /**
              * Флаг активности в карте сайта
-             * @description - 1 - присутствовал в прошлых версиях карты сайта
+             * @description - 1 - присутствовал в прошлых версиях карты сайта.
              */
             sitemap?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в аудите. */
@@ -20,10 +20,10 @@ export interface components {
             indexing?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в индексации. */
             watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -32,7 +32,7 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;

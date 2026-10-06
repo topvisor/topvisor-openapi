@@ -10,7 +10,7 @@ export interface components {
         /** Получение стоимости подбора запросов. */
         "Keywords_2.Methods.Collect.Price.Get": {
             /**
-             * Отображать сумму с учетом скидки (по умолчанию: 1)
+             * Отображать сумму с учетом скидки (по умолчанию: 1).
              * @default true
              */
             apply_discount?: boolean;
@@ -18,7 +18,7 @@ export interface components {
             keywords: unknown[];
             /** Объекты определителей настроек ПС и регионов. */
             qualifiers: import('../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
-            /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
+            /** Минус фразы (только для searcher_key = 0 и searcher_key = 1). */
             keywords_minus?: unknown[];
             /**
              * Id группы для размещения подобранных запросов.
@@ -33,7 +33,7 @@ export interface components {
             to_type?: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'] | null;
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: boolean | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         /** Информация о стоимости запуска подбора запросов. */

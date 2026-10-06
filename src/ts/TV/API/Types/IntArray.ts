@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: int
+         * Тип массива: int.
          * @description Принимает: Любые целые числа и числа в строках
          */
         "TV.API.Types.IntArray": number[];

@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "url": {
-                        "title": "Url проекта (домен или url страницы)",
+                        "title": "Url проекта (домен или url страницы).",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
@@ -19,12 +19,12 @@
                         ]
                     },
                     "name": {
-                        "title": "Имя проекта (по умолчанию равен url проекта)",
+                        "title": "Имя проекта (по умолчанию равен url проекта).",
                         "nullable": true,
                         "type": "string"
                     },
                     "tags": {
-                        "title": "Enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "title": "Enum(1..10) tags - теги проекта (по умолчанию - [1]).",
                         "nullable": true,
                         "default": [
                             1

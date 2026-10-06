@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
                 },
-                "title": "Тип массива: Email[]"
+                "title": "Тип массива: Email[]."
             }
         }
     }

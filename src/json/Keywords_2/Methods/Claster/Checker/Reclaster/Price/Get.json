@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки",
+                        "title": "Отображать сумму с учетом скидки.",
                         "type": "boolean"
                     },
                     "count": {
@@ -22,7 +22,7 @@
                         ]
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },
@@ -30,7 +30,7 @@
                     "count",
                     "project_id"
                 ],
-                "title": "Получение стоимости перекластеризации"
+                "title": "Получение стоимости перекластеризации."
             },
             "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get.Exec": {
                 "type": "object",

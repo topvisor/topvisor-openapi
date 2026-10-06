@@ -13,7 +13,7 @@ export interface components {
             keywords: unknown[];
             /** Объекты определителей настроек ПС и регионов. */
             qualifiers: import('../../../../../../Keywords_2/Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
-            /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
+            /** Минус фразы (только для searcher_key = 0 и searcher_key = 1). */
             keywords_minus?: unknown[];
         };
         "Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec": number;

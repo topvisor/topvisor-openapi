@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "region_index": {
-                        "title": "Индекс региона (не путать с ключом региона)",
+                        "title": "Индекс региона (не путать с ключом региона).",
                         "type": "integer"
                     },
                     "query": {
@@ -35,11 +35,11 @@
                         "type": "boolean"
                     },
                     "short_domains_info": {
-                        "title": "Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads)",
+                        "title": "Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads).",
                         "type": "boolean"
                     },
                     "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки (по умолчанию 1)",
+                        "title": "Отображать сумму с учетом скидки (по умолчанию 1).",
                         "default": 1,
                         "type": "integer"
                     },
@@ -58,7 +58,7 @@
                     "date",
                     "intersection"
                 ],
-                "title": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)"
+                "title": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)."
             },
             "Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec": {
                 "type": "array"

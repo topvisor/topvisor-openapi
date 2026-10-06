@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение скриншота (платная функция) */
+        /** Получение скриншота (платная функция). */
         "Webscreens_2.Methods.Get": {
             url: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
             /** Ширина экрна. */

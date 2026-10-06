@@ -9,11 +9,11 @@ export interface components {
     schemas: {
         /** Получить список оплаченных отчетов. */
         "Competitors_2.Methods.Orders.Get": {
-            /** Индекс региона (не путать с ключом региона) */
+            /** Индекс региона (не путать с ключом региона). */
             region_index?: number | null;
             /**
              * - ключевая фраза или ее часть (by_type = keyword)
-             * @description - url (by_type = url)
+             * @description - url (by_type = url).
              */
             query?: string | null;
             by_type?: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'] | null;

@@ -15,7 +15,7 @@
                         "type": "number"
                     },
                     "action": {
-                        "title": "0 - обычная выдача, xml - xml выдача",
+                        "title": "0 - обычная выдача, xml - xml выдача.",
                         "type": "string"
                     },
                     "is_storm": {

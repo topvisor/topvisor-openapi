@@ -13,7 +13,7 @@ export interface components {
             project_id: number;
             /** Копировать ли запросы проекта. */
             copy_keywords?: boolean | null;
-            /** Копировать ли позиции по запросам проекта (если copy_keywords = 1) */
+            /** Копировать ли позиции по запросам проекта (если copy_keywords = 1). */
             copy_positions?: boolean | null;
         };
         "Projects_2.Methods.Projects.Copy.Add.Exec": string | null;

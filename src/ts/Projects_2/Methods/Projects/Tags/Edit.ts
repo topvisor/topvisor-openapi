@@ -10,7 +10,7 @@ export interface components {
         /** Редактирование тегов проектов. */
         "Projects_2.Methods.Projects.Tags.Edit": {
             /**
-             * Enum(1..10) tags - теги проекта (по умолчанию - [1])
+             * Enum(1..10) tags - теги проекта (по умолчанию - [1]).
              * @default [
              *       1
              *     ]

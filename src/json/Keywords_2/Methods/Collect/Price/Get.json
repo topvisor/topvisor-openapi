@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки (по умолчанию: 1)",
+                        "title": "Отображать сумму с учетом скидки (по умолчанию: 1).",
                         "default": true,
                         "type": "boolean"
                     },
@@ -28,7 +28,7 @@
                         ]
                     },
                     "keywords_minus": {
-                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1)",
+                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1).",
                         "type": "array"
                     },
                     "to_group_id": {
@@ -67,7 +67,7 @@
                         "type": "boolean"
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },

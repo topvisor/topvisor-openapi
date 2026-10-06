@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Интерфейс настроек валюты */
+        /** Интерфейс настроек валюты. */
         "TV.Types.Config.Currency": {
             /**
              * Код валюты.
@@ -61,7 +61,7 @@ export interface components {
              */
             readonly QUERY_COST_SNAPSHOT: number;
             /**
-             * Стоимость сбора SERP-Фичи AIOverview
+             * Стоимость сбора SERP-Фичи AIOverview.
              * @default 10000
              */
             readonly QUERY_COST_AI_OVERVIEW: number;
@@ -81,7 +81,7 @@ export interface components {
              */
             readonly SY_COST: number;
             /**
-             * Сбор подсказок в поиске, за 1, 2 и 3 глубину
+             * Сбор подсказок в поиске, за 1, 2 и 3 глубину.
              * @default [
              *       10000,
              *       10000,
@@ -210,7 +210,7 @@ export interface components {
              */
             readonly AI_TRACKER_COMPETITOR_COST: number;
             /**
-             * Стоимость веб-поиска
+             * Стоимость веб-поиска.
              * @default 10000
              */
             readonly AI_TRACKER_WEB_SEARCH_COST: number;

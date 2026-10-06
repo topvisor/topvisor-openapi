@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Шаблон документа (только для pdf)
+         * Шаблон документа (только для pdf).
          * @enum {string}
          */
         "Snapshots_2.Types.History.Export.Tpl": "print";

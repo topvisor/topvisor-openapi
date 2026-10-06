@@ -19,7 +19,7 @@ export interface components {
             insert_after_id?: number | null;
             /** Маленький график. */
             narrow?: number | null;
-            /** Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта) */
+            /** Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта). */
             share?: number | null;
         };
         "Projects_2.Methods.Analytics.Add.Exec": number | null;

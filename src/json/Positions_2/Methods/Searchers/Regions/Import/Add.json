@@ -23,7 +23,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Импорт регионов (CSV)"
+                "title": "Импорт регионов (CSV)."
             },
             "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": {
                 "nullable": true,

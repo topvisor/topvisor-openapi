@@ -10,7 +10,7 @@ export interface components {
         "Content_2.Types.Update": {
             /** Балл апометра. */
             Am: number;
-            /** 0 - обычная выдача, xml - xml выдача */
+            /** 0 - обычная выдача, xml - xml выдача. */
             action: string;
             /** Зафиксирован шторм. */
             is_storm: number;

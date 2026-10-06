@@ -23,7 +23,7 @@ export interface components {
             /** @default 7 */
             type_range?: import('../../Types/Watcher/TypeRange.ts').components['schemas']['Audit_2.Types.Watcher.TypeRange'];
             /**
-             * Максимальное число возвращаемых проверок (не более 60)
+             * Максимальное число возвращаемых проверок (не более 60).
              * @default 60
              */
             count_ids?: number;
@@ -41,17 +41,17 @@ export interface components {
             show_diff?: import('../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
             /** Добавить в результат количество проверок. */
             show_counts_watcher?: boolean;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
             /**
-             * Список полей объекта, которые надо вернуть в результате
+             * Список полей объекта, которые надо вернуть в результате.
              * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
              */
             fields?: unknown[];
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -60,24 +60,24 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;
             /**
-             * Количество объектов, которые необходимо получить в результате
+             * Количество объектов, которые необходимо получить в результате.
              * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
-             * Список полей объекта, по которым необходимо выполнить сортировку
+             * Список полей объекта, по которым необходимо выполнить сортировку.
              * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
              */
             orders?: unknown[];
             /**
-             * Число объектов, которое необходимо пропустить при получении результата
+             * Число объектов, которое необходимо пропустить при получении результата.
              * @description Используется в паре с limit
              */
             offset?: number;

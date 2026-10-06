@@ -10,61 +10,61 @@ export interface components {
         /** Применение настроек Анализа сайта. */
         "Audit_2.Methods.Settings.Edit": {
             /**
-             * User-Agent (аудит)
+             * User-Agent (аудит).
              * @description Можно указать id устройства.
              */
             audit_user_agent?: string | null;
-            /** Сохранять куки между запросами (аудит) */
+            /** Сохранять куки между запросами (аудит). */
             audit_use_cookie?: boolean | null;
-            /** Проверять ссылки (аудит) */
+            /** Проверять ссылки (аудит). */
             audit_scan_links?: boolean | null;
-            /** Проверять изображения (аудит) */
+            /** Проверять изображения (аудит). */
             audit_scan_images?: boolean | null;
-            /** Проверять JS (аудит) */
+            /** Проверять JS (аудит). */
             audit_scan_js?: boolean | null;
-            /** Проверять css (аудит) */
+            /** Проверять css (аудит). */
             audit_scan_css?: boolean | null;
-            /** Ключ api для https://developers.google.com/speed/docs/insights/v5/get-started (аудит) */
+            /** Ключ api для https://developers.google.com/speed/docs/insights/v5/get-started (аудит). */
             audit_api_key?: string | null;
-            /** Паузы между проверками страниц сайта (аудит) */
+            /** Паузы между проверками страниц сайта (аудит). */
             audit_page_delay?: number | null;
-            /** Паузы между првоерками ресурсов страниц сайта (аудит) */
+            /** Паузы между првоерками ресурсов страниц сайта (аудит). */
             audit_resource_delay?: number | null;
-            /** Дополнитлеьные Cookies (аудит) */
+            /** Дополнитлеьные Cookies (аудит). */
             audit_cookies?: string | null;
-            /** Использовать ли при запуске аудита автоматический сбор URL (аудит) */
+            /** Использовать ли при запуске аудита автоматический сбор URL (аудит). */
             audit_auto_collect_pages?: boolean | null;
-            /** Лимит страниц при автоматическом проходе по сайту (аудит) */
+            /** Лимит страниц при автоматическом проходе по сайту (аудит). */
             audit_auto_collect_pages_limit?: number | null;
-            /** Страница, с которой начинается автоматический сбор URL (аудит) */
+            /** Страница, с которой начинается автоматический сбор URL (аудит). */
             audit_auto_collect_pages_start_url?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
-            /** Поисковые системы (индексация) */
+            /** Поисковые системы (индексация). */
             indexing_searchers_keys?: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'] | null;
             /**
-             * User-Agent (радар)
+             * User-Agent (радар).
              * @description Можно указать id устройства.
              */
             watcher_user_agent?: string | null;
             watcher_max_redirects?: number | null;
-            /** Типы отчетов, которые необходимо построить (радар) */
+            /** Типы отчетов, которые необходимо построить (радар). */
             watcher_types?: import('../../Types/Settings/WatcherTypes.ts').components['schemas']['Audit_2.Types.Settings.WatcherTypes'] | null;
             /**
-             * Регулярное выражение для сбора контента (радар)
+             * Регулярное выражение для сбора контента (радар).
              * @description Если не указано, будут ипользоваться теги разметки.
              */
             watcher_regexp?: import('../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
-            /** Вырезать из кода страницы javascript (радар) */
+            /** Вырезать из кода страницы javascript (радар). */
             watcher_ignore_js?: boolean | null;
-            /** Вырезать из результатов html-тэги (радар) */
+            /** Вырезать из результатов html-тэги (радар). */
             watcher_strip_tags_from_result?: boolean | null;
-            /** Дополнитлеьные cookies (радар) */
+            /** Дополнитлеьные cookies (радар). */
             watcher_cookies?: string | null;
             server_location?: import('../../Types/Settings/ServerLocation.ts').components['schemas']['Audit_2.Types.Settings.ServerLocation'] | null;
             /** Учитывать ли поддомены. */
             audit_scan_subdomains?: boolean | null;
-            /** Игнорировать URL (Ресурсы) */
+            /** Игнорировать URL (Ресурсы). */
             audit_scan_ignore_urls?: string | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         /** Количество применных настроек. */

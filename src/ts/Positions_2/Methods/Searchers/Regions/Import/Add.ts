@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Импорт регионов (CSV) */
+        /** Импорт регионов (CSV). */
         "Positions_2.Methods.Searchers.Regions.Import.Add": {
             /** Id проекта. */
             project_id: number;

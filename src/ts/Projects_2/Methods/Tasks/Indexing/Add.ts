@@ -10,7 +10,7 @@ export interface components {
         /** Создание задачи на индексацию. */
         "Projects_2.Methods.Tasks.Indexing.Add": {
             indexing_searchers_keys: import('../../../../Audit_2/Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
-            /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
+            /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz). */
             link_sitemap_xml?: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /**
              * Список URL соответствующих домену проекта, допускается формат CSV.

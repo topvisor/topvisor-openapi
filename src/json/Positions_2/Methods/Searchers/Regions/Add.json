@@ -28,7 +28,7 @@
                         "title": "Устройство региона."
                     },
                     "region_alt": {
-                        "title": "Формат выдачи региона"
+                        "title": "Формат выдачи региона."
                     },
                     "region_depth": {
                         "title": "Глубина региона.",
@@ -37,7 +37,7 @@
                         "type": "integer"
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },

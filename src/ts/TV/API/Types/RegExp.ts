@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Регулярное выражение
+         * Регулярное выражение.
          * @description Пустое значение разрешено
          *
          *     Управляющие символы "/" в начале и в конце строки будут удалены

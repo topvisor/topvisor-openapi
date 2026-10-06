@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Объект параметров Selector */
+        /** Объект параметров Selector. */
         "TV.API.Types.SelectorData": {
             fields: unknown[];
             filters: unknown[];

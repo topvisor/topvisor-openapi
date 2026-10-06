@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /** Оплатить отчет. */
         "Competitors_2.Methods.Orders.Pay.Edit": {
-            /** Индекс региона (не путать с ключом региона) */
+            /** Индекс региона (не путать с ключом региона). */
             region_index: number;
-            /** Тип отчета (по ключевой фразе или по домену) */
+            /** Тип отчета (по ключевой фразе или по домену). */
             by_type: string;
             /** Ключевая фраза (или ее часть) / url. */
             query: string;
@@ -21,11 +21,11 @@ export interface components {
             intersection: number;
             /** Не возвращать информацию кроме is_paymented, если отчет оплачен. */
             short_if_paid?: boolean;
-            /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads) */
+            /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads). */
             short_domains_info?: boolean;
             /** Использовать удаленные отчеты. */
             deleted?: boolean;
-            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
+            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)). */
             strict_query?: boolean;
             /** Получить краткую статистику, только количество конкурентов. */
             short?: boolean;

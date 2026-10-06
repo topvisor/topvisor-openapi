@@ -23,7 +23,7 @@
                         ]
                     },
                     "keywords_minus": {
-                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1)",
+                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1).",
                         "type": "array"
                     },
                     "to_group_id": {
@@ -62,7 +62,7 @@
                         "type": "boolean"
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },
