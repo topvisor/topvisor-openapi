@@ -31,12 +31,12 @@
                         "type": "string"
                     },
                     "group_on": {
-                        "title": "Активность создаваемых групп (по умолчанию: 1 - активные)",
+                        "title": "Активность создаваемых групп (по умолчанию: 1 - активные).",
                         "default": true,
                         "type": "boolean"
                     },
                     "move_duplicate": {
-                        "title": "Переносить ли дубли (по умолчанию: 0 - не переносить)",
+                        "title": "Переносить ли дубли (по умолчанию: 0 - не переносить).",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -56,7 +56,7 @@
                         "type": "integer"
                     },
                     "remove_special_chars": {
-                        "title": "Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)",
+                        "title": "Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать).",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -70,7 +70,7 @@
                         ]
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },
@@ -80,11 +80,37 @@
                 "title": "Импорт запросов."
             },
             "Keywords_2.Methods.Keywords.Import.Add.Exec": {
+                "title": "Результат импорта.",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "$ref": "../../../../Models/Keywords.json#/components/schemas/Models.Keywords"
-                }
+                "type": "object",
+                "properties": {
+                    "countSended": {
+                        "type": "integer"
+                    },
+                    "countDuplicated": {
+                        "type": "integer"
+                    },
+                    "countAdded": {
+                        "type": "integer"
+                    },
+                    "countChanged": {
+                        "type": "integer"
+                    },
+                    "countGroupsAdded": {
+                        "type": "integer"
+                    },
+                    "countFoldersAdded": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "countSended",
+                    "countDuplicated",
+                    "countAdded",
+                    "countChanged",
+                    "countGroupsAdded",
+                    "countFoldersAdded"
+                ]
             }
         }
     }
