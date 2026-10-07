@@ -169,6 +169,10 @@
                         "const": "Connection error",
                         "readOnly": true
                     },
+                    "Hello": {
+                        "const": "Hello",
+                        "readOnly": true
+                    },
                     "discount": {
                         "const": "discount",
                         "readOnly": true
@@ -2072,6 +2076,7 @@
                     "a_week",
                     "a_month",
                     "Connection_error",
+                    "Hello",
                     "discount",
                     "month_short",
                     "Balance",
