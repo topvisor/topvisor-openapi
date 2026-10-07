@@ -15,7 +15,7 @@ export interface components {
             to_type?: import('../../Types/Folders/ToType.ts').components['schemas']['Keywords_2.Types.Folders.ToType'];
             /** Название папки. */
             name?: string;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Folders.Add.Exec": ({

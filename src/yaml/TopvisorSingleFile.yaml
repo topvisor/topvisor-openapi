@@ -3694,6 +3694,37 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /add/projects_2/competitors/import/:
+    post:
+      operationId: AddProjects2CompetitorsImport
+      tags:
+        - Projects_2
+      summary: Импорт конкурентов в формате csv.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Import.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Competitors.Import.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
   /edit/projects_2/competitors/move/:
     post:
       operationId: EditProjects2CompetitorsMove
@@ -4940,7 +4971,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -4950,21 +4981,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -4973,17 +5004,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required: []
@@ -5974,7 +6005,7 @@ components:
           nullable: true
           type: string
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -5983,7 +6014,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -6026,7 +6057,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -6036,21 +6067,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -6059,17 +6090,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required: []
@@ -6387,10 +6418,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -6400,21 +6431,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -6423,17 +6454,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -6503,7 +6534,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - date
@@ -6661,7 +6692,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         dates:
           title: Произвольные даты без использования диапазона.
@@ -6703,21 +6734,21 @@ components:
           default: 7
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -6726,17 +6757,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -6747,7 +6778,7 @@ components:
     TV.API.Types.AbstractEnumArray:
       type: array
       items: {}
-      title: 'Тип массива: Enum[]'
+      title: 'Тип массива: Enum[].'
       description: Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
     Selector.Field:
       type: object
@@ -7076,7 +7107,7 @@ components:
           nullable: true
           type: string
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -7091,7 +7122,7 @@ components:
           title: Добавить ли в результат список всехдоступных моделей.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -7163,7 +7194,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         dates:
           title: Произвольные даты без использования диапазона.
@@ -7205,21 +7236,21 @@ components:
           default: 7
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -7228,17 +7259,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -7272,7 +7303,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Type'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - audit_type
@@ -7353,7 +7384,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         dates:
           title: Произвольные даты без использования диапазона.
@@ -7395,21 +7426,21 @@ components:
           default: 7
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -7418,17 +7449,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -7788,7 +7819,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Settings.FieldNames'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - fields
@@ -8121,7 +8152,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -8131,21 +8162,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -8154,17 +8185,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required: []
@@ -8219,7 +8250,7 @@ components:
       type: object
       properties:
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
@@ -8322,9 +8353,9 @@ components:
         - Terminated
       x-enum-descriptions:
         - Подписка работает и будет продлеваться автоматически или вручную в зависимости от настроек.
-        - Подписка приостановлена (можно возобновить)
+        - Подписка приостановлена (можно возобновить).
         - Подписка завершена, после окончания оплаченного периода будет прекращена.
-        - Прекращена немедленно (нельзя возобновить)
+        - Прекращена немедленно (нельзя возобновить).
       title: Статус подписки.
     Bank_2.Types.Subscriptions.Type:
       type: string
@@ -8920,7 +8951,7 @@ components:
           default: true
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -8957,10 +8988,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -8969,7 +9000,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -8990,10 +9021,10 @@ components:
           title: Показать удаленные дочерние папки.
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -9003,21 +9034,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9026,17 +9057,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -9048,10 +9079,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9060,7 +9091,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -9080,10 +9111,10 @@ components:
           title: Показывать удаленные запросы.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -9093,21 +9124,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9116,17 +9147,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -9163,7 +9194,7 @@ components:
           title: Название папки.
           type: string
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -9208,10 +9239,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9220,7 +9251,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -9276,24 +9307,24 @@ components:
           title: Показывать ли удаленные папки.
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9302,17 +9333,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -9341,7 +9372,7 @@ components:
           default: true
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -9406,10 +9437,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9418,7 +9449,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -9439,10 +9470,10 @@ components:
           title: Показать удаленные дочерние папки.
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -9452,21 +9483,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9475,17 +9506,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -9545,10 +9576,10 @@ components:
           description: Работает вместе с move_duplicate.
           type: string
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
@@ -9565,10 +9596,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9577,7 +9608,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -9752,10 +9783,10 @@ components:
           title: Показывать удаленные запросы.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -9765,21 +9796,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9788,17 +9819,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -9842,24 +9873,24 @@ components:
           title: Поиск по пути вебмастера.
           type: string
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -9868,17 +9899,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -9893,7 +9924,7 @@ components:
           title: Запрос.
           type: string
         path:
-          title: Путь (часть url после домена)
+          title: Путь (часть url после домена).
           type: string
         visits:
           title: Визиты.
@@ -10125,7 +10156,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         dates:
           title: Произвольные даты без использования диапазона.
@@ -10167,21 +10198,21 @@ components:
           default: 7
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -10190,17 +10221,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -10342,7 +10373,7 @@ components:
         searcher_key:
           title: Ключ ПС.
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - searcher_key
@@ -10360,7 +10391,7 @@ components:
         searcher_key:
           title: Id проекта.
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -10369,7 +10400,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -10506,7 +10537,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         dates:
           title: Произвольные даты без использования диапазона.
@@ -10548,21 +10579,21 @@ components:
           default: 7
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -10571,17 +10602,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -10704,7 +10735,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -10770,7 +10801,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Projects_2.Types.Competitors.ServiceName'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - urls
@@ -10787,7 +10818,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - ids
@@ -10869,7 +10900,7 @@ components:
           title: Является ли проект - задачей.
           type: boolean
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -10878,7 +10909,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -11940,10 +11971,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/Urls_2.Types.Tags.Action'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -11952,7 +11983,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -12071,7 +12102,7 @@ components:
       type: object
       properties:
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -12080,7 +12111,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -12096,7 +12127,7 @@ components:
           title: Добавить в результат данные о незавершенной проверке.
           type: boolean
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -12106,24 +12137,24 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -12132,17 +12163,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -12387,7 +12418,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -12397,27 +12428,27 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         check_id:
           title: ID проверки аудита.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -12426,17 +12457,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -12532,7 +12563,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -12542,27 +12573,27 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         check_id:
           title: ID проверки аудита.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -12571,17 +12602,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -12675,7 +12706,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -12685,27 +12716,27 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         check_id:
           title: ID проверки аудита.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -12714,17 +12745,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -12918,7 +12949,7 @@ components:
           title: Id ссылки на страницу.
           type: integer
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -12928,27 +12959,27 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         check_id:
           title: ID проверки аудита.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -12957,17 +12988,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -13224,10 +13255,10 @@ components:
           title: Отобразить количество проверенных страниц.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -13236,7 +13267,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -13265,10 +13296,10 @@ components:
           title: Недокументируемый параметр, данные для графика.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -13277,7 +13308,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -13293,7 +13324,7 @@ components:
       type: object
       properties:
         fetch_style:
-          title: 'Определяет формат результата: коллекция, объект, значение'
+          title: 'Определяет формат результата: коллекция, объект, значение.'
           description: |-
             Примеры:
             - fetchAll - получить коллекцию объектов
@@ -13303,21 +13334,21 @@ components:
           allOf:
             - $ref: '#/components/schemas/Selector.Types.FetchStyle'
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -13326,17 +13357,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required: []
@@ -13586,11 +13617,11 @@ components:
           nullable: true
           type: string
         group_on:
-          title: 'Активность создаваемых групп (по умолчанию: 1 - активные)'
+          title: 'Активность создаваемых групп (по умолчанию: 1 - активные).'
           default: true
           type: boolean
         move_duplicate:
-          title: 'Переносить ли дубли (по умолчанию: 0 - не переносить)'
+          title: 'Переносить ли дубли (по умолчанию: 0 - не переносить).'
           nullable: true
           type: boolean
         move_duplicate_group_id:
@@ -13606,7 +13637,7 @@ components:
           nullable: true
           type: integer
         remove_special_chars:
-          title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)'
+          title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать).'
           nullable: true
           type: boolean
         tags:
@@ -13615,16 +13646,35 @@ components:
           allOf:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
       title: Импорт AI-запросов.
     KeywordsAi_2.Methods.Keywords.Import.Add.Exec:
+      title: Результат импорта.
       nullable: true
-      type: array
-      items:
-        $ref: '#/components/schemas/Models.KeywordsAi.Keywords'
+      type: object
+      properties:
+        countSended:
+          type: integer
+        countDuplicated:
+          type: integer
+        countAdded:
+          type: integer
+        countChanged:
+          type: integer
+        countGroupsAdded:
+          type: integer
+        countFoldersAdded:
+          type: integer
+      required:
+        - countSended
+        - countDuplicated
+        - countAdded
+        - countChanged
+        - countGroupsAdded
+        - countFoldersAdded
     Keywords_2.Methods.Claster.ByRelevant.Edit:
       type: object
       properties:
@@ -13635,7 +13685,7 @@ components:
           title: Кластеризовать по папке.
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -13650,7 +13700,7 @@ components:
           title: Кластеризовать по папке.
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -13669,7 +13719,7 @@ components:
           nullable: true
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -13732,7 +13782,7 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -13987,10 +14037,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Folders.ToType'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -13999,7 +14049,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14019,10 +14069,10 @@ components:
           title: Учитывать ли удаленные папки.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14031,7 +14081,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14046,10 +14096,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14058,7 +14108,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14079,10 +14129,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Groups.ToType'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14091,7 +14141,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14111,10 +14161,10 @@ components:
           title: Учитывать ли удаленные группы.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14123,7 +14173,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14144,10 +14194,10 @@ components:
           title: Учитывать ли удаленные группы.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14156,7 +14206,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14174,10 +14224,10 @@ components:
           title: Список полей объекта, по которым необходимо выполнить сортировку.
           type: array
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14186,7 +14236,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14202,10 +14252,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14214,7 +14264,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14411,10 +14461,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Keywords.ToType'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14423,7 +14473,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14441,17 +14491,17 @@ components:
           title: Название запроса для переименования.
           type: string
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14460,7 +14510,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14476,17 +14526,17 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14495,7 +14545,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14554,10 +14604,10 @@ components:
           title: Искать ли в подпапках.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14566,7 +14616,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14597,10 +14647,10 @@ components:
           title: Искать ли в подпапках.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14609,7 +14659,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14623,10 +14673,10 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14635,7 +14685,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -14672,24 +14722,24 @@ components:
           title: Метод источника данных.
           type: string
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14698,17 +14748,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -14746,24 +14796,24 @@ components:
           title: Метод источника данных.
           type: string
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14772,17 +14822,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -14946,7 +14996,7 @@ components:
           nullable: true
           type: boolean
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -14955,12 +15005,12 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -15012,7 +15062,7 @@ components:
           nullable: true
           type: boolean
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15021,12 +15071,12 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - project_id
@@ -15199,12 +15249,12 @@ components:
           title: При фильтрации по ID папок также проверять в подпапках.
           type: boolean
         groups_ids:
-          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
+          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И).
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         do_snapshots:
-          title: Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
+          title: Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта).
           nullable: true
           type: boolean
         keyword_id:
@@ -15224,7 +15274,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15233,7 +15283,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -15323,7 +15373,7 @@ components:
           title: Регион, который требуется удалить.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15332,7 +15382,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -15411,7 +15461,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.SearchersKeys'
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15420,7 +15470,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -15467,7 +15517,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         dates:
           title: Произвольные даты без использования диапазона.
@@ -15509,21 +15559,21 @@ components:
           default: 7
           type: integer
         fields:
-          title: Список полей объекта, которые надо вернуть в результате
+          title: Список полей объекта, которые надо вернуть в результате.
           description: |-
             Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
             Использует поля модели
           type: array
         orders:
-          title: Список полей объекта, по которым необходимо выполнить сортировку
+          title: Список полей объекта, по которым необходимо выполнить сортировку.
           description: |-
             Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
             Использует поля модели
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15532,17 +15582,17 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -15570,7 +15620,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
       required:
         - id
@@ -15579,6 +15629,43 @@ components:
     Projects_2.Methods.Competitors.Brand.Edit.Exec:
       title: Сохранить настройки бренда.
       type: integer
+    Projects_2.Methods.Competitors.Import.Add:
+      type: object
+      properties:
+        competitors:
+          title: Массив конкурентов в формате CSV.
+          description: |2-
+             - array competitors - массив конкурентов, допускается формат CSV.
+             - file(csv) competitors - файл с содержимым для импорта, допускается формат CSV.
+             - resource competitors - указатель на файл с содержимым для импорта, допускается формат CSV.
+             - нельзя передавать competitors одновременно в виде массива, в виде файла или в виде ресурса.
+          nullable: true
+        service_name:
+          title: Сервис, которому принадлежит набор конкурентов.
+          default: positions
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Competitors.ServiceName'
+        project_id:
+          title: ID проекта.
+          type: integer
+      required:
+        - project_id
+      title: Импорт конкурентов в формате csv.
+    Projects_2.Methods.Competitors.Import.Add.Exec:
+      title: Результат импорта.
+      nullable: true
+      type: object
+      properties:
+        countSended:
+          type: integer
+        countAdded:
+          type: integer
+        countChanged:
+          type: integer
+      required:
+        - countSended
+        - countAdded
+        - countChanged
     Projects_2.Methods.Competitors.Move.Edit:
       type: object
       properties:
@@ -15682,7 +15769,7 @@ components:
           default: true
           type: boolean
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15691,7 +15778,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -15773,7 +15860,7 @@ components:
         orders:
           type: array
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -15782,7 +15869,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -15913,12 +16000,12 @@ components:
           nullable: true
           type: integer
         limit:
-          title: Количество объектов, которые необходимо получить в результате
+          title: Количество объектов, которые необходимо получить в результате.
           description: Используется в паре с offset
           nullable: true
           type: integer
         offset:
-          title: Число объектов, которое необходимо пропустить при получении результата
+          title: Число объектов, которое необходимо пропустить при получении результата.
           description: Используется в паре с limit
           type: integer
       required:
@@ -16048,7 +16135,7 @@ components:
       type: object
       properties:
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16057,7 +16144,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16070,7 +16157,7 @@ components:
       type: object
       properties:
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16079,7 +16166,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16099,7 +16186,7 @@ components:
       type: object
       properties:
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16108,7 +16195,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16152,7 +16239,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16161,7 +16248,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16185,7 +16272,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16194,7 +16281,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16208,7 +16295,7 @@ components:
       type: object
       properties:
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16217,7 +16304,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16237,7 +16324,7 @@ components:
       type: object
       properties:
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16246,7 +16333,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16376,10 +16463,10 @@ components:
           title: Удалить данные и оригинального проекта.
           type: boolean
         project_id:
-          title: ID проекта
+          title: ID проекта.
           type: integer
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16388,7 +16475,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16476,12 +16563,12 @@ components:
           title: При фильтрации по ID папок также проверять в подпапках.
           type: boolean
         groups_ids:
-          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
+          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И).
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16490,7 +16577,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer
@@ -16566,7 +16653,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         filters:
-          title: Список фильтров по полям объекта
+          title: Список фильтров по полям объекта.
           description: |-
             {name: string, operator: Selector\Types\Operator, values: array}
 
@@ -16575,7 +16662,7 @@ components:
             Поля обязательное, если $id не указан
           type: array
         id:
-          title: Id объекта, для фильтрации объектов по id
+          title: Id объекта, для фильтрации объектов по id.
           description: Только для моделей с полем id
           nullable: true
           type: integer

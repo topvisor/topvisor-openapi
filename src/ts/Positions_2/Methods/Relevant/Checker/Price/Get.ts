@@ -15,10 +15,10 @@ export interface components {
             folders_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** При фильтрации по ID папок также проверять в подпапках. */
             folders_ids_depth?: boolean;
-            /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
+            /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И). */
             groups_ids?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -27,7 +27,7 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;

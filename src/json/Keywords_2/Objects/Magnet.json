@@ -15,7 +15,7 @@
                         "type": "string"
                     },
                     "path": {
-                        "title": "Путь (часть url после домена)",
+                        "title": "Путь (часть url после домена).",
                         "type": "string"
                     },
                     "visits": {

@@ -19,7 +19,7 @@
                         "type": "integer"
                     },
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     }
                 },

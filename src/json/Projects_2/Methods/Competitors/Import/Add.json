@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Competitors.Import.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Competitors.Import.Add": {
+                "type": "object",
+                "properties": {
+                    "competitors": {
+                        "title": "Массив конкурентов в формате CSV.",
+                        "description": " - array competitors - массив конкурентов, допускается формат CSV.\n - file(csv) competitors - файл с содержимым для импорта, допускается формат CSV.\n - resource competitors - указатель на файл с содержимым для импорта, допускается формат CSV.\n - нельзя передавать competitors одновременно в виде массива, в виде файла или в виде ресурса.",
+                        "nullable": true
+                    },
+                    "service_name": {
+                        "title": "Сервис, которому принадлежит набор конкурентов.",
+                        "default": "positions",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Projects_2/Types/Competitors/ServiceName.json#/components/schemas/Projects_2.Types.Competitors.ServiceName"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "ID проекта.",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Импорт конкурентов в формате csv."
+            },
+            "Projects_2.Methods.Competitors.Import.Add.Exec": {
+                "title": "Результат импорта.",
+                "nullable": true,
+                "type": "object",
+                "properties": {
+                    "countSended": {
+                        "type": "integer"
+                    },
+                    "countAdded": {
+                        "type": "integer"
+                    },
+                    "countChanged": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "countSended",
+                    "countAdded",
+                    "countChanged"
+                ]
+            }
+        }
+    }
+}

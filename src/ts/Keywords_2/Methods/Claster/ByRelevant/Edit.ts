@@ -13,7 +13,7 @@ export interface components {
             competitor_id?: number;
             /** Кластеризовать по папке. */
             folder_id?: number;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Claster.ByRelevant.Edit.Exec": number | null;

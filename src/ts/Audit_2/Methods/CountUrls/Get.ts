@@ -10,7 +10,7 @@ export interface components {
         /** Получение количества настроенных URL. */
         "Audit_2.Methods.CountUrls.Get": {
             audit_type: import('../../Types/Type.ts').components['schemas']['Audit_2.Types.Type'];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         /** Количество настроенных URL. */

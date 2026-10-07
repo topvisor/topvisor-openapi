@@ -10,7 +10,7 @@ export interface components {
         /** Информация о стоимости запуска аудита по проектам. */
         "Audit_2.Methods.Audit.Checker.Price.Get": {
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -19,7 +19,7 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;

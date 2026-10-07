@@ -11,10 +11,10 @@ export interface components {
         "Urls_2.Methods.Tags.Edit": {
             tags: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'];
             action: import('../../Types/Tags/Action.ts').components['schemas']['Urls_2.Types.Tags.Action'];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -23,7 +23,7 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;

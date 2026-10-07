@@ -11,21 +11,21 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "ID проекта",
+                        "title": "ID проекта.",
                         "type": "integer"
                     },
                     "orders": {
-                        "title": "Список полей объекта, по которым необходимо выполнить сортировку",
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку.",
                         "description": "Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}\n\nИспользует поля модели",
                         "type": "array"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта",
+                        "title": "Список фильтров по полям объекта.",
                         "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
                         "type": "array"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id",
+                        "title": "Id объекта, для фильтрации объектов по id.",
                         "description": "Только для моделей с полем id",
                         "nullable": true,
                         "type": "integer"

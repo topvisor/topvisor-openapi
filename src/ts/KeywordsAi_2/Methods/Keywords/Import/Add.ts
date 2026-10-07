@@ -24,11 +24,11 @@ export interface components {
             /** Имя группы, если не указан group_id, если группа с таким именем уже существует, то будет исползоваться она. */
             group_name?: string | null;
             /**
-             * Активность создаваемых групп (по умолчанию: 1 - активные)
+             * Активность создаваемых групп (по умолчанию: 1 - активные).
              * @default true
              */
             group_on?: boolean;
-            /** Переносить ли дубли (по умолчанию: 0 - не переносить) */
+            /** Переносить ли дубли (по умолчанию: 0 - не переносить). */
             move_duplicate?: boolean | null;
             /** Id группы для переноса дублей, если не указана будет использован параметр move_duplicate_group_name. */
             move_duplicate_group_id?: number | null;
@@ -36,14 +36,22 @@ export interface components {
             move_duplicate_group_name?: string | null;
             /** Id папки для переноса дублей, если не указана, то будет использоваться корневая папка проекта. */
             move_duplicate_folder_id?: number | null;
-            /** Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать) */
+            /** Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать). */
             remove_special_chars?: boolean | null;
             /** Массив номеров тегов. */
             tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
-        "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": import('../../../../Models/KeywordsAi/Keywords.ts').components['schemas']['Models.KeywordsAi.Keywords'][] | null;
+        /** Результат импорта. */
+        "KeywordsAi_2.Methods.Keywords.Import.Add.Exec": {
+            countSended: number;
+            countDuplicated: number;
+            countAdded: number;
+            countChanged: number;
+            countGroupsAdded: number;
+            countFoldersAdded: number;
+        } | null;
     };
     responses: never;
     parameters: never;

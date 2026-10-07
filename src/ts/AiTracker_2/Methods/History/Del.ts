@@ -11,7 +11,7 @@ export interface components {
         "AiTracker_2.Methods.History.Del": {
             /** Дата проверки. */
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "AiTracker_2.Methods.History.Del.Exec": number;

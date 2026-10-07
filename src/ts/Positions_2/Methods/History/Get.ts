@@ -46,7 +46,7 @@ export interface components {
             only_exists_first_date?: import('../../../Reports_2/Types/OnlyExistsByDateType.ts').components['schemas']['Reports_2.Types.OnlyExistsByDateType'];
             /** Переопределить дату, которую надо использовать для фильтра `$only_exists_first_date`. */
             only_exists_by_date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
             /**
              * Произвольные даты без использования диапазона.
@@ -85,21 +85,21 @@ export interface components {
              */
             period_days?: number;
             /**
-             * Список полей объекта, которые надо вернуть в результате
+             * Список полей объекта, которые надо вернуть в результате.
              * @description Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
              */
             fields?: unknown[];
             /**
-             * Список полей объекта, по которым необходимо выполнить сортировку
+             * Список полей объекта, по которым необходимо выполнить сортировку.
              * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
              */
             orders?: unknown[];
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -108,17 +108,17 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;
             /**
-             * Количество объектов, которые необходимо получить в результате
+             * Количество объектов, которые необходимо получить в результате.
              * @description Используется в паре с offset
              */
             limit?: number | null;
             /**
-             * Число объектов, которое необходимо пропустить при получении результата
+             * Число объектов, которое необходимо пропустить при получении результата.
              * @description Используется в паре с limit
              */
             offset?: number;

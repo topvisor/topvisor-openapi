@@ -6706,6 +6706,64 @@
                 }
             }
         },
+        "/add/projects_2/competitors/import/": {
+            "post": {
+                "operationId": "AddProjects2CompetitorsImport",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Импорт конкурентов в формате csv.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Competitors/Import/Add.json#/components/schemas/Projects_2.Methods.Competitors.Import.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Competitors/Import/Add.json#/components/schemas/Projects_2.Methods.Competitors.Import.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/projects_2/competitors/move/": {
             "post": {
                 "operationId": "EditProjects2CompetitorsMove",

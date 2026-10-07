@@ -13,7 +13,7 @@ export interface components {
             folder_id?: number;
             /** Отображать сумму с учетом скидки. */
             apply_discount?: boolean | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Claster.CountPriceReclaster.Get.Exec": {

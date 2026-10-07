@@ -12,17 +12,17 @@ export interface components {
          * @description Можно сортировать в пределах одной группы или всего проекта.
          */
         "Keywords_2.Methods.Keywords.Sort.Edit": {
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
             /**
-             * Список полей объекта, по которым необходимо выполнить сортировку
+             * Список полей объекта, по которым необходимо выполнить сортировку.
              * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
              *
              *     Использует поля модели
              */
             orders?: unknown[];
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -31,7 +31,7 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;

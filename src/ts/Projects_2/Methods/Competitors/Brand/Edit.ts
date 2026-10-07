@@ -18,7 +18,7 @@ export interface components {
             name?: string | null;
             /** Дополнительные имена бренда. */
             aliases?: import('../../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         /** Сохранить настройки бренда. */

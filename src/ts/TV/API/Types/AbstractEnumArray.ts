@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: Enum[]
+         * Тип массива: Enum[].
          * @description Для реализации списка, содержащего элементы типа enum, данный класс надо расширить с указанием enum класса в ITEM_TYPE
          */
         "TV.API.Types.AbstractEnumArray": unknown[];

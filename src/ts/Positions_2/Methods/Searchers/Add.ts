@@ -11,7 +11,7 @@ export interface components {
         "Positions_2.Methods.Searchers.Add": {
             /** Ключ ПС. */
             searcher_key: unknown;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Positions_2.Methods.Searchers.Add.Exec": number | null;

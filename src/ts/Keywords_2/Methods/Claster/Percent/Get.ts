@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение обновленного процента завершения кластеризации. */
         "Keywords_2.Methods.Claster.Percent.Get": {
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Claster.Percent.Get.Exec": number;

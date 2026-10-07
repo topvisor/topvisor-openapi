@@ -11,7 +11,7 @@ export interface components {
         "Keywords_2.Methods.Claster.ByTarget.Edit": {
             /** Кластеризовать по папке. */
             folder_id?: number;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Claster.ByTarget.Edit.Exec": number | null;

@@ -174,7 +174,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение скриншота (платная функция) */
+    /** Получение скриншота (платная функция). */
     "/get/webscreens_2/": {
         parameters: {
             query?: never;
@@ -1641,7 +1641,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Экспорт в определенном формате (экспорт всех запросов) */
+    /** Экспорт в определенном формате (экспорт всех запросов). */
     "/get/keywords_2/keywords/export/": {
         parameters: {
             query?: never;
@@ -2091,7 +2091,24 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Перемещение конкурента (сортировка) */
+    /** Импорт конкурентов в формате csv. */
+    "/add/projects_2/competitors/import/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddProjects2CompetitorsImport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Перемещение конкурента (сортировка). */
     "/edit/projects_2/competitors/move/": {
         parameters: {
             query?: never;
@@ -2176,7 +2193,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Перемещение проекта (сортировка) */
+    /** Перемещение проекта (сортировка). */
     "/edit/projects_2/projects/move/": {
         parameters: {
             query?: never;
@@ -2533,7 +2550,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
+    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен). */
     "/get/competitors_2/orders/byKeyword/info/": {
         parameters: {
             query?: never;
@@ -2550,7 +2567,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
+    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен). */
     "/get/competitors_2/orders/byUrl/info/": {
         parameters: {
             query?: never;
@@ -2636,7 +2653,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Экспорт регионов (CSV)
+     * Экспорт регионов (CSV).
      * @description - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
      */
     "/get/positions_2/searchers/regions/export/": {
@@ -2655,7 +2672,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Импорт регионов (CSV) */
+    /** Импорт регионов (CSV). */
     "/add/positions_2/searchers/regions/import/": {
         parameters: {
             query?: never;
@@ -2757,7 +2774,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение стоимости перекластеризации */
+    /** Получение стоимости перекластеризации. */
     "/get/keywords_2/claster/checker/reclaster/price/": {
         parameters: {
             query?: never;
@@ -5853,6 +5870,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Competitors/Brand/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Brand.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    AddProjects2CompetitorsImport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Competitors/Import/Add.ts').components['schemas']['Projects_2.Methods.Competitors.Import.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Competitors/Import/Add.ts').components['schemas']['Projects_2.Methods.Competitors.Import.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };

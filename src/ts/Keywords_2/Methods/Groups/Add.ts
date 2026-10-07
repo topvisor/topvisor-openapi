@@ -20,7 +20,7 @@ export interface components {
              * @default true
              */
             on?: boolean;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Keywords_2.Methods.Groups.Add.Exec": import('../../../Models/Groups.ts').components['schemas']['Models.Groups'][] | null;

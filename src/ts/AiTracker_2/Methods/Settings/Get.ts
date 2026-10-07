@@ -11,7 +11,7 @@ export interface components {
         "AiTracker_2.Methods.Settings.Get": {
             /** Добавить ли в результат список всехдоступных моделей. */
             showAvailableModels?: boolean;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         /** Настройки aiTracker проекта. */

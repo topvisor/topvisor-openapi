@@ -11,7 +11,7 @@ export interface components {
         "Projects_2.Methods.Competitors.Del": {
             /** ID конкурентов. */
             ids: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Projects_2.Methods.Competitors.Del.Exec": number;

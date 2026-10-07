@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип операции метода API
+         * Тип операции метода API.
          * @enum {string}
          */
         "TV.API.Oper": "get" | "add" | "edit" | "del";

@@ -25,7 +25,7 @@ export interface components {
              * @default positions
              */
             service_name?: import('../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
         };
         "Projects_2.Methods.Competitors.Add.Exec": unknown[];

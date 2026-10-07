@@ -11,7 +11,7 @@ export interface components {
         "Keywords_2.Objects.Magnet": {
             /** Запрос. */
             phrase: string;
-            /** Путь (часть url после домена) */
+            /** Путь (часть url после домена). */
             path: string;
             /** Визиты. */
             visits: number;

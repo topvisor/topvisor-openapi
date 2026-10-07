@@ -18,10 +18,10 @@ export interface components {
             show_counts_in_index?: boolean;
             /** Отобразить количество проверенных страниц. */
             show_counts_all?: boolean;
-            /** ID проекта */
+            /** ID проекта. */
             project_id: number;
             /**
-             * Список фильтров по полям объекта
+             * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
              *
              *     Использует поля модели
@@ -30,7 +30,7 @@ export interface components {
              */
             filters?: unknown[];
             /**
-             * Id объекта, для фильтрации объектов по id
+             * Id объекта, для фильтрации объектов по id.
              * @description Только для моделей с полем id
              */
             id?: number | null;
