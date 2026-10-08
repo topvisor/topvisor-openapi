@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.Files",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.Files": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../TV/API/Types/File.json#/components/schemas/TV.API.Types.File"
+                },
+                "title": "Список файлов."
+            }
+        }
+    }
+}

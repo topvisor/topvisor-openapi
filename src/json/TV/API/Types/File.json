@@ -1,0 +1,18 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.File",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.File": {
+                "type": "string",
+                "format": "binary",
+                "title": "Файл.",
+                "description": "Рекомендуется использовать передачу файла через `multipart/form-data`.\nЭтот формат лучше работает с выделением памяти и предоставляет `basename`, загруженного файла.\n\nДля текстовых файлов:\n- В контексте `application/json`: строка с содержанием файла в виде текста.\n- В контексте `multipart/form-data`: строка с содержанием файла в виде текста или данные файла. Если переданы оба, приоритет у строки.\n\nДля не текстовых файлов:\n- Передавать только через `multipart/form-data`.\n- Передать в `application/json` нельзя. Дополнительное кодирование в base64 запрещено в пользу удобства и простоты.\n\n@file\n@file-no-string"
+            }
+        }
+    }
+}
