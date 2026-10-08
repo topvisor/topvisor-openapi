@@ -1805,10 +1805,6 @@
                         "const": "User ID",
                         "readOnly": true
                     },
-                    "Managing_executive": {
-                        "const": "Managing executive",
-                        "readOnly": true
-                    },
                     "Pustovoit": {
                         "const": "Pustovoit",
                         "readOnly": true
@@ -1915,6 +1911,10 @@
                     },
                     "View": {
                         "const": "View",
+                        "readOnly": true
+                    },
+                    "See": {
+                        "const": "See",
                         "readOnly": true
                     },
                     "Bar_pin": {
@@ -2483,7 +2483,6 @@
                     "Audit",
                     "Tutorial",
                     "User_id",
-                    "Managing_executive",
                     "Pustovoit",
                     "Denis",
                     "Anatolyevich",
@@ -2511,6 +2510,7 @@
                     "Median",
                     "Reset",
                     "View",
+                    "See",
                     "Bar_pin",
                     "Count",
                     "Invalid_url",

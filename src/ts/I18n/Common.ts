@@ -912,8 +912,6 @@ export interface components {
             /** @constant */
             readonly User_id: "User ID";
             /** @constant */
-            readonly Managing_executive: "Managing executive";
-            /** @constant */
             readonly Pustovoit: "Pustovoit";
             /** @constant */
             readonly Denis: "Denis";
@@ -967,6 +965,8 @@ export interface components {
             readonly Reset: "Reset";
             /** @constant */
             readonly View: "View";
+            /** @constant */
+            readonly See: "See";
             /** @constant */
             readonly Bar_pin: "Pin bar";
             /** @constant */
