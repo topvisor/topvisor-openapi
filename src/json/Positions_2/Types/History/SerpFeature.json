@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.History.SerpFeature",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.History.SerpFeature": {
+                "type": "string",
+                "enum": [
+                    "aiOverviewExists",
+                    "images",
+                    "video",
+                    "knowledge",
+                    "maps"
+                ],
+                "x-enum-varnames": [
+                    "AIOverviewExists",
+                    "Images",
+                    "Video",
+                    "Knowledge",
+                    "Maps"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Фильтр по SERP Features"
+            }
+        }
+    }
+}

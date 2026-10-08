@@ -10091,6 +10091,32 @@ components:
       items:
         $ref: '#/components/schemas/Positions_2.Types.History.FilterByDynamic'
       title: Фильтры по динамике запросов.
+    Positions_2.Types.History.SerpFeature:
+      type: string
+      enum:
+        - aiOverviewExists
+        - images
+        - video
+        - knowledge
+        - maps
+      x-enum-varnames:
+        - AIOverviewExists
+        - Images
+        - Video
+        - Knowledge
+        - Maps
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+        - null
+      title: Фильтр по SERP Features
+    Positions_2.Types.History.FilterBySerpFeatures:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.History.SerpFeature'
+      title: Фильтр по SERP Features
     Positions_2.Methods.History.Get:
       type: object
       properties:
@@ -10141,6 +10167,12 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        filter_by_serp_features:
+          title: Фильтрация по SERP-фичам.
+          description: Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.FilterBySerpFeatures'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках.
           type: boolean

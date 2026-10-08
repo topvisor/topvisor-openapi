@@ -627,6 +627,8 @@ export interface components {
             /** @constant */
             readonly Serp_features: "SERP Features";
             /** @constant */
+            readonly Serp_features_AI: "SERP Features (AI)";
+            /** @constant */
             readonly No_keywords_in_project: "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and <i data-top-icon=\"\"></i> in the right upper corner.";
             /** @constant */
             readonly Relevant_check_already_started: "Relevant check already started";

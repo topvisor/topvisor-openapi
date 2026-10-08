@@ -39,6 +39,11 @@ export interface components {
              *     - Игнорируется в режиме сравнения, так как для фильтрации необходимо указывать конкретные проект и регион
              */
             filter_by_positions?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            /**
+             * Фильтрация по SERP-фичам.
+             * @description Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
+             */
+            filter_by_serp_features?: import('../../Types/History/FilterBySerpFeatures.ts').components['schemas']['Positions_2.Types.History.FilterBySerpFeatures'] | null;
             /** При фильтрации по ID папок также искать в подпапках. */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы. */
