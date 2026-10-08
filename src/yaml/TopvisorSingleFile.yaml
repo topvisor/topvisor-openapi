@@ -14397,17 +14397,27 @@ components:
         - output
         - project_id
       title: Экспорт в определенном формате (экспорт всех запросов).
+    Keywords_2.Types.Keywords.Import.File:
+      anyOf:
+        - type: string
+          format: binary
+        - type: string
+        - type: array
+          items:
+            type: string
+      title: Файл, массив или строка запросов для импорта.
+      description: '@file: txt, csv'
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:
         keywords:
-          title: Массив ключевых запросов в формате CSV.
+          title: Файл, массив или строка ключевых запросов в формате CSV.
           description: |-
             - array keywords - массив ключевых запросов, допускается формат CSV
             - file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV
-            - resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV
-            - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса
-          nullable: true
+            - Внутренние вызовы могут передать resource с содержимым для импорта.
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.Import.File'
         folder_id:
           title: Id папки, если папка не указана, будет использована корневая папка проекта.
           nullable: true
@@ -14453,6 +14463,7 @@ components:
           title: ID проекта.
           type: integer
       required:
+        - keywords
         - project_id
       title: Импорт запросов.
     Keywords_2.Methods.Keywords.Import.Add.Exec:

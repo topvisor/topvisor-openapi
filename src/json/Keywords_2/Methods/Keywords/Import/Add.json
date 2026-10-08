@@ -11,9 +11,13 @@
                 "type": "object",
                 "properties": {
                     "keywords": {
-                        "title": "Массив ключевых запросов в формате CSV.",
-                        "description": "- array keywords - массив ключевых запросов, допускается формат CSV\n- file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV\n- resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV\n- нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса",
-                        "nullable": true
+                        "title": "Файл, массив или строка ключевых запросов в формате CSV.",
+                        "description": "- array keywords - массив ключевых запросов, допускается формат CSV\n- file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV\n- Внутренние вызовы могут передать resource с содержимым для импорта.",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Keywords/Import/File.json#/components/schemas/Keywords_2.Types.Keywords.Import.File"
+                            }
+                        ]
                     },
                     "folder_id": {
                         "title": "Id папки, если папка не указана, будет использована корневая папка проекта.",
@@ -75,6 +79,7 @@
                     }
                 },
                 "required": [
+                    "keywords",
                     "project_id"
                 ],
                 "title": "Импорт запросов."

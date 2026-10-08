@@ -10,13 +10,12 @@ export interface components {
         /** Импорт запросов. */
         "Keywords_2.Methods.Keywords.Import.Add": {
             /**
-             * Массив ключевых запросов в формате CSV.
+             * Файл, массив или строка ключевых запросов в формате CSV.
              * @description - array keywords - массив ключевых запросов, допускается формат CSV
              *     - file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV
-             *     - resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV
-             *     - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса
+             *     - Внутренние вызовы могут передать resource с содержимым для импорта.
              */
-            keywords?: unknown;
+            keywords: import('../../../Types/Keywords/Import/File.ts').components['schemas']['Keywords_2.Types.Keywords.Import.File'];
             /** Id папки, если папка не указана, будет использована корневая папка проекта. */
             folder_id?: number | null;
             /** Id группы, если не указан будет создана новая группа в указанной папке. */
