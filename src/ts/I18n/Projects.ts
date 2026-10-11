@@ -55,6 +55,10 @@ export interface components {
             /** @constant */
             readonly Region_not_available: "You can't add this location";
             /** @constant */
+            readonly Yandex_regions_unavailable_error: "No locations remain for checking: Yandex locations are temporarily unavailable";
+            /** @constant */
+            readonly Yandex_regions_unavailable_info: "Yandex locations are temporarily unavailable, so checking them was skipped";
+            /** @constant */
             readonly Project_not_available_for_Youtube: "Youtube rank tracking is not available for this project";
             /** @constant */
             readonly Searcher_not_found: "Search engine not found";

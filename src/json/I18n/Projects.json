@@ -102,6 +102,14 @@
                         "const": "You can't add this location",
                         "readOnly": true
                     },
+                    "Yandex_regions_unavailable_error": {
+                        "const": "No locations remain for checking: Yandex locations are temporarily unavailable",
+                        "readOnly": true
+                    },
+                    "Yandex_regions_unavailable_info": {
+                        "const": "Yandex locations are temporarily unavailable, so checking them was skipped",
+                        "readOnly": true
+                    },
                     "Project_not_available_for_Youtube": {
                         "const": "Youtube rank tracking is not available for this project",
                         "readOnly": true
@@ -1031,6 +1039,8 @@
                     "Searcher_exists",
                     "Region_exists",
                     "Region_not_available",
+                    "Yandex_regions_unavailable_error",
+                    "Yandex_regions_unavailable_info",
                     "Project_not_available_for_Youtube",
                     "Searcher_not_found",
                     "Delegating_impossible2",
