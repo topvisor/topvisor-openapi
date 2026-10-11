@@ -2036,6 +2036,10 @@
                     "Check_rankings": {
                         "const": "Check rankings",
                         "readOnly": true
+                    },
+                    "Serp_mode": {
+                        "const": "Serp mode",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2540,7 +2544,8 @@
                     "Relevant_URL",
                     "Visits",
                     "User_card",
-                    "Check_rankings"
+                    "Check_rankings",
+                    "Serp_mode"
                 ]
             }
         }

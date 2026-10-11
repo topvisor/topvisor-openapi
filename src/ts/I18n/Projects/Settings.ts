@@ -24,6 +24,8 @@ export interface components {
             readonly Reconnect: "Refresh API-key";
             /** @constant */
             readonly Skipped_regions: "Skipped regions";
+            /** @constant */
+            readonly How_settings_affect: "Learn how settings affect the report in <a href=\"{{ link }}\" target=\"_blank\">Help</a>.";
         };
     };
     responses: never;

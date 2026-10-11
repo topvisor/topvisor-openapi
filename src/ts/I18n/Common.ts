@@ -1027,6 +1027,8 @@ export interface components {
             readonly User_card: "User card";
             /** @constant */
             readonly Check_rankings: "Check rankings";
+            /** @constant */
+            readonly Serp_mode: "Serp mode";
         };
     };
     responses: never;

@@ -41,6 +41,10 @@
                     "Skipped_regions": {
                         "const": "Skipped regions",
                         "readOnly": true
+                    },
+                    "How_settings_affect": {
+                        "const": "Learn how settings affect the report in <a href=\"{{ link }}\" target=\"_blank\">Help</a>.",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -51,7 +55,8 @@
                     "Google_drive",
                     "Token_is_active_until",
                     "Reconnect",
-                    "Skipped_regions"
+                    "Skipped_regions",
+                    "How_settings_affect"
                 ]
             }
         }
