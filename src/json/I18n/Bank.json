@@ -222,10 +222,6 @@
                         "const": "Transfer",
                         "readOnly": true
                     },
-                    "Referrals_confirm_funds_transfer_to_bonus_account_notice": {
-                        "const": "Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>\n\tDo you want to continue?",
-                        "readOnly": true
-                    },
                     "Referrals_levels_description_title": {
                         "const": "Referrals get levels that depend on the total amount paid. A Partner gets a reward each time a Referral reaches new level on the Affiliate program.<br><br><a href=\"/support/bank/affiliate/\" target=\"_blank\">More on referral levels →</a>",
                         "readOnly": true
@@ -1247,7 +1243,6 @@
                     "Referrals_withdraw_to_balance",
                     "Referrals_withdraw",
                     "Referrals_transfer",
-                    "Referrals_confirm_funds_transfer_to_bonus_account_notice",
                     "Referrals_levels_description_title",
                     "Referrals_download_invoice_act",
                     "Referrals_link_to_EDF_setup_instruction",
