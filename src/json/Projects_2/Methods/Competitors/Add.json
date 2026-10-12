@@ -10,38 +10,38 @@
             "Projects_2.Methods.Competitors.Add": {
                 "type": "object",
                 "properties": {
-                    "urls": {
-                        "title": "Список url конкурентов.",
+                    "url": {
+                        "title": "Url конкурента.",
+                        "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../TV/API/Types/UrlShortArray.json#/components/schemas/TV.API.Types.UrlShortArray"
+                                "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
                             }
                         ]
                     },
-                    "names": {
-                        "title": "Список имен конкурентов (если указан, должен быть такой же длины как urls).",
+                    "name": {
+                        "title": "Имя конкурента.",
                         "nullable": true,
-                        "type": "array"
+                        "type": "string"
                     },
-                    "brand_names": {
-                        "title": "Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls).",
+                    "brand_name": {
+                        "title": "Имя бренда конкурента для настроек ИИ-Трекера.",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "brand_aliases": {
+                        "title": "Список дополнительных имен брендов для настроек ИИ-Трекера.",
+                        "description": "Для url — массив строк, для urls — массив массивов строк такой же длины, как urls.",
                         "nullable": true,
                         "anyOf": [
                             {
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                }
+                                "type": "object",
+                                "additionalProperties": {}
                             },
                             {
                                 "type": "null"
                             }
                         ]
-                    },
-                    "brand_aliases": {
-                        "title": "Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls).",
-                        "nullable": true,
-                        "type": "array"
                     },
                     "service_name": {
                         "title": "Сервис, которому принадлежит набор конкурентов.",
@@ -58,14 +58,29 @@
                     }
                 },
                 "required": [
-                    "urls",
                     "project_id"
                 ],
                 "title": "Добавление конкурента.",
                 "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте."
             },
             "Projects_2.Methods.Competitors.Add.Exec": {
-                "type": "array"
+                "type": "object",
+                "properties": {
+                    "countSended": {
+                        "type": "integer"
+                    },
+                    "countAdded": {
+                        "type": "integer"
+                    },
+                    "countChanged": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "countSended",
+                    "countAdded",
+                    "countChanged"
+                ]
             }
         }
     }

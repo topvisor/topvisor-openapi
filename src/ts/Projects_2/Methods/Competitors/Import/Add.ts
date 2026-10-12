@@ -10,15 +10,14 @@ export interface components {
         /** Импорт конкурентов в формате csv. */
         "Projects_2.Methods.Competitors.Import.Add": {
             /**
-             * Массив конкурентов в формате CSV.
-             * @description - array competitors - массив конкурентов, допускается формат CSV.
-             *      - file(csv) competitors - файл с содержимым для импорта, допускается формат CSV.
-             *      - resource competitors - указатель на файл с содержимым для импорта, допускается формат CSV.
-             *      - нельзя передавать competitors одновременно в виде массива, в виде файла или в виде ресурса.
+             * Файл или строка в формате CSV.
+             * @description Возможные поля CSV:
+             *      - Positions: `url`, `name`; `url` - обязательно
+             *      - AiTracker: `url`, `name`, `brand_name`, `brand_aliases`; `url` и `brand_name` - обязательны
              */
-            competitors?: unknown;
+            competitors: import('../../../Types/Competitors/Import/File.ts').components['schemas']['Projects_2.Types.Competitors.Import.File'];
             /**
-             * Сервис, которому принадлежит набор конкурентов.
+             * Сервис, которому принадлежат конкуренты.
              * @default positions
              */
             service_name?: import('../../../Types/Competitors/ServiceName.ts').components['schemas']['Projects_2.Types.Competitors.ServiceName'];
@@ -28,6 +27,7 @@ export interface components {
         /** Результат импорта. */
         "Projects_2.Methods.Competitors.Import.Add.Exec": {
             countSended: number;
+            countDuplicated: number;
             countAdded: number;
             countChanged: number;
         } | null;

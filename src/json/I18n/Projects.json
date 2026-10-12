@@ -1006,10 +1006,6 @@
                         "const": "Skipped competitors",
                         "readOnly": true
                     },
-                    "Compare_all_keywords": {
-                        "const": "Compare all keywords",
-                        "readOnly": true
-                    },
                     "Competitors_was_enabled": {
                         "const": "Competitors was enabled",
                         "readOnly": true
@@ -1264,7 +1260,6 @@
                     "Confirm_deletion",
                     "Added_competitors",
                     "Skipped_competitors",
-                    "Compare_all_keywords",
                     "Competitors_was_enabled"
                 ]
             }

@@ -12,14 +12,19 @@ export interface components {
          * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте.
          */
         "Projects_2.Methods.Competitors.Add": {
-            /** Список url конкурентов. */
-            urls: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'];
-            /** Список имен конкурентов (если указан, должен быть такой же длины как urls). */
-            names?: unknown[] | null;
-            /** Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls). */
-            brand_names?: (string[] | null) | null;
-            /** Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls). */
-            brand_aliases?: unknown[] | null;
+            /** Url конкурента. */
+            url?: import('../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'] | null;
+            /** Имя конкурента. */
+            name?: string | null;
+            /** Имя бренда конкурента для настроек ИИ-Трекера. */
+            brand_name?: string | null;
+            /**
+             * Список дополнительных имен брендов для настроек ИИ-Трекера.
+             * @description Для url — массив строк, для urls — массив массивов строк такой же длины, как urls.
+             */
+            brand_aliases?: ({
+                [key: string]: unknown;
+            } | null) | null;
             /**
              * Сервис, которому принадлежит набор конкурентов.
              * @default positions
@@ -28,7 +33,11 @@ export interface components {
             /** ID проекта. */
             project_id: number;
         };
-        "Projects_2.Methods.Competitors.Add.Exec": unknown[];
+        "Projects_2.Methods.Competitors.Add.Exec": {
+            countSended: number;
+            countAdded: number;
+            countChanged: number;
+        };
     };
     responses: never;
     parameters: never;

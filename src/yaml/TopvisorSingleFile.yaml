@@ -10787,11 +10787,6 @@ components:
         Будет проивзедено автоматическое приведение к формату
 
         Разрешен ввод пустой строки, для удаления значения url
-    TV.API.Types.UrlShortArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/TV.API.Types.UrlShort'
-      title: 'Тип массива: UrlShort[].'
     Projects_2.Types.Competitors.ServiceName:
       type: string
       enum:
@@ -10803,30 +10798,31 @@ components:
       x-enum-descriptions:
         - null
         - null
-      title: Имя сервиса, к котором привязывается конкурент проекта.
+      title: Имя сервиса, к которому привязывается конкурент проекта.
     Projects_2.Methods.Competitors.Add:
       type: object
       properties:
-        urls:
-          title: Список url конкурентов.
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.UrlShortArray'
-        names:
-          title: Список имен конкурентов (если указан, должен быть такой же длины как urls).
+        url:
+          title: Url конкурента.
           nullable: true
-          type: array
-        brand_names:
-          title: Список имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls).
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
+        name:
+          title: Имя конкурента.
+          nullable: true
+          type: string
+        brand_name:
+          title: Имя бренда конкурента для настроек ИИ-Трекера.
+          nullable: true
+          type: string
+        brand_aliases:
+          title: Список дополнительных имен брендов для настроек ИИ-Трекера.
+          description: Для url — массив строк, для urls — массив массивов строк такой же длины, как urls.
           nullable: true
           anyOf:
-            - type: array
-              items:
-                type: string
+            - type: object
+              additionalProperties: {}
             - type: 'null'
-        brand_aliases:
-          title: Список дополнительных имен брендов для настроек ИИ-Трекера (если указан, должен быть такой же длины как urls).
-          nullable: true
-          type: array
         service_name:
           title: Сервис, которому принадлежит набор конкурентов.
           default: positions
@@ -10836,12 +10832,22 @@ components:
           title: ID проекта.
           type: integer
       required:
-        - urls
         - project_id
       title: Добавление конкурента.
       description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте.'
     Projects_2.Methods.Competitors.Add.Exec:
-      type: array
+      type: object
+      properties:
+        countSended:
+          type: integer
+        countAdded:
+          type: integer
+        countChanged:
+          type: integer
+      required:
+        - countSended
+        - countAdded
+        - countChanged
     Projects_2.Methods.Competitors.Del:
       type: object
       properties:
@@ -13625,17 +13631,27 @@ components:
       nullable: true
       allOf:
         - $ref: '#/components/schemas/Content_2.Types.Update'
+    Keywords_2.Types.Keywords.Import.File:
+      anyOf:
+        - type: string
+          format: binary
+        - type: string
+        - type: array
+          items:
+            type: string
+      title: Файл, массив или строка запросов для импорта.
+      description: '@file: txt, csv'
     KeywordsAi_2.Methods.Keywords.Import.Add:
       type: object
       properties:
         keywords:
-          title: Массив ключевых запросов в формате CSV.
+          title: Файл, массив или строка ключевых запросов в формате CSV.
           description: |-
             - array keywords - массив ключевых запросов, допускается формат CSV
             - file(txt, csv) keywords - файл с содержимым для импорта, допускается формат CSV
-            - resource keywords - указатель на файл с содержимым для импорта, допускается формат CSV
-            - нельзя передавать keywords одновременно в виде массива, в виде файла или в виде ресурса
-          nullable: true
+            - Внутренние вызовы могут передать resource с содержимым для импорта.
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Keywords.Import.File'
         folder_id:
           title: Id папки, если папка не указана, будет использована корневая папка проекта.
           nullable: true
@@ -13681,6 +13697,7 @@ components:
           title: ID проекта.
           type: integer
       required:
+        - keywords
         - project_id
       title: Импорт AI-запросов.
     KeywordsAi_2.Methods.Keywords.Import.Add.Exec:
@@ -14397,16 +14414,6 @@ components:
         - output
         - project_id
       title: Экспорт в определенном формате (экспорт всех запросов).
-    Keywords_2.Types.Keywords.Import.File:
-      anyOf:
-        - type: string
-          format: binary
-        - type: string
-        - type: array
-          items:
-            type: string
-      title: Файл, массив или строка запросов для импорта.
-      description: '@file: txt, csv'
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:
@@ -15672,19 +15679,26 @@ components:
     Projects_2.Methods.Competitors.Brand.Edit.Exec:
       title: Сохранить настройки бренда.
       type: integer
+    Projects_2.Types.Competitors.Import.File:
+      anyOf:
+        - type: string
+          format: binary
+        - type: string
+      title: Файл для импорта конкурентов.
+      description: '@file: csv'
     Projects_2.Methods.Competitors.Import.Add:
       type: object
       properties:
         competitors:
-          title: Массив конкурентов в формате CSV.
+          title: Файл или строка в формате CSV.
           description: |2-
-             - array competitors - массив конкурентов, допускается формат CSV.
-             - file(csv) competitors - файл с содержимым для импорта, допускается формат CSV.
-             - resource competitors - указатель на файл с содержимым для импорта, допускается формат CSV.
-             - нельзя передавать competitors одновременно в виде массива, в виде файла или в виде ресурса.
-          nullable: true
+             Возможные поля CSV:
+             - Positions: `url`, `name`; `url` - обязательно
+             - AiTracker: `url`, `name`, `brand_name`, `brand_aliases`; `url` и `brand_name` - обязательны
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Competitors.Import.File'
         service_name:
-          title: Сервис, которому принадлежит набор конкурентов.
+          title: Сервис, которому принадлежат конкуренты.
           default: positions
           allOf:
             - $ref: '#/components/schemas/Projects_2.Types.Competitors.ServiceName'
@@ -15692,6 +15706,7 @@ components:
           title: ID проекта.
           type: integer
       required:
+        - competitors
         - project_id
       title: Импорт конкурентов в формате csv.
     Projects_2.Methods.Competitors.Import.Add.Exec:
@@ -15701,12 +15716,15 @@ components:
       properties:
         countSended:
           type: integer
+        countDuplicated:
+          type: integer
         countAdded:
           type: integer
         countChanged:
           type: integer
       required:
         - countSended
+        - countDuplicated
         - countAdded
         - countChanged
     Projects_2.Methods.Competitors.Move.Edit:

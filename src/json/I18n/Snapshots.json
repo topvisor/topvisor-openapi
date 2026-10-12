@@ -106,6 +106,10 @@
                         "const": "Remove from competitors",
                         "readOnly": true
                     },
+                    "Compare_all_keywords": {
+                        "const": "Сравнение всех запросов",
+                        "readOnly": true
+                    },
                     "Keyword_dynamics": {
                         "const": "Keyword dynamics",
                         "readOnly": true
@@ -160,6 +164,7 @@
                     "Competitor_URLs",
                     "Add_to_competitors",
                     "Remove_from_competitors",
+                    "Compare_all_keywords",
                     "Keyword_dynamics",
                     "Select_keyword",
                     "Snippets_no_checked",

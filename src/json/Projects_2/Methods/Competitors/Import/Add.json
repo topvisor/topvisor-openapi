@@ -11,12 +11,16 @@
                 "type": "object",
                 "properties": {
                     "competitors": {
-                        "title": "Массив конкурентов в формате CSV.",
-                        "description": " - array competitors - массив конкурентов, допускается формат CSV.\n - file(csv) competitors - файл с содержимым для импорта, допускается формат CSV.\n - resource competitors - указатель на файл с содержимым для импорта, допускается формат CSV.\n - нельзя передавать competitors одновременно в виде массива, в виде файла или в виде ресурса.",
-                        "nullable": true
+                        "title": "Файл или строка в формате CSV.",
+                        "description": " Возможные поля CSV:\n - Positions: `url`, `name`; `url` - обязательно\n - AiTracker: `url`, `name`, `brand_name`, `brand_aliases`; `url` и `brand_name` - обязательны",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Projects_2/Types/Competitors/Import/File.json#/components/schemas/Projects_2.Types.Competitors.Import.File"
+                            }
+                        ]
                     },
                     "service_name": {
-                        "title": "Сервис, которому принадлежит набор конкурентов.",
+                        "title": "Сервис, которому принадлежат конкуренты.",
                         "default": "positions",
                         "allOf": [
                             {
@@ -30,6 +34,7 @@
                     }
                 },
                 "required": [
+                    "competitors",
                     "project_id"
                 ],
                 "title": "Импорт конкурентов в формате csv."
@@ -42,6 +47,9 @@
                     "countSended": {
                         "type": "integer"
                     },
+                    "countDuplicated": {
+                        "type": "integer"
+                    },
                     "countAdded": {
                         "type": "integer"
                     },
@@ -51,6 +59,7 @@
                 },
                 "required": [
                     "countSended",
+                    "countDuplicated",
                     "countAdded",
                     "countChanged"
                 ]

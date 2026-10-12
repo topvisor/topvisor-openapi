@@ -41,6 +41,7 @@ export interface components {
         Units: import('./I18n/Units.ts').components['schemas']['I18n.Units'];
         Updates: import('./I18n/Updates.ts').components['schemas']['I18n.Updates'];
         User: import('./I18n/User.ts').components['schemas']['I18n.User'];
+        Utils: import('./I18n/Utils.ts').components['schemas']['I18n.Utils'];
         Votes: import('./I18n/Votes.ts').components['schemas']['I18n.Votes'];
         Watcher: import('./I18n/Watcher.ts').components['schemas']['I18n.Watcher'];
         Widget: import('./I18n/Widget.ts').components['schemas']['I18n.Widget'];
