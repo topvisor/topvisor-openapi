@@ -19,7 +19,6 @@ export interface components {
                 9: "GoogleStore";
                 20: "Yandex.com";
                 21: "Yandex.com.tr";
-                22: "Yandex Live";
             };
             /** @constant */
             readonly url_lang_prefix: "";
