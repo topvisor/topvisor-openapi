@@ -319,8 +319,6 @@ export interface components {
             /** @constant */
             readonly Contract: "License agreement";
             /** @constant */
-            readonly Add_payment_details: "Add payment details";
-            /** @constant */
             readonly Natural_person: "Individual";
             /** @constant */
             readonly Legal_person: "Company";

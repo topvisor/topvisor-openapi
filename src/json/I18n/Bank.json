@@ -630,10 +630,6 @@
                         "const": "License agreement",
                         "readOnly": true
                     },
-                    "Add_payment_details": {
-                        "const": "Add payment details",
-                        "readOnly": true
-                    },
                     "Natural_person": {
                         "const": "Individual",
                         "readOnly": true
@@ -1339,7 +1335,6 @@
                     "Offer",
                     "Contract_offer",
                     "Contract",
-                    "Add_payment_details",
                     "Natural_person",
                     "Legal_person",
                     "Sole_proprietor",
