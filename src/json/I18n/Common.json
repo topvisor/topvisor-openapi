@@ -1785,7 +1785,7 @@
                         "readOnly": true
                     },
                     "Incorrect_file_format": {
-                        "const": "Invalid file format (expected: {{ availableExtensionsNames }})\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>",
+                        "const": "Invalid file format (expected: {{ availableExtensionsNames }})",
                         "readOnly": true
                     },
                     "Max_size": {

@@ -901,7 +901,7 @@ export interface components {
             /** @constant */
             readonly Your_projects: "Your projects";
             /** @constant */
-            readonly Incorrect_file_format: "Invalid file format (expected: {{ availableExtensionsNames }})\n\tPlease make sure that the file is correct and add <a href=\"/support/audit/#whitelist\" target=\"_blank\" class=\"a\">our bot IP addresses to White List</a>";
+            readonly Incorrect_file_format: "Invalid file format (expected: {{ availableExtensionsNames }})";
             /** @constant */
             readonly Max_size: "Maximum upload size exceeded ({{ maxSize }})";
             /** @constant */
