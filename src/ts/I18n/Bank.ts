@@ -119,7 +119,7 @@ export interface components {
             /** @constant */
             readonly Referrals_download_invoice_act: "Download invoice and UTD";
             /** @constant */
-            readonly Referrals_withdrawal_available_from_amount_notice: "You can withdraw the amount from 5000 rubles only on IE or LTD bank account via e-document workflow.";
+            readonly Referrals_withdrawal_available_from_amount_notice: "You can withdraw the amount from 5000 rubles on IE or LTD bank account via e-document workflow.";
             /** @constant */
             readonly Referrals_link_to_EDF_setup_instruction: "What is EDF how can I use it →";
             /** @constant */

@@ -231,7 +231,7 @@
                         "readOnly": true
                     },
                     "Referrals_withdrawal_available_from_amount_notice": {
-                        "const": "You can withdraw the amount from 5000 rubles only on IE or LTD bank account via e-document workflow.",
+                        "const": "You can withdraw the amount from 5000 rubles on IE or LTD bank account via e-document workflow.",
                         "readOnly": true
                     },
                     "Referrals_link_to_EDF_setup_instruction": {
