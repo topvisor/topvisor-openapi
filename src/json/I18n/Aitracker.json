@@ -267,7 +267,7 @@
                         "readOnly": true
                     },
                     "Delete_group_warning": {
-                        "const": "<b>Внимание!</b> Удаление группы приведет к удалению всех промптов внутри группы.",
+                        "const": "<b>Important!</b><br>If you delete a group, all prompts in the group will be deleted immediately.",
                         "readOnly": true
                     },
                     "Visibility_description": {
