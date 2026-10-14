@@ -55,9 +55,9 @@ export interface components {
             /** @constant */
             readonly Region_not_available: "You can't add this location";
             /** @constant */
-            readonly Yandex_regions_unavailable_error: "No locations remain for checking: Yandex locations are temporarily unavailable";
+            readonly Yandex_regions_unavailable_error?: "The check cannot start: Yandex Search API (XML) locations are temporarily unavailable. Add Yandex SERP (live search results) to start the check. How to add SERP:<ul><li><a href=\"https://t.me/topvisor/3685\" target=\"_blank\">Telegram post</a></li><li><a href=\"https://vk.ru/wall-71030095_4471\" target=\"_blank\">VKontakte post</a></li></ul>";
             /** @constant */
-            readonly Yandex_regions_unavailable_info: "Yandex locations are temporarily unavailable, so checking them was skipped";
+            readonly Yandex_regions_unavailable_info?: "Yandex Search API (XML) locations are temporarily unavailable, so checking them was skipped. For Yandex checks, add Yandex SERP (live search results) and run a check with a filter. How to add SERP:<ul><li><a href=\"https://t.me/topvisor/3685\" target=\"_blank\">Telegram post</a></li><li><a href=\"https://vk.ru/wall-71030095_4471\" target=\"_blank\">VKontakte post</a></li></ul>";
             /** @constant */
             readonly Project_not_available_for_Youtube: "Youtube rank tracking is not available for this project";
             /** @constant */

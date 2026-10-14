@@ -103,11 +103,11 @@
                         "readOnly": true
                     },
                     "Yandex_regions_unavailable_error": {
-                        "const": "No locations remain for checking: Yandex locations are temporarily unavailable",
+                        "const": "The check cannot start: Yandex Search API (XML) locations are temporarily unavailable. Add Yandex SERP (live search results) to start the check. How to add SERP:<ul><li><a href=\"https://t.me/topvisor/3685\" target=\"_blank\">Telegram post</a></li><li><a href=\"https://vk.ru/wall-71030095_4471\" target=\"_blank\">VKontakte post</a></li></ul>",
                         "readOnly": true
                     },
                     "Yandex_regions_unavailable_info": {
-                        "const": "Yandex locations are temporarily unavailable, so checking them was skipped",
+                        "const": "Yandex Search API (XML) locations are temporarily unavailable, so checking them was skipped. For Yandex checks, add Yandex SERP (live search results) and run a check with a filter. How to add SERP:<ul><li><a href=\"https://t.me/topvisor/3685\" target=\"_blank\">Telegram post</a></li><li><a href=\"https://vk.ru/wall-71030095_4471\" target=\"_blank\">VKontakte post</a></li></ul>",
                         "readOnly": true
                     },
                     "Project_not_available_for_Youtube": {
@@ -1035,8 +1035,6 @@
                     "Searcher_exists",
                     "Region_exists",
                     "Region_not_available",
-                    "Yandex_regions_unavailable_error",
-                    "Yandex_regions_unavailable_info",
                     "Project_not_available_for_Youtube",
                     "Searcher_not_found",
                     "Delegating_impossible2",
