@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Utils": {
             /** @constant */
-            readonly Import_required_field_name: "The file is missing a required column: {{ fieldName }}. To learn how to create a valid file, read <a href=\"{{ supportUrl }}\" target=\"_blank\">here</a>";
+            readonly Import_required_field_name: "The file is missing a required column: {{ fieldName }}.";
         };
     };
     responses: never;
