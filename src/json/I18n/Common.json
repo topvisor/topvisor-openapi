@@ -552,6 +552,10 @@
                         "const": "Passed parameter value mismatch",
                         "readOnly": true
                     },
+                    "Import_required_field_name": {
+                        "const": "The file is missing a required column: {{ fieldName }}.",
+                        "readOnly": true
+                    },
                     "Request_error_qualifiers": {
                         "const": "Passed qualifiers mismatch",
                         "readOnly": true
@@ -2175,6 +2179,7 @@
                     "Request_error_required",
                     "Request_error_type",
                     "Request_error_value",
+                    "Import_required_field_name",
                     "Request_error_qualifiers",
                     "Error_regexp",
                     "Valid_characters",

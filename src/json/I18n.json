@@ -109,9 +109,6 @@
             "User": {
                 "$ref": "I18n/User.json#/components/schemas/I18n.User"
             },
-            "Utils": {
-                "$ref": "I18n/Utils.json#/components/schemas/I18n.Utils"
-            },
             "Votes": {
                 "$ref": "I18n/Votes.json#/components/schemas/I18n.Votes"
             },

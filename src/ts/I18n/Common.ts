@@ -285,6 +285,8 @@ export interface components {
             /** @constant */
             readonly Request_error_value: "Passed parameter value mismatch";
             /** @constant */
+            readonly Import_required_field_name: "The file is missing a required column: {{ fieldName }}.";
+            /** @constant */
             readonly Request_error_qualifiers: "Passed qualifiers mismatch";
             /** @constant */
             readonly Error_regexp: "Regular expression error";
