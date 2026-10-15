@@ -635,7 +635,7 @@
                         "readOnly": true
                     },
                     "Import_competitors_help": {
-                        "const": "Help article: <a href=\"{{ supportUrl }}\" target=\"_blank\">Import competitors</a>",
+                        "const": "To learn how to create a valid file, read <a href=\"{{ supportUrl }}\" target=\"_blank\">here</a>",
                         "readOnly": true
                     }
                 },

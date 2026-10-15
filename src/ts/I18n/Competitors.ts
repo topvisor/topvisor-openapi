@@ -321,7 +321,7 @@ export interface components {
             /** @constant */
             readonly Results_not_found: "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>";
             /** @constant */
-            readonly Import_competitors_help: "Help article: <a href=\"{{ supportUrl }}\" target=\"_blank\">Import competitors</a>";
+            readonly Import_competitors_help: "To learn how to create a valid file, read <a href=\"{{ supportUrl }}\" target=\"_blank\">here</a>";
         };
     };
     responses: never;
