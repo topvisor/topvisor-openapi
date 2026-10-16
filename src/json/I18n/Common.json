@@ -2040,6 +2040,10 @@
                         "const": "Check rankings",
                         "readOnly": true
                     },
+                    "How_to_use": {
+                        "const": "How to use",
+                        "readOnly": true
+                    },
                     "Serp_mode": {
                         "const": "Serp mode",
                         "readOnly": true
@@ -2549,6 +2553,7 @@
                     "Visits",
                     "User_card",
                     "Check_rankings",
+                    "How_to_use",
                     "Serp_mode"
                 ]
             }

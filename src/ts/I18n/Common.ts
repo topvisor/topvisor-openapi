@@ -1029,6 +1029,8 @@ export interface components {
             /** @constant */
             readonly Check_rankings: "Check rankings";
             /** @constant */
+            readonly How_to_use: "How to use";
+            /** @constant */
             readonly Serp_mode: "Serp mode";
         };
     };
