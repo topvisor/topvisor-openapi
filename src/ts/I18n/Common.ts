@@ -1031,7 +1031,7 @@ export interface components {
             /** @constant */
             readonly How_to_use: "How to use";
             /** @constant */
-            readonly Serp_mode: "Serp mode";
+            readonly Serp_mode: "SERP mode";
         };
     };
     responses: never;

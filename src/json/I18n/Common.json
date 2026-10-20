@@ -2045,7 +2045,7 @@
                         "readOnly": true
                     },
                     "Serp_mode": {
-                        "const": "Serp mode",
+                        "const": "SERP mode",
                         "readOnly": true
                     }
                 },
