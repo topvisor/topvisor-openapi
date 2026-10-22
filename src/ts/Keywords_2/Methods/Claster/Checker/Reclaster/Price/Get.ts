@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Получение стоимости перекластеризации. */
         "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get": {
-            /** Отображать сумму с учетом скидки. */
-            apply_discount?: boolean;
             count: import('../../../../../Types/Claster/Degrees.ts').components['schemas']['Keywords_2.Types.Claster.Degrees'];
             /** ID проекта. */
             project_id: number;

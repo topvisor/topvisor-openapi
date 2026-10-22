@@ -4906,6 +4906,90 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/claster/checker/go/:
+    post:
+      operationId: EditKeywords2ClasterCheckerGo
+      tags:
+        - Keywords_2
+      summary: Запуск кластеризации.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.Checker.Go.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/keywords_2/claster/checker/price/:
+    post:
+      operationId: GetKeywords2ClasterCheckerPrice
+      tags:
+        - Keywords_2
+      summary: Получение стоимости кластеризации.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.Checker.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /edit/keywords_2/claster/checker/reclaster/go/:
+    post:
+      operationId: EditKeywords2ClasterCheckerReclasterGo
+      tags:
+        - Keywords_2
+      summary: Запуск перекластеризации.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -13763,10 +13847,6 @@ components:
         folder_id:
           title: ID папки.
           type: integer
-        apply_discount:
-          title: Отображать сумму с учетом скидки.
-          nullable: true
-          type: boolean
         project_id:
           title: ID проекта.
           type: integer
@@ -16815,9 +16895,6 @@ components:
     Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get:
       type: object
       properties:
-        apply_discount:
-          title: Отображать сумму с учетом скидки.
-          type: boolean
         count:
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
@@ -16867,3 +16944,131 @@ components:
       title: Получение цены сбора запросов без создания проекта.
     Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
       type: number
+    Keywords_2.Types.Claster.Task.SearcherKey:
+      type: integer
+      enum:
+        - 0
+        - 1
+      x-enum-varnames:
+        - Yandex
+        - Google
+      x-enum-descriptions:
+        - null
+        - null
+      title: Ключ поисковика для кластеризации.
+    Keywords_2.Types.Claster.Type:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      x-enum-varnames:
+        - Soft
+        - Moderate
+        - Hard
+      x-enum-descriptions:
+        - Группировка через сравнение с самым частотным запросом.
+        - Попарная группировка, с разными общими URL в парах.
+        - Максимальная связь общими URL.
+      title: Метод кластеризации.
+    Keywords_2.Methods.Claster.Checker.Go.Edit:
+      type: object
+      properties:
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Task.SearcherKey'
+        region_key:
+          title: Ключ региона.
+          type: integer
+        region_lang:
+          title: Язык региона.
+          type: string
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Type'
+        folder_id:
+          title: ID кластеризуемой папки.
+          type: integer
+        project_id:
+          title: ID проекта.
+          type: integer
+      required:
+        - searcher_key
+        - region_key
+        - region_lang
+        - count
+        - project_id
+      title: Запуск кластеризации.
+    Keywords_2.Methods.Claster.Checker.Go.Edit.Exec:
+      description: Список id проектов, отправленных на кластеризацию
+      nullable: true
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+    Keywords_2.Methods.Claster.Checker.Price.Get:
+      type: object
+      properties:
+        folder_id:
+          title: ID кластеризуемой папки.
+          type: integer
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        project_id:
+          title: ID проекта.
+          type: integer
+      required:
+        - count
+        - project_id
+      title: Получение стоимости кластеризации.
+    Keywords_2.Methods.Claster.Checker.Price.Get.Exec:
+      type: object
+      properties:
+        pricesByUsers:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              price:
+                type: number
+              priceOriginal:
+                type: number
+              limits:
+                type: integer
+            required:
+              - price
+              - priceOriginal
+              - limits
+      required:
+        - pricesByUsers
+    Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit:
+      type: object
+      properties:
+        count:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Degrees'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Claster.Type'
+        project_id:
+          title: ID проекта.
+          type: integer
+      required:
+        - count
+        - project_id
+      title: Запуск перекластеризации.
+    Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit.Exec:
+      description: Список id проектов, отправленных на перекластеризацию
+      nullable: true
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer

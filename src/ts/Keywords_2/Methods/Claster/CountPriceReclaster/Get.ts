@@ -11,8 +11,6 @@ export interface components {
         "Keywords_2.Methods.Claster.CountPriceReclaster.Get": {
             /** ID папки. */
             folder_id?: number;
-            /** Отображать сумму с учетом скидки. */
-            apply_discount?: boolean | null;
             /** ID проекта. */
             project_id: number;
         };

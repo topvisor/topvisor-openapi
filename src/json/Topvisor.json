@@ -8984,6 +8984,165 @@
                     }
                 }
             }
+        },
+        "/edit/keywords_2/claster/checker/go/": {
+            "post": {
+                "operationId": "EditKeywords2ClasterCheckerGo",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Запуск кластеризации.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Checker/Go/Edit.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Checker/Go/Edit.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/keywords_2/claster/checker/price/": {
+            "post": {
+                "operationId": "GetKeywords2ClasterCheckerPrice",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Получение стоимости кластеризации.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Checker/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Checker/Price/Get.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/keywords_2/claster/checker/reclaster/go/": {
+            "post": {
+                "operationId": "EditKeywords2ClasterCheckerReclasterGo",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Запуск перекластеризации.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Claster/Checker/Reclaster/Go/Edit.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Keywords_2/Methods/Claster/Checker/Reclaster/Go/Edit.json#/components/schemas/Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

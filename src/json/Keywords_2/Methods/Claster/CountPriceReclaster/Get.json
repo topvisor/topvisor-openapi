@@ -14,11 +14,6 @@
                         "title": "ID папки.",
                         "type": "integer"
                     },
-                    "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки.",
-                        "nullable": true,
-                        "type": "boolean"
-                    },
                     "project_id": {
                         "title": "ID проекта.",
                         "type": "integer"

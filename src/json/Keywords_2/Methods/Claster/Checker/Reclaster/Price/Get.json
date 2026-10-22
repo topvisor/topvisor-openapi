@@ -10,10 +10,6 @@
             "Keywords_2.Methods.Claster.Checker.Reclaster.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки.",
-                        "type": "boolean"
-                    },
                     "count": {
                         "allOf": [
                             {
