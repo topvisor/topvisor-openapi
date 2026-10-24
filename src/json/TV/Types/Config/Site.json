@@ -54,6 +54,12 @@
                         "default": "No set",
                         "type": "string"
                     },
+                    "TELEGRAM_CHANNEL": {
+                        "title": "Имя Telegram-канала",
+                        "readOnly": true,
+                        "default": "No set",
+                        "type": "string"
+                    },
                     "DEFAULT_BANK_TYPE": {
                         "title": "Тип биллинга по умолчанию.",
                         "description": "- balance\n- limits",
@@ -188,6 +194,7 @@
                     "HOST_TPVSR",
                     "HOST_TPVSR_MODULE",
                     "TELEGRAM_BOT",
+                    "TELEGRAM_CHANNEL",
                     "DEFAULT_BANK_TYPE",
                     "LANGUAGES",
                     "LANGUAGE_MAIN",

@@ -47,6 +47,11 @@ export interface components {
              */
             readonly TELEGRAM_BOT: string;
             /**
+             * Имя Telegram-канала
+             * @default No set
+             */
+            readonly TELEGRAM_CHANNEL: string;
+            /**
              * Тип биллинга по умолчанию.
              * @description - balance
              *     - limits

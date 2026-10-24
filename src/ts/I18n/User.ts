@@ -191,6 +191,10 @@ export interface components {
             /** @constant */
             readonly Rank_date_expired: "Activation period has expired";
             /** @constant */
+            readonly Ranks_telegram_account_required: "Please link your Telegram account in the <b>Linked accounts</b> section in Account Settings";
+            /** @constant */
+            readonly Ranks_telegram_subscription_required: "Please follow {{ link }} to activate the achievement";
+            /** @constant */
             readonly Twitter_error_binding_accounts1: "Link your Twitter account to log in with Twitter.";
             /** @constant */
             readonly Twitter_error_binding_accounts2: "Otherwise, we will not be able to identify you in Twitter";
@@ -500,6 +504,10 @@ export interface components {
             readonly Two_factor_authorization: "Two factor authorization";
             /** @constant */
             readonly New_version_keywords: "New version: Keywords";
+            /** @constant */
+            readonly Ranks_telegram_channels_folder: "channels folder";
+            /** @constant */
+            readonly Ranks_telegram_topvisor_channel?: "{{ $site.name }} on Telegram";
         };
     };
     responses: never;

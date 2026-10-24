@@ -374,6 +374,14 @@
                         "const": "Activation period has expired",
                         "readOnly": true
                     },
+                    "Ranks_telegram_account_required": {
+                        "const": "Please link your Telegram account in the <b>Linked accounts</b> section in Account Settings",
+                        "readOnly": true
+                    },
+                    "Ranks_telegram_subscription_required": {
+                        "const": "Please follow {{ link }} to activate the achievement",
+                        "readOnly": true
+                    },
                     "Twitter_error_binding_accounts1": {
                         "const": "Link your Twitter account to log in with Twitter.",
                         "readOnly": true
@@ -993,6 +1001,14 @@
                     "New_version_keywords": {
                         "const": "New version: Keywords",
                         "readOnly": true
+                    },
+                    "Ranks_telegram_channels_folder": {
+                        "const": "channels folder",
+                        "readOnly": true
+                    },
+                    "Ranks_telegram_topvisor_channel": {
+                        "const": "{{ $site.name }} on Telegram",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1087,6 +1103,8 @@
                     "Rank_code_not_available",
                     "Rank_recurrent_sending_code_not_available",
                     "Rank_date_expired",
+                    "Ranks_telegram_account_required",
+                    "Ranks_telegram_subscription_required",
                     "Twitter_error_binding_accounts1",
                     "Twitter_error_binding_accounts2",
                     "Twitter_login_not_found",
@@ -1237,7 +1255,8 @@
                     "View_the_author_page",
                     "Plans_and_limits",
                     "Two_factor_authorization",
-                    "New_version_keywords"
+                    "New_version_keywords",
+                    "Ranks_telegram_channels_folder"
                 ]
             }
         }
