@@ -98,6 +98,10 @@
                         "const": "Last update",
                         "readOnly": true
                     },
+                    "More_on_match_types": {
+                        "const": "<a href=\"/support/volume/source/\" target=\"_blank\">More on match types →</a>",
+                        "readOnly": true
+                    },
                     "Positions_snippets": {
                         "const": "Rankings and snippets",
                         "readOnly": true
@@ -574,6 +578,7 @@
                     "Tasks_processing_notice",
                     "Ranks_updating_notice",
                     "Updated",
+                    "More_on_match_types",
                     "Positions_snippets",
                     "Period_last_7_days",
                     "Period_last_10_days",

@@ -53,6 +53,8 @@ export interface components {
             /** @constant */
             readonly Updated: "Last update";
             /** @constant */
+            readonly More_on_match_types: "<a href=\"/support/volume/source/\" target=\"_blank\">More on match types →</a>";
+            /** @constant */
             readonly Positions_snippets: "Rankings and snippets";
             /** @constant */
             readonly Period_last_7_days: "Last 7 days";
