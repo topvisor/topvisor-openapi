@@ -110,6 +110,10 @@
                         "const": "Yandex locations are temporarily unavailable, so checking them was skipped",
                         "readOnly": true
                     },
+                    "Yandex_skip_warning": {
+                        "const": "The check will start in all search engines except Yandex Search API locations (XML/SERP modes).<br><br>Search API operation is temporarily limited; these checks can only be started at night. Search API hours may change, follow updates in our <a href=\"https://t.me/topvisor/3695\" target=\"_blank\">Telegram</a> or <a href=\"https://vk.ru/wall-71030095_4487\" target=\"_blank\">VK</a>.<br><br>You can add Yandex SERP (live search results) and run a check with a filter. How to add SERP:<br><br>• <a href=\"https://t.me/topvisor/3685\" target=\"_blank\">Telegram post</a><br>• <a href=\"https://vk.ru/wall-71030095_4471\" target=\"_blank\">VK post</a>",
+                        "readOnly": true
+                    },
                     "Project_not_available_for_Youtube": {
                         "const": "Youtube rank tracking is not available for this project",
                         "readOnly": true
