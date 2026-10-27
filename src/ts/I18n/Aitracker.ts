@@ -81,6 +81,8 @@ export interface components {
             /** @constant */
             readonly Neural_network: "Neural network";
             /** @constant */
+            readonly Model_not_selected: "No model selected";
+            /** @constant */
             readonly Remove_prompt: "Are you sure you want to delete this prompt?";
             /** @constant */
             readonly Sort_mentioned: "Sort by mentions";

@@ -154,6 +154,10 @@
                         "const": "Neural network",
                         "readOnly": true
                     },
+                    "Model_not_selected": {
+                        "const": "No model selected",
+                        "readOnly": true
+                    },
                     "Remove_prompt": {
                         "const": "Are you sure you want to delete this prompt?",
                         "readOnly": true
@@ -315,6 +319,7 @@
                     "for_prompt",
                     "Search_prompts",
                     "Neural_network",
+                    "Model_not_selected",
                     "Remove_prompt",
                     "Sort_mentioned",
                     "Sort_sentiment",
