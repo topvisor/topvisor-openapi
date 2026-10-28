@@ -45,6 +45,10 @@
                     "In_work": {
                         "const": "In progress",
                         "readOnly": true
+                    },
+                    "Paused": {
+                        "const": "Check is paused. To continue do the following:\n• Add or enable search engines and locations in Project Settings\n• Add keywords or enable keyword groups in Keywords section",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -56,7 +60,8 @@
                     "Check_aiTracker",
                     "Last_check",
                     "In_queue",
-                    "In_work"
+                    "In_work",
+                    "Paused"
                 ]
             }
         }

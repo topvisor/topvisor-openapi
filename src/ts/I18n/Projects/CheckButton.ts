@@ -26,6 +26,8 @@ export interface components {
             readonly In_queue: "In queue";
             /** @constant */
             readonly In_work: "In progress";
+            /** @constant */
+            readonly Paused: "Check is paused. To continue do the following:\n• Add or enable search engines and locations in Project Settings\n• Add keywords or enable keyword groups in Keywords section";
         };
     };
     responses: never;
