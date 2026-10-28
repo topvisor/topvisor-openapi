@@ -117,6 +117,18 @@
                     "aisearch": {
                         "const": "AI search",
                         "readOnly": true
+                    },
+                    "gettingstarted": {
+                        "const": "Getting started",
+                        "readOnly": true
+                    },
+                    "tools": {
+                        "const": "Topvisor tools",
+                        "readOnly": true
+                    },
+                    "miscellaneous": {
+                        "const": "Miscellaneous",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -146,7 +158,9 @@
                     "audit",
                     "manual",
                     "checklist",
-                    "aisearch"
+                    "aisearch",
+                    "gettingstarted",
+                    "miscellaneous"
                 ]
             }
         }

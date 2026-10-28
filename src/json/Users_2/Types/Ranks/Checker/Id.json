@@ -1,19 +1,20 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Users_2.Types.Ranks.Id",
+        "title": "Topvisor/Users_2.Types.Ranks.Checker.Id",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Users_2.Types.Ranks.Id": {
+            "Users_2.Types.Ranks.Checker.Id": {
                 "type": "integer",
                 "enum": [
                     3,
                     27,
                     28,
                     44,
+                    113,
                     56
                 ],
                 "x-enum-varnames": [
@@ -21,6 +22,7 @@
                     "TelegramSeoChat",
                     "TelegramPPCChat",
                     "Silver",
+                    "SubscriptionActivate",
                     "TelegramTopvisor"
                 ],
                 "x-enum-descriptions": [
@@ -28,9 +30,11 @@
                     "Telegram SEO Chat.",
                     "Telegram PPC Chat.",
                     "Белые ночи (Silver).",
+                    "Привязанная карта.",
                     "Канал Топвизора."
                 ],
-                "title": "Id достижения."
+                "title": "Id проверки достижения.",
+                "description": "Совпадает с id самого достижения.\n\nЕсли достижение выдается по общей логике и не имеет дополнительных условий, то оно не имеет id проверки.\n\nВсе достижения, которые пользователь может активировать вручную, обязаны иметь id проверки и класс проверки."
             }
         }
     }

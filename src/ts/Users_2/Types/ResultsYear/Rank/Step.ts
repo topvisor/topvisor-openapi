@@ -11,7 +11,7 @@ export interface components {
          * Этапы расчета достижений: "Итоги года".
          * @enum {string}
          */
-        "Users_2.Types.ResultsYear.Rank.Step": "seoCat" | "activatedTelegramRank" | "auditCheck" | "errorsStatusCode" | "checksPositions" | "projectRegion" | "saintPetersburgChecks" | "moscowChecks" | "topPositions" | "keywordsClaster" | "googleCashback" | "leaderTopPositions";
+        "Users_2.Types.ResultsYear.Rank.Step": "seoKitten" | "activatedTelegramRank" | "auditCheck" | "errorsStatusCode" | "checksPositions" | "projectRegion" | "saintPetersburgChecks" | "moscowChecks" | "topPositions" | "keywordsClaster" | "googleCashback" | "leaderTopPositions" | "toolboxPioneer" | "toolboxVolumeMaster" | "toolboxIndexator" | "toolboxAdept" | "geoPioneer" | "promptExplorer" | "aiAnalizator" | "nightHunter" | "apiMaster";
     };
     responses: never;
     parameters: never;

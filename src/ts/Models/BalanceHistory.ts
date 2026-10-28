@@ -15,6 +15,7 @@ export interface components {
             user_id?: number | null;
             by_user_id?: any;
             sum?: any;
+            su?: number | null;
             discount?: any;
             currency?: any;
             limits?: any;

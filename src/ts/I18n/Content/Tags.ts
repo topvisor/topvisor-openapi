@@ -62,6 +62,12 @@ export interface components {
             readonly checklist: "checklist";
             /** @constant */
             readonly aisearch: "AI search";
+            /** @constant */
+            readonly gettingstarted: "Getting started";
+            /** @constant */
+            readonly tools?: "Topvisor tools";
+            /** @constant */
+            readonly miscellaneous: "Miscellaneous";
         };
     };
     responses: never;

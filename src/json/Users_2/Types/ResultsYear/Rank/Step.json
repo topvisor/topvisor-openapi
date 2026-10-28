@@ -10,7 +10,7 @@
             "Users_2.Types.ResultsYear.Rank.Step": {
                 "type": "string",
                 "enum": [
-                    "seoCat",
+                    "seoKitten",
                     "activatedTelegramRank",
                     "auditCheck",
                     "errorsStatusCode",
@@ -21,10 +21,19 @@
                     "topPositions",
                     "keywordsClaster",
                     "googleCashback",
-                    "leaderTopPositions"
+                    "leaderTopPositions",
+                    "toolboxPioneer",
+                    "toolboxVolumeMaster",
+                    "toolboxIndexator",
+                    "toolboxAdept",
+                    "geoPioneer",
+                    "promptExplorer",
+                    "aiAnalizator",
+                    "nightHunter",
+                    "apiMaster"
                 ],
                 "x-enum-varnames": [
-                    "SeoCat",
+                    "SeoKitten",
                     "ActivatedTelegramRank",
                     "AuditCheck",
                     "ErrorsStatusCode",
@@ -35,7 +44,16 @@
                     "TopPositions",
                     "KeywordsClaster",
                     "GoogleCashback",
-                    "LeaderTopPositions"
+                    "LeaderTopPositions",
+                    "ToolboxPioneer",
+                    "ToolboxVolumeMaster",
+                    "ToolboxIndexator",
+                    "ToolboxAdept",
+                    "GeoPioneer",
+                    "PromptExplorer",
+                    "AiAnalizator",
+                    "NightHunter",
+                    "ApiMaster"
                 ],
                 "x-enum-descriptions": [
                     "Выдача достижения SEO-котик.",
@@ -49,7 +67,16 @@
                     "Выдача достижения Продвигатор.",
                     "Выдача достижения Семантический алхимик.",
                     "Выдача достижения Гуру Google.",
-                    "Выдача достижения Покоритель ТОПа."
+                    "Выдача достижения Покоритель ТОПа.",
+                    "Первый запуск инструмента Тулбокса.",
+                    "Подсчет задач в проверках частоты Тулбокса.",
+                    "Подсчет запусков проверки индексации в Тулбоксе.",
+                    "Использование всех платных инструментов Тулбокса.",
+                    "Первый запуск AI-трекера.",
+                    "Хотя бы одна проверка AI-трекера с 200 и более задачами (число моделей × число промптов).",
+                    "Более пяти проверок AI-трекера.",
+                    "Проверка позиций ночью по московскому времени.",
+                    "Запросы к публичному API."
                 ],
                 "title": "Этапы расчета достижений: \"Итоги года\"."
             }

@@ -11,7 +11,7 @@ export interface components {
          * Титул.
          * @enum {string}
          */
-        "Users_2.Types.ResultsYear.Rank": "yandexoid" | "googloid" | "masterBalance" | "prodvigator" | "googleGuru" | "trueSaintp" | "nativeMoscow" | "topAchiever" | "radarMagician" | "analizator" | "ambassadorTelegram" | "seoCat" | "knightRegions" | "semanticAlchemist";
+        "Users_2.Types.ResultsYear.Rank": "yandexoid" | "googloid" | "balance-master" | "prodvigator" | "google-guru" | "true-saintp" | "native-moscow" | "top-achiever" | "radar-magician" | "analizator" | "telegram-ambassador" | "seo-kitten" | "region-knight" | "semantic-alchemist" | "toolbox-pioneer" | "toolbox-volume-master" | "toolbox-indexator" | "toolbox-adept" | "geo-pioneer" | "prompt-explorer" | "ai-analizator" | "night-hunter" | "api-master";
     };
     responses: never;
     parameters: never;

@@ -2601,6 +2601,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Запуск кластеризации. */
+    "/edit/keywords_2/claster/checker/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ClasterCheckerGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение стоимости кластеризации. */
+    "/get/keywords_2/claster/checker/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2ClasterCheckerPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Копирование запросов в другой проект. */
     "/edit/keywords_2/keywords/export/toProject/": {
         parameters: {
@@ -2768,6 +2802,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetProjects2TasksVolumesPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Запуск перекластеризации. */
+    "/edit/keywords_2/claster/checker/reclaster/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2ClasterCheckerReclasterGo"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6636,6 +6687,56 @@ export interface operations {
             };
         };
     };
+    EditKeywords2ClasterCheckerGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Checker/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Go.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Checker/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Go.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    GetKeywords2ClasterCheckerPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Checker/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Checker/Price/Get.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
     EditKeywords2KeywordsExportToProject: {
         parameters: {
             query?: never;
@@ -6881,6 +6982,31 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Tasks/Volumes/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                };
+            };
+        };
+    };
+    EditKeywords2ClasterCheckerReclasterGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Claster/Checker/Reclaster/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Keywords_2/Methods/Claster/Checker/Reclaster/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Claster.Checker.Reclaster.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * Файл для импорта конкурентов.
-         * @description @file: csv
+         * @description @file: csv, txt
          */
         "Projects_2.Types.Competitors.Import.File": string | File;
     };

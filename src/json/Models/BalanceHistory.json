@@ -31,6 +31,10 @@
                     "sum": {
                         "nullable": true
                     },
+                    "su": {
+                        "type": "integer",
+                        "nullable": true
+                    },
                     "discount": {
                         "nullable": true
                     },
