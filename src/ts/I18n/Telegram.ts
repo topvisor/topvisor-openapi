@@ -79,7 +79,7 @@ export interface components {
             /** @constant */
             readonly Message_pair_authorize: "Sign in to {{ siteName }} and click the <a href=\"{{ url }}\">link</a> to link your Telegram to the {{ siteName }} account";
             /** @constant */
-            readonly Message_pair_authorize_link: "https://{{ siteId }}.com/income/telegram/join/{{ botName }}/{{ chatId }}/{{ nickname }}";
+            readonly Message_pair_authorize_link: "https://{{ siteHost }}/income/telegram/join/{{ botName }}/{{ chatId }}/{{ nickname }}";
             /** @constant */
             readonly Message_pair_authorize_link_text: "Connect an account";
             /** @constant */

@@ -151,7 +151,7 @@
                         "readOnly": true
                     },
                     "Message_pair_authorize_link": {
-                        "const": "https://{{ siteId }}.com/income/telegram/join/{{ botName }}/{{ chatId }}/{{ nickname }}",
+                        "const": "https://{{ siteHost }}/income/telegram/join/{{ botName }}/{{ chatId }}/{{ nickname }}",
                         "readOnly": true
                     },
                     "Message_pair_authorize_link_text": {
