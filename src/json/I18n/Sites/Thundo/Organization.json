@@ -37,6 +37,14 @@
                     "General_manager": {
                         "const": "Pustovoyt Denis Anatolievich",
                         "readOnly": true
+                    },
+                    "Banner_subscription_expired": {
+                        "const": "Your subscription has been expired. Renew your plan to keep getting the most out of SEO analytics and more!",
+                        "readOnly": true
+                    },
+                    "Renew_subscription": {
+                        "const": "Renew subscription",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -44,7 +52,9 @@
                     "Address_locality",
                     "Address_region",
                     "Contact_type",
-                    "General_manager"
+                    "General_manager",
+                    "Banner_subscription_expired",
+                    "Renew_subscription"
                 ]
             }
         }

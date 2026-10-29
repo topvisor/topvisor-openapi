@@ -22,6 +22,10 @@ export interface components {
             readonly Contact_type: "Sales";
             /** @constant */
             readonly General_manager: "Pustovoyt Denis Anatolievich";
+            /** @constant */
+            readonly Banner_subscription_expired: "Your subscription has been expired. Renew your plan to keep getting the most out of SEO analytics and more!";
+            /** @constant */
+            readonly Renew_subscription: "Renew subscription";
         };
     };
     responses: never;
