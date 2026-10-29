@@ -47,7 +47,7 @@
                         "readOnly": true
                     },
                     "Paused": {
-                        "const": "Check is paused. To continue do the following:\n• Add or enable search engines and locations in Project Settings\n• Add keywords or enable keyword groups in Keywords section",
+                        "const": "Check is paused.\n\tTo continue do the following:\n\t• Add or enable search engines and locations in Project Settings\n\t• Add keywords or enable keyword groups in Keywords section",
                         "readOnly": true
                     }
                 },

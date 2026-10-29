@@ -27,7 +27,7 @@ export interface components {
             /** @constant */
             readonly In_work: "In progress";
             /** @constant */
-            readonly Paused: "Check is paused. To continue do the following:\n• Add or enable search engines and locations in Project Settings\n• Add keywords or enable keyword groups in Keywords section";
+            readonly Paused: "Check is paused.\n\tTo continue do the following:\n\t• Add or enable search engines and locations in Project Settings\n\t• Add keywords or enable keyword groups in Keywords section";
         };
     };
     responses: never;
