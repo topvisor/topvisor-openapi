@@ -75,6 +75,24 @@ export interface components {
             /**
              * @example {
              *       "need set qualifiers": [
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            geo_dependence?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     }
+             */
+            geo_localization?: number | null;
+            /**
+             * @example {
+             *       "need set qualifiers": [
              *         "date",
              *         "project_id",
              *         "region_index"

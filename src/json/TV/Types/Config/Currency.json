@@ -53,6 +53,12 @@
                         "default": 10000,
                         "type": "number"
                     },
+                    "QUERY_COST_GEO_DEPENDENCE": {
+                        "title": "Стоимость одной задачи проверки геозависимости.",
+                        "readOnly": true,
+                        "default": 10000,
+                        "type": "number"
+                    },
                     "QUERY_COST_COMPETITORS": {
                         "title": "Стоимость дополнительного конкурента.",
                         "readOnly": true,
@@ -300,6 +306,7 @@
                     "CU_SUFFIX_ICO",
                     "CU_PRECISION",
                     "QUERY_COST",
+                    "QUERY_COST_GEO_DEPENDENCE",
                     "QUERY_COST_COMPETITORS",
                     "QUERY_COST_SNIPPET",
                     "QUERY_COST_SNAPSHOT",

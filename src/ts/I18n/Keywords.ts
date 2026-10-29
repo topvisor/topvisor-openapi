@@ -633,6 +633,12 @@ export interface components {
             /** @constant */
             readonly Relevant_check_already_started: "Relevant check already started";
             /** @constant */
+            readonly Geo_dependence_check_already_started: "Geo-dependence check already started";
+            /** @constant */
+            readonly Geo_dependence: "Geo dependence";
+            /** @constant */
+            readonly Localization: "Localization";
+            /** @constant */
             readonly Set_target_equals_relevant_from_recheck: "Assign Target = Ranked URL from the relevant recheck";
             /** @constant */
             readonly Target_equals_relevant_last_relevant_check_in_location: "Target = Ranked URL from the last relevant check in the location";

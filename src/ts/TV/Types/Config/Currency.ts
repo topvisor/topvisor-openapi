@@ -46,6 +46,11 @@ export interface components {
              */
             readonly QUERY_COST: number;
             /**
+             * Стоимость одной задачи проверки геозависимости.
+             * @default 10000
+             */
+            readonly QUERY_COST_GEO_DEPENDENCE: number;
+            /**
              * Стоимость дополнительного конкурента.
              * @default 10000
              */

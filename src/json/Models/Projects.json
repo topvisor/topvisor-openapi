@@ -107,6 +107,19 @@
                     "status_relevants_percent": {
                         "nullable": true
                     },
+                    "status_geo_dependence": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "status_geo_dependence_time": {
+                        "nullable": true
+                    },
+                    "status_geo_dependence_date": {
+                        "nullable": true
+                    },
+                    "status_geo_dependence_percent": {
+                        "nullable": true
+                    },
                     "status_positions_by_keywords": {
                         "nullable": true
                     },

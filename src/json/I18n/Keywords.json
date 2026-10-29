@@ -1258,6 +1258,18 @@
                         "const": "Relevant check already started",
                         "readOnly": true
                     },
+                    "Geo_dependence_check_already_started": {
+                        "const": "Geo-dependence check already started",
+                        "readOnly": true
+                    },
+                    "Geo_dependence": {
+                        "const": "Geo dependence",
+                        "readOnly": true
+                    },
+                    "Localization": {
+                        "const": "Localization",
+                        "readOnly": true
+                    },
                     "Set_target_equals_relevant_from_recheck": {
                         "const": "Assign Target = Ranked URL from the relevant recheck",
                         "readOnly": true
@@ -1584,6 +1596,9 @@
                     "Serp_features_AI",
                     "No_keywords_in_project",
                     "Relevant_check_already_started",
+                    "Geo_dependence_check_already_started",
+                    "Geo_dependence",
+                    "Localization",
                     "Set_target_equals_relevant_from_recheck",
                     "Target_equals_relevant_last_relevant_check_in_location",
                     "Check_relevant_complete"

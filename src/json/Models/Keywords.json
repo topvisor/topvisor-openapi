@@ -109,6 +109,26 @@
                             ]
                         }
                     },
+                    "geo_dependence": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "geo_localization": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
                     "snippet_title": {
                         "type": "string",
                         "nullable": true,

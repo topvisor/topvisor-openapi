@@ -40,6 +40,10 @@ export interface components {
             status_relevants_time?: any;
             status_relevants_date?: any;
             status_relevants_percent?: any;
+            status_geo_dependence?: string | null;
+            status_geo_dependence_time?: any;
+            status_geo_dependence_date?: any;
+            status_geo_dependence_percent?: any;
             status_positions_by_keywords?: any;
             status_volumes?: string | null;
             status_claster?: string | null;

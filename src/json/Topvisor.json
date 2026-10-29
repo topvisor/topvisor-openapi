@@ -8518,6 +8518,122 @@
                 }
             }
         },
+        "/edit/positions_2/geoDependence/checker/go/": {
+            "post": {
+                "operationId": "EditPositions2GeoDependenceCheckerGo",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Отправка проектов на проверку геозависимости.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/GeoDependence/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.GeoDependence.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/GeoDependence/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.GeoDependence.Checker.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/geoDependence/checker/price/": {
+            "post": {
+                "operationId": "GetPositions2GeoDependenceCheckerPrice",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Информация о стоимости проверки геозависимости.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/GeoDependence/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.GeoDependence.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Positions_2/Methods/GeoDependence/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.GeoDependence.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/positions_2/relevant/checker/go/": {
             "post": {
                 "operationId": "EditPositions2RelevantCheckerGo",

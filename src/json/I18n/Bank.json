@@ -338,6 +338,10 @@
                         "const": "Relevance check",
                         "readOnly": true
                     },
+                    "Service_geo_dependence": {
+                        "const": "Geo-dependence check",
+                        "readOnly": true
+                    },
                     "Service_researcher": {
                         "const": "Keyword research tool",
                         "readOnly": true
@@ -1272,6 +1276,7 @@
                     "Billing_operations",
                     "Service_tracking",
                     "Service_relevant",
+                    "Service_geo_dependence",
                     "Service_researcher",
                     "Service_suggestions_tool",
                     "Service_clustering",

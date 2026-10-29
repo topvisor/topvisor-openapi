@@ -173,6 +173,8 @@ export interface components {
             /** @constant */
             readonly Service_relevant: "Relevance check";
             /** @constant */
+            readonly Service_geo_dependence: "Geo-dependence check";
+            /** @constant */
             readonly Service_researcher: "Keyword research tool";
             /** @constant */
             readonly Service_suggestions_tool: "Search suggestions tool";

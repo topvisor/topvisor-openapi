@@ -1,0 +1,103 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.GeoDependence.Checker.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.GeoDependence.Checker.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "regions_indexes": {
+                        "title": "Проверка с учетом фильтра по регионам.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids": {
+                        "title": "Проверка с учетом фильтра по папкам.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids_depth": {
+                        "title": "При фильтрации по ID папок также проверять вложенные папки.",
+                        "type": "boolean"
+                    },
+                    "groups_ids": {
+                        "title": "Проверка с учетом фильтра по группам.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "keyword_id": {
+                        "title": "Проверка одного запроса.",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "title": "Список фильтров по полям объекта.",
+                        "description": "{name: string, operator: Selector\\Types\\Operator, values: array}\n\nИспользует поля модели\n\nПоля обязательное, если $id не указан",
+                        "type": "array"
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id.",
+                        "description": "Только для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "Информация о стоимости проверки геозависимости."
+            },
+            "Positions_2.Methods.GeoDependence.Checker.Price.Get.Exec": {
+                "type": "object",
+                "properties": {
+                    "pricesByUsers": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "projectsIds": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "price": {
+                                    "type": "number"
+                                },
+                                "priceOriginal": {
+                                    "type": "number"
+                                },
+                                "limits": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "projectsIds",
+                                "price",
+                                "priceOriginal",
+                                "limits"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "pricesByUsers"
+                ]
+            }
+        }
+    }
+}
