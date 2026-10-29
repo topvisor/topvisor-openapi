@@ -15,7 +15,8 @@
                     28,
                     44,
                     113,
-                    56
+                    56,
+                    115
                 ],
                 "x-enum-varnames": [
                     "Twitter",
@@ -23,7 +24,8 @@
                     "TelegramPPCChat",
                     "Silver",
                     "SubscriptionActivate",
-                    "TelegramTopvisor"
+                    "TelegramTopvisor",
+                    "TelegramThundo"
                 ],
                 "x-enum-descriptions": [
                     "Twitter.",
@@ -31,7 +33,8 @@
                     "Telegram PPC Chat.",
                     "Белые ночи (Silver).",
                     "Привязанная карта.",
-                    "Канал Топвизора."
+                    "Канал Топвизора.",
+                    null
                 ],
                 "title": "Id проверки достижения.",
                 "description": "Совпадает с id самого достижения.\n\nЕсли достижение выдается по общей логике и не имеет дополнительных условий, то оно не имеет id проверки.\n\nВсе достижения, которые пользователь может активировать вручную, обязаны иметь id проверки и класс проверки."

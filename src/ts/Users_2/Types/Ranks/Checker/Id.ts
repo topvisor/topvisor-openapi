@@ -16,7 +16,7 @@ export interface components {
          *     Все достижения, которые пользователь может активировать вручную, обязаны иметь id проверки и класс проверки.
          * @enum {integer}
          */
-        "Users_2.Types.Ranks.Checker.Id": 3 | 27 | 28 | 44 | 113 | 56;
+        "Users_2.Types.Ranks.Checker.Id": 3 | 27 | 28 | 44 | 113 | 56 | 115;
     };
     responses: never;
     parameters: never;
