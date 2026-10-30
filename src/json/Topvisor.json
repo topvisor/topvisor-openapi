@@ -8757,7 +8757,7 @@
                     "Positions_2"
                 ],
                 "summary": "Экспорт регионов (CSV).",
-                "description": "- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]",
+                "description": "- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth, region_alt]",
                 "requestBody": {
                     "content": {
                         "application/json": {
