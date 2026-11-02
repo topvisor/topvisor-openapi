@@ -22,6 +22,9 @@
                     "expire_at": {
                         "nullable": true
                     },
+                    "error_message": {
+                        "nullable": true
+                    },
                     "cid": {
                         "nullable": true
                     },

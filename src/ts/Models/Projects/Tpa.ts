@@ -13,6 +13,7 @@ export interface components {
             login?: any;
             provider?: any;
             expire_at?: any;
+            error_message?: any;
             cid?: any;
             resources?: any;
         };
