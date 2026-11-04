@@ -119,11 +119,15 @@
                         "readOnly": true
                     },
                     "gettingstarted": {
-                        "const": "Getting started",
+                        "const": "Getting Started",
                         "readOnly": true
                     },
-                    "tools": {
-                        "const": "Topvisor tools",
+                    "topvisortools": {
+                        "const": "Topvisor Tools",
+                        "readOnly": true
+                    },
+                    "thundotools": {
+                        "const": "Thundo Tools",
                         "readOnly": true
                     },
                     "miscellaneous": {

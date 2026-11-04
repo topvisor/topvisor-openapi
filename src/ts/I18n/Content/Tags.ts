@@ -63,9 +63,11 @@ export interface components {
             /** @constant */
             readonly aisearch: "AI search";
             /** @constant */
-            readonly gettingstarted: "Getting started";
+            readonly gettingstarted: "Getting Started";
             /** @constant */
-            readonly tools?: "Topvisor tools";
+            readonly topvisortools?: "Topvisor Tools";
+            /** @constant */
+            readonly thundotools?: "Thundo Tools";
             /** @constant */
             readonly miscellaneous: "Miscellaneous";
         };
