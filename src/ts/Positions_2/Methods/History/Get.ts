@@ -44,6 +44,8 @@ export interface components {
              * @description Игнорируется в режиме сравнения, так как для фильтрации нужны конкретные проект и регион.
              */
             filter_by_serp_features?: import('../../Types/History/FilterBySerpFeatures.ts').components['schemas']['Positions_2.Types.History.FilterBySerpFeatures'] | null;
+            /** Фильтрация по наличию сайта в SERP-фичах. */
+            filter_by_serp_presence?: import('../../Types/History/FilterBySerpPresence.ts').components['schemas']['Positions_2.Types.History.FilterBySerpPresence'] | null;
             /** При фильтрации по ID папок также искать в подпапках. */
             group_folder_id_depth?: boolean;
             /** Показывать удаленные запросы. */

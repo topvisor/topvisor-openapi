@@ -10280,6 +10280,29 @@ components:
       items:
         $ref: '#/components/schemas/Positions_2.Types.History.SerpFeature'
       title: Фильтр по SERP Features
+    Positions_2.Types.History.SerpPresence:
+      type: string
+      enum:
+        - aiOverview
+        - dynamicPlace
+        - featuredSnippet
+        - amp
+      x-enum-varnames:
+        - AIOverview
+        - DynamicPlace
+        - FeaturedSnippet
+        - Amp
+      x-enum-descriptions:
+        - null
+        - null
+        - null
+        - null
+      title: Фильтр по присутствию сайта в SERP.
+    Positions_2.Types.History.FilterBySerpPresence:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.History.SerpPresence'
+      title: Фильтр по присутствию сайта в SERP.
     Positions_2.Methods.History.Get:
       type: object
       properties:
@@ -10336,6 +10359,11 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.History.FilterBySerpFeatures'
+        filter_by_serp_presence:
+          title: Фильтрация по наличию сайта в SERP-фичах.
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.History.FilterBySerpPresence'
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках.
           type: boolean

@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Types.History.SerpPresence",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Types.History.SerpPresence": {
+                "type": "string",
+                "enum": [
+                    "aiOverview",
+                    "dynamicPlace",
+                    "featuredSnippet",
+                    "amp"
+                ],
+                "x-enum-varnames": [
+                    "AIOverview",
+                    "DynamicPlace",
+                    "FeaturedSnippet",
+                    "Amp"
+                ],
+                "x-enum-descriptions": [
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "title": "Фильтр по присутствию сайта в SERP."
+            }
+        }
+    }
+}

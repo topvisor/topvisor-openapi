@@ -85,6 +85,15 @@
                             }
                         ]
                     },
+                    "filter_by_serp_presence": {
+                        "title": "Фильтрация по наличию сайта в SERP-фичах.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Positions_2/Types/History/FilterBySerpPresence.json#/components/schemas/Positions_2.Types.History.FilterBySerpPresence"
+                            }
+                        ]
+                    },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках.",
                         "type": "boolean"

@@ -1250,6 +1250,10 @@
                         "const": "SERP Features (AI)",
                         "readOnly": true
                     },
+                    "Serp_presence": {
+                        "const": "SERP Presence",
+                        "readOnly": true
+                    },
                     "No_keywords_in_project": {
                         "const": "<a href=\"/support/keywords/import/\" target=\"_blank\">Add keywords</a> distributed across groups and folders or use our <a href=\"/semantic-core/\" target=\"_blank\">keyword research tools</a>.<br><br>To display columns with Volume, rankings and other, tap <b>All keywords</b> and <i data-top-icon=\"\"></i> in the right upper corner.",
                         "readOnly": true
@@ -1594,6 +1598,7 @@
                     "Select_source",
                     "Serp_features",
                     "Serp_features_AI",
+                    "Serp_presence",
                     "No_keywords_in_project",
                     "Relevant_check_already_started",
                     "Geo_dependence_check_already_started",
