@@ -267,7 +267,7 @@ export interface components {
             /** @constant */
             readonly Serp_presence_aiOverview: "AI Overviews";
             /** @constant */
-            readonly Serp_presence_dynamicPlace: "Dynamic Place";
+            readonly Serp_presence_dynamicPlace: "Dynamic placements";
             /** @constant */
             readonly Serp_presence_featuredSnippet: "Featured snippet";
             /** @constant */

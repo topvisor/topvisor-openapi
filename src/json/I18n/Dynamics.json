@@ -527,7 +527,7 @@
                         "readOnly": true
                     },
                     "Serp_presence_dynamicPlace": {
-                        "const": "Dynamic Place",
+                        "const": "Dynamic placements",
                         "readOnly": true
                     },
                     "Serp_presence_featuredSnippet": {
