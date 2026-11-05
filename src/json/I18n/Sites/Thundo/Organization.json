@@ -45,6 +45,14 @@
                     "Renew_subscription": {
                         "const": "Renew subscription",
                         "readOnly": true
+                    },
+                    "Banner_subscription_demo_without_card": {
+                        "const": "Your Demo subscription is on. Pick the next pricing plan and link a card to continue your checks after Demo is expired!",
+                        "readOnly": true
+                    },
+                    "Continue_subscription": {
+                        "const": "Continue subscription",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -54,7 +62,9 @@
                     "Contact_type",
                     "General_manager",
                     "Banner_subscription_expired",
-                    "Renew_subscription"
+                    "Renew_subscription",
+                    "Banner_subscription_demo_without_card",
+                    "Continue_subscription"
                 ]
             }
         }

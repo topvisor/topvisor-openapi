@@ -26,6 +26,10 @@ export interface components {
             readonly Banner_subscription_expired: "Your subscription has been expired. Renew your plan to keep getting the most out of SEO analytics and more!";
             /** @constant */
             readonly Renew_subscription: "Renew subscription";
+            /** @constant */
+            readonly Banner_subscription_demo_without_card: "Your Demo subscription is on. Pick the next pricing plan and link a card to continue your checks after Demo is expired!";
+            /** @constant */
+            readonly Continue_subscription: "Continue subscription";
         };
     };
     responses: never;
