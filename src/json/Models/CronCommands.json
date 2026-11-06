@@ -36,11 +36,14 @@
                         "type": "integer",
                         "nullable": true
                     },
+                    "exclusive": {
+                        "type": "integer",
+                        "nullable": true
+                    },
                     "task_create_time": {
                         "nullable": true
                     },
                     "task_status": {
-                        "type": "string",
                         "nullable": true
                     }
                 }

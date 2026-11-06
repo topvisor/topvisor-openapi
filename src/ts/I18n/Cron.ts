@@ -21,6 +21,8 @@ export interface components {
             /** @constant */
             readonly Field_on: "On/Off";
             /** @constant */
+            readonly Field_exclusive: "Exclusive mode";
+            /** @constant */
             readonly Field_task_create_time: "Task created";
             /** @constant */
             readonly Field_task_status: "Execution status";

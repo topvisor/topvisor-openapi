@@ -15,8 +15,9 @@ export interface components {
             hh?: string | null;
             i?: string | null;
             on?: number | null;
+            exclusive?: number | null;
             task_create_time?: any;
-            task_status?: string | null;
+            task_status?: any;
         };
     };
     responses: never;

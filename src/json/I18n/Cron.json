@@ -34,6 +34,10 @@
                         "const": "On/Off",
                         "readOnly": true
                     },
+                    "Field_exclusive": {
+                        "const": "Exclusive mode",
+                        "readOnly": true
+                    },
                     "Field_task_create_time": {
                         "const": "Task created",
                         "readOnly": true
@@ -58,6 +62,7 @@
                     "Field_hh",
                     "Field_i",
                     "Field_on",
+                    "Field_exclusive",
                     "Field_task_create_time",
                     "Field_task_status",
                     "Disabled",
