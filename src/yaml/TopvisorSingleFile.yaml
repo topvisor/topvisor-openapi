@@ -16184,6 +16184,16 @@ components:
     Projects_2.Methods.Projects.Tags.Edit.Exec:
       nullable: true
       type: integer
+    Urls_2.Types.Import.File:
+      anyOf:
+        - type: string
+          format: binary
+        - type: string
+        - type: array
+          items:
+            type: string
+      title: Файл, массив или строка URL для импорта.
+      description: '@file: txt, csv, xml, gz'
     Projects_2.Methods.Tasks.Indexing.Add:
       type: object
       properties:
@@ -16196,12 +16206,15 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Url'
         urls:
-          title: Список URL соответствующих домену проекта, допускается формат CSV.
+          title: URL, соответствующие домену проекта; массив и строка передаются в формате CSV.
           description: |-
-            Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
+            - array `urls`: список URL в формате CSV
+            - file(txt, csv, xml, gz) `urls`: файл с содержимым для импорта
 
-            Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml.
+            Нельзя использовать совместно с `link_sitemap_xml`.
           nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Import.File'
       required:
         - indexing_searchers_keys
       title: Создание задачи на индексацию.
@@ -17130,6 +17143,16 @@ components:
         - project_id
       title: Экспорт регионов (CSV).
       description: '- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth, region_alt]'
+    Positions_2.Types.Searchers.Regions.Import.File:
+      anyOf:
+        - type: string
+          format: binary
+        - type: string
+        - type: array
+          items:
+            type: string
+      title: Файл, массив или строка регионов для импорта.
+      description: '@file: csv'
     Positions_2.Methods.Searchers.Regions.Import.Add:
       type: object
       properties:
@@ -17137,21 +17160,37 @@ components:
           title: Id проекта.
           type: integer
         regions:
-          title: Массив регионов в формате CSV.
+          title: Файл, массив или строка регионов в формате CSV.
           description: |-
-            Array regions - массив csv строк
-            File(csv) regions - файл с содержимым для импорта в формат CSV
-            - нельзя передавать regions одновременно в виде массива и в виде файла
+            - array regions - массив регионов, допускается формат CSV
+            - file(csv) regions - файл с содержимым для импорта, допускается формат CSV
+            - Внутренние вызовы могут передать resource с содержимым для импорта.
 
             Формат csv (от 2 до 7 столбцов):
             - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth, region_alt]
-          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.Searchers.Regions.Import.File'
       required:
         - project_id
+        - regions
       title: Импорт регионов (CSV).
     Positions_2.Methods.Searchers.Regions.Import.Add.Exec:
-      nullable: true
-      type: integer
+      title: Результат импорта.
+      type: object
+      properties:
+        countSended:
+          type: integer
+        countDuplicated:
+          type: integer
+        countAdded:
+          type: integer
+        countChanged:
+          type: integer
+      required:
+        - countSended
+        - countDuplicated
+        - countAdded
+        - countChanged
     Positions_2.Methods.Searchers.Regions.Sort.Edit:
       type: object
       properties:
@@ -17197,12 +17236,15 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Url'
         urls:
-          title: Список URL соответствующих домену проекта, допускается формат CSV.
+          title: Файл, массив или строка URL в формате CSV.
           description: |-
-            Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
+            - array `urls`: список URL в формате CSV
+            - file(txt, csv, xml, gz) `urls`: файл с URL
 
-            Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml.
+            Нельзя использовать совместно с `link_sitemap_xml`.
           nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Import.File'
       required:
         - indexing_searchers_keys
       title: Получение цены проверки индексации задачи без создания проекта.

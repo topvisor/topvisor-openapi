@@ -12,17 +12,23 @@ export interface components {
             /** Id проекта. */
             project_id: number;
             /**
-             * Массив регионов в формате CSV.
-             * @description Array regions - массив csv строк
-             *     File(csv) regions - файл с содержимым для импорта в формат CSV
-             *     - нельзя передавать regions одновременно в виде массива и в виде файла
+             * Файл, массив или строка регионов в формате CSV.
+             * @description - array regions - массив регионов, допускается формат CSV
+             *     - file(csv) regions - файл с содержимым для импорта, допускается формат CSV
+             *     - Внутренние вызовы могут передать resource с содержимым для импорта.
              *
              *     Формат csv (от 2 до 7 столбцов):
              *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth, region_alt]
              */
-            regions?: unknown;
+            regions: import('../../../../Types/Searchers/Regions/Import/File.ts').components['schemas']['Positions_2.Types.Searchers.Regions.Import.File'];
         };
-        "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": number | null;
+        /** Результат импорта. */
+        "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": {
+            countSended: number;
+            countDuplicated: number;
+            countAdded: number;
+            countChanged: number;
+        };
     };
     responses: never;
     parameters: never;

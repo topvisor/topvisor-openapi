@@ -13,12 +13,13 @@ export interface components {
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz). */
             link_sitemap_xml?: import('../../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /**
-             * Список URL соответствующих домену проекта, допускается формат CSV.
-             * @description Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
+             * Файл, массив или строка URL в формате CSV.
+             * @description - array `urls`: список URL в формате CSV
+             *     - file(txt, csv, xml, gz) `urls`: файл с URL
              *
-             *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml.
+             *     Нельзя использовать совместно с `link_sitemap_xml`.
              */
-            urls?: unknown;
+            urls?: import('../../../../../Urls_2/Types/Import/File.ts').components['schemas']['Urls_2.Types.Import.File'] | null;
         };
         "Projects_2.Methods.Tasks.Indexing.Price.Get.Exec": number;
     };

@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Types.Import.File",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Types.Import.File": {
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "format": "binary"
+                    },
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "title": "Файл, массив или строка URL для импорта.",
+                "description": "@file: txt, csv, xml, gz"
+            }
+        }
+    }
+}

@@ -27,9 +27,14 @@
                         ]
                     },
                     "urls": {
-                        "title": "Список URL соответствующих домену проекта, допускается формат CSV.",
-                        "description": "Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)\n\nНельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml.",
-                        "nullable": true
+                        "title": "URL, соответствующие домену проекта; массив и строка передаются в формате CSV.",
+                        "description": "- array `urls`: список URL в формате CSV\n- file(txt, csv, xml, gz) `urls`: файл с содержимым для импорта\n\nНельзя использовать совместно с `link_sitemap_xml`.",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Urls_2/Types/Import/File.json#/components/schemas/Urls_2.Types.Import.File"
+                            }
+                        ]
                     }
                 },
                 "required": [

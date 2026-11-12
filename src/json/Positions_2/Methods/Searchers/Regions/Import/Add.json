@@ -15,19 +15,44 @@
                         "type": "integer"
                     },
                     "regions": {
-                        "title": "Массив регионов в формате CSV.",
-                        "description": "Array regions - массив csv строк\nFile(csv) regions - файл с содержимым для импорта в формат CSV\n- нельзя передавать regions одновременно в виде массива и в виде файла\n\nФормат csv (от 2 до 7 столбцов):\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth, region_alt]",
-                        "nullable": true
+                        "title": "Файл, массив или строка регионов в формате CSV.",
+                        "description": "- array regions - массив регионов, допускается формат CSV\n- file(csv) regions - файл с содержимым для импорта, допускается формат CSV\n- Внутренние вызовы могут передать resource с содержимым для импорта.\n\nФормат csv (от 2 до 7 столбцов):\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth, region_alt]",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Positions_2/Types/Searchers/Regions/Import/File.json#/components/schemas/Positions_2.Types.Searchers.Regions.Import.File"
+                            }
+                        ]
                     }
                 },
                 "required": [
-                    "project_id"
+                    "project_id",
+                    "regions"
                 ],
                 "title": "Импорт регионов (CSV)."
             },
             "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": {
-                "nullable": true,
-                "type": "integer"
+                "title": "Результат импорта.",
+                "type": "object",
+                "properties": {
+                    "countSended": {
+                        "type": "integer"
+                    },
+                    "countDuplicated": {
+                        "type": "integer"
+                    },
+                    "countAdded": {
+                        "type": "integer"
+                    },
+                    "countChanged": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "countSended",
+                    "countDuplicated",
+                    "countAdded",
+                    "countChanged"
+                ]
             }
         }
     }
