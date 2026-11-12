@@ -10,11 +10,13 @@ export interface components {
         /** Редактирование "on" проектов. */
         "Projects_2.Methods.Projects.On.Edit": {
             /**
-             * Активность проекта
-             * @description - -1 - архив
-             *     - 0 - обычный.
+             * Статус проекта.
+             * @description - `-1` — архив.
+             *     - `0` — активен.
+             *
+             *     Если у проекта есть расписание проверок, при активации статус станет `1`.
              */
-            on: number;
+            on: import('../../../Types/On.ts').components['schemas']['Projects_2.Types.On'];
             /**
              * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}

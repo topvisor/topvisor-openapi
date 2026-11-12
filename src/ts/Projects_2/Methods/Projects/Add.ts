@@ -23,7 +23,7 @@ export interface components {
             /** Id папки, к которой будет привязан проект. */
             folder_id?: number | null;
             /** Активность проекта. */
-            on?: number | null;
+            on?: import('../../Types/On.ts').components['schemas']['Projects_2.Types.On'] | null;
             /** Является ли проект задачей. */
             is_task?: boolean | null;
         };

@@ -39,7 +39,11 @@
                     "on": {
                         "title": "Активность проекта.",
                         "nullable": true,
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Projects_2/Types/On.json#/components/schemas/Projects_2.Types.On"
+                            }
+                        ]
                     },
                     "is_task": {
                         "title": "Является ли проект задачей.",

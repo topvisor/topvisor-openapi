@@ -11088,6 +11088,31 @@ components:
       title: Получение списка конкурентов.
     Projects_2.Methods.Competitors.Get.Exec:
       type: array
+    Projects_2.Types.On:
+      type: integer
+      enum:
+        - -10
+        - -1
+        - 0
+        - 1
+        - 2
+        - 4
+      x-enum-varnames:
+        - Deleted
+        - Archived
+        - Manual
+        - RegularSchedule
+        - YandexUpdate
+        - MonthDay
+      x-enum-descriptions:
+        - Проект удален
+        - Проект в архиве.
+        - Проект активен без расписания.
+        - Проверка назначена на любое число или день недели.
+        - Проверка запускается после обновления данных Яндекса.
+        - Проверка назначена на календарный день месяца, включая последний и предпоследний.
+      title: Статус проекта.
+      description: Положительное значение указывает тип расписания проверки позиций.
     Projects_2.Methods.Projects.Add:
       type: object
       properties:
@@ -11112,7 +11137,8 @@ components:
         'on':
           title: Активность проекта.
           nullable: true
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.On'
         is_task:
           title: Является ли проект задачей.
           nullable: true
@@ -15990,7 +16016,8 @@ components:
           description: |-
             - -1 - выключен
             - 0 - включен
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.On'
       required:
         - project_id
         - ids
@@ -16087,11 +16114,14 @@ components:
       type: object
       properties:
         'on':
-          title: Активность проекта
+          title: Статус проекта.
           description: |-
-            - -1 - архив
-            - 0 - обычный.
-          type: integer
+            - `-1` — архив.
+            - `0` — активен.
+
+            Если у проекта есть расписание проверок, при активации статус станет `1`.
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.On'
         filters:
           title: Список фильтров по полям объекта.
           description: |-

@@ -25,7 +25,11 @@
                     "on": {
                         "title": "Активность проекта.",
                         "description": "- -1 - выключен\n- 0 - включен",
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Projects_2/Types/On.json#/components/schemas/Projects_2.Types.On"
+                            }
+                        ]
                     }
                 },
                 "required": [

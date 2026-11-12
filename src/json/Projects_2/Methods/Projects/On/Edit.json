@@ -11,9 +11,13 @@
                 "type": "object",
                 "properties": {
                     "on": {
-                        "title": "Активность проекта",
-                        "description": "- -1 - архив\n- 0 - обычный.",
-                        "type": "integer"
+                        "title": "Статус проекта.",
+                        "description": "- `-1` — архив.\n- `0` — активен.\n\nЕсли у проекта есть расписание проверок, при активации статус станет `1`.",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Projects_2/Types/On.json#/components/schemas/Projects_2.Types.On"
+                            }
+                        ]
                     },
                     "filters": {
                         "title": "Список фильтров по полям объекта.",

@@ -18,7 +18,7 @@ export interface components {
              * @description - -1 - выключен
              *     - 0 - включен
              */
-            on: number;
+            on: import('../../../Types/On.ts').components['schemas']['Projects_2.Types.On'];
         };
         "Projects_2.Methods.Competitors.On.Edit.Exec": number;
     };
