@@ -13,6 +13,7 @@ export interface components {
             searcher_key: unknown;
             region_key: number;
             region_device: unknown;
+            region_alt: unknown;
         };
     };
     responses: never;

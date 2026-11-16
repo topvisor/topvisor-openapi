@@ -18,12 +18,14 @@
                     "region_key": {
                         "type": "integer"
                     },
-                    "region_device": {}
+                    "region_device": {},
+                    "region_alt": {}
                 },
                 "required": [
                     "searcher_key",
                     "region_key",
-                    "region_device"
+                    "region_device",
+                    "region_alt"
                 ],
                 "title": "Объект определитель для проверки релевантности."
             }
