@@ -107,7 +107,7 @@
                         "readOnly": true
                     },
                     "Compare_all_keywords": {
-                        "const": "Сравнение всех запросов",
+                        "const": "Compare all keywords",
                         "readOnly": true
                     },
                     "Keyword_dynamics": {
