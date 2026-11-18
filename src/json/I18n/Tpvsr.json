@@ -83,7 +83,7 @@
                         "readOnly": true
                     },
                     "Short_url_faster_with_bot": {
-                        "const": "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>",
+                        "const": "Shorten links faster using <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>",
                         "readOnly": true
                     },
                     "Free_url_limit_reached": {

@@ -45,7 +45,7 @@ export interface components {
             /** @constant */
             readonly Sort_date_desc: "By date from newest to oldest";
             /** @constant */
-            readonly Short_url_faster_with_bot: "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>";
+            readonly Short_url_faster_with_bot: "Shorten links faster using <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>";
             /** @constant */
             readonly Free_url_limit_reached: "Free URL Shortener limit reached!";
             /** @constant */
