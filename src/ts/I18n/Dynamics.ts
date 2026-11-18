@@ -287,7 +287,7 @@ export interface components {
             /** @constant */
             readonly Relevants_urls: "Ranked URLs";
             /** @constant */
-            readonly No_rank_checks_in_project: "You haven't checked rankings in this project.<br>📈 <a href=\"/rank-tracker/\" target=\"_blank\">Why you need to check rankings →</a> and 📊 <a href=\"/snapshots/\" target=\"_blank\">SERP Top →</a>";
+            readonly No_rank_checks_in_project: "Rankings hasn't been checked rankings in this project yet.<br>📈 <a href=\"/rank-tracker/\" target=\"_blank\">Why you need to check rankings →</a> and 📊 <a href=\"/snapshots/\" target=\"_blank\">SERP Top →</a>";
         };
     };
     responses: never;
