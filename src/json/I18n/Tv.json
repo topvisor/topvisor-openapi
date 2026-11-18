@@ -25,10 +25,15 @@
                     "Journal": {
                         "const": "Topvisor–Journal",
                         "readOnly": true
+                    },
+                    "Visibility_volume_warning": {
+                        "const": "Visibility calculated incorrectly.",
+                        "readOnly": true
                     }
                 },
                 "required": [
-                    "TV"
+                    "TV",
+                    "Visibility_volume_warning"
                 ]
             }
         }

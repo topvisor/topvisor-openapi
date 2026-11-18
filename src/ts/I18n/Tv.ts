@@ -16,6 +16,8 @@ export interface components {
             readonly Organization?: "Topvisor Co., Ltd.";
             /** @constant */
             readonly Journal?: "Topvisor–Journal";
+            /** @constant */
+            readonly Visibility_volume_warning: "Visibility calculated incorrectly.";
         };
     };
     responses: never;
