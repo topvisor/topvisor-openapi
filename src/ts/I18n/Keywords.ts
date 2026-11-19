@@ -641,7 +641,7 @@ export interface components {
             /** @constant */
             readonly Geo_dependence_check_already_started: "Geo-dependence check already started";
             /** @constant */
-            readonly Geo_dependence: "Geo dependence";
+            readonly Geo_dependence: "Geo-dependency";
             /** @constant */
             readonly Check_geo_dependence_complete: "Geo-dependence check is complete. Please update the page";
             /** @constant */

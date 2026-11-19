@@ -1275,7 +1275,7 @@
                         "readOnly": true
                     },
                     "Geo_dependence": {
-                        "const": "Geo dependence",
+                        "const": "Geo-dependency",
                         "readOnly": true
                     },
                     "Check_geo_dependence_complete": {
