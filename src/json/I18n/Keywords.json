@@ -1271,7 +1271,7 @@
                         "readOnly": true
                     },
                     "Geo_dependence_check_already_started": {
-                        "const": "Geo-dependence check already started",
+                        "const": "Geo-dependency check already started",
                         "readOnly": true
                     },
                     "Geo_dependence": {
@@ -1279,7 +1279,7 @@
                         "readOnly": true
                     },
                     "Check_geo_dependence_complete": {
-                        "const": "Geo-dependence check is complete. Please update the page",
+                        "const": "Geo-dependency check is complete. Please refresh the page",
                         "readOnly": true
                     },
                     "Localization": {

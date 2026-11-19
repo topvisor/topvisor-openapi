@@ -339,11 +339,15 @@
                         "readOnly": true
                     },
                     "Service_geo_dependence": {
-                        "const": "Geo-dependence check",
+                        "const": "Geo-dependency check",
                         "readOnly": true
                     },
                     "Service_researcher": {
                         "const": "Keyword research tool",
+                        "readOnly": true
+                    },
+                    "Service_ai_research": {
+                        "const": "AI-powered research",
                         "readOnly": true
                     },
                     "Service_suggestions_tool": {
@@ -1278,6 +1282,7 @@
                     "Service_relevant",
                     "Service_geo_dependence",
                     "Service_researcher",
+                    "Service_ai_research",
                     "Service_suggestions_tool",
                     "Service_clustering",
                     "Service_auditor",

@@ -639,11 +639,11 @@ export interface components {
             /** @constant */
             readonly Relevant_check_already_started: "Relevant check already started";
             /** @constant */
-            readonly Geo_dependence_check_already_started: "Geo-dependence check already started";
+            readonly Geo_dependence_check_already_started: "Geo-dependency check already started";
             /** @constant */
             readonly Geo_dependence: "Geo-dependency";
             /** @constant */
-            readonly Check_geo_dependence_complete: "Geo-dependence check is complete. Please update the page";
+            readonly Check_geo_dependence_complete: "Geo-dependency check is complete. Please refresh the page";
             /** @constant */
             readonly Localization: "Localization";
             /** @constant */
