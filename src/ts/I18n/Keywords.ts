@@ -109,6 +109,10 @@ export interface components {
             /** @constant */
             readonly Semantic_kernel_composition_by_hints: "Keyword suggestions harvest";
             /** @constant */
+            readonly Collect_ai_queries: "Keyword research with AI";
+            /** @constant */
+            readonly Collect_ai_prompts: "Prompt research with AI";
+            /** @constant */
             readonly Provider_incorrect: "`Provider` is incorrect";
             /** @constant */
             readonly Not_enough_balance: "There are not enough funds in your account";
@@ -638,6 +642,8 @@ export interface components {
             readonly Geo_dependence_check_already_started: "Geo-dependence check already started";
             /** @constant */
             readonly Geo_dependence: "Geo dependence";
+            /** @constant */
+            readonly Check_geo_dependence_complete: "Geo-dependence check is complete. Please update the page";
             /** @constant */
             readonly Localization: "Localization";
             /** @constant */

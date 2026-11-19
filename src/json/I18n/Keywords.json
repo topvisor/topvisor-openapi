@@ -210,6 +210,14 @@
                         "const": "Keyword suggestions harvest",
                         "readOnly": true
                     },
+                    "Collect_ai_queries": {
+                        "const": "Keyword research with AI",
+                        "readOnly": true
+                    },
+                    "Collect_ai_prompts": {
+                        "const": "Prompt research with AI",
+                        "readOnly": true
+                    },
                     "Provider_incorrect": {
                         "const": "`Provider` is incorrect",
                         "readOnly": true
@@ -1270,6 +1278,10 @@
                         "const": "Geo dependence",
                         "readOnly": true
                     },
+                    "Check_geo_dependence_complete": {
+                        "const": "Geo-dependence check is complete. Please update the page",
+                        "readOnly": true
+                    },
                     "Localization": {
                         "const": "Localization",
                         "readOnly": true
@@ -1338,6 +1350,8 @@
                     "Short_keywords",
                     "Semantic_kernel_composition",
                     "Semantic_kernel_composition_by_hints",
+                    "Collect_ai_queries",
+                    "Collect_ai_prompts",
                     "Provider_incorrect",
                     "Not_enough_balance",
                     "Unchecked_wordstat_is_missing1",
@@ -1603,6 +1617,7 @@
                     "Relevant_check_already_started",
                     "Geo_dependence_check_already_started",
                     "Geo_dependence",
+                    "Check_geo_dependence_complete",
                     "Localization",
                     "Set_target_equals_relevant_from_recheck",
                     "Target_equals_relevant_last_relevant_check_in_location",
