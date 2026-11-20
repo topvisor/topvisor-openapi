@@ -109,6 +109,10 @@
                     "Upload_from_sitemap": {
                         "const": "Upload from sitemap",
                         "readOnly": true
+                    },
+                    "Url_must_be_with_protocol": {
+                        "const": "Link must begin with http or https",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -136,7 +140,8 @@
                     "Do_not_change_already_set_targets",
                     "No_relevant_urls_for_region",
                     "Show_results",
-                    "Upload_from_sitemap"
+                    "Upload_from_sitemap",
+                    "Url_must_be_with_protocol"
                 ]
             }
         }

@@ -58,6 +58,8 @@ export interface components {
             readonly Show_results: "Show results";
             /** @constant */
             readonly Upload_from_sitemap: "Upload from sitemap";
+            /** @constant */
+            readonly Url_must_be_with_protocol: "Link must begin with http or https";
         };
     };
     responses: never;
