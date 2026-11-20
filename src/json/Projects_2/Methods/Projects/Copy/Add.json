@@ -10,10 +10,6 @@
             "Projects_2.Methods.Projects.Copy.Add": {
                 "type": "object",
                 "properties": {
-                    "project_id": {
-                        "title": "ID проекта.",
-                        "type": "integer"
-                    },
                     "copy_keywords": {
                         "title": "Копировать ли запросы проекта.",
                         "nullable": true,
@@ -23,6 +19,10 @@
                         "title": "Копировать ли позиции по запросам проекта (если copy_keywords = 1).",
                         "nullable": true,
                         "type": "boolean"
+                    },
+                    "project_id": {
+                        "title": "ID проекта.",
+                        "type": "integer"
                     }
                 },
                 "required": [
