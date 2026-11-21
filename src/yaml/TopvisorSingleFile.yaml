@@ -5701,6 +5701,7 @@ components:
         - YANDEX_UPDATE
         - CHECK_POSITIONS
         - LAST_OF_MONTH
+        - PREV_LAST_OF_MONTH
         - MONDAY
         - TUESDAY
         - WEDNESDAY
@@ -5740,6 +5741,7 @@ components:
         - YandexUpdate
         - CheckPositions
         - LastOfMonth
+        - PrevLastOfMonth
         - Monday
         - Tuesday
         - Wednesday
@@ -5779,6 +5781,7 @@ components:
         - Запуск после обновления данных Яндекса.
         - Запуск после завершения проверки позиций.
         - Последний день месяца.
+        - Предпоследний день месяца.
         - null
         - null
         - null
@@ -5817,6 +5820,7 @@ components:
       description: |-
         Дни 28–31 не задаются напрямую: при переводе времени между часовыми поясами дата может перейти через границу месяца.
         Для последнего дня месяца используется `LAST_OF_MONTH`, который учитывает фактическую длину месяца.
+        Для сдвинутой на день назад даты 30 — `PREV_LAST_OF_MONTH`: он не выпадает в коротких месяцах.
     Schedule_2.Types.Days:
       type: array
       items:

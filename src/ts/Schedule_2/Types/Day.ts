@@ -11,9 +11,10 @@ export interface components {
          * Допустимый день в расписании.
          * @description Дни 28–31 не задаются напрямую: при переводе времени между часовыми поясами дата может перейти через границу месяца.
          *     Для последнего дня месяца используется `LAST_OF_MONTH`, который учитывает фактическую длину месяца.
+         *     Для сдвинутой на день назад даты 30 — `PREV_LAST_OF_MONTH`: он не выпадает в коротких месяцах.
          * @enum {string}
          */
-        "Schedule_2.Types.Day": "ALL" | "YANDEX_UPDATE" | "CHECK_POSITIONS" | "LAST_OF_MONTH" | "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY" | "SATURDAY" | "SUNDAY" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23" | "24" | "25" | "26" | "27";
+        "Schedule_2.Types.Day": "ALL" | "YANDEX_UPDATE" | "CHECK_POSITIONS" | "LAST_OF_MONTH" | "PREV_LAST_OF_MONTH" | "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY" | "SATURDAY" | "SUNDAY" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23" | "24" | "25" | "26" | "27";
     };
     responses: never;
     parameters: never;
