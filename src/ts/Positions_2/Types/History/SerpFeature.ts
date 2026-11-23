@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Фильтр по SERP Features
+         * Фильтр по SERP Features.
          * @enum {string}
          */
         "Positions_2.Types.History.SerpFeature": "aiOverviewExists" | "images" | "video" | "knowledge" | "maps";

@@ -55,7 +55,7 @@
                         "type": "string"
                     },
                     "TELEGRAM_CHANNEL": {
-                        "title": "Имя Telegram-канала",
+                        "title": "Имя Telegram-канала.",
                         "readOnly": true,
                         "default": "No set",
                         "type": "string"

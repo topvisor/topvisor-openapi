@@ -47,7 +47,7 @@ export interface components {
              */
             readonly TELEGRAM_BOT: string;
             /**
-             * Имя Telegram-канала
+             * Имя Telegram-канала.
              * @default No set
              */
             readonly TELEGRAM_CHANNEL: string;

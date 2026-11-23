@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         "Selector.Field": {
             /**
+             * https://support.google.com/docs/table/25273?hl=en
+             * @description пример: fieldName = '=SUM(fieldName1, fieldName2)'.
              * @default [
              *       "ABS",
              *       "TO_PERCENT",

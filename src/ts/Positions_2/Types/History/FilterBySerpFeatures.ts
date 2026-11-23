@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Фильтр по SERP Features */
+        /** Фильтр по SERP Features. */
         "Positions_2.Types.History.FilterBySerpFeatures": import('./SerpFeature.ts').components['schemas']['Positions_2.Types.History.SerpFeature'][];
     };
     responses: never;

@@ -6934,6 +6934,8 @@ components:
       type: object
       properties:
         availableMethods:
+          title: https://support.google.com/docs/table/25273?hl=en
+          description: 'пример: fieldName = ''=SUM(fieldName1, fieldName2)''.'
           default:
             - ABS
             - TO_PERCENT
@@ -10278,12 +10280,12 @@ components:
         - null
         - null
         - null
-      title: Фильтр по SERP Features
+      title: Фильтр по SERP Features.
     Positions_2.Types.History.FilterBySerpFeatures:
       type: array
       items:
         $ref: '#/components/schemas/Positions_2.Types.History.SerpFeature'
-      title: Фильтр по SERP Features
+      title: Фильтр по SERP Features.
     Positions_2.Types.History.SerpPresence:
       type: string
       enum:
@@ -11109,7 +11111,7 @@ components:
         - YandexUpdate
         - MonthDay
       x-enum-descriptions:
-        - Проект удален
+        - Проект удален.
         - Проект в архиве.
         - Проект активен без расписания.
         - Проверка назначена на любое число или день недели.
