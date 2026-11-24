@@ -17,7 +17,7 @@ export interface components {
             /** @constant */
             readonly Completed: "Completed";
             /** @constant */
-            readonly In_process: "In process";
+            readonly Ongoing: "In process";
             /** @constant */
             readonly Recreate_task: "Create new task from this one";
             /** @constant */
@@ -29,6 +29,8 @@ export interface components {
             /** @constant */
             readonly Relevant_check: "Relevance check with Toolbox";
             /** @constant */
+            readonly Geo_dependence_check: "Geo-dependence check with Toolbox";
+            /** @constant */
             readonly The_research_showed_zero_results: "The research showed zero results. Why this could have happened: <br>\n\t<ul>\n\t\t<li>The source has no phrases matching your research criteria</li>\n    \t<li>Too many negative keywords were specified</li>\n    \t<li>Keyword belong to the category <a href=\"/support/research/#no-keywords\" target=\"_blank\">prohibited or restricted by advertising policies</a></li>\n\t</ul>\n\tLearn more about <a href=\"/support/research/#\" target=\"_blank\">Keyword Research</a>";
             /** @constant */
             readonly Removing_implicit_duplicates: "Removing implicit duplicates";
@@ -36,6 +38,10 @@ export interface components {
             readonly Removing_duplicates: "Removing duplicates";
             /** @constant */
             readonly Results: "Results";
+            /** @constant */
+            readonly Results_not_ready: "The results aren’t ready yet. Wait for the task to finish.";
+            /** @constant */
+            readonly Read_journal_while_waiting: "";
             /** @constant */
             readonly Excluded: "Excluded";
             /** @constant */

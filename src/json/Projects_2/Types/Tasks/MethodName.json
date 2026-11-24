@@ -13,18 +13,21 @@
                     "keywords_2/volumes/go",
                     "keywords_2/collect/go",
                     "positions_2/relevants/go",
+                    "positions_2/geo_dependence/checker/go",
                     "audit_2/indexing/go"
                 ],
                 "x-enum-varnames": [
                     "VolumeChecker",
                     "KeywordsCollect",
                     "RelevanceCheck",
+                    "GeoDependenceCheck",
                     "Indexing"
                 ],
                 "x-enum-descriptions": [
                     "Проверка частоты.",
                     "Сбор запросов.",
                     "Проверка релевантных.",
+                    "Проверка геозависимости",
                     "Индексация."
                 ],
                 "title": "Название метода задачи."

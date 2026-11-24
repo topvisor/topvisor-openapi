@@ -5052,6 +5052,62 @@ paths:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
+  /add/projects_2/tasks/geoDependence/:
+    post:
+      operationId: AddProjects2TasksGeoDependence
+      tags:
+        - Projects_2
+      summary: Создание задачи на проверку геозависимости.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.GeoDependence.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.GeoDependence.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+  /get/projects_2/tasks/geoDependence/price/:
+    post:
+      operationId: GetProjects2TasksGeoDependencePrice
+      tags:
+        - Projects_2
+      summary: Получение цены проверки геозависимости задачи без создания проекта.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.GeoDependence.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Tasks.GeoDependence.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
 components:
   securitySchemes:
     authToken:
@@ -11157,9 +11213,6 @@ components:
     Projects_2.Methods.Projects.Del:
       type: object
       properties:
-        is_tasks:
-          title: Является ли проект - задачей.
-          type: boolean
         filters:
           title: Список фильтров по полям объекта.
           description: |-
@@ -17384,4 +17437,38 @@ components:
         - qualifiers
       title: Получение цены сбора запросов без создания проекта.
     Projects_2.Methods.Tasks.Keywords.Collect.Price.Get.Exec:
+      type: number
+    Projects_2.Methods.Tasks.GeoDependence.Add:
+      type: object
+      properties:
+        keywords:
+          title: Запросы.
+          type: array
+        qualifiers:
+          title: Поисковые системы, регионы и устройства для проверки.
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifiers'
+      required:
+        - keywords
+        - qualifiers
+      title: Создание задачи на проверку геозависимости.
+    Projects_2.Methods.Tasks.GeoDependence.Add.Exec:
+      type: integer
+    Projects_2.Methods.Tasks.GeoDependence.Price.Get:
+      type: object
+      properties:
+        keywords:
+          type: array
+          items:
+            type: string
+        qualifiers:
+          title: Поисковые системы, регионы и устройства для проверки.
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Objects.Task.Relevant.Qualifiers'
+      required:
+        - keywords
+        - qualifiers
+      title: Получение цены проверки геозависимости задачи без создания проекта.
+    Projects_2.Methods.Tasks.GeoDependence.Price.Get.Exec:
+      title: Рассчитать цену и подготовить транзакцию для проверки баланса.
       type: number

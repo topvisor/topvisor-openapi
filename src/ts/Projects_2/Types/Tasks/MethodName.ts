@@ -11,7 +11,7 @@ export interface components {
          * Название метода задачи.
          * @enum {string}
          */
-        "Projects_2.Types.Tasks.MethodName": "keywords_2/volumes/go" | "keywords_2/collect/go" | "positions_2/relevants/go" | "audit_2/indexing/go";
+        "Projects_2.Types.Tasks.MethodName": "keywords_2/volumes/go" | "keywords_2/collect/go" | "positions_2/relevants/go" | "positions_2/geo_dependence/checker/go" | "audit_2/indexing/go";
     };
     responses: never;
     parameters: never;

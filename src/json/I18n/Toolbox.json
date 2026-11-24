@@ -26,7 +26,7 @@
                         "const": "Completed",
                         "readOnly": true
                     },
-                    "In_process": {
+                    "Ongoing": {
                         "const": "In process",
                         "readOnly": true
                     },
@@ -50,6 +50,10 @@
                         "const": "Relevance check with Toolbox",
                         "readOnly": true
                     },
+                    "Geo_dependence_check": {
+                        "const": "Geo-dependence check with Toolbox",
+                        "readOnly": true
+                    },
                     "The_research_showed_zero_results": {
                         "const": "The research showed zero results. Why this could have happened: <br>\n\t<ul>\n\t\t<li>The source has no phrases matching your research criteria</li>\n    \t<li>Too many negative keywords were specified</li>\n    \t<li>Keyword belong to the category <a href=\"/support/research/#no-keywords\" target=\"_blank\">prohibited or restricted by advertising policies</a></li>\n\t</ul>\n\tLearn more about <a href=\"/support/research/#\" target=\"_blank\">Keyword Research</a>",
                         "readOnly": true
@@ -64,6 +68,14 @@
                     },
                     "Results": {
                         "const": "Results",
+                        "readOnly": true
+                    },
+                    "Results_not_ready": {
+                        "const": "The results aren’t ready yet. Wait for the task to finish.",
+                        "readOnly": true
+                    },
+                    "Read_journal_while_waiting": {
+                        "const": "",
                         "readOnly": true
                     },
                     "Excluded": {
@@ -120,16 +132,19 @@
                     "Tasks_list",
                     "Tool",
                     "Completed",
-                    "In_process",
+                    "Ongoing",
                     "Recreate_task",
                     "No_tasks",
                     "Wordstat_check",
                     "Keywords_collect",
                     "Relevant_check",
+                    "Geo_dependence_check",
                     "The_research_showed_zero_results",
                     "Removing_implicit_duplicates",
                     "Removing_duplicates",
                     "Results",
+                    "Results_not_ready",
+                    "Read_journal_while_waiting",
                     "Excluded",
                     "Ignore_word_order",
                     "Ignore_stop_words",

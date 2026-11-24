@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         /** Удаление проектов. */
         "Projects_2.Methods.Projects.Del": {
-            /** Является ли проект - задачей. */
-            is_tasks?: boolean;
             /**
              * Список фильтров по полям объекта.
              * @description {name: string, operator: Selector\Types\Operator, values: array}
