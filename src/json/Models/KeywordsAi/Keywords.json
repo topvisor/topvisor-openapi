@@ -116,6 +116,15 @@
                             ]
                         }
                     },
+                    "annotations": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "model_key"
+                            ]
+                        }
+                    },
                     "response_marked": {
                         "nullable": true,
                         "example": {

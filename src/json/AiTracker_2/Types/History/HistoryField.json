@@ -13,6 +13,7 @@
                     "response",
                     "response_marked",
                     "metadata",
+                    "annotations",
                     "mentioned",
                     "position",
                     "position_max",
@@ -22,12 +23,14 @@
                     "Response",
                     "ResponseMarked",
                     "Metadata",
+                    "Annotations",
                     "Mentioned",
                     "Position",
                     "PositionMax",
                     "Sentiment"
                 ],
                 "x-enum-descriptions": [
+                    null,
                     null,
                     null,
                     null,

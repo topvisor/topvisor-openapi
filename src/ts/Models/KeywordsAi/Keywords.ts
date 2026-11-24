@@ -91,6 +91,15 @@ export interface components {
              *       ]
              *     }
              */
+            annotations?: any;
+            /**
+             * @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "model_key"
+             *       ]
+             *     }
+             */
             response_marked?: any;
         };
     };

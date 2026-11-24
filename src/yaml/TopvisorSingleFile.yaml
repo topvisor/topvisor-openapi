@@ -6754,6 +6754,7 @@ components:
         - response
         - response_marked
         - metadata
+        - annotations
         - mentioned
         - position
         - position_max
@@ -6762,11 +6763,13 @@ components:
         - Response
         - ResponseMarked
         - Metadata
+        - Annotations
         - Mentioned
         - Position
         - PositionMax
         - Sentiment
       x-enum-descriptions:
+        - null
         - null
         - null
         - null
@@ -7285,6 +7288,12 @@ components:
               - model_key
               - project_id
         metadata:
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - model_key
+        annotations:
           nullable: true
           example:
             need set qualifiers:
