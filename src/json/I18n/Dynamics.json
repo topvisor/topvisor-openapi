@@ -226,6 +226,18 @@
                         "const": "Summary",
                         "readOnly": true
                     },
+                    "Summary_visibility_description": {
+                        "const": "Visibility is a share of potential impressions a site could receive. It indicates the proportion of search traffic the site can capture. Visibility calculation uses search volume and coefficient based on site rankings. The trend indicator shows how metric has changed compared to the last check within the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/rankings/summary/visibility/\" target=\"_blank\">More on Visibility →</a>",
+                        "readOnly": true
+                    },
+                    "Summary_average_description": {
+                        "const": "Average position is a metric indicating a site average ranking in search results. It is calculated as the arithmetic mean or sum of positions divided by the number of keywords. The trend shows the change in this metric compared to the last check within the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/rankings/summary/#average-position\" target=\"_blank\">More on Average position →</a>",
+                        "readOnly": true
+                    },
+                    "Summary_median_description": {
+                        "const": "Median position is the middle value in a sorted list of a site rankings. Median helps provide a more accurate interpretation of ranking progress when the distribution is uneven and outliers skew Average position. The trend shows the change in this metric compared to the last check within the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/rankings/summary/#median-position\" target=\"_blank\">More on Median position →</a>",
+                        "readOnly": true
+                    },
                     "Show_graphics": {
                         "const": "Charts",
                         "readOnly": true
@@ -424,6 +436,10 @@
                     },
                     "Summary_mode": {
                         "const": "Summary mode",
+                        "readOnly": true
+                    },
+                    "Classic_summary_mode": {
+                        "const": "Classic",
                         "readOnly": true
                     },
                     "Default_summary_mode": {
@@ -626,6 +642,9 @@
                     "To_repository_google_drive",
                     "To_repository_google_drive_message",
                     "Summary",
+                    "Summary_visibility_description",
+                    "Summary_average_description",
+                    "Summary_median_description",
                     "Show_graphics",
                     "Target_equal_relevant",
                     "Off_display_group_names",
@@ -676,6 +695,7 @@
                     "Highcharts_Export_Print",
                     "Highcharts_Export_CSV",
                     "Summary_mode",
+                    "Classic_summary_mode",
                     "Default_summary_mode",
                     "Compact_summary_mode",
                     "Columns_summary_mode",

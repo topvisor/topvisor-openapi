@@ -117,6 +117,12 @@ export interface components {
             /** @constant */
             readonly Summary: "Summary";
             /** @constant */
+            readonly Summary_visibility_description: "Visibility is a share of potential impressions a site could receive. It indicates the proportion of search traffic the site can capture. Visibility calculation uses search volume and coefficient based on site rankings. The trend indicator shows how metric has changed compared to the last check within the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/rankings/summary/visibility/\" target=\"_blank\">More on Visibility →</a>";
+            /** @constant */
+            readonly Summary_average_description: "Average position is a metric indicating a site average ranking in search results. It is calculated as the arithmetic mean or sum of positions divided by the number of keywords. The trend shows the change in this metric compared to the last check within the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/rankings/summary/#average-position\" target=\"_blank\">More on Average position →</a>";
+            /** @constant */
+            readonly Summary_median_description: "Median position is the middle value in a sorted list of a site rankings. Median helps provide a more accurate interpretation of ranking progress when the distribution is uneven and outliers skew Average position. The trend shows the change in this metric compared to the last check within the period selected in Calendar.<br><br><a href=\"https://{{ $site.host }}/support/rankings/summary/#median-position\" target=\"_blank\">More on Median position →</a>";
+            /** @constant */
             readonly Show_graphics: "Charts";
             /** @constant */
             readonly Target_equal_relevant: "Target = Ranked";
@@ -216,6 +222,8 @@ export interface components {
             readonly Highcharts_Export_CSV: "Download CSV";
             /** @constant */
             readonly Summary_mode: "Summary mode";
+            /** @constant */
+            readonly Classic_summary_mode: "Classic";
             /** @constant */
             readonly Default_summary_mode: "Default";
             /** @constant */
