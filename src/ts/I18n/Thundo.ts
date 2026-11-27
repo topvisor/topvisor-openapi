@@ -17,7 +17,7 @@ export interface components {
             /** @constant */
             readonly Organization?: "Thundo Ltd.";
             /** @constant */
-            readonly Visibility_volume_warning: "If you see this message more than an hour, it means there isn't enough checks for updating all Volumes, and Visibility may be incorrect. Wait up to the next billing date or <a href=\"#tabsView-account=subscription&amp;view-dialog_bankPayment=subscription\">upgrade your pricing plan</a> to update Volume for all keywords now.";
+            readonly Visibility_volume_warning: "If you see this message more than an hour, it means there isn't enough checks for updating all Volumes, and Visibility may be incorrect. Wait up to the next billing date or <a href=\"#tabsView-account=subscription&amp;view-dialog_bankPayment=subscription\">upgrade your pricing plan</a> (or ask the project's owner to upgrade it, if your account is Guest one) to update Volume for all keywords now.";
         };
     };
     responses: never;
