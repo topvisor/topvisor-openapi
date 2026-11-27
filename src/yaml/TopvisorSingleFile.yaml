@@ -5272,6 +5272,7 @@ components:
           description: |-
             - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
              Нужно передать название и, если требуется, дополнительные параметры.
+            - `noticeText` — дополнительная подсказка при нехватке лимитов подписки.
           nullable: true
           anyOf:
             - type: object
@@ -5301,6 +5302,8 @@ components:
                       - text
                       - link
                 location:
+                  type: string
+                noticeText:
                   type: string
                 fieldViolation:
                   type: object

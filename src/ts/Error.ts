@@ -20,6 +20,7 @@ export interface components {
              * Объект с дополнительной информацией
              * @description - actions.triggers - параметры для генерации ссылки для кнопок на фронтенде.
              *      Нужно передать название и, если требуется, дополнительные параметры.
+             *     - `noticeText` — дополнительная подсказка при нехватке лимитов подписки.
              */
             detail?: ({
                 text: string;
@@ -34,6 +35,7 @@ export interface components {
                     link: string;
                 }[];
                 location?: string;
+                noticeText?: string;
                 fieldViolation?: {
                     field: string;
                     message: string;
