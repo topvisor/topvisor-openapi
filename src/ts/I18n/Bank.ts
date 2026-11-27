@@ -79,6 +79,14 @@ export interface components {
             /** @constant */
             readonly Your_referrals: "Referrals";
             /** @constant */
+            readonly Referrals_id: "Referral ID";
+            /** @constant */
+            readonly Referrals_search_by_id: "Search by ID";
+            /** @constant */
+            readonly Referrals_empty: "No one has registered using your affiliate link yet.<br>Share your link and earn money 💰";
+            /** @constant */
+            readonly Referrals_copy_link: "Copy link";
+            /** @constant */
             readonly Referrals_registered: "Registered";
             /** @constant */
             readonly Referrals_turnover: "Turnover";
@@ -107,7 +115,9 @@ export interface components {
             /** @constant */
             readonly Referrals_level: "Referee level";
             /** @constant */
-            readonly Referrals_you_earned: "You earned";
+            readonly Current_balance: "Current balance";
+            /** @constant */
+            readonly Total_earned: "Total earned";
             /** @constant */
             readonly Referrals_withdraw_to_balance: "To balance";
             /** @constant */
@@ -119,7 +129,9 @@ export interface components {
             /** @constant */
             readonly Referrals_download_invoice_act: "Download invoice and UTD";
             /** @constant */
-            readonly Referrals_withdrawal_available_from_amount_notice: "You can withdraw the amount from 5000 rubles on IE or LTD bank account via e-document workflow.";
+            readonly Referrals_withdrawal_available_from_amount: "Withdrawals of {{ sum }} or more are available to sole proprietor or LLC accounts via electronic document flow (EDF)";
+            /** @constant */
+            readonly Referrals_withdrawal_available_from_amount_notice: "Insufficient funds for withdrawal.\nThe minimum withdrawal amount is {{ sum }}.";
             /** @constant */
             readonly Referrals_link_to_EDF_setup_instruction: "What is EDF how can I use it →";
             /** @constant */

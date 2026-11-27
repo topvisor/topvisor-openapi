@@ -150,6 +150,22 @@
                         "const": "Referrals",
                         "readOnly": true
                     },
+                    "Referrals_id": {
+                        "const": "Referral ID",
+                        "readOnly": true
+                    },
+                    "Referrals_search_by_id": {
+                        "const": "Search by ID",
+                        "readOnly": true
+                    },
+                    "Referrals_empty": {
+                        "const": "No one has registered using your affiliate link yet.<br>Share your link and earn money 💰",
+                        "readOnly": true
+                    },
+                    "Referrals_copy_link": {
+                        "const": "Copy link",
+                        "readOnly": true
+                    },
                     "Referrals_registered": {
                         "const": "Registered",
                         "readOnly": true
@@ -206,8 +222,12 @@
                         "const": "Referee level",
                         "readOnly": true
                     },
-                    "Referrals_you_earned": {
-                        "const": "You earned",
+                    "Current_balance": {
+                        "const": "Current balance",
+                        "readOnly": true
+                    },
+                    "Total_earned": {
+                        "const": "Total earned",
                         "readOnly": true
                     },
                     "Referrals_withdraw_to_balance": {
@@ -230,8 +250,12 @@
                         "const": "Download invoice and UTD",
                         "readOnly": true
                     },
+                    "Referrals_withdrawal_available_from_amount": {
+                        "const": "Withdrawals of {{ sum }} or more are available to sole proprietor or LLC accounts via electronic document flow (EDF)",
+                        "readOnly": true
+                    },
                     "Referrals_withdrawal_available_from_amount_notice": {
-                        "const": "You can withdraw the amount from 5000 rubles on IE or LTD bank account via e-document workflow.",
+                        "const": "Insufficient funds for withdrawal.\nThe minimum withdrawal amount is {{ sum }}.",
                         "readOnly": true
                     },
                     "Referrals_link_to_EDF_setup_instruction": {
@@ -1233,6 +1257,10 @@
                     "Total_to_pay",
                     "Referral_link",
                     "Your_referrals",
+                    "Referrals_id",
+                    "Referrals_search_by_id",
+                    "Referrals_empty",
+                    "Referrals_copy_link",
                     "Referrals_registered",
                     "Referrals_turnover",
                     "Referrals_last_payment",
@@ -1247,12 +1275,14 @@
                     "Referrals_invitation_sent",
                     "Referrals_stats",
                     "Referrals_level",
-                    "Referrals_you_earned",
+                    "Current_balance",
+                    "Total_earned",
                     "Referrals_withdraw_to_balance",
                     "Referrals_withdraw",
                     "Referrals_transfer",
                     "Referrals_levels_description_title",
                     "Referrals_download_invoice_act",
+                    "Referrals_withdrawal_available_from_amount",
                     "Referrals_withdrawal_available_from_amount_notice",
                     "Referrals_link_to_EDF_setup_instruction",
                     "Referrals_visits",
